@@ -1,0 +1,65 @@
+Instruction context:
+   
+ L.   9        26  DUP_TOP          
+                  28  LOAD_NAME                ImportError
+->                30  <121>                72  ''
+                  32  POP_TOP          
+                  34  POP_TOP          
+                  36  POP_TOP          
+
+test/115932.pyc -- 
+# decompile failed
+
+# file test/115932.pyc
+# --- This code section failed: ---
+
+ L.   1         0  BUILD_LIST_0          0 
+                2  STORE_NAME               __all__
+
+ L.   3         4  LOAD_NAME                type
+                6  STORE_NAME               __metaclass__
+
+ L.   6         8  SETUP_FINALLY        26  'to 26'
+
+ L.   8        10  LOAD_CONST               0
+               12  LOAD_CONST               ('TemporaryDirectory',)
+               14  IMPORT_NAME              tempfile
+               16  IMPORT_FROM              TemporaryDirectory
+               18  STORE_NAME               TemporaryDirectory
+               20  POP_TOP          
+               22  POP_BLOCK        
+               24  JUMP_FORWARD         74  'to 74'
+             26_0  COME_FROM_FINALLY     8  '8'
+
+ L.   9        26  DUP_TOP          
+               28  LOAD_NAME                ImportError
+               30  <121>                72  ''
+               32  POP_TOP          
+               34  POP_TOP          
+               36  POP_TOP          
+
+ L.  10        38  LOAD_CONST               0
+               40  LOAD_CONST               None
+               42  IMPORT_NAME              shutil
+               44  STORE_NAME               shutil
+
+ L.  11        46  LOAD_CONST               0
+               48  LOAD_CONST               None
+               50  IMPORT_NAME              tempfile
+               52  STORE_NAME               tempfile
+
+ L.  13        54  LOAD_BUILD_CLASS 
+               56  LOAD_CODE                <code_object TemporaryDirectory>
+               58  LOAD_STR                 'TemporaryDirectory'
+               60  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               62  LOAD_STR                 'TemporaryDirectory'
+               64  CALL_FUNCTION_2       2  ''
+               66  STORE_NAME               TemporaryDirectory
+               68  POP_EXCEPT       
+               70  JUMP_FORWARD         74  'to 74'
+               72  <48>             
+             74_0  COME_FROM            70  '70'
+             74_1  COME_FROM            24  '24'
+
+Parse error at or near `<121>' instruction at offset 30
+

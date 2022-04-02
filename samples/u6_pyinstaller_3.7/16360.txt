@@ -1,0 +1,26 @@
+Instruction context:
+   
+ L.  91       444  LOAD_FAST                'webpage'
+             446_448  POP_JUMP_IF_FALSE   464  'to 464'
+                 450  LOAD_FAST                'self'
+                 452  LOAD_ATTR                _og_search_title
+                 454  LOAD_FAST                'webpage'
+                 456  LOAD_CONST               None
+                 458  LOAD_CONST               ('default',)
+                 460  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+               462_0  COME_FROM           462  '462'
+->               462  JUMP_IF_TRUE_OR_POP   476  'to 476'
+               464_0  COME_FROM           446  '446'
+                 464  LOAD_CONST               None
+             466_468  JUMP_IF_TRUE_OR_POP   476  'to 476'
+                 470  LOAD_FAST                'meta'
+                 472  LOAD_STR                 'title'
+                 474  BINARY_SUBSCR    
+               476_0  COME_FROM           466  '466'
+                 476  STORE_FAST               'title'
+
+../test/16360.pyc -- 
+# decompile failed
+
+# file ../test/16360.pyc
+# Deparsing stopped due to parse error

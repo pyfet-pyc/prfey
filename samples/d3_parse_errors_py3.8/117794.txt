@@ -1,0 +1,48 @@
+Instruction context:
+   
+ L. 182       166  POP_BLOCK        
+                 168  POP_EXCEPT       
+->               170  CALL_FINALLY        176  'to 176'
+                 172  LOAD_CONST               True
+                 174  RETURN_VALUE     
+               176_0  COME_FROM           170  '170'
+               176_1  COME_FROM_FINALLY   142  '142'
+                 176  LOAD_CONST               None
+                 178  STORE_FAST               'exc'
+                 180  DELETE_FAST              'exc'
+                 182  END_FINALLY      
+                 184  POP_EXCEPT       
+                 186  JUMP_FORWARD        190  'to 190'
+               188_0  COME_FROM           134  '134'
+                 188  END_FINALLY      
+               190_0  COME_FROM           186  '186'
+               190_1  COME_FROM           126  '126'
+               190_2  COME_FROM            88  '88'
+Instruction context:
+   
+ L. 247       330  LOAD_GLOBAL              WSMessage
+                 332  LOAD_GLOBAL              WSMsgType
+                 334  LOAD_ATTR                ERROR
+                 336  LOAD_FAST                'exc'
+                 338  LOAD_CONST               None
+                 340  CALL_FUNCTION_3       3  ''
+                 342  ROT_FOUR         
+->               344  POP_BLOCK        
+                 346  POP_EXCEPT       
+                 348  CALL_FINALLY        352  'to 352'
+                 350  RETURN_VALUE     
+               352_0  COME_FROM           348  '348'
+               352_1  COME_FROM_FINALLY   300  '300'
+                 352  LOAD_CONST               None
+                 354  STORE_FAST               'exc'
+                 356  DELETE_FAST              'exc'
+                 358  END_FINALLY      
+                 360  POP_EXCEPT       
+                 362  JUMP_FORWARD        450  'to 450'
+               364_0  COME_FROM           290  '290'
+
+../test/117794.pyc -- 
+# decompile failed
+
+# file ../test/117794.pyc
+# Deparsing stopped due to parse error

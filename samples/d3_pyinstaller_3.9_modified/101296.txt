@@ -1,0 +1,247 @@
+
+# file test/101296.pyc
+# --- This code section failed: ---
+
+ L.  19         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.  20         8  LOAD_CONST               0
+               10  LOAD_CONST               ('BytesIO',)
+               12  IMPORT_NAME              io
+               14  IMPORT_FROM              BytesIO
+               16  STORE_NAME               BytesIO
+               18  POP_TOP          
+
+ L.  22        20  LOAD_CONST               1
+               22  LOAD_CONST               ('Image',)
+               24  IMPORT_NAME              
+               26  IMPORT_FROM              Image
+               28  STORE_NAME               Image
+               30  POP_TOP          
+
+ L.  23        32  LOAD_CONST               1
+               34  LOAD_CONST               ('isPath',)
+               36  IMPORT_NAME              _util
+               38  IMPORT_FROM              isPath
+               40  STORE_NAME               isPath
+               42  POP_TOP          
+
+ L.  26        44  LOAD_STR                 'side6'
+               46  LOAD_STR                 'PySide6'
+               48  BUILD_LIST_2          2 
+
+ L.  27        50  LOAD_STR                 '5'
+               52  LOAD_STR                 'PyQt5'
+               54  BUILD_LIST_2          2 
+
+ L.  28        56  LOAD_STR                 'side2'
+               58  LOAD_STR                 'PySide2'
+               60  BUILD_LIST_2          2 
+
+ L.  25        62  BUILD_LIST_3          3 
+               64  STORE_NAME               qt_versions
+
+ L.  32        66  LOAD_NAME                qt_versions
+               68  LOAD_ATTR                sort
+               70  LOAD_LAMBDA              '<code_object <lambda>>'
+               72  LOAD_STR                 '<lambda>'
+               74  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               76  LOAD_CONST               True
+               78  LOAD_CONST               ('key', 'reverse')
+               80  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+               82  POP_TOP          
+
+ L.  33        84  LOAD_NAME                qt_versions
+               86  GET_ITER         
+             88_0  COME_FROM           276  '276'
+             88_1  COME_FROM           258  '258'
+               88  FOR_ITER            278  'to 278'
+               90  UNPACK_SEQUENCE_2     2 
+               92  STORE_NAME               qt_version
+               94  STORE_NAME               qt_module
+
+ L.  34        96  SETUP_FINALLY       238  'to 238'
+
+ L.  35        98  LOAD_NAME                qt_module
+              100  LOAD_STR                 'PySide6'
+              102  COMPARE_OP               ==
+              104  POP_JUMP_IF_FALSE   144  'to 144'
+
+ L.  36       106  LOAD_CONST               0
+              108  LOAD_CONST               ('QBuffer', 'QIODevice')
+              110  IMPORT_NAME_ATTR         PySide6.QtCore
+              112  IMPORT_FROM              QBuffer
+              114  STORE_NAME               QBuffer
+              116  IMPORT_FROM              QIODevice
+              118  STORE_NAME               QIODevice
+              120  POP_TOP          
+
+ L.  37       122  LOAD_CONST               0
+              124  LOAD_CONST               ('QImage', 'QPixmap', 'qRgba')
+              126  IMPORT_NAME_ATTR         PySide6.QtGui
+              128  IMPORT_FROM              QImage
+              130  STORE_NAME               QImage
+              132  IMPORT_FROM              QPixmap
+              134  STORE_NAME               QPixmap
+              136  IMPORT_FROM              qRgba
+              138  STORE_NAME               qRgba
+              140  POP_TOP          
+              142  JUMP_FORWARD        234  'to 234'
+            144_0  COME_FROM           104  '104'
+
+ L.  38       144  LOAD_NAME                qt_module
+              146  LOAD_STR                 'PyQt5'
+              148  COMPARE_OP               ==
+              150  POP_JUMP_IF_FALSE   190  'to 190'
+
+ L.  39       152  LOAD_CONST               0
+              154  LOAD_CONST               ('QBuffer', 'QIODevice')
+              156  IMPORT_NAME_ATTR         PyQt5.QtCore
+              158  IMPORT_FROM              QBuffer
+              160  STORE_NAME               QBuffer
+              162  IMPORT_FROM              QIODevice
+              164  STORE_NAME               QIODevice
+              166  POP_TOP          
+
+ L.  40       168  LOAD_CONST               0
+              170  LOAD_CONST               ('QImage', 'QPixmap', 'qRgba')
+              172  IMPORT_NAME_ATTR         PyQt5.QtGui
+              174  IMPORT_FROM              QImage
+              176  STORE_NAME               QImage
+              178  IMPORT_FROM              QPixmap
+              180  STORE_NAME               QPixmap
+              182  IMPORT_FROM              qRgba
+              184  STORE_NAME               qRgba
+              186  POP_TOP          
+              188  JUMP_FORWARD        234  'to 234'
+            190_0  COME_FROM           150  '150'
+
+ L.  41       190  LOAD_NAME                qt_module
+              192  LOAD_STR                 'PySide2'
+              194  COMPARE_OP               ==
+              196  POP_JUMP_IF_FALSE   234  'to 234'
+
+ L.  42       198  LOAD_CONST               0
+              200  LOAD_CONST               ('QBuffer', 'QIODevice')
+              202  IMPORT_NAME_ATTR         PySide2.QtCore
+              204  IMPORT_FROM              QBuffer
+              206  STORE_NAME               QBuffer
+              208  IMPORT_FROM              QIODevice
+              210  STORE_NAME               QIODevice
+              212  POP_TOP          
+
+ L.  43       214  LOAD_CONST               0
+              216  LOAD_CONST               ('QImage', 'QPixmap', 'qRgba')
+              218  IMPORT_NAME_ATTR         PySide2.QtGui
+              220  IMPORT_FROM              QImage
+              222  STORE_NAME               QImage
+              224  IMPORT_FROM              QPixmap
+              226  STORE_NAME               QPixmap
+              228  IMPORT_FROM              qRgba
+              230  STORE_NAME               qRgba
+              232  POP_TOP          
+            234_0  COME_FROM           196  '196'
+            234_1  COME_FROM           188  '188'
+            234_2  COME_FROM           142  '142'
+              234  POP_BLOCK        
+              236  JUMP_FORWARD        266  'to 266'
+            238_0  COME_FROM_FINALLY    96  '96'
+
+ L.  44       238  DUP_TOP          
+              240  LOAD_NAME                ImportError
+              242  LOAD_NAME                RuntimeError
+              244  BUILD_TUPLE_2         2 
+          246_248  <121>               264  ''
+              250  POP_TOP          
+              252  POP_TOP          
+              254  POP_TOP          
+
+ L.  45       256  POP_EXCEPT       
+              258  JUMP_BACK            88  'to 88'
+              260  POP_EXCEPT       
+              262  JUMP_FORWARD        266  'to 266'
+              264  <48>             
+            266_0  COME_FROM           262  '262'
+            266_1  COME_FROM           236  '236'
+
+ L.  46       266  LOAD_CONST               True
+              268  STORE_NAME               qt_is_installed
+
+ L.  47       270  POP_TOP          
+          272_274  BREAK_LOOP          286  'to 286'
+              276  JUMP_BACK            88  'to 88'
+            278_0  COME_FROM            88  '88'
+
+ L.  49       278  LOAD_CONST               False
+              280  STORE_NAME               qt_is_installed
+
+ L.  50       282  LOAD_CONST               None
+              284  STORE_NAME               qt_version
+            286_0  COME_FROM           272  '272'
+
+ L.  53       286  LOAD_CONST               (255,)
+              288  LOAD_CODE                <code_object rgb>
+              290  LOAD_STR                 'rgb'
+              292  MAKE_FUNCTION_1          'default'
+              294  STORE_NAME               rgb
+
+ L.  60       296  LOAD_CODE                <code_object fromqimage>
+              298  LOAD_STR                 'fromqimage'
+              300  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              302  STORE_NAME               fromqimage
+
+ L.  82       304  LOAD_CODE                <code_object fromqpixmap>
+              306  LOAD_STR                 'fromqpixmap'
+              308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              310  STORE_NAME               fromqpixmap
+
+ L.  96       312  LOAD_CODE                <code_object align8to32>
+              314  LOAD_STR                 'align8to32'
+              316  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              318  STORE_NAME               align8to32
+
+ L. 124       320  LOAD_CODE                <code_object _toqclass_helper>
+              322  LOAD_STR                 '_toqclass_helper'
+              324  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              326  STORE_NAME               _toqclass_helper
+
+ L. 161       328  LOAD_NAME                qt_is_installed
+          330_332  POP_JUMP_IF_FALSE   350  'to 350'
+
+ L. 163       334  LOAD_BUILD_CLASS 
+              336  LOAD_CODE                <code_object ImageQt>
+              338  LOAD_STR                 'ImageQt'
+              340  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              342  LOAD_STR                 'ImageQt'
+              344  LOAD_NAME                QImage
+              346  CALL_FUNCTION_3       3  ''
+              348  STORE_NAME               ImageQt
+            350_0  COME_FROM           330  '330'
+
+ L. 188       350  LOAD_CODE                <code_object toqimage>
+              352  LOAD_STR                 'toqimage'
+              354  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              356  STORE_NAME               toqimage
+
+ L. 192       358  LOAD_CODE                <code_object toqpixmap>
+              360  LOAD_STR                 'toqpixmap'
+              362  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              364  STORE_NAME               toqpixmap
+
+Parse error at or near `<121>' instruction at offset 246_248
+
+Instruction context:
+   
+ L.  44       238  DUP_TOP          
+                 240  LOAD_NAME                ImportError
+                 242  LOAD_NAME                RuntimeError
+                 244  BUILD_TUPLE_2         2 
+->           246_248  <121>               264  ''
+                 250  POP_TOP          
+                 252  POP_TOP          
+                 254  POP_TOP          
+
+test/101296.pyc -- 
+# decompile failed

@@ -1,0 +1,1225 @@
+
+# file test/111962.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nPackage resource API\n--------------------\n\nA resource is a logical file contained within a package, or a logical\nsubdirectory thereof.  The package resource API expects resource names\nto have their path parts separated with ``/``, *not* whatever the local\npath separator is.  Do not use os.path operations to manipulate resource\nnames being passed into the API.\n\nThe package resource API is designed to work with normal filesystem packages,\n.egg files, and unpacked .egg files.  It can also work in a limited way with\n.zip files and with custom PEP 302 loaders that support the ``get_data()``\nmethod.\n'
+                2  STORE_NAME               __doc__
+
+ L.  17         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.  18        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              os
+               18  STORE_NAME               os
+
+ L.  19        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              io
+               26  STORE_NAME               io
+
+ L.  20        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              time
+               34  STORE_NAME               time
+
+ L.  21        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              re
+               42  STORE_NAME               re
+
+ L.  22        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              types
+               50  STORE_NAME               types
+
+ L.  23        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              zipfile
+               58  STORE_NAME               zipfile
+
+ L.  24        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              zipimport
+               66  STORE_NAME               zipimport
+
+ L.  25        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              warnings
+               74  STORE_NAME               warnings
+
+ L.  26        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME              stat
+               82  STORE_NAME               stat
+
+ L.  27        84  LOAD_CONST               0
+               86  LOAD_CONST               None
+               88  IMPORT_NAME              functools
+               90  STORE_NAME               functools
+
+ L.  28        92  LOAD_CONST               0
+               94  LOAD_CONST               None
+               96  IMPORT_NAME              pkgutil
+               98  STORE_NAME               pkgutil
+
+ L.  29       100  LOAD_CONST               0
+              102  LOAD_CONST               None
+              104  IMPORT_NAME              operator
+              106  STORE_NAME               operator
+
+ L.  30       108  LOAD_CONST               0
+              110  LOAD_CONST               None
+              112  IMPORT_NAME              platform
+              114  STORE_NAME               platform
+
+ L.  31       116  LOAD_CONST               0
+              118  LOAD_CONST               None
+              120  IMPORT_NAME              collections
+              122  STORE_NAME               collections
+
+ L.  32       124  LOAD_CONST               0
+              126  LOAD_CONST               None
+              128  IMPORT_NAME              plistlib
+              130  STORE_NAME               plistlib
+
+ L.  33       132  LOAD_CONST               0
+              134  LOAD_CONST               None
+              136  IMPORT_NAME_ATTR         email.parser
+              138  STORE_NAME               email
+
+ L.  34       140  LOAD_CONST               0
+              142  LOAD_CONST               None
+              144  IMPORT_NAME              errno
+              146  STORE_NAME               errno
+
+ L.  35       148  LOAD_CONST               0
+              150  LOAD_CONST               None
+              152  IMPORT_NAME              tempfile
+              154  STORE_NAME               tempfile
+
+ L.  36       156  LOAD_CONST               0
+              158  LOAD_CONST               None
+              160  IMPORT_NAME              textwrap
+              162  STORE_NAME               textwrap
+
+ L.  37       164  LOAD_CONST               0
+              166  LOAD_CONST               None
+              168  IMPORT_NAME              itertools
+              170  STORE_NAME               itertools
+
+ L.  38       172  LOAD_CONST               0
+              174  LOAD_CONST               None
+              176  IMPORT_NAME              inspect
+              178  STORE_NAME               inspect
+
+ L.  39       180  LOAD_CONST               0
+              182  LOAD_CONST               None
+              184  IMPORT_NAME              ntpath
+              186  STORE_NAME               ntpath
+
+ L.  40       188  LOAD_CONST               0
+              190  LOAD_CONST               None
+              192  IMPORT_NAME              posixpath
+              194  STORE_NAME               posixpath
+
+ L.  41       196  LOAD_CONST               0
+              198  LOAD_CONST               None
+              200  IMPORT_NAME              importlib
+              202  STORE_NAME               importlib
+
+ L.  42       204  LOAD_CONST               0
+              206  LOAD_CONST               ('get_importer',)
+              208  IMPORT_NAME              pkgutil
+              210  IMPORT_FROM              get_importer
+              212  STORE_NAME               get_importer
+              214  POP_TOP          
+
+ L.  44       216  SETUP_FINALLY       230  'to 230'
+
+ L.  45       218  LOAD_CONST               0
+              220  LOAD_CONST               None
+              222  IMPORT_NAME              _imp
+              224  STORE_NAME               _imp
+              226  POP_BLOCK        
+              228  JUMP_FORWARD        256  'to 256'
+            230_0  COME_FROM_FINALLY   216  '216'
+
+ L.  46       230  DUP_TOP          
+              232  LOAD_NAME                ImportError
+              234  <121>               254  ''
+              236  POP_TOP          
+              238  POP_TOP          
+              240  POP_TOP          
+
+ L.  48       242  LOAD_CONST               0
+              244  LOAD_CONST               None
+              246  IMPORT_NAME              imp
+              248  STORE_NAME               _imp
+              250  POP_EXCEPT       
+              252  JUMP_FORWARD        256  'to 256'
+              254  <48>             
+            256_0  COME_FROM           252  '252'
+            256_1  COME_FROM           228  '228'
+
+ L.  50       256  SETUP_FINALLY       266  'to 266'
+
+ L.  51       258  LOAD_NAME                FileExistsError
+              260  POP_TOP          
+              262  POP_BLOCK        
+              264  JUMP_FORWARD        290  'to 290'
+            266_0  COME_FROM_FINALLY   256  '256'
+
+ L.  52       266  DUP_TOP          
+              268  LOAD_NAME                NameError
+          270_272  <121>               288  ''
+              274  POP_TOP          
+              276  POP_TOP          
+              278  POP_TOP          
+
+ L.  53       280  LOAD_NAME                OSError
+              282  STORE_NAME               FileExistsError
+              284  POP_EXCEPT       
+              286  JUMP_FORWARD        290  'to 290'
+              288  <48>             
+            290_0  COME_FROM           286  '286'
+            290_1  COME_FROM           264  '264'
+
+ L.  56       290  LOAD_CONST               0
+              292  LOAD_CONST               ('utime',)
+              294  IMPORT_NAME              os
+              296  IMPORT_FROM              utime
+              298  STORE_NAME               utime
+              300  POP_TOP          
+
+ L.  57       302  SETUP_FINALLY       332  'to 332'
+
+ L.  58       304  LOAD_CONST               0
+              306  LOAD_CONST               ('mkdir', 'rename', 'unlink')
+              308  IMPORT_NAME              os
+              310  IMPORT_FROM              mkdir
+              312  STORE_NAME               mkdir
+              314  IMPORT_FROM              rename
+              316  STORE_NAME               rename
+              318  IMPORT_FROM              unlink
+              320  STORE_NAME               unlink
+              322  POP_TOP          
+
+ L.  59       324  LOAD_CONST               True
+              326  STORE_NAME               WRITE_SUPPORT
+              328  POP_BLOCK        
+              330  JUMP_FORWARD        356  'to 356'
+            332_0  COME_FROM_FINALLY   302  '302'
+
+ L.  60       332  DUP_TOP          
+              334  LOAD_NAME                ImportError
+          336_338  <121>               354  ''
+              340  POP_TOP          
+              342  POP_TOP          
+              344  POP_TOP          
+
+ L.  62       346  LOAD_CONST               False
+              348  STORE_NAME               WRITE_SUPPORT
+              350  POP_EXCEPT       
+              352  JUMP_FORWARD        356  'to 356'
+              354  <48>             
+            356_0  COME_FROM           352  '352'
+            356_1  COME_FROM           330  '330'
+
+ L.  64       356  LOAD_CONST               0
+              358  LOAD_CONST               ('open',)
+              360  IMPORT_NAME              os
+              362  IMPORT_FROM              open
+              364  STORE_NAME               os_open
+              366  POP_TOP          
+
+ L.  65       368  LOAD_CONST               0
+              370  LOAD_CONST               ('isdir', 'split')
+              372  IMPORT_NAME_ATTR         os.path
+              374  IMPORT_FROM              isdir
+              376  STORE_NAME               isdir
+              378  IMPORT_FROM              split
+              380  STORE_NAME               split
+              382  POP_TOP          
+
+ L.  67       384  SETUP_FINALLY       408  'to 408'
+
+ L.  68       386  LOAD_CONST               0
+              388  LOAD_CONST               None
+              390  IMPORT_NAME_ATTR         importlib.machinery
+              392  IMPORT_FROM              machinery
+              394  STORE_NAME               importlib_machinery
+              396  POP_TOP          
+
+ L.  70       398  LOAD_NAME                importlib_machinery
+              400  LOAD_ATTR                __name__
+              402  POP_TOP          
+              404  POP_BLOCK        
+              406  JUMP_FORWARD        432  'to 432'
+            408_0  COME_FROM_FINALLY   384  '384'
+
+ L.  71       408  DUP_TOP          
+              410  LOAD_NAME                ImportError
+          412_414  <121>               430  ''
+              416  POP_TOP          
+              418  POP_TOP          
+              420  POP_TOP          
+
+ L.  72       422  LOAD_CONST               None
+              424  STORE_NAME               importlib_machinery
+              426  POP_EXCEPT       
+              428  JUMP_FORWARD        432  'to 432'
+              430  <48>             
+            432_0  COME_FROM           428  '428'
+            432_1  COME_FROM           406  '406'
+
+ L.  74       432  LOAD_CONST               0
+              434  LOAD_CONST               ('appdirs',)
+              436  IMPORT_NAME_ATTR         pkg_resources.extern
+              438  IMPORT_FROM              appdirs
+              440  STORE_NAME               appdirs
+              442  POP_TOP          
+
+ L.  75       444  LOAD_CONST               0
+              446  LOAD_CONST               ('packaging',)
+              448  IMPORT_NAME_ATTR         pkg_resources.extern
+              450  IMPORT_FROM              packaging
+              452  STORE_NAME               packaging
+              454  POP_TOP          
+
+ L.  76       456  LOAD_NAME                __import__
+              458  LOAD_STR                 'pkg_resources.extern.packaging.version'
+              460  CALL_FUNCTION_1       1  ''
+              462  POP_TOP          
+
+ L.  77       464  LOAD_NAME                __import__
+              466  LOAD_STR                 'pkg_resources.extern.packaging.specifiers'
+              468  CALL_FUNCTION_1       1  ''
+              470  POP_TOP          
+
+ L.  78       472  LOAD_NAME                __import__
+              474  LOAD_STR                 'pkg_resources.extern.packaging.requirements'
+              476  CALL_FUNCTION_1       1  ''
+              478  POP_TOP          
+
+ L.  79       480  LOAD_NAME                __import__
+              482  LOAD_STR                 'pkg_resources.extern.packaging.markers'
+              484  CALL_FUNCTION_1       1  ''
+              486  POP_TOP          
+
+ L.  81       488  LOAD_NAME                sys
+              490  LOAD_ATTR                version_info
+              492  LOAD_CONST               (3, 5)
+              494  COMPARE_OP               <
+          496_498  POP_JUMP_IF_FALSE   508  'to 508'
+
+ L.  82       500  LOAD_NAME                RuntimeError
+              502  LOAD_STR                 'Python 3.5 or later is required'
+              504  CALL_FUNCTION_1       1  ''
+              506  RAISE_VARARGS_1       1  'exception instance'
+            508_0  COME_FROM           496  '496'
+
+ L.  86       508  LOAD_CONST               None
+              510  STORE_NAME               require
+
+ L.  87       512  LOAD_CONST               None
+              514  STORE_NAME               working_set
+
+ L.  88       516  LOAD_CONST               None
+              518  STORE_NAME               add_activation_listener
+
+ L.  89       520  LOAD_CONST               None
+              522  STORE_NAME               resources_stream
+
+ L.  90       524  LOAD_CONST               None
+              526  STORE_NAME               cleanup_resources
+
+ L.  91       528  LOAD_CONST               None
+              530  STORE_NAME               resource_dir
+
+ L.  92       532  LOAD_CONST               None
+              534  STORE_NAME               resource_stream
+
+ L.  93       536  LOAD_CONST               None
+              538  STORE_NAME               set_extraction_path
+
+ L.  94       540  LOAD_CONST               None
+              542  STORE_NAME               resource_isdir
+
+ L.  95       544  LOAD_CONST               None
+              546  STORE_NAME               resource_string
+
+ L.  96       548  LOAD_CONST               None
+              550  STORE_NAME               iter_entry_points
+
+ L.  97       552  LOAD_CONST               None
+              554  STORE_NAME               resource_listdir
+
+ L.  98       556  LOAD_CONST               None
+              558  STORE_NAME               resource_filename
+
+ L.  99       560  LOAD_CONST               None
+              562  STORE_NAME               resource_exists
+
+ L. 100       564  LOAD_CONST               None
+              566  STORE_NAME               _distribution_finders
+
+ L. 101       568  LOAD_CONST               None
+              570  STORE_NAME               _namespace_handlers
+
+ L. 102       572  LOAD_CONST               None
+              574  STORE_NAME               _namespace_packages
+
+ L. 105       576  LOAD_BUILD_CLASS 
+              578  LOAD_CODE                <code_object PEP440Warning>
+              580  LOAD_STR                 'PEP440Warning'
+              582  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              584  LOAD_STR                 'PEP440Warning'
+              586  LOAD_NAME                RuntimeWarning
+              588  CALL_FUNCTION_3       3  ''
+              590  STORE_NAME               PEP440Warning
+
+ L. 112       592  LOAD_CODE                <code_object parse_version>
+              594  LOAD_STR                 'parse_version'
+              596  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              598  STORE_NAME               parse_version
+
+ L. 119       600  BUILD_MAP_0           0 
+              602  STORE_NAME               _state_vars
+
+ L. 122       604  LOAD_CODE                <code_object _declare_state>
+              606  LOAD_STR                 '_declare_state'
+              608  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              610  STORE_NAME               _declare_state
+
+ L. 127       612  LOAD_CODE                <code_object __getstate__>
+              614  LOAD_STR                 '__getstate__'
+              616  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              618  STORE_NAME               __getstate__
+
+ L. 135       620  LOAD_CODE                <code_object __setstate__>
+              622  LOAD_STR                 '__setstate__'
+              624  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              626  STORE_NAME               __setstate__
+
+ L. 142       628  LOAD_CODE                <code_object _sget_dict>
+              630  LOAD_STR                 '_sget_dict'
+              632  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              634  STORE_NAME               _sget_dict
+
+ L. 146       636  LOAD_CODE                <code_object _sset_dict>
+              638  LOAD_STR                 '_sset_dict'
+              640  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              642  STORE_NAME               _sset_dict
+
+ L. 151       644  LOAD_CODE                <code_object _sget_object>
+              646  LOAD_STR                 '_sget_object'
+              648  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              650  STORE_NAME               _sget_object
+
+ L. 155       652  LOAD_CODE                <code_object _sset_object>
+              654  LOAD_STR                 '_sset_object'
+              656  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              658  STORE_NAME               _sset_object
+
+ L. 159       660  LOAD_LAMBDA              '<code_object <lambda>>'
+              662  LOAD_STR                 '<lambda>'
+              664  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              666  DUP_TOP          
+              668  STORE_NAME               _sget_none
+              670  STORE_NAME               _sset_none
+
+ L. 162       672  LOAD_CODE                <code_object get_supported_platform>
+              674  LOAD_STR                 'get_supported_platform'
+              676  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              678  STORE_NAME               get_supported_platform
+
+ L. 186       680  BUILD_LIST_0          0 
+              682  LOAD_CONST               ('require', 'run_script', 'get_provider', 'get_distribution', 'load_entry_point', 'get_entry_map', 'get_entry_info', 'iter_entry_points', 'resource_string', 'resource_stream', 'resource_filename', 'resource_listdir', 'resource_exists', 'resource_isdir', 'declare_namespace', 'working_set', 'add_activation_listener', 'find_distributions', 'set_extraction_path', 'cleanup_resources', 'get_default_cache', 'Environment', 'WorkingSet', 'ResourceManager', 'Distribution', 'Requirement', 'EntryPoint', 'ResolutionError', 'VersionConflict', 'DistributionNotFound', 'UnknownExtra', 'ExtractionError', 'PEP440Warning', 'parse_requirements', 'parse_version', 'safe_name', 'safe_version', 'get_platform', 'compatible_platforms', 'yield_lines', 'split_sections', 'safe_extra', 'to_filename', 'invalid_marker', 'evaluate_marker', 'ensure_directory', 'normalize_path', 'EGG_DIST', 'BINARY_DIST', 'SOURCE_DIST', 'CHECKOUT_DIST', 'DEVELOP_DIST', 'IMetadataProvider', 'IResourceProvider', 'FileMetadata', 'PathMetadata', 'EggMetadata', 'EmptyProvider', 'empty_provider', 'NullProvider', 'EggProvider', 'DefaultProvider', 'ZipProvider', 'register_finder', 'register_namespace_handler', 'register_loader_type', 'fixup_namespace_packages', 'get_importer', 'PkgResourcesDeprecationWarning', 'run_main', 'AvailableDistributions')
+              684  CALL_FINALLY        687  'to 687'
+              686  STORE_NAME               __all__
+
+ L. 236       688  LOAD_BUILD_CLASS 
+              690  LOAD_CODE                <code_object ResolutionError>
+              692  LOAD_STR                 'ResolutionError'
+              694  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              696  LOAD_STR                 'ResolutionError'
+              698  LOAD_NAME                Exception
+              700  CALL_FUNCTION_3       3  ''
+              702  STORE_NAME               ResolutionError
+
+ L. 243       704  LOAD_BUILD_CLASS 
+              706  LOAD_CODE                <code_object VersionConflict>
+              708  LOAD_STR                 'VersionConflict'
+              710  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              712  LOAD_STR                 'VersionConflict'
+              714  LOAD_NAME                ResolutionError
+              716  CALL_FUNCTION_3       3  ''
+              718  STORE_NAME               VersionConflict
+
+ L. 275       720  LOAD_BUILD_CLASS 
+              722  LOAD_CODE                <code_object ContextualVersionConflict>
+              724  LOAD_STR                 'ContextualVersionConflict'
+              726  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              728  LOAD_STR                 'ContextualVersionConflict'
+              730  LOAD_NAME                VersionConflict
+              732  CALL_FUNCTION_3       3  ''
+              734  STORE_NAME               ContextualVersionConflict
+
+ L. 288       736  LOAD_BUILD_CLASS 
+              738  LOAD_CODE                <code_object DistributionNotFound>
+              740  LOAD_STR                 'DistributionNotFound'
+              742  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              744  LOAD_STR                 'DistributionNotFound'
+              746  LOAD_NAME                ResolutionError
+              748  CALL_FUNCTION_3       3  ''
+              750  STORE_NAME               DistributionNotFound
+
+ L. 315       752  LOAD_BUILD_CLASS 
+              754  LOAD_CODE                <code_object UnknownExtra>
+              756  LOAD_STR                 'UnknownExtra'
+              758  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              760  LOAD_STR                 'UnknownExtra'
+              762  LOAD_NAME                ResolutionError
+              764  CALL_FUNCTION_3       3  ''
+              766  STORE_NAME               UnknownExtra
+
+ L. 319       768  BUILD_MAP_0           0 
+              770  STORE_NAME               _provider_factories
+
+ L. 321       772  LOAD_STR                 '{}.{}'
+              774  LOAD_ATTR                format
+              776  LOAD_NAME                sys
+              778  LOAD_ATTR                version_info
+              780  CALL_FUNCTION_EX      0  'positional arguments only'
+              782  STORE_NAME               PY_MAJOR
+
+ L. 322       784  LOAD_CONST               3
+              786  STORE_NAME               EGG_DIST
+
+ L. 323       788  LOAD_CONST               2
+              790  STORE_NAME               BINARY_DIST
+
+ L. 324       792  LOAD_CONST               1
+              794  STORE_NAME               SOURCE_DIST
+
+ L. 325       796  LOAD_CONST               0
+              798  STORE_NAME               CHECKOUT_DIST
+
+ L. 326       800  LOAD_CONST               -1
+              802  STORE_NAME               DEVELOP_DIST
+
+ L. 329       804  LOAD_CODE                <code_object register_loader_type>
+              806  LOAD_STR                 'register_loader_type'
+              808  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              810  STORE_NAME               register_loader_type
+
+ L. 339       812  LOAD_CODE                <code_object get_provider>
+              814  LOAD_STR                 'get_provider'
+              816  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              818  STORE_NAME               get_provider
+
+ L. 352       820  BUILD_LIST_0          0 
+              822  BUILD_TUPLE_1         1 
+              824  LOAD_CODE                <code_object _macos_vers>
+              826  LOAD_STR                 '_macos_vers'
+              828  MAKE_FUNCTION_1          'default'
+              830  STORE_NAME               _macos_vers
+
+ L. 368       832  LOAD_CODE                <code_object _macos_arch>
+              834  LOAD_STR                 '_macos_arch'
+              836  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              838  STORE_NAME               _macos_arch
+
+ L. 372       840  LOAD_CODE                <code_object get_build_platform>
+              842  LOAD_STR                 'get_build_platform'
+              844  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              846  STORE_NAME               get_build_platform
+
+ L. 396       848  LOAD_NAME                re
+              850  LOAD_METHOD              compile
+              852  LOAD_STR                 'macosx-(\\d+)\\.(\\d+)-(.*)'
+              854  CALL_METHOD_1         1  ''
+              856  STORE_NAME               macosVersionString
+
+ L. 397       858  LOAD_NAME                re
+              860  LOAD_METHOD              compile
+              862  LOAD_STR                 'darwin-(\\d+)\\.(\\d+)\\.(\\d+)-(.*)'
+              864  CALL_METHOD_1         1  ''
+              866  STORE_NAME               darwinVersionString
+
+ L. 399       868  LOAD_NAME                get_build_platform
+              870  STORE_NAME               get_platform
+
+ L. 402       872  LOAD_CODE                <code_object compatible_platforms>
+              874  LOAD_STR                 'compatible_platforms'
+              876  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              878  STORE_NAME               compatible_platforms
+
+ L. 448       880  LOAD_CODE                <code_object run_script>
+              882  LOAD_STR                 'run_script'
+              884  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              886  STORE_NAME               run_script
+
+ L. 458       888  LOAD_NAME                run_script
+              890  STORE_NAME               run_main
+
+ L. 461       892  LOAD_CODE                <code_object get_distribution>
+              894  LOAD_STR                 'get_distribution'
+              896  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              898  STORE_NAME               get_distribution
+
+ L. 472       900  LOAD_CODE                <code_object load_entry_point>
+              902  LOAD_STR                 'load_entry_point'
+              904  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              906  STORE_NAME               load_entry_point
+
+ L. 477       908  LOAD_CONST               (None,)
+              910  LOAD_CODE                <code_object get_entry_map>
+              912  LOAD_STR                 'get_entry_map'
+              914  MAKE_FUNCTION_1          'default'
+              916  STORE_NAME               get_entry_map
+
+ L. 482       918  LOAD_CODE                <code_object get_entry_info>
+              920  LOAD_STR                 'get_entry_info'
+              922  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              924  STORE_NAME               get_entry_info
+
+ L. 487       926  LOAD_BUILD_CLASS 
+              928  LOAD_CODE                <code_object IMetadataProvider>
+              930  LOAD_STR                 'IMetadataProvider'
+              932  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              934  LOAD_STR                 'IMetadataProvider'
+              936  CALL_FUNCTION_2       2  ''
+              938  STORE_NAME               IMetadataProvider
+
+ L. 510       940  LOAD_BUILD_CLASS 
+              942  LOAD_CODE                <code_object IResourceProvider>
+              944  LOAD_STR                 'IResourceProvider'
+              946  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              948  LOAD_STR                 'IResourceProvider'
+              950  LOAD_NAME                IMetadataProvider
+              952  CALL_FUNCTION_3       3  ''
+              954  STORE_NAME               IResourceProvider
+
+ L. 538       956  LOAD_BUILD_CLASS 
+              958  LOAD_CODE                <code_object WorkingSet>
+              960  LOAD_STR                 'WorkingSet'
+              962  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              964  LOAD_STR                 'WorkingSet'
+              966  CALL_FUNCTION_2       2  ''
+              968  STORE_NAME               WorkingSet
+
+ L. 925       970  LOAD_BUILD_CLASS 
+              972  LOAD_CODE                <code_object _ReqExtras>
+              974  LOAD_STR                 '_ReqExtras'
+              976  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              978  LOAD_STR                 '_ReqExtras'
+              980  LOAD_NAME                dict
+              982  CALL_FUNCTION_3       3  ''
+              984  STORE_NAME               _ReqExtras
+
+ L. 945       986  LOAD_BUILD_CLASS 
+              988  LOAD_CODE                <code_object Environment>
+              990  LOAD_STR                 'Environment'
+              992  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              994  LOAD_STR                 'Environment'
+              996  CALL_FUNCTION_2       2  ''
+              998  STORE_NAME               Environment
+
+ L.1092      1000  LOAD_NAME                Environment
+             1002  STORE_NAME               AvailableDistributions
+
+ L.1095      1004  LOAD_BUILD_CLASS 
+             1006  LOAD_CODE                <code_object ExtractionError>
+             1008  LOAD_STR                 'ExtractionError'
+             1010  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1012  LOAD_STR                 'ExtractionError'
+             1014  LOAD_NAME                RuntimeError
+             1016  CALL_FUNCTION_3       3  ''
+             1018  STORE_NAME               ExtractionError
+
+ L.1111      1020  LOAD_BUILD_CLASS 
+             1022  LOAD_CODE                <code_object ResourceManager>
+             1024  LOAD_STR                 'ResourceManager'
+             1026  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1028  LOAD_STR                 'ResourceManager'
+             1030  CALL_FUNCTION_2       2  ''
+             1032  STORE_NAME               ResourceManager
+
+ L.1292      1034  LOAD_CODE                <code_object get_default_cache>
+             1036  LOAD_STR                 'get_default_cache'
+             1038  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1040  STORE_NAME               get_default_cache
+
+ L.1304      1042  LOAD_CODE                <code_object safe_name>
+             1044  LOAD_STR                 'safe_name'
+             1046  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1048  STORE_NAME               safe_name
+
+ L.1312      1050  LOAD_CODE                <code_object safe_version>
+             1052  LOAD_STR                 'safe_version'
+             1054  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1056  STORE_NAME               safe_version
+
+ L.1324      1058  LOAD_CODE                <code_object safe_extra>
+             1060  LOAD_STR                 'safe_extra'
+             1062  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1064  STORE_NAME               safe_extra
+
+ L.1333      1066  LOAD_CODE                <code_object to_filename>
+             1068  LOAD_STR                 'to_filename'
+             1070  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1072  STORE_NAME               to_filename
+
+ L.1341      1074  LOAD_CODE                <code_object invalid_marker>
+             1076  LOAD_STR                 'invalid_marker'
+             1078  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1080  STORE_NAME               invalid_marker
+
+ L.1355      1082  LOAD_CONST               (None,)
+             1084  LOAD_CODE                <code_object evaluate_marker>
+             1086  LOAD_STR                 'evaluate_marker'
+             1088  MAKE_FUNCTION_1          'default'
+             1090  STORE_NAME               evaluate_marker
+
+ L.1370      1092  LOAD_BUILD_CLASS 
+             1094  LOAD_CODE                <code_object NullProvider>
+             1096  LOAD_STR                 'NullProvider'
+             1098  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1100  LOAD_STR                 'NullProvider'
+             1102  CALL_FUNCTION_2       2  ''
+             1104  STORE_NAME               NullProvider
+
+ L.1561      1106  LOAD_NAME                register_loader_type
+             1108  LOAD_NAME                object
+             1110  LOAD_NAME                NullProvider
+             1112  CALL_FUNCTION_2       2  ''
+             1114  POP_TOP          
+
+ L.1564      1116  LOAD_CODE                <code_object _parents>
+             1118  LOAD_STR                 '_parents'
+             1120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1122  STORE_NAME               _parents
+
+ L.1575      1124  LOAD_BUILD_CLASS 
+             1126  LOAD_CODE                <code_object EggProvider>
+             1128  LOAD_STR                 'EggProvider'
+             1130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1132  LOAD_STR                 'EggProvider'
+             1134  LOAD_NAME                NullProvider
+             1136  CALL_FUNCTION_3       3  ''
+             1138  STORE_NAME               EggProvider
+
+ L.1595      1140  LOAD_BUILD_CLASS 
+             1142  LOAD_CODE                <code_object DefaultProvider>
+             1144  LOAD_STR                 'DefaultProvider'
+             1146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1148  LOAD_STR                 'DefaultProvider'
+             1150  LOAD_NAME                EggProvider
+             1152  CALL_FUNCTION_3       3  ''
+             1154  STORE_NAME               DefaultProvider
+
+ L.1622      1156  LOAD_NAME                DefaultProvider
+             1158  LOAD_METHOD              _register
+             1160  CALL_METHOD_0         0  ''
+             1162  POP_TOP          
+
+ L.1625      1164  LOAD_BUILD_CLASS 
+             1166  LOAD_CODE                <code_object EmptyProvider>
+             1168  LOAD_STR                 'EmptyProvider'
+             1170  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1172  LOAD_STR                 'EmptyProvider'
+             1174  LOAD_NAME                NullProvider
+             1176  CALL_FUNCTION_3       3  ''
+             1178  STORE_NAME               EmptyProvider
+
+ L.1642      1180  LOAD_NAME                EmptyProvider
+             1182  CALL_FUNCTION_0       0  ''
+             1184  STORE_NAME               empty_provider
+
+ L.1645      1186  LOAD_BUILD_CLASS 
+             1188  LOAD_CODE                <code_object ZipManifests>
+             1190  LOAD_STR                 'ZipManifests'
+             1192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1194  LOAD_STR                 'ZipManifests'
+             1196  LOAD_NAME                dict
+             1198  CALL_FUNCTION_3       3  ''
+             1200  STORE_NAME               ZipManifests
+
+ L.1672      1202  LOAD_BUILD_CLASS 
+             1204  LOAD_CODE                <code_object MemoizedZipManifests>
+             1206  LOAD_STR                 'MemoizedZipManifests'
+             1208  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1210  LOAD_STR                 'MemoizedZipManifests'
+             1212  LOAD_NAME                ZipManifests
+             1214  CALL_FUNCTION_3       3  ''
+             1216  STORE_NAME               MemoizedZipManifests
+
+ L.1692      1218  LOAD_BUILD_CLASS 
+             1220  LOAD_CODE                <code_object ZipProvider>
+             1222  LOAD_STR                 'ZipProvider'
+             1224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1226  LOAD_STR                 'ZipProvider'
+             1228  LOAD_NAME                EggProvider
+             1230  CALL_FUNCTION_3       3  ''
+             1232  STORE_NAME               ZipProvider
+
+ L.1865      1234  LOAD_NAME                register_loader_type
+             1236  LOAD_NAME                zipimport
+             1238  LOAD_ATTR                zipimporter
+             1240  LOAD_NAME                ZipProvider
+             1242  CALL_FUNCTION_2       2  ''
+             1244  POP_TOP          
+
+ L.1868      1246  LOAD_BUILD_CLASS 
+             1248  LOAD_CODE                <code_object FileMetadata>
+             1250  LOAD_STR                 'FileMetadata'
+             1252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1254  LOAD_STR                 'FileMetadata'
+             1256  LOAD_NAME                EmptyProvider
+             1258  CALL_FUNCTION_3       3  ''
+             1260  STORE_NAME               FileMetadata
+
+ L.1909      1262  LOAD_BUILD_CLASS 
+             1264  LOAD_CODE                <code_object PathMetadata>
+             1266  LOAD_STR                 'PathMetadata'
+             1268  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1270  LOAD_STR                 'PathMetadata'
+             1272  LOAD_NAME                DefaultProvider
+             1274  CALL_FUNCTION_3       3  ''
+             1276  STORE_NAME               PathMetadata
+
+ L.1934      1278  LOAD_BUILD_CLASS 
+             1280  LOAD_CODE                <code_object EggMetadata>
+             1282  LOAD_STR                 'EggMetadata'
+             1284  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1286  LOAD_STR                 'EggMetadata'
+             1288  LOAD_NAME                ZipProvider
+             1290  CALL_FUNCTION_3       3  ''
+             1292  STORE_NAME               EggMetadata
+
+ L.1949      1294  LOAD_NAME                _declare_state
+             1296  LOAD_STR                 'dict'
+             1298  BUILD_MAP_0           0 
+             1300  LOAD_CONST               ('_distribution_finders',)
+             1302  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+             1304  POP_TOP          
+
+ L.1952      1306  LOAD_CODE                <code_object register_finder>
+             1308  LOAD_STR                 'register_finder'
+             1310  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1312  STORE_NAME               register_finder
+
+ L.1962      1314  LOAD_CONST               (False,)
+             1316  LOAD_CODE                <code_object find_distributions>
+             1318  LOAD_STR                 'find_distributions'
+             1320  MAKE_FUNCTION_1          'default'
+             1322  STORE_NAME               find_distributions
+
+ L.1969      1324  LOAD_CONST               (False,)
+             1326  LOAD_CODE                <code_object find_eggs_in_zip>
+             1328  LOAD_STR                 'find_eggs_in_zip'
+             1330  MAKE_FUNCTION_1          'default'
+             1332  STORE_NAME               find_eggs_in_zip
+
+ L.1996      1334  LOAD_NAME                register_finder
+             1336  LOAD_NAME                zipimport
+             1338  LOAD_ATTR                zipimporter
+             1340  LOAD_NAME                find_eggs_in_zip
+             1342  CALL_FUNCTION_2       2  ''
+             1344  POP_TOP          
+
+ L.1999      1346  LOAD_CONST               (False,)
+             1348  LOAD_CODE                <code_object find_nothing>
+             1350  LOAD_STR                 'find_nothing'
+             1352  MAKE_FUNCTION_1          'default'
+             1354  STORE_NAME               find_nothing
+
+ L.2003      1356  LOAD_NAME                register_finder
+             1358  LOAD_NAME                object
+             1360  LOAD_NAME                find_nothing
+             1362  CALL_FUNCTION_2       2  ''
+             1364  POP_TOP          
+
+ L.2006      1366  LOAD_CODE                <code_object _by_version_descending>
+             1368  LOAD_STR                 '_by_version_descending'
+             1370  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1372  STORE_NAME               _by_version_descending
+
+ L.2032      1374  LOAD_CONST               (False,)
+             1376  LOAD_CODE                <code_object find_on_path>
+             1378  LOAD_STR                 'find_on_path'
+             1380  MAKE_FUNCTION_1          'default'
+             1382  STORE_NAME               find_on_path
+
+ L.2067      1384  LOAD_CODE                <code_object dist_factory>
+             1386  LOAD_STR                 'dist_factory'
+             1388  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1390  STORE_NAME               dist_factory
+
+ L.2087      1392  LOAD_BUILD_CLASS 
+             1394  LOAD_CODE                <code_object NoDists>
+             1396  LOAD_STR                 'NoDists'
+             1398  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1400  LOAD_STR                 'NoDists'
+             1402  CALL_FUNCTION_2       2  ''
+             1404  STORE_NAME               NoDists
+
+ L.2102      1406  LOAD_CODE                <code_object safe_listdir>
+             1408  LOAD_STR                 'safe_listdir'
+             1410  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1412  STORE_NAME               safe_listdir
+
+ L.2118      1414  LOAD_CODE                <code_object distributions_from_metadata>
+             1416  LOAD_STR                 'distributions_from_metadata'
+             1418  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1420  STORE_NAME               distributions_from_metadata
+
+ L.2133      1422  LOAD_CODE                <code_object non_empty_lines>
+             1424  LOAD_STR                 'non_empty_lines'
+             1426  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1428  STORE_NAME               non_empty_lines
+
+ L.2144      1430  LOAD_CODE                <code_object resolve_egg_link>
+             1432  LOAD_STR                 'resolve_egg_link'
+             1434  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1436  STORE_NAME               resolve_egg_link
+
+ L.2158      1438  LOAD_NAME                register_finder
+             1440  LOAD_NAME                pkgutil
+             1442  LOAD_ATTR                ImpImporter
+             1444  LOAD_NAME                find_on_path
+             1446  CALL_FUNCTION_2       2  ''
+             1448  POP_TOP          
+
+ L.2160      1450  LOAD_NAME                hasattr
+             1452  LOAD_NAME                importlib_machinery
+             1454  LOAD_STR                 'FileFinder'
+             1456  CALL_FUNCTION_2       2  ''
+         1458_1460  POP_JUMP_IF_FALSE  1474  'to 1474'
+
+ L.2161      1462  LOAD_NAME                register_finder
+             1464  LOAD_NAME                importlib_machinery
+             1466  LOAD_ATTR                FileFinder
+             1468  LOAD_NAME                find_on_path
+             1470  CALL_FUNCTION_2       2  ''
+             1472  POP_TOP          
+           1474_0  COME_FROM          1458  '1458'
+
+ L.2163      1474  LOAD_NAME                _declare_state
+             1476  LOAD_STR                 'dict'
+             1478  BUILD_MAP_0           0 
+             1480  LOAD_CONST               ('_namespace_handlers',)
+             1482  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+             1484  POP_TOP          
+
+ L.2164      1486  LOAD_NAME                _declare_state
+             1488  LOAD_STR                 'dict'
+             1490  BUILD_MAP_0           0 
+             1492  LOAD_CONST               ('_namespace_packages',)
+             1494  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+             1496  POP_TOP          
+
+ L.2167      1498  LOAD_CODE                <code_object register_namespace_handler>
+             1500  LOAD_STR                 'register_namespace_handler'
+             1502  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1504  STORE_NAME               register_namespace_handler
+
+ L.2185      1506  LOAD_CODE                <code_object _handle_ns>
+             1508  LOAD_STR                 '_handle_ns'
+             1510  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1512  STORE_NAME               _handle_ns
+
+ L.2220      1514  LOAD_CODE                <code_object _rebuild_mod_path>
+             1516  LOAD_STR                 '_rebuild_mod_path'
+             1518  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1520  STORE_NAME               _rebuild_mod_path
+
+ L.2254      1522  LOAD_CODE                <code_object declare_namespace>
+             1524  LOAD_STR                 'declare_namespace'
+             1526  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1528  STORE_NAME               declare_namespace
+
+ L.2288      1530  LOAD_CONST               (None,)
+             1532  LOAD_CODE                <code_object fixup_namespace_packages>
+             1534  LOAD_STR                 'fixup_namespace_packages'
+             1536  MAKE_FUNCTION_1          'default'
+             1538  STORE_NAME               fixup_namespace_packages
+
+ L.2300      1540  LOAD_CODE                <code_object file_ns_handler>
+             1542  LOAD_STR                 'file_ns_handler'
+             1544  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1546  STORE_NAME               file_ns_handler
+
+ L.2313      1548  LOAD_NAME                register_namespace_handler
+             1550  LOAD_NAME                pkgutil
+             1552  LOAD_ATTR                ImpImporter
+             1554  LOAD_NAME                file_ns_handler
+             1556  CALL_FUNCTION_2       2  ''
+             1558  POP_TOP          
+
+ L.2314      1560  LOAD_NAME                register_namespace_handler
+             1562  LOAD_NAME                zipimport
+             1564  LOAD_ATTR                zipimporter
+             1566  LOAD_NAME                file_ns_handler
+             1568  CALL_FUNCTION_2       2  ''
+             1570  POP_TOP          
+
+ L.2316      1572  LOAD_NAME                hasattr
+             1574  LOAD_NAME                importlib_machinery
+             1576  LOAD_STR                 'FileFinder'
+             1578  CALL_FUNCTION_2       2  ''
+         1580_1582  POP_JUMP_IF_FALSE  1596  'to 1596'
+
+ L.2317      1584  LOAD_NAME                register_namespace_handler
+             1586  LOAD_NAME                importlib_machinery
+             1588  LOAD_ATTR                FileFinder
+             1590  LOAD_NAME                file_ns_handler
+             1592  CALL_FUNCTION_2       2  ''
+             1594  POP_TOP          
+           1596_0  COME_FROM          1580  '1580'
+
+ L.2320      1596  LOAD_CODE                <code_object null_ns_handler>
+             1598  LOAD_STR                 'null_ns_handler'
+             1600  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1602  STORE_NAME               null_ns_handler
+
+ L.2324      1604  LOAD_NAME                register_namespace_handler
+             1606  LOAD_NAME                object
+             1608  LOAD_NAME                null_ns_handler
+             1610  CALL_FUNCTION_2       2  ''
+             1612  POP_TOP          
+
+ L.2327      1614  LOAD_CODE                <code_object normalize_path>
+             1616  LOAD_STR                 'normalize_path'
+             1618  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1620  STORE_NAME               normalize_path
+
+ L.2333      1622  LOAD_CODE                <code_object _cygwin_patch>
+             1624  LOAD_STR                 '_cygwin_patch'
+             1626  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1628  STORE_NAME               _cygwin_patch
+
+ L.2344      1630  BUILD_MAP_0           0 
+             1632  BUILD_TUPLE_1         1 
+             1634  LOAD_CODE                <code_object _normalize_cached>
+             1636  LOAD_STR                 '_normalize_cached'
+             1638  MAKE_FUNCTION_1          'default'
+             1640  STORE_NAME               _normalize_cached
+
+ L.2352      1642  LOAD_CODE                <code_object _is_egg_path>
+             1644  LOAD_STR                 '_is_egg_path'
+             1646  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1648  STORE_NAME               _is_egg_path
+
+ L.2359      1650  LOAD_CODE                <code_object _is_zip_egg>
+             1652  LOAD_STR                 '_is_zip_egg'
+             1654  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1656  STORE_NAME               _is_zip_egg
+
+ L.2367      1658  LOAD_CODE                <code_object _is_unpacked_egg>
+             1660  LOAD_STR                 '_is_unpacked_egg'
+             1662  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1664  STORE_NAME               _is_unpacked_egg
+
+ L.2377      1666  LOAD_CODE                <code_object _set_parent_ns>
+             1668  LOAD_STR                 '_set_parent_ns'
+             1670  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1672  STORE_NAME               _set_parent_ns
+
+ L.2385      1674  LOAD_CODE                <code_object yield_lines>
+             1676  LOAD_STR                 'yield_lines'
+             1678  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1680  STORE_NAME               yield_lines
+
+ L.2399      1682  LOAD_NAME                re
+             1684  LOAD_METHOD              compile
+             1686  LOAD_STR                 '\\w+(\\.\\w+)*$'
+             1688  CALL_METHOD_1         1  ''
+             1690  LOAD_ATTR                match
+             1692  STORE_NAME               MODULE
+
+ L.2400      1694  LOAD_NAME                re
+             1696  LOAD_METHOD              compile
+
+ L.2401      1698  LOAD_STR                 '\n    (?P<name>[^-]+) (\n        -(?P<ver>[^-]+) (\n            -py(?P<pyver>[^-]+) (\n                -(?P<plat>.+)\n            )?\n        )?\n    )?\n    '
+
+ L.2410      1700  LOAD_NAME                re
+             1702  LOAD_ATTR                VERBOSE
+             1704  LOAD_NAME                re
+             1706  LOAD_ATTR                IGNORECASE
+             1708  BINARY_OR        
+
+ L.2400      1710  CALL_METHOD_2         2  ''
+             1712  LOAD_ATTR                match
+             1714  STORE_NAME               EGG_NAME
+
+ L.2414      1716  LOAD_BUILD_CLASS 
+             1718  LOAD_CODE                <code_object EntryPoint>
+             1720  LOAD_STR                 'EntryPoint'
+             1722  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1724  LOAD_STR                 'EntryPoint'
+             1726  CALL_FUNCTION_2       2  ''
+             1728  STORE_NAME               EntryPoint
+
+ L.2546      1730  LOAD_CODE                <code_object _version_from_file>
+             1732  LOAD_STR                 '_version_from_file'
+             1734  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1736  STORE_NAME               _version_from_file
+
+ L.2559      1738  LOAD_BUILD_CLASS 
+             1740  LOAD_CODE                <code_object Distribution>
+             1742  LOAD_STR                 'Distribution'
+             1744  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1746  LOAD_STR                 'Distribution'
+             1748  CALL_FUNCTION_2       2  ''
+             1750  STORE_NAME               Distribution
+
+ L.2976      1752  LOAD_BUILD_CLASS 
+             1754  LOAD_CODE                <code_object EggInfoDistribution>
+             1756  LOAD_STR                 'EggInfoDistribution'
+             1758  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1760  LOAD_STR                 'EggInfoDistribution'
+             1762  LOAD_NAME                Distribution
+             1764  CALL_FUNCTION_3       3  ''
+             1766  STORE_NAME               EggInfoDistribution
+
+ L.2995      1768  LOAD_BUILD_CLASS 
+             1770  LOAD_CODE                <code_object DistInfoDistribution>
+             1772  LOAD_STR                 'DistInfoDistribution'
+             1774  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1776  LOAD_STR                 'DistInfoDistribution'
+             1778  LOAD_NAME                Distribution
+             1780  CALL_FUNCTION_3       3  ''
+             1782  STORE_NAME               DistInfoDistribution
+
+ L.3046      1784  LOAD_NAME                Distribution
+
+ L.3047      1786  LOAD_NAME                EggInfoDistribution
+
+ L.3048      1788  LOAD_NAME                DistInfoDistribution
+
+ L.3045      1790  LOAD_CONST               ('.egg', '.egg-info', '.dist-info')
+             1792  BUILD_CONST_KEY_MAP_3     3 
+             1794  STORE_NAME               _distributionImpl
+
+ L.3052      1796  LOAD_CODE                <code_object issue_warning>
+             1798  LOAD_STR                 'issue_warning'
+             1800  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1802  STORE_NAME               issue_warning
+
+ L.3065      1804  LOAD_CODE                <code_object parse_requirements>
+             1806  LOAD_STR                 'parse_requirements'
+             1808  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1810  STORE_NAME               parse_requirements
+
+ L.3087      1812  LOAD_BUILD_CLASS 
+             1814  LOAD_CODE                <code_object RequirementParseError>
+             1816  LOAD_STR                 'RequirementParseError'
+             1818  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1820  LOAD_STR                 'RequirementParseError'
+             1822  LOAD_NAME                packaging
+             1824  LOAD_ATTR                requirements
+             1826  LOAD_ATTR                InvalidRequirement
+             1828  CALL_FUNCTION_3       3  ''
+             1830  STORE_NAME               RequirementParseError
+
+ L.3091      1832  LOAD_BUILD_CLASS 
+             1834  LOAD_CODE                <code_object Requirement>
+             1836  LOAD_STR                 'Requirement'
+             1838  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1840  LOAD_STR                 'Requirement'
+             1842  LOAD_NAME                packaging
+             1844  LOAD_ATTR                requirements
+             1846  LOAD_ATTR                Requirement
+             1848  CALL_FUNCTION_3       3  ''
+             1850  STORE_NAME               Requirement
+
+ L.3143      1852  LOAD_CODE                <code_object _always_object>
+             1854  LOAD_STR                 '_always_object'
+             1856  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1858  STORE_NAME               _always_object
+
+ L.3153      1860  LOAD_CODE                <code_object _find_adapter>
+             1862  LOAD_STR                 '_find_adapter'
+             1864  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1866  STORE_NAME               _find_adapter
+
+ L.3161      1868  LOAD_CODE                <code_object ensure_directory>
+             1870  LOAD_STR                 'ensure_directory'
+             1872  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1874  STORE_NAME               ensure_directory
+
+ L.3167      1876  LOAD_CODE                <code_object _bypass_ensure_directory>
+             1878  LOAD_STR                 '_bypass_ensure_directory'
+             1880  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1882  STORE_NAME               _bypass_ensure_directory
+
+ L.3180      1884  LOAD_CODE                <code_object split_sections>
+             1886  LOAD_STR                 'split_sections'
+             1888  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1890  STORE_NAME               split_sections
+
+ L.3206      1892  LOAD_CODE                <code_object _mkstemp>
+             1894  LOAD_STR                 '_mkstemp'
+             1896  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1898  STORE_NAME               _mkstemp
+
+ L.3221      1900  LOAD_NAME                warnings
+             1902  LOAD_ATTR                filterwarnings
+             1904  LOAD_STR                 'ignore'
+             1906  LOAD_NAME                PEP440Warning
+             1908  LOAD_CONST               True
+             1910  LOAD_CONST               ('category', 'append')
+             1912  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+             1914  POP_TOP          
+
+ L.3225      1916  LOAD_CODE                <code_object _call_aside>
+             1918  LOAD_STR                 '_call_aside'
+             1920  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1922  STORE_NAME               _call_aside
+
+ L.3230      1924  LOAD_NAME                _call_aside
+
+ L.3231      1926  LOAD_NAME                globals
+             1928  CALL_FUNCTION_0       0  ''
+             1930  BUILD_TUPLE_1         1 
+             1932  LOAD_CODE                <code_object _initialize>
+             1934  LOAD_STR                 '_initialize'
+             1936  MAKE_FUNCTION_1          'default'
+             1938  CALL_FUNCTION_1       1  ''
+             1940  STORE_NAME               _initialize
+
+ L.3242      1942  LOAD_NAME                _call_aside
+
+ L.3243      1944  LOAD_CODE                <code_object _initialize_master_working_set>
+             1946  LOAD_STR                 '_initialize_master_working_set'
+             1948  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1950  CALL_FUNCTION_1       1  ''
+             1952  STORE_NAME               _initialize_master_working_set
+
+ L.3282      1954  LOAD_BUILD_CLASS 
+             1956  LOAD_CODE                <code_object PkgResourcesDeprecationWarning>
+             1958  LOAD_STR                 'PkgResourcesDeprecationWarning'
+             1960  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1962  LOAD_STR                 'PkgResourcesDeprecationWarning'
+             1964  LOAD_NAME                Warning
+             1966  CALL_FUNCTION_3       3  ''
+             1968  STORE_NAME               PkgResourcesDeprecationWarning
+
+Parse error at or near `<121>' instruction at offset 234
+
+Instruction context:
+   
+ L.  46       230  DUP_TOP          
+                 232  LOAD_NAME                ImportError
+->               234  <121>               254  ''
+                 236  POP_TOP          
+                 238  POP_TOP          
+                 240  POP_TOP          
+
+test/111962.pyc -- 
+# decompile failed

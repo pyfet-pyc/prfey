@@ -1,0 +1,429 @@
+
+# file test/2006.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nFunctions that ignore NaN.\n\nFunctions\n---------\n\n- `nanmin` -- minimum non-NaN value\n- `nanmax` -- maximum non-NaN value\n- `nanargmin` -- index of minimum non-NaN value\n- `nanargmax` -- index of maximum non-NaN value\n- `nansum` -- sum of non-NaN values\n- `nanprod` -- product of non-NaN values\n- `nancumsum` -- cumulative sum of non-NaN values\n- `nancumprod` -- cumulative product of non-NaN values\n- `nanmean` -- mean of non-NaN values\n- `nanvar` -- variance of non-NaN values\n- `nanstd` -- standard deviation of non-NaN values\n- `nanmedian` -- median of non-NaN values\n- `nanquantile` -- qth quantile of non-NaN values\n- `nanpercentile` -- qth percentile of non-NaN values\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  23         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              functools
+               10  STORE_NAME               functools
+
+ L.  24        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              warnings
+               18  STORE_NAME               warnings
+
+ L.  25        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              numpy
+               26  STORE_NAME               np
+
+ L.  26        28  LOAD_CONST               0
+               30  LOAD_CONST               ('function_base',)
+               32  IMPORT_NAME_ATTR         numpy.lib
+               34  IMPORT_FROM              function_base
+               36  STORE_NAME               function_base
+               38  POP_TOP          
+
+ L.  27        40  LOAD_CONST               0
+               42  LOAD_CONST               ('overrides',)
+               44  IMPORT_NAME_ATTR         numpy.core
+               46  IMPORT_FROM              overrides
+               48  STORE_NAME               overrides
+               50  POP_TOP          
+
+ L.  30        52  LOAD_NAME                functools
+               54  LOAD_ATTR                partial
+
+ L.  31        56  LOAD_NAME                overrides
+               58  LOAD_ATTR                array_function_dispatch
+               60  LOAD_STR                 'numpy'
+
+ L.  30        62  LOAD_CONST               ('module',)
+               64  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+               66  STORE_NAME               array_function_dispatch
+
+ L.  34        68  BUILD_LIST_0          0 
+               70  LOAD_CONST               ('nansum', 'nanmax', 'nanmin', 'nanargmax', 'nanargmin', 'nanmean', 'nanmedian', 'nanpercentile', 'nanvar', 'nanstd', 'nanprod', 'nancumsum', 'nancumprod', 'nanquantile')
+               72  CALL_FINALLY         75  'to 75'
+               74  STORE_NAME               __all__
+
+ L.  41        76  LOAD_CONST               (None,)
+               78  LOAD_CODE                <code_object _nan_mask>
+               80  LOAD_STR                 '_nan_mask'
+               82  MAKE_FUNCTION_1          'default'
+               84  STORE_NAME               _nan_mask
+
+ L.  68        86  LOAD_CODE                <code_object _replace_nan>
+               88  LOAD_STR                 '_replace_nan'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  STORE_NAME               _replace_nan
+
+ L. 113        94  LOAD_CODE                <code_object _copyto>
+               96  LOAD_STR                 '_copyto'
+               98  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              100  STORE_NAME               _copyto
+
+ L. 142       102  LOAD_CONST               (False,)
+              104  LOAD_CODE                <code_object _remove_nan_1d>
+              106  LOAD_STR                 '_remove_nan_1d'
+              108  MAKE_FUNCTION_1          'default'
+              110  STORE_NAME               _remove_nan_1d
+
+ L. 183       112  LOAD_CONST               (None,)
+              114  LOAD_CODE                <code_object _divide_by_count>
+              116  LOAD_STR                 '_divide_by_count'
+              118  MAKE_FUNCTION_1          'default'
+              120  STORE_NAME               _divide_by_count
+
+ L. 224       122  LOAD_CONST               (None, None, None)
+              124  LOAD_CODE                <code_object _nanmin_dispatcher>
+              126  LOAD_STR                 '_nanmin_dispatcher'
+              128  MAKE_FUNCTION_1          'default'
+              130  STORE_NAME               _nanmin_dispatcher
+
+ L. 228       132  LOAD_NAME                array_function_dispatch
+              134  LOAD_NAME                _nanmin_dispatcher
+              136  CALL_FUNCTION_1       1  ''
+
+ L. 229       138  LOAD_CONST               None
+              140  LOAD_CONST               None
+              142  LOAD_NAME                np
+              144  LOAD_ATTR                _NoValue
+              146  BUILD_TUPLE_3         3 
+              148  LOAD_CODE                <code_object nanmin>
+              150  LOAD_STR                 'nanmin'
+              152  MAKE_FUNCTION_1          'default'
+              154  CALL_FUNCTION_1       1  ''
+              156  STORE_NAME               nanmin
+
+ L. 339       158  LOAD_CONST               (None, None, None)
+              160  LOAD_CODE                <code_object _nanmax_dispatcher>
+              162  LOAD_STR                 '_nanmax_dispatcher'
+              164  MAKE_FUNCTION_1          'default'
+              166  STORE_NAME               _nanmax_dispatcher
+
+ L. 343       168  LOAD_NAME                array_function_dispatch
+              170  LOAD_NAME                _nanmax_dispatcher
+              172  CALL_FUNCTION_1       1  ''
+
+ L. 344       174  LOAD_CONST               None
+              176  LOAD_CONST               None
+              178  LOAD_NAME                np
+              180  LOAD_ATTR                _NoValue
+              182  BUILD_TUPLE_3         3 
+              184  LOAD_CODE                <code_object nanmax>
+              186  LOAD_STR                 'nanmax'
+              188  MAKE_FUNCTION_1          'default'
+              190  CALL_FUNCTION_1       1  ''
+              192  STORE_NAME               nanmax
+
+ L. 454       194  LOAD_CONST               (None,)
+              196  LOAD_CODE                <code_object _nanargmin_dispatcher>
+              198  LOAD_STR                 '_nanargmin_dispatcher'
+              200  MAKE_FUNCTION_1          'default'
+              202  STORE_NAME               _nanargmin_dispatcher
+
+ L. 458       204  LOAD_NAME                array_function_dispatch
+              206  LOAD_NAME                _nanargmin_dispatcher
+              208  CALL_FUNCTION_1       1  ''
+
+ L. 459       210  LOAD_CONST               (None,)
+              212  LOAD_CODE                <code_object nanargmin>
+              214  LOAD_STR                 'nanargmin'
+              216  MAKE_FUNCTION_1          'default'
+              218  CALL_FUNCTION_1       1  ''
+              220  STORE_NAME               nanargmin
+
+ L. 503       222  LOAD_CONST               (None,)
+              224  LOAD_CODE                <code_object _nanargmax_dispatcher>
+              226  LOAD_STR                 '_nanargmax_dispatcher'
+              228  MAKE_FUNCTION_1          'default'
+              230  STORE_NAME               _nanargmax_dispatcher
+
+ L. 507       232  LOAD_NAME                array_function_dispatch
+              234  LOAD_NAME                _nanargmax_dispatcher
+              236  CALL_FUNCTION_1       1  ''
+
+ L. 508       238  LOAD_CONST               (None,)
+              240  LOAD_CODE                <code_object nanargmax>
+              242  LOAD_STR                 'nanargmax'
+              244  MAKE_FUNCTION_1          'default'
+              246  CALL_FUNCTION_1       1  ''
+              248  STORE_NAME               nanargmax
+
+ L. 553       250  LOAD_CONST               (None, None, None, None)
+              252  LOAD_CODE                <code_object _nansum_dispatcher>
+              254  LOAD_STR                 '_nansum_dispatcher'
+              256  MAKE_FUNCTION_1          'default'
+              258  STORE_NAME               _nansum_dispatcher
+
+ L. 557       260  LOAD_NAME                array_function_dispatch
+              262  LOAD_NAME                _nansum_dispatcher
+              264  CALL_FUNCTION_1       1  ''
+
+ L. 558       266  LOAD_CONST               None
+              268  LOAD_CONST               None
+              270  LOAD_CONST               None
+              272  LOAD_NAME                np
+              274  LOAD_ATTR                _NoValue
+              276  BUILD_TUPLE_4         4 
+              278  LOAD_CODE                <code_object nansum>
+              280  LOAD_STR                 'nansum'
+              282  MAKE_FUNCTION_1          'default'
+              284  CALL_FUNCTION_1       1  ''
+              286  STORE_NAME               nansum
+
+ L. 651       288  LOAD_CONST               (None, None, None, None)
+              290  LOAD_CODE                <code_object _nanprod_dispatcher>
+              292  LOAD_STR                 '_nanprod_dispatcher'
+              294  MAKE_FUNCTION_1          'default'
+              296  STORE_NAME               _nanprod_dispatcher
+
+ L. 655       298  LOAD_NAME                array_function_dispatch
+              300  LOAD_NAME                _nanprod_dispatcher
+              302  CALL_FUNCTION_1       1  ''
+
+ L. 656       304  LOAD_CONST               None
+              306  LOAD_CONST               None
+              308  LOAD_CONST               None
+              310  LOAD_NAME                np
+              312  LOAD_ATTR                _NoValue
+              314  BUILD_TUPLE_4         4 
+              316  LOAD_CODE                <code_object nanprod>
+              318  LOAD_STR                 'nanprod'
+              320  MAKE_FUNCTION_1          'default'
+              322  CALL_FUNCTION_1       1  ''
+              324  STORE_NAME               nanprod
+
+ L. 721       326  LOAD_CONST               (None, None, None)
+              328  LOAD_CODE                <code_object _nancumsum_dispatcher>
+              330  LOAD_STR                 '_nancumsum_dispatcher'
+              332  MAKE_FUNCTION_1          'default'
+              334  STORE_NAME               _nancumsum_dispatcher
+
+ L. 725       336  LOAD_NAME                array_function_dispatch
+              338  LOAD_NAME                _nancumsum_dispatcher
+              340  CALL_FUNCTION_1       1  ''
+
+ L. 726       342  LOAD_CONST               (None, None, None)
+              344  LOAD_CODE                <code_object nancumsum>
+              346  LOAD_STR                 'nancumsum'
+              348  MAKE_FUNCTION_1          'default'
+              350  CALL_FUNCTION_1       1  ''
+              352  STORE_NAME               nancumsum
+
+ L. 791       354  LOAD_CONST               (None, None, None)
+              356  LOAD_CODE                <code_object _nancumprod_dispatcher>
+              358  LOAD_STR                 '_nancumprod_dispatcher'
+              360  MAKE_FUNCTION_1          'default'
+              362  STORE_NAME               _nancumprod_dispatcher
+
+ L. 795       364  LOAD_NAME                array_function_dispatch
+              366  LOAD_NAME                _nancumprod_dispatcher
+              368  CALL_FUNCTION_1       1  ''
+
+ L. 796       370  LOAD_CONST               (None, None, None)
+              372  LOAD_CODE                <code_object nancumprod>
+              374  LOAD_STR                 'nancumprod'
+              376  MAKE_FUNCTION_1          'default'
+              378  CALL_FUNCTION_1       1  ''
+              380  STORE_NAME               nancumprod
+
+ L. 858       382  LOAD_CONST               (None, None, None, None)
+              384  LOAD_CODE                <code_object _nanmean_dispatcher>
+              386  LOAD_STR                 '_nanmean_dispatcher'
+              388  MAKE_FUNCTION_1          'default'
+              390  STORE_NAME               _nanmean_dispatcher
+
+ L. 862       392  LOAD_NAME                array_function_dispatch
+              394  LOAD_NAME                _nanmean_dispatcher
+              396  CALL_FUNCTION_1       1  ''
+
+ L. 863       398  LOAD_CONST               None
+              400  LOAD_CONST               None
+              402  LOAD_CONST               None
+              404  LOAD_NAME                np
+              406  LOAD_ATTR                _NoValue
+              408  BUILD_TUPLE_4         4 
+              410  LOAD_CODE                <code_object nanmean>
+              412  LOAD_STR                 'nanmean'
+              414  MAKE_FUNCTION_1          'default'
+              416  CALL_FUNCTION_1       1  ''
+              418  STORE_NAME               nanmean
+
+ L. 960       420  LOAD_CONST               (False,)
+              422  LOAD_CODE                <code_object _nanmedian1d>
+              424  LOAD_STR                 '_nanmedian1d'
+              426  MAKE_FUNCTION_1          'default'
+              428  STORE_NAME               _nanmedian1d
+
+ L. 973       430  LOAD_CONST               (None, None, False)
+              432  LOAD_CODE                <code_object _nanmedian>
+              434  LOAD_STR                 '_nanmedian'
+              436  MAKE_FUNCTION_1          'default'
+              438  STORE_NAME               _nanmedian
+
+ L. 999       440  LOAD_CONST               (None, None, False)
+              442  LOAD_CODE                <code_object _nanmedian_small>
+              444  LOAD_STR                 '_nanmedian_small'
+              446  MAKE_FUNCTION_1          'default'
+              448  STORE_NAME               _nanmedian_small
+
+ L.1017       450  LOAD_CONST               (None, None, None, None)
+              452  LOAD_CODE                <code_object _nanmedian_dispatcher>
+              454  LOAD_STR                 '_nanmedian_dispatcher'
+              456  MAKE_FUNCTION_1          'default'
+              458  STORE_NAME               _nanmedian_dispatcher
+
+ L.1022       460  LOAD_NAME                array_function_dispatch
+              462  LOAD_NAME                _nanmedian_dispatcher
+              464  CALL_FUNCTION_1       1  ''
+
+ L.1023       466  LOAD_CONST               None
+              468  LOAD_CONST               None
+              470  LOAD_CONST               False
+              472  LOAD_NAME                np
+              474  LOAD_ATTR                _NoValue
+              476  BUILD_TUPLE_4         4 
+              478  LOAD_CODE                <code_object nanmedian>
+              480  LOAD_STR                 'nanmedian'
+              482  MAKE_FUNCTION_1          'default'
+              484  CALL_FUNCTION_1       1  ''
+              486  STORE_NAME               nanmedian
+
+ L.1121       488  LOAD_CONST               (None, None, None, None, None)
+              490  LOAD_CODE                <code_object _nanpercentile_dispatcher>
+              492  LOAD_STR                 '_nanpercentile_dispatcher'
+              494  MAKE_FUNCTION_1          'default'
+              496  STORE_NAME               _nanpercentile_dispatcher
+
+ L.1126       498  LOAD_NAME                array_function_dispatch
+              500  LOAD_NAME                _nanpercentile_dispatcher
+              502  CALL_FUNCTION_1       1  ''
+
+ L.1127       504  LOAD_CONST               None
+              506  LOAD_CONST               None
+              508  LOAD_CONST               False
+
+ L.1128       510  LOAD_STR                 'linear'
+              512  LOAD_NAME                np
+              514  LOAD_ATTR                _NoValue
+
+ L.1127       516  BUILD_TUPLE_5         5 
+              518  LOAD_CODE                <code_object nanpercentile>
+              520  LOAD_STR                 'nanpercentile'
+              522  MAKE_FUNCTION_1          'default'
+              524  CALL_FUNCTION_1       1  ''
+              526  STORE_NAME               nanpercentile
+
+ L.1247       528  LOAD_CONST               (None, None, None, None, None)
+              530  LOAD_CODE                <code_object _nanquantile_dispatcher>
+              532  LOAD_STR                 '_nanquantile_dispatcher'
+              534  MAKE_FUNCTION_1          'default'
+              536  STORE_NAME               _nanquantile_dispatcher
+
+ L.1252       538  LOAD_NAME                array_function_dispatch
+              540  LOAD_NAME                _nanquantile_dispatcher
+              542  CALL_FUNCTION_1       1  ''
+
+ L.1253       544  LOAD_CONST               None
+              546  LOAD_CONST               None
+              548  LOAD_CONST               False
+
+ L.1254       550  LOAD_STR                 'linear'
+              552  LOAD_NAME                np
+              554  LOAD_ATTR                _NoValue
+
+ L.1253       556  BUILD_TUPLE_5         5 
+              558  LOAD_CODE                <code_object nanquantile>
+              560  LOAD_STR                 'nanquantile'
+              562  MAKE_FUNCTION_1          'default'
+              564  CALL_FUNCTION_1       1  ''
+              566  STORE_NAME               nanquantile
+
+ L.1360       568  LOAD_CONST               None
+              570  LOAD_CONST               None
+              572  LOAD_CONST               False
+
+ L.1361       574  LOAD_STR                 'linear'
+              576  LOAD_NAME                np
+              578  LOAD_ATTR                _NoValue
+
+ L.1360       580  BUILD_TUPLE_5         5 
+              582  LOAD_CODE                <code_object _nanquantile_unchecked>
+              584  LOAD_STR                 '_nanquantile_unchecked'
+              586  MAKE_FUNCTION_1          'default'
+              588  STORE_NAME               _nanquantile_unchecked
+
+ L.1378       590  LOAD_CONST               (None, None, False, 'linear')
+              592  LOAD_CODE                <code_object _nanquantile_ureduce_func>
+              594  LOAD_STR                 '_nanquantile_ureduce_func'
+              596  MAKE_FUNCTION_1          'default'
+              598  STORE_NAME               _nanquantile_ureduce_func
+
+ L.1402       600  LOAD_CONST               (False, 'linear')
+              602  LOAD_CODE                <code_object _nanquantile_1d>
+              604  LOAD_STR                 '_nanquantile_1d'
+              606  MAKE_FUNCTION_1          'default'
+              608  STORE_NAME               _nanquantile_1d
+
+ L.1416       610  LOAD_CONST               (None, None, None, None, None)
+              612  LOAD_CODE                <code_object _nanvar_dispatcher>
+              614  LOAD_STR                 '_nanvar_dispatcher'
+              616  MAKE_FUNCTION_1          'default'
+              618  STORE_NAME               _nanvar_dispatcher
+
+ L.1421       620  LOAD_NAME                array_function_dispatch
+              622  LOAD_NAME                _nanvar_dispatcher
+              624  CALL_FUNCTION_1       1  ''
+
+ L.1422       626  LOAD_CONST               None
+              628  LOAD_CONST               None
+              630  LOAD_CONST               None
+              632  LOAD_CONST               0
+              634  LOAD_NAME                np
+              636  LOAD_ATTR                _NoValue
+              638  BUILD_TUPLE_5         5 
+              640  LOAD_CODE                <code_object nanvar>
+              642  LOAD_STR                 'nanvar'
+              644  MAKE_FUNCTION_1          'default'
+              646  CALL_FUNCTION_1       1  ''
+              648  STORE_NAME               nanvar
+
+ L.1564       650  LOAD_CONST               (None, None, None, None, None)
+              652  LOAD_CODE                <code_object _nanstd_dispatcher>
+              654  LOAD_STR                 '_nanstd_dispatcher'
+              656  MAKE_FUNCTION_1          'default'
+              658  STORE_NAME               _nanstd_dispatcher
+
+ L.1569       660  LOAD_NAME                array_function_dispatch
+              662  LOAD_NAME                _nanstd_dispatcher
+              664  CALL_FUNCTION_1       1  ''
+
+ L.1570       666  LOAD_CONST               None
+              668  LOAD_CONST               None
+              670  LOAD_CONST               None
+              672  LOAD_CONST               0
+              674  LOAD_NAME                np
+              676  LOAD_ATTR                _NoValue
+              678  BUILD_TUPLE_5         5 
+              680  LOAD_CODE                <code_object nanstd>
+              682  LOAD_STR                 'nanstd'
+              684  MAKE_FUNCTION_1          'default'
+              686  CALL_FUNCTION_1       1  ''
+              688  STORE_NAME               nanstd
+
+Parse error at or near `CALL_FINALLY' instruction at offset 72
+
+Instruction context:
+   
+ L.  34        68  BUILD_LIST_0          0 
+                  70  LOAD_CONST               ('nansum', 'nanmax', 'nanmin', 'nanargmax', 'nanargmin', 'nanmean', 'nanmedian', 'nanpercentile', 'nanvar', 'nanstd', 'nanprod', 'nancumsum', 'nancumprod', 'nanquantile')
+->                72  CALL_FINALLY         75  'to 75'
+                  74  STORE_NAME               __all__
+
+test/2006.pyc -- 
+# decompile failed

@@ -1,0 +1,31 @@
+Instruction context:
+   
+ L. 676       622  LOAD_DEREF               'self'
+                 624  LOAD_METHOD              _read_object
+                 626  LOAD_FAST                'o'
+                 628  CALL_METHOD_1         1  '1 positional argument'
+                 630  LOAD_FAST                'result'
+                 632  LOAD_DEREF               'self'
+                 634  LOAD_METHOD              _read_object
+->             636_0  COME_FROM           364  '364'
+                 636  LOAD_FAST                'k'
+                 638  CALL_METHOD_1         1  '1 positional argument'
+                 640  STORE_SUBSCR     
+             642_644  JUMP_BACK           614  'to 614'
+                 646  POP_BLOCK        
+                 648  JUMP_FORWARD        656  'to 656'
+               650_0  COME_FROM           550  '550'
+Instruction context:
+   
+ L. 890       806  LOAD_FAST                'value'
+                 808  LOAD_METHOD              items
+                 810  CALL_METHOD_0         0  '0 positional arguments'
+->             812_0  COME_FROM           178  '178'
+                 812  STORE_FAST               'rootItems'
+               814_0  COME_FROM           804  '804'
+
+../test/118772.pyc -- 
+# decompile failed
+
+# file ../test/118772.pyc
+# Deparsing stopped due to parse error

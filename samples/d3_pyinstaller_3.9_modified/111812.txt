@@ -1,0 +1,93 @@
+Instruction context:
+   
+ L.   6        36  DUP_TOP          
+                  38  LOAD_NAME                ImportError
+->                40  <121>                64  ''
+                  42  POP_TOP          
+                  44  POP_TOP          
+                  46  POP_TOP          
+
+test/111812.pyc -- 
+# decompile failed
+
+# file test/111812.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   3         8  LOAD_NAME                sys
+               10  LOAD_ATTR                version_info
+               12  LOAD_CONST               (3,)
+               14  COMPARE_OP               <
+               16  POP_JUMP_IF_FALSE    68  'to 68'
+
+ L.   4        18  SETUP_FINALLY        36  'to 36'
+
+ L.   5        20  LOAD_CONST               0
+               22  LOAD_CONST               ('allocate_lock',)
+               24  IMPORT_NAME              thread
+               26  IMPORT_FROM              allocate_lock
+               28  STORE_NAME               allocate_lock
+               30  POP_TOP          
+               32  POP_BLOCK        
+               34  JUMP_FORWARD        116  'to 116'
+             36_0  COME_FROM_FINALLY    18  '18'
+
+ L.   6        36  DUP_TOP          
+               38  LOAD_NAME                ImportError
+               40  <121>                64  ''
+               42  POP_TOP          
+               44  POP_TOP          
+               46  POP_TOP          
+
+ L.   7        48  LOAD_CONST               0
+               50  LOAD_CONST               ('allocate_lock',)
+               52  IMPORT_NAME              dummy_thread
+               54  IMPORT_FROM              allocate_lock
+               56  STORE_NAME               allocate_lock
+               58  POP_TOP          
+               60  POP_EXCEPT       
+               62  JUMP_FORWARD        116  'to 116'
+               64  <48>             
+               66  JUMP_FORWARD        116  'to 116'
+             68_0  COME_FROM            16  '16'
+
+ L.   9        68  SETUP_FINALLY        86  'to 86'
+
+ L.  10        70  LOAD_CONST               0
+               72  LOAD_CONST               ('allocate_lock',)
+               74  IMPORT_NAME              _thread
+               76  IMPORT_FROM              allocate_lock
+               78  STORE_NAME               allocate_lock
+               80  POP_TOP          
+               82  POP_BLOCK        
+               84  JUMP_FORWARD        116  'to 116'
+             86_0  COME_FROM_FINALLY    68  '68'
+
+ L.  11        86  DUP_TOP          
+               88  LOAD_NAME                ImportError
+               90  <121>               114  ''
+               92  POP_TOP          
+               94  POP_TOP          
+               96  POP_TOP          
+
+ L.  12        98  LOAD_CONST               0
+              100  LOAD_CONST               ('allocate_lock',)
+              102  IMPORT_NAME              _dummy_thread
+              104  IMPORT_FROM              allocate_lock
+              106  STORE_NAME               allocate_lock
+              108  POP_TOP          
+              110  POP_EXCEPT       
+              112  JUMP_FORWARD        116  'to 116'
+              114  <48>             
+            116_0  COME_FROM           112  '112'
+            116_1  COME_FROM            84  '84'
+            116_2  COME_FROM            66  '66'
+            116_3  COME_FROM            62  '62'
+            116_4  COME_FROM            34  '34'
+
+Parse error at or near `<121>' instruction at offset 40
+

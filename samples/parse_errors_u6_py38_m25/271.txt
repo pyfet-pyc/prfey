@@ -1,0 +1,24 @@
+Instruction context:
+   
+ L. 347        84  LOAD_FAST                'module_name'
+                  86  POP_BLOCK        
+->                88  ROT_TWO          
+                  90  POP_TOP          
+                  92  RETURN_VALUE     
+                94_0  COME_FROM            82  '82'
+                  94  POP_BLOCK        
+                  96  JUMP_BACK            38  'to 38'
+                98_0  COME_FROM_FINALLY    64  '64'
+Instruction context:
+   
+ L.1472         8  LOAD_CLOSURE             'items'
+                  10  BUILD_TUPLE_1         1 
+->                12  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  14  LOAD_STR                 '_Unpickler.load_dict.<locals>.<dictcomp>'
+                  16  MAKE_FUNCTION_8          'closure'
+
+test/271.pyc -- 
+# decompile failed
+
+# file test/271.pyc
+# Deparsing stopped due to parse error

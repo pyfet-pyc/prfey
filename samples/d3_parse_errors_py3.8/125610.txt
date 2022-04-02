@@ -1,0 +1,22 @@
+Instruction context:
+   
+ L.  25        32  LOAD_GLOBAL              win32api
+                  34  LOAD_METHOD              RegQueryValue
+                  36  LOAD_GLOBAL              win32con
+                  38  LOAD_ATTR                HKEY_CLASSES_ROOT
+                  40  LOAD_STR                 'Interface\\%s'
+                  42  LOAD_FAST                'iid'
+                  44  BINARY_MODULO    
+                  46  CALL_METHOD_2         2  ''
+                  48  POP_BLOCK        
+->                50  POP_BLOCK        
+                  52  ROT_FOUR         
+                  54  POP_EXCEPT       
+                  56  RETURN_VALUE     
+                58_0  COME_FROM_FINALLY    30  '30'
+
+../test/125610.pyc -- 
+# decompile failed
+
+# file ../test/125610.pyc
+# Deparsing stopped due to parse error

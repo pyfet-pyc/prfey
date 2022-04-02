@@ -1,0 +1,158 @@
+Instruction context:
+   
+ L.   7         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('Header', 'decode_header', 'make_header')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101219.pyc -- 
+# decompile failed
+
+# file test/101219.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_STR                 'Header encoding and decoding functionality.'
+                2  STORE_NAME               __doc__
+
+ L.   7         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('Header', 'decode_header', 'make_header')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  13        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              re
+               18  STORE_NAME               re
+
+ L.  14        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              binascii
+               26  STORE_NAME               binascii
+
+ L.  16        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME_ATTR         email.quoprimime
+               34  STORE_NAME               email
+
+ L.  17        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME_ATTR         email.base64mime
+               42  STORE_NAME               email
+
+ L.  19        44  LOAD_CONST               0
+               46  LOAD_CONST               ('HeaderParseError',)
+               48  IMPORT_NAME_ATTR         email.errors
+               50  IMPORT_FROM              HeaderParseError
+               52  STORE_NAME               HeaderParseError
+               54  POP_TOP          
+
+ L.  20        56  LOAD_CONST               0
+               58  LOAD_CONST               ('charset',)
+               60  IMPORT_NAME              email
+               62  IMPORT_FROM              charset
+               64  STORE_NAME               _charset
+               66  POP_TOP          
+
+ L.  21        68  LOAD_NAME                _charset
+               70  LOAD_ATTR                Charset
+               72  STORE_NAME               Charset
+
+ L.  23        74  LOAD_STR                 '\n'
+               76  STORE_NAME               NL
+
+ L.  24        78  LOAD_STR                 ' '
+               80  STORE_NAME               SPACE
+
+ L.  25        82  LOAD_CONST               b' '
+               84  STORE_NAME               BSPACE
+
+ L.  26        86  LOAD_STR                 '        '
+               88  STORE_NAME               SPACE8
+
+ L.  27        90  LOAD_STR                 ''
+               92  STORE_NAME               EMPTYSTRING
+
+ L.  28        94  LOAD_CONST               78
+               96  STORE_NAME               MAXLINELEN
+
+ L.  29        98  LOAD_STR                 ' \t'
+              100  STORE_NAME               FWS
+
+ L.  31       102  LOAD_NAME                Charset
+              104  LOAD_STR                 'us-ascii'
+              106  CALL_FUNCTION_1       1  ''
+              108  STORE_NAME               USASCII
+
+ L.  32       110  LOAD_NAME                Charset
+              112  LOAD_STR                 'utf-8'
+              114  CALL_FUNCTION_1       1  ''
+              116  STORE_NAME               UTF8
+
+ L.  35       118  LOAD_NAME                re
+              120  LOAD_METHOD              compile
+              122  LOAD_STR                 '\n  =\\?                   # literal =?\n  (?P<charset>[^?]*?)   # non-greedy up to the next ? is the charset\n  \\?                    # literal ?\n  (?P<encoding>[qQbB])  # either a "q" or a "b", case insensitive\n  \\?                    # literal ?\n  (?P<encoded>.*?)      # non-greedy up to the next ?= is the encoded string\n  \\?=                   # literal ?=\n  '
+
+ L.  43       124  LOAD_NAME                re
+              126  LOAD_ATTR                VERBOSE
+              128  LOAD_NAME                re
+              130  LOAD_ATTR                MULTILINE
+              132  BINARY_OR        
+
+ L.  35       134  CALL_METHOD_2         2  ''
+              136  STORE_NAME               ecre
+
+ L.  48       138  LOAD_NAME                re
+              140  LOAD_METHOD              compile
+              142  LOAD_STR                 '[\\041-\\176]+:$'
+              144  CALL_METHOD_1         1  ''
+              146  STORE_NAME               fcre
+
+ L.  52       148  LOAD_NAME                re
+              150  LOAD_METHOD              compile
+              152  LOAD_STR                 '\\n[^ \\t]+:'
+              154  CALL_METHOD_1         1  ''
+              156  STORE_NAME               _embedded_header
+
+ L.  57       158  LOAD_NAME                email
+              160  LOAD_ATTR                quoprimime
+              162  LOAD_ATTR                _max_append
+              164  STORE_NAME               _max_append
+
+ L.  61       166  LOAD_CODE                <code_object decode_header>
+              168  LOAD_STR                 'decode_header'
+              170  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              172  STORE_NAME               decode_header
+
+ L. 156       174  LOAD_CONST               (None, None, ' ')
+              176  LOAD_CODE                <code_object make_header>
+              178  LOAD_STR                 'make_header'
+              180  MAKE_FUNCTION_1          'default'
+              182  STORE_NAME               make_header
+
+ L. 179       184  LOAD_BUILD_CLASS 
+              186  LOAD_CODE                <code_object Header>
+              188  LOAD_STR                 'Header'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  LOAD_STR                 'Header'
+              194  CALL_FUNCTION_2       2  ''
+              196  STORE_NAME               Header
+
+ L. 413       198  LOAD_BUILD_CLASS 
+              200  LOAD_CODE                <code_object _ValueFormatter>
+              202  LOAD_STR                 '_ValueFormatter'
+              204  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              206  LOAD_STR                 '_ValueFormatter'
+              208  CALL_FUNCTION_2       2  ''
+              210  STORE_NAME               _ValueFormatter
+
+ L. 541       212  LOAD_BUILD_CLASS 
+              214  LOAD_CODE                <code_object _Accumulator>
+              216  LOAD_STR                 '_Accumulator'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  LOAD_STR                 '_Accumulator'
+              222  LOAD_NAME                list
+              224  CALL_FUNCTION_3       3  ''
+              226  STORE_NAME               _Accumulator
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

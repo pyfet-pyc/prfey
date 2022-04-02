@@ -1,0 +1,40 @@
+Instruction context:
+   
+ L.  79        16  DUP_TOP          
+                  18  LOAD_GLOBAL              KeyError
+->                20  <121>                50  ''
+                  22  POP_TOP          
+                  24  POP_TOP          
+                  26  POP_TOP          
+Instruction context:
+   
+ L. 282       140  LOAD_FAST                'self'
+                 142  LOAD_ATTR                _backend
+                 144  LOAD_METHOD              _bn_to_int
+                 146  LOAD_FAST                'bn_y'
+                 148  CALL_METHOD_1         1  ''
+                 150  STORE_FAST               'y'
+                 152  POP_BLOCK        
+                 154  LOAD_CONST               None
+->               156  DUP_TOP          
+                 158  DUP_TOP          
+                 160  CALL_FUNCTION_3       3  ''
+                 162  POP_TOP          
+                 164  JUMP_FORWARD        182  'to 182'
+               166_0  COME_FROM_WITH       64  '64'
+                 166  <49>             
+                 168  POP_JUMP_IF_TRUE    172  'to 172'
+                 170  <48>             
+               172_0  COME_FROM           168  '168'
+                 172  POP_TOP          
+                 174  POP_TOP          
+                 176  POP_TOP          
+                 178  POP_EXCEPT       
+                 180  POP_TOP          
+               182_0  COME_FROM           164  '164'
+
+test/103842.pyc -- 
+# decompile failed
+
+# file test/103842.pyc
+# Deparsing stopped due to parse error

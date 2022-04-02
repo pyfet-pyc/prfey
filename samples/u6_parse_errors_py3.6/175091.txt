@@ -1,0 +1,32 @@
+Instruction context:
+   
+ L. 299       258  LOAD_CONST               True
+                 260  LOAD_FAST                'paymntack'
+                 262  LOAD_ATTR                memo
+                 264  BUILD_TUPLE_2         2 
+                 266  RETURN_VALUE     
+               268_0  COME_FROM_ASYNC_WITH   172  '172'
+                 268  WITH_CLEANUP_START
+                 270  GET_AWAITABLE    
+                 272  LOAD_CONST               None
+                 274  YIELD_FROM       
+                 276  WITH_CLEANUP_FINISH
+                 278  END_FINALLY      
+                 280  POP_BLOCK        
+                 282  LOAD_CONST               None
+               284_0  COME_FROM_ASYNC_WITH   144  '144'
+                 284  WITH_CLEANUP_START
+                 286  GET_AWAITABLE    
+                 288  LOAD_CONST               None
+                 290  YIELD_FROM       
+                 292  WITH_CLEANUP_FINISH
+                 294  END_FINALLY      
+                 296  POP_BLOCK        
+->               298  JUMP_FORWARD        404  'to 404'
+               300_0  COME_FROM_EXCEPT    114  '114'
+
+../test/175091.pyc -- 
+# decompile failed
+
+# file ../test/175091.pyc
+# Deparsing stopped due to parse error

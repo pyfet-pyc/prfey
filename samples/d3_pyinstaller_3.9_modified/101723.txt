@@ -1,0 +1,228 @@
+
+# file test/101723.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Implementation of JSONEncoder\n'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              re
+               10  STORE_NAME               re
+
+ L.   5        12  SETUP_FINALLY        30  'to 30'
+
+ L.   6        14  LOAD_CONST               0
+               16  LOAD_CONST               ('encode_basestring_ascii',)
+               18  IMPORT_NAME              _json
+               20  IMPORT_FROM              encode_basestring_ascii
+               22  STORE_NAME               c_encode_basestring_ascii
+               24  POP_TOP          
+               26  POP_BLOCK        
+               28  JUMP_FORWARD         52  'to 52'
+             30_0  COME_FROM_FINALLY    12  '12'
+
+ L.   7        30  DUP_TOP          
+               32  LOAD_NAME                ImportError
+               34  <121>                50  ''
+               36  POP_TOP          
+               38  POP_TOP          
+               40  POP_TOP          
+
+ L.   8        42  LOAD_CONST               None
+               44  STORE_NAME               c_encode_basestring_ascii
+               46  POP_EXCEPT       
+               48  JUMP_FORWARD         52  'to 52'
+               50  <48>             
+             52_0  COME_FROM            48  '48'
+             52_1  COME_FROM            28  '28'
+
+ L.   9        52  SETUP_FINALLY        70  'to 70'
+
+ L.  10        54  LOAD_CONST               0
+               56  LOAD_CONST               ('encode_basestring',)
+               58  IMPORT_NAME              _json
+               60  IMPORT_FROM              encode_basestring
+               62  STORE_NAME               c_encode_basestring
+               64  POP_TOP          
+               66  POP_BLOCK        
+               68  JUMP_FORWARD         92  'to 92'
+             70_0  COME_FROM_FINALLY    52  '52'
+
+ L.  11        70  DUP_TOP          
+               72  LOAD_NAME                ImportError
+               74  <121>                90  ''
+               76  POP_TOP          
+               78  POP_TOP          
+               80  POP_TOP          
+
+ L.  12        82  LOAD_CONST               None
+               84  STORE_NAME               c_encode_basestring
+               86  POP_EXCEPT       
+               88  JUMP_FORWARD         92  'to 92'
+               90  <48>             
+             92_0  COME_FROM            88  '88'
+             92_1  COME_FROM            68  '68'
+
+ L.  13        92  SETUP_FINALLY       110  'to 110'
+
+ L.  14        94  LOAD_CONST               0
+               96  LOAD_CONST               ('make_encoder',)
+               98  IMPORT_NAME              _json
+              100  IMPORT_FROM              make_encoder
+              102  STORE_NAME               c_make_encoder
+              104  POP_TOP          
+              106  POP_BLOCK        
+              108  JUMP_FORWARD        132  'to 132'
+            110_0  COME_FROM_FINALLY    92  '92'
+
+ L.  15       110  DUP_TOP          
+              112  LOAD_NAME                ImportError
+              114  <121>               130  ''
+              116  POP_TOP          
+              118  POP_TOP          
+              120  POP_TOP          
+
+ L.  16       122  LOAD_CONST               None
+              124  STORE_NAME               c_make_encoder
+              126  POP_EXCEPT       
+              128  JUMP_FORWARD        132  'to 132'
+              130  <48>             
+            132_0  COME_FROM           128  '128'
+            132_1  COME_FROM           108  '108'
+
+ L.  18       132  LOAD_NAME                re
+              134  LOAD_METHOD              compile
+              136  LOAD_STR                 '[\\x00-\\x1f\\\\"\\b\\f\\n\\r\\t]'
+              138  CALL_METHOD_1         1  ''
+              140  STORE_NAME               ESCAPE
+
+ L.  19       142  LOAD_NAME                re
+              144  LOAD_METHOD              compile
+              146  LOAD_STR                 '([\\\\"]|[^\\ -~])'
+              148  CALL_METHOD_1         1  ''
+              150  STORE_NAME               ESCAPE_ASCII
+
+ L.  20       152  LOAD_NAME                re
+              154  LOAD_METHOD              compile
+              156  LOAD_CONST               b'[\x80-\xff]'
+              158  CALL_METHOD_1         1  ''
+              160  STORE_NAME               HAS_UTF8
+
+ L.  22       162  LOAD_STR                 '\\\\'
+
+ L.  23       164  LOAD_STR                 '\\"'
+
+ L.  24       166  LOAD_STR                 '\\b'
+
+ L.  25       168  LOAD_STR                 '\\f'
+
+ L.  26       170  LOAD_STR                 '\\n'
+
+ L.  27       172  LOAD_STR                 '\\r'
+
+ L.  28       174  LOAD_STR                 '\\t'
+
+ L.  21       176  LOAD_CONST               ('\\', '"', '\x08', '\x0c', '\n', '\r', '\t')
+              178  BUILD_CONST_KEY_MAP_7     7 
+              180  STORE_NAME               ESCAPE_DCT
+
+ L.  30       182  LOAD_NAME                range
+              184  LOAD_CONST               32
+              186  CALL_FUNCTION_1       1  ''
+              188  GET_ITER         
+            190_0  COME_FROM           216  '216'
+              190  FOR_ITER            218  'to 218'
+              192  STORE_NAME               i
+
+ L.  31       194  LOAD_NAME                ESCAPE_DCT
+              196  LOAD_METHOD              setdefault
+              198  LOAD_NAME                chr
+              200  LOAD_NAME                i
+              202  CALL_FUNCTION_1       1  ''
+              204  LOAD_STR                 '\\u{0:04x}'
+              206  LOAD_METHOD              format
+              208  LOAD_NAME                i
+              210  CALL_METHOD_1         1  ''
+              212  CALL_METHOD_2         2  ''
+              214  POP_TOP          
+              216  JUMP_BACK           190  'to 190'
+            218_0  COME_FROM           190  '190'
+
+ L.  34       218  LOAD_NAME                float
+              220  LOAD_STR                 'inf'
+              222  CALL_FUNCTION_1       1  ''
+              224  STORE_NAME               INFINITY
+
+ L.  36       226  LOAD_CODE                <code_object py_encode_basestring>
+              228  LOAD_STR                 'py_encode_basestring'
+              230  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              232  STORE_NAME               py_encode_basestring
+
+ L.  45       234  LOAD_NAME                c_encode_basestring
+              236  JUMP_IF_TRUE_OR_POP   240  'to 240'
+              238  LOAD_NAME                py_encode_basestring
+            240_0  COME_FROM           236  '236'
+              240  STORE_NAME               encode_basestring
+
+ L.  48       242  LOAD_CODE                <code_object py_encode_basestring_ascii>
+              244  LOAD_STR                 'py_encode_basestring_ascii'
+              246  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              248  STORE_NAME               py_encode_basestring_ascii
+
+ L.  71       250  LOAD_NAME                c_encode_basestring_ascii
+          252_254  JUMP_IF_TRUE_OR_POP   258  'to 258'
+              256  LOAD_NAME                py_encode_basestring_ascii
+            258_0  COME_FROM           252  '252'
+
+ L.  70       258  STORE_NAME               encode_basestring_ascii
+
+ L.  73       260  LOAD_BUILD_CLASS 
+              262  LOAD_CODE                <code_object JSONEncoder>
+              264  LOAD_STR                 'JSONEncoder'
+              266  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              268  LOAD_STR                 'JSONEncoder'
+              270  LOAD_NAME                object
+              272  CALL_FUNCTION_3       3  ''
+              274  STORE_NAME               JSONEncoder
+
+ L. 262       276  LOAD_NAME                ValueError
+
+ L. 263       278  LOAD_NAME                dict
+
+ L. 264       280  LOAD_NAME                float
+
+ L. 265       282  LOAD_NAME                id
+
+ L. 266       284  LOAD_NAME                int
+
+ L. 267       286  LOAD_NAME                isinstance
+
+ L. 268       288  LOAD_NAME                list
+
+ L. 269       290  LOAD_NAME                str
+
+ L. 270       292  LOAD_NAME                tuple
+
+ L. 271       294  LOAD_NAME                int
+              296  LOAD_ATTR                __repr__
+
+ L. 259       298  BUILD_TUPLE_10       10 
+              300  LOAD_CODE                <code_object _make_iterencode>
+              302  LOAD_STR                 '_make_iterencode'
+              304  MAKE_FUNCTION_1          'default'
+              306  STORE_NAME               _make_iterencode
+
+Parse error at or near `<121>' instruction at offset 34
+
+Instruction context:
+   
+ L.   7        30  DUP_TOP          
+                  32  LOAD_NAME                ImportError
+->                34  <121>                50  ''
+                  36  POP_TOP          
+                  38  POP_TOP          
+                  40  POP_TOP          
+
+test/101723.pyc -- 
+# decompile failed

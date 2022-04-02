@@ -1,0 +1,685 @@
+
+# file test/101111.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nRead and write ZIP files.\n\nXXX references to utf-8 need further investigation.\n'
+                2  STORE_NAME               __doc__
+
+ L.   6         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              binascii
+               10  STORE_NAME               binascii
+
+ L.   7        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME_ATTR         importlib.util
+               18  STORE_NAME               importlib
+
+ L.   8        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              io
+               26  STORE_NAME               io
+
+ L.   9        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              itertools
+               34  STORE_NAME               itertools
+
+ L.  10        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              os
+               42  STORE_NAME               os
+
+ L.  11        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              posixpath
+               50  STORE_NAME               posixpath
+
+ L.  12        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              shutil
+               58  STORE_NAME               shutil
+
+ L.  13        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              stat
+               66  STORE_NAME               stat
+
+ L.  14        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              struct
+               74  STORE_NAME               struct
+
+ L.  15        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME              sys
+               82  STORE_NAME               sys
+
+ L.  16        84  LOAD_CONST               0
+               86  LOAD_CONST               None
+               88  IMPORT_NAME              threading
+               90  STORE_NAME               threading
+
+ L.  17        92  LOAD_CONST               0
+               94  LOAD_CONST               None
+               96  IMPORT_NAME              time
+               98  STORE_NAME               time
+
+ L.  18       100  LOAD_CONST               0
+              102  LOAD_CONST               None
+              104  IMPORT_NAME              contextlib
+              106  STORE_NAME               contextlib
+
+ L.  20       108  SETUP_FINALLY       128  'to 128'
+
+ L.  21       110  LOAD_CONST               0
+              112  LOAD_CONST               None
+              114  IMPORT_NAME              zlib
+              116  STORE_NAME               zlib
+
+ L.  22       118  LOAD_NAME                zlib
+              120  LOAD_ATTR                crc32
+              122  STORE_NAME               crc32
+              124  POP_BLOCK        
+              126  JUMP_FORWARD        156  'to 156'
+            128_0  COME_FROM_FINALLY   108  '108'
+
+ L.  23       128  DUP_TOP          
+              130  LOAD_NAME                ImportError
+              132  <121>               154  ''
+              134  POP_TOP          
+              136  POP_TOP          
+              138  POP_TOP          
+
+ L.  24       140  LOAD_CONST               None
+              142  STORE_NAME               zlib
+
+ L.  25       144  LOAD_NAME                binascii
+              146  LOAD_ATTR                crc32
+              148  STORE_NAME               crc32
+              150  POP_EXCEPT       
+              152  JUMP_FORWARD        156  'to 156'
+              154  <48>             
+            156_0  COME_FROM           152  '152'
+            156_1  COME_FROM           126  '126'
+
+ L.  27       156  SETUP_FINALLY       170  'to 170'
+
+ L.  28       158  LOAD_CONST               0
+              160  LOAD_CONST               None
+              162  IMPORT_NAME              bz2
+              164  STORE_NAME               bz2
+              166  POP_BLOCK        
+              168  JUMP_FORWARD        192  'to 192'
+            170_0  COME_FROM_FINALLY   156  '156'
+
+ L.  29       170  DUP_TOP          
+              172  LOAD_NAME                ImportError
+              174  <121>               190  ''
+              176  POP_TOP          
+              178  POP_TOP          
+              180  POP_TOP          
+
+ L.  30       182  LOAD_CONST               None
+              184  STORE_NAME               bz2
+              186  POP_EXCEPT       
+              188  JUMP_FORWARD        192  'to 192'
+              190  <48>             
+            192_0  COME_FROM           188  '188'
+            192_1  COME_FROM           168  '168'
+
+ L.  32       192  SETUP_FINALLY       206  'to 206'
+
+ L.  33       194  LOAD_CONST               0
+              196  LOAD_CONST               None
+              198  IMPORT_NAME              lzma
+              200  STORE_NAME               lzma
+              202  POP_BLOCK        
+              204  JUMP_FORWARD        228  'to 228'
+            206_0  COME_FROM_FINALLY   192  '192'
+
+ L.  34       206  DUP_TOP          
+              208  LOAD_NAME                ImportError
+              210  <121>               226  ''
+              212  POP_TOP          
+              214  POP_TOP          
+              216  POP_TOP          
+
+ L.  35       218  LOAD_CONST               None
+              220  STORE_NAME               lzma
+              222  POP_EXCEPT       
+              224  JUMP_FORWARD        228  'to 228'
+              226  <48>             
+            228_0  COME_FROM           224  '224'
+            228_1  COME_FROM           204  '204'
+
+ L.  37       228  BUILD_LIST_0          0 
+              230  LOAD_CONST               ('BadZipFile', 'BadZipfile', 'error', 'ZIP_STORED', 'ZIP_DEFLATED', 'ZIP_BZIP2', 'ZIP_LZMA', 'is_zipfile', 'ZipInfo', 'ZipFile', 'PyZipFile', 'LargeZipFile', 'Path')
+              232  CALL_FINALLY        235  'to 235'
+              234  STORE_NAME               __all__
+
+ L.  42       236  LOAD_BUILD_CLASS 
+              238  LOAD_CODE                <code_object BadZipFile>
+              240  LOAD_STR                 'BadZipFile'
+              242  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              244  LOAD_STR                 'BadZipFile'
+              246  LOAD_NAME                Exception
+              248  CALL_FUNCTION_3       3  ''
+              250  STORE_NAME               BadZipFile
+
+ L.  46       252  LOAD_BUILD_CLASS 
+              254  LOAD_CODE                <code_object LargeZipFile>
+              256  LOAD_STR                 'LargeZipFile'
+              258  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              260  LOAD_STR                 'LargeZipFile'
+              262  LOAD_NAME                Exception
+              264  CALL_FUNCTION_3       3  ''
+              266  STORE_NAME               LargeZipFile
+
+ L.  52       268  LOAD_NAME                BadZipFile
+              270  DUP_TOP          
+              272  STORE_NAME               error
+              274  STORE_NAME               BadZipfile
+
+ L.  55       276  LOAD_CONST               2147483647
+              278  STORE_NAME               ZIP64_LIMIT
+
+ L.  56       280  LOAD_CONST               65535
+              282  STORE_NAME               ZIP_FILECOUNT_LIMIT
+
+ L.  57       284  LOAD_CONST               65535
+              286  STORE_NAME               ZIP_MAX_COMMENT
+
+ L.  60       288  LOAD_CONST               0
+              290  STORE_NAME               ZIP_STORED
+
+ L.  61       292  LOAD_CONST               8
+              294  STORE_NAME               ZIP_DEFLATED
+
+ L.  62       296  LOAD_CONST               12
+              298  STORE_NAME               ZIP_BZIP2
+
+ L.  63       300  LOAD_CONST               14
+              302  STORE_NAME               ZIP_LZMA
+
+ L.  66       304  LOAD_CONST               20
+              306  STORE_NAME               DEFAULT_VERSION
+
+ L.  67       308  LOAD_CONST               45
+              310  STORE_NAME               ZIP64_VERSION
+
+ L.  68       312  LOAD_CONST               46
+              314  STORE_NAME               BZIP2_VERSION
+
+ L.  69       316  LOAD_CONST               63
+              318  STORE_NAME               LZMA_VERSION
+
+ L.  71       320  LOAD_CONST               63
+              322  STORE_NAME               MAX_EXTRACT_VERSION
+
+ L.  81       324  LOAD_CONST               b'<4s4H2LH'
+              326  STORE_NAME               structEndArchive
+
+ L.  82       328  LOAD_CONST               b'PK\x05\x06'
+              330  STORE_NAME               stringEndArchive
+
+ L.  83       332  LOAD_NAME                struct
+              334  LOAD_METHOD              calcsize
+              336  LOAD_NAME                structEndArchive
+              338  CALL_METHOD_1         1  ''
+              340  STORE_NAME               sizeEndCentDir
+
+ L.  85       342  LOAD_CONST               0
+              344  STORE_NAME               _ECD_SIGNATURE
+
+ L.  86       346  LOAD_CONST               1
+              348  STORE_NAME               _ECD_DISK_NUMBER
+
+ L.  87       350  LOAD_CONST               2
+              352  STORE_NAME               _ECD_DISK_START
+
+ L.  88       354  LOAD_CONST               3
+              356  STORE_NAME               _ECD_ENTRIES_THIS_DISK
+
+ L.  89       358  LOAD_CONST               4
+              360  STORE_NAME               _ECD_ENTRIES_TOTAL
+
+ L.  90       362  LOAD_CONST               5
+              364  STORE_NAME               _ECD_SIZE
+
+ L.  91       366  LOAD_CONST               6
+              368  STORE_NAME               _ECD_OFFSET
+
+ L.  92       370  LOAD_CONST               7
+              372  STORE_NAME               _ECD_COMMENT_SIZE
+
+ L.  95       374  LOAD_CONST               8
+              376  STORE_NAME               _ECD_COMMENT
+
+ L.  96       378  LOAD_CONST               9
+              380  STORE_NAME               _ECD_LOCATION
+
+ L. 100       382  LOAD_STR                 '<4s4B4HL2L5H2L'
+              384  STORE_NAME               structCentralDir
+
+ L. 101       386  LOAD_CONST               b'PK\x01\x02'
+              388  STORE_NAME               stringCentralDir
+
+ L. 102       390  LOAD_NAME                struct
+              392  LOAD_METHOD              calcsize
+              394  LOAD_NAME                structCentralDir
+              396  CALL_METHOD_1         1  ''
+              398  STORE_NAME               sizeCentralDir
+
+ L. 105       400  LOAD_CONST               0
+              402  STORE_NAME               _CD_SIGNATURE
+
+ L. 106       404  LOAD_CONST               1
+              406  STORE_NAME               _CD_CREATE_VERSION
+
+ L. 107       408  LOAD_CONST               2
+              410  STORE_NAME               _CD_CREATE_SYSTEM
+
+ L. 108       412  LOAD_CONST               3
+              414  STORE_NAME               _CD_EXTRACT_VERSION
+
+ L. 109       416  LOAD_CONST               4
+              418  STORE_NAME               _CD_EXTRACT_SYSTEM
+
+ L. 110       420  LOAD_CONST               5
+              422  STORE_NAME               _CD_FLAG_BITS
+
+ L. 111       424  LOAD_CONST               6
+              426  STORE_NAME               _CD_COMPRESS_TYPE
+
+ L. 112       428  LOAD_CONST               7
+              430  STORE_NAME               _CD_TIME
+
+ L. 113       432  LOAD_CONST               8
+              434  STORE_NAME               _CD_DATE
+
+ L. 114       436  LOAD_CONST               9
+              438  STORE_NAME               _CD_CRC
+
+ L. 115       440  LOAD_CONST               10
+              442  STORE_NAME               _CD_COMPRESSED_SIZE
+
+ L. 116       444  LOAD_CONST               11
+              446  STORE_NAME               _CD_UNCOMPRESSED_SIZE
+
+ L. 117       448  LOAD_CONST               12
+              450  STORE_NAME               _CD_FILENAME_LENGTH
+
+ L. 118       452  LOAD_CONST               13
+              454  STORE_NAME               _CD_EXTRA_FIELD_LENGTH
+
+ L. 119       456  LOAD_CONST               14
+              458  STORE_NAME               _CD_COMMENT_LENGTH
+
+ L. 120       460  LOAD_CONST               15
+              462  STORE_NAME               _CD_DISK_NUMBER_START
+
+ L. 121       464  LOAD_CONST               16
+              466  STORE_NAME               _CD_INTERNAL_FILE_ATTRIBUTES
+
+ L. 122       468  LOAD_CONST               17
+              470  STORE_NAME               _CD_EXTERNAL_FILE_ATTRIBUTES
+
+ L. 123       472  LOAD_CONST               18
+              474  STORE_NAME               _CD_LOCAL_HEADER_OFFSET
+
+ L. 127       476  LOAD_STR                 '<4s2B4HL2L2H'
+              478  STORE_NAME               structFileHeader
+
+ L. 128       480  LOAD_CONST               b'PK\x03\x04'
+              482  STORE_NAME               stringFileHeader
+
+ L. 129       484  LOAD_NAME                struct
+              486  LOAD_METHOD              calcsize
+              488  LOAD_NAME                structFileHeader
+              490  CALL_METHOD_1         1  ''
+              492  STORE_NAME               sizeFileHeader
+
+ L. 131       494  LOAD_CONST               0
+              496  STORE_NAME               _FH_SIGNATURE
+
+ L. 132       498  LOAD_CONST               1
+              500  STORE_NAME               _FH_EXTRACT_VERSION
+
+ L. 133       502  LOAD_CONST               2
+              504  STORE_NAME               _FH_EXTRACT_SYSTEM
+
+ L. 134       506  LOAD_CONST               3
+              508  STORE_NAME               _FH_GENERAL_PURPOSE_FLAG_BITS
+
+ L. 135       510  LOAD_CONST               4
+              512  STORE_NAME               _FH_COMPRESSION_METHOD
+
+ L. 136       514  LOAD_CONST               5
+              516  STORE_NAME               _FH_LAST_MOD_TIME
+
+ L. 137       518  LOAD_CONST               6
+              520  STORE_NAME               _FH_LAST_MOD_DATE
+
+ L. 138       522  LOAD_CONST               7
+              524  STORE_NAME               _FH_CRC
+
+ L. 139       526  LOAD_CONST               8
+              528  STORE_NAME               _FH_COMPRESSED_SIZE
+
+ L. 140       530  LOAD_CONST               9
+              532  STORE_NAME               _FH_UNCOMPRESSED_SIZE
+
+ L. 141       534  LOAD_CONST               10
+              536  STORE_NAME               _FH_FILENAME_LENGTH
+
+ L. 142       538  LOAD_CONST               11
+              540  STORE_NAME               _FH_EXTRA_FIELD_LENGTH
+
+ L. 145       542  LOAD_STR                 '<4sLQL'
+              544  STORE_NAME               structEndArchive64Locator
+
+ L. 146       546  LOAD_CONST               b'PK\x06\x07'
+              548  STORE_NAME               stringEndArchive64Locator
+
+ L. 147       550  LOAD_NAME                struct
+              552  LOAD_METHOD              calcsize
+              554  LOAD_NAME                structEndArchive64Locator
+              556  CALL_METHOD_1         1  ''
+              558  STORE_NAME               sizeEndCentDir64Locator
+
+ L. 151       560  LOAD_STR                 '<4sQ2H2L4Q'
+              562  STORE_NAME               structEndArchive64
+
+ L. 152       564  LOAD_CONST               b'PK\x06\x06'
+              566  STORE_NAME               stringEndArchive64
+
+ L. 153       568  LOAD_NAME                struct
+              570  LOAD_METHOD              calcsize
+              572  LOAD_NAME                structEndArchive64
+              574  CALL_METHOD_1         1  ''
+              576  STORE_NAME               sizeEndCentDir64
+
+ L. 155       578  LOAD_CONST               0
+              580  STORE_NAME               _CD64_SIGNATURE
+
+ L. 156       582  LOAD_CONST               1
+              584  STORE_NAME               _CD64_DIRECTORY_RECSIZE
+
+ L. 157       586  LOAD_CONST               2
+              588  STORE_NAME               _CD64_CREATE_VERSION
+
+ L. 158       590  LOAD_CONST               3
+              592  STORE_NAME               _CD64_EXTRACT_VERSION
+
+ L. 159       594  LOAD_CONST               4
+              596  STORE_NAME               _CD64_DISK_NUMBER
+
+ L. 160       598  LOAD_CONST               5
+              600  STORE_NAME               _CD64_DISK_NUMBER_START
+
+ L. 161       602  LOAD_CONST               6
+              604  STORE_NAME               _CD64_NUMBER_ENTRIES_THIS_DISK
+
+ L. 162       606  LOAD_CONST               7
+              608  STORE_NAME               _CD64_NUMBER_ENTRIES_TOTAL
+
+ L. 163       610  LOAD_CONST               8
+              612  STORE_NAME               _CD64_DIRECTORY_SIZE
+
+ L. 164       614  LOAD_CONST               9
+              616  STORE_NAME               _CD64_OFFSET_START_CENTDIR
+
+ L. 166       618  LOAD_CONST               134695760
+              620  STORE_NAME               _DD_SIGNATURE
+
+ L. 168       622  LOAD_NAME                struct
+              624  LOAD_METHOD              Struct
+              626  LOAD_STR                 '<HH'
+              628  CALL_METHOD_1         1  ''
+              630  STORE_NAME               _EXTRA_FIELD_STRUCT
+
+ L. 170       632  LOAD_CODE                <code_object _strip_extra>
+              634  LOAD_STR                 '_strip_extra'
+              636  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              638  STORE_NAME               _strip_extra
+
+ L. 189       640  LOAD_CODE                <code_object _check_zipfile>
+              642  LOAD_STR                 '_check_zipfile'
+              644  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              646  STORE_NAME               _check_zipfile
+
+ L. 197       648  LOAD_CODE                <code_object is_zipfile>
+              650  LOAD_STR                 'is_zipfile'
+              652  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              654  STORE_NAME               is_zipfile
+
+ L. 213       656  LOAD_CODE                <code_object _EndRecData64>
+              658  LOAD_STR                 '_EndRecData64'
+              660  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              662  STORE_NAME               _EndRecData64
+
+ L. 256       664  LOAD_CODE                <code_object _EndRecData>
+              666  LOAD_STR                 '_EndRecData'
+              668  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              670  STORE_NAME               _EndRecData
+
+ L. 317       672  LOAD_BUILD_CLASS 
+              674  LOAD_CODE                <code_object ZipInfo>
+              676  LOAD_STR                 'ZipInfo'
+              678  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              680  LOAD_STR                 'ZipInfo'
+              682  LOAD_NAME                object
+              684  CALL_FUNCTION_3       3  ''
+              686  STORE_NAME               ZipInfo
+
+ L. 536       688  LOAD_CONST               None
+              690  STORE_GLOBAL             _crctable
+
+ L. 537       692  LOAD_CODE                <code_object _gen_crc>
+              694  LOAD_STR                 '_gen_crc'
+              696  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              698  STORE_NAME               _gen_crc
+
+ L. 553       700  LOAD_CODE                <code_object _ZipDecrypter>
+              702  LOAD_STR                 '_ZipDecrypter'
+              704  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              706  STORE_NAME               _ZipDecrypter
+
+ L. 591       708  LOAD_BUILD_CLASS 
+              710  LOAD_CODE                <code_object LZMACompressor>
+              712  LOAD_STR                 'LZMACompressor'
+              714  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              716  LOAD_STR                 'LZMACompressor'
+              718  CALL_FUNCTION_2       2  ''
+              720  STORE_NAME               LZMACompressor
+
+ L. 614       722  LOAD_BUILD_CLASS 
+              724  LOAD_CODE                <code_object LZMADecompressor>
+              726  LOAD_STR                 'LZMADecompressor'
+              728  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              730  LOAD_STR                 'LZMADecompressor'
+              732  CALL_FUNCTION_2       2  ''
+              734  STORE_NAME               LZMADecompressor
+
+ L. 643       736  LOAD_STR                 'store'
+
+ L. 644       738  LOAD_STR                 'shrink'
+
+ L. 645       740  LOAD_STR                 'reduce'
+
+ L. 646       742  LOAD_STR                 'reduce'
+
+ L. 647       744  LOAD_STR                 'reduce'
+
+ L. 648       746  LOAD_STR                 'reduce'
+
+ L. 649       748  LOAD_STR                 'implode'
+
+ L. 650       750  LOAD_STR                 'tokenize'
+
+ L. 651       752  LOAD_STR                 'deflate'
+
+ L. 652       754  LOAD_STR                 'deflate64'
+
+ L. 653       756  LOAD_STR                 'implode'
+
+ L. 654       758  LOAD_STR                 'bzip2'
+
+ L. 655       760  LOAD_STR                 'lzma'
+
+ L. 656       762  LOAD_STR                 'terse'
+
+ L. 657       764  LOAD_STR                 'lz77'
+
+ L. 658       766  LOAD_STR                 'wavpack'
+
+ L. 659       768  LOAD_STR                 'ppmd'
+
+ L. 642       770  LOAD_CONST               (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 18, 19, 97, 98)
+              772  BUILD_CONST_KEY_MAP_17    17 
+              774  STORE_NAME               compressor_names
+
+ L. 662       776  LOAD_CODE                <code_object _check_compression>
+              778  LOAD_STR                 '_check_compression'
+              780  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              782  STORE_NAME               _check_compression
+
+ L. 681       784  LOAD_CONST               (None,)
+              786  LOAD_CODE                <code_object _get_compressor>
+              788  LOAD_STR                 '_get_compressor'
+              790  MAKE_FUNCTION_1          'default'
+              792  STORE_NAME               _get_compressor
+
+ L. 697       794  LOAD_CODE                <code_object _get_decompressor>
+              796  LOAD_STR                 '_get_decompressor'
+              798  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              800  STORE_NAME               _get_decompressor
+
+ L. 715       802  LOAD_BUILD_CLASS 
+              804  LOAD_CODE                <code_object _SharedFile>
+              806  LOAD_STR                 '_SharedFile'
+              808  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              810  LOAD_STR                 '_SharedFile'
+              812  CALL_FUNCTION_2       2  ''
+              814  STORE_NAME               _SharedFile
+
+ L. 753       816  LOAD_BUILD_CLASS 
+              818  LOAD_CODE                <code_object _Tellable>
+              820  LOAD_STR                 '_Tellable'
+              822  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              824  LOAD_STR                 '_Tellable'
+              826  CALL_FUNCTION_2       2  ''
+              828  STORE_NAME               _Tellable
+
+ L. 773       830  LOAD_BUILD_CLASS 
+              832  LOAD_CODE                <code_object ZipExtFile>
+              834  LOAD_STR                 'ZipExtFile'
+              836  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              838  LOAD_STR                 'ZipExtFile'
+              840  LOAD_NAME                io
+              842  LOAD_ATTR                BufferedIOBase
+              844  CALL_FUNCTION_3       3  ''
+              846  STORE_NAME               ZipExtFile
+
+ L.1102       848  LOAD_BUILD_CLASS 
+              850  LOAD_CODE                <code_object _ZipWriteFile>
+              852  LOAD_STR                 '_ZipWriteFile'
+              854  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              856  LOAD_STR                 '_ZipWriteFile'
+              858  LOAD_NAME                io
+              860  LOAD_ATTR                BufferedIOBase
+              862  CALL_FUNCTION_3       3  ''
+              864  STORE_NAME               _ZipWriteFile
+
+ L.1180       866  LOAD_BUILD_CLASS 
+              868  LOAD_CODE                <code_object ZipFile>
+              870  LOAD_STR                 'ZipFile'
+              872  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              874  LOAD_STR                 'ZipFile'
+              876  CALL_FUNCTION_2       2  ''
+              878  STORE_NAME               ZipFile
+
+ L.1932       880  LOAD_BUILD_CLASS 
+              882  LOAD_CODE                <code_object PyZipFile>
+              884  LOAD_STR                 'PyZipFile'
+              886  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              888  LOAD_STR                 'PyZipFile'
+              890  LOAD_NAME                ZipFile
+              892  CALL_FUNCTION_3       3  ''
+              894  STORE_NAME               PyZipFile
+
+ L.2106       896  LOAD_CODE                <code_object _parents>
+              898  LOAD_STR                 '_parents'
+              900  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              902  STORE_NAME               _parents
+
+ L.2125       904  LOAD_CODE                <code_object _ancestry>
+              906  LOAD_STR                 '_ancestry'
+              908  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              910  STORE_NAME               _ancestry
+
+ L.2147       912  LOAD_NAME                dict
+              914  LOAD_ATTR                fromkeys
+              916  STORE_NAME               _dedupe
+
+ L.2151       918  LOAD_CODE                <code_object _difference>
+              920  LOAD_STR                 '_difference'
+              922  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              924  STORE_NAME               _difference
+
+ L.2159       926  LOAD_BUILD_CLASS 
+              928  LOAD_CODE                <code_object CompleteDirs>
+              930  LOAD_STR                 'CompleteDirs'
+              932  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              934  LOAD_STR                 'CompleteDirs'
+              936  LOAD_NAME                ZipFile
+              938  CALL_FUNCTION_3       3  ''
+              940  STORE_NAME               CompleteDirs
+
+ L.2209       942  LOAD_BUILD_CLASS 
+              944  LOAD_CODE                <code_object FastLookup>
+              946  LOAD_STR                 'FastLookup'
+              948  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              950  LOAD_STR                 'FastLookup'
+              952  LOAD_NAME                CompleteDirs
+              954  CALL_FUNCTION_3       3  ''
+              956  STORE_NAME               FastLookup
+
+ L.2227       958  LOAD_BUILD_CLASS 
+              960  LOAD_CODE                <code_object Path>
+              962  LOAD_STR                 'Path'
+              964  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              966  LOAD_STR                 'Path'
+              968  CALL_FUNCTION_2       2  ''
+              970  STORE_NAME               Path
+
+ L.2366       972  LOAD_CONST               (None,)
+              974  LOAD_CODE                <code_object main>
+              976  LOAD_STR                 'main'
+              978  MAKE_FUNCTION_1          'default'
+              980  STORE_NAME               main
+
+ L.2427       982  LOAD_NAME                __name__
+              984  LOAD_STR                 '__main__'
+              986  COMPARE_OP               ==
+          988_990  POP_JUMP_IF_FALSE   998  'to 998'
+
+ L.2428       992  LOAD_NAME                main
+              994  CALL_FUNCTION_0       0  ''
+              996  POP_TOP          
+            998_0  COME_FROM           988  '988'
+
+Parse error at or near `<121>' instruction at offset 132
+
+Instruction context:
+   
+ L.  23       128  DUP_TOP          
+                 130  LOAD_NAME                ImportError
+->               132  <121>               154  ''
+                 134  POP_TOP          
+                 136  POP_TOP          
+                 138  POP_TOP          
+
+test/101111.pyc -- 
+# decompile failed

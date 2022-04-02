@@ -1,0 +1,41 @@
+Instruction context:
+   
+ L.  98        12  LOAD_GLOBAL              isinstance
+                  14  LOAD_FAST                'label'
+                  16  LOAD_GLOBAL              str
+                  18  CALL_FUNCTION_2       2  ''
+                  20  POP_JUMP_IF_TRUE     26  'to 26'
+->                22  <74>             
+                  24  RAISE_VARARGS_1       1  'exception instance'
+                26_0  COME_FROM            20  '20'
+Instruction context:
+   
+ L. 147       120  LOAD_FAST                'signature'
+                 122  LOAD_STR                 'o'
+                 124  COMPARE_OP               ==
+                 126  POP_JUMP_IF_TRUE    132  'to 132'
+->               128  <74>             
+                 130  RAISE_VARARGS_1       1  'exception instance'
+               132_0  COME_FROM           126  '126'
+Instruction context:
+   
+ L. 162        12  DUP_TOP          
+                  14  LOAD_GLOBAL              ItemNotFoundException
+->                16  <121>                42  ''
+                  18  POP_TOP          
+                  20  POP_TOP          
+                  22  POP_TOP          
+Instruction context:
+   
+ L. 174        12  DUP_TOP          
+                  14  LOAD_GLOBAL              ItemNotFoundException
+->                16  <121>                28  ''
+                  18  POP_TOP          
+                  20  POP_TOP          
+                  22  POP_TOP          
+
+test/134789.pyc -- 
+# decompile failed
+
+# file test/134789.pyc
+# Deparsing stopped due to parse error

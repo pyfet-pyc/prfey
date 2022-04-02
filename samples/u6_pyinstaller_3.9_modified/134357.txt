@@ -1,0 +1,172 @@
+Instruction context:
+   
+ L.  24       176  DUP_TOP          
+                 178  LOAD_NAME                ImportError
+->               180  <121>               200  ''
+                 182  POP_TOP          
+                 184  POP_TOP          
+                 186  POP_TOP          
+
+test/134357.pyc -- 
+# decompile failed
+
+# file test/134357.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Async gunicorn worker for aiohttp.web'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              asyncio
+               10  STORE_NAME               asyncio
+
+ L.   4        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              os
+               18  STORE_NAME               os
+
+ L.   5        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              re
+               26  STORE_NAME               re
+
+ L.   6        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              signal
+               34  STORE_NAME               signal
+
+ L.   7        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              sys
+               42  STORE_NAME               sys
+
+ L.   8        44  LOAD_CONST               0
+               46  LOAD_CONST               ('FrameType',)
+               48  IMPORT_NAME              types
+               50  IMPORT_FROM              FrameType
+               52  STORE_NAME               FrameType
+               54  POP_TOP          
+
+ L.   9        56  LOAD_CONST               0
+               58  LOAD_CONST               ('Any', 'Awaitable', 'Callable', 'Optional', 'Union')
+               60  IMPORT_NAME              typing
+               62  IMPORT_FROM              Any
+               64  STORE_NAME               Any
+               66  IMPORT_FROM              Awaitable
+               68  STORE_NAME               Awaitable
+               70  IMPORT_FROM              Callable
+               72  STORE_NAME               Callable
+               74  IMPORT_FROM              Optional
+               76  STORE_NAME               Optional
+               78  IMPORT_FROM              Union
+               80  STORE_NAME               Union
+               82  POP_TOP          
+
+ L.  11        84  LOAD_CONST               0
+               86  LOAD_CONST               ('AccessLogFormat',)
+               88  IMPORT_NAME_ATTR         gunicorn.config
+               90  IMPORT_FROM              AccessLogFormat
+               92  STORE_NAME               GunicornAccessLogFormat
+               94  POP_TOP          
+
+ L.  12        96  LOAD_CONST               0
+               98  LOAD_CONST               ('base',)
+              100  IMPORT_NAME_ATTR         gunicorn.workers
+              102  IMPORT_FROM              base
+              104  STORE_NAME               base
+              106  POP_TOP          
+
+ L.  14       108  LOAD_CONST               0
+              110  LOAD_CONST               ('web',)
+              112  IMPORT_NAME              aiohttp
+              114  IMPORT_FROM              web
+              116  STORE_NAME               web
+              118  POP_TOP          
+
+ L.  16       120  LOAD_CONST               1
+              122  LOAD_CONST               ('set_result',)
+              124  IMPORT_NAME              helpers
+              126  IMPORT_FROM              set_result
+              128  STORE_NAME               set_result
+              130  POP_TOP          
+
+ L.  17       132  LOAD_CONST               1
+              134  LOAD_CONST               ('Application',)
+              136  IMPORT_NAME              web_app
+              138  IMPORT_FROM              Application
+              140  STORE_NAME               Application
+              142  POP_TOP          
+
+ L.  18       144  LOAD_CONST               1
+              146  LOAD_CONST               ('AccessLogger',)
+              148  IMPORT_NAME              web_log
+              150  IMPORT_FROM              AccessLogger
+              152  STORE_NAME               AccessLogger
+              154  POP_TOP          
+
+ L.  20       156  SETUP_FINALLY       176  'to 176'
+
+ L.  21       158  LOAD_CONST               0
+              160  LOAD_CONST               None
+              162  IMPORT_NAME              ssl
+              164  STORE_NAME               ssl
+
+ L.  23       166  LOAD_NAME                ssl
+              168  LOAD_ATTR                SSLContext
+              170  STORE_NAME               SSLContext
+              172  POP_BLOCK        
+              174  JUMP_FORWARD        202  'to 202'
+            176_0  COME_FROM_FINALLY   156  '156'
+
+ L.  24       176  DUP_TOP          
+              178  LOAD_NAME                ImportError
+              180  <121>               200  ''
+              182  POP_TOP          
+              184  POP_TOP          
+              186  POP_TOP          
+
+ L.  25       188  LOAD_CONST               None
+              190  STORE_NAME               ssl
+
+ L.  26       192  LOAD_NAME                object
+              194  STORE_NAME               SSLContext
+              196  POP_EXCEPT       
+              198  JUMP_FORWARD        202  'to 202'
+              200  <48>             
+            202_0  COME_FROM           198  '198'
+            202_1  COME_FROM           174  '174'
+
+ L.  29       202  LOAD_CONST               ('GunicornWebWorker', 'GunicornUVLoopWebWorker', 'GunicornTokioWebWorker')
+              204  STORE_NAME               __all__
+
+ L.  32       206  LOAD_BUILD_CLASS 
+              208  LOAD_CODE                <code_object GunicornWebWorker>
+              210  LOAD_STR                 'GunicornWebWorker'
+              212  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              214  LOAD_STR                 'GunicornWebWorker'
+              216  LOAD_NAME                base
+              218  LOAD_ATTR                Worker
+              220  CALL_FUNCTION_3       3  ''
+              222  STORE_NAME               GunicornWebWorker
+
+ L. 223       224  LOAD_BUILD_CLASS 
+              226  LOAD_CODE                <code_object GunicornUVLoopWebWorker>
+              228  LOAD_STR                 'GunicornUVLoopWebWorker'
+              230  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              232  LOAD_STR                 'GunicornUVLoopWebWorker'
+              234  LOAD_NAME                GunicornWebWorker
+              236  CALL_FUNCTION_3       3  ''
+              238  STORE_NAME               GunicornUVLoopWebWorker
+
+ L. 239       240  LOAD_BUILD_CLASS 
+              242  LOAD_CODE                <code_object GunicornTokioWebWorker>
+              244  LOAD_STR                 'GunicornTokioWebWorker'
+              246  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              248  LOAD_STR                 'GunicornTokioWebWorker'
+              250  LOAD_NAME                GunicornWebWorker
+              252  CALL_FUNCTION_3       3  ''
+              254  STORE_NAME               GunicornTokioWebWorker
+
+Parse error at or near `<121>' instruction at offset 180
+

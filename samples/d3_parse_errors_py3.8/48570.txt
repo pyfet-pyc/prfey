@@ -1,0 +1,26 @@
+Instruction context:
+   
+ L. 475       126  POP_BLOCK        
+                 128  POP_EXCEPT       
+->               130  CALL_FINALLY        138  'to 138'
+                 132  JUMP_BACK             0  'to 0'
+                 134  POP_BLOCK        
+                 136  BEGIN_FINALLY    
+               138_0  COME_FROM           130  '130'
+               138_1  COME_FROM_FINALLY    54  '54'
+                 138  LOAD_CONST               None
+                 140  STORE_FAST               'e'
+                 142  DELETE_FAST              'e'
+                 144  END_FINALLY      
+                 146  POP_EXCEPT       
+                 148  JUMP_FORWARD        152  'to 152'
+               150_0  COME_FROM            46  '46'
+                 150  END_FINALLY      
+               152_0  COME_FROM           148  '148'
+               152_1  COME_FROM            38  '38'
+
+../test/48570.pyc -- 
+# decompile failed
+
+# file ../test/48570.pyc
+# Deparsing stopped due to parse error

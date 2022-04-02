@@ -1,0 +1,44 @@
+Instruction context:
+   
+ L. 135       284  LOAD_FAST                'error_case'
+                 286  ROT_FOUR         
+->               288  POP_BLOCK        
+                 290  POP_EXCEPT       
+                 292  CALL_FINALLY        296  'to 296'
+                 294  RETURN_VALUE     
+               296_0  COME_FROM           292  '292'
+               296_1  COME_FROM_FINALLY   250  '250'
+                 296  LOAD_CONST               None
+                 298  STORE_FAST               'e'
+                 300  DELETE_FAST              'e'
+                 302  END_FINALLY      
+                 304  POP_EXCEPT       
+                 306  JUMP_FORWARD        310  'to 310'
+               308_0  COME_FROM           240  '240'
+                 308  END_FINALLY      
+               310_0  COME_FROM           306  '306'
+               310_1  COME_FROM           214  '214'
+Instruction context:
+   
+ L. 155        62  POP_BLOCK        
+                  64  JUMP_ABSOLUTE       140  'to 140'
+->                66  POP_BLOCK        
+                  68  JUMP_BACK            38  'to 38'
+                70_0  COME_FROM_FINALLY    42  '42'
+Instruction context:
+   
+ L. 470       410  LOAD_FAST                'self'
+                 412  LOAD_METHOD              _get_module_from_name
+                 414  LOAD_FAST                'name'
+                 416  CALL_METHOD_1         1  ''
+                 418  STORE_FAST               'package'
+                 420  POP_BLOCK        
+->             422_0  COME_FROM           138  '138'
+                 422  JUMP_FORWARD        530  'to 530'
+               424_0  COME_FROM_FINALLY   408  '408'
+
+../test/105223.pyc -- 
+# decompile failed
+
+# file ../test/105223.pyc
+# Deparsing stopped due to parse error

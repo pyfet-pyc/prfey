@@ -1,0 +1,800 @@
+
+# file test/162601.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nNumPy\n=====\n\nProvides\n  1. An array object of arbitrary homogeneous items\n  2. Fast mathematical operations over arrays\n  3. Linear Algebra, Fourier Transforms, Random Number Generation\n\nHow to use the documentation\n----------------------------\nDocumentation is available in two forms: docstrings provided\nwith the code, and a loose standing reference guide, available from\n`the NumPy homepage <https://www.scipy.org>`_.\n\nWe recommend exploring the docstrings using\n`IPython <https://ipython.org>`_, an advanced Python shell with\nTAB-completion and introspection capabilities.  See below for further\ninstructions.\n\nThe docstring examples assume that `numpy` has been imported as `np`::\n\n  >>> import numpy as np\n\nCode snippets are indicated by three greater-than signs::\n\n  >>> x = 42\n  >>> x = x + 1\n\nUse the built-in ``help`` function to view a function\'s docstring::\n\n  >>> help(np.sort)\n  ... # doctest: +SKIP\n\nFor some objects, ``np.info(obj)`` may provide additional help.  This is\nparticularly true if you see the line "Help on ufunc object:" at the top\nof the help() page.  Ufuncs are implemented in C, not Python, for speed.\nThe native Python help() does not know how to view their help, but our\nnp.info() function does.\n\nTo search for documents containing a keyword, do::\n\n  >>> np.lookfor(\'keyword\')\n  ... # doctest: +SKIP\n\nGeneral-purpose documents like a glossary and help on the basic concepts\nof numpy are available under the ``doc`` sub-module::\n\n  >>> from numpy import doc\n  >>> help(doc)\n  ... # doctest: +SKIP\n\nAvailable subpackages\n---------------------\ndoc\n    Topical documentation on broadcasting, indexing, etc.\nlib\n    Basic functions used by several sub-packages.\nrandom\n    Core Random Tools\nlinalg\n    Core Linear Algebra Tools\nfft\n    Core FFT routines\npolynomial\n    Polynomial tools\ntesting\n    NumPy testing tools\nf2py\n    Fortran to Python Interface Generator.\ndistutils\n    Enhancements to distutils with support for\n    Fortran compilers support and more.\n\nUtilities\n---------\ntest\n    Run numpy unittests\nshow_config\n    Show numpy build configuration\ndual\n    Overwrite certain functions with high-performance SciPy tools.\n    Note: `numpy.dual` is deprecated.  Use the functions from NumPy or Scipy\n    directly instead of importing them from `numpy.dual`.\nmatlib\n    Make everything matrices.\n__version__\n    NumPy version string\n\nViewing documentation using IPython\n-----------------------------------\nStart IPython with the NumPy profile (``ipython -p numpy``), which will\nimport `numpy` under the alias `np`.  Then, use the ``cpaste`` command to\npaste examples into the shell.  To see which functions are available in\n`numpy`, type ``np.<TAB>`` (where ``<TAB>`` refers to the TAB key), or use\n``np.*cos*?<ENTER>`` (where ``<ENTER>`` refers to the ENTER key) to narrow\ndown the list.  To view the docstring for a function, use\n``np.cos?<ENTER>`` (to view the docstring) and ``np.cos??<ENTER>`` (to view\nthe source code).\n\nCopies vs. in-place operation\n-----------------------------\nMost of the functions in `numpy` return a copy of the array argument\n(e.g., `np.sort`).  In-place versions of these functions are often\navailable as array methods, i.e. ``x = np.array([1,2,3]); x.sort()``.\nExceptions to this rule are documented.\n\n'
+                2  STORE_NAME               __doc__
+
+ L. 109         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L. 110        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              warnings
+               18  STORE_NAME               warnings
+
+ L. 112        20  LOAD_CONST               1
+               22  LOAD_CONST               ('ModuleDeprecationWarning', 'VisibleDeprecationWarning', '_NoValue')
+               24  IMPORT_NAME              _globals
+               26  IMPORT_FROM              ModuleDeprecationWarning
+               28  STORE_NAME               ModuleDeprecationWarning
+               30  IMPORT_FROM              VisibleDeprecationWarning
+               32  STORE_NAME               VisibleDeprecationWarning
+               34  IMPORT_FROM              _NoValue
+               36  STORE_NAME               _NoValue
+               38  POP_TOP          
+
+ L. 118        40  SETUP_FINALLY        50  'to 50'
+
+ L. 119        42  LOAD_NAME                __NUMPY_SETUP__
+               44  POP_TOP          
+               46  POP_BLOCK        
+               48  JUMP_FORWARD         72  'to 72'
+             50_0  COME_FROM_FINALLY    40  '40'
+
+ L. 120        50  DUP_TOP          
+               52  LOAD_NAME                NameError
+               54  <121>                70  ''
+               56  POP_TOP          
+               58  POP_TOP          
+               60  POP_TOP          
+
+ L. 121        62  LOAD_CONST               False
+               64  STORE_NAME               __NUMPY_SETUP__
+               66  POP_EXCEPT       
+               68  JUMP_FORWARD         72  'to 72'
+               70  <48>             
+             72_0  COME_FROM            68  '68'
+             72_1  COME_FROM            48  '48'
+
+ L. 123        72  LOAD_NAME                __NUMPY_SETUP__
+               74  POP_JUMP_IF_FALSE    92  'to 92'
+
+ L. 124        76  LOAD_NAME                sys
+               78  LOAD_ATTR                stderr
+               80  LOAD_METHOD              write
+               82  LOAD_STR                 'Running from numpy source directory.\n'
+               84  CALL_METHOD_1         1  ''
+               86  POP_TOP          
+            88_90  JUMP_FORWARD       1236  'to 1236'
+             92_0  COME_FROM            74  '74'
+
+ L. 126        92  SETUP_FINALLY       110  'to 110'
+
+ L. 127        94  LOAD_CONST               0
+               96  LOAD_CONST               ('show',)
+               98  IMPORT_NAME_ATTR         numpy.__config__
+              100  IMPORT_FROM              show
+              102  STORE_NAME               show_config
+              104  POP_TOP          
+              106  POP_BLOCK        
+              108  JUMP_FORWARD        160  'to 160'
+            110_0  COME_FROM_FINALLY    92  '92'
+
+ L. 128       110  DUP_TOP          
+              112  LOAD_NAME                ImportError
+              114  <121>               158  ''
+              116  POP_TOP          
+              118  STORE_NAME               e
+              120  POP_TOP          
+              122  SETUP_FINALLY       150  'to 150'
+
+ L. 129       124  LOAD_STR                 'Error importing numpy: you should not try to import numpy from\n        its source directory; please exit the numpy source tree, and relaunch\n        your python interpreter from there.'
+              126  STORE_NAME               msg
+
+ L. 132       128  LOAD_NAME                ImportError
+              130  LOAD_NAME                msg
+              132  CALL_FUNCTION_1       1  ''
+              134  LOAD_NAME                e
+              136  RAISE_VARARGS_2       2  'exception instance with __cause__'
+              138  POP_BLOCK        
+              140  POP_EXCEPT       
+              142  LOAD_CONST               None
+              144  STORE_NAME               e
+              146  DELETE_NAME              e
+              148  JUMP_FORWARD        160  'to 160'
+            150_0  COME_FROM_FINALLY   122  '122'
+              150  LOAD_CONST               None
+              152  STORE_NAME               e
+              154  DELETE_NAME              e
+              156  <48>             
+              158  <48>             
+            160_0  COME_FROM           148  '148'
+            160_1  COME_FROM           108  '108'
+
+ L. 134       160  LOAD_STR                 'ModuleDeprecationWarning'
+
+ L. 135       162  LOAD_STR                 'VisibleDeprecationWarning'
+
+ L. 134       164  BUILD_LIST_2          2 
+              166  STORE_NAME               __all__
+
+ L. 138       168  LOAD_CONST               1
+              170  LOAD_CONST               ('get_versions',)
+              172  IMPORT_NAME              _version
+              174  IMPORT_FROM              get_versions
+              176  STORE_NAME               get_versions
+              178  POP_TOP          
+
+ L. 139       180  LOAD_NAME                get_versions
+              182  CALL_FUNCTION_0       0  ''
+              184  STORE_NAME               vinfo
+
+ L. 140       186  LOAD_NAME                vinfo
+              188  LOAD_METHOD              get
+              190  LOAD_STR                 'closest-tag'
+              192  LOAD_NAME                vinfo
+              194  LOAD_STR                 'version'
+              196  BINARY_SUBSCR    
+              198  CALL_METHOD_2         2  ''
+              200  STORE_NAME               __version__
+
+ L. 141       202  LOAD_NAME                vinfo
+              204  LOAD_METHOD              get
+              206  LOAD_STR                 'full-revisionid'
+              208  CALL_METHOD_1         1  ''
+              210  STORE_NAME               __git_version__
+
+ L. 142       212  DELETE_NAME              get_versions
+              214  DELETE_NAME              vinfo
+
+ L. 145       216  BUILD_MAP_0           0 
+              218  STORE_NAME               __deprecated_attrs__
+
+ L. 148       220  LOAD_CONST               1
+              222  LOAD_CONST               ('_distributor_init',)
+              224  IMPORT_NAME              
+              226  IMPORT_FROM              _distributor_init
+              228  STORE_NAME               _distributor_init
+              230  POP_TOP          
+
+ L. 150       232  LOAD_CONST               1
+              234  LOAD_CONST               ('core',)
+              236  IMPORT_NAME              
+              238  IMPORT_FROM              core
+              240  STORE_NAME               core
+              242  POP_TOP          
+
+ L. 151       244  LOAD_CONST               1
+              246  LOAD_CONST               ('*',)
+              248  IMPORT_NAME              core
+              250  IMPORT_STAR      
+
+ L. 152       252  LOAD_CONST               1
+              254  LOAD_CONST               ('compat',)
+              256  IMPORT_NAME              
+              258  IMPORT_FROM              compat
+              260  STORE_NAME               compat
+              262  POP_TOP          
+
+ L. 153       264  LOAD_CONST               1
+              266  LOAD_CONST               ('lib',)
+              268  IMPORT_NAME              
+              270  IMPORT_FROM              lib
+              272  STORE_NAME               lib
+              274  POP_TOP          
+
+ L. 156       276  LOAD_CONST               1
+              278  LOAD_CONST               ('*',)
+              280  IMPORT_NAME              lib
+              282  IMPORT_STAR      
+
+ L. 158       284  LOAD_CONST               1
+              286  LOAD_CONST               ('linalg',)
+              288  IMPORT_NAME              
+              290  IMPORT_FROM              linalg
+              292  STORE_NAME               linalg
+              294  POP_TOP          
+
+ L. 159       296  LOAD_CONST               1
+              298  LOAD_CONST               ('fft',)
+              300  IMPORT_NAME              
+              302  IMPORT_FROM              fft
+              304  STORE_NAME               fft
+              306  POP_TOP          
+
+ L. 160       308  LOAD_CONST               1
+              310  LOAD_CONST               ('polynomial',)
+              312  IMPORT_NAME              
+              314  IMPORT_FROM              polynomial
+              316  STORE_NAME               polynomial
+              318  POP_TOP          
+
+ L. 161       320  LOAD_CONST               1
+              322  LOAD_CONST               ('random',)
+              324  IMPORT_NAME              
+              326  IMPORT_FROM              random
+              328  STORE_NAME               random
+              330  POP_TOP          
+
+ L. 162       332  LOAD_CONST               1
+              334  LOAD_CONST               ('ctypeslib',)
+              336  IMPORT_NAME              
+              338  IMPORT_FROM              ctypeslib
+              340  STORE_NAME               ctypeslib
+              342  POP_TOP          
+
+ L. 163       344  LOAD_CONST               1
+              346  LOAD_CONST               ('ma',)
+              348  IMPORT_NAME              
+              350  IMPORT_FROM              ma
+              352  STORE_NAME               ma
+              354  POP_TOP          
+
+ L. 164       356  LOAD_CONST               1
+              358  LOAD_CONST               ('matrixlib',)
+              360  IMPORT_NAME              
+              362  IMPORT_FROM              matrixlib
+              364  STORE_NAME               _mat
+              366  POP_TOP          
+
+ L. 165       368  LOAD_CONST               1
+              370  LOAD_CONST               ('*',)
+              372  IMPORT_NAME              matrixlib
+              374  IMPORT_STAR      
+
+ L. 168       376  LOAD_CONST               0
+              378  LOAD_CONST               None
+              380  IMPORT_NAME              builtins
+              382  STORE_NAME               _builtins
+
+ L. 171       384  LOAD_STR                 '`np.{n}` is a deprecated alias for the builtin `{n}`. To silence this warning, use `{n}` by itself. Doing this will not modify any behavior and is safe. {extended_msg}\nDeprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations'
+
+ L. 170       386  STORE_NAME               _msg
+
+ L. 178       388  LOAD_STR                 'If you specifically wanted the numpy scalar type, use `np.{}` here.'
+
+ L. 177       390  STORE_NAME               _specific_msg
+
+ L. 181       392  LOAD_STR                 'When replacing `np.{}`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.'
+
+ L. 180       394  STORE_NAME               _int_extended_msg
+
+ L. 187       396  LOAD_CONST               ('object', '')
+
+ L. 188       398  LOAD_STR                 'bool'
+              400  LOAD_NAME                _specific_msg
+              402  LOAD_METHOD              format
+              404  LOAD_STR                 'bool_'
+              406  CALL_METHOD_1         1  ''
+              408  BUILD_TUPLE_2         2 
+
+ L. 189       410  LOAD_STR                 'float'
+              412  LOAD_NAME                _specific_msg
+              414  LOAD_METHOD              format
+              416  LOAD_STR                 'float64'
+              418  CALL_METHOD_1         1  ''
+              420  BUILD_TUPLE_2         2 
+
+ L. 190       422  LOAD_STR                 'complex'
+              424  LOAD_NAME                _specific_msg
+              426  LOAD_METHOD              format
+              428  LOAD_STR                 'complex128'
+              430  CALL_METHOD_1         1  ''
+              432  BUILD_TUPLE_2         2 
+
+ L. 191       434  LOAD_STR                 'str'
+              436  LOAD_NAME                _specific_msg
+              438  LOAD_METHOD              format
+              440  LOAD_STR                 'str_'
+              442  CALL_METHOD_1         1  ''
+              444  BUILD_TUPLE_2         2 
+
+ L. 192       446  LOAD_STR                 'int'
+              448  LOAD_NAME                _int_extended_msg
+              450  LOAD_METHOD              format
+              452  LOAD_STR                 'int'
+              454  CALL_METHOD_1         1  ''
+              456  BUILD_TUPLE_2         2 
+
+ L. 186       458  BUILD_LIST_6          6 
+              460  STORE_NAME               _type_info
+
+ L. 194       462  LOAD_NAME                __deprecated_attrs__
+              464  LOAD_METHOD              update
+              466  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+              468  LOAD_STR                 '<dictcomp>'
+              470  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+
+ L. 196       472  LOAD_NAME                _type_info
+
+ L. 194       474  GET_ITER         
+              476  CALL_FUNCTION_1       1  ''
+              478  CALL_METHOD_1         1  ''
+              480  POP_TOP          
+
+ L. 200       482  LOAD_NAME                core
+              484  LOAD_ATTR                numerictypes
+              486  LOAD_ATTR                typeDict
+
+ L. 201       488  LOAD_STR                 '`np.typeDict` is a deprecated alias for `np.sctypeDict`.'
+
+ L. 199       490  BUILD_TUPLE_2         2 
+              492  LOAD_NAME                __deprecated_attrs__
+              494  LOAD_STR                 'typeDict'
+              496  STORE_SUBSCR     
+
+ L. 205       498  LOAD_STR                 '`np.{n}` is a deprecated alias for `np.compat.{n}`. To silence this warning, use `np.compat.{n}` by itself. In the likely event your code does not need to work on Python 2 you can use the builtin `{n2}` for which `np.compat.{n}` is itself an alias. Doing this will not modify any behaviour and is safe. {extended_msg}\nDeprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations'
+
+ L. 204       500  STORE_NAME               _msg
+
+ L. 215       502  LOAD_NAME                getattr
+              504  LOAD_NAME                compat
+              506  LOAD_STR                 'long'
+              508  CALL_FUNCTION_2       2  ''
+
+ L. 216       510  LOAD_NAME                _msg
+              512  LOAD_ATTR                format
+              514  LOAD_STR                 'long'
+              516  LOAD_STR                 'int'
+
+ L. 217       518  LOAD_NAME                _int_extended_msg
+              520  LOAD_METHOD              format
+              522  LOAD_STR                 'long'
+              524  CALL_METHOD_1         1  ''
+
+ L. 216       526  LOAD_CONST               ('n', 'n2', 'extended_msg')
+              528  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+
+ L. 214       530  BUILD_TUPLE_2         2 
+              532  LOAD_NAME                __deprecated_attrs__
+              534  LOAD_STR                 'long'
+              536  STORE_SUBSCR     
+
+ L. 220       538  LOAD_NAME                getattr
+              540  LOAD_NAME                compat
+              542  LOAD_STR                 'unicode'
+              544  CALL_FUNCTION_2       2  ''
+
+ L. 221       546  LOAD_NAME                _msg
+              548  LOAD_ATTR                format
+              550  LOAD_STR                 'unicode'
+              552  LOAD_STR                 'str'
+
+ L. 222       554  LOAD_NAME                _specific_msg
+              556  LOAD_METHOD              format
+              558  LOAD_STR                 'str_'
+              560  CALL_METHOD_1         1  ''
+
+ L. 221       562  LOAD_CONST               ('n', 'n2', 'extended_msg')
+              564  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+
+ L. 219       566  BUILD_TUPLE_2         2 
+              568  LOAD_NAME                __deprecated_attrs__
+              570  LOAD_STR                 'unicode'
+              572  STORE_SUBSCR     
+
+ L. 224       574  DELETE_NAME              _msg
+              576  DELETE_NAME              _specific_msg
+              578  DELETE_NAME              _int_extended_msg
+              580  DELETE_NAME              _type_info
+              582  DELETE_NAME              _builtins
+
+ L. 226       584  LOAD_CONST               1
+              586  LOAD_CONST               ('round', 'abs', 'max', 'min')
+              588  IMPORT_NAME              core
+              590  IMPORT_FROM              round
+              592  STORE_NAME               round
+              594  IMPORT_FROM              abs
+              596  STORE_NAME               abs
+              598  IMPORT_FROM              max
+              600  STORE_NAME               max
+              602  IMPORT_FROM              min
+              604  STORE_NAME               min
+              606  POP_TOP          
+
+ L. 228       608  LOAD_NAME                core
+              610  LOAD_ATTR                getlimits
+              612  LOAD_METHOD              _register_known_types
+              614  CALL_METHOD_0         0  ''
+              616  POP_TOP          
+
+ L. 230       618  LOAD_NAME                __all__
+              620  LOAD_METHOD              extend
+              622  LOAD_STR                 '__version__'
+              624  LOAD_STR                 'show_config'
+              626  BUILD_LIST_2          2 
+              628  CALL_METHOD_1         1  ''
+              630  POP_TOP          
+
+ L. 231       632  LOAD_NAME                __all__
+              634  LOAD_METHOD              extend
+              636  LOAD_NAME                core
+              638  LOAD_ATTR                __all__
+              640  CALL_METHOD_1         1  ''
+              642  POP_TOP          
+
+ L. 232       644  LOAD_NAME                __all__
+              646  LOAD_METHOD              extend
+              648  LOAD_NAME                _mat
+              650  LOAD_ATTR                __all__
+              652  CALL_METHOD_1         1  ''
+              654  POP_TOP          
+
+ L. 233       656  LOAD_NAME                __all__
+              658  LOAD_METHOD              extend
+              660  LOAD_NAME                lib
+              662  LOAD_ATTR                __all__
+              664  CALL_METHOD_1         1  ''
+              666  POP_TOP          
+
+ L. 234       668  LOAD_NAME                __all__
+              670  LOAD_METHOD              extend
+              672  BUILD_LIST_0          0 
+              674  LOAD_CONST               ('linalg', 'fft', 'random', 'ctypeslib', 'ma')
+              676  CALL_FINALLY        679  'to 679'
+              678  CALL_METHOD_1         1  ''
+              680  POP_TOP          
+
+ L. 239       682  DELETE_NAME              long
+              684  DELETE_NAME              unicode
+
+ L. 240       686  LOAD_NAME                __all__
+              688  LOAD_METHOD              remove
+              690  LOAD_STR                 'long'
+              692  CALL_METHOD_1         1  ''
+              694  POP_TOP          
+
+ L. 241       696  LOAD_NAME                __all__
+              698  LOAD_METHOD              remove
+              700  LOAD_STR                 'unicode'
+              702  CALL_METHOD_1         1  ''
+              704  POP_TOP          
+
+ L. 248       706  LOAD_NAME                __all__
+              708  LOAD_METHOD              remove
+              710  LOAD_STR                 'Arrayterator'
+              712  CALL_METHOD_1         1  ''
+              714  POP_TOP          
+
+ L. 249       716  DELETE_NAME              Arrayterator
+
+ L. 254       718  BUILD_LIST_0          0 
+              720  LOAD_CONST               ('fv', 'ipmt', 'irr', 'mirr', 'nper', 'npv', 'pmt', 'ppmt', 'pv', 'rate')
+              722  CALL_FINALLY        725  'to 725'
+              724  STORE_NAME               _financial_names
+
+ L. 256       726  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+              728  LOAD_STR                 '<dictcomp>'
+              730  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+
+ L. 261       732  LOAD_NAME                _financial_names
+
+ L. 256       734  GET_ITER         
+              736  CALL_FUNCTION_1       1  ''
+              738  STORE_NAME               __expired_functions__
+
+ L. 264       740  LOAD_NAME                warnings
+              742  LOAD_ATTR                filterwarnings
+              744  LOAD_STR                 'ignore'
+              746  LOAD_STR                 'numpy.dtype size changed'
+              748  LOAD_CONST               ('message',)
+              750  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              752  POP_TOP          
+
+ L. 265       754  LOAD_NAME                warnings
+              756  LOAD_ATTR                filterwarnings
+              758  LOAD_STR                 'ignore'
+              760  LOAD_STR                 'numpy.ufunc size changed'
+              762  LOAD_CONST               ('message',)
+              764  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              766  POP_TOP          
+
+ L. 266       768  LOAD_NAME                warnings
+              770  LOAD_ATTR                filterwarnings
+              772  LOAD_STR                 'ignore'
+              774  LOAD_STR                 'numpy.ndarray size changed'
+              776  LOAD_CONST               ('message',)
+              778  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              780  POP_TOP          
+
+ L. 270       782  LOAD_STR                 'removed'
+              784  STORE_NAME               oldnumeric
+
+ L. 271       786  LOAD_STR                 'removed'
+              788  STORE_NAME               numarray
+
+ L. 273       790  LOAD_NAME                sys
+              792  LOAD_ATTR                version_info
+              794  LOAD_CONST               None
+              796  LOAD_CONST               2
+              798  BUILD_SLICE_2         2 
+              800  BINARY_SUBSCR    
+              802  LOAD_CONST               (3, 7)
+              804  COMPARE_OP               >=
+          806_808  POP_JUMP_IF_FALSE   828  'to 828'
+
+ L. 276       810  LOAD_CODE                <code_object __getattr__>
+              812  LOAD_STR                 '__getattr__'
+              814  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              816  STORE_NAME               __getattr__
+
+ L. 316       818  LOAD_CODE                <code_object __dir__>
+              820  LOAD_STR                 '__dir__'
+              822  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              824  STORE_NAME               __dir__
+              826  JUMP_FORWARD        866  'to 866'
+            828_0  COME_FROM           806  '806'
+
+ L. 322       828  LOAD_CONST               1
+              830  LOAD_CONST               ('Tester',)
+              832  IMPORT_NAME              testing
+              834  IMPORT_FROM              Tester
+              836  STORE_NAME               Tester
+              838  POP_TOP          
+
+ L. 325       840  LOAD_NAME                globals
+              842  CALL_FUNCTION_0       0  ''
+              844  LOAD_METHOD              update
+              846  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+              848  LOAD_STR                 '<dictcomp>'
+              850  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+
+ L. 327       852  LOAD_NAME                __deprecated_attrs__
+              854  LOAD_METHOD              items
+              856  CALL_METHOD_0         0  ''
+
+ L. 325       858  GET_ITER         
+              860  CALL_FUNCTION_1       1  ''
+              862  CALL_METHOD_1         1  ''
+              864  POP_TOP          
+            866_0  COME_FROM           826  '826'
+
+ L. 332       866  LOAD_CONST               0
+              868  LOAD_CONST               ('PytestTester',)
+              870  IMPORT_NAME_ATTR         numpy._pytesttester
+              872  IMPORT_FROM              PytestTester
+              874  STORE_NAME               PytestTester
+              876  POP_TOP          
+
+ L. 333       878  LOAD_NAME                PytestTester
+              880  LOAD_NAME                __name__
+              882  CALL_FUNCTION_1       1  ''
+              884  STORE_NAME               test
+
+ L. 334       886  DELETE_NAME              PytestTester
+
+ L. 337       888  LOAD_CODE                <code_object _sanity_check>
+              890  LOAD_STR                 '_sanity_check'
+              892  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              894  STORE_NAME               _sanity_check
+
+ L. 360       896  LOAD_NAME                _sanity_check
+              898  CALL_FUNCTION_0       0  ''
+              900  POP_TOP          
+
+ L. 361       902  DELETE_NAME              _sanity_check
+
+ L. 363       904  LOAD_CODE                <code_object _mac_os_check>
+              906  LOAD_STR                 '_mac_os_check'
+              908  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              910  STORE_NAME               _mac_os_check
+
+ L. 376       912  LOAD_CONST               0
+              914  LOAD_CONST               None
+              916  IMPORT_NAME              sys
+              918  STORE_NAME               sys
+
+ L. 377       920  LOAD_NAME                sys
+              922  LOAD_ATTR                platform
+              924  LOAD_STR                 'darwin'
+              926  COMPARE_OP               ==
+          928_930  POP_JUMP_IF_FALSE  1050  'to 1050'
+
+ L. 378       932  LOAD_NAME                warnings
+              934  LOAD_ATTR                catch_warnings
+              936  LOAD_CONST               True
+              938  LOAD_CONST               ('record',)
+              940  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+              942  SETUP_WITH         1032  'to 1032'
+              944  STORE_NAME               w
+
+ L. 379       946  LOAD_NAME                _mac_os_check
+              948  CALL_FUNCTION_0       0  ''
+              950  POP_TOP          
+
+ L. 381       952  LOAD_STR                 ''
+              954  STORE_NAME               error_message
+
+ L. 382       956  LOAD_NAME                len
+              958  LOAD_NAME                w
+              960  CALL_FUNCTION_1       1  ''
+              962  LOAD_CONST               0
+              964  COMPARE_OP               >
+          966_968  POP_JUMP_IF_FALSE  1018  'to 1018'
+
+ L. 383       970  LOAD_STR                 '{}: {}'
+              972  LOAD_METHOD              format
+              974  LOAD_NAME                w
+              976  LOAD_CONST               -1
+              978  BINARY_SUBSCR    
+              980  LOAD_ATTR                category
+              982  LOAD_ATTR                __name__
+              984  LOAD_NAME                str
+              986  LOAD_NAME                w
+              988  LOAD_CONST               -1
+              990  BINARY_SUBSCR    
+              992  LOAD_ATTR                message
+              994  CALL_FUNCTION_1       1  ''
+              996  CALL_METHOD_2         2  ''
+              998  STORE_NAME               error_message
+
+ L. 385      1000  LOAD_STR                 'Polyfit sanity test emitted a warning, most likely due to using a buggy Accelerate backend. If you compiled yourself, more information is available at https://numpy.org/doc/stable/user/building.html#accelerated-blas-lapack-libraries Otherwise report this to the vendor that provided NumPy.\n{}\n'
+             1002  LOAD_METHOD              format
+
+ L. 390      1004  LOAD_NAME                error_message
+
+ L. 385      1006  CALL_METHOD_1         1  ''
+
+ L. 384      1008  STORE_NAME               msg
+
+ L. 391      1010  LOAD_NAME                RuntimeError
+             1012  LOAD_NAME                msg
+             1014  CALL_FUNCTION_1       1  ''
+             1016  RAISE_VARARGS_1       1  'exception instance'
+           1018_0  COME_FROM           966  '966'
+             1018  POP_BLOCK        
+             1020  LOAD_CONST               None
+             1022  DUP_TOP          
+             1024  DUP_TOP          
+             1026  CALL_FUNCTION_3       3  ''
+             1028  POP_TOP          
+             1030  JUMP_FORWARD       1050  'to 1050'
+           1032_0  COME_FROM_WITH      942  '942'
+             1032  <49>             
+         1034_1036  POP_JUMP_IF_TRUE   1040  'to 1040'
+             1038  <48>             
+           1040_0  COME_FROM          1034  '1034'
+             1040  POP_TOP          
+             1042  POP_TOP          
+             1044  POP_TOP          
+             1046  POP_EXCEPT       
+             1048  POP_TOP          
+           1050_0  COME_FROM          1030  '1030'
+           1050_1  COME_FROM           928  '928'
+
+ L. 392      1050  DELETE_NAME              _mac_os_check
+
+ L. 398      1052  LOAD_CONST               0
+             1054  LOAD_CONST               None
+             1056  IMPORT_NAME              os
+             1058  STORE_NAME               os
+
+ L. 399      1060  LOAD_NAME                os
+             1062  LOAD_ATTR                environ
+             1064  LOAD_METHOD              get
+             1066  LOAD_STR                 'NUMPY_MADVISE_HUGEPAGE'
+             1068  LOAD_CONST               None
+             1070  CALL_METHOD_2         2  ''
+             1072  STORE_NAME               use_hugepage
+
+ L. 400      1074  LOAD_NAME                sys
+             1076  LOAD_ATTR                platform
+             1078  LOAD_STR                 'linux'
+             1080  COMPARE_OP               ==
+         1082_1084  POP_JUMP_IF_FALSE  1188  'to 1188'
+             1086  LOAD_NAME                use_hugepage
+             1088  LOAD_CONST               None
+             1090  <117>                 0  ''
+         1092_1094  POP_JUMP_IF_FALSE  1188  'to 1188'
+
+ L. 405      1096  SETUP_FINALLY      1162  'to 1162'
+
+ L. 406      1098  LOAD_CONST               1
+             1100  STORE_NAME               use_hugepage
+
+ L. 407      1102  LOAD_NAME                os
+             1104  LOAD_METHOD              uname
+             1106  CALL_METHOD_0         0  ''
+             1108  LOAD_ATTR                release
+             1110  LOAD_METHOD              split
+             1112  LOAD_STR                 '.'
+             1114  CALL_METHOD_1         1  ''
+             1116  LOAD_CONST               None
+             1118  LOAD_CONST               2
+             1120  BUILD_SLICE_2         2 
+             1122  BINARY_SUBSCR    
+             1124  STORE_NAME               kernel_version
+
+ L. 408      1126  LOAD_NAME                tuple
+             1128  LOAD_GENEXPR             '<code_object <genexpr>>'
+             1130  LOAD_STR                 '<genexpr>'
+             1132  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1134  LOAD_NAME                kernel_version
+             1136  GET_ITER         
+             1138  CALL_FUNCTION_1       1  ''
+             1140  CALL_FUNCTION_1       1  ''
+             1142  STORE_NAME               kernel_version
+
+ L. 409      1144  LOAD_NAME                kernel_version
+             1146  LOAD_CONST               (4, 6)
+             1148  COMPARE_OP               <
+         1150_1152  POP_JUMP_IF_FALSE  1158  'to 1158'
+
+ L. 410      1154  LOAD_CONST               0
+             1156  STORE_NAME               use_hugepage
+           1158_0  COME_FROM          1150  '1150'
+             1158  POP_BLOCK        
+             1160  JUMP_FORWARD       1186  'to 1186'
+           1162_0  COME_FROM_FINALLY  1096  '1096'
+
+ L. 411      1162  DUP_TOP          
+             1164  LOAD_NAME                ValueError
+         1166_1168  <121>              1184  ''
+             1170  POP_TOP          
+             1172  POP_TOP          
+             1174  POP_TOP          
+
+ L. 412      1176  LOAD_CONST               0
+             1178  STORE_NAME               use_hugepages
+             1180  POP_EXCEPT       
+             1182  JUMP_FORWARD       1186  'to 1186'
+             1184  <48>             
+           1186_0  COME_FROM          1182  '1182'
+           1186_1  COME_FROM          1160  '1160'
+             1186  JUMP_FORWARD       1212  'to 1212'
+           1188_0  COME_FROM          1092  '1092'
+           1188_1  COME_FROM          1082  '1082'
+
+ L. 413      1188  LOAD_NAME                use_hugepage
+             1190  LOAD_CONST               None
+             1192  <117>                 0  ''
+         1194_1196  POP_JUMP_IF_FALSE  1204  'to 1204'
+
+ L. 415      1198  LOAD_CONST               1
+             1200  STORE_NAME               use_hugepage
+             1202  JUMP_FORWARD       1212  'to 1212'
+           1204_0  COME_FROM          1194  '1194'
+
+ L. 417      1204  LOAD_NAME                int
+             1206  LOAD_NAME                use_hugepage
+             1208  CALL_FUNCTION_1       1  ''
+             1210  STORE_NAME               use_hugepage
+           1212_0  COME_FROM          1202  '1202'
+           1212_1  COME_FROM          1186  '1186'
+
+ L. 420      1212  LOAD_NAME                core
+             1214  LOAD_ATTR                multiarray
+             1216  LOAD_METHOD              _set_madvise_hugepage
+             1218  LOAD_NAME                use_hugepage
+             1220  CALL_METHOD_1         1  ''
+             1222  POP_TOP          
+
+ L. 425      1224  LOAD_NAME                core
+             1226  LOAD_ATTR                multiarray
+             1228  LOAD_ATTR                _multiarray_umath
+             1230  LOAD_METHOD              _reload_guard
+             1232  CALL_METHOD_0         0  ''
+             1234  POP_TOP          
+           1236_0  COME_FROM            88  '88'
+
+ L. 427      1236  LOAD_CONST               1
+             1238  LOAD_CONST               ('get_versions',)
+             1240  IMPORT_NAME              _version
+             1242  IMPORT_FROM              get_versions
+             1244  STORE_NAME               get_versions
+             1246  POP_TOP          
+
+ L. 428      1248  LOAD_NAME                get_versions
+             1250  CALL_FUNCTION_0       0  ''
+             1252  LOAD_STR                 'version'
+             1254  BINARY_SUBSCR    
+             1256  STORE_NAME               __version__
+
+ L. 429      1258  DELETE_NAME              get_versions
+
+Parse error at or near `<121>' instruction at offset 54
+
+Instruction context:
+   
+ L. 120        50  DUP_TOP          
+                  52  LOAD_NAME                NameError
+->                54  <121>                70  ''
+                  56  POP_TOP          
+                  58  POP_TOP          
+                  60  POP_TOP          
+
+test/162601.pyc -- 
+# decompile failed

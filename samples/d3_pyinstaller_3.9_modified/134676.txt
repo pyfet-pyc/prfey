@@ -1,0 +1,43 @@
+Instruction context:
+   
+ L.  52        22  LOAD_FAST                'password'
+                  24  LOAD_CONST               None
+->                26  <117>                 1  ''
+                  28  POP_JUMP_IF_FALSE_BACK     6  'to 6'
+Instruction context:
+   
+ L.  58        12  LOAD_FAST                'keyring'
+                  14  LOAD_METHOD              set_password
+                  16  LOAD_FAST                'service'
+                  18  LOAD_FAST                'username'
+                  20  LOAD_FAST                'password'
+                  22  CALL_METHOD_3         3  ''
+                  24  POP_BLOCK        
+->                26  ROT_TWO          
+                  28  POP_TOP          
+                  30  RETURN_VALUE     
+                32_0  COME_FROM_FINALLY    10  '10'
+Instruction context:
+   
+ L.  65        12  LOAD_FAST                'keyring'
+                  14  LOAD_METHOD              delete_password
+                  16  LOAD_FAST                'service'
+                  18  LOAD_FAST                'username'
+                  20  CALL_METHOD_2         2  ''
+                  22  POP_BLOCK        
+->                24  ROT_TWO          
+                  26  POP_TOP          
+                  28  RETURN_VALUE     
+                30_0  COME_FROM_FINALLY    10  '10'
+Instruction context:
+   
+ L.  72        22  LOAD_FAST                'credential'
+                  24  LOAD_CONST               None
+->                26  <117>                 1  ''
+                  28  POP_JUMP_IF_FALSE_BACK     6  'to 6'
+
+test/134676.pyc -- 
+# decompile failed
+
+# file test/134676.pyc
+# Deparsing stopped due to parse error

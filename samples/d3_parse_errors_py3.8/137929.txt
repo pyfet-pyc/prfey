@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L. 392        50  LOAD_GLOBAL              gencache
+                  52  LOAD_METHOD              GetClassForCLSID
+                  54  LOAD_FAST                'klass'
+                  56  LOAD_ATTR                coclass_clsid
+                  58  CALL_METHOD_1         1  ''
+                  60  LOAD_ATTR                default_source
+                  62  POP_BLOCK        
+->                64  ROT_FOUR         
+                  66  POP_EXCEPT       
+                  68  RETURN_VALUE     
+                70_0  COME_FROM_FINALLY    48  '48'
+Instruction context:
+   
+ L. 521        56  POP_BLOCK        
+->                58  LOAD_CONST               None
+                  60  RETURN_VALUE     
+                62_0  COME_FROM            42  '42'
+                  62  POP_BLOCK        
+                  64  JUMP_FORWARD         86  'to 86'
+                66_0  COME_FROM_FINALLY    24  '24'
+
+../test/137929.pyc -- 
+# decompile failed
+
+# file ../test/137929.pyc
+# Deparsing stopped due to parse error

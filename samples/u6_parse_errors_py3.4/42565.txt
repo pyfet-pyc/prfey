@@ -1,0 +1,18 @@
+Instruction context:
+   
+ L. 669       140  LOAD_FAST                'path_type'
+                 143  LOAD_CONST               False
+                 146  COMPARE_OP               is
+                 149  POP_JUMP_IF_TRUE    314  'to 314'
+                 152  LOAD_GLOBAL              isinstance
+                 155  LOAD_FAST                'path_type'
+                 158  LOAD_GLOBAL              basestring
+                 161  CALL_FUNCTION_2       2  '2 positional, 0 named'
+               164_0  COME_FROM           149  '149'
+->               164  POP_JUMP_IF_FALSE   170  'to 170'
+
+../test/42565.pyc -- 
+# decompile failed
+
+# file ../test/42565.pyc
+# Deparsing stopped due to parse error

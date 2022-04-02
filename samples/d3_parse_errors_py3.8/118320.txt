@@ -1,0 +1,20 @@
+Instruction context:
+   
+ L.  62        66  RAISE_VARARGS_0       0  'reraise'
+                  68  POP_EXCEPT       
+->                70  JUMP_BACK            30  'to 30'
+                72_0  COME_FROM            52  '52'
+Instruction context:
+   
+ L.  84        62  POP_BLOCK        
+->                64  POP_EXCEPT       
+                  66  CALL_FINALLY         78  'to 78'
+                  68  LOAD_CONST               None
+                  70  RETURN_VALUE     
+                72_0  COME_FROM            60  '60'
+
+../test/118320.pyc -- 
+# decompile failed
+
+# file ../test/118320.pyc
+# Deparsing stopped due to parse error

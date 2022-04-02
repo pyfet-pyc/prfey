@@ -1,0 +1,197 @@
+
+# file test/2009.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nWrapper functions to more user-friendly calling of certain math functions\nwhose output data-type is different than the input data-type in certain\ndomains of the input.\n\nFor example, for functions like `log` with branch cuts, the versions in this\nmodule provide the mathematically valid answers in the complex plane::\n\n  >>> import math\n  >>> from numpy.lib import scimath\n  >>> scimath.log(-math.exp(1)) == (1+1j*math.pi)\n  True\n\nSimilarly, `sqrt`, other base logarithms, `power` and trig functions are\ncorrectly handled.  See their respective docstrings for specific examples.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  18         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME_ATTR         numpy.core.numeric
+               10  IMPORT_FROM              core
+               12  ROT_TWO          
+               14  POP_TOP          
+               16  IMPORT_FROM              numeric
+               18  STORE_NAME               nx
+               20  POP_TOP          
+
+ L.  19        22  LOAD_CONST               0
+               24  LOAD_CONST               None
+               26  IMPORT_NAME_ATTR         numpy.core.numerictypes
+               28  IMPORT_FROM              core
+               30  ROT_TWO          
+               32  POP_TOP          
+               34  IMPORT_FROM              numerictypes
+               36  STORE_NAME               nt
+               38  POP_TOP          
+
+ L.  20        40  LOAD_CONST               0
+               42  LOAD_CONST               ('asarray', 'any')
+               44  IMPORT_NAME_ATTR         numpy.core.numeric
+               46  IMPORT_FROM              asarray
+               48  STORE_NAME               asarray
+               50  IMPORT_FROM              any
+               52  STORE_NAME               any
+               54  POP_TOP          
+
+ L.  21        56  LOAD_CONST               0
+               58  LOAD_CONST               ('array_function_dispatch',)
+               60  IMPORT_NAME_ATTR         numpy.core.overrides
+               62  IMPORT_FROM              array_function_dispatch
+               64  STORE_NAME               array_function_dispatch
+               66  POP_TOP          
+
+ L.  22        68  LOAD_CONST               0
+               70  LOAD_CONST               ('isreal',)
+               72  IMPORT_NAME_ATTR         numpy.lib.type_check
+               74  IMPORT_FROM              isreal
+               76  STORE_NAME               isreal
+               78  POP_TOP          
+
+ L.  25        80  BUILD_LIST_0          0 
+               82  LOAD_CONST               ('sqrt', 'log', 'log2', 'logn', 'log10', 'power', 'arccos', 'arcsin', 'arctanh')
+               84  CALL_FINALLY         87  'to 87'
+               86  STORE_NAME               __all__
+
+ L.  31        88  LOAD_NAME                nx
+               90  LOAD_METHOD              log
+               92  LOAD_CONST               2.0
+               94  CALL_METHOD_1         1  ''
+               96  STORE_NAME               _ln2
+
+ L.  34        98  LOAD_CODE                <code_object _tocomplex>
+              100  LOAD_STR                 '_tocomplex'
+              102  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              104  STORE_NAME               _tocomplex
+
+ L.  97       106  LOAD_CODE                <code_object _fix_real_lt_zero>
+              108  LOAD_STR                 '_fix_real_lt_zero'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  STORE_NAME               _fix_real_lt_zero
+
+ L. 125       114  LOAD_CODE                <code_object _fix_int_lt_zero>
+              116  LOAD_STR                 '_fix_int_lt_zero'
+              118  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              120  STORE_NAME               _fix_int_lt_zero
+
+ L. 152       122  LOAD_CODE                <code_object _fix_real_abs_gt_1>
+              124  LOAD_STR                 '_fix_real_abs_gt_1'
+              126  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              128  STORE_NAME               _fix_real_abs_gt_1
+
+ L. 179       130  LOAD_CODE                <code_object _unary_dispatcher>
+              132  LOAD_STR                 '_unary_dispatcher'
+              134  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              136  STORE_NAME               _unary_dispatcher
+
+ L. 183       138  LOAD_NAME                array_function_dispatch
+              140  LOAD_NAME                _unary_dispatcher
+              142  CALL_FUNCTION_1       1  ''
+
+ L. 184       144  LOAD_CODE                <code_object sqrt>
+              146  LOAD_STR                 'sqrt'
+              148  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              150  CALL_FUNCTION_1       1  ''
+              152  STORE_NAME               sqrt
+
+ L. 227       154  LOAD_NAME                array_function_dispatch
+              156  LOAD_NAME                _unary_dispatcher
+              158  CALL_FUNCTION_1       1  ''
+
+ L. 228       160  LOAD_CODE                <code_object log>
+              162  LOAD_STR                 'log'
+              164  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              166  CALL_FUNCTION_1       1  ''
+              168  STORE_NAME               log
+
+ L. 275       170  LOAD_NAME                array_function_dispatch
+              172  LOAD_NAME                _unary_dispatcher
+              174  CALL_FUNCTION_1       1  ''
+
+ L. 276       176  LOAD_CODE                <code_object log10>
+              178  LOAD_STR                 'log10'
+              180  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              182  CALL_FUNCTION_1       1  ''
+              184  STORE_NAME               log10
+
+ L. 325       186  LOAD_CODE                <code_object _logn_dispatcher>
+              188  LOAD_STR                 '_logn_dispatcher'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  STORE_NAME               _logn_dispatcher
+
+ L. 329       194  LOAD_NAME                array_function_dispatch
+              196  LOAD_NAME                _logn_dispatcher
+              198  CALL_FUNCTION_1       1  ''
+
+ L. 330       200  LOAD_CODE                <code_object logn>
+              202  LOAD_STR                 'logn'
+              204  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              206  CALL_FUNCTION_1       1  ''
+              208  STORE_NAME               logn
+
+ L. 365       210  LOAD_NAME                array_function_dispatch
+              212  LOAD_NAME                _unary_dispatcher
+              214  CALL_FUNCTION_1       1  ''
+
+ L. 366       216  LOAD_CODE                <code_object log2>
+              218  LOAD_STR                 'log2'
+              220  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              222  CALL_FUNCTION_1       1  ''
+              224  STORE_NAME               log2
+
+ L. 413       226  LOAD_CODE                <code_object _power_dispatcher>
+              228  LOAD_STR                 '_power_dispatcher'
+              230  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              232  STORE_NAME               _power_dispatcher
+
+ L. 417       234  LOAD_NAME                array_function_dispatch
+              236  LOAD_NAME                _power_dispatcher
+              238  CALL_FUNCTION_1       1  ''
+
+ L. 418       240  LOAD_CODE                <code_object power>
+              242  LOAD_STR                 'power'
+              244  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              246  CALL_FUNCTION_1       1  ''
+              248  STORE_NAME               power
+
+ L. 462       250  LOAD_NAME                array_function_dispatch
+              252  LOAD_NAME                _unary_dispatcher
+              254  CALL_FUNCTION_1       1  ''
+
+ L. 463       256  LOAD_CODE                <code_object arccos>
+              258  LOAD_STR                 'arccos'
+              260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              262  CALL_FUNCTION_1       1  ''
+              264  STORE_NAME               arccos
+
+ L. 507       266  LOAD_NAME                array_function_dispatch
+              268  LOAD_NAME                _unary_dispatcher
+              270  CALL_FUNCTION_1       1  ''
+
+ L. 508       272  LOAD_CODE                <code_object arcsin>
+              274  LOAD_STR                 'arcsin'
+              276  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              278  CALL_FUNCTION_1       1  ''
+              280  STORE_NAME               arcsin
+
+ L. 553       282  LOAD_NAME                array_function_dispatch
+              284  LOAD_NAME                _unary_dispatcher
+              286  CALL_FUNCTION_1       1  ''
+
+ L. 554       288  LOAD_CODE                <code_object arctanh>
+              290  LOAD_STR                 'arctanh'
+              292  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              294  CALL_FUNCTION_1       1  ''
+              296  STORE_NAME               arctanh
+
+Parse error at or near `CALL_FINALLY' instruction at offset 84
+
+Instruction context:
+   
+ L.  25        80  BUILD_LIST_0          0 
+                  82  LOAD_CONST               ('sqrt', 'log', 'log2', 'logn', 'log10', 'power', 'arccos', 'arcsin', 'arctanh')
+->                84  CALL_FINALLY         87  'to 87'
+                  86  STORE_NAME               __all__
+
+test/2009.pyc -- 
+# decompile failed

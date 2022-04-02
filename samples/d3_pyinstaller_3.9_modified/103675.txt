@@ -1,0 +1,90 @@
+Instruction context:
+   
+ L.  17        36  BUILD_LIST_0          0 
+                  38  LOAD_CONST               ('filter', 'fnmatch', 'fnmatchcase', 'translate')
+->                40  CALL_FINALLY         43  'to 43'
+                  42  STORE_NAME               __all__
+
+test/103675.pyc -- 
+# decompile failed
+
+# file test/103675.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Filename matching with shell patterns.\n\nfnmatch(FILENAME, PATTERN) matches according to the local convention.\nfnmatchcase(FILENAME, PATTERN) always takes case in account.\n\nThe functions operate by translating the pattern into a regular\nexpression.  They cache the compiled regular expressions for speed.\n\nThe function translate(PATTERN) returns a regular expression\ncorresponding to PATTERN.  (It does not compile it.)\n'
+                2  STORE_NAME               __doc__
+
+ L.  12         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.  13        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              posixpath
+               18  STORE_NAME               posixpath
+
+ L.  14        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              re
+               26  STORE_NAME               re
+
+ L.  15        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              functools
+               34  STORE_NAME               functools
+
+ L.  17        36  BUILD_LIST_0          0 
+               38  LOAD_CONST               ('filter', 'fnmatch', 'fnmatchcase', 'translate')
+               40  CALL_FINALLY         43  'to 43'
+               42  STORE_NAME               __all__
+
+ L.  21        44  LOAD_CONST               0
+               46  LOAD_CONST               ('count',)
+               48  IMPORT_NAME              itertools
+               50  IMPORT_FROM              count
+               52  STORE_NAME               count
+               54  POP_TOP          
+
+ L.  22        56  LOAD_NAME                count
+               58  CALL_FUNCTION_0       0  ''
+               60  LOAD_ATTR                __next__
+               62  STORE_NAME               _nextgroupnum
+
+ L.  23        64  DELETE_NAME              count
+
+ L.  25        66  LOAD_CODE                <code_object fnmatch>
+               68  LOAD_STR                 'fnmatch'
+               70  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               72  STORE_NAME               fnmatch
+
+ L.  44        74  LOAD_NAME                functools
+               76  LOAD_ATTR                lru_cache
+               78  LOAD_CONST               256
+               80  LOAD_CONST               True
+               82  LOAD_CONST               ('maxsize', 'typed')
+               84  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+
+ L.  45        86  LOAD_CODE                <code_object _compile_pattern>
+               88  LOAD_STR                 '_compile_pattern'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  CALL_FUNCTION_1       1  ''
+               94  STORE_NAME               _compile_pattern
+
+ L.  54        96  LOAD_CODE                <code_object filter>
+               98  LOAD_STR                 'filter'
+              100  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              102  STORE_NAME               filter
+
+ L.  70       104  LOAD_CODE                <code_object fnmatchcase>
+              106  LOAD_STR                 'fnmatchcase'
+              108  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              110  STORE_NAME               fnmatchcase
+
+ L.  80       112  LOAD_CODE                <code_object translate>
+              114  LOAD_STR                 'translate'
+              116  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              118  STORE_NAME               translate
+
+Parse error at or near `CALL_FINALLY' instruction at offset 40
+

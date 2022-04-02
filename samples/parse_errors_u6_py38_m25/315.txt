@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L.  74       334  POP_TOP          
+->           336_338  JUMP_ABSOLUTE       396  'to 396'
+               340_0  COME_FROM           312  '312'
+Instruction context:
+   
+ L.  98        18  LOAD_FAST                'self'
+                  20  LOAD_METHOD              parse_stream
+                  22  LOAD_FAST                'stream'
+                  24  LOAD_FAST                'debug'
+                  26  CALL_METHOD_2         2  ''
+                  28  POP_BLOCK        
+->                30  ROT_TWO          
+                  32  BEGIN_FINALLY    
+                  34  WITH_CLEANUP_START
+                  36  WITH_CLEANUP_FINISH
+                  38  POP_FINALLY           0  ''
+                  40  RETURN_VALUE     
+                42_0  COME_FROM_WITH       14  '14'
+                  42  WITH_CLEANUP_START
+                  44  WITH_CLEANUP_FINISH
+
+test/315.pyc -- 
+# decompile failed
+
+# file test/315.pyc
+# Deparsing stopped due to parse error

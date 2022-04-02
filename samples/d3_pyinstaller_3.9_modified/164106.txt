@@ -1,0 +1,1949 @@
+
+# file test/164106.pyc
+# --- This code section failed: ---
+
+ L.  27         0  LOAD_STR                 '\npyparsing module - Classes and methods to define and execute parsing grammars\n=============================================================================\n\nThe pyparsing module is an alternative approach to creating and\nexecuting simple grammars, vs. the traditional lex/yacc approach, or the\nuse of regular expressions.  With pyparsing, you don\'t need to learn\na new syntax for defining grammars or matching expressions - the parsing\nmodule provides a library of classes that you use to construct the\ngrammar directly in Python.\n\nHere is a program to parse "Hello, World!" (or any greeting of the form\n``"<salutation>, <addressee>!"``), built up using :class:`Word`,\n:class:`Literal`, and :class:`And` elements\n(the :class:`\'+\'<ParserElement.__add__>` operators create :class:`And` expressions,\nand the strings are auto-converted to :class:`Literal` expressions)::\n\n    from pyparsing import Word, alphas\n\n    # define grammar of a greeting\n    greet = Word(alphas) + "," + Word(alphas) + "!"\n\n    hello = "Hello, World!"\n    print (hello, "->", greet.parseString(hello))\n\nThe program outputs the following::\n\n    Hello, World! -> [\'Hello\', \',\', \'World\', \'!\']\n\nThe Python representation of the grammar is quite readable, owing to the\nself-explanatory class names, and the use of \'+\', \'|\' and \'^\' operators.\n\nThe :class:`ParseResults` object returned from\n:class:`ParserElement.parseString` can be\naccessed as a nested list, a dictionary, or an object with named\nattributes.\n\nThe pyparsing module handles some of the problems that are typically\nvexing when writing text parsers:\n\n  - extra or missing whitespace (the above program will also handle\n    "Hello,World!", "Hello  ,  World  !", etc.)\n  - quoted strings\n  - embedded comments\n\n\nGetting Started -\n-----------------\nVisit the classes :class:`ParserElement` and :class:`ParseResults` to\nsee the base classes that most other pyparsing\nclasses inherit from. Use the docstrings for examples of how to:\n\n - construct literal match expressions from :class:`Literal` and\n   :class:`CaselessLiteral` classes\n - construct character word-group expressions using the :class:`Word`\n   class\n - see how to create repetitive expressions using :class:`ZeroOrMore`\n   and :class:`OneOrMore` classes\n - use :class:`\'+\'<And>`, :class:`\'|\'<MatchFirst>`, :class:`\'^\'<Or>`,\n   and :class:`\'&\'<Each>` operators to combine simple expressions into\n   more complex ones\n - associate names with your parsed results using\n   :class:`ParserElement.setResultsName`\n - access the parsed data, which is returned as a :class:`ParseResults`\n   object\n - find some helpful expression short-cuts like :class:`delimitedList`\n   and :class:`oneOf`\n - find more useful common expressions in the :class:`pyparsing_common`\n   namespace class\n'
+
+ L.  26         2  STORE_NAME               __doc__
+
+ L.  98         4  LOAD_STR                 '2.4.7'
+                6  STORE_NAME               __version__
+
+ L.  99         8  LOAD_STR                 '30 Mar 2020 00:43 UTC'
+               10  STORE_NAME               __versionTime__
+
+ L. 100        12  LOAD_STR                 'Paul McGuire <ptmcg@users.sourceforge.net>'
+               14  STORE_NAME               __author__
+
+ L. 102        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              string
+               22  STORE_NAME               string
+
+ L. 103        24  LOAD_CONST               0
+               26  LOAD_CONST               ('ref',)
+               28  IMPORT_NAME              weakref
+               30  IMPORT_FROM              ref
+               32  STORE_NAME               wkref
+               34  POP_TOP          
+
+ L. 104        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              copy
+               42  STORE_NAME               copy
+
+ L. 105        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              sys
+               50  STORE_NAME               sys
+
+ L. 106        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              warnings
+               58  STORE_NAME               warnings
+
+ L. 107        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              re
+               66  STORE_NAME               re
+
+ L. 108        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              sre_constants
+               74  STORE_NAME               sre_constants
+
+ L. 109        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME              collections
+               82  STORE_NAME               collections
+
+ L. 110        84  LOAD_CONST               0
+               86  LOAD_CONST               None
+               88  IMPORT_NAME              pprint
+               90  STORE_NAME               pprint
+
+ L. 111        92  LOAD_CONST               0
+               94  LOAD_CONST               None
+               96  IMPORT_NAME              traceback
+               98  STORE_NAME               traceback
+
+ L. 112       100  LOAD_CONST               0
+              102  LOAD_CONST               None
+              104  IMPORT_NAME              types
+              106  STORE_NAME               types
+
+ L. 113       108  LOAD_CONST               0
+              110  LOAD_CONST               ('datetime',)
+              112  IMPORT_NAME              datetime
+              114  IMPORT_FROM              datetime
+              116  STORE_NAME               datetime
+              118  POP_TOP          
+
+ L. 114       120  LOAD_CONST               0
+              122  LOAD_CONST               ('itemgetter',)
+              124  IMPORT_NAME              operator
+              126  IMPORT_FROM              itemgetter
+              128  STORE_NAME               itemgetter
+              130  POP_TOP          
+
+ L. 115       132  LOAD_CONST               0
+              134  LOAD_CONST               None
+              136  IMPORT_NAME              itertools
+              138  STORE_NAME               itertools
+
+ L. 116       140  LOAD_CONST               0
+              142  LOAD_CONST               ('wraps',)
+              144  IMPORT_NAME              functools
+              146  IMPORT_FROM              wraps
+              148  STORE_NAME               wraps
+              150  POP_TOP          
+
+ L. 117       152  LOAD_CONST               0
+              154  LOAD_CONST               ('contextmanager',)
+              156  IMPORT_NAME              contextlib
+              158  IMPORT_FROM              contextmanager
+              160  STORE_NAME               contextmanager
+              162  POP_TOP          
+
+ L. 119       164  SETUP_FINALLY       182  'to 182'
+
+ L. 121       166  LOAD_CONST               0
+              168  LOAD_CONST               ('filterfalse',)
+              170  IMPORT_NAME              itertools
+              172  IMPORT_FROM              filterfalse
+              174  STORE_NAME               filterfalse
+              176  POP_TOP          
+              178  POP_BLOCK        
+              180  JUMP_FORWARD        212  'to 212'
+            182_0  COME_FROM_FINALLY   164  '164'
+
+ L. 122       182  DUP_TOP          
+              184  LOAD_NAME                ImportError
+              186  <121>               210  ''
+              188  POP_TOP          
+              190  POP_TOP          
+              192  POP_TOP          
+
+ L. 123       194  LOAD_CONST               0
+              196  LOAD_CONST               ('ifilterfalse',)
+              198  IMPORT_NAME              itertools
+              200  IMPORT_FROM              ifilterfalse
+              202  STORE_NAME               filterfalse
+              204  POP_TOP          
+              206  POP_EXCEPT       
+              208  JUMP_FORWARD        212  'to 212'
+              210  <48>             
+            212_0  COME_FROM           208  '208'
+            212_1  COME_FROM           180  '180'
+
+ L. 125       212  SETUP_FINALLY       230  'to 230'
+
+ L. 126       214  LOAD_CONST               0
+              216  LOAD_CONST               ('RLock',)
+              218  IMPORT_NAME              _thread
+              220  IMPORT_FROM              RLock
+              222  STORE_NAME               RLock
+              224  POP_TOP          
+              226  POP_BLOCK        
+              228  JUMP_FORWARD        262  'to 262'
+            230_0  COME_FROM_FINALLY   212  '212'
+
+ L. 127       230  DUP_TOP          
+              232  LOAD_NAME                ImportError
+          234_236  <121>               260  ''
+              238  POP_TOP          
+              240  POP_TOP          
+              242  POP_TOP          
+
+ L. 128       244  LOAD_CONST               0
+              246  LOAD_CONST               ('RLock',)
+              248  IMPORT_NAME              threading
+              250  IMPORT_FROM              RLock
+              252  STORE_NAME               RLock
+              254  POP_TOP          
+              256  POP_EXCEPT       
+              258  JUMP_FORWARD        262  'to 262'
+              260  <48>             
+            262_0  COME_FROM           258  '258'
+            262_1  COME_FROM           228  '228'
+
+ L. 130       262  SETUP_FINALLY       296  'to 296'
+
+ L. 132       264  LOAD_CONST               0
+              266  LOAD_CONST               ('Iterable',)
+              268  IMPORT_NAME_ATTR         collections.abc
+              270  IMPORT_FROM              Iterable
+              272  STORE_NAME               Iterable
+              274  POP_TOP          
+
+ L. 133       276  LOAD_CONST               0
+              278  LOAD_CONST               ('MutableMapping', 'Mapping')
+              280  IMPORT_NAME_ATTR         collections.abc
+              282  IMPORT_FROM              MutableMapping
+              284  STORE_NAME               MutableMapping
+              286  IMPORT_FROM              Mapping
+              288  STORE_NAME               Mapping
+              290  POP_TOP          
+              292  POP_BLOCK        
+              294  JUMP_FORWARD        344  'to 344'
+            296_0  COME_FROM_FINALLY   262  '262'
+
+ L. 134       296  DUP_TOP          
+              298  LOAD_NAME                ImportError
+          300_302  <121>               342  ''
+              304  POP_TOP          
+              306  POP_TOP          
+              308  POP_TOP          
+
+ L. 136       310  LOAD_CONST               0
+              312  LOAD_CONST               ('Iterable',)
+              314  IMPORT_NAME              collections
+              316  IMPORT_FROM              Iterable
+              318  STORE_NAME               Iterable
+              320  POP_TOP          
+
+ L. 137       322  LOAD_CONST               0
+              324  LOAD_CONST               ('MutableMapping', 'Mapping')
+              326  IMPORT_NAME              collections
+              328  IMPORT_FROM              MutableMapping
+              330  STORE_NAME               MutableMapping
+              332  IMPORT_FROM              Mapping
+              334  STORE_NAME               Mapping
+              336  POP_TOP          
+              338  POP_EXCEPT       
+              340  JUMP_FORWARD        344  'to 344'
+              342  <48>             
+            344_0  COME_FROM           340  '340'
+            344_1  COME_FROM           294  '294'
+
+ L. 139       344  SETUP_FINALLY       362  'to 362'
+
+ L. 140       346  LOAD_CONST               0
+              348  LOAD_CONST               ('OrderedDict',)
+              350  IMPORT_NAME              collections
+              352  IMPORT_FROM              OrderedDict
+              354  STORE_NAME               _OrderedDict
+              356  POP_TOP          
+              358  POP_BLOCK        
+              360  JUMP_FORWARD        424  'to 424'
+            362_0  COME_FROM_FINALLY   344  '344'
+
+ L. 141       362  DUP_TOP          
+              364  LOAD_NAME                ImportError
+          366_368  <121>               422  ''
+              370  POP_TOP          
+              372  POP_TOP          
+              374  POP_TOP          
+
+ L. 142       376  SETUP_FINALLY       394  'to 394'
+
+ L. 143       378  LOAD_CONST               0
+              380  LOAD_CONST               ('OrderedDict',)
+              382  IMPORT_NAME              ordereddict
+              384  IMPORT_FROM              OrderedDict
+              386  STORE_NAME               _OrderedDict
+              388  POP_TOP          
+              390  POP_BLOCK        
+              392  JUMP_FORWARD        418  'to 418'
+            394_0  COME_FROM_FINALLY   376  '376'
+
+ L. 144       394  DUP_TOP          
+              396  LOAD_NAME                ImportError
+          398_400  <121>               416  ''
+              402  POP_TOP          
+              404  POP_TOP          
+              406  POP_TOP          
+
+ L. 145       408  LOAD_CONST               None
+              410  STORE_NAME               _OrderedDict
+              412  POP_EXCEPT       
+              414  JUMP_FORWARD        418  'to 418'
+              416  <48>             
+            418_0  COME_FROM           414  '414'
+            418_1  COME_FROM           392  '392'
+              418  POP_EXCEPT       
+              420  JUMP_FORWARD        424  'to 424'
+              422  <48>             
+            424_0  COME_FROM           420  '420'
+            424_1  COME_FROM           360  '360'
+
+ L. 147       424  SETUP_FINALLY       442  'to 442'
+
+ L. 148       426  LOAD_CONST               0
+              428  LOAD_CONST               ('SimpleNamespace',)
+              430  IMPORT_NAME              types
+              432  IMPORT_FROM              SimpleNamespace
+              434  STORE_NAME               SimpleNamespace
+              436  POP_TOP          
+              438  POP_BLOCK        
+              440  JUMP_FORWARD        476  'to 476'
+            442_0  COME_FROM_FINALLY   424  '424'
+
+ L. 149       442  DUP_TOP          
+              444  LOAD_NAME                ImportError
+          446_448  <121>               474  ''
+              450  POP_TOP          
+              452  POP_TOP          
+              454  POP_TOP          
+
+ L. 150       456  LOAD_BUILD_CLASS 
+              458  LOAD_CODE                <code_object SimpleNamespace>
+              460  LOAD_STR                 'SimpleNamespace'
+              462  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              464  LOAD_STR                 'SimpleNamespace'
+              466  CALL_FUNCTION_2       2  ''
+              468  STORE_NAME               SimpleNamespace
+              470  POP_EXCEPT       
+              472  JUMP_FORWARD        476  'to 476'
+              474  <48>             
+            476_0  COME_FROM           472  '472'
+            476_1  COME_FROM           440  '440'
+
+ L. 153       476  LOAD_NAME                SimpleNamespace
+              478  CALL_FUNCTION_0       0  ''
+              480  STORE_NAME               __compat__
+
+ L. 154       482  LOAD_STR                 '\n    A cross-version compatibility configuration for pyparsing features that will be\n    released in a future version. By setting values in this configuration to True,\n    those features can be enabled in prior versions for compatibility development\n    and testing.\n\n     - collect_all_And_tokens - flag to enable fix for Issue #63 that fixes erroneous grouping\n       of results names when an And expression is nested within an Or or MatchFirst; set to\n       True to enable bugfix released in pyparsing 2.3.0, or False to preserve\n       pre-2.3.0 handling of named results\n'
+              484  LOAD_NAME                __compat__
+              486  STORE_ATTR               __doc__
+
+ L. 165       488  LOAD_CONST               True
+              490  LOAD_NAME                __compat__
+              492  STORE_ATTR               collect_all_And_tokens
+
+ L. 167       494  LOAD_NAME                SimpleNamespace
+              496  CALL_FUNCTION_0       0  ''
+              498  STORE_NAME               __diag__
+
+ L. 168       500  LOAD_STR                 '\nDiagnostic configuration (all default to False)\n     - warn_multiple_tokens_in_named_alternation - flag to enable warnings when a results\n       name is defined on a MatchFirst or Or expression with one or more And subexpressions\n       (only warns if __compat__.collect_all_And_tokens is False)\n     - warn_ungrouped_named_tokens_in_collection - flag to enable warnings when a results\n       name is defined on a containing expression with ungrouped subexpressions that also\n       have results names\n     - warn_name_set_on_empty_Forward - flag to enable warnings whan a Forward is defined\n       with a results name, but has no contents defined\n     - warn_on_multiple_string_args_to_oneof - flag to enable warnings whan oneOf is\n       incorrectly called with multiple str arguments\n     - enable_debug_on_named_expressions - flag to auto-enable debug on all subsequent\n       calls to ParserElement.setName()\n'
+              502  LOAD_NAME                __diag__
+              504  STORE_ATTR               __doc__
+
+ L. 183       506  LOAD_CONST               False
+              508  LOAD_NAME                __diag__
+              510  STORE_ATTR               warn_multiple_tokens_in_named_alternation
+
+ L. 184       512  LOAD_CONST               False
+              514  LOAD_NAME                __diag__
+              516  STORE_ATTR               warn_ungrouped_named_tokens_in_collection
+
+ L. 185       518  LOAD_CONST               False
+              520  LOAD_NAME                __diag__
+              522  STORE_ATTR               warn_name_set_on_empty_Forward
+
+ L. 186       524  LOAD_CONST               False
+              526  LOAD_NAME                __diag__
+              528  STORE_ATTR               warn_on_multiple_string_args_to_oneof
+
+ L. 187       530  LOAD_CONST               False
+              532  LOAD_NAME                __diag__
+              534  STORE_ATTR               enable_debug_on_named_expressions
+
+ L. 188       536  LOAD_LISTCOMP            '<code_object <listcomp>>'
+              538  LOAD_STR                 '<listcomp>'
+              540  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              542  LOAD_NAME                vars
+              544  LOAD_NAME                __diag__
+              546  CALL_FUNCTION_1       1  ''
+              548  GET_ITER         
+              550  CALL_FUNCTION_1       1  ''
+              552  LOAD_NAME                __diag__
+              554  STORE_ATTR               _all_names
+
+ L. 190       556  LOAD_CODE                <code_object _enable_all_warnings>
+              558  LOAD_STR                 '_enable_all_warnings'
+              560  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              562  STORE_NAME               _enable_all_warnings
+
+ L. 195       564  LOAD_NAME                _enable_all_warnings
+              566  LOAD_NAME                __diag__
+              568  STORE_ATTR               enable_all_warnings
+
+ L. 198       570  BUILD_LIST_0          0 
+              572  LOAD_CONST               ('__version__', '__versionTime__', '__author__', '__compat__', '__diag__', 'And', 'CaselessKeyword', 'CaselessLiteral', 'CharsNotIn', 'Combine', 'Dict', 'Each', 'Empty', 'FollowedBy', 'Forward', 'GoToColumn', 'Group', 'Keyword', 'LineEnd', 'LineStart', 'Literal', 'PrecededBy', 'MatchFirst', 'NoMatch', 'NotAny', 'OneOrMore', 'OnlyOnce', 'Optional', 'Or', 'ParseBaseException', 'ParseElementEnhance', 'ParseException', 'ParseExpression', 'ParseFatalException', 'ParseResults', 'ParseSyntaxException', 'ParserElement', 'QuotedString', 'RecursiveGrammarException', 'Regex', 'SkipTo', 'StringEnd', 'StringStart', 'Suppress', 'Token', 'TokenConverter', 'White', 'Word', 'WordEnd', 'WordStart', 'ZeroOrMore', 'Char', 'alphanums', 'alphas', 'alphas8bit', 'anyCloseTag', 'anyOpenTag', 'cStyleComment', 'col', 'commaSeparatedList', 'commonHTMLEntity', 'countedArray', 'cppStyleComment', 'dblQuotedString', 'dblSlashComment', 'delimitedList', 'dictOf', 'downcaseTokens', 'empty', 'hexnums', 'htmlComment', 'javaStyleComment', 'line', 'lineEnd', 'lineStart', 'lineno', 'makeHTMLTags', 'makeXMLTags', 'matchOnlyAtCol', 'matchPreviousExpr', 'matchPreviousLiteral', 'nestedExpr', 'nullDebugAction', 'nums', 'oneOf', 'opAssoc', 'operatorPrecedence', 'printables', 'punc8bit', 'pythonStyleComment', 'quotedString', 'removeQuotes', 'replaceHTMLEntity', 'replaceWith', 'restOfLine', 'sglQuotedString', 'srange', 'stringEnd', 'stringStart', 'traceParseAction', 'unicodeString', 'upcaseTokens', 'withAttribute', 'indentedBlock', 'originalTextFor', 'ungroup', 'infixNotation', 'locatedExpr', 'withClass', 'CloseMatch', 'tokenMap', 'pyparsing_common', 'pyparsing_unicode', 'unicode_set', 'conditionAsParseAction', 're')
+              574  CALL_FINALLY        577  'to 577'
+              576  STORE_NAME               __all__
+
+ L. 220       578  LOAD_NAME                tuple
+              580  LOAD_NAME                sys
+              582  LOAD_ATTR                version_info
+              584  CALL_FUNCTION_1       1  ''
+              586  LOAD_CONST               None
+              588  LOAD_CONST               3
+              590  BUILD_SLICE_2         2 
+              592  BINARY_SUBSCR    
+              594  STORE_NAME               system_version
+
+ L. 221       596  LOAD_NAME                system_version
+              598  LOAD_CONST               0
+              600  BINARY_SUBSCR    
+              602  LOAD_CONST               3
+              604  COMPARE_OP               ==
+              606  STORE_NAME               PY_3
+
+ L. 222       608  LOAD_NAME                PY_3
+          610_612  POP_JUMP_IF_FALSE   664  'to 664'
+
+ L. 223       614  LOAD_NAME                sys
+              616  LOAD_ATTR                maxsize
+              618  STORE_NAME               _MAX_INT
+
+ L. 224       620  LOAD_NAME                str
+              622  STORE_NAME               basestring
+
+ L. 225       624  LOAD_NAME                chr
+              626  STORE_NAME               unichr
+
+ L. 226       628  LOAD_NAME                str
+              630  STORE_NAME               unicode
+
+ L. 227       632  LOAD_NAME                str
+              634  STORE_NAME               _ustr
+
+ L. 230       636  LOAD_NAME                sum
+              638  LOAD_NAME                len
+              640  LOAD_NAME                sorted
+              642  LOAD_NAME                reversed
+              644  LOAD_NAME                list
+              646  LOAD_NAME                tuple
+              648  LOAD_NAME                set
+              650  LOAD_NAME                any
+              652  LOAD_NAME                all
+              654  LOAD_NAME                min
+              656  LOAD_NAME                max
+              658  BUILD_LIST_11        11 
+              660  STORE_NAME               singleArgBuiltins
+              662  JUMP_FORWARD        758  'to 758'
+            664_0  COME_FROM           610  '610'
+
+ L. 233       664  LOAD_NAME                sys
+              666  LOAD_ATTR                maxint
+              668  STORE_NAME               _MAX_INT
+
+ L. 234       670  LOAD_NAME                xrange
+              672  STORE_NAME               range
+
+ L. 236       674  LOAD_CODE                <code_object _ustr>
+              676  LOAD_STR                 '_ustr'
+              678  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              680  STORE_NAME               _ustr
+
+ L. 259       682  BUILD_LIST_0          0 
+              684  STORE_NAME               singleArgBuiltins
+
+ L. 260       686  LOAD_CONST               0
+              688  LOAD_CONST               None
+              690  IMPORT_NAME              __builtin__
+              692  STORE_NAME               __builtin__
+
+ L. 262       694  LOAD_STR                 'sum len sorted reversed list tuple set any all min max'
+              696  LOAD_METHOD              split
+              698  CALL_METHOD_0         0  ''
+              700  GET_ITER         
+            702_0  COME_FROM           754  '754'
+            702_1  COME_FROM           750  '750'
+            702_2  COME_FROM           744  '744'
+            702_3  COME_FROM           726  '726'
+              702  FOR_ITER            758  'to 758'
+              704  STORE_NAME               fname
+
+ L. 263       706  SETUP_FINALLY       728  'to 728'
+
+ L. 264       708  LOAD_NAME                singleArgBuiltins
+              710  LOAD_METHOD              append
+              712  LOAD_NAME                getattr
+              714  LOAD_NAME                __builtin__
+              716  LOAD_NAME                fname
+              718  CALL_FUNCTION_2       2  ''
+              720  CALL_METHOD_1         1  ''
+              722  POP_TOP          
+              724  POP_BLOCK        
+              726  JUMP_BACK           702  'to 702'
+            728_0  COME_FROM_FINALLY   706  '706'
+
+ L. 265       728  DUP_TOP          
+              730  LOAD_NAME                AttributeError
+          732_734  <121>               752  ''
+              736  POP_TOP          
+              738  POP_TOP          
+              740  POP_TOP          
+
+ L. 266       742  POP_EXCEPT       
+          744_746  JUMP_BACK           702  'to 702'
+              748  POP_EXCEPT       
+              750  JUMP_BACK           702  'to 702'
+              752  <48>             
+          754_756  JUMP_BACK           702  'to 702'
+            758_0  COME_FROM           702  '702'
+            758_1  COME_FROM           662  '662'
+
+ L. 268       758  LOAD_NAME                type
+              760  LOAD_GENEXPR             '<code_object <genexpr>>'
+              762  LOAD_STR                 '<genexpr>'
+              764  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              766  LOAD_NAME                range
+              768  LOAD_CONST               1
+              770  CALL_FUNCTION_1       1  ''
+              772  GET_ITER         
+              774  CALL_FUNCTION_1       1  ''
+              776  CALL_FUNCTION_1       1  ''
+              778  STORE_NAME               _generatorType
+
+ L. 270       780  LOAD_CODE                <code_object _xml_escape>
+              782  LOAD_STR                 '_xml_escape'
+              784  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              786  STORE_NAME               _xml_escape
+
+ L. 280       788  LOAD_NAME                string
+              790  LOAD_ATTR                ascii_uppercase
+              792  LOAD_NAME                string
+              794  LOAD_ATTR                ascii_lowercase
+              796  BINARY_ADD       
+              798  STORE_NAME               alphas
+
+ L. 281       800  LOAD_STR                 '0123456789'
+              802  STORE_NAME               nums
+
+ L. 282       804  LOAD_NAME                nums
+              806  LOAD_STR                 'ABCDEFabcdef'
+              808  BINARY_ADD       
+              810  STORE_NAME               hexnums
+
+ L. 283       812  LOAD_NAME                alphas
+              814  LOAD_NAME                nums
+              816  BINARY_ADD       
+              818  STORE_NAME               alphanums
+
+ L. 284       820  LOAD_NAME                chr
+              822  LOAD_CONST               92
+              824  CALL_FUNCTION_1       1  ''
+              826  STORE_NAME               _bslash
+
+ L. 285       828  LOAD_STR                 ''
+              830  LOAD_METHOD              join
+              832  LOAD_GENEXPR             '<code_object <genexpr>>'
+              834  LOAD_STR                 '<genexpr>'
+              836  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              838  LOAD_NAME                string
+              840  LOAD_ATTR                printable
+              842  GET_ITER         
+              844  CALL_FUNCTION_1       1  ''
+              846  CALL_METHOD_1         1  ''
+              848  STORE_NAME               printables
+
+ L. 288   850_852  LOAD_CONST               (None, False)
+              854  LOAD_CODE                <code_object conditionAsParseAction>
+              856  LOAD_STR                 'conditionAsParseAction'
+              858  MAKE_FUNCTION_1          'default'
+              860  STORE_NAME               conditionAsParseAction
+
+ L. 300       862  LOAD_BUILD_CLASS 
+              864  LOAD_CODE                <code_object ParseBaseException>
+              866  LOAD_STR                 'ParseBaseException'
+              868  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              870  LOAD_STR                 'ParseBaseException'
+              872  LOAD_NAME                Exception
+              874  CALL_FUNCTION_3       3  ''
+              876  STORE_NAME               ParseBaseException
+
+ L. 363       878  LOAD_BUILD_CLASS 
+              880  LOAD_CODE                <code_object ParseException>
+              882  LOAD_STR                 'ParseException'
+              884  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              886  LOAD_STR                 'ParseException'
+              888  LOAD_NAME                ParseBaseException
+              890  CALL_FUNCTION_3       3  ''
+              892  STORE_NAME               ParseException
+
+ L. 456       894  LOAD_BUILD_CLASS 
+              896  LOAD_CODE                <code_object ParseFatalException>
+              898  LOAD_STR                 'ParseFatalException'
+              900  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              902  LOAD_STR                 'ParseFatalException'
+              904  LOAD_NAME                ParseBaseException
+              906  CALL_FUNCTION_3       3  ''
+              908  STORE_NAME               ParseFatalException
+
+ L. 461       910  LOAD_BUILD_CLASS 
+              912  LOAD_CODE                <code_object ParseSyntaxException>
+              914  LOAD_STR                 'ParseSyntaxException'
+              916  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              918  LOAD_STR                 'ParseSyntaxException'
+              920  LOAD_NAME                ParseFatalException
+              922  CALL_FUNCTION_3       3  ''
+              924  STORE_NAME               ParseSyntaxException
+
+ L. 482       926  LOAD_BUILD_CLASS 
+              928  LOAD_CODE                <code_object RecursiveGrammarException>
+              930  LOAD_STR                 'RecursiveGrammarException'
+              932  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              934  LOAD_STR                 'RecursiveGrammarException'
+              936  LOAD_NAME                Exception
+              938  CALL_FUNCTION_3       3  ''
+              940  STORE_NAME               RecursiveGrammarException
+
+ L. 492       942  LOAD_BUILD_CLASS 
+              944  LOAD_CODE                <code_object _ParseResultsWithOffset>
+              946  LOAD_STR                 '_ParseResultsWithOffset'
+              948  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              950  LOAD_STR                 '_ParseResultsWithOffset'
+              952  LOAD_NAME                object
+              954  CALL_FUNCTION_3       3  ''
+              956  STORE_NAME               _ParseResultsWithOffset
+
+ L. 502       958  LOAD_BUILD_CLASS 
+              960  LOAD_CODE                <code_object ParseResults>
+              962  LOAD_STR                 'ParseResults'
+              964  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              966  LOAD_STR                 'ParseResults'
+              968  LOAD_NAME                object
+              970  CALL_FUNCTION_3       3  ''
+              972  STORE_NAME               ParseResults
+
+ L.1209       974  LOAD_NAME                MutableMapping
+              976  LOAD_METHOD              register
+              978  LOAD_NAME                ParseResults
+              980  CALL_METHOD_1         1  ''
+              982  POP_TOP          
+
+ L.1211       984  LOAD_CODE                <code_object col>
+              986  LOAD_STR                 'col'
+              988  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              990  STORE_NAME               col
+
+ L.1225       992  LOAD_CODE                <code_object lineno>
+              994  LOAD_STR                 'lineno'
+              996  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              998  STORE_NAME               lineno
+
+ L.1237      1000  LOAD_CODE                <code_object line>
+             1002  LOAD_STR                 'line'
+             1004  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1006  STORE_NAME               line
+
+ L.1247      1008  LOAD_CODE                <code_object _defaultStartDebugAction>
+             1010  LOAD_STR                 '_defaultStartDebugAction'
+             1012  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1014  STORE_NAME               _defaultStartDebugAction
+
+ L.1250      1016  LOAD_CODE                <code_object _defaultSuccessDebugAction>
+             1018  LOAD_STR                 '_defaultSuccessDebugAction'
+             1020  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1022  STORE_NAME               _defaultSuccessDebugAction
+
+ L.1253      1024  LOAD_CODE                <code_object _defaultExceptionDebugAction>
+             1026  LOAD_STR                 '_defaultExceptionDebugAction'
+             1028  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1030  STORE_NAME               _defaultExceptionDebugAction
+
+ L.1256      1032  LOAD_CODE                <code_object nullDebugAction>
+             1034  LOAD_STR                 'nullDebugAction'
+             1036  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1038  STORE_NAME               nullDebugAction
+
+ L.1283  1040_1042  LOAD_CONST               (2,)
+             1044  LOAD_CODE                <code_object _trim_arity>
+             1046  LOAD_STR                 '_trim_arity'
+             1048  MAKE_FUNCTION_1          'default'
+             1050  STORE_NAME               _trim_arity
+
+ L.1351      1052  LOAD_BUILD_CLASS 
+             1054  LOAD_CODE                <code_object ParserElement>
+             1056  LOAD_STR                 'ParserElement'
+             1058  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1060  LOAD_STR                 'ParserElement'
+             1062  LOAD_NAME                object
+             1064  CALL_FUNCTION_3       3  ''
+             1066  STORE_NAME               ParserElement
+
+ L.2791      1068  LOAD_BUILD_CLASS 
+             1070  LOAD_CODE                <code_object _PendingSkip>
+             1072  LOAD_STR                 '_PendingSkip'
+             1074  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1076  LOAD_STR                 '_PendingSkip'
+             1078  LOAD_NAME                ParserElement
+             1080  CALL_FUNCTION_3       3  ''
+             1082  STORE_NAME               _PendingSkip
+
+ L.2824      1084  LOAD_BUILD_CLASS 
+             1086  LOAD_CODE                <code_object Token>
+             1088  LOAD_STR                 'Token'
+             1090  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1092  LOAD_STR                 'Token'
+             1094  LOAD_NAME                ParserElement
+             1096  CALL_FUNCTION_3       3  ''
+             1098  STORE_NAME               Token
+
+ L.2832      1100  LOAD_BUILD_CLASS 
+             1102  LOAD_CODE                <code_object Empty>
+             1104  LOAD_STR                 'Empty'
+             1106  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1108  LOAD_STR                 'Empty'
+             1110  LOAD_NAME                Token
+             1112  CALL_FUNCTION_3       3  ''
+             1114  STORE_NAME               Empty
+
+ L.2842      1116  LOAD_BUILD_CLASS 
+             1118  LOAD_CODE                <code_object NoMatch>
+             1120  LOAD_STR                 'NoMatch'
+             1122  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1124  LOAD_STR                 'NoMatch'
+             1126  LOAD_NAME                Token
+             1128  CALL_FUNCTION_3       3  ''
+             1130  STORE_NAME               NoMatch
+
+ L.2856      1132  LOAD_BUILD_CLASS 
+             1134  LOAD_CODE                <code_object Literal>
+             1136  LOAD_STR                 'Literal'
+             1138  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1140  LOAD_STR                 'Literal'
+             1142  LOAD_NAME                Token
+             1144  CALL_FUNCTION_3       3  ''
+             1146  STORE_NAME               Literal
+
+ L.2895      1148  LOAD_BUILD_CLASS 
+             1150  LOAD_CODE                <code_object _SingleCharLiteral>
+             1152  LOAD_STR                 '_SingleCharLiteral'
+             1154  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1156  LOAD_STR                 '_SingleCharLiteral'
+             1158  LOAD_NAME                Literal
+             1160  CALL_FUNCTION_3       3  ''
+             1162  STORE_NAME               _SingleCharLiteral
+
+ L.2901      1164  LOAD_NAME                Literal
+             1166  STORE_NAME               _L
+
+ L.2902      1168  LOAD_NAME                Literal
+             1170  LOAD_NAME                ParserElement
+             1172  STORE_ATTR               _literalStringClass
+
+ L.2904      1174  LOAD_BUILD_CLASS 
+             1176  LOAD_CODE                <code_object Keyword>
+             1178  LOAD_STR                 'Keyword'
+             1180  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1182  LOAD_STR                 'Keyword'
+             1184  LOAD_NAME                Token
+             1186  CALL_FUNCTION_3       3  ''
+             1188  STORE_NAME               Keyword
+
+ L.2982      1190  LOAD_BUILD_CLASS 
+             1192  LOAD_CODE                <code_object CaselessLiteral>
+             1194  LOAD_STR                 'CaselessLiteral'
+             1196  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1198  LOAD_STR                 'CaselessLiteral'
+             1200  LOAD_NAME                Literal
+             1202  CALL_FUNCTION_3       3  ''
+             1204  STORE_NAME               CaselessLiteral
+
+ L.3005      1206  LOAD_BUILD_CLASS 
+             1208  LOAD_CODE                <code_object CaselessKeyword>
+             1210  LOAD_STR                 'CaselessKeyword'
+             1212  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1214  LOAD_STR                 'CaselessKeyword'
+             1216  LOAD_NAME                Keyword
+             1218  CALL_FUNCTION_3       3  ''
+             1220  STORE_NAME               CaselessKeyword
+
+ L.3018      1222  LOAD_BUILD_CLASS 
+             1224  LOAD_CODE                <code_object CloseMatch>
+             1226  LOAD_STR                 'CloseMatch'
+             1228  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1230  LOAD_STR                 'CloseMatch'
+             1232  LOAD_NAME                Token
+             1234  CALL_FUNCTION_3       3  ''
+             1236  STORE_NAME               CloseMatch
+
+ L.3087      1238  LOAD_BUILD_CLASS 
+             1240  LOAD_CODE                <code_object Word>
+             1242  LOAD_STR                 'Word'
+             1244  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1246  LOAD_STR                 'Word'
+             1248  LOAD_NAME                Token
+             1250  CALL_FUNCTION_3       3  ''
+             1252  STORE_NAME               Word
+
+ L.3246      1254  LOAD_BUILD_CLASS 
+             1256  LOAD_CODE                <code_object _WordRegex>
+             1258  LOAD_STR                 '_WordRegex'
+             1260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1262  LOAD_STR                 '_WordRegex'
+             1264  LOAD_NAME                Word
+             1266  CALL_FUNCTION_3       3  ''
+             1268  STORE_NAME               _WordRegex
+
+ L.3256      1270  LOAD_BUILD_CLASS 
+             1272  LOAD_CODE                <code_object Char>
+             1274  LOAD_STR                 'Char'
+             1276  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1278  LOAD_STR                 'Char'
+             1280  LOAD_NAME                _WordRegex
+             1282  CALL_FUNCTION_3       3  ''
+             1284  STORE_NAME               Char
+
+ L.3270      1286  LOAD_BUILD_CLASS 
+             1288  LOAD_CODE                <code_object Regex>
+             1290  LOAD_STR                 'Regex'
+             1292  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1294  LOAD_STR                 'Regex'
+             1296  LOAD_NAME                Token
+             1298  CALL_FUNCTION_3       3  ''
+             1300  STORE_NAME               Regex
+
+ L.3410      1302  LOAD_BUILD_CLASS 
+             1304  LOAD_CODE                <code_object QuotedString>
+             1306  LOAD_STR                 'QuotedString'
+             1308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1310  LOAD_STR                 'QuotedString'
+             1312  LOAD_NAME                Token
+             1314  CALL_FUNCTION_3       3  ''
+             1316  STORE_NAME               QuotedString
+
+ L.3561      1318  LOAD_BUILD_CLASS 
+             1320  LOAD_CODE                <code_object CharsNotIn>
+             1322  LOAD_STR                 'CharsNotIn'
+             1324  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1326  LOAD_STR                 'CharsNotIn'
+             1328  LOAD_NAME                Token
+             1330  CALL_FUNCTION_3       3  ''
+             1332  STORE_NAME               CharsNotIn
+
+ L.3636      1334  LOAD_BUILD_CLASS 
+             1336  LOAD_CODE                <code_object White>
+             1338  LOAD_STR                 'White'
+             1340  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1342  LOAD_STR                 'White'
+             1344  LOAD_NAME                Token
+             1346  CALL_FUNCTION_3       3  ''
+             1348  STORE_NAME               White
+
+ L.3706      1350  LOAD_BUILD_CLASS 
+             1352  LOAD_CODE                <code_object _PositionToken>
+             1354  LOAD_STR                 '_PositionToken'
+             1356  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1358  LOAD_STR                 '_PositionToken'
+             1360  LOAD_NAME                Token
+             1362  CALL_FUNCTION_3       3  ''
+             1364  STORE_NAME               _PositionToken
+
+ L.3713      1366  LOAD_BUILD_CLASS 
+             1368  LOAD_CODE                <code_object GoToColumn>
+             1370  LOAD_STR                 'GoToColumn'
+             1372  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1374  LOAD_STR                 'GoToColumn'
+             1376  LOAD_NAME                _PositionToken
+             1378  CALL_FUNCTION_3       3  ''
+             1380  STORE_NAME               GoToColumn
+
+ L.3739      1382  LOAD_BUILD_CLASS 
+             1384  LOAD_CODE                <code_object LineStart>
+             1386  LOAD_STR                 'LineStart'
+             1388  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1390  LOAD_STR                 'LineStart'
+             1392  LOAD_NAME                _PositionToken
+             1394  CALL_FUNCTION_3       3  ''
+             1396  STORE_NAME               LineStart
+
+ L.3770      1398  LOAD_BUILD_CLASS 
+             1400  LOAD_CODE                <code_object LineEnd>
+             1402  LOAD_STR                 'LineEnd'
+             1404  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1406  LOAD_STR                 'LineEnd'
+             1408  LOAD_NAME                _PositionToken
+             1410  CALL_FUNCTION_3       3  ''
+             1412  STORE_NAME               LineEnd
+
+ L.3790      1414  LOAD_BUILD_CLASS 
+             1416  LOAD_CODE                <code_object StringStart>
+             1418  LOAD_STR                 'StringStart'
+             1420  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1422  LOAD_STR                 'StringStart'
+             1424  LOAD_NAME                _PositionToken
+             1426  CALL_FUNCTION_3       3  ''
+             1428  STORE_NAME               StringStart
+
+ L.3805      1430  LOAD_BUILD_CLASS 
+             1432  LOAD_CODE                <code_object StringEnd>
+             1434  LOAD_STR                 'StringEnd'
+             1436  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1438  LOAD_STR                 'StringEnd'
+             1440  LOAD_NAME                _PositionToken
+             1442  CALL_FUNCTION_3       3  ''
+             1444  STORE_NAME               StringEnd
+
+ L.3822      1446  LOAD_BUILD_CLASS 
+             1448  LOAD_CODE                <code_object WordStart>
+             1450  LOAD_STR                 'WordStart'
+             1452  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1454  LOAD_STR                 'WordStart'
+             1456  LOAD_NAME                _PositionToken
+             1458  CALL_FUNCTION_3       3  ''
+             1460  STORE_NAME               WordStart
+
+ L.3843      1462  LOAD_BUILD_CLASS 
+             1464  LOAD_CODE                <code_object WordEnd>
+             1466  LOAD_STR                 'WordEnd'
+             1468  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1470  LOAD_STR                 'WordEnd'
+             1472  LOAD_NAME                _PositionToken
+             1474  CALL_FUNCTION_3       3  ''
+             1476  STORE_NAME               WordEnd
+
+ L.3866      1478  LOAD_BUILD_CLASS 
+             1480  LOAD_CODE                <code_object ParseExpression>
+             1482  LOAD_STR                 'ParseExpression'
+             1484  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1486  LOAD_STR                 'ParseExpression'
+             1488  LOAD_NAME                ParserElement
+             1490  CALL_FUNCTION_3       3  ''
+             1492  STORE_NAME               ParseExpression
+
+ L.3987      1494  LOAD_BUILD_CLASS 
+             1496  LOAD_CODE                <code_object And>
+             1498  LOAD_STR                 'And'
+             1500  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1502  LOAD_STR                 'And'
+             1504  LOAD_NAME                ParseExpression
+             1506  CALL_FUNCTION_3       3  ''
+             1508  STORE_NAME               And
+
+ L.4096      1510  LOAD_BUILD_CLASS 
+             1512  LOAD_CODE                <code_object Or>
+             1514  LOAD_STR                 'Or'
+             1516  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1518  LOAD_STR                 'Or'
+             1520  LOAD_NAME                ParseExpression
+             1522  CALL_FUNCTION_3       3  ''
+             1524  STORE_NAME               Or
+
+ L.4219      1526  LOAD_BUILD_CLASS 
+             1528  LOAD_CODE                <code_object MatchFirst>
+             1530  LOAD_STR                 'MatchFirst'
+             1532  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1534  LOAD_STR                 'MatchFirst'
+             1536  LOAD_NAME                ParseExpression
+             1538  CALL_FUNCTION_3       3  ''
+             1540  STORE_NAME               MatchFirst
+
+ L.4305      1542  LOAD_BUILD_CLASS 
+             1544  LOAD_CODE                <code_object Each>
+             1546  LOAD_STR                 'Each'
+             1548  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1550  LOAD_STR                 'Each'
+             1552  LOAD_NAME                ParseExpression
+             1554  CALL_FUNCTION_3       3  ''
+             1556  STORE_NAME               Each
+
+ L.4438      1558  LOAD_BUILD_CLASS 
+             1560  LOAD_CODE                <code_object ParseElementEnhance>
+             1562  LOAD_STR                 'ParseElementEnhance'
+             1564  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1566  LOAD_STR                 'ParseElementEnhance'
+             1568  LOAD_NAME                ParserElement
+             1570  CALL_FUNCTION_3       3  ''
+             1572  STORE_NAME               ParseElementEnhance
+
+ L.4517      1574  LOAD_BUILD_CLASS 
+             1576  LOAD_CODE                <code_object FollowedBy>
+             1578  LOAD_STR                 'FollowedBy'
+             1580  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1582  LOAD_STR                 'FollowedBy'
+             1584  LOAD_NAME                ParseElementEnhance
+             1586  CALL_FUNCTION_3       3  ''
+             1588  STORE_NAME               FollowedBy
+
+ L.4552      1590  LOAD_BUILD_CLASS 
+             1592  LOAD_CODE                <code_object PrecededBy>
+             1594  LOAD_STR                 'PrecededBy'
+             1596  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1598  LOAD_STR                 'PrecededBy'
+             1600  LOAD_NAME                ParseElementEnhance
+             1602  CALL_FUNCTION_3       3  ''
+             1604  STORE_NAME               PrecededBy
+
+ L.4627      1606  LOAD_BUILD_CLASS 
+             1608  LOAD_CODE                <code_object NotAny>
+             1610  LOAD_STR                 'NotAny'
+             1612  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1614  LOAD_STR                 'NotAny'
+             1616  LOAD_NAME                ParseElementEnhance
+             1618  CALL_FUNCTION_3       3  ''
+             1620  STORE_NAME               NotAny
+
+ L.4671      1622  LOAD_BUILD_CLASS 
+             1624  LOAD_CODE                <code_object _MultipleMatch>
+             1626  LOAD_STR                 '_MultipleMatch'
+             1628  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1630  LOAD_STR                 '_MultipleMatch'
+             1632  LOAD_NAME                ParseElementEnhance
+             1634  CALL_FUNCTION_3       3  ''
+             1636  STORE_NAME               _MultipleMatch
+
+ L.4729      1638  LOAD_BUILD_CLASS 
+             1640  LOAD_CODE                <code_object OneOrMore>
+             1642  LOAD_STR                 'OneOrMore'
+             1644  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1646  LOAD_STR                 'OneOrMore'
+             1648  LOAD_NAME                _MultipleMatch
+             1650  CALL_FUNCTION_3       3  ''
+             1652  STORE_NAME               OneOrMore
+
+ L.4764      1654  LOAD_BUILD_CLASS 
+             1656  LOAD_CODE                <code_object ZeroOrMore>
+             1658  LOAD_STR                 'ZeroOrMore'
+             1660  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1662  LOAD_STR                 'ZeroOrMore'
+             1664  LOAD_NAME                _MultipleMatch
+             1666  CALL_FUNCTION_3       3  ''
+             1668  STORE_NAME               ZeroOrMore
+
+ L.4795      1670  LOAD_BUILD_CLASS 
+             1672  LOAD_CODE                <code_object _NullToken>
+             1674  LOAD_STR                 '_NullToken'
+             1676  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1678  LOAD_STR                 '_NullToken'
+             1680  LOAD_NAME                object
+             1682  CALL_FUNCTION_3       3  ''
+             1684  STORE_NAME               _NullToken
+
+ L.4802      1686  LOAD_BUILD_CLASS 
+             1688  LOAD_CODE                <code_object Optional>
+             1690  LOAD_STR                 'Optional'
+             1692  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1694  LOAD_STR                 'Optional'
+             1696  LOAD_NAME                ParseElementEnhance
+             1698  CALL_FUNCTION_3       3  ''
+             1700  STORE_NAME               Optional
+
+ L.4870      1702  LOAD_BUILD_CLASS 
+             1704  LOAD_CODE                <code_object SkipTo>
+             1706  LOAD_STR                 'SkipTo'
+             1708  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1710  LOAD_STR                 'SkipTo'
+             1712  LOAD_NAME                ParseElementEnhance
+             1714  CALL_FUNCTION_3       3  ''
+             1716  STORE_NAME               SkipTo
+
+ L.4988      1718  LOAD_BUILD_CLASS 
+             1720  LOAD_CODE                <code_object Forward>
+             1722  LOAD_STR                 'Forward'
+             1724  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1726  LOAD_STR                 'Forward'
+             1728  LOAD_NAME                ParseElementEnhance
+             1730  CALL_FUNCTION_3       3  ''
+             1732  STORE_NAME               Forward
+
+ L.5094      1734  LOAD_BUILD_CLASS 
+             1736  LOAD_CODE                <code_object TokenConverter>
+             1738  LOAD_STR                 'TokenConverter'
+             1740  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1742  LOAD_STR                 'TokenConverter'
+             1744  LOAD_NAME                ParseElementEnhance
+             1746  CALL_FUNCTION_3       3  ''
+             1748  STORE_NAME               TokenConverter
+
+ L.5102      1750  LOAD_BUILD_CLASS 
+             1752  LOAD_CODE                <code_object Combine>
+             1754  LOAD_STR                 'Combine'
+             1756  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1758  LOAD_STR                 'Combine'
+             1760  LOAD_NAME                TokenConverter
+             1762  CALL_FUNCTION_3       3  ''
+             1764  STORE_NAME               Combine
+
+ L.5147      1766  LOAD_BUILD_CLASS 
+             1768  LOAD_CODE                <code_object Group>
+             1770  LOAD_STR                 'Group'
+             1772  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1774  LOAD_STR                 'Group'
+             1776  LOAD_NAME                TokenConverter
+             1778  CALL_FUNCTION_3       3  ''
+             1780  STORE_NAME               Group
+
+ L.5169      1782  LOAD_BUILD_CLASS 
+             1784  LOAD_CODE                <code_object Dict>
+             1786  LOAD_STR                 'Dict'
+             1788  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1790  LOAD_STR                 'Dict'
+             1792  LOAD_NAME                TokenConverter
+             1794  CALL_FUNCTION_3       3  ''
+             1796  STORE_NAME               Dict
+
+ L.5237      1798  LOAD_BUILD_CLASS 
+             1800  LOAD_CODE                <code_object Suppress>
+             1802  LOAD_STR                 'Suppress'
+             1804  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1806  LOAD_STR                 'Suppress'
+             1808  LOAD_NAME                TokenConverter
+             1810  CALL_FUNCTION_3       3  ''
+             1812  STORE_NAME               Suppress
+
+ L.5266      1814  LOAD_BUILD_CLASS 
+             1816  LOAD_CODE                <code_object OnlyOnce>
+             1818  LOAD_STR                 'OnlyOnce'
+             1820  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1822  LOAD_STR                 'OnlyOnce'
+             1824  LOAD_NAME                object
+             1826  CALL_FUNCTION_3       3  ''
+             1828  STORE_NAME               OnlyOnce
+
+ L.5281      1830  LOAD_CODE                <code_object traceParseAction>
+             1832  LOAD_STR                 'traceParseAction'
+             1834  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1836  STORE_NAME               traceParseAction
+
+ L.5329  1838_1840  LOAD_CONST               (',', False)
+             1842  LOAD_CODE                <code_object delimitedList>
+             1844  LOAD_STR                 'delimitedList'
+             1846  MAKE_FUNCTION_1          'default'
+             1848  STORE_NAME               delimitedList
+
+ L.5350  1850_1852  LOAD_CONST               (None,)
+             1854  LOAD_CODE                <code_object countedArray>
+             1856  LOAD_STR                 'countedArray'
+             1858  MAKE_FUNCTION_1          'default'
+             1860  STORE_NAME               countedArray
+
+ L.5386      1862  LOAD_CODE                <code_object _flatten>
+             1864  LOAD_STR                 '_flatten'
+             1866  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1868  STORE_NAME               _flatten
+
+ L.5395      1870  LOAD_CODE                <code_object matchPreviousLiteral>
+             1872  LOAD_STR                 'matchPreviousLiteral'
+             1874  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1876  STORE_NAME               matchPreviousLiteral
+
+ L.5425      1878  LOAD_CODE                <code_object matchPreviousExpr>
+             1880  LOAD_STR                 'matchPreviousExpr'
+             1882  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1884  STORE_NAME               matchPreviousExpr
+
+ L.5454      1886  LOAD_CODE                <code_object _escapeRegexRangeChars>
+             1888  LOAD_STR                 '_escapeRegexRangeChars'
+             1890  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1892  STORE_NAME               _escapeRegexRangeChars
+
+ L.5462  1894_1896  LOAD_CONST               (False, True, False)
+             1898  LOAD_CODE                <code_object oneOf>
+             1900  LOAD_STR                 'oneOf'
+             1902  MAKE_FUNCTION_1          'default'
+             1904  STORE_NAME               oneOf
+
+ L.5549      1906  LOAD_CODE                <code_object dictOf>
+             1908  LOAD_STR                 'dictOf'
+             1910  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1912  STORE_NAME               dictOf
+
+ L.5588  1914_1916  LOAD_CONST               (True,)
+             1918  LOAD_CODE                <code_object originalTextFor>
+             1920  LOAD_STR                 'originalTextFor'
+             1922  MAKE_FUNCTION_1          'default'
+             1924  STORE_NAME               originalTextFor
+
+ L.5630      1926  LOAD_CODE                <code_object ungroup>
+             1928  LOAD_STR                 'ungroup'
+             1930  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1932  STORE_NAME               ungroup
+
+ L.5636      1934  LOAD_CODE                <code_object locatedExpr>
+             1936  LOAD_STR                 'locatedExpr'
+             1938  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1940  STORE_NAME               locatedExpr
+
+ L.5666      1942  LOAD_NAME                Empty
+             1944  CALL_FUNCTION_0       0  ''
+             1946  LOAD_METHOD              setName
+             1948  LOAD_STR                 'empty'
+             1950  CALL_METHOD_1         1  ''
+             1952  STORE_NAME               empty
+
+ L.5667      1954  LOAD_NAME                LineStart
+             1956  CALL_FUNCTION_0       0  ''
+             1958  LOAD_METHOD              setName
+             1960  LOAD_STR                 'lineStart'
+             1962  CALL_METHOD_1         1  ''
+             1964  STORE_NAME               lineStart
+
+ L.5668      1966  LOAD_NAME                LineEnd
+             1968  CALL_FUNCTION_0       0  ''
+             1970  LOAD_METHOD              setName
+             1972  LOAD_STR                 'lineEnd'
+             1974  CALL_METHOD_1         1  ''
+             1976  STORE_NAME               lineEnd
+
+ L.5669      1978  LOAD_NAME                StringStart
+             1980  CALL_FUNCTION_0       0  ''
+             1982  LOAD_METHOD              setName
+             1984  LOAD_STR                 'stringStart'
+             1986  CALL_METHOD_1         1  ''
+             1988  STORE_NAME               stringStart
+
+ L.5670      1990  LOAD_NAME                StringEnd
+             1992  CALL_FUNCTION_0       0  ''
+             1994  LOAD_METHOD              setName
+             1996  LOAD_STR                 'stringEnd'
+             1998  CALL_METHOD_1         1  ''
+             2000  STORE_NAME               stringEnd
+
+ L.5672      2002  LOAD_NAME                Word
+             2004  LOAD_NAME                _bslash
+             2006  LOAD_STR                 '\\[]-*.$+^?()~ '
+             2008  LOAD_CONST               2
+             2010  LOAD_CONST               ('exact',)
+             2012  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+             2014  LOAD_METHOD              setParseAction
+             2016  LOAD_LAMBDA              '<code_object <lambda>>'
+             2018  LOAD_STR                 '<lambda>'
+             2020  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2022  CALL_METHOD_1         1  ''
+             2024  STORE_NAME               _escapedPunc
+
+ L.5673      2026  LOAD_NAME                Regex
+             2028  LOAD_STR                 '\\\\0?[xX][0-9a-fA-F]+'
+             2030  CALL_FUNCTION_1       1  ''
+             2032  LOAD_METHOD              setParseAction
+             2034  LOAD_LAMBDA              '<code_object <lambda>>'
+             2036  LOAD_STR                 '<lambda>'
+             2038  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2040  CALL_METHOD_1         1  ''
+             2042  STORE_NAME               _escapedHexChar
+
+ L.5674      2044  LOAD_NAME                Regex
+             2046  LOAD_STR                 '\\\\0[0-7]+'
+             2048  CALL_FUNCTION_1       1  ''
+             2050  LOAD_METHOD              setParseAction
+             2052  LOAD_LAMBDA              '<code_object <lambda>>'
+             2054  LOAD_STR                 '<lambda>'
+             2056  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2058  CALL_METHOD_1         1  ''
+             2060  STORE_NAME               _escapedOctChar
+
+ L.5675      2062  LOAD_NAME                _escapedPunc
+             2064  LOAD_NAME                _escapedHexChar
+             2066  BINARY_OR        
+             2068  LOAD_NAME                _escapedOctChar
+             2070  BINARY_OR        
+             2072  LOAD_NAME                CharsNotIn
+             2074  LOAD_STR                 '\\]'
+             2076  LOAD_CONST               1
+             2078  LOAD_CONST               ('exact',)
+             2080  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+             2082  BINARY_OR        
+             2084  STORE_NAME               _singleChar
+
+ L.5676      2086  LOAD_NAME                Group
+             2088  LOAD_NAME                _singleChar
+             2090  LOAD_NAME                Suppress
+             2092  LOAD_STR                 '-'
+             2094  CALL_FUNCTION_1       1  ''
+             2096  BINARY_ADD       
+             2098  LOAD_NAME                _singleChar
+             2100  BINARY_ADD       
+             2102  CALL_FUNCTION_1       1  ''
+             2104  STORE_NAME               _charRange
+
+ L.5677      2106  LOAD_NAME                Literal
+             2108  LOAD_STR                 '['
+             2110  CALL_FUNCTION_1       1  ''
+             2112  LOAD_NAME                Optional
+             2114  LOAD_STR                 '^'
+             2116  CALL_FUNCTION_1       1  ''
+             2118  LOAD_METHOD              setResultsName
+             2120  LOAD_STR                 'negate'
+             2122  CALL_METHOD_1         1  ''
+             2124  BINARY_ADD       
+             2126  LOAD_NAME                Group
+             2128  LOAD_NAME                OneOrMore
+             2130  LOAD_NAME                _charRange
+             2132  LOAD_NAME                _singleChar
+             2134  BINARY_OR        
+             2136  CALL_FUNCTION_1       1  ''
+             2138  CALL_FUNCTION_1       1  ''
+             2140  LOAD_METHOD              setResultsName
+             2142  LOAD_STR                 'body'
+             2144  CALL_METHOD_1         1  ''
+             2146  BINARY_ADD       
+             2148  LOAD_STR                 ']'
+             2150  BINARY_ADD       
+             2152  STORE_NAME               _reBracketExpr
+
+ L.5679      2154  LOAD_CODE                <code_object srange>
+             2156  LOAD_STR                 'srange'
+             2158  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2160  STORE_NAME               srange
+
+ L.5711      2162  LOAD_CODE                <code_object matchOnlyAtCol>
+             2164  LOAD_STR                 'matchOnlyAtCol'
+             2166  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2168  STORE_NAME               matchOnlyAtCol
+
+ L.5720      2170  LOAD_CODE                <code_object replaceWith>
+             2172  LOAD_STR                 'replaceWith'
+             2174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2176  STORE_NAME               replaceWith
+
+ L.5735      2178  LOAD_CODE                <code_object removeQuotes>
+             2180  LOAD_STR                 'removeQuotes'
+             2182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2184  STORE_NAME               removeQuotes
+
+ L.5750      2186  LOAD_CODE                <code_object tokenMap>
+             2188  LOAD_STR                 'tokenMap'
+             2190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2192  STORE_NAME               tokenMap
+
+ L.5798      2194  LOAD_NAME                tokenMap
+             2196  LOAD_LAMBDA              '<code_object <lambda>>'
+             2198  LOAD_STR                 '<lambda>'
+             2200  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2202  CALL_FUNCTION_1       1  ''
+             2204  STORE_NAME               upcaseTokens
+
+ L.5802      2206  LOAD_NAME                tokenMap
+             2208  LOAD_LAMBDA              '<code_object <lambda>>'
+             2210  LOAD_STR                 '<lambda>'
+             2212  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2214  CALL_FUNCTION_1       1  ''
+             2216  STORE_NAME               downcaseTokens
+
+ L.5807      2218  LOAD_NAME                Suppress
+             2220  LOAD_STR                 '<'
+             2222  CALL_FUNCTION_1       1  ''
+
+ L.5808      2224  LOAD_NAME                Suppress
+             2226  LOAD_STR                 '>'
+             2228  CALL_FUNCTION_1       1  ''
+
+ L.5806      2230  BUILD_TUPLE_2         2 
+             2232  LOAD_CODE                <code_object _makeTags>
+             2234  LOAD_STR                 '_makeTags'
+             2236  MAKE_FUNCTION_1          'default'
+             2238  STORE_NAME               _makeTags
+
+ L.5843      2240  LOAD_CODE                <code_object makeHTMLTags>
+             2242  LOAD_STR                 'makeHTMLTags'
+             2244  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2246  STORE_NAME               makeHTMLTags
+
+ L.5867      2248  LOAD_CODE                <code_object makeXMLTags>
+             2250  LOAD_STR                 'makeXMLTags'
+             2252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2254  STORE_NAME               makeXMLTags
+
+ L.5875      2256  LOAD_CODE                <code_object withAttribute>
+             2258  LOAD_STR                 'withAttribute'
+             2260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2262  STORE_NAME               withAttribute
+
+ L.5944      2264  LOAD_NAME                object
+             2266  CALL_FUNCTION_0       0  ''
+             2268  LOAD_NAME                withAttribute
+             2270  STORE_ATTR               ANY_VALUE
+
+ L.5946  2272_2274  LOAD_CONST               ('',)
+             2276  LOAD_CODE                <code_object withClass>
+             2278  LOAD_STR                 'withClass'
+             2280  MAKE_FUNCTION_1          'default'
+             2282  STORE_NAME               withClass
+
+ L.5984      2284  LOAD_NAME                SimpleNamespace
+             2286  CALL_FUNCTION_0       0  ''
+             2288  STORE_NAME               opAssoc
+
+ L.5985      2290  LOAD_NAME                object
+             2292  CALL_FUNCTION_0       0  ''
+             2294  LOAD_NAME                opAssoc
+             2296  STORE_ATTR               LEFT
+
+ L.5986      2298  LOAD_NAME                object
+             2300  CALL_FUNCTION_0       0  ''
+             2302  LOAD_NAME                opAssoc
+             2304  STORE_ATTR               RIGHT
+
+ L.5988      2306  LOAD_NAME                Suppress
+             2308  LOAD_STR                 '('
+             2310  CALL_FUNCTION_1       1  ''
+             2312  LOAD_NAME                Suppress
+             2314  LOAD_STR                 ')'
+             2316  CALL_FUNCTION_1       1  ''
+             2318  BUILD_TUPLE_2         2 
+             2320  LOAD_CODE                <code_object infixNotation>
+             2322  LOAD_STR                 'infixNotation'
+             2324  MAKE_FUNCTION_1          'default'
+             2326  STORE_NAME               infixNotation
+
+ L.6117      2328  LOAD_NAME                infixNotation
+             2330  STORE_NAME               operatorPrecedence
+
+ L.6121      2332  LOAD_NAME                Combine
+             2334  LOAD_NAME                Regex
+             2336  LOAD_STR                 '"(?:[^"\\n\\r\\\\]|(?:"")|(?:\\\\(?:[^x]|x[0-9a-fA-F]+)))*'
+             2338  CALL_FUNCTION_1       1  ''
+             2340  LOAD_STR                 '"'
+             2342  BINARY_ADD       
+             2344  CALL_FUNCTION_1       1  ''
+             2346  LOAD_METHOD              setName
+             2348  LOAD_STR                 'string enclosed in double quotes'
+             2350  CALL_METHOD_1         1  ''
+             2352  STORE_NAME               dblQuotedString
+
+ L.6122      2354  LOAD_NAME                Combine
+             2356  LOAD_NAME                Regex
+             2358  LOAD_STR                 "'(?:[^'\\n\\r\\\\]|(?:'')|(?:\\\\(?:[^x]|x[0-9a-fA-F]+)))*"
+             2360  CALL_FUNCTION_1       1  ''
+             2362  LOAD_STR                 "'"
+             2364  BINARY_ADD       
+             2366  CALL_FUNCTION_1       1  ''
+             2368  LOAD_METHOD              setName
+             2370  LOAD_STR                 'string enclosed in single quotes'
+             2372  CALL_METHOD_1         1  ''
+             2374  STORE_NAME               sglQuotedString
+
+ L.6123      2376  LOAD_NAME                Combine
+             2378  LOAD_NAME                Regex
+             2380  LOAD_STR                 '"(?:[^"\\n\\r\\\\]|(?:"")|(?:\\\\(?:[^x]|x[0-9a-fA-F]+)))*'
+             2382  CALL_FUNCTION_1       1  ''
+             2384  LOAD_STR                 '"'
+             2386  BINARY_ADD       
+
+ L.6124      2388  LOAD_NAME                Regex
+             2390  LOAD_STR                 "'(?:[^'\\n\\r\\\\]|(?:'')|(?:\\\\(?:[^x]|x[0-9a-fA-F]+)))*"
+             2392  CALL_FUNCTION_1       1  ''
+             2394  LOAD_STR                 "'"
+             2396  BINARY_ADD       
+
+ L.6123      2398  BINARY_OR        
+             2400  CALL_FUNCTION_1       1  ''
+             2402  LOAD_METHOD              setName
+
+ L.6124      2404  LOAD_STR                 'quotedString using single or double quotes'
+
+ L.6123      2406  CALL_METHOD_1         1  ''
+             2408  STORE_NAME               quotedString
+
+ L.6125      2410  LOAD_NAME                Combine
+             2412  LOAD_NAME                _L
+             2414  LOAD_STR                 'u'
+             2416  CALL_FUNCTION_1       1  ''
+             2418  LOAD_NAME                quotedString
+             2420  LOAD_METHOD              copy
+             2422  CALL_METHOD_0         0  ''
+             2424  BINARY_ADD       
+             2426  CALL_FUNCTION_1       1  ''
+             2428  LOAD_METHOD              setName
+             2430  LOAD_STR                 'unicode string literal'
+             2432  CALL_METHOD_1         1  ''
+             2434  STORE_NAME               unicodeString
+
+ L.6127      2436  LOAD_STR                 '('
+             2438  LOAD_STR                 ')'
+             2440  LOAD_CONST               None
+             2442  LOAD_NAME                quotedString
+             2444  LOAD_METHOD              copy
+             2446  CALL_METHOD_0         0  ''
+             2448  BUILD_TUPLE_4         4 
+             2450  LOAD_CODE                <code_object nestedExpr>
+             2452  LOAD_STR                 'nestedExpr'
+             2454  MAKE_FUNCTION_1          'default'
+             2456  STORE_NAME               nestedExpr
+
+ L.6231  2458_2460  LOAD_CONST               (True,)
+         2462_2464  LOAD_CODE                <code_object indentedBlock>
+         2466_2468  LOAD_STR                 'indentedBlock'
+             2470  MAKE_FUNCTION_1          'default'
+             2472  STORE_NAME               indentedBlock
+
+ L.6357      2474  LOAD_NAME                srange
+         2476_2478  LOAD_STR                 '[\\0xc0-\\0xd6\\0xd8-\\0xf6\\0xf8-\\0xff]'
+             2480  CALL_FUNCTION_1       1  ''
+             2482  STORE_NAME               alphas8bit
+
+ L.6358      2484  LOAD_NAME                srange
+         2486_2488  LOAD_STR                 '[\\0xa1-\\0xbf\\0xd7\\0xf7]'
+             2490  CALL_FUNCTION_1       1  ''
+             2492  STORE_NAME               punc8bit
+
+ L.6360      2494  LOAD_NAME                makeHTMLTags
+             2496  LOAD_NAME                Word
+             2498  LOAD_NAME                alphas
+             2500  LOAD_NAME                alphanums
+         2502_2504  LOAD_STR                 '_:'
+             2506  BINARY_ADD       
+             2508  CALL_FUNCTION_2       2  ''
+             2510  LOAD_METHOD              setName
+         2512_2514  LOAD_STR                 'any tag'
+             2516  CALL_METHOD_1         1  ''
+             2518  CALL_FUNCTION_1       1  ''
+             2520  UNPACK_SEQUENCE_2     2 
+             2522  STORE_NAME               anyOpenTag
+             2524  STORE_NAME               anyCloseTag
+
+ L.6361      2526  LOAD_NAME                dict
+             2528  LOAD_NAME                zip
+         2530_2532  LOAD_STR                 'gt lt amp nbsp quot apos'
+             2534  LOAD_METHOD              split
+             2536  CALL_METHOD_0         0  ''
+         2538_2540  LOAD_STR                 '><& "\''
+             2542  CALL_FUNCTION_2       2  ''
+             2544  CALL_FUNCTION_1       1  ''
+             2546  STORE_NAME               _htmlEntityMap
+
+ L.6362      2548  LOAD_NAME                Regex
+         2550_2552  LOAD_STR                 '&(?P<entity>'
+         2554_2556  LOAD_STR                 '|'
+             2558  LOAD_METHOD              join
+             2560  LOAD_NAME                _htmlEntityMap
+             2562  LOAD_METHOD              keys
+             2564  CALL_METHOD_0         0  ''
+             2566  CALL_METHOD_1         1  ''
+             2568  BINARY_ADD       
+         2570_2572  LOAD_STR                 ');'
+             2574  BINARY_ADD       
+             2576  CALL_FUNCTION_1       1  ''
+             2578  LOAD_METHOD              setName
+         2580_2582  LOAD_STR                 'common HTML entity'
+             2584  CALL_METHOD_1         1  ''
+             2586  STORE_NAME               commonHTMLEntity
+
+ L.6363  2588_2590  LOAD_CODE                <code_object replaceHTMLEntity>
+         2592_2594  LOAD_STR                 'replaceHTMLEntity'
+             2596  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2598  STORE_NAME               replaceHTMLEntity
+
+ L.6368      2600  LOAD_NAME                Combine
+             2602  LOAD_NAME                Regex
+         2604_2606  LOAD_STR                 '/\\*(?:[^*]|\\*(?!/))*'
+             2608  CALL_FUNCTION_1       1  ''
+         2610_2612  LOAD_STR                 '*/'
+             2614  BINARY_ADD       
+             2616  CALL_FUNCTION_1       1  ''
+             2618  LOAD_METHOD              setName
+         2620_2622  LOAD_STR                 'C style comment'
+             2624  CALL_METHOD_1         1  ''
+             2626  STORE_NAME               cStyleComment
+
+ L.6371      2628  LOAD_NAME                Regex
+         2630_2632  LOAD_STR                 '<!--[\\s\\S]*?-->'
+             2634  CALL_FUNCTION_1       1  ''
+             2636  LOAD_METHOD              setName
+         2638_2640  LOAD_STR                 'HTML comment'
+             2642  CALL_METHOD_1         1  ''
+             2644  STORE_NAME               htmlComment
+
+ L.6374      2646  LOAD_NAME                Regex
+         2648_2650  LOAD_STR                 '.*'
+             2652  CALL_FUNCTION_1       1  ''
+             2654  LOAD_METHOD              leaveWhitespace
+             2656  CALL_METHOD_0         0  ''
+             2658  LOAD_METHOD              setName
+         2660_2662  LOAD_STR                 'rest of line'
+             2664  CALL_METHOD_1         1  ''
+             2666  STORE_NAME               restOfLine
+
+ L.6375      2668  LOAD_NAME                Regex
+         2670_2672  LOAD_STR                 '//(?:\\\\\\n|[^\\n])*'
+             2674  CALL_FUNCTION_1       1  ''
+             2676  LOAD_METHOD              setName
+         2678_2680  LOAD_STR                 '// comment'
+             2682  CALL_METHOD_1         1  ''
+             2684  STORE_NAME               dblSlashComment
+
+ L.6378      2686  LOAD_NAME                Combine
+             2688  LOAD_NAME                Regex
+         2690_2692  LOAD_STR                 '/\\*(?:[^*]|\\*(?!/))*'
+             2694  CALL_FUNCTION_1       1  ''
+         2696_2698  LOAD_STR                 '*/'
+             2700  BINARY_ADD       
+             2702  LOAD_NAME                dblSlashComment
+             2704  BINARY_OR        
+             2706  CALL_FUNCTION_1       1  ''
+             2708  LOAD_METHOD              setName
+         2710_2712  LOAD_STR                 'C++ style comment'
+             2714  CALL_METHOD_1         1  ''
+             2716  STORE_NAME               cppStyleComment
+
+ L.6381      2718  LOAD_NAME                cppStyleComment
+             2720  STORE_NAME               javaStyleComment
+
+ L.6384      2722  LOAD_NAME                Regex
+         2724_2726  LOAD_STR                 '#.*'
+             2728  CALL_FUNCTION_1       1  ''
+             2730  LOAD_METHOD              setName
+         2732_2734  LOAD_STR                 'Python style comment'
+             2736  CALL_METHOD_1         1  ''
+             2738  STORE_NAME               pythonStyleComment
+
+ L.6387      2740  LOAD_NAME                Combine
+             2742  LOAD_NAME                OneOrMore
+             2744  LOAD_NAME                Word
+             2746  LOAD_NAME                printables
+             2748  LOAD_STR                 ','
+         2750_2752  LOAD_CONST               ('excludeChars',)
+             2754  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+
+ L.6388      2756  LOAD_NAME                Optional
+             2758  LOAD_NAME                Word
+         2760_2762  LOAD_STR                 ' \t'
+             2764  CALL_FUNCTION_1       1  ''
+
+ L.6389      2766  LOAD_NAME                Literal
+             2768  LOAD_STR                 ','
+             2770  CALL_FUNCTION_1       1  ''
+             2772  UNARY_INVERT     
+
+ L.6388      2774  BINARY_ADD       
+
+ L.6389      2776  LOAD_NAME                LineEnd
+             2778  CALL_FUNCTION_0       0  ''
+             2780  UNARY_INVERT     
+
+ L.6388      2782  BINARY_ADD       
+             2784  CALL_FUNCTION_1       1  ''
+
+ L.6387      2786  BINARY_ADD       
+             2788  CALL_FUNCTION_1       1  ''
+             2790  CALL_FUNCTION_1       1  ''
+             2792  LOAD_METHOD              streamline
+             2794  CALL_METHOD_0         0  ''
+             2796  LOAD_METHOD              setName
+
+ L.6389  2798_2800  LOAD_STR                 'commaItem'
+
+ L.6387      2802  CALL_METHOD_1         1  ''
+             2804  STORE_NAME               _commasepitem
+
+ L.6390      2806  LOAD_NAME                delimitedList
+             2808  LOAD_NAME                Optional
+             2810  LOAD_NAME                quotedString
+             2812  LOAD_METHOD              copy
+             2814  CALL_METHOD_0         0  ''
+             2816  LOAD_NAME                _commasepitem
+             2818  BINARY_OR        
+             2820  LOAD_STR                 ''
+         2822_2824  LOAD_CONST               ('default',)
+             2826  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+             2828  CALL_FUNCTION_1       1  ''
+             2830  LOAD_METHOD              setName
+         2832_2834  LOAD_STR                 'commaSeparatedList'
+             2836  CALL_METHOD_1         1  ''
+             2838  STORE_NAME               commaSeparatedList
+
+ L.6398      2840  LOAD_BUILD_CLASS 
+         2842_2844  LOAD_CODE                <code_object pyparsing_common>
+         2846_2848  LOAD_STR                 'pyparsing_common'
+             2850  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2852_2854  LOAD_STR                 'pyparsing_common'
+             2856  CALL_FUNCTION_2       2  ''
+             2858  STORE_NAME               pyparsing_common
+
+ L.6698      2860  LOAD_BUILD_CLASS 
+         2862_2864  LOAD_CODE                <code_object _lazyclassproperty>
+         2866_2868  LOAD_STR                 '_lazyclassproperty'
+             2870  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2872_2874  LOAD_STR                 '_lazyclassproperty'
+             2876  LOAD_NAME                object
+             2878  CALL_FUNCTION_3       3  ''
+             2880  STORE_NAME               _lazyclassproperty
+
+ L.6716      2882  LOAD_BUILD_CLASS 
+         2884_2886  LOAD_CODE                <code_object unicode_set>
+         2888_2890  LOAD_STR                 'unicode_set'
+             2892  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2894_2896  LOAD_STR                 'unicode_set'
+             2898  LOAD_NAME                object
+             2900  CALL_FUNCTION_3       3  ''
+             2902  STORE_NAME               unicode_set
+
+ L.6763      2904  LOAD_BUILD_CLASS 
+         2906_2908  LOAD_CODE                <code_object pyparsing_unicode>
+         2910_2912  LOAD_STR                 'pyparsing_unicode'
+             2914  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2916_2918  LOAD_STR                 'pyparsing_unicode'
+             2920  LOAD_NAME                unicode_set
+             2922  CALL_FUNCTION_3       3  ''
+             2924  STORE_NAME               pyparsing_unicode
+
+ L.6837      2926  LOAD_NAME                pyparsing_unicode
+             2928  LOAD_ATTR                Japanese
+             2930  LOAD_ATTR                Kanji
+             2932  LOAD_ATTR                _ranges
+
+ L.6838      2934  LOAD_NAME                pyparsing_unicode
+             2936  LOAD_ATTR                Japanese
+             2938  LOAD_ATTR                Hiragana
+             2940  LOAD_ATTR                _ranges
+
+ L.6837      2942  BINARY_ADD       
+
+ L.6839      2944  LOAD_NAME                pyparsing_unicode
+             2946  LOAD_ATTR                Japanese
+             2948  LOAD_ATTR                Katakana
+             2950  LOAD_ATTR                _ranges
+
+ L.6837      2952  BINARY_ADD       
+             2954  LOAD_NAME                pyparsing_unicode
+             2956  LOAD_ATTR                Japanese
+             2958  STORE_ATTR               _ranges
+
+ L.6842      2960  LOAD_NAME                PY_3
+         2962_2964  POP_JUMP_IF_FALSE  3170  'to 3170'
+
+ L.6843      2966  LOAD_NAME                setattr
+             2968  LOAD_NAME                pyparsing_unicode
+         2970_2972  LOAD_STR                 'العربية'
+             2974  LOAD_NAME                pyparsing_unicode
+             2976  LOAD_ATTR                Arabic
+             2978  CALL_FUNCTION_3       3  ''
+             2980  POP_TOP          
+
+ L.6844      2982  LOAD_NAME                setattr
+             2984  LOAD_NAME                pyparsing_unicode
+         2986_2988  LOAD_STR                 '中文'
+             2990  LOAD_NAME                pyparsing_unicode
+             2992  LOAD_ATTR                Chinese
+             2994  CALL_FUNCTION_3       3  ''
+             2996  POP_TOP          
+
+ L.6845      2998  LOAD_NAME                setattr
+             3000  LOAD_NAME                pyparsing_unicode
+         3002_3004  LOAD_STR                 'кириллица'
+             3006  LOAD_NAME                pyparsing_unicode
+             3008  LOAD_ATTR                Cyrillic
+             3010  CALL_FUNCTION_3       3  ''
+             3012  POP_TOP          
+
+ L.6846      3014  LOAD_NAME                setattr
+             3016  LOAD_NAME                pyparsing_unicode
+         3018_3020  LOAD_STR                 'Ελληνικά'
+             3022  LOAD_NAME                pyparsing_unicode
+             3024  LOAD_ATTR                Greek
+             3026  CALL_FUNCTION_3       3  ''
+             3028  POP_TOP          
+
+ L.6847      3030  LOAD_NAME                setattr
+             3032  LOAD_NAME                pyparsing_unicode
+         3034_3036  LOAD_STR                 'עִברִית'
+             3038  LOAD_NAME                pyparsing_unicode
+             3040  LOAD_ATTR                Hebrew
+             3042  CALL_FUNCTION_3       3  ''
+             3044  POP_TOP          
+
+ L.6848      3046  LOAD_NAME                setattr
+             3048  LOAD_NAME                pyparsing_unicode
+         3050_3052  LOAD_STR                 '日本語'
+             3054  LOAD_NAME                pyparsing_unicode
+             3056  LOAD_ATTR                Japanese
+             3058  CALL_FUNCTION_3       3  ''
+             3060  POP_TOP          
+
+ L.6849      3062  LOAD_NAME                setattr
+             3064  LOAD_NAME                pyparsing_unicode
+             3066  LOAD_ATTR                Japanese
+         3068_3070  LOAD_STR                 '漢字'
+             3072  LOAD_NAME                pyparsing_unicode
+             3074  LOAD_ATTR                Japanese
+             3076  LOAD_ATTR                Kanji
+             3078  CALL_FUNCTION_3       3  ''
+             3080  POP_TOP          
+
+ L.6850      3082  LOAD_NAME                setattr
+             3084  LOAD_NAME                pyparsing_unicode
+             3086  LOAD_ATTR                Japanese
+         3088_3090  LOAD_STR                 'カタカナ'
+             3092  LOAD_NAME                pyparsing_unicode
+             3094  LOAD_ATTR                Japanese
+             3096  LOAD_ATTR                Katakana
+             3098  CALL_FUNCTION_3       3  ''
+             3100  POP_TOP          
+
+ L.6851      3102  LOAD_NAME                setattr
+             3104  LOAD_NAME                pyparsing_unicode
+             3106  LOAD_ATTR                Japanese
+         3108_3110  LOAD_STR                 'ひらがな'
+             3112  LOAD_NAME                pyparsing_unicode
+             3114  LOAD_ATTR                Japanese
+             3116  LOAD_ATTR                Hiragana
+             3118  CALL_FUNCTION_3       3  ''
+             3120  POP_TOP          
+
+ L.6852      3122  LOAD_NAME                setattr
+             3124  LOAD_NAME                pyparsing_unicode
+         3126_3128  LOAD_STR                 '한국어'
+             3130  LOAD_NAME                pyparsing_unicode
+             3132  LOAD_ATTR                Korean
+             3134  CALL_FUNCTION_3       3  ''
+             3136  POP_TOP          
+
+ L.6853      3138  LOAD_NAME                setattr
+             3140  LOAD_NAME                pyparsing_unicode
+         3142_3144  LOAD_STR                 'ไทย'
+             3146  LOAD_NAME                pyparsing_unicode
+             3148  LOAD_ATTR                Thai
+             3150  CALL_FUNCTION_3       3  ''
+             3152  POP_TOP          
+
+ L.6854      3154  LOAD_NAME                setattr
+             3156  LOAD_NAME                pyparsing_unicode
+         3158_3160  LOAD_STR                 'देवनागरी'
+             3162  LOAD_NAME                pyparsing_unicode
+             3164  LOAD_ATTR                Devanagari
+             3166  CALL_FUNCTION_3       3  ''
+             3168  POP_TOP          
+           3170_0  COME_FROM          2962  '2962'
+
+ L.6857      3170  LOAD_BUILD_CLASS 
+         3172_3174  LOAD_CODE                <code_object pyparsing_test>
+         3176_3178  LOAD_STR                 'pyparsing_test'
+             3180  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         3182_3184  LOAD_STR                 'pyparsing_test'
+             3186  CALL_FUNCTION_2       2  ''
+             3188  STORE_NAME               pyparsing_test
+
+ L.7038  3190_3192  LOAD_NAME                __name__
+         3194_3196  LOAD_STR                 '__main__'
+             3198  COMPARE_OP               ==
+         3200_3202  POP_JUMP_IF_FALSE  3532  'to 3532'
+
+ L.7040      3204  LOAD_NAME                CaselessLiteral
+         3206_3208  LOAD_STR                 'select'
+             3210  CALL_FUNCTION_1       1  ''
+         3212_3214  STORE_NAME               selectToken
+
+ L.7041      3216  LOAD_NAME                CaselessLiteral
+         3218_3220  LOAD_STR                 'from'
+             3222  CALL_FUNCTION_1       1  ''
+         3224_3226  STORE_NAME               fromToken
+
+ L.7043      3228  LOAD_NAME                Word
+             3230  LOAD_NAME                alphas
+             3232  LOAD_NAME                alphanums
+         3234_3236  LOAD_STR                 '_$'
+             3238  BINARY_ADD       
+             3240  CALL_FUNCTION_2       2  ''
+         3242_3244  STORE_NAME               ident
+
+ L.7045      3246  LOAD_NAME                delimitedList
+         3248_3250  LOAD_NAME                ident
+         3252_3254  LOAD_STR                 '.'
+             3256  LOAD_CONST               True
+         3258_3260  LOAD_CONST               ('combine',)
+             3262  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+             3264  LOAD_METHOD              setParseAction
+             3266  LOAD_NAME                upcaseTokens
+             3268  CALL_METHOD_1         1  ''
+         3270_3272  STORE_NAME               columnName
+
+ L.7046      3274  LOAD_NAME                Group
+             3276  LOAD_NAME                delimitedList
+         3278_3280  LOAD_NAME                columnName
+             3282  CALL_FUNCTION_1       1  ''
+             3284  CALL_FUNCTION_1       1  ''
+             3286  LOAD_METHOD              setName
+         3288_3290  LOAD_STR                 'columns'
+             3292  CALL_METHOD_1         1  ''
+         3294_3296  STORE_NAME               columnNameList
+
+ L.7047  3298_3300  LOAD_STR                 '*'
+         3302_3304  LOAD_NAME                columnNameList
+             3306  BINARY_OR        
+         3308_3310  STORE_NAME               columnSpec
+
+ L.7049      3312  LOAD_NAME                delimitedList
+         3314_3316  LOAD_NAME                ident
+         3318_3320  LOAD_STR                 '.'
+             3322  LOAD_CONST               True
+         3324_3326  LOAD_CONST               ('combine',)
+             3328  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+             3330  LOAD_METHOD              setParseAction
+             3332  LOAD_NAME                upcaseTokens
+             3334  CALL_METHOD_1         1  ''
+         3336_3338  STORE_NAME               tableName
+
+ L.7050      3340  LOAD_NAME                Group
+             3342  LOAD_NAME                delimitedList
+         3344_3346  LOAD_NAME                tableName
+             3348  CALL_FUNCTION_1       1  ''
+             3350  CALL_FUNCTION_1       1  ''
+             3352  LOAD_METHOD              setName
+         3354_3356  LOAD_STR                 'tables'
+             3358  CALL_METHOD_1         1  ''
+         3360_3362  STORE_NAME               tableNameList
+
+ L.7052  3364_3366  LOAD_NAME                selectToken
+         3368_3370  LOAD_STR                 'command'
+             3372  CALL_FUNCTION_1       1  ''
+         3374_3376  LOAD_NAME                columnSpec
+         3378_3380  LOAD_STR                 'columns'
+             3382  CALL_FUNCTION_1       1  ''
+             3384  BINARY_ADD       
+         3386_3388  LOAD_NAME                fromToken
+             3390  BINARY_ADD       
+         3392_3394  LOAD_NAME                tableNameList
+         3396_3398  LOAD_STR                 'tables'
+             3400  CALL_FUNCTION_1       1  ''
+             3402  BINARY_ADD       
+         3404_3406  STORE_NAME               simpleSQL
+
+ L.7055  3408_3410  LOAD_NAME                simpleSQL
+         3412_3414  LOAD_METHOD              runTests
+         3416_3418  LOAD_STR                 '\n        # \'*\' as column list and dotted table name\n        select * from SYS.XYZZY\n\n        # caseless match on "SELECT", and casts back to "select"\n        SELECT * from XYZZY, ABC\n\n        # list of column names, and mixed case SELECT keyword\n        Select AA,BB,CC from Sys.dual\n\n        # multiple tables\n        Select A, B, C from Sys.dual, Table2\n\n        # invalid SELECT keyword - should fail\n        Xelect A, B, C from Sys.dual\n\n        # incomplete command - should fail\n        Select\n\n        # invalid column name - should fail\n        Select ^^^ frox Sys.dual\n\n        '
+             3420  CALL_METHOD_1         1  ''
+             3422  POP_TOP          
+
+ L.7079      3424  LOAD_NAME                pyparsing_common
+         3426_3428  LOAD_ATTR                number
+         3430_3432  LOAD_METHOD              runTests
+         3434_3436  LOAD_STR                 '\n        100\n        -100\n        +100\n        3.14159\n        6.02e23\n        1e-12\n        '
+             3438  CALL_METHOD_1         1  ''
+             3440  POP_TOP          
+
+ L.7089      3442  LOAD_NAME                pyparsing_common
+         3444_3446  LOAD_ATTR                fnumber
+         3448_3450  LOAD_METHOD              runTests
+         3452_3454  LOAD_STR                 '\n        100\n        -100\n        +100\n        3.14159\n        6.02e23\n        1e-12\n        '
+             3456  CALL_METHOD_1         1  ''
+             3458  POP_TOP          
+
+ L.7098      3460  LOAD_NAME                pyparsing_common
+         3462_3464  LOAD_ATTR                hex_integer
+         3466_3468  LOAD_METHOD              runTests
+         3470_3472  LOAD_STR                 '\n        100\n        FF\n        '
+             3474  CALL_METHOD_1         1  ''
+             3476  POP_TOP          
+
+ L.7103      3478  LOAD_CONST               0
+             3480  LOAD_CONST               None
+         3482_3484  IMPORT_NAME              uuid
+         3486_3488  STORE_NAME               uuid
+
+ L.7104      3490  LOAD_NAME                pyparsing_common
+         3492_3494  LOAD_ATTR                uuid
+             3496  LOAD_METHOD              setParseAction
+             3498  LOAD_NAME                tokenMap
+         3500_3502  LOAD_NAME                uuid
+         3504_3506  LOAD_ATTR                UUID
+             3508  CALL_FUNCTION_1       1  ''
+             3510  CALL_METHOD_1         1  ''
+             3512  POP_TOP          
+
+ L.7105      3514  LOAD_NAME                pyparsing_common
+         3516_3518  LOAD_ATTR                uuid
+         3520_3522  LOAD_METHOD              runTests
+         3524_3526  LOAD_STR                 '\n        12345678-1234-5678-1234-567812345678\n        '
+             3528  CALL_METHOD_1         1  ''
+             3530  POP_TOP          
+           3532_0  COME_FROM          3200  '3200'
+
+Parse error at or near `<121>' instruction at offset 186
+
+Instruction context:
+   
+ L. 122       182  DUP_TOP          
+                 184  LOAD_NAME                ImportError
+->               186  <121>               210  ''
+                 188  POP_TOP          
+                 190  POP_TOP          
+                 192  POP_TOP          
+
+test/164106.pyc -- 
+# decompile failed

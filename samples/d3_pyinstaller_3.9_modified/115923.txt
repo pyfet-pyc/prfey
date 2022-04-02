@@ -1,0 +1,215 @@
+Instruction context:
+   
+ L.  51        12  LOAD_FAST                'mv'
+                  14  LOAD_CONST               None
+->                16  <117>                 0  ''
+                  18  POP_JUMP_IF_FALSE   148  'to 148'
+Instruction context:
+   
+ L.  98       128  LOAD_STR                 'download-url'
+                 130  LOAD_DEREF               'msg'
+->               132  <118>                 0  ''
+                 134  POP_JUMP_IF_FALSE   148  'to 148'
+Instruction context:
+   
+ L. 156       180  LOAD_FAST                'attr_val'
+                 182  LOAD_CONST               None
+->               184  <117>                 1  ''
+                 186  POP_JUMP_IF_FALSE_BACK   162  'to 162'
+Instruction context:
+   
+ L. 206        18  LOAD_FAST                'ep'
+                  20  LOAD_ATTR                extras
+                  22  POP_JUMP_IF_FALSE    28  'to 28'
+->                24  <74>             
+                  26  RAISE_VARARGS_1       1  'exception instance'
+                28_0  COME_FROM            22  '22'
+                  28  POP_BLOCK        
+                  30  JUMP_FORWARD         94  'to 94'
+                32_0  COME_FROM_FINALLY     0  '0'
+Instruction context:
+   
+ L. 219         2  LOAD_GLOBAL              isinstance
+                   4  LOAD_FAST                'value'
+                   6  LOAD_GLOBAL              list
+                   8  LOAD_GLOBAL              tuple
+                  10  BUILD_TUPLE_2         2 
+                  12  CALL_FUNCTION_2       2  ''
+                  14  POP_JUMP_IF_TRUE     20  'to 20'
+->                16  <74>             
+                  18  RAISE_VARARGS_1       1  'exception instance'
+                20_0  COME_FROM            14  '14'
+Instruction context:
+   
+ L. 239        66  LOAD_FAST                'parent'
+                  68  POP_JUMP_IF_FALSE_BACK    20  'to 20'
+                  70  LOAD_FAST                'parent'
+                  72  LOAD_FAST                'ns_packages'
+->                74  <118>                 1  ''
+                  76  POP_JUMP_IF_FALSE_BACK    20  'to 20'
+Instruction context:
+   
+ L. 250        26  DUP_TOP          
+                  28  LOAD_GLOBAL              TypeError
+                  30  LOAD_GLOBAL              ValueError
+                  32  LOAD_GLOBAL              AttributeError
+                  34  BUILD_TUPLE_3         3 
+->                36  <121>                76  ''
+                  38  POP_TOP          
+                  40  STORE_FAST               'e'
+                  42  POP_TOP          
+                  44  SETUP_FINALLY        68  'to 68'
+Instruction context:
+   
+ L. 278        42  DUP_TOP          
+                  44  LOAD_GLOBAL              TypeError
+                  46  LOAD_GLOBAL              ValueError
+                  48  BUILD_TUPLE_2         2 
+->                50  <121>               104  ''
+                  52  POP_TOP          
+                  54  STORE_FAST               'error'
+                  56  POP_TOP          
+                  58  SETUP_FINALLY        96  'to 96'
+Instruction context:
+   
+ L. 292        18  DUP_TOP          
+                  20  LOAD_GLOBAL              packaging
+                  22  LOAD_ATTR                specifiers
+                  24  LOAD_ATTR                InvalidSpecifier
+->                26  <121>                80  ''
+                  28  POP_TOP          
+                  30  STORE_FAST               'error'
+                  32  POP_TOP          
+                  34  SETUP_FINALLY        72  'to 72'
+Instruction context:
+   
+ L. 306        18  DUP_TOP          
+                  20  LOAD_GLOBAL              ValueError
+->                22  <121>                62  ''
+                  24  POP_TOP          
+                  26  STORE_FAST               'e'
+                  28  POP_TOP          
+                  30  SETUP_FINALLY        54  'to 54'
+Instruction context:
+   
+ L. 439       184  LOAD_FAST                'option'
+                 186  LOAD_FAST                'source'
+->               188  <118>                 0  ''
+                 190  POP_JUMP_IF_FALSE_BACK   180  'to 180'
+Instruction context:
+   
+ L. 468        20  LOAD_FAST                'version'
+                  22  LOAD_CONST               None
+->                24  <117>                 1  ''
+                  26  POP_JUMP_IF_FALSE    96  'to 96'
+Instruction context:
+   
+ L. 567        30  BUILD_LIST_0          0 
+                  32  LOAD_CONST               ('install-base', 'install-platbase', 'install-lib', 'install-platlib', 'install-purelib', 'install-headers', 'install-scripts', 'install-data', 'prefix', 'exec-prefix', 'home', 'user', 'root')
+->                34  CALL_FINALLY         37  'to 37'
+                  36  STORE_FAST               'ignore_options'
+                  38  JUMP_FORWARD         44  'to 44'
+                40_0  COME_FROM            28  '28'
+                40_1  COME_FROM            16  '16'
+Instruction context:
+   
+ L. 635        22  DUP_TOP          
+                  24  LOAD_GLOBAL              UnicodeEncodeError
+->                26  <121>                38  ''
+                  28  POP_TOP          
+                  30  POP_TOP          
+                  32  POP_TOP          
+Instruction context:
+   
+ L. 652         8  LOAD_FAST                'option_dict'
+                  10  LOAD_CONST               None
+->                12  <117>                 0  ''
+                  14  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L. 726        28  LOAD_FAST                'value'
+                  30  LOAD_CONST               None
+->                32  <117>                 1  ''
+                  34  POP_JUMP_IF_FALSE_BACK    10  'to 10'
+Instruction context:
+   
+ L. 751        94  LOAD_FAST                'f'
+                  96  LOAD_METHOD              write
+                  98  LOAD_STR                 'However, it is safe to delete this directory.\n\n'
+                 100  CALL_METHOD_1         1  ''
+                 102  POP_TOP          
+                 104  POP_BLOCK        
+                 106  LOAD_CONST               None
+->               108  DUP_TOP          
+                 110  DUP_TOP          
+                 112  CALL_FUNCTION_3       3  ''
+                 114  POP_TOP          
+                 116  JUMP_FORWARD        134  'to 134'
+               118_0  COME_FROM_WITH       70  '70'
+                 118  <49>             
+                 120  POP_JUMP_IF_TRUE    124  'to 124'
+                 122  <48>             
+               124_0  COME_FROM           120  '120'
+                 124  POP_TOP          
+                 126  POP_TOP          
+                 128  POP_TOP          
+                 130  POP_EXCEPT       
+                 132  POP_TOP          
+               134_0  COME_FROM           116  '116'
+               134_1  COME_FROM            26  '26'
+Instruction context:
+   
+ L. 775        14  LOAD_FAST                'ep'
+                  16  LOAD_ATTR                name
+                  18  LOAD_FAST                'self'
+                  20  LOAD_ATTR                cmdclass
+->                22  <118>                 1  ''
+                  24  POP_JUMP_IF_FALSE_BACK    10  'to 10'
+Instruction context:
+   
+ L. 783        14  LOAD_FAST                'ep'
+                  16  LOAD_ATTR                name
+                  18  LOAD_FAST                'self'
+                  20  LOAD_ATTR                cmdclass
+->                22  <118>                 1  ''
+                  24  POP_JUMP_IF_FALSE_BACK    10  'to 10'
+Instruction context:
+   
+ L. 850        42  DUP_TOP          
+                  44  LOAD_GLOBAL              AttributeError
+->                46  <121>                90  ''
+                  48  POP_TOP          
+                  50  STORE_FAST               'e'
+                  52  POP_TOP          
+                  54  SETUP_FINALLY        82  'to 82'
+Instruction context:
+   
+ L. 870        42  DUP_TOP          
+                  44  LOAD_GLOBAL              AttributeError
+->                46  <121>                90  ''
+                  48  POP_TOP          
+                  50  STORE_FAST               'e'
+                  52  POP_TOP          
+                  54  SETUP_FINALLY        82  'to 82'
+Instruction context:
+   
+ L. 922        38  LOAD_FAST                'command'
+                  40  LOAD_FAST                'aliases'
+->                42  <118>                 0  ''
+                  44  POP_JUMP_IF_FALSE   102  'to 102'
+Instruction context:
+   
+ L.1015        58  LOAD_FAST                'sys'
+                  60  LOAD_ATTR                stdout
+                  62  LOAD_ATTR                encoding
+                  64  LOAD_METHOD              lower
+                  66  CALL_METHOD_0         0  ''
+                  68  LOAD_CONST               ('utf-8', 'utf8')
+->                70  <118>                 0  ''
+                  72  POP_JUMP_IF_FALSE    86  'to 86'
+
+test/115923.pyc -- 
+# decompile failed
+
+# file test/115923.pyc
+# Deparsing stopped due to parse error

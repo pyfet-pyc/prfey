@@ -1,0 +1,25 @@
+Instruction context:
+   
+ L. 493        30  POP_EXCEPT       
+                  32  JUMP_FORWARD         36  'to 36'
+->              34_0  COME_FROM            22  '22'
+                  34  END_FINALLY      
+Instruction context:
+   
+ L. 681       372  LOAD_GLOBAL              FormNotFoundError
+                 374  LOAD_STR                 'no form matching '
+                 376  LOAD_FAST                'description'
+                 378  BINARY_ADD       
+                 380  CALL_FUNCTION_1       1  ''
+->               382  RAISE_VARARGS_1       1  'exception instance'
+Instruction context:
+   
+ L. 853       272  LOAD_FAST                'orig_nr'
+                 274  STORE_FAST               'nr'
+->               276  JUMP_BACK            24  'to 24'
+
+../test/118215.pyc -- 
+# decompile failed
+
+# file ../test/118215.pyc
+# Deparsing stopped due to parse error

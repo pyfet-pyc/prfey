@@ -1,0 +1,33 @@
+Instruction context:
+   
+ L.  28        12  DUP_TOP          
+                  14  LOAD_GLOBAL              AttributeError
+                  16  COMPARE_OP               exception-match
+                  18  POP_JUMP_IF_FALSE    52  'to 52'
+                  20  POP_TOP          
+->                22  POP_TOP          
+                  24  POP_TOP          
+Instruction context:
+   
+ L.  81        62  LOAD_FAST                'cookies'
+                  64  POP_BLOCK        
+->                66  ROT_TWO          
+                  68  BEGIN_FINALLY    
+                  70  WITH_CLEANUP_START
+                  72  WITH_CLEANUP_FINISH
+                  74  POP_FINALLY           0  ''
+                  76  RETURN_VALUE     
+                78_0  COME_FROM_WITH        4  '4'
+                  78  WITH_CLEANUP_START
+                  80  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 138       158  POP_TOP          
+->           160_162  JUMP_ABSOLUTE       390  'to 390'
+               164_0  COME_FROM           144  '144'
+
+../test/118205.pyc -- 
+# decompile failed
+
+# file ../test/118205.pyc
+# Deparsing stopped due to parse error

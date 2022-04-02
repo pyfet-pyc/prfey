@@ -1,0 +1,61 @@
+Instruction context:
+   
+ L. 391       352  POP_EXCEPT       
+                 354  JUMP_BACK           250  'to 250'
+                 356  POP_EXCEPT       
+->               358  JUMP_BACK           250  'to 250'
+               360_0  COME_FROM           330  '330'
+Instruction context:
+   
+ L. 438       158  POP_EXCEPT       
+                 160  JUMP_BACK           130  'to 130'
+                 162  POP_EXCEPT       
+->               164  JUMP_BACK           130  'to 130'
+               166_0  COME_FROM           150  '150'
+                 166  END_FINALLY      
+               168_0  COME_FROM           142  '142'
+Instruction context:
+   
+ L. 672        66  RAISE_VARARGS_0       0  'reraise'
+                  68  POP_EXCEPT       
+->                70  JUMP_BACK            30  'to 30'
+                72_0  COME_FROM            52  '52'
+Instruction context:
+   
+ L. 691        62  POP_BLOCK        
+->                64  POP_EXCEPT       
+                  66  CALL_FINALLY         78  'to 78'
+                  68  LOAD_CONST               None
+                  70  RETURN_VALUE     
+                72_0  COME_FROM            60  '60'
+Instruction context:
+   
+ L. 799       108  LOAD_FAST                'sock'
+                 110  POP_BLOCK        
+->               112  ROT_TWO          
+                 114  POP_TOP          
+                 116  RETURN_VALUE     
+               118_0  COME_FROM_FINALLY    48  '48'
+Instruction context:
+   
+ L. 823        56  POP_BLOCK        
+                  58  BEGIN_FINALLY    
+->                60  WITH_CLEANUP_START
+                  62  WITH_CLEANUP_FINISH
+                  64  POP_FINALLY           0  ''
+                  66  POP_BLOCK        
+                  68  LOAD_CONST               True
+                  70  RETURN_VALUE     
+                72_0  COME_FROM_WITH       38  '38'
+                  72  WITH_CLEANUP_START
+                  74  WITH_CLEANUP_FINISH
+                  76  END_FINALLY      
+                  78  POP_BLOCK        
+                  80  JUMP_FORWARD        104  'to 104'
+                82_0  COME_FROM_FINALLY    28  '28'
+
+../test/112161.pyc -- 
+# decompile failed
+
+# file ../test/112161.pyc
+# Deparsing stopped due to parse error

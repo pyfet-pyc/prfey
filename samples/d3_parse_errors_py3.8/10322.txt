@@ -1,0 +1,47 @@
+Instruction context:
+   
+ L. 309       110  LOAD_FAST                'gotit'
+                 112  POP_BLOCK        
+->               114  CALL_FINALLY        118  'to 118'
+                 116  RETURN_VALUE     
+               118_0  COME_FROM           114  '114'
+               118_1  COME_FROM_FINALLY    54  '54'
+Instruction context:
+   
+ L. 436       128  LOAD_CONST               True
+                 130  STORE_FAST               'rc'
+               132_0  COME_FROM            98  '98'
+               132_1  COME_FROM            50  '50'
+                 132  POP_BLOCK        
+->               134  BEGIN_FINALLY    
+               136_0  COME_FROM_WITH       32  '32'
+                 136  WITH_CLEANUP_START
+                 138  WITH_CLEANUP_FINISH
+                 140  END_FINALLY      
+Instruction context:
+   
+ L. 620        86  LOAD_FAST                'index'
+                  88  POP_BLOCK        
+->                90  CALL_FINALLY        106  'to 106'
+                  92  POP_BLOCK        
+                  94  ROT_TWO          
+                  96  BEGIN_FINALLY    
+                  98  WITH_CLEANUP_START
+                 100  WITH_CLEANUP_FINISH
+                 102  POP_FINALLY           0  ''
+                 104  RETURN_VALUE     
+               106_0  COME_FROM            90  '90'
+               106_1  COME_FROM_FINALLY    50  '50'
+Instruction context:
+   
+ L. 893        34  POP_EXCEPT       
+->                36  LOAD_CONST               None
+                  38  RETURN_VALUE     
+                40_0  COME_FROM            32  '32'
+                40_1  COME_FROM            24  '24'
+
+../test/10322.pyc -- 
+# decompile failed
+
+# file ../test/10322.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,261 @@
+
+# file test/115929.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nImproved support for Microsoft Visual C++ compilers.\n\nKnown supported compilers:\n--------------------------\nMicrosoft Visual C++ 9.0:\n    Microsoft Visual C++ Compiler for Python 2.7 (x86, amd64)\n    Microsoft Windows SDK 6.1 (x86, x64, ia64)\n    Microsoft Windows SDK 7.0 (x86, x64, ia64)\n\nMicrosoft Visual C++ 10.0:\n    Microsoft Windows SDK 7.1 (x86, x64, ia64)\n\nMicrosoft Visual C++ 14.X:\n    Microsoft Visual C++ Build Tools 2015 (x86, x64, arm)\n    Microsoft Visual Studio Build Tools 2017 (x86, x64, arm, arm64)\n    Microsoft Visual Studio Build Tools 2019 (x86, x64, arm, arm64)\n\nThis may also support compilers shipped with compatible Visual Studio versions.\n'
+                2  STORE_NAME               __doc__
+
+ L.  22         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              json
+               10  STORE_NAME               json
+
+ L.  23        12  LOAD_CONST               0
+               14  LOAD_CONST               ('open',)
+               16  IMPORT_NAME              io
+               18  IMPORT_FROM              open
+               20  STORE_NAME               open
+               22  POP_TOP          
+
+ L.  24        24  LOAD_CONST               0
+               26  LOAD_CONST               ('listdir', 'pathsep')
+               28  IMPORT_NAME              os
+               30  IMPORT_FROM              listdir
+               32  STORE_NAME               listdir
+               34  IMPORT_FROM              pathsep
+               36  STORE_NAME               pathsep
+               38  POP_TOP          
+
+ L.  25        40  LOAD_CONST               0
+               42  LOAD_CONST               ('join', 'isfile', 'isdir', 'dirname')
+               44  IMPORT_NAME_ATTR         os.path
+               46  IMPORT_FROM              join
+               48  STORE_NAME               join
+               50  IMPORT_FROM              isfile
+               52  STORE_NAME               isfile
+               54  IMPORT_FROM              isdir
+               56  STORE_NAME               isdir
+               58  IMPORT_FROM              dirname
+               60  STORE_NAME               dirname
+               62  POP_TOP          
+
+ L.  26        64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              sys
+               70  STORE_NAME               sys
+
+ L.  27        72  LOAD_CONST               0
+               74  LOAD_CONST               None
+               76  IMPORT_NAME              platform
+               78  STORE_NAME               platform
+
+ L.  28        80  LOAD_CONST               0
+               82  LOAD_CONST               None
+               84  IMPORT_NAME              itertools
+               86  STORE_NAME               itertools
+
+ L.  29        88  LOAD_CONST               0
+               90  LOAD_CONST               None
+               92  IMPORT_NAME              subprocess
+               94  STORE_NAME               subprocess
+
+ L.  30        96  LOAD_CONST               0
+               98  LOAD_CONST               None
+              100  IMPORT_NAME_ATTR         distutils.errors
+              102  STORE_NAME               distutils
+
+ L.  31       104  LOAD_CONST               0
+              106  LOAD_CONST               ('LegacyVersion',)
+              108  IMPORT_NAME_ATTR         setuptools.extern.packaging.version
+              110  IMPORT_FROM              LegacyVersion
+              112  STORE_NAME               LegacyVersion
+              114  POP_TOP          
+
+ L.  33       116  LOAD_CONST               0
+              118  LOAD_CONST               ('filterfalse',)
+              120  IMPORT_NAME_ATTR         setuptools.extern.six.moves
+              122  IMPORT_FROM              filterfalse
+              124  STORE_NAME               filterfalse
+              126  POP_TOP          
+
+ L.  35       128  LOAD_CONST               1
+              130  LOAD_CONST               ('get_unpatched',)
+              132  IMPORT_NAME              monkey
+              134  IMPORT_FROM              get_unpatched
+              136  STORE_NAME               get_unpatched
+              138  POP_TOP          
+
+ L.  37       140  LOAD_NAME                platform
+              142  LOAD_METHOD              system
+              144  CALL_METHOD_0         0  ''
+              146  LOAD_STR                 'Windows'
+              148  COMPARE_OP               ==
+              150  POP_JUMP_IF_FALSE   178  'to 178'
+
+ L.  38       152  LOAD_CONST               0
+              154  LOAD_CONST               ('winreg',)
+              156  IMPORT_NAME_ATTR         setuptools.extern.six.moves
+              158  IMPORT_FROM              winreg
+              160  STORE_NAME               winreg
+              162  POP_TOP          
+
+ L.  39       164  LOAD_CONST               0
+              166  LOAD_CONST               ('environ',)
+              168  IMPORT_NAME              os
+              170  IMPORT_FROM              environ
+              172  STORE_NAME               environ
+              174  POP_TOP          
+              176  JUMP_FORWARD        198  'to 198'
+            178_0  COME_FROM           150  '150'
+
+ L.  43       178  LOAD_BUILD_CLASS 
+              180  LOAD_CODE                <code_object winreg>
+              182  LOAD_STR                 'winreg'
+              184  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              186  LOAD_STR                 'winreg'
+              188  CALL_FUNCTION_2       2  ''
+              190  STORE_NAME               winreg
+
+ L.  49       192  LOAD_NAME                dict
+              194  CALL_FUNCTION_0       0  ''
+              196  STORE_NAME               environ
+            198_0  COME_FROM           176  '176'
+
+ L.  53       198  LOAD_NAME                ImportError
+
+ L.  57       200  LOAD_NAME                distutils
+              202  LOAD_ATTR                errors
+              204  LOAD_ATTR                DistutilsPlatformError
+
+ L.  51       206  BUILD_TUPLE_2         2 
+              208  STORE_NAME               _msvc9_suppress_errors
+
+ L.  60       210  SETUP_FINALLY       228  'to 228'
+
+ L.  61       212  LOAD_CONST               0
+              214  LOAD_CONST               ('Reg',)
+              216  IMPORT_NAME_ATTR         distutils.msvc9compiler
+              218  IMPORT_FROM              Reg
+              220  STORE_NAME               Reg
+              222  POP_TOP          
+              224  POP_BLOCK        
+              226  JUMP_FORWARD        246  'to 246'
+            228_0  COME_FROM_FINALLY   210  '210'
+
+ L.  62       228  DUP_TOP          
+              230  LOAD_NAME                _msvc9_suppress_errors
+              232  <121>               244  ''
+              234  POP_TOP          
+              236  POP_TOP          
+              238  POP_TOP          
+
+ L.  63       240  POP_EXCEPT       
+              242  JUMP_FORWARD        246  'to 246'
+              244  <48>             
+            246_0  COME_FROM           242  '242'
+            246_1  COME_FROM           226  '226'
+
+ L.  66       246  LOAD_CODE                <code_object msvc9_find_vcvarsall>
+              248  LOAD_STR                 'msvc9_find_vcvarsall'
+              250  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              252  STORE_NAME               msvc9_find_vcvarsall
+
+ L. 108       254  LOAD_CONST               ('x86',)
+              256  LOAD_CODE                <code_object msvc9_query_vcvarsall>
+              258  LOAD_STR                 'msvc9_query_vcvarsall'
+              260  MAKE_FUNCTION_1          'default'
+              262  STORE_NAME               msvc9_query_vcvarsall
+
+ L. 146       264  LOAD_CODE                <code_object _msvc14_find_vc2015>
+              266  LOAD_STR                 '_msvc14_find_vc2015'
+              268  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              270  STORE_NAME               _msvc14_find_vc2015
+
+ L. 176       272  LOAD_CODE                <code_object _msvc14_find_vc2017>
+              274  LOAD_STR                 '_msvc14_find_vc2017'
+              276  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              278  STORE_NAME               _msvc14_find_vc2017
+
+ L. 212       280  LOAD_STR                 'x86'
+
+ L. 213       282  LOAD_STR                 'x64'
+
+ L. 214       284  LOAD_STR                 'arm'
+
+ L. 215       286  LOAD_STR                 'arm64'
+
+ L. 211       288  LOAD_CONST               ('x86', 'x86_amd64', 'x86_arm', 'x86_arm64')
+              290  BUILD_CONST_KEY_MAP_4     4 
+              292  STORE_NAME               PLAT_SPEC_TO_RUNTIME
+
+ L. 219       294  LOAD_CODE                <code_object _msvc14_find_vcvarsall>
+              296  LOAD_STR                 '_msvc14_find_vcvarsall'
+              298  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              300  STORE_NAME               _msvc14_find_vcvarsall
+
+ L. 258       302  LOAD_CODE                <code_object _msvc14_get_vc_env>
+              304  LOAD_STR                 '_msvc14_get_vc_env'
+              306  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              308  STORE_NAME               _msvc14_get_vc_env
+
+ L. 294       310  LOAD_CODE                <code_object msvc14_get_vc_env>
+              312  LOAD_STR                 'msvc14_get_vc_env'
+              314  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              316  STORE_NAME               msvc14_get_vc_env
+
+ L. 320       318  LOAD_CODE                <code_object msvc14_gen_lib_options>
+              320  LOAD_STR                 'msvc14_gen_lib_options'
+              322  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              324  STORE_NAME               msvc14_gen_lib_options
+
+ L. 333       326  LOAD_CONST               ('',)
+              328  LOAD_CODE                <code_object _augment_exception>
+              330  LOAD_STR                 '_augment_exception'
+              332  MAKE_FUNCTION_1          'default'
+              334  STORE_NAME               _augment_exception
+
+ L. 369       336  LOAD_BUILD_CLASS 
+              338  LOAD_CODE                <code_object PlatformInfo>
+              340  LOAD_STR                 'PlatformInfo'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  LOAD_STR                 'PlatformInfo'
+              346  CALL_FUNCTION_2       2  ''
+              348  STORE_NAME               PlatformInfo
+
+ L. 484       350  LOAD_BUILD_CLASS 
+              352  LOAD_CODE                <code_object RegistryInfo>
+              354  LOAD_STR                 'RegistryInfo'
+              356  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              358  LOAD_STR                 'RegistryInfo'
+              360  CALL_FUNCTION_2       2  ''
+              362  STORE_NAME               RegistryInfo
+
+ L. 669       364  LOAD_BUILD_CLASS 
+              366  LOAD_CODE                <code_object SystemInfo>
+              368  LOAD_STR                 'SystemInfo'
+              370  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              372  LOAD_STR                 'SystemInfo'
+              374  CALL_FUNCTION_2       2  ''
+              376  STORE_NAME               SystemInfo
+
+ L.1197       378  LOAD_BUILD_CLASS 
+              380  LOAD_CODE                <code_object EnvironmentInfo>
+              382  LOAD_STR                 'EnvironmentInfo'
+              384  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              386  LOAD_STR                 'EnvironmentInfo'
+              388  CALL_FUNCTION_2       2  ''
+              390  STORE_NAME               EnvironmentInfo
+
+Parse error at or near `<121>' instruction at offset 232
+
+Instruction context:
+   
+ L.  62       228  DUP_TOP          
+                 230  LOAD_NAME                _msvc9_suppress_errors
+->               232  <121>               244  ''
+                 234  POP_TOP          
+                 236  POP_TOP          
+                 238  POP_TOP          
+
+test/115929.pyc -- 
+# decompile failed

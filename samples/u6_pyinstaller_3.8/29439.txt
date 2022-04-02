@@ -1,0 +1,38 @@
+Instruction context:
+   
+ L. 110        26  DUP_TOP          
+                  28  LOAD_GLOBAL              WebDriverException
+                  30  COMPARE_OP               exception-match
+                  32  POP_JUMP_IF_FALSE    60  'to 60'
+                  34  POP_TOP          
+->                36  POP_TOP          
+                  38  POP_TOP          
+Instruction context:
+   
+ L. 590        86  POP_EXCEPT       
+                  88  POP_BLOCK        
+->                90  CALL_FINALLY        102  'to 102'
+                  92  LOAD_CONST               False
+                  94  RETURN_VALUE     
+                96_0  COME_FROM            78  '78'
+                  96  END_FINALLY      
+                98_0  COME_FROM            70  '70'
+                  98  POP_BLOCK        
+                 100  BEGIN_FINALLY    
+               102_0  COME_FROM            90  '90'
+               102_1  COME_FROM_FINALLY    32  '32'
+Instruction context:
+   
+ L. 702       142  LOAD_FAST                'filename'
+                 144  ROT_FOUR         
+->               146  POP_BLOCK        
+                 148  POP_EXCEPT       
+                 150  CALL_FINALLY        210  'to 210'
+                 152  RETURN_VALUE     
+               154_0  COME_FROM           140  '140'
+
+../test/29439.pyc -- 
+# decompile failed
+
+# file ../test/29439.pyc
+# Deparsing stopped due to parse error

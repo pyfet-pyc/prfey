@@ -1,0 +1,227 @@
+
+# file test/134742.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_STR                 'Routines common to all posix systems.'
+                2  STORE_NAME               __doc__
+
+ L.   7         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              glob
+               10  STORE_NAME               glob
+
+ L.   8        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              os
+               18  STORE_NAME               os
+
+ L.   9        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              signal
+               26  STORE_NAME               signal
+
+ L.  10        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              sys
+               34  STORE_NAME               sys
+
+ L.  11        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              time
+               42  STORE_NAME               time
+
+ L.  13        44  LOAD_CONST               1
+               46  LOAD_CONST               ('memoize',)
+               48  IMPORT_NAME              _common
+               50  IMPORT_FROM              memoize
+               52  STORE_NAME               memoize
+               54  POP_TOP          
+
+ L.  14        56  LOAD_CONST               1
+               58  LOAD_CONST               ('sdiskusage',)
+               60  IMPORT_NAME              _common
+               62  IMPORT_FROM              sdiskusage
+               64  STORE_NAME               sdiskusage
+               66  POP_TOP          
+
+ L.  15        68  LOAD_CONST               1
+               70  LOAD_CONST               ('TimeoutExpired',)
+               72  IMPORT_NAME              _common
+               74  IMPORT_FROM              TimeoutExpired
+               76  STORE_NAME               TimeoutExpired
+               78  POP_TOP          
+
+ L.  16        80  LOAD_CONST               1
+               82  LOAD_CONST               ('usage_percent',)
+               84  IMPORT_NAME              _common
+               86  IMPORT_FROM              usage_percent
+               88  STORE_NAME               usage_percent
+               90  POP_TOP          
+
+ L.  17        92  LOAD_CONST               1
+               94  LOAD_CONST               ('ChildProcessError',)
+               96  IMPORT_NAME              _compat
+               98  IMPORT_FROM              ChildProcessError
+              100  STORE_NAME               ChildProcessError
+              102  POP_TOP          
+
+ L.  18       104  LOAD_CONST               1
+              106  LOAD_CONST               ('FileNotFoundError',)
+              108  IMPORT_NAME              _compat
+              110  IMPORT_FROM              FileNotFoundError
+              112  STORE_NAME               FileNotFoundError
+              114  POP_TOP          
+
+ L.  19       116  LOAD_CONST               1
+              118  LOAD_CONST               ('InterruptedError',)
+              120  IMPORT_NAME              _compat
+              122  IMPORT_FROM              InterruptedError
+              124  STORE_NAME               InterruptedError
+              126  POP_TOP          
+
+ L.  20       128  LOAD_CONST               1
+              130  LOAD_CONST               ('PermissionError',)
+              132  IMPORT_NAME              _compat
+              134  IMPORT_FROM              PermissionError
+              136  STORE_NAME               PermissionError
+              138  POP_TOP          
+
+ L.  21       140  LOAD_CONST               1
+              142  LOAD_CONST               ('ProcessLookupError',)
+              144  IMPORT_NAME              _compat
+              146  IMPORT_FROM              ProcessLookupError
+              148  STORE_NAME               ProcessLookupError
+              150  POP_TOP          
+
+ L.  22       152  LOAD_CONST               1
+              154  LOAD_CONST               ('PY3',)
+              156  IMPORT_NAME              _compat
+              158  IMPORT_FROM              PY3
+              160  STORE_NAME               PY3
+              162  POP_TOP          
+
+ L.  23       164  LOAD_CONST               1
+              166  LOAD_CONST               ('unicode',)
+              168  IMPORT_NAME              _compat
+              170  IMPORT_FROM              unicode
+              172  STORE_NAME               unicode
+              174  POP_TOP          
+
+ L.  25       176  LOAD_NAME                sys
+              178  LOAD_ATTR                version_info
+              180  LOAD_CONST               (3, 4)
+              182  COMPARE_OP               >=
+              184  POP_JUMP_IF_FALSE   196  'to 196'
+
+ L.  26       186  LOAD_CONST               0
+              188  LOAD_CONST               None
+              190  IMPORT_NAME              enum
+              192  STORE_NAME               enum
+              194  JUMP_FORWARD        200  'to 200'
+            196_0  COME_FROM           184  '184'
+
+ L.  28       196  LOAD_CONST               None
+              198  STORE_NAME               enum
+            200_0  COME_FROM           194  '194'
+
+ L.  31       200  BUILD_LIST_0          0 
+              202  LOAD_CONST               ('pid_exists', 'wait_pid', 'disk_usage', 'get_terminal_map')
+              204  CALL_FINALLY        207  'to 207'
+              206  STORE_NAME               __all__
+
+ L.  34       208  LOAD_CODE                <code_object pid_exists>
+              210  LOAD_STR                 'pid_exists'
+              212  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              214  STORE_NAME               pid_exists
+
+ L.  58       216  LOAD_NAME                enum
+              218  LOAD_CONST               None
+              220  <117>                 1  ''
+          222_224  POP_JUMP_IF_FALSE   276  'to 276'
+              226  LOAD_NAME                hasattr
+              228  LOAD_NAME                signal
+              230  LOAD_STR                 'Signals'
+              232  CALL_FUNCTION_2       2  ''
+          234_236  POP_JUMP_IF_FALSE   276  'to 276'
+
+ L.  59       238  LOAD_NAME                enum
+              240  LOAD_METHOD              IntEnum
+
+ L.  60       242  LOAD_STR                 'Negsignal'
+              244  LOAD_NAME                dict
+              246  LOAD_LISTCOMP            '<code_object <listcomp>>'
+              248  LOAD_STR                 '<listcomp>'
+              250  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              252  LOAD_NAME                signal
+              254  LOAD_ATTR                Signals
+              256  GET_ITER         
+              258  CALL_FUNCTION_1       1  ''
+              260  CALL_FUNCTION_1       1  ''
+
+ L.  59       262  CALL_METHOD_2         2  ''
+              264  STORE_NAME               Negsignal
+
+ L.  62       266  LOAD_CODE                <code_object negsig_to_enum>
+              268  LOAD_STR                 'negsig_to_enum'
+              270  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              272  STORE_NAME               negsig_to_enum
+              274  JUMP_FORWARD        284  'to 284'
+            276_0  COME_FROM           234  '234'
+            276_1  COME_FROM           222  '222'
+
+ L.  69       276  LOAD_CODE                <code_object negsig_to_enum>
+              278  LOAD_STR                 'negsig_to_enum'
+              280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              282  STORE_NAME               negsig_to_enum
+            284_0  COME_FROM           274  '274'
+
+ L.  73       284  LOAD_CONST               None
+              286  LOAD_CONST               None
+
+ L.  74       288  LOAD_NAME                os
+              290  LOAD_ATTR                waitpid
+
+ L.  75       292  LOAD_NAME                getattr
+              294  LOAD_NAME                time
+              296  LOAD_STR                 'monotonic'
+              298  LOAD_NAME                time
+              300  LOAD_ATTR                time
+              302  CALL_FUNCTION_3       3  ''
+
+ L.  76       304  LOAD_NAME                min
+
+ L.  77       306  LOAD_NAME                time
+              308  LOAD_ATTR                sleep
+
+ L.  78       310  LOAD_NAME                pid_exists
+
+ L.  73       312  BUILD_TUPLE_7         7 
+              314  LOAD_CODE                <code_object wait_pid>
+              316  LOAD_STR                 'wait_pid'
+              318  MAKE_FUNCTION_1          'default'
+              320  STORE_NAME               wait_pid
+
+ L. 161       322  LOAD_CODE                <code_object disk_usage>
+              324  LOAD_STR                 'disk_usage'
+              326  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              328  STORE_NAME               disk_usage
+
+ L. 210       330  LOAD_NAME                memoize
+
+ L. 211       332  LOAD_CODE                <code_object get_terminal_map>
+              334  LOAD_STR                 'get_terminal_map'
+              336  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              338  CALL_FUNCTION_1       1  ''
+              340  STORE_NAME               get_terminal_map
+
+Parse error at or near `CALL_FINALLY' instruction at offset 204
+
+Instruction context:
+   
+ L.  31       200  BUILD_LIST_0          0 
+                 202  LOAD_CONST               ('pid_exists', 'wait_pid', 'disk_usage', 'get_terminal_map')
+->               204  CALL_FINALLY        207  'to 207'
+                 206  STORE_NAME               __all__
+
+test/134742.pyc -- 
+# decompile failed

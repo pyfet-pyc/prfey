@@ -1,0 +1,29 @@
+Instruction context:
+   
+ L. 124        32  LOAD_FAST                'var'
+                  34  LOAD_STR                 'kindselector'
+                  36  BINARY_SUBSCR    
+                  38  LOAD_STR                 'kind'
+                  40  BINARY_SUBSCR    
+                  42  POP_BLOCK        
+->                44  ROT_FOUR         
+                  46  POP_EXCEPT       
+                  48  RETURN_VALUE     
+                50_0  COME_FROM_FINALLY    30  '30'
+Instruction context:
+   
+ L. 592        34  POP_EXCEPT       
+->                36  LOAD_CONST               0
+                  38  RETURN_VALUE     
+                40_0  COME_FROM            26  '26'
+Instruction context:
+   
+ L. 827       306  JUMP_BACK           144  'to 144'
+->           308_310  JUMP_FORWARD        598  'to 598'
+               312_0  COME_FROM           302  '302'
+
+../test/25807.pyc -- 
+# decompile failed
+
+# file ../test/25807.pyc
+# Deparsing stopped due to parse error

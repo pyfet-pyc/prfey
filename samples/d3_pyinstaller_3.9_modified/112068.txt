@@ -1,0 +1,379 @@
+
+# file test/112068.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Manages the cache of generated Python code.\n\nDescription\n  This file manages the cache of generated Python code.  When run from the\n  command line, it also provides a number of options for managing that cache.\n\nImplementation\n  Each typelib is generated into a filename of format "{guid}x{lcid}x{major}x{minor}.py"\n\n  An external persistant dictionary maps from all known IIDs in all known type libraries\n  to the type library itself.\n\n  Thus, whenever Python code knows the IID of an object, it can find the IID, LCID and version of\n  the type library which supports it.  Given this information, it can find the Python module\n  with the support.\n\n  If necessary, this support can be generated on the fly.\n\nHacks, to do, etc\n  Currently just uses a pickled dictionary, but should used some sort of indexed file.\n  Maybe an OLE2 compound file, or a bsddb file?\n'
+                2  STORE_NAME               __doc__
+
+ L.  23         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              pywintypes
+               10  STORE_NAME               pywintypes
+               12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              os
+               18  STORE_NAME               os
+               20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              sys
+               26  STORE_NAME               sys
+
+ L.  24        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              pythoncom
+               34  STORE_NAME               pythoncom
+
+ L.  25        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              win32com
+               42  STORE_NAME               win32com
+               44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME_ATTR         win32com.client
+               50  STORE_NAME               win32com
+
+ L.  26        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              glob
+               58  STORE_NAME               glob
+
+ L.  27        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              traceback
+               66  STORE_NAME               traceback
+
+ L.  28        68  LOAD_CONST               1
+               70  LOAD_CONST               ('CLSIDToClass',)
+               72  IMPORT_NAME              
+               74  IMPORT_FROM              CLSIDToClass
+               76  STORE_NAME               CLSIDToClass
+               78  POP_TOP          
+
+ L.  29        80  LOAD_CONST               0
+               82  LOAD_CONST               None
+               84  IMPORT_NAME              operator
+               86  STORE_NAME               operator
+
+ L.  30        88  LOAD_CONST               0
+               90  LOAD_CONST               ('reload',)
+               92  IMPORT_NAME              importlib
+               94  IMPORT_FROM              reload
+               96  STORE_NAME               reload
+               98  POP_TOP          
+
+ L.  32       100  LOAD_CONST               0
+              102  STORE_NAME               bForDemandDefault
+
+ L.  35       104  BUILD_MAP_0           0 
+              106  STORE_GLOBAL             clsidToTypelib
+
+ L.  39       108  BUILD_MAP_0           0 
+              110  STORE_NAME               versionRedirectMap
+
+ L.  46       112  LOAD_NAME                hasattr
+              114  LOAD_NAME                win32com
+              116  LOAD_STR                 '__loader__'
+              118  CALL_FUNCTION_2       2  ''
+              120  JUMP_IF_FALSE_OR_POP   132  'to 132'
+              122  LOAD_NAME                hasattr
+              124  LOAD_NAME                win32com
+              126  LOAD_ATTR                __loader__
+              128  LOAD_STR                 'archive'
+              130  CALL_FUNCTION_2       2  ''
+            132_0  COME_FROM           120  '120'
+              132  DUP_TOP          
+              134  STORE_NAME               is_readonly
+              136  STORE_NAME               is_zip
+
+ L.  50       138  BUILD_MAP_0           0 
+              140  STORE_NAME               demandGeneratedTypeLibraries
+
+ L.  52       142  LOAD_CONST               0
+              144  LOAD_CONST               None
+              146  IMPORT_NAME              pickle
+              148  STORE_NAME               pickle
+
+ L.  54       150  LOAD_CODE                <code_object __init__>
+              152  LOAD_STR                 '__init__'
+              154  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              156  STORE_NAME               __init__
+
+ L.  61       158  LOAD_CONST               1
+              160  STORE_NAME               pickleVersion
+
+ L.  62       162  LOAD_CODE                <code_object _SaveDicts>
+              164  LOAD_STR                 '_SaveDicts'
+              166  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              168  STORE_NAME               _SaveDicts
+
+ L.  74       170  LOAD_CODE                <code_object _LoadDicts>
+              172  LOAD_STR                 '_LoadDicts'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  STORE_NAME               _LoadDicts
+
+ L. 117       178  LOAD_CODE                <code_object GetGeneratedFileName>
+              180  LOAD_STR                 'GetGeneratedFileName'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  STORE_NAME               GetGeneratedFileName
+
+ L. 123       186  LOAD_CODE                <code_object SplitGeneratedFileName>
+              188  LOAD_STR                 'SplitGeneratedFileName'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  STORE_NAME               SplitGeneratedFileName
+
+ L. 128       194  LOAD_CODE                <code_object GetGeneratePath>
+              196  LOAD_STR                 'GetGeneratePath'
+              198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              200  STORE_NAME               GetGeneratePath
+
+ L. 153       202  LOAD_CODE                <code_object GetClassForProgID>
+              204  LOAD_STR                 'GetClassForProgID'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  STORE_NAME               GetClassForProgID
+
+ L. 166       210  LOAD_CODE                <code_object GetClassForCLSID>
+              212  LOAD_STR                 'GetClassForCLSID'
+              214  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              216  STORE_NAME               GetClassForCLSID
+
+ L. 188       218  LOAD_CODE                <code_object GetModuleForProgID>
+              220  LOAD_STR                 'GetModuleForProgID'
+              222  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              224  STORE_NAME               GetModuleForProgID
+
+ L. 205       226  LOAD_CODE                <code_object GetModuleForCLSID>
+              228  LOAD_STR                 'GetModuleForCLSID'
+              230  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              232  STORE_NAME               GetModuleForCLSID
+
+ L. 246       234  LOAD_CODE                <code_object GetModuleForTypelib>
+              236  LOAD_STR                 'GetModuleForTypelib'
+              238  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              240  STORE_NAME               GetModuleForTypelib
+
+ L. 267       242  LOAD_CONST               None
+              244  LOAD_NAME                bForDemandDefault
+              246  LOAD_CONST               1
+              248  BUILD_TUPLE_3         3 
+              250  LOAD_CODE                <code_object MakeModuleForTypelib>
+              252  LOAD_STR                 'MakeModuleForTypelib'
+              254  MAKE_FUNCTION_1          'default'
+              256  STORE_NAME               MakeModuleForTypelib
+
+ L. 287       258  LOAD_CONST               None
+              260  LOAD_NAME                bForDemandDefault
+              262  LOAD_CONST               1
+              264  BUILD_TUPLE_3         3 
+              266  LOAD_CODE                <code_object MakeModuleForTypelibInterface>
+              268  LOAD_STR                 'MakeModuleForTypelibInterface'
+              270  MAKE_FUNCTION_1          'default'
+              272  STORE_NAME               MakeModuleForTypelibInterface
+
+ L. 313       274  LOAD_CONST               None
+              276  LOAD_NAME                bForDemandDefault
+              278  LOAD_CONST               1
+              280  BUILD_TUPLE_3         3 
+              282  LOAD_CODE                <code_object EnsureModuleForTypelibInterface>
+              284  LOAD_STR                 'EnsureModuleForTypelibInterface'
+              286  MAKE_FUNCTION_1          'default'
+              288  STORE_NAME               EnsureModuleForTypelibInterface
+
+ L. 345       290  LOAD_CODE                <code_object ForgetAboutTypelibInterface>
+              292  LOAD_STR                 'ForgetAboutTypelibInterface'
+              294  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              296  STORE_NAME               ForgetAboutTypelibInterface
+
+ L. 363       298  LOAD_CONST               None
+              300  LOAD_NAME                is_readonly
+              302  UNARY_NOT        
+              304  LOAD_NAME                bForDemandDefault
+              306  LOAD_CONST               1
+              308  BUILD_TUPLE_4         4 
+              310  LOAD_CODE                <code_object EnsureModule>
+              312  LOAD_STR                 'EnsureModule'
+              314  MAKE_FUNCTION_1          'default'
+              316  STORE_NAME               EnsureModule
+
+ L. 522       318  LOAD_CONST               (1,)
+              320  LOAD_CODE                <code_object EnsureDispatch>
+              322  LOAD_STR                 'EnsureDispatch'
+              324  MAKE_FUNCTION_1          'default'
+              326  STORE_NAME               EnsureDispatch
+
+ L. 541       328  LOAD_CONST               1
+              330  LOAD_NAME                is_readonly
+              332  UNARY_NOT        
+              334  BUILD_TUPLE_2         2 
+              336  LOAD_CODE                <code_object AddModuleToCache>
+              338  LOAD_STR                 'AddModuleToCache'
+              340  MAKE_FUNCTION_1          'default'
+              342  STORE_NAME               AddModuleToCache
+
+ L. 572       344  LOAD_CODE                <code_object GetGeneratedInfos>
+              346  LOAD_STR                 'GetGeneratedInfos'
+              348  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              350  STORE_NAME               GetGeneratedInfos
+
+ L. 620       352  LOAD_CODE                <code_object _GetModule>
+              354  LOAD_STR                 '_GetModule'
+              356  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              358  STORE_NAME               _GetModule
+
+ L. 627       360  LOAD_CONST               (1,)
+              362  LOAD_CODE                <code_object Rebuild>
+              364  LOAD_STR                 'Rebuild'
+              366  MAKE_FUNCTION_1          'default'
+              368  STORE_NAME               Rebuild
+
+ L. 646       370  LOAD_CODE                <code_object _Dump>
+              372  LOAD_STR                 '_Dump'
+              374  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              376  STORE_NAME               _Dump
+
+ L. 657       378  LOAD_NAME                __init__
+              380  CALL_FUNCTION_0       0  ''
+              382  POP_TOP          
+
+ L. 659       384  LOAD_CODE                <code_object usage>
+              386  LOAD_STR                 'usage'
+              388  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              390  STORE_NAME               usage
+
+ L. 670       392  LOAD_NAME                __name__
+              394  LOAD_STR                 '__main__'
+              396  COMPARE_OP               ==
+          398_400  POP_JUMP_IF_FALSE   596  'to 596'
+
+ L. 671       402  LOAD_CONST               0
+              404  LOAD_CONST               None
+              406  IMPORT_NAME              getopt
+              408  STORE_NAME               getopt
+
+ L. 672       410  SETUP_FINALLY       442  'to 442'
+
+ L. 673       412  LOAD_NAME                getopt
+              414  LOAD_METHOD              getopt
+              416  LOAD_NAME                sys
+              418  LOAD_ATTR                argv
+              420  LOAD_CONST               1
+              422  LOAD_CONST               None
+              424  BUILD_SLICE_2         2 
+              426  BINARY_SUBSCR    
+              428  LOAD_STR                 'qrd'
+              430  CALL_METHOD_2         2  ''
+              432  UNPACK_SEQUENCE_2     2 
+              434  STORE_NAME               opts
+              436  STORE_NAME               args
+              438  POP_BLOCK        
+              440  JUMP_FORWARD        496  'to 496'
+            442_0  COME_FROM_FINALLY   410  '410'
+
+ L. 674       442  DUP_TOP          
+              444  LOAD_NAME                getopt
+              446  LOAD_ATTR                error
+          448_450  <121>               494  ''
+              452  POP_TOP          
+              454  STORE_NAME               message
+              456  POP_TOP          
+              458  SETUP_FINALLY       486  'to 486'
+
+ L. 675       460  LOAD_NAME                print
+              462  LOAD_NAME                message
+              464  CALL_FUNCTION_1       1  ''
+              466  POP_TOP          
+
+ L. 676       468  LOAD_NAME                usage
+              470  CALL_FUNCTION_0       0  ''
+              472  POP_TOP          
+              474  POP_BLOCK        
+              476  POP_EXCEPT       
+              478  LOAD_CONST               None
+              480  STORE_NAME               message
+              482  DELETE_NAME              message
+              484  JUMP_FORWARD        496  'to 496'
+            486_0  COME_FROM_FINALLY   458  '458'
+              486  LOAD_CONST               None
+              488  STORE_NAME               message
+              490  DELETE_NAME              message
+              492  <48>             
+              494  <48>             
+            496_0  COME_FROM           484  '484'
+            496_1  COME_FROM           440  '440'
+
+ L. 679       496  LOAD_NAME                len
+              498  LOAD_NAME                sys
+              500  LOAD_ATTR                argv
+              502  CALL_FUNCTION_1       1  ''
+              504  LOAD_CONST               1
+              506  COMPARE_OP               ==
+          508_510  POP_JUMP_IF_TRUE    518  'to 518'
+              512  LOAD_NAME                args
+          514_516  POP_JUMP_IF_FALSE   528  'to 528'
+            518_0  COME_FROM           508  '508'
+
+ L. 680       518  LOAD_NAME                print
+              520  LOAD_NAME                usage
+              522  CALL_FUNCTION_0       0  ''
+              524  CALL_FUNCTION_1       1  ''
+              526  POP_TOP          
+            528_0  COME_FROM           514  '514'
+
+ L. 682       528  LOAD_CONST               1
+              530  STORE_NAME               verbose
+
+ L. 683       532  LOAD_NAME                opts
+              534  GET_ITER         
+            536_0  COME_FROM           592  '592'
+            536_1  COME_FROM           584  '584'
+              536  FOR_ITER            596  'to 596'
+              538  UNPACK_SEQUENCE_2     2 
+              540  STORE_NAME               opt
+              542  STORE_NAME               val
+
+ L. 684       544  LOAD_NAME                opt
+              546  LOAD_STR                 '-d'
+              548  COMPARE_OP               ==
+          550_552  POP_JUMP_IF_FALSE   560  'to 560'
+
+ L. 685       554  LOAD_NAME                _Dump
+              556  CALL_FUNCTION_0       0  ''
+              558  POP_TOP          
+            560_0  COME_FROM           550  '550'
+
+ L. 686       560  LOAD_NAME                opt
+              562  LOAD_STR                 '-r'
+              564  COMPARE_OP               ==
+          566_568  POP_JUMP_IF_FALSE   578  'to 578'
+
+ L. 687       570  LOAD_NAME                Rebuild
+              572  LOAD_NAME                verbose
+              574  CALL_FUNCTION_1       1  ''
+              576  POP_TOP          
+            578_0  COME_FROM           566  '566'
+
+ L. 688       578  LOAD_NAME                opt
+              580  LOAD_STR                 '-q'
+              582  COMPARE_OP               ==
+          584_586  POP_JUMP_IF_FALSE_BACK   536  'to 536'
+
+ L. 689       588  LOAD_CONST               0
+              590  STORE_NAME               verbose
+          592_594  JUMP_BACK           536  'to 536'
+            596_0  COME_FROM           536  '536'
+            596_1  COME_FROM           398  '398'
+
+Parse error at or near `<121>' instruction at offset 448_450
+
+Instruction context:
+   
+ L. 674       442  DUP_TOP          
+                 444  LOAD_NAME                getopt
+                 446  LOAD_ATTR                error
+->           448_450  <121>               494  ''
+                 452  POP_TOP          
+                 454  STORE_NAME               message
+                 456  POP_TOP          
+                 458  SETUP_FINALLY       486  'to 486'
+
+test/112068.pyc -- 
+# decompile failed

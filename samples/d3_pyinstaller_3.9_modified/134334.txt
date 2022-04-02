@@ -1,0 +1,122 @@
+Instruction context:
+   
+ L. 108       198  LOAD_STR                 '='
+                 200  LOAD_FAST                'item'
+->               202  <118>                 1  ''
+                 204  POP_JUMP_IF_FALSE   228  'to 228'
+Instruction context:
+   
+ L. 176        16  LOAD_DEREF               'name_suf'
+                  18  LOAD_FAST                'params'
+->                20  <118>                 0  ''
+                  22  POP_JUMP_IF_FALSE    32  'to 32'
+Instruction context:
+   
+ L. 225        14  LOAD_FAST                'part'
+                  16  LOAD_CONST               None
+->                18  <117>                 0  ''
+                  20  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L. 261        38  LOAD_FAST                'length'
+                  40  LOAD_CONST               None
+->                42  <117>                 1  ''
+                  44  POP_JUMP_IF_FALSE    54  'to 54'
+                  46  LOAD_GLOBAL              int
+                  48  LOAD_FAST                'length'
+                  50  CALL_FUNCTION_1       1  ''
+                  52  JUMP_FORWARD         56  'to 56'
+                54_0  COME_FROM            44  '44'
+                  54  LOAD_CONST               None
+                56_0  COME_FROM            52  '52'
+                  56  LOAD_FAST                'self'
+                  58  STORE_ATTR               _length
+Instruction context:
+   
+ L. 274        14  LOAD_FAST                'part'
+                  16  LOAD_CONST               None
+->                18  <117>                 0  ''
+                  20  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L. 317       114  POP_JUMP_IF_TRUE    124  'to 124'
+->               116  <74>             
+Instruction context:
+   
+ L. 333        16  POP_JUMP_IF_TRUE     26  'to 26'
+->                18  <74>             
+Instruction context:
+   
+ L. 423        26  LOAD_FAST                'encoding'
+                  28  LOAD_CONST               None
+->                30  <117>                 1  ''
+                  32  POP_JUMP_IF_FALSE    40  'to 40'
+Instruction context:
+   
+ L. 466        54  LOAD_FAST                'encoding'
+                  56  LOAD_CONST               ('binary', '8bit', '7bit')
+->                58  <118>                 0  ''
+                  60  POP_JUMP_IF_FALSE    66  'to 66'
+Instruction context:
+   
+ L. 550        14  LOAD_FAST                'part'
+                  16  LOAD_CONST               None
+->                18  <117>                 0  ''
+                  20  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L. 596        20  LOAD_FAST                'item'
+                  22  LOAD_CONST               None
+->                24  <117>                 0  ''
+                  26  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L. 620        30  LOAD_FAST                'self'
+                  32  LOAD_ATTR                multipart_reader_cls
+                  34  LOAD_CONST               None
+->                36  <117>                 0  ''
+                  38  POP_JUMP_IF_FALSE    56  'to 56'
+Instruction context:
+   
+ L. 629        14  LOAD_FAST                'mimetype'
+                  16  LOAD_ATTR                type
+                  18  LOAD_STR                 'multipart'
+                  20  COMPARE_OP               ==
+                  22  POP_JUMP_IF_TRUE     32  'to 32'
+->                24  <74>             
+                  26  LOAD_STR                 'multipart/* content type expected'
+                  28  CALL_FUNCTION_1       1  ''
+                  30  RAISE_VARARGS_1       1  'exception instance'
+                32_0  COME_FROM            22  '22'
+Instruction context:
+   
+ L. 691        44  JUMP_FORWARD         48  'to 48'
+->                46  JUMP_BACK             6  'to 6'
+                48_0  COME_FROM            44  '44'
+Instruction context:
+   
+ L. 809        18  LOAD_FAST                'encoding'
+                  20  POP_JUMP_IF_FALSE    44  'to 44'
+                  22  LOAD_FAST                'encoding'
+                  24  LOAD_CONST               ('deflate', 'gzip', 'identity')
+->                26  <118>                 1  ''
+                  28  POP_JUMP_IF_FALSE    44  'to 44'
+Instruction context:
+   
+ L. 869        20  LOAD_FAST                'encoding'
+                  22  POP_JUMP_IF_TRUE     38  'to 38'
+                  24  LOAD_FAST                'te_encoding'
+                  26  POP_JUMP_IF_TRUE     38  'to 38'
+                  28  LOAD_FAST                'part'
+                  30  LOAD_ATTR                size
+                  32  LOAD_CONST               None
+->                34  <117>                 0  ''
+                  36  POP_JUMP_IF_FALSE    44  'to 44'
+                38_0  COME_FROM            26  '26'
+                38_1  COME_FROM            22  '22'
+
+test/134334.pyc -- 
+# decompile failed
+
+# file test/134334.pyc
+# Deparsing stopped due to parse error

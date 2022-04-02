@@ -1,0 +1,21 @@
+Instruction context:
+   
+ L. 558       340  POP_EXCEPT       
+                 342  BREAK_LOOP          346  'to 346'
+               344_0  COME_FROM           330  '330'
+->               344  END_FINALLY      
+               346_0  COME_FROM           342  '342'
+               346_1  COME_FROM           322  '322'
+                 346  JUMP_BACK           296  'to 296'
+               348_0  COME_FROM           306  '306'
+Instruction context:
+-> 
+ L. 749       176  JUMP_BACK           104  'to 104'
+               178_0  COME_FROM           174  '174'
+               178_1  COME_FROM           140  '140'
+
+../test/13047.pyc -- 
+# decompile failed
+
+# file ../test/13047.pyc
+# Deparsing stopped due to parse error

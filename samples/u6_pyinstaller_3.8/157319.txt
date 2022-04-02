@@ -1,0 +1,121 @@
+Instruction context:
+   
+ L. 404        32  DUP_TOP          
+                  34  LOAD_GLOBAL              KeyError
+                  36  COMPARE_OP               exception-match
+                  38  POP_JUMP_IF_FALSE    72  'to 72'
+                  40  POP_TOP          
+->                42  POP_TOP          
+                  44  POP_TOP          
+Instruction context:
+   
+ L. 484        52  POP_BLOCK        
+                  54  POP_EXCEPT       
+->                56  CALL_FINALLY         62  'to 62'
+                  58  LOAD_CONST               False
+                  60  RETURN_VALUE     
+                62_0  COME_FROM            56  '56'
+                62_1  COME_FROM_FINALLY    30  '30'
+                  62  LOAD_CONST               None
+                  64  STORE_FAST               'err'
+                  66  DELETE_FAST              'err'
+                  68  END_FINALLY      
+                  70  POP_EXCEPT       
+                  72  JUMP_FORWARD         88  'to 88'
+                74_0  COME_FROM            22  '22'
+                  74  END_FINALLY      
+                76_0  COME_FROM            14  '14'
+Instruction context:
+   
+ L. 499        52  POP_BLOCK        
+                  54  POP_EXCEPT       
+->                56  CALL_FINALLY         62  'to 62'
+                  58  LOAD_CONST               False
+                  60  RETURN_VALUE     
+                62_0  COME_FROM            56  '56'
+                62_1  COME_FROM_FINALLY    30  '30'
+                  62  LOAD_CONST               None
+                  64  STORE_FAST               'err'
+                  66  DELETE_FAST              'err'
+                  68  END_FINALLY      
+                  70  POP_EXCEPT       
+                  72  JUMP_FORWARD         80  'to 80'
+                74_0  COME_FROM            22  '22'
+                  74  END_FINALLY      
+                76_0  COME_FROM            14  '14'
+Instruction context:
+   
+ L. 513        66  POP_BLOCK        
+                  68  LOAD_CONST               True
+->                70  RETURN_VALUE     
+                72_0  COME_FROM_FINALLY    18  '18'
+Instruction context:
+   
+ L. 555        26  DUP_TOP          
+                  28  LOAD_GLOBAL              ValueError
+                  30  COMPARE_OP               exception-match
+                  32  POP_JUMP_IF_FALSE    48  'to 48'
+                  34  POP_TOP          
+->                36  POP_TOP          
+                  38  POP_TOP          
+Instruction context:
+   
+ L. 568        26  DUP_TOP          
+                  28  LOAD_GLOBAL              ValueError
+                  30  COMPARE_OP               exception-match
+                  32  POP_JUMP_IF_FALSE    48  'to 48'
+                  34  POP_TOP          
+->                36  POP_TOP          
+                  38  POP_TOP          
+Instruction context:
+   
+ L. 660       108  POP_EXCEPT       
+                 110  JUMP_BACK            60  'to 60'
+->               112  POP_EXCEPT       
+                 114  JUMP_FORWARD        118  'to 118'
+               116_0  COME_FROM            92  '92'
+                 116  END_FINALLY      
+               118_0  COME_FROM           114  '114'
+               118_1  COME_FROM            84  '84'
+Instruction context:
+   
+ L. 693         8  LOAD_FAST                'self'
+                  10  LOAD_ATTR                cache
+                  12  LOAD_FAST                'self'
+                  14  LOAD_ATTR                reminders
+                  16  LOAD_FAST                'self'
+                  18  LOAD_ATTR                reminder_keys
+                  20  BUILD_TUPLE_3         3 
+                  22  POP_BLOCK        
+->                24  ROT_TWO          
+                  26  BEGIN_FINALLY    
+                  28  WITH_CLEANUP_START
+                  30  WITH_CLEANUP_FINISH
+                  32  POP_FINALLY           0  ''
+                  34  RETURN_VALUE     
+                36_0  COME_FROM_WITH        4  '4'
+                  36  WITH_CLEANUP_START
+                  38  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 702         8  LOAD_GLOBAL              _wn
+                  10  LOAD_METHOD              run
+                  12  LOAD_FAST                'input_dict'
+                  14  LOAD_FAST                'name'
+                  16  CALL_METHOD_2         2  ''
+                  18  POP_BLOCK        
+->                20  ROT_TWO          
+                  22  BEGIN_FINALLY    
+                  24  WITH_CLEANUP_START
+                  26  WITH_CLEANUP_FINISH
+                  28  POP_FINALLY           0  ''
+                  30  RETURN_VALUE     
+                32_0  COME_FROM_WITH        4  '4'
+                  32  WITH_CLEANUP_START
+                  34  WITH_CLEANUP_FINISH
+
+../test/157319.pyc -- 
+# decompile failed
+
+# file ../test/157319.pyc
+# Deparsing stopped due to parse error

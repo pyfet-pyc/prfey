@@ -1,0 +1,46 @@
+Instruction context:
+   
+ L. 141        98  POP_BLOCK        
+->               100  BEGIN_FINALLY    
+                 102  WITH_CLEANUP_START
+                 104  WITH_CLEANUP_FINISH
+                 106  POP_FINALLY           0  ''
+                 108  POP_TOP          
+                 110  BREAK_LOOP          124  'to 124'
+               112_0  COME_FROM            96  '96'
+               112_1  COME_FROM            88  '88'
+                 112  POP_BLOCK        
+                 114  BEGIN_FINALLY    
+               116_0  COME_FROM_WITH       32  '32'
+                 116  WITH_CLEANUP_START
+                 118  WITH_CLEANUP_FINISH
+                 120  END_FINALLY      
+                 122  JUMP_BACK            20  'to 20'
+Instruction context:
+   
+ L. 177         8  LOAD_CLOSURE             'context'
+                  10  BUILD_TUPLE_1         1 
+->                12  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  14  LOAD_STR                 'get_unicode_to_keycode_map.<locals>.<dictcomp>'
+                  16  MAKE_FUNCTION_8          'closure'
+Instruction context:
+   
+ L. 197        32  POP_BLOCK        
+->                34  CALL_FINALLY        192  'to 192'
+                  36  LOAD_CONST               None
+                  38  RETURN_VALUE     
+                40_0  COME_FROM            22  '22'
+Instruction context:
+   
+ L. 247        26  POP_JUMP_IF_FALSE    34  'to 34'
+                  28  LOAD_GLOBAL              Quartz
+                  30  LOAD_ATTR                kCGEventTapOptionListenOnly
+                  32  JUMP_FORWARD         38  'to 38'
+                34_0  COME_FROM            26  '26'
+->              34_1  COME_FROM            16  '16'
+
+../test/105210.pyc -- 
+# decompile failed
+
+# file ../test/105210.pyc
+# Deparsing stopped due to parse error

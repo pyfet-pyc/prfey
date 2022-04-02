@@ -1,0 +1,35 @@
+Instruction context:
+   
+ L. 190        50  POP_TOP          
+->             52_54  JUMP_FORWARD        298  'to 298'
+                56_0  COME_FROM            36  '36'
+Instruction context:
+   
+ L. 254       216  LOAD_FAST                'toks_append'
+                 218  LOAD_FAST                'tokval'
+                 220  CALL_FUNCTION_1       1  ''
+                 222  POP_TOP          
+->               224  JUMP_BACK            46  'to 46'
+Instruction context:
+   
+ L. 323        24  POP_EXCEPT       
+->                26  LOAD_CONST               b''
+                  28  RETURN_VALUE     
+                30_0  COME_FROM            16  '16'
+Instruction context:
+   
+ L. 400        68  LOAD_FAST                'buffer'
+                  70  LOAD_METHOD              close
+                  72  CALL_METHOD_0         0  ''
+->                74  POP_TOP          
+Instruction context:
+   
+ L. 478       362  JUMP_BACK            80  'to 80'
+->           364_366  BREAK_LOOP          814  'to 814'
+               368_0  COME_FROM           162  '162'
+
+../test/10324.pyc -- 
+# decompile failed
+
+# file ../test/10324.pyc
+# Deparsing stopped due to parse error

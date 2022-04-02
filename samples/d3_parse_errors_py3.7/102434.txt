@@ -1,0 +1,31 @@
+Instruction context:
+   
+ L.1043       206  RAISE_VARARGS_0       0  'reraise'
+                 208  POP_BLOCK        
+                 210  LOAD_CONST               None
+               212_0  COME_FROM_FINALLY   174  '174'
+                 212  LOAD_CONST               None
+                 214  STORE_FAST               'exc'
+                 216  DELETE_FAST              'exc'
+                 218  END_FINALLY      
+                 220  POP_EXCEPT       
+                 222  JUMP_BACK            16  'to 16'
+               224_0  COME_FROM           166  '166'
+                 224  END_FINALLY      
+               226_0  COME_FROM            98  '98'
+               226_1  COME_FROM            88  '88'
+                 226  JUMP_BACK            16  'to 16'
+                 228  POP_BLOCK        
+->             230_0  COME_FROM_LOOP       10  '10'
+               230_1  COME_FROM             8  '8'
+Instruction context:
+-> 
+ L.1137        78  CONTINUE             28  'to 28'
+                80_0  COME_FROM            76  '76'
+                80_1  COME_FROM            60  '60'
+
+../test/102434.pyc -- 
+# decompile failed
+
+# file ../test/102434.pyc
+# Deparsing stopped due to parse error

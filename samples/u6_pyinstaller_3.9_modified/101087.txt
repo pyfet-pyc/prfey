@@ -1,0 +1,271 @@
+
+# file test/101087.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Selectors module.\n\nThis module allows high-level and efficient I/O multiplexing, built upon the\n`select` module primitives.\n'
+                2  STORE_NAME               __doc__
+
+ L.   8         4  LOAD_CONST               0
+                6  LOAD_CONST               ('ABCMeta', 'abstractmethod')
+                8  IMPORT_NAME              abc
+               10  IMPORT_FROM              ABCMeta
+               12  STORE_NAME               ABCMeta
+               14  IMPORT_FROM              abstractmethod
+               16  STORE_NAME               abstractmethod
+               18  POP_TOP          
+
+ L.   9        20  LOAD_CONST               0
+               22  LOAD_CONST               ('namedtuple',)
+               24  IMPORT_NAME              collections
+               26  IMPORT_FROM              namedtuple
+               28  STORE_NAME               namedtuple
+               30  POP_TOP          
+
+ L.  10        32  LOAD_CONST               0
+               34  LOAD_CONST               ('Mapping',)
+               36  IMPORT_NAME_ATTR         collections.abc
+               38  IMPORT_FROM              Mapping
+               40  STORE_NAME               Mapping
+               42  POP_TOP          
+
+ L.  11        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              math
+               50  STORE_NAME               math
+
+ L.  12        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              select
+               58  STORE_NAME               select
+
+ L.  13        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              sys
+               66  STORE_NAME               sys
+
+ L.  17        68  LOAD_CONST               1
+               70  STORE_NAME               EVENT_READ
+
+ L.  18        72  LOAD_CONST               2
+               74  STORE_NAME               EVENT_WRITE
+
+ L.  21        76  LOAD_CODE                <code_object _fileobj_to_fd>
+               78  LOAD_STR                 '_fileobj_to_fd'
+               80  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               82  STORE_NAME               _fileobj_to_fd
+
+ L.  46        84  LOAD_NAME                namedtuple
+               86  LOAD_STR                 'SelectorKey'
+               88  BUILD_LIST_0          0 
+               90  LOAD_CONST               ('fileobj', 'fd', 'events', 'data')
+               92  CALL_FINALLY         95  'to 95'
+               94  CALL_FUNCTION_2       2  ''
+               96  STORE_NAME               SelectorKey
+
+ L.  48        98  LOAD_STR                 'SelectorKey(fileobj, fd, events, data)\n\n    Object used to associate a file object to its backing\n    file descriptor, selected event mask, and attached data.\n'
+              100  LOAD_NAME                SelectorKey
+              102  STORE_ATTR               __doc__
+
+ L.  53       104  LOAD_NAME                sys
+              106  LOAD_ATTR                version_info
+              108  LOAD_CONST               (3, 5)
+              110  COMPARE_OP               >=
+              112  POP_JUMP_IF_FALSE   146  'to 146'
+
+ L.  54       114  LOAD_STR                 'File object registered.'
+              116  LOAD_NAME                SelectorKey
+              118  LOAD_ATTR                fileobj
+              120  STORE_ATTR               __doc__
+
+ L.  55       122  LOAD_STR                 'Underlying file descriptor.'
+              124  LOAD_NAME                SelectorKey
+              126  LOAD_ATTR                fd
+              128  STORE_ATTR               __doc__
+
+ L.  56       130  LOAD_STR                 'Events that must be waited for on this file object.'
+              132  LOAD_NAME                SelectorKey
+              134  LOAD_ATTR                events
+              136  STORE_ATTR               __doc__
+
+ L.  57       138  LOAD_STR                 'Optional opaque data associated to this file object.\n    For example, this could be used to store a per-client session ID.'
+              140  LOAD_NAME                SelectorKey
+              142  LOAD_ATTR                data
+              144  STORE_ATTR               __doc__
+            146_0  COME_FROM           112  '112'
+
+ L.  61       146  LOAD_BUILD_CLASS 
+              148  LOAD_CODE                <code_object _SelectorMapping>
+              150  LOAD_STR                 '_SelectorMapping'
+              152  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              154  LOAD_STR                 '_SelectorMapping'
+              156  LOAD_NAME                Mapping
+              158  CALL_FUNCTION_3       3  ''
+              160  STORE_NAME               _SelectorMapping
+
+ L.  81       162  LOAD_BUILD_CLASS 
+              164  LOAD_CODE                <code_object BaseSelector>
+              166  LOAD_STR                 'BaseSelector'
+              168  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              170  LOAD_STR                 'BaseSelector'
+              172  LOAD_NAME                ABCMeta
+              174  LOAD_CONST               ('metaclass',)
+              176  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              178  STORE_NAME               BaseSelector
+
+ L. 207       180  LOAD_BUILD_CLASS 
+              182  LOAD_CODE                <code_object _BaseSelectorImpl>
+              184  LOAD_STR                 '_BaseSelectorImpl'
+              186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              188  LOAD_STR                 '_BaseSelectorImpl'
+              190  LOAD_NAME                BaseSelector
+              192  CALL_FUNCTION_3       3  ''
+              194  STORE_NAME               _BaseSelectorImpl
+
+ L. 291       196  LOAD_BUILD_CLASS 
+              198  LOAD_CODE                <code_object SelectSelector>
+              200  LOAD_STR                 'SelectSelector'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  LOAD_STR                 'SelectSelector'
+              206  LOAD_NAME                _BaseSelectorImpl
+              208  CALL_FUNCTION_3       3  ''
+              210  STORE_NAME               SelectSelector
+
+ L. 342       212  LOAD_BUILD_CLASS 
+              214  LOAD_CODE                <code_object _PollLikeSelector>
+              216  LOAD_STR                 '_PollLikeSelector'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  LOAD_STR                 '_PollLikeSelector'
+              222  LOAD_NAME                _BaseSelectorImpl
+              224  CALL_FUNCTION_3       3  ''
+              226  STORE_NAME               _PollLikeSelector
+
+ L. 432       228  LOAD_NAME                hasattr
+              230  LOAD_NAME                select
+              232  LOAD_STR                 'poll'
+              234  CALL_FUNCTION_2       2  ''
+              236  POP_JUMP_IF_FALSE   254  'to 254'
+
+ L. 434       238  LOAD_BUILD_CLASS 
+              240  LOAD_CODE                <code_object PollSelector>
+              242  LOAD_STR                 'PollSelector'
+              244  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              246  LOAD_STR                 'PollSelector'
+              248  LOAD_NAME                _PollLikeSelector
+              250  CALL_FUNCTION_3       3  ''
+              252  STORE_NAME               PollSelector
+            254_0  COME_FROM           236  '236'
+
+ L. 441       254  LOAD_NAME                hasattr
+              256  LOAD_NAME                select
+              258  LOAD_STR                 'epoll'
+              260  CALL_FUNCTION_2       2  ''
+          262_264  POP_JUMP_IF_FALSE   282  'to 282'
+
+ L. 443       266  LOAD_BUILD_CLASS 
+              268  LOAD_CODE                <code_object EpollSelector>
+              270  LOAD_STR                 'EpollSelector'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  LOAD_STR                 'EpollSelector'
+              276  LOAD_NAME                _PollLikeSelector
+              278  CALL_FUNCTION_3       3  ''
+              280  STORE_NAME               EpollSelector
+            282_0  COME_FROM           262  '262'
+
+ L. 489       282  LOAD_NAME                hasattr
+              284  LOAD_NAME                select
+              286  LOAD_STR                 'devpoll'
+              288  CALL_FUNCTION_2       2  ''
+          290_292  POP_JUMP_IF_FALSE   310  'to 310'
+
+ L. 491       294  LOAD_BUILD_CLASS 
+              296  LOAD_CODE                <code_object DevpollSelector>
+              298  LOAD_STR                 'DevpollSelector'
+              300  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              302  LOAD_STR                 'DevpollSelector'
+              304  LOAD_NAME                _PollLikeSelector
+              306  CALL_FUNCTION_3       3  ''
+              308  STORE_NAME               DevpollSelector
+            310_0  COME_FROM           290  '290'
+
+ L. 505       310  LOAD_NAME                hasattr
+              312  LOAD_NAME                select
+              314  LOAD_STR                 'kqueue'
+              316  CALL_FUNCTION_2       2  ''
+          318_320  POP_JUMP_IF_FALSE   338  'to 338'
+
+ L. 507       322  LOAD_BUILD_CLASS 
+              324  LOAD_CODE                <code_object KqueueSelector>
+              326  LOAD_STR                 'KqueueSelector'
+              328  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              330  LOAD_STR                 'KqueueSelector'
+              332  LOAD_NAME                _BaseSelectorImpl
+              334  CALL_FUNCTION_3       3  ''
+              336  STORE_NAME               KqueueSelector
+            338_0  COME_FROM           318  '318'
+
+ L. 584       338  LOAD_CODE                <code_object _can_use>
+              340  LOAD_STR                 '_can_use'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  STORE_NAME               _can_use
+
+ L. 610       346  LOAD_NAME                _can_use
+              348  LOAD_STR                 'kqueue'
+              350  CALL_FUNCTION_1       1  ''
+          352_354  POP_JUMP_IF_FALSE   362  'to 362'
+
+ L. 611       356  LOAD_NAME                KqueueSelector
+              358  STORE_NAME               DefaultSelector
+              360  JUMP_FORWARD        414  'to 414'
+            362_0  COME_FROM           352  '352'
+
+ L. 612       362  LOAD_NAME                _can_use
+              364  LOAD_STR                 'epoll'
+              366  CALL_FUNCTION_1       1  ''
+          368_370  POP_JUMP_IF_FALSE   378  'to 378'
+
+ L. 613       372  LOAD_NAME                EpollSelector
+              374  STORE_NAME               DefaultSelector
+              376  JUMP_FORWARD        414  'to 414'
+            378_0  COME_FROM           368  '368'
+
+ L. 614       378  LOAD_NAME                _can_use
+              380  LOAD_STR                 'devpoll'
+              382  CALL_FUNCTION_1       1  ''
+          384_386  POP_JUMP_IF_FALSE   394  'to 394'
+
+ L. 615       388  LOAD_NAME                DevpollSelector
+              390  STORE_NAME               DefaultSelector
+              392  JUMP_FORWARD        414  'to 414'
+            394_0  COME_FROM           384  '384'
+
+ L. 616       394  LOAD_NAME                _can_use
+              396  LOAD_STR                 'poll'
+              398  CALL_FUNCTION_1       1  ''
+          400_402  POP_JUMP_IF_FALSE   410  'to 410'
+
+ L. 617       404  LOAD_NAME                PollSelector
+              406  STORE_NAME               DefaultSelector
+              408  JUMP_FORWARD        414  'to 414'
+            410_0  COME_FROM           400  '400'
+
+ L. 619       410  LOAD_NAME                SelectSelector
+              412  STORE_NAME               DefaultSelector
+            414_0  COME_FROM           408  '408'
+            414_1  COME_FROM           392  '392'
+            414_2  COME_FROM           376  '376'
+            414_3  COME_FROM           360  '360'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 92
+
+Instruction context:
+   
+ L.  46        84  LOAD_NAME                namedtuple
+                  86  LOAD_STR                 'SelectorKey'
+                  88  BUILD_LIST_0          0 
+                  90  LOAD_CONST               ('fileobj', 'fd', 'events', 'data')
+->                92  CALL_FINALLY         95  'to 95'
+                  94  CALL_FUNCTION_2       2  ''
+                  96  STORE_NAME               SelectorKey
+
+test/101087.pyc -- 
+# decompile failed

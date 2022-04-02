@@ -1,0 +1,41 @@
+Instruction context:
+   
+ L. 194        78  LOAD_FAST                'self'
+                  80  POP_BLOCK        
+->                82  CALL_FINALLY        168  'to 168'
+                  84  RETURN_VALUE     
+                86_0  COME_FROM            36  '36'
+Instruction context:
+   
+ L. 693       434  LOAD_FAST                'result'
+                 436  POP_BLOCK        
+->               438  CALL_FINALLY        442  'to 442'
+                 440  RETURN_VALUE     
+               442_0  COME_FROM           438  '438'
+               442_1  COME_FROM_FINALLY   196  '196'
+Instruction context:
+   
+ L. 785        42  DUP_TOP          
+                  44  LOAD_GLOBAL              UnicodeDecodeError
+                  46  COMPARE_OP               exception-match
+                  48  POP_JUMP_IF_FALSE    80  'to 80'
+                  50  POP_TOP          
+->                52  POP_TOP          
+                  54  POP_TOP          
+Instruction context:
+   
+ L.1056       304  POP_EXCEPT       
+->               306  POP_TOP          
+             308_310  JUMP_ABSOLUTE       466  'to 466'
+                 312  POP_EXCEPT       
+                 314  JUMP_FORWARD        318  'to 318'
+               316_0  COME_FROM           278  '278'
+                 316  END_FINALLY      
+               318_0  COME_FROM           314  '314'
+               318_1  COME_FROM           264  '264'
+
+../test/125562.pyc -- 
+# decompile failed
+
+# file ../test/125562.pyc
+# Deparsing stopped due to parse error

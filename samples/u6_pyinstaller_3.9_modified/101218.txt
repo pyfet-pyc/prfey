@@ -1,0 +1,134 @@
+Instruction context:
+   
+ L.   7         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('Generator', 'DecodedGenerator', 'BytesGenerator')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101218.pyc -- 
+# decompile failed
+
+# file test/101218.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_STR                 'Classes to generate plain text from a message object tree.'
+                2  STORE_NAME               __doc__
+
+ L.   7         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('Generator', 'DecodedGenerator', 'BytesGenerator')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.   9        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              re
+               18  STORE_NAME               re
+
+ L.  10        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              sys
+               26  STORE_NAME               sys
+
+ L.  11        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              time
+               34  STORE_NAME               time
+
+ L.  12        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              random
+               42  STORE_NAME               random
+
+ L.  14        44  LOAD_CONST               0
+               46  LOAD_CONST               ('deepcopy',)
+               48  IMPORT_NAME              copy
+               50  IMPORT_FROM              deepcopy
+               52  STORE_NAME               deepcopy
+               54  POP_TOP          
+
+ L.  15        56  LOAD_CONST               0
+               58  LOAD_CONST               ('StringIO', 'BytesIO')
+               60  IMPORT_NAME              io
+               62  IMPORT_FROM              StringIO
+               64  STORE_NAME               StringIO
+               66  IMPORT_FROM              BytesIO
+               68  STORE_NAME               BytesIO
+               70  POP_TOP          
+
+ L.  16        72  LOAD_CONST               0
+               74  LOAD_CONST               ('_has_surrogates',)
+               76  IMPORT_NAME_ATTR         email.utils
+               78  IMPORT_FROM              _has_surrogates
+               80  STORE_NAME               _has_surrogates
+               82  POP_TOP          
+
+ L.  18        84  LOAD_STR                 '_'
+               86  STORE_NAME               UNDERSCORE
+
+ L.  19        88  LOAD_STR                 '\n'
+               90  STORE_NAME               NL
+
+ L.  21        92  LOAD_NAME                re
+               94  LOAD_METHOD              compile
+               96  LOAD_STR                 '\\r\\n|\\r|\\n'
+               98  CALL_METHOD_1         1  ''
+              100  STORE_NAME               NLCRE
+
+ L.  22       102  LOAD_NAME                re
+              104  LOAD_METHOD              compile
+              106  LOAD_STR                 '^From '
+              108  LOAD_NAME                re
+              110  LOAD_ATTR                MULTILINE
+              112  CALL_METHOD_2         2  ''
+              114  STORE_NAME               fcre
+
+ L.  26       116  LOAD_BUILD_CLASS 
+              118  LOAD_CODE                <code_object Generator>
+              120  LOAD_STR                 'Generator'
+              122  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              124  LOAD_STR                 'Generator'
+              126  CALL_FUNCTION_2       2  ''
+              128  STORE_NAME               Generator
+
+ L. 396       130  LOAD_BUILD_CLASS 
+              132  LOAD_CODE                <code_object BytesGenerator>
+              134  LOAD_STR                 'BytesGenerator'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  LOAD_STR                 'BytesGenerator'
+              140  LOAD_NAME                Generator
+              142  CALL_FUNCTION_3       3  ''
+              144  STORE_NAME               BytesGenerator
+
+ L. 447       146  LOAD_STR                 '[Non-text (%(type)s) part of message omitted, filename %(filename)s]'
+              148  STORE_NAME               _FMT
+
+ L. 449       150  LOAD_BUILD_CLASS 
+              152  LOAD_CODE                <code_object DecodedGenerator>
+              154  LOAD_STR                 'DecodedGenerator'
+              156  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              158  LOAD_STR                 'DecodedGenerator'
+              160  LOAD_NAME                Generator
+              162  CALL_FUNCTION_3       3  ''
+              164  STORE_NAME               DecodedGenerator
+
+ L. 508       166  LOAD_NAME                len
+              168  LOAD_NAME                repr
+              170  LOAD_NAME                sys
+              172  LOAD_ATTR                maxsize
+              174  LOAD_CONST               1
+              176  BINARY_SUBTRACT  
+              178  CALL_FUNCTION_1       1  ''
+              180  CALL_FUNCTION_1       1  ''
+              182  STORE_NAME               _width
+
+ L. 509       184  LOAD_STR                 '%%0%dd'
+              186  LOAD_NAME                _width
+              188  BINARY_MODULO    
+              190  STORE_NAME               _fmt
+
+ L. 512       192  LOAD_NAME                Generator
+              194  LOAD_ATTR                _make_boundary
+              196  STORE_NAME               _make_boundary
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

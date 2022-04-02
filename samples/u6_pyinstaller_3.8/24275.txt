@@ -1,0 +1,40 @@
+Instruction context:
+   
+ L.  70       116  LOAD_GLOBAL              importlib
+                 118  LOAD_METHOD              import_module
+                 120  LOAD_STR                 '._'
+                 122  LOAD_FAST                'module'
+                 124  BINARY_ADD       
+                 126  LOAD_FAST                'package'
+                 128  CALL_METHOD_2         2  ''
+                 130  POP_BLOCK        
+->               132  ROT_TWO          
+                 134  POP_TOP          
+                 136  RETURN_VALUE     
+               138_0  COME_FROM_FINALLY   114  '114'
+Instruction context:
+   
+ L. 287        32  LOAD_DEREF               'self'
+                  34  LOAD_ATTR                _Listener
+                  36  LOAD_FAST                'args'
+                  38  LOAD_CLOSURE             'self'
+                  40  BUILD_TUPLE_1         1 
+->                42  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  44  LOAD_STR                 'Events.__init__.<locals>.<dictcomp>'
+                  46  MAKE_FUNCTION_8          'closure'
+Instruction context:
+   
+ L. 330        36  DUP_TOP          
+                  38  LOAD_GLOBAL              queue
+                  40  LOAD_ATTR                Empty
+                  42  COMPARE_OP               exception-match
+                  44  POP_JUMP_IF_FALSE    58  'to 58'
+                  46  POP_TOP          
+->                48  POP_TOP          
+                  50  POP_TOP          
+
+../test/24275.pyc -- 
+# decompile failed
+
+# file ../test/24275.pyc
+# Deparsing stopped due to parse error

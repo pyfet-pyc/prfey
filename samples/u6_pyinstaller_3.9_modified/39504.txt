@@ -1,0 +1,47 @@
+Instruction context:
+   
+ L.  26        38  LOAD_FAST                'match_info'
+                  40  LOAD_ATTR                http_exception
+                  42  LOAD_CONST               None
+->                44  <117>                 0  ''
+                  46  POP_JUMP_IF_FALSE    56  'to 56'
+Instruction context:
+   
+ L.  79        10  LOAD_FAST                'correct_configuration'
+                  12  POP_JUMP_IF_TRUE     22  'to 22'
+->                14  <74>             
+                  16  LOAD_STR                 'Cannot both remove and append slash'
+                  18  CALL_FUNCTION_1       1  ''
+                  20  RAISE_VARARGS_1       1  'exception instance'
+                22_0  COME_FROM            12  '12'
+Instruction context:
+   
+ L. 119        14  LOAD_FAST                'handler'
+                  16  LOAD_FAST                'request'
+                  18  CALL_FUNCTION_1       1  ''
+                  20  GET_AWAITABLE    
+                  22  LOAD_CONST               None
+                  24  YIELD_FROM       
+                  26  POP_BLOCK        
+->                28  ROT_TWO          
+                  30  LOAD_CONST               None
+                  32  DUP_TOP          
+                  34  DUP_TOP          
+                  36  CALL_FUNCTION_3       3  ''
+                  38  POP_TOP          
+                  40  RETURN_VALUE     
+                42_0  COME_FROM_WITH       10  '10'
+                  42  <49>             
+                  44  POP_JUMP_IF_TRUE     48  'to 48'
+                  46  <48>             
+                48_0  COME_FROM            44  '44'
+                  48  POP_TOP          
+                  50  POP_TOP          
+                  52  POP_TOP          
+                  54  POP_EXCEPT       
+
+test/39504.pyc -- 
+# decompile failed
+
+# file test/39504.pyc
+# Deparsing stopped due to parse error

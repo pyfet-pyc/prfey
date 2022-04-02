@@ -1,0 +1,73 @@
+Instruction context:
+   
+ L. 287        84  POP_BLOCK        
+                  86  POP_EXCEPT       
+->                88  CALL_FINALLY         96  'to 96'
+                  90  JUMP_BACK            32  'to 32'
+                  92  POP_BLOCK        
+                  94  BEGIN_FINALLY    
+                96_0  COME_FROM            88  '88'
+                96_1  COME_FROM_FINALLY    82  '82'
+                  96  LOAD_CONST               None
+                  98  STORE_FAST               'why'
+                 100  DELETE_FAST              'why'
+                 102  END_FINALLY      
+                 104  POP_EXCEPT       
+                 106  JUMP_BACK            32  'to 32'
+               108_0  COME_FROM            74  '74'
+                 108  END_FINALLY      
+               110_0  COME_FROM            60  '60'
+Instruction context:
+   
+ L. 352        90  LOAD_FAST                'winreg'
+                  92  LOAD_METHOD              QueryValueEx
+                  94  LOAD_FAST                'key'
+                  96  LOAD_STR                 'EditionId'
+                  98  CALL_METHOD_2         2  ''
+                 100  LOAD_CONST               0
+                 102  BINARY_SUBSCR    
+                 104  POP_BLOCK        
+->               106  ROT_TWO          
+                 108  BEGIN_FINALLY    
+                 110  WITH_CLEANUP_START
+                 112  WITH_CLEANUP_FINISH
+                 114  POP_FINALLY           0  ''
+                 116  POP_BLOCK        
+                 118  RETURN_VALUE     
+               120_0  COME_FROM_WITH       86  '86'
+                 120  WITH_CLEANUP_START
+                 122  WITH_CLEANUP_FINISH
+                 124  END_FINALLY      
+                 126  POP_BLOCK        
+                 128  JUMP_FORWARD        150  'to 150'
+               130_0  COME_FROM_FINALLY    68  '68'
+Instruction context:
+   
+ L. 455        44  DUP_TOP          
+                  46  LOAD_GLOBAL              AttributeError
+                  48  COMPARE_OP               exception-match
+                  50  POP_JUMP_IF_FALSE    66  'to 66'
+                  52  POP_TOP          
+->                54  POP_TOP          
+                  56  POP_TOP          
+Instruction context:
+   
+ L. 588        50  DUP_TOP          
+                  52  LOAD_GLOBAL              OSError
+                  54  COMPARE_OP               exception-match
+                  56  POP_JUMP_IF_FALSE    72  'to 72'
+                  58  POP_TOP          
+->                60  POP_TOP          
+                  62  POP_TOP          
+Instruction context:
+   
+ L. 737       254  LOAD_FAST                'bits'
+                 256  LOAD_FAST                'linkage'
+                 258  BUILD_TUPLE_2         2 
+->               260  RETURN_VALUE     
+
+test/341.pyc -- 
+# decompile failed
+
+# file test/341.pyc
+# Deparsing stopped due to parse error

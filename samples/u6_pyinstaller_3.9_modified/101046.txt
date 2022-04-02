@@ -1,0 +1,86 @@
+Instruction context:
+   
+ L.   7        50  DUP_TOP          
+                  52  LOAD_NAME                ImportError
+->                54  <121>               110  ''
+                  56  POP_TOP          
+                  58  POP_TOP          
+                  60  POP_TOP          
+
+test/101046.pyc -- 
+# decompile failed
+
+# file test/101046.pyc
+# --- This code section failed: ---
+
+ L.   2         0  SETUP_FINALLY        50  'to 50'
+
+ L.   3         2  LOAD_CONST               0
+                4  LOAD_CONST               ('*',)
+                6  IMPORT_NAME              _decimal
+                8  IMPORT_STAR      
+
+ L.   4        10  LOAD_CONST               0
+               12  LOAD_CONST               ('__doc__',)
+               14  IMPORT_NAME              _decimal
+               16  IMPORT_FROM              __doc__
+               18  STORE_NAME               __doc__
+               20  POP_TOP          
+
+ L.   5        22  LOAD_CONST               0
+               24  LOAD_CONST               ('__version__',)
+               26  IMPORT_NAME              _decimal
+               28  IMPORT_FROM              __version__
+               30  STORE_NAME               __version__
+               32  POP_TOP          
+
+ L.   6        34  LOAD_CONST               0
+               36  LOAD_CONST               ('__libmpdec_version__',)
+               38  IMPORT_NAME              _decimal
+               40  IMPORT_FROM              __libmpdec_version__
+               42  STORE_NAME               __libmpdec_version__
+               44  POP_TOP          
+               46  POP_BLOCK        
+               48  JUMP_FORWARD        112  'to 112'
+             50_0  COME_FROM_FINALLY     0  '0'
+
+ L.   7        50  DUP_TOP          
+               52  LOAD_NAME                ImportError
+               54  <121>               110  ''
+               56  POP_TOP          
+               58  POP_TOP          
+               60  POP_TOP          
+
+ L.   8        62  LOAD_CONST               0
+               64  LOAD_CONST               ('*',)
+               66  IMPORT_NAME              _pydecimal
+               68  IMPORT_STAR      
+
+ L.   9        70  LOAD_CONST               0
+               72  LOAD_CONST               ('__doc__',)
+               74  IMPORT_NAME              _pydecimal
+               76  IMPORT_FROM              __doc__
+               78  STORE_NAME               __doc__
+               80  POP_TOP          
+
+ L.  10        82  LOAD_CONST               0
+               84  LOAD_CONST               ('__version__',)
+               86  IMPORT_NAME              _pydecimal
+               88  IMPORT_FROM              __version__
+               90  STORE_NAME               __version__
+               92  POP_TOP          
+
+ L.  11        94  LOAD_CONST               0
+               96  LOAD_CONST               ('__libmpdec_version__',)
+               98  IMPORT_NAME              _pydecimal
+              100  IMPORT_FROM              __libmpdec_version__
+              102  STORE_NAME               __libmpdec_version__
+              104  POP_TOP          
+              106  POP_EXCEPT       
+              108  JUMP_FORWARD        112  'to 112'
+              110  <48>             
+            112_0  COME_FROM           108  '108'
+            112_1  COME_FROM            48  '48'
+
+Parse error at or near `<121>' instruction at offset 54
+

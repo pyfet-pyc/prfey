@@ -1,0 +1,21 @@
+Instruction context:
+   
+ L.  26        16  LOAD_FAST                'salt_length'
+                  18  LOAD_FAST                'self'
+                  20  LOAD_ATTR                MAX_LENGTH
+->                22  <117>                 1  ''
+Instruction context:
+   
+ L.  72        54  LOAD_FAST                'salt_length'
+                  56  LOAD_CONST               0
+                  58  COMPARE_OP               >=
+                  60  POP_JUMP_IF_TRUE     66  'to 66'
+->                62  <74>             
+                  64  RAISE_VARARGS_1       1  'exception instance'
+                66_0  COME_FROM            60  '60'
+
+test/129483.pyc -- 
+# decompile failed
+
+# file test/129483.pyc
+# Deparsing stopped due to parse error

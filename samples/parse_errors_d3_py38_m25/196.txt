@@ -1,0 +1,63 @@
+Instruction context:
+   
+ L. 157        88  POP_EXCEPT       
+                  90  POP_EXCEPT       
+->                92  LOAD_CONST               None
+                  94  RETURN_VALUE     
+                96_0  COME_FROM            80  '80'
+                  96  END_FINALLY      
+                98_0  COME_FROM            72  '72'
+Instruction context:
+-> 
+ L. 497        96  JUMP_BACK            38  'to 38'
+                98_0  COME_FROM            94  '94'
+                98_1  COME_FROM            80  '80'
+Instruction context:
+   
+ L. 659        78  POP_EXCEPT       
+->                80  LOAD_CONST               None
+                  82  RETURN_VALUE     
+                84_0  COME_FROM            60  '60'
+                  84  END_FINALLY      
+                  86  JUMP_FORWARD         92  'to 92'
+                88_0  COME_FROM            22  '22'
+Instruction context:
+   
+ L.1079        90  POP_EXCEPT       
+->                92  POP_TOP          
+                  94  LOAD_CONST               False
+                  96  RETURN_VALUE     
+                98_0  COME_FROM            72  '72'
+                  98  END_FINALLY      
+               100_0  COME_FROM            64  '64'
+Instruction context:
+   
+ L.1231        46  POP_EXCEPT       
+                  48  BREAK_LOOP           70  'to 70'
+                50_0  COME_FROM            38  '38'
+->                50  END_FINALLY      
+                52_0  COME_FROM            30  '30'
+Instruction context:
+   
+ L.1379       150  POP_TOP          
+                 152  BREAK_LOOP          156  'to 156'
+                 154  JUMP_BACK           124  'to 124'
+               156_0  COME_FROM           152  '152'
+               156_1  COME_FROM           124  '124'
+               156_2  COME_FROM           118  '118'
+               156_3  COME_FROM           108  '108'
+               156_4  COME_FROM           100  '100'
+                 156  POP_BLOCK        
+->               158  BEGIN_FINALLY    
+               160_0  COME_FROM_FINALLY    18  '18'
+Instruction context:
+   
+ L.1440       158  POP_TOP          
+->           160_162  JUMP_FORWARD        370  'to 370'
+               164_0  COME_FROM           144  '144'
+
+test/196.pyc -- 
+# decompile failed
+
+# file test/196.pyc
+# Deparsing stopped due to parse error

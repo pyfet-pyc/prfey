@@ -1,0 +1,37 @@
+Instruction context:
+   
+ L.  96       124  LOAD_FAST                'parent_r'
+                 126  LOAD_FAST                'parent_w'
+                 128  BUILD_TUPLE_2         2 
+                 130  POP_BLOCK        
+->               132  POP_BLOCK        
+                 134  CALL_FINALLY        188  'to 188'
+                 136  POP_BLOCK        
+                 138  ROT_TWO          
+                 140  BEGIN_FINALLY    
+                 142  WITH_CLEANUP_START
+                 144  WITH_CLEANUP_FINISH
+                 146  POP_FINALLY           0  ''
+                 148  RETURN_VALUE     
+               150_0  COME_FROM_FINALLY   110  '110'
+Instruction context:
+   
+ L. 119        52  POP_BLOCK        
+->                54  BEGIN_FINALLY    
+                  56  WITH_CLEANUP_START
+                  58  WITH_CLEANUP_FINISH
+                  60  POP_FINALLY           0  ''
+                  62  LOAD_CONST               None
+                  64  RETURN_VALUE     
+                66_0  COME_FROM            50  '50'
+Instruction context:
+   
+ L. 220   314_316  JUMP_FORWARD        322  'to 322'
+->           318_320  JUMP_BACK           290  'to 290'
+               322_0  COME_FROM           314  '314'
+
+../test/105176.pyc -- 
+# decompile failed
+
+# file ../test/105176.pyc
+# Deparsing stopped due to parse error

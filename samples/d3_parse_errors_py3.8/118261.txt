@@ -1,0 +1,31 @@
+Instruction context:
+   
+ L. 515        96  POP_BLOCK        
+->                98  POP_EXCEPT       
+                 100  CALL_FINALLY        110  'to 110'
+                 102  JUMP_BACK             8  'to 8'
+               104_0  COME_FROM            94  '94'
+               104_1  COME_FROM            86  '86'
+               104_2  COME_FROM            76  '76'
+Instruction context:
+-> 
+ L. 660        36  DUP_TOP          
+                  38  LOAD_GLOBAL              ConnectionFailure
+                  40  COMPARE_OP               exception-match
+                  42  POP_JUMP_IF_FALSE   116  'to 116'
+                  44  POP_TOP          
+                  46  STORE_FAST               'exc'
+                  48  POP_TOP          
+                  50  SETUP_FINALLY       104  'to 104'
+Instruction context:
+-> 
+ L. 922        28  JUMP_FORWARD         32  'to 32'
+                  30  JUMP_BACK             0  'to 0'
+                32_0  COME_FROM            28  '28'
+                32_1  COME_FROM            16  '16'
+
+../test/118261.pyc -- 
+# decompile failed
+
+# file ../test/118261.pyc
+# Deparsing stopped due to parse error

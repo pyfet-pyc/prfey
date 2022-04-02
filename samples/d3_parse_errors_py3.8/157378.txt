@@ -1,0 +1,34 @@
+Instruction context:
+   
+ L.  61        62  POP_EXCEPT       
+->                64  LOAD_CONST               None
+                  66  RETURN_VALUE     
+                68_0  COME_FROM            54  '54'
+                  68  END_FINALLY      
+                70_0  COME_FROM             8  '8'
+Instruction context:
+   
+ L. 126       160  LOAD_GLOBAL              getattr
+                 162  LOAD_GLOBAL              sys
+                 164  LOAD_ATTR                modules
+                 166  LOAD_FAST                'module'
+                 168  BINARY_SUBSCR    
+                 170  LOAD_FAST                'symbol'
+                 172  LOAD_CONST               None
+                 174  CALL_FUNCTION_3       3  ''
+                 176  POP_BLOCK        
+->               178  CALL_FINALLY        186  'to 186'
+                 180  RETURN_VALUE     
+               182_0  COME_FROM           126  '126'
+               182_1  COME_FROM           100  '100'
+               182_2  COME_FROM            80  '80'
+                 182  POP_BLOCK        
+                 184  BEGIN_FINALLY    
+               186_0  COME_FROM           178  '178'
+               186_1  COME_FROM_FINALLY    50  '50'
+
+../test/157378.pyc -- 
+# decompile failed
+
+# file ../test/157378.pyc
+# Deparsing stopped due to parse error

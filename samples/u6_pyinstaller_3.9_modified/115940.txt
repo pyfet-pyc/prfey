@@ -1,0 +1,250 @@
+
+# file test/115940.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "Extensions to the 'distutils' for large or complex distributions"
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.   4        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              functools
+               18  STORE_NAME               functools
+
+ L.   7        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME_ATTR         setuptools.distutils_patch
+               26  STORE_NAME               setuptools
+
+ L.   9        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME_ATTR         distutils.core
+               34  STORE_NAME               distutils
+
+ L.  10        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME_ATTR         distutils.filelist
+               42  STORE_NAME               distutils
+
+ L.  11        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              re
+               50  STORE_NAME               re
+
+ L.  12        52  LOAD_CONST               0
+               54  LOAD_CONST               ('DistutilsOptionError',)
+               56  IMPORT_NAME_ATTR         distutils.errors
+               58  IMPORT_FROM              DistutilsOptionError
+               60  STORE_NAME               DistutilsOptionError
+               62  POP_TOP          
+
+ L.  13        64  LOAD_CONST               0
+               66  LOAD_CONST               ('convert_path',)
+               68  IMPORT_NAME_ATTR         distutils.util
+               70  IMPORT_FROM              convert_path
+               72  STORE_NAME               convert_path
+               74  POP_TOP          
+
+ L.  14        76  LOAD_CONST               0
+               78  LOAD_CONST               ('fnmatchcase',)
+               80  IMPORT_NAME              fnmatch
+               82  IMPORT_FROM              fnmatchcase
+               84  STORE_NAME               fnmatchcase
+               86  POP_TOP          
+
+ L.  16        88  LOAD_CONST               1
+               90  LOAD_CONST               ('SetuptoolsDeprecationWarning',)
+               92  IMPORT_NAME              _deprecation_warning
+               94  IMPORT_FROM              SetuptoolsDeprecationWarning
+               96  STORE_NAME               SetuptoolsDeprecationWarning
+               98  POP_TOP          
+
+ L.  18       100  LOAD_CONST               0
+              102  LOAD_CONST               ('PY3', 'string_types')
+              104  IMPORT_NAME_ATTR         setuptools.extern.six
+              106  IMPORT_FROM              PY3
+              108  STORE_NAME               PY3
+              110  IMPORT_FROM              string_types
+              112  STORE_NAME               string_types
+              114  POP_TOP          
+
+ L.  19       116  LOAD_CONST               0
+              118  LOAD_CONST               ('filter', 'map')
+              120  IMPORT_NAME_ATTR         setuptools.extern.six.moves
+              122  IMPORT_FROM              filter
+              124  STORE_NAME               filter
+              126  IMPORT_FROM              map
+              128  STORE_NAME               map
+              130  POP_TOP          
+
+ L.  21       132  LOAD_CONST               0
+              134  LOAD_CONST               None
+              136  IMPORT_NAME_ATTR         setuptools.version
+              138  STORE_NAME               setuptools
+
+ L.  22       140  LOAD_CONST               0
+              142  LOAD_CONST               ('Extension',)
+              144  IMPORT_NAME_ATTR         setuptools.extension
+              146  IMPORT_FROM              Extension
+              148  STORE_NAME               Extension
+              150  POP_TOP          
+
+ L.  23       152  LOAD_CONST               0
+              154  LOAD_CONST               ('Distribution',)
+              156  IMPORT_NAME_ATTR         setuptools.dist
+              158  IMPORT_FROM              Distribution
+              160  STORE_NAME               Distribution
+              162  POP_TOP          
+
+ L.  24       164  LOAD_CONST               0
+              166  LOAD_CONST               ('Require',)
+              168  IMPORT_NAME_ATTR         setuptools.depends
+              170  IMPORT_FROM              Require
+              172  STORE_NAME               Require
+              174  POP_TOP          
+
+ L.  25       176  LOAD_CONST               1
+              178  LOAD_CONST               ('monkey',)
+              180  IMPORT_NAME              
+              182  IMPORT_FROM              monkey
+              184  STORE_NAME               monkey
+              186  POP_TOP          
+
+ L.  27       188  LOAD_NAME                type
+              190  STORE_NAME               __metaclass__
+
+ L.  30       192  BUILD_LIST_0          0 
+              194  LOAD_CONST               ('setup', 'Distribution', 'Command', 'Extension', 'Require', 'SetuptoolsDeprecationWarning', 'find_packages')
+              196  CALL_FINALLY        199  'to 199'
+              198  STORE_NAME               __all__
+
+ L.  36       200  LOAD_NAME                PY3
+              202  POP_JUMP_IF_FALSE   214  'to 214'
+
+ L.  37       204  LOAD_NAME                __all__
+              206  LOAD_METHOD              append
+              208  LOAD_STR                 'find_namespace_packages'
+              210  CALL_METHOD_1         1  ''
+              212  POP_TOP          
+            214_0  COME_FROM           202  '202'
+
+ L.  39       214  LOAD_NAME                setuptools
+              216  LOAD_ATTR                version
+              218  LOAD_ATTR                __version__
+              220  STORE_NAME               __version__
+
+ L.  41       222  LOAD_CONST               None
+              224  STORE_NAME               bootstrap_install_from
+
+ L.  45       226  LOAD_CONST               True
+              228  STORE_NAME               run_2to3_on_doctests
+
+ L.  47       230  LOAD_STR                 'lib2to3.fixes'
+              232  BUILD_LIST_1          1 
+              234  STORE_NAME               lib2to3_fixer_packages
+
+ L.  50       236  LOAD_BUILD_CLASS 
+              238  LOAD_CODE                <code_object PackageFinder>
+              240  LOAD_STR                 'PackageFinder'
+              242  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              244  LOAD_STR                 'PackageFinder'
+              246  CALL_FUNCTION_2       2  ''
+              248  STORE_NAME               PackageFinder
+
+ L. 120       250  LOAD_BUILD_CLASS 
+              252  LOAD_CODE                <code_object PEP420PackageFinder>
+              254  LOAD_STR                 'PEP420PackageFinder'
+              256  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              258  LOAD_STR                 'PEP420PackageFinder'
+              260  LOAD_NAME                PackageFinder
+              262  CALL_FUNCTION_3       3  ''
+              264  STORE_NAME               PEP420PackageFinder
+
+ L. 126       266  LOAD_NAME                PackageFinder
+              268  LOAD_ATTR                find
+              270  STORE_NAME               find_packages
+
+ L. 128       272  LOAD_NAME                PY3
+          274_276  POP_JUMP_IF_FALSE   284  'to 284'
+
+ L. 129       278  LOAD_NAME                PEP420PackageFinder
+              280  LOAD_ATTR                find
+              282  STORE_NAME               find_namespace_packages
+            284_0  COME_FROM           274  '274'
+
+ L. 132       284  LOAD_CODE                <code_object _install_setup_requires>
+              286  LOAD_STR                 '_install_setup_requires'
+              288  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              290  STORE_NAME               _install_setup_requires
+
+ L. 162       292  LOAD_CODE                <code_object setup>
+              294  LOAD_STR                 'setup'
+              296  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              298  STORE_NAME               setup
+
+ L. 168       300  LOAD_NAME                distutils
+              302  LOAD_ATTR                core
+              304  LOAD_ATTR                setup
+              306  LOAD_ATTR                __doc__
+              308  LOAD_NAME                setup
+              310  STORE_ATTR               __doc__
+
+ L. 171       312  LOAD_NAME                monkey
+              314  LOAD_METHOD              get_unpatched
+              316  LOAD_NAME                distutils
+              318  LOAD_ATTR                core
+              320  LOAD_ATTR                Command
+              322  CALL_METHOD_1         1  ''
+              324  STORE_NAME               _Command
+
+ L. 174       326  LOAD_BUILD_CLASS 
+              328  LOAD_CODE                <code_object Command>
+              330  LOAD_STR                 'Command'
+              332  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              334  LOAD_STR                 'Command'
+              336  LOAD_NAME                _Command
+              338  CALL_FUNCTION_3       3  ''
+              340  STORE_NAME               Command
+
+ L. 224       342  LOAD_CODE                <code_object _find_all_simple>
+              344  LOAD_STR                 '_find_all_simple'
+              346  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              348  STORE_NAME               _find_all_simple
+
+ L. 236       350  LOAD_NAME                os
+              352  LOAD_ATTR                curdir
+              354  BUILD_TUPLE_1         1 
+              356  LOAD_CODE                <code_object findall>
+              358  LOAD_STR                 'findall'
+              360  MAKE_FUNCTION_1          'default'
+              362  STORE_NAME               findall
+
+ L. 248       364  LOAD_BUILD_CLASS 
+              366  LOAD_CODE                <code_object sic>
+              368  LOAD_STR                 'sic'
+              370  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              372  LOAD_STR                 'sic'
+              374  LOAD_NAME                str
+              376  CALL_FUNCTION_3       3  ''
+              378  STORE_NAME               sic
+
+ L. 253       380  LOAD_NAME                monkey
+              382  LOAD_METHOD              patch_all
+              384  CALL_METHOD_0         0  ''
+              386  POP_TOP          
+
+Parse error at or near `CALL_FINALLY' instruction at offset 196
+
+Instruction context:
+   
+ L.  30       192  BUILD_LIST_0          0 
+                 194  LOAD_CONST               ('setup', 'Distribution', 'Command', 'Extension', 'Require', 'SetuptoolsDeprecationWarning', 'find_packages')
+->               196  CALL_FINALLY        199  'to 199'
+                 198  STORE_NAME               __all__
+
+test/115940.pyc -- 
+# decompile failed

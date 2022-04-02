@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L. 226       106  LOAD_FAST                'f'
+                 108  LOAD_METHOD              read
+                 110  CALL_METHOD_0         0  ''
+                 112  LOAD_FAST                'filename'
+                 114  BUILD_TUPLE_2         2 
+                 116  POP_BLOCK        
+->               118  ROT_TWO          
+                 120  BEGIN_FINALLY    
+                 122  WITH_CLEANUP_START
+                 124  WITH_CLEANUP_FINISH
+                 126  POP_FINALLY           0  ''
+                 128  RETURN_VALUE     
+               130_0  COME_FROM_WITH      102  '102'
+                 130  WITH_CLEANUP_START
+                 132  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L.1388       626  POP_TOP          
+             628_630  JUMP_ABSOLUTE       634  'to 634'
+->               632  JUMP_BACK            46  'to 46'
+
+test/360.pyc -- 
+# decompile failed
+
+# file test/360.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,121 @@
+
+# file test/2038.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "\n========================\nRandom Number Generation\n========================\n\nUse ``default_rng()`` to create a `Generator` and call its methods.\n\n=============== =========================================================\nGenerator\n--------------- ---------------------------------------------------------\nGenerator       Class implementing all of the random number distributions\ndefault_rng     Default constructor for ``Generator``\n=============== =========================================================\n\n============================================= ===\nBitGenerator Streams that work with Generator\n--------------------------------------------- ---\nMT19937\nPCG64\nPhilox\nSFC64\n============================================= ===\n\n============================================= ===\nGetting entropy to initialize a BitGenerator\n--------------------------------------------- ---\nSeedSequence\n============================================= ===\n\n\nLegacy\n------\n\nFor backwards compatibility with previous versions of numpy before 1.17, the\nvarious aliases to the global `RandomState` methods are left alone and do not\nuse the new `Generator` API.\n\n==================== =========================================================\nUtility functions\n-------------------- ---------------------------------------------------------\nrandom               Uniformly distributed floats over ``[0, 1)``\nbytes                Uniformly distributed random bytes.\npermutation          Randomly permute a sequence / generate a random sequence.\nshuffle              Randomly permute a sequence in place.\nchoice               Random sample from 1-D array.\n==================== =========================================================\n\n==================== =========================================================\nCompatibility\nfunctions - removed\nin the new API\n-------------------- ---------------------------------------------------------\nrand                 Uniformly distributed values.\nrandn                Normally distributed values.\nranf                 Uniformly distributed floating point numbers.\nrandom_integers      Uniformly distributed integers in a given range.\n                     (deprecated, use ``integers(..., closed=True)`` instead)\nrandom_sample        Alias for `random_sample`\nrandint              Uniformly distributed integers in a given range\nseed                 Seed the legacy random number generator.\n==================== =========================================================\n\n==================== =========================================================\nUnivariate\ndistributions\n-------------------- ---------------------------------------------------------\nbeta                 Beta distribution over ``[0, 1]``.\nbinomial             Binomial distribution.\nchisquare            :math:`\\chi^2` distribution.\nexponential          Exponential distribution.\nf                    F (Fisher-Snedecor) distribution.\ngamma                Gamma distribution.\ngeometric            Geometric distribution.\ngumbel               Gumbel distribution.\nhypergeometric       Hypergeometric distribution.\nlaplace              Laplace distribution.\nlogistic             Logistic distribution.\nlognormal            Log-normal distribution.\nlogseries            Logarithmic series distribution.\nnegative_binomial    Negative binomial distribution.\nnoncentral_chisquare Non-central chi-square distribution.\nnoncentral_f         Non-central F distribution.\nnormal               Normal / Gaussian distribution.\npareto               Pareto distribution.\npoisson              Poisson distribution.\npower                Power distribution.\nrayleigh             Rayleigh distribution.\ntriangular           Triangular distribution.\nuniform              Uniform distribution.\nvonmises             Von Mises circular distribution.\nwald                 Wald (inverse Gaussian) distribution.\nweibull              Weibull distribution.\nzipf                 Zipf's distribution over ranked data.\n==================== =========================================================\n\n==================== ==========================================================\nMultivariate\ndistributions\n-------------------- ----------------------------------------------------------\ndirichlet            Multivariate generalization of Beta distribution.\nmultinomial          Multivariate generalization of the binomial distribution.\nmultivariate_normal  Multivariate generalization of the normal distribution.\n==================== ==========================================================\n\n==================== =========================================================\nStandard\ndistributions\n-------------------- ---------------------------------------------------------\nstandard_cauchy      Standard Cauchy-Lorentz distribution.\nstandard_exponential Standard exponential distribution.\nstandard_gamma       Standard Gamma distribution.\nstandard_normal      Standard normal distribution.\nstandard_t           Standard Student's t-distribution.\n==================== =========================================================\n\n==================== =========================================================\nInternal functions\n-------------------- ---------------------------------------------------------\nget_state            Get tuple representing internal state of generator.\nset_state            Set state of generator.\n==================== =========================================================\n\n\n"
+                2  STORE_NAME               __doc__
+
+ L. 125         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('beta', 'binomial', 'bytes', 'chisquare', 'choice', 'dirichlet', 'exponential', 'f', 'gamma', 'geometric', 'get_state', 'gumbel', 'hypergeometric', 'laplace', 'logistic', 'lognormal', 'logseries', 'multinomial', 'multivariate_normal', 'negative_binomial', 'noncentral_chisquare', 'noncentral_f', 'normal', 'pareto', 'permutation', 'poisson', 'power', 'rand', 'randint', 'randn', 'random', 'random_integers', 'random_sample', 'ranf', 'rayleigh', 'sample', 'seed', 'set_state', 'shuffle', 'standard_cauchy', 'standard_exponential', 'standard_gamma', 'standard_normal', 'standard_t', 'triangular', 'uniform', 'vonmises', 'wald', 'weibull', 'zipf')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L. 179        12  LOAD_CONST               1
+               14  LOAD_CONST               ('_pickle',)
+               16  IMPORT_NAME              
+               18  IMPORT_FROM              _pickle
+               20  STORE_NAME               _pickle
+               22  POP_TOP          
+
+ L. 180        24  LOAD_CONST               1
+               26  LOAD_CONST               ('_common',)
+               28  IMPORT_NAME              
+               30  IMPORT_FROM              _common
+               32  STORE_NAME               _common
+               34  POP_TOP          
+
+ L. 181        36  LOAD_CONST               1
+               38  LOAD_CONST               ('_bounded_integers',)
+               40  IMPORT_NAME              
+               42  IMPORT_FROM              _bounded_integers
+               44  STORE_NAME               _bounded_integers
+               46  POP_TOP          
+
+ L. 183        48  LOAD_CONST               1
+               50  LOAD_CONST               ('Generator', 'default_rng')
+               52  IMPORT_NAME              _generator
+               54  IMPORT_FROM              Generator
+               56  STORE_NAME               Generator
+               58  IMPORT_FROM              default_rng
+               60  STORE_NAME               default_rng
+               62  POP_TOP          
+
+ L. 184        64  LOAD_CONST               1
+               66  LOAD_CONST               ('SeedSequence', 'BitGenerator')
+               68  IMPORT_NAME              bit_generator
+               70  IMPORT_FROM              SeedSequence
+               72  STORE_NAME               SeedSequence
+               74  IMPORT_FROM              BitGenerator
+               76  STORE_NAME               BitGenerator
+               78  POP_TOP          
+
+ L. 185        80  LOAD_CONST               1
+               82  LOAD_CONST               ('MT19937',)
+               84  IMPORT_NAME              _mt19937
+               86  IMPORT_FROM              MT19937
+               88  STORE_NAME               MT19937
+               90  POP_TOP          
+
+ L. 186        92  LOAD_CONST               1
+               94  LOAD_CONST               ('PCG64',)
+               96  IMPORT_NAME              _pcg64
+               98  IMPORT_FROM              PCG64
+              100  STORE_NAME               PCG64
+              102  POP_TOP          
+
+ L. 187       104  LOAD_CONST               1
+              106  LOAD_CONST               ('Philox',)
+              108  IMPORT_NAME              _philox
+              110  IMPORT_FROM              Philox
+              112  STORE_NAME               Philox
+              114  POP_TOP          
+
+ L. 188       116  LOAD_CONST               1
+              118  LOAD_CONST               ('SFC64',)
+              120  IMPORT_NAME              _sfc64
+              122  IMPORT_FROM              SFC64
+              124  STORE_NAME               SFC64
+              126  POP_TOP          
+
+ L. 189       128  LOAD_CONST               1
+              130  LOAD_CONST               ('*',)
+              132  IMPORT_NAME              mtrand
+              134  IMPORT_STAR      
+
+ L. 191       136  LOAD_NAME                __all__
+              138  BUILD_LIST_0          0 
+              140  LOAD_CONST               ('Generator', 'RandomState', 'SeedSequence', 'MT19937', 'Philox', 'PCG64', 'SFC64', 'default_rng', 'BitGenerator')
+              142  CALL_FINALLY        145  'to 145'
+              144  INPLACE_ADD      
+              146  STORE_NAME               __all__
+
+ L. 195       148  LOAD_CODE                <code_object __RandomState_ctor>
+              150  LOAD_STR                 '__RandomState_ctor'
+              152  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              154  STORE_NAME               __RandomState_ctor
+
+ L. 211       156  LOAD_CONST               0
+              158  LOAD_CONST               ('PytestTester',)
+              160  IMPORT_NAME_ATTR         numpy._pytesttester
+              162  IMPORT_FROM              PytestTester
+              164  STORE_NAME               PytestTester
+              166  POP_TOP          
+
+ L. 212       168  LOAD_NAME                PytestTester
+              170  LOAD_NAME                __name__
+              172  CALL_FUNCTION_1       1  ''
+              174  STORE_NAME               test
+
+ L. 213       176  DELETE_NAME              PytestTester
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L. 125         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('beta', 'binomial', 'bytes', 'chisquare', 'choice', 'dirichlet', 'exponential', 'f', 'gamma', 'geometric', 'get_state', 'gumbel', 'hypergeometric', 'laplace', 'logistic', 'lognormal', 'logseries', 'multinomial', 'multivariate_normal', 'negative_binomial', 'noncentral_chisquare', 'noncentral_f', 'normal', 'pareto', 'permutation', 'poisson', 'power', 'rand', 'randint', 'randn', 'random', 'random_integers', 'random_sample', 'ranf', 'rayleigh', 'sample', 'seed', 'set_state', 'shuffle', 'standard_cauchy', 'standard_exponential', 'standard_gamma', 'standard_normal', 'standard_t', 'triangular', 'uniform', 'vonmises', 'wald', 'weibull', 'zipf')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/2038.pyc -- 
+# decompile failed

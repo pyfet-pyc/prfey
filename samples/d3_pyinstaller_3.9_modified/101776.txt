@@ -1,0 +1,152 @@
+Instruction context:
+   
+ L.   4        26  DUP_TOP          
+                  28  LOAD_NAME                ImportError
+->                30  <121>                78  ''
+                  32  POP_TOP          
+                  34  POP_TOP          
+                  36  POP_TOP          
+
+test/101776.pyc -- 
+# decompile failed
+
+# file test/101776.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME_ATTR         comtypes.client
+                6  STORE_NAME               comtypes
+
+ L.   2         8  SETUP_FINALLY        26  'to 26'
+
+ L.   3        10  LOAD_CONST               0
+               12  LOAD_CONST               ('SpeechLib',)
+               14  IMPORT_NAME_ATTR         comtypes.gen
+               16  IMPORT_FROM              SpeechLib
+               18  STORE_NAME               SpeechLib
+               20  POP_TOP          
+               22  POP_BLOCK        
+               24  JUMP_FORWARD         80  'to 80'
+             26_0  COME_FROM_FINALLY     8  '8'
+
+ L.   4        26  DUP_TOP          
+               28  LOAD_NAME                ImportError
+               30  <121>                78  ''
+               32  POP_TOP          
+               34  POP_TOP          
+               36  POP_TOP          
+
+ L.   6        38  LOAD_NAME                comtypes
+               40  LOAD_ATTR                client
+               42  LOAD_METHOD              CreateObject
+               44  LOAD_STR                 'SAPI.SpVoice'
+               46  CALL_METHOD_1         1  ''
+               48  STORE_NAME               engine
+
+ L.   7        50  LOAD_NAME                comtypes
+               52  LOAD_ATTR                client
+               54  LOAD_METHOD              CreateObject
+               56  LOAD_STR                 'SAPI.SpFileStream'
+               58  CALL_METHOD_1         1  ''
+               60  STORE_NAME               stream
+
+ L.   8        62  LOAD_CONST               0
+               64  LOAD_CONST               ('SpeechLib',)
+               66  IMPORT_NAME_ATTR         comtypes.gen
+               68  IMPORT_FROM              SpeechLib
+               70  STORE_NAME               SpeechLib
+               72  POP_TOP          
+               74  POP_EXCEPT       
+               76  JUMP_FORWARD         80  'to 80'
+               78  <48>             
+             80_0  COME_FROM            76  '76'
+             80_1  COME_FROM            24  '24'
+
+ L.  10        80  LOAD_CONST               0
+               82  LOAD_CONST               None
+               84  IMPORT_NAME              pythoncom
+               86  STORE_NAME               pythoncom
+
+ L.  11        88  LOAD_CONST               0
+               90  LOAD_CONST               None
+               92  IMPORT_NAME              time
+               94  STORE_NAME               time
+
+ L.  12        96  LOAD_CONST               0
+               98  LOAD_CONST               None
+              100  IMPORT_NAME              math
+              102  STORE_NAME               math
+
+ L.  13       104  LOAD_CONST               0
+              106  LOAD_CONST               None
+              108  IMPORT_NAME              os
+              110  STORE_NAME               os
+
+ L.  14       112  LOAD_CONST               0
+              114  LOAD_CONST               None
+              116  IMPORT_NAME              weakref
+              118  STORE_NAME               weakref
+
+ L.  15       120  LOAD_CONST               2
+              122  LOAD_CONST               ('Voice',)
+              124  IMPORT_NAME              voice
+              126  IMPORT_FROM              Voice
+              128  STORE_NAME               Voice
+              130  POP_TOP          
+
+ L.  16       132  LOAD_CONST               1
+              134  LOAD_CONST               ('toUtf8', 'fromUtf8')
+              136  IMPORT_NAME              
+              138  IMPORT_FROM              toUtf8
+              140  STORE_NAME               toUtf8
+              142  IMPORT_FROM              fromUtf8
+              144  STORE_NAME               fromUtf8
+              146  POP_TOP          
+
+ L.  19       148  LOAD_STR                 'HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\MSSam'
+              150  STORE_NAME               MSSAM
+
+ L.  20       152  LOAD_STR                 'HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\MSMary'
+              154  STORE_NAME               MSMARY
+
+ L.  21       156  LOAD_STR                 'HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Speech\\Voices\\Tokens\\MSMike'
+              158  STORE_NAME               MSMIKE
+
+ L.  24       160  LOAD_NAME                MSSAM
+              162  LOAD_CONST               (137.89, 1.11)
+
+ L.  25       164  LOAD_NAME                MSMARY
+              166  LOAD_CONST               (156.63, 1.11)
+
+ L.  26       168  LOAD_NAME                MSMIKE
+              170  LOAD_CONST               (154.37, 1.11)
+
+ L.  24       172  BUILD_MAP_3           3 
+              174  STORE_NAME               E_REG
+
+ L.  29       176  LOAD_CODE                <code_object buildDriver>
+              178  LOAD_STR                 'buildDriver'
+              180  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              182  STORE_NAME               buildDriver
+
+ L.  33       184  LOAD_BUILD_CLASS 
+              186  LOAD_CODE                <code_object SAPI5Driver>
+              188  LOAD_STR                 'SAPI5Driver'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  LOAD_STR                 'SAPI5Driver'
+              194  LOAD_NAME                object
+              196  CALL_FUNCTION_3       3  ''
+              198  STORE_NAME               SAPI5Driver
+
+ L. 140       200  LOAD_BUILD_CLASS 
+              202  LOAD_CODE                <code_object SAPI5DriverEventSink>
+              204  LOAD_STR                 'SAPI5DriverEventSink'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  LOAD_STR                 'SAPI5DriverEventSink'
+              210  LOAD_NAME                object
+              212  CALL_FUNCTION_3       3  ''
+              214  STORE_NAME               SAPI5DriverEventSink
+
+Parse error at or near `<121>' instruction at offset 30
+

@@ -1,0 +1,315 @@
+
+# file test/163306.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Calendar printing functions\n\nNote when comparing these calendars to the ones printed by cal(1): By\ndefault, these calendars have Monday as the first day of the week, and\nSunday as the last (the European convention). Use setfirstweekday() to\nset the first day of the week (0=Monday, 6=Sunday).'
+                2  STORE_NAME               __doc__
+
+ L.   8         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.   9        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              datetime
+               18  STORE_NAME               datetime
+
+ L.  10        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              locale
+               26  STORE_NAME               _locale
+
+ L.  11        28  LOAD_CONST               0
+               30  LOAD_CONST               ('repeat',)
+               32  IMPORT_NAME              itertools
+               34  IMPORT_FROM              repeat
+               36  STORE_NAME               repeat
+               38  POP_TOP          
+
+ L.  13        40  BUILD_LIST_0          0 
+               42  LOAD_CONST               ('IllegalMonthError', 'IllegalWeekdayError', 'setfirstweekday', 'firstweekday', 'isleap', 'leapdays', 'weekday', 'monthrange', 'monthcalendar', 'prmonth', 'month', 'prcal', 'calendar', 'timegm', 'month_name', 'month_abbr', 'day_name', 'day_abbr', 'Calendar', 'TextCalendar', 'HTMLCalendar', 'LocaleTextCalendar', 'LocaleHTMLCalendar', 'weekheader')
+               44  CALL_FINALLY         47  'to 47'
+               46  STORE_NAME               __all__
+
+ L.  21        48  LOAD_NAME                ValueError
+               50  STORE_NAME               error
+
+ L.  24        52  LOAD_BUILD_CLASS 
+               54  LOAD_CODE                <code_object IllegalMonthError>
+               56  LOAD_STR                 'IllegalMonthError'
+               58  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               60  LOAD_STR                 'IllegalMonthError'
+               62  LOAD_NAME                ValueError
+               64  CALL_FUNCTION_3       3  ''
+               66  STORE_NAME               IllegalMonthError
+
+ L.  31        68  LOAD_BUILD_CLASS 
+               70  LOAD_CODE                <code_object IllegalWeekdayError>
+               72  LOAD_STR                 'IllegalWeekdayError'
+               74  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               76  LOAD_STR                 'IllegalWeekdayError'
+               78  LOAD_NAME                ValueError
+               80  CALL_FUNCTION_3       3  ''
+               82  STORE_NAME               IllegalWeekdayError
+
+ L.  39        84  LOAD_CONST               1
+               86  STORE_NAME               January
+
+ L.  40        88  LOAD_CONST               2
+               90  STORE_NAME               February
+
+ L.  43        92  BUILD_LIST_0          0 
+               94  LOAD_CONST               (0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
+               96  CALL_FINALLY         99  'to 99'
+               98  STORE_NAME               mdays
+
+ L.  50       100  LOAD_BUILD_CLASS 
+              102  LOAD_CODE                <code_object _localized_month>
+              104  LOAD_STR                 '_localized_month'
+              106  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              108  LOAD_STR                 '_localized_month'
+              110  CALL_FUNCTION_2       2  ''
+              112  STORE_NAME               _localized_month
+
+ L.  69       114  LOAD_BUILD_CLASS 
+              116  LOAD_CODE                <code_object _localized_day>
+              118  LOAD_STR                 '_localized_day'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  LOAD_STR                 '_localized_day'
+              124  CALL_FUNCTION_2       2  ''
+              126  STORE_NAME               _localized_day
+
+ L.  89       128  LOAD_NAME                _localized_day
+              130  LOAD_STR                 '%A'
+              132  CALL_FUNCTION_1       1  ''
+              134  STORE_NAME               day_name
+
+ L.  90       136  LOAD_NAME                _localized_day
+              138  LOAD_STR                 '%a'
+              140  CALL_FUNCTION_1       1  ''
+              142  STORE_NAME               day_abbr
+
+ L.  93       144  LOAD_NAME                _localized_month
+              146  LOAD_STR                 '%B'
+              148  CALL_FUNCTION_1       1  ''
+              150  STORE_NAME               month_name
+
+ L.  94       152  LOAD_NAME                _localized_month
+              154  LOAD_STR                 '%b'
+              156  CALL_FUNCTION_1       1  ''
+              158  STORE_NAME               month_abbr
+
+ L.  97       160  LOAD_NAME                range
+              162  LOAD_CONST               7
+              164  CALL_FUNCTION_1       1  ''
+              166  UNPACK_SEQUENCE_7     7 
+              168  STORE_NAME               MONDAY
+              170  STORE_NAME               TUESDAY
+              172  STORE_NAME               WEDNESDAY
+              174  STORE_NAME               THURSDAY
+              176  STORE_NAME               FRIDAY
+              178  STORE_NAME               SATURDAY
+              180  STORE_NAME               SUNDAY
+
+ L. 100       182  LOAD_CODE                <code_object isleap>
+              184  LOAD_STR                 'isleap'
+              186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              188  STORE_NAME               isleap
+
+ L. 105       190  LOAD_CODE                <code_object leapdays>
+              192  LOAD_STR                 'leapdays'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  STORE_NAME               leapdays
+
+ L. 113       198  LOAD_CODE                <code_object weekday>
+              200  LOAD_STR                 'weekday'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  STORE_NAME               weekday
+
+ L. 120       206  LOAD_CODE                <code_object monthrange>
+              208  LOAD_STR                 'monthrange'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               monthrange
+
+ L. 130       214  LOAD_CODE                <code_object _monthlen>
+              216  LOAD_STR                 '_monthlen'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  STORE_NAME               _monthlen
+
+ L. 134       222  LOAD_CODE                <code_object _prevmonth>
+              224  LOAD_STR                 '_prevmonth'
+              226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              228  STORE_NAME               _prevmonth
+
+ L. 141       230  LOAD_CODE                <code_object _nextmonth>
+              232  LOAD_STR                 '_nextmonth'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  STORE_NAME               _nextmonth
+
+ L. 148       238  LOAD_BUILD_CLASS 
+              240  LOAD_CODE                <code_object Calendar>
+              242  LOAD_STR                 'Calendar'
+              244  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              246  LOAD_STR                 'Calendar'
+              248  LOAD_NAME                object
+              250  CALL_FUNCTION_3       3  ''
+              252  STORE_NAME               Calendar
+
+ L. 293       254  LOAD_BUILD_CLASS 
+              256  LOAD_CODE                <code_object TextCalendar>
+              258  LOAD_STR                 'TextCalendar'
+              260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              262  LOAD_STR                 'TextCalendar'
+              264  LOAD_NAME                Calendar
+              266  CALL_FUNCTION_3       3  ''
+              268  STORE_NAME               TextCalendar
+
+ L. 410       270  LOAD_BUILD_CLASS 
+              272  LOAD_CODE                <code_object HTMLCalendar>
+              274  LOAD_STR                 'HTMLCalendar'
+              276  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              278  LOAD_STR                 'HTMLCalendar'
+              280  LOAD_NAME                Calendar
+              282  CALL_FUNCTION_3       3  ''
+              284  STORE_NAME               HTMLCalendar
+
+ L. 546       286  LOAD_BUILD_CLASS 
+              288  LOAD_CODE                <code_object different_locale>
+              290  LOAD_STR                 'different_locale'
+              292  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              294  LOAD_STR                 'different_locale'
+              296  CALL_FUNCTION_2       2  ''
+              298  STORE_NAME               different_locale
+
+ L. 558       300  LOAD_BUILD_CLASS 
+              302  LOAD_CODE                <code_object LocaleTextCalendar>
+              304  LOAD_STR                 'LocaleTextCalendar'
+              306  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              308  LOAD_STR                 'LocaleTextCalendar'
+              310  LOAD_NAME                TextCalendar
+              312  CALL_FUNCTION_3       3  ''
+              314  STORE_NAME               LocaleTextCalendar
+
+ L. 589       316  LOAD_BUILD_CLASS 
+              318  LOAD_CODE                <code_object LocaleHTMLCalendar>
+              320  LOAD_STR                 'LocaleHTMLCalendar'
+              322  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              324  LOAD_STR                 'LocaleHTMLCalendar'
+              326  LOAD_NAME                HTMLCalendar
+              328  CALL_FUNCTION_3       3  ''
+              330  STORE_NAME               LocaleHTMLCalendar
+
+ L. 616       332  LOAD_NAME                TextCalendar
+              334  CALL_FUNCTION_0       0  ''
+              336  STORE_NAME               c
+
+ L. 618       338  LOAD_NAME                c
+              340  LOAD_ATTR                getfirstweekday
+              342  STORE_NAME               firstweekday
+
+ L. 620       344  LOAD_CODE                <code_object setfirstweekday>
+              346  LOAD_STR                 'setfirstweekday'
+              348  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              350  STORE_NAME               setfirstweekday
+
+ L. 625       352  LOAD_NAME                c
+              354  LOAD_ATTR                monthdayscalendar
+              356  STORE_NAME               monthcalendar
+
+ L. 626       358  LOAD_NAME                c
+              360  LOAD_ATTR                prweek
+              362  STORE_NAME               prweek
+
+ L. 627       364  LOAD_NAME                c
+              366  LOAD_ATTR                formatweek
+              368  STORE_NAME               week
+
+ L. 628       370  LOAD_NAME                c
+              372  LOAD_ATTR                formatweekheader
+              374  STORE_NAME               weekheader
+
+ L. 629       376  LOAD_NAME                c
+              378  LOAD_ATTR                prmonth
+              380  STORE_NAME               prmonth
+
+ L. 630       382  LOAD_NAME                c
+              384  LOAD_ATTR                formatmonth
+              386  STORE_NAME               month
+
+ L. 631       388  LOAD_NAME                c
+              390  LOAD_ATTR                formatyear
+              392  STORE_NAME               calendar
+
+ L. 632       394  LOAD_NAME                c
+              396  LOAD_ATTR                pryear
+              398  STORE_NAME               prcal
+
+ L. 636       400  LOAD_CONST               20
+              402  STORE_NAME               _colwidth
+
+ L. 637       404  LOAD_CONST               6
+              406  STORE_NAME               _spacing
+
+ L. 640       408  LOAD_NAME                _colwidth
+              410  LOAD_NAME                _spacing
+              412  BUILD_TUPLE_2         2 
+              414  LOAD_CODE                <code_object format>
+              416  LOAD_STR                 'format'
+              418  MAKE_FUNCTION_1          'default'
+              420  STORE_NAME               format
+
+ L. 645       422  LOAD_NAME                _colwidth
+              424  LOAD_NAME                _spacing
+              426  BUILD_TUPLE_2         2 
+              428  LOAD_CODE                <code_object formatstring>
+              430  LOAD_STR                 'formatstring'
+              432  MAKE_FUNCTION_1          'default'
+              434  STORE_NAME               formatstring
+
+ L. 651       436  LOAD_CONST               1970
+              438  STORE_NAME               EPOCH
+
+ L. 652       440  LOAD_NAME                datetime
+              442  LOAD_METHOD              date
+              444  LOAD_NAME                EPOCH
+              446  LOAD_CONST               1
+              448  LOAD_CONST               1
+              450  CALL_METHOD_3         3  ''
+              452  LOAD_METHOD              toordinal
+              454  CALL_METHOD_0         0  ''
+              456  STORE_NAME               _EPOCH_ORD
+
+ L. 655       458  LOAD_CODE                <code_object timegm>
+              460  LOAD_STR                 'timegm'
+              462  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              464  STORE_NAME               timegm
+
+ L. 665       466  LOAD_CODE                <code_object main>
+              468  LOAD_STR                 'main'
+              470  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              472  STORE_NAME               main
+
+ L. 769       474  LOAD_NAME                __name__
+              476  LOAD_STR                 '__main__'
+              478  COMPARE_OP               ==
+          480_482  POP_JUMP_IF_FALSE   494  'to 494'
+
+ L. 770       484  LOAD_NAME                main
+              486  LOAD_NAME                sys
+              488  LOAD_ATTR                argv
+              490  CALL_FUNCTION_1       1  ''
+              492  POP_TOP          
+            494_0  COME_FROM           480  '480'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 44
+
+Instruction context:
+   
+ L.  13        40  BUILD_LIST_0          0 
+                  42  LOAD_CONST               ('IllegalMonthError', 'IllegalWeekdayError', 'setfirstweekday', 'firstweekday', 'isleap', 'leapdays', 'weekday', 'monthrange', 'monthcalendar', 'prmonth', 'month', 'prcal', 'calendar', 'timegm', 'month_name', 'month_abbr', 'day_name', 'day_abbr', 'Calendar', 'TextCalendar', 'HTMLCalendar', 'LocaleTextCalendar', 'LocaleHTMLCalendar', 'weekheader')
+->                44  CALL_FINALLY         47  'to 47'
+                  46  STORE_NAME               __all__
+
+test/163306.pyc -- 
+# decompile failed

@@ -1,0 +1,64 @@
+Instruction context:
+   
+ L.  18         8  LOAD_FAST                'content_type'
+                  10  LOAD_FAST                'self'
+                  12  LOAD_ATTR                get_handlers
+->                14  <118>                 0  ''
+                  16  POP_JUMP_IF_FALSE    46  'to 46'
+Instruction context:
+   
+ L.  37        40  LOAD_FAST                'handler'
+                  42  LOAD_FAST                'msg'
+                  44  LOAD_FAST                'obj'
+                  46  BUILD_LIST_2          2 
+                  48  LOAD_FAST                'args'
+->                50  CALL_FINALLY         53  'to 53'
+                  52  WITH_CLEANUP_FINISH
+                  54  BUILD_MAP_0           0 
+                  56  LOAD_FAST                'kw'
+                  58  <164>                 1  ''
+                  60  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+Instruction context:
+   
+ L.  42        18  LOAD_FAST                'typ'
+                  20  LOAD_FAST                'self'
+                  22  LOAD_ATTR                set_handlers
+->                24  <118>                 0  ''
+                  26  POP_JUMP_IF_FALSE    42  'to 42'
+Instruction context:
+   
+ L. 107       102  DUP_TOP          
+                 104  LOAD_GLOBAL              email
+                 106  LOAD_ATTR                errors
+                 108  LOAD_ATTR                HeaderDefect
+->               110  <121>               166  ''
+                 112  POP_TOP          
+                 114  STORE_FAST               'exc'
+                 116  POP_TOP          
+                 118  SETUP_FINALLY       158  'to 158'
+Instruction context:
+   
+ L. 152       104  DUP_TOP          
+                 106  LOAD_GLOBAL              UnicodeDecodeError
+->               108  <121>               120  ''
+                 110  POP_TOP          
+                 112  POP_TOP          
+                 114  POP_TOP          
+Instruction context:
+   
+ L. 201        24  LOAD_FAST                'cte'
+                  26  LOAD_CONST               (None, '7bit', '8bit', 'binary')
+->                28  <118>                 1  ''
+                  30  POP_JUMP_IF_FALSE    46  'to 46'
+Instruction context:
+   
+ L. 244        98  LOAD_FAST                'cte'
+                 100  LOAD_CONST               ('8bit', 'binary')
+->               102  <118>                 0  ''
+                 104  POP_JUMP_IF_FALSE   118  'to 118'
+
+test/101214.pyc -- 
+# decompile failed
+
+# file test/101214.pyc
+# Deparsing stopped due to parse error

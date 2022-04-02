@@ -1,0 +1,266 @@
+
+# file test/122167.pyc
+# --- This code section failed: ---
+
+ L.   3         0  LOAD_STR                 '\nThe Python Debugger Pdb\n=======================\n\nTo use the debugger in its simplest form:\n\n        >>> import pdb\n        >>> pdb.run(\'<a statement>\')\n\nThe debugger\'s prompt is \'(Pdb) \'.  This will stop in the first\nfunction call in <a statement>.\n\nAlternatively, if a statement terminated with an unhandled exception,\nyou can use pdb\'s post-mortem facility to inspect the contents of the\ntraceback:\n\n        >>> <a statement>\n        <exception traceback>\n        >>> import pdb\n        >>> pdb.pm()\n\nThe commands recognized by the debugger are listed in the next\nsection.  Most can be abbreviated as indicated; e.g., h(elp) means\nthat \'help\' can be typed as \'h\' or \'help\' (but not as \'he\' or \'hel\',\nnor as \'H\' or \'Help\' or \'HELP\').  Optional arguments are enclosed in\nsquare brackets.  Alternatives in the command syntax are separated\nby a vertical bar (|).\n\nA blank line repeats the previous command literally, except for\n\'list\', where it lists the next 11 lines.\n\nCommands that the debugger doesn\'t recognize are assumed to be Python\nstatements and are executed in the context of the program being\ndebugged.  Python statements can also be prefixed with an exclamation\npoint (\'!\').  This is a powerful way to inspect the program being\ndebugged; it is even possible to change variables or call functions.\nWhen an exception occurs in such a statement, the exception name is\nprinted but the debugger\'s state is not changed.\n\nThe debugger supports aliases, which can save typing.  And aliases can\nhave parameters (see the alias help entry) which allows one a certain\nlevel of adaptability to the context under examination.\n\nMultiple commands may be entered on a single line, separated by the\npair \';;\'.  No intelligence is applied to separating the commands; the\ninput is split at the first \';;\', even if it is in the middle of a\nquoted string.\n\nIf a file ".pdbrc" exists in your home directory or in the current\ndirectory, it is read in and executed as if it had been typed at the\ndebugger prompt.  This is particularly useful for aliases.  If both\nfiles exist, the one in the home directory is read first and aliases\ndefined there can be overridden by the local file.  This behavior can be\ndisabled by passing the "readrc=False" argument to the Pdb constructor.\n\nAside from aliases, the debugger is not directly programmable; but it\nis implemented as a class from which you can derive your own debugger\nclass, which you can make as fancy as you like.\n\n\nDebugger commands\n=================\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  70         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.  71        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              io
+               18  STORE_NAME               io
+
+ L.  72        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              re
+               26  STORE_NAME               re
+
+ L.  73        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              sys
+               34  STORE_NAME               sys
+
+ L.  74        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              cmd
+               42  STORE_NAME               cmd
+
+ L.  75        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              bdb
+               50  STORE_NAME               bdb
+
+ L.  76        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              dis
+               58  STORE_NAME               dis
+
+ L.  77        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              code
+               66  STORE_NAME               code
+
+ L.  78        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              glob
+               74  STORE_NAME               glob
+
+ L.  79        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME              pprint
+               82  STORE_NAME               pprint
+
+ L.  80        84  LOAD_CONST               0
+               86  LOAD_CONST               None
+               88  IMPORT_NAME              signal
+               90  STORE_NAME               signal
+
+ L.  81        92  LOAD_CONST               0
+               94  LOAD_CONST               None
+               96  IMPORT_NAME              inspect
+               98  STORE_NAME               inspect
+
+ L.  82       100  LOAD_CONST               0
+              102  LOAD_CONST               None
+              104  IMPORT_NAME              tokenize
+              106  STORE_NAME               tokenize
+
+ L.  83       108  LOAD_CONST               0
+              110  LOAD_CONST               None
+              112  IMPORT_NAME              traceback
+              114  STORE_NAME               traceback
+
+ L.  84       116  LOAD_CONST               0
+              118  LOAD_CONST               None
+              120  IMPORT_NAME              linecache
+              122  STORE_NAME               linecache
+
+ L.  87       124  LOAD_BUILD_CLASS 
+              126  LOAD_CODE                <code_object Restart>
+              128  LOAD_STR                 'Restart'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  LOAD_STR                 'Restart'
+              134  LOAD_NAME                Exception
+              136  CALL_FUNCTION_3       3  ''
+              138  STORE_NAME               Restart
+
+ L.  91       140  BUILD_LIST_0          0 
+              142  LOAD_CONST               ('run', 'pm', 'Pdb', 'runeval', 'runctx', 'runcall', 'set_trace', 'post_mortem', 'help')
+              144  CALL_FINALLY        147  'to 147'
+              146  STORE_NAME               __all__
+
+ L.  94       148  LOAD_CODE                <code_object find_function>
+              150  LOAD_STR                 'find_function'
+              152  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              154  STORE_NAME               find_function
+
+ L. 107       156  LOAD_CODE                <code_object getsourcelines>
+              158  LOAD_STR                 'getsourcelines'
+              160  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              162  STORE_NAME               getsourcelines
+
+ L. 116       164  LOAD_CODE                <code_object lasti2lineno>
+              166  LOAD_STR                 'lasti2lineno'
+              168  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              170  STORE_NAME               lasti2lineno
+
+ L. 125       172  LOAD_BUILD_CLASS 
+              174  LOAD_CODE                <code_object _rstr>
+              176  LOAD_STR                 '_rstr'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  LOAD_STR                 '_rstr'
+              182  LOAD_NAME                str
+              184  CALL_FUNCTION_3       3  ''
+              186  STORE_NAME               _rstr
+
+ L. 136       188  LOAD_STR                 '\n-> '
+              190  STORE_NAME               line_prefix
+
+ L. 138       192  LOAD_BUILD_CLASS 
+              194  LOAD_CODE                <code_object Pdb>
+              196  LOAD_STR                 'Pdb'
+              198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              200  LOAD_STR                 'Pdb'
+              202  LOAD_NAME                bdb
+              204  LOAD_ATTR                Bdb
+              206  LOAD_NAME                cmd
+              208  LOAD_ATTR                Cmd
+              210  CALL_FUNCTION_4       4  ''
+              212  STORE_NAME               Pdb
+
+ L.1577       214  LOAD_NAME                __doc__
+              216  LOAD_CONST               None
+              218  <117>                 1  ''
+          220_222  POP_JUMP_IF_FALSE   286  'to 286'
+
+ L.1579       224  BUILD_LIST_0          0 
+              226  LOAD_CONST               ('help', 'where', 'down', 'up', 'break', 'tbreak', 'clear', 'disable', 'enable', 'ignore', 'condition', 'commands', 'step', 'next', 'until', 'jump', 'return', 'retval', 'run', 'continue', 'list', 'longlist', 'args', 'p', 'pp', 'whatis', 'source', 'display', 'undisplay', 'interact', 'alias', 'unalias', 'debug', 'quit')
+              228  CALL_FINALLY        231  'to 231'
+              230  STORE_NAME               _help_order
+
+ L.1587       232  LOAD_NAME                _help_order
+              234  GET_ITER         
+              236  FOR_ITER            270  'to 270'
+              238  STORE_NAME               _command
+
+ L.1588       240  LOAD_NAME                __doc__
+              242  LOAD_NAME                getattr
+              244  LOAD_NAME                Pdb
+              246  LOAD_STR                 'do_'
+              248  LOAD_NAME                _command
+              250  BINARY_ADD       
+              252  CALL_FUNCTION_2       2  ''
+              254  LOAD_ATTR                __doc__
+              256  LOAD_METHOD              strip
+              258  CALL_METHOD_0         0  ''
+              260  LOAD_STR                 '\n\n'
+              262  BINARY_ADD       
+              264  INPLACE_ADD      
+              266  STORE_NAME               __doc__
+              268  JUMP_BACK           236  'to 236'
+
+ L.1589       270  LOAD_NAME                __doc__
+              272  LOAD_NAME                Pdb
+              274  LOAD_ATTR                help_exec
+              276  LOAD_ATTR                __doc__
+              278  INPLACE_ADD      
+              280  STORE_NAME               __doc__
+
+ L.1591       282  DELETE_NAME              _help_order
+              284  DELETE_NAME              _command
+            286_0  COME_FROM           220  '220'
+
+ L.1596       286  LOAD_CONST               (None, None)
+              288  LOAD_CODE                <code_object run>
+              290  LOAD_STR                 'run'
+              292  MAKE_FUNCTION_1          'default'
+              294  STORE_NAME               run
+
+ L.1599       296  LOAD_CONST               (None, None)
+              298  LOAD_CODE                <code_object runeval>
+              300  LOAD_STR                 'runeval'
+              302  MAKE_FUNCTION_1          'default'
+              304  STORE_NAME               runeval
+
+ L.1602       306  LOAD_CODE                <code_object runctx>
+              308  LOAD_STR                 'runctx'
+              310  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              312  STORE_NAME               runctx
+
+ L.1606       314  LOAD_CODE                <code_object runcall>
+              316  LOAD_STR                 'runcall'
+              318  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              320  STORE_NAME               runcall
+
+ L.1609       322  LOAD_CONST               None
+              324  LOAD_CONST               ('header',)
+              326  BUILD_CONST_KEY_MAP_1     1 
+              328  LOAD_CODE                <code_object set_trace>
+              330  LOAD_STR                 'set_trace'
+              332  MAKE_FUNCTION_2          'keyword-only'
+              334  STORE_NAME               set_trace
+
+ L.1617       336  LOAD_CONST               (None,)
+              338  LOAD_CODE                <code_object post_mortem>
+              340  LOAD_STR                 'post_mortem'
+              342  MAKE_FUNCTION_1          'default'
+              344  STORE_NAME               post_mortem
+
+ L.1631       346  LOAD_CODE                <code_object pm>
+              348  LOAD_STR                 'pm'
+              350  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              352  STORE_NAME               pm
+
+ L.1637       354  LOAD_STR                 'import x; x.main()'
+              356  STORE_NAME               TESTCMD
+
+ L.1639       358  LOAD_CODE                <code_object test>
+              360  LOAD_STR                 'test'
+              362  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              364  STORE_NAME               test
+
+ L.1643       366  LOAD_CODE                <code_object help>
+              368  LOAD_STR                 'help'
+              370  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              372  STORE_NAME               help
+
+ L.1647       374  LOAD_STR                 'usage: pdb.py [-c command] ... [-m module | pyfile] [arg] ...\n\nDebug the Python program given by pyfile. Alternatively,\nan executable module or package to debug can be specified using\nthe -m switch.\n\nInitial commands are read from .pdbrc files in your home directory\nand in the current directory, if they exist.  Commands supplied with\n-c are executed after commands from .pdbrc files.\n\nTo let the script run until an exception occurs, use "-c continue".\nTo let the script run up to a given line X in the debugged file, use\n"-c \'until X\'".'
+              376  STORE_NAME               _usage
+
+ L.1662       378  LOAD_CODE                <code_object main>
+              380  LOAD_STR                 'main'
+              382  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              384  STORE_NAME               main
+
+ L.1730       386  LOAD_NAME                __name__
+              388  LOAD_STR                 '__main__'
+              390  COMPARE_OP               ==
+          392_394  POP_JUMP_IF_FALSE   412  'to 412'
+
+ L.1731       396  LOAD_CONST               0
+              398  LOAD_CONST               None
+              400  IMPORT_NAME              pdb
+              402  STORE_NAME               pdb
+
+ L.1732       404  LOAD_NAME                pdb
+              406  LOAD_METHOD              main
+              408  CALL_METHOD_0         0  ''
+              410  POP_TOP          
+            412_0  COME_FROM           392  '392'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 144
+
+Instruction context:
+   
+ L.  91       140  BUILD_LIST_0          0 
+                 142  LOAD_CONST               ('run', 'pm', 'Pdb', 'runeval', 'runctx', 'runcall', 'set_trace', 'post_mortem', 'help')
+->               144  CALL_FINALLY        147  'to 147'
+                 146  STORE_NAME               __all__
+
+test/122167.pyc -- 
+# decompile failed

@@ -1,0 +1,79 @@
+Instruction context:
+   
+ L.  65        36  BUILD_LIST_0          0 
+                  38  LOAD_CONST               ('compile_command', 'Compile', 'CommandCompiler')
+->                40  CALL_FINALLY         43  'to 43'
+                  42  STORE_NAME               __all__
+
+test/101038.pyc -- 
+# decompile failed
+
+# file test/101038.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "Utilities to compile possibly incomplete Python source code.\n\nThis module provides two interfaces, broadly similar to the builtin\nfunction compile(), which take program text, a filename and a 'mode'\nand:\n\n- Return code object if the command is complete and valid\n- Return None if the command is incomplete\n- Raise SyntaxError, ValueError or OverflowError if the command is a\n  syntax error (OverflowError and ValueError can be produced by\n  malformed literals).\n\nApproach:\n\nFirst, check if the source consists entirely of blank lines and\ncomments; if so, replace it with 'pass', because the built-in\nparser doesn't always do the right thing for these.\n\nCompile three times: as is, with \\n, and with \\n\\n appended.  If it\ncompiles as is, it's complete.  If it compiles with one \\n appended,\nwe expect more.  If it doesn't compile either way, we compare the\nerror we get when compiling with \\n or \\n\\n appended.  If the errors\nare the same, the code is broken.  But if the errors are different, we\nexpect more.  Not intuitive; not even guaranteed to hold in future\nreleases; but this matches the compiler's behavior from Python 1.4\nthrough 2.2, at least.\n\nCaveat:\n\nIt is possible (but not likely) that the parser stops parsing with a\nsuccessful outcome before reaching the end of the source; in this\ncase, trailing symbols may be ignored instead of causing an error.\nFor example, a backslash followed by two newlines may be followed by\narbitrary garbage.  This will be fixed once the API for the parser is\nbetter.\n\nThe two interfaces are:\n\ncompile_command(source, filename, symbol):\n\n    Compiles a single command in the manner described above.\n\nCommandCompiler():\n\n    Instances of this class have __call__ methods identical in\n    signature to compile_command; the difference is that if the\n    instance compiles program text containing a __future__ statement,\n    the instance 'remembers' and compiles all subsequent program texts\n    with the statement in force.\n\nThe module also provides another class:\n\nCompile():\n\n    Instances of this class act like the built-in function compile,\n    but with 'memory' in the sense described above.\n"
+                2  STORE_NAME               __doc__
+
+ L.  59         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              __future__
+               10  STORE_NAME               __future__
+
+ L.  60        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              warnings
+               18  STORE_NAME               warnings
+
+ L.  62        20  LOAD_LISTCOMP            '<code_object <listcomp>>'
+               22  LOAD_STR                 '<listcomp>'
+               24  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+
+ L.  63        26  LOAD_NAME                __future__
+               28  LOAD_ATTR                all_feature_names
+
+ L.  62        30  GET_ITER         
+               32  CALL_FUNCTION_1       1  ''
+               34  STORE_NAME               _features
+
+ L.  65        36  BUILD_LIST_0          0 
+               38  LOAD_CONST               ('compile_command', 'Compile', 'CommandCompiler')
+               40  CALL_FINALLY         43  'to 43'
+               42  STORE_NAME               __all__
+
+ L.  67        44  LOAD_CONST               512
+               46  STORE_NAME               PyCF_DONT_IMPLY_DEDENT
+
+ L.  69        48  LOAD_CODE                <code_object _maybe_compile>
+               50  LOAD_STR                 '_maybe_compile'
+               52  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               54  STORE_NAME               _maybe_compile
+
+ L. 110        56  LOAD_CODE                <code_object _compile>
+               58  LOAD_STR                 '_compile'
+               60  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               62  STORE_NAME               _compile
+
+ L. 113        64  LOAD_CONST               ('<input>', 'single')
+               66  LOAD_CODE                <code_object compile_command>
+               68  LOAD_STR                 'compile_command'
+               70  MAKE_FUNCTION_1          'default'
+               72  STORE_NAME               compile_command
+
+ L. 134        74  LOAD_BUILD_CLASS 
+               76  LOAD_CODE                <code_object Compile>
+               78  LOAD_STR                 'Compile'
+               80  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               82  LOAD_STR                 'Compile'
+               84  CALL_FUNCTION_2       2  ''
+               86  STORE_NAME               Compile
+
+ L. 149        88  LOAD_BUILD_CLASS 
+               90  LOAD_CODE                <code_object CommandCompiler>
+               92  LOAD_STR                 'CommandCompiler'
+               94  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               96  LOAD_STR                 'CommandCompiler'
+               98  CALL_FUNCTION_2       2  ''
+              100  STORE_NAME               CommandCompiler
+
+Parse error at or near `CALL_FINALLY' instruction at offset 40
+

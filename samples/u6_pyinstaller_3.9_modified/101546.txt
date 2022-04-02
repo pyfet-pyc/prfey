@@ -1,0 +1,58 @@
+Instruction context:
+   
+ L.  36        48  BUILD_LIST_0          0 
+                  50  LOAD_CONST               ('charset_name', 'language', 'char_to_order_map', 'language_model', 'typical_positive_ratio', 'keep_ascii_letters', 'alphabet')
+->                52  CALL_FINALLY         55  'to 55'
+
+test/101546.pyc -- 
+# decompile failed
+
+# file test/101546.pyc
+# --- This code section failed: ---
+
+ L.  29         0  LOAD_CONST               0
+                2  LOAD_CONST               ('namedtuple',)
+                4  IMPORT_NAME              collections
+                6  IMPORT_FROM              namedtuple
+                8  STORE_NAME               namedtuple
+               10  POP_TOP          
+
+ L.  31        12  LOAD_CONST               1
+               14  LOAD_CONST               ('CharSetProber',)
+               16  IMPORT_NAME              charsetprober
+               18  IMPORT_FROM              CharSetProber
+               20  STORE_NAME               CharSetProber
+               22  POP_TOP          
+
+ L.  32        24  LOAD_CONST               1
+               26  LOAD_CONST               ('CharacterCategory', 'ProbingState', 'SequenceLikelihood')
+               28  IMPORT_NAME              enums
+               30  IMPORT_FROM              CharacterCategory
+               32  STORE_NAME               CharacterCategory
+               34  IMPORT_FROM              ProbingState
+               36  STORE_NAME               ProbingState
+               38  IMPORT_FROM              SequenceLikelihood
+               40  STORE_NAME               SequenceLikelihood
+               42  POP_TOP          
+
+ L.  35        44  LOAD_NAME                namedtuple
+               46  LOAD_STR                 'SingleByteCharSetModel'
+
+ L.  36        48  BUILD_LIST_0          0 
+               50  LOAD_CONST               ('charset_name', 'language', 'char_to_order_map', 'language_model', 'typical_positive_ratio', 'keep_ascii_letters', 'alphabet')
+               52  CALL_FINALLY         55  'to 55'
+
+ L.  35        54  CALL_FUNCTION_2       2  ''
+               56  STORE_NAME               SingleByteCharSetModel
+
+ L.  45        58  LOAD_BUILD_CLASS 
+               60  LOAD_CODE                <code_object SingleByteCharSetProber>
+               62  LOAD_STR                 'SingleByteCharSetProber'
+               64  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               66  LOAD_STR                 'SingleByteCharSetProber'
+               68  LOAD_NAME                CharSetProber
+               70  CALL_FUNCTION_3       3  ''
+               72  STORE_NAME               SingleByteCharSetProber
+
+Parse error at or near `CALL_FINALLY' instruction at offset 52
+

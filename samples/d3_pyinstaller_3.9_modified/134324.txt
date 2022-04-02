@@ -1,0 +1,85 @@
+Instruction context:
+   
+ L.  71        86  DUP_TOP          
+                  88  LOAD_NAME                ImportError
+->                90  <121>               102  ''
+                  92  POP_TOP          
+                  94  POP_TOP          
+                  96  POP_TOP          
+
+test/134324.pyc -- 
+# decompile failed
+
+# file test/134324.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('MutableSequence',)
+                4  IMPORT_NAME_ATTR         collections.abc
+                6  IMPORT_FROM              MutableSequence
+                8  STORE_NAME               MutableSequence
+               10  POP_TOP          
+
+ L.   2        12  LOAD_CONST               0
+               14  LOAD_CONST               ('total_ordering',)
+               16  IMPORT_NAME              functools
+               18  IMPORT_FROM              total_ordering
+               20  STORE_NAME               total_ordering
+               22  POP_TOP          
+
+ L.   4        24  LOAD_CONST               1
+               26  LOAD_CONST               ('NO_EXTENSIONS',)
+               28  IMPORT_NAME              helpers
+               30  IMPORT_FROM              NO_EXTENSIONS
+               32  STORE_NAME               NO_EXTENSIONS
+               34  POP_TOP          
+
+ L.   7        36  LOAD_NAME                total_ordering
+
+ L.   8        38  LOAD_BUILD_CLASS 
+               40  LOAD_CODE                <code_object FrozenList>
+               42  LOAD_STR                 'FrozenList'
+               44  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               46  LOAD_STR                 'FrozenList'
+               48  LOAD_NAME                MutableSequence
+               50  CALL_FUNCTION_3       3  ''
+               52  CALL_FUNCTION_1       1  ''
+               54  STORE_NAME               FrozenList
+
+ L.  64        56  LOAD_NAME                FrozenList
+               58  STORE_NAME               PyFrozenList
+
+ L.  66        60  SETUP_FINALLY        86  'to 86'
+
+ L.  67        62  LOAD_CONST               0
+               64  LOAD_CONST               ('FrozenList',)
+               66  IMPORT_NAME_ATTR         aiohttp._frozenlist
+               68  IMPORT_FROM              FrozenList
+               70  STORE_NAME               CFrozenList
+               72  POP_TOP          
+
+ L.  69        74  LOAD_NAME                NO_EXTENSIONS
+               76  POP_JUMP_IF_TRUE     82  'to 82'
+
+ L.  70        78  LOAD_NAME                CFrozenList
+               80  STORE_NAME               FrozenList
+             82_0  COME_FROM            76  '76'
+               82  POP_BLOCK        
+               84  JUMP_FORWARD        104  'to 104'
+             86_0  COME_FROM_FINALLY    60  '60'
+
+ L.  71        86  DUP_TOP          
+               88  LOAD_NAME                ImportError
+               90  <121>               102  ''
+               92  POP_TOP          
+               94  POP_TOP          
+               96  POP_TOP          
+
+ L.  72        98  POP_EXCEPT       
+              100  JUMP_FORWARD        104  'to 104'
+              102  <48>             
+            104_0  COME_FROM           100  '100'
+            104_1  COME_FROM            84  '84'
+
+Parse error at or near `<121>' instruction at offset 90
+

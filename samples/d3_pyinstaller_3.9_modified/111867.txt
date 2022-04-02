@@ -1,0 +1,67 @@
+Instruction context:
+   
+ L.  58        30  LOAD_FAST                'self'
+                  32  LOAD_ATTR                __class__
+                  34  LOAD_GLOBAL              Command
+->                36  <117>                 0  ''
+                  38  POP_JUMP_IF_FALSE    48  'to 48'
+Instruction context:
+   
+ L.  98        22  LOAD_FAST                'myval'
+                  24  LOAD_CONST               None
+->                26  <117>                 0  ''
+                  28  POP_JUMP_IF_FALSE    42  'to 42'
+Instruction context:
+   
+ L. 153        12  LOAD_FAST                'header'
+                  14  LOAD_CONST               None
+->                16  <117>                 0  ''
+                  18  POP_JUMP_IF_FALSE    32  'to 32'
+Instruction context:
+   
+ L. 209        10  LOAD_FAST                'val'
+                  12  LOAD_CONST               None
+->                14  <117>                 0  ''
+                  16  POP_JUMP_IF_FALSE    34  'to 34'
+Instruction context:
+   
+ L. 230        10  LOAD_FAST                'val'
+                  12  LOAD_CONST               None
+->                14  <117>                 0  ''
+                  16  POP_JUMP_IF_FALSE    22  'to 22'
+Instruction context:
+   
+ L. 247        14  LOAD_FAST                'val'
+                  16  LOAD_CONST               None
+->                18  <117>                 1  ''
+                  20  POP_JUMP_IF_FALSE    50  'to 50'
+                  22  LOAD_FAST                'tester'
+                  24  LOAD_FAST                'val'
+                  26  CALL_FUNCTION_1       1  ''
+                  28  POP_JUMP_IF_TRUE     50  'to 50'
+Instruction context:
+   
+ L. 289        32  LOAD_GLOBAL              getattr
+                  34  LOAD_FAST                'self'
+                  36  LOAD_FAST                'dst_option'
+                  38  CALL_FUNCTION_2       2  ''
+                  40  LOAD_CONST               None
+->                42  <117>                 0  ''
+                  44  POP_JUMP_IF_FALSE_BACK    24  'to 24'
+Instruction context:
+   
+ L. 324        18  LOAD_FAST                'method'
+                  20  LOAD_CONST               None
+->                22  <117>                 0  ''
+                  24  POP_JUMP_IF_TRUE     34  'to 34'
+                  26  LOAD_FAST                'method'
+                  28  LOAD_FAST                'self'
+                  30  CALL_FUNCTION_1       1  ''
+                  32  POP_JUMP_IF_FALSE_BACK    10  'to 10'
+                34_0  COME_FROM            24  '24'
+
+test/111867.pyc -- 
+# decompile failed
+
+# file test/111867.pyc
+# Deparsing stopped due to parse error

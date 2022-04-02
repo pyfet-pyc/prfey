@@ -1,0 +1,109 @@
+Instruction context:
+   
+ L. 673        74  LOAD_FAST                'start'
+                  76  LOAD_FAST                'self'
+                  78  LOAD_ATTR                position
+                  80  DUP_TOP          
+                  82  ROT_THREE        
+                  84  COMPARE_OP               <=
+                  86  POP_JUMP_IF_FALSE    96  'to 96'
+                  88  LOAD_FAST                'stop'
+                  90  COMPARE_OP               <
+                  92  POP_JUMP_IF_FALSE   104  'to 104'
+                  94  BREAK_LOOP          142  'to 142'
+                96_0  COME_FROM            86  '86'
+                  96  POP_TOP          
+->                98  JUMP_FORWARD        104  'to 104'
+Instruction context:
+   
+ L. 880       110  POP_EXCEPT       
+                 112  JUMP_BACK            42  'to 42'
+->               114  POP_EXCEPT       
+                 116  JUMP_FORWARD        120  'to 120'
+               118_0  COME_FROM            90  '90'
+                 118  END_FINALLY      
+               120_0  COME_FROM           116  '116'
+               120_1  COME_FROM            82  '82'
+Instruction context:
+   
+ L. 997        56  POP_EXCEPT       
+->                58  POP_TOP          
+                  60  BREAK_LOOP           70  'to 70'
+                  62  POP_EXCEPT       
+                  64  JUMP_BACK            12  'to 12'
+                66_0  COME_FROM            44  '44'
+                  66  END_FINALLY      
+                  68  JUMP_BACK            12  'to 12'
+Instruction context:
+   
+ L.1363        16  DUP_TOP          
+                  18  LOAD_GLOBAL              UnicodeDecodeError
+                  20  COMPARE_OP               exception-match
+                  22  POP_JUMP_IF_FALSE    46  'to 46'
+                  24  POP_TOP          
+->                26  POP_TOP          
+                  28  POP_TOP          
+Instruction context:
+   
+ L.1524       500  POP_EXCEPT       
+             502_504  JUMP_ABSOLUTE       562  'to 562'
+->               506  POP_EXCEPT       
+                 508  JUMP_BACK           426  'to 426'
+               510_0  COME_FROM           476  '476'
+Instruction context:
+   
+ L.1601        88  LOAD_FAST                'func'
+                  90  LOAD_FAST                'name'
+                  92  LOAD_STR                 'r'
+                  94  LOAD_FAST                'fileobj'
+                  96  BUILD_TUPLE_3         3 
+                  98  LOAD_FAST                'kwargs'
+                 100  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                 102  POP_BLOCK        
+->               104  ROT_TWO          
+                 106  POP_TOP          
+                 108  RETURN_VALUE     
+               110_0  COME_FROM_FINALLY    86  '86'
+Instruction context:
+   
+ L.2318       172  POP_BLOCK        
+->               174  POP_EXCEPT       
+                 176  CALL_FINALLY        184  'to 184'
+                 178  JUMP_BACK            94  'to 94'
+               180_0  COME_FROM           134  '134'
+                 180  POP_BLOCK        
+                 182  BEGIN_FINALLY    
+               184_0  COME_FROM           176  '176'
+               184_1  COME_FROM_FINALLY   128  '128'
+                 184  LOAD_CONST               None
+                 186  STORE_FAST               'e'
+                 188  DELETE_FAST              'e'
+                 190  END_FINALLY      
+                 192  POP_EXCEPT       
+             194_196  BREAK_LOOP          462  'to 462'
+               198_0  COME_FROM           120  '120'
+Instruction context:
+   
+ L.2468        18  POP_BLOCK        
+                  20  LOAD_CONST               True
+->                22  RETURN_VALUE     
+                24_0  COME_FROM_FINALLY     0  '0'
+Instruction context:
+   
+ L.2560       704  LOAD_GLOBAL              print
+                 706  LOAD_STR                 '{!r} file created.'
+                 708  LOAD_METHOD              format
+                 710  LOAD_FAST                'tar_name'
+                 712  CALL_METHOD_1         1  ''
+                 714  CALL_FUNCTION_1       1  ''
+                 716  POP_TOP          
+               718_0  COME_FROM           700  '700'
+               718_1  COME_FROM           564  '564'
+               718_2  COME_FROM           554  '554'
+->             718_3  COME_FROM           344  '344'
+
+test/61.pyc -- 
+# decompile failed
+
+# file test/61.pyc
+# Deparsing stopped due to parse error

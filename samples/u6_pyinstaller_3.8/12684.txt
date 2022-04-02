@@ -1,0 +1,37 @@
+Instruction context:
+   
+ L. 415        22  LOAD_FAST                'hotkey'
+                  24  LOAD_GLOBAL              _pressed_events
+                  26  COMPARE_OP               in
+                  28  POP_BLOCK        
+->                30  ROT_TWO          
+                  32  BEGIN_FINALLY    
+                  34  WITH_CLEANUP_START
+                  36  WITH_CLEANUP_FINISH
+                  38  POP_FINALLY           0  ''
+                  40  RETURN_VALUE     
+                42_0  COME_FROM_WITH       18  '18'
+                  42  WITH_CLEANUP_START
+                  44  WITH_CLEANUP_FINISH
+                  46  END_FINALLY      
+                48_0  COME_FROM            14  '14'
+Instruction context:
+   
+ L. 688       134  LOAD_CONST               True
+->               136  RETURN_VALUE     
+Instruction context:
+   
+ L. 857       156  POP_EXCEPT       
+                 158  JUMP_BACK            88  'to 88'
+->               160  POP_EXCEPT       
+                 162  JUMP_FORWARD        166  'to 166'
+               164_0  COME_FROM           138  '138'
+                 164  END_FINALLY      
+               166_0  COME_FROM           162  '162'
+               166_1  COME_FROM           126  '126'
+
+../test/12684.pyc -- 
+# decompile failed
+
+# file ../test/12684.pyc
+# Deparsing stopped due to parse error

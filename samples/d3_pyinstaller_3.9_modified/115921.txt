@@ -1,0 +1,121 @@
+Instruction context:
+   
+ L.  31        24  LOAD_FAST                'strm'
+                  26  LOAD_METHOD              read
+                  28  CALL_METHOD_0         0  ''
+                  30  STORE_FAST               'src'
+                  32  POP_BLOCK        
+                  34  LOAD_CONST               None
+->                36  DUP_TOP          
+                  38  DUP_TOP          
+                  40  CALL_FUNCTION_3       3  ''
+                  42  POP_TOP          
+                  44  JUMP_FORWARD         62  'to 62'
+                46_0  COME_FROM_WITH       20  '20'
+                  46  <49>             
+                  48  POP_JUMP_IF_TRUE     52  'to 52'
+                  50  <48>             
+                52_0  COME_FROM            48  '48'
+                  52  POP_TOP          
+                  54  POP_TOP          
+                  56  POP_TOP          
+                  58  POP_EXCEPT       
+                  60  POP_TOP          
+                62_0  COME_FROM            44  '44'
+Instruction context:
+   
+ L.  45        30  DUP_TOP          
+                  32  LOAD_GLOBAL              Exception
+->                34  <121>                88  ''
+                  36  POP_TOP          
+                  38  STORE_FAST               'e'
+                  40  POP_TOP          
+                  42  SETUP_FINALLY        80  'to 80'
+Instruction context:
+   
+ L.  60        24  LOAD_GLOBAL              sys
+                  26  LOAD_ATTR                path
+                  28  LOAD_METHOD              remove
+                  30  LOAD_FAST                'path'
+                  32  CALL_METHOD_1         1  ''
+->                34  POP_TOP          
+                  36  JUMP_FORWARD         52  'to 52'
+                38_0  COME_FROM_FINALLY     0  '0'
+                  38  LOAD_GLOBAL              sys
+                  40  LOAD_ATTR                path
+                  42  LOAD_METHOD              remove
+                  44  LOAD_FAST                'path'
+                  46  CALL_METHOD_1         1  ''
+                  48  POP_TOP          
+                  50  <48>             
+Instruction context:
+   
+ L.  95       102  LOAD_FAST                'filepath'
+                 104  LOAD_FAST                'filenames'
+->               106  <118>                 1  ''
+                 108  POP_JUMP_IF_FALSE   120  'to 120'
+Instruction context:
+   
+ L. 214        38  LOAD_FAST                'current_value'
+                  40  LOAD_FAST                'unknown'
+->                42  <117>                 0  ''
+                  44  POP_JUMP_IF_FALSE    54  'to 54'
+Instruction context:
+   
+ L. 256        14  LOAD_STR                 '\n'
+                  16  LOAD_FAST                'value'
+->                18  <118>                 0  ''
+                  20  POP_JUMP_IF_FALSE    32  'to 32'
+Instruction context:
+   
+ L. 289         8  LOAD_FAST                'value'
+                  10  LOAD_CONST               ('1', 'true', 'yes')
+->                12  <118>                 0  ''
+                  14  RETURN_VALUE     
+Instruction context:
+   
+ L. 338         6  LOAD_DEREF               'cls'
+                   8  LOAD_METHOD              _assert_local
+                  10  LOAD_FAST                'path'
+                  12  CALL_METHOD_1         1  ''
+                  14  POP_JUMP_IF_TRUE     16  'to 16'
+->              16_0  COME_FROM            14  '14'
+
+test/115921.pyc -- 
+# decompile failed
+
+# file test/115921.pyc
+# --- This code section failed: ---
+
+ L. 335         0  LOAD_FAST                '.0'
+              2_0  COME_FROM            40  '40'
+              2_1  COME_FROM            26  '26'
+                2  FOR_ITER             42  'to 42'
+
+ L. 337         4  STORE_FAST               'path'
+
+ L. 338         6  LOAD_DEREF               'cls'
+                8  LOAD_METHOD              _assert_local
+               10  LOAD_FAST                'path'
+               12  CALL_METHOD_1         1  ''
+               14  POP_JUMP_IF_TRUE     16  'to 16'
+             16_0  COME_FROM            14  '14'
+
+ L. 339        16  LOAD_GLOBAL              os
+               18  LOAD_ATTR                path
+               20  LOAD_METHOD              isfile
+               22  LOAD_FAST                'path'
+               24  CALL_METHOD_1         1  ''
+               26  POP_JUMP_IF_FALSE_BACK     2  'to 2'
+
+ L. 336        28  LOAD_DEREF               'cls'
+               30  LOAD_METHOD              _read_file
+               32  LOAD_FAST                'path'
+               34  CALL_METHOD_1         1  ''
+               36  YIELD_VALUE      
+               38  POP_TOP          
+               40  JUMP_BACK             2  'to 2'
+             42_0  COME_FROM             2  '2'
+
+Parse error at or near `COME_FROM' instruction at offset 16_0
+

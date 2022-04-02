@@ -1,0 +1,57 @@
+Instruction context:
+   
+ L.  21        12  BUILD_LIST_0          0 
+                  14  LOAD_CONST               (('build-dir=', 'd', 'directory to "build" (copy) to'), ('force', 'f', 'forcibly build everything (ignore file timestamps'), ('executable=', 'e', 'specify final destination interpreter path'))
+->                16  CALL_FINALLY         19  'to 19'
+                  18  STORE_NAME               user_options
+
+test/111891.pyc -- 
+# decompile failed
+
+# file test/111891.pyc
+# --- This code section failed: ---
+
+ L.  17         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'build_scripts'
+                6  STORE_NAME               __qualname__
+
+ L.  19         8  LOAD_STR                 '"build" scripts (copy and fixup #! line)'
+               10  STORE_NAME               description
+
+ L.  21        12  BUILD_LIST_0          0 
+               14  LOAD_CONST               (('build-dir=', 'd', 'directory to "build" (copy) to'), ('force', 'f', 'forcibly build everything (ignore file timestamps'), ('executable=', 'e', 'specify final destination interpreter path'))
+               16  CALL_FINALLY         19  'to 19'
+               18  STORE_NAME               user_options
+
+ L.  27        20  LOAD_STR                 'force'
+               22  BUILD_LIST_1          1 
+               24  STORE_NAME               boolean_options
+
+ L.  30        26  LOAD_CODE                <code_object initialize_options>
+               28  LOAD_STR                 'build_scripts.initialize_options'
+               30  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               32  STORE_NAME               initialize_options
+
+ L.  37        34  LOAD_CODE                <code_object finalize_options>
+               36  LOAD_STR                 'build_scripts.finalize_options'
+               38  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               40  STORE_NAME               finalize_options
+
+ L.  44        42  LOAD_CODE                <code_object get_source_files>
+               44  LOAD_STR                 'build_scripts.get_source_files'
+               46  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               48  STORE_NAME               get_source_files
+
+ L.  47        50  LOAD_CODE                <code_object run>
+               52  LOAD_STR                 'build_scripts.run'
+               54  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               56  STORE_NAME               run
+
+ L.  53        58  LOAD_CODE                <code_object copy_scripts>
+               60  LOAD_STR                 'build_scripts.copy_scripts'
+               62  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               64  STORE_NAME               copy_scripts
+
+Parse error at or near `CALL_FINALLY' instruction at offset 16
+

@@ -1,0 +1,39 @@
+Instruction context:
+   
+ L. 188       476  POP_BLOCK        
+                 478  POP_EXCEPT       
+->               480  CALL_FINALLY        494  'to 494'
+                 482  POP_BLOCK        
+                 484  POP_BLOCK        
+             486_488  CALL_FINALLY        750  'to 750'
+                 490  LOAD_CONST               None
+                 492  RETURN_VALUE     
+               494_0  COME_FROM           480  '480'
+               494_1  COME_FROM_FINALLY   100  '100'
+                 494  LOAD_CONST               None
+                 496  STORE_FAST               'exc'
+                 498  DELETE_FAST              'exc'
+                 500  END_FINALLY      
+                 502  POP_EXCEPT       
+                 504  JUMP_FORWARD        508  'to 508'
+               506_0  COME_FROM            90  '90'
+                 506  END_FINALLY      
+               508_0  COME_FROM           504  '504'
+               508_1  COME_FROM            80  '80'
+               508_2  COME_FROM            44  '44'
+Instruction context:
+   
+ L. 411       118  POP_EXCEPT       
+                 120  JUMP_BACK            66  'to 66'
+                 122  POP_EXCEPT       
+                 124  JUMP_FORWARD        128  'to 128'
+->             126_0  COME_FROM           110  '110'
+                 126  END_FINALLY      
+               128_0  COME_FROM           124  '124'
+               128_1  COME_FROM           102  '102'
+
+../test/118426.pyc -- 
+# decompile failed
+
+# file ../test/118426.pyc
+# Deparsing stopped due to parse error

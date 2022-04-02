@@ -1,0 +1,44 @@
+Instruction context:
+   
+ L. 259        14  DUP_TOP          
+                  16  LOAD_GLOBAL              TypeError
+                  18  COMPARE_OP               exception-match
+                  20  POP_JUMP_IF_FALSE    32  'to 32'
+                  22  POP_TOP          
+->                24  POP_TOP          
+                  26  POP_TOP          
+Instruction context:
+   
+ L. 990        24  DUP_TOP          
+                  26  LOAD_GLOBAL              AttributeError
+                  28  LOAD_GLOBAL              ValueError
+                  30  BUILD_TUPLE_2         2 
+                  32  COMPARE_OP               exception-match
+                  34  POP_JUMP_IF_FALSE    48  'to 48'
+                  36  POP_TOP          
+->                38  POP_TOP          
+                  40  POP_TOP          
+Instruction context:
+   
+ L.1091       150  POP_TOP          
+->               152  JUMP_BACK           100  'to 100'
+               154_0  COME_FROM           122  '122'
+Instruction context:
+   
+ L.1746        60  LOAD_CLOSURE             'msg'
+                  62  BUILD_TUPLE_1         1 
+->                64  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  66  LOAD_STR                 '_TypedDictMeta.__new__.<locals>.<dictcomp>'
+                  68  MAKE_FUNCTION_8          'closure'
+                  70  LOAD_FAST                'anns'
+                  72  LOAD_METHOD              items
+                  74  CALL_METHOD_0         0  ''
+                  76  GET_ITER         
+                  78  CALL_FUNCTION_1       1  ''
+                  80  STORE_FAST               'anns'
+
+../test/161969.pyc -- 
+# decompile failed
+
+# file ../test/161969.pyc
+# Deparsing stopped due to parse error

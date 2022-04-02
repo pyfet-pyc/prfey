@@ -1,0 +1,117 @@
+Instruction context:
+   
+ L.  44        88  DUP_TOP          
+                  90  LOAD_NAME                OSError
+->                92  <121>               104  ''
+                  94  POP_TOP          
+                  96  POP_TOP          
+                  98  POP_TOP          
+
+test/52299.pyc -- 
+# decompile failed
+
+# file test/52299.pyc
+# --- This code section failed: ---
+
+ L.  23         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              atexit
+                6  STORE_NAME               atexit
+
+ L.  24         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              os
+               14  STORE_NAME               os
+
+ L.  25        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              shutil
+               22  STORE_NAME               shutil
+
+ L.  26        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              tempfile
+               30  STORE_NAME               tempfile
+
+ L.  30        32  LOAD_NAME                tempfile
+               34  LOAD_METHOD              mkdtemp
+               36  CALL_METHOD_0         0  ''
+               38  STORE_NAME               supportdir
+
+ L.  32        40  LOAD_NAME                os
+               42  LOAD_ATTR                path
+               44  LOAD_METHOD              join
+               46  LOAD_NAME                supportdir
+               48  LOAD_STR                 'gen_py'
+               50  CALL_METHOD_2         2  ''
+               52  STORE_NAME               genpydir
+
+ L.  37        54  SETUP_FINALLY        88  'to 88'
+
+ L.  41        56  LOAD_NAME                os
+               58  LOAD_METHOD              makedirs
+               60  LOAD_NAME                genpydir
+               62  CALL_METHOD_1         1  ''
+               64  POP_TOP          
+
+ L.  43        66  LOAD_NAME                atexit
+               68  LOAD_ATTR                register
+               70  LOAD_NAME                shutil
+               72  LOAD_ATTR                rmtree
+               74  LOAD_NAME                supportdir
+               76  LOAD_CONST               True
+               78  LOAD_CONST               ('ignore_errors',)
+               80  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+               82  POP_TOP          
+               84  POP_BLOCK        
+               86  JUMP_FORWARD        106  'to 106'
+             88_0  COME_FROM_FINALLY    54  '54'
+
+ L.  44        88  DUP_TOP          
+               90  LOAD_NAME                OSError
+               92  <121>               104  ''
+               94  POP_TOP          
+               96  POP_TOP          
+               98  POP_TOP          
+
+ L.  45       100  POP_EXCEPT       
+              102  JUMP_FORWARD        106  'to 106'
+              104  <48>             
+            106_0  COME_FROM           102  '102'
+            106_1  COME_FROM            86  '86'
+
+ L.  49       106  LOAD_CONST               0
+              108  LOAD_CONST               None
+              110  IMPORT_NAME              win32com
+              112  STORE_NAME               win32com
+
+ L.  50       114  LOAD_NAME                genpydir
+              116  LOAD_NAME                win32com
+              118  STORE_ATTR               __gen_path__
+
+ L.  56       120  LOAD_NAME                hasattr
+              122  LOAD_NAME                win32com
+              124  LOAD_STR                 '__loader__'
+              126  CALL_FUNCTION_2       2  ''
+              128  POP_JUMP_IF_FALSE   134  'to 134'
+
+ L.  57       130  LOAD_NAME                win32com
+              132  DELETE_ATTR              __loader__
+            134_0  COME_FROM           128  '128'
+
+ L.  61       134  LOAD_CONST               0
+              136  LOAD_CONST               None
+              138  IMPORT_NAME_ATTR         win32com.gen_py
+              140  STORE_NAME               win32com
+
+ L.  62       142  LOAD_NAME                win32com
+              144  LOAD_ATTR                gen_py
+              146  LOAD_ATTR                __path__
+              148  LOAD_METHOD              insert
+              150  LOAD_CONST               0
+              152  LOAD_NAME                genpydir
+              154  CALL_METHOD_2         2  ''
+              156  POP_TOP          
+
+Parse error at or near `<121>' instruction at offset 92
+

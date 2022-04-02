@@ -1,0 +1,41 @@
+Instruction context:
+   
+ L. 215       282  LOAD_GLOBAL              isinstance
+                 284  LOAD_FAST                'qualifier'
+                 286  LOAD_GLOBAL              x509
+                 288  LOAD_ATTR                UserNotice
+                 290  CALL_FUNCTION_2       2  ''
+             292_294  POP_JUMP_IF_TRUE    300  'to 300'
+->               296  <74>             
+                 298  RAISE_VARARGS_1       1  'exception instance'
+               300_0  COME_FROM           292  '292'
+Instruction context:
+   
+ L. 313        46  LOAD_FAST                'authority_keyid'
+                  48  LOAD_ATTR                key_identifier
+                  50  LOAD_CONST               None
+->                52  <117>                 1  ''
+                  54  POP_JUMP_IF_FALSE    70  'to 70'
+Instruction context:
+   
+ L. 338        44  LOAD_FAST                'basic_constraints'
+                  46  LOAD_ATTR                ca
+                  48  POP_JUMP_IF_FALSE    74  'to 74'
+                  50  LOAD_FAST                'basic_constraints'
+                  52  LOAD_ATTR                path_length
+                  54  LOAD_CONST               None
+->                56  <117>                 1  ''
+                  58  POP_JUMP_IF_FALSE    74  'to 74'
+Instruction context:
+   
+ L. 582        46  LOAD_FAST                'policy_constraints'
+                  48  LOAD_ATTR                require_explicit_policy
+                  50  LOAD_CONST               None
+->                52  <117>                 1  ''
+                  54  POP_JUMP_IF_FALSE    70  'to 70'
+
+test/134514.pyc -- 
+# decompile failed
+
+# file test/134514.pyc
+# Deparsing stopped due to parse error

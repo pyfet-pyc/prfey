@@ -1,0 +1,109 @@
+Instruction context:
+   
+ L.  17         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('ascii_letters', 'ascii_lowercase', 'ascii_uppercase', 'capwords', 'digits', 'hexdigits', 'octdigits', 'printable', 'punctuation', 'whitespace', 'Formatter', 'Template')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101096.pyc -- 
+# decompile failed
+
+# file test/101096.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'A collection of string constants.\n\nPublic module variables:\n\nwhitespace -- a string containing all ASCII whitespace\nascii_lowercase -- a string containing all ASCII lowercase letters\nascii_uppercase -- a string containing all ASCII uppercase letters\nascii_letters -- a string containing all ASCII letters\ndigits -- a string containing all ASCII decimal digits\nhexdigits -- a string containing all ASCII hexadecimal digits\noctdigits -- a string containing all ASCII octal digits\npunctuation -- a string containing all ASCII punctuation characters\nprintable -- a string containing all ASCII characters considered printable\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  17         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('ascii_letters', 'ascii_lowercase', 'ascii_uppercase', 'capwords', 'digits', 'hexdigits', 'octdigits', 'printable', 'punctuation', 'whitespace', 'Formatter', 'Template')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  21        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              _string
+               18  STORE_NAME               _string
+
+ L.  24        20  LOAD_STR                 ' \t\n\r\x0b\x0c'
+               22  STORE_NAME               whitespace
+
+ L.  25        24  LOAD_STR                 'abcdefghijklmnopqrstuvwxyz'
+               26  STORE_NAME               ascii_lowercase
+
+ L.  26        28  LOAD_STR                 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+               30  STORE_NAME               ascii_uppercase
+
+ L.  27        32  LOAD_NAME                ascii_lowercase
+               34  LOAD_NAME                ascii_uppercase
+               36  BINARY_ADD       
+               38  STORE_NAME               ascii_letters
+
+ L.  28        40  LOAD_STR                 '0123456789'
+               42  STORE_NAME               digits
+
+ L.  29        44  LOAD_NAME                digits
+               46  LOAD_STR                 'abcdef'
+               48  BINARY_ADD       
+               50  LOAD_STR                 'ABCDEF'
+               52  BINARY_ADD       
+               54  STORE_NAME               hexdigits
+
+ L.  30        56  LOAD_STR                 '01234567'
+               58  STORE_NAME               octdigits
+
+ L.  31        60  LOAD_STR                 '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+               62  STORE_NAME               punctuation
+
+ L.  32        64  LOAD_NAME                digits
+               66  LOAD_NAME                ascii_letters
+               68  BINARY_ADD       
+               70  LOAD_NAME                punctuation
+               72  BINARY_ADD       
+               74  LOAD_NAME                whitespace
+               76  BINARY_ADD       
+               78  STORE_NAME               printable
+
+ L.  37        80  LOAD_CONST               (None,)
+               82  LOAD_CODE                <code_object capwords>
+               84  LOAD_STR                 'capwords'
+               86  MAKE_FUNCTION_1          'default'
+               88  STORE_NAME               capwords
+
+ L.  52        90  LOAD_CONST               0
+               92  LOAD_CONST               None
+               94  IMPORT_NAME              re
+               96  STORE_NAME               _re
+
+ L.  53        98  LOAD_CONST               0
+              100  LOAD_CONST               ('ChainMap',)
+              102  IMPORT_NAME              collections
+              104  IMPORT_FROM              ChainMap
+              106  STORE_NAME               _ChainMap
+              108  POP_TOP          
+
+ L.  55       110  BUILD_MAP_0           0 
+              112  STORE_NAME               _sentinel_dict
+
+ L.  57       114  LOAD_BUILD_CLASS 
+              116  LOAD_CODE                <code_object Template>
+              118  LOAD_STR                 'Template'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  LOAD_STR                 'Template'
+              124  CALL_FUNCTION_2       2  ''
+              126  STORE_NAME               Template
+
+ L. 146       128  LOAD_NAME                Template
+              130  LOAD_METHOD              __init_subclass__
+              132  CALL_METHOD_0         0  ''
+              134  POP_TOP          
+
+ L. 159       136  LOAD_BUILD_CLASS 
+              138  LOAD_CODE                <code_object Formatter>
+              140  LOAD_STR                 'Formatter'
+              142  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              144  LOAD_STR                 'Formatter'
+              146  CALL_FUNCTION_2       2  ''
+              148  STORE_NAME               Formatter
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

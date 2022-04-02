@@ -1,0 +1,48 @@
+Instruction context:
+   
+ L.  96        58  LOAD_FAST                'tag'
+                  60  LOAD_FAST                'self'
+                  62  LOAD_ATTR                info
+->                64  <118>                 0  ''
+                  66  POP_JUMP_IF_FALSE   124  'to 124'
+Instruction context:
+   
+ L. 166       240  LOAD_FAST                '_im'
+                 242  LOAD_ATTR                im
+                 244  LOAD_FAST                'self'
+                 246  STORE_ATTR               im
+                 248  POP_BLOCK        
+                 250  LOAD_CONST               None
+->               252  DUP_TOP          
+                 254  DUP_TOP          
+                 256  CALL_FUNCTION_3       3  ''
+                 258  POP_TOP          
+                 260  JUMP_FORWARD        280  'to 280'
+               262_0  COME_FROM_WITH      228  '228'
+                 262  <49>             
+             264_266  POP_JUMP_IF_TRUE    270  'to 270'
+                 268  <48>             
+               270_0  COME_FROM           264  '264'
+                 270  POP_TOP          
+                 272  POP_TOP          
+                 274  POP_TOP          
+                 276  POP_EXCEPT       
+                 278  POP_TOP          
+               280_0  COME_FROM           260  '260'
+                 280  POP_BLOCK        
+Instruction context:
+   
+ L. 208       116  DUP_TOP          
+                 118  LOAD_GLOBAL              AttributeError
+                 120  LOAD_GLOBAL              KeyError
+                 122  BUILD_TUPLE_2         2 
+->               124  <121>               136  ''
+                 126  POP_TOP          
+                 128  POP_TOP          
+                 130  POP_TOP          
+
+test/101302.pyc -- 
+# decompile failed
+
+# file test/101302.pyc
+# Deparsing stopped due to parse error

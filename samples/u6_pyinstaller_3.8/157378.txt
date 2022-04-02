@@ -1,0 +1,35 @@
+Instruction context:
+   
+ L.  60        48  DUP_TOP          
+                  50  LOAD_GLOBAL              ImportError
+                  52  COMPARE_OP               exception-match
+                  54  POP_JUMP_IF_FALSE    68  'to 68'
+                  56  POP_TOP          
+->                58  POP_TOP          
+                  60  POP_TOP          
+Instruction context:
+   
+ L. 126       160  LOAD_GLOBAL              getattr
+                 162  LOAD_GLOBAL              sys
+                 164  LOAD_ATTR                modules
+                 166  LOAD_FAST                'module'
+                 168  BINARY_SUBSCR    
+                 170  LOAD_FAST                'symbol'
+                 172  LOAD_CONST               None
+                 174  CALL_FUNCTION_3       3  ''
+                 176  POP_BLOCK        
+->               178  CALL_FINALLY        186  'to 186'
+                 180  RETURN_VALUE     
+               182_0  COME_FROM           126  '126'
+               182_1  COME_FROM           100  '100'
+               182_2  COME_FROM            80  '80'
+                 182  POP_BLOCK        
+                 184  BEGIN_FINALLY    
+               186_0  COME_FROM           178  '178'
+               186_1  COME_FROM_FINALLY    50  '50'
+
+../test/157378.pyc -- 
+# decompile failed
+
+# file ../test/157378.pyc
+# Deparsing stopped due to parse error

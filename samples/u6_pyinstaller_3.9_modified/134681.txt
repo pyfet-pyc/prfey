@@ -1,0 +1,119 @@
+Instruction context:
+   
+ L.  17       106  DUP_TOP          
+                 108  LOAD_NAME                ImportError
+->               110  <121>               122  ''
+                 112  POP_TOP          
+                 114  POP_TOP          
+                 116  POP_TOP          
+
+test/134681.pyc -- 
+# decompile failed
+
+# file test/134681.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('closing',)
+                4  IMPORT_NAME              contextlib
+                6  IMPORT_FROM              closing
+                8  STORE_NAME               closing
+               10  POP_TOP          
+
+ L.   2        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              logging
+               18  STORE_NAME               logging
+
+ L.   4        20  LOAD_CONST               2
+               22  LOAD_CONST               ('properties',)
+               24  IMPORT_NAME              util
+               26  IMPORT_FROM              properties
+               28  STORE_NAME               properties
+               30  POP_TOP          
+
+ L.   5        32  LOAD_CONST               2
+               34  LOAD_CONST               ('KeyringBackend',)
+               36  IMPORT_NAME              backend
+               38  IMPORT_FROM              KeyringBackend
+               40  STORE_NAME               KeyringBackend
+               42  POP_TOP          
+
+ L.   6        44  LOAD_CONST               2
+               46  LOAD_CONST               ('SimpleCredential',)
+               48  IMPORT_NAME              credentials
+               50  IMPORT_FROM              SimpleCredential
+               52  STORE_NAME               SimpleCredential
+               54  POP_TOP          
+
+ L.   7        56  LOAD_CONST               2
+               58  LOAD_CONST               ('InitError', 'PasswordDeleteError', 'ExceptionRaisedContext', 'KeyringLocked')
+               60  IMPORT_NAME              errors
+               62  IMPORT_FROM              InitError
+               64  STORE_NAME               InitError
+               66  IMPORT_FROM              PasswordDeleteError
+               68  STORE_NAME               PasswordDeleteError
+               70  IMPORT_FROM              ExceptionRaisedContext
+               72  STORE_NAME               ExceptionRaisedContext
+               74  IMPORT_FROM              KeyringLocked
+               76  STORE_NAME               KeyringLocked
+               78  POP_TOP          
+
+ L.  14        80  SETUP_FINALLY       106  'to 106'
+
+ L.  15        82  LOAD_CONST               0
+               84  LOAD_CONST               None
+               86  IMPORT_NAME              secretstorage
+               88  STORE_NAME               secretstorage
+
+ L.  16        90  LOAD_CONST               0
+               92  LOAD_CONST               None
+               94  IMPORT_NAME_ATTR         secretstorage.exceptions
+               96  IMPORT_FROM              exceptions
+               98  STORE_NAME               exceptions
+              100  POP_TOP          
+              102  POP_BLOCK        
+              104  JUMP_FORWARD        140  'to 140'
+            106_0  COME_FROM_FINALLY    80  '80'
+
+ L.  17       106  DUP_TOP          
+              108  LOAD_NAME                ImportError
+              110  <121>               122  ''
+              112  POP_TOP          
+              114  POP_TOP          
+              116  POP_TOP          
+
+ L.  18       118  POP_EXCEPT       
+              120  JUMP_FORWARD        140  'to 140'
+
+ L.  19       122  DUP_TOP          
+              124  LOAD_NAME                AttributeError
+              126  <121>               138  ''
+              128  POP_TOP          
+              130  POP_TOP          
+              132  POP_TOP          
+
+ L.  21       134  POP_EXCEPT       
+              136  JUMP_FORWARD        140  'to 140'
+              138  <48>             
+            140_0  COME_FROM           136  '136'
+            140_1  COME_FROM           120  '120'
+            140_2  COME_FROM           104  '104'
+
+ L.  23       140  LOAD_NAME                logging
+              142  LOAD_METHOD              getLogger
+              144  LOAD_NAME                __name__
+              146  CALL_METHOD_1         1  ''
+              148  STORE_NAME               log
+
+ L.  26       150  LOAD_BUILD_CLASS 
+              152  LOAD_CODE                <code_object Keyring>
+              154  LOAD_STR                 'Keyring'
+              156  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              158  LOAD_STR                 'Keyring'
+              160  LOAD_NAME                KeyringBackend
+              162  CALL_FUNCTION_3       3  ''
+              164  STORE_NAME               Keyring
+
+Parse error at or near `<121>' instruction at offset 110
+

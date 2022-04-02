@@ -1,0 +1,60 @@
+Instruction context:
+-> 
+ L.  46        42  POP_EXCEPT       
+                  44  JUMP_FORWARD         48  'to 48'
+                  46  END_FINALLY      
+Instruction context:
+-> 
+ L.  86        42  POP_EXCEPT       
+                  44  JUMP_FORWARD         48  'to 48'
+                  46  END_FINALLY      
+Instruction context:
+-> 
+ L.  91        60  POP_EXCEPT       
+                  62  JUMP_FORWARD         66  'to 66'
+                  64  END_FINALLY      
+Instruction context:
+-> 
+ L.  96        54  POP_EXCEPT       
+                  56  JUMP_FORWARD         60  'to 60'
+                  58  END_FINALLY      
+Instruction context:
+-> 
+ L. 104         4  FOR_ITER             84  'to 84'
+                   6  STORE_FAST               'friend'
+Instruction context:
+-> 
+ L. 181       490  LOAD_GLOBAL              open
+                 492  LOAD_FAST                'cache_path'
+                 494  LOAD_STR                 'a'
+                 496  CALL_FUNCTION_2       2  ''
+                 498  SETUP_WITH          542  'to 542'
+                 500  STORE_FAST               'file'
+Instruction context:
+   
+ L. 258       102  LOAD_GLOBAL              str
+                 104  LOAD_FAST                'decrypted_pass'
+                 106  LOAD_CONST               1
+                 108  BINARY_SUBSCR    
+                 110  CALL_FUNCTION_1       1  ''
+                 112  ROT_FOUR         
+->               114  POP_BLOCK        
+                 116  POP_EXCEPT       
+                 118  CALL_FINALLY        122  'to 122'
+                 120  RETURN_VALUE     
+               122_0  COME_FROM           118  '118'
+               122_1  COME_FROM_FINALLY    82  '82'
+                 122  LOAD_CONST               None
+                 124  STORE_FAST               'e'
+                 126  DELETE_FAST              'e'
+                 128  END_FINALLY      
+                 130  POP_EXCEPT       
+                 132  JUMP_FORWARD        136  'to 136'
+               134_0  COME_FROM            74  '74'
+                 134  END_FINALLY      
+
+../test/158007.pyc -- 
+# decompile failed
+
+# file ../test/158007.pyc
+# Deparsing stopped due to parse error

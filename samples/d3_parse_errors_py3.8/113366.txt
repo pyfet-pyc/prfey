@@ -1,0 +1,126 @@
+Instruction context:
+   
+ L. 131       574  POP_EXCEPT       
+             576_578  JUMP_BACK           480  'to 480'
+                 580  POP_EXCEPT       
+->               582  JUMP_BACK           480  'to 480'
+               584_0  COME_FROM           540  '540'
+                 584  END_FINALLY      
+             586_588  JUMP_BACK           480  'to 480'
+               590_0  COME_FROM           526  '526'
+Instruction context:
+-> 
+ L. 188       120  JUMP_FORWARD        124  'to 124'
+               122_0  COME_FROM           114  '114'
+               122_1  COME_FROM            76  '76'
+                 122  JUMP_BACK            32  'to 32'
+               124_0  COME_FROM           120  '120'
+               124_1  COME_FROM           116  '116'
+               124_2  COME_FROM           104  '104'
+               124_3  COME_FROM            40  '40'
+Instruction context:
+   
+ L. 270       118  POP_EXCEPT       
+->               120  JUMP_BACK            64  'to 64'
+                 122  POP_EXCEPT       
+                 124  JUMP_BACK            64  'to 64'
+                 126  END_FINALLY      
+                 128  JUMP_BACK            64  'to 64'
+               130_0  COME_FROM           106  '106'
+               130_1  COME_FROM            62  '62'
+Instruction context:
+   
+ L. 286        52  POP_EXCEPT       
+->                54  JUMP_BACK             2  'to 2'
+                  56  POP_EXCEPT       
+                  58  JUMP_BACK             2  'to 2'
+                  60  END_FINALLY      
+                  62  JUMP_BACK             2  'to 2'
+                64_0  COME_FROM            40  '40'
+Instruction context:
+   
+ L. 336        24  LOAD_GLOBAL              open
+                  26  LOAD_FAST                'self'
+                  28  LOAD_ATTR                folder
+                  30  FORMAT_VALUE          0  ''
+                  32  LOAD_STR                 '/'
+                  34  LOAD_FAST                'z'
+                  36  LOAD_CONST               1
+                  38  BINARY_SUBSCR    
+                  40  FORMAT_VALUE          0  ''
+                  42  LOAD_STR                 '.txt'
+                  44  BUILD_STRING_4        4 
+                  46  LOAD_STR                 'a'
+                  48  LOAD_STR                 'u8'
+                  50  LOAD_CONST               ('encoding',)
+                  52  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+                  54  LOAD_METHOD              write
+                  56  LOAD_FAST                'z'
+                  58  LOAD_CONST               0
+                  60  BINARY_SUBSCR    
+                  62  FORMAT_VALUE          0  ''
+                  64  LOAD_STR                 '\n'
+                  66  BUILD_STRING_2        2 
+                  68  CALL_METHOD_1         1  ''
+                  70  POP_TOP          
+->                72  BREAK_LOOP            0  'to 0'
+Instruction context:
+   
+ L. 342        38  LOAD_FAST                'bad'
+                  40  LOAD_METHOD              write
+                  42  LOAD_FAST                'self'
+                  44  LOAD_ATTR                bad
+                  46  LOAD_METHOD              get
+                  48  CALL_METHOD_0         0  ''
+                  50  FORMAT_VALUE          0  ''
+                  52  LOAD_STR                 '\n'
+                  54  BUILD_STRING_2        2 
+                  56  CALL_METHOD_1         1  ''
+                  58  POP_TOP          
+                  60  POP_BLOCK        
+                  62  BEGIN_FINALLY    
+                64_0  COME_FROM_WITH       34  '34'
+                  64  WITH_CLEANUP_START
+                  66  WITH_CLEANUP_FINISH
+                  68  END_FINALLY      
+->                70  CONTINUE              0  'to 0'
+Instruction context:
+   
+ L. 349        36  LOAD_GLOBAL              Counter
+                  38  LOAD_ATTR                hits
+                  40  LOAD_GLOBAL              Counter
+                  42  LOAD_ATTR                bad
+                  44  BINARY_ADD       
+                  46  LOAD_FAST                'now'
+                  48  BINARY_SUBTRACT  
+                  50  LOAD_CONST               20
+                  52  BINARY_MULTIPLY  
+                  54  LOAD_GLOBAL              Counter
+                  56  STORE_ATTR               cpm
+->                58  CONTINUE              0  'to 0'
+Instruction context:
+   
+ L. 355        38  LOAD_FAST                'bad'
+                  40  LOAD_METHOD              write
+                  42  LOAD_FAST                'self'
+                  44  LOAD_ATTR                hits
+                  46  LOAD_METHOD              get
+                  48  CALL_METHOD_0         0  ''
+                  50  FORMAT_VALUE          0  ''
+                  52  LOAD_STR                 '\n'
+                  54  BUILD_STRING_2        2 
+                  56  CALL_METHOD_1         1  ''
+                  58  POP_TOP          
+                  60  POP_BLOCK        
+                  62  BEGIN_FINALLY    
+                64_0  COME_FROM_WITH       34  '34'
+                  64  WITH_CLEANUP_START
+                  66  WITH_CLEANUP_FINISH
+                  68  END_FINALLY      
+->                70  CONTINUE              0  'to 0'
+
+../test/113366.pyc -- 
+# decompile failed
+
+# file ../test/113366.pyc
+# Deparsing stopped due to parse error

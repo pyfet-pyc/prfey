@@ -1,0 +1,29 @@
+Instruction context:
+   
+ L. 525        36  POP_EXCEPT       
+->                38  LOAD_CONST               False
+                  40  RETURN_VALUE     
+                42_0  COME_FROM            28  '28'
+Instruction context:
+   
+ L. 807       252  LOAD_FAST                'self'
+                 254  LOAD_METHOD              send_error_message
+                 256  LOAD_FAST                'string'
+                 258  CALL_METHOD_1         1  ''
+                 260  GET_AWAITABLE    
+                 262  LOAD_CONST               None
+                 264  YIELD_FROM       
+                 266  ROT_FOUR         
+                 268  POP_EXCEPT       
+->               270  ROT_TWO          
+                 272  POP_TOP          
+                 274  RETURN_VALUE     
+               276_0  COME_FROM           216  '216'
+                 276  END_FINALLY      
+               278_0  COME_FROM           208  '208'
+
+../test/118003.pyc -- 
+# decompile failed
+
+# file ../test/118003.pyc
+# Deparsing stopped due to parse error

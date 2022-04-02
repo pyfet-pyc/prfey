@@ -1,0 +1,58 @@
+Instruction context:
+   
+ L.   7         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('body_line_iterator', 'typed_subpart_iterator', 'walk')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101221.pyc -- 
+# decompile failed
+
+# file test/101221.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_STR                 'Various types of useful iterators and generators.'
+                2  STORE_NAME               __doc__
+
+ L.   7         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('body_line_iterator', 'typed_subpart_iterator', 'walk')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  14        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L.  15        20  LOAD_CONST               0
+               22  LOAD_CONST               ('StringIO',)
+               24  IMPORT_NAME              io
+               26  IMPORT_FROM              StringIO
+               28  STORE_NAME               StringIO
+               30  POP_TOP          
+
+ L.  20        32  LOAD_CODE                <code_object walk>
+               34  LOAD_STR                 'walk'
+               36  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               38  STORE_NAME               walk
+
+ L.  34        40  LOAD_CONST               (False,)
+               42  LOAD_CODE                <code_object body_line_iterator>
+               44  LOAD_STR                 'body_line_iterator'
+               46  MAKE_FUNCTION_1          'default'
+               48  STORE_NAME               body_line_iterator
+
+ L.  45        50  LOAD_CONST               ('text', None)
+               52  LOAD_CODE                <code_object typed_subpart_iterator>
+               54  LOAD_STR                 'typed_subpart_iterator'
+               56  MAKE_FUNCTION_1          'default'
+               58  STORE_NAME               typed_subpart_iterator
+
+ L.  59        60  LOAD_CONST               (None, 0, False)
+               62  LOAD_CODE                <code_object _structure>
+               64  LOAD_STR                 '_structure'
+               66  MAKE_FUNCTION_1          'default'
+               68  STORE_NAME               _structure
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

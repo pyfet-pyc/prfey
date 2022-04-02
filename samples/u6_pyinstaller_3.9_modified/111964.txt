@@ -1,0 +1,407 @@
+
+# file test/111964.pyc
+# --- This code section failed: ---
+
+ L.   6         0  LOAD_STR                 'Utilities for determining application-specific dirs.\n\nSee <http://github.com/ActiveState/appdirs> for details and usage.\n'
+                2  STORE_NAME               __doc__
+
+ L.  16         4  LOAD_CONST               (1, 4, 3)
+                6  STORE_NAME               __version_info__
+
+ L.  17         8  LOAD_STR                 '.'
+               10  LOAD_METHOD              join
+               12  LOAD_NAME                map
+               14  LOAD_NAME                str
+               16  LOAD_NAME                __version_info__
+               18  CALL_FUNCTION_2       2  ''
+               20  CALL_METHOD_1         1  ''
+               22  STORE_NAME               __version__
+
+ L.  20        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              sys
+               30  STORE_NAME               sys
+
+ L.  21        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              os
+               38  STORE_NAME               os
+
+ L.  23        40  LOAD_NAME                sys
+               42  LOAD_ATTR                version_info
+               44  LOAD_CONST               0
+               46  BINARY_SUBSCR    
+               48  LOAD_CONST               3
+               50  COMPARE_OP               ==
+               52  STORE_NAME               PY3
+
+ L.  25        54  LOAD_NAME                PY3
+               56  POP_JUMP_IF_FALSE    62  'to 62'
+
+ L.  26        58  LOAD_NAME                str
+               60  STORE_NAME               unicode
+             62_0  COME_FROM            56  '56'
+
+ L.  28        62  LOAD_NAME                sys
+               64  LOAD_ATTR                platform
+               66  LOAD_METHOD              startswith
+               68  LOAD_STR                 'java'
+               70  CALL_METHOD_1         1  ''
+               72  POP_JUMP_IF_FALSE   136  'to 136'
+
+ L.  29        74  LOAD_CONST               0
+               76  LOAD_CONST               None
+               78  IMPORT_NAME              platform
+               80  STORE_NAME               platform
+
+ L.  30        82  LOAD_NAME                platform
+               84  LOAD_METHOD              java_ver
+               86  CALL_METHOD_0         0  ''
+               88  LOAD_CONST               3
+               90  BINARY_SUBSCR    
+               92  LOAD_CONST               0
+               94  BINARY_SUBSCR    
+               96  STORE_NAME               os_name
+
+ L.  31        98  LOAD_NAME                os_name
+              100  LOAD_METHOD              startswith
+              102  LOAD_STR                 'Windows'
+              104  CALL_METHOD_1         1  ''
+              106  POP_JUMP_IF_FALSE   114  'to 114'
+
+ L.  32       108  LOAD_STR                 'win32'
+              110  STORE_NAME               system
+              112  JUMP_ABSOLUTE       142  'to 142'
+            114_0  COME_FROM           106  '106'
+
+ L.  33       114  LOAD_NAME                os_name
+              116  LOAD_METHOD              startswith
+              118  LOAD_STR                 'Mac'
+              120  CALL_METHOD_1         1  ''
+              122  POP_JUMP_IF_FALSE   130  'to 130'
+
+ L.  34       124  LOAD_STR                 'darwin'
+              126  STORE_NAME               system
+              128  JUMP_ABSOLUTE       142  'to 142'
+            130_0  COME_FROM           122  '122'
+
+ L.  39       130  LOAD_STR                 'linux2'
+              132  STORE_NAME               system
+              134  JUMP_FORWARD        142  'to 142'
+            136_0  COME_FROM            72  '72'
+
+ L.  41       136  LOAD_NAME                sys
+              138  LOAD_ATTR                platform
+              140  STORE_NAME               system
+            142_0  COME_FROM           134  '134'
+
+ L.  45       142  LOAD_CONST               (None, None, None, False)
+              144  LOAD_CODE                <code_object user_data_dir>
+              146  LOAD_STR                 'user_data_dir'
+              148  MAKE_FUNCTION_1          'default'
+              150  STORE_NAME               user_data_dir
+
+ L. 100       152  LOAD_CONST               (None, None, None, False)
+              154  LOAD_CODE                <code_object site_data_dir>
+              156  LOAD_STR                 'site_data_dir'
+              158  MAKE_FUNCTION_1          'default'
+              160  STORE_NAME               site_data_dir
+
+ L. 166       162  LOAD_CONST               (None, None, None, False)
+              164  LOAD_CODE                <code_object user_config_dir>
+              166  LOAD_STR                 'user_config_dir'
+              168  MAKE_FUNCTION_1          'default'
+              170  STORE_NAME               user_config_dir
+
+ L. 206       172  LOAD_CONST               (None, None, None, False)
+              174  LOAD_CODE                <code_object site_config_dir>
+              176  LOAD_STR                 'site_config_dir'
+              178  MAKE_FUNCTION_1          'default'
+              180  STORE_NAME               site_config_dir
+
+ L. 257       182  LOAD_CONST               (None, None, None, True)
+              184  LOAD_CODE                <code_object user_cache_dir>
+              186  LOAD_STR                 'user_cache_dir'
+              188  MAKE_FUNCTION_1          'default'
+              190  STORE_NAME               user_cache_dir
+
+ L. 314       192  LOAD_CONST               (None, None, None, False)
+              194  LOAD_CODE                <code_object user_state_dir>
+              196  LOAD_STR                 'user_state_dir'
+              198  MAKE_FUNCTION_1          'default'
+              200  STORE_NAME               user_state_dir
+
+ L. 356       202  LOAD_CONST               (None, None, None, True)
+              204  LOAD_CODE                <code_object user_log_dir>
+              206  LOAD_STR                 'user_log_dir'
+              208  MAKE_FUNCTION_1          'default'
+              210  STORE_NAME               user_log_dir
+
+ L. 407       212  LOAD_BUILD_CLASS 
+              214  LOAD_CODE                <code_object AppDirs>
+              216  LOAD_STR                 'AppDirs'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  LOAD_STR                 'AppDirs'
+              222  LOAD_NAME                object
+              224  CALL_FUNCTION_3       3  ''
+              226  STORE_NAME               AppDirs
+
+ L. 455       228  LOAD_CODE                <code_object _get_win_folder_from_registry>
+              230  LOAD_STR                 '_get_win_folder_from_registry'
+              232  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              234  STORE_NAME               _get_win_folder_from_registry
+
+ L. 479       236  LOAD_CODE                <code_object _get_win_folder_with_pywin32>
+              238  LOAD_STR                 '_get_win_folder_with_pywin32'
+              240  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              242  STORE_NAME               _get_win_folder_with_pywin32
+
+ L. 506       244  LOAD_CODE                <code_object _get_win_folder_with_ctypes>
+              246  LOAD_STR                 '_get_win_folder_with_ctypes'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  STORE_NAME               _get_win_folder_with_ctypes
+
+ L. 532       252  LOAD_CODE                <code_object _get_win_folder_with_jna>
+              254  LOAD_STR                 '_get_win_folder_with_jna'
+              256  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              258  STORE_NAME               _get_win_folder_with_jna
+
+ L. 558       260  LOAD_NAME                system
+              262  LOAD_STR                 'win32'
+              264  COMPARE_OP               ==
+          266_268  POP_JUMP_IF_FALSE   392  'to 392'
+
+ L. 559       270  SETUP_FINALLY       288  'to 288'
+
+ L. 560       272  LOAD_CONST               0
+              274  LOAD_CONST               None
+              276  IMPORT_NAME_ATTR         win32com.shell
+              278  STORE_NAME               win32com
+
+ L. 561       280  LOAD_NAME                _get_win_folder_with_pywin32
+              282  STORE_NAME               _get_win_folder
+              284  POP_BLOCK        
+              286  JUMP_FORWARD        392  'to 392'
+            288_0  COME_FROM_FINALLY   270  '270'
+
+ L. 562       288  DUP_TOP          
+              290  LOAD_NAME                ImportError
+          292_294  <121>               390  ''
+              296  POP_TOP          
+              298  POP_TOP          
+              300  POP_TOP          
+
+ L. 563       302  SETUP_FINALLY       324  'to 324'
+
+ L. 564       304  LOAD_CONST               0
+              306  LOAD_CONST               ('windll',)
+              308  IMPORT_NAME              ctypes
+              310  IMPORT_FROM              windll
+              312  STORE_NAME               windll
+              314  POP_TOP          
+
+ L. 565       316  LOAD_NAME                _get_win_folder_with_ctypes
+              318  STORE_NAME               _get_win_folder
+              320  POP_BLOCK        
+              322  JUMP_FORWARD        386  'to 386'
+            324_0  COME_FROM_FINALLY   302  '302'
+
+ L. 566       324  DUP_TOP          
+              326  LOAD_NAME                ImportError
+          328_330  <121>               384  ''
+              332  POP_TOP          
+              334  POP_TOP          
+              336  POP_TOP          
+
+ L. 567       338  SETUP_FINALLY       356  'to 356'
+
+ L. 568       340  LOAD_CONST               0
+              342  LOAD_CONST               None
+              344  IMPORT_NAME_ATTR         com.sun.jna
+              346  STORE_NAME               com
+
+ L. 569       348  LOAD_NAME                _get_win_folder_with_jna
+              350  STORE_NAME               _get_win_folder
+              352  POP_BLOCK        
+              354  JUMP_FORWARD        380  'to 380'
+            356_0  COME_FROM_FINALLY   338  '338'
+
+ L. 570       356  DUP_TOP          
+              358  LOAD_NAME                ImportError
+          360_362  <121>               378  ''
+              364  POP_TOP          
+              366  POP_TOP          
+              368  POP_TOP          
+
+ L. 571       370  LOAD_NAME                _get_win_folder_from_registry
+              372  STORE_NAME               _get_win_folder
+              374  POP_EXCEPT       
+              376  JUMP_FORWARD        380  'to 380'
+              378  <48>             
+            380_0  COME_FROM           376  '376'
+            380_1  COME_FROM           354  '354'
+              380  POP_EXCEPT       
+              382  JUMP_FORWARD        386  'to 386'
+              384  <48>             
+            386_0  COME_FROM           382  '382'
+            386_1  COME_FROM           322  '322'
+              386  POP_EXCEPT       
+              388  JUMP_FORWARD        392  'to 392'
+              390  <48>             
+            392_0  COME_FROM           388  '388'
+            392_1  COME_FROM           286  '286'
+            392_2  COME_FROM           266  '266'
+
+ L. 576       392  LOAD_NAME                __name__
+              394  LOAD_STR                 '__main__'
+              396  COMPARE_OP               ==
+          398_400  POP_JUMP_IF_FALSE   638  'to 638'
+
+ L. 577       402  LOAD_STR                 'MyApp'
+              404  STORE_NAME               appname
+
+ L. 578       406  LOAD_STR                 'MyCompany'
+              408  STORE_NAME               appauthor
+
+ L. 580       410  LOAD_CONST               ('user_data_dir', 'user_config_dir', 'user_cache_dir', 'user_state_dir', 'user_log_dir', 'site_data_dir', 'site_config_dir')
+              412  STORE_NAME               props
+
+ L. 588       414  LOAD_NAME                print
+              416  LOAD_STR                 '-- app dirs %s --'
+              418  LOAD_NAME                __version__
+              420  BINARY_MODULO    
+              422  CALL_FUNCTION_1       1  ''
+              424  POP_TOP          
+
+ L. 590       426  LOAD_NAME                print
+              428  LOAD_STR                 "-- app dirs (with optional 'version')"
+              430  CALL_FUNCTION_1       1  ''
+              432  POP_TOP          
+
+ L. 591       434  LOAD_NAME                AppDirs
+              436  LOAD_NAME                appname
+              438  LOAD_NAME                appauthor
+              440  LOAD_STR                 '1.0'
+              442  LOAD_CONST               ('version',)
+              444  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              446  STORE_NAME               dirs
+
+ L. 592       448  LOAD_NAME                props
+              450  GET_ITER         
+              452  FOR_ITER            482  'to 482'
+              454  STORE_NAME               prop
+
+ L. 593       456  LOAD_NAME                print
+              458  LOAD_STR                 '%s: %s'
+              460  LOAD_NAME                prop
+              462  LOAD_NAME                getattr
+              464  LOAD_NAME                dirs
+              466  LOAD_NAME                prop
+              468  CALL_FUNCTION_2       2  ''
+              470  BUILD_TUPLE_2         2 
+              472  BINARY_MODULO    
+              474  CALL_FUNCTION_1       1  ''
+              476  POP_TOP          
+          478_480  JUMP_BACK           452  'to 452'
+
+ L. 595       482  LOAD_NAME                print
+              484  LOAD_STR                 "\n-- app dirs (without optional 'version')"
+              486  CALL_FUNCTION_1       1  ''
+              488  POP_TOP          
+
+ L. 596       490  LOAD_NAME                AppDirs
+              492  LOAD_NAME                appname
+              494  LOAD_NAME                appauthor
+              496  CALL_FUNCTION_2       2  ''
+              498  STORE_NAME               dirs
+
+ L. 597       500  LOAD_NAME                props
+              502  GET_ITER         
+              504  FOR_ITER            534  'to 534'
+              506  STORE_NAME               prop
+
+ L. 598       508  LOAD_NAME                print
+              510  LOAD_STR                 '%s: %s'
+              512  LOAD_NAME                prop
+              514  LOAD_NAME                getattr
+              516  LOAD_NAME                dirs
+              518  LOAD_NAME                prop
+              520  CALL_FUNCTION_2       2  ''
+              522  BUILD_TUPLE_2         2 
+              524  BINARY_MODULO    
+              526  CALL_FUNCTION_1       1  ''
+              528  POP_TOP          
+          530_532  JUMP_BACK           504  'to 504'
+
+ L. 600       534  LOAD_NAME                print
+              536  LOAD_STR                 "\n-- app dirs (without optional 'appauthor')"
+              538  CALL_FUNCTION_1       1  ''
+              540  POP_TOP          
+
+ L. 601       542  LOAD_NAME                AppDirs
+              544  LOAD_NAME                appname
+              546  CALL_FUNCTION_1       1  ''
+              548  STORE_NAME               dirs
+
+ L. 602       550  LOAD_NAME                props
+              552  GET_ITER         
+              554  FOR_ITER            584  'to 584'
+              556  STORE_NAME               prop
+
+ L. 603       558  LOAD_NAME                print
+              560  LOAD_STR                 '%s: %s'
+              562  LOAD_NAME                prop
+              564  LOAD_NAME                getattr
+              566  LOAD_NAME                dirs
+              568  LOAD_NAME                prop
+              570  CALL_FUNCTION_2       2  ''
+              572  BUILD_TUPLE_2         2 
+              574  BINARY_MODULO    
+              576  CALL_FUNCTION_1       1  ''
+              578  POP_TOP          
+          580_582  JUMP_BACK           554  'to 554'
+
+ L. 605       584  LOAD_NAME                print
+              586  LOAD_STR                 "\n-- app dirs (with disabled 'appauthor')"
+              588  CALL_FUNCTION_1       1  ''
+              590  POP_TOP          
+
+ L. 606       592  LOAD_NAME                AppDirs
+              594  LOAD_NAME                appname
+              596  LOAD_CONST               False
+              598  LOAD_CONST               ('appauthor',)
+              600  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              602  STORE_NAME               dirs
+
+ L. 607       604  LOAD_NAME                props
+              606  GET_ITER         
+              608  FOR_ITER            638  'to 638'
+              610  STORE_NAME               prop
+
+ L. 608       612  LOAD_NAME                print
+              614  LOAD_STR                 '%s: %s'
+              616  LOAD_NAME                prop
+              618  LOAD_NAME                getattr
+              620  LOAD_NAME                dirs
+              622  LOAD_NAME                prop
+              624  CALL_FUNCTION_2       2  ''
+              626  BUILD_TUPLE_2         2 
+              628  BINARY_MODULO    
+              630  CALL_FUNCTION_1       1  ''
+              632  POP_TOP          
+          634_636  JUMP_BACK           608  'to 608'
+            638_0  COME_FROM           398  '398'
+
+Parse error at or near `<121>' instruction at offset 292_294
+
+Instruction context:
+   
+ L. 562       288  DUP_TOP          
+                 290  LOAD_NAME                ImportError
+->           292_294  <121>               390  ''
+                 296  POP_TOP          
+                 298  POP_TOP          
+                 300  POP_TOP          
+
+test/111964.pyc -- 
+# decompile failed

@@ -1,0 +1,156 @@
+
+# file test/101305.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nJPEG quality settings equivalent to the Photoshop settings.\nCan be used when saving JPEG files.\n\nThe following presets are available by default:\n``web_low``, ``web_medium``, ``web_high``, ``web_very_high``, ``web_maximum``,\n``low``, ``medium``, ``high``, ``maximum``.\nMore presets can be added to the :py:data:`presets` dict if needed.\n\nTo apply the preset, specify::\n\n  quality="preset_name"\n\nTo apply only the quantization table::\n\n  qtables="preset_name"\n\nTo apply only the subsampling setting::\n\n  subsampling="preset_name"\n\nExample::\n\n  im.save("image_name.jpg", quality="web_high")\n\nSubsampling\n-----------\n\nSubsampling is the practice of encoding images by implementing less resolution\nfor chroma information than for luma information.\n(ref.: https://en.wikipedia.org/wiki/Chroma_subsampling)\n\nPossible subsampling values are 0, 1 and 2 that correspond to 4:4:4, 4:2:2 and\n4:2:0.\n\nYou can get the subsampling of a JPEG with the\n:func:`.JpegImagePlugin.get_sampling` function.\n\nIn JPEG compressed data a JPEG marker is used instead of an EXIF\xa0tag.\n(ref.: https://www.exiv2.org/tags.html)\n\n\nQuantization tables\n-------------------\n\nThey are values use by the DCT (Discrete cosine transform) to remove\n*unnecessary* information from the image (the lossy part of the compression).\n(ref.: https://en.wikipedia.org/wiki/Quantization_matrix#Quantization_matrices,\nhttps://en.wikipedia.org/wiki/JPEG#Quantization)\n\nYou can get the quantization tables of a JPEG with::\n\n  im.quantization\n\nThis will return a dict with a number of arrays. You can pass this dict\ndirectly as the qtables argument when saving a JPEG.\n\nThe tables format between im.quantization and quantization in presets differ in\n3 ways:\n\n1. The base container of the preset is a list with sublists instead of dict.\n   dict[0] -> list[0], dict[1] -> list[1], ...\n2. Each table in a preset is a list instead of an array.\n3. The zigzag order is remove in the preset (needed by libjpeg >= 6a).\n\nYou can convert the dict format to the preset format with the\n:func:`.JpegImagePlugin.convert_dict_qtables()` function.\n\nLibjpeg ref.:\nhttps://web.archive.org/web/20120328125543/http://www.jpegcameras.com/libjpeg/libjpeg-3.html\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  76         4  LOAD_CONST               2
+
+ L.  78         6  BUILD_LIST_0          0 
+                8  LOAD_CONST               (20, 16, 25, 39, 50, 46, 62, 68, 16, 18, 23, 38, 38, 53, 65, 68, 25, 23, 31, 38, 53, 65, 68, 68, 39, 38, 38, 53, 65, 68, 68, 68, 50, 38, 53, 65, 68, 68, 68, 68, 46, 53, 65, 68, 68, 68, 68, 68, 62, 65, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68)
+               10  CALL_FINALLY         13  'to 13'
+
+ L.  86        12  BUILD_LIST_0          0 
+               14  LOAD_CONST               (21, 25, 32, 38, 54, 68, 68, 68, 25, 28, 24, 38, 54, 68, 68, 68, 32, 24, 32, 43, 66, 68, 68, 68, 38, 38, 43, 53, 68, 68, 68, 68, 54, 54, 66, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68)
+               16  CALL_FINALLY         19  'to 19'
+
+ L.  77        18  BUILD_LIST_2          2 
+
+ L.  76        20  LOAD_CONST               ('subsampling', 'quantization')
+               22  BUILD_CONST_KEY_MAP_2     2 
+
+ L.  95        24  LOAD_CONST               2
+
+ L.  97        26  BUILD_LIST_0          0 
+               28  LOAD_CONST               (16, 11, 11, 16, 23, 27, 31, 30, 11, 12, 12, 15, 20, 23, 23, 30, 11, 12, 13, 16, 23, 26, 35, 47, 16, 15, 16, 23, 26, 37, 47, 64, 23, 20, 23, 26, 39, 51, 64, 64, 27, 23, 26, 37, 51, 64, 64, 64, 31, 23, 35, 47, 64, 64, 64, 64, 30, 30, 47, 64, 64, 64, 64, 64)
+               30  CALL_FINALLY         33  'to 33'
+
+ L. 105        32  BUILD_LIST_0          0 
+               34  LOAD_CONST               (17, 15, 17, 21, 20, 26, 38, 48, 15, 19, 18, 17, 20, 26, 35, 43, 17, 18, 20, 22, 26, 30, 46, 53, 21, 17, 22, 28, 30, 39, 53, 64, 20, 20, 26, 30, 39, 48, 64, 64, 26, 26, 30, 39, 48, 63, 64, 64, 38, 35, 46, 53, 64, 64, 64, 64, 48, 43, 53, 64, 64, 64, 64, 64)
+               36  CALL_FINALLY         39  'to 39'
+
+ L.  96        38  BUILD_LIST_2          2 
+
+ L.  95        40  LOAD_CONST               ('subsampling', 'quantization')
+               42  BUILD_CONST_KEY_MAP_2     2 
+
+ L. 114        44  LOAD_CONST               0
+
+ L. 116        46  BUILD_LIST_0          0 
+               48  LOAD_CONST               (6, 4, 4, 6, 9, 11, 12, 16, 4, 5, 5, 6, 8, 10, 12, 12, 4, 5, 5, 6, 10, 12, 14, 19, 6, 6, 6, 11, 12, 15, 19, 28, 9, 8, 10, 12, 16, 20, 27, 31, 11, 10, 12, 15, 20, 27, 31, 31, 12, 12, 14, 19, 27, 31, 31, 31, 16, 12, 19, 28, 31, 31, 31, 31)
+               50  CALL_FINALLY         53  'to 53'
+
+ L. 124        52  BUILD_LIST_0          0 
+               54  LOAD_CONST               (7, 7, 13, 24, 26, 31, 31, 31, 7, 12, 16, 21, 31, 31, 31, 31, 13, 16, 17, 31, 31, 31, 31, 31, 24, 21, 31, 31, 31, 31, 31, 31, 26, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31)
+               56  CALL_FINALLY         59  'to 59'
+
+ L. 115        58  BUILD_LIST_2          2 
+
+ L. 114        60  LOAD_CONST               ('subsampling', 'quantization')
+               62  BUILD_CONST_KEY_MAP_2     2 
+
+ L. 133        64  LOAD_CONST               0
+
+ L. 135        66  BUILD_LIST_0          0 
+               68  LOAD_CONST               (2, 2, 2, 2, 3, 4, 5, 6, 2, 2, 2, 2, 3, 4, 5, 6, 2, 2, 2, 2, 4, 5, 7, 9, 2, 2, 2, 4, 5, 7, 9, 12, 3, 3, 4, 5, 8, 10, 12, 12, 4, 4, 5, 7, 10, 12, 12, 12, 5, 5, 7, 9, 12, 12, 12, 12, 6, 6, 9, 12, 12, 12, 12, 12)
+               70  CALL_FINALLY         73  'to 73'
+
+ L. 143        72  BUILD_LIST_0          0 
+               74  LOAD_CONST               (3, 3, 5, 9, 13, 15, 15, 15, 3, 4, 6, 11, 14, 12, 12, 12, 5, 6, 9, 14, 12, 12, 12, 12, 9, 11, 14, 12, 12, 12, 12, 12, 13, 14, 12, 12, 12, 12, 12, 12, 15, 12, 12, 12, 12, 12, 12, 12, 15, 12, 12, 12, 12, 12, 12, 12, 15, 12, 12, 12, 12, 12, 12, 12)
+               76  CALL_FINALLY         79  'to 79'
+
+ L. 134        78  BUILD_LIST_2          2 
+
+ L. 133        80  LOAD_CONST               ('subsampling', 'quantization')
+               82  BUILD_CONST_KEY_MAP_2     2 
+
+ L. 152        84  LOAD_CONST               0
+
+ L. 154        86  BUILD_LIST_0          0 
+               88  LOAD_CONST               (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 2, 3, 1, 1, 1, 1, 2, 2, 3, 3, 1, 1, 1, 2, 2, 3, 3, 3, 1, 1, 2, 2, 3, 3, 3, 3)
+               90  CALL_FINALLY         93  'to 93'
+
+ L. 162        92  BUILD_LIST_0          0 
+               94  LOAD_CONST               (1, 1, 1, 2, 2, 3, 3, 3, 1, 1, 1, 2, 3, 3, 3, 3, 1, 1, 1, 3, 3, 3, 3, 3, 2, 2, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3)
+               96  CALL_FINALLY         99  'to 99'
+
+ L. 153        98  BUILD_LIST_2          2 
+
+ L. 152       100  LOAD_CONST               ('subsampling', 'quantization')
+              102  BUILD_CONST_KEY_MAP_2     2 
+
+ L. 171       104  LOAD_CONST               2
+
+ L. 173       106  BUILD_LIST_0          0 
+              108  LOAD_CONST               (18, 14, 14, 21, 30, 35, 34, 17, 14, 16, 16, 19, 26, 23, 12, 12, 14, 16, 17, 21, 23, 12, 12, 12, 21, 19, 21, 23, 12, 12, 12, 12, 30, 26, 23, 12, 12, 12, 12, 12, 35, 23, 12, 12, 12, 12, 12, 12, 34, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12)
+              110  CALL_FINALLY        113  'to 113'
+
+ L. 181       112  BUILD_LIST_0          0 
+              114  LOAD_CONST               (20, 19, 22, 27, 20, 20, 17, 17, 19, 25, 23, 14, 14, 12, 12, 12, 22, 23, 14, 14, 12, 12, 12, 12, 27, 14, 14, 12, 12, 12, 12, 12, 20, 14, 12, 12, 12, 12, 12, 12, 20, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12)
+              116  CALL_FINALLY        119  'to 119'
+
+ L. 172       118  BUILD_LIST_2          2 
+
+ L. 171       120  LOAD_CONST               ('subsampling', 'quantization')
+              122  BUILD_CONST_KEY_MAP_2     2 
+
+ L. 190       124  LOAD_CONST               2
+
+ L. 192       126  BUILD_LIST_0          0 
+              128  LOAD_CONST               (12, 8, 8, 12, 17, 21, 24, 17, 8, 9, 9, 11, 15, 19, 12, 12, 8, 9, 10, 12, 19, 12, 12, 12, 12, 11, 12, 21, 12, 12, 12, 12, 17, 15, 19, 12, 12, 12, 12, 12, 21, 19, 12, 12, 12, 12, 12, 12, 24, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12)
+              130  CALL_FINALLY        133  'to 133'
+
+ L. 200       132  BUILD_LIST_0          0 
+              134  LOAD_CONST               (13, 11, 13, 16, 20, 20, 17, 17, 11, 14, 14, 14, 14, 12, 12, 12, 13, 14, 14, 14, 12, 12, 12, 12, 16, 14, 14, 12, 12, 12, 12, 12, 20, 14, 12, 12, 12, 12, 12, 12, 20, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12)
+              136  CALL_FINALLY        139  'to 139'
+
+ L. 191       138  BUILD_LIST_2          2 
+
+ L. 190       140  LOAD_CONST               ('subsampling', 'quantization')
+              142  BUILD_CONST_KEY_MAP_2     2 
+
+ L. 209       144  LOAD_CONST               0
+
+ L. 211       146  BUILD_LIST_0          0 
+              148  LOAD_CONST               (6, 4, 4, 6, 9, 11, 12, 16, 4, 5, 5, 6, 8, 10, 12, 12, 4, 5, 5, 6, 10, 12, 12, 12, 6, 6, 6, 11, 12, 12, 12, 12, 9, 8, 10, 12, 12, 12, 12, 12, 11, 10, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 16, 12, 12, 12, 12, 12, 12, 12)
+              150  CALL_FINALLY        153  'to 153'
+
+ L. 219       152  BUILD_LIST_0          0 
+              154  LOAD_CONST               (7, 7, 13, 24, 20, 20, 17, 17, 7, 12, 16, 14, 14, 12, 12, 12, 13, 16, 14, 14, 12, 12, 12, 12, 24, 14, 14, 12, 12, 12, 12, 12, 20, 14, 12, 12, 12, 12, 12, 12, 20, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12)
+              156  CALL_FINALLY        159  'to 159'
+
+ L. 210       158  BUILD_LIST_2          2 
+
+ L. 209       160  LOAD_CONST               ('subsampling', 'quantization')
+              162  BUILD_CONST_KEY_MAP_2     2 
+
+ L. 228       164  LOAD_CONST               0
+
+ L. 230       166  BUILD_LIST_0          0 
+              168  LOAD_CONST               (2, 2, 2, 2, 3, 4, 5, 6, 2, 2, 2, 2, 3, 4, 5, 6, 2, 2, 2, 2, 4, 5, 7, 9, 2, 2, 2, 4, 5, 7, 9, 12, 3, 3, 4, 5, 8, 10, 12, 12, 4, 4, 5, 7, 10, 12, 12, 12, 5, 5, 7, 9, 12, 12, 12, 12, 6, 6, 9, 12, 12, 12, 12, 12)
+              170  CALL_FINALLY        173  'to 173'
+
+ L. 238       172  BUILD_LIST_0          0 
+              174  LOAD_CONST               (3, 3, 5, 9, 13, 15, 15, 15, 3, 4, 6, 10, 14, 12, 12, 12, 5, 6, 9, 14, 12, 12, 12, 12, 9, 10, 14, 12, 12, 12, 12, 12, 13, 14, 12, 12, 12, 12, 12, 12, 15, 12, 12, 12, 12, 12, 12, 12, 15, 12, 12, 12, 12, 12, 12, 12, 15, 12, 12, 12, 12, 12, 12, 12)
+              176  CALL_FINALLY        179  'to 179'
+
+ L. 229       178  BUILD_LIST_2          2 
+
+ L. 228       180  LOAD_CONST               ('subsampling', 'quantization')
+              182  BUILD_CONST_KEY_MAP_2     2 
+
+ L.  75       184  LOAD_CONST               ('web_low', 'web_medium', 'web_high', 'web_very_high', 'web_maximum', 'low', 'medium', 'high', 'maximum')
+              186  BUILD_CONST_KEY_MAP_9     9 
+              188  STORE_NAME               presets
+
+Parse error at or near `CALL_FINALLY' instruction at offset 10
+
+Instruction context:
+   
+ L.  78         6  BUILD_LIST_0          0 
+                   8  LOAD_CONST               (20, 16, 25, 39, 50, 46, 62, 68, 16, 18, 23, 38, 38, 53, 65, 68, 25, 23, 31, 38, 53, 65, 68, 68, 39, 38, 38, 53, 65, 68, 68, 68, 50, 38, 53, 65, 68, 68, 68, 68, 46, 53, 65, 68, 68, 68, 68, 68, 62, 65, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68, 68)
+->                10  CALL_FINALLY         13  'to 13'
+
+test/101305.pyc -- 
+# decompile failed

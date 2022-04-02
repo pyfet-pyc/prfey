@@ -1,0 +1,76 @@
+Instruction context:
+   
+ L.  15        52  BUILD_LIST_0          0 
+                  54  LOAD_CONST               ('get_package_name', 'run_module_suite', 'NoseTester', '_numpy_tester', 'get_package_name', 'import_nose', 'suppress_warnings')
+->                56  CALL_FINALLY         59  'to 59'
+                  58  STORE_NAME               __all__
+
+test/2042.pyc -- 
+# decompile failed
+
+# file test/2042.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nNose test running.\n\nThis module implements ``test()`` and ``bench()`` functions for NumPy modules.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.   7         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.   8        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L.   9        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              warnings
+               26  STORE_NAME               warnings
+
+ L.  10        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              numpy
+               34  STORE_NAME               np
+
+ L.  12        36  LOAD_CONST               1
+               38  LOAD_CONST               ('import_nose', 'suppress_warnings')
+               40  IMPORT_NAME              utils
+               42  IMPORT_FROM              import_nose
+               44  STORE_NAME               import_nose
+               46  IMPORT_FROM              suppress_warnings
+               48  STORE_NAME               suppress_warnings
+               50  POP_TOP          
+
+ L.  15        52  BUILD_LIST_0          0 
+               54  LOAD_CONST               ('get_package_name', 'run_module_suite', 'NoseTester', '_numpy_tester', 'get_package_name', 'import_nose', 'suppress_warnings')
+               56  CALL_FINALLY         59  'to 59'
+               58  STORE_NAME               __all__
+
+ L.  20        60  LOAD_CODE                <code_object get_package_name>
+               62  LOAD_STR                 'get_package_name'
+               64  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               66  STORE_NAME               get_package_name
+
+ L.  61        68  LOAD_CONST               (None, None)
+               70  LOAD_CODE                <code_object run_module_suite>
+               72  LOAD_STR                 'run_module_suite'
+               74  MAKE_FUNCTION_1          'default'
+               76  STORE_NAME               run_module_suite
+
+ L. 112        78  LOAD_BUILD_CLASS 
+               80  LOAD_CODE                <code_object NoseTester>
+               82  LOAD_STR                 'NoseTester'
+               84  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               86  LOAD_STR                 'NoseTester'
+               88  CALL_FUNCTION_2       2  ''
+               90  STORE_NAME               NoseTester
+
+ L. 539        92  LOAD_CODE                <code_object _numpy_tester>
+               94  LOAD_STR                 '_numpy_tester'
+               96  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               98  STORE_NAME               _numpy_tester
+
+Parse error at or near `CALL_FINALLY' instruction at offset 56
+

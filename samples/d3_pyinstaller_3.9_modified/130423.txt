@@ -1,0 +1,269 @@
+Instruction context:
+   
+ L.  85       140  LOAD_STR                 '='
+                 142  LOAD_FAST                'f'
+->               144  <118>                 0  ''
+                 146  POP_JUMP_IF_FALSE   202  'to 202'
+Instruction context:
+   
+ L. 152        12  LOAD_FAST                'policy'
+                  14  LOAD_CONST               None
+->                16  <117>                 0  ''
+                  18  POP_JUMP_IF_FALSE    26  'to 26'
+                  20  LOAD_FAST                'self'
+                  22  LOAD_ATTR                policy
+                  24  JUMP_FORWARD         28  'to 28'
+                26_0  COME_FROM            18  '18'
+                  26  LOAD_FAST                'policy'
+                28_0  COME_FROM            24  '24'
+                  28  STORE_FAST               'policy'
+Instruction context:
+   
+ L. 175        12  LOAD_FAST                'policy'
+                  14  LOAD_CONST               None
+->                16  <117>                 0  ''
+                  18  POP_JUMP_IF_FALSE    26  'to 26'
+                  20  LOAD_FAST                'self'
+                  22  LOAD_ATTR                policy
+                  24  JUMP_FORWARD         28  'to 28'
+                26_0  COME_FROM            18  '18'
+                  26  LOAD_FAST                'policy'
+                28_0  COME_FROM            24  '24'
+                  28  STORE_FAST               'policy'
+Instruction context:
+   
+ L. 250        16  LOAD_FAST                'i'
+                  18  LOAD_CONST               None
+->                20  <117>                 0  ''
+                  22  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L. 310        10  LOAD_FAST                'charset'
+                  12  LOAD_CONST               None
+->                14  <117>                 0  ''
+                  16  POP_JUMP_IF_FALSE    28  'to 28'
+Instruction context:
+   
+ L. 537        20  LOAD_FAST                'v'
+                  22  LOAD_CONST               None
+->                24  <117>                 0  ''
+                  26  POP_JUMP_IF_FALSE    48  'to 48'
+Instruction context:
+   
+ L. 558        80  LOAD_GLOBAL              KeyError
+                  82  LOAD_FAST                '_name'
+                  84  CALL_FUNCTION_1       1  ''
+->                86  RAISE_VARARGS_1       1  'exception instance'
+Instruction context:
+   
+ L. 579        18  LOAD_FAST                'value'
+                  20  LOAD_FAST                'missing'
+->                22  <117>                 0  ''
+                  24  POP_JUMP_IF_FALSE    34  'to 34'
+Instruction context:
+   
+ L. 629        18  LOAD_FAST                'value'
+                  20  LOAD_FAST                'missing'
+->                22  <117>                 0  ''
+                  24  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L. 660        18  LOAD_FAST                'params'
+                  20  LOAD_FAST                'missing'
+->                22  <117>                 0  ''
+                  24  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L. 722        24  LOAD_FAST                'header'
+                  26  LOAD_FAST                'self'
+->                28  <118>                 1  ''
+                  30  POP_JUMP_IF_FALSE    50  'to 50'
+                  32  LOAD_FAST                'header'
+                  34  LOAD_METHOD              lower
+                  36  CALL_METHOD_0         0  ''
+                  38  LOAD_STR                 'content-type'
+                  40  COMPARE_OP               ==
+                  42  POP_JUMP_IF_FALSE    50  'to 50'
+Instruction context:
+   
+ L. 796        44  LOAD_FAST                'header'
+                  46  LOAD_FAST                'self'
+->                48  <118>                 1  ''
+                  50  POP_JUMP_IF_FALSE    64  'to 64'
+Instruction context:
+   
+ L. 816        20  LOAD_FAST                'filename'
+                  22  LOAD_FAST                'missing'
+->                24  <117>                 0  ''
+                  26  POP_JUMP_IF_FALSE    42  'to 42'
+Instruction context:
+   
+ L. 830        18  LOAD_FAST                'boundary'
+                  20  LOAD_FAST                'missing'
+->                22  <117>                 0  ''
+                  24  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L. 847        18  LOAD_FAST                'params'
+                  20  LOAD_FAST                'missing'
+->                22  <117>                 0  ''
+                  24  POP_JUMP_IF_FALSE    36  'to 36'
+Instruction context:
+   
+ L. 890        18  LOAD_FAST                'charset'
+                  20  LOAD_FAST                'missing'
+->                22  <117>                 0  ''
+                  24  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L. 936        10  LOAD_FAST                'value'
+                  12  LOAD_CONST               None
+->                14  <117>                 0  ''
+                  16  POP_JUMP_IF_FALSE    22  'to 22'
+Instruction context:
+   
+ L.1026        66  BUILD_SET_0           0 
+                  68  LOAD_CONST               frozenset({('multipart', 'related'), ('text', 'html'), ('text', 'plain'), ('multipart', 'alternative')})
+->                70  POP_FINALLY           1  ''
+                  72  STORE_NAME               _body_types
+
+test/130423.pyc -- 
+# decompile failed
+
+# file test/130423.pyc
+# --- This code section failed: ---
+
+ L. 945         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'MIMEPart'
+                6  STORE_NAME               __qualname__
+
+ L. 947         8  LOAD_CONST               (None,)
+               10  LOAD_CODE                <code_object __init__>
+               12  LOAD_STR                 'MIMEPart.__init__'
+               14  MAKE_FUNCTION_1          'default'
+               16  STORE_NAME               __init__
+
+ L. 954        18  LOAD_CONST               (False, None, None)
+               20  LOAD_CLOSURE             '__class__'
+               22  BUILD_TUPLE_1         1 
+               24  LOAD_CODE                <code_object as_string>
+               26  LOAD_STR                 'MIMEPart.as_string'
+               28  MAKE_FUNCTION_9          'default, closure'
+               30  STORE_NAME               as_string
+
+ L. 970        32  LOAD_CODE                <code_object __str__>
+               34  LOAD_STR                 'MIMEPart.__str__'
+               36  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               38  STORE_NAME               __str__
+
+ L. 973        40  LOAD_CODE                <code_object is_attachment>
+               42  LOAD_STR                 'MIMEPart.is_attachment'
+               44  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               46  STORE_NAME               is_attachment
+
+ L. 977        48  LOAD_CODE                <code_object _find_body>
+               50  LOAD_STR                 'MIMEPart._find_body'
+               52  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               54  STORE_NAME               _find_body
+
+ L.1006        56  LOAD_CONST               (('related', 'html', 'plain'),)
+               58  LOAD_CODE                <code_object get_body>
+               60  LOAD_STR                 'MIMEPart.get_body'
+               62  MAKE_FUNCTION_1          'default'
+               64  STORE_NAME               get_body
+
+ L.1026        66  BUILD_SET_0           0 
+               68  LOAD_CONST               frozenset({('multipart', 'related'), ('text', 'html'), ('text', 'plain'), ('multipart', 'alternative')})
+               70  POP_FINALLY           1  ''
+               72  STORE_NAME               _body_types
+
+ L.1030        74  LOAD_CODE                <code_object iter_attachments>
+               76  LOAD_STR                 'MIMEPart.iter_attachments'
+               78  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               80  STORE_NAME               iter_attachments
+
+ L.1085        82  LOAD_CODE                <code_object iter_parts>
+               84  LOAD_STR                 'MIMEPart.iter_parts'
+               86  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               88  STORE_NAME               iter_parts
+
+ L.1093        90  LOAD_CONST               None
+               92  LOAD_CONST               ('content_manager',)
+               94  BUILD_CONST_KEY_MAP_1     1 
+               96  LOAD_CODE                <code_object get_content>
+               98  LOAD_STR                 'MIMEPart.get_content'
+              100  MAKE_FUNCTION_2          'keyword-only'
+              102  STORE_NAME               get_content
+
+ L.1098       104  LOAD_CONST               None
+              106  LOAD_CONST               ('content_manager',)
+              108  BUILD_CONST_KEY_MAP_1     1 
+              110  LOAD_CODE                <code_object set_content>
+              112  LOAD_STR                 'MIMEPart.set_content'
+              114  MAKE_FUNCTION_2          'keyword-only'
+              116  STORE_NAME               set_content
+
+ L.1103       118  LOAD_CODE                <code_object _make_multipart>
+              120  LOAD_STR                 'MIMEPart._make_multipart'
+              122  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              124  STORE_NAME               _make_multipart
+
+ L.1130       126  LOAD_CONST               (None,)
+              128  LOAD_CODE                <code_object make_related>
+              130  LOAD_STR                 'MIMEPart.make_related'
+              132  MAKE_FUNCTION_1          'default'
+              134  STORE_NAME               make_related
+
+ L.1133       136  LOAD_CONST               (None,)
+              138  LOAD_CODE                <code_object make_alternative>
+              140  LOAD_STR                 'MIMEPart.make_alternative'
+              142  MAKE_FUNCTION_1          'default'
+              144  STORE_NAME               make_alternative
+
+ L.1136       146  LOAD_CONST               (None,)
+              148  LOAD_CODE                <code_object make_mixed>
+              150  LOAD_STR                 'MIMEPart.make_mixed'
+              152  MAKE_FUNCTION_1          'default'
+              154  STORE_NAME               make_mixed
+
+ L.1139       156  LOAD_CONST               None
+              158  LOAD_CONST               ('_disp',)
+              160  BUILD_CONST_KEY_MAP_1     1 
+              162  LOAD_CODE                <code_object _add_multipart>
+              164  LOAD_STR                 'MIMEPart._add_multipart'
+              166  MAKE_FUNCTION_2          'keyword-only'
+              168  STORE_NAME               _add_multipart
+
+ L.1149       170  LOAD_CODE                <code_object add_related>
+              172  LOAD_STR                 'MIMEPart.add_related'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  STORE_NAME               add_related
+
+ L.1152       178  LOAD_CODE                <code_object add_alternative>
+              180  LOAD_STR                 'MIMEPart.add_alternative'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  STORE_NAME               add_alternative
+
+ L.1155       186  LOAD_CODE                <code_object add_attachment>
+              188  LOAD_STR                 'MIMEPart.add_attachment'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  STORE_NAME               add_attachment
+
+ L.1158       194  LOAD_CODE                <code_object clear>
+              196  LOAD_STR                 'MIMEPart.clear'
+              198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              200  STORE_NAME               clear
+
+ L.1162       202  LOAD_CODE                <code_object clear_content>
+              204  LOAD_STR                 'MIMEPart.clear_content'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  STORE_NAME               clear_content
+              210  LOAD_CLOSURE             '__class__'
+              212  DUP_TOP          
+              214  STORE_NAME               __classcell__
+              216  RETURN_VALUE     
+               -1  RETURN_LAST      
+
+Parse error at or near `POP_FINALLY' instruction at offset 70
+

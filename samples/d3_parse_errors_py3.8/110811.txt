@@ -1,0 +1,27 @@
+Instruction context:
+   
+ L. 156        32  LOAD_FAST                's'
+                  34  LOAD_ATTR                format
+                  36  BUILD_TUPLE_0         0 
+                  38  LOAD_GLOBAL              os
+                  40  LOAD_ATTR                environ
+                  42  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  44  POP_BLOCK        
+->                46  ROT_FOUR         
+                  48  POP_EXCEPT       
+                  50  RETURN_VALUE     
+                52_0  COME_FROM_FINALLY    30  '30'
+Instruction context:
+   
+ L. 473       112  POP_EXCEPT       
+                 114  BREAK_LOOP          118  'to 118'
+               116_0  COME_FROM           104  '104'
+->               116  END_FINALLY      
+               118_0  COME_FROM           114  '114'
+               118_1  COME_FROM            96  '96'
+
+../test/110811.pyc -- 
+# decompile failed
+
+# file ../test/110811.pyc
+# Deparsing stopped due to parse error

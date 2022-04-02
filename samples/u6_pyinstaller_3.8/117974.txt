@@ -1,0 +1,46 @@
+Instruction context:
+   
+ L. 132        78  LOAD_FAST                'f'
+                  80  LOAD_METHOD              write
+                  82  LOAD_FAST                'data'
+                  84  CALL_METHOD_1         1  ''
+                  86  POP_BLOCK        
+->                88  ROT_TWO          
+                  90  BEGIN_FINALLY    
+                  92  WITH_CLEANUP_START
+                  94  WITH_CLEANUP_FINISH
+                  96  POP_FINALLY           0  ''
+                  98  RETURN_VALUE     
+               100_0  COME_FROM_WITH       74  '74'
+                 100  WITH_CLEANUP_START
+                 102  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 197         8  LOAD_CLOSURE             'prefix'
+                  10  BUILD_TUPLE_1         1 
+->                12  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  14  LOAD_STR                 'flatten_handlers.<locals>.<dictcomp>'
+                  16  MAKE_FUNCTION_8          'closure'
+Instruction context:
+   
+ L. 329       292  POP_EXCEPT       
+                 294  JUMP_BACK           244  'to 244'
+->               296  POP_EXCEPT       
+                 298  JUMP_BACK           244  'to 244'
+               300_0  COME_FROM           282  '282'
+                 300  END_FINALLY      
+Instruction context:
+   
+ L. 396        50  POP_EXCEPT       
+                  52  JUMP_BACK            14  'to 14'
+->                54  POP_EXCEPT       
+                  56  JUMP_BACK            14  'to 14'
+                58_0  COME_FROM            42  '42'
+                  58  END_FINALLY      
+                60_0  COME_FROM            34  '34'
+
+../test/117974.pyc -- 
+# decompile failed
+
+# file ../test/117974.pyc
+# Deparsing stopped due to parse error

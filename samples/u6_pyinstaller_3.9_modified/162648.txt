@@ -1,0 +1,154 @@
+Instruction context:
+   
+ L.  12        40  BUILD_LIST_0          0 
+                  42  LOAD_CONST               ('broadcast_to', 'broadcast_arrays', 'broadcast_shapes')
+->                44  CALL_FINALLY         47  'to 47'
+                  46  STORE_NAME               __all__
+
+test/162648.pyc -- 
+# decompile failed
+
+# file test/162648.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nUtilities that manipulate strides to achieve desirable effects.\n\nAn explanation of strides can be found in the "ndarray.rst" file in the\nNumPy reference guide.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.   8         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              numpy
+               10  STORE_NAME               np
+
+ L.   9        12  LOAD_CONST               0
+               14  LOAD_CONST               ('normalize_axis_tuple',)
+               16  IMPORT_NAME_ATTR         numpy.core.numeric
+               18  IMPORT_FROM              normalize_axis_tuple
+               20  STORE_NAME               normalize_axis_tuple
+               22  POP_TOP          
+
+ L.  10        24  LOAD_CONST               0
+               26  LOAD_CONST               ('array_function_dispatch', 'set_module')
+               28  IMPORT_NAME_ATTR         numpy.core.overrides
+               30  IMPORT_FROM              array_function_dispatch
+               32  STORE_NAME               array_function_dispatch
+               34  IMPORT_FROM              set_module
+               36  STORE_NAME               set_module
+               38  POP_TOP          
+
+ L.  12        40  BUILD_LIST_0          0 
+               42  LOAD_CONST               ('broadcast_to', 'broadcast_arrays', 'broadcast_shapes')
+               44  CALL_FINALLY         47  'to 47'
+               46  STORE_NAME               __all__
+
+ L.  15        48  LOAD_BUILD_CLASS 
+               50  LOAD_CODE                <code_object DummyArray>
+               52  LOAD_STR                 'DummyArray'
+               54  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               56  LOAD_STR                 'DummyArray'
+               58  CALL_FUNCTION_2       2  ''
+               60  STORE_NAME               DummyArray
+
+ L.  25        62  LOAD_CODE                <code_object _maybe_view_as_subclass>
+               64  LOAD_STR                 '_maybe_view_as_subclass'
+               66  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               68  STORE_NAME               _maybe_view_as_subclass
+
+ L.  38        70  LOAD_CONST               (None, None, False, True)
+               72  LOAD_CODE                <code_object as_strided>
+               74  LOAD_STR                 'as_strided'
+               76  MAKE_FUNCTION_1          'default'
+               78  STORE_NAME               as_strided
+
+ L. 117        80  LOAD_CONST               (None,)
+
+ L. 118        82  LOAD_CONST               None
+               84  LOAD_CONST               None
+
+ L. 117        86  LOAD_CONST               ('subok', 'writeable')
+               88  BUILD_CONST_KEY_MAP_2     2 
+               90  LOAD_CODE                <code_object _sliding_window_view_dispatcher>
+               92  LOAD_STR                 '_sliding_window_view_dispatcher'
+               94  MAKE_FUNCTION_3          'default, keyword-only'
+               96  STORE_NAME               _sliding_window_view_dispatcher
+
+ L. 122        98  LOAD_NAME                array_function_dispatch
+              100  LOAD_NAME                _sliding_window_view_dispatcher
+              102  CALL_FUNCTION_1       1  ''
+
+ L. 123       104  LOAD_CONST               (None,)
+
+ L. 124       106  LOAD_CONST               False
+              108  LOAD_CONST               False
+
+ L. 123       110  LOAD_CONST               ('subok', 'writeable')
+              112  BUILD_CONST_KEY_MAP_2     2 
+              114  LOAD_CODE                <code_object sliding_window_view>
+              116  LOAD_STR                 'sliding_window_view'
+              118  MAKE_FUNCTION_3          'default, keyword-only'
+              120  CALL_FUNCTION_1       1  ''
+              122  STORE_NAME               sliding_window_view
+
+ L. 339       124  LOAD_CODE                <code_object _broadcast_to>
+              126  LOAD_STR                 '_broadcast_to'
+              128  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              130  STORE_NAME               _broadcast_to
+
+ L. 362       132  LOAD_CONST               (None,)
+              134  LOAD_CODE                <code_object _broadcast_to_dispatcher>
+              136  LOAD_STR                 '_broadcast_to_dispatcher'
+              138  MAKE_FUNCTION_1          'default'
+              140  STORE_NAME               _broadcast_to_dispatcher
+
+ L. 366       142  LOAD_NAME                array_function_dispatch
+              144  LOAD_NAME                _broadcast_to_dispatcher
+              146  LOAD_STR                 'numpy'
+              148  LOAD_CONST               ('module',)
+              150  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+
+ L. 367       152  LOAD_CONST               (False,)
+              154  LOAD_CODE                <code_object broadcast_to>
+              156  LOAD_STR                 'broadcast_to'
+              158  MAKE_FUNCTION_1          'default'
+              160  CALL_FUNCTION_1       1  ''
+              162  STORE_NAME               broadcast_to
+
+ L. 414       164  LOAD_CODE                <code_object _broadcast_shape>
+              166  LOAD_STR                 '_broadcast_shape'
+              168  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              170  STORE_NAME               _broadcast_shape
+
+ L. 431       172  LOAD_NAME                set_module
+              174  LOAD_STR                 'numpy'
+              176  CALL_FUNCTION_1       1  ''
+
+ L. 432       178  LOAD_CODE                <code_object broadcast_shapes>
+              180  LOAD_STR                 'broadcast_shapes'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  CALL_FUNCTION_1       1  ''
+              186  STORE_NAME               broadcast_shapes
+
+ L. 474       188  LOAD_CONST               None
+              190  LOAD_CONST               ('subok',)
+              192  BUILD_CONST_KEY_MAP_1     1 
+              194  LOAD_CODE                <code_object _broadcast_arrays_dispatcher>
+              196  LOAD_STR                 '_broadcast_arrays_dispatcher'
+              198  MAKE_FUNCTION_2          'keyword-only'
+              200  STORE_NAME               _broadcast_arrays_dispatcher
+
+ L. 478       202  LOAD_NAME                array_function_dispatch
+              204  LOAD_NAME                _broadcast_arrays_dispatcher
+              206  LOAD_STR                 'numpy'
+              208  LOAD_CONST               ('module',)
+              210  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+
+ L. 479       212  LOAD_CONST               False
+              214  LOAD_CONST               ('subok',)
+              216  BUILD_CONST_KEY_MAP_1     1 
+              218  LOAD_CODE                <code_object broadcast_arrays>
+              220  LOAD_STR                 'broadcast_arrays'
+              222  MAKE_FUNCTION_2          'keyword-only'
+              224  CALL_FUNCTION_1       1  ''
+              226  STORE_NAME               broadcast_arrays
+
+Parse error at or near `CALL_FINALLY' instruction at offset 44
+

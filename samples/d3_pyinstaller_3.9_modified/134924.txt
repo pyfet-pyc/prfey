@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L.  29        86  LOAD_GLOBAL              Exception
+                  88  LOAD_ATTR                __init__
+                  90  LOAD_FAST                'self'
+                  92  BUILD_LIST_1          1 
+                  94  LOAD_FAST                'args'
+->                96  CALL_FINALLY         99  'to 99'
+                  98  WITH_CLEANUP_FINISH
+                 100  BUILD_MAP_0           0 
+                 102  LOAD_FAST                'kw'
+                 104  <164>                 1  ''
+                 106  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+Instruction context:
+   
+ L.  36        12  DUP_TOP          
+                  14  LOAD_GLOBAL              WindowsError
+->                16  <121>                64  ''
+                  18  POP_TOP          
+                  20  STORE_FAST               'exception'
+                  22  POP_TOP          
+                  24  SETUP_FINALLY        56  'to 56'
+
+test/134924.pyc -- 
+# decompile failed
+
+# file test/134924.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,41 @@
+Instruction context:
+-> 
+ L.  79       134  <164>                 1  ''
+                 136  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                 138  LOAD_FAST                'self'
+                 140  STORE_ATTR               _ecb
+Instruction context:
+   
+ L. 152         6  LOAD_GLOBAL              len
+                   8  LOAD_FAST                'data_block'
+                  10  CALL_FUNCTION_1       1  ''
+                  12  LOAD_FAST                'bs'
+                  14  BINARY_MODULO    
+                  16  LOAD_CONST               0
+                  18  COMPARE_OP               ==
+                  20  POP_JUMP_IF_TRUE     26  'to 26'
+->                22  <74>             
+                  24  RAISE_VARARGS_1       1  'exception instance'
+                26_0  COME_FROM            20  '20'
+Instruction context:
+-> 
+ L. 178        50  <164>                 1  ''
+                  52  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  54  LOAD_FAST                'obj'
+                  56  STORE_ATTR               _cbc
+Instruction context:
+   
+ L. 197         6  LOAD_FAST                'self'
+                   8  LOAD_ATTR                _mac_tag
+                  10  LOAD_CONST               None
+->                12  <117>                 1  ''
+                  14  POP_JUMP_IF_FALSE    28  'to 28'
+                  16  LOAD_FAST                'self'
+                  18  LOAD_ATTR                _update_after_digest
+                  20  POP_JUMP_IF_TRUE     28  'to 28'
+
+test/101173.pyc -- 
+# decompile failed
+
+# file test/101173.pyc
+# Deparsing stopped due to parse error

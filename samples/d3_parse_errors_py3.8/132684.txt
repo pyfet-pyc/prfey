@@ -1,0 +1,23 @@
+Instruction context:
+   
+ L. 158        64  POP_TOP          
+                  66  BREAK_LOOP           70  'to 70'
+                  68  JUMP_BACK            20  'to 20'
+->              70_0  COME_FROM            66  '66'
+Instruction context:
+   
+ L. 699       856  BINARY_MODULO    
+->               858  CALL_FUNCTION_1       1  ''
+Instruction context:
+   
+ L. 757        28  POP_EXCEPT       
+                  30  JUMP_FORWARD         34  'to 34'
+->              32_0  COME_FROM            20  '20'
+                  32  END_FINALLY      
+                34_0  COME_FROM            30  '30'
+
+../test/132684.pyc -- 
+# decompile failed
+
+# file ../test/132684.pyc
+# Deparsing stopped due to parse error

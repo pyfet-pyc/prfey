@@ -1,0 +1,148 @@
+Instruction context:
+   
+ L.  32        50  DUP_TOP          
+                  52  LOAD_NAME                ImportError
+->                54  <121>                70  ''
+                  56  POP_TOP          
+                  58  POP_TOP          
+                  60  POP_TOP          
+
+test/102749.pyc -- 
+# decompile failed
+
+# file test/102749.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Guess the MIME type of a file.\n\nThis module defines two useful functions:\n\nguess_type(url, strict=True) -- guess the MIME type and encoding of a URL.\n\nguess_extension(type, strict=True) -- guess the extension for a given MIME type.\n\nIt also contains the following, for tuning the behavior:\n\nData:\n\nknownfiles -- list of files to parse\ninited -- flag set when init() has been called\nsuffix_map -- dictionary mapping suffixes to suffixes\nencodings_map -- dictionary mapping suffixes to encodings\ntypes_map -- dictionary mapping suffixes to types\n\nFunctions:\n\ninit([files]) -- parse a list of files, default knownfiles (on Windows, the\n  default values are taken from the registry)\nread_mime_types(file) -- parse one file, return a dictionary or None\n'
+                2  STORE_NAME               __doc__
+
+ L.  26         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.  27        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L.  28        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              posixpath
+               26  STORE_NAME               posixpath
+
+ L.  29        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME_ATTR         urllib.parse
+               34  STORE_NAME               urllib
+
+ L.  30        36  SETUP_FINALLY        50  'to 50'
+
+ L.  31        38  LOAD_CONST               0
+               40  LOAD_CONST               None
+               42  IMPORT_NAME              winreg
+               44  STORE_NAME               _winreg
+               46  POP_BLOCK        
+               48  JUMP_FORWARD         72  'to 72'
+             50_0  COME_FROM_FINALLY    36  '36'
+
+ L.  32        50  DUP_TOP          
+               52  LOAD_NAME                ImportError
+               54  <121>                70  ''
+               56  POP_TOP          
+               58  POP_TOP          
+               60  POP_TOP          
+
+ L.  33        62  LOAD_CONST               None
+               64  STORE_NAME               _winreg
+               66  POP_EXCEPT       
+               68  JUMP_FORWARD         72  'to 72'
+               70  <48>             
+             72_0  COME_FROM            68  '68'
+             72_1  COME_FROM            48  '48'
+
+ L.  35        72  BUILD_LIST_0          0 
+               74  LOAD_CONST               ('knownfiles', 'inited', 'MimeTypes', 'guess_type', 'guess_all_extensions', 'guess_extension', 'add_type', 'init', 'read_mime_types', 'suffix_map', 'encodings_map', 'types_map', 'common_types')
+               76  CALL_FINALLY         79  'to 79'
+               78  STORE_NAME               __all__
+
+ L.  42        80  BUILD_LIST_0          0 
+               82  LOAD_CONST               ('/etc/mime.types', '/etc/httpd/mime.types', '/etc/httpd/conf/mime.types', '/etc/apache/mime.types', '/etc/apache2/mime.types', '/usr/local/etc/httpd/conf/mime.types', '/usr/local/lib/netscape/mime.types', '/usr/local/etc/httpd/conf/mime.types', '/usr/local/etc/mime.types')
+               84  CALL_FINALLY         87  'to 87'
+               86  STORE_NAME               knownfiles
+
+ L.  54        88  LOAD_CONST               False
+               90  STORE_GLOBAL             inited
+
+ L.  55        92  LOAD_CONST               None
+               94  STORE_GLOBAL             _db
+
+ L.  58        96  LOAD_BUILD_CLASS 
+               98  LOAD_CODE                <code_object MimeTypes>
+              100  LOAD_STR                 'MimeTypes'
+              102  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              104  LOAD_STR                 'MimeTypes'
+              106  CALL_FUNCTION_2       2  ''
+              108  STORE_NAME               MimeTypes
+
+ L. 272       110  LOAD_CONST               (True,)
+              112  LOAD_CODE                <code_object guess_type>
+              114  LOAD_STR                 'guess_type'
+              116  MAKE_FUNCTION_1          'default'
+              118  STORE_NAME               guess_type
+
+ L. 295       120  LOAD_CONST               (True,)
+              122  LOAD_CODE                <code_object guess_all_extensions>
+              124  LOAD_STR                 'guess_all_extensions'
+              126  MAKE_FUNCTION_1          'default'
+              128  STORE_NAME               guess_all_extensions
+
+ L. 312       130  LOAD_CONST               (True,)
+              132  LOAD_CODE                <code_object guess_extension>
+              134  LOAD_STR                 'guess_extension'
+              136  MAKE_FUNCTION_1          'default'
+              138  STORE_NAME               guess_extension
+
+ L. 328       140  LOAD_CONST               (True,)
+              142  LOAD_CODE                <code_object add_type>
+              144  LOAD_STR                 'add_type'
+              146  MAKE_FUNCTION_1          'default'
+              148  STORE_NAME               add_type
+
+ L. 345       150  LOAD_CONST               (None,)
+              152  LOAD_CODE                <code_object init>
+              154  LOAD_STR                 'init'
+              156  MAKE_FUNCTION_1          'default'
+              158  STORE_NAME               init
+
+ L. 373       160  LOAD_CODE                <code_object read_mime_types>
+              162  LOAD_STR                 'read_mime_types'
+              164  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              166  STORE_NAME               read_mime_types
+
+ L. 384       168  LOAD_CODE                <code_object _default_mime_types>
+              170  LOAD_STR                 '_default_mime_types'
+              172  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              174  STORE_NAME               _default_mime_types
+
+ L. 564       176  LOAD_NAME                _default_mime_types
+              178  CALL_FUNCTION_0       0  ''
+              180  POP_TOP          
+
+ L. 567       182  LOAD_CODE                <code_object _main>
+              184  LOAD_STR                 '_main'
+              186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              188  STORE_NAME               _main
+
+ L. 613       190  LOAD_NAME                __name__
+              192  LOAD_STR                 '__main__'
+              194  COMPARE_OP               ==
+              196  POP_JUMP_IF_FALSE   204  'to 204'
+
+ L. 614       198  LOAD_NAME                _main
+              200  CALL_FUNCTION_0       0  ''
+              202  POP_TOP          
+            204_0  COME_FROM           196  '196'
+
+Parse error at or near `<121>' instruction at offset 54
+

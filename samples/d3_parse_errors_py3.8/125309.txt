@@ -1,0 +1,32 @@
+Instruction context:
+   
+ L. 744        46  POP_TOP          
+                  48  BREAK_LOOP           52  'to 52'
+                  50  JUMP_BACK            20  'to 20'
+                52_0  COME_FROM            48  '48'
+                52_1  COME_FROM            20  '20'
+                  52  POP_BLOCK        
+->                54  BEGIN_FINALLY    
+                56_0  COME_FROM_WITH        8  '8'
+                  56  WITH_CLEANUP_START
+                  58  WITH_CLEANUP_FINISH
+                  60  END_FINALLY      
+Instruction context:
+   
+ L. 770        54  POP_TOP          
+                  56  BREAK_LOOP           60  'to 60'
+                  58  JUMP_BACK            18  'to 18'
+                60_0  COME_FROM            56  '56'
+                60_1  COME_FROM            18  '18'
+                  60  POP_BLOCK        
+->                62  BEGIN_FINALLY    
+                64_0  COME_FROM_WITH       10  '10'
+                  64  WITH_CLEANUP_START
+                  66  WITH_CLEANUP_FINISH
+                  68  END_FINALLY      
+
+../test/125309.pyc -- 
+# decompile failed
+
+# file ../test/125309.pyc
+# Deparsing stopped due to parse error

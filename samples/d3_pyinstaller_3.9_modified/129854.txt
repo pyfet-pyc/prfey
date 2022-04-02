@@ -1,0 +1,88 @@
+Instruction context:
+   
+ L.  15        34  DUP_TOP          
+                  36  LOAD_NAME                ImportError
+->                38  <121>                54  ''
+                  40  POP_TOP          
+                  42  POP_TOP          
+                  44  POP_TOP          
+
+test/129854.pyc -- 
+# decompile failed
+
+# file test/129854.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'The match_hostname() function from Python 3.3.3, essential when using SSL.'
+                2  STORE_NAME               __doc__
+
+ L.   6         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              re
+               10  STORE_NAME               re
+
+ L.   7        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L.  13        20  SETUP_FINALLY        34  'to 34'
+
+ L.  14        22  LOAD_CONST               0
+               24  LOAD_CONST               None
+               26  IMPORT_NAME              ipaddress
+               28  STORE_NAME               ipaddress
+               30  POP_BLOCK        
+               32  JUMP_FORWARD         56  'to 56'
+             34_0  COME_FROM_FINALLY    20  '20'
+
+ L.  15        34  DUP_TOP          
+               36  LOAD_NAME                ImportError
+               38  <121>                54  ''
+               40  POP_TOP          
+               42  POP_TOP          
+               44  POP_TOP          
+
+ L.  16        46  LOAD_CONST               None
+               48  STORE_NAME               ipaddress
+               50  POP_EXCEPT       
+               52  JUMP_FORWARD         56  'to 56'
+               54  <48>             
+             56_0  COME_FROM            52  '52'
+             56_1  COME_FROM            32  '32'
+
+ L.  18        56  LOAD_STR                 '3.5.0.1'
+               58  STORE_NAME               __version__
+
+ L.  21        60  LOAD_BUILD_CLASS 
+               62  LOAD_CODE                <code_object CertificateError>
+               64  LOAD_STR                 'CertificateError'
+               66  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               68  LOAD_STR                 'CertificateError'
+               70  LOAD_NAME                ValueError
+               72  CALL_FUNCTION_3       3  ''
+               74  STORE_NAME               CertificateError
+
+ L.  25        76  LOAD_CONST               (1,)
+               78  LOAD_CODE                <code_object _dnsname_match>
+               80  LOAD_STR                 '_dnsname_match'
+               82  MAKE_FUNCTION_1          'default'
+               84  STORE_NAME               _dnsname_match
+
+ L.  79        86  LOAD_CODE                <code_object _to_unicode>
+               88  LOAD_STR                 '_to_unicode'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  STORE_NAME               _to_unicode
+
+ L.  85        94  LOAD_CODE                <code_object _ipaddress_match>
+               96  LOAD_STR                 '_ipaddress_match'
+               98  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              100  STORE_NAME               _ipaddress_match
+
+ L.  97       102  LOAD_CODE                <code_object match_hostname>
+              104  LOAD_STR                 'match_hostname'
+              106  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              108  STORE_NAME               match_hostname
+
+Parse error at or near `<121>' instruction at offset 38
+

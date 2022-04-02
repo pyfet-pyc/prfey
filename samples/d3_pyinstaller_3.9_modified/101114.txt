@@ -1,0 +1,46 @@
+Instruction context:
+   
+ L.  22        18  LOAD_FAST                'self'
+                  20  LOAD_ATTR                _env
+                  22  LOAD_CONST               None
+->                24  <117>                 1  ''
+                  26  POP_JUMP_IF_FALSE    54  'to 54'
+Instruction context:
+   
+ L.  59       164  LOAD_FAST                'ch'
+                 166  LOAD_FAST                'safe_chars'
+->               168  <118>                 1  ''
+                 170  POP_JUMP_IF_FALSE_BACK   160  'to 160'
+Instruction context:
+   
+ L.  88       136  LOAD_FAST                'fp'
+                 138  LOAD_METHOD              read
+                 140  CALL_METHOD_0         0  ''
+                 142  STORE_FAST               'stdout'
+                 144  POP_BLOCK        
+                 146  LOAD_CONST               None
+->               148  DUP_TOP          
+                 150  DUP_TOP          
+                 152  CALL_FUNCTION_3       3  ''
+                 154  POP_TOP          
+                 156  JUMP_FORWARD        174  'to 174'
+               158_0  COME_FROM_WITH      132  '132'
+                 158  <49>             
+                 160  POP_JUMP_IF_TRUE    164  'to 164'
+                 162  <48>             
+               164_0  COME_FROM           160  '160'
+                 164  POP_TOP          
+                 166  POP_TOP          
+                 168  POP_TOP          
+                 170  POP_EXCEPT       
+                 172  POP_TOP          
+               174_0  COME_FROM           156  '156'
+                 174  POP_BLOCK        
+                 176  JUMP_FORWARD        200  'to 200'
+               178_0  COME_FROM_FINALLY   122  '122'
+
+test/101114.pyc -- 
+# decompile failed
+
+# file test/101114.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,71 @@
+Instruction context:
+   
+ L.  47        20  DUP_TOP          
+                  22  LOAD_GLOBAL              DBusErrorResponse
+->                24  <121>               132  ''
+                  26  POP_TOP          
+                  28  STORE_FAST               'resp'
+                  30  POP_TOP          
+                  32  SETUP_FINALLY       124  'to 124'
+Instruction context:
+   
+ L.  80        54  DUP_TOP          
+                  56  LOAD_GLOBAL              DBusErrorResponse
+->                58  <121>               126  ''
+                  60  POP_TOP          
+                  62  STORE_FAST               'resp'
+                  64  POP_TOP          
+                  66  SETUP_FINALLY       118  'to 118'
+Instruction context:
+   
+ L. 103        40  LOAD_FAST                'session'
+                  42  LOAD_ATTR                object_path
+                  44  LOAD_CONST               None
+->                46  <117>                 1  ''
+                  48  POP_JUMP_IF_TRUE     54  'to 54'
+                  50  <74>             
+                  52  RAISE_VARARGS_1       1  'exception instance'
+                54_0  COME_FROM            48  '48'
+Instruction context:
+   
+ L. 139        56  LOAD_FAST                'connection'
+                  58  LOAD_METHOD              recv_until_filtered
+                  60  LOAD_FAST                'signals'
+                  62  CALL_METHOD_1         1  ''
+                  64  LOAD_ATTR                body
+                  66  UNPACK_SEQUENCE_2     2 
+                  68  STORE_FAST               'dismissed'
+                  70  STORE_FAST               'result'
+                  72  POP_BLOCK        
+                  74  LOAD_CONST               None
+->                76  DUP_TOP          
+                  78  DUP_TOP          
+                  80  CALL_FUNCTION_3       3  ''
+                  82  POP_TOP          
+                  84  JUMP_FORWARD        102  'to 102'
+                86_0  COME_FROM_WITH       38  '38'
+                  86  <49>             
+                  88  POP_JUMP_IF_TRUE     92  'to 92'
+                  90  <48>             
+                92_0  COME_FROM            88  '88'
+                  92  POP_TOP          
+                  94  POP_TOP          
+                  96  POP_TOP          
+                  98  POP_EXCEPT       
+                 100  POP_TOP          
+               102_0  COME_FROM            84  '84'
+Instruction context:
+   
+ L. 154        60  LOAD_FAST                'signature'
+                  62  LOAD_STR                 'ao'
+                  64  COMPARE_OP               ==
+                  66  POP_JUMP_IF_TRUE     72  'to 72'
+->                68  <74>             
+                  70  RAISE_VARARGS_1       1  'exception instance'
+                72_0  COME_FROM            66  '66'
+
+test/134794.pyc -- 
+# decompile failed
+
+# file test/134794.pyc
+# Deparsing stopped due to parse error

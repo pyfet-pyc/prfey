@@ -1,0 +1,40 @@
+Instruction context:
+   
+ L. 213       102  LOAD_CONST               (0, 0)
+                 105  UNPACK_SEQUENCE_2     2 
+                 108  LOAD_FAST             2  'ctx'
+                 111  LOAD_CONST               8
+                 114  STORE_SUBSCR     
+                 115  LOAD_FAST             2  'ctx'
+->               118  LOAD_CONST               9
+Instruction context:
+   
+ L. 222        76  LOAD_GLOBAL           5  'little2_i32'
+                  79  LOAD_ATTR             6  'unpack'
+                  82  LOAD_GLOBAL           7  'little_u64'
+                  85  LOAD_ATTR             8  'pack'
+                  88  LOAD_FAST             1  'counter'
+                  91  CALL_FUNCTION_1       1  None
+                  94  CALL_FUNCTION_1       1  None
+                  97  UNPACK_SEQUENCE_2     2 
+                 100  LOAD_FAST             2  'ctx'
+                 103  LOAD_CONST               8
+                 106  STORE_SUBSCR     
+                 107  LOAD_FAST             2  'ctx'
+->               110  LOAD_CONST               9
+Instruction context:
+   
+ L. 230        27  LOAD_FAST             1  'rounds'
+->                30  LOAD_FAST             0  'self'
+Instruction context:
+   
+ L. 246       257  LOAD_FAST             3  'munged'
+                 260  LOAD_ATTR            16  'tostring'
+                 263  CALL_FUNCTION_0       0  None
+->               266  RETURN_VALUE     
+
+../test/165826.pyc -- 
+# decompile failed
+
+# file ../test/165826.pyc
+# Deparsing stopped due to parse error

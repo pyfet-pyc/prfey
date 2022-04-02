@@ -1,0 +1,702 @@
+
+# file test/31709.pyc
+# --- This code section failed: ---
+
+ L.   7         0  LOAD_CONST               0
+                2  LOAD_CONST               ('debug',)
+                4  IMPORT_NAME              pyasn1
+                6  IMPORT_FROM              debug
+                8  STORE_NAME               debug
+               10  POP_TOP          
+
+ L.   8        12  LOAD_CONST               0
+               14  LOAD_CONST               ('error',)
+               16  IMPORT_NAME              pyasn1
+               18  IMPORT_FROM              error
+               20  STORE_NAME               error
+               22  POP_TOP          
+
+ L.   9        24  LOAD_CONST               0
+               26  LOAD_CONST               ('eoo',)
+               28  IMPORT_NAME_ATTR         pyasn1.codec.ber
+               30  IMPORT_FROM              eoo
+               32  STORE_NAME               eoo
+               34  POP_TOP          
+
+ L.  10        36  LOAD_CONST               0
+               38  LOAD_CONST               ('from_bytes',)
+               40  IMPORT_NAME_ATTR         pyasn1.compat.integer
+               42  IMPORT_FROM              from_bytes
+               44  STORE_NAME               from_bytes
+               46  POP_TOP          
+
+ L.  11        48  LOAD_CONST               0
+               50  LOAD_CONST               ('oct2int', 'octs2ints', 'ints2octs', 'null')
+               52  IMPORT_NAME_ATTR         pyasn1.compat.octets
+               54  IMPORT_FROM              oct2int
+               56  STORE_NAME               oct2int
+               58  IMPORT_FROM              octs2ints
+               60  STORE_NAME               octs2ints
+               62  IMPORT_FROM              ints2octs
+               64  STORE_NAME               ints2octs
+               66  IMPORT_FROM              null
+               68  STORE_NAME               null
+               70  POP_TOP          
+
+ L.  12        72  LOAD_CONST               0
+               74  LOAD_CONST               ('base',)
+               76  IMPORT_NAME_ATTR         pyasn1.type
+               78  IMPORT_FROM              base
+               80  STORE_NAME               base
+               82  POP_TOP          
+
+ L.  13        84  LOAD_CONST               0
+               86  LOAD_CONST               ('char',)
+               88  IMPORT_NAME_ATTR         pyasn1.type
+               90  IMPORT_FROM              char
+               92  STORE_NAME               char
+               94  POP_TOP          
+
+ L.  14        96  LOAD_CONST               0
+               98  LOAD_CONST               ('tag',)
+              100  IMPORT_NAME_ATTR         pyasn1.type
+              102  IMPORT_FROM              tag
+              104  STORE_NAME               tag
+              106  POP_TOP          
+
+ L.  15       108  LOAD_CONST               0
+              110  LOAD_CONST               ('tagmap',)
+              112  IMPORT_NAME_ATTR         pyasn1.type
+              114  IMPORT_FROM              tagmap
+              116  STORE_NAME               tagmap
+              118  POP_TOP          
+
+ L.  16       120  LOAD_CONST               0
+              122  LOAD_CONST               ('univ',)
+              124  IMPORT_NAME_ATTR         pyasn1.type
+              126  IMPORT_FROM              univ
+              128  STORE_NAME               univ
+              130  POP_TOP          
+
+ L.  17       132  LOAD_CONST               0
+              134  LOAD_CONST               ('useful',)
+              136  IMPORT_NAME_ATTR         pyasn1.type
+              138  IMPORT_FROM              useful
+              140  STORE_NAME               useful
+              142  POP_TOP          
+
+ L.  19       144  LOAD_STR                 'decode'
+              146  BUILD_LIST_1          1 
+              148  STORE_NAME               __all__
+
+ L.  21       150  LOAD_NAME                debug
+              152  LOAD_ATTR                registerLoggee
+              154  LOAD_NAME                __name__
+              156  LOAD_NAME                debug
+              158  LOAD_ATTR                DEBUG_DECODER
+              160  LOAD_CONST               ('flags',)
+              162  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              164  STORE_NAME               LOG
+
+ L.  23       166  LOAD_NAME                base
+              168  LOAD_ATTR                noValue
+              170  STORE_NAME               noValue
+
+ L.  26       172  LOAD_BUILD_CLASS 
+              174  LOAD_CODE                <code_object AbstractDecoder>
+              176  LOAD_STR                 'AbstractDecoder'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  LOAD_STR                 'AbstractDecoder'
+              182  LOAD_NAME                object
+              184  CALL_FUNCTION_3       3  ''
+              186  STORE_NAME               AbstractDecoder
+
+ L.  42       188  LOAD_BUILD_CLASS 
+              190  LOAD_CODE                <code_object AbstractSimpleDecoder>
+              192  LOAD_STR                 'AbstractSimpleDecoder'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  LOAD_STR                 'AbstractSimpleDecoder'
+              198  LOAD_NAME                AbstractDecoder
+              200  CALL_FUNCTION_3       3  ''
+              202  STORE_NAME               AbstractSimpleDecoder
+
+ L.  58       204  LOAD_BUILD_CLASS 
+              206  LOAD_CODE                <code_object ExplicitTagDecoder>
+              208  LOAD_STR                 'ExplicitTagDecoder'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  LOAD_STR                 'ExplicitTagDecoder'
+              214  LOAD_NAME                AbstractSimpleDecoder
+              216  CALL_FUNCTION_3       3  ''
+              218  STORE_NAME               ExplicitTagDecoder
+
+ L. 101       220  LOAD_NAME                ExplicitTagDecoder
+              222  CALL_FUNCTION_0       0  ''
+              224  STORE_NAME               explicitTagDecoder
+
+ L. 104       226  LOAD_BUILD_CLASS 
+              228  LOAD_CODE                <code_object IntegerDecoder>
+              230  LOAD_STR                 'IntegerDecoder'
+              232  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              234  LOAD_STR                 'IntegerDecoder'
+              236  LOAD_NAME                AbstractSimpleDecoder
+              238  CALL_FUNCTION_3       3  ''
+              240  STORE_NAME               IntegerDecoder
+
+ L. 125       242  LOAD_BUILD_CLASS 
+              244  LOAD_CODE                <code_object BooleanDecoder>
+              246  LOAD_STR                 'BooleanDecoder'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  LOAD_STR                 'BooleanDecoder'
+              252  LOAD_NAME                IntegerDecoder
+              254  CALL_FUNCTION_3       3  ''
+              256  STORE_NAME               BooleanDecoder
+
+ L. 133       258  LOAD_BUILD_CLASS 
+              260  LOAD_CODE                <code_object BitStringDecoder>
+              262  LOAD_STR                 'BitStringDecoder'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  LOAD_STR                 'BitStringDecoder'
+              268  LOAD_NAME                AbstractSimpleDecoder
+              270  CALL_FUNCTION_3       3  ''
+              272  STORE_NAME               BitStringDecoder
+
+ L. 229       274  LOAD_BUILD_CLASS 
+              276  LOAD_CODE                <code_object OctetStringDecoder>
+              278  LOAD_STR                 'OctetStringDecoder'
+              280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              282  LOAD_STR                 'OctetStringDecoder'
+              284  LOAD_NAME                AbstractSimpleDecoder
+              286  CALL_FUNCTION_3       3  ''
+              288  STORE_NAME               OctetStringDecoder
+
+ L. 296       290  LOAD_BUILD_CLASS 
+              292  LOAD_CODE                <code_object NullDecoder>
+              294  LOAD_STR                 'NullDecoder'
+              296  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              298  LOAD_STR                 'NullDecoder'
+              300  LOAD_NAME                AbstractSimpleDecoder
+              302  CALL_FUNCTION_3       3  ''
+              304  STORE_NAME               NullDecoder
+
+ L. 317       306  LOAD_BUILD_CLASS 
+              308  LOAD_CODE                <code_object ObjectIdentifierDecoder>
+              310  LOAD_STR                 'ObjectIdentifierDecoder'
+              312  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              314  LOAD_STR                 'ObjectIdentifierDecoder'
+              316  LOAD_NAME                AbstractSimpleDecoder
+              318  CALL_FUNCTION_3       3  ''
+              320  STORE_NAME               ObjectIdentifierDecoder
+
+ L. 374       322  LOAD_BUILD_CLASS 
+              324  LOAD_CODE                <code_object RealDecoder>
+              326  LOAD_STR                 'RealDecoder'
+              328  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              330  LOAD_STR                 'RealDecoder'
+              332  LOAD_NAME                AbstractSimpleDecoder
+              334  CALL_FUNCTION_3       3  ''
+              336  STORE_NAME               RealDecoder
+
+ L. 481       338  LOAD_BUILD_CLASS 
+              340  LOAD_CODE                <code_object AbstractConstructedDecoder>
+              342  LOAD_STR                 'AbstractConstructedDecoder'
+              344  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              346  LOAD_STR                 'AbstractConstructedDecoder'
+              348  LOAD_NAME                AbstractDecoder
+              350  CALL_FUNCTION_3       3  ''
+              352  STORE_NAME               AbstractConstructedDecoder
+
+ L. 485       354  LOAD_BUILD_CLASS 
+              356  LOAD_CODE                <code_object UniversalConstructedTypeDecoder>
+              358  LOAD_STR                 'UniversalConstructedTypeDecoder'
+              360  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              362  LOAD_STR                 'UniversalConstructedTypeDecoder'
+              364  LOAD_NAME                AbstractConstructedDecoder
+              366  CALL_FUNCTION_3       3  ''
+              368  STORE_NAME               UniversalConstructedTypeDecoder
+
+ L. 949       370  LOAD_BUILD_CLASS 
+              372  LOAD_CODE                <code_object SequenceOrSequenceOfDecoder>
+              374  LOAD_STR                 'SequenceOrSequenceOfDecoder'
+              376  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              378  LOAD_STR                 'SequenceOrSequenceOfDecoder'
+              380  LOAD_NAME                UniversalConstructedTypeDecoder
+              382  CALL_FUNCTION_3       3  ''
+              384  STORE_NAME               SequenceOrSequenceOfDecoder
+
+ L. 954       386  LOAD_BUILD_CLASS 
+              388  LOAD_CODE                <code_object SequenceDecoder>
+              390  LOAD_STR                 'SequenceDecoder'
+              392  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              394  LOAD_STR                 'SequenceDecoder'
+              396  LOAD_NAME                SequenceOrSequenceOfDecoder
+              398  CALL_FUNCTION_3       3  ''
+              400  STORE_NAME               SequenceDecoder
+
+ L. 958       402  LOAD_BUILD_CLASS 
+              404  LOAD_CODE                <code_object SequenceOfDecoder>
+              406  LOAD_STR                 'SequenceOfDecoder'
+              408  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              410  LOAD_STR                 'SequenceOfDecoder'
+              412  LOAD_NAME                SequenceOrSequenceOfDecoder
+              414  CALL_FUNCTION_3       3  ''
+              416  STORE_NAME               SequenceOfDecoder
+
+ L. 962       418  LOAD_BUILD_CLASS 
+              420  LOAD_CODE                <code_object SetOrSetOfDecoder>
+              422  LOAD_STR                 'SetOrSetOfDecoder'
+              424  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              426  LOAD_STR                 'SetOrSetOfDecoder'
+              428  LOAD_NAME                UniversalConstructedTypeDecoder
+              430  CALL_FUNCTION_3       3  ''
+              432  STORE_NAME               SetOrSetOfDecoder
+
+ L. 967       434  LOAD_BUILD_CLASS 
+              436  LOAD_CODE                <code_object SetDecoder>
+              438  LOAD_STR                 'SetDecoder'
+              440  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              442  LOAD_STR                 'SetDecoder'
+              444  LOAD_NAME                SetOrSetOfDecoder
+              446  CALL_FUNCTION_3       3  ''
+              448  STORE_NAME               SetDecoder
+
+ L. 972       450  LOAD_BUILD_CLASS 
+              452  LOAD_CODE                <code_object SetOfDecoder>
+              454  LOAD_STR                 'SetOfDecoder'
+              456  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              458  LOAD_STR                 'SetOfDecoder'
+              460  LOAD_NAME                SetOrSetOfDecoder
+              462  CALL_FUNCTION_3       3  ''
+              464  STORE_NAME               SetOfDecoder
+
+ L. 976       466  LOAD_BUILD_CLASS 
+              468  LOAD_CODE                <code_object ChoiceDecoder>
+              470  LOAD_STR                 'ChoiceDecoder'
+              472  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              474  LOAD_STR                 'ChoiceDecoder'
+              476  LOAD_NAME                AbstractConstructedDecoder
+              478  CALL_FUNCTION_3       3  ''
+              480  STORE_NAME               ChoiceDecoder
+
+ L.1077       482  LOAD_BUILD_CLASS 
+              484  LOAD_CODE                <code_object AnyDecoder>
+              486  LOAD_STR                 'AnyDecoder'
+              488  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              490  LOAD_STR                 'AnyDecoder'
+              492  LOAD_NAME                AbstractSimpleDecoder
+              494  CALL_FUNCTION_3       3  ''
+              496  STORE_NAME               AnyDecoder
+
+ L.1175       498  LOAD_BUILD_CLASS 
+              500  LOAD_CODE                <code_object UTF8StringDecoder>
+              502  LOAD_STR                 'UTF8StringDecoder'
+              504  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              506  LOAD_STR                 'UTF8StringDecoder'
+              508  LOAD_NAME                OctetStringDecoder
+              510  CALL_FUNCTION_3       3  ''
+              512  STORE_NAME               UTF8StringDecoder
+
+ L.1179       514  LOAD_BUILD_CLASS 
+              516  LOAD_CODE                <code_object NumericStringDecoder>
+              518  LOAD_STR                 'NumericStringDecoder'
+              520  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              522  LOAD_STR                 'NumericStringDecoder'
+              524  LOAD_NAME                OctetStringDecoder
+              526  CALL_FUNCTION_3       3  ''
+              528  STORE_NAME               NumericStringDecoder
+
+ L.1183       530  LOAD_BUILD_CLASS 
+              532  LOAD_CODE                <code_object PrintableStringDecoder>
+              534  LOAD_STR                 'PrintableStringDecoder'
+              536  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              538  LOAD_STR                 'PrintableStringDecoder'
+              540  LOAD_NAME                OctetStringDecoder
+              542  CALL_FUNCTION_3       3  ''
+              544  STORE_NAME               PrintableStringDecoder
+
+ L.1187       546  LOAD_BUILD_CLASS 
+              548  LOAD_CODE                <code_object TeletexStringDecoder>
+              550  LOAD_STR                 'TeletexStringDecoder'
+              552  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              554  LOAD_STR                 'TeletexStringDecoder'
+              556  LOAD_NAME                OctetStringDecoder
+              558  CALL_FUNCTION_3       3  ''
+              560  STORE_NAME               TeletexStringDecoder
+
+ L.1191       562  LOAD_BUILD_CLASS 
+              564  LOAD_CODE                <code_object VideotexStringDecoder>
+              566  LOAD_STR                 'VideotexStringDecoder'
+              568  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              570  LOAD_STR                 'VideotexStringDecoder'
+              572  LOAD_NAME                OctetStringDecoder
+              574  CALL_FUNCTION_3       3  ''
+              576  STORE_NAME               VideotexStringDecoder
+
+ L.1195       578  LOAD_BUILD_CLASS 
+              580  LOAD_CODE                <code_object IA5StringDecoder>
+              582  LOAD_STR                 'IA5StringDecoder'
+              584  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              586  LOAD_STR                 'IA5StringDecoder'
+              588  LOAD_NAME                OctetStringDecoder
+              590  CALL_FUNCTION_3       3  ''
+              592  STORE_NAME               IA5StringDecoder
+
+ L.1199       594  LOAD_BUILD_CLASS 
+              596  LOAD_CODE                <code_object GraphicStringDecoder>
+              598  LOAD_STR                 'GraphicStringDecoder'
+              600  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              602  LOAD_STR                 'GraphicStringDecoder'
+              604  LOAD_NAME                OctetStringDecoder
+              606  CALL_FUNCTION_3       3  ''
+              608  STORE_NAME               GraphicStringDecoder
+
+ L.1203       610  LOAD_BUILD_CLASS 
+              612  LOAD_CODE                <code_object VisibleStringDecoder>
+              614  LOAD_STR                 'VisibleStringDecoder'
+              616  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              618  LOAD_STR                 'VisibleStringDecoder'
+              620  LOAD_NAME                OctetStringDecoder
+              622  CALL_FUNCTION_3       3  ''
+              624  STORE_NAME               VisibleStringDecoder
+
+ L.1207       626  LOAD_BUILD_CLASS 
+              628  LOAD_CODE                <code_object GeneralStringDecoder>
+              630  LOAD_STR                 'GeneralStringDecoder'
+              632  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              634  LOAD_STR                 'GeneralStringDecoder'
+              636  LOAD_NAME                OctetStringDecoder
+              638  CALL_FUNCTION_3       3  ''
+              640  STORE_NAME               GeneralStringDecoder
+
+ L.1211       642  LOAD_BUILD_CLASS 
+              644  LOAD_CODE                <code_object UniversalStringDecoder>
+              646  LOAD_STR                 'UniversalStringDecoder'
+              648  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              650  LOAD_STR                 'UniversalStringDecoder'
+              652  LOAD_NAME                OctetStringDecoder
+              654  CALL_FUNCTION_3       3  ''
+              656  STORE_NAME               UniversalStringDecoder
+
+ L.1215       658  LOAD_BUILD_CLASS 
+              660  LOAD_CODE                <code_object BMPStringDecoder>
+              662  LOAD_STR                 'BMPStringDecoder'
+              664  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              666  LOAD_STR                 'BMPStringDecoder'
+              668  LOAD_NAME                OctetStringDecoder
+              670  CALL_FUNCTION_3       3  ''
+              672  STORE_NAME               BMPStringDecoder
+
+ L.1220       674  LOAD_BUILD_CLASS 
+              676  LOAD_CODE                <code_object ObjectDescriptorDecoder>
+              678  LOAD_STR                 'ObjectDescriptorDecoder'
+              680  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              682  LOAD_STR                 'ObjectDescriptorDecoder'
+              684  LOAD_NAME                OctetStringDecoder
+              686  CALL_FUNCTION_3       3  ''
+              688  STORE_NAME               ObjectDescriptorDecoder
+
+ L.1224       690  LOAD_BUILD_CLASS 
+              692  LOAD_CODE                <code_object GeneralizedTimeDecoder>
+              694  LOAD_STR                 'GeneralizedTimeDecoder'
+              696  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              698  LOAD_STR                 'GeneralizedTimeDecoder'
+              700  LOAD_NAME                OctetStringDecoder
+              702  CALL_FUNCTION_3       3  ''
+              704  STORE_NAME               GeneralizedTimeDecoder
+
+ L.1228       706  LOAD_BUILD_CLASS 
+              708  LOAD_CODE                <code_object UTCTimeDecoder>
+              710  LOAD_STR                 'UTCTimeDecoder'
+              712  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              714  LOAD_STR                 'UTCTimeDecoder'
+              716  LOAD_NAME                OctetStringDecoder
+              718  CALL_FUNCTION_3       3  ''
+              720  STORE_NAME               UTCTimeDecoder
+
+ L.1233       722  LOAD_NAME                univ
+              724  LOAD_ATTR                Integer
+              726  LOAD_ATTR                tagSet
+              728  LOAD_NAME                IntegerDecoder
+              730  CALL_FUNCTION_0       0  ''
+
+ L.1234       732  LOAD_NAME                univ
+              734  LOAD_ATTR                Boolean
+              736  LOAD_ATTR                tagSet
+              738  LOAD_NAME                BooleanDecoder
+              740  CALL_FUNCTION_0       0  ''
+
+ L.1235       742  LOAD_NAME                univ
+              744  LOAD_ATTR                BitString
+              746  LOAD_ATTR                tagSet
+              748  LOAD_NAME                BitStringDecoder
+              750  CALL_FUNCTION_0       0  ''
+
+ L.1236       752  LOAD_NAME                univ
+              754  LOAD_ATTR                OctetString
+              756  LOAD_ATTR                tagSet
+              758  LOAD_NAME                OctetStringDecoder
+              760  CALL_FUNCTION_0       0  ''
+
+ L.1237       762  LOAD_NAME                univ
+              764  LOAD_ATTR                Null
+              766  LOAD_ATTR                tagSet
+              768  LOAD_NAME                NullDecoder
+              770  CALL_FUNCTION_0       0  ''
+
+ L.1238       772  LOAD_NAME                univ
+              774  LOAD_ATTR                ObjectIdentifier
+              776  LOAD_ATTR                tagSet
+              778  LOAD_NAME                ObjectIdentifierDecoder
+              780  CALL_FUNCTION_0       0  ''
+
+ L.1239       782  LOAD_NAME                univ
+              784  LOAD_ATTR                Enumerated
+              786  LOAD_ATTR                tagSet
+              788  LOAD_NAME                IntegerDecoder
+              790  CALL_FUNCTION_0       0  ''
+
+ L.1240       792  LOAD_NAME                univ
+              794  LOAD_ATTR                Real
+              796  LOAD_ATTR                tagSet
+              798  LOAD_NAME                RealDecoder
+              800  CALL_FUNCTION_0       0  ''
+
+ L.1241       802  LOAD_NAME                univ
+              804  LOAD_ATTR                Sequence
+              806  LOAD_ATTR                tagSet
+              808  LOAD_NAME                SequenceOrSequenceOfDecoder
+              810  CALL_FUNCTION_0       0  ''
+
+ L.1242       812  LOAD_NAME                univ
+              814  LOAD_ATTR                Set
+              816  LOAD_ATTR                tagSet
+              818  LOAD_NAME                SetOrSetOfDecoder
+              820  CALL_FUNCTION_0       0  ''
+
+ L.1243       822  LOAD_NAME                univ
+              824  LOAD_ATTR                Choice
+              826  LOAD_ATTR                tagSet
+              828  LOAD_NAME                ChoiceDecoder
+              830  CALL_FUNCTION_0       0  ''
+
+ L.1245       832  LOAD_NAME                char
+              834  LOAD_ATTR                UTF8String
+              836  LOAD_ATTR                tagSet
+              838  LOAD_NAME                UTF8StringDecoder
+              840  CALL_FUNCTION_0       0  ''
+
+ L.1246       842  LOAD_NAME                char
+              844  LOAD_ATTR                NumericString
+              846  LOAD_ATTR                tagSet
+              848  LOAD_NAME                NumericStringDecoder
+              850  CALL_FUNCTION_0       0  ''
+
+ L.1247       852  LOAD_NAME                char
+              854  LOAD_ATTR                PrintableString
+              856  LOAD_ATTR                tagSet
+              858  LOAD_NAME                PrintableStringDecoder
+              860  CALL_FUNCTION_0       0  ''
+
+ L.1248       862  LOAD_NAME                char
+              864  LOAD_ATTR                TeletexString
+              866  LOAD_ATTR                tagSet
+              868  LOAD_NAME                TeletexStringDecoder
+              870  CALL_FUNCTION_0       0  ''
+
+ L.1249       872  LOAD_NAME                char
+              874  LOAD_ATTR                VideotexString
+              876  LOAD_ATTR                tagSet
+              878  LOAD_NAME                VideotexStringDecoder
+              880  CALL_FUNCTION_0       0  ''
+
+ L.1250       882  LOAD_NAME                char
+              884  LOAD_ATTR                IA5String
+              886  LOAD_ATTR                tagSet
+              888  LOAD_NAME                IA5StringDecoder
+              890  CALL_FUNCTION_0       0  ''
+
+ L.1251       892  LOAD_NAME                char
+              894  LOAD_ATTR                GraphicString
+              896  LOAD_ATTR                tagSet
+              898  LOAD_NAME                GraphicStringDecoder
+              900  CALL_FUNCTION_0       0  ''
+
+ L.1252       902  LOAD_NAME                char
+              904  LOAD_ATTR                VisibleString
+              906  LOAD_ATTR                tagSet
+              908  LOAD_NAME                VisibleStringDecoder
+              910  CALL_FUNCTION_0       0  ''
+
+ L.1253       912  LOAD_NAME                char
+              914  LOAD_ATTR                GeneralString
+              916  LOAD_ATTR                tagSet
+              918  LOAD_NAME                GeneralStringDecoder
+              920  CALL_FUNCTION_0       0  ''
+
+ L.1254       922  LOAD_NAME                char
+              924  LOAD_ATTR                UniversalString
+              926  LOAD_ATTR                tagSet
+              928  LOAD_NAME                UniversalStringDecoder
+              930  CALL_FUNCTION_0       0  ''
+
+ L.1255       932  LOAD_NAME                char
+              934  LOAD_ATTR                BMPString
+              936  LOAD_ATTR                tagSet
+              938  LOAD_NAME                BMPStringDecoder
+              940  CALL_FUNCTION_0       0  ''
+
+ L.1257       942  LOAD_NAME                useful
+              944  LOAD_ATTR                ObjectDescriptor
+              946  LOAD_ATTR                tagSet
+              948  LOAD_NAME                ObjectDescriptorDecoder
+              950  CALL_FUNCTION_0       0  ''
+
+ L.1258       952  LOAD_NAME                useful
+              954  LOAD_ATTR                GeneralizedTime
+              956  LOAD_ATTR                tagSet
+              958  LOAD_NAME                GeneralizedTimeDecoder
+              960  CALL_FUNCTION_0       0  ''
+
+ L.1259       962  LOAD_NAME                useful
+              964  LOAD_ATTR                UTCTime
+              966  LOAD_ATTR                tagSet
+              968  LOAD_NAME                UTCTimeDecoder
+              970  CALL_FUNCTION_0       0  ''
+
+ L.1232       972  BUILD_MAP_25         25 
+              974  STORE_NAME               tagMap
+
+ L.1264       976  LOAD_NAME                univ
+              978  LOAD_ATTR                Set
+              980  LOAD_ATTR                typeId
+              982  LOAD_NAME                SetDecoder
+              984  CALL_FUNCTION_0       0  ''
+
+ L.1265       986  LOAD_NAME                univ
+              988  LOAD_ATTR                SetOf
+              990  LOAD_ATTR                typeId
+              992  LOAD_NAME                SetOfDecoder
+              994  CALL_FUNCTION_0       0  ''
+
+ L.1266       996  LOAD_NAME                univ
+              998  LOAD_ATTR                Sequence
+             1000  LOAD_ATTR                typeId
+             1002  LOAD_NAME                SequenceDecoder
+             1004  CALL_FUNCTION_0       0  ''
+
+ L.1267      1006  LOAD_NAME                univ
+             1008  LOAD_ATTR                SequenceOf
+             1010  LOAD_ATTR                typeId
+             1012  LOAD_NAME                SequenceOfDecoder
+             1014  CALL_FUNCTION_0       0  ''
+
+ L.1268      1016  LOAD_NAME                univ
+             1018  LOAD_ATTR                Choice
+             1020  LOAD_ATTR                typeId
+             1022  LOAD_NAME                ChoiceDecoder
+             1024  CALL_FUNCTION_0       0  ''
+
+ L.1269      1026  LOAD_NAME                univ
+             1028  LOAD_ATTR                Any
+             1030  LOAD_ATTR                typeId
+             1032  LOAD_NAME                AnyDecoder
+             1034  CALL_FUNCTION_0       0  ''
+
+ L.1263      1036  BUILD_MAP_6           6 
+             1038  STORE_NAME               typeMap
+
+ L.1273      1040  LOAD_NAME                tagMap
+             1042  LOAD_METHOD              values
+             1044  CALL_METHOD_0         0  ''
+             1046  GET_ITER         
+           1048_0  COME_FROM          1102  '1102'
+           1048_1  COME_FROM          1090  '1090'
+           1048_2  COME_FROM          1080  '1080'
+           1048_3  COME_FROM          1060  '1060'
+             1048  FOR_ITER           1106  'to 1106'
+             1050  STORE_NAME               typeDecoder
+
+ L.1274      1052  LOAD_NAME                typeDecoder
+             1054  LOAD_ATTR                protoComponent
+             1056  LOAD_CONST               None
+             1058  <117>                 1  ''
+         1060_1062  POP_JUMP_IF_FALSE_BACK  1048  'to 1048'
+
+ L.1275      1064  LOAD_NAME                typeDecoder
+             1066  LOAD_ATTR                protoComponent
+             1068  LOAD_ATTR                __class__
+             1070  LOAD_ATTR                typeId
+             1072  STORE_NAME               typeId
+
+ L.1276      1074  LOAD_NAME                typeId
+             1076  LOAD_CONST               None
+             1078  <117>                 1  ''
+         1080_1082  POP_JUMP_IF_FALSE_BACK  1048  'to 1048'
+             1084  LOAD_NAME                typeId
+             1086  LOAD_NAME                typeMap
+             1088  <118>                 1  ''
+         1090_1092  POP_JUMP_IF_FALSE_BACK  1048  'to 1048'
+
+ L.1277      1094  LOAD_NAME                typeDecoder
+             1096  LOAD_NAME                typeMap
+             1098  LOAD_NAME                typeId
+             1100  STORE_SUBSCR     
+         1102_1104  JUMP_BACK          1048  'to 1048'
+           1106_0  COME_FROM          1048  '1048'
+
+ L.1289      1106  LOAD_LISTCOMP            '<code_object <listcomp>>'
+             1108  LOAD_STR                 '<listcomp>'
+             1110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1112  LOAD_NAME                range
+             1114  LOAD_CONST               10
+             1116  CALL_FUNCTION_1       1  ''
+             1118  GET_ITER         
+             1120  CALL_FUNCTION_1       1  ''
+
+ L.1280      1122  UNPACK_SEQUENCE_10    10 
+             1124  STORE_NAME               stDecodeTag
+
+ L.1281      1126  STORE_NAME               stDecodeLength
+
+ L.1282      1128  STORE_NAME               stGetValueDecoder
+
+ L.1283      1130  STORE_NAME               stGetValueDecoderByAsn1Spec
+
+ L.1284      1132  STORE_NAME               stGetValueDecoderByTag
+
+ L.1285      1134  STORE_NAME               stTryAsExplicitTag
+
+ L.1286      1136  STORE_NAME               stDecodeValue
+
+ L.1287      1138  STORE_NAME               stDumpRawValue
+
+ L.1288      1140  STORE_NAME               stErrorCondition
+
+ L.1289      1142  STORE_NAME               stStop
+
+ L.1292      1144  LOAD_BUILD_CLASS 
+             1146  LOAD_CODE                <code_object Decoder>
+             1148  LOAD_STR                 'Decoder'
+             1150  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1152  LOAD_STR                 'Decoder'
+             1154  LOAD_NAME                object
+             1156  CALL_FUNCTION_3       3  ''
+             1158  STORE_NAME               Decoder
+
+ L.1679      1160  LOAD_NAME                Decoder
+             1162  LOAD_NAME                tagMap
+             1164  LOAD_NAME                typeMap
+             1166  CALL_FUNCTION_2       2  ''
+             1168  STORE_NAME               decode
+
+Parse error at or near `<117>' instruction at offset 1058
+
+Instruction context:
+   
+ L.1274      1052  LOAD_NAME                typeDecoder
+                1054  LOAD_ATTR                protoComponent
+                1056  LOAD_CONST               None
+->              1058  <117>                 1  ''
+            1060_1062  POP_JUMP_IF_FALSE_BACK  1048  'to 1048'
+
+test/31709.pyc -- 
+# decompile failed

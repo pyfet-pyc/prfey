@@ -1,0 +1,84 @@
+Instruction context:
+   
+ L.   6        30  DUP_TOP          
+                  32  LOAD_NAME                ImportError
+->                34  <121>                50  ''
+                  36  POP_TOP          
+                  38  POP_TOP          
+                  40  POP_TOP          
+
+test/163477.pyc -- 
+# decompile failed
+
+# file test/163477.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'JSON token scanner\n'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              re
+               10  STORE_NAME               re
+
+ L.   4        12  SETUP_FINALLY        30  'to 30'
+
+ L.   5        14  LOAD_CONST               0
+               16  LOAD_CONST               ('make_scanner',)
+               18  IMPORT_NAME              _json
+               20  IMPORT_FROM              make_scanner
+               22  STORE_NAME               c_make_scanner
+               24  POP_TOP          
+               26  POP_BLOCK        
+               28  JUMP_FORWARD         52  'to 52'
+             30_0  COME_FROM_FINALLY    12  '12'
+
+ L.   6        30  DUP_TOP          
+               32  LOAD_NAME                ImportError
+               34  <121>                50  ''
+               36  POP_TOP          
+               38  POP_TOP          
+               40  POP_TOP          
+
+ L.   7        42  LOAD_CONST               None
+               44  STORE_NAME               c_make_scanner
+               46  POP_EXCEPT       
+               48  JUMP_FORWARD         52  'to 52'
+               50  <48>             
+             52_0  COME_FROM            48  '48'
+             52_1  COME_FROM            28  '28'
+
+ L.   9        52  LOAD_STR                 'make_scanner'
+               54  BUILD_LIST_1          1 
+               56  STORE_NAME               __all__
+
+ L.  11        58  LOAD_NAME                re
+               60  LOAD_METHOD              compile
+
+ L.  12        62  LOAD_STR                 '(-?(?:0|[1-9]\\d*))(\\.\\d+)?([eE][-+]?\\d+)?'
+
+ L.  13        64  LOAD_NAME                re
+               66  LOAD_ATTR                VERBOSE
+               68  LOAD_NAME                re
+               70  LOAD_ATTR                MULTILINE
+               72  BINARY_OR        
+               74  LOAD_NAME                re
+               76  LOAD_ATTR                DOTALL
+               78  BINARY_OR        
+
+ L.  11        80  CALL_METHOD_2         2  ''
+               82  STORE_NAME               NUMBER_RE
+
+ L.  15        84  LOAD_CODE                <code_object py_make_scanner>
+               86  LOAD_STR                 'py_make_scanner'
+               88  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               90  STORE_NAME               py_make_scanner
+
+ L.  73        92  LOAD_NAME                c_make_scanner
+               94  JUMP_IF_TRUE_OR_POP    98  'to 98'
+               96  LOAD_NAME                py_make_scanner
+             98_0  COME_FROM            94  '94'
+               98  STORE_NAME               make_scanner
+
+Parse error at or near `<121>' instruction at offset 34
+

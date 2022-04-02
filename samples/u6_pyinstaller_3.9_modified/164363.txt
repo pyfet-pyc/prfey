@@ -1,0 +1,40 @@
+Instruction context:
+   
+ L. 129       284  LOAD_STR                 '1'
+                 286  LOAD_FAST                'bits'
+                 288  LOAD_FAST                'prefix'
+                 290  LOAD_CONST               None
+                 292  BUILD_SLICE_2         2 
+                 294  BINARY_SUBSCR    
+->               296  <118>                 0  ''
+             298_300  POP_JUMP_IF_FALSE   310  'to 310'
+Instruction context:
+   
+ L. 201       114  LOAD_FAST                'oid'
+                 116  LOAD_FAST                'seen_oids'
+->               118  <118>                 0  ''
+                 120  POP_JUMP_IF_FALSE   140  'to 140'
+Instruction context:
+   
+ L. 283       238  LOAD_FAST                'pqualid'
+                 240  LOAD_GLOBAL              CertificatePoliciesOID
+                 242  LOAD_ATTR                CPS_USER_NOTICE
+                 244  COMPARE_OP               ==
+                 246  POP_JUMP_IF_TRUE    252  'to 252'
+->               248  <74>             
+                 250  RAISE_VARARGS_1       1  'exception instance'
+               252_0  COME_FROM           246  '246'
+Instruction context:
+   
+ L. 717        62  DUP_TOP          
+                  64  LOAD_GLOBAL              KeyError
+->                66  <121>                92  ''
+                  68  POP_TOP          
+                  70  POP_TOP          
+                  72  POP_TOP          
+
+test/164363.pyc -- 
+# decompile failed
+
+# file test/164363.pyc
+# Deparsing stopped due to parse error

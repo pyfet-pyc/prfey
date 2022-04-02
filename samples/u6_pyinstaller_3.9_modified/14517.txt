@@ -1,0 +1,89 @@
+Instruction context:
+   
+ L.   9        56  BUILD_LIST_0          0 
+                  58  LOAD_CONST               ('scheme', 'auth', 'host', 'port', 'path', 'query', 'fragment')
+->                60  CALL_FINALLY         63  'to 63'
+                  62  STORE_NAME               url_attrs
+
+test/14517.pyc -- 
+# decompile failed
+
+# file test/14517.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.   2        12  LOAD_CONST               0
+               14  LOAD_CONST               ('namedtuple',)
+               16  IMPORT_NAME              collections
+               18  IMPORT_FROM              namedtuple
+               20  STORE_NAME               namedtuple
+               22  POP_TOP          
+
+ L.   3        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              re
+               30  STORE_NAME               re
+
+ L.   5        32  LOAD_CONST               2
+               34  LOAD_CONST               ('LocationParseError',)
+               36  IMPORT_NAME              exceptions
+               38  IMPORT_FROM              LocationParseError
+               40  STORE_NAME               LocationParseError
+               42  POP_TOP          
+
+ L.   6        44  LOAD_CONST               2
+               46  LOAD_CONST               ('quote',)
+               48  IMPORT_NAME_ATTR         packages.six.moves.urllib.parse
+               50  IMPORT_FROM              quote
+               52  STORE_NAME               quote
+               54  POP_TOP          
+
+ L.   9        56  BUILD_LIST_0          0 
+               58  LOAD_CONST               ('scheme', 'auth', 'host', 'port', 'path', 'query', 'fragment')
+               60  CALL_FINALLY         63  'to 63'
+               62  STORE_NAME               url_attrs
+
+ L.  13        64  LOAD_CONST               ('http', 'https', None)
+               66  STORE_NAME               NORMALIZABLE_SCHEMES
+
+ L.  15        68  LOAD_NAME                re
+               70  LOAD_METHOD              compile
+               72  LOAD_STR                 '[\x00- \x7f]'
+               74  CALL_METHOD_1         1  ''
+               76  STORE_NAME               _contains_disallowed_url_pchar_re
+
+ L.  18        78  LOAD_BUILD_CLASS 
+               80  LOAD_CODE                <code_object Url>
+               82  LOAD_STR                 'Url'
+               84  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               86  LOAD_STR                 'Url'
+               88  LOAD_NAME                namedtuple
+               90  LOAD_STR                 'Url'
+               92  LOAD_NAME                url_attrs
+               94  CALL_FUNCTION_2       2  ''
+               96  CALL_FUNCTION_3       3  ''
+               98  STORE_NAME               Url
+
+ L. 103       100  LOAD_CODE                <code_object split_first>
+              102  LOAD_STR                 'split_first'
+              104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              106  STORE_NAME               split_first
+
+ L. 136       108  LOAD_CODE                <code_object parse_url>
+              110  LOAD_STR                 'parse_url'
+              112  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              114  STORE_NAME               parse_url
+
+ L. 233       116  LOAD_CODE                <code_object get_host>
+              118  LOAD_STR                 'get_host'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  STORE_NAME               get_host
+
+Parse error at or near `CALL_FINALLY' instruction at offset 60
+

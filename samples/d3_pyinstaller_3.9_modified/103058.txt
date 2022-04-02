@@ -1,0 +1,189 @@
+
+# file test/103058.pyc
+# --- This code section failed: ---
+
+ L.  11         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              os
+                6  STORE_NAME               os
+
+ L.  12         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              sys
+               14  STORE_NAME               sys
+
+ L.  13        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              runpy
+               22  STORE_NAME               runpy
+
+ L.  14        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              types
+               30  STORE_NAME               types
+
+ L.  16        32  LOAD_CONST               1
+               34  LOAD_CONST               ('get_start_method', 'set_start_method')
+               36  IMPORT_NAME              
+               38  IMPORT_FROM              get_start_method
+               40  STORE_NAME               get_start_method
+               42  IMPORT_FROM              set_start_method
+               44  STORE_NAME               set_start_method
+               46  POP_TOP          
+
+ L.  17        48  LOAD_CONST               1
+               50  LOAD_CONST               ('process',)
+               52  IMPORT_NAME              
+               54  IMPORT_FROM              process
+               56  STORE_NAME               process
+               58  POP_TOP          
+
+ L.  18        60  LOAD_CONST               1
+               62  LOAD_CONST               ('reduction',)
+               64  IMPORT_NAME              context
+               66  IMPORT_FROM              reduction
+               68  STORE_NAME               reduction
+               70  POP_TOP          
+
+ L.  19        72  LOAD_CONST               1
+               74  LOAD_CONST               ('util',)
+               76  IMPORT_NAME              
+               78  IMPORT_FROM              util
+               80  STORE_NAME               util
+               82  POP_TOP          
+
+ L.  21        84  BUILD_LIST_0          0 
+               86  LOAD_CONST               ('_main', 'freeze_support', 'set_executable', 'get_executable', 'get_preparation_data', 'get_command_line', 'import_main_path')
+               88  CALL_FINALLY         91  'to 91'
+               90  STORE_NAME               __all__
+
+ L.  29        92  LOAD_NAME                sys
+               94  LOAD_ATTR                platform
+               96  LOAD_STR                 'win32'
+               98  COMPARE_OP               !=
+              100  POP_JUMP_IF_FALSE   112  'to 112'
+
+ L.  30       102  LOAD_CONST               False
+              104  STORE_NAME               WINEXE
+
+ L.  31       106  LOAD_CONST               False
+              108  STORE_NAME               WINSERVICE
+              110  JUMP_FORWARD        140  'to 140'
+            112_0  COME_FROM           100  '100'
+
+ L.  33       112  LOAD_NAME                getattr
+              114  LOAD_NAME                sys
+              116  LOAD_STR                 'frozen'
+              118  LOAD_CONST               False
+              120  CALL_FUNCTION_3       3  ''
+              122  STORE_NAME               WINEXE
+
+ L.  34       124  LOAD_NAME                sys
+              126  LOAD_ATTR                executable
+              128  LOAD_METHOD              lower
+              130  CALL_METHOD_0         0  ''
+              132  LOAD_METHOD              endswith
+              134  LOAD_STR                 'pythonservice.exe'
+              136  CALL_METHOD_1         1  ''
+              138  STORE_NAME               WINSERVICE
+            140_0  COME_FROM           110  '110'
+
+ L.  36       140  LOAD_NAME                WINSERVICE
+              142  POP_JUMP_IF_FALSE   162  'to 162'
+
+ L.  37       144  LOAD_NAME                os
+              146  LOAD_ATTR                path
+              148  LOAD_METHOD              join
+              150  LOAD_NAME                sys
+              152  LOAD_ATTR                exec_prefix
+              154  LOAD_STR                 'python.exe'
+              156  CALL_METHOD_2         2  ''
+              158  STORE_GLOBAL             _python_exe
+              160  JUMP_FORWARD        168  'to 168'
+            162_0  COME_FROM           142  '142'
+
+ L.  39       162  LOAD_NAME                sys
+              164  LOAD_ATTR                executable
+              166  STORE_GLOBAL             _python_exe
+            168_0  COME_FROM           160  '160'
+
+ L.  41       168  LOAD_CODE                <code_object set_executable>
+              170  LOAD_STR                 'set_executable'
+              172  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              174  STORE_NAME               set_executable
+
+ L.  45       176  LOAD_CODE                <code_object get_executable>
+              178  LOAD_STR                 'get_executable'
+              180  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              182  STORE_NAME               get_executable
+
+ L.  52       184  LOAD_CODE                <code_object is_forking>
+              186  LOAD_STR                 'is_forking'
+              188  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              190  STORE_NAME               is_forking
+
+ L.  62       192  LOAD_CODE                <code_object freeze_support>
+              194  LOAD_STR                 'freeze_support'
+              196  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              198  STORE_NAME               freeze_support
+
+ L.  78       200  LOAD_CODE                <code_object get_command_line>
+              202  LOAD_STR                 'get_command_line'
+              204  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              206  STORE_NAME               get_command_line
+
+ L.  92       208  LOAD_CONST               (None, None)
+              210  LOAD_CODE                <code_object spawn_main>
+              212  LOAD_STR                 'spawn_main'
+              214  MAKE_FUNCTION_1          'default'
+              216  STORE_NAME               spawn_main
+
+ L. 120       218  LOAD_CODE                <code_object _main>
+              220  LOAD_STR                 '_main'
+              222  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              224  STORE_NAME               _main
+
+ L. 132       226  LOAD_CODE                <code_object _check_not_importing_main>
+              228  LOAD_STR                 '_check_not_importing_main'
+              230  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              232  STORE_NAME               _check_not_importing_main
+
+ L. 150       234  LOAD_CODE                <code_object get_preparation_data>
+              236  LOAD_STR                 'get_preparation_data'
+              238  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              240  STORE_NAME               get_preparation_data
+
+ L. 200       242  BUILD_LIST_0          0 
+              244  STORE_NAME               old_main_modules
+
+ L. 202       246  LOAD_CODE                <code_object prepare>
+              248  LOAD_STR                 'prepare'
+              250  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              252  STORE_NAME               prepare
+
+ L. 240       254  LOAD_CODE                <code_object _fixup_main_from_name>
+              256  LOAD_STR                 '_fixup_main_from_name'
+              258  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              260  STORE_NAME               _fixup_main_from_name
+
+ L. 265       262  LOAD_CODE                <code_object _fixup_main_from_path>
+              264  LOAD_STR                 '_fixup_main_from_path'
+              266  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              268  STORE_NAME               _fixup_main_from_path
+
+ L. 293       270  LOAD_CODE                <code_object import_main_path>
+              272  LOAD_STR                 'import_main_path'
+              274  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              276  STORE_NAME               import_main_path
+
+Parse error at or near `CALL_FINALLY' instruction at offset 88
+
+Instruction context:
+   
+ L.  21        84  BUILD_LIST_0          0 
+                  86  LOAD_CONST               ('_main', 'freeze_support', 'set_executable', 'get_executable', 'get_preparation_data', 'get_command_line', 'import_main_path')
+->                88  CALL_FINALLY         91  'to 91'
+                  90  STORE_NAME               __all__
+
+test/103058.pyc -- 
+# decompile failed

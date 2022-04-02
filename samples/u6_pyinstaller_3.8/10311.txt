@@ -1,0 +1,44 @@
+Instruction context:
+   
+ L. 296       102  LOAD_FAST                'self'
+                 104  LOAD_METHOD              _handle_request_noblock
+                 106  CALL_METHOD_0         0  ''
+                 108  POP_BLOCK        
+->               110  ROT_TWO          
+                 112  BEGIN_FINALLY    
+                 114  WITH_CLEANUP_START
+                 116  WITH_CLEANUP_FINISH
+                 118  POP_FINALLY           0  ''
+                 120  RETURN_VALUE     
+               122_0  COME_FROM           100  '100'
+Instruction context:
+   
+ L. 571       106  POP_EXCEPT       
+                 108  BREAK_LOOP          118  'to 118'
+                 110  POP_EXCEPT       
+                 112  JUMP_BACK            14  'to 14'
+               114_0  COME_FROM            98  '98'
+                 114  END_FINALLY      
+                 116  JUMP_BACK            14  'to 14'
+               118_0  COME_FROM_EXCEPT_CLAUSE   108  '108'
+->             118_1  COME_FROM_EXCEPT_CLAUSE    28  '28'
+Instruction context:
+   
+ L. 801        22  LOAD_FAST                'view'
+                  24  LOAD_ATTR                nbytes
+                  26  POP_BLOCK        
+->                28  ROT_TWO          
+                  30  BEGIN_FINALLY    
+                  32  WITH_CLEANUP_START
+                  34  WITH_CLEANUP_FINISH
+                  36  POP_FINALLY           0  ''
+                  38  RETURN_VALUE     
+                40_0  COME_FROM_WITH       18  '18'
+                  40  WITH_CLEANUP_START
+                  42  WITH_CLEANUP_FINISH
+
+../test/10311.pyc -- 
+# decompile failed
+
+# file ../test/10311.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,41 @@
+Instruction context:
+   
+ L. 513       104  POP_BLOCK        
+->               106  LOAD_CONST               True
+                 108  RETURN_VALUE     
+               110_0  COME_FROM           102  '102'
+                 110  POP_BLOCK        
+                 112  JUMP_FORWARD        152  'to 152'
+               114_0  COME_FROM_FINALLY    78  '78'
+Instruction context:
+   
+ L. 716        60  LOAD_GLOBAL              int
+                  62  LOAD_FAST                'match'
+                  64  LOAD_METHOD              group
+                  66  LOAD_CONST               1
+                  68  CALL_METHOD_1         1  ''
+                  70  CALL_FUNCTION_1       1  ''
+                  72  ROT_TWO          
+                  74  POP_TOP          
+->                76  POP_BLOCK        
+                  78  ROT_TWO          
+                  80  BEGIN_FINALLY    
+                  82  WITH_CLEANUP_START
+                  84  WITH_CLEANUP_FINISH
+                  86  POP_FINALLY           0  ''
+                  88  RETURN_VALUE     
+                  90  JUMP_BACK            40  'to 40'
+                92_0  COME_FROM            40  '40'
+                  92  POP_BLOCK        
+                  94  BEGIN_FINALLY    
+                96_0  COME_FROM_WITH       32  '32'
+                  96  WITH_CLEANUP_START
+                  98  WITH_CLEANUP_FINISH
+                 100  END_FINALLY      
+               102_0  COME_FROM            22  '22'
+
+../test/26039.pyc -- 
+# decompile failed
+
+# file ../test/26039.pyc
+# Deparsing stopped due to parse error

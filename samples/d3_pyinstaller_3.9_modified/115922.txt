@@ -1,0 +1,103 @@
+Instruction context:
+   
+ L.  12        84  BUILD_LIST_0          0 
+                  86  LOAD_CONST               ('Require', 'find_module', 'get_module_constant', 'extract_constant')
+->                88  CALL_FINALLY         91  'to 91'
+                  90  STORE_NAME               __all__
+
+test/115922.pyc -- 
+# decompile failed
+
+# file test/115922.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              marshal
+               14  STORE_NAME               marshal
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              contextlib
+               22  STORE_NAME               contextlib
+
+ L.   4        24  LOAD_CONST               0
+               26  LOAD_CONST               ('StrictVersion',)
+               28  IMPORT_NAME_ATTR         distutils.version
+               30  IMPORT_FROM              StrictVersion
+               32  STORE_NAME               StrictVersion
+               34  POP_TOP          
+
+ L.   6        36  LOAD_CONST               1
+               38  LOAD_CONST               ('Bytecode',)
+               40  IMPORT_NAME              py33compat
+               42  IMPORT_FROM              Bytecode
+               44  STORE_NAME               Bytecode
+               46  POP_TOP          
+
+ L.   8        48  LOAD_CONST               1
+               50  LOAD_CONST               ('find_module', 'PY_COMPILED', 'PY_FROZEN', 'PY_SOURCE')
+               52  IMPORT_NAME              py27compat
+               54  IMPORT_FROM              find_module
+               56  STORE_NAME               find_module
+               58  IMPORT_FROM              PY_COMPILED
+               60  STORE_NAME               PY_COMPILED
+               62  IMPORT_FROM              PY_FROZEN
+               64  STORE_NAME               PY_FROZEN
+               66  IMPORT_FROM              PY_SOURCE
+               68  STORE_NAME               PY_SOURCE
+               70  POP_TOP          
+
+ L.   9        72  LOAD_CONST               1
+               74  LOAD_CONST               ('py27compat',)
+               76  IMPORT_NAME              
+               78  IMPORT_FROM              py27compat
+               80  STORE_NAME               py27compat
+               82  POP_TOP          
+
+ L.  12        84  BUILD_LIST_0          0 
+               86  LOAD_CONST               ('Require', 'find_module', 'get_module_constant', 'extract_constant')
+               88  CALL_FINALLY         91  'to 91'
+               90  STORE_NAME               __all__
+
+ L.  17        92  LOAD_BUILD_CLASS 
+               94  LOAD_CODE                <code_object Require>
+               96  LOAD_STR                 'Require'
+               98  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              100  LOAD_STR                 'Require'
+              102  CALL_FUNCTION_2       2  ''
+              104  STORE_NAME               Require
+
+ L.  85       106  LOAD_CODE                <code_object maybe_close>
+              108  LOAD_STR                 'maybe_close'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  STORE_NAME               maybe_close
+
+ L.  96       114  LOAD_CONST               (-1, None)
+              116  LOAD_CODE                <code_object get_module_constant>
+              118  LOAD_STR                 'get_module_constant'
+              120  MAKE_FUNCTION_1          'default'
+              122  STORE_NAME               get_module_constant
+
+ L. 125       124  LOAD_CONST               (-1,)
+              126  LOAD_CODE                <code_object extract_constant>
+              128  LOAD_STR                 'extract_constant'
+              130  MAKE_FUNCTION_1          'default'
+              132  STORE_NAME               extract_constant
+
+ L. 161       134  LOAD_CODE                <code_object _update_globals>
+              136  LOAD_STR                 '_update_globals'
+              138  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              140  STORE_NAME               _update_globals
+
+ L. 176       142  LOAD_NAME                _update_globals
+              144  CALL_FUNCTION_0       0  ''
+              146  POP_TOP          
+
+Parse error at or near `CALL_FINALLY' instruction at offset 88
+

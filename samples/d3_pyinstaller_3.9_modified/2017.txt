@@ -1,0 +1,98 @@
+Instruction context:
+   
+ L.  43        14  DUP_TOP          
+                  16  LOAD_GLOBAL              TypeError
+                  18  LOAD_GLOBAL              ValueError
+                  20  BUILD_TUPLE_2         2 
+->                22  <121>                36  ''
+                  24  POP_TOP          
+                  26  POP_TOP          
+                  28  POP_TOP          
+Instruction context:
+   
+ L.  54        14  DUP_TOP          
+                  16  LOAD_GLOBAL              TypeError
+                  18  LOAD_GLOBAL              ValueError
+                  20  BUILD_TUPLE_2         2 
+->                22  <121>                36  ''
+                  24  POP_TOP          
+                  26  POP_TOP          
+                  28  POP_TOP          
+Instruction context:
+   
+ L.  81        14  LOAD_FAST                'ndtype'
+                  16  LOAD_FAST                'name'
+                  18  BINARY_SUBSCR    
+                  20  LOAD_ATTR                names
+                  22  LOAD_CONST               None
+->                24  <117>                 1  ''
+                  26  POP_JUMP_IF_FALSE_BACK    10  'to 10'
+Instruction context:
+   
+ L. 120         6  LOAD_FAST                'names'
+                   8  LOAD_CONST               None
+->                10  <117>                 0  ''
+                  12  POP_JUMP_IF_FALSE    50  'to 50'
+Instruction context:
+   
+ L. 177        22  LOAD_FAST                'delimiter'
+                  24  LOAD_CONST               None
+->                26  <117>                 0  ''
+                  28  POP_JUMP_IF_TRUE     40  'to 40'
+                  30  LOAD_GLOBAL              isinstance
+                  32  LOAD_FAST                'delimiter'
+                  34  LOAD_GLOBAL              str
+                  36  CALL_FUNCTION_2       2  ''
+                  38  POP_JUMP_IF_FALSE    56  'to 56'
+                40_0  COME_FROM            28  '28'
+Instruction context:
+   
+ L. 281        12  BUILD_LIST_0          0 
+                  14  LOAD_CONST               ('return', 'file', 'print')
+->                16  CALL_FINALLY         19  'to 19'
+                  18  STORE_NAME               defaultexcludelist
+
+test/2017.pyc -- 
+# decompile failed
+
+# file test/2017.pyc
+# --- This code section failed: ---
+
+ L. 229         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'NameValidator'
+                6  STORE_NAME               __qualname__
+
+ L. 230         8  LOAD_STR                 '\n    Object to validate a list of strings to use as field names.\n\n    The strings are stripped of any non alphanumeric character, and spaces\n    are replaced by \'_\'. During instantiation, the user can define a list\n    of names to exclude, as well as a list of invalid characters. Names in\n    the exclusion list are appended a \'_\' character.\n\n    Once an instance has been created, it can be called with a list of\n    names, and a list of valid names will be created.  The `__call__`\n    method accepts an optional keyword "default" that sets the default name\n    in case of ambiguity. By default this is \'f\', so that names will\n    default to `f0`, `f1`, etc.\n\n    Parameters\n    ----------\n    excludelist : sequence, optional\n        A list of names to exclude. This list is appended to the default\n        list [\'return\', \'file\', \'print\']. Excluded names are appended an\n        underscore: for example, `file` becomes `file_` if supplied.\n    deletechars : str, optional\n        A string combining invalid characters that must be deleted from the\n        names.\n    case_sensitive : {True, False, \'upper\', \'lower\'}, optional\n        * If True, field names are case-sensitive.\n        * If False or \'upper\', field names are converted to upper case.\n        * If \'lower\', field names are converted to lower case.\n\n        The default value is True.\n    replace_space : \'_\', optional\n        Character(s) used in replacement of white spaces.\n\n    Notes\n    -----\n    Calling an instance of `NameValidator` is the same as calling its\n    method `validate`.\n\n    Examples\n    --------\n    >>> validator = np.lib._iotools.NameValidator()\n    >>> validator([\'file\', \'field2\', \'with space\', \'CaSe\'])\n    (\'file_\', \'field2\', \'with_space\', \'CaSe\')\n\n    >>> validator = np.lib._iotools.NameValidator(excludelist=[\'excl\'],\n    ...                                           deletechars=\'q\',\n    ...                                           case_sensitive=False)\n    >>> validator([\'excl\', \'field2\', \'no_q\', \'with space\', \'CaSe\'])\n    (\'EXCL\', \'FIELD2\', \'NO_Q\', \'WITH_SPACE\', \'CASE\')\n\n    '
+               10  STORE_NAME               __doc__
+
+ L. 281        12  BUILD_LIST_0          0 
+               14  LOAD_CONST               ('return', 'file', 'print')
+               16  CALL_FINALLY         19  'to 19'
+               18  STORE_NAME               defaultexcludelist
+
+ L. 282        20  LOAD_NAME                set
+               22  LOAD_STR                 "~!@#$%^&*()-=+~\\|]}[{';: /?.>,<"
+               24  CALL_FUNCTION_1       1  ''
+               26  STORE_NAME               defaultdeletechars
+
+ L. 284        28  LOAD_CONST               (None, None, None, '_')
+               30  LOAD_CODE                <code_object __init__>
+               32  LOAD_STR                 'NameValidator.__init__'
+               34  MAKE_FUNCTION_1          'default'
+               36  STORE_NAME               __init__
+
+ L. 311        38  LOAD_CONST               ('f%i', None)
+               40  LOAD_CODE                <code_object validate>
+               42  LOAD_STR                 'NameValidator.validate'
+               44  MAKE_FUNCTION_1          'default'
+               46  STORE_NAME               validate
+
+ L. 381        48  LOAD_CONST               ('f%i', None)
+               50  LOAD_CODE                <code_object __call__>
+               52  LOAD_STR                 'NameValidator.__call__'
+               54  MAKE_FUNCTION_1          'default'
+               56  STORE_NAME               __call__
+
+Parse error at or near `CALL_FINALLY' instruction at offset 16
+

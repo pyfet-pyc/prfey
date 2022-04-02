@@ -1,0 +1,65 @@
+Instruction context:
+   
+ L.  11        12  BUILD_LIST_0          0 
+                  14  LOAD_CONST               ('addbase', 'addclosehook', 'addinfo', 'addinfourl')
+->                16  CALL_FINALLY         19  'to 19'
+                  18  STORE_NAME               __all__
+
+test/101356.pyc -- 
+# decompile failed
+
+# file test/101356.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Response classes used by urllib.\n\nThe base class, addbase, defines a minimal file-like interface,\nincluding read() and readline().  The typical response object is an\naddinfourl instance, which defines an info() method that returns\nheaders and a geturl() method that returns the url.\n'
+                2  STORE_NAME               __doc__
+
+ L.   9         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              tempfile
+               10  STORE_NAME               tempfile
+
+ L.  11        12  BUILD_LIST_0          0 
+               14  LOAD_CONST               ('addbase', 'addclosehook', 'addinfo', 'addinfourl')
+               16  CALL_FINALLY         19  'to 19'
+               18  STORE_NAME               __all__
+
+ L.  14        20  LOAD_BUILD_CLASS 
+               22  LOAD_CODE                <code_object addbase>
+               24  LOAD_STR                 'addbase'
+               26  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               28  LOAD_STR                 'addbase'
+               30  LOAD_NAME                tempfile
+               32  LOAD_ATTR                _TemporaryFileWrapper
+               34  CALL_FUNCTION_3       3  ''
+               36  STORE_NAME               addbase
+
+ L.  37        38  LOAD_BUILD_CLASS 
+               40  LOAD_CODE                <code_object addclosehook>
+               42  LOAD_STR                 'addclosehook'
+               44  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               46  LOAD_STR                 'addclosehook'
+               48  LOAD_NAME                addbase
+               50  CALL_FUNCTION_3       3  ''
+               52  STORE_NAME               addclosehook
+
+ L.  57        54  LOAD_BUILD_CLASS 
+               56  LOAD_CODE                <code_object addinfo>
+               58  LOAD_STR                 'addinfo'
+               60  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               62  LOAD_STR                 'addinfo'
+               64  LOAD_NAME                addbase
+               66  CALL_FUNCTION_3       3  ''
+               68  STORE_NAME               addinfo
+
+ L.  68        70  LOAD_BUILD_CLASS 
+               72  LOAD_CODE                <code_object addinfourl>
+               74  LOAD_STR                 'addinfourl'
+               76  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               78  LOAD_STR                 'addinfourl'
+               80  LOAD_NAME                addinfo
+               82  CALL_FUNCTION_3       3  ''
+               84  STORE_NAME               addinfourl
+
+Parse error at or near `CALL_FINALLY' instruction at offset 16
+

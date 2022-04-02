@@ -1,0 +1,138 @@
+Instruction context:
+   
+ L.   5        28  BUILD_LIST_0          0 
+                  30  LOAD_CONST               ('sources', 'include_dirs', 'library_dirs', 'extra_objects', 'depends')
+->                32  CALL_FINALLY         35  'to 35'
+                  34  STORE_NAME               LIST_OF_FILE_NAMES
+
+test/111811.pyc -- 
+# decompile failed
+
+# file test/111811.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+                8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              os
+               14  STORE_NAME               os
+
+ L.   2        16  LOAD_CONST               1
+               18  LOAD_CONST               ('VerificationError',)
+               20  IMPORT_NAME              error
+               22  IMPORT_FROM              VerificationError
+               24  STORE_NAME               VerificationError
+               26  POP_TOP          
+
+ L.   5        28  BUILD_LIST_0          0 
+               30  LOAD_CONST               ('sources', 'include_dirs', 'library_dirs', 'extra_objects', 'depends')
+               32  CALL_FINALLY         35  'to 35'
+               34  STORE_NAME               LIST_OF_FILE_NAMES
+
+ L.   8        36  LOAD_CONST               ((),)
+               38  LOAD_CODE                <code_object get_extension>
+               40  LOAD_STR                 'get_extension'
+               42  MAKE_FUNCTION_1          'default'
+               44  STORE_NAME               get_extension
+
+ L.  16        46  LOAD_CONST               (0, None)
+               48  LOAD_CODE                <code_object compile>
+               50  LOAD_STR                 'compile'
+               52  MAKE_FUNCTION_1          'default'
+               54  STORE_NAME               compile
+
+ L.  32        56  LOAD_CONST               (0, None)
+               58  LOAD_CODE                <code_object _build>
+               60  LOAD_STR                 '_build'
+               62  MAKE_FUNCTION_1          'default'
+               64  STORE_NAME               _build
+
+ L.  62        66  SETUP_FINALLY        84  'to 84'
+
+ L.  63        68  LOAD_CONST               0
+               70  LOAD_CONST               ('samefile',)
+               72  IMPORT_NAME_ATTR         os.path
+               74  IMPORT_FROM              samefile
+               76  STORE_NAME               samefile
+               78  POP_TOP          
+               80  POP_BLOCK        
+               82  JUMP_FORWARD        110  'to 110'
+             84_0  COME_FROM_FINALLY    66  '66'
+
+ L.  64        84  DUP_TOP          
+               86  LOAD_NAME                ImportError
+               88  <121>               108  ''
+               90  POP_TOP          
+               92  POP_TOP          
+               94  POP_TOP          
+
+ L.  65        96  LOAD_CODE                <code_object samefile>
+               98  LOAD_STR                 'samefile'
+              100  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              102  STORE_NAME               samefile
+              104  POP_EXCEPT       
+              106  JUMP_FORWARD        110  'to 110'
+              108  <48>             
+            110_0  COME_FROM           106  '106'
+            110_1  COME_FROM            82  '82'
+
+ L.  68       110  LOAD_CODE                <code_object maybe_relative_path>
+              112  LOAD_STR                 'maybe_relative_path'
+              114  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              116  STORE_NAME               maybe_relative_path
+
+ L.  88       118  SETUP_FINALLY       140  'to 140'
+
+ L.  89       120  LOAD_NAME                int
+              122  LOAD_NAME                long
+              124  BUILD_TUPLE_2         2 
+              126  STORE_NAME               int_or_long
+
+ L.  90       128  LOAD_CONST               0
+              130  LOAD_CONST               None
+              132  IMPORT_NAME              cStringIO
+              134  STORE_NAME               cStringIO
+              136  POP_BLOCK        
+              138  JUMP_FORWARD        170  'to 170'
+            140_0  COME_FROM_FINALLY   118  '118'
+
+ L.  91       140  DUP_TOP          
+              142  LOAD_NAME                NameError
+              144  <121>               168  ''
+              146  POP_TOP          
+              148  POP_TOP          
+              150  POP_TOP          
+
+ L.  92       152  LOAD_NAME                int
+              154  STORE_NAME               int_or_long
+
+ L.  93       156  LOAD_CONST               0
+              158  LOAD_CONST               None
+              160  IMPORT_NAME              io
+              162  STORE_NAME               cStringIO
+              164  POP_EXCEPT       
+              166  JUMP_FORWARD        170  'to 170'
+              168  <48>             
+            170_0  COME_FROM           166  '166'
+            170_1  COME_FROM           138  '138'
+
+ L.  95       170  LOAD_CODE                <code_object _flatten>
+              172  LOAD_STR                 '_flatten'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  STORE_NAME               _flatten
+
+ L. 114       178  LOAD_CODE                <code_object flatten>
+              180  LOAD_STR                 'flatten'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  STORE_NAME               flatten
+
+ L. 119       186  LOAD_CODE                <code_object _hack_at_distutils>
+              188  LOAD_STR                 '_hack_at_distutils'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  STORE_NAME               _hack_at_distutils
+
+Parse error at or near `CALL_FINALLY' instruction at offset 32
+

@@ -1,0 +1,150 @@
+Instruction context:
+   
+ L.  17        66  POP_EXCEPT       
+                  68  JUMP_FORWARD        206  'to 206'
+->                70  <48>             
+                72_0  COME_FROM            58  '58'
+
+test/162596.pyc -- 
+# decompile failed
+
+# file test/162596.pyc
+# --- This code section failed: ---
+
+ L.   2         0  LOAD_STR                 '\nHelper to preload windows dlls to prevent dll not found errors.\nOnce a DLL is preloaded, its namespace is made available to any\nsubsequent DLL. This file originated in the numpy-wheels repo,\nand is created as part of the scripts that build the wheel.\n'
+                2  STORE_NAME               __doc__
+
+ L.   8         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.   9        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              glob
+               18  STORE_NAME               glob
+
+ L.  10        20  LOAD_NAME                os
+               22  LOAD_ATTR                name
+               24  LOAD_STR                 'nt'
+               26  COMPARE_OP               ==
+               28  POP_JUMP_IF_FALSE   206  'to 206'
+
+ L.  13        30  SETUP_FINALLY        60  'to 60'
+
+ L.  14        32  LOAD_CONST               0
+               34  LOAD_CONST               ('WinDLL',)
+               36  IMPORT_NAME              ctypes
+               38  IMPORT_FROM              WinDLL
+               40  STORE_NAME               WinDLL
+               42  POP_TOP          
+
+ L.  15        44  LOAD_NAME                os
+               46  LOAD_ATTR                path
+               48  LOAD_METHOD              dirname
+               50  LOAD_NAME                __file__
+               52  CALL_METHOD_1         1  ''
+               54  STORE_NAME               basedir
+               56  POP_BLOCK        
+               58  JUMP_FORWARD         72  'to 72'
+             60_0  COME_FROM_FINALLY    30  '30'
+
+ L.  16        60  POP_TOP          
+               62  POP_TOP          
+               64  POP_TOP          
+
+ L.  17        66  POP_EXCEPT       
+               68  JUMP_FORWARD        206  'to 206'
+               70  <48>             
+             72_0  COME_FROM            58  '58'
+
+ L.  19        72  LOAD_NAME                os
+               74  LOAD_ATTR                path
+               76  LOAD_METHOD              abspath
+               78  LOAD_NAME                os
+               80  LOAD_ATTR                path
+               82  LOAD_METHOD              join
+               84  LOAD_NAME                basedir
+               86  LOAD_STR                 '.libs'
+               88  CALL_METHOD_2         2  ''
+               90  CALL_METHOD_1         1  ''
+               92  STORE_NAME               libs_dir
+
+ L.  20        94  BUILD_LIST_0          0 
+               96  STORE_NAME               DLL_filenames
+
+ L.  21        98  LOAD_NAME                os
+              100  LOAD_ATTR                path
+              102  LOAD_METHOD              isdir
+              104  LOAD_NAME                libs_dir
+              106  CALL_METHOD_1         1  ''
+              108  POP_JUMP_IF_FALSE   162  'to 162'
+
+ L.  22       110  LOAD_NAME                glob
+              112  LOAD_METHOD              glob
+              114  LOAD_NAME                os
+              116  LOAD_ATTR                path
+              118  LOAD_METHOD              join
+              120  LOAD_NAME                libs_dir
+
+ L.  23       122  LOAD_STR                 '*openblas*dll'
+
+ L.  22       124  CALL_METHOD_2         2  ''
+              126  CALL_METHOD_1         1  ''
+              128  GET_ITER         
+            130_0  COME_FROM           160  '160'
+              130  FOR_ITER            162  'to 162'
+              132  STORE_NAME               filename
+
+ L.  26       134  LOAD_NAME                WinDLL
+              136  LOAD_NAME                os
+              138  LOAD_ATTR                path
+              140  LOAD_METHOD              abspath
+              142  LOAD_NAME                filename
+              144  CALL_METHOD_1         1  ''
+              146  CALL_FUNCTION_1       1  ''
+              148  POP_TOP          
+
+ L.  27       150  LOAD_NAME                DLL_filenames
+              152  LOAD_METHOD              append
+              154  LOAD_NAME                filename
+              156  CALL_METHOD_1         1  ''
+              158  POP_TOP          
+              160  JUMP_BACK           130  'to 130'
+            162_0  COME_FROM           130  '130'
+            162_1  COME_FROM           108  '108'
+
+ L.  28       162  LOAD_NAME                len
+              164  LOAD_NAME                DLL_filenames
+              166  CALL_FUNCTION_1       1  ''
+              168  LOAD_CONST               1
+              170  COMPARE_OP               >
+              172  POP_JUMP_IF_FALSE   206  'to 206'
+
+ L.  29       174  LOAD_CONST               0
+              176  LOAD_CONST               None
+              178  IMPORT_NAME              warnings
+              180  STORE_NAME               warnings
+
+ L.  30       182  LOAD_NAME                warnings
+              184  LOAD_ATTR                warn
+              186  LOAD_STR                 'loaded more than 1 DLL from .libs:\n%s'
+
+ L.  31       188  LOAD_STR                 '\n'
+              190  LOAD_METHOD              join
+              192  LOAD_NAME                DLL_filenames
+              194  CALL_METHOD_1         1  ''
+
+ L.  30       196  BINARY_MODULO    
+
+ L.  32       198  LOAD_CONST               1
+
+ L.  30       200  LOAD_CONST               ('stacklevel',)
+              202  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              204  POP_TOP          
+            206_0  COME_FROM           172  '172'
+            206_1  COME_FROM            68  '68'
+            206_2  COME_FROM            28  '28'
+
+Parse error at or near `<48>' instruction at offset 70
+

@@ -1,0 +1,86 @@
+Instruction context:
+   
+ L.   3        14  BUILD_LIST_0          0 
+                  16  LOAD_CONST               ('version', 'full_version', 'git_revision', 'release')
+->                18  CALL_FINALLY         21  'to 21'
+                  20  STORE_NAME               __ALL__
+
+test/162595.pyc -- 
+# decompile failed
+
+# file test/162595.pyc
+# --- This code section failed: ---
+
+ L.   1         0  SETUP_ANNOTATIONS
+                2  LOAD_CONST               1
+                4  LOAD_CONST               ('get_versions',)
+                6  IMPORT_NAME              _version
+                8  IMPORT_FROM              get_versions
+               10  STORE_NAME               get_versions
+               12  POP_TOP          
+
+ L.   3        14  BUILD_LIST_0          0 
+               16  LOAD_CONST               ('version', 'full_version', 'git_revision', 'release')
+               18  CALL_FINALLY         21  'to 21'
+               20  STORE_NAME               __ALL__
+
+ L.   5        22  LOAD_NAME                get_versions
+               24  CALL_FUNCTION_0       0  ''
+               26  STORE_NAME               vinfo
+
+ L.   6        28  LOAD_NAME                vinfo
+               30  LOAD_STR                 'version'
+               32  BINARY_SUBSCR    
+               34  STORE_NAME               version
+               36  LOAD_NAME                str
+               38  LOAD_ANNOTATION          __annotations__
+               40  LOAD_STR                 'version'
+               42  STORE_SUBSCR     
+
+ L.   7        44  LOAD_NAME                vinfo
+               46  LOAD_STR                 'version'
+               48  BINARY_SUBSCR    
+               50  STORE_NAME               full_version
+               52  LOAD_NAME                str
+               54  LOAD_ANNOTATION          __annotations__
+               56  LOAD_STR                 'full_version'
+               58  STORE_SUBSCR     
+
+ L.   8        60  LOAD_NAME                vinfo
+               62  LOAD_STR                 'full-revisionid'
+               64  BINARY_SUBSCR    
+               66  STORE_NAME               git_revision
+               68  LOAD_NAME                str
+               70  LOAD_ANNOTATION          __annotations__
+               72  LOAD_STR                 'git_revision'
+               74  STORE_SUBSCR     
+
+ L.   9        76  LOAD_STR                 'dev0'
+               78  LOAD_NAME                version
+               80  <118>                 1  ''
+               82  JUMP_IF_FALSE_OR_POP    90  'to 90'
+               84  LOAD_STR                 '+'
+               86  LOAD_NAME                version
+               88  <118>                 1  ''
+             90_0  COME_FROM            82  '82'
+               90  STORE_NAME               release
+
+ L.  10        92  LOAD_NAME                vinfo
+               94  LOAD_STR                 'version'
+               96  BINARY_SUBSCR    
+               98  LOAD_METHOD              split
+              100  LOAD_STR                 '+'
+              102  CALL_METHOD_1         1  ''
+              104  LOAD_CONST               0
+              106  BINARY_SUBSCR    
+              108  STORE_NAME               short_version
+              110  LOAD_NAME                str
+              112  LOAD_ANNOTATION          __annotations__
+              114  LOAD_STR                 'short_version'
+              116  STORE_SUBSCR     
+
+ L.  12       118  DELETE_NAME              get_versions
+              120  DELETE_NAME              vinfo
+
+Parse error at or near `CALL_FINALLY' instruction at offset 18
+

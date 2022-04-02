@@ -1,0 +1,53 @@
+Instruction context:
+   
+ L.  43        16  LOAD_FAST                'nbytes'
+                  18  LOAD_CONST               2
+                  20  COMPARE_OP               >=
+                  22  POP_JUMP_IF_TRUE     32  'to 32'
+->                24  <74>             
+                  26  LOAD_STR                 '_SHM_NAME_PREFIX too long'
+                  28  CALL_FUNCTION_1       1  ''
+                  30  RAISE_VARARGS_1       1  'exception instance'
+                32_0  COME_FROM            22  '22'
+Instruction context:
+   
+ L.  81        48  LOAD_FAST                'name'
+                  50  LOAD_CONST               None
+->                52  <117>                 0  ''
+                  54  POP_JUMP_IF_FALSE    76  'to 76'
+                  56  LOAD_FAST                'self'
+                  58  LOAD_ATTR                _flags
+                  60  LOAD_GLOBAL              os
+                  62  LOAD_ATTR                O_EXCL
+                  64  BINARY_AND       
+                  66  POP_JUMP_IF_TRUE     76  'to 76'
+Instruction context:
+   
+ L. 185        14  DUP_TOP          
+                  16  LOAD_GLOBAL              OSError
+->                18  <121>                30  ''
+                  20  POP_TOP          
+                  22  POP_TOP          
+                  24  POP_TOP          
+Instruction context:
+   
+ L. 431        70  DUP_TOP          
+                  72  LOAD_GLOBAL              IndexError
+->                74  <121>                94  ''
+                  76  POP_TOP          
+                  78  POP_TOP          
+                  80  POP_TOP          
+Instruction context:
+   
+ L. 445        58  DUP_TOP          
+                  60  LOAD_GLOBAL              IndexError
+->                62  <121>                82  ''
+                  64  POP_TOP          
+                  66  POP_TOP          
+                  68  POP_TOP          
+
+test/101262.pyc -- 
+# decompile failed
+
+# file test/101262.pyc
+# Deparsing stopped due to parse error

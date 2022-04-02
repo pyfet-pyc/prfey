@@ -1,0 +1,80 @@
+Instruction context:
+-> 
+ L.  83        20  DUP_TOP          
+                  22  LOAD_GLOBAL              ValueError
+                  24  LOAD_GLOBAL              UnicodeError
+                  26  BUILD_TUPLE_2         2 
+                  28  COMPARE_OP               exception-match
+                  30  POP_JUMP_IF_FALSE    44  'to 44'
+                  32  POP_TOP          
+                  34  POP_TOP          
+                  36  POP_TOP          
+Instruction context:
+-> 
+ L.  95        18  DUP_TOP          
+                  20  LOAD_GLOBAL              socket
+                  22  LOAD_ATTR                error
+                  24  COMPARE_OP               exception-match
+                  26  POP_JUMP_IF_FALSE    88  'to 88'
+                  28  POP_TOP          
+                  30  POP_TOP          
+                  32  POP_TOP          
+Instruction context:
+-> 
+ L. 107        18  DUP_TOP          
+                  20  LOAD_GLOBAL              socket
+                  22  LOAD_ATTR                error
+                  24  COMPARE_OP               exception-match
+                  26  POP_JUMP_IF_FALSE    54  'to 54'
+                  28  POP_TOP          
+                  30  POP_TOP          
+                  32  POP_TOP          
+Instruction context:
+-> 
+ L. 617       332  DUP_TOP          
+                 334  LOAD_GLOBAL              BaseException
+                 336  COMPARE_OP               exception-match
+             338_340  POP_JUMP_IF_FALSE   376  'to 376'
+                 342  POP_TOP          
+                 344  STORE_FAST               'error'
+                 346  POP_TOP          
+                 348  SETUP_FINALLY       364  'to 364'
+Instruction context:
+   
+ L. 870       334  LOAD_FAST                'sock'
+                 336  POP_BLOCK        
+                 338  ROT_TWO          
+->               340  POP_TOP          
+                 342  RETURN_VALUE     
+               344_0  COME_FROM_FINALLY   256  '256'
+Instruction context:
+   
+ L. 998        14  POP_BLOCK        
+->                16  BEGIN_FINALLY    
+                  18  WITH_CLEANUP_START
+                  20  WITH_CLEANUP_FINISH
+                  22  POP_FINALLY           0  ''
+                  24  LOAD_CONST               None
+                  26  RETURN_VALUE     
+                28_0  COME_FROM            12  '12'
+Instruction context:
+   
+ L.1054       114  POP_BLOCK        
+->               116  BEGIN_FINALLY    
+                 118  WITH_CLEANUP_START
+                 120  WITH_CLEANUP_FINISH
+                 122  POP_FINALLY           0  ''
+                 124  JUMP_FORWARD        246  'to 246'
+               126_0  COME_FROM           112  '112'
+                 126  POP_BLOCK        
+                 128  BEGIN_FINALLY    
+               130_0  COME_FROM_WITH       86  '86'
+                 130  WITH_CLEANUP_START
+                 132  WITH_CLEANUP_FINISH
+                 134  END_FINALLY      
+
+../test/118287.pyc -- 
+# decompile failed
+
+# file ../test/118287.pyc
+# Deparsing stopped due to parse error

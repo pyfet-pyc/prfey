@@ -1,0 +1,35 @@
+Instruction context:
+   
+ L. 596        66  LOAD_FAST                'self'
+                  68  LOAD_ATTR                _root
+                  70  POP_BLOCK        
+->                72  CALL_FINALLY        124  'to 124'
+                  74  RETURN_VALUE     
+                76_0  COME_FROM           102  '102'
+                76_1  COME_FROM            52  '52'
+                76_2  COME_FROM            36  '36'
+Instruction context:
+   
+ L.1708       102  LOAD_FAST                'close_handler'
+                 104  CALL_FUNCTION_0       0  ''
+                 106  POP_BLOCK        
+->               108  CALL_FINALLY        116  'to 116'
+                 110  RETURN_VALUE     
+               112_0  COME_FROM            98  '98'
+                 112  POP_BLOCK        
+                 114  BEGIN_FINALLY    
+               116_0  COME_FROM           108  '108'
+               116_1  COME_FROM_FINALLY    66  '66'
+Instruction context:
+   
+ L.1901        36  LOAD_FAST                'tag'
+                  38  BUILD_SET_1           1 
+                  40  LOAD_FAST                'attrs'
+->                42  BUILD_SET_UNPACK_2     2 
+                  44  STORE_FAST               'qnames'
+
+../test/157511.pyc -- 
+# decompile failed
+
+# file ../test/157511.pyc
+# Deparsing stopped due to parse error

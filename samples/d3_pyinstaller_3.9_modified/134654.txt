@@ -1,0 +1,82 @@
+Instruction context:
+   
+ L.   4         8  BUILD_LIST_0          0 
+                  10  LOAD_CONST               ('install', 'NullFinder', 'PyPy_repr', 'Protocol')
+->                12  CALL_FINALLY         15  'to 15'
+                  14  STORE_NAME               __all__
+
+test/134654.pyc -- 
+# decompile failed
+
+# file test/134654.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   4         8  BUILD_LIST_0          0 
+               10  LOAD_CONST               ('install', 'NullFinder', 'PyPy_repr', 'Protocol')
+               12  CALL_FINALLY         15  'to 15'
+               14  STORE_NAME               __all__
+
+ L.   7        16  SETUP_FINALLY        34  'to 34'
+
+ L.   8        18  LOAD_CONST               0
+               20  LOAD_CONST               ('Protocol',)
+               22  IMPORT_NAME              typing
+               24  IMPORT_FROM              Protocol
+               26  STORE_NAME               Protocol
+               28  POP_TOP          
+               30  POP_BLOCK        
+               32  JUMP_FORWARD         64  'to 64'
+             34_0  COME_FROM_FINALLY    16  '16'
+
+ L.   9        34  DUP_TOP          
+               36  LOAD_NAME                ImportError
+               38  <121>                62  ''
+               40  POP_TOP          
+               42  POP_TOP          
+               44  POP_TOP          
+
+ L.  15        46  LOAD_CONST               0
+               48  LOAD_CONST               ('Protocol',)
+               50  IMPORT_NAME              typing_extensions
+               52  IMPORT_FROM              Protocol
+               54  STORE_NAME               Protocol
+               56  POP_TOP          
+               58  POP_EXCEPT       
+               60  JUMP_FORWARD         64  'to 64'
+               62  <48>             
+             64_0  COME_FROM            60  '60'
+             64_1  COME_FROM            32  '32'
+
+ L.  18        64  LOAD_CODE                <code_object install>
+               66  LOAD_STR                 'install'
+               68  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               70  STORE_NAME               install
+
+ L.  31        72  LOAD_CODE                <code_object disable_stdlib_finder>
+               74  LOAD_STR                 'disable_stdlib_finder'
+               76  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               78  STORE_NAME               disable_stdlib_finder
+
+ L.  49        80  LOAD_BUILD_CLASS 
+               82  LOAD_CODE                <code_object NullFinder>
+               84  LOAD_STR                 'NullFinder'
+               86  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               88  LOAD_STR                 'NullFinder'
+               90  CALL_FUNCTION_2       2  ''
+               92  STORE_NAME               NullFinder
+
+ L.  68        94  LOAD_BUILD_CLASS 
+               96  LOAD_CODE                <code_object PyPy_repr>
+               98  LOAD_STR                 'PyPy_repr'
+              100  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              102  LOAD_STR                 'PyPy_repr'
+              104  CALL_FUNCTION_2       2  ''
+              106  STORE_NAME               PyPy_repr
+
+Parse error at or near `CALL_FINALLY' instruction at offset 12
+

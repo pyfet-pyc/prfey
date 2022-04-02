@@ -1,0 +1,835 @@
+
+# file test/109549.pyc
+# --- This code section failed: ---
+
+ L. 167         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'Backend'
+                6  STORE_NAME               __qualname__
+
+ L. 183         8  LOAD_STR                 '\n    OpenSSL API binding interfaces.\n    '
+               10  STORE_NAME               __doc__
+
+ L. 187        12  LOAD_STR                 'openssl'
+               14  STORE_NAME               name
+
+ L. 193        16  BUILD_SET_0           0 
+               18  LOAD_CONST               frozenset({b'aes-256-ccm', b'aes-192-gcm', b'aes-256-gcm', b'aes-128-gcm', b'aes-128-ccm', b'aes-192-ccm'})
+               20  POP_FINALLY           1  ''
+               22  STORE_NAME               _fips_aead
+
+ L. 201        24  LOAD_NAME                AES
+               26  LOAD_NAME                TripleDES
+               28  BUILD_TUPLE_2         2 
+               30  STORE_NAME               _fips_ciphers
+
+ L. 203        32  LOAD_NAME                hashes
+               34  LOAD_ATTR                SHA1
+
+ L. 204        36  LOAD_NAME                hashes
+               38  LOAD_ATTR                SHA224
+
+ L. 205        40  LOAD_NAME                hashes
+               42  LOAD_ATTR                SHA256
+
+ L. 206        44  LOAD_NAME                hashes
+               46  LOAD_ATTR                SHA384
+
+ L. 207        48  LOAD_NAME                hashes
+               50  LOAD_ATTR                SHA512
+
+ L. 208        52  LOAD_NAME                hashes
+               54  LOAD_ATTR                SHA512_224
+
+ L. 209        56  LOAD_NAME                hashes
+               58  LOAD_ATTR                SHA512_256
+
+ L. 210        60  LOAD_NAME                hashes
+               62  LOAD_ATTR                SHA3_224
+
+ L. 211        64  LOAD_NAME                hashes
+               66  LOAD_ATTR                SHA3_256
+
+ L. 212        68  LOAD_NAME                hashes
+               70  LOAD_ATTR                SHA3_384
+
+ L. 213        72  LOAD_NAME                hashes
+               74  LOAD_ATTR                SHA3_512
+
+ L. 214        76  LOAD_NAME                hashes
+               78  LOAD_ATTR                SHAKE128
+
+ L. 215        80  LOAD_NAME                hashes
+               82  LOAD_ATTR                SHAKE256
+
+ L. 202        84  BUILD_TUPLE_13       13 
+               86  STORE_NAME               _fips_hashes
+
+ L. 217        88  LOAD_CONST               2048
+               90  STORE_NAME               _fips_rsa_min_key_size
+
+ L. 218        92  LOAD_CONST               65537
+               94  STORE_NAME               _fips_rsa_min_public_exponent
+
+ L. 219        96  LOAD_CONST               1
+               98  LOAD_CONST               2048
+              100  BINARY_LSHIFT    
+              102  STORE_NAME               _fips_dsa_min_modulus
+
+ L. 220       104  LOAD_CONST               2048
+              106  STORE_NAME               _fips_dh_min_key_size
+
+ L. 221       108  LOAD_CONST               1
+              110  LOAD_NAME                _fips_dh_min_key_size
+              112  BINARY_LSHIFT    
+              114  STORE_NAME               _fips_dh_min_modulus
+
+ L. 223       116  LOAD_CODE                <code_object __init__>
+              118  LOAD_STR                 'Backend.__init__'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  STORE_NAME               __init__
+
+ L. 244   124_126  LOAD_CONST               (None,)
+              128  LOAD_CODE                <code_object openssl_assert>
+              130  LOAD_STR                 'Backend.openssl_assert'
+              132  MAKE_FUNCTION_1          'default'
+              134  STORE_NAME               openssl_assert
+
+ L. 247       136  LOAD_CODE                <code_object _is_fips_enabled>
+              138  LOAD_STR                 'Backend._is_fips_enabled'
+              140  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              142  STORE_NAME               _is_fips_enabled
+
+ L. 255       144  LOAD_CODE                <code_object activate_builtin_random>
+              146  LOAD_STR                 'Backend.activate_builtin_random'
+              148  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              150  STORE_NAME               activate_builtin_random
+
+ L. 268       152  LOAD_NAME                contextlib
+              154  LOAD_ATTR                contextmanager
+
+ L. 269       156  LOAD_CODE                <code_object _get_osurandom_engine>
+              158  LOAD_STR                 'Backend._get_osurandom_engine'
+              160  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              162  CALL_FUNCTION_1       1  ''
+              164  STORE_NAME               _get_osurandom_engine
+
+ L. 288       166  LOAD_CODE                <code_object activate_osrandom_engine>
+              168  LOAD_STR                 'Backend.activate_osrandom_engine'
+              170  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              172  STORE_NAME               activate_osrandom_engine
+
+ L. 300       174  LOAD_CODE                <code_object osrandom_engine_implementation>
+              176  LOAD_STR                 'Backend.osrandom_engine_implementation'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  STORE_NAME               osrandom_engine_implementation
+
+ L. 309       182  LOAD_CODE                <code_object openssl_version_text>
+              184  LOAD_STR                 'Backend.openssl_version_text'
+              186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              188  STORE_NAME               openssl_version_text
+
+ L. 320       190  LOAD_CODE                <code_object openssl_version_number>
+              192  LOAD_STR                 'Backend.openssl_version_number'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  STORE_NAME               openssl_version_number
+
+ L. 323       198  LOAD_CODE                <code_object create_hmac_ctx>
+              200  LOAD_STR                 'Backend.create_hmac_ctx'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  STORE_NAME               create_hmac_ctx
+
+ L. 326       206  LOAD_CODE                <code_object _evp_md_from_algorithm>
+              208  LOAD_STR                 'Backend._evp_md_from_algorithm'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               _evp_md_from_algorithm
+
+ L. 337       214  LOAD_CODE                <code_object _evp_md_non_null_from_algorithm>
+              216  LOAD_STR                 'Backend._evp_md_non_null_from_algorithm'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  STORE_NAME               _evp_md_non_null_from_algorithm
+
+ L. 342       222  LOAD_CODE                <code_object hash_supported>
+              224  LOAD_STR                 'Backend.hash_supported'
+              226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              228  STORE_NAME               hash_supported
+
+ L. 349       230  LOAD_CODE                <code_object hmac_supported>
+              232  LOAD_STR                 'Backend.hmac_supported'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  STORE_NAME               hmac_supported
+
+ L. 352       238  LOAD_CODE                <code_object create_hash_ctx>
+              240  LOAD_STR                 'Backend.create_hash_ctx'
+              242  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              244  STORE_NAME               create_hash_ctx
+
+ L. 355       246  LOAD_CODE                <code_object cipher_supported>
+              248  LOAD_STR                 'Backend.cipher_supported'
+              250  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              252  STORE_NAME               cipher_supported
+
+ L. 365       254  LOAD_CODE                <code_object register_cipher_adapter>
+              256  LOAD_STR                 'Backend.register_cipher_adapter'
+              258  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              260  STORE_NAME               register_cipher_adapter
+
+ L. 374       262  LOAD_CODE                <code_object _register_default_ciphers>
+              264  LOAD_STR                 'Backend._register_default_ciphers'
+              266  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              268  STORE_NAME               _register_default_ciphers
+
+ L. 419       270  LOAD_CODE                <code_object _register_x509_ext_parsers>
+              272  LOAD_STR                 'Backend._register_x509_ext_parsers'
+              274  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              276  STORE_NAME               _register_x509_ext_parsers
+
+ L. 472       278  LOAD_CODE                <code_object _register_x509_encoders>
+              280  LOAD_STR                 'Backend._register_x509_encoders'
+              282  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              284  STORE_NAME               _register_x509_encoders
+
+ L. 487       286  LOAD_CODE                <code_object create_symmetric_encryption_ctx>
+              288  LOAD_STR                 'Backend.create_symmetric_encryption_ctx'
+              290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              292  STORE_NAME               create_symmetric_encryption_ctx
+
+ L. 490       294  LOAD_CODE                <code_object create_symmetric_decryption_ctx>
+              296  LOAD_STR                 'Backend.create_symmetric_decryption_ctx'
+              298  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              300  STORE_NAME               create_symmetric_decryption_ctx
+
+ L. 493       302  LOAD_CODE                <code_object pbkdf2_hmac_supported>
+              304  LOAD_STR                 'Backend.pbkdf2_hmac_supported'
+              306  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              308  STORE_NAME               pbkdf2_hmac_supported
+
+ L. 496       310  LOAD_CODE                <code_object derive_pbkdf2_hmac>
+              312  LOAD_STR                 'Backend.derive_pbkdf2_hmac'
+              314  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              316  STORE_NAME               derive_pbkdf2_hmac
+
+ L. 515       318  LOAD_CODE                <code_object _consume_errors>
+              320  LOAD_STR                 'Backend._consume_errors'
+              322  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              324  STORE_NAME               _consume_errors
+
+ L. 518       326  LOAD_CODE                <code_object _consume_errors_with_text>
+              328  LOAD_STR                 'Backend._consume_errors_with_text'
+              330  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              332  STORE_NAME               _consume_errors_with_text
+
+ L. 521       334  LOAD_CODE                <code_object _bn_to_int>
+              336  LOAD_STR                 'Backend._bn_to_int'
+              338  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              340  STORE_NAME               _bn_to_int
+
+ L. 543   342_344  LOAD_CONST               (None,)
+              346  LOAD_CODE                <code_object _int_to_bn>
+              348  LOAD_STR                 'Backend._int_to_bn'
+              350  MAKE_FUNCTION_1          'default'
+              352  STORE_NAME               _int_to_bn
+
+ L. 574       354  LOAD_CODE                <code_object generate_rsa_private_key>
+              356  LOAD_STR                 'Backend.generate_rsa_private_key'
+              358  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              360  STORE_NAME               generate_rsa_private_key
+
+ L. 592       362  LOAD_CODE                <code_object generate_rsa_parameters_supported>
+              364  LOAD_STR                 'Backend.generate_rsa_parameters_supported'
+              366  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              368  STORE_NAME               generate_rsa_parameters_supported
+
+ L. 599       370  LOAD_CODE                <code_object load_rsa_private_numbers>
+              372  LOAD_STR                 'Backend.load_rsa_private_numbers'
+              374  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              376  STORE_NAME               load_rsa_private_numbers
+
+ L. 631       378  LOAD_CODE                <code_object load_rsa_public_numbers>
+              380  LOAD_STR                 'Backend.load_rsa_public_numbers'
+              382  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              384  STORE_NAME               load_rsa_public_numbers
+
+ L. 644       386  LOAD_CODE                <code_object _create_evp_pkey_gc>
+              388  LOAD_STR                 'Backend._create_evp_pkey_gc'
+              390  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              392  STORE_NAME               _create_evp_pkey_gc
+
+ L. 650       394  LOAD_CODE                <code_object _rsa_cdata_to_evp_pkey>
+              396  LOAD_STR                 'Backend._rsa_cdata_to_evp_pkey'
+              398  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              400  STORE_NAME               _rsa_cdata_to_evp_pkey
+
+ L. 656       402  LOAD_CODE                <code_object _bytes_to_bio>
+              404  LOAD_STR                 'Backend._bytes_to_bio'
+              406  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              408  STORE_NAME               _bytes_to_bio
+
+ L. 669       410  LOAD_CODE                <code_object _create_mem_bio_gc>
+              412  LOAD_STR                 'Backend._create_mem_bio_gc'
+              414  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              416  STORE_NAME               _create_mem_bio_gc
+
+ L. 680       418  LOAD_CODE                <code_object _read_mem_bio>
+              420  LOAD_STR                 'Backend._read_mem_bio'
+              422  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              424  STORE_NAME               _read_mem_bio
+
+ L. 691       426  LOAD_CODE                <code_object _evp_pkey_to_private_key>
+              428  LOAD_STR                 'Backend._evp_pkey_to_private_key'
+              430  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              432  STORE_NAME               _evp_pkey_to_private_key
+
+ L. 734       434  LOAD_CODE                <code_object _evp_pkey_to_public_key>
+              436  LOAD_STR                 'Backend._evp_pkey_to_public_key'
+              438  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              440  STORE_NAME               _evp_pkey_to_public_key
+
+ L. 777       442  LOAD_CODE                <code_object _oaep_hash_supported>
+              444  LOAD_STR                 'Backend._oaep_hash_supported'
+              446  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              448  STORE_NAME               _oaep_hash_supported
+
+ L. 792       450  LOAD_CODE                <code_object rsa_padding_supported>
+              452  LOAD_STR                 'Backend.rsa_padding_supported'
+              454  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              456  STORE_NAME               rsa_padding_supported
+
+ L. 809       458  LOAD_CODE                <code_object generate_dsa_parameters>
+              460  LOAD_STR                 'Backend.generate_dsa_parameters'
+              462  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              464  STORE_NAME               generate_dsa_parameters
+
+ L. 833       466  LOAD_CODE                <code_object generate_dsa_private_key>
+              468  LOAD_STR                 'Backend.generate_dsa_private_key'
+              470  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              472  STORE_NAME               generate_dsa_private_key
+
+ L. 842       474  LOAD_CODE                <code_object generate_dsa_private_key_and_parameters>
+              476  LOAD_STR                 'Backend.generate_dsa_private_key_and_parameters'
+              478  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              480  STORE_NAME               generate_dsa_private_key_and_parameters
+
+ L. 846       482  LOAD_CODE                <code_object _dsa_cdata_set_values>
+              484  LOAD_STR                 'Backend._dsa_cdata_set_values'
+              486  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              488  STORE_NAME               _dsa_cdata_set_values
+
+ L. 852       490  LOAD_CODE                <code_object load_dsa_private_numbers>
+              492  LOAD_STR                 'Backend.load_dsa_private_numbers'
+              494  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              496  STORE_NAME               load_dsa_private_numbers
+
+ L. 871       498  LOAD_CODE                <code_object load_dsa_public_numbers>
+              500  LOAD_STR                 'Backend.load_dsa_public_numbers'
+              502  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              504  STORE_NAME               load_dsa_public_numbers
+
+ L. 888       506  LOAD_CODE                <code_object load_dsa_parameter_numbers>
+              508  LOAD_STR                 'Backend.load_dsa_parameter_numbers'
+              510  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              512  STORE_NAME               load_dsa_parameter_numbers
+
+ L. 902       514  LOAD_CODE                <code_object _dsa_cdata_to_evp_pkey>
+              516  LOAD_STR                 'Backend._dsa_cdata_to_evp_pkey'
+              518  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              520  STORE_NAME               _dsa_cdata_to_evp_pkey
+
+ L. 908       522  LOAD_CODE                <code_object dsa_hash_supported>
+              524  LOAD_STR                 'Backend.dsa_hash_supported'
+              526  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              528  STORE_NAME               dsa_hash_supported
+
+ L. 911       530  LOAD_CODE                <code_object dsa_parameters_supported>
+              532  LOAD_STR                 'Backend.dsa_parameters_supported'
+              534  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              536  STORE_NAME               dsa_parameters_supported
+
+ L. 914       538  LOAD_CODE                <code_object cmac_algorithm_supported>
+              540  LOAD_STR                 'Backend.cmac_algorithm_supported'
+              542  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              544  STORE_NAME               cmac_algorithm_supported
+
+ L. 919       546  LOAD_CODE                <code_object create_cmac_ctx>
+              548  LOAD_STR                 'Backend.create_cmac_ctx'
+              550  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              552  STORE_NAME               create_cmac_ctx
+
+ L. 922       554  LOAD_CODE                <code_object _x509_check_signature_params>
+              556  LOAD_STR                 'Backend._x509_check_signature_params'
+              558  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              560  STORE_NAME               _x509_check_signature_params
+
+ L. 946       562  LOAD_CODE                <code_object create_x509_csr>
+              564  LOAD_STR                 'Backend.create_x509_csr'
+              566  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              568  STORE_NAME               create_x509_csr
+
+ L.1018       570  LOAD_CODE                <code_object create_x509_certificate>
+              572  LOAD_STR                 'Backend.create_x509_certificate'
+              574  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              576  STORE_NAME               create_x509_certificate
+
+ L.1084       578  LOAD_CODE                <code_object _evp_md_x509_null_if_eddsa>
+              580  LOAD_STR                 'Backend._evp_md_x509_null_if_eddsa'
+              582  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              584  STORE_NAME               _evp_md_x509_null_if_eddsa
+
+ L.1093       586  LOAD_CODE                <code_object _set_asn1_time>
+              588  LOAD_STR                 'Backend._set_asn1_time'
+              590  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              592  STORE_NAME               _set_asn1_time
+
+ L.1101       594  LOAD_CODE                <code_object _create_asn1_time>
+              596  LOAD_STR                 'Backend._create_asn1_time'
+              598  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              600  STORE_NAME               _create_asn1_time
+
+ L.1108       602  LOAD_CODE                <code_object create_x509_crl>
+              604  LOAD_STR                 'Backend.create_x509_crl'
+              606  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              608  STORE_NAME               create_x509_crl
+
+ L.1164       610  LOAD_CODE                <code_object _create_x509_extensions>
+              612  LOAD_STR                 'Backend._create_x509_extensions'
+              614  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              616  STORE_NAME               _create_x509_extensions
+
+ L.1178       618  LOAD_CODE                <code_object _create_raw_x509_extension>
+              620  LOAD_STR                 'Backend._create_raw_x509_extension'
+              622  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              624  STORE_NAME               _create_raw_x509_extension
+
+ L.1184       626  LOAD_CODE                <code_object _create_x509_extension>
+              628  LOAD_STR                 'Backend._create_x509_extension'
+              630  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              632  STORE_NAME               _create_x509_extension
+
+ L.1218       634  LOAD_CODE                <code_object create_x509_revoked_certificate>
+              636  LOAD_STR                 'Backend.create_x509_revoked_certificate'
+              638  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              640  STORE_NAME               create_x509_revoked_certificate
+
+ L.1243       642  LOAD_CODE                <code_object load_pem_private_key>
+              644  LOAD_STR                 'Backend.load_pem_private_key'
+              646  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              648  STORE_NAME               load_pem_private_key
+
+ L.1251       650  LOAD_CODE                <code_object load_pem_public_key>
+              652  LOAD_STR                 'Backend.load_pem_public_key'
+              654  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              656  STORE_NAME               load_pem_public_key
+
+ L.1276       658  LOAD_CODE                <code_object load_pem_parameters>
+              660  LOAD_STR                 'Backend.load_pem_parameters'
+              662  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              664  STORE_NAME               load_pem_parameters
+
+ L.1288       666  LOAD_CODE                <code_object load_der_private_key>
+              668  LOAD_STR                 'Backend.load_der_private_key'
+              670  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              672  STORE_NAME               load_der_private_key
+
+ L.1307       674  LOAD_CODE                <code_object _evp_pkey_from_der_traditional_key>
+              676  LOAD_STR                 'Backend._evp_pkey_from_der_traditional_key'
+              678  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              680  STORE_NAME               _evp_pkey_from_der_traditional_key
+
+ L.1321       682  LOAD_CODE                <code_object load_der_public_key>
+              684  LOAD_STR                 'Backend.load_der_public_key'
+              686  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              688  STORE_NAME               load_der_public_key
+
+ L.1344       690  LOAD_CODE                <code_object load_der_parameters>
+              692  LOAD_STR                 'Backend.load_der_parameters'
+              694  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              696  STORE_NAME               load_der_parameters
+
+ L.1364       698  LOAD_CODE                <code_object load_pem_x509_certificate>
+              700  LOAD_STR                 'Backend.load_pem_x509_certificate'
+              702  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              704  STORE_NAME               load_pem_x509_certificate
+
+ L.1380       706  LOAD_CODE                <code_object load_der_x509_certificate>
+              708  LOAD_STR                 'Backend.load_der_x509_certificate'
+              710  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              712  STORE_NAME               load_der_x509_certificate
+
+ L.1390       714  LOAD_CODE                <code_object load_pem_x509_crl>
+              716  LOAD_STR                 'Backend.load_pem_x509_crl'
+              718  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              720  STORE_NAME               load_pem_x509_crl
+
+ L.1406       722  LOAD_CODE                <code_object load_der_x509_crl>
+              724  LOAD_STR                 'Backend.load_der_x509_crl'
+              726  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              728  STORE_NAME               load_der_x509_crl
+
+ L.1416       730  LOAD_CODE                <code_object load_pem_x509_csr>
+              732  LOAD_STR                 'Backend.load_pem_x509_csr'
+              734  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              736  STORE_NAME               load_pem_x509_csr
+
+ L.1432       738  LOAD_CODE                <code_object load_der_x509_csr>
+              740  LOAD_STR                 'Backend.load_der_x509_csr'
+              742  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              744  STORE_NAME               load_der_x509_csr
+
+ L.1442       746  LOAD_CODE                <code_object _load_key>
+              748  LOAD_STR                 'Backend._load_key'
+              750  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              752  STORE_NAME               _load_key
+
+ L.1490       754  LOAD_CODE                <code_object _handle_key_loading_error>
+              756  LOAD_STR                 'Backend._handle_key_loading_error'
+              758  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              760  STORE_NAME               _handle_key_loading_error
+
+ L.1523       762  LOAD_CODE                <code_object elliptic_curve_supported>
+              764  LOAD_STR                 'Backend.elliptic_curve_supported'
+              766  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              768  STORE_NAME               elliptic_curve_supported
+
+ L.1539       770  LOAD_CODE                <code_object elliptic_curve_signature_algorithm_supported>
+              772  LOAD_STR                 'Backend.elliptic_curve_signature_algorithm_supported'
+              774  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              776  STORE_NAME               elliptic_curve_signature_algorithm_supported
+
+ L.1548       778  LOAD_CODE                <code_object generate_elliptic_curve_private_key>
+              780  LOAD_STR                 'Backend.generate_elliptic_curve_private_key'
+              782  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              784  STORE_NAME               generate_elliptic_curve_private_key
+
+ L.1568       786  LOAD_CODE                <code_object load_elliptic_curve_private_numbers>
+              788  LOAD_STR                 'Backend.load_elliptic_curve_private_numbers'
+              790  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              792  STORE_NAME               load_elliptic_curve_private_numbers
+
+ L.1587       794  LOAD_CODE                <code_object load_elliptic_curve_public_numbers>
+              796  LOAD_STR                 'Backend.load_elliptic_curve_public_numbers'
+              798  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              800  STORE_NAME               load_elliptic_curve_public_numbers
+
+ L.1596       802  LOAD_CODE                <code_object load_elliptic_curve_public_bytes>
+              804  LOAD_STR                 'Backend.load_elliptic_curve_public_bytes'
+              806  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              808  STORE_NAME               load_elliptic_curve_public_bytes
+
+ L.1616       810  LOAD_CODE                <code_object derive_elliptic_curve_private_key>
+              812  LOAD_STR                 'Backend.derive_elliptic_curve_private_key'
+              814  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              816  STORE_NAME               derive_elliptic_curve_private_key
+
+ L.1651       818  LOAD_CODE                <code_object _ec_key_new_by_curve>
+              820  LOAD_STR                 'Backend._ec_key_new_by_curve'
+              822  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              824  STORE_NAME               _ec_key_new_by_curve
+
+ L.1655       826  LOAD_CODE                <code_object _ec_key_new_by_curve_nid>
+              828  LOAD_STR                 'Backend._ec_key_new_by_curve_nid'
+              830  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              832  STORE_NAME               _ec_key_new_by_curve_nid
+
+ L.1660       834  LOAD_CODE                <code_object load_der_ocsp_request>
+              836  LOAD_STR                 'Backend.load_der_ocsp_request'
+              838  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              840  STORE_NAME               load_der_ocsp_request
+
+ L.1670       842  LOAD_CODE                <code_object load_der_ocsp_response>
+              844  LOAD_STR                 'Backend.load_der_ocsp_response'
+              846  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              848  STORE_NAME               load_der_ocsp_response
+
+ L.1680       850  LOAD_CODE                <code_object create_ocsp_request>
+              852  LOAD_STR                 'Backend.create_ocsp_request'
+              854  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              856  STORE_NAME               create_ocsp_request
+
+ L.1699       858  LOAD_CODE                <code_object _create_ocsp_basic_response>
+              860  LOAD_STR                 'Backend._create_ocsp_basic_response'
+              862  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              864  STORE_NAME               _create_ocsp_basic_response
+
+ L.1784       866  LOAD_CODE                <code_object create_ocsp_response>
+              868  LOAD_STR                 'Backend.create_ocsp_response'
+              870  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              872  STORE_NAME               create_ocsp_response
+
+ L.1801       874  LOAD_CODE                <code_object elliptic_curve_exchange_algorithm_supported>
+              876  LOAD_STR                 'Backend.elliptic_curve_exchange_algorithm_supported'
+              878  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              880  STORE_NAME               elliptic_curve_exchange_algorithm_supported
+
+ L.1806       882  LOAD_CODE                <code_object _ec_cdata_to_evp_pkey>
+              884  LOAD_STR                 'Backend._ec_cdata_to_evp_pkey'
+              886  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              888  STORE_NAME               _ec_cdata_to_evp_pkey
+
+ L.1812       890  LOAD_CODE                <code_object _elliptic_curve_to_nid>
+              892  LOAD_STR                 'Backend._elliptic_curve_to_nid'
+              894  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              896  STORE_NAME               _elliptic_curve_to_nid
+
+ L.1829       898  LOAD_NAME                contextmanager
+
+ L.1830       900  LOAD_CODE                <code_object _tmp_bn_ctx>
+              902  LOAD_STR                 'Backend._tmp_bn_ctx'
+              904  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              906  CALL_FUNCTION_1       1  ''
+              908  STORE_NAME               _tmp_bn_ctx
+
+ L.1840       910  LOAD_CODE                <code_object _ec_key_determine_group_get_func>
+              912  LOAD_STR                 'Backend._ec_key_determine_group_get_func'
+              914  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              916  STORE_NAME               _ec_key_determine_group_get_func
+
+ L.1868       918  LOAD_CODE                <code_object _ec_key_set_public_key_affine_coordinates>
+              920  LOAD_STR                 'Backend._ec_key_set_public_key_affine_coordinates'
+              922  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              924  STORE_NAME               _ec_key_set_public_key_affine_coordinates
+
+ L.1888       926  LOAD_CODE                <code_object _private_key_bytes>
+              928  LOAD_STR                 'Backend._private_key_bytes'
+              930  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              932  STORE_NAME               _private_key_bytes
+
+ L.1993       934  LOAD_CODE                <code_object _private_key_bytes_via_bio>
+              936  LOAD_STR                 'Backend._private_key_bytes_via_bio'
+              938  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              940  STORE_NAME               _private_key_bytes_via_bio
+
+ L.2010       942  LOAD_CODE                <code_object _bio_func_output>
+              944  LOAD_STR                 'Backend._bio_func_output'
+              946  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              948  STORE_NAME               _bio_func_output
+
+ L.2016       950  LOAD_CODE                <code_object _public_key_bytes>
+              952  LOAD_STR                 'Backend._public_key_bytes'
+              954  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              956  STORE_NAME               _public_key_bytes
+
+ L.2064       958  LOAD_CODE                <code_object _parameter_bytes>
+              960  LOAD_STR                 'Backend._parameter_bytes'
+              962  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              964  STORE_NAME               _parameter_bytes
+
+ L.2089       966  LOAD_CODE                <code_object generate_dh_parameters>
+              968  LOAD_STR                 'Backend.generate_dh_parameters'
+              970  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              972  STORE_NAME               generate_dh_parameters
+
+ L.2111       974  LOAD_CODE                <code_object _dh_cdata_to_evp_pkey>
+              976  LOAD_STR                 'Backend._dh_cdata_to_evp_pkey'
+              978  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              980  STORE_NAME               _dh_cdata_to_evp_pkey
+
+ L.2117       982  LOAD_CODE                <code_object generate_dh_private_key>
+              984  LOAD_STR                 'Backend.generate_dh_private_key'
+              986  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              988  STORE_NAME               generate_dh_private_key
+
+ L.2127       990  LOAD_CODE                <code_object generate_dh_private_key_and_parameters>
+              992  LOAD_STR                 'Backend.generate_dh_private_key_and_parameters'
+              994  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              996  STORE_NAME               generate_dh_private_key_and_parameters
+
+ L.2132       998  LOAD_CODE                <code_object load_dh_private_numbers>
+             1000  LOAD_STR                 'Backend.load_dh_private_numbers'
+             1002  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1004  STORE_NAME               load_dh_private_numbers
+
+ L.2178      1006  LOAD_CODE                <code_object load_dh_public_numbers>
+             1008  LOAD_STR                 'Backend.load_dh_public_numbers'
+             1010  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1012  STORE_NAME               load_dh_public_numbers
+
+ L.2205      1014  LOAD_CODE                <code_object load_dh_parameter_numbers>
+             1016  LOAD_STR                 'Backend.load_dh_parameter_numbers'
+             1018  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1020  STORE_NAME               load_dh_parameter_numbers
+
+ L.2223  1022_1024  LOAD_CONST               (None,)
+             1026  LOAD_CODE                <code_object dh_parameters_supported>
+             1028  LOAD_STR                 'Backend.dh_parameters_supported'
+             1030  MAKE_FUNCTION_1          'default'
+             1032  STORE_NAME               dh_parameters_supported
+
+ L.2245      1034  LOAD_CODE                <code_object dh_x942_serialization_supported>
+             1036  LOAD_STR                 'Backend.dh_x942_serialization_supported'
+             1038  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1040  STORE_NAME               dh_x942_serialization_supported
+
+ L.2248      1042  LOAD_CODE                <code_object x509_name_bytes>
+             1044  LOAD_STR                 'Backend.x509_name_bytes'
+             1046  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1048  STORE_NAME               x509_name_bytes
+
+ L.2259      1050  LOAD_CODE                <code_object x25519_load_public_bytes>
+             1052  LOAD_STR                 'Backend.x25519_load_public_bytes'
+             1054  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1056  STORE_NAME               x25519_load_public_bytes
+
+ L.2274      1058  LOAD_CODE                <code_object x25519_load_private_bytes>
+             1060  LOAD_STR                 'Backend.x25519_load_private_bytes'
+             1062  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1064  STORE_NAME               x25519_load_private_bytes
+
+ L.2308      1066  LOAD_CODE                <code_object _evp_pkey_keygen_gc>
+             1068  LOAD_STR                 'Backend._evp_pkey_keygen_gc'
+             1070  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1072  STORE_NAME               _evp_pkey_keygen_gc
+
+ L.2321      1074  LOAD_CODE                <code_object x25519_generate_key>
+             1076  LOAD_STR                 'Backend.x25519_generate_key'
+             1078  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1080  STORE_NAME               x25519_generate_key
+
+ L.2325      1082  LOAD_CODE                <code_object x25519_supported>
+             1084  LOAD_STR                 'Backend.x25519_supported'
+             1086  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1088  STORE_NAME               x25519_supported
+
+ L.2330      1090  LOAD_CODE                <code_object x448_load_public_bytes>
+             1092  LOAD_STR                 'Backend.x448_load_public_bytes'
+             1094  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1096  STORE_NAME               x448_load_public_bytes
+
+ L.2341      1098  LOAD_CODE                <code_object x448_load_private_bytes>
+             1100  LOAD_STR                 'Backend.x448_load_private_bytes'
+             1102  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1104  STORE_NAME               x448_load_private_bytes
+
+ L.2353      1106  LOAD_CODE                <code_object x448_generate_key>
+             1108  LOAD_STR                 'Backend.x448_generate_key'
+             1110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1112  STORE_NAME               x448_generate_key
+
+ L.2357      1114  LOAD_CODE                <code_object x448_supported>
+             1116  LOAD_STR                 'Backend.x448_supported'
+             1118  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1120  STORE_NAME               x448_supported
+
+ L.2362      1122  LOAD_CODE                <code_object ed25519_supported>
+             1124  LOAD_STR                 'Backend.ed25519_supported'
+             1126  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1128  STORE_NAME               ed25519_supported
+
+ L.2367  1130_1132  LOAD_CODE                <code_object ed25519_load_public_bytes>
+         1134_1136  LOAD_STR                 'Backend.ed25519_load_public_bytes'
+             1138  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1140  STORE_NAME               ed25519_load_public_bytes
+
+ L.2381  1142_1144  LOAD_CODE                <code_object ed25519_load_private_bytes>
+         1146_1148  LOAD_STR                 'Backend.ed25519_load_private_bytes'
+             1150  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1152  STORE_NAME               ed25519_load_private_bytes
+
+ L.2395  1154_1156  LOAD_CODE                <code_object ed25519_generate_key>
+         1158_1160  LOAD_STR                 'Backend.ed25519_generate_key'
+             1162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1164  STORE_NAME               ed25519_generate_key
+
+ L.2399  1166_1168  LOAD_CODE                <code_object ed448_supported>
+         1170_1172  LOAD_STR                 'Backend.ed448_supported'
+             1174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1176  STORE_NAME               ed448_supported
+
+ L.2404  1178_1180  LOAD_CODE                <code_object ed448_load_public_bytes>
+         1182_1184  LOAD_STR                 'Backend.ed448_load_public_bytes'
+             1186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1188  STORE_NAME               ed448_load_public_bytes
+
+ L.2417  1190_1192  LOAD_CODE                <code_object ed448_load_private_bytes>
+         1194_1196  LOAD_STR                 'Backend.ed448_load_private_bytes'
+             1198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1200  STORE_NAME               ed448_load_private_bytes
+
+ L.2431  1202_1204  LOAD_CODE                <code_object ed448_generate_key>
+         1206_1208  LOAD_STR                 'Backend.ed448_generate_key'
+             1210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1212  STORE_NAME               ed448_generate_key
+
+ L.2435  1214_1216  LOAD_CODE                <code_object derive_scrypt>
+         1218_1220  LOAD_STR                 'Backend.derive_scrypt'
+             1222  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1224  STORE_NAME               derive_scrypt
+
+ L.2462  1226_1228  LOAD_CODE                <code_object aead_cipher_supported>
+         1230_1232  LOAD_STR                 'Backend.aead_cipher_supported'
+             1234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1236  STORE_NAME               aead_cipher_supported
+
+ L.2468      1238  LOAD_NAME                contextlib
+             1240  LOAD_ATTR                contextmanager
+
+ L.2469  1242_1244  LOAD_CODE                <code_object _zeroed_bytearray>
+         1246_1248  LOAD_STR                 'Backend._zeroed_bytearray'
+             1250  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1252  CALL_FUNCTION_1       1  ''
+             1254  STORE_NAME               _zeroed_bytearray
+
+ L.2481  1256_1258  LOAD_CODE                <code_object _zero_data>
+         1260_1262  LOAD_STR                 'Backend._zero_data'
+             1264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1266  STORE_NAME               _zero_data
+
+ L.2488      1268  LOAD_NAME                contextlib
+             1270  LOAD_ATTR                contextmanager
+
+ L.2489  1272_1274  LOAD_CODE                <code_object _zeroed_null_terminated_buf>
+         1276_1278  LOAD_STR                 'Backend._zeroed_null_terminated_buf'
+             1280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1282  CALL_FUNCTION_1       1  ''
+             1284  STORE_NAME               _zeroed_null_terminated_buf
+
+ L.2511  1286_1288  LOAD_CODE                <code_object load_key_and_certificates_from_pkcs12>
+         1290_1292  LOAD_STR                 'Backend.load_key_and_certificates_from_pkcs12'
+             1294  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1296  STORE_NAME               load_key_and_certificates_from_pkcs12
+
+ L.2557  1298_1300  LOAD_CODE                <code_object serialize_key_and_certificates_to_pkcs12>
+         1302_1304  LOAD_STR                 'Backend.serialize_key_and_certificates_to_pkcs12'
+             1306  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1308  STORE_NAME               serialize_key_and_certificates_to_pkcs12
+
+ L.2621  1310_1312  LOAD_CODE                <code_object poly1305_supported>
+         1314_1316  LOAD_STR                 'Backend.poly1305_supported'
+             1318  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1320  STORE_NAME               poly1305_supported
+
+ L.2626  1322_1324  LOAD_CODE                <code_object create_poly1305_ctx>
+         1326_1328  LOAD_STR                 'Backend.create_poly1305_ctx'
+             1330  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1332  STORE_NAME               create_poly1305_ctx
+
+ L.2633  1334_1336  LOAD_CODE                <code_object load_pem_pkcs7_certificates>
+         1338_1340  LOAD_STR                 'Backend.load_pem_pkcs7_certificates'
+             1342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1344  STORE_NAME               load_pem_pkcs7_certificates
+
+ L.2646  1346_1348  LOAD_CODE                <code_object load_der_pkcs7_certificates>
+         1350_1352  LOAD_STR                 'Backend.load_der_pkcs7_certificates'
+             1354  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1356  STORE_NAME               load_der_pkcs7_certificates
+
+ L.2657  1358_1360  LOAD_CODE                <code_object _load_pkcs7_certificates>
+         1362_1364  LOAD_STR                 'Backend._load_pkcs7_certificates'
+             1366  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1368  STORE_NAME               _load_pkcs7_certificates
+
+ L.2682  1370_1372  LOAD_CODE                <code_object pkcs7_sign>
+         1374_1376  LOAD_STR                 'Backend.pkcs7_sign'
+             1378  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1380  STORE_NAME               pkcs7_sign
+
+Parse error at or near `POP_FINALLY' instruction at offset 20
+
+Instruction context:
+   
+ L. 193        16  BUILD_SET_0           0 
+                  18  LOAD_CONST               frozenset({b'aes-256-ccm', b'aes-192-gcm', b'aes-256-gcm', b'aes-128-gcm', b'aes-128-ccm', b'aes-192-ccm'})
+->                20  POP_FINALLY           1  ''
+                  22  STORE_NAME               _fips_aead
+
+test/109549.pyc -- 
+# decompile failed

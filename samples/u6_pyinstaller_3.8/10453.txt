@@ -1,0 +1,19 @@
+Instruction context:
+-> 
+ L. 273       238  LOAD_FAST                'encoded'
+                 240  LOAD_CONST               -1
+                 242  BINARY_SUBSCR    
+                 244  LOAD_STR                 '\r\n'
+                 246  COMPARE_OP               not-in
+             248_250  POP_JUMP_IF_FALSE   276  'to 276'
+                 252  LOAD_FAST                'decoded'
+                 254  LOAD_METHOD              endswith
+                 256  LOAD_FAST                'eol'
+                 258  CALL_METHOD_1         1  ''
+             260_262  POP_JUMP_IF_FALSE   276  'to 276'
+
+../test/10453.pyc -- 
+# decompile failed
+
+# file ../test/10453.pyc
+# Deparsing stopped due to parse error

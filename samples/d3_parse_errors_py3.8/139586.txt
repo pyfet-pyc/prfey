@@ -1,0 +1,25 @@
+Instruction context:
+   
+ L.  55        44  POP_EXCEPT       
+                  46  JUMP_BACK             8  'to 8'
+                  48  POP_EXCEPT       
+->                50  JUMP_BACK             8  'to 8'
+                52_0  COME_FROM            36  '36'
+                  52  END_FINALLY      
+                54_0  COME_FROM            28  '28'
+Instruction context:
+   
+ L. 166       116  POP_EXCEPT       
+                 118  JUMP_BACK            26  'to 26'
+                 120  POP_EXCEPT       
+                 122  JUMP_FORWARD        126  'to 126'
+->             124_0  COME_FROM           108  '108'
+                 124  END_FINALLY      
+               126_0  COME_FROM           122  '122'
+               126_1  COME_FROM           100  '100'
+
+../test/139586.pyc -- 
+# decompile failed
+
+# file ../test/139586.pyc
+# Deparsing stopped due to parse error

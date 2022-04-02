@@ -1,0 +1,56 @@
+
+test/112027.pyc -- 
+# decompile failed
+
+# file test/112027.pyc
+# --- This code section failed: ---
+
+ L.   1         0  BUILD_LIST_0          0 
+                2  LOAD_CONST               ('alias', 'bdist_egg', 'bdist_rpm', 'build_ext', 'build_py', 'develop', 'easy_install', 'egg_info', 'install', 'install_lib', 'rotate', 'saveopts', 'sdist', 'setopt', 'test', 'install_egg_info', 'install_scripts', 'upload_docs', 'build_clib', 'dist_info')
+                4  CALL_FINALLY          7  'to 7'
+                6  STORE_NAME               __all__
+
+ L.   8         8  LOAD_CONST               0
+               10  LOAD_CONST               ('bdist',)
+               12  IMPORT_NAME_ATTR         distutils.command.bdist
+               14  IMPORT_FROM              bdist
+               16  STORE_NAME               bdist
+               18  POP_TOP          
+
+ L.   9        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              sys
+               26  STORE_NAME               sys
+
+ L.  11        28  LOAD_CONST               0
+               30  LOAD_CONST               ('install_scripts',)
+               32  IMPORT_NAME_ATTR         setuptools.command
+               34  IMPORT_FROM              install_scripts
+               36  STORE_NAME               install_scripts
+               38  POP_TOP          
+
+ L.  13        40  LOAD_STR                 'egg'
+               42  LOAD_NAME                bdist
+               44  LOAD_ATTR                format_commands
+               46  <118>                 1  ''
+               48  POP_JUMP_IF_FALSE    72  'to 72'
+
+ L.  14        50  LOAD_CONST               ('bdist_egg', 'Python .egg file')
+               52  LOAD_NAME                bdist
+               54  LOAD_ATTR                format_command
+               56  LOAD_STR                 'egg'
+               58  STORE_SUBSCR     
+
+ L.  15        60  LOAD_NAME                bdist
+               62  LOAD_ATTR                format_commands
+               64  LOAD_METHOD              append
+               66  LOAD_STR                 'egg'
+               68  CALL_METHOD_1         1  ''
+               70  POP_TOP          
+             72_0  COME_FROM            48  '48'
+
+ L.  17        72  DELETE_NAME              bdist
+               74  DELETE_NAME              sys
+
+Parse error at or near `None' instruction at offset -1
+

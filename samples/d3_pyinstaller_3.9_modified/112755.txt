@@ -1,0 +1,702 @@
+
+# file test/112755.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'An extensible library for opening URLs using a variety of protocols\n\nThe simplest way to use this module is to call the urlopen function,\nwhich accepts a string containing a URL or a Request object (described\nbelow).  It opens the URL and returns the results as file-like\nobject; the returned object has some extra methods described below.\n\nThe OpenerDirector manages a collection of Handler objects that do\nall the actual work.  Each Handler implements a particular protocol or\noption.  The OpenerDirector is a composite object that invokes the\nHandlers needed to open the requested URL.  For example, the\nHTTPHandler performs HTTP GET and POST requests and deals with\nnon-error returns.  The HTTPRedirectHandler automatically deals with\nHTTP 301, 302, 303 and 307 redirect errors, and the HTTPDigestAuthHandler\ndeals with digest authentication.\n\nurlopen(url, data=None) -- Basic usage is the same as original\nurllib.  pass the url and optionally data to post to an HTTP URL, and\nget a file-like object back.  One difference is that you can also pass\na Request instance instead of URL.  Raises a URLError (subclass of\nOSError); for HTTP errors, raises an HTTPError, which can also be\ntreated as a valid response.\n\nbuild_opener -- Function that creates a new OpenerDirector instance.\nWill install the default handlers.  Accepts one or more Handlers as\narguments, either instances or Handler classes that it will\ninstantiate.  If one of the argument is a subclass of the default\nhandler, the argument will be installed instead of the default.\n\ninstall_opener -- Installs a new opener as the default opener.\n\nobjects of interest:\n\nOpenerDirector -- Sets up the User Agent as the Python-urllib client and manages\nthe Handler classes, while dealing with requests and responses.\n\nRequest -- An object that encapsulates the state of a request.  The\nstate can be as simple as the URL.  It can also include extra HTTP\nheaders, e.g. a User-Agent.\n\nBaseHandler --\n\ninternals:\nBaseHandler and parent\n_call_chain conventions\n\nExample usage:\n\nimport urllib.request\n\n# set up authentication info\nauthinfo = urllib.request.HTTPBasicAuthHandler()\nauthinfo.add_password(realm=\'PDQ Application\',\n                      uri=\'https://mahler:8092/site-updates.py\',\n                      user=\'klem\',\n                      passwd=\'geheim$parole\')\n\nproxy_support = urllib.request.ProxyHandler({"http" : "http://ahad-haam:3128"})\n\n# build a new opener that adds authentication and caching FTP handlers\nopener = urllib.request.build_opener(proxy_support, authinfo,\n                                     urllib.request.CacheFTPHandler)\n\n# install it\nurllib.request.install_opener(opener)\n\nf = urllib.request.urlopen(\'http://www.python.org/\')\n'
+                2  STORE_NAME               __doc__
+
+ L.  84         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              base64
+               10  STORE_NAME               base64
+
+ L.  85        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              bisect
+               18  STORE_NAME               bisect
+
+ L.  86        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              email
+               26  STORE_NAME               email
+
+ L.  87        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              hashlib
+               34  STORE_NAME               hashlib
+
+ L.  88        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME_ATTR         http.client
+               42  STORE_NAME               http
+
+ L.  89        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              io
+               50  STORE_NAME               io
+
+ L.  90        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              os
+               58  STORE_NAME               os
+
+ L.  91        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              posixpath
+               66  STORE_NAME               posixpath
+
+ L.  92        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              re
+               74  STORE_NAME               re
+
+ L.  93        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME              socket
+               82  STORE_NAME               socket
+
+ L.  94        84  LOAD_CONST               0
+               86  LOAD_CONST               None
+               88  IMPORT_NAME              string
+               90  STORE_NAME               string
+
+ L.  95        92  LOAD_CONST               0
+               94  LOAD_CONST               None
+               96  IMPORT_NAME              sys
+               98  STORE_NAME               sys
+
+ L.  96       100  LOAD_CONST               0
+              102  LOAD_CONST               None
+              104  IMPORT_NAME              time
+              106  STORE_NAME               time
+
+ L.  97       108  LOAD_CONST               0
+              110  LOAD_CONST               None
+              112  IMPORT_NAME              tempfile
+              114  STORE_NAME               tempfile
+
+ L.  98       116  LOAD_CONST               0
+              118  LOAD_CONST               None
+              120  IMPORT_NAME              contextlib
+              122  STORE_NAME               contextlib
+
+ L.  99       124  LOAD_CONST               0
+              126  LOAD_CONST               None
+              128  IMPORT_NAME              warnings
+              130  STORE_NAME               warnings
+
+ L. 102       132  LOAD_CONST               0
+              134  LOAD_CONST               ('URLError', 'HTTPError', 'ContentTooShortError')
+              136  IMPORT_NAME_ATTR         urllib.error
+              138  IMPORT_FROM              URLError
+              140  STORE_NAME               URLError
+              142  IMPORT_FROM              HTTPError
+              144  STORE_NAME               HTTPError
+              146  IMPORT_FROM              ContentTooShortError
+              148  STORE_NAME               ContentTooShortError
+              150  POP_TOP          
+
+ L. 103       152  LOAD_CONST               0
+              154  LOAD_CONST               ('urlparse', 'urlsplit', 'urljoin', 'unwrap', 'quote', 'unquote', '_splittype', '_splithost', '_splitport', '_splituser', '_splitpasswd', '_splitattr', '_splitquery', '_splitvalue', '_splittag', '_to_bytes', 'unquote_to_bytes', 'urlunparse')
+              156  IMPORT_NAME_ATTR         urllib.parse
+              158  IMPORT_FROM              urlparse
+              160  STORE_NAME               urlparse
+              162  IMPORT_FROM              urlsplit
+              164  STORE_NAME               urlsplit
+              166  IMPORT_FROM              urljoin
+              168  STORE_NAME               urljoin
+              170  IMPORT_FROM              unwrap
+              172  STORE_NAME               unwrap
+              174  IMPORT_FROM              quote
+              176  STORE_NAME               quote
+              178  IMPORT_FROM              unquote
+              180  STORE_NAME               unquote
+              182  IMPORT_FROM              _splittype
+              184  STORE_NAME               _splittype
+              186  IMPORT_FROM              _splithost
+              188  STORE_NAME               _splithost
+              190  IMPORT_FROM              _splitport
+              192  STORE_NAME               _splitport
+              194  IMPORT_FROM              _splituser
+              196  STORE_NAME               _splituser
+              198  IMPORT_FROM              _splitpasswd
+              200  STORE_NAME               _splitpasswd
+              202  IMPORT_FROM              _splitattr
+              204  STORE_NAME               _splitattr
+              206  IMPORT_FROM              _splitquery
+              208  STORE_NAME               _splitquery
+              210  IMPORT_FROM              _splitvalue
+              212  STORE_NAME               _splitvalue
+              214  IMPORT_FROM              _splittag
+              216  STORE_NAME               _splittag
+              218  IMPORT_FROM              _to_bytes
+              220  STORE_NAME               _to_bytes
+              222  IMPORT_FROM              unquote_to_bytes
+              224  STORE_NAME               unquote_to_bytes
+              226  IMPORT_FROM              urlunparse
+              228  STORE_NAME               urlunparse
+              230  POP_TOP          
+
+ L. 108       232  LOAD_CONST               0
+              234  LOAD_CONST               ('addinfourl', 'addclosehook')
+              236  IMPORT_NAME_ATTR         urllib.response
+              238  IMPORT_FROM              addinfourl
+              240  STORE_NAME               addinfourl
+              242  IMPORT_FROM              addclosehook
+              244  STORE_NAME               addclosehook
+              246  POP_TOP          
+
+ L. 111       248  SETUP_FINALLY       262  'to 262'
+
+ L. 112       250  LOAD_CONST               0
+              252  LOAD_CONST               None
+              254  IMPORT_NAME              ssl
+              256  STORE_NAME               ssl
+              258  POP_BLOCK        
+              260  JUMP_FORWARD        286  'to 286'
+            262_0  COME_FROM_FINALLY   248  '248'
+
+ L. 113       262  DUP_TOP          
+              264  LOAD_NAME                ImportError
+          266_268  <121>               284  ''
+              270  POP_TOP          
+              272  POP_TOP          
+              274  POP_TOP          
+
+ L. 114       276  LOAD_CONST               False
+              278  STORE_NAME               _have_ssl
+              280  POP_EXCEPT       
+              282  JUMP_FORWARD        290  'to 290'
+              284  <48>             
+            286_0  COME_FROM           260  '260'
+
+ L. 116       286  LOAD_CONST               True
+              288  STORE_NAME               _have_ssl
+            290_0  COME_FROM           282  '282'
+
+ L. 118       290  BUILD_LIST_0          0 
+              292  LOAD_CONST               ('Request', 'OpenerDirector', 'BaseHandler', 'HTTPDefaultErrorHandler', 'HTTPRedirectHandler', 'HTTPCookieProcessor', 'ProxyHandler', 'HTTPPasswordMgr', 'HTTPPasswordMgrWithDefaultRealm', 'HTTPPasswordMgrWithPriorAuth', 'AbstractBasicAuthHandler', 'HTTPBasicAuthHandler', 'ProxyBasicAuthHandler', 'AbstractDigestAuthHandler', 'HTTPDigestAuthHandler', 'ProxyDigestAuthHandler', 'HTTPHandler', 'FileHandler', 'FTPHandler', 'CacheFTPHandler', 'DataHandler', 'UnknownHandler', 'HTTPErrorProcessor', 'urlopen', 'install_opener', 'build_opener', 'pathname2url', 'url2pathname', 'getproxies', 'urlretrieve', 'urlcleanup', 'URLopener', 'FancyURLopener')
+              294  CALL_FINALLY        297  'to 297'
+              296  STORE_NAME               __all__
+
+ L. 136       298  LOAD_STR                 '%d.%d'
+              300  LOAD_NAME                sys
+              302  LOAD_ATTR                version_info
+              304  LOAD_CONST               None
+              306  LOAD_CONST               2
+              308  BUILD_SLICE_2         2 
+              310  BINARY_SUBSCR    
+              312  BINARY_MODULO    
+              314  STORE_NAME               __version__
+
+ L. 138       316  LOAD_CONST               None
+              318  STORE_GLOBAL             _opener
+
+ L. 139       320  LOAD_CONST               None
+              322  LOAD_NAME                socket
+              324  LOAD_ATTR                _GLOBAL_DEFAULT_TIMEOUT
+              326  BUILD_TUPLE_2         2 
+
+ L. 140       328  LOAD_CONST               None
+              330  LOAD_CONST               None
+              332  LOAD_CONST               False
+              334  LOAD_CONST               None
+
+ L. 139       336  LOAD_CONST               ('cafile', 'capath', 'cadefault', 'context')
+              338  BUILD_CONST_KEY_MAP_4     4 
+              340  LOAD_CODE                <code_object urlopen>
+              342  LOAD_STR                 'urlopen'
+              344  MAKE_FUNCTION_3          'default, keyword-only'
+              346  STORE_NAME               urlopen
+
+ L. 216       348  LOAD_CODE                <code_object install_opener>
+              350  LOAD_STR                 'install_opener'
+              352  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              354  STORE_NAME               install_opener
+
+ L. 220       356  BUILD_LIST_0          0 
+              358  STORE_NAME               _url_tempfiles
+
+ L. 221       360  LOAD_CONST               (None, None, None)
+              362  LOAD_CODE                <code_object urlretrieve>
+              364  LOAD_STR                 'urlretrieve'
+              366  MAKE_FUNCTION_1          'default'
+              368  STORE_NAME               urlretrieve
+
+ L. 284       370  LOAD_CODE                <code_object urlcleanup>
+              372  LOAD_STR                 'urlcleanup'
+              374  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              376  STORE_NAME               urlcleanup
+
+ L. 298       378  LOAD_NAME                re
+              380  LOAD_METHOD              compile
+              382  LOAD_STR                 ':\\d+$'
+              384  LOAD_NAME                re
+              386  LOAD_ATTR                ASCII
+              388  CALL_METHOD_2         2  ''
+              390  STORE_NAME               _cut_port_re
+
+ L. 299       392  LOAD_CODE                <code_object request_host>
+              394  LOAD_STR                 'request_host'
+              396  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              398  STORE_NAME               request_host
+
+ L. 315       400  LOAD_BUILD_CLASS 
+              402  LOAD_CODE                <code_object Request>
+              404  LOAD_STR                 'Request'
+              406  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              408  LOAD_STR                 'Request'
+              410  CALL_FUNCTION_2       2  ''
+              412  STORE_NAME               Request
+
+ L. 424       414  LOAD_BUILD_CLASS 
+              416  LOAD_CODE                <code_object OpenerDirector>
+              418  LOAD_STR                 'OpenerDirector'
+              420  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              422  LOAD_STR                 'OpenerDirector'
+              424  CALL_FUNCTION_2       2  ''
+              426  STORE_NAME               OpenerDirector
+
+ L. 567       428  LOAD_CODE                <code_object build_opener>
+              430  LOAD_STR                 'build_opener'
+              432  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              434  STORE_NAME               build_opener
+
+ L. 603       436  LOAD_BUILD_CLASS 
+              438  LOAD_CODE                <code_object BaseHandler>
+              440  LOAD_STR                 'BaseHandler'
+              442  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              444  LOAD_STR                 'BaseHandler'
+              446  CALL_FUNCTION_2       2  ''
+              448  STORE_NAME               BaseHandler
+
+ L. 622       450  LOAD_BUILD_CLASS 
+              452  LOAD_CODE                <code_object HTTPErrorProcessor>
+              454  LOAD_STR                 'HTTPErrorProcessor'
+              456  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              458  LOAD_STR                 'HTTPErrorProcessor'
+              460  LOAD_NAME                BaseHandler
+              462  CALL_FUNCTION_3       3  ''
+              464  STORE_NAME               HTTPErrorProcessor
+
+ L. 639       466  LOAD_BUILD_CLASS 
+              468  LOAD_CODE                <code_object HTTPDefaultErrorHandler>
+              470  LOAD_STR                 'HTTPDefaultErrorHandler'
+              472  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              474  LOAD_STR                 'HTTPDefaultErrorHandler'
+              476  LOAD_NAME                BaseHandler
+              478  CALL_FUNCTION_3       3  ''
+              480  STORE_NAME               HTTPDefaultErrorHandler
+
+ L. 643       482  LOAD_BUILD_CLASS 
+              484  LOAD_CODE                <code_object HTTPRedirectHandler>
+              486  LOAD_STR                 'HTTPRedirectHandler'
+              488  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              490  LOAD_STR                 'HTTPRedirectHandler'
+              492  LOAD_NAME                BaseHandler
+              494  CALL_FUNCTION_3       3  ''
+              496  STORE_NAME               HTTPRedirectHandler
+
+ L. 756       498  LOAD_CODE                <code_object _parse_proxy>
+              500  LOAD_STR                 '_parse_proxy'
+              502  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              504  STORE_NAME               _parse_proxy
+
+ L. 789       506  LOAD_BUILD_CLASS 
+              508  LOAD_CODE                <code_object ProxyHandler>
+              510  LOAD_STR                 'ProxyHandler'
+              512  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              514  LOAD_STR                 'ProxyHandler'
+              516  LOAD_NAME                BaseHandler
+              518  CALL_FUNCTION_3       3  ''
+              520  STORE_NAME               ProxyHandler
+
+ L. 832       522  LOAD_BUILD_CLASS 
+              524  LOAD_CODE                <code_object HTTPPasswordMgr>
+              526  LOAD_STR                 'HTTPPasswordMgr'
+              528  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              530  LOAD_STR                 'HTTPPasswordMgr'
+              532  CALL_FUNCTION_2       2  ''
+              534  STORE_NAME               HTTPPasswordMgr
+
+ L. 896       536  LOAD_BUILD_CLASS 
+              538  LOAD_CODE                <code_object HTTPPasswordMgrWithDefaultRealm>
+              540  LOAD_STR                 'HTTPPasswordMgrWithDefaultRealm'
+              542  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              544  LOAD_STR                 'HTTPPasswordMgrWithDefaultRealm'
+              546  LOAD_NAME                HTTPPasswordMgr
+              548  CALL_FUNCTION_3       3  ''
+              550  STORE_NAME               HTTPPasswordMgrWithDefaultRealm
+
+ L. 906       552  LOAD_BUILD_CLASS 
+              554  LOAD_CODE                <code_object HTTPPasswordMgrWithPriorAuth>
+              556  LOAD_STR                 'HTTPPasswordMgrWithPriorAuth'
+              558  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              560  LOAD_STR                 'HTTPPasswordMgrWithPriorAuth'
+              562  LOAD_NAME                HTTPPasswordMgrWithDefaultRealm
+              564  CALL_FUNCTION_3       3  ''
+              566  STORE_NAME               HTTPPasswordMgrWithPriorAuth
+
+ L. 937       568  LOAD_BUILD_CLASS 
+              570  LOAD_CODE                <code_object AbstractBasicAuthHandler>
+              572  LOAD_STR                 'AbstractBasicAuthHandler'
+              574  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              576  LOAD_STR                 'AbstractBasicAuthHandler'
+              578  CALL_FUNCTION_2       2  ''
+              580  STORE_NAME               AbstractBasicAuthHandler
+
+ L.1048       582  LOAD_BUILD_CLASS 
+              584  LOAD_CODE                <code_object HTTPBasicAuthHandler>
+              586  LOAD_STR                 'HTTPBasicAuthHandler'
+              588  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              590  LOAD_STR                 'HTTPBasicAuthHandler'
+              592  LOAD_NAME                AbstractBasicAuthHandler
+              594  LOAD_NAME                BaseHandler
+              596  CALL_FUNCTION_4       4  ''
+              598  STORE_NAME               HTTPBasicAuthHandler
+
+ L.1059       600  LOAD_BUILD_CLASS 
+              602  LOAD_CODE                <code_object ProxyBasicAuthHandler>
+              604  LOAD_STR                 'ProxyBasicAuthHandler'
+              606  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              608  LOAD_STR                 'ProxyBasicAuthHandler'
+              610  LOAD_NAME                AbstractBasicAuthHandler
+              612  LOAD_NAME                BaseHandler
+              614  CALL_FUNCTION_4       4  ''
+              616  STORE_NAME               ProxyBasicAuthHandler
+
+ L.1075       618  LOAD_NAME                os
+              620  LOAD_ATTR                urandom
+              622  STORE_NAME               _randombytes
+
+ L.1078       624  LOAD_BUILD_CLASS 
+              626  LOAD_CODE                <code_object AbstractDigestAuthHandler>
+              628  LOAD_STR                 'AbstractDigestAuthHandler'
+              630  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              632  LOAD_STR                 'AbstractDigestAuthHandler'
+              634  CALL_FUNCTION_2       2  ''
+              636  STORE_NAME               AbstractDigestAuthHandler
+
+ L.1224       638  LOAD_BUILD_CLASS 
+              640  LOAD_CODE                <code_object HTTPDigestAuthHandler>
+              642  LOAD_STR                 'HTTPDigestAuthHandler'
+              644  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              646  LOAD_STR                 'HTTPDigestAuthHandler'
+              648  LOAD_NAME                BaseHandler
+              650  LOAD_NAME                AbstractDigestAuthHandler
+              652  CALL_FUNCTION_4       4  ''
+              654  STORE_NAME               HTTPDigestAuthHandler
+
+ L.1242       656  LOAD_BUILD_CLASS 
+              658  LOAD_CODE                <code_object ProxyDigestAuthHandler>
+              660  LOAD_STR                 'ProxyDigestAuthHandler'
+              662  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              664  LOAD_STR                 'ProxyDigestAuthHandler'
+              666  LOAD_NAME                BaseHandler
+              668  LOAD_NAME                AbstractDigestAuthHandler
+              670  CALL_FUNCTION_4       4  ''
+              672  STORE_NAME               ProxyDigestAuthHandler
+
+ L.1254       674  LOAD_BUILD_CLASS 
+              676  LOAD_CODE                <code_object AbstractHTTPHandler>
+              678  LOAD_STR                 'AbstractHTTPHandler'
+              680  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              682  LOAD_STR                 'AbstractHTTPHandler'
+              684  LOAD_NAME                BaseHandler
+              686  CALL_FUNCTION_3       3  ''
+              688  STORE_NAME               AbstractHTTPHandler
+
+ L.1372       690  LOAD_BUILD_CLASS 
+              692  LOAD_CODE                <code_object HTTPHandler>
+              694  LOAD_STR                 'HTTPHandler'
+              696  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              698  LOAD_STR                 'HTTPHandler'
+              700  LOAD_NAME                AbstractHTTPHandler
+              702  CALL_FUNCTION_3       3  ''
+              704  STORE_NAME               HTTPHandler
+
+ L.1379       706  LOAD_NAME                hasattr
+              708  LOAD_NAME                http
+              710  LOAD_ATTR                client
+              712  LOAD_STR                 'HTTPSConnection'
+              714  CALL_FUNCTION_2       2  ''
+          716_718  POP_JUMP_IF_FALSE   746  'to 746'
+
+ L.1381       720  LOAD_BUILD_CLASS 
+              722  LOAD_CODE                <code_object HTTPSHandler>
+              724  LOAD_STR                 'HTTPSHandler'
+              726  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              728  LOAD_STR                 'HTTPSHandler'
+              730  LOAD_NAME                AbstractHTTPHandler
+              732  CALL_FUNCTION_3       3  ''
+              734  STORE_NAME               HTTPSHandler
+
+ L.1394       736  LOAD_NAME                __all__
+              738  LOAD_METHOD              append
+              740  LOAD_STR                 'HTTPSHandler'
+              742  CALL_METHOD_1         1  ''
+              744  POP_TOP          
+            746_0  COME_FROM           716  '716'
+
+ L.1396       746  LOAD_BUILD_CLASS 
+              748  LOAD_CODE                <code_object HTTPCookieProcessor>
+              750  LOAD_STR                 'HTTPCookieProcessor'
+              752  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              754  LOAD_STR                 'HTTPCookieProcessor'
+              756  LOAD_NAME                BaseHandler
+              758  CALL_FUNCTION_3       3  ''
+              760  STORE_NAME               HTTPCookieProcessor
+
+ L.1414       762  LOAD_BUILD_CLASS 
+              764  LOAD_CODE                <code_object UnknownHandler>
+              766  LOAD_STR                 'UnknownHandler'
+              768  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              770  LOAD_STR                 'UnknownHandler'
+              772  LOAD_NAME                BaseHandler
+              774  CALL_FUNCTION_3       3  ''
+              776  STORE_NAME               UnknownHandler
+
+ L.1419       778  LOAD_CODE                <code_object parse_keqv_list>
+              780  LOAD_STR                 'parse_keqv_list'
+              782  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              784  STORE_NAME               parse_keqv_list
+
+ L.1429       786  LOAD_CODE                <code_object parse_http_list>
+              788  LOAD_STR                 'parse_http_list'
+              790  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              792  STORE_NAME               parse_http_list
+
+ L.1472       794  LOAD_BUILD_CLASS 
+              796  LOAD_CODE                <code_object FileHandler>
+              798  LOAD_STR                 'FileHandler'
+              800  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              802  LOAD_STR                 'FileHandler'
+              804  LOAD_NAME                BaseHandler
+              806  CALL_FUNCTION_3       3  ''
+              808  STORE_NAME               FileHandler
+
+ L.1523       810  LOAD_CODE                <code_object _safe_gethostbyname>
+              812  LOAD_STR                 '_safe_gethostbyname'
+              814  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              816  STORE_NAME               _safe_gethostbyname
+
+ L.1529       818  LOAD_BUILD_CLASS 
+              820  LOAD_CODE                <code_object FTPHandler>
+              822  LOAD_STR                 'FTPHandler'
+              824  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              826  LOAD_STR                 'FTPHandler'
+              828  LOAD_NAME                BaseHandler
+              830  CALL_FUNCTION_3       3  ''
+              832  STORE_NAME               FTPHandler
+
+ L.1587       834  LOAD_BUILD_CLASS 
+              836  LOAD_CODE                <code_object CacheFTPHandler>
+              838  LOAD_STR                 'CacheFTPHandler'
+              840  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              842  LOAD_STR                 'CacheFTPHandler'
+              844  LOAD_NAME                FTPHandler
+              846  CALL_FUNCTION_3       3  ''
+              848  STORE_NAME               CacheFTPHandler
+
+ L.1640       850  LOAD_BUILD_CLASS 
+              852  LOAD_CODE                <code_object DataHandler>
+              854  LOAD_STR                 'DataHandler'
+              856  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              858  LOAD_STR                 'DataHandler'
+              860  LOAD_NAME                BaseHandler
+              862  CALL_FUNCTION_3       3  ''
+              864  STORE_NAME               DataHandler
+
+ L.1673       866  LOAD_CONST               10
+              868  STORE_NAME               MAXFTPCACHE
+
+ L.1676       870  LOAD_NAME                os
+              872  LOAD_ATTR                name
+              874  LOAD_STR                 'nt'
+              876  COMPARE_OP               ==
+          878_880  POP_JUMP_IF_FALSE   900  'to 900'
+
+ L.1677       882  LOAD_CONST               0
+              884  LOAD_CONST               ('url2pathname', 'pathname2url')
+              886  IMPORT_NAME              nturl2path
+              888  IMPORT_FROM              url2pathname
+              890  STORE_NAME               url2pathname
+              892  IMPORT_FROM              pathname2url
+              894  STORE_NAME               pathname2url
+              896  POP_TOP          
+              898  JUMP_FORWARD        916  'to 916'
+            900_0  COME_FROM           878  '878'
+
+ L.1679       900  LOAD_CODE                <code_object url2pathname>
+              902  LOAD_STR                 'url2pathname'
+              904  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              906  STORE_NAME               url2pathname
+
+ L.1684       908  LOAD_CODE                <code_object pathname2url>
+              910  LOAD_STR                 'pathname2url'
+              912  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              914  STORE_NAME               pathname2url
+            916_0  COME_FROM           898  '898'
+
+ L.1690       916  BUILD_MAP_0           0 
+              918  STORE_NAME               ftpcache
+
+ L.1693       920  LOAD_BUILD_CLASS 
+              922  LOAD_CODE                <code_object URLopener>
+              924  LOAD_STR                 'URLopener'
+              926  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              928  LOAD_STR                 'URLopener'
+              930  CALL_FUNCTION_2       2  ''
+              932  STORE_NAME               URLopener
+
+ L.2138       934  LOAD_BUILD_CLASS 
+              936  LOAD_CODE                <code_object FancyURLopener>
+              938  LOAD_STR                 'FancyURLopener'
+              940  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              942  LOAD_STR                 'FancyURLopener'
+              944  LOAD_NAME                URLopener
+              946  CALL_FUNCTION_3       3  ''
+              948  STORE_NAME               FancyURLopener
+
+ L.2352       950  LOAD_CONST               None
+              952  STORE_GLOBAL             _localhost
+
+ L.2353       954  LOAD_CODE                <code_object localhost>
+              956  LOAD_STR                 'localhost'
+              958  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              960  STORE_NAME               localhost
+
+ L.2360       962  LOAD_CONST               None
+              964  STORE_GLOBAL             _thishost
+
+ L.2361       966  LOAD_CODE                <code_object thishost>
+              968  LOAD_STR                 'thishost'
+              970  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              972  STORE_NAME               thishost
+
+ L.2371       974  LOAD_CONST               None
+              976  STORE_GLOBAL             _ftperrors
+
+ L.2372       978  LOAD_CODE                <code_object ftperrors>
+              980  LOAD_STR                 'ftperrors'
+              982  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              984  STORE_NAME               ftperrors
+
+ L.2380       986  LOAD_CONST               None
+              988  STORE_GLOBAL             _noheaders
+
+ L.2381       990  LOAD_CODE                <code_object noheaders>
+              992  LOAD_STR                 'noheaders'
+              994  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              996  STORE_NAME               noheaders
+
+ L.2391       998  LOAD_BUILD_CLASS 
+             1000  LOAD_CODE                <code_object ftpwrapper>
+             1002  LOAD_STR                 'ftpwrapper'
+             1004  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1006  LOAD_STR                 'ftpwrapper'
+             1008  CALL_FUNCTION_2       2  ''
+             1010  STORE_NAME               ftpwrapper
+
+ L.2486      1012  LOAD_CODE                <code_object getproxies_environment>
+             1014  LOAD_STR                 'getproxies_environment'
+             1016  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1018  STORE_NAME               getproxies_environment
+
+ L.2517      1020  LOAD_CONST               (None,)
+             1022  LOAD_CODE                <code_object proxy_bypass_environment>
+             1024  LOAD_STR                 'proxy_bypass_environment'
+             1026  MAKE_FUNCTION_1          'default'
+             1028  STORE_NAME               proxy_bypass_environment
+
+ L.2554      1030  LOAD_CODE                <code_object _proxy_bypass_macosx_sysconf>
+             1032  LOAD_STR                 '_proxy_bypass_macosx_sysconf'
+             1034  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1036  STORE_NAME               _proxy_bypass_macosx_sysconf
+
+ L.2619      1038  LOAD_NAME                sys
+             1040  LOAD_ATTR                platform
+             1042  LOAD_STR                 'darwin'
+             1044  COMPARE_OP               ==
+         1046_1048  POP_JUMP_IF_FALSE  1100  'to 1100'
+
+ L.2620      1050  LOAD_CONST               0
+             1052  LOAD_CONST               ('_get_proxy_settings', '_get_proxies')
+             1054  IMPORT_NAME              _scproxy
+             1056  IMPORT_FROM              _get_proxy_settings
+             1058  STORE_NAME               _get_proxy_settings
+             1060  IMPORT_FROM              _get_proxies
+             1062  STORE_NAME               _get_proxies
+             1064  POP_TOP          
+
+ L.2622      1066  LOAD_CODE                <code_object proxy_bypass_macosx_sysconf>
+             1068  LOAD_STR                 'proxy_bypass_macosx_sysconf'
+             1070  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1072  STORE_NAME               proxy_bypass_macosx_sysconf
+
+ L.2626      1074  LOAD_CODE                <code_object getproxies_macosx_sysconf>
+             1076  LOAD_STR                 'getproxies_macosx_sysconf'
+             1078  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1080  STORE_NAME               getproxies_macosx_sysconf
+
+ L.2636      1082  LOAD_CODE                <code_object proxy_bypass>
+             1084  LOAD_STR                 'proxy_bypass'
+             1086  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1088  STORE_NAME               proxy_bypass
+
+ L.2649      1090  LOAD_CODE                <code_object getproxies>
+             1092  LOAD_STR                 'getproxies'
+             1094  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1096  STORE_NAME               getproxies
+             1098  JUMP_FORWARD       1154  'to 1154'
+           1100_0  COME_FROM          1046  '1046'
+
+ L.2653      1100  LOAD_NAME                os
+             1102  LOAD_ATTR                name
+             1104  LOAD_STR                 'nt'
+             1106  COMPARE_OP               ==
+         1108_1110  POP_JUMP_IF_FALSE  1146  'to 1146'
+
+ L.2654      1112  LOAD_CODE                <code_object getproxies_registry>
+             1114  LOAD_STR                 'getproxies_registry'
+             1116  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1118  STORE_NAME               getproxies_registry
+
+ L.2699      1120  LOAD_CODE                <code_object getproxies>
+             1122  LOAD_STR                 'getproxies'
+             1124  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1126  STORE_NAME               getproxies
+
+ L.2708      1128  LOAD_CODE                <code_object proxy_bypass_registry>
+             1130  LOAD_STR                 'proxy_bypass_registry'
+             1132  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1134  STORE_NAME               proxy_bypass_registry
+
+ L.2758      1136  LOAD_CODE                <code_object proxy_bypass>
+             1138  LOAD_STR                 'proxy_bypass'
+             1140  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1142  STORE_NAME               proxy_bypass
+             1144  JUMP_FORWARD       1154  'to 1154'
+           1146_0  COME_FROM          1108  '1108'
+
+ L.2773      1146  LOAD_NAME                getproxies_environment
+             1148  STORE_NAME               getproxies
+
+ L.2774      1150  LOAD_NAME                proxy_bypass_environment
+             1152  STORE_NAME               proxy_bypass
+           1154_0  COME_FROM          1144  '1144'
+           1154_1  COME_FROM          1098  '1098'
+
+Parse error at or near `<121>' instruction at offset 266_268
+
+Instruction context:
+   
+ L. 113       262  DUP_TOP          
+                 264  LOAD_NAME                ImportError
+->           266_268  <121>               284  ''
+                 270  POP_TOP          
+                 272  POP_TOP          
+                 274  POP_TOP          
+
+test/112755.pyc -- 
+# decompile failed

@@ -1,0 +1,118 @@
+Instruction context:
+   
+ L.  64        76  BUILD_LIST_0          0 
+                  78  LOAD_CONST               ('rpm', 'gztar', 'bztar', 'xztar', 'ztar', 'tar', 'wininst', 'zip', 'msi')
+->                80  CALL_FINALLY         83  'to 83'
+                  82  STORE_NAME               format_commands
+
+test/111889.pyc -- 
+# decompile failed
+
+# file test/111889.pyc
+# --- This code section failed: ---
+
+ L.  24         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'bdist'
+                6  STORE_NAME               __qualname__
+
+ L.  26         8  LOAD_STR                 'create a built (binary) distribution'
+               10  STORE_NAME               description
+
+ L.  28        12  LOAD_CONST               ('bdist-base=', 'b', 'temporary directory for creating built distributions')
+
+ L.  30        14  LOAD_STR                 'plat-name='
+               16  LOAD_STR                 'p'
+
+ L.  31        18  LOAD_STR                 'platform name to embed in generated filenames (default: %s)'
+
+ L.  32        20  LOAD_NAME                get_platform
+               22  CALL_FUNCTION_0       0  ''
+
+ L.  31        24  BINARY_MODULO    
+
+ L.  30        26  BUILD_TUPLE_3         3 
+
+ L.  33        28  LOAD_CONST               ('formats=', None, 'formats for distribution (comma-separated list)')
+
+ L.  35        30  LOAD_CONST               ('dist-dir=', 'd', 'directory to put final built distributions in [default: dist]')
+
+ L.  38        32  LOAD_CONST               ('skip-build', None, 'skip rebuilding everything (for testing/debugging)')
+
+ L.  40        34  LOAD_CONST               ('owner=', 'u', 'Owner name used when creating a tar file [default: current user]')
+
+ L.  43        36  LOAD_CONST               ('group=', 'g', 'Group name used when creating a tar file [default: current group]')
+
+ L.  28        38  BUILD_LIST_7          7 
+               40  STORE_NAME               user_options
+
+ L.  48        42  LOAD_STR                 'skip-build'
+               44  BUILD_LIST_1          1 
+               46  STORE_NAME               boolean_options
+
+ L.  51        48  LOAD_STR                 'help-formats'
+               50  LOAD_CONST               None
+
+ L.  52        52  LOAD_STR                 'lists available distribution formats'
+               54  LOAD_NAME                show_formats
+
+ L.  51        56  BUILD_TUPLE_4         4 
+
+ L.  50        58  BUILD_LIST_1          1 
+               60  STORE_NAME               help_options
+
+ L.  56        62  LOAD_CONST               ('bdist_rpm',)
+               64  STORE_NAME               no_format_option
+
+ L.  60        66  LOAD_STR                 'gztar'
+
+ L.  61        68  LOAD_STR                 'zip'
+
+ L.  60        70  LOAD_CONST               ('posix', 'nt')
+               72  BUILD_CONST_KEY_MAP_2     2 
+               74  STORE_NAME               default_format
+
+ L.  64        76  BUILD_LIST_0          0 
+               78  LOAD_CONST               ('rpm', 'gztar', 'bztar', 'xztar', 'ztar', 'tar', 'wininst', 'zip', 'msi')
+               80  CALL_FINALLY         83  'to 83'
+               82  STORE_NAME               format_commands
+
+ L.  68        84  LOAD_CONST               ('bdist_rpm', 'RPM distribution')
+
+ L.  69        86  LOAD_CONST               ('bdist_dumb', "gzip'ed tar file")
+
+ L.  70        88  LOAD_CONST               ('bdist_dumb', "bzip2'ed tar file")
+
+ L.  71        90  LOAD_CONST               ('bdist_dumb', "xz'ed tar file")
+
+ L.  72        92  LOAD_CONST               ('bdist_dumb', 'compressed tar file')
+
+ L.  73        94  LOAD_CONST               ('bdist_dumb', 'tar file')
+
+ L.  74        96  LOAD_CONST               ('bdist_wininst', 'Windows executable installer')
+
+ L.  76        98  LOAD_CONST               ('bdist_dumb', 'ZIP file')
+
+ L.  77       100  LOAD_CONST               ('bdist_msi', 'Microsoft Installer')
+
+ L.  68       102  LOAD_CONST               ('rpm', 'gztar', 'bztar', 'xztar', 'ztar', 'tar', 'wininst', 'zip', 'msi')
+              104  BUILD_CONST_KEY_MAP_9     9 
+              106  STORE_NAME               format_command
+
+ L.  81       108  LOAD_CODE                <code_object initialize_options>
+              110  LOAD_STR                 'bdist.initialize_options'
+              112  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              114  STORE_NAME               initialize_options
+
+ L.  90       116  LOAD_CODE                <code_object finalize_options>
+              118  LOAD_STR                 'bdist.finalize_options'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  STORE_NAME               finalize_options
+
+ L. 118       124  LOAD_CODE                <code_object run>
+              126  LOAD_STR                 'bdist.run'
+              128  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              130  STORE_NAME               run
+
+Parse error at or near `CALL_FINALLY' instruction at offset 80
+

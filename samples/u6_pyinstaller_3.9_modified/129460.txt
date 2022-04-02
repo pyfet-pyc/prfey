@@ -1,0 +1,58 @@
+Instruction context:
+   
+ L.  83       106  DUP_TOP          
+                 108  LOAD_GLOBAL              KeyError
+->               110  <121>               136  ''
+                 112  POP_TOP          
+                 114  POP_TOP          
+                 116  POP_TOP          
+Instruction context:
+   
+ L.  94        28  LOAD_FAST                'self'
+                  30  LOAD_ATTR                _backend
+                  32  LOAD_METHOD              openssl_assert
+                  34  LOAD_FAST                'status'
+                  36  LOAD_GLOBAL              _RESPONSE_STATUS_TO_ENUM
+->                38  <118>                 0  ''
+                  40  CALL_METHOD_1         1  ''
+                  42  POP_TOP          
+Instruction context:
+   
+ L. 147        28  DUP_TOP          
+                  30  LOAD_GLOBAL              KeyError
+->                32  <121>                58  ''
+                  34  POP_TOP          
+                  36  POP_TOP          
+                  38  POP_TOP          
+Instruction context:
+   
+ L. 236        56  LOAD_FAST                'self'
+                  58  LOAD_ATTR                _backend
+                  60  LOAD_METHOD              openssl_assert
+                  62  LOAD_FAST                'status'
+                  64  LOAD_GLOBAL              _CERT_STATUS_TO_ENUM
+->                66  <118>                 0  ''
+                  68  CALL_METHOD_1         1  ''
+                  70  POP_TOP          
+Instruction context:
+   
+ L. 242         8  LOAD_FAST                'self'
+                  10  LOAD_ATTR                certificate_status
+                  12  LOAD_GLOBAL              OCSPCertStatus
+                  14  LOAD_ATTR                REVOKED
+->                16  <117>                 1  ''
+                  18  POP_JUMP_IF_FALSE    24  'to 24'
+Instruction context:
+   
+ L. 259         8  LOAD_FAST                'self'
+                  10  LOAD_ATTR                certificate_status
+                  12  LOAD_GLOBAL              OCSPCertStatus
+                  14  LOAD_ATTR                REVOKED
+->                16  <117>                 1  ''
+                  18  POP_JUMP_IF_FALSE    24  'to 24'
+
+test/129460.pyc -- 
+# decompile failed
+
+# file test/129460.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,35 @@
+Instruction context:
+   
+ L. 543       152  POP_EXCEPT       
+                 154  BREAK_LOOP          158  'to 158'
+               156_0  COME_FROM           144  '144'
+->               156  END_FINALLY      
+               158_0  COME_FROM           154  '154'
+               158_1  COME_FROM           136  '136'
+                 158  POP_BLOCK        
+                 160  BEGIN_FINALLY    
+               162_0  COME_FROM_FINALLY    94  '94'
+                 162  LOAD_CONST               None
+                 164  STORE_FAST               'e'
+                 166  DELETE_FAST              'e'
+                 168  END_FINALLY      
+                 170  POP_EXCEPT       
+                 172  JUMP_BACK            38  'to 38'
+               174_0  COME_FROM            86  '86'
+                 174  END_FINALLY      
+                 176  JUMP_BACK            38  'to 38'
+               178_0  COME_FROM            38  '38'
+Instruction context:
+   
+ L. 579        48  POP_EXCEPT       
+->                50  LOAD_CONST               None
+                  52  RETURN_VALUE     
+                54_0  COME_FROM            30  '30'
+                  54  END_FINALLY      
+                56_0  COME_FROM            18  '18'
+
+../test/145809.pyc -- 
+# decompile failed
+
+# file ../test/145809.pyc
+# Deparsing stopped due to parse error

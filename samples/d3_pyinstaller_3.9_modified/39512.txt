@@ -1,0 +1,70 @@
+Instruction context:
+   
+ L.  86       116  LOAD_FAST                'heartbeat'
+                 118  LOAD_CONST               None
+->               120  <117>                 1  ''
+                 122  POP_JUMP_IF_FALSE   134  'to 134'
+Instruction context:
+   
+ L. 104         8  LOAD_FAST                'self'
+                  10  LOAD_ATTR                _heartbeat
+                  12  LOAD_CONST               None
+->                14  <117>                 1  ''
+                  16  POP_JUMP_IF_FALSE    38  'to 38'
+Instruction context:
+   
+ L. 153        56  LOAD_STR                 'upgrade'
+                  58  LOAD_FAST                'headers'
+                  60  LOAD_METHOD              get
+                  62  LOAD_GLOBAL              hdrs
+                  64  LOAD_ATTR                CONNECTION
+                  66  LOAD_STR                 ''
+                  68  CALL_METHOD_2         2  ''
+                  70  LOAD_METHOD              lower
+                  72  CALL_METHOD_0         0  ''
+->                74  <118>                 1  ''
+                  76  POP_JUMP_IF_FALSE   102  'to 102'
+Instruction context:
+   
+ L. 231        70  LOAD_FAST                'transport'
+                  72  LOAD_CONST               None
+->                74  <117>                 1  ''
+                  76  POP_JUMP_IF_TRUE     82  'to 82'
+                  78  <74>             
+                  80  RAISE_VARARGS_1       1  'exception instance'
+                82_0  COME_FROM            76  '76'
+Instruction context:
+   
+ L. 247        26  LOAD_FAST                'loop'
+                  28  LOAD_CONST               None
+->                30  <117>                 1  ''
+                  32  POP_JUMP_IF_TRUE     38  'to 38'
+                  34  <74>             
+                  36  RAISE_VARARGS_1       1  'exception instance'
+                38_0  COME_FROM            32  '32'
+Instruction context:
+   
+ L. 321        10  LOAD_FAST                'self'
+                  12  LOAD_ATTR                _payload_writer
+                  14  LOAD_CONST               None
+->                16  <117>                 0  ''
+                  18  POP_JUMP_IF_FALSE    28  'to 28'
+Instruction context:
+   
+ L. 475        14  LOAD_FAST                'msg'
+                  16  LOAD_ATTR                type
+                  18  LOAD_GLOBAL              WSMsgType
+                  20  LOAD_ATTR                CLOSE
+                  22  LOAD_GLOBAL              WSMsgType
+                  24  LOAD_ATTR                CLOSING
+                  26  LOAD_GLOBAL              WSMsgType
+                  28  LOAD_ATTR                CLOSED
+                  30  BUILD_TUPLE_3         3 
+->                32  <118>                 0  ''
+                  34  POP_JUMP_IF_FALSE    40  'to 40'
+
+test/39512.pyc -- 
+# decompile failed
+
+# file test/39512.pyc
+# Deparsing stopped due to parse error

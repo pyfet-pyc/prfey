@@ -1,0 +1,55 @@
+Instruction context:
+   
+ L.  17        24  LOAD_NAME                ssl
+                  26  LOAD_METHOD              get_default_verify_paths
+                  28  CALL_METHOD_0         0  ''
+                  30  LOAD_ATTR                cafile
+                  32  LOAD_CONST               None
+->                34  <117>                 0  ''
+                  36  POP_JUMP_IF_FALSE    62  'to 62'
+
+test/101378.pyc -- 
+# decompile failed
+
+# file test/101378.pyc
+# --- This code section failed: ---
+
+ L.  12         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              os
+                6  STORE_NAME               os
+
+ L.  13         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              ssl
+               14  STORE_NAME               ssl
+
+ L.  14        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              sys
+               22  STORE_NAME               sys
+
+ L.  17        24  LOAD_NAME                ssl
+               26  LOAD_METHOD              get_default_verify_paths
+               28  CALL_METHOD_0         0  ''
+               30  LOAD_ATTR                cafile
+               32  LOAD_CONST               None
+               34  <117>                 0  ''
+               36  POP_JUMP_IF_FALSE    62  'to 62'
+
+ L.  18        38  LOAD_NAME                os
+               40  LOAD_ATTR                path
+               42  LOAD_METHOD              join
+               44  LOAD_NAME                sys
+               46  LOAD_ATTR                _MEIPASS
+               48  LOAD_STR                 'certifi'
+               50  LOAD_STR                 'cacert.pem'
+               52  CALL_METHOD_3         3  ''
+               54  LOAD_NAME                os
+               56  LOAD_ATTR                environ
+               58  LOAD_STR                 'SSL_CERT_FILE'
+               60  STORE_SUBSCR     
+             62_0  COME_FROM            36  '36'
+
+Parse error at or near `<117>' instruction at offset 34
+

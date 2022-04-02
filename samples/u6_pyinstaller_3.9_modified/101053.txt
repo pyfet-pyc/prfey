@@ -1,0 +1,98 @@
+Instruction context:
+   
+ L.   9        20  BUILD_LIST_0          0 
+                  22  LOAD_CONST               ('commonprefix', 'exists', 'getatime', 'getctime', 'getmtime', 'getsize', 'isdir', 'isfile', 'samefile', 'sameopenfile', 'samestat')
+->                24  CALL_FINALLY         27  'to 27'
+                  26  STORE_NAME               __all__
+
+test/101053.pyc -- 
+# decompile failed
+
+# file test/101053.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nPath operations common to more than one OS\nDo not use directly.  The OS specific modules import the appropriate\nfunctions from this module themselves.\n'
+                2  STORE_NAME               __doc__
+
+ L.   6         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.   7        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              stat
+               18  STORE_NAME               stat
+
+ L.   9        20  BUILD_LIST_0          0 
+               22  LOAD_CONST               ('commonprefix', 'exists', 'getatime', 'getctime', 'getmtime', 'getsize', 'isdir', 'isfile', 'samefile', 'sameopenfile', 'samestat')
+               24  CALL_FINALLY         27  'to 27'
+               26  STORE_NAME               __all__
+
+ L.  16        28  LOAD_CODE                <code_object exists>
+               30  LOAD_STR                 'exists'
+               32  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               34  STORE_NAME               exists
+
+ L.  27        36  LOAD_CODE                <code_object isfile>
+               38  LOAD_STR                 'isfile'
+               40  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               42  STORE_NAME               isfile
+
+ L.  39        44  LOAD_CODE                <code_object isdir>
+               46  LOAD_STR                 'isdir'
+               48  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               50  STORE_NAME               isdir
+
+ L.  48        52  LOAD_CODE                <code_object getsize>
+               54  LOAD_STR                 'getsize'
+               56  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               58  STORE_NAME               getsize
+
+ L.  53        60  LOAD_CODE                <code_object getmtime>
+               62  LOAD_STR                 'getmtime'
+               64  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               66  STORE_NAME               getmtime
+
+ L.  58        68  LOAD_CODE                <code_object getatime>
+               70  LOAD_STR                 'getatime'
+               72  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               74  STORE_NAME               getatime
+
+ L.  63        76  LOAD_CODE                <code_object getctime>
+               78  LOAD_STR                 'getctime'
+               80  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               82  STORE_NAME               getctime
+
+ L.  69        84  LOAD_CODE                <code_object commonprefix>
+               86  LOAD_STR                 'commonprefix'
+               88  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               90  STORE_NAME               commonprefix
+
+ L.  87        92  LOAD_CODE                <code_object samestat>
+               94  LOAD_STR                 'samestat'
+               96  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               98  STORE_NAME               samestat
+
+ L.  94       100  LOAD_CODE                <code_object samefile>
+              102  LOAD_STR                 'samefile'
+              104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              106  STORE_NAME               samefile
+
+ L. 107       108  LOAD_CODE                <code_object sameopenfile>
+              110  LOAD_STR                 'sameopenfile'
+              112  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              114  STORE_NAME               sameopenfile
+
+ L. 121       116  LOAD_CODE                <code_object _splitext>
+              118  LOAD_STR                 '_splitext'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  STORE_NAME               _splitext
+
+ L. 144       124  LOAD_CODE                <code_object _check_arg_types>
+              126  LOAD_STR                 '_check_arg_types'
+              128  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              130  STORE_NAME               _check_arg_types
+
+Parse error at or near `CALL_FINALLY' instruction at offset 24
+

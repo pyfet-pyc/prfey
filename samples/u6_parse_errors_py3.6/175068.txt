@@ -1,0 +1,30 @@
+Instruction context:
+   
+ L.  70        42  LOAD_FAST                'resp'
+                  44  LOAD_ATTR                text
+                  46  CALL_FUNCTION_0       0  '0 positional arguments'
+                  48  GET_AWAITABLE    
+                  50  LOAD_CONST               None
+                  52  YIELD_FROM       
+                  54  RETURN_VALUE     
+->              56_0  COME_FROM_ASYNC_WITH    38  '38'
+                  56  WITH_CLEANUP_START
+                  58  GET_AWAITABLE    
+                  60  LOAD_CONST               None
+                  62  YIELD_FROM       
+                  64  WITH_CLEANUP_FINISH
+                  66  END_FINALLY      
+                  68  POP_BLOCK        
+                  70  LOAD_CONST               None
+                72_0  COME_FROM_ASYNC_WITH    14  '14'
+                  72  WITH_CLEANUP_START
+                  74  GET_AWAITABLE    
+                  76  LOAD_CONST               None
+                  78  YIELD_FROM       
+                  80  WITH_CLEANUP_FINISH
+
+../test/175068.pyc -- 
+# decompile failed
+
+# file ../test/175068.pyc
+# Deparsing stopped due to parse error

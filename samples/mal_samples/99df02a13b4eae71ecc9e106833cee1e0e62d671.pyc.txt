@@ -1,0 +1,90 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/xdis/load.py", line 301, in load_module_from_file_object
+    co = xdis.unmarshal.load_code(fp, magic_int, code_objects)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 530, in load_code
+    return um_gen.load()
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 167, in load
+    return self.r_object()
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 458, in t_code
+    co_consts = self.r_object(bytes_for_s=True)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 356, in t_tuple
+    ret += (self.r_object(),)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 458, in t_code
+    co_consts = self.r_object(bytes_for_s=True)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 356, in t_tuple
+    ret += (self.r_object(),)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 458, in t_code
+    co_consts = self.r_object(bytes_for_s=True)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 356, in t_tuple
+    ret += (self.r_object(),)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 404, in t_python2_string_reference
+    return self.internStrings[refnum]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/xdis/load.py", line 301, in load_module_from_file_object
+    co = xdis.unmarshal.load_code(fp, magic_int, code_objects)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 530, in load_code
+    return um_gen.load()
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 167, in load
+    return self.r_object()
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 458, in t_code
+    co_consts = self.r_object(bytes_for_s=True)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 356, in t_tuple
+    ret += (self.r_object(),)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 458, in t_code
+    co_consts = self.r_object(bytes_for_s=True)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 356, in t_tuple
+    ret += (self.r_object(),)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 458, in t_code
+    co_consts = self.r_object(bytes_for_s=True)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 356, in t_tuple
+    ret += (self.r_object(),)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 205, in r_object
+    return unmarshal_func(save_ref, bytes_for_s)
+  File "/usr/local/lib/python3.7/site-packages/xdis/unmarshal.py", line 404, in t_python2_string_reference
+    return self.internStrings[refnum]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/bin/uncompyle6", line 8, in <module>
+    sys.exit(main_bin())
+  File "/usr/local/lib/python3.7/site-packages/uncompyle6/bin/uncompile.py", line 194, in main_bin
+    **options)
+  File "/usr/local/lib/python3.7/site-packages/uncompyle6/main.py", line 324, in main
+    do_fragments,
+  File "/usr/local/lib/python3.7/site-packages/uncompyle6/main.py", line 184, in decompile_file
+    filename, code_objects
+  File "/usr/local/lib/python3.7/site-packages/xdis/load.py", line 172, in load_module
+    get_code=get_code,
+  File "/usr/local/lib/python3.7/site-packages/xdis/load.py", line 311, in load_module_from_file_object
+    "Ill-formed bytecode file %s\n%s; %s" % (filename, kind, msg)
+ImportError: Ill-formed bytecode file samples/mal_samples/99df02a13b4eae71ecc9e106833cee1e0e62d671.pyc
+<class 'IndexError'>; list index out of range

@@ -1,0 +1,274 @@
+
+# file test/101427.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'A powerful, extensible, and easy-to-use option parser.\n\nBy Greg Ward <gward@python.net>\n\nOriginally distributed as Optik.\n\nFor support, use the optik-users@lists.sourceforge.net mailing list\n(http://lists.sourceforge.net/lists/listinfo/optik-users).\n\nSimple usage example:\n\n   from optparse import OptionParser\n\n   parser = OptionParser()\n   parser.add_option("-f", "--file", dest="filename",\n                     help="write report to FILE", metavar="FILE")\n   parser.add_option("-q", "--quiet",\n                     action="store_false", dest="verbose", default=True,\n                     help="don\'t print status messages to stdout")\n\n   (options, args) = parser.parse_args()\n'
+                2  STORE_NAME               __doc__
+
+ L.  24         4  LOAD_STR                 '1.5.3'
+                6  STORE_NAME               __version__
+
+ L.  26         8  BUILD_LIST_0          0 
+               10  LOAD_CONST               ('Option', 'make_option', 'SUPPRESS_HELP', 'SUPPRESS_USAGE', 'Values', 'OptionContainer', 'OptionGroup', 'OptionParser', 'HelpFormatter', 'IndentedHelpFormatter', 'TitledHelpFormatter', 'OptParseError', 'OptionError', 'OptionConflictError', 'OptionValueError', 'BadOptionError', 'check_choice')
+               12  CALL_FINALLY         15  'to 15'
+               14  STORE_NAME               __all__
+
+ L.  44        16  LOAD_STR                 '\nCopyright (c) 2001-2006 Gregory P. Ward.  All rights reserved.\nCopyright (c) 2002-2006 Python Software Foundation.  All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n  * Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n\n  * Redistributions in binary form must reproduce the above copyright\n    notice, this list of conditions and the following disclaimer in the\n    documentation and/or other materials provided with the distribution.\n\n  * Neither the name of the author nor the names of its\n    contributors may be used to endorse or promote products derived from\n    this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS\nIS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED\nTO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A\nPARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR\nCONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n'
+               18  STORE_NAME               __copyright__
+
+ L.  76        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              sys
+               26  STORE_NAME               sys
+               28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              os
+               34  STORE_NAME               os
+
+ L.  77        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              textwrap
+               42  STORE_NAME               textwrap
+
+ L.  79        44  LOAD_CODE                <code_object _repr>
+               46  LOAD_STR                 '_repr'
+               48  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               50  STORE_NAME               _repr
+
+ L.  89        52  SETUP_FINALLY        74  'to 74'
+
+ L.  90        54  LOAD_CONST               0
+               56  LOAD_CONST               ('gettext', 'ngettext')
+               58  IMPORT_NAME              gettext
+               60  IMPORT_FROM              gettext
+               62  STORE_NAME               gettext
+               64  IMPORT_FROM              ngettext
+               66  STORE_NAME               ngettext
+               68  POP_TOP          
+               70  POP_BLOCK        
+               72  JUMP_FORWARD        108  'to 108'
+             74_0  COME_FROM_FINALLY    52  '52'
+
+ L.  91        74  DUP_TOP          
+               76  LOAD_NAME                ImportError
+               78  <121>               106  ''
+               80  POP_TOP          
+               82  POP_TOP          
+               84  POP_TOP          
+
+ L.  92        86  LOAD_CODE                <code_object gettext>
+               88  LOAD_STR                 'gettext'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  STORE_NAME               gettext
+
+ L.  95        94  LOAD_CODE                <code_object ngettext>
+               96  LOAD_STR                 'ngettext'
+               98  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              100  STORE_NAME               ngettext
+              102  POP_EXCEPT       
+              104  JUMP_FORWARD        108  'to 108'
+              106  <48>             
+            108_0  COME_FROM           104  '104'
+            108_1  COME_FROM            72  '72'
+
+ L. 100       108  LOAD_NAME                gettext
+              110  STORE_NAME               _
+
+ L. 103       112  LOAD_BUILD_CLASS 
+              114  LOAD_CODE                <code_object OptParseError>
+              116  LOAD_STR                 'OptParseError'
+              118  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              120  LOAD_STR                 'OptParseError'
+              122  LOAD_NAME                Exception
+              124  CALL_FUNCTION_3       3  ''
+              126  STORE_NAME               OptParseError
+
+ L. 111       128  LOAD_BUILD_CLASS 
+              130  LOAD_CODE                <code_object OptionError>
+              132  LOAD_STR                 'OptionError'
+              134  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              136  LOAD_STR                 'OptionError'
+              138  LOAD_NAME                OptParseError
+              140  CALL_FUNCTION_3       3  ''
+              142  STORE_NAME               OptionError
+
+ L. 127       144  LOAD_BUILD_CLASS 
+              146  LOAD_CODE                <code_object OptionConflictError>
+              148  LOAD_STR                 'OptionConflictError'
+              150  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              152  LOAD_STR                 'OptionConflictError'
+              154  LOAD_NAME                OptionError
+              156  CALL_FUNCTION_3       3  ''
+              158  STORE_NAME               OptionConflictError
+
+ L. 132       160  LOAD_BUILD_CLASS 
+              162  LOAD_CODE                <code_object OptionValueError>
+              164  LOAD_STR                 'OptionValueError'
+              166  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              168  LOAD_STR                 'OptionValueError'
+              170  LOAD_NAME                OptParseError
+              172  CALL_FUNCTION_3       3  ''
+              174  STORE_NAME               OptionValueError
+
+ L. 138       176  LOAD_BUILD_CLASS 
+              178  LOAD_CODE                <code_object BadOptionError>
+              180  LOAD_STR                 'BadOptionError'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  LOAD_STR                 'BadOptionError'
+              186  LOAD_NAME                OptParseError
+              188  CALL_FUNCTION_3       3  ''
+              190  STORE_NAME               BadOptionError
+
+ L. 148       192  LOAD_BUILD_CLASS 
+              194  LOAD_CODE                <code_object AmbiguousOptionError>
+              196  LOAD_STR                 'AmbiguousOptionError'
+              198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              200  LOAD_STR                 'AmbiguousOptionError'
+              202  LOAD_NAME                BadOptionError
+              204  CALL_FUNCTION_3       3  ''
+              206  STORE_NAME               AmbiguousOptionError
+
+ L. 161       208  LOAD_BUILD_CLASS 
+              210  LOAD_CODE                <code_object HelpFormatter>
+              212  LOAD_STR                 'HelpFormatter'
+              214  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              216  LOAD_STR                 'HelpFormatter'
+              218  CALL_FUNCTION_2       2  ''
+              220  STORE_NAME               HelpFormatter
+
+ L. 368       222  LOAD_BUILD_CLASS 
+              224  LOAD_CODE                <code_object IndentedHelpFormatter>
+              226  LOAD_STR                 'IndentedHelpFormatter'
+              228  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              230  LOAD_STR                 'IndentedHelpFormatter'
+              232  LOAD_NAME                HelpFormatter
+              234  CALL_FUNCTION_3       3  ''
+              236  STORE_NAME               IndentedHelpFormatter
+
+ L. 387       238  LOAD_BUILD_CLASS 
+              240  LOAD_CODE                <code_object TitledHelpFormatter>
+              242  LOAD_STR                 'TitledHelpFormatter'
+              244  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              246  LOAD_STR                 'TitledHelpFormatter'
+              248  LOAD_NAME                HelpFormatter
+              250  CALL_FUNCTION_3       3  ''
+              252  STORE_NAME               TitledHelpFormatter
+
+ L. 406       254  LOAD_CODE                <code_object _parse_num>
+              256  LOAD_STR                 '_parse_num'
+              258  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              260  STORE_NAME               _parse_num
+
+ L. 419       262  LOAD_CODE                <code_object _parse_int>
+              264  LOAD_STR                 '_parse_int'
+              266  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              268  STORE_NAME               _parse_int
+
+ L. 422       270  LOAD_NAME                _parse_int
+              272  LOAD_NAME                _
+              274  LOAD_STR                 'integer'
+              276  CALL_FUNCTION_1       1  ''
+              278  BUILD_TUPLE_2         2 
+
+ L. 423       280  LOAD_NAME                _parse_int
+              282  LOAD_NAME                _
+              284  LOAD_STR                 'integer'
+              286  CALL_FUNCTION_1       1  ''
+              288  BUILD_TUPLE_2         2 
+
+ L. 424       290  LOAD_NAME                float
+              292  LOAD_NAME                _
+              294  LOAD_STR                 'floating-point'
+              296  CALL_FUNCTION_1       1  ''
+              298  BUILD_TUPLE_2         2 
+
+ L. 425       300  LOAD_NAME                complex
+              302  LOAD_NAME                _
+              304  LOAD_STR                 'complex'
+              306  CALL_FUNCTION_1       1  ''
+              308  BUILD_TUPLE_2         2 
+
+ L. 422       310  LOAD_CONST               ('int', 'long', 'float', 'complex')
+              312  BUILD_CONST_KEY_MAP_4     4 
+              314  STORE_NAME               _builtin_cvt
+
+ L. 427       316  LOAD_CODE                <code_object check_builtin>
+              318  LOAD_STR                 'check_builtin'
+              320  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              322  STORE_NAME               check_builtin
+
+ L. 435       324  LOAD_CODE                <code_object check_choice>
+              326  LOAD_STR                 'check_choice'
+              328  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              330  STORE_NAME               check_choice
+
+ L. 446       332  LOAD_CONST               ('NO', 'DEFAULT')
+              334  STORE_NAME               NO_DEFAULT
+
+ L. 449       336  LOAD_BUILD_CLASS 
+              338  LOAD_CODE                <code_object Option>
+              340  LOAD_STR                 'Option'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  LOAD_STR                 'Option'
+              346  CALL_FUNCTION_2       2  ''
+              348  STORE_NAME               Option
+
+ L. 820       350  LOAD_STR                 'SUPPRESSHELP'
+              352  STORE_NAME               SUPPRESS_HELP
+
+ L. 821       354  LOAD_STR                 'SUPPRESSUSAGE'
+              356  STORE_NAME               SUPPRESS_USAGE
+
+ L. 823       358  LOAD_BUILD_CLASS 
+              360  LOAD_CODE                <code_object Values>
+              362  LOAD_STR                 'Values'
+              364  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              366  LOAD_STR                 'Values'
+              368  CALL_FUNCTION_2       2  ''
+              370  STORE_NAME               Values
+
+ L. 888       372  LOAD_BUILD_CLASS 
+              374  LOAD_CODE                <code_object OptionContainer>
+              376  LOAD_STR                 'OptionContainer'
+              378  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              380  LOAD_STR                 'OptionContainer'
+              382  CALL_FUNCTION_2       2  ''
+              384  STORE_NAME               OptionContainer
+
+ L.1076       386  LOAD_BUILD_CLASS 
+              388  LOAD_CODE                <code_object OptionGroup>
+              390  LOAD_STR                 'OptionGroup'
+              392  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              394  LOAD_STR                 'OptionGroup'
+              396  LOAD_NAME                OptionContainer
+              398  CALL_FUNCTION_3       3  ''
+              400  STORE_NAME               OptionGroup
+
+ L.1106       402  LOAD_BUILD_CLASS 
+              404  LOAD_CODE                <code_object OptionParser>
+              406  LOAD_STR                 'OptionParser'
+              408  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              410  LOAD_STR                 'OptionParser'
+              412  LOAD_NAME                OptionContainer
+              414  CALL_FUNCTION_3       3  ''
+              416  STORE_NAME               OptionParser
+
+ L.1652       418  LOAD_CODE                <code_object _match_abbrev>
+              420  LOAD_STR                 '_match_abbrev'
+              422  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              424  STORE_NAME               _match_abbrev
+
+ L.1681       426  LOAD_NAME                Option
+              428  STORE_NAME               make_option
+
+Parse error at or near `CALL_FINALLY' instruction at offset 12
+
+Instruction context:
+   
+ L.  26         8  BUILD_LIST_0          0 
+                  10  LOAD_CONST               ('Option', 'make_option', 'SUPPRESS_HELP', 'SUPPRESS_USAGE', 'Values', 'OptionContainer', 'OptionGroup', 'OptionParser', 'HelpFormatter', 'IndentedHelpFormatter', 'TitledHelpFormatter', 'OptParseError', 'OptionError', 'OptionConflictError', 'OptionValueError', 'BadOptionError', 'check_choice')
+->                12  CALL_FINALLY         15  'to 15'
+                  14  STORE_NAME               __all__
+
+test/101427.pyc -- 
+# decompile failed

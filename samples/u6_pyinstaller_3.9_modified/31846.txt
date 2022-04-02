@@ -1,0 +1,95 @@
+Instruction context:
+   
+ L. 191        52  LOAD_FAST                'retries'
+                  54  LOAD_CONST               None
+->                56  <117>                 0  ''
+                  58  POP_JUMP_IF_FALSE    66  'to 66'
+Instruction context:
+-> 
+ L. 234        72  <164>                 1  ''
+                  74  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  76  STORE_FAST               'conn'
+Instruction context:
+   
+ L. 259        28  DUP_TOP          
+                  30  LOAD_GLOBAL              AttributeError
+->                32  <121>                54  ''
+                  34  POP_TOP          
+                  36  POP_TOP          
+                  38  POP_TOP          
+Instruction context:
+   
+ L. 298        18  POP_BLOCK        
+                  20  LOAD_CONST               None
+->                22  RETURN_VALUE     
+                24_0  COME_FROM_FINALLY     0  '0'
+Instruction context:
+   
+ L. 342        26  LOAD_GLOBAL              hasattr
+                  28  LOAD_FAST                'err'
+                  30  LOAD_STR                 'errno'
+                  32  CALL_FUNCTION_2       2  ''
+                  34  POP_JUMP_IF_FALSE    62  'to 62'
+                  36  LOAD_FAST                'err'
+                  38  LOAD_ATTR                errno
+                  40  LOAD_GLOBAL              _blocking_errnos
+->                42  <118>                 0  ''
+                  44  POP_JUMP_IF_FALSE    62  'to 62'
+Instruction context:
+   
+ L. 383        56  DUP_TOP          
+                  58  LOAD_GLOBAL              SocketTimeout
+                  60  LOAD_GLOBAL              BaseSSLError
+                  62  BUILD_TUPLE_2         2 
+->                64  <121>               114  ''
+                  66  POP_TOP          
+                  68  STORE_FAST               'e'
+                  70  POP_TOP          
+                  72  SETUP_FINALLY       106  'to 106'
+Instruction context:
+   
+ L. 507        28  LOAD_FAST                'host'
+                  30  LOAD_CONST               None
+->                32  <117>                 1  ''
+                  34  POP_JUMP_IF_FALSE    48  'to 48'
+Instruction context:
+   
+ L. 630        14  LOAD_FAST                'headers'
+                  16  LOAD_CONST               None
+->                18  <117>                 0  ''
+                  20  POP_JUMP_IF_FALSE    28  'to 28'
+Instruction context:
+-> 
+ L. 906        32  <164>                 1  ''
+                  34  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  36  POP_TOP          
+Instruction context:
+   
+ L. 978        40  LOAD_FAST                'self'
+                  42  LOAD_ATTR                ConnectionCls
+                  44  POP_JUMP_IF_FALSE    56  'to 56'
+                  46  LOAD_FAST                'self'
+                  48  LOAD_ATTR                ConnectionCls
+                  50  LOAD_GLOBAL              DummyConnection
+->                52  <117>                 0  ''
+                  54  POP_JUMP_IF_FALSE    64  'to 64'
+                56_0  COME_FROM            44  '44'
+Instruction context:
+   
+ L.1047        38  LOAD_GLOBAL              HTTPSConnectionPool
+                  40  LOAD_FAST                'host'
+                  42  BUILD_TUPLE_1         1 
+                  44  LOAD_STR                 'port'
+                  46  LOAD_FAST                'port'
+                  48  BUILD_MAP_1           1 
+                  50  LOAD_FAST                'kw'
+->                52  <164>                 1  ''
+                  54  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  56  RETURN_VALUE     
+                58_0  COME_FROM            36  '36'
+
+test/31846.pyc -- 
+# decompile failed
+
+# file test/31846.pyc
+# Deparsing stopped due to parse error

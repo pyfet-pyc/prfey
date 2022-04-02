@@ -1,0 +1,77 @@
+Instruction context:
+   
+ L.  83        16  LOAD_FAST                'buffer'
+                  18  POP_JUMP_IF_FALSE    38  'to 38'
+                  20  LOAD_FAST                'nbytes'
+                  22  LOAD_CONST               None
+->                24  <117>                 0  ''
+                  26  POP_JUMP_IF_FALSE    38  'to 38'
+Instruction context:
+   
+ L.  97        76  LOAD_FAST                'count'
+                  78  LOAD_FAST                'v'
+                  80  INPLACE_ADD      
+                  82  STORE_FAST               'count'
+                  84  JUMP_BACK            50  'to 50'
+                86_0  COME_FROM            56  '56'
+                  86  POP_BLOCK        
+                  88  LOAD_CONST               None
+                  90  DUP_TOP          
+->                92  DUP_TOP          
+                  94  CALL_FUNCTION_3       3  ''
+                  96  POP_TOP          
+                  98  JUMP_FORWARD        116  'to 116'
+               100_0  COME_FROM_WITH       38  '38'
+                 100  <49>             
+                 102  POP_JUMP_IF_TRUE    106  'to 106'
+                 104  <48>             
+               106_0  COME_FROM           102  '102'
+                 106  POP_TOP          
+                 108  POP_TOP          
+                 110  POP_TOP          
+                 112  POP_EXCEPT       
+                 114  POP_TOP          
+               116_0  COME_FROM            98  '98'
+                 116  POP_BLOCK        
+                 118  LOAD_CONST               None
+                 120  DUP_TOP          
+                 122  DUP_TOP          
+                 124  CALL_FUNCTION_3       3  ''
+                 126  POP_TOP          
+                 128  JUMP_FORWARD        146  'to 146'
+               130_0  COME_FROM_WITH       26  '26'
+                 130  <49>             
+                 132  POP_JUMP_IF_TRUE    136  'to 136'
+                 134  <48>             
+               136_0  COME_FROM           132  '132'
+                 136  POP_TOP          
+                 138  POP_TOP          
+                 140  POP_TOP          
+                 142  POP_EXCEPT       
+                 144  POP_TOP          
+Instruction context:
+   
+ L. 189        22  DUP_TOP          
+                  24  LOAD_GLOBAL              ssl
+                  26  LOAD_ATTR                SSLError
+->                28  <121>                92  ''
+                  30  POP_TOP          
+                  32  STORE_FAST               'e'
+                  34  POP_TOP          
+                  36  SETUP_FINALLY        84  'to 84'
+Instruction context:
+   
+ L. 204        30  DUP_TOP          
+                  32  LOAD_GLOBAL              ssl
+                  34  LOAD_ATTR                SSLError
+->                36  <121>                94  ''
+                  38  POP_TOP          
+                  40  STORE_FAST               'e'
+                  42  POP_TOP          
+                  44  SETUP_FINALLY        86  'to 86'
+
+test/109764.pyc -- 
+# decompile failed
+
+# file test/109764.pyc
+# Deparsing stopped due to parse error

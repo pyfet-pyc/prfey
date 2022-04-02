@@ -1,0 +1,145 @@
+Instruction context:
+   
+ L.  27        64  BUILD_LIST_0          0 
+                  66  LOAD_CONST               ('ensure_running', 'register', 'unregister')
+->                68  CALL_FINALLY         71  'to 71'
+                  70  STORE_NAME               __all__
+
+test/101260.pyc -- 
+# decompile failed
+
+# file test/101260.pyc
+# --- This code section failed: ---
+
+ L.  18         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              os
+                6  STORE_NAME               os
+
+ L.  19         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              signal
+               14  STORE_NAME               signal
+
+ L.  20        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              sys
+               22  STORE_NAME               sys
+
+ L.  21        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              threading
+               30  STORE_NAME               threading
+
+ L.  22        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              warnings
+               38  STORE_NAME               warnings
+
+ L.  24        40  LOAD_CONST               1
+               42  LOAD_CONST               ('spawn',)
+               44  IMPORT_NAME              
+               46  IMPORT_FROM              spawn
+               48  STORE_NAME               spawn
+               50  POP_TOP          
+
+ L.  25        52  LOAD_CONST               1
+               54  LOAD_CONST               ('util',)
+               56  IMPORT_NAME              
+               58  IMPORT_FROM              util
+               60  STORE_NAME               util
+               62  POP_TOP          
+
+ L.  27        64  BUILD_LIST_0          0 
+               66  LOAD_CONST               ('ensure_running', 'register', 'unregister')
+               68  CALL_FINALLY         71  'to 71'
+               70  STORE_NAME               __all__
+
+ L.  29        72  LOAD_NAME                hasattr
+               74  LOAD_NAME                signal
+               76  LOAD_STR                 'pthread_sigmask'
+               78  CALL_FUNCTION_2       2  ''
+               80  STORE_NAME               _HAVE_SIGMASK
+
+ L.  30        82  LOAD_NAME                signal
+               84  LOAD_ATTR                SIGINT
+               86  LOAD_NAME                signal
+               88  LOAD_ATTR                SIGTERM
+               90  BUILD_TUPLE_2         2 
+               92  STORE_NAME               _IGNORED_SIGNALS
+
+ L.  33        94  LOAD_STR                 'noop'
+               96  LOAD_LAMBDA              '<code_object <lambda>>'
+               98  LOAD_STR                 '<lambda>'
+              100  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+
+ L.  32       102  BUILD_MAP_1           1 
+              104  STORE_NAME               _CLEANUP_FUNCS
+
+ L.  36       106  LOAD_NAME                os
+              108  LOAD_ATTR                name
+              110  LOAD_STR                 'posix'
+              112  COMPARE_OP               ==
+              114  POP_JUMP_IF_FALSE   152  'to 152'
+
+ L.  37       116  LOAD_CONST               0
+              118  LOAD_CONST               None
+              120  IMPORT_NAME              _multiprocessing
+              122  STORE_NAME               _multiprocessing
+
+ L.  38       124  LOAD_CONST               0
+              126  LOAD_CONST               None
+              128  IMPORT_NAME              _posixshmem
+              130  STORE_NAME               _posixshmem
+
+ L.  40       132  LOAD_NAME                _CLEANUP_FUNCS
+              134  LOAD_METHOD              update
+
+ L.  41       136  LOAD_NAME                _multiprocessing
+              138  LOAD_ATTR                sem_unlink
+
+ L.  42       140  LOAD_NAME                _posixshmem
+              142  LOAD_ATTR                shm_unlink
+
+ L.  40       144  LOAD_CONST               ('semaphore', 'shared_memory')
+              146  BUILD_CONST_KEY_MAP_2     2 
+              148  CALL_METHOD_1         1  ''
+              150  POP_TOP          
+            152_0  COME_FROM           114  '114'
+
+ L.  46       152  LOAD_BUILD_CLASS 
+              154  LOAD_CODE                <code_object ResourceTracker>
+              156  LOAD_STR                 'ResourceTracker'
+              158  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              160  LOAD_STR                 'ResourceTracker'
+              162  LOAD_NAME                object
+              164  CALL_FUNCTION_3       3  ''
+              166  STORE_NAME               ResourceTracker
+
+ L. 165       168  LOAD_NAME                ResourceTracker
+              170  CALL_FUNCTION_0       0  ''
+              172  STORE_NAME               _resource_tracker
+
+ L. 166       174  LOAD_NAME                _resource_tracker
+              176  LOAD_ATTR                ensure_running
+              178  STORE_NAME               ensure_running
+
+ L. 167       180  LOAD_NAME                _resource_tracker
+              182  LOAD_ATTR                register
+              184  STORE_NAME               register
+
+ L. 168       186  LOAD_NAME                _resource_tracker
+              188  LOAD_ATTR                unregister
+              190  STORE_NAME               unregister
+
+ L. 169       192  LOAD_NAME                _resource_tracker
+              194  LOAD_ATTR                getfd
+              196  STORE_NAME               getfd
+
+ L. 171       198  LOAD_CODE                <code_object main>
+              200  LOAD_STR                 'main'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  STORE_NAME               main
+
+Parse error at or near `CALL_FINALLY' instruction at offset 68
+

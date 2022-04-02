@@ -1,0 +1,50 @@
+Instruction context:
+   
+ L.   9         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('__author__', '__copyright__', '__email__', '__license__', '__summary__', '__title__', '__uri__', '__version__')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/103986.pyc -- 
+# decompile failed
+
+# file test/103986.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_STR                 '\npyOpenSSL - A simple wrapper around the OpenSSL library\n'
+                2  STORE_NAME               __doc__
+
+ L.   9         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('__author__', '__copyright__', '__email__', '__license__', '__summary__', '__title__', '__uri__', '__version__')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  20        12  LOAD_STR                 '20.0.1'
+               14  STORE_NAME               __version__
+
+ L.  22        16  LOAD_STR                 'pyOpenSSL'
+               18  STORE_NAME               __title__
+
+ L.  23        20  LOAD_STR                 'https://pyopenssl.org/'
+               22  STORE_NAME               __uri__
+
+ L.  24        24  LOAD_STR                 'Python wrapper module around the OpenSSL library'
+               26  STORE_NAME               __summary__
+
+ L.  25        28  LOAD_STR                 'The pyOpenSSL developers'
+               30  STORE_NAME               __author__
+
+ L.  26        32  LOAD_STR                 'cryptography-dev@python.org'
+               34  STORE_NAME               __email__
+
+ L.  27        36  LOAD_STR                 'Apache License, Version 2.0'
+               38  STORE_NAME               __license__
+
+ L.  28        40  LOAD_STR                 'Copyright 2001-2020 {0}'
+               42  LOAD_METHOD              format
+               44  LOAD_NAME                __author__
+               46  CALL_METHOD_1         1  ''
+               48  STORE_NAME               __copyright__
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

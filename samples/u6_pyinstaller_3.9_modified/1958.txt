@@ -1,0 +1,139 @@
+Instruction context:
+   
+ L.  18         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('fft', 'ifft', 'fftn', 'ifftn', 'fft2', 'ifft2', 'norm', 'inv', 'svd', 'solve', 'det', 'eig', 'eigvals', 'eigh', 'eigvalsh', 'lstsq', 'pinv', 'cholesky', 'i0')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/1958.pyc -- 
+# decompile failed
+
+# file test/1958.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nAliases for functions which may be accelerated by Scipy.\n\nScipy_ can be built to use accelerated or otherwise improved libraries\nfor FFTs, linear algebra, and special functions. This module allows\ndevelopers to transparently support these accelerated functions when\nscipy is available but still support users who have only installed\nNumPy.\n\n.. _Scipy : https://www.scipy.org\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  18         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('fft', 'ifft', 'fftn', 'ifftn', 'fft2', 'ifft2', 'norm', 'inv', 'svd', 'solve', 'det', 'eig', 'eigvals', 'eigh', 'eigvalsh', 'lstsq', 'pinv', 'cholesky', 'i0')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  22        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME_ATTR         numpy.linalg
+               18  IMPORT_FROM              linalg
+               20  STORE_NAME               linpkg
+               22  POP_TOP          
+
+ L.  23        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME_ATTR         numpy.fft
+               30  IMPORT_FROM              fft
+               32  STORE_NAME               fftpkg
+               34  POP_TOP          
+
+ L.  24        36  LOAD_CONST               0
+               38  LOAD_CONST               ('i0',)
+               40  IMPORT_NAME_ATTR         numpy.lib
+               42  IMPORT_FROM              i0
+               44  STORE_NAME               i0
+               46  POP_TOP          
+
+ L.  25        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              sys
+               54  STORE_NAME               sys
+
+ L.  28        56  LOAD_NAME                fftpkg
+               58  LOAD_ATTR                fft
+               60  STORE_NAME               fft
+
+ L.  29        62  LOAD_NAME                fftpkg
+               64  LOAD_ATTR                ifft
+               66  STORE_NAME               ifft
+
+ L.  30        68  LOAD_NAME                fftpkg
+               70  LOAD_ATTR                fftn
+               72  STORE_NAME               fftn
+
+ L.  31        74  LOAD_NAME                fftpkg
+               76  LOAD_ATTR                ifftn
+               78  STORE_NAME               ifftn
+
+ L.  32        80  LOAD_NAME                fftpkg
+               82  LOAD_ATTR                fft2
+               84  STORE_NAME               fft2
+
+ L.  33        86  LOAD_NAME                fftpkg
+               88  LOAD_ATTR                ifft2
+               90  STORE_NAME               ifft2
+
+ L.  35        92  LOAD_NAME                linpkg
+               94  LOAD_ATTR                norm
+               96  STORE_NAME               norm
+
+ L.  36        98  LOAD_NAME                linpkg
+              100  LOAD_ATTR                inv
+              102  STORE_NAME               inv
+
+ L.  37       104  LOAD_NAME                linpkg
+              106  LOAD_ATTR                svd
+              108  STORE_NAME               svd
+
+ L.  38       110  LOAD_NAME                linpkg
+              112  LOAD_ATTR                solve
+              114  STORE_NAME               solve
+
+ L.  39       116  LOAD_NAME                linpkg
+              118  LOAD_ATTR                det
+              120  STORE_NAME               det
+
+ L.  40       122  LOAD_NAME                linpkg
+              124  LOAD_ATTR                eig
+              126  STORE_NAME               eig
+
+ L.  41       128  LOAD_NAME                linpkg
+              130  LOAD_ATTR                eigvals
+              132  STORE_NAME               eigvals
+
+ L.  42       134  LOAD_NAME                linpkg
+              136  LOAD_ATTR                eigh
+              138  STORE_NAME               eigh
+
+ L.  43       140  LOAD_NAME                linpkg
+              142  LOAD_ATTR                eigvalsh
+              144  STORE_NAME               eigvalsh
+
+ L.  44       146  LOAD_NAME                linpkg
+              148  LOAD_ATTR                lstsq
+              150  STORE_NAME               lstsq
+
+ L.  45       152  LOAD_NAME                linpkg
+              154  LOAD_ATTR                pinv
+              156  STORE_NAME               pinv
+
+ L.  46       158  LOAD_NAME                linpkg
+              160  LOAD_ATTR                cholesky
+              162  STORE_NAME               cholesky
+
+ L.  48       164  BUILD_MAP_0           0 
+              166  STORE_NAME               _restore_dict
+
+ L.  50       168  LOAD_CODE                <code_object register_func>
+              170  LOAD_STR                 'register_func'
+              172  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              174  STORE_NAME               register_func
+
+ L.  57       176  LOAD_CODE                <code_object restore_func>
+              178  LOAD_STR                 'restore_func'
+              180  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              182  STORE_NAME               restore_func
+
+ L.  67       184  LOAD_CODE                <code_object restore_all>
+              186  LOAD_STR                 'restore_all'
+              188  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              190  STORE_NAME               restore_all
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

@@ -1,0 +1,169 @@
+  1           0 LOAD_CONST               0 (<code object submit at 0x40021b0a80, file "samples/target_py/main.py", line 1>)
+              2 LOAD_CONST               1 ('submit')
+              4 MAKE_FUNCTION            0
+              6 STORE_NAME               0 (submit)
+              8 LOAD_CONST               2 (None)
+             10 RETURN_VALUE
+
+Disassembly of <code object submit at 0x40021b0a80, file "samples/target_py/main.py", line 1>:
+  2           0 LOAD_GLOBAL              0 (len)
+              2 LOAD_FAST                0 (args)
+              4 CALL_FUNCTION            1
+              6 LOAD_CONST               1 (2)
+              8 COMPARE_OP               5 (>=)
+             10 POP_JUMP_IF_FALSE       24
+
+  3          12 LOAD_FAST                0 (args)
+             14 UNPACK_EX                2
+             16 STORE_FAST               2 (self)
+             18 STORE_FAST               3 (fn)
+             20 STORE_FAST               0 (args)
+             22 JUMP_FORWARD            86 (to 110)
+
+  4     >>   24 LOAD_FAST                0 (args)
+             26 POP_JUMP_IF_TRUE        38
+
+  5          28 LOAD_GLOBAL              1 (TypeError)
+             30 LOAD_CONST               2 ("descriptor 'submit' of 'ProcessPoolExecutor' object needs an argument")
+             32 CALL_FUNCTION            1
+             34 RAISE_VARARGS            1
+             36 JUMP_FORWARD            72 (to 110)
+
+  7     >>   38 LOAD_CONST               3 ('fn')
+             40 LOAD_FAST                1 (kwargs)
+             42 COMPARE_OP               6 (in)
+             44 POP_JUMP_IF_FALSE       90
+
+  8          46 LOAD_FAST                1 (kwargs)
+             48 LOAD_METHOD              2 (pop)
+             50 LOAD_CONST               3 ('fn')
+             52 CALL_METHOD              1
+             54 STORE_FAST               3 (fn)
+
+  9          56 LOAD_FAST                0 (args)
+             58 UNPACK_EX                1
+             60 STORE_FAST               2 (self)
+             62 STORE_FAST               0 (args)
+
+ 10          64 LOAD_CONST               4 (0)
+             66 LOAD_CONST               0 (None)
+             68 IMPORT_NAME              3 (warnings)
+             70 STORE_FAST               4 (warnings)
+
+ 11          72 LOAD_FAST                4 (warnings)
+             74 LOAD_ATTR                4 (warn)
+             76 LOAD_CONST               5 ("Passing 'fn' as keyword argument is deprecated")
+
+ 12          78 LOAD_GLOBAL              5 (DeprecationWarning)
+             80 LOAD_CONST               1 (2)
+
+ 11          82 LOAD_CONST               6 (('stacklevel',))
+             84 CALL_FUNCTION_KW         3
+             86 POP_TOP
+             88 JUMP_FORWARD            20 (to 110)
+
+ 14     >>   90 LOAD_GLOBAL              1 (TypeError)
+             92 LOAD_CONST               7 ('submit expected at least 1 positional argument, got %d')
+
+ 15          94 LOAD_GLOBAL              0 (len)
+             96 LOAD_FAST                0 (args)
+             98 CALL_FUNCTION            1
+            100 LOAD_CONST               8 (1)
+            102 BINARY_SUBTRACT
+
+ 14         104 BINARY_MODULO
+            106 CALL_FUNCTION            1
+            108 RAISE_VARARGS            1
+
+ 17     >>  110 LOAD_FAST                2 (self)
+            112 LOAD_ATTR                6 (_shutdown_lock)
+            114 SETUP_WITH             140 (to 256)
+            116 POP_TOP
+
+ 18         118 LOAD_FAST                2 (self)
+            120 LOAD_ATTR                7 (_broken)
+            122 POP_JUMP_IF_FALSE      134
+
+ 19         124 LOAD_GLOBAL              8 (BrokenProcessPool)
+            126 LOAD_FAST                2 (self)
+            128 LOAD_ATTR                7 (_broken)
+            130 CALL_FUNCTION            1
+            132 RAISE_VARARGS            1
+
+ 20     >>  134 LOAD_FAST                2 (self)
+            136 LOAD_ATTR                9 (_shutdown_thread)
+            138 POP_JUMP_IF_FALSE      148
+
+ 21         140 LOAD_GLOBAL             10 (RuntimeError)
+            142 LOAD_CONST               9 ('cannot schedule new futures after shutdown')
+            144 CALL_FUNCTION            1
+            146 RAISE_VARARGS            1
+
+ 22     >>  148 LOAD_GLOBAL             11 (_global_shutdown)
+            150 POP_JUMP_IF_FALSE      160
+
+ 23         152 LOAD_GLOBAL             10 (RuntimeError)
+            154 LOAD_CONST              10 ('cannot schedule new futures after interpreter shutdown')
+            156 CALL_FUNCTION            1
+            158 RAISE_VARARGS            1
+
+ 26     >>  160 LOAD_GLOBAL             12 (_base)
+            162 LOAD_METHOD             13 (Future)
+            164 CALL_METHOD              0
+            166 STORE_FAST               5 (f)
+
+ 27         168 LOAD_GLOBAL             14 (_WorkItem)
+            170 LOAD_FAST                5 (f)
+            172 LOAD_FAST                3 (fn)
+            174 LOAD_FAST                0 (args)
+            176 LOAD_FAST                1 (kwargs)
+            178 CALL_FUNCTION            4
+            180 STORE_FAST               6 (w)
+
+ 29         182 LOAD_FAST                6 (w)
+            184 LOAD_FAST                2 (self)
+            186 LOAD_ATTR               15 (_pending_work_items)
+            188 LOAD_FAST                2 (self)
+            190 LOAD_ATTR               16 (_queue_count)
+            192 STORE_SUBSCR
+
+ 30         194 LOAD_FAST                2 (self)
+            196 LOAD_ATTR               17 (_work_ids)
+            198 LOAD_METHOD             18 (put)
+            200 LOAD_FAST                2 (self)
+            202 LOAD_ATTR               16 (_queue_count)
+            204 CALL_METHOD              1
+            206 POP_TOP
+
+ 31         208 LOAD_FAST                2 (self)
+            210 DUP_TOP
+            212 LOAD_ATTR               16 (_queue_count)
+            214 LOAD_CONST               8 (1)
+            216 INPLACE_ADD
+            218 ROT_TWO
+            220 STORE_ATTR              16 (_queue_count)
+
+ 33         222 LOAD_FAST                2 (self)
+            224 LOAD_ATTR               19 (_queue_management_thread_wakeup)
+            226 LOAD_METHOD             20 (wakeup)
+            228 CALL_METHOD              0
+            230 POP_TOP
+
+ 35         232 LOAD_FAST                2 (self)
+            234 LOAD_METHOD             21 (_start_queue_management_thread)
+            236 CALL_METHOD              0
+            238 POP_TOP
+
+ 36         240 LOAD_FAST                5 (f)
+            242 POP_BLOCK
+            244 ROT_TWO
+            246 BEGIN_FINALLY
+            248 WITH_CLEANUP_START
+            250 WITH_CLEANUP_FINISH
+            252 POP_FINALLY              0
+            254 RETURN_VALUE
+        >>  256 WITH_CLEANUP_START
+            258 WITH_CLEANUP_FINISH
+            260 END_FINALLY
+            262 LOAD_CONST               0 (None)
+            264 RETURN_VALUE

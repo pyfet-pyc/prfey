@@ -1,0 +1,23 @@
+Instruction context:
+   
+ L. 230        50  LOAD_FAST                'key'
+                  52  LOAD_ATTR                fd
+                  54  ROT_TWO          
+                  56  POP_TOP          
+->                58  ROT_FOUR         
+                  60  POP_EXCEPT       
+                  62  RETURN_VALUE     
+                  64  JUMP_BACK            36  'to 36'
+                66_0  COME_FROM            36  '36'
+Instruction context:
+   
+ L. 287        28  POP_EXCEPT       
+->                30  LOAD_CONST               None
+                  32  RETURN_VALUE     
+                34_0  COME_FROM            20  '20'
+
+../test/10305.pyc -- 
+# decompile failed
+
+# file ../test/10305.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,45 @@
+Instruction context:
+   
+ L.  16        44  BUILD_LIST_0          0 
+                  46  LOAD_CONST               ('_UFUNC_API', 'ERR_CALL', 'ERR_DEFAULT', 'ERR_IGNORE', 'ERR_LOG', 'ERR_PRINT', 'ERR_RAISE', 'ERR_WARN', 'FLOATING_POINT_SUPPORT', 'FPE_DIVIDEBYZERO', 'FPE_INVALID', 'FPE_OVERFLOW', 'FPE_UNDERFLOW', 'NAN', 'NINF', 'NZERO', 'PINF', 'PZERO', 'SHIFT_DIVIDEBYZERO', 'SHIFT_INVALID', 'SHIFT_OVERFLOW', 'SHIFT_UNDERFLOW', 'UFUNC_BUFSIZE_DEFAULT', 'UFUNC_PYVALS_NAME', '_add_newdoc_ufunc', 'absolute', 'add', 'arccos', 'arccosh', 'arcsin', 'arcsinh', 'arctan', 'arctan2', 'arctanh', 'bitwise_and', 'bitwise_or', 'bitwise_xor', 'cbrt', 'ceil', 'conj', 'conjugate', 'copysign', 'cos', 'cosh', 'deg2rad', 'degrees', 'divide', 'divmod', 'e', 'equal', 'euler_gamma', 'exp', 'exp2', 'expm1', 'fabs', 'floor', 'floor_divide', 'float_power', 'fmax', 'fmin', 'fmod', 'frexp', 'frompyfunc', 'gcd', 'geterrobj', 'greater', 'greater_equal', 'heaviside', 'hypot', 'invert', 'isfinite', 'isinf', 'isnan', 'isnat', 'lcm', 'ldexp', 'left_shift', 'less', 'less_equal', 'log', 'log10', 'log1p', 'log2', 'logaddexp', 'logaddexp2', 'logical_and', 'logical_not', 'logical_or', 'logical_xor', 'maximum', 'minimum', 'mod', 'modf', 'multiply', 'negative', 'nextafter', 'not_equal', 'pi', 'positive', 'power', 'rad2deg', 'radians', 'reciprocal', 'remainder', 'right_shift', 'rint', 'seterrobj', 'sign', 'signbit', 'sin', 'sinh', 'spacing', 'sqrt', 'square', 'subtract', 'tan', 'tanh', 'true_divide', 'trunc')
+->                48  CALL_FINALLY         51  'to 51'
+
+test/162619.pyc -- 
+# decompile failed
+
+# file test/162619.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nCreate the numpy.core.umath namespace for backward compatibility. In v1.16\nthe multiarray and umath c-extension modules were merged into a single\n_multiarray_umath extension module. So we replicate the old namespace\nby importing from the extension module.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.   9         4  LOAD_CONST               1
+                6  LOAD_CONST               ('_multiarray_umath',)
+                8  IMPORT_NAME              
+               10  IMPORT_FROM              _multiarray_umath
+               12  STORE_NAME               _multiarray_umath
+               14  POP_TOP          
+
+ L.  10        16  LOAD_CONST               1
+               18  LOAD_CONST               ('*',)
+               20  IMPORT_NAME              _multiarray_umath
+               22  IMPORT_STAR      
+
+ L.  14        24  LOAD_CONST               1
+               26  LOAD_CONST               ('_UFUNC_API', '_add_newdoc_ufunc', '_ones_like')
+               28  IMPORT_NAME              _multiarray_umath
+               30  IMPORT_FROM              _UFUNC_API
+               32  STORE_NAME               _UFUNC_API
+               34  IMPORT_FROM              _add_newdoc_ufunc
+               36  STORE_NAME               _add_newdoc_ufunc
+               38  IMPORT_FROM              _ones_like
+               40  STORE_NAME               _ones_like
+               42  POP_TOP          
+
+ L.  16        44  BUILD_LIST_0          0 
+               46  LOAD_CONST               ('_UFUNC_API', 'ERR_CALL', 'ERR_DEFAULT', 'ERR_IGNORE', 'ERR_LOG', 'ERR_PRINT', 'ERR_RAISE', 'ERR_WARN', 'FLOATING_POINT_SUPPORT', 'FPE_DIVIDEBYZERO', 'FPE_INVALID', 'FPE_OVERFLOW', 'FPE_UNDERFLOW', 'NAN', 'NINF', 'NZERO', 'PINF', 'PZERO', 'SHIFT_DIVIDEBYZERO', 'SHIFT_INVALID', 'SHIFT_OVERFLOW', 'SHIFT_UNDERFLOW', 'UFUNC_BUFSIZE_DEFAULT', 'UFUNC_PYVALS_NAME', '_add_newdoc_ufunc', 'absolute', 'add', 'arccos', 'arccosh', 'arcsin', 'arcsinh', 'arctan', 'arctan2', 'arctanh', 'bitwise_and', 'bitwise_or', 'bitwise_xor', 'cbrt', 'ceil', 'conj', 'conjugate', 'copysign', 'cos', 'cosh', 'deg2rad', 'degrees', 'divide', 'divmod', 'e', 'equal', 'euler_gamma', 'exp', 'exp2', 'expm1', 'fabs', 'floor', 'floor_divide', 'float_power', 'fmax', 'fmin', 'fmod', 'frexp', 'frompyfunc', 'gcd', 'geterrobj', 'greater', 'greater_equal', 'heaviside', 'hypot', 'invert', 'isfinite', 'isinf', 'isnan', 'isnat', 'lcm', 'ldexp', 'left_shift', 'less', 'less_equal', 'log', 'log10', 'log1p', 'log2', 'logaddexp', 'logaddexp2', 'logical_and', 'logical_not', 'logical_or', 'logical_xor', 'maximum', 'minimum', 'mod', 'modf', 'multiply', 'negative', 'nextafter', 'not_equal', 'pi', 'positive', 'power', 'rad2deg', 'radians', 'reciprocal', 'remainder', 'right_shift', 'rint', 'seterrobj', 'sign', 'signbit', 'sin', 'sinh', 'spacing', 'sqrt', 'square', 'subtract', 'tan', 'tanh', 'true_divide', 'trunc')
+               48  CALL_FINALLY         51  'to 51'
+               50  STORE_NAME               __all__
+
+Parse error at or near `CALL_FINALLY' instruction at offset 48
+

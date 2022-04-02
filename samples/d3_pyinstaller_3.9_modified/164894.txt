@@ -1,0 +1,98 @@
+Instruction context:
+   
+ L.  10        70  DUP_TOP          
+                  72  LOAD_NAME                ImportError
+->                74  <121>                86  ''
+                  76  POP_TOP          
+                  78  POP_TOP          
+                  80  POP_TOP          
+
+test/164894.pyc -- 
+# decompile failed
+
+# file test/164894.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.   2        12  LOAD_CONST               0
+               14  LOAD_CONST               ('b64encode',)
+               16  IMPORT_NAME              base64
+               18  IMPORT_FROM              b64encode
+               20  STORE_NAME               b64encode
+               22  POP_TOP          
+
+ L.   4        24  LOAD_CONST               2
+               26  LOAD_CONST               ('b', 'integer_types')
+               28  IMPORT_NAME_ATTR         packages.six
+               30  IMPORT_FROM              b
+               32  STORE_NAME               b
+               34  IMPORT_FROM              integer_types
+               36  STORE_NAME               integer_types
+               38  POP_TOP          
+
+ L.   5        40  LOAD_CONST               2
+               42  LOAD_CONST               ('UnrewindableBodyError',)
+               44  IMPORT_NAME              exceptions
+               46  IMPORT_FROM              UnrewindableBodyError
+               48  STORE_NAME               UnrewindableBodyError
+               50  POP_TOP          
+
+ L.   7        52  LOAD_STR                 'gzip,deflate'
+               54  STORE_NAME               ACCEPT_ENCODING
+
+ L.   8        56  SETUP_FINALLY        70  'to 70'
+
+ L.   9        58  LOAD_CONST               0
+               60  LOAD_CONST               None
+               62  IMPORT_NAME              brotli
+               64  STORE_NAME               _unused_module_brotli
+               66  POP_BLOCK        
+               68  JUMP_FORWARD         88  'to 88'
+             70_0  COME_FROM_FINALLY    56  '56'
+
+ L.  10        70  DUP_TOP          
+               72  LOAD_NAME                ImportError
+               74  <121>                86  ''
+               76  POP_TOP          
+               78  POP_TOP          
+               80  POP_TOP          
+
+ L.  11        82  POP_EXCEPT       
+               84  JUMP_FORWARD         96  'to 96'
+               86  <48>             
+             88_0  COME_FROM            68  '68'
+
+ L.  13        88  LOAD_NAME                ACCEPT_ENCODING
+               90  LOAD_STR                 ',br'
+               92  INPLACE_ADD      
+               94  STORE_NAME               ACCEPT_ENCODING
+             96_0  COME_FROM            84  '84'
+
+ L.  15        96  LOAD_NAME                object
+               98  CALL_FUNCTION_0       0  ''
+              100  STORE_NAME               _FAILEDTELL
+
+ L.  18       102  LOAD_CONST               (None, None, None, None, None, None)
+              104  LOAD_CODE                <code_object make_headers>
+              106  LOAD_STR                 'make_headers'
+              108  MAKE_FUNCTION_1          'default'
+              110  STORE_NAME               make_headers
+
+ L.  90       112  LOAD_CODE                <code_object set_file_position>
+              114  LOAD_STR                 'set_file_position'
+              116  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              118  STORE_NAME               set_file_position
+
+ L. 108       120  LOAD_CODE                <code_object rewind_body>
+              122  LOAD_STR                 'rewind_body'
+              124  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              126  STORE_NAME               rewind_body
+
+Parse error at or near `<121>' instruction at offset 74
+

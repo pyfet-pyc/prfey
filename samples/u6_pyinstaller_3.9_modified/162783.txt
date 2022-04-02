@@ -1,0 +1,376 @@
+
+# file test/162783.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.   7        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME_ATTR         distutils.util
+               18  STORE_NAME               distutils
+
+ L.   9        20  SETUP_FINALLY        38  'to 38'
+
+ L.  10        22  LOAD_CONST               0
+               24  LOAD_CONST               ('EXTENSION_SUFFIXES',)
+               26  IMPORT_NAME_ATTR         importlib.machinery
+               28  IMPORT_FROM              EXTENSION_SUFFIXES
+               30  STORE_NAME               EXTENSION_SUFFIXES
+               32  POP_TOP          
+               34  POP_BLOCK        
+               36  JUMP_FORWARD         84  'to 84'
+             38_0  COME_FROM_FINALLY    20  '20'
+
+ L.  11        38  DUP_TOP          
+               40  LOAD_NAME                ImportError
+               42  <121>                82  ''
+               44  POP_TOP          
+               46  POP_TOP          
+               48  POP_TOP          
+
+ L.  12        50  LOAD_CONST               0
+               52  LOAD_CONST               None
+               54  IMPORT_NAME              imp
+               56  STORE_NAME               imp
+
+ L.  14        58  LOAD_LISTCOMP            '<code_object <listcomp>>'
+               60  LOAD_STR                 '<listcomp>'
+               62  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               64  LOAD_NAME                imp
+               66  LOAD_METHOD              get_suffixes
+               68  CALL_METHOD_0         0  ''
+               70  GET_ITER         
+               72  CALL_FUNCTION_1       1  ''
+               74  STORE_NAME               EXTENSION_SUFFIXES
+
+ L.  15        76  DELETE_NAME              imp
+               78  POP_EXCEPT       
+               80  JUMP_FORWARD         84  'to 84'
+               82  <48>             
+             84_0  COME_FROM            80  '80'
+             84_1  COME_FROM            36  '36'
+
+ L.  16        84  LOAD_CONST               0
+               86  LOAD_CONST               None
+               88  IMPORT_NAME              logging
+               90  STORE_NAME               logging
+
+ L.  17        92  LOAD_CONST               0
+               94  LOAD_CONST               None
+               96  IMPORT_NAME              os
+               98  STORE_NAME               os
+
+ L.  18       100  LOAD_CONST               0
+              102  LOAD_CONST               None
+              104  IMPORT_NAME              platform
+              106  STORE_NAME               platform
+
+ L.  19       108  LOAD_CONST               0
+              110  LOAD_CONST               None
+              112  IMPORT_NAME              re
+              114  STORE_NAME               re
+
+ L.  20       116  LOAD_CONST               0
+              118  LOAD_CONST               None
+              120  IMPORT_NAME              struct
+              122  STORE_NAME               struct
+
+ L.  21       124  LOAD_CONST               0
+              126  LOAD_CONST               None
+              128  IMPORT_NAME              sys
+              130  STORE_NAME               sys
+
+ L.  22       132  LOAD_CONST               0
+              134  LOAD_CONST               None
+              136  IMPORT_NAME              sysconfig
+              138  STORE_NAME               sysconfig
+
+ L.  23       140  LOAD_CONST               0
+              142  LOAD_CONST               None
+              144  IMPORT_NAME              warnings
+              146  STORE_NAME               warnings
+
+ L.  25       148  LOAD_CONST               1
+              150  LOAD_CONST               ('TYPE_CHECKING', 'cast')
+              152  IMPORT_NAME              _typing
+              154  IMPORT_FROM              TYPE_CHECKING
+              156  STORE_NAME               TYPE_CHECKING
+              158  IMPORT_FROM              cast
+              160  STORE_NAME               cast
+              162  POP_TOP          
+
+ L.  27       164  LOAD_NAME                TYPE_CHECKING
+              166  POP_JUMP_IF_FALSE   248  'to 248'
+
+ L.  28       168  LOAD_CONST               0
+              170  LOAD_CONST               ('Dict', 'FrozenSet', 'IO', 'Iterable', 'Iterator', 'List', 'Optional', 'Sequence', 'Tuple', 'Union')
+              172  IMPORT_NAME              typing
+              174  IMPORT_FROM              Dict
+              176  STORE_NAME               Dict
+              178  IMPORT_FROM              FrozenSet
+              180  STORE_NAME               FrozenSet
+              182  IMPORT_FROM              IO
+              184  STORE_NAME               IO
+              186  IMPORT_FROM              Iterable
+              188  STORE_NAME               Iterable
+              190  IMPORT_FROM              Iterator
+              192  STORE_NAME               Iterator
+              194  IMPORT_FROM              List
+              196  STORE_NAME               List
+              198  IMPORT_FROM              Optional
+              200  STORE_NAME               Optional
+              202  IMPORT_FROM              Sequence
+              204  STORE_NAME               Sequence
+              206  IMPORT_FROM              Tuple
+              208  STORE_NAME               Tuple
+              210  IMPORT_FROM              Union
+              212  STORE_NAME               Union
+              214  POP_TOP          
+
+ L.  41       216  LOAD_NAME                Sequence
+              218  LOAD_NAME                int
+              220  BINARY_SUBSCR    
+              222  STORE_NAME               PythonVersion
+
+ L.  42       224  LOAD_NAME                Tuple
+              226  LOAD_NAME                int
+              228  LOAD_NAME                int
+              230  BUILD_TUPLE_2         2 
+              232  BINARY_SUBSCR    
+              234  STORE_NAME               MacVersion
+
+ L.  43       236  LOAD_NAME                Tuple
+              238  LOAD_NAME                int
+              240  LOAD_NAME                int
+              242  BUILD_TUPLE_2         2 
+              244  BINARY_SUBSCR    
+              246  STORE_NAME               GlibcVersion
+            248_0  COME_FROM           166  '166'
+
+ L.  46       248  LOAD_NAME                logging
+              250  LOAD_METHOD              getLogger
+              252  LOAD_NAME                __name__
+              254  CALL_METHOD_1         1  ''
+              256  STORE_NAME               logger
+
+ L.  49       258  LOAD_STR                 'py'
+
+ L.  50       260  LOAD_STR                 'cp'
+
+ L.  51       262  LOAD_STR                 'pp'
+
+ L.  52       264  LOAD_STR                 'ip'
+
+ L.  53       266  LOAD_STR                 'jy'
+
+ L.  48       268  LOAD_CONST               ('python', 'cpython', 'pypy', 'ironpython', 'jython')
+              270  BUILD_CONST_KEY_MAP_5     5 
+              272  STORE_NAME               INTERPRETER_SHORT_NAMES
+
+ L.  57       274  LOAD_NAME                sys
+              276  LOAD_ATTR                maxsize
+              278  LOAD_CONST               4294967296
+              280  COMPARE_OP               <=
+              282  STORE_NAME               _32_BIT_INTERPRETER
+
+ L.  60       284  LOAD_BUILD_CLASS 
+              286  LOAD_CODE                <code_object Tag>
+              288  LOAD_STR                 'Tag'
+              290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              292  LOAD_STR                 'Tag'
+              294  LOAD_NAME                object
+              296  CALL_FUNCTION_3       3  ''
+              298  STORE_NAME               Tag
+
+ L. 115       300  LOAD_CODE                <code_object parse_tag>
+              302  LOAD_STR                 'parse_tag'
+              304  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              306  STORE_NAME               parse_tag
+
+ L. 132       308  LOAD_CODE                <code_object _warn_keyword_parameter>
+              310  LOAD_STR                 '_warn_keyword_parameter'
+              312  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              314  STORE_NAME               _warn_keyword_parameter
+
+ L. 148       316  LOAD_CONST               (False,)
+              318  LOAD_CODE                <code_object _get_config_var>
+              320  LOAD_STR                 '_get_config_var'
+              322  MAKE_FUNCTION_1          'default'
+              324  STORE_NAME               _get_config_var
+
+ L. 158       326  LOAD_CODE                <code_object _normalize_string>
+              328  LOAD_STR                 '_normalize_string'
+              330  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              332  STORE_NAME               _normalize_string
+
+ L. 163       334  LOAD_CODE                <code_object _abi3_applies>
+              336  LOAD_STR                 '_abi3_applies'
+              338  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              340  STORE_NAME               _abi3_applies
+
+ L. 173       342  LOAD_CONST               (False,)
+              344  LOAD_CODE                <code_object _cpython_abis>
+              346  LOAD_STR                 '_cpython_abis'
+              348  MAKE_FUNCTION_1          'default'
+              350  STORE_NAME               _cpython_abis
+
+ L. 210       352  LOAD_CONST               (None, None, None)
+              354  LOAD_CODE                <code_object cpython_tags>
+              356  LOAD_STR                 'cpython_tags'
+              358  MAKE_FUNCTION_1          'default'
+              360  STORE_NAME               cpython_tags
+
+ L. 270       362  LOAD_CODE                <code_object _generic_abi>
+              364  LOAD_STR                 '_generic_abi'
+              366  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              368  STORE_NAME               _generic_abi
+
+ L. 277       370  LOAD_CONST               (None, None, None)
+              372  LOAD_CODE                <code_object generic_tags>
+              374  LOAD_STR                 'generic_tags'
+              376  MAKE_FUNCTION_1          'default'
+              378  STORE_NAME               generic_tags
+
+ L. 308       380  LOAD_CODE                <code_object _py_interpreter_range>
+              382  LOAD_STR                 '_py_interpreter_range'
+              384  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              386  STORE_NAME               _py_interpreter_range
+
+ L. 324       388  LOAD_CONST               (None, None, None)
+              390  LOAD_CODE                <code_object compatible_tags>
+              392  LOAD_STR                 'compatible_tags'
+              394  MAKE_FUNCTION_1          'default'
+              396  STORE_NAME               compatible_tags
+
+ L. 350       398  LOAD_NAME                _32_BIT_INTERPRETER
+              400  BUILD_TUPLE_1         1 
+              402  LOAD_CODE                <code_object _mac_arch>
+              404  LOAD_STR                 '_mac_arch'
+              406  MAKE_FUNCTION_1          'default'
+              408  STORE_NAME               _mac_arch
+
+ L. 361       410  LOAD_CODE                <code_object _mac_binary_formats>
+              412  LOAD_STR                 '_mac_binary_formats'
+              414  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              416  STORE_NAME               _mac_binary_formats
+
+ L. 389       418  LOAD_CONST               (None, None)
+              420  LOAD_CODE                <code_object mac_platforms>
+              422  LOAD_STR                 'mac_platforms'
+              424  MAKE_FUNCTION_1          'default'
+              426  STORE_NAME               mac_platforms
+
+ L. 420       428  LOAD_CODE                <code_object _is_manylinux_compatible>
+              430  LOAD_STR                 '_is_manylinux_compatible'
+              432  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              434  STORE_NAME               _is_manylinux_compatible
+
+ L. 434       436  LOAD_CODE                <code_object _glibc_version_string>
+              438  LOAD_STR                 '_glibc_version_string'
+              440  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              442  STORE_NAME               _glibc_version_string
+
+ L. 440       444  LOAD_CODE                <code_object _glibc_version_string_confstr>
+              446  LOAD_STR                 '_glibc_version_string_confstr'
+              448  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              450  STORE_NAME               _glibc_version_string_confstr
+
+ L. 462       452  LOAD_CODE                <code_object _glibc_version_string_ctypes>
+              454  LOAD_STR                 '_glibc_version_string_ctypes'
+              456  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              458  STORE_NAME               _glibc_version_string_ctypes
+
+ L. 497       460  LOAD_CODE                <code_object _check_glibc_version>
+              462  LOAD_STR                 '_check_glibc_version'
+              464  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              466  STORE_NAME               _check_glibc_version
+
+ L. 519       468  LOAD_CODE                <code_object _have_compatible_glibc>
+              470  LOAD_STR                 '_have_compatible_glibc'
+              472  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              474  STORE_NAME               _have_compatible_glibc
+
+ L. 531       476  LOAD_BUILD_CLASS 
+              478  LOAD_CODE                <code_object _ELFFileHeader>
+              480  LOAD_STR                 '_ELFFileHeader'
+              482  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              484  LOAD_STR                 '_ELFFileHeader'
+              486  LOAD_NAME                object
+              488  CALL_FUNCTION_3       3  ''
+              490  STORE_NAME               _ELFFileHeader
+
+ L. 595       492  LOAD_CODE                <code_object _get_elf_header>
+              494  LOAD_STR                 '_get_elf_header'
+              496  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              498  STORE_NAME               _get_elf_header
+
+ L. 605       500  LOAD_CODE                <code_object _is_linux_armhf>
+              502  LOAD_STR                 '_is_linux_armhf'
+              504  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              506  STORE_NAME               _is_linux_armhf
+
+ L. 625       508  LOAD_CODE                <code_object _is_linux_i686>
+              510  LOAD_STR                 '_is_linux_i686'
+              512  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              514  STORE_NAME               _is_linux_i686
+
+ L. 636       516  LOAD_CODE                <code_object _have_compatible_manylinux_abi>
+              518  LOAD_STR                 '_have_compatible_manylinux_abi'
+              520  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              522  STORE_NAME               _have_compatible_manylinux_abi
+
+ L. 645       524  LOAD_NAME                _32_BIT_INTERPRETER
+              526  BUILD_TUPLE_1         1 
+              528  LOAD_CODE                <code_object _linux_platforms>
+              530  LOAD_STR                 '_linux_platforms'
+              532  MAKE_FUNCTION_1          'default'
+              534  STORE_NAME               _linux_platforms
+
+ L. 678       536  LOAD_CODE                <code_object _generic_platforms>
+              538  LOAD_STR                 '_generic_platforms'
+              540  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              542  STORE_NAME               _generic_platforms
+
+ L. 683       544  LOAD_CODE                <code_object _platform_tags>
+              546  LOAD_STR                 '_platform_tags'
+              548  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              550  STORE_NAME               _platform_tags
+
+ L. 696       552  LOAD_CODE                <code_object interpreter_name>
+              554  LOAD_STR                 'interpreter_name'
+              556  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              558  STORE_NAME               interpreter_name
+
+ L. 709       560  LOAD_CODE                <code_object interpreter_version>
+              562  LOAD_STR                 'interpreter_version'
+              564  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              566  STORE_NAME               interpreter_version
+
+ L. 723       568  LOAD_CODE                <code_object _version_nodot>
+              570  LOAD_STR                 '_version_nodot'
+              572  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              574  STORE_NAME               _version_nodot
+
+ L. 732       576  LOAD_CODE                <code_object sys_tags>
+              578  LOAD_STR                 'sys_tags'
+              580  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              582  STORE_NAME               sys_tags
+
+Parse error at or near `<121>' instruction at offset 42
+
+Instruction context:
+   
+ L.  11        38  DUP_TOP          
+                  40  LOAD_NAME                ImportError
+->                42  <121>                82  ''
+                  44  POP_TOP          
+                  46  POP_TOP          
+                  48  POP_TOP          
+
+test/162783.pyc -- 
+# decompile failed

@@ -1,0 +1,76 @@
+Instruction context:
+   
+ L.  39        10  LOAD_STR                 'amd64'
+                  12  LOAD_GLOBAL              sys
+                  14  LOAD_ATTR                version
+                  16  LOAD_METHOD              lower
+                  18  CALL_METHOD_0         0  ''
+->                20  <118>                 0  ''
+                  22  POP_JUMP_IF_FALSE    28  'to 28'
+Instruction context:
+   
+ L. 128        80  LOAD_STR                 '.'
+                  82  LOAD_FAST                'paths'
+->                84  <118>                 0  ''
+                  86  POP_JUMP_IF_FALSE   100  'to 100'
+Instruction context:
+   
+ L. 172         8  LOAD_GLOBAL              os
+                  10  LOAD_ATTR                name
+                  12  LOAD_STR                 'posix'
+                  14  COMPARE_OP               ==
+                  16  POP_JUMP_IF_FALSE    88  'to 88'
+                  18  LOAD_STR                 'HOME'
+                  20  LOAD_GLOBAL              os
+                  22  LOAD_ATTR                environ
+->                24  <118>                 1  ''
+                  26  POP_JUMP_IF_FALSE    88  'to 88'
+Instruction context:
+   
+ L. 206        36  DUP_TOP          
+                  38  LOAD_GLOBAL              KeyError
+->                40  <121>                82  ''
+                  42  POP_TOP          
+                  44  STORE_FAST               'var'
+                  46  POP_TOP          
+                  48  SETUP_FINALLY        74  'to 74'
+Instruction context:
+   
+ L. 315         8  LOAD_FAST                'val'
+                  10  LOAD_CONST               ('y', 'yes', 't', 'true', 'on', '1')
+->                12  <118>                 0  ''
+                  14  POP_JUMP_IF_FALSE    20  'to 20'
+Instruction context:
+   
+ L. 375        22  LOAD_FAST                'direct'
+                  24  LOAD_CONST               None
+->                26  <117>                 0  ''
+                  28  POP_JUMP_IF_FALSE    42  'to 42'
+Instruction context:
+   
+ L. 504        40  LOAD_FAST                'fixer_names'
+                  42  LOAD_CONST               None
+->                44  <117>                 0  ''
+                  46  POP_JUMP_IF_FALSE    56  'to 56'
+Instruction context:
+-> 
+ L. 525        72  LOAD_GLOBAL              os
+                  74  LOAD_METHOD              chdir
+                  76  LOAD_FAST                'curdir'
+                  78  CALL_METHOD_1         1  ''
+                  80  POP_TOP          
+                  82  JUMP_FORWARD         96  'to 96'
+                84_0  COME_FROM_FINALLY    60  '60'
+                  84  LOAD_GLOBAL              os
+                  86  LOAD_METHOD              chdir
+                  88  LOAD_FAST                'curdir'
+                  90  CALL_METHOD_1         1  ''
+                  92  POP_TOP          
+                  94  <48>             
+                96_0  COME_FROM            82  '82'
+
+test/120508.pyc -- 
+# decompile failed
+
+# file test/120508.pyc
+# Deparsing stopped due to parse error

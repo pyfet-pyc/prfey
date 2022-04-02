@@ -1,0 +1,118 @@
+Instruction context:
+   
+ L.  15        68  BUILD_LIST_0          0 
+                  70  LOAD_CONST               ('Asn1Item', 'Asn1Type', 'SimpleAsn1Type', 'ConstructedAsn1Type')
+->                72  CALL_FINALLY         75  'to 75'
+                  74  STORE_NAME               __all__
+
+test/31723.pyc -- 
+# decompile failed
+
+# file test/31723.pyc
+# --- This code section failed: ---
+
+ L.   7         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   9         8  LOAD_CONST               0
+               10  LOAD_CONST               ('error',)
+               12  IMPORT_NAME              pyasn1
+               14  IMPORT_FROM              error
+               16  STORE_NAME               error
+               18  POP_TOP          
+
+ L.  10        20  LOAD_CONST               0
+               22  LOAD_CONST               ('calling',)
+               24  IMPORT_NAME_ATTR         pyasn1.compat
+               26  IMPORT_FROM              calling
+               28  STORE_NAME               calling
+               30  POP_TOP          
+
+ L.  11        32  LOAD_CONST               0
+               34  LOAD_CONST               ('constraint',)
+               36  IMPORT_NAME_ATTR         pyasn1.type
+               38  IMPORT_FROM              constraint
+               40  STORE_NAME               constraint
+               42  POP_TOP          
+
+ L.  12        44  LOAD_CONST               0
+               46  LOAD_CONST               ('tag',)
+               48  IMPORT_NAME_ATTR         pyasn1.type
+               50  IMPORT_FROM              tag
+               52  STORE_NAME               tag
+               54  POP_TOP          
+
+ L.  13        56  LOAD_CONST               0
+               58  LOAD_CONST               ('tagmap',)
+               60  IMPORT_NAME_ATTR         pyasn1.type
+               62  IMPORT_FROM              tagmap
+               64  STORE_NAME               tagmap
+               66  POP_TOP          
+
+ L.  15        68  BUILD_LIST_0          0 
+               70  LOAD_CONST               ('Asn1Item', 'Asn1Type', 'SimpleAsn1Type', 'ConstructedAsn1Type')
+               72  CALL_FINALLY         75  'to 75'
+               74  STORE_NAME               __all__
+
+ L.  19        76  LOAD_BUILD_CLASS 
+               78  LOAD_CODE                <code_object Asn1Item>
+               80  LOAD_STR                 'Asn1Item'
+               82  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               84  LOAD_STR                 'Asn1Item'
+               86  LOAD_NAME                object
+               88  CALL_FUNCTION_3       3  ''
+               90  STORE_NAME               Asn1Item
+
+ L.  29        92  LOAD_BUILD_CLASS 
+               94  LOAD_CODE                <code_object Asn1Type>
+               96  LOAD_STR                 'Asn1Type'
+               98  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              100  LOAD_STR                 'Asn1Type'
+              102  LOAD_NAME                Asn1Item
+              104  CALL_FUNCTION_3       3  ''
+              106  STORE_NAME               Asn1Type
+
+ L. 165       108  LOAD_NAME                Asn1Type
+              110  STORE_NAME               Asn1ItemBase
+
+ L. 168       112  LOAD_BUILD_CLASS 
+              114  LOAD_CODE                <code_object NoValue>
+              116  LOAD_STR                 'NoValue'
+              118  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              120  LOAD_STR                 'NoValue'
+              122  LOAD_NAME                object
+              124  CALL_FUNCTION_3       3  ''
+              126  STORE_NAME               NoValue
+
+ L. 242       128  LOAD_NAME                NoValue
+              130  CALL_FUNCTION_0       0  ''
+              132  STORE_NAME               noValue
+
+ L. 245       134  LOAD_BUILD_CLASS 
+              136  LOAD_CODE                <code_object SimpleAsn1Type>
+              138  LOAD_STR                 'SimpleAsn1Type'
+              140  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              142  LOAD_STR                 'SimpleAsn1Type'
+              144  LOAD_NAME                Asn1Type
+              146  CALL_FUNCTION_3       3  ''
+              148  STORE_NAME               SimpleAsn1Type
+
+ L. 459       150  LOAD_NAME                SimpleAsn1Type
+              152  STORE_NAME               AbstractSimpleAsn1Item
+
+ L. 481       154  LOAD_BUILD_CLASS 
+              156  LOAD_CODE                <code_object ConstructedAsn1Type>
+              158  LOAD_STR                 'ConstructedAsn1Type'
+              160  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              162  LOAD_STR                 'ConstructedAsn1Type'
+              164  LOAD_NAME                Asn1Type
+              166  CALL_FUNCTION_3       3  ''
+              168  STORE_NAME               ConstructedAsn1Type
+
+ L. 707       170  LOAD_NAME                ConstructedAsn1Type
+              172  STORE_NAME               AbstractConstructedAsn1Item
+
+Parse error at or near `CALL_FINALLY' instruction at offset 72
+

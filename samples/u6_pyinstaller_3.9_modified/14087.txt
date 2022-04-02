@@ -1,0 +1,312 @@
+
+# file test/14087.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Base implementation of event loop.\n\nThe event loop can be broken up into a multiplexer (the part\nresponsible for notifying us of I/O events) and the event loop proper,\nwhich wraps a multiplexer with functionality for scheduling callbacks,\nimmediately or at a given time in the future.\n\nWhenever a public API takes a callback, subsequent positional\narguments will be passed to the callback if/when it is called.  This\navoids the proliferation of trivial lambdas implementing closures.\nKeyword arguments for the callback are not supported; this is a\nconscious design decision, leaving the door open for keyword arguments\nto modify the meaning of the API call itself.\n'
+                2  STORE_NAME               __doc__
+
+ L.  16         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              collections
+               10  STORE_NAME               collections
+
+ L.  17        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME_ATTR         collections.abc
+               18  STORE_NAME               collections
+
+ L.  18        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME_ATTR         concurrent.futures
+               26  STORE_NAME               concurrent
+
+ L.  19        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              functools
+               34  STORE_NAME               functools
+
+ L.  20        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              heapq
+               42  STORE_NAME               heapq
+
+ L.  21        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              itertools
+               50  STORE_NAME               itertools
+
+ L.  22        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              os
+               58  STORE_NAME               os
+
+ L.  23        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              socket
+               66  STORE_NAME               socket
+
+ L.  24        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              stat
+               74  STORE_NAME               stat
+
+ L.  25        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME              subprocess
+               82  STORE_NAME               subprocess
+
+ L.  26        84  LOAD_CONST               0
+               86  LOAD_CONST               None
+               88  IMPORT_NAME              threading
+               90  STORE_NAME               threading
+
+ L.  27        92  LOAD_CONST               0
+               94  LOAD_CONST               None
+               96  IMPORT_NAME              time
+               98  STORE_NAME               time
+
+ L.  28       100  LOAD_CONST               0
+              102  LOAD_CONST               None
+              104  IMPORT_NAME              traceback
+              106  STORE_NAME               traceback
+
+ L.  29       108  LOAD_CONST               0
+              110  LOAD_CONST               None
+              112  IMPORT_NAME              sys
+              114  STORE_NAME               sys
+
+ L.  30       116  LOAD_CONST               0
+              118  LOAD_CONST               None
+              120  IMPORT_NAME              warnings
+              122  STORE_NAME               warnings
+
+ L.  31       124  LOAD_CONST               0
+              126  LOAD_CONST               None
+              128  IMPORT_NAME              weakref
+              130  STORE_NAME               weakref
+
+ L.  33       132  SETUP_FINALLY       146  'to 146'
+
+ L.  34       134  LOAD_CONST               0
+              136  LOAD_CONST               None
+              138  IMPORT_NAME              ssl
+              140  STORE_NAME               ssl
+              142  POP_BLOCK        
+              144  JUMP_FORWARD        168  'to 168'
+            146_0  COME_FROM_FINALLY   132  '132'
+
+ L.  35       146  DUP_TOP          
+              148  LOAD_NAME                ImportError
+              150  <121>               166  ''
+              152  POP_TOP          
+              154  POP_TOP          
+              156  POP_TOP          
+
+ L.  36       158  LOAD_CONST               None
+              160  STORE_NAME               ssl
+              162  POP_EXCEPT       
+              164  JUMP_FORWARD        168  'to 168'
+              166  <48>             
+            168_0  COME_FROM           164  '164'
+            168_1  COME_FROM           144  '144'
+
+ L.  38       168  LOAD_CONST               1
+              170  LOAD_CONST               ('constants',)
+              172  IMPORT_NAME              
+              174  IMPORT_FROM              constants
+              176  STORE_NAME               constants
+              178  POP_TOP          
+
+ L.  39       180  LOAD_CONST               1
+              182  LOAD_CONST               ('coroutines',)
+              184  IMPORT_NAME              
+              186  IMPORT_FROM              coroutines
+              188  STORE_NAME               coroutines
+              190  POP_TOP          
+
+ L.  40       192  LOAD_CONST               1
+              194  LOAD_CONST               ('events',)
+              196  IMPORT_NAME              
+              198  IMPORT_FROM              events
+              200  STORE_NAME               events
+              202  POP_TOP          
+
+ L.  41       204  LOAD_CONST               1
+              206  LOAD_CONST               ('exceptions',)
+              208  IMPORT_NAME              
+              210  IMPORT_FROM              exceptions
+              212  STORE_NAME               exceptions
+              214  POP_TOP          
+
+ L.  42       216  LOAD_CONST               1
+              218  LOAD_CONST               ('futures',)
+              220  IMPORT_NAME              
+              222  IMPORT_FROM              futures
+              224  STORE_NAME               futures
+              226  POP_TOP          
+
+ L.  43       228  LOAD_CONST               1
+              230  LOAD_CONST               ('protocols',)
+              232  IMPORT_NAME              
+              234  IMPORT_FROM              protocols
+              236  STORE_NAME               protocols
+              238  POP_TOP          
+
+ L.  44       240  LOAD_CONST               1
+              242  LOAD_CONST               ('sslproto',)
+              244  IMPORT_NAME              
+              246  IMPORT_FROM              sslproto
+              248  STORE_NAME               sslproto
+              250  POP_TOP          
+
+ L.  45       252  LOAD_CONST               1
+              254  LOAD_CONST               ('staggered',)
+              256  IMPORT_NAME              
+              258  IMPORT_FROM              staggered
+              260  STORE_NAME               staggered
+              262  POP_TOP          
+
+ L.  46       264  LOAD_CONST               1
+              266  LOAD_CONST               ('tasks',)
+              268  IMPORT_NAME              
+              270  IMPORT_FROM              tasks
+              272  STORE_NAME               tasks
+              274  POP_TOP          
+
+ L.  47       276  LOAD_CONST               1
+              278  LOAD_CONST               ('transports',)
+              280  IMPORT_NAME              
+              282  IMPORT_FROM              transports
+              284  STORE_NAME               transports
+              286  POP_TOP          
+
+ L.  48       288  LOAD_CONST               1
+              290  LOAD_CONST               ('trsock',)
+              292  IMPORT_NAME              
+              294  IMPORT_FROM              trsock
+              296  STORE_NAME               trsock
+              298  POP_TOP          
+
+ L.  49       300  LOAD_CONST               1
+              302  LOAD_CONST               ('logger',)
+              304  IMPORT_NAME              log
+              306  IMPORT_FROM              logger
+              308  STORE_NAME               logger
+              310  POP_TOP          
+
+ L.  52       312  LOAD_CONST               ('BaseEventLoop',)
+              314  STORE_NAME               __all__
+
+ L.  57       316  LOAD_CONST               100
+              318  STORE_NAME               _MIN_SCHEDULED_TIMER_HANDLES
+
+ L.  61       320  LOAD_CONST               0.5
+              322  STORE_NAME               _MIN_CANCELLED_TIMER_HANDLES_FRACTION
+
+ L.  64       324  LOAD_NAME                hasattr
+              326  LOAD_NAME                socket
+              328  LOAD_STR                 'AF_INET6'
+              330  CALL_FUNCTION_2       2  ''
+              332  STORE_NAME               _HAS_IPv6
+
+ L.  67       334  LOAD_CONST               86400
+              336  STORE_NAME               MAXIMUM_SELECT_TIMEOUT
+
+ L.  71       338  LOAD_NAME                object
+              340  CALL_FUNCTION_0       0  ''
+              342  STORE_NAME               _unset
+
+ L.  74       344  LOAD_CODE                <code_object _format_handle>
+              346  LOAD_STR                 '_format_handle'
+              348  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              350  STORE_NAME               _format_handle
+
+ L.  83       352  LOAD_CODE                <code_object _format_pipe>
+              354  LOAD_STR                 '_format_pipe'
+              356  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              358  STORE_NAME               _format_pipe
+
+ L.  92       360  LOAD_CODE                <code_object _set_reuseport>
+              362  LOAD_STR                 '_set_reuseport'
+              364  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              366  STORE_NAME               _set_reuseport
+
+ L. 103       368  LOAD_CONST               (0, 0)
+              370  LOAD_CODE                <code_object _ipaddr_info>
+              372  LOAD_STR                 '_ipaddr_info'
+              374  MAKE_FUNCTION_1          'default'
+              376  STORE_NAME               _ipaddr_info
+
+ L. 162       378  LOAD_CONST               (1,)
+              380  LOAD_CODE                <code_object _interleave_addrinfos>
+              382  LOAD_STR                 '_interleave_addrinfos'
+              384  MAKE_FUNCTION_1          'default'
+              386  STORE_NAME               _interleave_addrinfos
+
+ L. 184       388  LOAD_CODE                <code_object _run_until_complete_cb>
+              390  LOAD_STR                 '_run_until_complete_cb'
+              392  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              394  STORE_NAME               _run_until_complete_cb
+
+ L. 194       396  LOAD_NAME                hasattr
+              398  LOAD_NAME                socket
+              400  LOAD_STR                 'TCP_NODELAY'
+              402  CALL_FUNCTION_2       2  ''
+          404_406  POP_JUMP_IF_FALSE   418  'to 418'
+
+ L. 195       408  LOAD_CODE                <code_object _set_nodelay>
+              410  LOAD_STR                 '_set_nodelay'
+              412  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              414  STORE_NAME               _set_nodelay
+              416  JUMP_FORWARD        426  'to 426'
+            418_0  COME_FROM           404  '404'
+
+ L. 201       418  LOAD_CODE                <code_object _set_nodelay>
+              420  LOAD_STR                 '_set_nodelay'
+              422  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              424  STORE_NAME               _set_nodelay
+            426_0  COME_FROM           416  '416'
+
+ L. 205       426  LOAD_BUILD_CLASS 
+              428  LOAD_CODE                <code_object _SendfileFallbackProtocol>
+              430  LOAD_STR                 '_SendfileFallbackProtocol'
+              432  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              434  LOAD_STR                 '_SendfileFallbackProtocol'
+              436  LOAD_NAME                protocols
+              438  LOAD_ATTR                Protocol
+              440  CALL_FUNCTION_3       3  ''
+              442  STORE_NAME               _SendfileFallbackProtocol
+
+ L. 273       444  LOAD_BUILD_CLASS 
+              446  LOAD_CODE                <code_object Server>
+              448  LOAD_STR                 'Server'
+              450  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              452  LOAD_STR                 'Server'
+              454  LOAD_NAME                events
+              456  LOAD_ATTR                AbstractServer
+              458  CALL_FUNCTION_3       3  ''
+              460  STORE_NAME               Server
+
+ L. 384       462  LOAD_BUILD_CLASS 
+              464  LOAD_CODE                <code_object BaseEventLoop>
+              466  LOAD_STR                 'BaseEventLoop'
+              468  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              470  LOAD_STR                 'BaseEventLoop'
+              472  LOAD_NAME                events
+              474  LOAD_ATTR                AbstractEventLoop
+              476  CALL_FUNCTION_3       3  ''
+              478  STORE_NAME               BaseEventLoop
+
+Parse error at or near `<121>' instruction at offset 150
+
+Instruction context:
+   
+ L.  35       146  DUP_TOP          
+                 148  LOAD_NAME                ImportError
+->               150  <121>               166  ''
+                 152  POP_TOP          
+                 154  POP_TOP          
+                 156  POP_TOP          
+
+test/14087.pyc -- 
+# decompile failed

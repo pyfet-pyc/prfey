@@ -1,0 +1,58 @@
+Instruction context:
+   
+ L.  18        12  BUILD_LIST_0          0 
+                  14  LOAD_CONST               (('install-dir=', 'd', 'directory to install scripts to'), ('build-dir=', 'b', 'build directory (where to install from)'), ('force', 'f', 'force installation (overwrite existing files)'), ('skip-build', None, 'skip the build steps'))
+->                16  CALL_FINALLY         19  'to 19'
+                  18  STORE_NAME               user_options
+
+test/111893.pyc -- 
+# decompile failed
+
+# file test/111893.pyc
+# --- This code section failed: ---
+
+ L.  14         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'install_scripts'
+                6  STORE_NAME               __qualname__
+
+ L.  16         8  LOAD_STR                 'install scripts (Python or otherwise)'
+               10  STORE_NAME               description
+
+ L.  18        12  BUILD_LIST_0          0 
+               14  LOAD_CONST               (('install-dir=', 'd', 'directory to install scripts to'), ('build-dir=', 'b', 'build directory (where to install from)'), ('force', 'f', 'force installation (overwrite existing files)'), ('skip-build', None, 'skip the build steps'))
+               16  CALL_FINALLY         19  'to 19'
+               18  STORE_NAME               user_options
+
+ L.  25        20  LOAD_STR                 'force'
+               22  LOAD_STR                 'skip-build'
+               24  BUILD_LIST_2          2 
+               26  STORE_NAME               boolean_options
+
+ L.  27        28  LOAD_CODE                <code_object initialize_options>
+               30  LOAD_STR                 'install_scripts.initialize_options'
+               32  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               34  STORE_NAME               initialize_options
+
+ L.  33        36  LOAD_CODE                <code_object finalize_options>
+               38  LOAD_STR                 'install_scripts.finalize_options'
+               40  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               42  STORE_NAME               finalize_options
+
+ L.  41        44  LOAD_CODE                <code_object run>
+               46  LOAD_STR                 'install_scripts.run'
+               48  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               50  STORE_NAME               run
+
+ L.  56        52  LOAD_CODE                <code_object get_inputs>
+               54  LOAD_STR                 'install_scripts.get_inputs'
+               56  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               58  STORE_NAME               get_inputs
+
+ L.  59        60  LOAD_CODE                <code_object get_outputs>
+               62  LOAD_STR                 'install_scripts.get_outputs'
+               64  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               66  STORE_NAME               get_outputs
+
+Parse error at or near `CALL_FINALLY' instruction at offset 16
+

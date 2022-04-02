@@ -1,0 +1,34 @@
+Instruction context:
+   
+ L.  27        48  POP_BLOCK        
+->                50  POP_EXCEPT       
+                  52  CALL_FINALLY         58  'to 58'
+                  54  LOAD_CONST               None
+                  56  RETURN_VALUE     
+                58_0  COME_FROM            52  '52'
+                58_1  COME_FROM_FINALLY    28  '28'
+                  58  LOAD_CONST               None
+                  60  STORE_FAST               'e'
+                  62  DELETE_FAST              'e'
+                  64  END_FINALLY      
+                  66  POP_EXCEPT       
+                  68  JUMP_FORWARD         72  'to 72'
+                70_0  COME_FROM            20  '20'
+                  70  END_FINALLY      
+Instruction context:
+   
+ L. 154        36  DUP_TOP          
+                  38  LOAD_GLOBAL              ImportError
+                  40  LOAD_GLOBAL              AttributeError
+                  42  BUILD_TUPLE_2         2 
+                  44  COMPARE_OP               exception-match
+                  46  POP_JUMP_IF_FALSE    58  'to 58'
+                  48  POP_TOP          
+->                50  POP_TOP          
+                  52  POP_TOP          
+
+../test/157387.pyc -- 
+# decompile failed
+
+# file ../test/157387.pyc
+# Deparsing stopped due to parse error

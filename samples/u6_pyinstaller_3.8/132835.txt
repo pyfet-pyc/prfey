@@ -1,0 +1,26 @@
+Instruction context:
+   
+ L. 228        74  LOAD_FAST                'buffer_type'
+                  76  LOAD_METHOD              from_address
+                  78  LOAD_FAST                'buf'
+                  80  LOAD_ATTR                buf
+                  82  CALL_METHOD_1         1  ''
+                  84  POP_BLOCK        
+->                86  CALL_FINALLY         90  'to 90'
+                  88  RETURN_VALUE     
+                90_0  COME_FROM            86  '86'
+                90_1  COME_FROM_FINALLY    62  '62'
+Instruction context:
+   
+ L. 293        66  CALL_FUNCTION_2       2  ''
+                  68  POP_BLOCK        
+->                70  ROT_TWO          
+                  72  POP_TOP          
+                  74  RETURN_VALUE     
+                76_0  COME_FROM_FINALLY    44  '44'
+
+../test/132835.pyc -- 
+# decompile failed
+
+# file ../test/132835.pyc
+# Deparsing stopped due to parse error

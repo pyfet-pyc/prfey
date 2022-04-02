@@ -1,0 +1,140 @@
+Instruction context:
+   
+ L. 246       156  LOAD_NAME                Image
+                 158  LOAD_METHOD              register_extensions
+                 160  LOAD_NAME                TgaImageFile
+                 162  LOAD_ATTR                format
+                 164  BUILD_LIST_0          0 
+                 166  LOAD_CONST               ('.tga', '.icb', '.vda', '.vst')
+->               168  CALL_FINALLY        171  'to 171'
+                 170  CALL_METHOD_2         2  ''
+                 172  POP_TOP          
+
+test/2102.pyc -- 
+# decompile failed
+
+# file test/2102.pyc
+# --- This code section failed: ---
+
+ L.  20         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              warnings
+                6  STORE_NAME               warnings
+
+ L.  22         8  LOAD_CONST               1
+               10  LOAD_CONST               ('Image', 'ImageFile', 'ImagePalette')
+               12  IMPORT_NAME              
+               14  IMPORT_FROM              Image
+               16  STORE_NAME               Image
+               18  IMPORT_FROM              ImageFile
+               20  STORE_NAME               ImageFile
+               22  IMPORT_FROM              ImagePalette
+               24  STORE_NAME               ImagePalette
+               26  POP_TOP          
+
+ L.  23        28  LOAD_CONST               1
+               30  LOAD_CONST               ('i16le',)
+               32  IMPORT_NAME              _binary
+               34  IMPORT_FROM              i16le
+               36  STORE_NAME               i16
+               38  POP_TOP          
+
+ L.  24        40  LOAD_CONST               1
+               42  LOAD_CONST               ('o8',)
+               44  IMPORT_NAME              _binary
+               46  IMPORT_FROM              o8
+               48  STORE_NAME               o8
+               50  POP_TOP          
+
+ L.  25        52  LOAD_CONST               1
+               54  LOAD_CONST               ('o16le',)
+               56  IMPORT_NAME              _binary
+               58  IMPORT_FROM              o16le
+               60  STORE_NAME               o16
+               62  POP_TOP          
+
+ L.  34        64  LOAD_STR                 'P'
+
+ L.  35        66  LOAD_STR                 '1'
+
+ L.  36        68  LOAD_STR                 'L'
+
+ L.  37        70  LOAD_STR                 'LA'
+
+ L.  38        72  LOAD_STR                 'BGR;5'
+
+ L.  39        74  LOAD_STR                 'BGR'
+
+ L.  40        76  LOAD_STR                 'BGRA'
+
+ L.  32        78  LOAD_CONST               ((1, 8), (3, 1), (3, 8), (3, 16), (2, 16), (2, 24), (2, 32))
+               80  BUILD_CONST_KEY_MAP_7     7 
+               82  STORE_NAME               MODES
+
+ L.  48        84  LOAD_BUILD_CLASS 
+               86  LOAD_CODE                <code_object TgaImageFile>
+               88  LOAD_STR                 'TgaImageFile'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  LOAD_STR                 'TgaImageFile'
+               94  LOAD_NAME                ImageFile
+               96  LOAD_ATTR                ImageFile
+               98  CALL_FUNCTION_3       3  ''
+              100  STORE_NAME               TgaImageFile
+
+ L. 159       102  LOAD_CONST               ('1', 1, 0, 3)
+
+ L. 160       104  LOAD_CONST               ('L', 8, 0, 3)
+
+ L. 161       106  LOAD_CONST               ('LA', 16, 0, 3)
+
+ L. 162       108  LOAD_CONST               ('P', 8, 1, 1)
+
+ L. 163       110  LOAD_CONST               ('BGR', 24, 0, 2)
+
+ L. 164       112  LOAD_CONST               ('BGRA', 32, 0, 2)
+
+ L. 158       114  LOAD_CONST               ('1', 'L', 'LA', 'P', 'RGB', 'RGBA')
+              116  BUILD_CONST_KEY_MAP_6     6 
+              118  STORE_NAME               SAVE
+
+ L. 168       120  LOAD_CODE                <code_object _save>
+              122  LOAD_STR                 '_save'
+              124  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              126  STORE_NAME               _save
+
+ L. 243       128  LOAD_NAME                Image
+              130  LOAD_METHOD              register_open
+              132  LOAD_NAME                TgaImageFile
+              134  LOAD_ATTR                format
+              136  LOAD_NAME                TgaImageFile
+              138  CALL_METHOD_2         2  ''
+              140  POP_TOP          
+
+ L. 244       142  LOAD_NAME                Image
+              144  LOAD_METHOD              register_save
+              146  LOAD_NAME                TgaImageFile
+              148  LOAD_ATTR                format
+              150  LOAD_NAME                _save
+              152  CALL_METHOD_2         2  ''
+              154  POP_TOP          
+
+ L. 246       156  LOAD_NAME                Image
+              158  LOAD_METHOD              register_extensions
+              160  LOAD_NAME                TgaImageFile
+              162  LOAD_ATTR                format
+              164  BUILD_LIST_0          0 
+              166  LOAD_CONST               ('.tga', '.icb', '.vda', '.vst')
+              168  CALL_FINALLY        171  'to 171'
+              170  CALL_METHOD_2         2  ''
+              172  POP_TOP          
+
+ L. 248       174  LOAD_NAME                Image
+              176  LOAD_METHOD              register_mime
+              178  LOAD_NAME                TgaImageFile
+              180  LOAD_ATTR                format
+              182  LOAD_STR                 'image/x-tga'
+              184  CALL_METHOD_2         2  ''
+              186  POP_TOP          
+
+Parse error at or near `CALL_FINALLY' instruction at offset 168
+

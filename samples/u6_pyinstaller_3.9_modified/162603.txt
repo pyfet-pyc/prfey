@@ -1,0 +1,24 @@
+Instruction context:
+   
+ L.  85        56  LOAD_FAST                'args'
+                  58  LOAD_FAST                'i'
+                  60  BINARY_SUBSCR    
+                  62  LOAD_CONST               None
+                  64  LOAD_CONST               1
+                  66  BUILD_SLICE_2         2 
+                  68  BINARY_SUBSCR    
+                  70  LOAD_CONST               ('', '.')
+->                72  <118>                 0  ''
+                  74  POP_JUMP_IF_FALSE    52  'to 52'
+Instruction context:
+   
+ L. 162       100  LOAD_FAST                'varargs'
+                 102  LOAD_CONST               None
+->               104  <117>                 1  ''
+                 106  POP_JUMP_IF_FALSE   122  'to 122'
+
+test/162603.pyc -- 
+# decompile failed
+
+# file test/162603.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,31 @@
+Instruction context:
+   
+ L. 587        50  LOAD_GLOBAL              type
+                  52  LOAD_FAST                'backend'
+                  54  CALL_FUNCTION_1       1  ''
+                  56  LOAD_ATTR                __typecache
+                  58  POP_BLOCK        
+->                60  ROT_TWO          
+                  62  BEGIN_FINALLY    
+                  64  WITH_CLEANUP_START
+                  66  WITH_CLEANUP_FINISH
+                  68  POP_FINALLY           0  ''
+                  70  RETURN_VALUE     
+                72_0  COME_FROM_WITH       18  '18'
+                  72  WITH_CLEANUP_START
+                  74  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 594        38  DUP_TOP          
+                  40  LOAD_GLOBAL              KeyError
+                  42  COMPARE_OP               exception-match
+                  44  POP_JUMP_IF_FALSE    56  'to 56'
+                  46  POP_TOP          
+->                48  POP_TOP          
+                  50  POP_TOP          
+
+../test/132688.pyc -- 
+# decompile failed
+
+# file ../test/132688.pyc
+# Deparsing stopped due to parse error

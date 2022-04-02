@@ -1,0 +1,102 @@
+Instruction context:
+   
+ L. 253        50  LOAD_GLOBAL              os
+                  52  LOAD_ATTR                path
+                  54  LOAD_METHOD              normpath
+                  56  LOAD_FAST                'path'
+                  58  CALL_METHOD_1         1  ''
+                  60  LOAD_FAST                'headers'
+                  62  BUILD_TUPLE_2         2 
+                  64  POP_BLOCK        
+->                66  ROT_TWO          
+                  68  BEGIN_FINALLY    
+                  70  WITH_CLEANUP_START
+                  72  WITH_CLEANUP_FINISH
+                  74  POP_FINALLY           0  ''
+                  76  RETURN_VALUE     
+                78_0  COME_FROM            48  '48'
+                78_1  COME_FROM            44  '44'
+Instruction context:
+-> 
+ L. 487       306  LOAD_FAST                'added'
+             308_310  POP_JUMP_IF_FALSE   336  'to 336'
+Instruction context:
+   
+ L. 686        74  LOAD_CLOSURE             'CONTENT_HEADERS'
+                  76  BUILD_TUPLE_1         1 
+->                78  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  80  LOAD_STR                 'HTTPRedirectHandler.redirect_request.<locals>.<dictcomp>'
+                  82  MAKE_FUNCTION_8          'closure'
+                  84  LOAD_FAST                'req'
+                  86  LOAD_ATTR                headers
+                  88  LOAD_METHOD              items
+                  90  CALL_METHOD_0         0  ''
+                  92  GET_ITER         
+                  94  CALL_FUNCTION_1       1  ''
+                  96  STORE_FAST               'newheaders'
+Instruction context:
+   
+ L.1327        62  LOAD_DEREF               'headers'
+                  64  LOAD_METHOD              update
+                  66  LOAD_CLOSURE             'headers'
+                  68  BUILD_TUPLE_1         1 
+->                70  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  72  LOAD_STR                 'AbstractHTTPHandler.do_open.<locals>.<dictcomp>'
+                  74  MAKE_FUNCTION_8          'closure'
+                  76  LOAD_FAST                'req'
+                  78  LOAD_ATTR                headers
+                  80  LOAD_METHOD              items
+                  82  CALL_METHOD_0         0  ''
+                  84  GET_ITER         
+                  86  CALL_FUNCTION_1       1  ''
+                  88  CALL_METHOD_1         1  ''
+                  90  POP_TOP          
+Instruction context:
+   
+ L.1458        58  JUMP_BACK            20  'to 20'
+->                60  JUMP_FORWARD         74  'to 74'
+                62_0  COME_FROM            52  '52'
+Instruction context:
+   
+ L.1534        14  DUP_TOP          
+                  16  LOAD_GLOBAL              socket
+                  18  LOAD_ATTR                gaierror
+                  20  COMPARE_OP               exception-match
+                  22  POP_JUMP_IF_FALSE    36  'to 36'
+                  24  POP_TOP          
+->                26  POP_TOP          
+                  28  POP_TOP          
+Instruction context:
+   
+ L.2168        70  CALL_FUNCTION_5       5  ''
+                  72  POP_BLOCK        
+->                74  CALL_FINALLY        106  'to 106'
+                  76  RETURN_VALUE     
+                78_0  COME_FROM            32  '32'
+                78_1  COME_FROM            20  '20'
+Instruction context:
+   
+ L.2353        56  DUP_TOP          
+                  58  LOAD_GLOBAL              KeyboardInterrupt
+                  60  COMPARE_OP               exception-match
+                  62  POP_JUMP_IF_FALSE    82  'to 82'
+                  64  POP_TOP          
+->                66  POP_TOP          
+                  68  POP_TOP          
+Instruction context:
+   
+ L.2603       146  POP_EXCEPT       
+                 148  JUMP_BACK            68  'to 68'
+->               150  POP_EXCEPT       
+                 152  JUMP_FORWARD        156  'to 156'
+               154_0  COME_FROM           138  '138'
+                 154  END_FINALLY      
+               156_0  COME_FROM           152  '152'
+               156_1  COME_FROM           130  '130'
+               156_2  COME_FROM           106  '106'
+
+../test/13048.pyc -- 
+# decompile failed
+
+# file ../test/13048.pyc
+# Deparsing stopped due to parse error

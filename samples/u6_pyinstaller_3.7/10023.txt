@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L.  93       414  LOAD_FAST                'protocol'
+                 416  LOAD_STR                 'RTMP'
+                 418  COMPARE_OP               ==
+             420_422  POP_JUMP_IF_FALSE   428  'to 428'
+                 424  LOAD_STR                 'flv'
+                 426  JUMP_FORWARD        430  'to 430'
+               428_0  COME_FROM           420  '420'
+                 428  LOAD_CONST               None
+               430_0  COME_FROM           426  '426'
+                 430  LOAD_CONST               ('format_id', 'url', 'preference', 'ext')
+                 432  BUILD_CONST_KEY_MAP_4     4 
+                 434  CALL_METHOD_1         1  '1 positional argument'
+                 436  POP_TOP          
+->             438_0  COME_FROM           366  '366'
+                 438  JUMP_BACK           228  'to 228'
+                 440  POP_BLOCK        
+               442_0  COME_FROM_LOOP      218  '218'
+                 442  JUMP_BACK           204  'to 204'
+                 444  POP_BLOCK        
+               446_0  COME_FROM_LOOP      160  '160'
+
+../test/10023.pyc -- 
+# decompile failed
+
+# file ../test/10023.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,21 @@
+Instruction context:
+   
+ L.  35        96  LOAD_FAST                'ret'
+                  98  LOAD_GLOBAL              findcommonblocks
+                 100  LOAD_FAST                'b'
+                 102  LOAD_CONST               0
+                 104  CALL_FUNCTION_2       2  '2 positional arguments'
+                 106  BINARY_ADD       
+                 108  STORE_FAST               'ret'
+                 110  JUMP_BACK            92  'to 92'
+                 112  POP_BLOCK        
+               114_0  COME_FROM_LOOP       82  '82'
+               114_1  COME_FROM            80  '80'
+               114_2  COME_FROM            72  '72'
+->             114_3  COME_FROM_LOOP       12  '12'
+
+../test/147652.pyc -- 
+# decompile failed
+
+# file ../test/147652.pyc
+# Deparsing stopped due to parse error

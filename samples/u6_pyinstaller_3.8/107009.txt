@@ -1,0 +1,60 @@
+Instruction context:
+   
+ L.  83        34  POP_BLOCK        
+                  36  POP_EXCEPT       
+->                38  CALL_FINALLY         44  'to 44'
+                  40  LOAD_CONST               None
+                  42  RETURN_VALUE     
+                44_0  COME_FROM            38  '38'
+                44_1  COME_FROM_FINALLY    32  '32'
+                  44  LOAD_CONST               None
+                  46  STORE_FAST               'e'
+                  48  DELETE_FAST              'e'
+                  50  END_FINALLY      
+                  52  POP_EXCEPT       
+                  54  JUMP_FORWARD         58  'to 58'
+                56_0  COME_FROM            24  '24'
+                  56  END_FINALLY      
+                58_0  COME_FROM            54  '54'
+Instruction context:
+   
+ L. 180        34  POP_BLOCK        
+                  36  POP_EXCEPT       
+->                38  CALL_FINALLY         44  'to 44'
+                  40  LOAD_CONST               None
+                  42  RETURN_VALUE     
+                44_0  COME_FROM            38  '38'
+                44_1  COME_FROM_FINALLY    32  '32'
+                  44  LOAD_CONST               None
+                  46  STORE_FAST               'e'
+                  48  DELETE_FAST              'e'
+                  50  END_FINALLY      
+                  52  POP_EXCEPT       
+                  54  JUMP_FORWARD         58  'to 58'
+                56_0  COME_FROM            24  '24'
+                  56  END_FINALLY      
+                58_0  COME_FROM            54  '54'
+                58_1  COME_FROM            16  '16'
+Instruction context:
+   
+ L. 257        60  LOAD_GLOBAL              sleep
+                  62  LOAD_CONST               5
+                  64  CALL_FUNCTION_1       1  ''
+                  66  POP_TOP          
+                  68  POP_BLOCK        
+                  70  BEGIN_FINALLY    
+                72_0  COME_FROM_FINALLY    58  '58'
+                  72  LOAD_CONST               None
+                  74  STORE_FAST               'e'
+                  76  DELETE_FAST              'e'
+                  78  END_FINALLY      
+                  80  POP_EXCEPT       
+->                82  JUMP_BACK            30  'to 30'
+                84_0  COME_FROM            50  '50'
+                  84  END_FINALLY      
+
+../test/107009.pyc -- 
+# decompile failed
+
+# file ../test/107009.pyc
+# Deparsing stopped due to parse error

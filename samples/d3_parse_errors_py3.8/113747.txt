@@ -1,0 +1,50 @@
+Instruction context:
+   
+ L. 825       192  LOAD_FAST                'value'
+->               194  RETURN_VALUE     
+Instruction context:
+   
+ L. 933       250  LOAD_FAST                'TokenClass'
+                 252  LOAD_FAST                'value'
+                 254  LOAD_FAST                'start_mark'
+                 256  LOAD_FAST                'end_mark'
+                 258  CALL_FUNCTION_3       3  ''
+->               260  RETURN_VALUE     
+Instruction context:
+-> 
+ L.1040   364_366  JUMP_FORWARD        370  'to 370'
+                 368  JUMP_BACK           148  'to 148'
+               370_0  COME_FROM           364  '364'
+               370_1  COME_FROM           294  '294'
+               370_2  COME_FROM           280  '280'
+               370_3  COME_FROM           170  '170'
+               370_4  COME_FROM           156  '156'
+Instruction context:
+   
+ L.1309       240  LOAD_GLOBAL              ScalarToken
+                 242  LOAD_STR                 ''
+                 244  LOAD_METHOD              join
+                 246  LOAD_FAST                'chunks'
+                 248  CALL_METHOD_1         1  ''
+                 250  LOAD_CONST               True
+                 252  LOAD_FAST                'start_mark'
+                 254  LOAD_FAST                'end_mark'
+                 256  CALL_FUNCTION_4       4  ''
+->               258  RETURN_VALUE     
+Instruction context:
+   
+ L.1370       230  LOAD_FAST                'value'
+->               232  RETURN_VALUE     
+Instruction context:
+   
+ L.1395       234  LOAD_STR                 ''
+                 236  LOAD_METHOD              join
+                 238  LOAD_FAST                'chunks'
+                 240  CALL_METHOD_1         1  ''
+->               242  RETURN_VALUE     
+
+../test/113747.pyc -- 
+# decompile failed
+
+# file ../test/113747.pyc
+# Deparsing stopped due to parse error

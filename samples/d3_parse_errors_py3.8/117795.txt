@@ -1,0 +1,59 @@
+Instruction context:
+   
+ L. 403        28  POP_BLOCK        
+->                30  CALL_FINALLY        158  'to 158'
+                  32  LOAD_CONST               None
+                  34  RETURN_VALUE     
+                36_0  COME_FROM            26  '26'
+Instruction context:
+   
+ L. 936        14  LOAD_FAST                'self'
+                  16  LOAD_ATTR                _loop
+                  18  LOAD_ATTR                create_connection
+                  20  LOAD_FAST                'args'
+                  22  LOAD_FAST                'kwargs'
+                  24  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  26  GET_AWAITABLE    
+                  28  LOAD_CONST               None
+                  30  YIELD_FROM       
+                  32  POP_BLOCK        
+                  34  ROT_TWO          
+                  36  BEGIN_FINALLY    
+                  38  WITH_CLEANUP_START
+                  40  WITH_CLEANUP_FINISH
+                  42  POP_FINALLY           0  ''
+->                44  POP_BLOCK        
+                  46  RETURN_VALUE     
+                48_0  COME_FROM_WITH       10  '10'
+                  48  WITH_CLEANUP_START
+                  50  WITH_CLEANUP_FINISH
+                  52  END_FINALLY      
+                  54  POP_BLOCK        
+                  56  JUMP_FORWARD        198  'to 198'
+                58_0  COME_FROM_FINALLY     0  '0'
+Instruction context:
+   
+ L. 989       276  POP_BLOCK        
+                 278  POP_EXCEPT       
+->               280  CALL_FINALLY        288  'to 288'
+                 282  JUMP_BACK           154  'to 154'
+                 284  POP_BLOCK        
+                 286  BEGIN_FINALLY    
+               288_0  COME_FROM           280  '280'
+               288_1  COME_FROM_FINALLY   270  '270'
+                 288  LOAD_CONST               None
+                 290  STORE_FAST               'exc'
+                 292  DELETE_FAST              'exc'
+                 294  END_FINALLY      
+                 296  POP_EXCEPT       
+                 298  JUMP_FORWARD        302  'to 302'
+               300_0  COME_FROM           260  '260'
+                 300  END_FINALLY      
+               302_0  COME_FROM           298  '298'
+               302_1  COME_FROM           252  '252'
+
+../test/117795.pyc -- 
+# decompile failed
+
+# file ../test/117795.pyc
+# Deparsing stopped due to parse error

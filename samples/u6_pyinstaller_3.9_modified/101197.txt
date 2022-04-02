@@ -1,0 +1,216 @@
+
+# file test/101197.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'distutils.archive_util\n\nUtility functions for creating archive files (tarballs, zip files,\nthat sort of thing).'
+                2  STORE_NAME               __doc__
+
+ L.   6         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.   7        12  LOAD_CONST               0
+               14  LOAD_CONST               ('warn',)
+               16  IMPORT_NAME              warnings
+               18  IMPORT_FROM              warn
+               20  STORE_NAME               warn
+               22  POP_TOP          
+
+ L.   8        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              sys
+               30  STORE_NAME               sys
+
+ L.  10        32  SETUP_FINALLY        46  'to 46'
+
+ L.  11        34  LOAD_CONST               0
+               36  LOAD_CONST               None
+               38  IMPORT_NAME              zipfile
+               40  STORE_NAME               zipfile
+               42  POP_BLOCK        
+               44  JUMP_FORWARD         68  'to 68'
+             46_0  COME_FROM_FINALLY    32  '32'
+
+ L.  12        46  DUP_TOP          
+               48  LOAD_NAME                ImportError
+               50  <121>                66  ''
+               52  POP_TOP          
+               54  POP_TOP          
+               56  POP_TOP          
+
+ L.  13        58  LOAD_CONST               None
+               60  STORE_NAME               zipfile
+               62  POP_EXCEPT       
+               64  JUMP_FORWARD         68  'to 68'
+               66  <48>             
+             68_0  COME_FROM            64  '64'
+             68_1  COME_FROM            44  '44'
+
+ L.  16        68  LOAD_CONST               0
+               70  LOAD_CONST               ('DistutilsExecError',)
+               72  IMPORT_NAME_ATTR         distutils.errors
+               74  IMPORT_FROM              DistutilsExecError
+               76  STORE_NAME               DistutilsExecError
+               78  POP_TOP          
+
+ L.  17        80  LOAD_CONST               0
+               82  LOAD_CONST               ('spawn',)
+               84  IMPORT_NAME_ATTR         distutils.spawn
+               86  IMPORT_FROM              spawn
+               88  STORE_NAME               spawn
+               90  POP_TOP          
+
+ L.  18        92  LOAD_CONST               0
+               94  LOAD_CONST               ('mkpath',)
+               96  IMPORT_NAME_ATTR         distutils.dir_util
+               98  IMPORT_FROM              mkpath
+              100  STORE_NAME               mkpath
+              102  POP_TOP          
+
+ L.  19       104  LOAD_CONST               0
+              106  LOAD_CONST               ('log',)
+              108  IMPORT_NAME              distutils
+              110  IMPORT_FROM              log
+              112  STORE_NAME               log
+              114  POP_TOP          
+
+ L.  21       116  SETUP_FINALLY       134  'to 134'
+
+ L.  22       118  LOAD_CONST               0
+              120  LOAD_CONST               ('getpwnam',)
+              122  IMPORT_NAME              pwd
+              124  IMPORT_FROM              getpwnam
+              126  STORE_NAME               getpwnam
+              128  POP_TOP          
+              130  POP_BLOCK        
+              132  JUMP_FORWARD        156  'to 156'
+            134_0  COME_FROM_FINALLY   116  '116'
+
+ L.  23       134  DUP_TOP          
+              136  LOAD_NAME                ImportError
+              138  <121>               154  ''
+              140  POP_TOP          
+              142  POP_TOP          
+              144  POP_TOP          
+
+ L.  24       146  LOAD_CONST               None
+              148  STORE_NAME               getpwnam
+              150  POP_EXCEPT       
+              152  JUMP_FORWARD        156  'to 156'
+              154  <48>             
+            156_0  COME_FROM           152  '152'
+            156_1  COME_FROM           132  '132'
+
+ L.  26       156  SETUP_FINALLY       174  'to 174'
+
+ L.  27       158  LOAD_CONST               0
+              160  LOAD_CONST               ('getgrnam',)
+              162  IMPORT_NAME              grp
+              164  IMPORT_FROM              getgrnam
+              166  STORE_NAME               getgrnam
+              168  POP_TOP          
+              170  POP_BLOCK        
+              172  JUMP_FORWARD        196  'to 196'
+            174_0  COME_FROM_FINALLY   156  '156'
+
+ L.  28       174  DUP_TOP          
+              176  LOAD_NAME                ImportError
+              178  <121>               194  ''
+              180  POP_TOP          
+              182  POP_TOP          
+              184  POP_TOP          
+
+ L.  29       186  LOAD_CONST               None
+              188  STORE_NAME               getgrnam
+              190  POP_EXCEPT       
+              192  JUMP_FORWARD        196  'to 196'
+              194  <48>             
+            196_0  COME_FROM           192  '192'
+            196_1  COME_FROM           172  '172'
+
+ L.  31       196  LOAD_CODE                <code_object _get_gid>
+              198  LOAD_STR                 '_get_gid'
+              200  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              202  STORE_NAME               _get_gid
+
+ L.  43       204  LOAD_CODE                <code_object _get_uid>
+              206  LOAD_STR                 '_get_uid'
+              208  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              210  STORE_NAME               _get_uid
+
+ L.  55       212  LOAD_CONST               ('gzip', 0, 0, None, None)
+              214  LOAD_CODE                <code_object make_tarball>
+              216  LOAD_STR                 'make_tarball'
+              218  MAKE_FUNCTION_1          'default'
+              220  STORE_NAME               make_tarball
+
+ L. 127       222  LOAD_CONST               (0, 0)
+              224  LOAD_CODE                <code_object make_zipfile>
+              226  LOAD_STR                 'make_zipfile'
+              228  MAKE_FUNCTION_1          'default'
+              230  STORE_NAME               make_zipfile
+
+ L. 188       232  LOAD_NAME                make_tarball
+              234  LOAD_CONST               ('compress', 'gzip')
+              236  BUILD_LIST_1          1 
+              238  LOAD_STR                 "gzip'ed tar-file"
+              240  BUILD_TUPLE_3         3 
+
+ L. 189       242  LOAD_NAME                make_tarball
+              244  LOAD_CONST               ('compress', 'bzip2')
+              246  BUILD_LIST_1          1 
+              248  LOAD_STR                 "bzip2'ed tar-file"
+              250  BUILD_TUPLE_3         3 
+
+ L. 190       252  LOAD_NAME                make_tarball
+              254  LOAD_CONST               ('compress', 'xz')
+              256  BUILD_LIST_1          1 
+              258  LOAD_STR                 "xz'ed tar-file"
+              260  BUILD_TUPLE_3         3 
+
+ L. 191       262  LOAD_NAME                make_tarball
+              264  LOAD_CONST               ('compress', 'compress')
+              266  BUILD_LIST_1          1 
+              268  LOAD_STR                 'compressed tar file'
+              270  BUILD_TUPLE_3         3 
+
+ L. 192       272  LOAD_NAME                make_tarball
+              274  LOAD_CONST               ('compress', None)
+              276  BUILD_LIST_1          1 
+              278  LOAD_STR                 'uncompressed tar file'
+              280  BUILD_TUPLE_3         3 
+
+ L. 193       282  LOAD_NAME                make_zipfile
+              284  BUILD_LIST_0          0 
+              286  LOAD_STR                 'ZIP file'
+              288  BUILD_TUPLE_3         3 
+
+ L. 187       290  LOAD_CONST               ('gztar', 'bztar', 'xztar', 'ztar', 'tar', 'zip')
+              292  BUILD_CONST_KEY_MAP_6     6 
+              294  STORE_NAME               ARCHIVE_FORMATS
+
+ L. 196       296  LOAD_CODE                <code_object check_archive_formats>
+              298  LOAD_STR                 'check_archive_formats'
+              300  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              302  STORE_NAME               check_archive_formats
+
+ L. 206       304  LOAD_CONST               (None, None, 0, 0, None, None)
+              306  LOAD_CODE                <code_object make_archive>
+              308  LOAD_STR                 'make_archive'
+              310  MAKE_FUNCTION_1          'default'
+              312  STORE_NAME               make_archive
+
+Parse error at or near `<121>' instruction at offset 50
+
+Instruction context:
+   
+ L.  12        46  DUP_TOP          
+                  48  LOAD_NAME                ImportError
+->                50  <121>                66  ''
+                  52  POP_TOP          
+                  54  POP_TOP          
+                  56  POP_TOP          
+
+test/101197.pyc -- 
+# decompile failed

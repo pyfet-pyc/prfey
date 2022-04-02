@@ -1,0 +1,29 @@
+Instruction context:
+   
+ L. 127       190  LOAD_GLOBAL              StrictVersion
+                 192  LOAD_FAST                'version_num'
+                 194  LOAD_ATTR                strip
+                 196  CALL_FUNCTION_0       0  '0 positional arguments'
+                 198  CALL_FUNCTION_1       1  '1 positional argument'
+                 200  RETURN_VALUE     
+->             202_0  COME_FROM_ASYNC_WITH    44  '44'
+                 202  WITH_CLEANUP_START
+                 204  GET_AWAITABLE    
+                 206  LOAD_CONST               None
+                 208  YIELD_FROM       
+                 210  WITH_CLEANUP_FINISH
+                 212  END_FINALLY      
+                 214  POP_BLOCK        
+                 216  LOAD_CONST               None
+               218_0  COME_FROM_ASYNC_WITH    22  '22'
+                 218  WITH_CLEANUP_START
+                 220  GET_AWAITABLE    
+                 222  LOAD_CONST               None
+                 224  YIELD_FROM       
+                 226  WITH_CLEANUP_FINISH
+
+../test/175133.pyc -- 
+# decompile failed
+
+# file ../test/175133.pyc
+# Deparsing stopped due to parse error

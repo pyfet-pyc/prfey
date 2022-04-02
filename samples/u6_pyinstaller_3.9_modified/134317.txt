@@ -1,0 +1,344 @@
+
+# file test/134317.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'HTTP related errors.'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              asyncio
+               10  STORE_NAME               asyncio
+
+ L.   4        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              warnings
+               18  STORE_NAME               warnings
+
+ L.   5        20  LOAD_CONST               0
+               22  LOAD_CONST               ('TYPE_CHECKING', 'Any', 'Optional', 'Tuple', 'Union')
+               24  IMPORT_NAME              typing
+               26  IMPORT_FROM              TYPE_CHECKING
+               28  STORE_NAME               TYPE_CHECKING
+               30  IMPORT_FROM              Any
+               32  STORE_NAME               Any
+               34  IMPORT_FROM              Optional
+               36  STORE_NAME               Optional
+               38  IMPORT_FROM              Tuple
+               40  STORE_NAME               Tuple
+               42  IMPORT_FROM              Union
+               44  STORE_NAME               Union
+               46  POP_TOP          
+
+ L.   7        48  LOAD_CONST               1
+               50  LOAD_CONST               ('LooseHeaders',)
+               52  IMPORT_NAME              typedefs
+               54  IMPORT_FROM              LooseHeaders
+               56  STORE_NAME               LooseHeaders
+               58  POP_TOP          
+
+ L.   9        60  SETUP_FINALLY        80  'to 80'
+
+ L.  10        62  LOAD_CONST               0
+               64  LOAD_CONST               None
+               66  IMPORT_NAME              ssl
+               68  STORE_NAME               ssl
+
+ L.  12        70  LOAD_NAME                ssl
+               72  LOAD_ATTR                SSLContext
+               74  STORE_NAME               SSLContext
+               76  POP_BLOCK        
+               78  JUMP_FORWARD        106  'to 106'
+             80_0  COME_FROM_FINALLY    60  '60'
+
+ L.  13        80  DUP_TOP          
+               82  LOAD_NAME                ImportError
+               84  <121>               104  ''
+               86  POP_TOP          
+               88  POP_TOP          
+               90  POP_TOP          
+
+ L.  14        92  LOAD_CONST               None
+               94  DUP_TOP          
+               96  STORE_NAME               ssl
+               98  STORE_NAME               SSLContext
+              100  POP_EXCEPT       
+              102  JUMP_FORWARD        106  'to 106'
+              104  <48>             
+            106_0  COME_FROM           102  '102'
+            106_1  COME_FROM            78  '78'
+
+ L.  17       106  LOAD_NAME                TYPE_CHECKING
+              108  POP_JUMP_IF_FALSE   136  'to 136'
+
+ L.  18       110  LOAD_CONST               1
+              112  LOAD_CONST               ('ClientResponse', 'ConnectionKey', 'Fingerprint', 'RequestInfo')
+              114  IMPORT_NAME              client_reqrep
+              116  IMPORT_FROM              ClientResponse
+              118  STORE_NAME               ClientResponse
+              120  IMPORT_FROM              ConnectionKey
+              122  STORE_NAME               ConnectionKey
+              124  IMPORT_FROM              Fingerprint
+              126  STORE_NAME               Fingerprint
+              128  IMPORT_FROM              RequestInfo
+              130  STORE_NAME               RequestInfo
+              132  POP_TOP          
+              134  JUMP_FORWARD        148  'to 148'
+            136_0  COME_FROM           108  '108'
+
+ L.  20       136  LOAD_CONST               None
+              138  DUP_TOP          
+              140  STORE_NAME               RequestInfo
+              142  DUP_TOP          
+              144  STORE_NAME               ClientResponse
+              146  STORE_NAME               ConnectionKey
+            148_0  COME_FROM           134  '134'
+
+ L.  22       148  LOAD_CONST               ('ClientError', 'ClientConnectionError', 'ClientOSError', 'ClientConnectorError', 'ClientProxyConnectionError', 'ClientSSLError', 'ClientConnectorSSLError', 'ClientConnectorCertificateError', 'ServerConnectionError', 'ServerTimeoutError', 'ServerDisconnectedError', 'ServerFingerprintMismatch', 'ClientResponseError', 'ClientHttpProxyError', 'WSServerHandshakeError', 'ContentTypeError', 'ClientPayloadError', 'InvalidURL')
+              150  STORE_NAME               __all__
+
+ L.  44       152  LOAD_BUILD_CLASS 
+              154  LOAD_CODE                <code_object ClientError>
+              156  LOAD_STR                 'ClientError'
+              158  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              160  LOAD_STR                 'ClientError'
+              162  LOAD_NAME                Exception
+              164  CALL_FUNCTION_3       3  ''
+              166  STORE_NAME               ClientError
+
+ L.  48       168  LOAD_BUILD_CLASS 
+              170  LOAD_CODE                <code_object ClientResponseError>
+              172  LOAD_STR                 'ClientResponseError'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  LOAD_STR                 'ClientResponseError'
+              178  LOAD_NAME                ClientError
+              180  CALL_FUNCTION_3       3  ''
+              182  STORE_NAME               ClientResponseError
+
+ L. 123       184  LOAD_BUILD_CLASS 
+              186  LOAD_CODE                <code_object ContentTypeError>
+              188  LOAD_STR                 'ContentTypeError'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  LOAD_STR                 'ContentTypeError'
+              194  LOAD_NAME                ClientResponseError
+              196  CALL_FUNCTION_3       3  ''
+              198  STORE_NAME               ContentTypeError
+
+ L. 127       200  LOAD_BUILD_CLASS 
+              202  LOAD_CODE                <code_object WSServerHandshakeError>
+              204  LOAD_STR                 'WSServerHandshakeError'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  LOAD_STR                 'WSServerHandshakeError'
+              210  LOAD_NAME                ClientResponseError
+              212  CALL_FUNCTION_3       3  ''
+              214  STORE_NAME               WSServerHandshakeError
+
+ L. 131       216  LOAD_BUILD_CLASS 
+              218  LOAD_CODE                <code_object ClientHttpProxyError>
+              220  LOAD_STR                 'ClientHttpProxyError'
+              222  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              224  LOAD_STR                 'ClientHttpProxyError'
+              226  LOAD_NAME                ClientResponseError
+              228  CALL_FUNCTION_3       3  ''
+              230  STORE_NAME               ClientHttpProxyError
+
+ L. 140       232  LOAD_BUILD_CLASS 
+              234  LOAD_CODE                <code_object TooManyRedirects>
+              236  LOAD_STR                 'TooManyRedirects'
+              238  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              240  LOAD_STR                 'TooManyRedirects'
+              242  LOAD_NAME                ClientResponseError
+              244  CALL_FUNCTION_3       3  ''
+              246  STORE_NAME               TooManyRedirects
+
+ L. 144       248  LOAD_BUILD_CLASS 
+              250  LOAD_CODE                <code_object ClientConnectionError>
+              252  LOAD_STR                 'ClientConnectionError'
+              254  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              256  LOAD_STR                 'ClientConnectionError'
+              258  LOAD_NAME                ClientError
+              260  CALL_FUNCTION_3       3  ''
+              262  STORE_NAME               ClientConnectionError
+
+ L. 148       264  LOAD_BUILD_CLASS 
+              266  LOAD_CODE                <code_object ClientOSError>
+              268  LOAD_STR                 'ClientOSError'
+              270  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              272  LOAD_STR                 'ClientOSError'
+              274  LOAD_NAME                ClientConnectionError
+              276  LOAD_NAME                OSError
+              278  CALL_FUNCTION_4       4  ''
+              280  STORE_NAME               ClientOSError
+
+ L. 152       282  LOAD_BUILD_CLASS 
+              284  LOAD_CODE                <code_object ClientConnectorError>
+              286  LOAD_STR                 'ClientConnectorError'
+              288  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              290  LOAD_STR                 'ClientConnectorError'
+              292  LOAD_NAME                ClientOSError
+              294  CALL_FUNCTION_3       3  ''
+              296  STORE_NAME               ClientConnectorError
+
+ L. 190       298  LOAD_BUILD_CLASS 
+              300  LOAD_CODE                <code_object ClientProxyConnectionError>
+              302  LOAD_STR                 'ClientProxyConnectionError'
+              304  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              306  LOAD_STR                 'ClientProxyConnectionError'
+              308  LOAD_NAME                ClientConnectorError
+              310  CALL_FUNCTION_3       3  ''
+              312  STORE_NAME               ClientProxyConnectionError
+
+ L. 198       314  LOAD_BUILD_CLASS 
+              316  LOAD_CODE                <code_object ServerConnectionError>
+              318  LOAD_STR                 'ServerConnectionError'
+              320  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              322  LOAD_STR                 'ServerConnectionError'
+              324  LOAD_NAME                ClientConnectionError
+              326  CALL_FUNCTION_3       3  ''
+              328  STORE_NAME               ServerConnectionError
+
+ L. 202       330  LOAD_BUILD_CLASS 
+              332  LOAD_CODE                <code_object ServerDisconnectedError>
+              334  LOAD_STR                 'ServerDisconnectedError'
+              336  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              338  LOAD_STR                 'ServerDisconnectedError'
+              340  LOAD_NAME                ServerConnectionError
+              342  CALL_FUNCTION_3       3  ''
+              344  STORE_NAME               ServerDisconnectedError
+
+ L. 213       346  LOAD_BUILD_CLASS 
+              348  LOAD_CODE                <code_object ServerTimeoutError>
+              350  LOAD_STR                 'ServerTimeoutError'
+              352  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              354  LOAD_STR                 'ServerTimeoutError'
+              356  LOAD_NAME                ServerConnectionError
+              358  LOAD_NAME                asyncio
+              360  LOAD_ATTR                TimeoutError
+              362  CALL_FUNCTION_4       4  ''
+              364  STORE_NAME               ServerTimeoutError
+
+ L. 217       366  LOAD_BUILD_CLASS 
+              368  LOAD_CODE                <code_object ServerFingerprintMismatch>
+              370  LOAD_STR                 'ServerFingerprintMismatch'
+              372  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              374  LOAD_STR                 'ServerFingerprintMismatch'
+              376  LOAD_NAME                ServerConnectionError
+              378  CALL_FUNCTION_3       3  ''
+              380  STORE_NAME               ServerFingerprintMismatch
+
+ L. 233       382  LOAD_BUILD_CLASS 
+              384  LOAD_CODE                <code_object ClientPayloadError>
+              386  LOAD_STR                 'ClientPayloadError'
+              388  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              390  LOAD_STR                 'ClientPayloadError'
+              392  LOAD_NAME                ClientError
+              394  CALL_FUNCTION_3       3  ''
+              396  STORE_NAME               ClientPayloadError
+
+ L. 237       398  LOAD_BUILD_CLASS 
+              400  LOAD_CODE                <code_object InvalidURL>
+              402  LOAD_STR                 'InvalidURL'
+              404  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              406  LOAD_STR                 'InvalidURL'
+              408  LOAD_NAME                ClientError
+              410  LOAD_NAME                ValueError
+              412  CALL_FUNCTION_4       4  ''
+              414  STORE_NAME               InvalidURL
+
+ L. 258       416  LOAD_BUILD_CLASS 
+              418  LOAD_CODE                <code_object ClientSSLError>
+              420  LOAD_STR                 'ClientSSLError'
+              422  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              424  LOAD_STR                 'ClientSSLError'
+              426  LOAD_NAME                ClientConnectorError
+              428  CALL_FUNCTION_3       3  ''
+              430  STORE_NAME               ClientSSLError
+
+ L. 262       432  LOAD_NAME                ssl
+              434  LOAD_CONST               None
+              436  <117>                 1  ''
+          438_440  POP_JUMP_IF_FALSE   480  'to 480'
+
+ L. 263       442  LOAD_NAME                ssl
+              444  LOAD_ATTR                CertificateError
+              446  BUILD_TUPLE_1         1 
+              448  STORE_NAME               cert_errors
+
+ L. 265       450  LOAD_NAME                ClientSSLError
+
+ L. 266       452  LOAD_NAME                ssl
+              454  LOAD_ATTR                CertificateError
+
+ L. 264       456  BUILD_TUPLE_2         2 
+              458  STORE_NAME               cert_errors_bases
+
+ L. 269       460  LOAD_NAME                ssl
+              462  LOAD_ATTR                SSLError
+              464  BUILD_TUPLE_1         1 
+              466  STORE_NAME               ssl_errors
+
+ L. 270       468  LOAD_NAME                ClientSSLError
+              470  LOAD_NAME                ssl
+              472  LOAD_ATTR                SSLError
+              474  BUILD_TUPLE_2         2 
+              476  STORE_NAME               ssl_error_bases
+              478  JUMP_FORWARD        506  'to 506'
+            480_0  COME_FROM           438  '438'
+
+ L. 272       480  LOAD_NAME                tuple
+              482  CALL_FUNCTION_0       0  ''
+              484  STORE_NAME               cert_errors
+
+ L. 274       486  LOAD_NAME                ClientSSLError
+
+ L. 275       488  LOAD_NAME                ValueError
+
+ L. 273       490  BUILD_TUPLE_2         2 
+              492  STORE_NAME               cert_errors_bases
+
+ L. 278       494  LOAD_NAME                tuple
+              496  CALL_FUNCTION_0       0  ''
+              498  STORE_NAME               ssl_errors
+
+ L. 279       500  LOAD_NAME                ClientSSLError
+              502  BUILD_TUPLE_1         1 
+              504  STORE_NAME               ssl_error_bases
+            506_0  COME_FROM           478  '478'
+
+ L. 282       506  LOAD_BUILD_CLASS 
+              508  LOAD_CODE                <code_object ClientConnectorSSLError>
+              510  LOAD_STR                 'ClientConnectorSSLError'
+              512  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              514  LOAD_STR                 'ClientConnectorSSLError'
+              516  BUILD_LIST_2          2 
+              518  LOAD_NAME                ssl_error_bases
+              520  CALL_FINALLY        523  'to 523'
+              522  WITH_CLEANUP_FINISH
+              524  CALL_FUNCTION_EX      0  'positional arguments only'
+              526  STORE_NAME               ClientConnectorSSLError
+
+ L. 286       528  LOAD_BUILD_CLASS 
+              530  LOAD_CODE                <code_object ClientConnectorCertificateError>
+              532  LOAD_STR                 'ClientConnectorCertificateError'
+              534  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              536  LOAD_STR                 'ClientConnectorCertificateError'
+              538  BUILD_LIST_2          2 
+              540  LOAD_NAME                cert_errors_bases
+              542  CALL_FINALLY        545  'to 545'
+              544  WITH_CLEANUP_FINISH
+              546  CALL_FUNCTION_EX      0  'positional arguments only'
+              548  STORE_NAME               ClientConnectorCertificateError
+
+Parse error at or near `<121>' instruction at offset 84
+
+Instruction context:
+   
+ L.  13        80  DUP_TOP          
+                  82  LOAD_NAME                ImportError
+->                84  <121>               104  ''
+                  86  POP_TOP          
+                  88  POP_TOP          
+                  90  POP_TOP          
+
+test/134317.pyc -- 
+# decompile failed

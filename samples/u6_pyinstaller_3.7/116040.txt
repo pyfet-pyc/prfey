@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L. 830        88  LOAD_GLOBAL              ValueError
+                  90  LOAD_STR                 'Invalid name %r'
+                  92  LOAD_FAST                'name'
+                  94  BINARY_MODULO    
+                  96  CALL_FUNCTION_1       1  '1 positional argument'
+                  98  RAISE_VARARGS_1       1  'exception instance'
+->             100_0  COME_FROM            86  '86'
+Instruction context:
+   
+ L. 883       184  LOAD_GLOBAL              str
+                 186  LOAD_FAST                'self'
+                 188  CALL_FUNCTION_1       1  '1 positional argument'
+                 190  LOAD_GLOBAL              str
+                 192  LOAD_FAST                'formatted'
+                 194  CALL_FUNCTION_1       1  '1 positional argument'
+                 196  CALL_METHOD_2         2  '2 positional arguments'
+                 198  CALL_FUNCTION_1       1  '1 positional argument'
+                 200  RAISE_VARARGS_1       1  'exception instance'
+->             202_0  COME_FROM           162  '162'
+               202_1  COME_FROM           136  '136'
+
+../test/116040.pyc -- 
+# decompile failed
+
+# file ../test/116040.pyc
+# Deparsing stopped due to parse error

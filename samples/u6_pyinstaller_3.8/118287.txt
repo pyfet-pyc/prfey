@@ -1,0 +1,68 @@
+Instruction context:
+   
+ L.  82        14  POP_BLOCK        
+                  16  LOAD_CONST               True
+->                18  RETURN_VALUE     
+                20_0  COME_FROM_FINALLY     0  '0'
+Instruction context:
+   
+ L.  94        12  POP_BLOCK        
+                  14  LOAD_CONST               True
+->                16  RETURN_VALUE     
+                18_0  COME_FROM_FINALLY     0  '0'
+Instruction context:
+   
+ L. 106        12  POP_BLOCK        
+                  14  LOAD_CONST               True
+->                16  RETURN_VALUE     
+                18_0  COME_FROM_FINALLY     0  '0'
+Instruction context:
+   
+ L. 614       310  DUP_TOP          
+                 312  LOAD_GLOBAL              OperationFailure
+                 314  COMPARE_OP               exception-match
+             316_318  POP_JUMP_IF_FALSE   332  'to 332'
+                 320  POP_TOP          
+->               322  POP_TOP          
+                 324  POP_TOP          
+Instruction context:
+   
+ L. 836        78  DUP_TOP          
+                  80  LOAD_GLOBAL              socket
+                  82  LOAD_ATTR                error
+                  84  COMPARE_OP               exception-match
+                  86  POP_JUMP_IF_FALSE   108  'to 108'
+                  88  POP_TOP          
+->                90  POP_TOP          
+                  92  POP_TOP          
+Instruction context:
+   
+ L. 998        14  POP_BLOCK        
+->                16  BEGIN_FINALLY    
+                  18  WITH_CLEANUP_START
+                  20  WITH_CLEANUP_FINISH
+                  22  POP_FINALLY           0  ''
+                  24  LOAD_CONST               None
+                  26  RETURN_VALUE     
+                28_0  COME_FROM            12  '12'
+Instruction context:
+   
+ L.1054       114  POP_BLOCK        
+->               116  BEGIN_FINALLY    
+                 118  WITH_CLEANUP_START
+                 120  WITH_CLEANUP_FINISH
+                 122  POP_FINALLY           0  ''
+                 124  BREAK_LOOP          246  'to 246'
+               126_0  COME_FROM           112  '112'
+                 126  POP_BLOCK        
+                 128  BEGIN_FINALLY    
+               130_0  COME_FROM_WITH       86  '86'
+                 130  WITH_CLEANUP_START
+                 132  WITH_CLEANUP_FINISH
+                 134  END_FINALLY      
+
+../test/118287.pyc -- 
+# decompile failed
+
+# file ../test/118287.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,22 @@
+Instruction context:
+   
+ L. 109         6  LOAD_FAST                'self'
+                   8  LOAD_METHOD              read_element
+                  10  LOAD_FAST                'expected_tag'
+                  12  CALL_METHOD_1         1  ''
+                  14  POP_BLOCK        
+->                16  ROT_TWO          
+                  18  BEGIN_FINALLY    
+                  20  WITH_CLEANUP_START
+                  22  WITH_CLEANUP_FINISH
+                  24  POP_FINALLY           0  ''
+                  26  RETURN_VALUE     
+                28_0  COME_FROM_WITH        2  '2'
+                  28  WITH_CLEANUP_START
+                  30  WITH_CLEANUP_FINISH
+
+../test/156937.pyc -- 
+# decompile failed
+
+# file ../test/156937.pyc
+# Deparsing stopped due to parse error

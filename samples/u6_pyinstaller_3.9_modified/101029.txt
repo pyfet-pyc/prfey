@@ -1,0 +1,325 @@
+
+# file test/101029.pyc
+# --- This code section failed: ---
+
+ L.   4         0  LOAD_STR                 "Command-line parsing library\n\nThis module is an optparse-inspired command-line parsing library that:\n\n    - handles both optional and positional arguments\n    - produces highly informative usage messages\n    - supports parsers that dispatch to sub-parsers\n\nThe following is a simple usage example that sums integers from the\ncommand-line and writes the result to a file::\n\n    parser = argparse.ArgumentParser(\n        description='sum the integers at the command line')\n    parser.add_argument(\n        'integers', metavar='int', nargs='+', type=int,\n        help='an integer to be summed')\n    parser.add_argument(\n        '--log', default=sys.stdout, type=argparse.FileType('w'),\n        help='the file where the sum should be written')\n    args = parser.parse_args()\n    args.log.write('%s' % sum(args.integers))\n    args.log.close()\n\nThe module contains the following public classes:\n\n    - ArgumentParser -- The main entry point for command-line parsing. As the\n        example above shows, the add_argument() method is used to populate\n        the parser with actions for optional and positional arguments. Then\n        the parse_args() method is invoked to convert the args at the\n        command-line into an object with attributes.\n\n    - ArgumentError -- The exception raised by ArgumentParser objects when\n        there are errors with the parser's actions. Errors raised while\n        parsing the command-line are caught by ArgumentParser and emitted\n        as command-line messages.\n\n    - FileType -- A factory for defining types of files to be created. As the\n        example above shows, instances of FileType are typically passed as\n        the type= argument of add_argument() calls.\n\n    - Action -- The base class for parser actions. Typically actions are\n        selected by passing strings like 'store_true' or 'append_const' to\n        the action= argument of add_argument(). However, for greater\n        customization of ArgumentParser actions, subclasses of Action may\n        be defined and passed as the action= argument.\n\n    - HelpFormatter, RawDescriptionHelpFormatter, RawTextHelpFormatter,\n        ArgumentDefaultsHelpFormatter -- Formatter classes which\n        may be passed as the formatter_class= argument to the\n        ArgumentParser constructor. HelpFormatter is the default,\n        RawDescriptionHelpFormatter and RawTextHelpFormatter tell the parser\n        not to change the formatting for help text, and\n        ArgumentDefaultsHelpFormatter adds information about argument defaults\n        to the help.\n\nAll other classes in this module are considered implementation details.\n(Also note that HelpFormatter and RawDescriptionHelpFormatter are only\nconsidered public as object names -- the API of the formatter objects is\nstill considered an implementation detail.)\n"
+                2  STORE_NAME               __doc__
+
+ L.  65         4  LOAD_STR                 '1.1'
+                6  STORE_NAME               __version__
+
+ L.  66         8  BUILD_LIST_0          0 
+               10  LOAD_CONST               ('ArgumentParser', 'ArgumentError', 'ArgumentTypeError', 'BooleanOptionalAction', 'FileType', 'HelpFormatter', 'ArgumentDefaultsHelpFormatter', 'RawDescriptionHelpFormatter', 'RawTextHelpFormatter', 'MetavarTypeHelpFormatter', 'Namespace', 'Action', 'ONE_OR_MORE', 'OPTIONAL', 'PARSER', 'REMAINDER', 'SUPPRESS', 'ZERO_OR_MORE')
+               12  CALL_FINALLY         15  'to 15'
+               14  STORE_NAME               __all__
+
+ L.  88        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              os
+               22  STORE_NAME               _os
+
+ L.  89        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              re
+               30  STORE_NAME               _re
+
+ L.  90        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              sys
+               38  STORE_NAME               _sys
+
+ L.  92        40  LOAD_CONST               0
+               42  LOAD_CONST               ('gettext', 'ngettext')
+               44  IMPORT_NAME              gettext
+               46  IMPORT_FROM              gettext
+               48  STORE_NAME               _
+               50  IMPORT_FROM              ngettext
+               52  STORE_NAME               ngettext
+               54  POP_TOP          
+
+ L.  94        56  LOAD_STR                 '==SUPPRESS=='
+               58  STORE_NAME               SUPPRESS
+
+ L.  96        60  LOAD_STR                 '?'
+               62  STORE_NAME               OPTIONAL
+
+ L.  97        64  LOAD_STR                 '*'
+               66  STORE_NAME               ZERO_OR_MORE
+
+ L.  98        68  LOAD_STR                 '+'
+               70  STORE_NAME               ONE_OR_MORE
+
+ L.  99        72  LOAD_STR                 'A...'
+               74  STORE_NAME               PARSER
+
+ L. 100        76  LOAD_STR                 '...'
+               78  STORE_NAME               REMAINDER
+
+ L. 101        80  LOAD_STR                 '_unrecognized_args'
+               82  STORE_NAME               _UNRECOGNIZED_ARGS_ATTR
+
+ L. 107        84  LOAD_BUILD_CLASS 
+               86  LOAD_CODE                <code_object _AttributeHolder>
+               88  LOAD_STR                 '_AttributeHolder'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  LOAD_STR                 '_AttributeHolder'
+               94  LOAD_NAME                object
+               96  CALL_FUNCTION_3       3  ''
+               98  STORE_NAME               _AttributeHolder
+
+ L. 138       100  LOAD_CODE                <code_object _copy_items>
+              102  LOAD_STR                 '_copy_items'
+              104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              106  STORE_NAME               _copy_items
+
+ L. 154       108  LOAD_BUILD_CLASS 
+              110  LOAD_CODE                <code_object HelpFormatter>
+              112  LOAD_STR                 'HelpFormatter'
+              114  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              116  LOAD_STR                 'HelpFormatter'
+              118  LOAD_NAME                object
+              120  CALL_FUNCTION_3       3  ''
+              122  STORE_NAME               HelpFormatter
+
+ L. 662       124  LOAD_BUILD_CLASS 
+              126  LOAD_CODE                <code_object RawDescriptionHelpFormatter>
+              128  LOAD_STR                 'RawDescriptionHelpFormatter'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  LOAD_STR                 'RawDescriptionHelpFormatter'
+              134  LOAD_NAME                HelpFormatter
+              136  CALL_FUNCTION_3       3  ''
+              138  STORE_NAME               RawDescriptionHelpFormatter
+
+ L. 673       140  LOAD_BUILD_CLASS 
+              142  LOAD_CODE                <code_object RawTextHelpFormatter>
+              144  LOAD_STR                 'RawTextHelpFormatter'
+              146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              148  LOAD_STR                 'RawTextHelpFormatter'
+              150  LOAD_NAME                RawDescriptionHelpFormatter
+              152  CALL_FUNCTION_3       3  ''
+              154  STORE_NAME               RawTextHelpFormatter
+
+ L. 684       156  LOAD_BUILD_CLASS 
+              158  LOAD_CODE                <code_object ArgumentDefaultsHelpFormatter>
+              160  LOAD_STR                 'ArgumentDefaultsHelpFormatter'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  LOAD_STR                 'ArgumentDefaultsHelpFormatter'
+              166  LOAD_NAME                HelpFormatter
+              168  CALL_FUNCTION_3       3  ''
+              170  STORE_NAME               ArgumentDefaultsHelpFormatter
+
+ L. 701       172  LOAD_BUILD_CLASS 
+              174  LOAD_CODE                <code_object MetavarTypeHelpFormatter>
+              176  LOAD_STR                 'MetavarTypeHelpFormatter'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  LOAD_STR                 'MetavarTypeHelpFormatter'
+              182  LOAD_NAME                HelpFormatter
+              184  CALL_FUNCTION_3       3  ''
+              186  STORE_NAME               MetavarTypeHelpFormatter
+
+ L. 721       188  LOAD_CODE                <code_object _get_action_name>
+              190  LOAD_STR                 '_get_action_name'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  STORE_NAME               _get_action_name
+
+ L. 734       196  LOAD_BUILD_CLASS 
+              198  LOAD_CODE                <code_object ArgumentError>
+              200  LOAD_STR                 'ArgumentError'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  LOAD_STR                 'ArgumentError'
+              206  LOAD_NAME                Exception
+              208  CALL_FUNCTION_3       3  ''
+              210  STORE_NAME               ArgumentError
+
+ L. 754       212  LOAD_BUILD_CLASS 
+              214  LOAD_CODE                <code_object ArgumentTypeError>
+              216  LOAD_STR                 'ArgumentTypeError'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  LOAD_STR                 'ArgumentTypeError'
+              222  LOAD_NAME                Exception
+              224  CALL_FUNCTION_3       3  ''
+              226  STORE_NAME               ArgumentTypeError
+
+ L. 763       228  LOAD_BUILD_CLASS 
+              230  LOAD_CODE                <code_object Action>
+              232  LOAD_STR                 'Action'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  LOAD_STR                 'Action'
+              238  LOAD_NAME                _AttributeHolder
+              240  CALL_FUNCTION_3       3  ''
+              242  STORE_NAME               Action
+
+ L. 856       244  LOAD_BUILD_CLASS 
+              246  LOAD_CODE                <code_object BooleanOptionalAction>
+              248  LOAD_STR                 'BooleanOptionalAction'
+              250  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              252  LOAD_STR                 'BooleanOptionalAction'
+              254  LOAD_NAME                Action
+              256  CALL_FUNCTION_3       3  ''
+              258  STORE_NAME               BooleanOptionalAction
+
+ L. 897       260  LOAD_BUILD_CLASS 
+              262  LOAD_CODE                <code_object _StoreAction>
+              264  LOAD_STR                 '_StoreAction'
+              266  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              268  LOAD_STR                 '_StoreAction'
+              270  LOAD_NAME                Action
+              272  CALL_FUNCTION_3       3  ''
+              274  STORE_NAME               _StoreAction
+
+ L. 932       276  LOAD_BUILD_CLASS 
+              278  LOAD_CODE                <code_object _StoreConstAction>
+              280  LOAD_STR                 '_StoreConstAction'
+              282  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              284  LOAD_STR                 '_StoreConstAction'
+              286  LOAD_NAME                Action
+              288  CALL_FUNCTION_3       3  ''
+              290  STORE_NAME               _StoreConstAction
+
+ L. 955       292  LOAD_BUILD_CLASS 
+              294  LOAD_CODE                <code_object _StoreTrueAction>
+              296  LOAD_STR                 '_StoreTrueAction'
+              298  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              300  LOAD_STR                 '_StoreTrueAction'
+              302  LOAD_NAME                _StoreConstAction
+              304  CALL_FUNCTION_3       3  ''
+              306  STORE_NAME               _StoreTrueAction
+
+ L. 972       308  LOAD_BUILD_CLASS 
+              310  LOAD_CODE                <code_object _StoreFalseAction>
+              312  LOAD_STR                 '_StoreFalseAction'
+              314  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              316  LOAD_STR                 '_StoreFalseAction'
+              318  LOAD_NAME                _StoreConstAction
+              320  CALL_FUNCTION_3       3  ''
+              322  STORE_NAME               _StoreFalseAction
+
+ L. 989       324  LOAD_BUILD_CLASS 
+              326  LOAD_CODE                <code_object _AppendAction>
+              328  LOAD_STR                 '_AppendAction'
+              330  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              332  LOAD_STR                 '_AppendAction'
+              334  LOAD_NAME                Action
+              336  CALL_FUNCTION_3       3  ''
+              338  STORE_NAME               _AppendAction
+
+ L.1027       340  LOAD_BUILD_CLASS 
+              342  LOAD_CODE                <code_object _AppendConstAction>
+              344  LOAD_STR                 '_AppendConstAction'
+              346  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              348  LOAD_STR                 '_AppendConstAction'
+              350  LOAD_NAME                Action
+              352  CALL_FUNCTION_3       3  ''
+              354  STORE_NAME               _AppendConstAction
+
+ L.1054       356  LOAD_BUILD_CLASS 
+              358  LOAD_CODE                <code_object _CountAction>
+              360  LOAD_STR                 '_CountAction'
+              362  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              364  LOAD_STR                 '_CountAction'
+              366  LOAD_NAME                Action
+              368  CALL_FUNCTION_3       3  ''
+              370  STORE_NAME               _CountAction
+
+ L.1077       372  LOAD_BUILD_CLASS 
+              374  LOAD_CODE                <code_object _HelpAction>
+              376  LOAD_STR                 '_HelpAction'
+              378  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              380  LOAD_STR                 '_HelpAction'
+              382  LOAD_NAME                Action
+              384  CALL_FUNCTION_3       3  ''
+              386  STORE_NAME               _HelpAction
+
+ L.1096       388  LOAD_BUILD_CLASS 
+              390  LOAD_CODE                <code_object _VersionAction>
+              392  LOAD_STR                 '_VersionAction'
+              394  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              396  LOAD_STR                 '_VersionAction'
+              398  LOAD_NAME                Action
+              400  CALL_FUNCTION_3       3  ''
+              402  STORE_NAME               _VersionAction
+
+ L.1122       404  LOAD_BUILD_CLASS 
+              406  LOAD_CODE                <code_object _SubParsersAction>
+              408  LOAD_STR                 '_SubParsersAction'
+              410  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              412  LOAD_STR                 '_SubParsersAction'
+              414  LOAD_NAME                Action
+              416  CALL_FUNCTION_3       3  ''
+              418  STORE_NAME               _SubParsersAction
+
+ L.1215       420  LOAD_BUILD_CLASS 
+              422  LOAD_CODE                <code_object _ExtendAction>
+              424  LOAD_STR                 '_ExtendAction'
+              426  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              428  LOAD_STR                 '_ExtendAction'
+              430  LOAD_NAME                _AppendAction
+              432  CALL_FUNCTION_3       3  ''
+              434  STORE_NAME               _ExtendAction
+
+ L.1226       436  LOAD_BUILD_CLASS 
+              438  LOAD_CODE                <code_object FileType>
+              440  LOAD_STR                 'FileType'
+              442  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              444  LOAD_STR                 'FileType'
+              446  LOAD_NAME                object
+              448  CALL_FUNCTION_3       3  ''
+              450  STORE_NAME               FileType
+
+ L.1281       452  LOAD_BUILD_CLASS 
+              454  LOAD_CODE                <code_object Namespace>
+              456  LOAD_STR                 'Namespace'
+              458  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              460  LOAD_STR                 'Namespace'
+              462  LOAD_NAME                _AttributeHolder
+              464  CALL_FUNCTION_3       3  ''
+              466  STORE_NAME               Namespace
+
+ L.1301       468  LOAD_BUILD_CLASS 
+              470  LOAD_CODE                <code_object _ActionsContainer>
+              472  LOAD_STR                 '_ActionsContainer'
+              474  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              476  LOAD_STR                 '_ActionsContainer'
+              478  LOAD_NAME                object
+              480  CALL_FUNCTION_3       3  ''
+              482  STORE_NAME               _ActionsContainer
+
+ L.1611       484  LOAD_BUILD_CLASS 
+              486  LOAD_CODE                <code_object _ArgumentGroup>
+              488  LOAD_STR                 '_ArgumentGroup'
+              490  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              492  LOAD_STR                 '_ArgumentGroup'
+              494  LOAD_NAME                _ActionsContainer
+              496  CALL_FUNCTION_3       3  ''
+              498  STORE_NAME               _ArgumentGroup
+
+ L.1645       500  LOAD_BUILD_CLASS 
+              502  LOAD_CODE                <code_object _MutuallyExclusiveGroup>
+              504  LOAD_STR                 '_MutuallyExclusiveGroup'
+              506  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              508  LOAD_STR                 '_MutuallyExclusiveGroup'
+              510  LOAD_NAME                _ArgumentGroup
+              512  CALL_FUNCTION_3       3  ''
+              514  STORE_NAME               _MutuallyExclusiveGroup
+
+ L.1665       516  LOAD_BUILD_CLASS 
+              518  LOAD_CODE                <code_object ArgumentParser>
+              520  LOAD_STR                 'ArgumentParser'
+              522  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              524  LOAD_STR                 'ArgumentParser'
+              526  LOAD_NAME                _AttributeHolder
+              528  LOAD_NAME                _ActionsContainer
+              530  CALL_FUNCTION_4       4  ''
+              532  STORE_NAME               ArgumentParser
+
+Parse error at or near `CALL_FINALLY' instruction at offset 12
+
+Instruction context:
+   
+ L.  66         8  BUILD_LIST_0          0 
+                  10  LOAD_CONST               ('ArgumentParser', 'ArgumentError', 'ArgumentTypeError', 'BooleanOptionalAction', 'FileType', 'HelpFormatter', 'ArgumentDefaultsHelpFormatter', 'RawDescriptionHelpFormatter', 'RawTextHelpFormatter', 'MetavarTypeHelpFormatter', 'Namespace', 'Action', 'ONE_OR_MORE', 'OPTIONAL', 'PARSER', 'REMAINDER', 'SUPPRESS', 'ZERO_OR_MORE')
+->                12  CALL_FINALLY         15  'to 15'
+                  14  STORE_NAME               __all__
+
+test/101029.pyc -- 
+# decompile failed

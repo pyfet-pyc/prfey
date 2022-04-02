@@ -1,0 +1,176 @@
+
+# file test/162661.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 ':mod:`numpy.ma..mrecords`\n\nDefines the equivalent of :class:`numpy.recarrays` for masked arrays,\nwhere fields can be accessed as attributes.\nNote that :class:`numpy.ma.MaskedArray` already supports structured datatypes\nand the masking of individual fields.\n\n.. moduleauthor:: Pierre Gerard-Marchant\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  16         4  LOAD_CONST               0
+                6  LOAD_CONST               ('MAError', 'MaskedArray', 'masked', 'nomask', 'masked_array', 'getdata', 'getmaskarray', 'filled')
+                8  IMPORT_NAME_ATTR         numpy.ma
+               10  IMPORT_FROM              MAError
+               12  STORE_NAME               MAError
+               14  IMPORT_FROM              MaskedArray
+               16  STORE_NAME               MaskedArray
+               18  IMPORT_FROM              masked
+               20  STORE_NAME               masked
+               22  IMPORT_FROM              nomask
+               24  STORE_NAME               nomask
+               26  IMPORT_FROM              masked_array
+               28  STORE_NAME               masked_array
+               30  IMPORT_FROM              getdata
+               32  STORE_NAME               getdata
+               34  IMPORT_FROM              getmaskarray
+               36  STORE_NAME               getmaskarray
+               38  IMPORT_FROM              filled
+               40  STORE_NAME               filled
+               42  POP_TOP          
+
+ L.  20        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME_ATTR         numpy.ma
+               50  IMPORT_FROM              ma
+               52  STORE_NAME               ma
+               54  POP_TOP          
+
+ L.  21        56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              warnings
+               62  STORE_NAME               warnings
+
+ L.  23        64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              numpy
+               70  STORE_NAME               np
+
+ L.  24        72  LOAD_CONST               0
+               74  LOAD_CONST               ('bool_', 'dtype', 'ndarray', 'recarray', 'array')
+               76  IMPORT_NAME              numpy
+               78  IMPORT_FROM              bool_
+               80  STORE_NAME               bool_
+               82  IMPORT_FROM              dtype
+               84  STORE_NAME               dtype
+               86  IMPORT_FROM              ndarray
+               88  STORE_NAME               ndarray
+               90  IMPORT_FROM              recarray
+               92  STORE_NAME               recarray
+               94  IMPORT_FROM              array
+               96  STORE_NAME               narray
+               98  POP_TOP          
+
+ L.  27       100  LOAD_CONST               0
+              102  LOAD_CONST               ('fromarrays', 'fromrecords')
+              104  IMPORT_NAME_ATTR         numpy.core.records
+              106  IMPORT_FROM              fromarrays
+              108  STORE_NAME               recfromarrays
+              110  IMPORT_FROM              fromrecords
+              112  STORE_NAME               recfromrecords
+              114  POP_TOP          
+
+ L.  31       116  LOAD_NAME                np
+              118  LOAD_ATTR                core
+              120  LOAD_ATTR                records
+              122  LOAD_ATTR                _byteorderconv
+              124  STORE_NAME               _byteorderconv
+
+ L.  34       126  LOAD_NAME                ma
+              128  LOAD_ATTR                core
+              130  LOAD_ATTR                _check_fill_value
+              132  STORE_NAME               _check_fill_value
+
+ L.  37       134  BUILD_LIST_0          0 
+              136  LOAD_CONST               ('MaskedRecords', 'mrecarray', 'fromarrays', 'fromrecords', 'fromtextfile', 'addfield')
+              138  CALL_FINALLY        141  'to 141'
+              140  STORE_NAME               __all__
+
+ L.  42       142  BUILD_LIST_0          0 
+              144  LOAD_CONST               ('_data', '_mask', '_fieldmask', 'dtype')
+              146  CALL_FINALLY        149  'to 149'
+              148  STORE_NAME               reserved_fields
+
+ L.  45       150  LOAD_CONST               (None,)
+              152  LOAD_CODE                <code_object _checknames>
+              154  LOAD_STR                 '_checknames'
+              156  MAKE_FUNCTION_1          'default'
+              158  STORE_NAME               _checknames
+
+ L.  79       160  LOAD_CODE                <code_object _get_fieldmask>
+              162  LOAD_STR                 '_get_fieldmask'
+              164  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              166  STORE_NAME               _get_fieldmask
+
+ L.  86       168  LOAD_BUILD_CLASS 
+              170  LOAD_CODE                <code_object MaskedRecords>
+              172  LOAD_STR                 'MaskedRecords'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  LOAD_STR                 'MaskedRecords'
+              178  LOAD_NAME                MaskedArray
+              180  CALL_FUNCTION_3       3  ''
+              182  STORE_NAME               MaskedRecords
+
+ L. 489       184  LOAD_CODE                <code_object _mrreconstruct>
+              186  LOAD_STR                 '_mrreconstruct'
+              188  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              190  STORE_NAME               _mrreconstruct
+
+ L. 499       192  LOAD_NAME                MaskedRecords
+              194  STORE_NAME               mrecarray
+
+ L. 507       196  LOAD_CONST               (None, None, None, None, None, False, None, None)
+              198  LOAD_CODE                <code_object fromarrays>
+              200  LOAD_STR                 'fromarrays'
+              202  MAKE_FUNCTION_1          'default'
+              204  STORE_NAME               fromarrays
+
+ L. 550       206  LOAD_CONST               None
+              208  LOAD_CONST               None
+              210  LOAD_CONST               None
+              212  LOAD_CONST               None
+
+ L. 551       214  LOAD_CONST               None
+              216  LOAD_CONST               False
+              218  LOAD_CONST               None
+
+ L. 552       220  LOAD_CONST               None
+              222  LOAD_NAME                nomask
+
+ L. 550       224  BUILD_TUPLE_9         9 
+              226  LOAD_CODE                <code_object fromrecords>
+              228  LOAD_STR                 'fromrecords'
+              230  MAKE_FUNCTION_1          'default'
+              232  STORE_NAME               fromrecords
+
+ L. 615       234  LOAD_CODE                <code_object _guessvartypes>
+              236  LOAD_STR                 '_guessvartypes'
+              238  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              240  STORE_NAME               _guessvartypes
+
+ L. 652       242  LOAD_CODE                <code_object openfile>
+              244  LOAD_STR                 'openfile'
+              246  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              248  STORE_NAME               openfile
+
+ L. 672       250  LOAD_CONST               (None, '#', '', None, None)
+              252  LOAD_CODE                <code_object fromtextfile>
+              254  LOAD_STR                 'fromtextfile'
+              256  MAKE_FUNCTION_1          'default'
+              258  STORE_NAME               fromtextfile
+
+ L. 740       260  LOAD_CONST               (None,)
+              262  LOAD_CODE                <code_object addfield>
+              264  LOAD_STR                 'addfield'
+              266  MAKE_FUNCTION_1          'default'
+              268  STORE_NAME               addfield
+
+Parse error at or near `LOAD_NAME' instruction at offset 116
+
+Instruction context:
+-> 
+ L.  31       116  LOAD_NAME                np
+                 118  LOAD_ATTR                core
+                 120  LOAD_ATTR                records
+                 122  LOAD_ATTR                _byteorderconv
+                 124  STORE_NAME               _byteorderconv
+
+test/162661.pyc -- 
+# decompile failed

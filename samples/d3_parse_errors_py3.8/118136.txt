@@ -1,0 +1,47 @@
+Instruction context:
+   
+ L. 362       244  JUMP_FORWARD        248  'to 248'
+->               246  JUMP_BACK           126  'to 126'
+               248_0  COME_FROM           244  '244'
+               248_1  COME_FROM           212  '212'
+               248_2  COME_FROM           162  '162'
+Instruction context:
+   
+ L. 713       126  POP_EXCEPT       
+->               128  POP_TOP          
+                 130  JUMP_FORWARD        140  'to 140'
+                 132  POP_EXCEPT       
+                 134  JUMP_BACK            70  'to 70'
+               136_0  COME_FROM           114  '114'
+                 136  END_FINALLY      
+                 138  JUMP_BACK            70  'to 70'
+               140_0  COME_FROM           130  '130'
+               140_1  COME_FROM           102  '102'
+               140_2  COME_FROM            70  '70'
+Instruction context:
+-> 
+ L. 824       184  LOAD_FAST                'c'
+                 186  LOAD_CONST               b'='
+                 188  COMPARE_OP               !=
+                 190  POP_JUMP_IF_FALSE   214  'to 214'
+Instruction context:
+   
+ L. 883        54  POP_BLOCK        
+->                56  LOAD_CONST               None
+                  58  RETURN_VALUE     
+                60_0  COME_FROM            52  '52'
+Instruction context:
+   
+ L. 921        84  POP_EXCEPT       
+->                86  LOAD_CONST               None
+                  88  RETURN_VALUE     
+                90_0  COME_FROM            76  '76'
+                  90  END_FINALLY      
+                  92  JUMP_FORWARD         98  'to 98'
+                94_0  COME_FROM            54  '54'
+
+../test/118136.pyc -- 
+# decompile failed
+
+# file ../test/118136.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,23 @@
+Instruction context:
+   
+ L. 610        60  RAISE_VARARGS_0       0  'reraise'
+                62_0  COME_FROM            58  '58'
+                  62  POP_BLOCK        
+                  64  BEGIN_FINALLY    
+                66_0  COME_FROM_FINALLY    36  '36'
+                  66  LOAD_CONST               None
+                  68  STORE_FAST               'msg'
+                  70  DELETE_FAST              'msg'
+                  72  END_FINALLY      
+                  74  POP_EXCEPT       
+                  76  JUMP_FORWARD         94  'to 94'
+                78_0  COME_FROM            28  '28'
+                  78  END_FINALLY      
+->                80  JUMP_FORWARD         94  'to 94'
+                82_0  COME_FROM             6  '6'
+
+../test/137681.pyc -- 
+# decompile failed
+
+# file ../test/137681.pyc
+# Deparsing stopped due to parse error

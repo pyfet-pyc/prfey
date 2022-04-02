@@ -1,0 +1,96 @@
+Instruction context:
+   
+ L.  10        20  BUILD_LIST_0          0 
+                  22  LOAD_CONST               ('Number', 'Complex', 'Real', 'Rational', 'Integral')
+->                24  CALL_FINALLY         27  'to 27'
+                  26  STORE_NAME               __all__
+
+test/39413.pyc -- 
+# decompile failed
+
+# file test/39413.pyc
+# --- This code section failed: ---
+
+ L.   4         0  LOAD_STR                 'Abstract Base Classes (ABCs) for numbers, according to PEP 3141.\n\nTODO: Fill out more detailed documentation on the operators.'
+                2  STORE_NAME               __doc__
+
+ L.   8         4  LOAD_CONST               0
+                6  LOAD_CONST               ('ABCMeta', 'abstractmethod')
+                8  IMPORT_NAME              abc
+               10  IMPORT_FROM              ABCMeta
+               12  STORE_NAME               ABCMeta
+               14  IMPORT_FROM              abstractmethod
+               16  STORE_NAME               abstractmethod
+               18  POP_TOP          
+
+ L.  10        20  BUILD_LIST_0          0 
+               22  LOAD_CONST               ('Number', 'Complex', 'Real', 'Rational', 'Integral')
+               24  CALL_FINALLY         27  'to 27'
+               26  STORE_NAME               __all__
+
+ L.  12        28  LOAD_BUILD_CLASS 
+               30  LOAD_CODE                <code_object Number>
+               32  LOAD_STR                 'Number'
+               34  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               36  LOAD_STR                 'Number'
+               38  LOAD_NAME                ABCMeta
+               40  LOAD_CONST               ('metaclass',)
+               42  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+               44  STORE_NAME               Number
+
+ L.  32        46  LOAD_BUILD_CLASS 
+               48  LOAD_CODE                <code_object Complex>
+               50  LOAD_STR                 'Complex'
+               52  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               54  LOAD_STR                 'Complex'
+               56  LOAD_NAME                Number
+               58  CALL_FUNCTION_3       3  ''
+               60  STORE_NAME               Complex
+
+ L. 144        62  LOAD_NAME                Complex
+               64  LOAD_METHOD              register
+               66  LOAD_NAME                complex
+               68  CALL_METHOD_1         1  ''
+               70  POP_TOP          
+
+ L. 147        72  LOAD_BUILD_CLASS 
+               74  LOAD_CODE                <code_object Real>
+               76  LOAD_STR                 'Real'
+               78  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               80  LOAD_STR                 'Real'
+               82  LOAD_NAME                Complex
+               84  CALL_FUNCTION_3       3  ''
+               86  STORE_NAME               Real
+
+ L. 264        88  LOAD_NAME                Real
+               90  LOAD_METHOD              register
+               92  LOAD_NAME                float
+               94  CALL_METHOD_1         1  ''
+               96  POP_TOP          
+
+ L. 267        98  LOAD_BUILD_CLASS 
+              100  LOAD_CODE                <code_object Rational>
+              102  LOAD_STR                 'Rational'
+              104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              106  LOAD_STR                 'Rational'
+              108  LOAD_NAME                Real
+              110  CALL_FUNCTION_3       3  ''
+              112  STORE_NAME               Rational
+
+ L. 294       114  LOAD_BUILD_CLASS 
+              116  LOAD_CODE                <code_object Integral>
+              118  LOAD_STR                 'Integral'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  LOAD_STR                 'Integral'
+              124  LOAD_NAME                Rational
+              126  CALL_FUNCTION_3       3  ''
+              128  STORE_NAME               Integral
+
+ L. 393       130  LOAD_NAME                Integral
+              132  LOAD_METHOD              register
+              134  LOAD_NAME                int
+              136  CALL_METHOD_1         1  ''
+              138  POP_TOP          
+
+Parse error at or near `CALL_FINALLY' instruction at offset 24
+

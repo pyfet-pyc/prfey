@@ -1,0 +1,34 @@
+Instruction context:
+-> 
+ L.  58        48  DUP_TOP          
+                  50  LOAD_GLOBAL              OSError
+                  52  COMPARE_OP               exception-match
+                  54  POP_JUMP_IF_FALSE    66  'to 66'
+                  56  POP_TOP          
+                  58  POP_TOP          
+                  60  POP_TOP          
+Instruction context:
+   
+ L. 152       554  POP_EXCEPT       
+                 556  BREAK_LOOP          560  'to 560'
+               558_0  COME_FROM           544  '544'
+->               558  END_FINALLY      
+               560_0  COME_FROM           556  '556'
+               560_1  COME_FROM           536  '536'
+                 560  END_FINALLY      
+Instruction context:
+   
+ L. 249       290  POP_EXCEPT       
+                 292  BREAK_LOOP          296  'to 296'
+               294_0  COME_FROM           280  '280'
+->               294  END_FINALLY      
+               296_0  COME_FROM           292  '292'
+               296_1  COME_FROM           272  '272'
+                 296  JUMP_FORWARD        420  'to 420'
+               298_0  COME_FROM           150  '150'
+
+../test/18516.pyc -- 
+# decompile failed
+
+# file ../test/18516.pyc
+# Deparsing stopped due to parse error

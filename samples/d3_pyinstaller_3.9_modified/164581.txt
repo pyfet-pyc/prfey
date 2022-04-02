@@ -1,0 +1,29 @@
+Instruction context:
+   
+ L.  44        22  LOAD_GLOBAL              len
+                  24  LOAD_FAST                'self'
+                  26  LOAD_ATTR                dtypes
+                  28  CALL_FUNCTION_1       1  ''
+                  30  LOAD_CONST               2
+                  32  COMPARE_OP               ==
+                  34  POP_JUMP_IF_TRUE     40  'to 40'
+->                36  <74>             
+                  38  RAISE_VARARGS_1       1  'exception instance'
+Instruction context:
+-> 
+ L.  47        16  CALL_FINALLY         19  'to 19'
+                  18  WITH_CLEANUP_FINISH
+                  20  CALL_FUNCTION_EX      0  'positional arguments only'
+                  22  RETURN_VALUE     
+Instruction context:
+   
+ L. 162         8  BUILD_LIST_0          0 
+                  10  LOAD_CONST               ('bytes', 'KiB', 'MiB', 'GiB', 'TiB', 'PiB', 'EiB')
+->                12  CALL_FINALLY         15  'to 15'
+                  14  STORE_FAST               'units'
+
+test/164581.pyc -- 
+# decompile failed
+
+# file test/164581.pyc
+# Deparsing stopped due to parse error

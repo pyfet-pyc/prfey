@@ -1,0 +1,379 @@
+
+# file test/101043.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Generic (shallow and deep) copying operations.\n\nInterface summary:\n\n        import copy\n\n        x = copy.copy(y)        # make a shallow copy of y\n        x = copy.deepcopy(y)    # make a deep copy of y\n\nFor module specific errors, copy.Error is raised.\n\nThe difference between shallow and deep copying is only relevant for\ncompound objects (objects that contain other objects, like lists or\nclass instances).\n\n- A shallow copy constructs a new compound object and then (to the\n  extent possible) inserts *the same objects* into it that the\n  original contains.\n\n- A deep copy constructs a new compound object and then, recursively,\n  inserts *copies* into it of the objects found in the original.\n\nTwo problems often exist with deep copy operations that don\'t exist\nwith shallow copy operations:\n\n a) recursive objects (compound objects that, directly or indirectly,\n    contain a reference to themselves) may cause a recursive loop\n\n b) because deep copy copies *everything* it may copy too much, e.g.\n    administrative data structures that should be shared even between\n    copies\n\nPython\'s deep copy operation avoids these problems by:\n\n a) keeping a table of objects already copied during the current\n    copying pass\n\n b) letting user-defined classes override the copying operation or the\n    set of components copied\n\nThis version does not copy types like module, class, function, method,\nnor stack trace, stack frame, nor file, socket, window, nor array, nor\nany similar types.\n\nClasses can use the same interfaces to control copying that they use\nto control pickling: they can define methods called __getinitargs__(),\n__getstate__() and __setstate__().  See the documentation for module\n"pickle" for information on these methods.\n'
+                2  STORE_NAME               __doc__
+
+ L.  51         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              types
+               10  STORE_NAME               types
+
+ L.  52        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              weakref
+               18  STORE_NAME               weakref
+
+ L.  53        20  LOAD_CONST               0
+               22  LOAD_CONST               ('dispatch_table',)
+               24  IMPORT_NAME              copyreg
+               26  IMPORT_FROM              dispatch_table
+               28  STORE_NAME               dispatch_table
+               30  POP_TOP          
+
+ L.  55        32  LOAD_BUILD_CLASS 
+               34  LOAD_CODE                <code_object Error>
+               36  LOAD_STR                 'Error'
+               38  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               40  LOAD_STR                 'Error'
+               42  LOAD_NAME                Exception
+               44  CALL_FUNCTION_3       3  ''
+               46  STORE_NAME               Error
+
+ L.  57        48  LOAD_NAME                Error
+               50  STORE_NAME               error
+
+ L.  59        52  SETUP_FINALLY        70  'to 70'
+
+ L.  60        54  LOAD_CONST               0
+               56  LOAD_CONST               ('PyStringMap',)
+               58  IMPORT_NAME_ATTR         org.python.core
+               60  IMPORT_FROM              PyStringMap
+               62  STORE_NAME               PyStringMap
+               64  POP_TOP          
+               66  POP_BLOCK        
+               68  JUMP_FORWARD         92  'to 92'
+             70_0  COME_FROM_FINALLY    52  '52'
+
+ L.  61        70  DUP_TOP          
+               72  LOAD_NAME                ImportError
+               74  <121>                90  ''
+               76  POP_TOP          
+               78  POP_TOP          
+               80  POP_TOP          
+
+ L.  62        82  LOAD_CONST               None
+               84  STORE_NAME               PyStringMap
+               86  POP_EXCEPT       
+               88  JUMP_FORWARD         92  'to 92'
+               90  <48>             
+             92_0  COME_FROM            88  '88'
+             92_1  COME_FROM            68  '68'
+
+ L.  64        92  BUILD_LIST_0          0 
+               94  LOAD_CONST               ('Error', 'copy', 'deepcopy')
+               96  CALL_FINALLY         99  'to 99'
+               98  STORE_NAME               __all__
+
+ L.  66       100  LOAD_CODE                <code_object copy>
+              102  LOAD_STR                 'copy'
+              104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              106  STORE_NAME               copy
+
+ L. 105       108  BUILD_MAP_0           0 
+              110  DUP_TOP          
+              112  STORE_NAME               _copy_dispatch
+              114  STORE_NAME               d
+
+ L. 107       116  LOAD_CODE                <code_object _copy_immutable>
+              118  LOAD_STR                 '_copy_immutable'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  STORE_NAME               _copy_immutable
+
+ L. 109       124  LOAD_NAME                type
+              126  LOAD_CONST               None
+              128  CALL_FUNCTION_1       1  ''
+              130  LOAD_NAME                int
+              132  LOAD_NAME                float
+              134  LOAD_NAME                bool
+              136  LOAD_NAME                complex
+              138  LOAD_NAME                str
+              140  LOAD_NAME                tuple
+
+ L. 110       142  LOAD_NAME                bytes
+              144  LOAD_NAME                frozenset
+              146  LOAD_NAME                type
+              148  LOAD_NAME                range
+              150  LOAD_NAME                slice
+              152  LOAD_NAME                property
+
+ L. 111       154  LOAD_NAME                types
+              156  LOAD_ATTR                BuiltinFunctionType
+              158  LOAD_NAME                type
+              160  LOAD_NAME                Ellipsis
+              162  CALL_FUNCTION_1       1  ''
+              164  LOAD_NAME                type
+              166  LOAD_NAME                NotImplemented
+              168  CALL_FUNCTION_1       1  ''
+
+ L. 112       170  LOAD_NAME                types
+              172  LOAD_ATTR                FunctionType
+              174  LOAD_NAME                weakref
+              176  LOAD_ATTR                ref
+
+ L. 109       178  BUILD_TUPLE_18       18 
+              180  GET_ITER         
+              182  FOR_ITER            196  'to 196'
+              184  STORE_NAME               t
+
+ L. 113       186  LOAD_NAME                _copy_immutable
+              188  LOAD_NAME                d
+              190  LOAD_NAME                t
+              192  STORE_SUBSCR     
+              194  JUMP_BACK           182  'to 182'
+
+ L. 114       196  LOAD_NAME                getattr
+              198  LOAD_NAME                types
+              200  LOAD_STR                 'CodeType'
+              202  LOAD_CONST               None
+              204  CALL_FUNCTION_3       3  ''
+              206  STORE_NAME               t
+
+ L. 115       208  LOAD_NAME                t
+              210  LOAD_CONST               None
+              212  <117>                 1  ''
+              214  POP_JUMP_IF_FALSE   224  'to 224'
+
+ L. 116       216  LOAD_NAME                _copy_immutable
+              218  LOAD_NAME                d
+              220  LOAD_NAME                t
+              222  STORE_SUBSCR     
+            224_0  COME_FROM           214  '214'
+
+ L. 118       224  LOAD_NAME                list
+              226  LOAD_ATTR                copy
+              228  LOAD_NAME                d
+              230  LOAD_NAME                list
+              232  STORE_SUBSCR     
+
+ L. 119       234  LOAD_NAME                dict
+              236  LOAD_ATTR                copy
+              238  LOAD_NAME                d
+              240  LOAD_NAME                dict
+              242  STORE_SUBSCR     
+
+ L. 120       244  LOAD_NAME                set
+              246  LOAD_ATTR                copy
+              248  LOAD_NAME                d
+              250  LOAD_NAME                set
+              252  STORE_SUBSCR     
+
+ L. 121       254  LOAD_NAME                bytearray
+              256  LOAD_ATTR                copy
+              258  LOAD_NAME                d
+              260  LOAD_NAME                bytearray
+              262  STORE_SUBSCR     
+
+ L. 123       264  LOAD_NAME                PyStringMap
+              266  LOAD_CONST               None
+              268  <117>                 1  ''
+          270_272  POP_JUMP_IF_FALSE   284  'to 284'
+
+ L. 124       274  LOAD_NAME                PyStringMap
+              276  LOAD_ATTR                copy
+              278  LOAD_NAME                d
+              280  LOAD_NAME                PyStringMap
+              282  STORE_SUBSCR     
+            284_0  COME_FROM           270  '270'
+
+ L. 126       284  DELETE_NAME              d
+              286  DELETE_NAME              t
+
+ L. 128       288  LOAD_CONST               None
+              290  BUILD_LIST_0          0 
+              292  BUILD_TUPLE_2         2 
+              294  LOAD_CODE                <code_object deepcopy>
+              296  LOAD_STR                 'deepcopy'
+              298  MAKE_FUNCTION_1          'default'
+              300  STORE_NAME               deepcopy
+
+ L. 180       302  BUILD_MAP_0           0 
+              304  DUP_TOP          
+              306  STORE_NAME               _deepcopy_dispatch
+              308  STORE_NAME               d
+
+ L. 182       310  LOAD_CODE                <code_object _deepcopy_atomic>
+              312  LOAD_STR                 '_deepcopy_atomic'
+              314  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              316  STORE_NAME               _deepcopy_atomic
+
+ L. 184       318  LOAD_NAME                _deepcopy_atomic
+              320  LOAD_NAME                d
+              322  LOAD_NAME                type
+              324  LOAD_CONST               None
+              326  CALL_FUNCTION_1       1  ''
+              328  STORE_SUBSCR     
+
+ L. 185       330  LOAD_NAME                _deepcopy_atomic
+              332  LOAD_NAME                d
+              334  LOAD_NAME                type
+              336  LOAD_NAME                Ellipsis
+              338  CALL_FUNCTION_1       1  ''
+              340  STORE_SUBSCR     
+
+ L. 186       342  LOAD_NAME                _deepcopy_atomic
+              344  LOAD_NAME                d
+              346  LOAD_NAME                type
+              348  LOAD_NAME                NotImplemented
+              350  CALL_FUNCTION_1       1  ''
+              352  STORE_SUBSCR     
+
+ L. 187       354  LOAD_NAME                _deepcopy_atomic
+              356  LOAD_NAME                d
+              358  LOAD_NAME                int
+              360  STORE_SUBSCR     
+
+ L. 188       362  LOAD_NAME                _deepcopy_atomic
+              364  LOAD_NAME                d
+              366  LOAD_NAME                float
+              368  STORE_SUBSCR     
+
+ L. 189       370  LOAD_NAME                _deepcopy_atomic
+              372  LOAD_NAME                d
+              374  LOAD_NAME                bool
+              376  STORE_SUBSCR     
+
+ L. 190       378  LOAD_NAME                _deepcopy_atomic
+              380  LOAD_NAME                d
+              382  LOAD_NAME                complex
+              384  STORE_SUBSCR     
+
+ L. 191       386  LOAD_NAME                _deepcopy_atomic
+              388  LOAD_NAME                d
+              390  LOAD_NAME                bytes
+              392  STORE_SUBSCR     
+
+ L. 192       394  LOAD_NAME                _deepcopy_atomic
+              396  LOAD_NAME                d
+              398  LOAD_NAME                str
+              400  STORE_SUBSCR     
+
+ L. 193       402  LOAD_NAME                _deepcopy_atomic
+              404  LOAD_NAME                d
+              406  LOAD_NAME                types
+              408  LOAD_ATTR                CodeType
+              410  STORE_SUBSCR     
+
+ L. 194       412  LOAD_NAME                _deepcopy_atomic
+              414  LOAD_NAME                d
+              416  LOAD_NAME                type
+              418  STORE_SUBSCR     
+
+ L. 195       420  LOAD_NAME                _deepcopy_atomic
+              422  LOAD_NAME                d
+              424  LOAD_NAME                types
+              426  LOAD_ATTR                BuiltinFunctionType
+              428  STORE_SUBSCR     
+
+ L. 196       430  LOAD_NAME                _deepcopy_atomic
+              432  LOAD_NAME                d
+              434  LOAD_NAME                types
+              436  LOAD_ATTR                FunctionType
+              438  STORE_SUBSCR     
+
+ L. 197       440  LOAD_NAME                _deepcopy_atomic
+              442  LOAD_NAME                d
+              444  LOAD_NAME                weakref
+              446  LOAD_ATTR                ref
+              448  STORE_SUBSCR     
+
+ L. 198       450  LOAD_NAME                _deepcopy_atomic
+              452  LOAD_NAME                d
+              454  LOAD_NAME                property
+              456  STORE_SUBSCR     
+
+ L. 200       458  LOAD_NAME                deepcopy
+              460  BUILD_TUPLE_1         1 
+              462  LOAD_CODE                <code_object _deepcopy_list>
+              464  LOAD_STR                 '_deepcopy_list'
+              466  MAKE_FUNCTION_1          'default'
+              468  STORE_NAME               _deepcopy_list
+
+ L. 207       470  LOAD_NAME                _deepcopy_list
+              472  LOAD_NAME                d
+              474  LOAD_NAME                list
+              476  STORE_SUBSCR     
+
+ L. 209       478  LOAD_NAME                deepcopy
+              480  BUILD_TUPLE_1         1 
+              482  LOAD_CODE                <code_object _deepcopy_tuple>
+              484  LOAD_STR                 '_deepcopy_tuple'
+              486  MAKE_FUNCTION_1          'default'
+              488  STORE_NAME               _deepcopy_tuple
+
+ L. 224       490  LOAD_NAME                _deepcopy_tuple
+              492  LOAD_NAME                d
+              494  LOAD_NAME                tuple
+              496  STORE_SUBSCR     
+
+ L. 226       498  LOAD_NAME                deepcopy
+              500  BUILD_TUPLE_1         1 
+              502  LOAD_CODE                <code_object _deepcopy_dict>
+              504  LOAD_STR                 '_deepcopy_dict'
+              506  MAKE_FUNCTION_1          'default'
+              508  STORE_NAME               _deepcopy_dict
+
+ L. 232       510  LOAD_NAME                _deepcopy_dict
+              512  LOAD_NAME                d
+              514  LOAD_NAME                dict
+              516  STORE_SUBSCR     
+
+ L. 233       518  LOAD_NAME                PyStringMap
+              520  LOAD_CONST               None
+              522  <117>                 1  ''
+          524_526  POP_JUMP_IF_FALSE   536  'to 536'
+
+ L. 234       528  LOAD_NAME                _deepcopy_dict
+              530  LOAD_NAME                d
+              532  LOAD_NAME                PyStringMap
+              534  STORE_SUBSCR     
+            536_0  COME_FROM           524  '524'
+
+ L. 236       536  LOAD_CODE                <code_object _deepcopy_method>
+              538  LOAD_STR                 '_deepcopy_method'
+              540  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              542  STORE_NAME               _deepcopy_method
+
+ L. 238       544  LOAD_NAME                _deepcopy_method
+              546  LOAD_NAME                d
+              548  LOAD_NAME                types
+              550  LOAD_ATTR                MethodType
+              552  STORE_SUBSCR     
+
+ L. 240       554  DELETE_NAME              d
+
+ L. 242       556  LOAD_CODE                <code_object _keep_alive>
+              558  LOAD_STR                 '_keep_alive'
+              560  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              562  STORE_NAME               _keep_alive
+
+ L. 259       564  LOAD_CONST               None
+              566  LOAD_CONST               None
+              568  LOAD_CONST               None
+
+ L. 260       570  LOAD_NAME                deepcopy
+
+ L. 258       572  BUILD_TUPLE_4         4 
+              574  LOAD_CODE                <code_object _reconstruct>
+              576  LOAD_STR                 '_reconstruct'
+              578  MAKE_FUNCTION_1          'default'
+              580  STORE_NAME               _reconstruct
+
+ L. 303       582  DELETE_NAME              types
+              584  DELETE_NAME              weakref
+              586  DELETE_NAME              PyStringMap
+
+Parse error at or near `<121>' instruction at offset 74
+
+Instruction context:
+   
+ L.  61        70  DUP_TOP          
+                  72  LOAD_NAME                ImportError
+->                74  <121>                90  ''
+                  76  POP_TOP          
+                  78  POP_TOP          
+                  80  POP_TOP          
+
+test/101043.pyc -- 
+# decompile failed

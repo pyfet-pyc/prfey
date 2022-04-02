@@ -1,0 +1,25 @@
+Instruction context:
+   
+ L.  60        64  LOAD_GLOBAL              sys
+                  66  LOAD_ATTR                flags
+                  68  LOAD_ATTR                ignore_environment
+                  70  POP_JUMP_IF_TRUE     98  'to 98'
+                  72  LOAD_STR                 'PYTHON_DOM'
+                  74  LOAD_FAST                'os'
+                  76  LOAD_ATTR                environ
+->                78  <118>                 0  ''
+                  80  POP_JUMP_IF_FALSE    98  'to 98'
+Instruction context:
+   
+ L.  89        40  LOAD_FAST                'feature'
+                  42  LOAD_CONST               0
+                  44  BINARY_SUBSCR    
+                  46  LOAD_STR                 '0123456789'
+->                48  <118>                 0  ''
+                  50  POP_JUMP_IF_FALSE    66  'to 66'
+
+test/101853.pyc -- 
+# decompile failed
+
+# file test/101853.pyc
+# Deparsing stopped due to parse error

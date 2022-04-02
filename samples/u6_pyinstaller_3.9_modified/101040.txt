@@ -1,0 +1,264 @@
+
+# file test/101040.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Configuration file parser.\n\nA configuration file consists of sections, lead by a "[section]" header,\nand followed by "name: value" entries, with continuations and such in\nthe style of RFC 822.\n\nIntrinsic defaults can be specified by passing them into the\nConfigParser constructor as a dictionary.\n\nclass:\n\nConfigParser -- responsible for parsing a list of\n                    configuration files, and managing the parsed database.\n\n    methods:\n\n    __init__(defaults=None, dict_type=_default_dict, allow_no_value=False,\n             delimiters=(\'=\', \':\'), comment_prefixes=(\'#\', \';\'),\n             inline_comment_prefixes=None, strict=True,\n             empty_lines_in_values=True, default_section=\'DEFAULT\',\n             interpolation=<unset>, converters=<unset>):\n        Create the parser. When `defaults\' is given, it is initialized into the\n        dictionary or intrinsic defaults. The keys must be strings, the values\n        must be appropriate for %()s string interpolation.\n\n        When `dict_type\' is given, it will be used to create the dictionary\n        objects for the list of sections, for the options within a section, and\n        for the default values.\n\n        When `delimiters\' is given, it will be used as the set of substrings\n        that divide keys from values.\n\n        When `comment_prefixes\' is given, it will be used as the set of\n        substrings that prefix comments in empty lines. Comments can be\n        indented.\n\n        When `inline_comment_prefixes\' is given, it will be used as the set of\n        substrings that prefix comments in non-empty lines.\n\n        When `strict` is True, the parser won\'t allow for any section or option\n        duplicates while reading from a single source (file, string or\n        dictionary). Default is True.\n\n        When `empty_lines_in_values\' is False (default: True), each empty line\n        marks the end of an option. Otherwise, internal empty lines of\n        a multiline option are kept as part of the value.\n\n        When `allow_no_value\' is True (default: False), options without\n        values are accepted; the value presented for these is None.\n\n        When `default_section\' is given, the name of the special section is\n        named accordingly. By default it is called ``"DEFAULT"`` but this can\n        be customized to point to any other valid section name. Its current\n        value can be retrieved using the ``parser_instance.default_section``\n        attribute and may be modified at runtime.\n\n        When `interpolation` is given, it should be an Interpolation subclass\n        instance. It will be used as the handler for option value\n        pre-processing when using getters. RawConfigParser objects don\'t do\n        any sort of interpolation, whereas ConfigParser uses an instance of\n        BasicInterpolation. The library also provides a ``zc.buildbot``\n        inspired ExtendedInterpolation implementation.\n\n        When `converters` is given, it should be a dictionary where each key\n        represents the name of a type converter and each value is a callable\n        implementing the conversion from string to the desired datatype. Every\n        converter gets its corresponding get*() method on the parser object and\n        section proxies.\n\n    sections()\n        Return all the configuration section names, sans DEFAULT.\n\n    has_section(section)\n        Return whether the given section exists.\n\n    has_option(section, option)\n        Return whether the given option exists in the given section.\n\n    options(section)\n        Return list of configuration options for the named section.\n\n    read(filenames, encoding=None)\n        Read and parse the iterable of named configuration files, given by\n        name.  A single filename is also allowed.  Non-existing files\n        are ignored.  Return list of successfully read files.\n\n    read_file(f, filename=None)\n        Read and parse one configuration file, given as a file object.\n        The filename defaults to f.name; it is only used in error\n        messages (if f has no `name\' attribute, the string `<???>\' is used).\n\n    read_string(string)\n        Read configuration from a given string.\n\n    read_dict(dictionary)\n        Read configuration from a dictionary. Keys are section names,\n        values are dictionaries with keys and values that should be present\n        in the section. If the used dictionary type preserves order, sections\n        and their keys will be added in order. Values are automatically\n        converted to strings.\n\n    get(section, option, raw=False, vars=None, fallback=_UNSET)\n        Return a string value for the named option.  All % interpolations are\n        expanded in the return values, based on the defaults passed into the\n        constructor and the DEFAULT section.  Additional substitutions may be\n        provided using the `vars\' argument, which must be a dictionary whose\n        contents override any pre-existing defaults. If `option\' is a key in\n        `vars\', the value from `vars\' is used.\n\n    getint(section, options, raw=False, vars=None, fallback=_UNSET)\n        Like get(), but convert value to an integer.\n\n    getfloat(section, options, raw=False, vars=None, fallback=_UNSET)\n        Like get(), but convert value to a float.\n\n    getboolean(section, options, raw=False, vars=None, fallback=_UNSET)\n        Like get(), but convert value to a boolean (currently case\n        insensitively defined as 0, false, no, off for False, and 1, true,\n        yes, on for True).  Returns False or True.\n\n    items(section=_UNSET, raw=False, vars=None)\n        If section is given, return a list of tuples with (name, value) for\n        each option in the section. Otherwise, return a list of tuples with\n        (section_name, section_proxy) for each section, including DEFAULTSECT.\n\n    remove_section(section)\n        Remove the given file section and all its options.\n\n    remove_option(section, option)\n        Remove the given option from the given section.\n\n    set(section, option, value)\n        Set the given option.\n\n    write(fp, space_around_delimiters=True)\n        Write the configuration state in .ini format. If\n        `space_around_delimiters\' is True (the default), delimiters\n        between keys and values are surrounded by spaces.\n'
+                2  STORE_NAME               __doc__
+
+ L. 141         4  LOAD_CONST               0
+                6  LOAD_CONST               ('MutableMapping',)
+                8  IMPORT_NAME_ATTR         collections.abc
+               10  IMPORT_FROM              MutableMapping
+               12  STORE_NAME               MutableMapping
+               14  POP_TOP          
+
+ L. 142        16  LOAD_CONST               0
+               18  LOAD_CONST               ('ChainMap',)
+               20  IMPORT_NAME              collections
+               22  IMPORT_FROM              ChainMap
+               24  STORE_NAME               _ChainMap
+               26  POP_TOP          
+
+ L. 143        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              functools
+               34  STORE_NAME               functools
+
+ L. 144        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              io
+               42  STORE_NAME               io
+
+ L. 145        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              itertools
+               50  STORE_NAME               itertools
+
+ L. 146        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              os
+               58  STORE_NAME               os
+
+ L. 147        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              re
+               66  STORE_NAME               re
+
+ L. 148        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              sys
+               74  STORE_NAME               sys
+
+ L. 149        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME              warnings
+               82  STORE_NAME               warnings
+
+ L. 151        84  BUILD_LIST_0          0 
+               86  LOAD_CONST               ('NoSectionError', 'DuplicateOptionError', 'DuplicateSectionError', 'NoOptionError', 'InterpolationError', 'InterpolationDepthError', 'InterpolationMissingOptionError', 'InterpolationSyntaxError', 'ParsingError', 'MissingSectionHeaderError', 'ConfigParser', 'SafeConfigParser', 'RawConfigParser', 'Interpolation', 'BasicInterpolation', 'ExtendedInterpolation', 'LegacyInterpolation', 'SectionProxy', 'ConverterMapping', 'DEFAULTSECT', 'MAX_INTERPOLATION_DEPTH')
+               88  CALL_FINALLY         91  'to 91'
+               90  STORE_NAME               __all__
+
+ L. 160        92  LOAD_NAME                dict
+               94  STORE_NAME               _default_dict
+
+ L. 161        96  LOAD_STR                 'DEFAULT'
+               98  STORE_NAME               DEFAULTSECT
+
+ L. 163       100  LOAD_CONST               10
+              102  STORE_NAME               MAX_INTERPOLATION_DEPTH
+
+ L. 168       104  LOAD_BUILD_CLASS 
+              106  LOAD_CODE                <code_object Error>
+              108  LOAD_STR                 'Error'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  LOAD_STR                 'Error'
+              114  LOAD_NAME                Exception
+              116  CALL_FUNCTION_3       3  ''
+              118  STORE_NAME               Error
+
+ L. 181       120  LOAD_BUILD_CLASS 
+              122  LOAD_CODE                <code_object NoSectionError>
+              124  LOAD_STR                 'NoSectionError'
+              126  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              128  LOAD_STR                 'NoSectionError'
+              130  LOAD_NAME                Error
+              132  CALL_FUNCTION_3       3  ''
+              134  STORE_NAME               NoSectionError
+
+ L. 190       136  LOAD_BUILD_CLASS 
+              138  LOAD_CODE                <code_object DuplicateSectionError>
+              140  LOAD_STR                 'DuplicateSectionError'
+              142  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              144  LOAD_STR                 'DuplicateSectionError'
+              146  LOAD_NAME                Error
+              148  CALL_FUNCTION_3       3  ''
+              150  STORE_NAME               DuplicateSectionError
+
+ L. 216       152  LOAD_BUILD_CLASS 
+              154  LOAD_CODE                <code_object DuplicateOptionError>
+              156  LOAD_STR                 'DuplicateOptionError'
+              158  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              160  LOAD_STR                 'DuplicateOptionError'
+              162  LOAD_NAME                Error
+              164  CALL_FUNCTION_3       3  ''
+              166  STORE_NAME               DuplicateOptionError
+
+ L. 243       168  LOAD_BUILD_CLASS 
+              170  LOAD_CODE                <code_object NoOptionError>
+              172  LOAD_STR                 'NoOptionError'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  LOAD_STR                 'NoOptionError'
+              178  LOAD_NAME                Error
+              180  CALL_FUNCTION_3       3  ''
+              182  STORE_NAME               NoOptionError
+
+ L. 254       184  LOAD_BUILD_CLASS 
+              186  LOAD_CODE                <code_object InterpolationError>
+              188  LOAD_STR                 'InterpolationError'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  LOAD_STR                 'InterpolationError'
+              194  LOAD_NAME                Error
+              196  CALL_FUNCTION_3       3  ''
+              198  STORE_NAME               InterpolationError
+
+ L. 264       200  LOAD_BUILD_CLASS 
+              202  LOAD_CODE                <code_object InterpolationMissingOptionError>
+              204  LOAD_STR                 'InterpolationMissingOptionError'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  LOAD_STR                 'InterpolationMissingOptionError'
+              210  LOAD_NAME                InterpolationError
+              212  CALL_FUNCTION_3       3  ''
+              214  STORE_NAME               InterpolationMissingOptionError
+
+ L. 276       216  LOAD_BUILD_CLASS 
+              218  LOAD_CODE                <code_object InterpolationSyntaxError>
+              220  LOAD_STR                 'InterpolationSyntaxError'
+              222  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              224  LOAD_STR                 'InterpolationSyntaxError'
+              226  LOAD_NAME                InterpolationError
+              228  CALL_FUNCTION_3       3  ''
+              230  STORE_NAME               InterpolationSyntaxError
+
+ L. 284       232  LOAD_BUILD_CLASS 
+              234  LOAD_CODE                <code_object InterpolationDepthError>
+              236  LOAD_STR                 'InterpolationDepthError'
+              238  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              240  LOAD_STR                 'InterpolationDepthError'
+              242  LOAD_NAME                InterpolationError
+              244  CALL_FUNCTION_3       3  ''
+              246  STORE_NAME               InterpolationDepthError
+
+ L. 297       248  LOAD_BUILD_CLASS 
+              250  LOAD_CODE                <code_object ParsingError>
+              252  LOAD_STR                 'ParsingError'
+              254  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              256  LOAD_STR                 'ParsingError'
+              258  LOAD_NAME                Error
+              260  CALL_FUNCTION_3       3  ''
+              262  STORE_NAME               ParsingError
+
+ L. 340       264  LOAD_BUILD_CLASS 
+              266  LOAD_CODE                <code_object MissingSectionHeaderError>
+              268  LOAD_STR                 'MissingSectionHeaderError'
+              270  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              272  LOAD_STR                 'MissingSectionHeaderError'
+              274  LOAD_NAME                ParsingError
+              276  CALL_FUNCTION_3       3  ''
+              278  STORE_NAME               MissingSectionHeaderError
+
+ L. 357       280  LOAD_NAME                object
+              282  CALL_FUNCTION_0       0  ''
+              284  STORE_NAME               _UNSET
+
+ L. 360       286  LOAD_BUILD_CLASS 
+              288  LOAD_CODE                <code_object Interpolation>
+              290  LOAD_STR                 'Interpolation'
+              292  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              294  LOAD_STR                 'Interpolation'
+              296  CALL_FUNCTION_2       2  ''
+              298  STORE_NAME               Interpolation
+
+ L. 376       300  LOAD_BUILD_CLASS 
+              302  LOAD_CODE                <code_object BasicInterpolation>
+              304  LOAD_STR                 'BasicInterpolation'
+              306  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              308  LOAD_STR                 'BasicInterpolation'
+              310  LOAD_NAME                Interpolation
+              312  CALL_FUNCTION_3       3  ''
+              314  STORE_NAME               BasicInterpolation
+
+ L. 448       316  LOAD_BUILD_CLASS 
+              318  LOAD_CODE                <code_object ExtendedInterpolation>
+              320  LOAD_STR                 'ExtendedInterpolation'
+              322  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              324  LOAD_STR                 'ExtendedInterpolation'
+              326  LOAD_NAME                Interpolation
+              328  CALL_FUNCTION_3       3  ''
+              330  STORE_NAME               ExtendedInterpolation
+
+ L. 522       332  LOAD_BUILD_CLASS 
+              334  LOAD_CODE                <code_object LegacyInterpolation>
+              336  LOAD_STR                 'LegacyInterpolation'
+              338  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              340  LOAD_STR                 'LegacyInterpolation'
+              342  LOAD_NAME                Interpolation
+              344  CALL_FUNCTION_3       3  ''
+              346  STORE_NAME               LegacyInterpolation
+
+ L. 560       348  LOAD_BUILD_CLASS 
+              350  LOAD_CODE                <code_object RawConfigParser>
+              352  LOAD_STR                 'RawConfigParser'
+              354  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              356  LOAD_STR                 'RawConfigParser'
+              358  LOAD_NAME                MutableMapping
+              360  CALL_FUNCTION_3       3  ''
+              362  STORE_NAME               RawConfigParser
+
+ L.1192       364  LOAD_BUILD_CLASS 
+              366  LOAD_CODE                <code_object ConfigParser>
+              368  LOAD_STR                 'ConfigParser'
+              370  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              372  LOAD_STR                 'ConfigParser'
+              374  LOAD_NAME                RawConfigParser
+              376  CALL_FUNCTION_3       3  ''
+              378  STORE_NAME               ConfigParser
+
+ L.1224       380  LOAD_BUILD_CLASS 
+              382  LOAD_CODE                <code_object SafeConfigParser>
+              384  LOAD_STR                 'SafeConfigParser'
+              386  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              388  LOAD_STR                 'SafeConfigParser'
+              390  LOAD_NAME                ConfigParser
+              392  CALL_FUNCTION_3       3  ''
+              394  STORE_NAME               SafeConfigParser
+
+ L.1237       396  LOAD_BUILD_CLASS 
+              398  LOAD_CODE                <code_object SectionProxy>
+              400  LOAD_STR                 'SectionProxy'
+              402  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              404  LOAD_STR                 'SectionProxy'
+              406  LOAD_NAME                MutableMapping
+              408  CALL_FUNCTION_3       3  ''
+              410  STORE_NAME               SectionProxy
+
+ L.1307       412  LOAD_BUILD_CLASS 
+              414  LOAD_CODE                <code_object ConverterMapping>
+              416  LOAD_STR                 'ConverterMapping'
+              418  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              420  LOAD_STR                 'ConverterMapping'
+              422  LOAD_NAME                MutableMapping
+              424  CALL_FUNCTION_3       3  ''
+              426  STORE_NAME               ConverterMapping
+
+Parse error at or near `CALL_FINALLY' instruction at offset 88
+
+Instruction context:
+   
+ L. 151        84  BUILD_LIST_0          0 
+                  86  LOAD_CONST               ('NoSectionError', 'DuplicateOptionError', 'DuplicateSectionError', 'NoOptionError', 'InterpolationError', 'InterpolationDepthError', 'InterpolationMissingOptionError', 'InterpolationSyntaxError', 'ParsingError', 'MissingSectionHeaderError', 'ConfigParser', 'SafeConfigParser', 'RawConfigParser', 'Interpolation', 'BasicInterpolation', 'ExtendedInterpolation', 'LegacyInterpolation', 'SectionProxy', 'ConverterMapping', 'DEFAULTSECT', 'MAX_INTERPOLATION_DEPTH')
+->                88  CALL_FINALLY         91  'to 91'
+                  90  STORE_NAME               __all__
+
+test/101040.pyc -- 
+# decompile failed

@@ -1,0 +1,220 @@
+Instruction context:
+   
+ L.  66        20  LOAD_FAST                'd'
+                  22  POP_JUMP_IF_FALSE     4  'to 4'
+                  24  LOAD_FAST                'key'
+                  26  LOAD_FAST                'd'
+->                28  <118>                 0  ''
+                  30  POP_JUMP_IF_FALSE     4  'to 4'
+Instruction context:
+   
+ L.  75        16  DUP_TOP          
+                  18  LOAD_GLOBAL              RegError
+->                20  <121>                34  ''
+                  22  POP_TOP          
+                  24  POP_TOP          
+                  26  POP_TOP          
+Instruction context:
+   
+ L.  96        16  DUP_TOP          
+                  18  LOAD_GLOBAL              RegError
+->                20  <121>                34  ''
+                  22  POP_TOP          
+                  24  POP_TOP          
+                  26  POP_TOP          
+Instruction context:
+   
+ L. 113        12  LOAD_FAST                'dec'
+                  14  LOAD_CONST               None
+->                16  <117>                 1  ''
+                  18  POP_JUMP_IF_FALSE    52  'to 52'
+Instruction context:
+   
+ L. 141        92  DUP_TOP          
+                  94  LOAD_GLOBAL              KeyError
+->                96  <121>               116  ''
+                  98  POP_TOP          
+                 100  POP_TOP          
+                 102  POP_TOP          
+Instruction context:
+   
+ L. 202        24  LOAD_FAST                'np'
+                  26  LOAD_FAST                'reduced_paths'
+->                28  <118>                 1  ''
+                  30  POP_JUMP_IF_FALSE     8  'to 8'
+Instruction context:
+   
+ L. 212        24  LOAD_FAST                'i'
+                  26  LOAD_FAST                'newList'
+->                28  <118>                 1  ''
+                  30  POP_JUMP_IF_FALSE    20  'to 20'
+Instruction context:
+   
+ L. 227        30  DUP_TOP          
+                  32  LOAD_GLOBAL              KeyError
+->                34  <121>                60  ''
+                  36  POP_TOP          
+                  38  POP_TOP          
+                  40  POP_TOP          
+Instruction context:
+   
+ L. 256         8  BUILD_SET_0           0 
+                  10  LOAD_CONST               frozenset({'libpath', 'lib', 'path', 'include'})
+->                12  POP_FINALLY           1  ''
+                  14  STORE_FAST               'interesting'
+Instruction context:
+   
+ L. 313        26  BUILD_LIST_0          0 
+                  28  LOAD_CONST               ('.cc', '.cpp', '.cxx')
+->                30  CALL_FINALLY         33  'to 33'
+                  32  STORE_NAME               _cpp_extensions
+
+test/115745.pyc -- 
+# decompile failed
+
+# file test/115745.pyc
+# --- This code section failed: ---
+
+ L. 298         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'MSVCCompiler'
+                6  STORE_NAME               __qualname__
+
+ L. 299         8  LOAD_STR                 'Concrete class that implements an interface to Microsoft Visual C++,\n       as defined by the CCompiler abstract class.'
+               10  STORE_NAME               __doc__
+
+ L. 302        12  LOAD_STR                 'msvc'
+               14  STORE_NAME               compiler_type
+
+ L. 309        16  BUILD_MAP_0           0 
+               18  STORE_NAME               executables
+
+ L. 312        20  LOAD_STR                 '.c'
+               22  BUILD_LIST_1          1 
+               24  STORE_NAME               _c_extensions
+
+ L. 313        26  BUILD_LIST_0          0 
+               28  LOAD_CONST               ('.cc', '.cpp', '.cxx')
+               30  CALL_FINALLY         33  'to 33'
+               32  STORE_NAME               _cpp_extensions
+
+ L. 314        34  LOAD_STR                 '.rc'
+               36  BUILD_LIST_1          1 
+               38  STORE_NAME               _rc_extensions
+
+ L. 315        40  LOAD_STR                 '.mc'
+               42  BUILD_LIST_1          1 
+               44  STORE_NAME               _mc_extensions
+
+ L. 319        46  LOAD_NAME                _c_extensions
+               48  LOAD_NAME                _cpp_extensions
+               50  BINARY_ADD       
+
+ L. 320        52  LOAD_NAME                _rc_extensions
+
+ L. 319        54  BINARY_ADD       
+
+ L. 320        56  LOAD_NAME                _mc_extensions
+
+ L. 319        58  BINARY_ADD       
+               60  STORE_NAME               src_extensions
+
+ L. 321        62  LOAD_STR                 '.res'
+               64  STORE_NAME               res_extension
+
+ L. 322        66  LOAD_STR                 '.obj'
+               68  STORE_NAME               obj_extension
+
+ L. 323        70  LOAD_STR                 '.lib'
+               72  STORE_NAME               static_lib_extension
+
+ L. 324        74  LOAD_STR                 '.dll'
+               76  STORE_NAME               shared_lib_extension
+
+ L. 325        78  LOAD_STR                 '%s%s'
+               80  DUP_TOP          
+               82  STORE_NAME               static_lib_format
+               84  STORE_NAME               shared_lib_format
+
+ L. 326        86  LOAD_STR                 '.exe'
+               88  STORE_NAME               exe_extension
+
+ L. 328        90  LOAD_CONST               (0, 0, 0)
+               92  LOAD_CODE                <code_object __init__>
+               94  LOAD_STR                 'MSVCCompiler.__init__'
+               96  MAKE_FUNCTION_1          'default'
+               98  STORE_NAME               __init__
+
+ L. 339       100  LOAD_CONST               (None,)
+              102  LOAD_CODE                <code_object initialize>
+              104  LOAD_STR                 'MSVCCompiler.initialize'
+              106  MAKE_FUNCTION_1          'default'
+              108  STORE_NAME               initialize
+
+ L. 424       110  LOAD_CONST               (0, '')
+              112  LOAD_CODE                <code_object object_filenames>
+              114  LOAD_STR                 'MSVCCompiler.object_filenames'
+              116  MAKE_FUNCTION_1          'default'
+              118  STORE_NAME               object_filenames
+
+ L. 455       120  LOAD_CONST               (None, None, None, 0, None, None, None)
+              122  LOAD_CODE                <code_object compile>
+              124  LOAD_STR                 'MSVCCompiler.compile'
+              126  MAKE_FUNCTION_1          'default'
+              128  STORE_NAME               compile
+
+ L. 540       130  LOAD_CONST               (None, 0, None)
+              132  LOAD_CODE                <code_object create_static_lib>
+              134  LOAD_STR                 'MSVCCompiler.create_static_lib'
+              136  MAKE_FUNCTION_1          'default'
+              138  STORE_NAME               create_static_lib
+
+ L. 565       140  LOAD_CONST               (None, None, None, None, None, 0, None, None, None, None)
+              142  LOAD_CODE                <code_object link>
+              144  LOAD_STR                 'MSVCCompiler.link'
+              146  MAKE_FUNCTION_1          'default'
+              148  STORE_NAME               link
+
+ L. 660       150  LOAD_CODE                <code_object manifest_setup_ldargs>
+              152  LOAD_STR                 'MSVCCompiler.manifest_setup_ldargs'
+              154  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              156  STORE_NAME               manifest_setup_ldargs
+
+ L. 672       158  LOAD_CODE                <code_object manifest_get_embed_info>
+              160  LOAD_STR                 'MSVCCompiler.manifest_get_embed_info'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  STORE_NAME               manifest_get_embed_info
+
+ L. 696       166  LOAD_CODE                <code_object _remove_visual_c_ref>
+              168  LOAD_STR                 'MSVCCompiler._remove_visual_c_ref'
+              170  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              172  STORE_NAME               _remove_visual_c_ref
+
+ L. 739       174  LOAD_CODE                <code_object library_dir_option>
+              176  LOAD_STR                 'MSVCCompiler.library_dir_option'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  STORE_NAME               library_dir_option
+
+ L. 742       182  LOAD_CODE                <code_object runtime_library_dir_option>
+              184  LOAD_STR                 'MSVCCompiler.runtime_library_dir_option'
+              186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              188  STORE_NAME               runtime_library_dir_option
+
+ L. 746       190  LOAD_CODE                <code_object library_option>
+              192  LOAD_STR                 'MSVCCompiler.library_option'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  STORE_NAME               library_option
+
+ L. 750       198  LOAD_CONST               (0,)
+              200  LOAD_CODE                <code_object find_library_file>
+              202  LOAD_STR                 'MSVCCompiler.find_library_file'
+              204  MAKE_FUNCTION_1          'default'
+              206  STORE_NAME               find_library_file
+
+ L. 768       208  LOAD_CODE                <code_object find_exe>
+              210  LOAD_STR                 'MSVCCompiler.find_exe'
+              212  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              214  STORE_NAME               find_exe
+
+Parse error at or near `CALL_FINALLY' instruction at offset 30
+

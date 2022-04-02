@@ -1,0 +1,153 @@
+Instruction context:
+   
+ L.  14        52  BUILD_LIST_0          0 
+                  54  LOAD_CONST               ('Debug', 'setLogger', 'hexdump')
+->                56  CALL_FINALLY         59  'to 59'
+                  58  STORE_NAME               __all__
+
+test/31705.pyc -- 
+# decompile failed
+
+# file test/31705.pyc
+# --- This code section failed: ---
+
+ L.   7         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              logging
+                6  STORE_NAME               logging
+
+ L.   8         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              sys
+               14  STORE_NAME               sys
+
+ L.  10        16  LOAD_CONST               0
+               18  LOAD_CONST               ('__version__',)
+               20  IMPORT_NAME              pyasn1
+               22  IMPORT_FROM              __version__
+               24  STORE_NAME               __version__
+               26  POP_TOP          
+
+ L.  11        28  LOAD_CONST               0
+               30  LOAD_CONST               ('error',)
+               32  IMPORT_NAME              pyasn1
+               34  IMPORT_FROM              error
+               36  STORE_NAME               error
+               38  POP_TOP          
+
+ L.  12        40  LOAD_CONST               0
+               42  LOAD_CONST               ('octs2ints',)
+               44  IMPORT_NAME_ATTR         pyasn1.compat.octets
+               46  IMPORT_FROM              octs2ints
+               48  STORE_NAME               octs2ints
+               50  POP_TOP          
+
+ L.  14        52  BUILD_LIST_0          0 
+               54  LOAD_CONST               ('Debug', 'setLogger', 'hexdump')
+               56  CALL_FINALLY         59  'to 59'
+               58  STORE_NAME               __all__
+
+ L.  16        60  LOAD_CONST               0
+               62  STORE_NAME               DEBUG_NONE
+
+ L.  17        64  LOAD_CONST               1
+               66  STORE_NAME               DEBUG_ENCODER
+
+ L.  18        68  LOAD_CONST               2
+               70  STORE_NAME               DEBUG_DECODER
+
+ L.  19        72  LOAD_CONST               65535
+               74  STORE_NAME               DEBUG_ALL
+
+ L.  22        76  LOAD_NAME                DEBUG_NONE
+
+ L.  23        78  LOAD_NAME                DEBUG_ENCODER
+
+ L.  24        80  LOAD_NAME                DEBUG_DECODER
+
+ L.  25        82  LOAD_NAME                DEBUG_ALL
+
+ L.  21        84  LOAD_CONST               ('none', 'encoder', 'decoder', 'all')
+               86  BUILD_CONST_KEY_MAP_4     4 
+               88  STORE_NAME               FLAG_MAP
+
+ L.  28        90  BUILD_MAP_0           0 
+               92  STORE_NAME               LOGGEE_MAP
+
+ L.  31        94  LOAD_BUILD_CLASS 
+               96  LOAD_CODE                <code_object Printer>
+               98  LOAD_STR                 'Printer'
+              100  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              102  LOAD_STR                 'Printer'
+              104  LOAD_NAME                object
+              106  CALL_FUNCTION_3       3  ''
+              108  STORE_NAME               Printer
+
+ L.  58       110  LOAD_NAME                hasattr
+              112  LOAD_NAME                logging
+              114  LOAD_STR                 'NullHandler'
+              116  CALL_FUNCTION_2       2  ''
+              118  POP_JUMP_IF_FALSE   128  'to 128'
+
+ L.  59       120  LOAD_NAME                logging
+              122  LOAD_ATTR                NullHandler
+              124  STORE_NAME               NullHandler
+              126  JUMP_FORWARD        146  'to 146'
+            128_0  COME_FROM           118  '118'
+
+ L.  63       128  LOAD_BUILD_CLASS 
+              130  LOAD_CODE                <code_object NullHandler>
+              132  LOAD_STR                 'NullHandler'
+              134  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              136  LOAD_STR                 'NullHandler'
+              138  LOAD_NAME                logging
+              140  LOAD_ATTR                Handler
+              142  CALL_FUNCTION_3       3  ''
+              144  STORE_NAME               NullHandler
+            146_0  COME_FROM           126  '126'
+
+ L.  68       146  LOAD_BUILD_CLASS 
+              148  LOAD_CODE                <code_object Debug>
+              150  LOAD_STR                 'Debug'
+              152  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              154  LOAD_STR                 'Debug'
+              156  LOAD_NAME                object
+              158  CALL_FUNCTION_3       3  ''
+              160  STORE_NAME               Debug
+
+ L. 115       162  LOAD_NAME                DEBUG_NONE
+              164  STORE_GLOBAL             _LOG
+
+ L. 118       166  LOAD_CODE                <code_object setLogger>
+              168  LOAD_STR                 'setLogger'
+              170  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              172  STORE_NAME               setLogger
+
+ L. 131       174  LOAD_STR                 'LOG'
+              176  LOAD_NAME                DEBUG_NONE
+              178  BUILD_TUPLE_2         2 
+              180  LOAD_CODE                <code_object registerLoggee>
+              182  LOAD_STR                 'registerLoggee'
+              184  MAKE_FUNCTION_1          'default'
+              186  STORE_NAME               registerLoggee
+
+ L. 137       188  LOAD_CODE                <code_object hexdump>
+              190  LOAD_STR                 'hexdump'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  STORE_NAME               hexdump
+
+ L. 144       196  LOAD_BUILD_CLASS 
+              198  LOAD_CODE                <code_object Scope>
+              200  LOAD_STR                 'Scope'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  LOAD_STR                 'Scope'
+              206  LOAD_NAME                object
+              208  CALL_FUNCTION_3       3  ''
+              210  STORE_NAME               Scope
+
+ L. 157       212  LOAD_NAME                Scope
+              214  CALL_FUNCTION_0       0  ''
+              216  STORE_NAME               scope
+
+Parse error at or near `CALL_FINALLY' instruction at offset 56
+

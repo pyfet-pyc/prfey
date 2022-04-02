@@ -1,0 +1,309 @@
+
+# file test/39720.pyc
+# --- This code section failed: ---
+
+ L.   3         0  LOAD_STR                 '\nrequests.compat\n~~~~~~~~~~~~~~~\n\nThis module handles import compatibility issues between Python 2 and\nPython 3.\n'
+                2  STORE_NAME               __doc__
+
+ L.  11         4  SETUP_FINALLY        18  'to 18'
+
+ L.  12         6  LOAD_CONST               0
+                8  LOAD_CONST               None
+               10  IMPORT_NAME              chardet
+               12  STORE_NAME               chardet
+               14  POP_BLOCK        
+               16  JUMP_FORWARD         44  'to 44'
+             18_0  COME_FROM_FINALLY     4  '4'
+
+ L.  13        18  DUP_TOP          
+               20  LOAD_NAME                ImportError
+               22  <121>                42  ''
+               24  POP_TOP          
+               26  POP_TOP          
+               28  POP_TOP          
+
+ L.  14        30  LOAD_CONST               0
+               32  LOAD_CONST               None
+               34  IMPORT_NAME              charset_normalizer
+               36  STORE_NAME               chardet
+               38  POP_EXCEPT       
+               40  JUMP_FORWARD         44  'to 44'
+               42  <48>             
+             44_0  COME_FROM            40  '40'
+             44_1  COME_FROM            16  '16'
+
+ L.  16        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              sys
+               50  STORE_NAME               sys
+
+ L.  23        52  LOAD_NAME                sys
+               54  LOAD_ATTR                version_info
+               56  STORE_NAME               _ver
+
+ L.  26        58  LOAD_NAME                _ver
+               60  LOAD_CONST               0
+               62  BINARY_SUBSCR    
+               64  LOAD_CONST               2
+               66  COMPARE_OP               ==
+               68  STORE_NAME               is_py2
+
+ L.  29        70  LOAD_NAME                _ver
+               72  LOAD_CONST               0
+               74  BINARY_SUBSCR    
+               76  LOAD_CONST               3
+               78  COMPARE_OP               ==
+               80  STORE_NAME               is_py3
+
+ L.  31        82  SETUP_FINALLY        96  'to 96'
+
+ L.  32        84  LOAD_CONST               0
+               86  LOAD_CONST               None
+               88  IMPORT_NAME              simplejson
+               90  STORE_NAME               json
+               92  POP_BLOCK        
+               94  JUMP_FORWARD        122  'to 122'
+             96_0  COME_FROM_FINALLY    82  '82'
+
+ L.  33        96  DUP_TOP          
+               98  LOAD_NAME                ImportError
+              100  <121>               120  ''
+              102  POP_TOP          
+              104  POP_TOP          
+              106  POP_TOP          
+
+ L.  34       108  LOAD_CONST               0
+              110  LOAD_CONST               None
+              112  IMPORT_NAME              json
+              114  STORE_NAME               json
+              116  POP_EXCEPT       
+              118  JUMP_FORWARD        122  'to 122'
+              120  <48>             
+            122_0  COME_FROM           118  '118'
+            122_1  COME_FROM            94  '94'
+
+ L.  40       122  LOAD_NAME                is_py2
+          124_126  POP_JUMP_IF_FALSE   304  'to 304'
+
+ L.  41       128  LOAD_CONST               0
+              130  LOAD_CONST               ('quote', 'unquote', 'quote_plus', 'unquote_plus', 'urlencode', 'getproxies', 'proxy_bypass', 'proxy_bypass_environment', 'getproxies_environment')
+              132  IMPORT_NAME              urllib
+              134  IMPORT_FROM              quote
+              136  STORE_NAME               quote
+              138  IMPORT_FROM              unquote
+              140  STORE_NAME               unquote
+              142  IMPORT_FROM              quote_plus
+              144  STORE_NAME               quote_plus
+              146  IMPORT_FROM              unquote_plus
+              148  STORE_NAME               unquote_plus
+              150  IMPORT_FROM              urlencode
+              152  STORE_NAME               urlencode
+              154  IMPORT_FROM              getproxies
+              156  STORE_NAME               getproxies
+              158  IMPORT_FROM              proxy_bypass
+              160  STORE_NAME               proxy_bypass
+              162  IMPORT_FROM              proxy_bypass_environment
+              164  STORE_NAME               proxy_bypass_environment
+              166  IMPORT_FROM              getproxies_environment
+              168  STORE_NAME               getproxies_environment
+              170  POP_TOP          
+
+ L.  44       172  LOAD_CONST               0
+              174  LOAD_CONST               ('urlparse', 'urlunparse', 'urljoin', 'urlsplit', 'urldefrag')
+              176  IMPORT_NAME              urlparse
+              178  IMPORT_FROM              urlparse
+              180  STORE_NAME               urlparse
+              182  IMPORT_FROM              urlunparse
+              184  STORE_NAME               urlunparse
+              186  IMPORT_FROM              urljoin
+              188  STORE_NAME               urljoin
+              190  IMPORT_FROM              urlsplit
+              192  STORE_NAME               urlsplit
+              194  IMPORT_FROM              urldefrag
+              196  STORE_NAME               urldefrag
+              198  POP_TOP          
+
+ L.  45       200  LOAD_CONST               0
+              202  LOAD_CONST               ('parse_http_list',)
+              204  IMPORT_NAME              urllib2
+              206  IMPORT_FROM              parse_http_list
+              208  STORE_NAME               parse_http_list
+              210  POP_TOP          
+
+ L.  46       212  LOAD_CONST               0
+              214  LOAD_CONST               None
+              216  IMPORT_NAME              cookielib
+              218  STORE_NAME               cookielib
+
+ L.  47       220  LOAD_CONST               0
+              222  LOAD_CONST               ('Morsel',)
+              224  IMPORT_NAME              Cookie
+              226  IMPORT_FROM              Morsel
+              228  STORE_NAME               Morsel
+              230  POP_TOP          
+
+ L.  48       232  LOAD_CONST               0
+              234  LOAD_CONST               ('StringIO',)
+              236  IMPORT_NAME              StringIO
+              238  IMPORT_FROM              StringIO
+              240  STORE_NAME               StringIO
+              242  POP_TOP          
+
+ L.  50       244  LOAD_CONST               0
+              246  LOAD_CONST               ('Callable', 'Mapping', 'MutableMapping', 'OrderedDict')
+              248  IMPORT_NAME              collections
+              250  IMPORT_FROM              Callable
+              252  STORE_NAME               Callable
+              254  IMPORT_FROM              Mapping
+              256  STORE_NAME               Mapping
+              258  IMPORT_FROM              MutableMapping
+              260  STORE_NAME               MutableMapping
+              262  IMPORT_FROM              OrderedDict
+              264  STORE_NAME               OrderedDict
+              266  POP_TOP          
+
+ L.  53       268  LOAD_NAME                str
+              270  STORE_NAME               builtin_str
+
+ L.  54       272  LOAD_NAME                str
+              274  STORE_NAME               bytes
+
+ L.  55       276  LOAD_NAME                unicode
+              278  STORE_NAME               str
+
+ L.  56       280  LOAD_NAME                basestring
+              282  STORE_NAME               basestring
+
+ L.  57       284  LOAD_NAME                int
+              286  LOAD_NAME                long
+              288  LOAD_NAME                float
+              290  BUILD_TUPLE_3         3 
+              292  STORE_NAME               numeric_types
+
+ L.  58       294  LOAD_NAME                int
+              296  LOAD_NAME                long
+              298  BUILD_TUPLE_2         2 
+              300  STORE_NAME               integer_types
+              302  JUMP_FORWARD        488  'to 488'
+            304_0  COME_FROM           124  '124'
+
+ L.  60       304  LOAD_NAME                is_py3
+          306_308  POP_JUMP_IF_FALSE   488  'to 488'
+
+ L.  61       310  LOAD_CONST               0
+              312  LOAD_CONST               ('urlparse', 'urlunparse', 'urljoin', 'urlsplit', 'urlencode', 'quote', 'unquote', 'quote_plus', 'unquote_plus', 'urldefrag')
+              314  IMPORT_NAME_ATTR         urllib.parse
+              316  IMPORT_FROM              urlparse
+              318  STORE_NAME               urlparse
+              320  IMPORT_FROM              urlunparse
+              322  STORE_NAME               urlunparse
+              324  IMPORT_FROM              urljoin
+              326  STORE_NAME               urljoin
+              328  IMPORT_FROM              urlsplit
+              330  STORE_NAME               urlsplit
+              332  IMPORT_FROM              urlencode
+              334  STORE_NAME               urlencode
+              336  IMPORT_FROM              quote
+              338  STORE_NAME               quote
+              340  IMPORT_FROM              unquote
+              342  STORE_NAME               unquote
+              344  IMPORT_FROM              quote_plus
+              346  STORE_NAME               quote_plus
+              348  IMPORT_FROM              unquote_plus
+              350  STORE_NAME               unquote_plus
+              352  IMPORT_FROM              urldefrag
+              354  STORE_NAME               urldefrag
+              356  POP_TOP          
+
+ L.  62       358  LOAD_CONST               0
+              360  LOAD_CONST               ('parse_http_list', 'getproxies', 'proxy_bypass', 'proxy_bypass_environment', 'getproxies_environment')
+              362  IMPORT_NAME_ATTR         urllib.request
+              364  IMPORT_FROM              parse_http_list
+              366  STORE_NAME               parse_http_list
+              368  IMPORT_FROM              getproxies
+              370  STORE_NAME               getproxies
+              372  IMPORT_FROM              proxy_bypass
+              374  STORE_NAME               proxy_bypass
+              376  IMPORT_FROM              proxy_bypass_environment
+              378  STORE_NAME               proxy_bypass_environment
+              380  IMPORT_FROM              getproxies_environment
+              382  STORE_NAME               getproxies_environment
+              384  POP_TOP          
+
+ L.  63       386  LOAD_CONST               0
+              388  LOAD_CONST               ('cookiejar',)
+              390  IMPORT_NAME              http
+              392  IMPORT_FROM              cookiejar
+              394  STORE_NAME               cookielib
+              396  POP_TOP          
+
+ L.  64       398  LOAD_CONST               0
+              400  LOAD_CONST               ('Morsel',)
+              402  IMPORT_NAME_ATTR         http.cookies
+              404  IMPORT_FROM              Morsel
+              406  STORE_NAME               Morsel
+              408  POP_TOP          
+
+ L.  65       410  LOAD_CONST               0
+              412  LOAD_CONST               ('StringIO',)
+              414  IMPORT_NAME              io
+              416  IMPORT_FROM              StringIO
+              418  STORE_NAME               StringIO
+              420  POP_TOP          
+
+ L.  67       422  LOAD_CONST               0
+              424  LOAD_CONST               ('OrderedDict',)
+              426  IMPORT_NAME              collections
+              428  IMPORT_FROM              OrderedDict
+              430  STORE_NAME               OrderedDict
+              432  POP_TOP          
+
+ L.  68       434  LOAD_CONST               0
+              436  LOAD_CONST               ('Callable', 'Mapping', 'MutableMapping')
+              438  IMPORT_NAME_ATTR         collections.abc
+              440  IMPORT_FROM              Callable
+              442  STORE_NAME               Callable
+              444  IMPORT_FROM              Mapping
+              446  STORE_NAME               Mapping
+              448  IMPORT_FROM              MutableMapping
+              450  STORE_NAME               MutableMapping
+              452  POP_TOP          
+
+ L.  70       454  LOAD_NAME                str
+              456  STORE_NAME               builtin_str
+
+ L.  71       458  LOAD_NAME                str
+              460  STORE_NAME               str
+
+ L.  72       462  LOAD_NAME                bytes
+              464  STORE_NAME               bytes
+
+ L.  73       466  LOAD_NAME                str
+              468  LOAD_NAME                bytes
+              470  BUILD_TUPLE_2         2 
+              472  STORE_NAME               basestring
+
+ L.  74       474  LOAD_NAME                int
+              476  LOAD_NAME                float
+              478  BUILD_TUPLE_2         2 
+              480  STORE_NAME               numeric_types
+
+ L.  75       482  LOAD_NAME                int
+              484  BUILD_TUPLE_1         1 
+              486  STORE_NAME               integer_types
+            488_0  COME_FROM           306  '306'
+            488_1  COME_FROM           302  '302'
+
+Parse error at or near `<121>' instruction at offset 22
+
+Instruction context:
+   
+ L.  13        18  DUP_TOP          
+                  20  LOAD_NAME                ImportError
+->                22  <121>                42  ''
+                  24  POP_TOP          
+                  26  POP_TOP          
+                  28  POP_TOP          
+
+test/39720.pyc -- 
+# decompile failed

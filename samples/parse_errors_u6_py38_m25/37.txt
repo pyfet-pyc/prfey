@@ -1,0 +1,49 @@
+Instruction context:
+   
+ L. 151        12  DUP_TOP          
+                  14  LOAD_GLOBAL              KeyError
+                  16  COMPARE_OP               exception-match
+                  18  POP_JUMP_IF_FALSE    74  'to 74'
+                  20  POP_TOP          
+->                22  POP_TOP          
+                  24  POP_TOP          
+Instruction context:
+   
+ L. 223         6  LOAD_FAST                'self'
+                   8  LOAD_ATTR                _obj
+                  10  LOAD_FAST                'i'
+                  12  BINARY_SUBSCR    
+                  14  POP_BLOCK        
+->                16  ROT_TWO          
+                  18  BEGIN_FINALLY    
+                  20  WITH_CLEANUP_START
+                  22  WITH_CLEANUP_FINISH
+                  24  POP_FINALLY           0  ''
+                  26  RETURN_VALUE     
+                28_0  COME_FROM_WITH        2  '2'
+                  28  WITH_CLEANUP_START
+                  30  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 231         6  LOAD_FAST                'self'
+                   8  LOAD_ATTR                _obj
+                  10  LOAD_FAST                'start'
+                  12  LOAD_FAST                'stop'
+                  14  BUILD_SLICE_2         2 
+                  16  BINARY_SUBSCR    
+                  18  POP_BLOCK        
+->                20  ROT_TWO          
+                  22  BEGIN_FINALLY    
+                  24  WITH_CLEANUP_START
+                  26  WITH_CLEANUP_FINISH
+                  28  POP_FINALLY           0  ''
+                  30  RETURN_VALUE     
+                32_0  COME_FROM_WITH        2  '2'
+                  32  WITH_CLEANUP_START
+                  34  WITH_CLEANUP_FINISH
+
+test/37.pyc -- 
+# decompile failed
+
+# file test/37.pyc
+# Deparsing stopped due to parse error

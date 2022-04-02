@@ -1,0 +1,31 @@
+Instruction context:
+   
+ L. 497        22  POP_BLOCK        
+->                24  BEGIN_FINALLY    
+                  26  WITH_CLEANUP_START
+                  28  WITH_CLEANUP_FINISH
+                  30  POP_FINALLY           0  ''
+                  32  LOAD_STR                 ''
+                  34  RETURN_VALUE     
+                36_0  COME_FROM            20  '20'
+Instruction context:
+   
+ L. 593       462  LOAD_GLOBAL              init_qt_clipboard
+                 464  CALL_FUNCTION_0       0  ''
+                 466  ROT_FOUR         
+                 468  POP_EXCEPT       
+->               470  ROT_FOUR         
+                 472  POP_EXCEPT       
+                 474  RETURN_VALUE     
+               476_0  COME_FROM           458  '458'
+                 476  POP_EXCEPT       
+                 478  JUMP_FORWARD        492  'to 492'
+               480_0  COME_FROM           416  '416'
+                 480  END_FINALLY      
+               482_0  COME_FROM           408  '408'
+
+../test/12947.pyc -- 
+# decompile failed
+
+# file ../test/12947.pyc
+# Deparsing stopped due to parse error

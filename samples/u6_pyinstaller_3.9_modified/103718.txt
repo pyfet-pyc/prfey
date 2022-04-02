@@ -1,0 +1,376 @@
+
+# file test/103718.pyc
+# --- This code section failed: ---
+
+ L.   3         0  LOAD_STR                 'SMTP/ESMTP client class.\n\nThis should follow RFC 821 (SMTP), RFC 1869 (ESMTP), RFC 2554 (SMTP\nAuthentication) and RFC 2487 (Secure SMTP over TLS).\n\nNotes:\n\nPlease remember, when doing ESMTP, that the names of the SMTP service\nextensions are NOT the same thing as the option keywords for the RCPT\nand MAIL commands!\n\nExample:\n\n  >>> import smtplib\n  >>> s=smtplib.SMTP("localhost")\n  >>> print(s.help())\n  This is Sendmail version 8.8.4\n  Topics:\n      HELO    EHLO    MAIL    RCPT    DATA\n      RSET    NOOP    QUIT    HELP    VRFY\n      EXPN    VERB    ETRN    DSN\n  For more info use "HELP <topic>".\n  To report bugs in the implementation send email to\n      sendmail-bugs@sendmail.org.\n  For local information send email to Postmaster at your site.\n  End of HELP info\n  >>> s.putcmd("vrfy","someone@here")\n  >>> s.getreply()\n  (250, "Somebody OverHere <somebody@here.my.org>")\n  >>> s.quit()\n'
+                2  STORE_NAME               __doc__
+
+ L.  44         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              socket
+               10  STORE_NAME               socket
+
+ L.  45        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              io
+               18  STORE_NAME               io
+
+ L.  46        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              re
+               26  STORE_NAME               re
+
+ L.  47        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME_ATTR         email.utils
+               34  STORE_NAME               email
+
+ L.  48        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME_ATTR         email.message
+               42  STORE_NAME               email
+
+ L.  49        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME_ATTR         email.generator
+               50  STORE_NAME               email
+
+ L.  50        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              base64
+               58  STORE_NAME               base64
+
+ L.  51        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              hmac
+               66  STORE_NAME               hmac
+
+ L.  52        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              copy
+               74  STORE_NAME               copy
+
+ L.  53        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME              datetime
+               82  STORE_NAME               datetime
+
+ L.  54        84  LOAD_CONST               0
+               86  LOAD_CONST               None
+               88  IMPORT_NAME              sys
+               90  STORE_NAME               sys
+
+ L.  55        92  LOAD_CONST               0
+               94  LOAD_CONST               ('body_encode',)
+               96  IMPORT_NAME_ATTR         email.base64mime
+               98  IMPORT_FROM              body_encode
+              100  STORE_NAME               encode_base64
+              102  POP_TOP          
+
+ L.  57       104  BUILD_LIST_0          0 
+              106  LOAD_CONST               ('SMTPException', 'SMTPNotSupportedError', 'SMTPServerDisconnected', 'SMTPResponseException', 'SMTPSenderRefused', 'SMTPRecipientsRefused', 'SMTPDataError', 'SMTPConnectError', 'SMTPHeloError', 'SMTPAuthenticationError', 'quoteaddr', 'quotedata', 'SMTP')
+              108  CALL_FINALLY        111  'to 111'
+              110  STORE_NAME               __all__
+
+ L.  62       112  LOAD_CONST               25
+              114  STORE_NAME               SMTP_PORT
+
+ L.  63       116  LOAD_CONST               465
+              118  STORE_NAME               SMTP_SSL_PORT
+
+ L.  64       120  LOAD_STR                 '\r\n'
+              122  STORE_NAME               CRLF
+
+ L.  65       124  LOAD_CONST               b'\r\n'
+              126  STORE_NAME               bCRLF
+
+ L.  66       128  LOAD_CONST               8192
+              130  STORE_NAME               _MAXLINE
+
+ L.  67       132  LOAD_CONST               5
+              134  STORE_NAME               _MAXCHALLENGE
+
+ L.  69       136  LOAD_NAME                re
+              138  LOAD_METHOD              compile
+              140  LOAD_STR                 'auth=(.*)'
+              142  LOAD_NAME                re
+              144  LOAD_ATTR                I
+              146  CALL_METHOD_2         2  ''
+              148  STORE_NAME               OLDSTYLE_AUTH
+
+ L.  72       150  LOAD_BUILD_CLASS 
+              152  LOAD_CODE                <code_object SMTPException>
+              154  LOAD_STR                 'SMTPException'
+              156  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              158  LOAD_STR                 'SMTPException'
+              160  LOAD_NAME                OSError
+              162  CALL_FUNCTION_3       3  ''
+              164  STORE_NAME               SMTPException
+
+ L.  75       166  LOAD_BUILD_CLASS 
+              168  LOAD_CODE                <code_object SMTPNotSupportedError>
+              170  LOAD_STR                 'SMTPNotSupportedError'
+              172  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              174  LOAD_STR                 'SMTPNotSupportedError'
+              176  LOAD_NAME                SMTPException
+              178  CALL_FUNCTION_3       3  ''
+              180  STORE_NAME               SMTPNotSupportedError
+
+ L.  82       182  LOAD_BUILD_CLASS 
+              184  LOAD_CODE                <code_object SMTPServerDisconnected>
+              186  LOAD_STR                 'SMTPServerDisconnected'
+              188  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              190  LOAD_STR                 'SMTPServerDisconnected'
+              192  LOAD_NAME                SMTPException
+              194  CALL_FUNCTION_3       3  ''
+              196  STORE_NAME               SMTPServerDisconnected
+
+ L.  90       198  LOAD_BUILD_CLASS 
+              200  LOAD_CODE                <code_object SMTPResponseException>
+              202  LOAD_STR                 'SMTPResponseException'
+              204  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              206  LOAD_STR                 'SMTPResponseException'
+              208  LOAD_NAME                SMTPException
+              210  CALL_FUNCTION_3       3  ''
+              212  STORE_NAME               SMTPResponseException
+
+ L. 104       214  LOAD_BUILD_CLASS 
+              216  LOAD_CODE                <code_object SMTPSenderRefused>
+              218  LOAD_STR                 'SMTPSenderRefused'
+              220  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              222  LOAD_STR                 'SMTPSenderRefused'
+              224  LOAD_NAME                SMTPResponseException
+              226  CALL_FUNCTION_3       3  ''
+              228  STORE_NAME               SMTPSenderRefused
+
+ L. 117       230  LOAD_BUILD_CLASS 
+              232  LOAD_CODE                <code_object SMTPRecipientsRefused>
+              234  LOAD_STR                 'SMTPRecipientsRefused'
+              236  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              238  LOAD_STR                 'SMTPRecipientsRefused'
+              240  LOAD_NAME                SMTPException
+              242  CALL_FUNCTION_3       3  ''
+              244  STORE_NAME               SMTPRecipientsRefused
+
+ L. 130       246  LOAD_BUILD_CLASS 
+              248  LOAD_CODE                <code_object SMTPDataError>
+              250  LOAD_STR                 'SMTPDataError'
+              252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              254  LOAD_STR                 'SMTPDataError'
+              256  LOAD_NAME                SMTPResponseException
+              258  CALL_FUNCTION_3       3  ''
+              260  STORE_NAME               SMTPDataError
+
+ L. 133       262  LOAD_BUILD_CLASS 
+              264  LOAD_CODE                <code_object SMTPConnectError>
+              266  LOAD_STR                 'SMTPConnectError'
+              268  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              270  LOAD_STR                 'SMTPConnectError'
+              272  LOAD_NAME                SMTPResponseException
+              274  CALL_FUNCTION_3       3  ''
+              276  STORE_NAME               SMTPConnectError
+
+ L. 136       278  LOAD_BUILD_CLASS 
+              280  LOAD_CODE                <code_object SMTPHeloError>
+              282  LOAD_STR                 'SMTPHeloError'
+              284  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              286  LOAD_STR                 'SMTPHeloError'
+              288  LOAD_NAME                SMTPResponseException
+              290  CALL_FUNCTION_3       3  ''
+              292  STORE_NAME               SMTPHeloError
+
+ L. 139       294  LOAD_BUILD_CLASS 
+              296  LOAD_CODE                <code_object SMTPAuthenticationError>
+              298  LOAD_STR                 'SMTPAuthenticationError'
+              300  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              302  LOAD_STR                 'SMTPAuthenticationError'
+              304  LOAD_NAME                SMTPResponseException
+              306  CALL_FUNCTION_3       3  ''
+              308  STORE_NAME               SMTPAuthenticationError
+
+ L. 146       310  LOAD_CODE                <code_object quoteaddr>
+              312  LOAD_STR                 'quoteaddr'
+              314  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              316  STORE_NAME               quoteaddr
+
+ L. 159       318  LOAD_CODE                <code_object _addr_only>
+              320  LOAD_STR                 '_addr_only'
+              322  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              324  STORE_NAME               _addr_only
+
+ L. 167       326  LOAD_CODE                <code_object quotedata>
+              328  LOAD_STR                 'quotedata'
+              330  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              332  STORE_NAME               quotedata
+
+ L. 176       334  LOAD_CODE                <code_object _quote_periods>
+              336  LOAD_STR                 '_quote_periods'
+              338  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              340  STORE_NAME               _quote_periods
+
+ L. 179       342  LOAD_CODE                <code_object _fix_eols>
+              344  LOAD_STR                 '_fix_eols'
+              346  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              348  STORE_NAME               _fix_eols
+
+ L. 182       350  SETUP_FINALLY       364  'to 364'
+
+ L. 183       352  LOAD_CONST               0
+              354  LOAD_CONST               None
+              356  IMPORT_NAME              ssl
+              358  STORE_NAME               ssl
+              360  POP_BLOCK        
+              362  JUMP_FORWARD        388  'to 388'
+            364_0  COME_FROM_FINALLY   350  '350'
+
+ L. 184       364  DUP_TOP          
+              366  LOAD_NAME                ImportError
+          368_370  <121>               386  ''
+              372  POP_TOP          
+              374  POP_TOP          
+              376  POP_TOP          
+
+ L. 185       378  LOAD_CONST               False
+              380  STORE_NAME               _have_ssl
+              382  POP_EXCEPT       
+              384  JUMP_FORWARD        392  'to 392'
+              386  <48>             
+            388_0  COME_FROM           362  '362'
+
+ L. 187       388  LOAD_CONST               True
+              390  STORE_NAME               _have_ssl
+            392_0  COME_FROM           384  '384'
+
+ L. 190       392  LOAD_BUILD_CLASS 
+              394  LOAD_CODE                <code_object SMTP>
+              396  LOAD_STR                 'SMTP'
+              398  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              400  LOAD_STR                 'SMTP'
+              402  CALL_FUNCTION_2       2  ''
+              404  STORE_NAME               SMTP
+
+ L.1007       406  LOAD_NAME                _have_ssl
+          408_410  POP_JUMP_IF_FALSE   438  'to 438'
+
+ L.1009       412  LOAD_BUILD_CLASS 
+              414  LOAD_CODE                <code_object SMTP_SSL>
+              416  LOAD_STR                 'SMTP_SSL'
+              418  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              420  LOAD_STR                 'SMTP_SSL'
+              422  LOAD_NAME                SMTP
+              424  CALL_FUNCTION_3       3  ''
+              426  STORE_NAME               SMTP_SSL
+
+ L.1056       428  LOAD_NAME                __all__
+              430  LOAD_METHOD              append
+              432  LOAD_STR                 'SMTP_SSL'
+              434  CALL_METHOD_1         1  ''
+              436  POP_TOP          
+            438_0  COME_FROM           408  '408'
+
+ L.1061       438  LOAD_CONST               2003
+              440  STORE_NAME               LMTP_PORT
+
+ L.1063       442  LOAD_BUILD_CLASS 
+              444  LOAD_CODE                <code_object LMTP>
+              446  LOAD_STR                 'LMTP'
+              448  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              450  LOAD_STR                 'LMTP'
+              452  LOAD_NAME                SMTP
+              454  CALL_FUNCTION_3       3  ''
+              456  STORE_NAME               LMTP
+
+ L.1115       458  LOAD_NAME                __name__
+              460  LOAD_STR                 '__main__'
+              462  COMPARE_OP               ==
+          464_466  POP_JUMP_IF_FALSE   598  'to 598'
+
+ L.1116       468  LOAD_CODE                <code_object prompt>
+              470  LOAD_STR                 'prompt'
+              472  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              474  STORE_NAME               prompt
+
+ L.1121       476  LOAD_NAME                prompt
+              478  LOAD_STR                 'From'
+              480  CALL_FUNCTION_1       1  ''
+              482  STORE_NAME               fromaddr
+
+ L.1122       484  LOAD_NAME                prompt
+              486  LOAD_STR                 'To'
+              488  CALL_FUNCTION_1       1  ''
+              490  LOAD_METHOD              split
+              492  LOAD_STR                 ','
+              494  CALL_METHOD_1         1  ''
+              496  STORE_NAME               toaddrs
+
+ L.1123       498  LOAD_NAME                print
+              500  LOAD_STR                 'Enter message, end with ^D:'
+              502  CALL_FUNCTION_1       1  ''
+              504  POP_TOP          
+
+ L.1124       506  LOAD_STR                 ''
+              508  STORE_NAME               msg
+
+ L.1126       510  LOAD_NAME                sys
+              512  LOAD_ATTR                stdin
+              514  LOAD_METHOD              readline
+              516  CALL_METHOD_0         0  ''
+              518  STORE_NAME               line
+
+ L.1127       520  LOAD_NAME                line
+          522_524  POP_JUMP_IF_TRUE    530  'to 530'
+
+ L.1128   526_528  BREAK_LOOP          542  'to 542'
+            530_0  COME_FROM           522  '522'
+
+ L.1129       530  LOAD_NAME                msg
+              532  LOAD_NAME                line
+              534  BINARY_ADD       
+              536  STORE_NAME               msg
+          538_540  JUMP_BACK           510  'to 510'
+
+ L.1130       542  LOAD_NAME                print
+              544  LOAD_STR                 'Message length is %d'
+              546  LOAD_NAME                len
+              548  LOAD_NAME                msg
+              550  CALL_FUNCTION_1       1  ''
+              552  BINARY_MODULO    
+              554  CALL_FUNCTION_1       1  ''
+              556  POP_TOP          
+
+ L.1132       558  LOAD_NAME                SMTP
+              560  LOAD_STR                 'localhost'
+              562  CALL_FUNCTION_1       1  ''
+              564  STORE_NAME               server
+
+ L.1133       566  LOAD_NAME                server
+              568  LOAD_METHOD              set_debuglevel
+              570  LOAD_CONST               1
+              572  CALL_METHOD_1         1  ''
+              574  POP_TOP          
+
+ L.1134       576  LOAD_NAME                server
+              578  LOAD_METHOD              sendmail
+              580  LOAD_NAME                fromaddr
+              582  LOAD_NAME                toaddrs
+              584  LOAD_NAME                msg
+              586  CALL_METHOD_3         3  ''
+              588  POP_TOP          
+
+ L.1135       590  LOAD_NAME                server
+              592  LOAD_METHOD              quit
+              594  CALL_METHOD_0         0  ''
+              596  POP_TOP          
+            598_0  COME_FROM           464  '464'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 108
+
+Instruction context:
+   
+ L.  57       104  BUILD_LIST_0          0 
+                 106  LOAD_CONST               ('SMTPException', 'SMTPNotSupportedError', 'SMTPServerDisconnected', 'SMTPResponseException', 'SMTPSenderRefused', 'SMTPRecipientsRefused', 'SMTPDataError', 'SMTPConnectError', 'SMTPHeloError', 'SMTPAuthenticationError', 'quoteaddr', 'quotedata', 'SMTP')
+->               108  CALL_FINALLY        111  'to 111'
+                 110  STORE_NAME               __all__
+
+test/103718.pyc -- 
+# decompile failed

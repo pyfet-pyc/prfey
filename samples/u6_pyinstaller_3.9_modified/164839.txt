@@ -1,0 +1,165 @@
+Instruction context:
+   
+ L.  10        56  DUP_TOP          
+                  58  LOAD_NAME                ImportError
+->                60  <121>                84  ''
+                  62  POP_TOP          
+                  64  POP_TOP          
+                  66  POP_TOP          
+
+test/164839.pyc -- 
+# decompile failed
+
+# file test/164839.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Python 3 compatibility shims\n'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.   4        12  LOAD_NAME                sys
+               14  LOAD_ATTR                version_info
+               16  LOAD_CONST               0
+               18  BINARY_SUBSCR    
+               20  LOAD_CONST               3
+               22  COMPARE_OP               <
+               24  POP_JUMP_IF_FALSE   122  'to 122'
+
+ L.   5        26  LOAD_CONST               False
+               28  STORE_NAME               PY3
+
+ L.   6        30  LOAD_CODE                <code_object b>
+               32  LOAD_STR                 'b'
+               34  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               36  STORE_NAME               b
+
+ L.   8        38  SETUP_FINALLY        56  'to 56'
+
+ L.   9        40  LOAD_CONST               0
+               42  LOAD_CONST               ('StringIO',)
+               44  IMPORT_NAME              cStringIO
+               46  IMPORT_FROM              StringIO
+               48  STORE_NAME               StringIO
+               50  POP_TOP          
+               52  POP_BLOCK        
+               54  JUMP_FORWARD         86  'to 86'
+             56_0  COME_FROM_FINALLY    38  '38'
+
+ L.  10        56  DUP_TOP          
+               58  LOAD_NAME                ImportError
+               60  <121>                84  ''
+               62  POP_TOP          
+               64  POP_TOP          
+               66  POP_TOP          
+
+ L.  11        68  LOAD_CONST               0
+               70  LOAD_CONST               ('StringIO',)
+               72  IMPORT_NAME              StringIO
+               74  IMPORT_FROM              StringIO
+               76  STORE_NAME               StringIO
+               78  POP_TOP          
+               80  POP_EXCEPT       
+               82  JUMP_FORWARD         86  'to 86'
+               84  <48>             
+             86_0  COME_FROM            82  '82'
+             86_1  COME_FROM            54  '54'
+
+ L.  12        86  LOAD_NAME                StringIO
+               88  STORE_NAME               BytesIO
+
+ L.  13        90  LOAD_NAME                unicode
+               92  STORE_NAME               text_type
+
+ L.  14        94  LOAD_NAME                str
+               96  STORE_NAME               binary_type
+
+ L.  15        98  LOAD_NAME                basestring
+              100  BUILD_TUPLE_1         1 
+              102  STORE_NAME               string_types
+
+ L.  16       104  LOAD_NAME                int
+              106  LOAD_NAME                long
+              108  BUILD_TUPLE_2         2 
+              110  STORE_NAME               integer_types
+
+ L.  17       112  LOAD_NAME                unichr
+              114  STORE_NAME               unichr
+
+ L.  18       116  LOAD_NAME                reload
+              118  STORE_NAME               reload_module
+              120  JUMP_FORWARD        218  'to 218'
+            122_0  COME_FROM            24  '24'
+
+ L.  20       122  LOAD_CONST               True
+              124  STORE_NAME               PY3
+
+ L.  21       126  LOAD_NAME                sys
+              128  LOAD_ATTR                version_info
+              130  LOAD_CONST               None
+              132  LOAD_CONST               2
+              134  BUILD_SLICE_2         2 
+              136  BINARY_SUBSCR    
+              138  LOAD_CONST               (3, 4)
+              140  COMPARE_OP               >=
+              142  POP_JUMP_IF_FALSE   158  'to 158'
+
+ L.  22       144  LOAD_CONST               0
+              146  LOAD_CONST               ('reload',)
+              148  IMPORT_NAME              importlib
+              150  IMPORT_FROM              reload
+              152  STORE_NAME               reload_module
+              154  POP_TOP          
+              156  JUMP_FORWARD        170  'to 170'
+            158_0  COME_FROM           142  '142'
+
+ L.  24       158  LOAD_CONST               0
+              160  LOAD_CONST               ('reload',)
+              162  IMPORT_NAME              imp
+              164  IMPORT_FROM              reload
+              166  STORE_NAME               reload_module
+              168  POP_TOP          
+            170_0  COME_FROM           156  '156'
+
+ L.  25       170  LOAD_CODE                <code_object b>
+              172  LOAD_STR                 'b'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  STORE_NAME               b
+
+ L.  27       178  LOAD_CONST               0
+              180  LOAD_CONST               ('StringIO', 'BytesIO')
+              182  IMPORT_NAME              io
+              184  IMPORT_FROM              StringIO
+              186  STORE_NAME               StringIO
+              188  IMPORT_FROM              BytesIO
+              190  STORE_NAME               BytesIO
+              192  POP_TOP          
+
+ L.  28       194  LOAD_NAME                str
+              196  STORE_NAME               text_type
+
+ L.  29       198  LOAD_NAME                bytes
+              200  STORE_NAME               binary_type
+
+ L.  30       202  LOAD_NAME                str
+              204  BUILD_TUPLE_1         1 
+              206  STORE_NAME               string_types
+
+ L.  31       208  LOAD_NAME                int
+              210  BUILD_TUPLE_1         1 
+              212  STORE_NAME               integer_types
+
+ L.  32       214  LOAD_NAME                chr
+              216  STORE_NAME               unichr
+            218_0  COME_FROM           120  '120'
+
+ L.  34       218  LOAD_NAME                integer_types
+              220  LOAD_CONST               -1
+              222  BINARY_SUBSCR    
+              224  STORE_NAME               long_type
+
+Parse error at or near `<121>' instruction at offset 60
+

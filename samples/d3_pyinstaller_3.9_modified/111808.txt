@@ -1,0 +1,134 @@
+Instruction context:
+   
+ L.  12        62  DUP_TOP          
+                  64  LOAD_NAME                ImportError
+->                66  <121>                78  ''
+                  68  POP_TOP          
+                  70  POP_TOP          
+                  72  POP_TOP          
+
+test/111808.pyc -- 
+# decompile failed
+
+# file test/111808.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   2         8  LOAD_CONST               1
+               10  LOAD_CONST               ('model',)
+               12  IMPORT_NAME              
+               14  IMPORT_FROM              model
+               16  STORE_NAME               model
+               18  POP_TOP          
+
+ L.   3        20  LOAD_CONST               1
+               22  LOAD_CONST               ('FFIError',)
+               24  IMPORT_NAME              error
+               26  IMPORT_FROM              FFIError
+               28  STORE_NAME               FFIError
+               30  POP_TOP          
+
+ L.   6        32  BUILD_MAP_0           0 
+               34  STORE_NAME               COMMON_TYPES
+
+ L.   8        36  SETUP_FINALLY        62  'to 62'
+
+ L.  10        38  LOAD_CONST               0
+               40  LOAD_CONST               ('_get_common_types',)
+               42  IMPORT_NAME              _cffi_backend
+               44  IMPORT_FROM              _get_common_types
+               46  STORE_NAME               _get_common_types
+               48  POP_TOP          
+
+ L.  11        50  LOAD_NAME                _get_common_types
+               52  LOAD_NAME                COMMON_TYPES
+               54  CALL_FUNCTION_1       1  ''
+               56  POP_TOP          
+               58  POP_BLOCK        
+               60  JUMP_FORWARD         80  'to 80'
+             62_0  COME_FROM_FINALLY    36  '36'
+
+ L.  12        62  DUP_TOP          
+               64  LOAD_NAME                ImportError
+               66  <121>                78  ''
+               68  POP_TOP          
+               70  POP_TOP          
+               72  POP_TOP          
+
+ L.  13        74  POP_EXCEPT       
+               76  JUMP_FORWARD         80  'to 80'
+               78  <48>             
+             80_0  COME_FROM            76  '76'
+             80_1  COME_FROM            60  '60'
+
+ L.  15        80  LOAD_NAME                model
+               82  LOAD_METHOD              unknown_type
+               84  LOAD_STR                 'FILE'
+               86  LOAD_STR                 '_IO_FILE'
+               88  CALL_METHOD_2         2  ''
+               90  LOAD_NAME                COMMON_TYPES
+               92  LOAD_STR                 'FILE'
+               94  STORE_SUBSCR     
+
+ L.  16        96  LOAD_STR                 '_Bool'
+               98  LOAD_NAME                COMMON_TYPES
+              100  LOAD_STR                 'bool'
+              102  STORE_SUBSCR     
+
+ L.  18       104  LOAD_NAME                model
+              106  LOAD_ATTR                PrimitiveType
+              108  LOAD_ATTR                ALL_PRIMITIVE_TYPES
+              110  GET_ITER         
+            112_0  COME_FROM           134  '134'
+            112_1  COME_FROM           124  '124'
+              112  FOR_ITER            136  'to 136'
+              114  STORE_NAME               _type
+
+ L.  19       116  LOAD_NAME                _type
+              118  LOAD_METHOD              endswith
+              120  LOAD_STR                 '_t'
+              122  CALL_METHOD_1         1  ''
+              124  POP_JUMP_IF_FALSE_BACK   112  'to 112'
+
+ L.  20       126  LOAD_NAME                _type
+              128  LOAD_NAME                COMMON_TYPES
+              130  LOAD_NAME                _type
+              132  STORE_SUBSCR     
+              134  JUMP_BACK           112  'to 112'
+            136_0  COME_FROM           112  '112'
+
+ L.  21       136  DELETE_NAME              _type
+
+ L.  23       138  BUILD_MAP_0           0 
+              140  STORE_NAME               _CACHE
+
+ L.  25       142  LOAD_CODE                <code_object resolve_common_type>
+              144  LOAD_STR                 'resolve_common_type'
+              146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              148  STORE_NAME               resolve_common_type
+
+ L.  55       150  LOAD_CODE                <code_object win_common_types>
+              152  LOAD_STR                 'win_common_types'
+              154  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              156  STORE_NAME               win_common_types
+
+ L.  79       158  LOAD_NAME                sys
+              160  LOAD_ATTR                platform
+              162  LOAD_STR                 'win32'
+              164  COMPARE_OP               ==
+              166  POP_JUMP_IF_FALSE   180  'to 180'
+
+ L.  80       168  LOAD_NAME                COMMON_TYPES
+              170  LOAD_METHOD              update
+              172  LOAD_NAME                win_common_types
+              174  CALL_FUNCTION_0       0  ''
+              176  CALL_METHOD_1         1  ''
+              178  POP_TOP          
+            180_0  COME_FROM           166  '166'
+
+Parse error at or near `<121>' instruction at offset 66
+

@@ -1,0 +1,63 @@
+Instruction context:
+   
+ L.  13        28  DUP_TOP          
+                  30  LOAD_GLOBAL              ImportError
+->                32  <121>                46  ''
+                  34  POP_TOP          
+                  36  POP_TOP          
+                  38  POP_TOP          
+Instruction context:
+   
+ L.  45        26  LOAD_GLOBAL              type
+                  28  LOAD_FAST                's'
+                  30  CALL_FUNCTION_1       1  ''
+                  32  LOAD_GLOBAL              str
+->                34  <117>                 1  ''
+                  36  POP_JUMP_IF_FALSE   138  'to 138'
+Instruction context:
+   
+ L.  72        26  LOAD_GLOBAL              type
+                  28  LOAD_FAST                's'
+                  30  CALL_FUNCTION_1       1  ''
+                  32  LOAD_GLOBAL              str
+->                34  <117>                 1  ''
+                  36  POP_JUMP_IF_FALSE   138  'to 138'
+Instruction context:
+   
+ L. 243        84  LOAD_FAST                'indent'
+                  86  LOAD_CONST               None
+->                88  <117>                 1  ''
+                  90  POP_JUMP_IF_FALSE   110  'to 110'
+                  92  LOAD_GLOBAL              isinstance
+                  94  LOAD_FAST                'indent'
+                  96  LOAD_GLOBAL              string_types
+                  98  CALL_FUNCTION_2       2  ''
+                 100  POP_JUMP_IF_TRUE    110  'to 110'
+Instruction context:
+   
+ L. 286        16  LOAD_FAST                '_encoding'
+                  18  LOAD_CONST               None
+->                20  <117>                 1  ''
+                  22  POP_JUMP_IF_FALSE    42  'to 42'
+                  24  LOAD_FAST                '_encoding'
+                  26  LOAD_STR                 'utf-8'
+                  28  COMPARE_OP               ==
+                  30  POP_JUMP_IF_TRUE     42  'to 42'
+Instruction context:
+   
+ L. 322        32  LOAD_FAST                'self'
+                  34  LOAD_ATTR                encoding
+                  36  LOAD_STR                 'utf-8'
+                  38  COMPARE_OP               !=
+                  40  POP_JUMP_IF_FALSE    68  'to 68'
+                  42  LOAD_FAST                'self'
+                  44  LOAD_ATTR                encoding
+                  46  LOAD_CONST               None
+->                48  <117>                 1  ''
+                  50  POP_JUMP_IF_FALSE    68  'to 68'
+
+test/164841.pyc -- 
+# decompile failed
+
+# file test/164841.pyc
+# Deparsing stopped due to parse error

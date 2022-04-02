@@ -1,0 +1,221 @@
+Instruction context:
+   
+ L.  33        36  DUP_TOP          
+                  38  LOAD_GLOBAL              socket
+                  40  LOAD_ATTR                error
+->                42  <121>                80  ''
+                  44  POP_TOP          
+                  46  POP_TOP          
+                  48  POP_TOP          
+Instruction context:
+   
+ L.  64        88  LOAD_FAST                'self'
+                  90  LOAD_ATTR                _server
+                  92  LOAD_CONST               None
+->                94  <117>                 1  ''
+                  96  POP_JUMP_IF_FALSE   108  'to 108'
+Instruction context:
+   
+ L.  74        10  LOAD_FAST                'self'
+                  12  LOAD_ATTR                _sock
+                  14  LOAD_CONST               None
+->                16  <117>                 0  ''
+                  18  POP_JUMP_IF_FALSE    32  'to 32'
+Instruction context:
+   
+ L. 107        30  LOAD_FAST                'self'
+                  32  LOAD_ATTR                _buffer
+                  34  POP_JUMP_IF_TRUE     62  'to 62'
+                  36  LOAD_FAST                'self'
+                  38  LOAD_ATTR                _write_fut
+                  40  LOAD_CONST               None
+->                42  <117>                 0  ''
+                  44  POP_JUMP_IF_FALSE    62  'to 62'
+Instruction context:
+-> 
+ L. 131        68  LOAD_FAST                'self'
+                  70  LOAD_METHOD              _force_close
+                  72  LOAD_FAST                'exc'
+                  74  CALL_METHOD_1         1  ''
+                  76  POP_TOP          
+                  78  JUMP_FORWARD         92  'to 92'
+                80_0  COME_FROM_FINALLY     0  '0'
+                  80  LOAD_FAST                'self'
+                  82  LOAD_METHOD              _force_close
+                  84  LOAD_FAST                'exc'
+                  86  CALL_METHOD_1         1  ''
+                  88  POP_TOP          
+                  90  <48>             
+Instruction context:
+-> 
+ L. 161        16  LOAD_GLOBAL              hasattr
+                  18  LOAD_FAST                'self'
+                  20  LOAD_ATTR                _sock
+                  22  LOAD_STR                 'shutdown'
+                  24  CALL_FUNCTION_2       2  ''
+                  26  POP_JUMP_IF_FALSE    42  'to 42'
+Instruction context:
+   
+ L. 172         6  LOAD_FAST                'self'
+                   8  LOAD_ATTR                _buffer
+                  10  LOAD_CONST               None
+->                12  <117>                 1  ''
+                  14  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L. 217        22  LOAD_FAST                'self'
+                  24  LOAD_ATTR                _read_fut
+                  26  LOAD_CONST               None
+->                28  <117>                 0  ''
+                  30  POP_JUMP_IF_FALSE    48  'to 48'
+Instruction context:
+   
+ L. 236        38  DUP_TOP          
+                  40  LOAD_GLOBAL              SystemExit
+                  42  LOAD_GLOBAL              KeyboardInterrupt
+                  44  BUILD_TUPLE_2         2 
+->                46  <121>                60  ''
+                  48  POP_TOP          
+                  50  POP_TOP          
+                  52  POP_TOP          
+Instruction context:
+   
+ L. 250         6  LOAD_FAST                'self'
+                   8  LOAD_ATTR                _pending_data
+                  10  LOAD_CONST               None
+->                12  <117>                 0  ''
+                  14  POP_JUMP_IF_TRUE     20  'to 20'
+                  16  <74>             
+                  18  RAISE_VARARGS_1       1  'exception instance'
+                20_0  COME_FROM            14  '14'
+Instruction context:
+   
+ L. 274        10  LOAD_FAST                'fut'
+                  12  LOAD_CONST               None
+->                14  <117>                 1  ''
+                  16  POP_JUMP_IF_FALSE    80  'to 80'
+Instruction context:
+   
+ L. 338        50  LOAD_FAST                'self'
+                  52  LOAD_ATTR                _empty_waiter
+                  54  LOAD_CONST               None
+->                56  <117>                 1  ''
+                  58  POP_JUMP_IF_FALSE    68  'to 68'
+Instruction context:
+   
+ L. 371         4  LOAD_FAST                'f'
+                   6  LOAD_CONST               None
+->                 8  <117>                 1  ''
+                  10  POP_JUMP_IF_FALSE    34  'to 34'
+                  12  LOAD_FAST                'self'
+                  14  LOAD_ATTR                _write_fut
+                  16  LOAD_CONST               None
+                  18  <117>                 0  ''
+                  20  POP_JUMP_IF_FALSE    34  'to 34'
+                  22  LOAD_FAST                'self'
+                  24  LOAD_ATTR                _closing
+                  26  POP_JUMP_IF_FALSE    34  'to 34'
+Instruction context:
+   
+ L. 441        12  LOAD_FAST                'fut'
+                  14  LOAD_METHOD              result
+                  16  CALL_METHOD_0         0  ''
+                  18  LOAD_CONST               b''
+                  20  COMPARE_OP               ==
+                  22  POP_JUMP_IF_TRUE     28  'to 28'
+->                24  <74>             
+                  26  RAISE_VARARGS_1       1  'exception instance'
+                28_0  COME_FROM            22  '22'
+Instruction context:
+   
+ L. 484        38  LOAD_FAST                'self'
+                  40  LOAD_ATTR                _address
+                  42  LOAD_CONST               None
+->                44  <117>                 1  ''
+                  46  POP_JUMP_IF_FALSE    78  'to 78'
+                  48  LOAD_FAST                'addr'
+                  50  LOAD_CONST               None
+                  52  LOAD_FAST                'self'
+                  54  LOAD_ATTR                _address
+                  56  BUILD_TUPLE_2         2 
+                  58  <118>                 1  ''
+                  60  POP_JUMP_IF_FALSE    78  'to 78'
+Instruction context:
+   
+ L. 507         8  POP_BLOCK        
+->                10  LOAD_CONST               None
+                  12  RETURN_VALUE     
+                14_0  COME_FROM             6  '6'
+Instruction context:
+   
+ L. 541        16  POP_BLOCK        
+->                18  POP_BLOCK        
+Instruction context:
+   
+ L. 615        22  LOAD_FAST                'self'
+                  24  LOAD_ATTR                _write_fut
+                  26  LOAD_CONST               None
+->                28  <117>                 0  ''
+                  30  POP_JUMP_IF_FALSE    46  'to 46'
+Instruction context:
+   
+ L. 630        68  LOAD_GLOBAL              threading
+                  70  LOAD_METHOD              current_thread
+                  72  CALL_METHOD_0         0  ''
+                  74  LOAD_GLOBAL              threading
+                  76  LOAD_METHOD              main_thread
+                  78  CALL_METHOD_0         0  ''
+->                80  <117>                 0  ''
+                  82  POP_JUMP_IF_FALSE   100  'to 100'
+Instruction context:
+   
+ L. 678        28  LOAD_GLOBAL              threading
+                  30  LOAD_METHOD              current_thread
+                  32  CALL_METHOD_0         0  ''
+                  34  LOAD_GLOBAL              threading
+                  36  LOAD_METHOD              main_thread
+                  38  CALL_METHOD_0         0  ''
+->                40  <117>                 0  ''
+                  42  POP_JUMP_IF_FALSE    54  'to 54'
+Instruction context:
+   
+ L. 710        14  DUP_TOP          
+                  16  LOAD_GLOBAL              AttributeError
+                  18  LOAD_GLOBAL              io
+                  20  LOAD_ATTR                UnsupportedOperation
+                  22  BUILD_TUPLE_2         2 
+->                24  <121>                64  ''
+                  26  POP_TOP          
+                  28  STORE_FAST               'err'
+                  30  POP_TOP          
+                  32  SETUP_FINALLY        56  'to 56'
+Instruction context:
+-> 
+ L. 744        60  LOAD_FAST                'transp'
+                  62  LOAD_METHOD              _reset_empty_waiter
+                  64  CALL_METHOD_0         0  ''
+                  66  POP_TOP          
+Instruction context:
+   
+ L. 767         2  LOAD_FAST                'f'
+                   4  LOAD_CONST               None
+->                 6  <117>                 1  ''
+                   8  POP_JUMP_IF_FALSE    18  'to 18'
+Instruction context:
+   
+ L. 800         6  LOAD_FAST                'csock'
+                   8  LOAD_CONST               None
+->                10  <117>                 0  ''
+                  12  POP_JUMP_IF_FALSE    18  'to 18'
+Instruction context:
+   
+ L. 817         2  LOAD_FAST                'f'
+                   4  LOAD_CONST               None
+->                 6  <117>                 1  ''
+                   8  POP_JUMP_IF_FALSE   110  'to 110'
+
+test/101135.pyc -- 
+# decompile failed
+
+# file test/101135.pyc
+# Deparsing stopped due to parse error

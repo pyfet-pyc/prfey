@@ -1,0 +1,148 @@
+Instruction context:
+   
+ L.  23        44  BUILD_LIST_0          0 
+                  46  LOAD_CONST               ('getpass', 'getuser', 'GetPassWarning')
+->                48  CALL_FINALLY         51  'to 51'
+                  50  STORE_NAME               __all__
+
+test/101055.pyc -- 
+# decompile failed
+
+# file test/101055.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Utilities to get a password and/or the current user name.\n\ngetpass(prompt[, stream]) - Prompt for a password, with echo turned off.\ngetuser() - Get the user name from the environment or password database.\n\nGetPassWarning - This UserWarning is issued when getpass() cannot prevent\n                 echoing of the password contents while reading.\n\nOn Windows, the msvcrt module will be used.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  17         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              contextlib
+               10  STORE_NAME               contextlib
+
+ L.  18        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              io
+               18  STORE_NAME               io
+
+ L.  19        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              os
+               26  STORE_NAME               os
+
+ L.  20        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              sys
+               34  STORE_NAME               sys
+
+ L.  21        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              warnings
+               42  STORE_NAME               warnings
+
+ L.  23        44  BUILD_LIST_0          0 
+               46  LOAD_CONST               ('getpass', 'getuser', 'GetPassWarning')
+               48  CALL_FINALLY         51  'to 51'
+               50  STORE_NAME               __all__
+
+ L.  26        52  LOAD_BUILD_CLASS 
+               54  LOAD_CODE                <code_object GetPassWarning>
+               56  LOAD_STR                 'GetPassWarning'
+               58  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               60  LOAD_STR                 'GetPassWarning'
+               62  LOAD_NAME                UserWarning
+               64  CALL_FUNCTION_3       3  ''
+               66  STORE_NAME               GetPassWarning
+
+ L.  29        68  LOAD_CONST               ('Password: ', None)
+               70  LOAD_CODE                <code_object unix_getpass>
+               72  LOAD_STR                 'unix_getpass'
+               74  MAKE_FUNCTION_1          'default'
+               76  STORE_NAME               unix_getpass
+
+ L.  97        78  LOAD_CONST               ('Password: ', None)
+               80  LOAD_CODE                <code_object win_getpass>
+               82  LOAD_STR                 'win_getpass'
+               84  MAKE_FUNCTION_1          'default'
+               86  STORE_NAME               win_getpass
+
+ L. 120        88  LOAD_CONST               ('Password: ', None)
+               90  LOAD_CODE                <code_object fallback_getpass>
+               92  LOAD_STR                 'fallback_getpass'
+               94  MAKE_FUNCTION_1          'default'
+               96  STORE_NAME               fallback_getpass
+
+ L. 129        98  LOAD_CONST               ('', None, None)
+              100  LOAD_CODE                <code_object _raw_input>
+              102  LOAD_STR                 '_raw_input'
+              104  MAKE_FUNCTION_1          'default'
+              106  STORE_NAME               _raw_input
+
+ L. 154       108  LOAD_CODE                <code_object getuser>
+              110  LOAD_STR                 'getuser'
+              112  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              114  STORE_NAME               getuser
+
+ L. 172       116  SETUP_FINALLY       142  'to 142'
+
+ L. 173       118  LOAD_CONST               0
+              120  LOAD_CONST               None
+              122  IMPORT_NAME              termios
+              124  STORE_NAME               termios
+
+ L. 176       126  LOAD_NAME                termios
+              128  LOAD_ATTR                tcgetattr
+              130  LOAD_NAME                termios
+              132  LOAD_ATTR                tcsetattr
+              134  BUILD_TUPLE_2         2 
+              136  POP_TOP          
+              138  POP_BLOCK        
+              140  JUMP_FORWARD        204  'to 204'
+            142_0  COME_FROM_FINALLY   116  '116'
+
+ L. 177       142  DUP_TOP          
+              144  LOAD_NAME                ImportError
+              146  LOAD_NAME                AttributeError
+              148  BUILD_TUPLE_2         2 
+              150  <121>               202  ''
+              152  POP_TOP          
+              154  POP_TOP          
+              156  POP_TOP          
+
+ L. 178       158  SETUP_FINALLY       172  'to 172'
+
+ L. 179       160  LOAD_CONST               0
+              162  LOAD_CONST               None
+              164  IMPORT_NAME              msvcrt
+              166  STORE_NAME               msvcrt
+              168  POP_BLOCK        
+              170  JUMP_FORWARD        194  'to 194'
+            172_0  COME_FROM_FINALLY   158  '158'
+
+ L. 180       172  DUP_TOP          
+              174  LOAD_NAME                ImportError
+              176  <121>               192  ''
+              178  POP_TOP          
+              180  POP_TOP          
+              182  POP_TOP          
+
+ L. 181       184  LOAD_NAME                fallback_getpass
+              186  STORE_NAME               getpass
+              188  POP_EXCEPT       
+              190  JUMP_FORWARD        198  'to 198'
+              192  <48>             
+            194_0  COME_FROM           170  '170'
+
+ L. 183       194  LOAD_NAME                win_getpass
+              196  STORE_NAME               getpass
+            198_0  COME_FROM           190  '190'
+              198  POP_EXCEPT       
+              200  JUMP_FORWARD        208  'to 208'
+              202  <48>             
+            204_0  COME_FROM           140  '140'
+
+ L. 185       204  LOAD_NAME                unix_getpass
+              206  STORE_NAME               getpass
+            208_0  COME_FROM           200  '200'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 48
+

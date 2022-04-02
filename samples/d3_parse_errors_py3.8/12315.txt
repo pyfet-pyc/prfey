@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L. 242       170  POP_EXCEPT       
+                 172  JUMP_BACK            82  'to 82'
+                 174  POP_EXCEPT       
+                 176  JUMP_FORWARD        180  'to 180'
+->             178_0  COME_FROM           162  '162'
+                 178  END_FINALLY      
+               180_0  COME_FROM           176  '176'
+               180_1  COME_FROM           154  '154'
+Instruction context:
+   
+ L. 380       760  LOAD_FAST                'delim'
+                 762  LOAD_FAST                'skipinitialspace'
+                 764  BUILD_TUPLE_2         2 
+->               766  RETURN_VALUE     
+Instruction context:
+   
+ L. 448       384  LOAD_FAST                'hasHeader'
+                 386  LOAD_CONST               0
+                 388  COMPARE_OP               >
+->               390  RETURN_VALUE     
+
+../test/12315.pyc -- 
+# decompile failed
+
+# file ../test/12315.pyc
+# Deparsing stopped due to parse error

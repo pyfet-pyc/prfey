@@ -1,0 +1,90 @@
+Instruction context:
+   
+ L. 238        44  JUMP_FORWARD         48  'to 48'
+->                46  JUMP_BACK             8  'to 8'
+                48_0  COME_FROM            44  '44'
+                48_1  COME_FROM            30  '30'
+Instruction context:
+   
+ L. 283       230  POP_EXCEPT       
+->               232  LOAD_CONST               None
+                 234  RETURN_VALUE     
+                 236  END_FINALLY      
+               238_0  COME_FROM           222  '222'
+Instruction context:
+   
+ L. 316       150  LOAD_GLOBAL              ErrorDuringImport
+                 152  LOAD_FAST                'path'
+                 154  LOAD_GLOBAL              sys
+                 156  LOAD_METHOD              exc_info
+                 158  CALL_METHOD_0         0  ''
+                 160  CALL_FUNCTION_2       2  ''
+->               162  RAISE_VARARGS_1       1  'exception instance'
+                 164  POP_EXCEPT       
+                 166  JUMP_FORWARD        170  'to 170'
+                 168  END_FINALLY      
+Instruction context:
+   
+ L. 355       192  POP_EXCEPT       
+->               194  LOAD_CONST               None
+                 196  RETURN_VALUE     
+               198_0  COME_FROM           190  '190'
+               198_1  COME_FROM           180  '180'
+Instruction context:
+   
+ L. 854       304  POP_EXCEPT       
+                 306  BREAK_LOOP          310  'to 310'
+               308_0  COME_FROM           294  '294'
+->               308  END_FINALLY      
+               310_0  COME_FROM           306  '306'
+               310_1  COME_FROM           286  '286'
+Instruction context:
+-> 
+ L.1363       806  LOAD_STR                 '\n'
+                 808  LOAD_METHOD              join
+                 810  LOAD_FAST                'contents'
+                 812  CALL_METHOD_1         1  ''
+                 814  STORE_FAST               'contents'
+Instruction context:
+   
+ L.1496       280  LOAD_LAMBDA              '<code_object <lambda>>'
+                 282  LOAD_STR                 'getpager.<locals>.<lambda>'
+                 284  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+                 286  POP_BLOCK        
+->               288  CALL_FINALLY        304  'to 304'
+                 290  RETURN_VALUE     
+               292_0  COME_FROM           276  '276'
+               292_1  COME_FROM           256  '256'
+Instruction context:
+   
+ L.1627        88  JUMP_FORWARD         92  'to 92'
+->                90  JUMP_BACK            28  'to 28'
+                92_0  COME_FROM            88  '88'
+                92_1  COME_FROM            70  '70'
+                92_2  COME_FROM            38  '38'
+Instruction context:
+   
+ L.2030        40  POP_EXCEPT       
+->                42  LOAD_CONST               None
+                  44  RETURN_VALUE     
+                46_0  COME_FROM            20  '20'
+                  46  END_FINALLY      
+                48_0  COME_FROM            12  '12'
+Instruction context:
+   
+ L.2138       172  POP_TOP          
+->           174_176  JUMP_FORWARD        506  'to 506'
+               178_0  COME_FROM           170  '170'
+Instruction context:
+   
+ L.2696       124  POP_TOP          
+->               126  POP_BLOCK        
+                 128  LOAD_CONST               None
+                 130  RETURN_VALUE     
+               132_0  COME_FROM           114  '114'
+
+test/504.pyc -- 
+# decompile failed
+
+# file test/504.pyc
+# Deparsing stopped due to parse error

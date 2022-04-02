@@ -1,0 +1,39 @@
+Instruction context:
+   
+ L. 285       364  LOAD_FAST                'string'
+                 366  LOAD_METHOD              append
+                 368  LOAD_STR                 '\\{}'
+                 370  LOAD_METHOD              format
+                 372  LOAD_FAST                'c'
+                 374  CALL_METHOD_1         1  '1 positional argument'
+                 376  CALL_METHOD_1         1  '1 positional argument'
+                 378  POP_TOP          
+                 380  JUMP_BACK            76  'to 76'
+                 382  POP_BLOCK        
+->             384_0  COME_FROM_LOOP       64  '64'
+               384_1  COME_FROM            60  '60'
+Instruction context:
+   
+ L. 504       370  LOAD_FAST                'value'
+             372_374  POP_JUMP_IF_FALSE   388  'to 388'
+                 376  LOAD_GLOBAL              RE_WS
+                 378  LOAD_METHOD              search
+                 380  LOAD_FAST                'value'
+                 382  CALL_METHOD_1         1  '1 positional argument'
+             384_386  POP_JUMP_IF_FALSE   392  'to 392'
+               388_0  COME_FROM           372  '372'
+                 388  LOAD_STR                 '[^\\s\\S]'
+                 390  JUMP_FORWARD        400  'to 400'
+->             392_0  COME_FROM           384  '384'
+                 392  LOAD_GLOBAL              re
+                 394  LOAD_METHOD              escape
+                 396  LOAD_FAST                'value'
+                 398  CALL_METHOD_1         1  '1 positional argument'
+               400_0  COME_FROM           390  '390'
+                 400  STORE_FAST               'value'
+
+../test/121221.pyc -- 
+# decompile failed
+
+# file ../test/121221.pyc
+# Deparsing stopped due to parse error

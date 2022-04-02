@@ -1,0 +1,210 @@
+
+# file test/112064.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              win32api
+                6  STORE_NAME               win32api
+                8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              sys
+               14  STORE_NAME               sys
+               16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              os
+               22  STORE_NAME               os
+
+ L.   6        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              pythoncom
+               30  STORE_NAME               pythoncom
+
+ L.   9        32  LOAD_NAME                getattr
+               34  LOAD_NAME                sys
+               36  LOAD_STR                 'frozen'
+               38  LOAD_CONST               1
+               40  LOAD_CONST               0
+               42  COMPARE_OP               ==
+               44  CALL_FUNCTION_3       3  ''
+               46  STORE_NAME               _frozen
+
+ L.  11        48  LOAD_NAME                _frozen
+               50  POP_JUMP_IF_FALSE    72  'to 72'
+               52  LOAD_NAME                getattr
+               54  LOAD_NAME                pythoncom
+               56  LOAD_STR                 'frozen'
+               58  LOAD_CONST               0
+               60  CALL_FUNCTION_3       3  ''
+               62  POP_JUMP_IF_TRUE     72  'to 72'
+
+ L.  12        64  LOAD_NAME                sys
+               66  LOAD_ATTR                frozen
+               68  LOAD_NAME                pythoncom
+               70  STORE_ATTR               frozen
+             72_0  COME_FROM            62  '62'
+             72_1  COME_FROM            50  '50'
+
+ L.  21        72  LOAD_STR                 ''
+               74  STORE_GLOBAL             __gen_path__
+
+ L.  22        76  LOAD_CONST               None
+               78  STORE_GLOBAL             __build_path__
+
+ L.  26        80  LOAD_CODE                <code_object SetupEnvironment>
+               82  LOAD_STR                 'SetupEnvironment'
+               84  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               86  STORE_NAME               SetupEnvironment
+
+ L.  76        88  LOAD_CODE                <code_object __PackageSupportBuildPath__>
+               90  LOAD_STR                 '__PackageSupportBuildPath__'
+               92  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               94  STORE_NAME               __PackageSupportBuildPath__
+
+ L.  81        96  LOAD_NAME                _frozen
+               98  POP_JUMP_IF_TRUE    106  'to 106'
+
+ L.  82       100  LOAD_NAME                SetupEnvironment
+              102  CALL_FUNCTION_0       0  ''
+              104  POP_TOP          
+            106_0  COME_FROM            98  '98'
+
+ L.  87       106  LOAD_GLOBAL              __gen_path__
+              108  POP_JUMP_IF_TRUE    240  'to 240'
+
+ L.  88       110  SETUP_FINALLY       144  'to 144'
+
+ L.  89       112  LOAD_CONST               0
+              114  LOAD_CONST               None
+              116  IMPORT_NAME_ATTR         win32com.gen_py
+              118  STORE_NAME               win32com
+
+ L.  93       120  LOAD_NAME                next
+              122  LOAD_NAME                iter
+              124  LOAD_NAME                sys
+              126  LOAD_ATTR                modules
+              128  LOAD_STR                 'win32com.gen_py'
+              130  BINARY_SUBSCR    
+              132  LOAD_ATTR                __path__
+              134  CALL_FUNCTION_1       1  ''
+              136  CALL_FUNCTION_1       1  ''
+              138  STORE_GLOBAL             __gen_path__
+              140  POP_BLOCK        
+              142  JUMP_FORWARD        240  'to 240'
+            144_0  COME_FROM_FINALLY   110  '110'
+
+ L.  94       144  DUP_TOP          
+              146  LOAD_NAME                ImportError
+              148  <121>               238  ''
+              150  POP_TOP          
+              152  POP_TOP          
+              154  POP_TOP          
+
+ L.  98       156  LOAD_NAME                os
+              158  LOAD_ATTR                path
+              160  LOAD_METHOD              abspath
+              162  LOAD_NAME                os
+              164  LOAD_ATTR                path
+              166  LOAD_METHOD              join
+              168  LOAD_NAME                __path__
+              170  LOAD_CONST               0
+              172  BINARY_SUBSCR    
+              174  LOAD_STR                 'gen_py'
+              176  CALL_METHOD_2         2  ''
+              178  CALL_METHOD_1         1  ''
+              180  STORE_GLOBAL             __gen_path__
+
+ L.  99       182  LOAD_NAME                os
+              184  LOAD_ATTR                path
+              186  LOAD_METHOD              isdir
+              188  LOAD_GLOBAL              __gen_path__
+              190  CALL_METHOD_1         1  ''
+              192  POP_JUMP_IF_TRUE    234  'to 234'
+
+ L. 104       194  LOAD_NAME                os
+              196  LOAD_ATTR                path
+              198  LOAD_METHOD              join
+
+ L. 105       200  LOAD_NAME                win32api
+              202  LOAD_METHOD              GetTempPath
+              204  CALL_METHOD_0         0  ''
+              206  LOAD_STR                 'gen_py'
+
+ L. 106       208  LOAD_STR                 '%d.%d'
+              210  LOAD_NAME                sys
+              212  LOAD_ATTR                version_info
+              214  LOAD_CONST               0
+              216  BINARY_SUBSCR    
+              218  LOAD_NAME                sys
+              220  LOAD_ATTR                version_info
+              222  LOAD_CONST               1
+              224  BINARY_SUBSCR    
+              226  BUILD_TUPLE_2         2 
+              228  BINARY_MODULO    
+
+ L. 104       230  CALL_METHOD_3         3  ''
+              232  STORE_GLOBAL             __gen_path__
+            234_0  COME_FROM           192  '192'
+              234  POP_EXCEPT       
+              236  JUMP_FORWARD        240  'to 240'
+              238  <48>             
+            240_0  COME_FROM           236  '236'
+            240_1  COME_FROM           142  '142'
+            240_2  COME_FROM           108  '108'
+
+ L. 110       240  LOAD_STR                 'win32com.gen_py'
+              242  LOAD_NAME                sys
+              244  LOAD_ATTR                modules
+              246  <118>                 1  ''
+          248_250  POP_JUMP_IF_FALSE   292  'to 292'
+
+ L. 112       252  LOAD_CONST               0
+              254  LOAD_CONST               None
+              256  IMPORT_NAME              types
+              258  STORE_NAME               types
+
+ L. 113       260  LOAD_NAME                types
+              262  LOAD_METHOD              ModuleType
+              264  LOAD_STR                 'win32com.gen_py'
+              266  CALL_METHOD_1         1  ''
+              268  STORE_NAME               gen_py
+
+ L. 114       270  LOAD_GLOBAL              __gen_path__
+              272  BUILD_LIST_1          1 
+              274  LOAD_NAME                gen_py
+              276  STORE_ATTR               __path__
+
+ L. 115       278  LOAD_NAME                gen_py
+              280  LOAD_NAME                sys
+              282  LOAD_ATTR                modules
+              284  LOAD_NAME                gen_py
+              286  LOAD_ATTR                __name__
+              288  STORE_SUBSCR     
+
+ L. 116       290  DELETE_NAME              types
+            292_0  COME_FROM           248  '248'
+
+ L. 117       292  LOAD_NAME                sys
+              294  LOAD_ATTR                modules
+              296  LOAD_STR                 'win32com.gen_py'
+              298  BINARY_SUBSCR    
+              300  STORE_NAME               gen_py
+
+ L. 120       302  DELETE_NAME              os
+              304  DELETE_NAME              sys
+              306  DELETE_NAME              win32api
+              308  DELETE_NAME              pythoncom
+
+Parse error at or near `<121>' instruction at offset 148
+
+Instruction context:
+   
+ L.  94       144  DUP_TOP          
+                 146  LOAD_NAME                ImportError
+->               148  <121>               238  ''
+                 150  POP_TOP          
+                 152  POP_TOP          
+                 154  POP_TOP          
+
+test/112064.pyc -- 
+# decompile failed

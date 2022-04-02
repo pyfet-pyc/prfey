@@ -1,0 +1,172 @@
+
+# file test/164636.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "\ntl;dr: all code code is licensed under simplified BSD, unless stated otherwise.\n\nUnless stated otherwise in the source files, all code is copyright 2010 David\nWolever <david@wolever.net>. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n   1. Redistributions of source code must retain the above copyright notice,\n   this list of conditions and the following disclaimer.\n\n   2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY <COPYRIGHT HOLDER> ``AS IS'' AND ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO\nEVENT SHALL <COPYRIGHT HOLDER> OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,\nINDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,\nBUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF\nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nThe views and conclusions contained in the software and documentation are those\nof the authors and should not be interpreted as representing official policies,\neither expressed or implied, of David Wolever.\n\n"
+                2  STORE_NAME               __doc__
+
+ L.  33         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              re
+               10  STORE_NAME               re
+
+ L.  34        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              inspect
+               18  STORE_NAME               inspect
+
+ L.  35        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              warnings
+               26  STORE_NAME               warnings
+
+ L.  36        28  LOAD_CONST               0
+               30  LOAD_CONST               ('wraps',)
+               32  IMPORT_NAME              functools
+               34  IMPORT_FROM              wraps
+               36  STORE_NAME               wraps
+               38  POP_TOP          
+
+ L.  37        40  LOAD_CONST               0
+               42  LOAD_CONST               ('MethodType',)
+               44  IMPORT_NAME              types
+               46  IMPORT_FROM              MethodType
+               48  STORE_NAME               MethodType
+               50  POP_TOP          
+
+ L.  38        52  LOAD_CONST               0
+               54  LOAD_CONST               ('namedtuple',)
+               56  IMPORT_NAME              collections
+               58  IMPORT_FROM              namedtuple
+               60  STORE_NAME               namedtuple
+               62  POP_TOP          
+
+ L.  40        64  SETUP_FINALLY        82  'to 82'
+
+ L.  41        66  LOAD_CONST               0
+               68  LOAD_CONST               ('OrderedDict',)
+               70  IMPORT_NAME              collections
+               72  IMPORT_FROM              OrderedDict
+               74  STORE_NAME               MaybeOrderedDict
+               76  POP_TOP          
+               78  POP_BLOCK        
+               80  JUMP_FORWARD        104  'to 104'
+             82_0  COME_FROM_FINALLY    64  '64'
+
+ L.  42        82  DUP_TOP          
+               84  LOAD_NAME                ImportError
+               86  <121>               102  ''
+               88  POP_TOP          
+               90  POP_TOP          
+               92  POP_TOP          
+
+ L.  43        94  LOAD_NAME                dict
+               96  STORE_NAME               MaybeOrderedDict
+               98  POP_EXCEPT       
+              100  JUMP_FORWARD        104  'to 104'
+              102  <48>             
+            104_0  COME_FROM           100  '100'
+            104_1  COME_FROM            80  '80'
+
+ L.  45       104  LOAD_CONST               0
+              106  LOAD_CONST               ('TestCase',)
+              108  IMPORT_NAME              unittest
+              110  IMPORT_FROM              TestCase
+              112  STORE_NAME               TestCase
+              114  POP_TOP          
+
+ L.  47       116  LOAD_NAME                namedtuple
+              118  LOAD_STR                 'param'
+              120  LOAD_STR                 'args kwargs'
+              122  CALL_FUNCTION_2       2  ''
+              124  STORE_NAME               _param
+
+ L.  49       126  LOAD_BUILD_CLASS 
+              128  LOAD_CODE                <code_object param>
+              130  LOAD_STR                 'param'
+              132  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              134  LOAD_STR                 'param'
+              136  LOAD_NAME                _param
+              138  CALL_FUNCTION_3       3  ''
+              140  STORE_NAME               param
+
+ L. 116       142  LOAD_BUILD_CLASS 
+              144  LOAD_CODE                <code_object QuietOrderedDict>
+              146  LOAD_STR                 'QuietOrderedDict'
+              148  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              150  LOAD_STR                 'QuietOrderedDict'
+              152  LOAD_NAME                MaybeOrderedDict
+              154  CALL_FUNCTION_3       3  ''
+              156  STORE_NAME               QuietOrderedDict
+
+ L. 123       158  LOAD_CODE                <code_object parameterized_argument_value_pairs>
+              160  LOAD_STR                 'parameterized_argument_value_pairs'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  STORE_NAME               parameterized_argument_value_pairs
+
+ L. 182       166  LOAD_CONST               (64,)
+              168  LOAD_CODE                <code_object short_repr>
+              170  LOAD_STR                 'short_repr'
+              172  MAKE_FUNCTION_1          'default'
+              174  STORE_NAME               short_repr
+
+ L. 201       176  LOAD_CODE                <code_object default_doc_func>
+              178  LOAD_STR                 'default_doc_func'
+              180  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              182  STORE_NAME               default_doc_func
+
+ L. 221       184  LOAD_CODE                <code_object default_name_func>
+              186  LOAD_STR                 'default_name_func'
+              188  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              190  STORE_NAME               default_name_func
+
+ L. 230       192  LOAD_STR                 'nose'
+              194  STORE_GLOBAL             _test_runner_override
+
+ L. 231       196  LOAD_CONST               False
+              198  STORE_GLOBAL             _test_runner_guess
+
+ L. 232       200  LOAD_NAME                set
+              202  BUILD_LIST_0          0 
+              204  LOAD_CONST               ('unittest', 'unittest2', 'nose', 'nose2', 'pytest')
+              206  CALL_FINALLY        209  'to 209'
+              208  CALL_FUNCTION_1       1  ''
+              210  STORE_NAME               _test_runners
+
+ L. 234       212  LOAD_STR                 '_pytest'
+              214  LOAD_STR                 'pytest'
+
+ L. 233       216  BUILD_MAP_1           1 
+              218  STORE_NAME               _test_runner_aliases
+
+ L. 237       220  LOAD_CODE                <code_object set_test_runner>
+              222  LOAD_STR                 'set_test_runner'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  STORE_NAME               set_test_runner
+
+ L. 246       228  LOAD_CODE                <code_object detect_runner>
+              230  LOAD_STR                 'detect_runner'
+              232  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              234  STORE_NAME               detect_runner
+
+ L. 268       236  LOAD_BUILD_CLASS 
+              238  LOAD_CODE                <code_object parameterized>
+              240  LOAD_STR                 'parameterized'
+              242  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              244  LOAD_STR                 'parameterized'
+              246  CALL_FUNCTION_2       2  ''
+              248  STORE_NAME               parameterized
+
+Parse error at or near `<121>' instruction at offset 86
+
+Instruction context:
+   
+ L.  42        82  DUP_TOP          
+                  84  LOAD_NAME                ImportError
+->                86  <121>               102  ''
+                  88  POP_TOP          
+                  90  POP_TOP          
+                  92  POP_TOP          
+
+test/164636.pyc -- 
+# decompile failed

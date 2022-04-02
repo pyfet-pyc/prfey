@@ -1,0 +1,46 @@
+Instruction context:
+   
+ L.  32        54  POP_BLOCK        
+                  56  POP_EXCEPT       
+->                58  CALL_FINALLY         64  'to 64'
+                  60  LOAD_CONST               (False, '')
+                  62  RETURN_VALUE     
+                64_0  COME_FROM            58  '58'
+                64_1  COME_FROM_FINALLY    32  '32'
+                  64  LOAD_CONST               None
+                  66  STORE_FAST               'e'
+                  68  DELETE_FAST              'e'
+                  70  END_FINALLY      
+                  72  POP_EXCEPT       
+                  74  JUMP_FORWARD         78  'to 78'
+                76_0  COME_FROM            24  '24'
+                  76  END_FINALLY      
+                78_0  COME_FROM            74  '74'
+                78_1  COME_FROM            16  '16'
+Instruction context:
+   
+ L.  73        24  POP_EXCEPT       
+                  26  JUMP_FORWARD         30  'to 30'
+->              28_0  COME_FROM            16  '16'
+                  28  END_FINALLY      
+Instruction context:
+   
+ L. 332        30  POP_EXCEPT       
+                  32  JUMP_FORWARD         36  'to 36'
+->              34_0  COME_FROM            22  '22'
+                  34  END_FINALLY      
+Instruction context:
+   
+ L. 506       188  POP_EXCEPT       
+                 190  JUMP_BACK            64  'to 64'
+                 192  POP_EXCEPT       
+->               194  JUMP_BACK           148  'to 148'
+               196_0  COME_FROM           180  '180'
+                 196  END_FINALLY      
+               198_0  COME_FROM           170  '170'
+
+../test/157202.pyc -- 
+# decompile failed
+
+# file ../test/157202.pyc
+# Deparsing stopped due to parse error

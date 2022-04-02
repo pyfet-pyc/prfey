@@ -1,0 +1,76 @@
+Instruction context:
+   
+ L.   9        46  DUP_TOP          
+                  48  LOAD_NAME                NameError
+->                50  <121>                66  ''
+                  52  POP_TOP          
+                  54  POP_TOP          
+                  56  POP_TOP          
+
+test/101729.pyc -- 
+# decompile failed
+
+# file test/101729.pyc
+# --- This code section failed: ---
+
+ L.   3         0  LOAD_CONST               0
+                2  LOAD_CONST               ('time',)
+                4  IMPORT_NAME              time
+                6  IMPORT_FROM              time
+                8  STORE_NAME               now
+               10  POP_TOP          
+
+ L.   4        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              json
+               18  STORE_NAME               json
+
+ L.   5        20  LOAD_CONST               1
+               22  LOAD_CONST               ('canonical_names', 'normalize_name')
+               24  IMPORT_NAME              _canonical_names
+               26  IMPORT_FROM              canonical_names
+               28  STORE_NAME               canonical_names
+               30  IMPORT_FROM              normalize_name
+               32  STORE_NAME               normalize_name
+               34  POP_TOP          
+
+ L.   7        36  SETUP_FINALLY        46  'to 46'
+
+ L.   8        38  LOAD_NAME                basestring
+               40  POP_TOP          
+               42  POP_BLOCK        
+               44  JUMP_FORWARD         68  'to 68'
+             46_0  COME_FROM_FINALLY    36  '36'
+
+ L.   9        46  DUP_TOP          
+               48  LOAD_NAME                NameError
+               50  <121>                66  ''
+               52  POP_TOP          
+               54  POP_TOP          
+               56  POP_TOP          
+
+ L.  10        58  LOAD_NAME                str
+               60  STORE_NAME               basestring
+               62  POP_EXCEPT       
+               64  JUMP_FORWARD         68  'to 68'
+               66  <48>             
+             68_0  COME_FROM            64  '64'
+             68_1  COME_FROM            44  '44'
+
+ L.  12        68  LOAD_STR                 'down'
+               70  STORE_NAME               KEY_DOWN
+
+ L.  13        72  LOAD_STR                 'up'
+               74  STORE_NAME               KEY_UP
+
+ L.  15        76  LOAD_BUILD_CLASS 
+               78  LOAD_CODE                <code_object KeyboardEvent>
+               80  LOAD_STR                 'KeyboardEvent'
+               82  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               84  LOAD_STR                 'KeyboardEvent'
+               86  LOAD_NAME                object
+               88  CALL_FUNCTION_3       3  ''
+               90  STORE_NAME               KeyboardEvent
+
+Parse error at or near `<121>' instruction at offset 50
+

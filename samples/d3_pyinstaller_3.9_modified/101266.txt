@@ -1,0 +1,73 @@
+Instruction context:
+   
+ L.  36        70  LOAD_STR                 '__main__'
+                  72  LOAD_NAME                sys
+                  74  LOAD_ATTR                modules
+->                76  <118>                 0  ''
+                  78  POP_JUMP_IF_FALSE    96  'to 96'
+
+test/101266.pyc -- 
+# decompile failed
+
+# file test/101266.pyc
+# --- This code section failed: ---
+
+ L.  15         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.  16         8  LOAD_CONST               1
+               10  LOAD_CONST               ('context',)
+               12  IMPORT_NAME              
+               14  IMPORT_FROM              context
+               16  STORE_NAME               context
+               18  POP_TOP          
+
+ L.  22        20  LOAD_LISTCOMP            '<code_object <listcomp>>'
+               22  LOAD_STR                 '<listcomp>'
+               24  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               26  LOAD_NAME                dir
+               28  LOAD_NAME                context
+               30  LOAD_ATTR                _default_context
+               32  CALL_FUNCTION_1       1  ''
+               34  GET_ITER         
+               36  CALL_FUNCTION_1       1  ''
+               38  STORE_NAME               __all__
+
+ L.  23        40  LOAD_NAME                globals
+               42  CALL_FUNCTION_0       0  ''
+               44  LOAD_METHOD              update
+               46  LOAD_GENEXPR             '<code_object <genexpr>>'
+               48  LOAD_STR                 '<genexpr>'
+               50  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               52  LOAD_NAME                __all__
+               54  GET_ITER         
+               56  CALL_FUNCTION_1       1  ''
+               58  CALL_METHOD_1         1  ''
+               60  POP_TOP          
+
+ L.  29        62  LOAD_CONST               5
+               64  STORE_NAME               SUBDEBUG
+
+ L.  30        66  LOAD_CONST               25
+               68  STORE_NAME               SUBWARNING
+
+ L.  36        70  LOAD_STR                 '__main__'
+               72  LOAD_NAME                sys
+               74  LOAD_ATTR                modules
+               76  <118>                 0  ''
+               78  POP_JUMP_IF_FALSE    96  'to 96'
+
+ L.  37        80  LOAD_NAME                sys
+               82  LOAD_ATTR                modules
+               84  LOAD_STR                 '__main__'
+               86  BINARY_SUBSCR    
+               88  LOAD_NAME                sys
+               90  LOAD_ATTR                modules
+               92  LOAD_STR                 '__mp_main__'
+               94  STORE_SUBSCR     
+             96_0  COME_FROM            78  '78'
+
+Parse error at or near `<118>' instruction at offset 76
+

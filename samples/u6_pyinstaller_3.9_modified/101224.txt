@@ -1,0 +1,128 @@
+Instruction context:
+   
+ L.  13        92  BUILD_LIST_0          0 
+                  94  LOAD_CONST               ('Compat32', 'compat32', 'Policy', 'EmailPolicy', 'default', 'strict', 'SMTP', 'HTTP')
+->                96  CALL_FINALLY         99  'to 99'
+                  98  STORE_NAME               __all__
+
+test/101224.pyc -- 
+# decompile failed
+
+# file test/101224.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'This will be the home for the policy that hooks in the new\ncode that adds all the email6 features.\n'
+                2  STORE_NAME               __doc__
+
+ L.   5         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              re
+               10  STORE_NAME               re
+
+ L.   6        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L.   7        20  LOAD_CONST               0
+               22  LOAD_CONST               ('Policy', 'Compat32', 'compat32', '_extend_docstrings')
+               24  IMPORT_NAME_ATTR         email._policybase
+               26  IMPORT_FROM              Policy
+               28  STORE_NAME               Policy
+               30  IMPORT_FROM              Compat32
+               32  STORE_NAME               Compat32
+               34  IMPORT_FROM              compat32
+               36  STORE_NAME               compat32
+               38  IMPORT_FROM              _extend_docstrings
+               40  STORE_NAME               _extend_docstrings
+               42  POP_TOP          
+
+ L.   8        44  LOAD_CONST               0
+               46  LOAD_CONST               ('_has_surrogates',)
+               48  IMPORT_NAME_ATTR         email.utils
+               50  IMPORT_FROM              _has_surrogates
+               52  STORE_NAME               _has_surrogates
+               54  POP_TOP          
+
+ L.   9        56  LOAD_CONST               0
+               58  LOAD_CONST               ('HeaderRegistry',)
+               60  IMPORT_NAME_ATTR         email.headerregistry
+               62  IMPORT_FROM              HeaderRegistry
+               64  STORE_NAME               HeaderRegistry
+               66  POP_TOP          
+
+ L.  10        68  LOAD_CONST               0
+               70  LOAD_CONST               ('raw_data_manager',)
+               72  IMPORT_NAME_ATTR         email.contentmanager
+               74  IMPORT_FROM              raw_data_manager
+               76  STORE_NAME               raw_data_manager
+               78  POP_TOP          
+
+ L.  11        80  LOAD_CONST               0
+               82  LOAD_CONST               ('EmailMessage',)
+               84  IMPORT_NAME_ATTR         email.message
+               86  IMPORT_FROM              EmailMessage
+               88  STORE_NAME               EmailMessage
+               90  POP_TOP          
+
+ L.  13        92  BUILD_LIST_0          0 
+               94  LOAD_CONST               ('Compat32', 'compat32', 'Policy', 'EmailPolicy', 'default', 'strict', 'SMTP', 'HTTP')
+               96  CALL_FINALLY         99  'to 99'
+               98  STORE_NAME               __all__
+
+ L.  24       100  LOAD_NAME                re
+              102  LOAD_METHOD              compile
+              104  LOAD_STR                 '\\n|\\r'
+              106  CALL_METHOD_1         1  ''
+              108  STORE_NAME               linesep_splitter
+
+ L.  26       110  LOAD_NAME                _extend_docstrings
+
+ L.  27       112  LOAD_BUILD_CLASS 
+              114  LOAD_CODE                <code_object EmailPolicy>
+              116  LOAD_STR                 'EmailPolicy'
+              118  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              120  LOAD_STR                 'EmailPolicy'
+              122  LOAD_NAME                Policy
+              124  CALL_FUNCTION_3       3  ''
+              126  CALL_FUNCTION_1       1  ''
+              128  STORE_NAME               EmailPolicy
+
+ L. 218       130  LOAD_NAME                EmailPolicy
+              132  CALL_FUNCTION_0       0  ''
+              134  STORE_NAME               default
+
+ L. 220       136  LOAD_NAME                default
+              138  DELETE_ATTR              header_factory
+
+ L. 221       140  LOAD_NAME                default
+              142  LOAD_ATTR                clone
+              144  LOAD_CONST               True
+              146  LOAD_CONST               ('raise_on_defect',)
+              148  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+              150  STORE_NAME               strict
+
+ L. 222       152  LOAD_NAME                default
+              154  LOAD_ATTR                clone
+              156  LOAD_STR                 '\r\n'
+              158  LOAD_CONST               ('linesep',)
+              160  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+              162  STORE_NAME               SMTP
+
+ L. 223       164  LOAD_NAME                default
+              166  LOAD_ATTR                clone
+              168  LOAD_STR                 '\r\n'
+              170  LOAD_CONST               None
+              172  LOAD_CONST               ('linesep', 'max_line_length')
+              174  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              176  STORE_NAME               HTTP
+
+ L. 224       178  LOAD_NAME                SMTP
+              180  LOAD_ATTR                clone
+              182  LOAD_CONST               True
+              184  LOAD_CONST               ('utf8',)
+              186  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+              188  STORE_NAME               SMTPUTF8
+
+Parse error at or near `CALL_FINALLY' instruction at offset 96
+

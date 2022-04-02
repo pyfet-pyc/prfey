@@ -1,0 +1,41 @@
+Instruction context:
+   
+ L. 139        90  LOAD_FAST                'mac_len'
+                  92  LOAD_CONST               (4, 6, 8, 10, 12, 14, 16)
+->                94  <118>                 1  ''
+                  96  POP_JUMP_IF_FALSE   110  'to 110'
+Instruction context:
+   
+ L. 282        48  LOAD_GLOBAL              len
+                  50  LOAD_FAST                'self'
+                  52  LOAD_ATTR                _cache
+                  54  CALL_FUNCTION_1       1  ''
+                  56  LOAD_FAST                'self'
+                  58  LOAD_ATTR                block_size
+                  60  COMPARE_OP               <
+                  62  POP_JUMP_IF_TRUE     68  'to 68'
+->                64  <74>             
+                  66  RAISE_VARARGS_1       1  'exception instance'
+                68_0  COME_FROM            62  '62'
+Instruction context:
+   
+ L. 474        12  LOAD_FAST                'self'
+                  14  LOAD_ATTR                _assoc_len
+                  16  LOAD_CONST               None
+->                18  <117>                 0  ''
+                  20  POP_JUMP_IF_FALSE    80  'to 80'
+Instruction context:
+   
+ L. 638        20  DUP_TOP          
+                  22  LOAD_GLOBAL              KeyError
+->                24  <121>                70  ''
+                  26  POP_TOP          
+                  28  STORE_FAST               'e'
+                  30  POP_TOP          
+                  32  SETUP_FINALLY        62  'to 62'
+
+test/101161.pyc -- 
+# decompile failed
+
+# file test/101161.pyc
+# Deparsing stopped due to parse error

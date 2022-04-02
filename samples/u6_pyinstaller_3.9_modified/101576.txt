@@ -1,0 +1,456 @@
+
+# file test/101576.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   3         8  LOAD_CONST               0
+               10  LOAD_CONST               ('automation', 'typeinfo', 'COMError')
+               12  IMPORT_NAME              comtypes
+               14  IMPORT_FROM              automation
+               16  STORE_NAME               automation
+               18  IMPORT_FROM              typeinfo
+               20  STORE_NAME               typeinfo
+               22  IMPORT_FROM              COMError
+               24  STORE_NAME               COMError
+               26  POP_TOP          
+
+ L.   4        28  LOAD_CONST               0
+               30  LOAD_CONST               ('typedesc',)
+               32  IMPORT_NAME_ATTR         comtypes.tools
+               34  IMPORT_FROM              typedesc
+               36  STORE_NAME               typedesc
+               38  POP_TOP          
+
+ L.   5        40  LOAD_CONST               0
+               42  LOAD_CONST               ('c_void_p', 'sizeof', 'alignment')
+               44  IMPORT_NAME              ctypes
+               46  IMPORT_FROM              c_void_p
+               48  STORE_NAME               c_void_p
+               50  IMPORT_FROM              sizeof
+               52  STORE_NAME               sizeof
+               54  IMPORT_FROM              alignment
+               56  STORE_NAME               alignment
+               58  POP_TOP          
+
+ L.   7        60  SETUP_FINALLY        70  'to 70'
+
+ L.   8        62  LOAD_NAME                set
+               64  POP_TOP          
+               66  POP_BLOCK        
+               68  JUMP_FORWARD        100  'to 100'
+             70_0  COME_FROM_FINALLY    60  '60'
+
+ L.   9        70  DUP_TOP          
+               72  LOAD_NAME                NameError
+               74  <121>                98  ''
+               76  POP_TOP          
+               78  POP_TOP          
+               80  POP_TOP          
+
+ L.  10        82  LOAD_CONST               0
+               84  LOAD_CONST               ('Set',)
+               86  IMPORT_NAME              sets
+               88  IMPORT_FROM              Set
+               90  STORE_NAME               set
+               92  POP_TOP          
+               94  POP_EXCEPT       
+               96  JUMP_FORWARD        100  'to 100'
+               98  <48>             
+            100_0  COME_FROM            96  '96'
+            100_1  COME_FROM            68  '68'
+
+ L.  13       100  LOAD_NAME                sys
+              102  LOAD_ATTR                maxsize
+              104  LOAD_CONST               4294967296
+              106  COMPARE_OP               >
+              108  STORE_NAME               is_64bits
+
+ L.  18       110  LOAD_CODE                <code_object PTR>
+              112  LOAD_STR                 'PTR'
+              114  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              116  STORE_NAME               PTR
+
+ L.  24       118  LOAD_NAME                typedesc
+              120  LOAD_METHOD              FundamentalType
+              122  LOAD_STR                 'char'
+              124  LOAD_CONST               8
+              126  LOAD_CONST               8
+              128  CALL_METHOD_3         3  ''
+              130  STORE_NAME               char_type
+
+ L.  25       132  LOAD_NAME                typedesc
+              134  LOAD_METHOD              FundamentalType
+              136  LOAD_STR                 'unsigned char'
+              138  LOAD_CONST               8
+              140  LOAD_CONST               8
+              142  CALL_METHOD_3         3  ''
+              144  STORE_NAME               uchar_type
+
+ L.  26       146  LOAD_NAME                typedesc
+              148  LOAD_METHOD              FundamentalType
+              150  LOAD_STR                 'wchar_t'
+              152  LOAD_CONST               16
+              154  LOAD_CONST               16
+              156  CALL_METHOD_3         3  ''
+              158  STORE_NAME               wchar_t_type
+
+ L.  27       160  LOAD_NAME                typedesc
+              162  LOAD_METHOD              FundamentalType
+              164  LOAD_STR                 'short int'
+              166  LOAD_CONST               16
+              168  LOAD_CONST               16
+              170  CALL_METHOD_3         3  ''
+              172  STORE_NAME               short_type
+
+ L.  28       174  LOAD_NAME                typedesc
+              176  LOAD_METHOD              FundamentalType
+              178  LOAD_STR                 'short unsigned int'
+              180  LOAD_CONST               16
+              182  LOAD_CONST               16
+              184  CALL_METHOD_3         3  ''
+              186  STORE_NAME               ushort_type
+
+ L.  29       188  LOAD_NAME                typedesc
+              190  LOAD_METHOD              FundamentalType
+              192  LOAD_STR                 'int'
+              194  LOAD_CONST               32
+              196  LOAD_CONST               32
+              198  CALL_METHOD_3         3  ''
+              200  STORE_NAME               int_type
+
+ L.  30       202  LOAD_NAME                typedesc
+              204  LOAD_METHOD              FundamentalType
+              206  LOAD_STR                 'unsigned int'
+              208  LOAD_CONST               32
+              210  LOAD_CONST               32
+              212  CALL_METHOD_3         3  ''
+              214  STORE_NAME               uint_type
+
+ L.  31       216  LOAD_NAME                typedesc
+              218  LOAD_METHOD              FundamentalType
+              220  LOAD_STR                 'long int'
+              222  LOAD_CONST               32
+              224  LOAD_CONST               32
+              226  CALL_METHOD_3         3  ''
+              228  STORE_NAME               long_type
+
+ L.  32       230  LOAD_NAME                typedesc
+              232  LOAD_METHOD              FundamentalType
+              234  LOAD_STR                 'long unsigned int'
+              236  LOAD_CONST               32
+              238  LOAD_CONST               32
+              240  CALL_METHOD_3         3  ''
+              242  STORE_NAME               ulong_type
+
+ L.  33       244  LOAD_NAME                typedesc
+              246  LOAD_METHOD              FundamentalType
+              248  LOAD_STR                 'long long int'
+              250  LOAD_CONST               64
+              252  LOAD_CONST               64
+              254  CALL_METHOD_3         3  ''
+              256  STORE_NAME               longlong_type
+
+ L.  34       258  LOAD_NAME                typedesc
+              260  LOAD_METHOD              FundamentalType
+              262  LOAD_STR                 'long long unsigned int'
+              264  LOAD_CONST               64
+              266  LOAD_CONST               64
+              268  CALL_METHOD_3         3  ''
+              270  STORE_NAME               ulonglong_type
+
+ L.  35       272  LOAD_NAME                typedesc
+              274  LOAD_METHOD              FundamentalType
+              276  LOAD_STR                 'float'
+              278  LOAD_CONST               32
+              280  LOAD_CONST               32
+              282  CALL_METHOD_3         3  ''
+              284  STORE_NAME               float_type
+
+ L.  36       286  LOAD_NAME                typedesc
+              288  LOAD_METHOD              FundamentalType
+              290  LOAD_STR                 'double'
+              292  LOAD_CONST               64
+              294  LOAD_CONST               64
+              296  CALL_METHOD_3         3  ''
+              298  STORE_NAME               double_type
+
+ L.  39       300  LOAD_NAME                typedesc
+              302  LOAD_METHOD              Typedef
+              304  LOAD_STR                 'BSTR'
+              306  LOAD_NAME                PTR
+              308  LOAD_NAME                wchar_t_type
+              310  CALL_FUNCTION_1       1  ''
+              312  CALL_METHOD_2         2  ''
+              314  STORE_NAME               BSTR_type
+
+ L.  40       316  LOAD_NAME                typedesc
+              318  LOAD_METHOD              Typedef
+              320  LOAD_STR                 'SCODE'
+              322  LOAD_NAME                int_type
+              324  CALL_METHOD_2         2  ''
+              326  STORE_NAME               SCODE_type
+
+ L.  41       328  LOAD_NAME                typedesc
+              330  LOAD_METHOD              Typedef
+              332  LOAD_STR                 'VARIANT_BOOL'
+              334  LOAD_NAME                short_type
+              336  CALL_METHOD_2         2  ''
+              338  STORE_NAME               VARIANT_BOOL_type
+
+ L.  42       340  LOAD_NAME                typedesc
+              342  LOAD_METHOD              Typedef
+              344  LOAD_STR                 'HRESULT'
+              346  LOAD_NAME                ulong_type
+              348  CALL_METHOD_2         2  ''
+              350  STORE_NAME               HRESULT_type
+
+ L.  44       352  LOAD_NAME                typedesc
+              354  LOAD_ATTR                Structure
+              356  LOAD_STR                 'VARIANT'
+
+ L.  45       358  LOAD_NAME                alignment
+              360  LOAD_NAME                automation
+              362  LOAD_ATTR                VARIANT
+              364  CALL_FUNCTION_1       1  ''
+              366  LOAD_CONST               8
+              368  BINARY_MULTIPLY  
+
+ L.  46       370  BUILD_LIST_0          0 
+              372  BUILD_LIST_0          0 
+
+ L.  47       374  LOAD_NAME                sizeof
+              376  LOAD_NAME                automation
+              378  LOAD_ATTR                VARIANT
+              380  CALL_FUNCTION_1       1  ''
+              382  LOAD_CONST               8
+              384  BINARY_MULTIPLY  
+
+ L.  44       386  LOAD_CONST               ('align', 'members', 'bases', 'size')
+              388  CALL_FUNCTION_KW_5     5  '5 total positional and keyword args'
+              390  STORE_NAME               VARIANT_type
+
+ L.  48       392  LOAD_NAME                typedesc
+              394  LOAD_METHOD              Typedef
+              396  LOAD_STR                 'IDispatch'
+              398  LOAD_CONST               None
+              400  CALL_METHOD_2         2  ''
+              402  STORE_NAME               IDISPATCH_type
+
+ L.  49       404  LOAD_NAME                typedesc
+              406  LOAD_METHOD              Typedef
+              408  LOAD_STR                 'IUnknown'
+              410  LOAD_CONST               None
+              412  CALL_METHOD_2         2  ''
+              414  STORE_NAME               IUNKNOWN_type
+
+ L.  50       416  LOAD_NAME                typedesc
+              418  LOAD_ATTR                Structure
+              420  LOAD_STR                 'DECIMAL'
+
+ L.  51       422  LOAD_NAME                alignment
+              424  LOAD_NAME                automation
+              426  LOAD_ATTR                DECIMAL
+              428  CALL_FUNCTION_1       1  ''
+              430  LOAD_CONST               8
+              432  BINARY_MULTIPLY  
+
+ L.  52       434  BUILD_LIST_0          0 
+              436  BUILD_LIST_0          0 
+
+ L.  53       438  LOAD_NAME                sizeof
+              440  LOAD_NAME                automation
+              442  LOAD_ATTR                DECIMAL
+              444  CALL_FUNCTION_1       1  ''
+              446  LOAD_CONST               8
+              448  BINARY_MULTIPLY  
+
+ L.  50       450  LOAD_CONST               ('align', 'members', 'bases', 'size')
+              452  CALL_FUNCTION_KW_5     5  '5 total positional and keyword args'
+              454  STORE_NAME               DECIMAL_type
+
+ L.  55       456  LOAD_CODE                <code_object midlSAFEARRAY>
+              458  LOAD_STR                 'midlSAFEARRAY'
+              460  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              462  STORE_NAME               midlSAFEARRAY
+
+ L.  59       464  LOAD_NAME                longlong_type
+              466  STORE_NAME               CURRENCY_type
+
+ L.  60       468  LOAD_NAME                double_type
+              470  STORE_NAME               DATE_type
+
+ L.  63       472  LOAD_NAME                automation
+              474  LOAD_ATTR                VT_I2
+              476  LOAD_NAME                short_type
+
+ L.  64       478  LOAD_NAME                automation
+              480  LOAD_ATTR                VT_I4
+              482  LOAD_NAME                int_type
+
+ L.  65       484  LOAD_NAME                automation
+              486  LOAD_ATTR                VT_R4
+              488  LOAD_NAME                float_type
+
+ L.  66       490  LOAD_NAME                automation
+              492  LOAD_ATTR                VT_R8
+              494  LOAD_NAME                double_type
+
+ L.  67       496  LOAD_NAME                automation
+              498  LOAD_ATTR                VT_CY
+              500  LOAD_NAME                CURRENCY_type
+
+ L.  68       502  LOAD_NAME                automation
+              504  LOAD_ATTR                VT_DATE
+              506  LOAD_NAME                DATE_type
+
+ L.  69       508  LOAD_NAME                automation
+              510  LOAD_ATTR                VT_BSTR
+              512  LOAD_NAME                BSTR_type
+
+ L.  70       514  LOAD_NAME                automation
+              516  LOAD_ATTR                VT_DISPATCH
+              518  LOAD_NAME                PTR
+              520  LOAD_NAME                IDISPATCH_type
+              522  CALL_FUNCTION_1       1  ''
+
+ L.  71       524  LOAD_NAME                automation
+              526  LOAD_ATTR                VT_ERROR
+              528  LOAD_NAME                SCODE_type
+
+ L.  72       530  LOAD_NAME                automation
+              532  LOAD_ATTR                VT_BOOL
+              534  LOAD_NAME                VARIANT_BOOL_type
+
+ L.  73       536  LOAD_NAME                automation
+              538  LOAD_ATTR                VT_VARIANT
+              540  LOAD_NAME                VARIANT_type
+
+ L.  74       542  LOAD_NAME                automation
+              544  LOAD_ATTR                VT_UNKNOWN
+              546  LOAD_NAME                PTR
+              548  LOAD_NAME                IUNKNOWN_type
+              550  CALL_FUNCTION_1       1  ''
+
+ L.  75       552  LOAD_NAME                automation
+              554  LOAD_ATTR                VT_DECIMAL
+              556  LOAD_NAME                DECIMAL_type
+
+ L.  77       558  LOAD_NAME                automation
+              560  LOAD_ATTR                VT_I1
+              562  LOAD_NAME                char_type
+
+ L.  78       564  LOAD_NAME                automation
+              566  LOAD_ATTR                VT_UI1
+              568  LOAD_NAME                uchar_type
+
+ L.  79       570  LOAD_NAME                automation
+              572  LOAD_ATTR                VT_UI2
+              574  LOAD_NAME                ushort_type
+
+ L.  80       576  LOAD_NAME                automation
+              578  LOAD_ATTR                VT_UI4
+              580  LOAD_NAME                ulong_type
+
+ L.  81       582  LOAD_NAME                automation
+              584  LOAD_ATTR                VT_I8
+              586  LOAD_NAME                longlong_type
+
+ L.  82       588  LOAD_NAME                automation
+              590  LOAD_ATTR                VT_UI8
+              592  LOAD_NAME                ulonglong_type
+
+ L.  83       594  LOAD_NAME                automation
+              596  LOAD_ATTR                VT_INT
+              598  LOAD_NAME                int_type
+
+ L.  84       600  LOAD_NAME                automation
+              602  LOAD_ATTR                VT_UINT
+              604  LOAD_NAME                uint_type
+
+ L.  85       606  LOAD_NAME                automation
+              608  LOAD_ATTR                VT_VOID
+              610  LOAD_NAME                typedesc
+              612  LOAD_METHOD              FundamentalType
+              614  LOAD_STR                 'void'
+              616  LOAD_CONST               0
+              618  LOAD_CONST               0
+              620  CALL_METHOD_3         3  ''
+
+ L.  86       622  LOAD_NAME                automation
+              624  LOAD_ATTR                VT_HRESULT
+              626  LOAD_NAME                HRESULT_type
+
+ L.  87       628  LOAD_NAME                automation
+              630  LOAD_ATTR                VT_LPSTR
+              632  LOAD_NAME                PTR
+              634  LOAD_NAME                char_type
+              636  CALL_FUNCTION_1       1  ''
+
+ L.  88       638  LOAD_NAME                automation
+              640  LOAD_ATTR                VT_LPWSTR
+              642  LOAD_NAME                PTR
+              644  LOAD_NAME                wchar_t_type
+              646  CALL_FUNCTION_1       1  ''
+
+ L.  62       648  BUILD_MAP_25         25 
+              650  STORE_NAME               COMTYPES
+
+ L. 103       652  LOAD_BUILD_CLASS 
+              654  LOAD_CODE                <code_object Parser>
+              656  LOAD_STR                 'Parser'
+              658  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              660  LOAD_STR                 'Parser'
+              662  LOAD_NAME                object
+              664  CALL_FUNCTION_3       3  ''
+              666  STORE_NAME               Parser
+
+ L. 637       668  LOAD_BUILD_CLASS 
+              670  LOAD_CODE                <code_object TlbFileParser>
+              672  LOAD_STR                 'TlbFileParser'
+              674  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              676  LOAD_STR                 'TlbFileParser'
+              678  LOAD_NAME                Parser
+              680  CALL_FUNCTION_3       3  ''
+              682  STORE_NAME               TlbFileParser
+
+ L. 644       684  LOAD_BUILD_CLASS 
+              686  LOAD_CODE                <code_object TypeLibParser>
+              688  LOAD_STR                 'TypeLibParser'
+              690  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              692  LOAD_STR                 'TypeLibParser'
+              694  LOAD_NAME                Parser
+              696  CALL_FUNCTION_3       3  ''
+              698  STORE_NAME               TypeLibParser
+
+ L. 693       700  LOAD_CODE                <code_object get_tlib_filename>
+              702  LOAD_STR                 'get_tlib_filename'
+              704  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              706  STORE_NAME               get_tlib_filename
+
+ L. 714       708  LOAD_CODE                <code_object _py2exe_hint>
+              710  LOAD_STR                 '_py2exe_hint'
+              712  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              714  STORE_NAME               _py2exe_hint
+
+ L. 720       716  LOAD_CODE                <code_object generate_module>
+              718  LOAD_STR                 'generate_module'
+              720  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              722  STORE_NAME               generate_module
+
+Parse error at or near `<121>' instruction at offset 74
+
+Instruction context:
+   
+ L.   9        70  DUP_TOP          
+                  72  LOAD_NAME                NameError
+->                74  <121>                98  ''
+                  76  POP_TOP          
+                  78  POP_TOP          
+                  80  POP_TOP          
+
+test/101576.pyc -- 
+# decompile failed

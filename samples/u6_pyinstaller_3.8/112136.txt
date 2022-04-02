@@ -1,0 +1,78 @@
+Instruction context:
+   
+ L.  90       140  JUMP_BACK            92  'to 92'
+->               142  JUMP_FORWARD        186  'to 186'
+               144_0  COME_FROM           122  '122'
+               144_1  COME_FROM           110  '110'
+Instruction context:
+   
+ L. 415       862  LOAD_FAST                'path'
+                 864  LOAD_CONST               None
+                 866  LOAD_CONST               0
+                 868  BUILD_SLICE_2         2 
+                 870  BINARY_SUBSCR    
+->             872_0  COME_FROM           396  '396'
+                 872  STORE_FAST               'var'
+Instruction context:
+   
+ L. 520        16  DUP_TOP          
+                  18  LOAD_GLOBAL              OSError
+                  20  LOAD_GLOBAL              ValueError
+                  22  BUILD_TUPLE_2         2 
+                  24  COMPARE_OP               exception-match
+                  26  POP_JUMP_IF_FALSE    46  'to 46'
+                  28  POP_TOP          
+->                30  POP_TOP          
+                  32  POP_TOP          
+Instruction context:
+   
+ L. 555        84  POP_BLOCK        
+->                86  POP_EXCEPT       
+                  88  CALL_FINALLY         98  'to 98'
+                  90  BREAK_LOOP          136  'to 136'
+                92_0  COME_FROM            82  '82'
+Instruction context:
+   
+ L. 596       106  LOAD_GLOBAL              abspath
+                 108  LOAD_FAST                'path'
+                 110  LOAD_FAST                'tail'
+                 112  BINARY_ADD       
+                 114  CALL_FUNCTION_1       1  ''
+                 116  ROT_FOUR         
+->               118  POP_BLOCK        
+                 120  POP_EXCEPT       
+                 122  CALL_FINALLY        148  'to 148'
+                 124  RETURN_VALUE     
+               126_0  COME_FROM           104  '104'
+               126_1  COME_FROM           100  '100'
+Instruction context:
+   
+ L. 686       306  DUP_TOP          
+                 308  LOAD_GLOBAL              TypeError
+                 310  LOAD_GLOBAL              ValueError
+                 312  LOAD_GLOBAL              AttributeError
+                 314  LOAD_GLOBAL              BytesWarning
+                 316  LOAD_GLOBAL              DeprecationWarning
+                 318  BUILD_TUPLE_5         5 
+                 320  COMPARE_OP               exception-match
+             322_324  POP_JUMP_IF_FALSE   352  'to 352'
+                 326  POP_TOP          
+->               328  POP_TOP          
+                 330  POP_TOP          
+Instruction context:
+   
+ L. 748       392  DUP_TOP          
+                 394  LOAD_GLOBAL              TypeError
+                 396  LOAD_GLOBAL              AttributeError
+                 398  BUILD_TUPLE_2         2 
+                 400  COMPARE_OP               exception-match
+             402_404  POP_JUMP_IF_FALSE   432  'to 432'
+                 406  POP_TOP          
+->               408  POP_TOP          
+                 410  POP_TOP          
+
+../test/112136.pyc -- 
+# decompile failed
+
+# file ../test/112136.pyc
+# Deparsing stopped due to parse error

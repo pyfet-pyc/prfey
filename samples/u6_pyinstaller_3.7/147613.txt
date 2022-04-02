@@ -1,0 +1,25 @@
+Instruction context:
+   
+ L. 242        62  LOAD_GLOBAL              re
+                  64  LOAD_METHOD              match
+                  66  LOAD_STR                 '.*?\\blm\\b'
+                  68  LOAD_FAST                'self'
+                  70  LOAD_ATTR                info
+                  72  LOAD_CONST               0
+                  74  BINARY_SUBSCR    
+                  76  LOAD_STR                 'flags'
+                  78  BINARY_SUBSCR    
+                  80  CALL_METHOD_2         2  '2 positional arguments'
+                  82  LOAD_CONST               None
+                  84  COMPARE_OP               is-not
+                86_0  COME_FROM            60  '60'
+                86_1  COME_FROM            50  '50'
+                86_2  COME_FROM            42  '42'
+->              86_3  COME_FROM             6  '6'
+                  86  RETURN_VALUE     
+
+../test/147613.pyc -- 
+# decompile failed
+
+# file ../test/147613.pyc
+# Deparsing stopped due to parse error

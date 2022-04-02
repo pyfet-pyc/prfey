@@ -1,0 +1,70 @@
+Instruction context:
+   
+ L.  32        54  POP_BLOCK        
+                  56  POP_EXCEPT       
+->                58  CALL_FINALLY         64  'to 64'
+                  60  LOAD_CONST               (False, '')
+                  62  RETURN_VALUE     
+                64_0  COME_FROM            58  '58'
+                64_1  COME_FROM_FINALLY    32  '32'
+                  64  LOAD_CONST               None
+                  66  STORE_FAST               'e'
+                  68  DELETE_FAST              'e'
+                  70  END_FINALLY      
+                  72  POP_EXCEPT       
+                  74  JUMP_FORWARD         78  'to 78'
+                76_0  COME_FROM            24  '24'
+                  76  END_FINALLY      
+                78_0  COME_FROM            74  '74'
+                78_1  COME_FROM            16  '16'
+Instruction context:
+   
+ L.  72        10  DUP_TOP          
+                  12  LOAD_GLOBAL              Exception
+                  14  COMPARE_OP               exception-match
+                  16  POP_JUMP_IF_FALSE    28  'to 28'
+                  18  POP_TOP          
+->                20  POP_TOP          
+                  22  POP_TOP          
+Instruction context:
+   
+ L. 242        62  LOAD_GLOBAL              re
+                  64  LOAD_METHOD              match
+                  66  LOAD_STR                 '.*?\\blm\\b'
+                  68  LOAD_FAST                'self'
+                  70  LOAD_ATTR                info
+                  72  LOAD_CONST               0
+                  74  BINARY_SUBSCR    
+                  76  LOAD_STR                 'flags'
+                  78  BINARY_SUBSCR    
+                  80  CALL_METHOD_2         2  ''
+                  82  LOAD_CONST               None
+                  84  COMPARE_OP               is-not
+                86_0  COME_FROM            60  '60'
+                86_1  COME_FROM            50  '50'
+                86_2  COME_FROM            42  '42'
+->              86_3  COME_FROM             6  '6'
+Instruction context:
+   
+ L. 332        16  DUP_TOP          
+                  18  LOAD_GLOBAL              Exception
+                  20  COMPARE_OP               exception-match
+                  22  POP_JUMP_IF_FALSE    34  'to 34'
+                  24  POP_TOP          
+->                26  POP_TOP          
+                  28  POP_TOP          
+Instruction context:
+   
+ L. 506       188  POP_EXCEPT       
+                 190  JUMP_BACK            64  'to 64'
+->               192  POP_EXCEPT       
+                 194  JUMP_BACK           148  'to 148'
+               196_0  COME_FROM           180  '180'
+                 196  END_FINALLY      
+               198_0  COME_FROM           170  '170'
+
+../test/157202.pyc -- 
+# decompile failed
+
+# file ../test/157202.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,40 @@
+Instruction context:
+   
+ L.  59        14  LOAD_FAST                'character'
+                  16  LOAD_FAST                'self'
+                  18  LOAD_ATTR                _last_printable_char
+                  20  COMPARE_OP               !=
+                  22  POP_JUMP_IF_FALSE    90  'to 90'
+                  24  LOAD_FAST                'character'
+                  26  LOAD_CONST               ('<', '>', '=', ':', '/', '&', ';', '{', '}', '[', ']')
+->                28  <118>                 1  ''
+                  30  POP_JUMP_IF_FALSE    90  'to 90'
+Instruction context:
+   
+ L. 178        14  LOAD_FAST                'self'
+                  16  LOAD_ATTR                _last_printable_seen
+                  18  LOAD_CONST               None
+->                20  <117>                 0  ''
+                  22  POP_JUMP_IF_FALSE    34  'to 34'
+Instruction context:
+   
+ L. 252       218  LOAD_FAST                'character'
+                 220  LOAD_CONST               frozenset({'<', '>', '=', '-'})
+->               222  <118>                 1  ''
+             224_226  POP_JUMP_IF_FALSE   272  'to 272'
+                 228  LOAD_FAST                'character'
+                 230  LOAD_METHOD              isdigit
+                 232  CALL_METHOD_0         0  ''
+                 234  LOAD_CONST               False
+                 236  <117>                 0  ''
+             238_240  POP_JUMP_IF_FALSE   272  'to 272'
+                 242  LOAD_GLOBAL              is_symbol
+                 244  LOAD_FAST                'character'
+                 246  CALL_FUNCTION_1       1  ''
+             248_250  POP_JUMP_IF_FALSE   272  'to 272'
+
+test/39601.pyc -- 
+# decompile failed
+
+# file test/39601.pyc
+# Deparsing stopped due to parse error

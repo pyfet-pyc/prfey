@@ -1,0 +1,334 @@
+
+# file test/101258.pyc
+# --- This code section failed: ---
+
+ L.  10         0  LOAD_CONST               0
+                2  LOAD_CONST               ('ABCMeta',)
+                4  IMPORT_NAME              abc
+                6  IMPORT_FROM              ABCMeta
+                8  STORE_NAME               ABCMeta
+               10  POP_TOP          
+
+ L.  11        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              copyreg
+               18  STORE_NAME               copyreg
+
+ L.  12        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              functools
+               26  STORE_NAME               functools
+
+ L.  13        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              io
+               34  STORE_NAME               io
+
+ L.  14        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              os
+               42  STORE_NAME               os
+
+ L.  15        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              pickle
+               50  STORE_NAME               pickle
+
+ L.  16        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              socket
+               58  STORE_NAME               socket
+
+ L.  17        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              sys
+               66  STORE_NAME               sys
+
+ L.  19        68  LOAD_CONST               1
+               70  LOAD_CONST               ('context',)
+               72  IMPORT_NAME              
+               74  IMPORT_FROM              context
+               76  STORE_NAME               context
+               78  POP_TOP          
+
+ L.  21        80  BUILD_LIST_0          0 
+               82  LOAD_CONST               ('send_handle', 'recv_handle', 'ForkingPickler', 'register', 'dump')
+               84  CALL_FINALLY         87  'to 87'
+               86  STORE_NAME               __all__
+
+ L.  24        88  LOAD_NAME                sys
+               90  LOAD_ATTR                platform
+               92  LOAD_STR                 'win32'
+               94  COMPARE_OP               ==
+               96  JUMP_IF_TRUE_OR_POP   128  'to 128'
+
+ L.  25        98  LOAD_NAME                hasattr
+              100  LOAD_NAME                socket
+              102  LOAD_STR                 'CMSG_LEN'
+              104  CALL_FUNCTION_2       2  ''
+              106  JUMP_IF_FALSE_OR_POP   128  'to 128'
+
+ L.  26       108  LOAD_NAME                hasattr
+              110  LOAD_NAME                socket
+              112  LOAD_STR                 'SCM_RIGHTS'
+              114  CALL_FUNCTION_2       2  ''
+
+ L.  25       116  JUMP_IF_FALSE_OR_POP   128  'to 128'
+
+ L.  27       118  LOAD_NAME                hasattr
+              120  LOAD_NAME                socket
+              122  LOAD_ATTR                socket
+              124  LOAD_STR                 'sendmsg'
+              126  CALL_FUNCTION_2       2  ''
+            128_0  COME_FROM           116  '116'
+            128_1  COME_FROM           106  '106'
+            128_2  COME_FROM            96  '96'
+
+ L.  24       128  STORE_NAME               HAVE_SEND_HANDLE
+
+ L.  33       130  LOAD_BUILD_CLASS 
+              132  LOAD_CODE                <code_object ForkingPickler>
+              134  LOAD_STR                 'ForkingPickler'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  LOAD_STR                 'ForkingPickler'
+              140  LOAD_NAME                pickle
+              142  LOAD_ATTR                Pickler
+              144  CALL_FUNCTION_3       3  ''
+              146  STORE_NAME               ForkingPickler
+
+ L.  56       148  LOAD_NAME                ForkingPickler
+              150  LOAD_ATTR                register
+              152  STORE_NAME               register
+
+ L.  58       154  LOAD_CONST               (None,)
+              156  LOAD_CODE                <code_object dump>
+              158  LOAD_STR                 'dump'
+              160  MAKE_FUNCTION_1          'default'
+              162  STORE_NAME               dump
+
+ L.  66       164  LOAD_NAME                sys
+              166  LOAD_ATTR                platform
+              168  LOAD_STR                 'win32'
+              170  COMPARE_OP               ==
+          172_174  POP_JUMP_IF_FALSE   254  'to 254'
+
+ L.  68       176  LOAD_NAME                __all__
+              178  BUILD_LIST_0          0 
+              180  LOAD_CONST               ('DupHandle', 'duplicate', 'steal_handle')
+              182  CALL_FINALLY        185  'to 185'
+              184  INPLACE_ADD      
+              186  STORE_NAME               __all__
+
+ L.  69       188  LOAD_CONST               0
+              190  LOAD_CONST               None
+              192  IMPORT_NAME              _winapi
+              194  STORE_NAME               _winapi
+
+ L.  71       196  LOAD_CONST               (None, False)
+
+ L.  72       198  LOAD_CONST               None
+
+ L.  71       200  LOAD_CONST               ('source_process',)
+              202  BUILD_CONST_KEY_MAP_1     1 
+              204  LOAD_CODE                <code_object duplicate>
+              206  LOAD_STR                 'duplicate'
+              208  MAKE_FUNCTION_3          'default, keyword-only'
+              210  STORE_NAME               duplicate
+
+ L.  83       212  LOAD_CODE                <code_object steal_handle>
+              214  LOAD_STR                 'steal_handle'
+              216  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              218  STORE_NAME               steal_handle
+
+ L.  95       220  LOAD_CODE                <code_object send_handle>
+              222  LOAD_STR                 'send_handle'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  STORE_NAME               send_handle
+
+ L. 100       228  LOAD_CODE                <code_object recv_handle>
+              230  LOAD_STR                 'recv_handle'
+              232  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              234  STORE_NAME               recv_handle
+
+ L. 104       236  LOAD_BUILD_CLASS 
+              238  LOAD_CODE                <code_object DupHandle>
+              240  LOAD_STR                 'DupHandle'
+              242  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              244  LOAD_STR                 'DupHandle'
+              246  LOAD_NAME                object
+              248  CALL_FUNCTION_3       3  ''
+              250  STORE_NAME               DupHandle
+              252  JUMP_FORWARD        324  'to 324'
+            254_0  COME_FROM           172  '172'
+
+ L. 139       254  LOAD_NAME                __all__
+              256  BUILD_LIST_0          0 
+              258  LOAD_CONST               ('DupFd', 'sendfds', 'recvfds')
+              260  CALL_FINALLY        263  'to 263'
+              262  INPLACE_ADD      
+              264  STORE_NAME               __all__
+
+ L. 140       266  LOAD_CONST               0
+              268  LOAD_CONST               None
+              270  IMPORT_NAME              array
+              272  STORE_NAME               array
+
+ L. 143       274  LOAD_NAME                sys
+              276  LOAD_ATTR                platform
+              278  LOAD_STR                 'darwin'
+              280  COMPARE_OP               ==
+              282  STORE_NAME               ACKNOWLEDGE
+
+ L. 145       284  LOAD_CODE                <code_object sendfds>
+              286  LOAD_STR                 'sendfds'
+              288  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              290  STORE_NAME               sendfds
+
+ L. 153       292  LOAD_CODE                <code_object recvfds>
+              294  LOAD_STR                 'recvfds'
+              296  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              298  STORE_NAME               recvfds
+
+ L. 181       300  LOAD_CODE                <code_object send_handle>
+              302  LOAD_STR                 'send_handle'
+              304  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              306  STORE_NAME               send_handle
+
+ L. 186       308  LOAD_CODE                <code_object recv_handle>
+              310  LOAD_STR                 'recv_handle'
+              312  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              314  STORE_NAME               recv_handle
+
+ L. 191       316  LOAD_CODE                <code_object DupFd>
+              318  LOAD_STR                 'DupFd'
+              320  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              322  STORE_NAME               DupFd
+            324_0  COME_FROM           252  '252'
+
+ L. 206       324  LOAD_CODE                <code_object _reduce_method>
+              326  LOAD_STR                 '_reduce_method'
+              328  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              330  STORE_NAME               _reduce_method
+
+ L. 211       332  LOAD_BUILD_CLASS 
+              334  LOAD_CODE                <code_object _C>
+              336  LOAD_STR                 '_C'
+              338  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              340  LOAD_STR                 '_C'
+              342  CALL_FUNCTION_2       2  ''
+              344  STORE_NAME               _C
+
+ L. 214       346  LOAD_NAME                register
+              348  LOAD_NAME                type
+              350  LOAD_NAME                _C
+              352  CALL_FUNCTION_0       0  ''
+              354  LOAD_ATTR                f
+              356  CALL_FUNCTION_1       1  ''
+              358  LOAD_NAME                _reduce_method
+              360  CALL_FUNCTION_2       2  ''
+              362  POP_TOP          
+
+ L. 217       364  LOAD_CODE                <code_object _reduce_method_descriptor>
+              366  LOAD_STR                 '_reduce_method_descriptor'
+              368  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              370  STORE_NAME               _reduce_method_descriptor
+
+ L. 219       372  LOAD_NAME                register
+              374  LOAD_NAME                type
+              376  LOAD_NAME                list
+              378  LOAD_ATTR                append
+              380  CALL_FUNCTION_1       1  ''
+              382  LOAD_NAME                _reduce_method_descriptor
+              384  CALL_FUNCTION_2       2  ''
+              386  POP_TOP          
+
+ L. 220       388  LOAD_NAME                register
+              390  LOAD_NAME                type
+              392  LOAD_NAME                int
+              394  LOAD_ATTR                __add__
+              396  CALL_FUNCTION_1       1  ''
+              398  LOAD_NAME                _reduce_method_descriptor
+              400  CALL_FUNCTION_2       2  ''
+              402  POP_TOP          
+
+ L. 223       404  LOAD_CODE                <code_object _reduce_partial>
+              406  LOAD_STR                 '_reduce_partial'
+              408  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              410  STORE_NAME               _reduce_partial
+
+ L. 225       412  LOAD_CODE                <code_object _rebuild_partial>
+              414  LOAD_STR                 '_rebuild_partial'
+              416  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              418  STORE_NAME               _rebuild_partial
+
+ L. 227       420  LOAD_NAME                register
+              422  LOAD_NAME                functools
+              424  LOAD_ATTR                partial
+              426  LOAD_NAME                _reduce_partial
+              428  CALL_FUNCTION_2       2  ''
+              430  POP_TOP          
+
+ L. 233       432  LOAD_NAME                sys
+              434  LOAD_ATTR                platform
+              436  LOAD_STR                 'win32'
+              438  COMPARE_OP               ==
+          440_442  POP_JUMP_IF_FALSE   474  'to 474'
+
+ L. 234       444  LOAD_CODE                <code_object _reduce_socket>
+              446  LOAD_STR                 '_reduce_socket'
+              448  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              450  STORE_NAME               _reduce_socket
+
+ L. 237       452  LOAD_CODE                <code_object _rebuild_socket>
+              454  LOAD_STR                 '_rebuild_socket'
+              456  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              458  STORE_NAME               _rebuild_socket
+
+ L. 239       460  LOAD_NAME                register
+              462  LOAD_NAME                socket
+              464  LOAD_ATTR                socket
+              466  LOAD_NAME                _reduce_socket
+              468  CALL_FUNCTION_2       2  ''
+              470  POP_TOP          
+              472  JUMP_FORWARD        502  'to 502'
+            474_0  COME_FROM           440  '440'
+
+ L. 242       474  LOAD_CODE                <code_object _reduce_socket>
+              476  LOAD_STR                 '_reduce_socket'
+              478  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              480  STORE_NAME               _reduce_socket
+
+ L. 245       482  LOAD_CODE                <code_object _rebuild_socket>
+              484  LOAD_STR                 '_rebuild_socket'
+              486  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              488  STORE_NAME               _rebuild_socket
+
+ L. 248       490  LOAD_NAME                register
+              492  LOAD_NAME                socket
+              494  LOAD_ATTR                socket
+              496  LOAD_NAME                _reduce_socket
+              498  CALL_FUNCTION_2       2  ''
+              500  POP_TOP          
+            502_0  COME_FROM           472  '472'
+
+ L. 251       502  LOAD_BUILD_CLASS 
+              504  LOAD_CODE                <code_object AbstractReducer>
+              506  LOAD_STR                 'AbstractReducer'
+              508  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              510  LOAD_STR                 'AbstractReducer'
+              512  LOAD_NAME                ABCMeta
+              514  LOAD_CONST               ('metaclass',)
+              516  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              518  STORE_NAME               AbstractReducer
+
+Parse error at or near `CALL_FINALLY' instruction at offset 84
+
+Instruction context:
+   
+ L.  21        80  BUILD_LIST_0          0 
+                  82  LOAD_CONST               ('send_handle', 'recv_handle', 'ForkingPickler', 'register', 'dump')
+->                84  CALL_FINALLY         87  'to 87'
+                  86  STORE_NAME               __all__
+
+test/101258.pyc -- 
+# decompile failed

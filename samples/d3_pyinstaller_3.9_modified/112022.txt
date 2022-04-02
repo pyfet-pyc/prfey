@@ -1,0 +1,101 @@
+Instruction context:
+   
+ L. 152        12  BUILD_LIST_0          0 
+                  14  LOAD_CONST               (('egg-base=', 'e', 'directory containing .egg-info directories (default: top of the source tree)'), ('tag-date', 'd', 'Add date stamp (e.g. 20050528) to version number'), ('tag-build=', 'b', 'Specify explicit tag to add to version number'), ('no-date', 'D', "Don't include date stamp [default]"))
+->                16  CALL_FINALLY         19  'to 19'
+                  18  STORE_NAME               user_options
+
+test/112022.pyc -- 
+# decompile failed
+
+# file test/112022.pyc
+# --- This code section failed: ---
+
+ L. 149         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'egg_info'
+                6  STORE_NAME               __qualname__
+
+ L. 150         8  LOAD_STR                 "create a distribution's .egg-info directory"
+               10  STORE_NAME               description
+
+ L. 152        12  BUILD_LIST_0          0 
+               14  LOAD_CONST               (('egg-base=', 'e', 'directory containing .egg-info directories (default: top of the source tree)'), ('tag-date', 'd', 'Add date stamp (e.g. 20050528) to version number'), ('tag-build=', 'b', 'Specify explicit tag to add to version number'), ('no-date', 'D', "Don't include date stamp [default]"))
+               16  CALL_FINALLY         19  'to 19'
+               18  STORE_NAME               user_options
+
+ L. 160        20  LOAD_STR                 'tag-date'
+               22  BUILD_LIST_1          1 
+               24  STORE_NAME               boolean_options
+
+ L. 162        26  LOAD_STR                 'no-date'
+               28  LOAD_STR                 'tag-date'
+
+ L. 161        30  BUILD_MAP_1           1 
+               32  STORE_NAME               negative_opt
+
+ L. 165        34  LOAD_CODE                <code_object initialize_options>
+               36  LOAD_STR                 'egg_info.initialize_options'
+               38  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               40  STORE_NAME               initialize_options
+
+ L. 175        42  LOAD_NAME                property
+
+ L. 176        44  LOAD_CODE                <code_object tag_svn_revision>
+               46  LOAD_STR                 'egg_info.tag_svn_revision'
+               48  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               50  CALL_FUNCTION_1       1  ''
+               52  STORE_NAME               tag_svn_revision
+
+ L. 179        54  LOAD_NAME                tag_svn_revision
+               56  LOAD_ATTR                setter
+
+ L. 180        58  LOAD_CODE                <code_object tag_svn_revision>
+               60  LOAD_STR                 'egg_info.tag_svn_revision'
+               62  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               64  CALL_FUNCTION_1       1  ''
+               66  STORE_NAME               tag_svn_revision
+
+ L. 184        68  LOAD_CODE                <code_object save_version_info>
+               70  LOAD_STR                 'egg_info.save_version_info'
+               72  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               74  STORE_NAME               save_version_info
+
+ L. 197        76  LOAD_CODE                <code_object finalize_options>
+               78  LOAD_STR                 'egg_info.finalize_options'
+               80  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               82  STORE_NAME               finalize_options
+
+ L. 246        84  LOAD_CONST               (False,)
+               86  LOAD_CODE                <code_object write_or_delete_file>
+               88  LOAD_STR                 'egg_info.write_or_delete_file'
+               90  MAKE_FUNCTION_1          'default'
+               92  STORE_NAME               write_or_delete_file
+
+ L. 266        94  LOAD_CODE                <code_object write_file>
+               96  LOAD_STR                 'egg_info.write_file'
+               98  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              100  STORE_NAME               write_file
+
+ L. 279       102  LOAD_CODE                <code_object delete_file>
+              104  LOAD_STR                 'egg_info.delete_file'
+              106  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              108  STORE_NAME               delete_file
+
+ L. 285       110  LOAD_CODE                <code_object run>
+              112  LOAD_STR                 'egg_info.run'
+              114  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              116  STORE_NAME               run
+
+ L. 301       118  LOAD_CODE                <code_object find_sources>
+              120  LOAD_STR                 'egg_info.find_sources'
+              122  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              124  STORE_NAME               find_sources
+
+ L. 309       126  LOAD_CODE                <code_object check_broken_egg_info>
+              128  LOAD_STR                 'egg_info.check_broken_egg_info'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  STORE_NAME               check_broken_egg_info
+
+Parse error at or near `CALL_FINALLY' instruction at offset 16
+

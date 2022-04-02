@@ -1,0 +1,41 @@
+Instruction context:
+   
+ L. 429        40  POP_EXCEPT       
+                  42  JUMP_FORWARD         70  'to 70'
+->              44_0  COME_FROM            32  '32'
+                  44  END_FINALLY      
+                  46  JUMP_FORWARD         70  'to 70'
+                48_0  COME_FROM            12  '12'
+Instruction context:
+   
+ L.1035       104  POP_EXCEPT       
+                 106  JUMP_BACK            60  'to 60'
+                 108  POP_EXCEPT       
+->               110  JUMP_BACK            60  'to 60'
+               112_0  COME_FROM            96  '96'
+Instruction context:
+   
+ L.1259        40  LOAD_FAST                'hook'
+                  42  LOAD_FAST                'path'
+                  44  CALL_FUNCTION_1       1  ''
+                  46  POP_BLOCK        
+                  48  ROT_TWO          
+->                50  POP_TOP          
+                  52  RETURN_VALUE     
+                54_0  COME_FROM_FINALLY    38  '38'
+Instruction context:
+   
+ L.1603       206  POP_EXCEPT       
+                 208  JUMP_BACK           106  'to 106'
+                 210  POP_EXCEPT       
+->               212  JUMP_BACK           106  'to 106'
+               214_0  COME_FROM           198  '198'
+                 214  END_FINALLY      
+                 216  JUMP_BACK           106  'to 106'
+               218_0  COME_FROM           106  '106'
+
+test/114.pyc -- 
+# decompile failed
+
+# file test/114.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,94 @@
+Instruction context:
+   
+ L.  92        66  POP_BLOCK        
+->                68  BEGIN_FINALLY    
+                  70  WITH_CLEANUP_START
+                  72  WITH_CLEANUP_FINISH
+                  74  POP_FINALLY           0  ''
+                  76  POP_BLOCK        
+                  78  CALL_FINALLY        166  'to 166'
+                  80  LOAD_CONST               True
+                  82  RETURN_VALUE     
+                84_0  COME_FROM            44  '44'
+Instruction context:
+   
+ L. 278        36  DUP_TOP          
+                  38  LOAD_GLOBAL              Exception
+                  40  COMPARE_OP               exception-match
+                  42  POP_JUMP_IF_FALSE    54  'to 54'
+                  44  POP_TOP          
+->                46  POP_TOP          
+                  48  POP_TOP          
+Instruction context:
+   
+ L. 373        80  DUP_TOP          
+                  82  LOAD_GLOBAL              AttributeError
+                  84  COMPARE_OP               exception-match
+                  86  POP_JUMP_IF_FALSE   100  'to 100'
+                  88  POP_TOP          
+->                90  POP_TOP          
+                  92  POP_TOP          
+Instruction context:
+   
+ L. 702        12  LOAD_GLOBAL              _load_unlocked
+                  14  LOAD_FAST                'spec'
+                  16  CALL_FUNCTION_1       1  ''
+                  18  POP_BLOCK        
+->                20  ROT_TWO          
+                  22  BEGIN_FINALLY    
+                  24  WITH_CLEANUP_START
+                  26  WITH_CLEANUP_FINISH
+                  28  POP_FINALLY           0  ''
+                  30  RETURN_VALUE     
+                32_0  COME_FROM_WITH        8  '8'
+                  32  WITH_CLEANUP_START
+                  34  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 912       110  POP_EXCEPT       
+->               112  POP_BLOCK        
+                 114  BEGIN_FINALLY    
+                 116  WITH_CLEANUP_START
+                 118  WITH_CLEANUP_FINISH
+                 120  POP_FINALLY           0  ''
+                 122  JUMP_BACK            52  'to 52'
+               124_0  COME_FROM           108  '108'
+                 124  POP_EXCEPT       
+                 126  JUMP_FORWARD        142  'to 142'
+               128_0  COME_FROM            82  '82'
+                 128  END_FINALLY      
+               130_0  COME_FROM            74  '74'
+Instruction context:
+   
+ L. 991        32  LOAD_GLOBAL              _find_and_load_unlocked
+                  34  LOAD_FAST                'name'
+                  36  LOAD_FAST                'import_'
+                  38  CALL_FUNCTION_2       2  ''
+                  40  POP_BLOCK        
+->                42  ROT_TWO          
+                  44  BEGIN_FINALLY    
+                  46  WITH_CLEANUP_START
+                  48  WITH_CLEANUP_FINISH
+                  50  POP_FINALLY           0  ''
+                  52  RETURN_VALUE     
+                54_0  COME_FROM            30  '30'
+                  54  POP_BLOCK        
+                  56  BEGIN_FINALLY    
+                58_0  COME_FROM_WITH        6  '6'
+                  58  WITH_CLEANUP_START
+                  60  WITH_CLEANUP_FINISH
+                  62  END_FINALLY      
+Instruction context:
+   
+ L.1049       192  POP_BLOCK        
+->               194  POP_EXCEPT       
+                 196  CALL_FINALLY        206  'to 206'
+                 198  JUMP_BACK             4  'to 4'
+               200_0  COME_FROM           190  '190'
+               200_1  COME_FROM           172  '172'
+
+../test/10484.pyc -- 
+# decompile failed
+
+# file ../test/10484.pyc
+# Deparsing stopped due to parse error

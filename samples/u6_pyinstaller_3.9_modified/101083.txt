@@ -1,0 +1,126 @@
+Instruction context:
+   
+ L.   7         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('encode', 'decode', 'encodestring', 'decodestring')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101083.pyc -- 
+# decompile failed
+
+# file test/101083.pyc
+# --- This code section failed: ---
+
+ L.   3         0  LOAD_STR                 'Conversions to/from quoted-printable transport encoding as per RFC 1521.'
+                2  STORE_NAME               __doc__
+
+ L.   7         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('encode', 'decode', 'encodestring', 'decodestring')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.   9        12  LOAD_CONST               b'='
+               14  STORE_NAME               ESCAPE
+
+ L.  10        16  LOAD_CONST               76
+               18  STORE_NAME               MAXLINESIZE
+
+ L.  11        20  LOAD_CONST               b'0123456789ABCDEF'
+               22  STORE_NAME               HEX
+
+ L.  12        24  LOAD_CONST               b''
+               26  STORE_NAME               EMPTYSTRING
+
+ L.  14        28  SETUP_FINALLY        50  'to 50'
+
+ L.  15        30  LOAD_CONST               0
+               32  LOAD_CONST               ('a2b_qp', 'b2a_qp')
+               34  IMPORT_NAME              binascii
+               36  IMPORT_FROM              a2b_qp
+               38  STORE_NAME               a2b_qp
+               40  IMPORT_FROM              b2a_qp
+               42  STORE_NAME               b2a_qp
+               44  POP_TOP          
+               46  POP_BLOCK        
+               48  JUMP_FORWARD         76  'to 76'
+             50_0  COME_FROM_FINALLY    28  '28'
+
+ L.  16        50  DUP_TOP          
+               52  LOAD_NAME                ImportError
+               54  <121>                74  ''
+               56  POP_TOP          
+               58  POP_TOP          
+               60  POP_TOP          
+
+ L.  17        62  LOAD_CONST               None
+               64  STORE_NAME               a2b_qp
+
+ L.  18        66  LOAD_CONST               None
+               68  STORE_NAME               b2a_qp
+               70  POP_EXCEPT       
+               72  JUMP_FORWARD         76  'to 76'
+               74  <48>             
+             76_0  COME_FROM            72  '72'
+             76_1  COME_FROM            48  '48'
+
+ L.  21        76  LOAD_CODE                <code_object needsquoting>
+               78  LOAD_STR                 'needsquoting'
+               80  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               82  STORE_NAME               needsquoting
+
+ L.  36        84  LOAD_CODE                <code_object quote>
+               86  LOAD_STR                 'quote'
+               88  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               90  STORE_NAME               quote
+
+ L.  44        92  LOAD_CONST               (False,)
+               94  LOAD_CODE                <code_object encode>
+               96  LOAD_STR                 'encode'
+               98  MAKE_FUNCTION_1          'default'
+              100  STORE_NAME               encode
+
+ L. 106       102  LOAD_CONST               (False, False)
+              104  LOAD_CODE                <code_object encodestring>
+              106  LOAD_STR                 'encodestring'
+              108  MAKE_FUNCTION_1          'default'
+              110  STORE_NAME               encodestring
+
+ L. 117       112  LOAD_CONST               (False,)
+              114  LOAD_CODE                <code_object decode>
+              116  LOAD_STR                 'decode'
+              118  MAKE_FUNCTION_1          'default'
+              120  STORE_NAME               decode
+
+ L. 160       122  LOAD_CONST               (False,)
+              124  LOAD_CODE                <code_object decodestring>
+              126  LOAD_STR                 'decodestring'
+              128  MAKE_FUNCTION_1          'default'
+              130  STORE_NAME               decodestring
+
+ L. 172       132  LOAD_CODE                <code_object ishex>
+              134  LOAD_STR                 'ishex'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  STORE_NAME               ishex
+
+ L. 177       140  LOAD_CODE                <code_object unhex>
+              142  LOAD_STR                 'unhex'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  STORE_NAME               unhex
+
+ L. 195       148  LOAD_CODE                <code_object main>
+              150  LOAD_STR                 'main'
+              152  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              154  STORE_NAME               main
+
+ L. 241       156  LOAD_NAME                __name__
+              158  LOAD_STR                 '__main__'
+              160  COMPARE_OP               ==
+              162  POP_JUMP_IF_FALSE   170  'to 170'
+
+ L. 242       164  LOAD_NAME                main
+              166  CALL_FUNCTION_0       0  ''
+              168  POP_TOP          
+            170_0  COME_FROM           162  '162'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

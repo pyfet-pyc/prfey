@@ -1,0 +1,41 @@
+Instruction context:
+   
+ L. 310        44  POP_BLOCK        
+->                46  CALL_FINALLY         52  'to 52'
+                  48  LOAD_CONST               True
+                  50  RETURN_VALUE     
+                52_0  COME_FROM            46  '46'
+                52_1  COME_FROM_FINALLY    32  '32'
+Instruction context:
+   
+ L. 374        60  POP_BLOCK        
+->                62  CALL_FINALLY         72  'to 72'
+                  64  POP_BLOCK        
+                  66  CALL_FINALLY         90  'to 90'
+                  68  LOAD_CONST               True
+                  70  RETURN_VALUE     
+                72_0  COME_FROM            62  '62'
+                72_1  COME_FROM_FINALLY    48  '48'
+Instruction context:
+   
+ L. 426        58  LOAD_FAST                'fut'
+                  60  LOAD_METHOD              set_result
+                  62  LOAD_CONST               False
+                  64  CALL_METHOD_1         1  ''
+                  66  POP_TOP          
+                  68  JUMP_BACK            26  'to 26'
+->              70_0  COME_FROM            40  '40'
+Instruction context:
+   
+ L. 502        88  RAISE_VARARGS_0       0  'reraise'
+                  90  POP_EXCEPT       
+->                92  JUMP_BACK             0  'to 0'
+                  94  END_FINALLY      
+                  96  JUMP_BACK             0  'to 0'
+                98_0  COME_FROM             8  '8'
+
+test/18.pyc -- 
+# decompile failed
+
+# file test/18.pyc
+# Deparsing stopped due to parse error

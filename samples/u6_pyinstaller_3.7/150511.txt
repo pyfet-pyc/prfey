@@ -1,0 +1,30 @@
+Instruction context:
+   
+ L.  58       118  LOAD_GLOBAL              StrictVersion
+                 120  LOAD_STR                 '1.1'
+                 122  CALL_FUNCTION_1       1  '1 positional argument'
+                 124  STORE_FAST               'mv'
+->               126  JUMP_FORWARD        136  'to 136'
+               128_0  COME_FROM           116  '116'
+Instruction context:
+-> 
+ L. 934       176  LOAD_FAST                'val'
+                 178  LOAD_FAST                'd'
+                 180  LOAD_METHOD              setdefault
+                 182  LOAD_FAST                'cmd'
+                 184  BUILD_MAP_0           0 
+                 186  CALL_METHOD_2         2  '2 positional arguments'
+                 188  LOAD_FAST                'opt'
+                 190  STORE_SUBSCR     
+                 192  JUMP_BACK            34  'to 34'
+                 194  POP_BLOCK        
+               196_0  COME_FROM_LOOP       24  '24'
+                 196  JUMP_BACK            16  'to 16'
+                 198  POP_BLOCK        
+               200_0  COME_FROM_LOOP        4  '4'
+
+../test/150511.pyc -- 
+# decompile failed
+
+# file ../test/150511.pyc
+# Deparsing stopped due to parse error

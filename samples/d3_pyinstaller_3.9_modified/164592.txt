@@ -1,0 +1,196 @@
+
+# file test/164592.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nSet operations for arrays based on sorting.\n\nNotes\n-----\n\nFor floating point arrays, inaccurate results may appear due to usual round-off\nand floating point comparison issues.\n\nSpeed could be gained in some operations by an implementation of\n`numpy.sort`, that can provide directly the permutation vectors, thus avoiding\ncalls to `numpy.argsort`.\n\nOriginal author: Robert Cimrman\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  17         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              functools
+               10  STORE_NAME               functools
+
+ L.  19        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              numpy
+               18  STORE_NAME               np
+
+ L.  20        20  LOAD_CONST               0
+               22  LOAD_CONST               ('overrides',)
+               24  IMPORT_NAME_ATTR         numpy.core
+               26  IMPORT_FROM              overrides
+               28  STORE_NAME               overrides
+               30  POP_TOP          
+
+ L.  23        32  LOAD_NAME                functools
+               34  LOAD_ATTR                partial
+
+ L.  24        36  LOAD_NAME                overrides
+               38  LOAD_ATTR                array_function_dispatch
+               40  LOAD_STR                 'numpy'
+
+ L.  23        42  LOAD_CONST               ('module',)
+               44  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+               46  STORE_NAME               array_function_dispatch
+
+ L.  27        48  BUILD_LIST_0          0 
+               50  LOAD_CONST               ('ediff1d', 'intersect1d', 'setxor1d', 'union1d', 'setdiff1d', 'unique', 'in1d', 'isin')
+               52  CALL_FINALLY         55  'to 55'
+               54  STORE_NAME               __all__
+
+ L.  33        56  LOAD_CONST               (None, None)
+               58  LOAD_CODE                <code_object _ediff1d_dispatcher>
+               60  LOAD_STR                 '_ediff1d_dispatcher'
+               62  MAKE_FUNCTION_1          'default'
+               64  STORE_NAME               _ediff1d_dispatcher
+
+ L.  37        66  LOAD_NAME                array_function_dispatch
+               68  LOAD_NAME                _ediff1d_dispatcher
+               70  CALL_FUNCTION_1       1  ''
+
+ L.  38        72  LOAD_CONST               (None, None)
+               74  LOAD_CODE                <code_object ediff1d>
+               76  LOAD_STR                 'ediff1d'
+               78  MAKE_FUNCTION_1          'default'
+               80  CALL_FUNCTION_1       1  ''
+               82  STORE_NAME               ediff1d
+
+ L. 125        84  LOAD_CODE                <code_object _unpack_tuple>
+               86  LOAD_STR                 '_unpack_tuple'
+               88  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               90  STORE_NAME               _unpack_tuple
+
+ L. 133        92  LOAD_CONST               (None, None, None, None)
+               94  LOAD_CODE                <code_object _unique_dispatcher>
+               96  LOAD_STR                 '_unique_dispatcher'
+               98  MAKE_FUNCTION_1          'default'
+              100  STORE_NAME               _unique_dispatcher
+
+ L. 138       102  LOAD_NAME                array_function_dispatch
+              104  LOAD_NAME                _unique_dispatcher
+              106  CALL_FUNCTION_1       1  ''
+
+ L. 139       108  LOAD_CONST               (False, False, False, None)
+              110  LOAD_CODE                <code_object unique>
+              112  LOAD_STR                 'unique'
+              114  MAKE_FUNCTION_1          'default'
+              116  CALL_FUNCTION_1       1  ''
+              118  STORE_NAME               unique
+
+ L. 310       120  LOAD_CONST               (False, False, False)
+              122  LOAD_CODE                <code_object _unique1d>
+              124  LOAD_STR                 '_unique1d'
+              126  MAKE_FUNCTION_1          'default'
+              128  STORE_NAME               _unique1d
+
+ L. 343       130  LOAD_CONST               (None, None)
+              132  LOAD_CODE                <code_object _intersect1d_dispatcher>
+              134  LOAD_STR                 '_intersect1d_dispatcher'
+              136  MAKE_FUNCTION_1          'default'
+              138  STORE_NAME               _intersect1d_dispatcher
+
+ L. 348       140  LOAD_NAME                array_function_dispatch
+              142  LOAD_NAME                _intersect1d_dispatcher
+              144  CALL_FUNCTION_1       1  ''
+
+ L. 349       146  LOAD_CONST               (False, False)
+              148  LOAD_CODE                <code_object intersect1d>
+              150  LOAD_STR                 'intersect1d'
+              152  MAKE_FUNCTION_1          'default'
+              154  CALL_FUNCTION_1       1  ''
+              156  STORE_NAME               intersect1d
+
+ L. 447       158  LOAD_CONST               (None,)
+              160  LOAD_CODE                <code_object _setxor1d_dispatcher>
+              162  LOAD_STR                 '_setxor1d_dispatcher'
+              164  MAKE_FUNCTION_1          'default'
+              166  STORE_NAME               _setxor1d_dispatcher
+
+ L. 451       168  LOAD_NAME                array_function_dispatch
+              170  LOAD_NAME                _setxor1d_dispatcher
+              172  CALL_FUNCTION_1       1  ''
+
+ L. 452       174  LOAD_CONST               (False,)
+              176  LOAD_CODE                <code_object setxor1d>
+              178  LOAD_STR                 'setxor1d'
+              180  MAKE_FUNCTION_1          'default'
+              182  CALL_FUNCTION_1       1  ''
+              184  STORE_NAME               setxor1d
+
+ L. 494       186  LOAD_CONST               (None, None)
+              188  LOAD_CODE                <code_object _in1d_dispatcher>
+              190  LOAD_STR                 '_in1d_dispatcher'
+              192  MAKE_FUNCTION_1          'default'
+              194  STORE_NAME               _in1d_dispatcher
+
+ L. 498       196  LOAD_NAME                array_function_dispatch
+              198  LOAD_NAME                _in1d_dispatcher
+              200  CALL_FUNCTION_1       1  ''
+
+ L. 499       202  LOAD_CONST               (False, False)
+              204  LOAD_CODE                <code_object in1d>
+              206  LOAD_STR                 'in1d'
+              208  MAKE_FUNCTION_1          'default'
+              210  CALL_FUNCTION_1       1  ''
+              212  STORE_NAME               in1d
+
+ L. 611       214  LOAD_CONST               (None, None)
+              216  LOAD_CODE                <code_object _isin_dispatcher>
+              218  LOAD_STR                 '_isin_dispatcher'
+              220  MAKE_FUNCTION_1          'default'
+              222  STORE_NAME               _isin_dispatcher
+
+ L. 615       224  LOAD_NAME                array_function_dispatch
+              226  LOAD_NAME                _isin_dispatcher
+              228  CALL_FUNCTION_1       1  ''
+
+ L. 616       230  LOAD_CONST               (False, False)
+              232  LOAD_CODE                <code_object isin>
+              234  LOAD_STR                 'isin'
+              236  MAKE_FUNCTION_1          'default'
+              238  CALL_FUNCTION_1       1  ''
+              240  STORE_NAME               isin
+
+ L. 714       242  LOAD_CODE                <code_object _union1d_dispatcher>
+              244  LOAD_STR                 '_union1d_dispatcher'
+              246  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              248  STORE_NAME               _union1d_dispatcher
+
+ L. 718       250  LOAD_NAME                array_function_dispatch
+              252  LOAD_NAME                _union1d_dispatcher
+              254  CALL_FUNCTION_1       1  ''
+
+ L. 719       256  LOAD_CODE                <code_object union1d>
+              258  LOAD_STR                 'union1d'
+              260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              262  CALL_FUNCTION_1       1  ''
+              264  STORE_NAME               union1d
+
+ L. 755       266  LOAD_CONST               (None,)
+              268  LOAD_CODE                <code_object _setdiff1d_dispatcher>
+              270  LOAD_STR                 '_setdiff1d_dispatcher'
+              272  MAKE_FUNCTION_1          'default'
+              274  STORE_NAME               _setdiff1d_dispatcher
+
+ L. 759       276  LOAD_NAME                array_function_dispatch
+              278  LOAD_NAME                _setdiff1d_dispatcher
+              280  CALL_FUNCTION_1       1  ''
+
+ L. 760       282  LOAD_CONST               (False,)
+              284  LOAD_CODE                <code_object setdiff1d>
+              286  LOAD_STR                 'setdiff1d'
+              288  MAKE_FUNCTION_1          'default'
+              290  CALL_FUNCTION_1       1  ''
+              292  STORE_NAME               setdiff1d
+
+Parse error at or near `CALL_FINALLY' instruction at offset 52
+
+Instruction context:
+   
+ L.  27        48  BUILD_LIST_0          0 
+                  50  LOAD_CONST               ('ediff1d', 'intersect1d', 'setxor1d', 'union1d', 'setdiff1d', 'unique', 'in1d', 'isin')
+->                52  CALL_FINALLY         55  'to 55'
+                  54  STORE_NAME               __all__
+
+test/164592.pyc -- 
+# decompile failed

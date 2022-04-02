@@ -1,0 +1,112 @@
+Instruction context:
+   
+ L.  14        82  DUP_TOP          
+                  84  LOAD_NAME                ImportError
+->                86  <121>               102  ''
+                  88  POP_TOP          
+                  90  POP_TOP          
+                  92  POP_TOP          
+
+test/134337.pyc -- 
+# decompile failed
+
+# file test/134337.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              asyncio
+                6  STORE_NAME               asyncio
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              socket
+               14  STORE_NAME               socket
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               ('Any', 'Dict', 'List', 'Optional')
+               20  IMPORT_NAME              typing
+               22  IMPORT_FROM              Any
+               24  STORE_NAME               Any
+               26  IMPORT_FROM              Dict
+               28  STORE_NAME               Dict
+               30  IMPORT_FROM              List
+               32  STORE_NAME               List
+               34  IMPORT_FROM              Optional
+               36  STORE_NAME               Optional
+               38  POP_TOP          
+
+ L.   5        40  LOAD_CONST               1
+               42  LOAD_CONST               ('AbstractResolver',)
+               44  IMPORT_NAME              abc
+               46  IMPORT_FROM              AbstractResolver
+               48  STORE_NAME               AbstractResolver
+               50  POP_TOP          
+
+ L.   6        52  LOAD_CONST               1
+               54  LOAD_CONST               ('get_running_loop',)
+               56  IMPORT_NAME              helpers
+               58  IMPORT_FROM              get_running_loop
+               60  STORE_NAME               get_running_loop
+               62  POP_TOP          
+
+ L.   8        64  LOAD_CONST               ('ThreadedResolver', 'AsyncResolver', 'DefaultResolver')
+               66  STORE_NAME               __all__
+
+ L.  10        68  SETUP_FINALLY        82  'to 82'
+
+ L.  11        70  LOAD_CONST               0
+               72  LOAD_CONST               None
+               74  IMPORT_NAME              aiodns
+               76  STORE_NAME               aiodns
+               78  POP_BLOCK        
+               80  JUMP_FORWARD        104  'to 104'
+             82_0  COME_FROM_FINALLY    68  '68'
+
+ L.  14        82  DUP_TOP          
+               84  LOAD_NAME                ImportError
+               86  <121>               102  ''
+               88  POP_TOP          
+               90  POP_TOP          
+               92  POP_TOP          
+
+ L.  15        94  LOAD_CONST               None
+               96  STORE_NAME               aiodns
+               98  POP_EXCEPT       
+              100  JUMP_FORWARD        104  'to 104'
+              102  <48>             
+            104_0  COME_FROM           100  '100'
+            104_1  COME_FROM            80  '80'
+
+ L.  17       104  LOAD_CONST               False
+              106  STORE_NAME               aiodns_default
+
+ L.  20       108  LOAD_BUILD_CLASS 
+              110  LOAD_CODE                <code_object ThreadedResolver>
+              112  LOAD_STR                 'ThreadedResolver'
+              114  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              116  LOAD_STR                 'ThreadedResolver'
+              118  LOAD_NAME                AbstractResolver
+              120  CALL_FUNCTION_3       3  ''
+              122  STORE_NAME               ThreadedResolver
+
+ L.  68       124  LOAD_BUILD_CLASS 
+              126  LOAD_CODE                <code_object AsyncResolver>
+              128  LOAD_STR                 'AsyncResolver'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  LOAD_STR                 'AsyncResolver'
+              134  LOAD_NAME                AbstractResolver
+              136  CALL_FUNCTION_3       3  ''
+              138  STORE_NAME               AsyncResolver
+
+ L. 149       140  LOAD_NAME                aiodns_default
+              142  POP_JUMP_IF_FALSE   148  'to 148'
+              144  LOAD_NAME                AsyncResolver
+              146  JUMP_FORWARD        150  'to 150'
+            148_0  COME_FROM           142  '142'
+              148  LOAD_NAME                ThreadedResolver
+            150_0  COME_FROM           146  '146'
+              150  STORE_NAME               DefaultResolver
+
+Parse error at or near `<121>' instruction at offset 86
+

@@ -1,0 +1,132 @@
+Instruction context:
+   
+ L.  17        54  DUP_TOP          
+                  56  LOAD_NAME                ImportError
+->                58  <121>                74  ''
+                  60  POP_TOP          
+                  62  POP_TOP          
+                  64  POP_TOP          
+
+test/134914.pyc -- 
+# decompile failed
+
+# file test/134914.pyc
+# --- This code section failed: ---
+
+ L.   8         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.  10        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L.  11        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              importlib
+               26  STORE_NAME               importlib
+
+ L.  13        28  LOAD_CONST               1
+               30  LOAD_CONST               ('_winerrors',)
+               32  IMPORT_NAME              
+               34  IMPORT_FROM              _winerrors
+               36  STORE_NAME               _winerrors
+               38  POP_TOP          
+
+ L.  15        40  SETUP_FINALLY        54  'to 54'
+
+ L.  16        42  LOAD_CONST               0
+               44  LOAD_CONST               None
+               46  IMPORT_NAME              cffi
+               48  STORE_NAME               cffi
+               50  POP_BLOCK        
+               52  JUMP_FORWARD         76  'to 76'
+             54_0  COME_FROM_FINALLY    40  '40'
+
+ L.  17        54  DUP_TOP          
+               56  LOAD_NAME                ImportError
+               58  <121>                74  ''
+               60  POP_TOP          
+               62  POP_TOP          
+               64  POP_TOP          
+
+ L.  18        66  LOAD_STR                 'ctypes'
+               68  STORE_NAME               _backend
+               70  POP_EXCEPT       
+               72  JUMP_FORWARD         82  'to 82'
+               74  <48>             
+             76_0  COME_FROM            52  '52'
+
+ L.  20        76  DELETE_NAME              cffi
+
+ L.  21        78  LOAD_STR                 'cffi'
+               80  STORE_NAME               _backend
+             82_0  COME_FROM            72  '72'
+
+ L.  22        82  SETUP_FINALLY       104  'to 104'
+
+ L.  23        84  LOAD_CONST               0
+               86  LOAD_CONST               ('MetaPathFinder', 'Loader')
+               88  IMPORT_NAME_ATTR         importlib.abc
+               90  IMPORT_FROM              MetaPathFinder
+               92  STORE_NAME               MetaPathFinder
+               94  IMPORT_FROM              Loader
+               96  STORE_NAME               Loader
+               98  POP_TOP          
+              100  POP_BLOCK        
+              102  JUMP_FORWARD        130  'to 130'
+            104_0  COME_FROM_FINALLY    82  '82'
+
+ L.  24       104  DUP_TOP          
+              106  LOAD_NAME                ImportError
+              108  <121>               128  ''
+              110  POP_TOP          
+              112  POP_TOP          
+              114  POP_TOP          
+
+ L.  25       116  LOAD_NAME                object
+              118  STORE_NAME               MetaPathFinder
+
+ L.  26       120  LOAD_NAME                object
+              122  STORE_NAME               Loader
+              124  POP_EXCEPT       
+              126  JUMP_FORWARD        130  'to 130'
+              128  <48>             
+            130_0  COME_FROM           126  '126'
+            130_1  COME_FROM           102  '102'
+
+ L.  30       130  LOAD_BUILD_CLASS 
+              132  LOAD_CODE                <code_object BackendLoader>
+              134  LOAD_STR                 'BackendLoader'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  LOAD_STR                 'BackendLoader'
+              140  LOAD_NAME                Loader
+              142  CALL_FUNCTION_3       3  ''
+              144  STORE_NAME               BackendLoader
+
+ L.  46       146  LOAD_BUILD_CLASS 
+              148  LOAD_CODE                <code_object BackendFinder>
+              150  LOAD_STR                 'BackendFinder'
+              152  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              154  LOAD_STR                 'BackendFinder'
+              156  LOAD_NAME                MetaPathFinder
+              158  CALL_FUNCTION_3       3  ''
+              160  STORE_NAME               BackendFinder
+
+ L.  64       162  LOAD_NAME                sys
+              164  LOAD_ATTR                meta_path
+              166  LOAD_METHOD              append
+              168  LOAD_NAME                BackendFinder
+              170  BUILD_LIST_0          0 
+              172  LOAD_CONST               ('_dll', '_authentication', '_time', '_common', '_resource', '_nl_support', '_system_information')
+              174  CALL_FINALLY        177  'to 177'
+              176  CALL_FUNCTION_1       1  ''
+              178  CALL_METHOD_1         1  ''
+              180  POP_TOP          
+
+Parse error at or near `<121>' instruction at offset 58
+

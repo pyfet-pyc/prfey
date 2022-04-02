@@ -1,0 +1,65 @@
+Instruction context:
+   
+ L.  48        54  LOAD_GLOBAL              json
+                  56  LOAD_METHOD              loads
+                  58  LOAD_FAST                'local_state'
+                  60  CALL_METHOD_1         1  ''
+                  62  STORE_FAST               'local_state'
+                  64  POP_BLOCK        
+                  66  LOAD_CONST               None
+->                68  DUP_TOP          
+                  70  DUP_TOP          
+                  72  CALL_FUNCTION_3       3  ''
+                  74  POP_TOP          
+                  76  JUMP_FORWARD         94  'to 94'
+                78_0  COME_FROM_WITH       42  '42'
+                  78  <49>             
+                  80  POP_JUMP_IF_TRUE     84  'to 84'
+                  82  <48>             
+                84_0  COME_FROM            80  '80'
+                  84  POP_TOP          
+                  86  POP_TOP          
+                  88  POP_TOP          
+                  90  POP_EXCEPT       
+                  92  POP_TOP          
+                94_0  COME_FROM            76  '76'
+Instruction context:
+-> 
+ L.  69        72  SETUP_FINALLY       106  'to 106'
+Instruction context:
+   
+ L. 109       230  LOAD_FAST                'f'
+                 232  LOAD_METHOD              close
+                 234  CALL_METHOD_0         0  ''
+                 236  POP_TOP          
+                 238  POP_BLOCK        
+                 240  LOAD_CONST               None
+->               242  DUP_TOP          
+                 244  DUP_TOP          
+                 246  CALL_FUNCTION_3       3  ''
+                 248  POP_TOP          
+                 250  JUMP_FORWARD        270  'to 270'
+               252_0  COME_FROM_WITH      170  '170'
+                 252  <49>             
+             254_256  POP_JUMP_IF_TRUE    260  'to 260'
+                 258  <48>             
+               260_0  COME_FROM           254  '254'
+                 260  POP_TOP          
+                 262  POP_TOP          
+                 264  POP_TOP          
+                 266  POP_EXCEPT       
+                 268  POP_TOP          
+               270_0  COME_FROM           250  '250'
+                 270  CONTINUE             90  'to 90'
+Instruction context:
+   
+ L. 161       220  POP_EXCEPT       
+                 222  JUMP_FORWARD        226  'to 226'
+->               224  <48>             
+               226_0  COME_FROM           222  '222'
+
+test/111664.pyc -- 
+# decompile failed
+
+# file test/111664.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,27 @@
+Instruction context:
+   
+ L.  44        68  POP_TOP          
+->                70  JUMP_ABSOLUTE        90  'to 90'
+                72_0  COME_FROM            66  '66'
+Instruction context:
+   
+ L. 316       186  LOAD_FAST                'arena'
+                 188  LOAD_FAST                'start'
+                 190  LOAD_FAST                'real_stop'
+                 192  BUILD_TUPLE_3         3 
+                 194  POP_BLOCK        
+->               196  ROT_TWO          
+                 198  BEGIN_FINALLY    
+                 200  WITH_CLEANUP_START
+                 202  WITH_CLEANUP_FINISH
+                 204  POP_FINALLY           0  ''
+                 206  RETURN_VALUE     
+               208_0  COME_FROM_WITH       72  '72'
+                 208  WITH_CLEANUP_START
+                 210  WITH_CLEANUP_FINISH
+
+test/112.pyc -- 
+# decompile failed
+
+# file test/112.pyc
+# Deparsing stopped due to parse error

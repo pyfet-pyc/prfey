@@ -1,0 +1,134 @@
+Instruction context:
+   
+ L.  16        80  LOAD_NAME                _MIN_DIFF_LEN
+                  82  LOAD_CONST               0
+                  84  COMPARE_OP               >=
+                  86  POP_JUMP_IF_TRUE     92  'to 92'
+->                88  <74>             
+                  90  RAISE_VARARGS_1       1  'exception instance'
+                92_0  COME_FROM            86  '86'
+
+test/101350.pyc -- 
+# decompile failed
+
+# file test/101350.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Various utility functions.'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               ('namedtuple', 'Counter')
+                8  IMPORT_NAME              collections
+               10  IMPORT_FROM              namedtuple
+               12  STORE_NAME               namedtuple
+               14  IMPORT_FROM              Counter
+               16  STORE_NAME               Counter
+               18  POP_TOP          
+
+ L.   4        20  LOAD_CONST               0
+               22  LOAD_CONST               ('commonprefix',)
+               24  IMPORT_NAME_ATTR         os.path
+               26  IMPORT_FROM              commonprefix
+               28  STORE_NAME               commonprefix
+               30  POP_TOP          
+
+ L.   6        32  LOAD_CONST               True
+               34  STORE_NAME               __unittest
+
+ L.   8        36  LOAD_CONST               80
+               38  STORE_NAME               _MAX_LENGTH
+
+ L.   9        40  LOAD_CONST               12
+               42  STORE_NAME               _PLACEHOLDER_LEN
+
+ L.  10        44  LOAD_CONST               5
+               46  STORE_NAME               _MIN_BEGIN_LEN
+
+ L.  11        48  LOAD_CONST               5
+               50  STORE_NAME               _MIN_END_LEN
+
+ L.  12        52  LOAD_CONST               5
+               54  STORE_NAME               _MIN_COMMON_LEN
+
+ L.  13        56  LOAD_NAME                _MAX_LENGTH
+
+ L.  14        58  LOAD_NAME                _MIN_BEGIN_LEN
+               60  LOAD_NAME                _PLACEHOLDER_LEN
+               62  BINARY_ADD       
+               64  LOAD_NAME                _MIN_COMMON_LEN
+               66  BINARY_ADD       
+
+ L.  15        68  LOAD_NAME                _PLACEHOLDER_LEN
+
+ L.  14        70  BINARY_ADD       
+
+ L.  15        72  LOAD_NAME                _MIN_END_LEN
+
+ L.  14        74  BINARY_ADD       
+
+ L.  13        76  BINARY_SUBTRACT  
+               78  STORE_NAME               _MIN_DIFF_LEN
+
+ L.  16        80  LOAD_NAME                _MIN_DIFF_LEN
+               82  LOAD_CONST               0
+               84  COMPARE_OP               >=
+               86  POP_JUMP_IF_TRUE     92  'to 92'
+               88  <74>             
+               90  RAISE_VARARGS_1       1  'exception instance'
+             92_0  COME_FROM            86  '86'
+
+ L.  18        92  LOAD_CODE                <code_object _shorten>
+               94  LOAD_STR                 '_shorten'
+               96  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               98  STORE_NAME               _shorten
+
+ L.  24       100  LOAD_CODE                <code_object _common_shorten_repr>
+              102  LOAD_STR                 '_common_shorten_repr'
+              104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              106  STORE_NAME               _common_shorten_repr
+
+ L.  45       108  LOAD_CONST               (False,)
+              110  LOAD_CODE                <code_object safe_repr>
+              112  LOAD_STR                 'safe_repr'
+              114  MAKE_FUNCTION_1          'default'
+              116  STORE_NAME               safe_repr
+
+ L.  54       118  LOAD_CODE                <code_object strclass>
+              120  LOAD_STR                 'strclass'
+              122  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              124  STORE_NAME               strclass
+
+ L.  57       126  LOAD_CODE                <code_object sorted_list_difference>
+              128  LOAD_STR                 'sorted_list_difference'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  STORE_NAME               sorted_list_difference
+
+ L.  98       134  LOAD_CODE                <code_object unorderable_list_difference>
+              136  LOAD_STR                 'unorderable_list_difference'
+              138  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              140  STORE_NAME               unorderable_list_difference
+
+ L. 115       142  LOAD_CODE                <code_object three_way_cmp>
+              144  LOAD_STR                 'three_way_cmp'
+              146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              148  STORE_NAME               three_way_cmp
+
+ L. 119       150  LOAD_NAME                namedtuple
+              152  LOAD_STR                 'Mismatch'
+              154  LOAD_STR                 'actual expected value'
+              156  CALL_FUNCTION_2       2  ''
+              158  STORE_NAME               _Mismatch
+
+ L. 121       160  LOAD_CODE                <code_object _count_diff_all_purpose>
+              162  LOAD_STR                 '_count_diff_all_purpose'
+              164  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              166  STORE_NAME               _count_diff_all_purpose
+
+ L. 156       168  LOAD_CODE                <code_object _count_diff_hashable>
+              170  LOAD_STR                 '_count_diff_hashable'
+              172  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              174  STORE_NAME               _count_diff_hashable
+
+Parse error at or near `<74>' instruction at offset 88
+

@@ -1,0 +1,107 @@
+Instruction context:
+   
+ L.  13        44  BUILD_LIST_0          0 
+                  46  LOAD_CONST               ('NamedType', 'OptionalNamedType', 'DefaultedNamedType', 'NamedTypes')
+->                48  CALL_FINALLY         51  'to 51'
+                  50  STORE_NAME               __all__
+
+test/31727.pyc -- 
+# decompile failed
+
+# file test/31727.pyc
+# --- This code section failed: ---
+
+ L.   7         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   9         8  LOAD_CONST               0
+               10  LOAD_CONST               ('error',)
+               12  IMPORT_NAME              pyasn1
+               14  IMPORT_FROM              error
+               16  STORE_NAME               error
+               18  POP_TOP          
+
+ L.  10        20  LOAD_CONST               0
+               22  LOAD_CONST               ('tag',)
+               24  IMPORT_NAME_ATTR         pyasn1.type
+               26  IMPORT_FROM              tag
+               28  STORE_NAME               tag
+               30  POP_TOP          
+
+ L.  11        32  LOAD_CONST               0
+               34  LOAD_CONST               ('tagmap',)
+               36  IMPORT_NAME_ATTR         pyasn1.type
+               38  IMPORT_FROM              tagmap
+               40  STORE_NAME               tagmap
+               42  POP_TOP          
+
+ L.  13        44  BUILD_LIST_0          0 
+               46  LOAD_CONST               ('NamedType', 'OptionalNamedType', 'DefaultedNamedType', 'NamedTypes')
+               48  CALL_FINALLY         51  'to 51'
+               50  STORE_NAME               __all__
+
+ L.  16        52  SETUP_FINALLY        62  'to 62'
+
+ L.  17        54  LOAD_NAME                any
+               56  POP_TOP          
+               58  POP_BLOCK        
+               60  JUMP_FORWARD         88  'to 88'
+             62_0  COME_FROM_FINALLY    52  '52'
+
+ L.  19        62  DUP_TOP          
+               64  LOAD_NAME                NameError
+               66  <121>                86  ''
+               68  POP_TOP          
+               70  POP_TOP          
+               72  POP_TOP          
+
+ L.  20        74  LOAD_LAMBDA              '<code_object <lambda>>'
+               76  LOAD_STR                 '<lambda>'
+               78  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               80  STORE_NAME               any
+               82  POP_EXCEPT       
+               84  JUMP_FORWARD         88  'to 88'
+               86  <48>             
+             88_0  COME_FROM            84  '84'
+             88_1  COME_FROM            60  '60'
+
+ L.  23        88  LOAD_BUILD_CLASS 
+               90  LOAD_CODE                <code_object NamedType>
+               92  LOAD_STR                 'NamedType'
+               94  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               96  LOAD_STR                 'NamedType'
+               98  LOAD_NAME                object
+              100  CALL_FUNCTION_3       3  ''
+              102  STORE_NAME               NamedType
+
+ L. 105       104  LOAD_BUILD_CLASS 
+              106  LOAD_CODE                <code_object OptionalNamedType>
+              108  LOAD_STR                 'OptionalNamedType'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  LOAD_STR                 'OptionalNamedType'
+              114  LOAD_NAME                NamedType
+              116  CALL_FUNCTION_3       3  ''
+              118  STORE_NAME               OptionalNamedType
+
+ L. 111       120  LOAD_BUILD_CLASS 
+              122  LOAD_CODE                <code_object DefaultedNamedType>
+              124  LOAD_STR                 'DefaultedNamedType'
+              126  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              128  LOAD_STR                 'DefaultedNamedType'
+              130  LOAD_NAME                NamedType
+              132  CALL_FUNCTION_3       3  ''
+              134  STORE_NAME               DefaultedNamedType
+
+ L. 117       136  LOAD_BUILD_CLASS 
+              138  LOAD_CODE                <code_object NamedTypes>
+              140  LOAD_STR                 'NamedTypes'
+              142  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              144  LOAD_STR                 'NamedTypes'
+              146  LOAD_NAME                object
+              148  CALL_FUNCTION_3       3  ''
+              150  STORE_NAME               NamedTypes
+
+Parse error at or near `CALL_FINALLY' instruction at offset 48
+

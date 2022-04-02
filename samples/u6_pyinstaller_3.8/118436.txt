@@ -1,0 +1,16 @@
+Instruction context:
+   
+ L.  76       196  POP_EXCEPT       
+                 198  JUMP_BACK           162  'to 162'
+->               200  POP_EXCEPT       
+                 202  JUMP_FORWARD        206  'to 206'
+               204_0  COME_FROM           188  '188'
+                 204  END_FINALLY      
+               206_0  COME_FROM           202  '202'
+               206_1  COME_FROM           180  '180'
+
+../test/118436.pyc -- 
+# decompile failed
+
+# file ../test/118436.pyc
+# Deparsing stopped due to parse error

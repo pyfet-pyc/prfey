@@ -1,0 +1,77 @@
+Instruction context:
+   
+ L.  37        28  BUILD_LIST_0          0 
+                  30  LOAD_CONST               ('Error', 'encode', 'decode')
+->                32  CALL_FINALLY         35  'to 35'
+                  34  STORE_NAME               __all__
+
+test/101109.pyc -- 
+# decompile failed
+
+# file test/101109.pyc
+# --- This code section failed: ---
+
+ L.  27         0  LOAD_STR                 'Implementation of the UUencode and UUdecode functions.\n\nencode(in_file, out_file [,name, mode], *, backtick=False)\ndecode(in_file [, out_file, mode, quiet])\n'
+                2  STORE_NAME               __doc__
+
+ L.  33         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              binascii
+               10  STORE_NAME               binascii
+
+ L.  34        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              os
+               18  STORE_NAME               os
+
+ L.  35        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              sys
+               26  STORE_NAME               sys
+
+ L.  37        28  BUILD_LIST_0          0 
+               30  LOAD_CONST               ('Error', 'encode', 'decode')
+               32  CALL_FINALLY         35  'to 35'
+               34  STORE_NAME               __all__
+
+ L.  39        36  LOAD_BUILD_CLASS 
+               38  LOAD_CODE                <code_object Error>
+               40  LOAD_STR                 'Error'
+               42  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               44  LOAD_STR                 'Error'
+               46  LOAD_NAME                Exception
+               48  CALL_FUNCTION_3       3  ''
+               50  STORE_NAME               Error
+
+ L.  42        52  LOAD_CONST               (None, None)
+               54  LOAD_CONST               False
+               56  LOAD_CONST               ('backtick',)
+               58  BUILD_CONST_KEY_MAP_1     1 
+               60  LOAD_CODE                <code_object encode>
+               62  LOAD_STR                 'encode'
+               64  MAKE_FUNCTION_3          'default, keyword-only'
+               66  STORE_NAME               encode
+
+ L. 100        68  LOAD_CONST               (None, None, False)
+               70  LOAD_CODE                <code_object decode>
+               72  LOAD_STR                 'decode'
+               74  MAKE_FUNCTION_1          'default'
+               76  STORE_NAME               decode
+
+ L. 167        78  LOAD_CODE                <code_object test>
+               80  LOAD_STR                 'test'
+               82  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               84  STORE_NAME               test
+
+ L. 205        86  LOAD_NAME                __name__
+               88  LOAD_STR                 '__main__'
+               90  COMPARE_OP               ==
+               92  POP_JUMP_IF_FALSE   100  'to 100'
+
+ L. 206        94  LOAD_NAME                test
+               96  CALL_FUNCTION_0       0  ''
+               98  POP_TOP          
+            100_0  COME_FROM            92  '92'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 32
+

@@ -1,0 +1,36 @@
+Instruction context:
+   
+ L. 106        24  DUP_TOP          
+                  26  LOAD_GLOBAL              Exception
+                  28  COMPARE_OP               exception-match
+                  30  POP_JUMP_IF_FALSE    74  'to 74'
+                  32  POP_TOP          
+->                34  POP_TOP          
+                  36  POP_TOP          
+Instruction context:
+   
+ L. 293         6  LOAD_FAST                'func'
+                   8  CALL_FUNCTION_0       0  ''
+                  10  POP_BLOCK        
+->                12  ROT_TWO          
+                  14  BEGIN_FINALLY    
+                  16  WITH_CLEANUP_START
+                  18  WITH_CLEANUP_FINISH
+                  20  POP_FINALLY           0  ''
+                  22  RETURN_VALUE     
+                24_0  COME_FROM_WITH        2  '2'
+                  24  WITH_CLEANUP_START
+                  26  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 433        64  POP_BLOCK        
+->                66  CALL_FINALLY         70  'to 70'
+                  68  RETURN_VALUE     
+                70_0  COME_FROM            66  '66'
+                70_1  COME_FROM_FINALLY     6  '6'
+
+../test/139598.pyc -- 
+# decompile failed
+
+# file ../test/139598.pyc
+# Deparsing stopped due to parse error

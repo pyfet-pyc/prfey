@@ -1,0 +1,194 @@
+Instruction context:
+   
+ L.  44       128  LOAD_NAME                shutil
+                 130  LOAD_METHOD              which
+                 132  LOAD_NAME                binary
+                 134  CALL_METHOD_1         1  ''
+                 136  LOAD_CONST               None
+->               138  <117>                 1  ''
+                 140  POP_JUMP_IF_FALSE_BACK   124  'to 124'
+
+test/2052.pyc -- 
+# decompile failed
+
+# file test/2052.pyc
+# --- This code section failed: ---
+
+ L.  23         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              io
+                6  STORE_NAME               io
+
+ L.  24         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              os
+               14  STORE_NAME               os
+
+ L.  25        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              re
+               22  STORE_NAME               re
+
+ L.  26        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              subprocess
+               30  STORE_NAME               subprocess
+
+ L.  27        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              sys
+               38  STORE_NAME               sys
+
+ L.  28        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              tempfile
+               46  STORE_NAME               tempfile
+
+ L.  30        48  LOAD_CONST               1
+               50  LOAD_CONST               ('Image', 'ImageFile')
+               52  IMPORT_NAME              
+               54  IMPORT_FROM              Image
+               56  STORE_NAME               Image
+               58  IMPORT_FROM              ImageFile
+               60  STORE_NAME               ImageFile
+               62  POP_TOP          
+
+ L.  31        64  LOAD_CONST               1
+               66  LOAD_CONST               ('i32le',)
+               68  IMPORT_NAME              _binary
+               70  IMPORT_FROM              i32le
+               72  STORE_NAME               i32
+               74  POP_TOP          
+
+ L.  36        76  LOAD_NAME                re
+               78  LOAD_METHOD              compile
+               80  LOAD_STR                 '^%%([^:]*):[ \\t]*(.*)[ \\t]*$'
+               82  CALL_METHOD_1         1  ''
+               84  STORE_NAME               split
+
+ L.  37        86  LOAD_NAME                re
+               88  LOAD_METHOD              compile
+               90  LOAD_STR                 '^%[%!\\w]([^:]*)[ \\t]*$'
+               92  CALL_METHOD_1         1  ''
+               94  STORE_NAME               field
+
+ L.  39        96  LOAD_CONST               None
+               98  STORE_NAME               gs_windows_binary
+
+ L.  40       100  LOAD_NAME                sys
+              102  LOAD_ATTR                platform
+              104  LOAD_METHOD              startswith
+              106  LOAD_STR                 'win'
+              108  CALL_METHOD_1         1  ''
+              110  POP_JUMP_IF_FALSE   156  'to 156'
+
+ L.  41       112  LOAD_CONST               0
+              114  LOAD_CONST               None
+              116  IMPORT_NAME              shutil
+              118  STORE_NAME               shutil
+
+ L.  43       120  LOAD_CONST               ('gswin32c', 'gswin64c', 'gs')
+              122  GET_ITER         
+            124_0  COME_FROM           150  '150'
+            124_1  COME_FROM           140  '140'
+              124  FOR_ITER            152  'to 152'
+              126  STORE_NAME               binary
+
+ L.  44       128  LOAD_NAME                shutil
+              130  LOAD_METHOD              which
+              132  LOAD_NAME                binary
+              134  CALL_METHOD_1         1  ''
+              136  LOAD_CONST               None
+              138  <117>                 1  ''
+              140  POP_JUMP_IF_FALSE_BACK   124  'to 124'
+
+ L.  45       142  LOAD_NAME                binary
+              144  STORE_NAME               gs_windows_binary
+
+ L.  46       146  POP_TOP          
+              148  BREAK_LOOP          156  'to 156'
+              150  JUMP_BACK           124  'to 124'
+            152_0  COME_FROM           124  '124'
+
+ L.  48       152  LOAD_CONST               False
+              154  STORE_NAME               gs_windows_binary
+            156_0  COME_FROM           148  '148'
+            156_1  COME_FROM           110  '110'
+
+ L.  51       156  LOAD_CODE                <code_object has_ghostscript>
+              158  LOAD_STR                 'has_ghostscript'
+              160  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              162  STORE_NAME               has_ghostscript
+
+ L.  64       164  LOAD_CONST               (1,)
+              166  LOAD_CODE                <code_object Ghostscript>
+              168  LOAD_STR                 'Ghostscript'
+              170  MAKE_FUNCTION_1          'default'
+              172  STORE_NAME               Ghostscript
+
+ L. 159       174  LOAD_BUILD_CLASS 
+              176  LOAD_CODE                <code_object PSFile>
+              178  LOAD_STR                 'PSFile'
+              180  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              182  LOAD_STR                 'PSFile'
+              184  CALL_FUNCTION_2       2  ''
+              186  STORE_NAME               PSFile
+
+ L. 189       188  LOAD_CODE                <code_object _accept>
+              190  LOAD_STR                 '_accept'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  STORE_NAME               _accept
+
+ L. 198       196  LOAD_BUILD_CLASS 
+              198  LOAD_CODE                <code_object EpsImageFile>
+              200  LOAD_STR                 'EpsImageFile'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  LOAD_STR                 'EpsImageFile'
+              206  LOAD_NAME                ImageFile
+              208  LOAD_ATTR                ImageFile
+              210  CALL_FUNCTION_3       3  ''
+              212  STORE_NAME               EpsImageFile
+
+ L. 347       214  LOAD_CONST               (1,)
+              216  LOAD_CODE                <code_object _save>
+              218  LOAD_STR                 '_save'
+              220  MAKE_FUNCTION_1          'default'
+              222  STORE_NAME               _save
+
+ L. 403       224  LOAD_NAME                Image
+              226  LOAD_METHOD              register_open
+              228  LOAD_NAME                EpsImageFile
+              230  LOAD_ATTR                format
+              232  LOAD_NAME                EpsImageFile
+              234  LOAD_NAME                _accept
+              236  CALL_METHOD_3         3  ''
+              238  POP_TOP          
+
+ L. 405       240  LOAD_NAME                Image
+              242  LOAD_METHOD              register_save
+              244  LOAD_NAME                EpsImageFile
+              246  LOAD_ATTR                format
+              248  LOAD_NAME                _save
+              250  CALL_METHOD_2         2  ''
+              252  POP_TOP          
+
+ L. 407       254  LOAD_NAME                Image
+              256  LOAD_METHOD              register_extensions
+              258  LOAD_NAME                EpsImageFile
+              260  LOAD_ATTR                format
+              262  LOAD_STR                 '.ps'
+              264  LOAD_STR                 '.eps'
+              266  BUILD_LIST_2          2 
+              268  CALL_METHOD_2         2  ''
+              270  POP_TOP          
+
+ L. 409       272  LOAD_NAME                Image
+              274  LOAD_METHOD              register_mime
+              276  LOAD_NAME                EpsImageFile
+              278  LOAD_ATTR                format
+              280  LOAD_STR                 'application/postscript'
+              282  CALL_METHOD_2         2  ''
+              284  POP_TOP          
+
+Parse error at or near `<117>' instruction at offset 138
+

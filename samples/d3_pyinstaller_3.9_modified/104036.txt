@@ -1,0 +1,199 @@
+
+# file test/104036.pyc
+# --- This code section failed: ---
+
+ L.   2         0  LOAD_STR                 '\nThis module contains provisional support for SOCKS proxies from within\nurllib3. This module supports SOCKS4, SOCKS4A (an extension of SOCKS4), and\nSOCKS5. To enable its functionality, either install PySocks or install this\nmodule with the ``socks`` extra.\n\nThe SOCKS implementation supports the full range of urllib3 features. It also\nsupports the following SOCKS features:\n\n- SOCKS4A (``proxy_url=\'socks4a://...``)\n- SOCKS4 (``proxy_url=\'socks4://...``)\n- SOCKS5 with remote DNS (``proxy_url=\'socks5h://...``)\n- SOCKS5 with local DNS (``proxy_url=\'socks5://...``)\n- Usernames and passwords for the SOCKS proxy\n\n.. note::\n   It is recommended to use ``socks5h://`` or ``socks4a://`` schemes in\n   your ``proxy_url`` to ensure that DNS resolution is done from the remote\n   server instead of client-side when connecting to a domain name.\n\nSOCKS4 supports IPv4 and domain names with the SOCKS4A extension. SOCKS5\nsupports IPv4, IPv6, and domain names.\n\nWhen connecting to a SOCKS4 proxy the ``username`` portion of the ``proxy_url``\nwill be sent as the ``userid`` section of the SOCKS request:\n\n.. code-block:: python\n\n    proxy_url="socks4a://<userid>@proxy-host"\n\nWhen connecting to a SOCKS5 proxy the ``username`` and ``password`` portion\nof the ``proxy_url`` will be sent as the username/password to authenticate\nwith the proxy:\n\n.. code-block:: python\n\n    proxy_url="socks5h://<username>:<password>@proxy-host"\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  41         4  LOAD_CONST               0
+                6  LOAD_CONST               ('absolute_import',)
+                8  IMPORT_NAME              __future__
+               10  IMPORT_FROM              absolute_import
+               12  STORE_NAME               absolute_import
+               14  POP_TOP          
+
+ L.  43        16  SETUP_FINALLY        30  'to 30'
+
+ L.  44        18  LOAD_CONST               0
+               20  LOAD_CONST               None
+               22  IMPORT_NAME              socks
+               24  STORE_NAME               socks
+               26  POP_BLOCK        
+               28  JUMP_FORWARD         82  'to 82'
+             30_0  COME_FROM_FINALLY    16  '16'
+
+ L.  45        30  DUP_TOP          
+               32  LOAD_NAME                ImportError
+               34  <121>                80  ''
+               36  POP_TOP          
+               38  POP_TOP          
+               40  POP_TOP          
+
+ L.  46        42  LOAD_CONST               0
+               44  LOAD_CONST               None
+               46  IMPORT_NAME              warnings
+               48  STORE_NAME               warnings
+
+ L.  48        50  LOAD_CONST               2
+               52  LOAD_CONST               ('DependencyWarning',)
+               54  IMPORT_NAME              exceptions
+               56  IMPORT_FROM              DependencyWarning
+               58  STORE_NAME               DependencyWarning
+               60  POP_TOP          
+
+ L.  50        62  LOAD_NAME                warnings
+               64  LOAD_METHOD              warn
+
+ L.  52        66  LOAD_STR                 'SOCKS support in urllib3 requires the installation of optional dependencies: specifically, PySocks.  For more information, see https://urllib3.readthedocs.io/en/latest/contrib.html#socks-proxies'
+
+ L.  56        68  LOAD_NAME                DependencyWarning
+
+ L.  50        70  CALL_METHOD_2         2  ''
+               72  POP_TOP          
+
+ L.  58        74  RAISE_VARARGS_0       0  'reraise'
+               76  POP_EXCEPT       
+               78  JUMP_FORWARD         82  'to 82'
+               80  <48>             
+             82_0  COME_FROM            78  '78'
+             82_1  COME_FROM            28  '28'
+
+ L.  60        82  LOAD_CONST               0
+               84  LOAD_CONST               ('error',)
+               86  IMPORT_NAME              socket
+               88  IMPORT_FROM              error
+               90  STORE_NAME               SocketError
+               92  POP_TOP          
+
+ L.  61        94  LOAD_CONST               0
+               96  LOAD_CONST               ('timeout',)
+               98  IMPORT_NAME              socket
+              100  IMPORT_FROM              timeout
+              102  STORE_NAME               SocketTimeout
+              104  POP_TOP          
+
+ L.  63       106  LOAD_CONST               2
+              108  LOAD_CONST               ('HTTPConnection', 'HTTPSConnection')
+              110  IMPORT_NAME              connection
+              112  IMPORT_FROM              HTTPConnection
+              114  STORE_NAME               HTTPConnection
+              116  IMPORT_FROM              HTTPSConnection
+              118  STORE_NAME               HTTPSConnection
+              120  POP_TOP          
+
+ L.  64       122  LOAD_CONST               2
+              124  LOAD_CONST               ('HTTPConnectionPool', 'HTTPSConnectionPool')
+              126  IMPORT_NAME              connectionpool
+              128  IMPORT_FROM              HTTPConnectionPool
+              130  STORE_NAME               HTTPConnectionPool
+              132  IMPORT_FROM              HTTPSConnectionPool
+              134  STORE_NAME               HTTPSConnectionPool
+              136  POP_TOP          
+
+ L.  65       138  LOAD_CONST               2
+              140  LOAD_CONST               ('ConnectTimeoutError', 'NewConnectionError')
+              142  IMPORT_NAME              exceptions
+              144  IMPORT_FROM              ConnectTimeoutError
+              146  STORE_NAME               ConnectTimeoutError
+              148  IMPORT_FROM              NewConnectionError
+              150  STORE_NAME               NewConnectionError
+              152  POP_TOP          
+
+ L.  66       154  LOAD_CONST               2
+              156  LOAD_CONST               ('PoolManager',)
+              158  IMPORT_NAME              poolmanager
+              160  IMPORT_FROM              PoolManager
+              162  STORE_NAME               PoolManager
+              164  POP_TOP          
+
+ L.  67       166  LOAD_CONST               2
+              168  LOAD_CONST               ('parse_url',)
+              170  IMPORT_NAME_ATTR         util.url
+              172  IMPORT_FROM              parse_url
+              174  STORE_NAME               parse_url
+              176  POP_TOP          
+
+ L.  69       178  SETUP_FINALLY       192  'to 192'
+
+ L.  70       180  LOAD_CONST               0
+              182  LOAD_CONST               None
+              184  IMPORT_NAME              ssl
+              186  STORE_NAME               ssl
+              188  POP_BLOCK        
+              190  JUMP_FORWARD        214  'to 214'
+            192_0  COME_FROM_FINALLY   178  '178'
+
+ L.  71       192  DUP_TOP          
+              194  LOAD_NAME                ImportError
+              196  <121>               212  ''
+              198  POP_TOP          
+              200  POP_TOP          
+              202  POP_TOP          
+
+ L.  72       204  LOAD_CONST               None
+              206  STORE_NAME               ssl
+              208  POP_EXCEPT       
+              210  JUMP_FORWARD        214  'to 214'
+              212  <48>             
+            214_0  COME_FROM           210  '210'
+            214_1  COME_FROM           190  '190'
+
+ L.  75       214  LOAD_BUILD_CLASS 
+              216  LOAD_CODE                <code_object SOCKSConnection>
+              218  LOAD_STR                 'SOCKSConnection'
+              220  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              222  LOAD_STR                 'SOCKSConnection'
+              224  LOAD_NAME                HTTPConnection
+              226  CALL_FUNCTION_3       3  ''
+              228  STORE_NAME               SOCKSConnection
+
+ L. 147       230  LOAD_BUILD_CLASS 
+              232  LOAD_CODE                <code_object SOCKSHTTPSConnection>
+              234  LOAD_STR                 'SOCKSHTTPSConnection'
+              236  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              238  LOAD_STR                 'SOCKSHTTPSConnection'
+              240  LOAD_NAME                SOCKSConnection
+              242  LOAD_NAME                HTTPSConnection
+              244  CALL_FUNCTION_4       4  ''
+              246  STORE_NAME               SOCKSHTTPSConnection
+
+ L. 151       248  LOAD_BUILD_CLASS 
+              250  LOAD_CODE                <code_object SOCKSHTTPConnectionPool>
+              252  LOAD_STR                 'SOCKSHTTPConnectionPool'
+              254  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              256  LOAD_STR                 'SOCKSHTTPConnectionPool'
+              258  LOAD_NAME                HTTPConnectionPool
+              260  CALL_FUNCTION_3       3  ''
+              262  STORE_NAME               SOCKSHTTPConnectionPool
+
+ L. 155       264  LOAD_BUILD_CLASS 
+              266  LOAD_CODE                <code_object SOCKSHTTPSConnectionPool>
+              268  LOAD_STR                 'SOCKSHTTPSConnectionPool'
+              270  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              272  LOAD_STR                 'SOCKSHTTPSConnectionPool'
+              274  LOAD_NAME                HTTPSConnectionPool
+              276  CALL_FUNCTION_3       3  ''
+              278  STORE_NAME               SOCKSHTTPSConnectionPool
+
+ L. 159       280  LOAD_BUILD_CLASS 
+              282  LOAD_CODE                <code_object SOCKSProxyManager>
+              284  LOAD_STR                 'SOCKSProxyManager'
+              286  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              288  LOAD_STR                 'SOCKSProxyManager'
+              290  LOAD_NAME                PoolManager
+              292  CALL_FUNCTION_3       3  ''
+              294  STORE_NAME               SOCKSProxyManager
+
+Parse error at or near `<121>' instruction at offset 34
+
+Instruction context:
+   
+ L.  45        30  DUP_TOP          
+                  32  LOAD_NAME                ImportError
+->                34  <121>                80  ''
+                  36  POP_TOP          
+                  38  POP_TOP          
+                  40  POP_TOP          
+
+test/104036.pyc -- 
+# decompile failed

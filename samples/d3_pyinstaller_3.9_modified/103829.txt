@@ -1,0 +1,91 @@
+Instruction context:
+   
+ L.  23        88  BUILD_LIST_0          0 
+                  90  LOAD_CONST               ('__title__', '__summary__', '__uri__', '__version__', '__author__', '__email__', '__license__', '__copyright__')
+->                92  CALL_FINALLY         95  'to 95'
+                  94  STORE_NAME               __all__
+
+test/103829.pyc -- 
+# decompile failed
+
+# file test/103829.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import', 'division', 'print_function')
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  IMPORT_FROM              division
+               12  STORE_NAME               division
+               14  IMPORT_FROM              print_function
+               16  STORE_NAME               print_function
+               18  POP_TOP          
+
+ L.   7        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              sys
+               26  STORE_NAME               sys
+
+ L.   8        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              warnings
+               34  STORE_NAME               warnings
+
+ L.  10        36  LOAD_CONST               0
+               38  LOAD_CONST               ('__author__', '__copyright__', '__email__', '__license__', '__summary__', '__title__', '__uri__', '__version__')
+               40  IMPORT_NAME_ATTR         cryptography.__about__
+               42  IMPORT_FROM              __author__
+               44  STORE_NAME               __author__
+               46  IMPORT_FROM              __copyright__
+               48  STORE_NAME               __copyright__
+               50  IMPORT_FROM              __email__
+               52  STORE_NAME               __email__
+               54  IMPORT_FROM              __license__
+               56  STORE_NAME               __license__
+               58  IMPORT_FROM              __summary__
+               60  STORE_NAME               __summary__
+               62  IMPORT_FROM              __title__
+               64  STORE_NAME               __title__
+               66  IMPORT_FROM              __uri__
+               68  STORE_NAME               __uri__
+               70  IMPORT_FROM              __version__
+               72  STORE_NAME               __version__
+               74  POP_TOP          
+
+ L.  20        76  LOAD_CONST               0
+               78  LOAD_CONST               ('CryptographyDeprecationWarning',)
+               80  IMPORT_NAME_ATTR         cryptography.utils
+               82  IMPORT_FROM              CryptographyDeprecationWarning
+               84  STORE_NAME               CryptographyDeprecationWarning
+               86  POP_TOP          
+
+ L.  23        88  BUILD_LIST_0          0 
+               90  LOAD_CONST               ('__title__', '__summary__', '__uri__', '__version__', '__author__', '__email__', '__license__', '__copyright__')
+               92  CALL_FINALLY         95  'to 95'
+               94  STORE_NAME               __all__
+
+ L.  34        96  LOAD_NAME                sys
+               98  LOAD_ATTR                version_info
+              100  LOAD_CONST               0
+              102  BINARY_SUBSCR    
+              104  LOAD_CONST               2
+              106  COMPARE_OP               ==
+              108  POP_JUMP_IF_FALSE   126  'to 126'
+
+ L.  35       110  LOAD_NAME                warnings
+              112  LOAD_ATTR                warn
+
+ L.  36       114  LOAD_STR                 'Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.'
+
+ L.  39       116  LOAD_NAME                CryptographyDeprecationWarning
+
+ L.  40       118  LOAD_CONST               2
+
+ L.  35       120  LOAD_CONST               ('stacklevel',)
+              122  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              124  POP_TOP          
+            126_0  COME_FROM           108  '108'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 92
+

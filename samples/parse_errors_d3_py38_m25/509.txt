@@ -1,0 +1,50 @@
+Instruction context:
+   
+ L. 220        26  LOAD_GLOBAL              _get_module_details
+                  28  LOAD_FAST                'main_name'
+                  30  CALL_FUNCTION_1       1  ''
+                  32  POP_BLOCK        
+->                34  POP_BLOCK        
+                  36  CALL_FINALLY        116  'to 116'
+                  38  RETURN_VALUE     
+                40_0  COME_FROM_FINALLY    24  '24'
+Instruction context:
+   
+ L. 280       190  CALL_FUNCTION_6       6  ''
+                 192  LOAD_METHOD              copy
+                 194  CALL_METHOD_0         0  ''
+                 196  POP_BLOCK        
+                 198  ROT_TWO          
+                 200  BEGIN_FINALLY    
+                 202  WITH_CLEANUP_START
+                 204  WITH_CLEANUP_FINISH
+                 206  POP_FINALLY           0  ''
+->               208  POP_BLOCK        
+                 210  ROT_TWO          
+                 212  BEGIN_FINALLY    
+                 214  WITH_CLEANUP_START
+                 216  WITH_CLEANUP_FINISH
+                 218  POP_FINALLY           0  ''
+                 220  POP_BLOCK        
+                 222  CALL_FINALLY        246  'to 246'
+                 224  RETURN_VALUE     
+               226_0  COME_FROM_WITH      164  '164'
+                 226  WITH_CLEANUP_START
+                 228  WITH_CLEANUP_FINISH
+                 230  END_FINALLY      
+                 232  POP_BLOCK        
+                 234  BEGIN_FINALLY    
+               236_0  COME_FROM_WITH      154  '154'
+                 236  WITH_CLEANUP_START
+                 238  WITH_CLEANUP_FINISH
+                 240  END_FINALLY      
+                 242  POP_BLOCK        
+                 244  BEGIN_FINALLY    
+               246_0  COME_FROM           222  '222'
+               246_1  COME_FROM_FINALLY   134  '134'
+
+test/509.pyc -- 
+# decompile failed
+
+# file test/509.pyc
+# Deparsing stopped due to parse error

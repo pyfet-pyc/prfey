@@ -1,0 +1,43 @@
+Instruction context:
+   
+ L.  69        68  LOAD_FAST                'response'
+                  70  LOAD_METHOD              read
+                  72  CALL_METHOD_0         0  ''
+                  74  POP_BLOCK        
+->                76  ROT_TWO          
+                  78  BEGIN_FINALLY    
+                  80  WITH_CLEANUP_START
+                  82  WITH_CLEANUP_FINISH
+                  84  POP_FINALLY           0  ''
+                  86  POP_BLOCK        
+                  88  RETURN_VALUE     
+                90_0  COME_FROM_WITH       64  '64'
+                  90  WITH_CLEANUP_START
+                  92  WITH_CLEANUP_FINISH
+                  94  END_FINALLY      
+                  96  JUMP_FORWARD        148  'to 148'
+                98_0  COME_FROM            24  '24'
+Instruction context:
+   
+ L. 230        18  LOAD_GLOBAL              json
+                  20  LOAD_METHOD              loads
+                  22  LOAD_FAST                'fp'
+                  24  LOAD_METHOD              read
+                  26  CALL_METHOD_0         0  ''
+                  28  CALL_METHOD_1         1  ''
+                  30  POP_BLOCK        
+->                32  ROT_TWO          
+                  34  BEGIN_FINALLY    
+                  36  WITH_CLEANUP_START
+                  38  WITH_CLEANUP_FINISH
+                  40  POP_FINALLY           0  ''
+                  42  RETURN_VALUE     
+                44_0  COME_FROM_WITH       14  '14'
+                  44  WITH_CLEANUP_START
+                  46  WITH_CLEANUP_FINISH
+
+../test/10464.pyc -- 
+# decompile failed
+
+# file ../test/10464.pyc
+# Deparsing stopped due to parse error

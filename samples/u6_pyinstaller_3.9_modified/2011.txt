@@ -1,0 +1,39 @@
+Instruction context:
+   
+ L.  96        26  LOAD_FAST                'shape'
+                  28  LOAD_CONST               None
+->                30  <117>                 1  ''
+                  32  POP_JUMP_IF_FALSE    46  'to 46'
+Instruction context:
+   
+ L. 124        92  LOAD_FAST                'array'
+                  94  BUILD_TUPLE_1         1 
+                  96  BUILD_LIST_0          0 
+                  98  LOAD_CONST               ('multi_index', 'refs_ok', 'zerosize_ok')
+->               100  CALL_FINALLY        103  'to 103'
+                 102  LOAD_FAST                'extras'
+                 104  BINARY_ADD       
+Instruction context:
+   
+ L. 196        50  LOAD_GLOBAL              np
+                  52  LOAD_ATTR                broadcast
+                  54  LOAD_FAST                'b'
+                  56  BUILD_LIST_1          1 
+                  58  LOAD_FAST                'args'
+                  60  LOAD_FAST                'pos'
+                  62  LOAD_FAST                'pos'
+                  64  LOAD_CONST               31
+                  66  BINARY_ADD       
+                  68  BUILD_SLICE_2         2 
+                  70  BINARY_SUBSCR    
+->                72  CALL_FINALLY         75  'to 75'
+                  74  WITH_CLEANUP_FINISH
+                  76  CALL_FUNCTION_EX      0  'positional arguments only'
+                  78  STORE_FAST               'b'
+                  80  JUMP_BACK            34  'to 34'
+
+test/2011.pyc -- 
+# decompile failed
+
+# file test/2011.pyc
+# Deparsing stopped due to parse error

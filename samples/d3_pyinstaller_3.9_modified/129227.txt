@@ -1,0 +1,95 @@
+Instruction context:
+   
+ L. 124        32  LOAD_FAST                'previous'
+                  34  LOAD_CONST               None
+->                36  <117>                 1  ''
+                  38  POP_JUMP_IF_FALSE    78  'to 78'
+Instruction context:
+   
+ L. 230        14  LOAD_FAST                'self'
+                  16  LOAD_ATTR                _total_nframe
+                  18  LOAD_CONST               None
+->                20  <117>                 0  ''
+                  22  POP_JUMP_IF_FALSE    34  'to 34'
+Instruction context:
+   
+ L. 238         4  LOAD_FAST                'limit'
+                   6  LOAD_CONST               None
+->                 8  <117>                 1  ''
+                  10  POP_JUMP_IF_FALSE    50  'to 50'
+Instruction context:
+   
+ L. 266         8  LOAD_FAST                'frames'
+                  10  LOAD_CONST               None
+->                12  <117>                 1  ''
+                  14  POP_JUMP_IF_FALSE    24  'to 24'
+Instruction context:
+   
+ L. 371        26  LOAD_FAST                'self'
+                  28  LOAD_ATTR                lineno
+                  30  LOAD_CONST               None
+->                32  <117>                 0  ''
+                  34  POP_JUMP_IF_FALSE    40  'to 40'
+Instruction context:
+   
+ L. 393        22  LOAD_FAST                'self'
+                  24  LOAD_ATTR                domain
+                  26  LOAD_CONST               None
+->                28  <117>                 1  ''
+                  30  POP_JUMP_IF_FALSE    66  'to 66'
+Instruction context:
+   
+ L. 431        12  LOAD_GLOBAL              pickle
+                  14  LOAD_METHOD              dump
+                  16  LOAD_FAST                'self'
+                  18  LOAD_FAST                'fp'
+                  20  LOAD_GLOBAL              pickle
+                  22  LOAD_ATTR                HIGHEST_PROTOCOL
+                  24  CALL_METHOD_3         3  ''
+                  26  POP_TOP          
+                  28  POP_BLOCK        
+                  30  LOAD_CONST               None
+->                32  DUP_TOP          
+                  34  DUP_TOP          
+                  36  CALL_FUNCTION_3       3  ''
+                  38  POP_TOP          
+                  40  JUMP_FORWARD         58  'to 58'
+                42_0  COME_FROM_WITH        8  '8'
+                  42  <49>             
+                  44  POP_JUMP_IF_TRUE     48  'to 48'
+                  46  <48>             
+                48_0  COME_FROM            44  '44'
+                  48  POP_TOP          
+                  50  POP_TOP          
+                  52  POP_TOP          
+                  54  POP_EXCEPT       
+                  56  POP_TOP          
+Instruction context:
+   
+ L. 439        12  LOAD_GLOBAL              pickle
+                  14  LOAD_METHOD              load
+                  16  LOAD_FAST                'fp'
+                  18  CALL_METHOD_1         1  ''
+                  20  POP_BLOCK        
+                  22  ROT_TWO          
+->                24  LOAD_CONST               None
+                  26  DUP_TOP          
+                  28  DUP_TOP          
+                  30  CALL_FUNCTION_3       3  ''
+                  32  POP_TOP          
+                  34  RETURN_VALUE     
+                36_0  COME_FROM_WITH        8  '8'
+                  36  <49>             
+                  38  POP_JUMP_IF_TRUE     42  'to 42'
+                  40  <48>             
+                42_0  COME_FROM            38  '38'
+                  42  POP_TOP          
+                  44  POP_TOP          
+                  46  POP_TOP          
+                  48  POP_EXCEPT       
+
+test/129227.pyc -- 
+# decompile failed
+
+# file test/129227.pyc
+# Deparsing stopped due to parse error

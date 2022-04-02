@@ -1,0 +1,59 @@
+Instruction context:
+   
+ L.  60        65  LOAD_GLOBAL           2  '_DAYS_IN_MONTH'
+                  68  LOAD_FAST             1  'month'
+                  71  BINARY_SUBSCR    
+->                72  RETURN_VALUE     
+Instruction context:
+   
+ L.  65        37  LOAD_GLOBAL           1  '_DAYS_BEFORE_MONTH'
+                  40  LOAD_FAST             1  'month'
+                  43  BINARY_SUBSCR    
+                  44  LOAD_FAST             1  'month'
+                  47  LOAD_CONST               2
+                  50  COMPARE_OP            4  >
+                  53  JUMP_IF_FALSE_OR_POP    65  'to 65'
+                  56  LOAD_GLOBAL           2  '_is_leap'
+                  59  LOAD_FAST             0  'year'
+                  62  CALL_FUNCTION_1       1  None
+                65_0  COME_FROM            53  '53'
+                  65  BINARY_ADD       
+->                66  RETURN_VALUE     
+Instruction context:
+   
+ L.  74       115  LOAD_FAST             2  'day'
+                 118  BINARY_ADD       
+->               119  RETURN_VALUE     
+Instruction context:
+   
+ L. 226       590  LOAD_FAST             7  'push'
+                 593  LOAD_FAST            10  'ch'
+                 596  CALL_FUNCTION_1       1  None
+                 599  POP_TOP          
+                 600  JUMP_BACK            55  'to 55'
+->               603  POP_BLOCK        
+               604_0  COME_FROM            52  '52'
+Instruction context:
+   
+ L.1140       200  LOAD_GLOBAL           1  'hash'
+                 203  LOAD_FAST             2  'h'
+                 206  LOAD_FAST             3  'm'
+                 209  LOAD_FAST             0  'self'
+                 212  LOAD_ATTR             9  'second'
+                 215  LOAD_FAST             0  'self'
+                 218  LOAD_ATTR            10  'microsecond'
+                 221  BUILD_TUPLE_4         4 
+                 224  CALL_FUNCTION_1       1  None
+->               227  RETURN_VALUE     
+Instruction context:
+-> 
+ L.1158       198  LOAD_FAST             2  'off'
+Instruction context:
+-> 
+ L.1578       227  LOAD_FAST             2  's'
+
+../test/165712.pyc -- 
+# decompile failed
+
+# file ../test/165712.pyc
+# Deparsing stopped due to parse error

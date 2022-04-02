@@ -1,0 +1,228 @@
+
+# file test/162530.pyc
+# --- This code section failed: ---
+
+ L.  39         0  LOAD_STR                 '\nHere\'s a sample session to show how to use this module.\nAt the moment, this is the only documentation.\n\nThe Basics\n----------\n\nImporting is easy...\n\n   >>> from http import cookies\n\nMost of the time you start by creating a cookie.\n\n   >>> C = cookies.SimpleCookie()\n\nOnce you\'ve created your Cookie, you can add values just as if it were\na dictionary.\n\n   >>> C = cookies.SimpleCookie()\n   >>> C["fig"] = "newton"\n   >>> C["sugar"] = "wafer"\n   >>> C.output()\n   \'Set-Cookie: fig=newton\\r\\nSet-Cookie: sugar=wafer\'\n\nNotice that the printable representation of a Cookie is the\nappropriate format for a Set-Cookie: header.  This is the\ndefault behavior.  You can change the header and printed\nattributes by using the .output() function\n\n   >>> C = cookies.SimpleCookie()\n   >>> C["rocky"] = "road"\n   >>> C["rocky"]["path"] = "/cookie"\n   >>> print(C.output(header="Cookie:"))\n   Cookie: rocky=road; Path=/cookie\n   >>> print(C.output(attrs=[], header="Cookie:"))\n   Cookie: rocky=road\n\nThe load() method of a Cookie extracts cookies from a string.  In a\nCGI script, you would use this method to extract the cookies from the\nHTTP_COOKIE environment variable.\n\n   >>> C = cookies.SimpleCookie()\n   >>> C.load("chips=ahoy; vienna=finger")\n   >>> C.output()\n   \'Set-Cookie: chips=ahoy\\r\\nSet-Cookie: vienna=finger\'\n\nThe load() method is darn-tootin smart about identifying cookies\nwithin a string.  Escaped quotation marks, nested semicolons, and other\nsuch trickeries do not confuse it.\n\n   >>> C = cookies.SimpleCookie()\n   >>> C.load(\'keebler="E=everybody; L=\\\\"Loves\\\\"; fudge=\\\\012;";\')\n   >>> print(C)\n   Set-Cookie: keebler="E=everybody; L=\\"Loves\\"; fudge=\\012;"\n\nEach element of the Cookie also supports all of the RFC 2109\nCookie attributes.  Here\'s an example which sets the Path\nattribute.\n\n   >>> C = cookies.SimpleCookie()\n   >>> C["oreo"] = "doublestuff"\n   >>> C["oreo"]["path"] = "/"\n   >>> print(C)\n   Set-Cookie: oreo=doublestuff; Path=/\n\nEach dictionary element has a \'value\' attribute, which gives you\nback the value associated with the key.\n\n   >>> C = cookies.SimpleCookie()\n   >>> C["twix"] = "none for you"\n   >>> C["twix"].value\n   \'none for you\'\n\nThe SimpleCookie expects that all values should be standard strings.\nJust to be sure, SimpleCookie invokes the str() builtin to convert\nthe value to a string, when the values are set dictionary-style.\n\n   >>> C = cookies.SimpleCookie()\n   >>> C["number"] = 7\n   >>> C["string"] = "seven"\n   >>> C["number"].value\n   \'7\'\n   >>> C["string"].value\n   \'seven\'\n   >>> C.output()\n   \'Set-Cookie: number=7\\r\\nSet-Cookie: string=seven\'\n\nFinis.\n'
+                2  STORE_NAME               __doc__
+
+ L. 132         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              re
+               10  STORE_NAME               re
+
+ L. 133        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              string
+               18  STORE_NAME               string
+
+ L. 134        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              types
+               26  STORE_NAME               types
+
+ L. 136        28  BUILD_LIST_0          0 
+               30  LOAD_CONST               ('CookieError', 'BaseCookie', 'SimpleCookie')
+               32  CALL_FINALLY         35  'to 35'
+               34  STORE_NAME               __all__
+
+ L. 138        36  LOAD_STR                 ''
+               38  LOAD_ATTR                join
+               40  STORE_NAME               _nulljoin
+
+ L. 139        42  LOAD_STR                 '; '
+               44  LOAD_ATTR                join
+               46  STORE_NAME               _semispacejoin
+
+ L. 140        48  LOAD_STR                 ' '
+               50  LOAD_ATTR                join
+               52  STORE_NAME               _spacejoin
+
+ L. 145        54  LOAD_BUILD_CLASS 
+               56  LOAD_CODE                <code_object CookieError>
+               58  LOAD_STR                 'CookieError'
+               60  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               62  LOAD_STR                 'CookieError'
+               64  LOAD_NAME                Exception
+               66  CALL_FUNCTION_3       3  ''
+               68  STORE_NAME               CookieError
+
+ L. 162        70  LOAD_NAME                string
+               72  LOAD_ATTR                ascii_letters
+               74  LOAD_NAME                string
+               76  LOAD_ATTR                digits
+               78  BINARY_ADD       
+               80  LOAD_STR                 "!#$%&'*+-.^_`|~:"
+               82  BINARY_ADD       
+               84  STORE_NAME               _LegalChars
+
+ L. 163        86  LOAD_NAME                _LegalChars
+               88  LOAD_STR                 ' ()/<=>?@[]{}'
+               90  BINARY_ADD       
+               92  STORE_NAME               _UnescapedChars
+
+ L. 165        94  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+               96  LOAD_STR                 '<dictcomp>'
+               98  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+
+ L. 166       100  LOAD_NAME                set
+              102  LOAD_NAME                range
+              104  LOAD_CONST               256
+              106  CALL_FUNCTION_1       1  ''
+              108  CALL_FUNCTION_1       1  ''
+              110  LOAD_NAME                set
+              112  LOAD_NAME                map
+              114  LOAD_NAME                ord
+              116  LOAD_NAME                _UnescapedChars
+              118  CALL_FUNCTION_2       2  ''
+              120  CALL_FUNCTION_1       1  ''
+              122  BINARY_SUBTRACT  
+
+ L. 165       124  GET_ITER         
+              126  CALL_FUNCTION_1       1  ''
+              128  STORE_NAME               _Translator
+
+ L. 167       130  LOAD_NAME                _Translator
+              132  LOAD_METHOD              update
+
+ L. 168       134  LOAD_NAME                ord
+              136  LOAD_STR                 '"'
+              138  CALL_FUNCTION_1       1  ''
+              140  LOAD_STR                 '\\"'
+
+ L. 169       142  LOAD_NAME                ord
+              144  LOAD_STR                 '\\'
+              146  CALL_FUNCTION_1       1  ''
+              148  LOAD_STR                 '\\\\'
+
+ L. 167       150  BUILD_MAP_2           2 
+              152  CALL_METHOD_1         1  ''
+              154  POP_TOP          
+
+ L. 172       156  LOAD_NAME                re
+              158  LOAD_METHOD              compile
+              160  LOAD_STR                 '[%s]+'
+              162  LOAD_NAME                re
+              164  LOAD_METHOD              escape
+              166  LOAD_NAME                _LegalChars
+              168  CALL_METHOD_1         1  ''
+              170  BINARY_MODULO    
+              172  CALL_METHOD_1         1  ''
+              174  LOAD_ATTR                fullmatch
+              176  STORE_NAME               _is_legal_key
+
+ L. 174       178  LOAD_CODE                <code_object _quote>
+              180  LOAD_STR                 '_quote'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  STORE_NAME               _quote
+
+ L. 187       186  LOAD_NAME                re
+              188  LOAD_METHOD              compile
+              190  LOAD_STR                 '\\\\[0-3][0-7][0-7]'
+              192  CALL_METHOD_1         1  ''
+              194  STORE_NAME               _OctalPatt
+
+ L. 188       196  LOAD_NAME                re
+              198  LOAD_METHOD              compile
+              200  LOAD_STR                 '[\\\\].'
+              202  CALL_METHOD_1         1  ''
+              204  STORE_NAME               _QuotePatt
+
+ L. 190       206  LOAD_CODE                <code_object _unquote>
+              208  LOAD_STR                 '_unquote'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               _unquote
+
+ L. 240       214  BUILD_LIST_0          0 
+              216  LOAD_CONST               ('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+              218  CALL_FINALLY        221  'to 221'
+              220  STORE_NAME               _weekdayname
+
+ L. 242       222  BUILD_LIST_0          0 
+              224  LOAD_CONST               (None, 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+              226  CALL_FINALLY        229  'to 229'
+              228  STORE_NAME               _monthname
+
+ L. 246       230  LOAD_CONST               0
+              232  LOAD_NAME                _weekdayname
+              234  LOAD_NAME                _monthname
+              236  BUILD_TUPLE_3         3 
+              238  LOAD_CODE                <code_object _getdate>
+              240  LOAD_STR                 '_getdate'
+              242  MAKE_FUNCTION_1          'default'
+              244  STORE_NAME               _getdate
+
+ L. 254       246  LOAD_BUILD_CLASS 
+              248  LOAD_CODE                <code_object Morsel>
+              250  LOAD_STR                 'Morsel'
+              252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              254  LOAD_STR                 'Morsel'
+              256  LOAD_NAME                dict
+              258  CALL_FUNCTION_3       3  ''
+              260  STORE_NAME               Morsel
+
+ L. 435       262  LOAD_STR                 "\\w\\d!#%&'~_`><@,:/\\$\\*\\+\\-\\.\\^\\|\\)\\(\\?\\}\\{\\="
+              264  STORE_NAME               _LegalKeyChars
+
+ L. 436       266  LOAD_NAME                _LegalKeyChars
+              268  LOAD_STR                 '\\[\\]'
+              270  BINARY_ADD       
+              272  STORE_NAME               _LegalValueChars
+
+ L. 437       274  LOAD_NAME                re
+              276  LOAD_METHOD              compile
+              278  LOAD_STR                 "\n    \\s*                            # Optional whitespace at start of cookie\n    (?P<key>                       # Start of group 'key'\n    ["
+
+ L. 440       280  LOAD_NAME                _LegalKeyChars
+
+ L. 437       282  BINARY_ADD       
+
+ L. 440       284  LOAD_STR                 ']+?   # Any word of at least one letter\n    )                              # End of group \'key\'\n    (                              # Optional group: there may not be a value.\n    \\s*=\\s*                          # Equal Sign\n    (?P<val>                         # Start of group \'val\'\n    "(?:[^\\\\"]|\\\\.)*"                  # Any doublequoted string\n    |                                  # or\n    \\w{3},\\s[\\w\\d\\s-]{9,11}\\s[\\d:]{8}\\sGMT  # Special case for "expires" attr\n    |                                  # or\n    ['
+
+ L. 437       286  BINARY_ADD       
+
+ L. 449       288  LOAD_NAME                _LegalValueChars
+
+ L. 437       290  BINARY_ADD       
+
+ L. 449       292  LOAD_STR                 "]*      # Any word or empty string\n    )                                # End of group 'val'\n    )?                             # End of optional value group\n    \\s*                            # Any number of spaces.\n    (\\s+|;|$)                      # Ending either at space, semicolon, or EOS.\n    "
+
+ L. 437       294  BINARY_ADD       
+
+ L. 454       296  LOAD_NAME                re
+              298  LOAD_ATTR                ASCII
+              300  LOAD_NAME                re
+              302  LOAD_ATTR                VERBOSE
+              304  BINARY_OR        
+
+ L. 437       306  CALL_METHOD_2         2  ''
+              308  STORE_NAME               _CookiePattern
+
+ L. 460       310  LOAD_BUILD_CLASS 
+              312  LOAD_CODE                <code_object BaseCookie>
+              314  LOAD_STR                 'BaseCookie'
+              316  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              318  LOAD_STR                 'BaseCookie'
+              320  LOAD_NAME                dict
+              322  CALL_FUNCTION_3       3  ''
+              324  STORE_NAME               BaseCookie
+
+ L. 600       326  LOAD_BUILD_CLASS 
+              328  LOAD_CODE                <code_object SimpleCookie>
+              330  LOAD_STR                 'SimpleCookie'
+              332  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              334  LOAD_STR                 'SimpleCookie'
+              336  LOAD_NAME                BaseCookie
+              338  CALL_FUNCTION_3       3  ''
+              340  STORE_NAME               SimpleCookie
+
+Parse error at or near `CALL_FINALLY' instruction at offset 32
+
+Instruction context:
+   
+ L. 136        28  BUILD_LIST_0          0 
+                  30  LOAD_CONST               ('CookieError', 'BaseCookie', 'SimpleCookie')
+->                32  CALL_FINALLY         35  'to 35'
+                  34  STORE_NAME               __all__
+
+test/162530.pyc -- 
+# decompile failed

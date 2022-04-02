@@ -1,0 +1,96 @@
+Instruction context:
+   
+ L.  10        12  BUILD_LIST_0          0 
+                  14  LOAD_CONST               ('TextWrapper', 'wrap', 'fill', 'dedent', 'indent', 'shorten')
+->                16  CALL_FINALLY         19  'to 19'
+                  18  STORE_NAME               __all__
+
+test/101102.pyc -- 
+# decompile failed
+
+# file test/101102.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Text wrapping and filling.\n'
+                2  STORE_NAME               __doc__
+
+ L.   8         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              re
+               10  STORE_NAME               re
+
+ L.  10        12  BUILD_LIST_0          0 
+               14  LOAD_CONST               ('TextWrapper', 'wrap', 'fill', 'dedent', 'indent', 'shorten')
+               16  CALL_FINALLY         19  'to 19'
+               18  STORE_NAME               __all__
+
+ L.  15        20  LOAD_STR                 '\t\n\x0b\x0c\r '
+               22  STORE_NAME               _whitespace
+
+ L.  17        24  LOAD_BUILD_CLASS 
+               26  LOAD_CODE                <code_object TextWrapper>
+               28  LOAD_STR                 'TextWrapper'
+               30  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               32  LOAD_STR                 'TextWrapper'
+               34  CALL_FUNCTION_2       2  ''
+               36  STORE_NAME               TextWrapper
+
+ L. 368        38  LOAD_CONST               (70,)
+               40  LOAD_CODE                <code_object wrap>
+               42  LOAD_STR                 'wrap'
+               44  MAKE_FUNCTION_1          'default'
+               46  STORE_NAME               wrap
+
+ L. 381        48  LOAD_CONST               (70,)
+               50  LOAD_CODE                <code_object fill>
+               52  LOAD_STR                 'fill'
+               54  MAKE_FUNCTION_1          'default'
+               56  STORE_NAME               fill
+
+ L. 393        58  LOAD_CODE                <code_object shorten>
+               60  LOAD_STR                 'shorten'
+               62  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               64  STORE_NAME               shorten
+
+ L. 411        66  LOAD_NAME                re
+               68  LOAD_METHOD              compile
+               70  LOAD_STR                 '^[ \t]+$'
+               72  LOAD_NAME                re
+               74  LOAD_ATTR                MULTILINE
+               76  CALL_METHOD_2         2  ''
+               78  STORE_NAME               _whitespace_only_re
+
+ L. 412        80  LOAD_NAME                re
+               82  LOAD_METHOD              compile
+               84  LOAD_STR                 '(^[ \t]*)(?:[^ \t\n])'
+               86  LOAD_NAME                re
+               88  LOAD_ATTR                MULTILINE
+               90  CALL_METHOD_2         2  ''
+               92  STORE_NAME               _leading_whitespace_re
+
+ L. 414        94  LOAD_CODE                <code_object dedent>
+               96  LOAD_STR                 'dedent'
+               98  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              100  STORE_NAME               dedent
+
+ L. 465       102  LOAD_CONST               (None,)
+              104  LOAD_CODE                <code_object indent>
+              106  LOAD_STR                 'indent'
+              108  MAKE_FUNCTION_1          'default'
+              110  STORE_NAME               indent
+
+ L. 483       112  LOAD_NAME                __name__
+              114  LOAD_STR                 '__main__'
+              116  COMPARE_OP               ==
+              118  POP_JUMP_IF_FALSE   132  'to 132'
+
+ L. 486       120  LOAD_NAME                print
+              122  LOAD_NAME                dedent
+              124  LOAD_STR                 'Hello there.\n  This is indented.'
+              126  CALL_FUNCTION_1       1  ''
+              128  CALL_FUNCTION_1       1  ''
+              130  POP_TOP          
+            132_0  COME_FROM           118  '118'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 16
+

@@ -1,0 +1,30 @@
+Instruction context:
+   
+ L. 634       668  LOAD_GLOBAL              ValueError
+                 670  LOAD_STR                 'The second value in the tuple must be composed of integers in the range 0 through 9.'
+                 672  CALL_FUNCTION_1       1  ''
+                 674  RAISE_VARARGS_1       1  'exception instance'
+               676_0  COME_FROM           652  '652'
+             676_678  JUMP_BACK           596  'to 596'
+->             680_0  COME_FROM           596  '596'
+Instruction context:
+   
+ L.2909        38  POP_EXCEPT       
+->                40  LOAD_CONST               0
+                  42  RETURN_VALUE     
+                44_0  COME_FROM            30  '30'
+Instruction context:
+   
+ L.6334       210  LOAD_FAST                'sep'
+                 212  LOAD_METHOD              join
+                 214  LOAD_GLOBAL              reversed
+                 216  LOAD_FAST                'groups'
+                 218  CALL_FUNCTION_1       1  ''
+                 220  CALL_METHOD_1         1  ''
+->               222  RETURN_VALUE     
+
+test/447.pyc -- 
+# decompile failed
+
+# file test/447.pyc
+# Deparsing stopped due to parse error

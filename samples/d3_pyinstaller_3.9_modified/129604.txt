@@ -1,0 +1,97 @@
+Instruction context:
+   
+ L.  28        12  BUILD_SET_0           0 
+                  14  LOAD_CONST               frozenset({'cls_image', 'compression_level', '_monitors'})
+->                16  POP_FINALLY           1  ''
+                  18  STORE_NAME               __slots__
+
+test/129604.pyc -- 
+# decompile failed
+
+# file test/129604.pyc
+# --- This code section failed: ---
+
+ L.  25         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'MSSBase'
+                6  STORE_NAME               __qualname__
+
+ L.  26         8  LOAD_STR                 ' This class will be overloaded by a system specific one. '
+               10  STORE_NAME               __doc__
+
+ L.  28        12  BUILD_SET_0           0 
+               14  LOAD_CONST               frozenset({'cls_image', 'compression_level', '_monitors'})
+               16  POP_FINALLY           1  ''
+               18  STORE_NAME               __slots__
+
+ L.  30        20  LOAD_CODE                <code_object __init__>
+               22  LOAD_STR                 'MSSBase.__init__'
+               24  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               26  STORE_NAME               __init__
+
+ L.  35        28  LOAD_CODE                <code_object __enter__>
+               30  LOAD_STR                 'MSSBase.__enter__'
+               32  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               34  STORE_NAME               __enter__
+
+ L.  41        36  LOAD_CODE                <code_object __exit__>
+               38  LOAD_STR                 'MSSBase.__exit__'
+               40  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               42  STORE_NAME               __exit__
+
+ L.  46        44  LOAD_NAME                abstractmethod
+
+ L.  47        46  LOAD_CODE                <code_object _grab_impl>
+               48  LOAD_STR                 'MSSBase._grab_impl'
+               50  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               52  CALL_FUNCTION_1       1  ''
+               54  STORE_NAME               _grab_impl
+
+ L.  54        56  LOAD_NAME                abstractmethod
+
+ L.  55        58  LOAD_CODE                <code_object _monitors_impl>
+               60  LOAD_STR                 'MSSBase._monitors_impl'
+               62  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               64  CALL_FUNCTION_1       1  ''
+               66  STORE_NAME               _monitors_impl
+
+ L.  62        68  LOAD_CODE                <code_object close>
+               70  LOAD_STR                 'MSSBase.close'
+               72  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               74  STORE_NAME               close
+
+ L.  66        76  LOAD_CODE                <code_object grab>
+               78  LOAD_STR                 'MSSBase.grab'
+               80  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               82  STORE_NAME               grab
+
+ L.  90        84  LOAD_NAME                property
+
+ L.  91        86  LOAD_CODE                <code_object monitors>
+               88  LOAD_STR                 'MSSBase.monitors'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  CALL_FUNCTION_1       1  ''
+               94  STORE_NAME               monitors
+
+ L. 118        96  LOAD_CONST               (0, 'monitor-{mon}.png', None)
+               98  LOAD_CODE                <code_object save>
+              100  LOAD_STR                 'MSSBase.save'
+              102  MAKE_FUNCTION_1          'default'
+              104  STORE_NAME               save
+
+ L. 177       106  LOAD_CODE                <code_object shot>
+              108  LOAD_STR                 'MSSBase.shot'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  STORE_NAME               shot
+
+ L. 187       114  LOAD_NAME                staticmethod
+
+ L. 188       116  LOAD_CONST               (None,)
+              118  LOAD_CODE                <code_object _cfactory>
+              120  LOAD_STR                 'MSSBase._cfactory'
+              122  MAKE_FUNCTION_1          'default'
+              124  CALL_FUNCTION_1       1  ''
+              126  STORE_NAME               _cfactory
+
+Parse error at or near `POP_FINALLY' instruction at offset 16
+

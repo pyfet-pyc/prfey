@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L. 233       100  LOAD_FAST                'f'
+                 102  LOAD_METHOD              read
+                 104  CALL_METHOD_0         0  ''
+                 106  LOAD_FAST                'filename'
+                 108  BUILD_TUPLE_2         2 
+                 110  POP_BLOCK        
+->               112  ROT_TWO          
+                 114  BEGIN_FINALLY    
+                 116  WITH_CLEANUP_START
+                 118  WITH_CLEANUP_FINISH
+                 120  POP_FINALLY           0  ''
+                 122  RETURN_VALUE     
+               124_0  COME_FROM_WITH       96  '96'
+                 124  WITH_CLEANUP_START
+                 126  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L.1395       626  POP_TOP          
+             628_630  JUMP_ABSOLUTE       634  'to 634'
+->               632  JUMP_BACK            46  'to 46'
+
+test/96.pyc -- 
+# decompile failed
+
+# file test/96.pyc
+# Deparsing stopped due to parse error

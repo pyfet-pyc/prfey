@@ -1,0 +1,17 @@
+Instruction context:
+   
+ L.  44        82  LOAD_FAST                'loop'
+                  84  LOAD_METHOD              run_until_complete
+                  86  LOAD_FAST                'main'
+                  88  CALL_METHOD_1         1  ''
+                  90  POP_BLOCK        
+->                92  CALL_FINALLY         96  'to 96'
+                  94  RETURN_VALUE     
+                96_0  COME_FROM            92  '92'
+                96_1  COME_FROM_FINALLY    52  '52'
+
+../test/121744.pyc -- 
+# decompile failed
+
+# file ../test/121744.pyc
+# Deparsing stopped due to parse error

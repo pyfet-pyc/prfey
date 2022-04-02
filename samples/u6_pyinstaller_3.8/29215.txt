@@ -1,0 +1,47 @@
+Instruction context:
+   
+ L. 392        28  POP_BLOCK        
+->                30  LOAD_CONST               None
+                  32  RETURN_VALUE     
+                34_0  COME_FROM            26  '26'
+Instruction context:
+   
+ L. 471        22  POP_BLOCK        
+->                24  LOAD_CONST               None
+                  26  RETURN_VALUE     
+                28_0  COME_FROM            20  '20'
+Instruction context:
+   
+ L. 511       170  POP_EXCEPT       
+                 172  JUMP_BACK           114  'to 114'
+->               174  POP_EXCEPT       
+                 176  JUMP_FORWARD        180  'to 180'
+               178_0  COME_FROM           162  '162'
+                 178  END_FINALLY      
+               180_0  COME_FROM           176  '176'
+               180_1  COME_FROM           154  '154'
+Instruction context:
+   
+ L. 609       172  POP_EXCEPT       
+                 174  JUMP_BACK           130  'to 130'
+->               176  POP_EXCEPT       
+                 178  JUMP_FORWARD        182  'to 182'
+               180_0  COME_FROM           164  '164'
+                 180  END_FINALLY      
+               182_0  COME_FROM           178  '178'
+               182_1  COME_FROM           156  '156'
+Instruction context:
+   
+ L. 725        44  POP_EXCEPT       
+                  46  JUMP_BACK            22  'to 22'
+->                48  POP_EXCEPT       
+                  50  JUMP_FORWARD         54  'to 54'
+                  52  END_FINALLY      
+                54_0  COME_FROM            50  '50'
+                54_1  COME_FROM            36  '36'
+
+../test/29215.pyc -- 
+# decompile failed
+
+# file ../test/29215.pyc
+# Deparsing stopped due to parse error

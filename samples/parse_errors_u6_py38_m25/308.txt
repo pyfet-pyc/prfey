@@ -1,0 +1,56 @@
+Instruction context:
+   
+ L. 100        24  LOAD_GLOBAL              load
+                  26  LOAD_FAST                'fp'
+                  28  LOAD_CONST               None
+                  30  LOAD_CONST               False
+                  32  LOAD_CONST               ('fmt', 'use_builtin_types')
+                  34  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+                  36  POP_BLOCK        
+->                38  ROT_TWO          
+                  40  BEGIN_FINALLY    
+                  42  WITH_CLEANUP_START
+                  44  WITH_CLEANUP_FINISH
+                  46  POP_FINALLY           0  ''
+                  48  RETURN_VALUE     
+                50_0  COME_FROM_WITH       20  '20'
+                  50  WITH_CLEANUP_START
+                  52  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 591       142  BUILD_TUPLE_5         5 
+                 144  COMPARE_OP               exception-match
+                 146  POP_JUMP_IF_FALSE   164  'to 164'
+                 148  POP_TOP          
+->               150  POP_TOP          
+                 152  POP_TOP          
+Instruction context:
+   
+ L. 704       658  LOAD_DEREF               'self'
+                 660  LOAD_METHOD              _read_object
+                 662  LOAD_FAST                'o'
+                 664  CALL_METHOD_1         1  ''
+                 666  LOAD_FAST                'result'
+                 668  LOAD_DEREF               'self'
+->             670_0  COME_FROM           364  '364'
+                 670  LOAD_METHOD              _read_object
+                 672  LOAD_FAST                'k'
+                 674  CALL_METHOD_1         1  ''
+                 676  STORE_SUBSCR     
+             678_680  JUMP_BACK           650  'to 650'
+                 682  JUMP_FORWARD        690  'to 690'
+               684_0  COME_FROM           588  '588'
+Instruction context:
+   
+ L. 932       996  LOAD_FAST                'value'
+               998_0  COME_FROM           178  '178'
+->               998  LOAD_METHOD              items
+                1000  CALL_METHOD_0         0  ''
+                1002  STORE_FAST               'rootItems'
+              1004_0  COME_FROM           994  '994'
+
+test/308.pyc -- 
+# decompile failed
+
+# file test/308.pyc
+# Deparsing stopped due to parse error

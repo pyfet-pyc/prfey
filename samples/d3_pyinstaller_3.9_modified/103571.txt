@@ -1,0 +1,51 @@
+Instruction context:
+   
+ L.  34        56  LOAD_FAST                'type'
+                  58  LOAD_FAST                'skip'
+->                60  <118>                 1  ''
+                  62  POP_JUMP_IF_FALSE_BACK    38  'to 38'
+Instruction context:
+   
+ L.  60        30  DUP_TOP          
+                  32  LOAD_GLOBAL              parse
+                  34  LOAD_ATTR                ParseError
+->                36  <121>                80  ''
+                  38  POP_TOP          
+                  40  STORE_FAST               'e'
+                  42  POP_TOP          
+                  44  SETUP_FINALLY        72  'to 72'
+Instruction context:
+   
+ L.  97       254  LOAD_FAST                'node'
+                 256  LOAD_ATTR                type
+                 258  LOAD_DEREF               'self'
+                 260  LOAD_ATTR                syms
+                 262  LOAD_ATTR                Unit
+                 264  COMPARE_OP               ==
+             266_268  POP_JUMP_IF_TRUE    274  'to 274'
+->               270  <74>             
+                 272  RAISE_VARARGS_1       1  'exception instance'
+               274_0  COME_FROM           266  '266'
+Instruction context:
+   
+ L. 188        18  LOAD_FAST                'value'
+                  20  LOAD_GLOBAL              grammar
+                  22  LOAD_ATTR                opmap
+->                24  <118>                 0  ''
+                  26  POP_JUMP_IF_FALSE    38  'to 38'
+Instruction context:
+   
+ L. 197        12  LOAD_FAST                'children'
+                  14  POP_JUMP_IF_TRUE     26  'to 26'
+                  16  LOAD_FAST                'type'
+                  18  LOAD_FAST                'grammar'
+                  20  LOAD_ATTR                number2symbol
+->                22  <118>                 0  ''
+                  24  POP_JUMP_IF_FALSE    42  'to 42'
+                26_0  COME_FROM            14  '14'
+
+test/103571.pyc -- 
+# decompile failed
+
+# file test/103571.pyc
+# Deparsing stopped due to parse error

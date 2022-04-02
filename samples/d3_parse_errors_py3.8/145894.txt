@@ -1,0 +1,17 @@
+Instruction context:
+-> 
+ L. 442       236  LOAD_DEREF               'self'
+                 238  LOAD_METHOD              _normalize_version
+Instruction context:
+   
+ L. 632        36  POP_EXCEPT       
+                  38  JUMP_FORWARD         42  'to 42'
+->              40_0  COME_FROM            28  '28'
+                  40  END_FINALLY      
+                42_0  COME_FROM            38  '38'
+
+../test/145894.pyc -- 
+# decompile failed
+
+# file ../test/145894.pyc
+# Deparsing stopped due to parse error

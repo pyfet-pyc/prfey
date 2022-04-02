@@ -1,0 +1,49 @@
+Instruction context:
+   
+ L.  83       152  LOAD_FAST                'i'
+                 154  LOAD_CONST               3
+                 156  BINARY_FLOOR_DIVIDE
+                 158  LOAD_FAST                'p'
+                 160  LOAD_FAST                'i'
+                 162  BINARY_SUBSCR    
+                 164  DUP_TOP          
+                 166  ROT_THREE        
+                 168  COMPARE_OP               ==
+                 170  POP_JUMP_IF_FALSE   206  'to 206'
+                 172  LOAD_FAST                'p'
+                 174  LOAD_FAST                'i'
+                 176  LOAD_CONST               1
+                 178  BINARY_ADD       
+                 180  BINARY_SUBSCR    
+                 182  DUP_TOP          
+                 184  ROT_THREE        
+                 186  COMPARE_OP               ==
+                 188  POP_JUMP_IF_FALSE   206  'to 206'
+                 190  LOAD_FAST                'p'
+                 192  LOAD_FAST                'i'
+                 194  LOAD_CONST               2
+                 196  BINARY_ADD       
+                 198  BINARY_SUBSCR    
+                 200  COMPARE_OP               ==
+                 202  POP_JUMP_IF_TRUE    148  'to 148'
+                 204  JUMP_FORWARD        208  'to 208'
+               206_0  COME_FROM           188  '188'
+               206_1  COME_FROM           170  '170'
+                 206  POP_TOP          
+->             208_0  COME_FROM           204  '204'
+Instruction context:
+   
+ L. 217       436  JUMP_BACK           218  'to 218'
+->               438  JUMP_FORWARD        540  'to 540'
+               440_0  COME_FROM           380  '380'
+Instruction context:
+-> 
+ L. 768        82  JUMP_BACK             8  'to 8'
+                84_0  COME_FROM            76  '76'
+                84_1  COME_FROM            50  '50'
+
+../test/12874.pyc -- 
+# decompile failed
+
+# file ../test/12874.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,21 @@
+Instruction context:
+   
+ L. 397        56  POP_EXCEPT       
+                  58  JUMP_BACK            14  'to 14'
+                  60  POP_EXCEPT       
+->                62  JUMP_BACK            14  'to 14'
+                64_0  COME_FROM            48  '48'
+                  64  END_FINALLY      
+                66_0  COME_FROM            40  '40'
+Instruction context:
+-> 
+ L.2009       478  LOAD_FAST                'consume_positionals'
+                 480  LOAD_DEREF               'start_index'
+                 482  CALL_FUNCTION_1       1  ''
+                 484  STORE_FAST               'stop_index'
+
+test/117.pyc -- 
+# decompile failed
+
+# file test/117.pyc
+# Deparsing stopped due to parse error

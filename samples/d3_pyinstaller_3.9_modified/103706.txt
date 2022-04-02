@@ -1,0 +1,43 @@
+Instruction context:
+   
+ L. 144        36  LOAD_FAST                'k'
+                  38  LOAD_CONST               None
+->                40  <117>                 0  ''
+                  42  POP_JUMP_IF_FALSE    56  'to 56'
+Instruction context:
+   
+ L. 174         8  LOAD_DEREF               'func'
+                  10  LOAD_FAST                'args'
+                  12  BUILD_MAP_0           0 
+                  14  LOAD_FAST                'kwargs'
+->                16  <164>                 1  ''
+                  18  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  20  RETURN_VALUE     
+Instruction context:
+-> 
+ L. 184        34  DUP_TOP          
+                  36  LOAD_GLOBAL              RuntimeError
+                  38  <121>                52  ''
+                  40  POP_TOP          
+                  42  POP_TOP          
+                  44  POP_TOP          
+Instruction context:
+   
+ L. 221       262  LOAD_FAST                'prev'
+                 264  LOAD_CONST               None
+->               266  <117>                 1  ''
+             268_270  POP_JUMP_IF_FALSE   288  'to 288'
+Instruction context:
+   
+ L. 252        46  DUP_TOP          
+                  48  LOAD_GLOBAL              Exception
+->                50  <121>                62  ''
+                  52  POP_TOP          
+                  54  POP_TOP          
+                  56  POP_TOP          
+
+test/103706.pyc -- 
+# decompile failed
+
+# file test/103706.pyc
+# Deparsing stopped due to parse error

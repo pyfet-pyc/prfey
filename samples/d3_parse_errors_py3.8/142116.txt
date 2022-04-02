@@ -1,0 +1,36 @@
+Instruction context:
+   
+ L. 223        80  JUMP_FORWARD         84  'to 84'
+->                82  JUMP_BACK             4  'to 4'
+                84_0  COME_FROM            80  '80'
+Instruction context:
+   
+ L. 378       508  LOAD_CONST               True
+                 510  LOAD_FAST                'self'
+                 512  STORE_ATTR               will_close
+               514_0  COME_FROM           504  '504'
+->             514_1  COME_FROM           492  '492'
+Instruction context:
+   
+ L. 541        50  JUMP_FORWARD         54  'to 54'
+->                52  JUMP_BACK             0  'to 0'
+                54_0  COME_FROM            50  '50'
+Instruction context:
+   
+ L. 812        74  POP_EXCEPT       
+                  76  JUMP_FORWARD         80  'to 80'
+->              78_0  COME_FROM            66  '66'
+                  78  END_FINALLY      
+                80_0  COME_FROM            76  '76'
+Instruction context:
+   
+ L.1363       200  LOAD_FAST                'response'
+                 202  LOAD_METHOD              close
+                 204  CALL_METHOD_0         0  ''
+->               206  POP_TOP          
+
+../test/142116.pyc -- 
+# decompile failed
+
+# file ../test/142116.pyc
+# Deparsing stopped due to parse error

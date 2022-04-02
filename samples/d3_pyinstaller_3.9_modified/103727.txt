@@ -1,0 +1,424 @@
+
+# file test/103727.pyc
+# --- This code section failed: ---
+
+ L.  10         0  LOAD_STR                 'Subprocesses with accessible I/O streams\n\nThis module allows you to spawn processes, connect to their\ninput/output/error pipes, and obtain their return codes.\n\nFor a complete description of this module see the Python documentation.\n\nMain API\n========\nrun(...): Runs a command, waits for it to complete, then returns a\n          CompletedProcess instance.\nPopen(...): A class for flexibly executing a command in a new process\n\nConstants\n---------\nDEVNULL: Special value that indicates that os.devnull should be used\nPIPE:    Special value that indicates a pipe should be created\nSTDOUT:  Special value that indicates that stderr should go to stdout\n\n\nOlder API\n=========\ncall(...): Runs a command, waits for it to complete, then returns\n    the return code.\ncheck_call(...): Same as call() but raises CalledProcessError()\n    if return code is not 0\ncheck_output(...): Same as check_call() but returns the contents of\n    stdout instead of a return code\ngetoutput(...): Runs a command in the shell, waits for it to complete,\n    then returns the output\ngetstatusoutput(...): Runs a command in the shell, waits for it to complete,\n    then returns a (exitcode, output) tuple\n'
+                2  STORE_NAME               __doc__
+
+ L.  44         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              builtins
+               10  STORE_NAME               builtins
+
+ L.  45        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              errno
+               18  STORE_NAME               errno
+
+ L.  46        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              io
+               26  STORE_NAME               io
+
+ L.  47        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              os
+               34  STORE_NAME               os
+
+ L.  48        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              time
+               42  STORE_NAME               time
+
+ L.  49        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              signal
+               50  STORE_NAME               signal
+
+ L.  50        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              sys
+               58  STORE_NAME               sys
+
+ L.  51        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              threading
+               66  STORE_NAME               threading
+
+ L.  52        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              warnings
+               74  STORE_NAME               warnings
+
+ L.  53        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME              contextlib
+               82  STORE_NAME               contextlib
+
+ L.  54        84  LOAD_CONST               0
+               86  LOAD_CONST               ('monotonic',)
+               88  IMPORT_NAME              time
+               90  IMPORT_FROM              monotonic
+               92  STORE_NAME               _time
+               94  POP_TOP          
+
+ L.  55        96  LOAD_CONST               0
+               98  LOAD_CONST               None
+              100  IMPORT_NAME              types
+              102  STORE_NAME               types
+
+ L.  57       104  SETUP_FINALLY       118  'to 118'
+
+ L.  58       106  LOAD_CONST               0
+              108  LOAD_CONST               None
+              110  IMPORT_NAME              pwd
+              112  STORE_NAME               pwd
+              114  POP_BLOCK        
+              116  JUMP_FORWARD        140  'to 140'
+            118_0  COME_FROM_FINALLY   104  '104'
+
+ L.  59       118  DUP_TOP          
+              120  LOAD_NAME                ImportError
+              122  <121>               138  ''
+              124  POP_TOP          
+              126  POP_TOP          
+              128  POP_TOP          
+
+ L.  60       130  LOAD_CONST               None
+              132  STORE_NAME               pwd
+              134  POP_EXCEPT       
+              136  JUMP_FORWARD        140  'to 140'
+              138  <48>             
+            140_0  COME_FROM           136  '136'
+            140_1  COME_FROM           116  '116'
+
+ L.  61       140  SETUP_FINALLY       154  'to 154'
+
+ L.  62       142  LOAD_CONST               0
+              144  LOAD_CONST               None
+              146  IMPORT_NAME              grp
+              148  STORE_NAME               grp
+              150  POP_BLOCK        
+              152  JUMP_FORWARD        176  'to 176'
+            154_0  COME_FROM_FINALLY   140  '140'
+
+ L.  63       154  DUP_TOP          
+              156  LOAD_NAME                ImportError
+              158  <121>               174  ''
+              160  POP_TOP          
+              162  POP_TOP          
+              164  POP_TOP          
+
+ L.  64       166  LOAD_CONST               None
+              168  STORE_NAME               grp
+              170  POP_EXCEPT       
+              172  JUMP_FORWARD        176  'to 176'
+              174  <48>             
+            176_0  COME_FROM           172  '172'
+            176_1  COME_FROM           152  '152'
+
+ L.  66       176  BUILD_LIST_0          0 
+              178  LOAD_CONST               ('Popen', 'PIPE', 'STDOUT', 'call', 'check_call', 'getstatusoutput', 'getoutput', 'check_output', 'run', 'CalledProcessError', 'DEVNULL', 'SubprocessError', 'TimeoutExpired', 'CompletedProcess')
+              180  CALL_FINALLY        183  'to 183'
+              182  STORE_NAME               __all__
+
+ L.  72       184  SETUP_FINALLY       210  'to 210'
+
+ L.  73       186  LOAD_CONST               0
+              188  LOAD_CONST               None
+              190  IMPORT_NAME              msvcrt
+              192  STORE_NAME               msvcrt
+
+ L.  74       194  LOAD_CONST               0
+              196  LOAD_CONST               None
+              198  IMPORT_NAME              _winapi
+              200  STORE_NAME               _winapi
+
+ L.  75       202  LOAD_CONST               True
+              204  STORE_NAME               _mswindows
+              206  POP_BLOCK        
+              208  JUMP_FORWARD        256  'to 256'
+            210_0  COME_FROM_FINALLY   184  '184'
+
+ L.  76       210  DUP_TOP          
+              212  LOAD_NAME                ModuleNotFoundError
+              214  <121>               254  ''
+              216  POP_TOP          
+              218  POP_TOP          
+              220  POP_TOP          
+
+ L.  77       222  LOAD_CONST               False
+              224  STORE_NAME               _mswindows
+
+ L.  78       226  LOAD_CONST               0
+              228  LOAD_CONST               None
+              230  IMPORT_NAME              _posixsubprocess
+              232  STORE_NAME               _posixsubprocess
+
+ L.  79       234  LOAD_CONST               0
+              236  LOAD_CONST               None
+              238  IMPORT_NAME              select
+              240  STORE_NAME               select
+
+ L.  80       242  LOAD_CONST               0
+              244  LOAD_CONST               None
+              246  IMPORT_NAME              selectors
+              248  STORE_NAME               selectors
+              250  POP_EXCEPT       
+              252  JUMP_FORWARD        350  'to 350'
+              254  <48>             
+            256_0  COME_FROM           208  '208'
+
+ L.  82       256  LOAD_CONST               0
+              258  LOAD_CONST               ('CREATE_NEW_CONSOLE', 'CREATE_NEW_PROCESS_GROUP', 'STD_INPUT_HANDLE', 'STD_OUTPUT_HANDLE', 'STD_ERROR_HANDLE', 'SW_HIDE', 'STARTF_USESTDHANDLES', 'STARTF_USESHOWWINDOW', 'ABOVE_NORMAL_PRIORITY_CLASS', 'BELOW_NORMAL_PRIORITY_CLASS', 'HIGH_PRIORITY_CLASS', 'IDLE_PRIORITY_CLASS', 'NORMAL_PRIORITY_CLASS', 'REALTIME_PRIORITY_CLASS', 'CREATE_NO_WINDOW', 'DETACHED_PROCESS', 'CREATE_DEFAULT_ERROR_MODE', 'CREATE_BREAKAWAY_FROM_JOB')
+              260  IMPORT_NAME              _winapi
+              262  IMPORT_FROM              CREATE_NEW_CONSOLE
+              264  STORE_NAME               CREATE_NEW_CONSOLE
+              266  IMPORT_FROM              CREATE_NEW_PROCESS_GROUP
+              268  STORE_NAME               CREATE_NEW_PROCESS_GROUP
+              270  IMPORT_FROM              STD_INPUT_HANDLE
+              272  STORE_NAME               STD_INPUT_HANDLE
+              274  IMPORT_FROM              STD_OUTPUT_HANDLE
+              276  STORE_NAME               STD_OUTPUT_HANDLE
+              278  IMPORT_FROM              STD_ERROR_HANDLE
+              280  STORE_NAME               STD_ERROR_HANDLE
+              282  IMPORT_FROM              SW_HIDE
+              284  STORE_NAME               SW_HIDE
+              286  IMPORT_FROM              STARTF_USESTDHANDLES
+              288  STORE_NAME               STARTF_USESTDHANDLES
+              290  IMPORT_FROM              STARTF_USESHOWWINDOW
+              292  STORE_NAME               STARTF_USESHOWWINDOW
+              294  IMPORT_FROM              ABOVE_NORMAL_PRIORITY_CLASS
+              296  STORE_NAME               ABOVE_NORMAL_PRIORITY_CLASS
+              298  IMPORT_FROM              BELOW_NORMAL_PRIORITY_CLASS
+              300  STORE_NAME               BELOW_NORMAL_PRIORITY_CLASS
+              302  IMPORT_FROM              HIGH_PRIORITY_CLASS
+              304  STORE_NAME               HIGH_PRIORITY_CLASS
+              306  IMPORT_FROM              IDLE_PRIORITY_CLASS
+              308  STORE_NAME               IDLE_PRIORITY_CLASS
+              310  IMPORT_FROM              NORMAL_PRIORITY_CLASS
+              312  STORE_NAME               NORMAL_PRIORITY_CLASS
+              314  IMPORT_FROM              REALTIME_PRIORITY_CLASS
+              316  STORE_NAME               REALTIME_PRIORITY_CLASS
+              318  IMPORT_FROM              CREATE_NO_WINDOW
+              320  STORE_NAME               CREATE_NO_WINDOW
+              322  IMPORT_FROM              DETACHED_PROCESS
+              324  STORE_NAME               DETACHED_PROCESS
+              326  IMPORT_FROM              CREATE_DEFAULT_ERROR_MODE
+              328  STORE_NAME               CREATE_DEFAULT_ERROR_MODE
+              330  IMPORT_FROM              CREATE_BREAKAWAY_FROM_JOB
+              332  STORE_NAME               CREATE_BREAKAWAY_FROM_JOB
+              334  POP_TOP          
+
+ L.  92       336  LOAD_NAME                __all__
+              338  LOAD_METHOD              extend
+              340  BUILD_LIST_0          0 
+              342  LOAD_CONST               ('CREATE_NEW_CONSOLE', 'CREATE_NEW_PROCESS_GROUP', 'STD_INPUT_HANDLE', 'STD_OUTPUT_HANDLE', 'STD_ERROR_HANDLE', 'SW_HIDE', 'STARTF_USESTDHANDLES', 'STARTF_USESHOWWINDOW', 'STARTUPINFO', 'ABOVE_NORMAL_PRIORITY_CLASS', 'BELOW_NORMAL_PRIORITY_CLASS', 'HIGH_PRIORITY_CLASS', 'IDLE_PRIORITY_CLASS', 'NORMAL_PRIORITY_CLASS', 'REALTIME_PRIORITY_CLASS', 'CREATE_NO_WINDOW', 'DETACHED_PROCESS', 'CREATE_DEFAULT_ERROR_MODE', 'CREATE_BREAKAWAY_FROM_JOB')
+              344  CALL_FINALLY        347  'to 347'
+              346  CALL_METHOD_1         1  ''
+              348  POP_TOP          
+            350_0  COME_FROM           252  '252'
+
+ L. 105       350  LOAD_BUILD_CLASS 
+              352  LOAD_CODE                <code_object SubprocessError>
+              354  LOAD_STR                 'SubprocessError'
+              356  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              358  LOAD_STR                 'SubprocessError'
+              360  LOAD_NAME                Exception
+              362  CALL_FUNCTION_3       3  ''
+              364  STORE_NAME               SubprocessError
+
+ L. 108       366  LOAD_BUILD_CLASS 
+              368  LOAD_CODE                <code_object CalledProcessError>
+              370  LOAD_STR                 'CalledProcessError'
+              372  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              374  LOAD_STR                 'CalledProcessError'
+              376  LOAD_NAME                SubprocessError
+              378  CALL_FUNCTION_3       3  ''
+              380  STORE_NAME               CalledProcessError
+
+ L. 145       382  LOAD_BUILD_CLASS 
+              384  LOAD_CODE                <code_object TimeoutExpired>
+              386  LOAD_STR                 'TimeoutExpired'
+              388  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              390  LOAD_STR                 'TimeoutExpired'
+              392  LOAD_NAME                SubprocessError
+              394  CALL_FUNCTION_3       3  ''
+              396  STORE_NAME               TimeoutExpired
+
+ L. 173       398  LOAD_NAME                _mswindows
+          400_402  POP_JUMP_IF_FALSE   436  'to 436'
+
+ L. 174       404  LOAD_BUILD_CLASS 
+              406  LOAD_CODE                <code_object STARTUPINFO>
+              408  LOAD_STR                 'STARTUPINFO'
+              410  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              412  LOAD_STR                 'STARTUPINFO'
+              414  CALL_FUNCTION_2       2  ''
+              416  STORE_NAME               STARTUPINFO
+
+ L. 197       418  LOAD_BUILD_CLASS 
+              420  LOAD_CODE                <code_object Handle>
+              422  LOAD_STR                 'Handle'
+              424  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              426  LOAD_STR                 'Handle'
+              428  LOAD_NAME                int
+              430  CALL_FUNCTION_3       3  ''
+              432  STORE_NAME               Handle
+              434  JUMP_FORWARD        474  'to 474'
+            436_0  COME_FROM           400  '400'
+
+ L. 219       436  LOAD_NAME                getattr
+              438  LOAD_NAME                select
+              440  LOAD_STR                 'PIPE_BUF'
+              442  LOAD_CONST               512
+              444  CALL_FUNCTION_3       3  ''
+              446  STORE_NAME               _PIPE_BUF
+
+ L. 224       448  LOAD_NAME                hasattr
+              450  LOAD_NAME                selectors
+              452  LOAD_STR                 'PollSelector'
+              454  CALL_FUNCTION_2       2  ''
+          456_458  POP_JUMP_IF_FALSE   468  'to 468'
+
+ L. 225       460  LOAD_NAME                selectors
+              462  LOAD_ATTR                PollSelector
+              464  STORE_NAME               _PopenSelector
+              466  JUMP_FORWARD        474  'to 474'
+            468_0  COME_FROM           456  '456'
+
+ L. 227       468  LOAD_NAME                selectors
+              470  LOAD_ATTR                SelectSelector
+              472  STORE_NAME               _PopenSelector
+            474_0  COME_FROM           466  '466'
+            474_1  COME_FROM           434  '434'
+
+ L. 230       474  LOAD_NAME                _mswindows
+          476_478  POP_JUMP_IF_FALSE   494  'to 494'
+
+ L. 239       480  LOAD_CONST               None
+              482  STORE_NAME               _active
+
+ L. 241       484  LOAD_CODE                <code_object _cleanup>
+              486  LOAD_STR                 '_cleanup'
+              488  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              490  STORE_NAME               _cleanup
+              492  JUMP_FORWARD        506  'to 506'
+            494_0  COME_FROM           476  '476'
+
+ L. 248       494  BUILD_LIST_0          0 
+              496  STORE_NAME               _active
+
+ L. 250       498  LOAD_CODE                <code_object _cleanup>
+              500  LOAD_STR                 '_cleanup'
+              502  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              504  STORE_NAME               _cleanup
+            506_0  COME_FROM           492  '492'
+
+ L. 263       506  LOAD_CONST               -1
+              508  STORE_NAME               PIPE
+
+ L. 264       510  LOAD_CONST               -2
+              512  STORE_NAME               STDOUT
+
+ L. 265       514  LOAD_CONST               -3
+              516  STORE_NAME               DEVNULL
+
+ L. 272       518  LOAD_CODE                <code_object _optim_args_from_interpreter_flags>
+              520  LOAD_STR                 '_optim_args_from_interpreter_flags'
+              522  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              524  STORE_NAME               _optim_args_from_interpreter_flags
+
+ L. 282       526  LOAD_CODE                <code_object _args_from_interpreter_flags>
+              528  LOAD_STR                 '_args_from_interpreter_flags'
+              530  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              532  STORE_NAME               _args_from_interpreter_flags
+
+ L. 341       534  LOAD_CONST               None
+              536  LOAD_CONST               ('timeout',)
+              538  BUILD_CONST_KEY_MAP_1     1 
+              540  LOAD_CODE                <code_object call>
+              542  LOAD_STR                 'call'
+              544  MAKE_FUNCTION_2          'keyword-only'
+              546  STORE_NAME               call
+
+ L. 358       548  LOAD_CODE                <code_object check_call>
+              550  LOAD_STR                 'check_call'
+              552  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              554  STORE_NAME               check_call
+
+ L. 377       556  LOAD_CONST               None
+              558  LOAD_CONST               ('timeout',)
+              560  BUILD_CONST_KEY_MAP_1     1 
+              562  LOAD_CODE                <code_object check_output>
+              564  LOAD_STR                 'check_output'
+              566  MAKE_FUNCTION_2          'keyword-only'
+              568  STORE_NAME               check_output
+
+ L. 428       570  LOAD_BUILD_CLASS 
+              572  LOAD_CODE                <code_object CompletedProcess>
+              574  LOAD_STR                 'CompletedProcess'
+              576  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              578  LOAD_STR                 'CompletedProcess'
+              580  LOAD_NAME                object
+              582  CALL_FUNCTION_3       3  ''
+              584  STORE_NAME               CompletedProcess
+
+ L. 465       586  LOAD_CONST               None
+              588  LOAD_CONST               False
+              590  LOAD_CONST               None
+              592  LOAD_CONST               False
+
+ L. 464       594  LOAD_CONST               ('input', 'capture_output', 'timeout', 'check')
+              596  BUILD_CONST_KEY_MAP_4     4 
+              598  LOAD_CODE                <code_object run>
+              600  LOAD_STR                 'run'
+              602  MAKE_FUNCTION_2          'keyword-only'
+              604  STORE_NAME               run
+
+ L. 533       606  LOAD_CODE                <code_object list2cmdline>
+              608  LOAD_STR                 'list2cmdline'
+              610  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              612  STORE_NAME               list2cmdline
+
+ L. 606       614  LOAD_CODE                <code_object getstatusoutput>
+              616  LOAD_STR                 'getstatusoutput'
+              618  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              620  STORE_NAME               getstatusoutput
+
+ L. 637       622  LOAD_CODE                <code_object getoutput>
+              624  LOAD_STR                 'getoutput'
+              626  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              628  STORE_NAME               getoutput
+
+ L. 650       630  LOAD_CODE                <code_object _use_posix_spawn>
+              632  LOAD_STR                 '_use_posix_spawn'
+              634  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              636  STORE_NAME               _use_posix_spawn
+
+ L. 697       638  LOAD_NAME                _use_posix_spawn
+              640  CALL_FUNCTION_0       0  ''
+              642  STORE_NAME               _USE_POSIX_SPAWN
+
+ L. 700       644  LOAD_BUILD_CLASS 
+              646  LOAD_CODE                <code_object Popen>
+              648  LOAD_STR                 'Popen'
+              650  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              652  LOAD_STR                 'Popen'
+              654  LOAD_NAME                object
+              656  CALL_FUNCTION_3       3  ''
+              658  STORE_NAME               Popen
+
+Parse error at or near `<121>' instruction at offset 122
+
+Instruction context:
+   
+ L.  59       118  DUP_TOP          
+                 120  LOAD_NAME                ImportError
+->               122  <121>               138  ''
+                 124  POP_TOP          
+                 126  POP_TOP          
+                 128  POP_TOP          
+
+test/103727.pyc -- 
+# decompile failed

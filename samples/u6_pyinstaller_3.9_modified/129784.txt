@@ -1,0 +1,35 @@
+Instruction context:
+   
+ L.  52       198  LOAD_FAST                'filenames'
+                 200  POP_JUMP_IF_FALSE   206  'to 206'
+->               202  <74>             
+                 204  RAISE_VARARGS_1       1  'exception instance'
+               206_0  COME_FROM           200  '200'
+Instruction context:
+   
+ L.  60        16  LOAD_FAST                'match'
+                  18  LOAD_CONST               None
+->                20  <117>                 0  ''
+                  22  POP_JUMP_IF_FALSE    36  'to 36'
+
+test/129784.pyc -- 
+# decompile failed
+
+# file test/129784.pyc
+# --- This code section failed: ---
+
+ L.  78         0  LOAD_FAST                '.0'
+              2_0  COME_FROM            12  '12'
+                2  FOR_ITER             22  'to 22'
+                4  STORE_FAST               't'
+                6  LOAD_FAST                't'
+                8  LOAD_DEREF               'supported_tags'
+               10  <118>                 0  ''
+               12  POP_JUMP_IF_FALSE     2  'to 2'
+               14  LOAD_CONST               True
+               16  YIELD_VALUE      
+               18  POP_TOP          
+               20  JUMP_BACK             2  'to 2'
+
+Parse error at or near `None' instruction at offset -1
+

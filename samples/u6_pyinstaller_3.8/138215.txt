@@ -1,0 +1,14 @@
+Instruction context:
+   
+ L. 222        32  LOAD_FAST                'undo'
+                  34  LOAD_ATTR                mark
+                  36  LOAD_FAST                'self'
+                  38  STORE_ATTR               mark
+                  40  JUMP_FORWARD         42  'to 42'
+->              42_0  COME_FROM            40  '40'
+
+../test/138215.pyc -- 
+# decompile failed
+
+# file ../test/138215.pyc
+# Deparsing stopped due to parse error

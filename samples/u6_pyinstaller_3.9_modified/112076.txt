@@ -1,0 +1,223 @@
+
+# file test/112076.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Policies \n\nNote that Dispatchers are now implemented in "dispatcher.py", but\nare still documented here.\n\nPolicies\n\n A policy is an object which manages the interaction between a public \n Python object, and COM .  In simple terms, the policy object is the \n object which is actually called by COM, and it invokes the requested \n method, fetches/sets the requested property, etc.  See the \n @win32com.server.policy.CreateInstance@ method for a description of\n how a policy is specified or created.\n\n Exactly how a policy determines which underlying object method/property \n is obtained is up to the policy.  A few policies are provided, but you \n can build your own.  See each policy class for a description of how it \n implements its policy.\n\n There is a policy that allows the object to specify exactly which \n methods and properties will be exposed.  There is also a policy that \n will dynamically expose all Python methods and properties - even those \n added after the object has been instantiated.\n\nDispatchers\n\n A Dispatcher is a level in front of a Policy.  A dispatcher is the \n thing which actually receives the COM calls, and passes them to the \n policy object (which in turn somehow does something with the wrapped \n object).\n\n It is important to note that a policy does not need to have a dispatcher.\n A dispatcher has the same interface as a policy, and simply steps in its \n place, delegating to the real policy.  The primary use for a Dispatcher \n is to support debugging when necessary, but without imposing overheads \n when not (ie, by not using a dispatcher at all).\n\n There are a few dispatchers provided - "tracing" dispatchers which simply \n prints calls and args (including a variation which uses \n win32api.OutputDebugString), and a "debugger" dispatcher, which can \n invoke the debugger when necessary.\n\nError Handling\n\n It is important to realise that the caller of these interfaces may\n not be Python.  Therefore, general Python exceptions and tracebacks aren\'t \n much use.\n\n In general, there is an Exception class that should be raised, to allow \n the framework to extract rich COM type error information.\n\n The general rule is that the **only** exception returned from Python COM \n Server code should be an Exception instance.  Any other Python exception \n should be considered an implementation bug in the server (if not, it \n should be handled, and an appropriate Exception instance raised).  Any \n other exception is considered "unexpected", and a dispatcher may take \n special action (see Dispatchers above)\n\n Occasionally, the implementation will raise the policy.error error.  \n This usually means there is a problem in the implementation that the \n Python programmer should fix.\n\n For example, if policy is asked to wrap an object which it can not \n support (because, eg, it does not provide _public_methods_ or _dynamic_) \n then policy.error will be raised, indicating it is a Python programmers \n problem, rather than a COM error.\n \n'
+                2  STORE_NAME               __doc__
+
+ L.  69         4  LOAD_STR                 'Greg Stein and Mark Hammond'
+                6  STORE_NAME               __author__
+
+ L.  71         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              win32api
+               14  STORE_NAME               win32api
+
+ L.  72        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              winerror
+               22  STORE_NAME               winerror
+
+ L.  73        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              sys
+               30  STORE_NAME               sys
+
+ L.  74        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              types
+               38  STORE_NAME               types
+
+ L.  75        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              pywintypes
+               46  STORE_NAME               pywintypes
+
+ L.  76        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              win32con
+               54  STORE_NAME               win32con
+               56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              pythoncom
+               62  STORE_NAME               pythoncom
+
+ L.  79        64  LOAD_CONST               0
+               66  LOAD_CONST               ('DISPATCH_METHOD', 'DISPATCH_PROPERTYGET', 'DISPATCH_PROPERTYPUT', 'DISPATCH_PROPERTYPUTREF', 'DISPID_UNKNOWN', 'DISPID_VALUE', 'DISPID_PROPERTYPUT', 'DISPID_NEWENUM', 'DISPID_EVALUATE', 'DISPID_CONSTRUCTOR', 'DISPID_DESTRUCTOR', 'DISPID_COLLECT', 'DISPID_STARTENUM')
+               68  IMPORT_NAME              pythoncom
+               70  IMPORT_FROM              DISPATCH_METHOD
+               72  STORE_NAME               DISPATCH_METHOD
+               74  IMPORT_FROM              DISPATCH_PROPERTYGET
+               76  STORE_NAME               DISPATCH_PROPERTYGET
+               78  IMPORT_FROM              DISPATCH_PROPERTYPUT
+               80  STORE_NAME               DISPATCH_PROPERTYPUT
+               82  IMPORT_FROM              DISPATCH_PROPERTYPUTREF
+               84  STORE_NAME               DISPATCH_PROPERTYPUTREF
+               86  IMPORT_FROM              DISPID_UNKNOWN
+               88  STORE_NAME               DISPID_UNKNOWN
+               90  IMPORT_FROM              DISPID_VALUE
+               92  STORE_NAME               DISPID_VALUE
+               94  IMPORT_FROM              DISPID_PROPERTYPUT
+               96  STORE_NAME               DISPID_PROPERTYPUT
+               98  IMPORT_FROM              DISPID_NEWENUM
+              100  STORE_NAME               DISPID_NEWENUM
+              102  IMPORT_FROM              DISPID_EVALUATE
+              104  STORE_NAME               DISPID_EVALUATE
+              106  IMPORT_FROM              DISPID_CONSTRUCTOR
+              108  STORE_NAME               DISPID_CONSTRUCTOR
+              110  IMPORT_FROM              DISPID_DESTRUCTOR
+              112  STORE_NAME               DISPID_DESTRUCTOR
+              114  IMPORT_FROM              DISPID_COLLECT
+              116  STORE_NAME               DISPID_COLLECT
+              118  IMPORT_FROM              DISPID_STARTENUM
+              120  STORE_NAME               DISPID_STARTENUM
+              122  POP_TOP          
+
+ L.  84       124  LOAD_CONST               0
+              126  STORE_NAME               S_OK
+
+ L.  87       128  LOAD_NAME                pythoncom
+              130  LOAD_ATTR                TypeIIDs
+              132  LOAD_NAME                pythoncom
+              134  LOAD_ATTR                IID_IDispatch
+              136  BINARY_SUBSCR    
+              138  STORE_NAME               IDispatchType
+
+ L.  88       140  LOAD_NAME                pythoncom
+              142  LOAD_ATTR                TypeIIDs
+              144  LOAD_NAME                pythoncom
+              146  LOAD_ATTR                IID_IUnknown
+              148  BINARY_SUBSCR    
+              150  STORE_NAME               IUnknownType
+
+ L.  90       152  LOAD_CONST               1
+              154  LOAD_CONST               ('COMException',)
+              156  IMPORT_NAME              exception
+              158  IMPORT_FROM              COMException
+              160  STORE_NAME               COMException
+              162  POP_TOP          
+
+ L.  91       164  LOAD_NAME                __name__
+              166  LOAD_STR                 ' error'
+              168  BINARY_ADD       
+              170  STORE_NAME               error
+
+ L.  93       172  LOAD_STR                 'CLSID\\%s\\PythonCOM'
+              174  STORE_NAME               regSpec
+
+ L.  94       176  LOAD_STR                 'CLSID\\%s\\PythonCOMPolicy'
+              178  STORE_NAME               regPolicy
+
+ L.  95       180  LOAD_STR                 'CLSID\\%s\\PythonCOMDispatcher'
+              182  STORE_NAME               regDispatcher
+
+ L.  96       184  LOAD_STR                 'CLSID\\%s\\PythonCOMPath'
+              186  STORE_NAME               regAddnPath
+
+ L.  98       188  LOAD_CODE                <code_object CreateInstance>
+              190  LOAD_STR                 'CreateInstance'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  STORE_NAME               CreateInstance
+
+ L. 138       196  LOAD_BUILD_CLASS 
+              198  LOAD_CODE                <code_object BasicWrapPolicy>
+              200  LOAD_STR                 'BasicWrapPolicy'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  LOAD_STR                 'BasicWrapPolicy'
+              206  CALL_FUNCTION_2       2  ''
+              208  STORE_NAME               BasicWrapPolicy
+
+ L. 377       210  LOAD_BUILD_CLASS 
+              212  LOAD_CODE                <code_object MappedWrapPolicy>
+              214  LOAD_STR                 'MappedWrapPolicy'
+              216  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              218  LOAD_STR                 'MappedWrapPolicy'
+              220  LOAD_NAME                BasicWrapPolicy
+              222  CALL_FUNCTION_3       3  ''
+              224  STORE_NAME               MappedWrapPolicy
+
+ L. 421       226  LOAD_BUILD_CLASS 
+              228  LOAD_CODE                <code_object DesignatedWrapPolicy>
+              230  LOAD_STR                 'DesignatedWrapPolicy'
+              232  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              234  LOAD_STR                 'DesignatedWrapPolicy'
+              236  LOAD_NAME                MappedWrapPolicy
+              238  CALL_FUNCTION_3       3  ''
+              240  STORE_NAME               DesignatedWrapPolicy
+
+ L. 622       242  LOAD_BUILD_CLASS 
+              244  LOAD_CODE                <code_object EventHandlerPolicy>
+              246  LOAD_STR                 'EventHandlerPolicy'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  LOAD_STR                 'EventHandlerPolicy'
+              252  LOAD_NAME                DesignatedWrapPolicy
+              254  CALL_FUNCTION_3       3  ''
+              256  STORE_NAME               EventHandlerPolicy
+
+ L. 652       258  LOAD_BUILD_CLASS 
+              260  LOAD_CODE                <code_object DynamicPolicy>
+              262  LOAD_STR                 'DynamicPolicy'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  LOAD_STR                 'DynamicPolicy'
+              268  LOAD_NAME                BasicWrapPolicy
+              270  CALL_FUNCTION_3       3  ''
+              272  STORE_NAME               DynamicPolicy
+
+ L. 702       274  LOAD_NAME                DesignatedWrapPolicy
+              276  STORE_NAME               DefaultPolicy
+
+ L. 704       278  LOAD_CODE                <code_object resolve_func>
+              280  LOAD_STR                 'resolve_func'
+              282  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              284  STORE_NAME               resolve_func
+
+ L. 722       286  LOAD_CODE                <code_object call_func>
+              288  LOAD_STR                 'call_func'
+              290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              292  STORE_NAME               call_func
+
+ L. 730       294  LOAD_CODE                <code_object _import_module>
+              296  LOAD_STR                 '_import_module'
+              298  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              300  STORE_NAME               _import_module
+
+ L. 747       302  SETUP_FINALLY       324  'to 324'
+
+ L. 748       304  LOAD_CONST               1
+              306  LOAD_CONST               ('DispatcherTrace', 'DispatcherWin32trace')
+              308  IMPORT_NAME              dispatcher
+              310  IMPORT_FROM              DispatcherTrace
+              312  STORE_NAME               DispatcherTrace
+              314  IMPORT_FROM              DispatcherWin32trace
+              316  STORE_NAME               DispatcherWin32trace
+              318  POP_TOP          
+              320  POP_BLOCK        
+              322  JUMP_FORWARD        344  'to 344'
+            324_0  COME_FROM_FINALLY   302  '302'
+
+ L. 749       324  DUP_TOP          
+              326  LOAD_NAME                ImportError
+          328_330  <121>               342  ''
+              332  POP_TOP          
+              334  POP_TOP          
+              336  POP_TOP          
+
+ L. 750       338  POP_EXCEPT       
+              340  JUMP_FORWARD        344  'to 344'
+              342  <48>             
+            344_0  COME_FROM           340  '340'
+            344_1  COME_FROM           322  '322'
+
+Parse error at or near `<121>' instruction at offset 328_330
+
+Instruction context:
+   
+ L. 749       324  DUP_TOP          
+                 326  LOAD_NAME                ImportError
+->           328_330  <121>               342  ''
+                 332  POP_TOP          
+                 334  POP_TOP          
+                 336  POP_TOP          
+
+test/112076.pyc -- 
+# decompile failed

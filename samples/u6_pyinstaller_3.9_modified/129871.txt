@@ -1,0 +1,128 @@
+Instruction context:
+   
+ L.  79         8  LOAD_FAST                'rc'
+                  10  LOAD_CONST               None
+->                12  <117>                 0  ''
+                  14  POP_JUMP_IF_FALSE    20  'to 20'
+                  16  LOAD_STR                 'None'
+                  18  RETURN_VALUE     
+                20_0  COME_FROM            14  '14'
+Instruction context:
+   
+ L. 125        78  LOAD_FAST                'key'
+                  80  LOAD_FAST                'self'
+                  82  LOAD_ATTR                mapFuncs
+->                84  <118>                 0  ''
+                  86  POP_JUMP_IF_TRUE     98  'to 98'
+                  88  LOAD_FAST                'key'
+                  90  LOAD_FAST                'self'
+                  92  LOAD_ATTR                propMapGet
+                  94  <118>                 0  ''
+                  96  POP_JUMP_IF_FALSE   108  'to 108'
+                98_0  COME_FROM            86  '86'
+Instruction context:
+   
+ L. 142        70  LOAD_FAST                'key'
+                  72  LOAD_FAST                'self'
+                  74  LOAD_ATTR                mapFuncs
+->                76  <118>                 0  ''
+                  78  POP_JUMP_IF_FALSE    90  'to 90'
+Instruction context:
+   
+ L. 157        36  DUP_TOP          
+                  38  LOAD_GLOBAL              pythoncom
+                  40  LOAD_ATTR                ole_error
+->                42  <121>                62  ''
+                  44  POP_TOP          
+                  46  POP_TOP          
+                  48  POP_TOP          
+Instruction context:
+   
+ L. 242        92  DUP_TOP          
+                  94  LOAD_GLOBAL              pythoncom
+                  96  LOAD_ATTR                ole_error
+->                98  <121>               110  ''
+                 100  POP_TOP          
+                 102  POP_TOP          
+                 104  POP_TOP          
+Instruction context:
+   
+ L. 259        28  LOAD_FAST                'typeinfo'
+                  30  LOAD_CONST               None
+->                32  <117>                 0  ''
+                  34  POP_JUMP_IF_FALSE    40  'to 40'
+                  36  LOAD_CONST               None
+                  38  RETURN_VALUE     
+                40_0  COME_FROM            34  '34'
+Instruction context:
+   
+ L. 345       308  LOAD_FAST                'rd'
+                 310  LOAD_GLOBAL              NoTranslateMap
+->               312  <118>                 0  ''
+             314_316  POP_JUMP_IF_FALSE   350  'to 350'
+Instruction context:
+   
+ L. 394        16  LOAD_FAST                'typeinfo'
+                  18  LOAD_CONST               None
+->                20  <117>                 1  ''
+                  22  POP_JUMP_IF_TRUE     32  'to 32'
+                  24  <74>             
+                  26  LOAD_STR                 'Cant build vtables without type info!'
+                  28  CALL_FUNCTION_1       1  ''
+                  30  RAISE_VARARGS_1       1  'exception instance'
+                32_0  COME_FROM            22  '22'
+Instruction context:
+   
+ L. 435        74  LOAD_FAST                'was_user'
+                  76  POP_JUMP_IF_FALSE   108  'to 108'
+                  78  LOAD_FAST                'subrepr'
+                  80  LOAD_GLOBAL              pythoncom
+                  82  LOAD_ATTR                VT_DISPATCH
+                  84  LOAD_GLOBAL              pythoncom
+                  86  LOAD_ATTR                VT_UNKNOWN
+                  88  LOAD_GLOBAL              pythoncom
+                  90  LOAD_ATTR                VT_RECORD
+                  92  BUILD_TUPLE_3         3 
+->                94  <118>                 0  ''
+                  96  POP_JUMP_IF_FALSE   108  'to 108'
+Instruction context:
+   
+ L. 488        30  LOAD_CONST               None
+                  32  LOAD_FAST                'names'
+->                34  <118>                 0  ''
+                  36  POP_JUMP_IF_FALSE    64  'to 64'
+Instruction context:
+   
+ L. 511        26  LOAD_FAST                'i'
+                  28  LOAD_CONST               2
+                  30  COMPARE_OP               >=
+                  32  POP_JUMP_IF_TRUE     42  'to 42'
+->                34  <74>             
+                  36  LOAD_STR                 "Should only be here with names starting with '__'"
+                  38  CALL_FUNCTION_1       1  ''
+                  40  RAISE_VARARGS_1       1  'exception instance'
+                42_0  COME_FROM            32  '32'
+
+test/129871.pyc -- 
+# decompile failed
+
+# file test/129871.pyc
+# --- This code section failed: ---
+
+ L. 546         0  BUILD_LIST_0          0 
+                2  LOAD_FAST                '.0'
+              4_0  COME_FROM            14  '14'
+                4  FOR_ITER             22  'to 22'
+                6  STORE_FAST               'char'
+                8  LOAD_FAST                'char'
+               10  LOAD_GLOBAL              valid_identifier_chars
+               12  <118>                 0  ''
+               14  POP_JUMP_IF_FALSE     4  'to 4'
+               16  LOAD_FAST                'char'
+               18  LIST_APPEND           2  ''
+               20  JUMP_BACK             4  'to 4'
+               22  RETURN_VALUE     
+               -1  RETURN_LAST      
+
+Parse error at or near `None' instruction at offset -1
+

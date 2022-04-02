@@ -1,0 +1,48 @@
+Instruction context:
+   
+ L.  57        18  POP_BLOCK        
+->                20  BEGIN_FINALLY    
+                  22  WITH_CLEANUP_START
+                  24  WITH_CLEANUP_FINISH
+                  26  POP_FINALLY           0  ''
+                  28  LOAD_CONST               None
+                  30  RETURN_VALUE     
+                32_0  COME_FROM            16  '16'
+Instruction context:
+   
+ L.  80        28  POP_BLOCK        
+->                30  BEGIN_FINALLY    
+                  32  WITH_CLEANUP_START
+                  34  WITH_CLEANUP_FINISH
+                  36  POP_FINALLY           0  ''
+                  38  LOAD_CONST               None
+                  40  RETURN_VALUE     
+                42_0  COME_FROM            26  '26'
+Instruction context:
+   
+ L. 210       330  POP_EXCEPT       
+                 332  BREAK_LOOP          336  'to 336'
+->               334  END_FINALLY      
+               336_0  COME_FROM           332  '332'
+               336_1  COME_FROM           322  '322'
+                 336  POP_EXCEPT       
+                 338  JUMP_BACK           138  'to 138'
+               340_0  COME_FROM           294  '294'
+                 340  END_FINALLY      
+                 342  JUMP_BACK           138  'to 138'
+               344_0  COME_FROM           138  '138'
+                 344  POP_BLOCK        
+                 346  BEGIN_FINALLY    
+               348_0  COME_FROM_WITH      130  '130'
+                 348  WITH_CLEANUP_START
+                 350  WITH_CLEANUP_FINISH
+                 352  END_FINALLY      
+                 354  POP_BLOCK        
+                 356  BEGIN_FINALLY    
+               358_0  COME_FROM_FINALLY   120  '120'
+
+test/313.pyc -- 
+# decompile failed
+
+# file test/313.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,26 @@
+Instruction context:
+-> 
+ L.  49        20  LOAD_FAST                'self'
+                  22  LOAD_ATTR                _futures
+                  24  LOAD_FAST                'serial'
+                  26  DELETE_SUBSCR    
+                  28  JUMP_FORWARD         40  'to 40'
+                30_0  COME_FROM_FINALLY    10  '10'
+                  30  LOAD_FAST                'self'
+                  32  LOAD_ATTR                _futures
+                  34  LOAD_FAST                'serial'
+                  36  DELETE_SUBSCR    
+                  38  <48>             
+Instruction context:
+   
+ L.  57        18  LOAD_FAST                'rep_serial'
+                  20  LOAD_FAST                'self'
+                  22  LOAD_ATTR                _futures
+->                24  <118>                 0  ''
+                  26  POP_JUMP_IF_FALSE    48  'to 48'
+
+test/134665.pyc -- 
+# decompile failed
+
+# file test/134665.pyc
+# Deparsing stopped due to parse error

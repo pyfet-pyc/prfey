@@ -1,0 +1,23 @@
+Instruction context:
+   
+ L.1016        94  LOAD_GLOBAL              split_quoted
+                  96  LOAD_FAST                'fflags'
+                  98  CALL_FUNCTION_1       1  ''
+                 100  LOAD_FAST                'flags'
+                 102  LOAD_FAST                'fcname'
+                 104  STORE_SUBSCR     
+                 106  JUMP_BACK            26  'to 26'
+               108_0  COME_FROM            48  '48'
+               108_1  COME_FROM            26  '26'
+                 108  POP_BLOCK        
+->               110  BEGIN_FINALLY    
+               112_0  COME_FROM_WITH       14  '14'
+                 112  WITH_CLEANUP_START
+                 114  WITH_CLEANUP_FINISH
+                 116  END_FINALLY      
+
+../test/12794.pyc -- 
+# decompile failed
+
+# file ../test/12794.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,40 @@
+Instruction context:
+   
+ L.  46        40  LOAD_FAST                'f'
+                  42  LOAD_METHOD              write
+                  44  LOAD_GLOBAL              DEFAULT_PYPIRC
+                  46  LOAD_FAST                'username'
+                  48  LOAD_FAST                'password'
+                  50  BUILD_TUPLE_2         2 
+                  52  BINARY_MODULO    
+                  54  CALL_METHOD_1         1  ''
+                  56  POP_TOP          
+                  58  POP_BLOCK        
+                  60  LOAD_CONST               None
+->                62  DUP_TOP          
+                  64  DUP_TOP          
+                  66  CALL_FUNCTION_3       3  ''
+                  68  POP_TOP          
+                  70  JUMP_FORWARD         88  'to 88'
+                72_0  COME_FROM_WITH       36  '36'
+                  72  <49>             
+                  74  POP_JUMP_IF_TRUE     78  'to 78'
+                  76  <48>             
+                78_0  COME_FROM            74  '74'
+                  78  POP_TOP          
+                  80  POP_TOP          
+                  82  POP_TOP          
+                  84  POP_EXCEPT       
+                  86  POP_TOP          
+Instruction context:
+   
+ L.  58        72  LOAD_STR                 'distutils'
+                  74  LOAD_FAST                'sections'
+->                76  <118>                 0  ''
+               78_80  POP_JUMP_IF_FALSE   326  'to 326'
+
+test/111868.pyc -- 
+# decompile failed
+
+# file test/111868.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,57 @@
+Instruction context:
+   
+ L. 444       181  LOAD_GLOBAL          22  '_sys'
+                 184  LOAD_ATTR            23  'stderr'
+                 187  LOAD_FAST             0  'self'
+                 190  STORE_ATTR           24  '__stderr'
+->               193  LOAD_CONST               None
+Instruction context:
+   
+ L. 461       123  LOAD_CONST               '<%s(%s, %s)>'
+                 126  LOAD_FAST             0  'self'
+                 129  LOAD_ATTR             8  '__class__'
+                 132  LOAD_ATTR             9  '__name__'
+                 135  LOAD_FAST             0  'self'
+                 138  LOAD_ATTR            10  '__name'
+                 141  LOAD_FAST             1  'status'
+                 144  BUILD_TUPLE_3         3 
+->               147  BINARY_MODULO    
+Instruction context:
+   
+ L. 663        18  LOAD_FAST             0  'self'
+                  21  LOAD_ATTR             2  '__name'
+->                24  RETURN_VALUE     
+Instruction context:
+   
+ L. 668        18  LOAD_GLOBAL           2  'str'
+                  21  LOAD_FAST             1  'name'
+                  24  CALL_FUNCTION_1       1  None
+->                27  LOAD_FAST             0  'self'
+Instruction context:
+   
+ L. 673        18  LOAD_FAST             0  'self'
+                  21  LOAD_ATTR             2  '__ident'
+->                24  RETURN_VALUE     
+Instruction context:
+   
+ L. 677        18  LOAD_FAST             0  'self'
+                  21  LOAD_ATTR             2  '__started'
+                  24  LOAD_ATTR             3  'is_set'
+                  27  CALL_FUNCTION_0       0  None
+                  30  JUMP_IF_FALSE_OR_POP    40  'to 40'
+                  33  LOAD_FAST             0  'self'
+                  36  LOAD_ATTR             4  '__stopped'
+                  39  UNARY_NOT        
+                40_0  COME_FROM            30  '30'
+->                40  RETURN_VALUE     
+Instruction context:
+   
+ L. 684        18  LOAD_FAST             0  'self'
+                  21  LOAD_ATTR             2  '__daemonic'
+->                24  RETURN_VALUE     
+
+../test/165483.pyc -- 
+# decompile failed
+
+# file ../test/165483.pyc
+# Deparsing stopped due to parse error

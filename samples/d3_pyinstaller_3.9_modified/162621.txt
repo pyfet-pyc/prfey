@@ -1,0 +1,314 @@
+
+# file test/162621.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nThis file is separate from ``_add_newdocs.py`` so that it can be mocked out by\nour sphinx ``conf.py`` during doc builds, where we want to avoid showing\nplatform-dependent information.\n'
+                2  STORE_NAME               __doc__
+
+ L.   6         4  LOAD_CONST               0
+                6  LOAD_CONST               ('dtype',)
+                8  IMPORT_NAME_ATTR         numpy.core
+               10  IMPORT_FROM              dtype
+               12  STORE_NAME               dtype
+               14  POP_TOP          
+
+ L.   7        16  LOAD_CONST               0
+               18  LOAD_CONST               ('numerictypes',)
+               20  IMPORT_NAME_ATTR         numpy.core
+               22  IMPORT_FROM              numerictypes
+               24  STORE_NAME               _numerictypes
+               26  POP_TOP          
+
+ L.   8        28  LOAD_CONST               0
+               30  LOAD_CONST               ('add_newdoc',)
+               32  IMPORT_NAME_ATTR         numpy.core.function_base
+               34  IMPORT_FROM              add_newdoc
+               36  STORE_NAME               add_newdoc
+               38  POP_TOP          
+
+ L.   9        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              platform
+               46  STORE_NAME               platform
+
+ L.  17        48  LOAD_CODE                <code_object numeric_type_aliases>
+               50  LOAD_STR                 'numeric_type_aliases'
+               52  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               54  STORE_NAME               numeric_type_aliases
+
+ L.  30        56  LOAD_NAME                numeric_type_aliases
+               58  BUILD_LIST_0          0 
+               60  LOAD_CONST               (('int8', '8-bit signed integer (``-128`` to ``127``)'), ('int16', '16-bit signed integer (``-32_768`` to ``32_767``)'), ('int32', '32-bit signed integer (``-2_147_483_648`` to ``2_147_483_647``)'), ('int64', '64-bit signed integer (``-9_223_372_036_854_775_808`` to ``9_223_372_036_854_775_807``)'), ('intp', 'Signed integer large enough to fit pointer, compatible with C ``intptr_t``'), ('uint8', '8-bit unsigned integer (``0`` to ``255``)'), ('uint16', '16-bit unsigned integer (``0`` to ``65_535``)'), ('uint32', '32-bit unsigned integer (``0`` to ``4_294_967_295``)'), ('uint64', '64-bit unsigned integer (``0`` to ``18_446_744_073_709_551_615``)'), ('uintp', 'Unsigned integer large enough to fit pointer, compatible with C ``uintptr_t``'), ('float16', '16-bit-precision floating-point number type: sign bit, 5 bits exponent, 10 bits mantissa'), ('float32', '32-bit-precision floating-point number type: sign bit, 8 bits exponent, 23 bits mantissa'), ('float64', '64-bit precision floating-point number type: sign bit, 11 bits exponent, 52 bits mantissa'), ('float96', '96-bit extended-precision floating-point number type'), ('float128', '128-bit extended-precision floating-point number type'), ('complex64', 'Complex number type composed of 2 32-bit-precision floating-point numbers'), ('complex128', 'Complex number type composed of 2 64-bit-precision floating-point numbers'), ('complex192', 'Complex number type composed of 2 96-bit extended-precision floating-point numbers'), ('complex256', 'Complex number type composed of 2 128-bit extended-precision floating-point numbers'))
+               62  CALL_FINALLY         65  'to 65'
+               64  CALL_FUNCTION_1       1  ''
+               66  STORE_NAME               possible_aliases
+
+ L.  55        68  LOAD_CODE                <code_object add_newdoc_for_scalar_type>
+               70  LOAD_STR                 'add_newdoc_for_scalar_type'
+               72  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               74  STORE_NAME               add_newdoc_for_scalar_type
+
+ L.  75        76  LOAD_NAME                add_newdoc_for_scalar_type
+               78  LOAD_STR                 'bool_'
+               80  LOAD_STR                 'bool8'
+               82  BUILD_LIST_1          1 
+
+ L.  76        84  LOAD_STR                 "\n    Boolean type (True or False), stored as a byte.\n\n    .. warning::\n\n       The :class:`bool_` type is not a subclass of the :class:`int_` type\n       (the :class:`bool_` is not even a number type). This is different\n       than Python's default implementation of :class:`bool` as a\n       sub-class of :class:`int`.\n    "
+
+ L.  75        86  CALL_FUNCTION_3       3  ''
+               88  POP_TOP          
+
+ L.  87        90  LOAD_NAME                add_newdoc_for_scalar_type
+               92  LOAD_STR                 'byte'
+               94  BUILD_LIST_0          0 
+
+ L.  88        96  LOAD_STR                 '\n    Signed integer type, compatible with C ``char``.\n    '
+
+ L.  87        98  CALL_FUNCTION_3       3  ''
+              100  POP_TOP          
+
+ L.  92       102  LOAD_NAME                add_newdoc_for_scalar_type
+              104  LOAD_STR                 'short'
+              106  BUILD_LIST_0          0 
+
+ L.  93       108  LOAD_STR                 '\n    Signed integer type, compatible with C ``short``.\n    '
+
+ L.  92       110  CALL_FUNCTION_3       3  ''
+              112  POP_TOP          
+
+ L.  97       114  LOAD_NAME                add_newdoc_for_scalar_type
+              116  LOAD_STR                 'intc'
+              118  BUILD_LIST_0          0 
+
+ L.  98       120  LOAD_STR                 '\n    Signed integer type, compatible with C ``int``.\n    '
+
+ L.  97       122  CALL_FUNCTION_3       3  ''
+              124  POP_TOP          
+
+ L. 102       126  LOAD_NAME                add_newdoc_for_scalar_type
+              128  LOAD_STR                 'int_'
+              130  BUILD_LIST_0          0 
+
+ L. 103       132  LOAD_STR                 '\n    Signed integer type, compatible with Python `int` and C ``long``.\n    '
+
+ L. 102       134  CALL_FUNCTION_3       3  ''
+              136  POP_TOP          
+
+ L. 107       138  LOAD_NAME                add_newdoc_for_scalar_type
+              140  LOAD_STR                 'longlong'
+              142  BUILD_LIST_0          0 
+
+ L. 108       144  LOAD_STR                 '\n    Signed integer type, compatible with C ``long long``.\n    '
+
+ L. 107       146  CALL_FUNCTION_3       3  ''
+              148  POP_TOP          
+
+ L. 112       150  LOAD_NAME                add_newdoc_for_scalar_type
+              152  LOAD_STR                 'ubyte'
+              154  BUILD_LIST_0          0 
+
+ L. 113       156  LOAD_STR                 '\n    Unsigned integer type, compatible with C ``unsigned char``.\n    '
+
+ L. 112       158  CALL_FUNCTION_3       3  ''
+              160  POP_TOP          
+
+ L. 117       162  LOAD_NAME                add_newdoc_for_scalar_type
+              164  LOAD_STR                 'ushort'
+              166  BUILD_LIST_0          0 
+
+ L. 118       168  LOAD_STR                 '\n    Unsigned integer type, compatible with C ``unsigned short``.\n    '
+
+ L. 117       170  CALL_FUNCTION_3       3  ''
+              172  POP_TOP          
+
+ L. 122       174  LOAD_NAME                add_newdoc_for_scalar_type
+              176  LOAD_STR                 'uintc'
+              178  BUILD_LIST_0          0 
+
+ L. 123       180  LOAD_STR                 '\n    Unsigned integer type, compatible with C ``unsigned int``.\n    '
+
+ L. 122       182  CALL_FUNCTION_3       3  ''
+              184  POP_TOP          
+
+ L. 127       186  LOAD_NAME                add_newdoc_for_scalar_type
+              188  LOAD_STR                 'uint'
+              190  BUILD_LIST_0          0 
+
+ L. 128       192  LOAD_STR                 '\n    Unsigned integer type, compatible with C ``unsigned long``.\n    '
+
+ L. 127       194  CALL_FUNCTION_3       3  ''
+              196  POP_TOP          
+
+ L. 132       198  LOAD_NAME                add_newdoc_for_scalar_type
+              200  LOAD_STR                 'ulonglong'
+              202  BUILD_LIST_0          0 
+
+ L. 133       204  LOAD_STR                 '\n    Signed integer type, compatible with C ``unsigned long long``.\n    '
+
+ L. 132       206  CALL_FUNCTION_3       3  ''
+              208  POP_TOP          
+
+ L. 137       210  LOAD_NAME                add_newdoc_for_scalar_type
+              212  LOAD_STR                 'half'
+              214  BUILD_LIST_0          0 
+
+ L. 138       216  LOAD_STR                 '\n    Half-precision floating-point number type.\n    '
+
+ L. 137       218  CALL_FUNCTION_3       3  ''
+              220  POP_TOP          
+
+ L. 142       222  LOAD_NAME                add_newdoc_for_scalar_type
+              224  LOAD_STR                 'single'
+              226  BUILD_LIST_0          0 
+
+ L. 143       228  LOAD_STR                 '\n    Single-precision floating-point number type, compatible with C ``float``.\n    '
+
+ L. 142       230  CALL_FUNCTION_3       3  ''
+              232  POP_TOP          
+
+ L. 147       234  LOAD_NAME                add_newdoc_for_scalar_type
+              236  LOAD_STR                 'double'
+              238  LOAD_STR                 'float_'
+              240  BUILD_LIST_1          1 
+
+ L. 148       242  LOAD_STR                 '\n    Double-precision floating-point number type, compatible with Python `float`\n    and C ``double``.\n    '
+
+ L. 147       244  CALL_FUNCTION_3       3  ''
+              246  POP_TOP          
+
+ L. 153       248  LOAD_NAME                add_newdoc_for_scalar_type
+              250  LOAD_STR                 'longdouble'
+              252  LOAD_STR                 'longfloat'
+              254  BUILD_LIST_1          1 
+
+ L. 154       256  LOAD_STR                 '\n    Extended-precision floating-point number type, compatible with C\n    ``long double`` but not necessarily with IEEE 754 quadruple-precision.\n    '
+
+ L. 153       258  CALL_FUNCTION_3       3  ''
+              260  POP_TOP          
+
+ L. 159       262  LOAD_NAME                add_newdoc_for_scalar_type
+              264  LOAD_STR                 'csingle'
+              266  LOAD_STR                 'singlecomplex'
+              268  BUILD_LIST_1          1 
+
+ L. 160       270  LOAD_STR                 '\n    Complex number type composed of two single-precision floating-point\n    numbers.\n    '
+
+ L. 159       272  CALL_FUNCTION_3       3  ''
+              274  POP_TOP          
+
+ L. 165       276  LOAD_NAME                add_newdoc_for_scalar_type
+              278  LOAD_STR                 'cdouble'
+              280  LOAD_STR                 'cfloat'
+              282  LOAD_STR                 'complex_'
+              284  BUILD_LIST_2          2 
+
+ L. 166       286  LOAD_STR                 '\n    Complex number type composed of two double-precision floating-point\n    numbers, compatible with Python `complex`.\n    '
+
+ L. 165       288  CALL_FUNCTION_3       3  ''
+              290  POP_TOP          
+
+ L. 171       292  LOAD_NAME                add_newdoc_for_scalar_type
+              294  LOAD_STR                 'clongdouble'
+              296  LOAD_STR                 'clongfloat'
+              298  LOAD_STR                 'longcomplex'
+              300  BUILD_LIST_2          2 
+
+ L. 172       302  LOAD_STR                 '\n    Complex number type composed of two extended-precision floating-point\n    numbers.\n    '
+
+ L. 171       304  CALL_FUNCTION_3       3  ''
+              306  POP_TOP          
+
+ L. 177       308  LOAD_NAME                add_newdoc_for_scalar_type
+              310  LOAD_STR                 'object_'
+              312  BUILD_LIST_0          0 
+
+ L. 178       314  LOAD_STR                 '\n    Any Python object.\n    '
+
+ L. 177       316  CALL_FUNCTION_3       3  ''
+              318  POP_TOP          
+
+ L. 182       320  LOAD_NAME                add_newdoc_for_scalar_type
+              322  LOAD_STR                 'str_'
+              324  LOAD_STR                 'unicode_'
+              326  BUILD_LIST_1          1 
+
+ L. 183       328  LOAD_STR                 '\n    A unicode string.\n\n    When used in arrays, this type strips trailing null codepoints.\n\n    Unlike the builtin `str`, this supports the :ref:`python:bufferobjects`, exposing its\n    contents as UCS4:\n\n    >>> m = memoryview(np.str_("abc"))\n    >>> m.format\n    \'3w\'\n    >>> m.tobytes()\n    b\'a\\x00\\x00\\x00b\\x00\\x00\\x00c\\x00\\x00\\x00\'\n    '
+
+ L. 182       330  CALL_FUNCTION_3       3  ''
+              332  POP_TOP          
+
+ L. 198       334  LOAD_NAME                add_newdoc_for_scalar_type
+              336  LOAD_STR                 'bytes_'
+              338  LOAD_STR                 'string_'
+              340  BUILD_LIST_1          1 
+
+ L. 199       342  LOAD_STR                 '\n    A byte string.\n\n    When used in arrays, this type strips trailing null bytes.\n    '
+
+ L. 198       344  CALL_FUNCTION_3       3  ''
+              346  POP_TOP          
+
+ L. 205       348  LOAD_NAME                add_newdoc_for_scalar_type
+              350  LOAD_STR                 'void'
+              352  BUILD_LIST_0          0 
+
+ L. 206       354  LOAD_STR                 "\n    Either an opaque sequence of bytes, or a structure.\n    \n    >>> np.void(b'abcd')\n    void(b'\\x61\\x62\\x63\\x64')\n    \n    Structured `void` scalars can only be constructed via extraction from :ref:`structured_arrays`:\n    \n    >>> arr = np.array((1, 2), dtype=[('x', np.int8), ('y', np.int8)])\n    >>> arr[()]\n    (1, 2)  # looks like a tuple, but is `np.void`\n    "
+
+ L. 205       356  CALL_FUNCTION_3       3  ''
+              358  POP_TOP          
+
+ L. 219       360  LOAD_NAME                add_newdoc_for_scalar_type
+              362  LOAD_STR                 'datetime64'
+              364  BUILD_LIST_0          0 
+
+ L. 220       366  LOAD_STR                 "\n    If created from a 64-bit integer, it represents an offset from\n    ``1970-01-01T00:00:00``.\n    If created from string, the string can be in ISO 8601 date\n    or datetime format.\n\n    >>> np.datetime64(10, 'Y')\n    numpy.datetime64('1980')\n    >>> np.datetime64('1980', 'Y')\n    numpy.datetime64('1980')   \n    >>> np.datetime64(10, 'D')\n    numpy.datetime64('1970-01-11')\n    \n    See :ref:`arrays.datetime` for more information.\n    "
+
+ L. 219       368  CALL_FUNCTION_3       3  ''
+              370  POP_TOP          
+
+ L. 236       372  LOAD_NAME                add_newdoc_for_scalar_type
+              374  LOAD_STR                 'timedelta64'
+              376  BUILD_LIST_0          0 
+
+ L. 237       378  LOAD_STR                 '\n    A timedelta stored as a 64-bit integer.\n    \n    See :ref:`arrays.datetime` for more information.\n    '
+
+ L. 236       380  CALL_FUNCTION_3       3  ''
+              382  POP_TOP          
+
+ L. 244       384  LOAD_CONST               ('half', 'single', 'double', 'longdouble')
+              386  GET_ITER         
+            388_0  COME_FROM           416  '416'
+              388  FOR_ITER            420  'to 420'
+              390  STORE_NAME               float_name
+
+ L. 245       392  LOAD_NAME                add_newdoc
+              394  LOAD_STR                 'numpy.core.numerictypes'
+              396  LOAD_NAME                float_name
+              398  LOAD_STR                 'as_integer_ratio'
+
+ L. 246       400  LOAD_STR                 '\n        {ftype}.as_integer_ratio() -> (int, int)\n\n        Return a pair of integers, whose ratio is exactly equal to the original\n        floating point number, and with a positive denominator.\n        Raise `OverflowError` on infinities and a `ValueError` on NaNs.\n\n        >>> np.{ftype}(10.0).as_integer_ratio()\n        (10, 1)\n        >>> np.{ftype}(0.0).as_integer_ratio()\n        (0, 1)\n        >>> np.{ftype}(-.25).as_integer_ratio()\n        (-1, 4)\n        '
+              402  LOAD_ATTR                format
+
+ L. 259       404  LOAD_NAME                float_name
+
+ L. 246       406  LOAD_CONST               ('ftype',)
+              408  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+
+ L. 245       410  BUILD_TUPLE_2         2 
+              412  CALL_FUNCTION_3       3  ''
+              414  POP_TOP          
+          416_418  JUMP_BACK           388  'to 388'
+            420_0  COME_FROM           388  '388'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 62
+
+Instruction context:
+   
+ L.  30        56  LOAD_NAME                numeric_type_aliases
+                  58  BUILD_LIST_0          0 
+                  60  LOAD_CONST               (('int8', '8-bit signed integer (``-128`` to ``127``)'), ('int16', '16-bit signed integer (``-32_768`` to ``32_767``)'), ('int32', '32-bit signed integer (``-2_147_483_648`` to ``2_147_483_647``)'), ('int64', '64-bit signed integer (``-9_223_372_036_854_775_808`` to ``9_223_372_036_854_775_807``)'), ('intp', 'Signed integer large enough to fit pointer, compatible with C ``intptr_t``'), ('uint8', '8-bit unsigned integer (``0`` to ``255``)'), ('uint16', '16-bit unsigned integer (``0`` to ``65_535``)'), ('uint32', '32-bit unsigned integer (``0`` to ``4_294_967_295``)'), ('uint64', '64-bit unsigned integer (``0`` to ``18_446_744_073_709_551_615``)'), ('uintp', 'Unsigned integer large enough to fit pointer, compatible with C ``uintptr_t``'), ('float16', '16-bit-precision floating-point number type: sign bit, 5 bits exponent, 10 bits mantissa'), ('float32', '32-bit-precision floating-point number type: sign bit, 8 bits exponent, 23 bits mantissa'), ('float64', '64-bit precision floating-point number type: sign bit, 11 bits exponent, 52 bits mantissa'), ('float96', '96-bit extended-precision floating-point number type'), ('float128', '128-bit extended-precision floating-point number type'), ('complex64', 'Complex number type composed of 2 32-bit-precision floating-point numbers'), ('complex128', 'Complex number type composed of 2 64-bit-precision floating-point numbers'), ('complex192', 'Complex number type composed of 2 96-bit extended-precision floating-point numbers'), ('complex256', 'Complex number type composed of 2 128-bit extended-precision floating-point numbers'))
+->                62  CALL_FINALLY         65  'to 65'
+                  64  CALL_FUNCTION_1       1  ''
+                  66  STORE_NAME               possible_aliases
+
+test/162621.pyc -- 
+# decompile failed

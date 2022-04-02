@@ -1,0 +1,77 @@
+Instruction context:
+   
+ L.  55        54  DUP_TOP          
+                  56  LOAD_NAME                NameError
+->                58  <121>                82  ''
+                  60  POP_TOP          
+                  62  POP_TOP          
+                  64  POP_TOP          
+
+test/134575.pyc -- 
+# decompile failed
+
+# file test/134575.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'curses\n\nThe main package for curses support for Python.  Normally used by importing\nthe package, and perhaps a particular module inside it.\n\n   import curses\n   from curses import textpad\n   curses.initscr()\n   ...\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  13         4  LOAD_CONST               0
+                6  LOAD_CONST               ('*',)
+                8  IMPORT_NAME              _curses
+               10  IMPORT_STAR      
+
+ L.  14        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              os
+               18  STORE_NAME               _os
+
+ L.  15        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              sys
+               26  STORE_NAME               _sys
+
+ L.  25        28  LOAD_CODE                <code_object initscr>
+               30  LOAD_STR                 'initscr'
+               32  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               34  STORE_NAME               initscr
+
+ L.  42        36  LOAD_CODE                <code_object start_color>
+               38  LOAD_STR                 'start_color'
+               40  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               42  STORE_NAME               start_color
+
+ L.  53        44  SETUP_FINALLY        54  'to 54'
+
+ L.  54        46  LOAD_NAME                has_key
+               48  POP_TOP          
+               50  POP_BLOCK        
+               52  JUMP_FORWARD         84  'to 84'
+             54_0  COME_FROM_FINALLY    44  '44'
+
+ L.  55        54  DUP_TOP          
+               56  LOAD_NAME                NameError
+               58  <121>                82  ''
+               60  POP_TOP          
+               62  POP_TOP          
+               64  POP_TOP          
+
+ L.  56        66  LOAD_CONST               1
+               68  LOAD_CONST               ('has_key',)
+               70  IMPORT_NAME              has_key
+               72  IMPORT_FROM              has_key
+               74  STORE_NAME               has_key
+               76  POP_TOP          
+               78  POP_EXCEPT       
+               80  JUMP_FORWARD         84  'to 84'
+               82  <48>             
+             84_0  COME_FROM            80  '80'
+             84_1  COME_FROM            52  '52'
+
+ L.  63        84  LOAD_CODE                <code_object wrapper>
+               86  LOAD_STR                 'wrapper'
+               88  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               90  STORE_NAME               wrapper
+
+Parse error at or near `<121>' instruction at offset 58
+

@@ -1,0 +1,67 @@
+Instruction context:
+   
+ L.  24         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('rgb_to_yiq', 'yiq_to_rgb', 'rgb_to_hls', 'hls_to_rgb', 'rgb_to_hsv', 'hsv_to_rgb')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101039.pyc -- 
+# decompile failed
+
+# file test/101039.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Conversion functions between RGB and other color systems.\n\nThis modules provides two functions for each color system ABC:\n\n  rgb_to_abc(r, g, b) --> a, b, c\n  abc_to_rgb(a, b, c) --> r, g, b\n\nAll inputs and outputs are triples of floats in the range [0.0...1.0]\n(with the exception of I and Q, which covers a slightly larger range).\nInputs outside the valid range may cause exceptions or invalid outputs.\n\nSupported color systems:\nRGB: Red, Green, Blue components\nYIQ: Luminance, Chrominance (used by composite video signals)\nHLS: Hue, Luminance, Saturation\nHSV: Hue, Saturation, Value\n'
+                2  STORE_NAME               __doc__
+
+ L.  24         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('rgb_to_yiq', 'yiq_to_rgb', 'rgb_to_hls', 'hls_to_rgb', 'rgb_to_hsv', 'hsv_to_rgb')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  29        12  LOAD_CONST               0.3333333333333333
+               14  STORE_NAME               ONE_THIRD
+
+ L.  30        16  LOAD_CONST               0.16666666666666666
+               18  STORE_NAME               ONE_SIXTH
+
+ L.  31        20  LOAD_CONST               0.6666666666666666
+               22  STORE_NAME               TWO_THIRD
+
+ L.  40        24  LOAD_CODE                <code_object rgb_to_yiq>
+               26  LOAD_STR                 'rgb_to_yiq'
+               28  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               30  STORE_NAME               rgb_to_yiq
+
+ L.  46        32  LOAD_CODE                <code_object yiq_to_rgb>
+               34  LOAD_STR                 'yiq_to_rgb'
+               36  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               38  STORE_NAME               yiq_to_rgb
+
+ L.  75        40  LOAD_CODE                <code_object rgb_to_hls>
+               42  LOAD_STR                 'rgb_to_hls'
+               44  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               46  STORE_NAME               rgb_to_hls
+
+ L.  98        48  LOAD_CODE                <code_object hls_to_rgb>
+               50  LOAD_STR                 'hls_to_rgb'
+               52  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               54  STORE_NAME               hls_to_rgb
+
+ L. 108        56  LOAD_CODE                <code_object _v>
+               58  LOAD_STR                 '_v'
+               60  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               62  STORE_NAME               _v
+
+ L. 124        64  LOAD_CODE                <code_object rgb_to_hsv>
+               66  LOAD_STR                 'rgb_to_hsv'
+               68  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               70  STORE_NAME               rgb_to_hsv
+
+ L. 143        72  LOAD_CODE                <code_object hsv_to_rgb>
+               74  LOAD_STR                 'hsv_to_rgb'
+               76  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               78  STORE_NAME               hsv_to_rgb
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

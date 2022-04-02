@@ -1,0 +1,144 @@
+Instruction context:
+   
+ L.  39        22  LOAD_STR                 'posix'
+                  24  LOAD_NAME                _builtin_names
+->                26  <118>                 0  ''
+                  28  POP_JUMP_IF_FALSE    64  'to 64'
+
+test/114452.pyc -- 
+# decompile failed
+
+# file test/114452.pyc
+# --- This code section failed: ---
+
+ L.  18         0  LOAD_STR                 "\nSet up 'os' and 'os.path' module replacement functions for use during import\nbootstrap.\n"
+                2  STORE_NAME               __doc__
+
+ L.  24         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.  27        12  LOAD_NAME                sys
+               14  LOAD_ATTR                builtin_module_names
+               16  STORE_NAME               _builtin_names
+
+ L.  28        18  LOAD_CONST               0
+               20  STORE_NAME               _mindirlen
+
+ L.  39        22  LOAD_STR                 'posix'
+               24  LOAD_NAME                _builtin_names
+               26  <118>                 0  ''
+               28  POP_JUMP_IF_FALSE    64  'to 64'
+
+ L.  40        30  LOAD_CONST               0
+               32  LOAD_CONST               ('environ',)
+               34  IMPORT_NAME              posix
+               36  IMPORT_FROM              environ
+               38  STORE_NAME               os_environ
+               40  POP_TOP          
+
+ L.  41        42  LOAD_CONST               0
+               44  LOAD_CONST               ('listdir',)
+               46  IMPORT_NAME              posix
+               48  IMPORT_FROM              listdir
+               50  STORE_NAME               os_listdir
+               52  POP_TOP          
+
+ L.  42        54  LOAD_STR                 '/'
+               56  STORE_NAME               os_sep
+
+ L.  43        58  LOAD_CONST               1
+               60  STORE_NAME               _mindirlen
+               62  JUMP_FORWARD        114  'to 114'
+             64_0  COME_FROM            28  '28'
+
+ L.  44        64  LOAD_STR                 'nt'
+               66  LOAD_NAME                _builtin_names
+               68  <118>                 0  ''
+               70  POP_JUMP_IF_FALSE   106  'to 106'
+
+ L.  45        72  LOAD_CONST               0
+               74  LOAD_CONST               ('environ',)
+               76  IMPORT_NAME              nt
+               78  IMPORT_FROM              environ
+               80  STORE_NAME               os_environ
+               82  POP_TOP          
+
+ L.  46        84  LOAD_CONST               0
+               86  LOAD_CONST               ('listdir',)
+               88  IMPORT_NAME              nt
+               90  IMPORT_FROM              listdir
+               92  STORE_NAME               os_listdir
+               94  POP_TOP          
+
+ L.  47        96  LOAD_STR                 '\\'
+               98  STORE_NAME               os_sep
+
+ L.  48       100  LOAD_CONST               3
+              102  STORE_NAME               _mindirlen
+              104  JUMP_FORWARD        114  'to 114'
+            106_0  COME_FROM            70  '70'
+
+ L.  50       106  LOAD_NAME                ImportError
+              108  LOAD_STR                 'No os specific module found'
+              110  CALL_FUNCTION_1       1  ''
+              112  RAISE_VARARGS_1       1  'exception instance'
+            114_0  COME_FROM           104  '104'
+            114_1  COME_FROM            62  '62'
+
+ L.  54       114  LOAD_NAME                os_sep
+              116  BUILD_TUPLE_1         1 
+              118  LOAD_CODE                <code_object os_path_join>
+              120  LOAD_STR                 'os_path_join'
+              122  MAKE_FUNCTION_1          'default'
+              124  STORE_NAME               os_path_join
+
+ L.  64       126  LOAD_NAME                os_sep
+              128  LOAD_NAME                _mindirlen
+              130  BUILD_TUPLE_2         2 
+              132  LOAD_CODE                <code_object os_path_dirname>
+              134  LOAD_STR                 'os_path_dirname'
+              136  MAKE_FUNCTION_1          'default'
+              138  STORE_NAME               os_path_dirname
+
+ L.  75       140  LOAD_NAME                sys
+              142  LOAD_ATTR                platform
+              144  LOAD_METHOD              startswith
+              146  LOAD_STR                 'win'
+              148  CALL_METHOD_1         1  ''
+              150  POP_JUMP_IF_FALSE   162  'to 162'
+
+ L.  78       152  LOAD_CODE                <code_object os_path_basename>
+              154  LOAD_STR                 'os_path_basename'
+              156  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              158  STORE_NAME               os_path_basename
+              160  JUMP_FORWARD        170  'to 170'
+            162_0  COME_FROM           150  '150'
+
+ L.  98       162  LOAD_CODE                <code_object os_path_basename>
+              164  LOAD_STR                 'os_path_basename'
+              166  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              168  STORE_NAME               os_path_basename
+            170_0  COME_FROM           160  '160'
+
+ L. 103       170  LOAD_STR                 'PYTHONCASEOK'
+              172  LOAD_NAME                os_environ
+              174  <118>                 1  ''
+              176  POP_JUMP_IF_FALSE   188  'to 188'
+
+ L. 104       178  LOAD_CODE                <code_object caseOk>
+              180  LOAD_STR                 'caseOk'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  STORE_NAME               caseOk
+              186  JUMP_FORWARD        196  'to 196'
+            188_0  COME_FROM           176  '176'
+
+ L. 108       188  LOAD_CODE                <code_object caseOk>
+              190  LOAD_STR                 'caseOk'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  STORE_NAME               caseOk
+            196_0  COME_FROM           186  '186'
+
+Parse error at or near `<118>' instruction at offset 26
+

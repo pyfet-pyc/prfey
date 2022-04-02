@@ -1,0 +1,79 @@
+Instruction context:
+   
+ L.  30        16  LOAD_FAST                'path'
+                  18  LOAD_CONST               None
+->                20  <117>                 0  ''
+                  22  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L. 105        56  DUP_TOP          
+                  58  LOAD_GLOBAL              AttributeError
+->                60  <121>                84  ''
+                  62  POP_TOP          
+                  64  POP_TOP          
+                  66  POP_TOP          
+Instruction context:
+   
+ L. 119        52  LOAD_FAST                'method'
+                  54  LOAD_FAST                'tp'
+                  56  LOAD_FAST                'realname'
+                  58  LOAD_FAST                'module'
+                  60  BUILD_TUPLE_3         3 
+                  62  BUILD_MAP_0           0 
+                  64  LOAD_FAST                'kwds'
+->                66  <164>                 1  ''
+                  68  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  70  POP_TOP          
+                  72  POP_BLOCK        
+                  74  JUMP_BACK             8  'to 8'
+                76_0  COME_FROM_FINALLY    50  '50'
+Instruction context:
+   
+ L. 230        10  LOAD_DEREF               'oldfunc'
+                  12  LOAD_FAST                'res'
+                  14  BUILD_LIST_1          1 
+                  16  LOAD_FAST                'args'
+->                18  CALL_FINALLY         21  'to 21'
+                  20  WITH_CLEANUP_FINISH
+                  22  CALL_FUNCTION_EX      0  'positional arguments only'
+                  24  POP_TOP          
+Instruction context:
+   
+ L. 387        12  LOAD_FAST                'self'
+                  14  LOAD_ATTR                _loaded_gen_enum
+                  16  LOAD_FAST                'tp'
+                  18  LOAD_FAST                'name'
+                  20  LOAD_FAST                'module'
+                  22  BUILD_TUPLE_3         3 
+                  24  BUILD_MAP_0           0 
+                  26  LOAD_FAST                'kwds'
+->                28  <164>                 1  ''
+                  30  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  32  POP_TOP          
+                  34  JUMP_FORWARD         46  'to 46'
+                36_0  COME_FROM            10  '10'
+Instruction context:
+   
+ L. 399        30  LOAD_FAST                'check_value'
+                  32  LOAD_CONST               None
+->                34  <117>                 1  ''
+                  36  POP_JUMP_IF_FALSE   108  'to 108'
+Instruction context:
+   
+ L. 439         8  LOAD_FAST                'check_value'
+                  10  LOAD_CONST               None
+->                12  <117>                 1  ''
+                  14  POP_JUMP_IF_FALSE    42  'to 42'
+Instruction context:
+   
+ L. 603       164  LOAD_FAST                'tp'
+                 166  LOAD_ATTR                length
+                 168  LOAD_CONST               None
+->               170  <117>                 1  ''
+                 172  POP_JUMP_IF_FALSE   200  'to 200'
+
+test/111817.pyc -- 
+# decompile failed
+
+# file test/111817.pyc
+# Deparsing stopped due to parse error

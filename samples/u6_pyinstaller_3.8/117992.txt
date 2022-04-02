@@ -1,0 +1,23 @@
+Instruction context:
+   
+ L. 209       326  LOAD_FAST                'response'
+                 328  POP_BLOCK        
+->               330  ROT_TWO          
+                 332  BEGIN_FINALLY    
+                 334  WITH_CLEANUP_START
+                 336  GET_AWAITABLE    
+                 338  LOAD_CONST               None
+                 340  YIELD_FROM       
+                 342  WITH_CLEANUP_FINISH
+                 344  POP_FINALLY           0  ''
+                 346  ROT_TWO          
+                 348  POP_TOP          
+                 350  RETURN_VALUE     
+               352_0  COME_FROM           324  '324'
+               352_1  COME_FROM           316  '316'
+
+../test/117992.pyc -- 
+# decompile failed
+
+# file ../test/117992.pyc
+# Deparsing stopped due to parse error

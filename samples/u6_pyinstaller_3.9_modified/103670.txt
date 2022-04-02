@@ -1,0 +1,546 @@
+
+# file test/103670.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Concrete date/time and related types.\n\nSee http://www.iana.org/time-zones/repository/tz-link.html for\ntime zone and DST data sources.\n'
+                2  STORE_NAME               __doc__
+
+ L.   7         4  LOAD_CONST               ('date', 'datetime', 'time', 'timedelta', 'timezone', 'tzinfo', 'MINYEAR', 'MAXYEAR')
+                6  STORE_NAME               __all__
+
+ L.  11         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              time
+               14  STORE_NAME               _time
+
+ L.  12        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              math
+               22  STORE_NAME               _math
+
+ L.  13        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              sys
+               30  STORE_NAME               sys
+
+ L.  15        32  LOAD_CODE                <code_object _cmp>
+               34  LOAD_STR                 '_cmp'
+               36  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               38  STORE_NAME               _cmp
+
+ L.  18        40  LOAD_CONST               1
+               42  STORE_NAME               MINYEAR
+
+ L.  19        44  LOAD_CONST               9999
+               46  STORE_NAME               MAXYEAR
+
+ L.  20        48  LOAD_CONST               3652059
+               50  STORE_NAME               _MAXORDINAL
+
+ L.  32        52  BUILD_LIST_0          0 
+               54  LOAD_CONST               (-1, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
+               56  CALL_FINALLY         59  'to 59'
+               58  STORE_NAME               _DAYS_IN_MONTH
+
+ L.  34        60  LOAD_CONST               -1
+               62  BUILD_LIST_1          1 
+               64  STORE_NAME               _DAYS_BEFORE_MONTH
+
+ L.  35        66  LOAD_CONST               0
+               68  STORE_NAME               dbm
+
+ L.  36        70  LOAD_NAME                _DAYS_IN_MONTH
+               72  LOAD_CONST               1
+               74  LOAD_CONST               None
+               76  BUILD_SLICE_2         2 
+               78  BINARY_SUBSCR    
+               80  GET_ITER         
+               82  FOR_ITER            106  'to 106'
+               84  STORE_NAME               dim
+
+ L.  37        86  LOAD_NAME                _DAYS_BEFORE_MONTH
+               88  LOAD_METHOD              append
+               90  LOAD_NAME                dbm
+               92  CALL_METHOD_1         1  ''
+               94  POP_TOP          
+
+ L.  38        96  LOAD_NAME                dbm
+               98  LOAD_NAME                dim
+              100  INPLACE_ADD      
+              102  STORE_NAME               dbm
+              104  JUMP_BACK            82  'to 82'
+
+ L.  39       106  DELETE_NAME              dbm
+              108  DELETE_NAME              dim
+
+ L.  41       110  LOAD_CODE                <code_object _is_leap>
+              112  LOAD_STR                 '_is_leap'
+              114  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              116  STORE_NAME               _is_leap
+
+ L.  45       118  LOAD_CODE                <code_object _days_before_year>
+              120  LOAD_STR                 '_days_before_year'
+              122  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              124  STORE_NAME               _days_before_year
+
+ L.  50       126  LOAD_CODE                <code_object _days_in_month>
+              128  LOAD_STR                 '_days_in_month'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  STORE_NAME               _days_in_month
+
+ L.  57       134  LOAD_CODE                <code_object _days_before_month>
+              136  LOAD_STR                 '_days_before_month'
+              138  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              140  STORE_NAME               _days_before_month
+
+ L.  62       142  LOAD_CODE                <code_object _ymd2ord>
+              144  LOAD_STR                 '_ymd2ord'
+              146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              148  STORE_NAME               _ymd2ord
+
+ L.  71       150  LOAD_NAME                _days_before_year
+              152  LOAD_CONST               401
+              154  CALL_FUNCTION_1       1  ''
+              156  STORE_NAME               _DI400Y
+
+ L.  72       158  LOAD_NAME                _days_before_year
+              160  LOAD_CONST               101
+              162  CALL_FUNCTION_1       1  ''
+              164  STORE_NAME               _DI100Y
+
+ L.  73       166  LOAD_NAME                _days_before_year
+              168  LOAD_CONST               5
+              170  CALL_FUNCTION_1       1  ''
+              172  STORE_NAME               _DI4Y
+
+ L.  77       174  LOAD_NAME                _DI4Y
+              176  LOAD_CONST               1461
+              178  COMPARE_OP               ==
+              180  POP_JUMP_IF_TRUE    186  'to 186'
+              182  <74>             
+              184  RAISE_VARARGS_1       1  'exception instance'
+            186_0  COME_FROM           180  '180'
+
+ L.  81       186  LOAD_NAME                _DI400Y
+              188  LOAD_CONST               4
+              190  LOAD_NAME                _DI100Y
+              192  BINARY_MULTIPLY  
+              194  LOAD_CONST               1
+              196  BINARY_ADD       
+              198  COMPARE_OP               ==
+              200  POP_JUMP_IF_TRUE    206  'to 206'
+              202  <74>             
+              204  RAISE_VARARGS_1       1  'exception instance'
+            206_0  COME_FROM           200  '200'
+
+ L.  85       206  LOAD_NAME                _DI100Y
+              208  LOAD_CONST               25
+              210  LOAD_NAME                _DI4Y
+              212  BINARY_MULTIPLY  
+              214  LOAD_CONST               1
+              216  BINARY_SUBTRACT  
+              218  COMPARE_OP               ==
+              220  POP_JUMP_IF_TRUE    226  'to 226'
+              222  <74>             
+              224  RAISE_VARARGS_1       1  'exception instance'
+            226_0  COME_FROM           220  '220'
+
+ L.  87       226  LOAD_CODE                <code_object _ord2ymd>
+              228  LOAD_STR                 '_ord2ymd'
+              230  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              232  STORE_NAME               _ord2ymd
+
+ L. 150       234  BUILD_LIST_0          0 
+              236  LOAD_CONST               (None, 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+              238  CALL_FINALLY        241  'to 241'
+              240  STORE_NAME               _MONTHNAMES
+
+ L. 152       242  BUILD_LIST_0          0 
+              244  LOAD_CONST               (None, 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+              246  CALL_FINALLY        249  'to 249'
+              248  STORE_NAME               _DAYNAMES
+
+ L. 155       250  LOAD_CODE                <code_object _build_struct_time>
+              252  LOAD_STR                 '_build_struct_time'
+              254  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              256  STORE_NAME               _build_struct_time
+
+ L. 160       258  LOAD_CONST               ('auto',)
+              260  LOAD_CODE                <code_object _format_time>
+              262  LOAD_STR                 '_format_time'
+              264  MAKE_FUNCTION_1          'default'
+              266  STORE_NAME               _format_time
+
+ L. 181       268  LOAD_CODE                <code_object _format_offset>
+              270  LOAD_STR                 '_format_offset'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  STORE_NAME               _format_offset
+
+ L. 200       276  LOAD_CODE                <code_object _wrap_strftime>
+              278  LOAD_STR                 '_wrap_strftime'
+              280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              282  STORE_NAME               _wrap_strftime
+
+ L. 264       284  LOAD_CODE                <code_object _parse_isoformat_date>
+              286  LOAD_STR                 '_parse_isoformat_date'
+              288  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              290  STORE_NAME               _parse_isoformat_date
+
+ L. 280       292  LOAD_CODE                <code_object _parse_hh_mm_ss_ff>
+              294  LOAD_STR                 '_parse_hh_mm_ss_ff'
+              296  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              298  STORE_NAME               _parse_hh_mm_ss_ff
+
+ L. 319       300  LOAD_CODE                <code_object _parse_isoformat_time>
+              302  LOAD_STR                 '_parse_isoformat_time'
+              304  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              306  STORE_NAME               _parse_isoformat_time
+
+ L. 360       308  LOAD_CODE                <code_object _check_tzname>
+              310  LOAD_STR                 '_check_tzname'
+              312  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              314  STORE_NAME               _check_tzname
+
+ L. 371       316  LOAD_CODE                <code_object _check_utc_offset>
+              318  LOAD_STR                 '_check_utc_offset'
+              320  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              322  STORE_NAME               _check_utc_offset
+
+ L. 383       324  LOAD_CODE                <code_object _check_int_field>
+              326  LOAD_STR                 '_check_int_field'
+              328  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              330  STORE_NAME               _check_int_field
+
+ L. 415       332  LOAD_CODE                <code_object _check_date_fields>
+              334  LOAD_STR                 '_check_date_fields'
+              336  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              338  STORE_NAME               _check_date_fields
+
+ L. 428       340  LOAD_CODE                <code_object _check_time_fields>
+              342  LOAD_STR                 '_check_time_fields'
+              344  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              346  STORE_NAME               _check_time_fields
+
+ L. 445       348  LOAD_CODE                <code_object _check_tzinfo_arg>
+              350  LOAD_STR                 '_check_tzinfo_arg'
+              352  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              354  STORE_NAME               _check_tzinfo_arg
+
+ L. 449       356  LOAD_CODE                <code_object _cmperror>
+              358  LOAD_STR                 '_cmperror'
+              360  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              362  STORE_NAME               _cmperror
+
+ L. 453       364  LOAD_CODE                <code_object _divide_and_round>
+              366  LOAD_STR                 '_divide_and_round'
+              368  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              370  STORE_NAME               _divide_and_round
+
+ L. 473       372  LOAD_BUILD_CLASS 
+              374  LOAD_CODE                <code_object timedelta>
+              376  LOAD_STR                 'timedelta'
+              378  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              380  LOAD_STR                 'timedelta'
+              382  CALL_FUNCTION_2       2  ''
+              384  STORE_NAME               timedelta
+
+ L. 788       386  LOAD_NAME                timedelta
+              388  LOAD_CONST               -999999999
+              390  CALL_FUNCTION_1       1  ''
+              392  LOAD_NAME                timedelta
+              394  STORE_ATTR               min
+
+ L. 789       396  LOAD_NAME                timedelta
+              398  LOAD_CONST               999999999
+              400  LOAD_CONST               23
+              402  LOAD_CONST               59
+              404  LOAD_CONST               59
+
+ L. 790       406  LOAD_CONST               999999
+
+ L. 789       408  LOAD_CONST               ('days', 'hours', 'minutes', 'seconds', 'microseconds')
+              410  CALL_FUNCTION_KW_5     5  '5 total positional and keyword args'
+              412  LOAD_NAME                timedelta
+              414  STORE_ATTR               max
+
+ L. 791       416  LOAD_NAME                timedelta
+              418  LOAD_CONST               1
+              420  LOAD_CONST               ('microseconds',)
+              422  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+              424  LOAD_NAME                timedelta
+              426  STORE_ATTR               resolution
+
+ L. 793       428  LOAD_BUILD_CLASS 
+              430  LOAD_CODE                <code_object date>
+              432  LOAD_STR                 'date'
+              434  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              436  LOAD_STR                 'date'
+              438  CALL_FUNCTION_2       2  ''
+              440  STORE_NAME               date
+
+ L.1138       442  LOAD_NAME                date
+              444  STORE_NAME               _date_class
+
+ L.1140       446  LOAD_NAME                date
+              448  LOAD_CONST               1
+              450  LOAD_CONST               1
+              452  LOAD_CONST               1
+              454  CALL_FUNCTION_3       3  ''
+              456  LOAD_NAME                date
+              458  STORE_ATTR               min
+
+ L.1141       460  LOAD_NAME                date
+              462  LOAD_CONST               9999
+              464  LOAD_CONST               12
+              466  LOAD_CONST               31
+              468  CALL_FUNCTION_3       3  ''
+              470  LOAD_NAME                date
+              472  STORE_ATTR               max
+
+ L.1142       474  LOAD_NAME                timedelta
+              476  LOAD_CONST               1
+              478  LOAD_CONST               ('days',)
+              480  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+              482  LOAD_NAME                date
+              484  STORE_ATTR               resolution
+
+ L.1145       486  LOAD_BUILD_CLASS 
+              488  LOAD_CODE                <code_object tzinfo>
+              490  LOAD_STR                 'tzinfo'
+              492  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              494  LOAD_STR                 'tzinfo'
+              496  CALL_FUNCTION_2       2  ''
+              498  STORE_NAME               tzinfo
+
+ L.1214       500  LOAD_BUILD_CLASS 
+              502  LOAD_CODE                <code_object IsoCalendarDate>
+              504  LOAD_STR                 'IsoCalendarDate'
+              506  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              508  LOAD_STR                 'IsoCalendarDate'
+              510  LOAD_NAME                tuple
+              512  CALL_FUNCTION_3       3  ''
+              514  STORE_NAME               IsoCalendarDate
+
+ L.1241       516  LOAD_NAME                IsoCalendarDate
+              518  STORE_NAME               _IsoCalendarDate
+
+ L.1242       520  DELETE_NAME              IsoCalendarDate
+
+ L.1243       522  LOAD_NAME                tzinfo
+              524  STORE_NAME               _tzinfo_class
+
+ L.1245       526  LOAD_BUILD_CLASS 
+              528  LOAD_CODE                <code_object time>
+              530  LOAD_STR                 'time'
+              532  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              534  LOAD_STR                 'time'
+              536  CALL_FUNCTION_2       2  ''
+              538  STORE_NAME               time
+
+ L.1587       540  LOAD_NAME                time
+              542  STORE_NAME               _time_class
+
+ L.1589       544  LOAD_NAME                time
+              546  LOAD_CONST               0
+              548  LOAD_CONST               0
+              550  LOAD_CONST               0
+              552  CALL_FUNCTION_3       3  ''
+              554  LOAD_NAME                time
+              556  STORE_ATTR               min
+
+ L.1590       558  LOAD_NAME                time
+              560  LOAD_CONST               23
+              562  LOAD_CONST               59
+              564  LOAD_CONST               59
+              566  LOAD_CONST               999999
+              568  CALL_FUNCTION_4       4  ''
+              570  LOAD_NAME                time
+              572  STORE_ATTR               max
+
+ L.1591       574  LOAD_NAME                timedelta
+              576  LOAD_CONST               1
+              578  LOAD_CONST               ('microseconds',)
+              580  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+              582  LOAD_NAME                time
+              584  STORE_ATTR               resolution
+
+ L.1594       586  LOAD_BUILD_CLASS 
+              588  LOAD_CODE                <code_object datetime>
+              590  LOAD_STR                 'datetime'
+              592  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              594  LOAD_STR                 'datetime'
+              596  LOAD_NAME                date
+              598  CALL_FUNCTION_3       3  ''
+              600  STORE_NAME               datetime
+
+ L.2199       602  LOAD_NAME                datetime
+              604  LOAD_CONST               1
+              606  LOAD_CONST               1
+              608  LOAD_CONST               1
+              610  CALL_FUNCTION_3       3  ''
+              612  LOAD_NAME                datetime
+              614  STORE_ATTR               min
+
+ L.2200       616  LOAD_NAME                datetime
+              618  LOAD_CONST               9999
+              620  LOAD_CONST               12
+              622  LOAD_CONST               31
+              624  LOAD_CONST               23
+              626  LOAD_CONST               59
+              628  LOAD_CONST               59
+              630  LOAD_CONST               999999
+              632  CALL_FUNCTION_7       7  ''
+              634  LOAD_NAME                datetime
+              636  STORE_ATTR               max
+
+ L.2201       638  LOAD_NAME                timedelta
+              640  LOAD_CONST               1
+              642  LOAD_CONST               ('microseconds',)
+              644  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+              646  LOAD_NAME                datetime
+              648  STORE_ATTR               resolution
+
+ L.2204       650  LOAD_CODE                <code_object _isoweek1monday>
+              652  LOAD_STR                 '_isoweek1monday'
+              654  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              656  STORE_NAME               _isoweek1monday
+
+ L.2216       658  LOAD_BUILD_CLASS 
+              660  LOAD_CODE                <code_object timezone>
+              662  LOAD_STR                 'timezone'
+              664  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              666  LOAD_STR                 'timezone'
+              668  LOAD_NAME                tzinfo
+              670  CALL_FUNCTION_3       3  ''
+              672  STORE_NAME               timezone
+
+ L.2332       674  LOAD_NAME                timezone
+              676  LOAD_METHOD              _create
+              678  LOAD_NAME                timedelta
+              680  LOAD_CONST               0
+              682  CALL_FUNCTION_1       1  ''
+              684  CALL_METHOD_1         1  ''
+              686  LOAD_NAME                timezone
+              688  STORE_ATTR               utc
+
+ L.2336       690  LOAD_NAME                timezone
+              692  LOAD_METHOD              _create
+              694  LOAD_NAME                timedelta
+              696  LOAD_CONST               23
+              698  LOAD_CONST               59
+              700  LOAD_CONST               ('hours', 'minutes')
+              702  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              704  UNARY_NEGATIVE   
+              706  CALL_METHOD_1         1  ''
+              708  LOAD_NAME                timezone
+              710  STORE_ATTR               min
+
+ L.2337       712  LOAD_NAME                timezone
+              714  LOAD_METHOD              _create
+              716  LOAD_NAME                timedelta
+              718  LOAD_CONST               23
+              720  LOAD_CONST               59
+              722  LOAD_CONST               ('hours', 'minutes')
+              724  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              726  CALL_METHOD_1         1  ''
+              728  LOAD_NAME                timezone
+              730  STORE_ATTR               max
+
+ L.2338       732  LOAD_NAME                datetime
+              734  LOAD_CONST               1970
+              736  LOAD_CONST               1
+              738  LOAD_CONST               1
+              740  LOAD_NAME                timezone
+              742  LOAD_ATTR                utc
+              744  LOAD_CONST               ('tzinfo',)
+              746  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              748  STORE_NAME               _EPOCH
+
+ L.2536       750  SETUP_FINALLY       764  'to 764'
+
+ L.2537       752  LOAD_CONST               0
+              754  LOAD_CONST               ('*',)
+              756  IMPORT_NAME              _datetime
+              758  IMPORT_STAR      
+              760  POP_BLOCK        
+              762  JUMP_FORWARD        784  'to 784'
+            764_0  COME_FROM_FINALLY   750  '750'
+
+ L.2538       764  DUP_TOP          
+              766  LOAD_NAME                ImportError
+          768_770  <121>               782  ''
+              772  POP_TOP          
+              774  POP_TOP          
+              776  POP_TOP          
+
+ L.2539       778  POP_EXCEPT       
+              780  JUMP_FORWARD        872  'to 872'
+              782  <48>             
+            784_0  COME_FROM           762  '762'
+
+ L.2542       784  DELETE_NAME              _DAYNAMES
+              786  DELETE_NAME              _DAYS_BEFORE_MONTH
+              788  DELETE_NAME              _DAYS_IN_MONTH
+              790  DELETE_NAME              _DI100Y
+              792  DELETE_NAME              _DI400Y
+
+ L.2543       794  DELETE_NAME              _DI4Y
+              796  DELETE_NAME              _EPOCH
+              798  DELETE_NAME              _MAXORDINAL
+              800  DELETE_NAME              _MONTHNAMES
+              802  DELETE_NAME              _build_struct_time
+
+ L.2544       804  DELETE_NAME              _check_date_fields
+              806  DELETE_NAME              _check_int_field
+              808  DELETE_NAME              _check_time_fields
+
+ L.2545       810  DELETE_NAME              _check_tzinfo_arg
+              812  DELETE_NAME              _check_tzname
+              814  DELETE_NAME              _check_utc_offset
+              816  DELETE_NAME              _cmp
+              818  DELETE_NAME              _cmperror
+
+ L.2546       820  DELETE_NAME              _date_class
+              822  DELETE_NAME              _days_before_month
+              824  DELETE_NAME              _days_before_year
+              826  DELETE_NAME              _days_in_month
+
+ L.2547       828  DELETE_NAME              _format_time
+              830  DELETE_NAME              _format_offset
+              832  DELETE_NAME              _is_leap
+              834  DELETE_NAME              _isoweek1monday
+              836  DELETE_NAME              _math
+
+ L.2548       838  DELETE_NAME              _ord2ymd
+              840  DELETE_NAME              _time
+              842  DELETE_NAME              _time_class
+              844  DELETE_NAME              _tzinfo_class
+              846  DELETE_NAME              _wrap_strftime
+              848  DELETE_NAME              _ymd2ord
+
+ L.2549       850  DELETE_NAME              _divide_and_round
+              852  DELETE_NAME              _parse_isoformat_date
+              854  DELETE_NAME              _parse_isoformat_time
+
+ L.2550       856  DELETE_NAME              _parse_hh_mm_ss_ff
+              858  DELETE_NAME              _IsoCalendarDate
+
+ L.2555       860  LOAD_CONST               0
+              862  LOAD_CONST               ('__doc__',)
+              864  IMPORT_NAME              _datetime
+              866  IMPORT_FROM              __doc__
+              868  STORE_NAME               __doc__
+              870  POP_TOP          
+            872_0  COME_FROM           780  '780'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 56
+
+Instruction context:
+   
+ L.  32        52  BUILD_LIST_0          0 
+                  54  LOAD_CONST               (-1, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
+->                56  CALL_FINALLY         59  'to 59'
+                  58  STORE_NAME               _DAYS_IN_MONTH
+
+test/103670.pyc -- 
+# decompile failed

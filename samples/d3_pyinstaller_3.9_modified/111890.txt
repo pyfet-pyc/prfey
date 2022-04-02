@@ -1,0 +1,204 @@
+
+# file test/111890.pyc
+# --- This code section failed: ---
+
+ L.  33         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'build_ext'
+                6  STORE_NAME               __qualname__
+
+ L.  35         8  LOAD_STR                 'build C/C++ extensions (compile/link to build directory)'
+               10  STORE_NAME               description
+
+ L.  55        12  LOAD_STR                 " (separated by '%s')"
+               14  LOAD_NAME                os
+               16  LOAD_ATTR                pathsep
+               18  BINARY_MODULO    
+               20  STORE_NAME               sep_by
+
+ L.  57        22  LOAD_CONST               ('build-lib=', 'b', 'directory for compiled extension modules')
+
+ L.  59        24  LOAD_CONST               ('build-temp=', 't', 'directory for temporary files (build by-products)')
+
+ L.  61        26  LOAD_STR                 'plat-name='
+               28  LOAD_STR                 'p'
+
+ L.  62        30  LOAD_STR                 'platform name to cross-compile for, if supported (default: %s)'
+
+ L.  63        32  LOAD_NAME                get_platform
+               34  CALL_FUNCTION_0       0  ''
+
+ L.  62        36  BINARY_MODULO    
+
+ L.  61        38  BUILD_TUPLE_3         3 
+
+ L.  64        40  LOAD_CONST               ('inplace', 'i', 'ignore build-lib and put compiled extensions into the source directory alongside your pure Python modules')
+
+ L.  67        42  LOAD_STR                 'include-dirs='
+               44  LOAD_STR                 'I'
+
+ L.  68        46  LOAD_STR                 'list of directories to search for header files'
+               48  LOAD_NAME                sep_by
+               50  BINARY_ADD       
+
+ L.  67        52  BUILD_TUPLE_3         3 
+
+ L.  69        54  LOAD_CONST               ('define=', 'D', 'C preprocessor macros to define')
+
+ L.  71        56  LOAD_CONST               ('undef=', 'U', 'C preprocessor macros to undefine')
+
+ L.  73        58  LOAD_CONST               ('libraries=', 'l', 'external C libraries to link with')
+
+ L.  75        60  LOAD_STR                 'library-dirs='
+               62  LOAD_STR                 'L'
+
+ L.  76        64  LOAD_STR                 'directories to search for external C libraries'
+               66  LOAD_NAME                sep_by
+               68  BINARY_ADD       
+
+ L.  75        70  BUILD_TUPLE_3         3 
+
+ L.  77        72  LOAD_CONST               ('rpath=', 'R', 'directories to search for shared C libraries at runtime')
+
+ L.  79        74  LOAD_CONST               ('link-objects=', 'O', 'extra explicit link objects to include in the link')
+
+ L.  81        76  LOAD_CONST               ('debug', 'g', 'compile/link with debugging information')
+
+ L.  83        78  LOAD_CONST               ('force', 'f', 'forcibly build everything (ignore file timestamps)')
+
+ L.  85        80  LOAD_CONST               ('compiler=', 'c', 'specify the compiler type')
+
+ L.  87        82  LOAD_CONST               ('parallel=', 'j', 'number of parallel build jobs')
+
+ L.  89        84  LOAD_CONST               ('swig-cpp', None, 'make SWIG create C++ files (default is C)')
+
+ L.  91        86  LOAD_CONST               ('swig-opts=', None, 'list of SWIG command line options')
+
+ L.  93        88  LOAD_CONST               ('swig=', None, 'path to the SWIG executable')
+
+ L.  95        90  LOAD_CONST               ('user', None, 'add user include, library and rpath')
+
+ L.  56        92  BUILD_LIST_19        19 
+               94  STORE_NAME               user_options
+
+ L.  99        96  BUILD_LIST_0          0 
+               98  LOAD_CONST               ('inplace', 'debug', 'force', 'swig-cpp', 'user')
+              100  CALL_FINALLY        103  'to 103'
+              102  STORE_NAME               boolean_options
+
+ L. 102       104  LOAD_STR                 'help-compiler'
+              106  LOAD_CONST               None
+
+ L. 103       108  LOAD_STR                 'list available compilers'
+              110  LOAD_NAME                show_compilers
+
+ L. 102       112  BUILD_TUPLE_4         4 
+
+ L. 101       114  BUILD_LIST_1          1 
+              116  STORE_NAME               help_options
+
+ L. 106       118  LOAD_CODE                <code_object initialize_options>
+              120  LOAD_STR                 'build_ext.initialize_options'
+              122  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              124  STORE_NAME               initialize_options
+
+ L. 130       126  LOAD_CODE                <code_object finalize_options>
+              128  LOAD_STR                 'build_ext.finalize_options'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  STORE_NAME               finalize_options
+
+ L. 278       134  LOAD_CODE                <code_object run>
+              136  LOAD_STR                 'build_ext.run'
+              138  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              140  STORE_NAME               run
+
+ L. 342       142  LOAD_CODE                <code_object check_extensions_list>
+              144  LOAD_STR                 'build_ext.check_extensions_list'
+              146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              148  STORE_NAME               check_extensions_list
+
+ L. 420       150  LOAD_CODE                <code_object get_source_files>
+              152  LOAD_STR                 'build_ext.get_source_files'
+              154  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              156  STORE_NAME               get_source_files
+
+ L. 429       158  LOAD_CODE                <code_object get_outputs>
+              160  LOAD_STR                 'build_ext.get_outputs'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  STORE_NAME               get_outputs
+
+ L. 443       166  LOAD_CODE                <code_object build_extensions>
+              168  LOAD_STR                 'build_ext.build_extensions'
+              170  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              172  STORE_NAME               build_extensions
+
+ L. 451       174  LOAD_CODE                <code_object _build_extensions_parallel>
+              176  LOAD_STR                 'build_ext._build_extensions_parallel'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  STORE_NAME               _build_extensions_parallel
+
+ L. 471       182  LOAD_CODE                <code_object _build_extensions_serial>
+              184  LOAD_STR                 'build_ext._build_extensions_serial'
+              186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              188  STORE_NAME               _build_extensions_serial
+
+ L. 476       190  LOAD_NAME                contextlib
+              192  LOAD_ATTR                contextmanager
+
+ L. 477       194  LOAD_CODE                <code_object _filter_build_errors>
+              196  LOAD_STR                 'build_ext._filter_build_errors'
+              198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              200  CALL_FUNCTION_1       1  ''
+              202  STORE_NAME               _filter_build_errors
+
+ L. 486       204  LOAD_CODE                <code_object build_extension>
+              206  LOAD_STR                 'build_ext.build_extension'
+              208  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              210  STORE_NAME               build_extension
+
+ L. 562       212  LOAD_CODE                <code_object swig_sources>
+              214  LOAD_STR                 'build_ext.swig_sources'
+              216  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              218  STORE_NAME               swig_sources
+
+ L. 616       220  LOAD_CODE                <code_object find_swig>
+              222  LOAD_STR                 'build_ext.find_swig'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  STORE_NAME               find_swig
+
+ L. 640       228  LOAD_CODE                <code_object get_ext_fullpath>
+              230  LOAD_STR                 'build_ext.get_ext_fullpath'
+              232  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              234  STORE_NAME               get_ext_fullpath
+
+ L. 667       236  LOAD_CODE                <code_object get_ext_fullname>
+              238  LOAD_STR                 'build_ext.get_ext_fullname'
+              240  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              242  STORE_NAME               get_ext_fullname
+
+ L. 676       244  LOAD_CODE                <code_object get_ext_filename>
+              246  LOAD_STR                 'build_ext.get_ext_filename'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  STORE_NAME               get_ext_filename
+
+ L. 686       252  LOAD_CODE                <code_object get_export_symbols>
+              254  LOAD_STR                 'build_ext.get_export_symbols'
+              256  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              258  STORE_NAME               get_export_symbols
+
+ L. 705       260  LOAD_CODE                <code_object get_libraries>
+              262  LOAD_STR                 'build_ext.get_libraries'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  STORE_NAME               get_libraries
+
+Parse error at or near `CALL_FINALLY' instruction at offset 100
+
+Instruction context:
+   
+ L.  99        96  BUILD_LIST_0          0 
+                  98  LOAD_CONST               ('inplace', 'debug', 'force', 'swig-cpp', 'user')
+->               100  CALL_FINALLY        103  'to 103'
+                 102  STORE_NAME               boolean_options
+
+test/111890.pyc -- 
+# decompile failed

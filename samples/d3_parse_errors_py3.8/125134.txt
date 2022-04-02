@@ -1,0 +1,46 @@
+Instruction context:
+   
+ L. 158       202  POP_EXCEPT       
+                 204  JUMP_BACK           168  'to 168'
+                 206  POP_EXCEPT       
+                 208  JUMP_FORWARD        212  'to 212'
+->             210_0  COME_FROM           194  '194'
+                 210  END_FINALLY      
+               212_0  COME_FROM           208  '208'
+               212_1  COME_FROM           186  '186'
+Instruction context:
+   
+ L. 397       368  POP_EXCEPT       
+                 370  BREAK_LOOP          374  'to 374'
+               372_0  COME_FROM           358  '358'
+->               372  END_FINALLY      
+               374_0  COME_FROM           370  '370'
+               374_1  COME_FROM           350  '350'
+Instruction context:
+   
+ L. 477       138  POP_EXCEPT       
+                 140  JUMP_BACK           100  'to 100'
+                 142  POP_EXCEPT       
+                 144  JUMP_FORWARD        148  'to 148'
+->             146_0  COME_FROM           130  '130'
+                 146  END_FINALLY      
+               148_0  COME_FROM           144  '144'
+               148_1  COME_FROM           122  '122'
+Instruction context:
+   
+ L. 695        86  LOAD_FAST                'temp_manifest'
+                  88  LOAD_FAST                'mfid'
+                  90  BUILD_TUPLE_2         2 
+->                92  RETURN_VALUE     
+Instruction context:
+   
+ L. 725       110  POP_BLOCK        
+->               112  LOAD_CONST               None
+                 114  RETURN_VALUE     
+               116_0  COME_FROM           108  '108'
+
+../test/125134.pyc -- 
+# decompile failed
+
+# file ../test/125134.pyc
+# Deparsing stopped due to parse error

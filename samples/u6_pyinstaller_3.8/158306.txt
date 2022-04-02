@@ -1,0 +1,55 @@
+Instruction context:
+   
+ L. 275        54  LOAD_CLOSURE             'validator'
+                  56  BUILD_TUPLE_1         1 
+->                58  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  60  LOAD_STR                 'StoneToPythonPrimitiveSerializer.encode_sub.<locals>.<dictcomp>'
+                  62  MAKE_FUNCTION_8          'closure'
+                  64  LOAD_FAST                'value'
+                  66  LOAD_METHOD              items
+                  68  CALL_METHOD_0         0  ''
+                  70  GET_ITER         
+                  72  CALL_FUNCTION_1       1  ''
+                  74  RETURN_VALUE     
+                76_0  COME_FROM            52  '52'
+Instruction context:
+   
+ L. 291        10  LOAD_CLOSURE             'self'
+                  12  LOAD_CLOSURE             'validator'
+                  14  BUILD_TUPLE_2         2 
+->                16  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  18  LOAD_STR                 'StoneToPythonPrimitiveSerializer.encode_map.<locals>.<dictcomp>'
+                  20  MAKE_FUNCTION_8          'closure'
+Instruction context:
+   
+ L. 786       398  LOAD_FAST                'data_type'
+                 400  LOAD_ATTR                definition
+               402_0  COME_FROM            84  '84'
+->               402  LOAD_ATTR                _catch_all
+                 404  STORE_FAST               'tag'
+                 406  JUMP_FORWARD        422  'to 422'
+               408_0  COME_FROM           394  '394'
+               408_1  COME_FROM           384  '384'
+Instruction context:
+   
+ L. 857        30  LOAD_CLOSURE             'data_type'
+                  32  LOAD_CLOSURE             'self'
+                  34  BUILD_TUPLE_2         2 
+->                36  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  38  LOAD_STR                 'PythonPrimitiveToStoneDecoder.decode_map.<locals>.<dictcomp>'
+                  40  MAKE_FUNCTION_8          'closure'
+Instruction context:
+   
+ L.1012        14  DUP_TOP          
+                  16  LOAD_GLOBAL              ValueError
+                  18  COMPARE_OP               exception-match
+                  20  POP_JUMP_IF_FALSE    50  'to 50'
+                  22  POP_TOP          
+->                24  POP_TOP          
+                  26  POP_TOP          
+
+../test/158306.pyc -- 
+# decompile failed
+
+# file ../test/158306.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,30 @@
+Instruction context:
+   
+ L.  55        16  DUP_TOP          
+                  18  LOAD_GLOBAL              subprocess
+                  20  LOAD_ATTR                TimeoutExpired
+                  22  COMPARE_OP               exception-match
+                  24  POP_JUMP_IF_FALSE    38  'to 38'
+                  26  POP_TOP          
+->                28  POP_TOP          
+                  30  POP_TOP          
+Instruction context:
+   
+ L.  99        28  LOAD_CONST               ('close_fds', 'stdin', 'stderr', 'stdout')
+                  30  CALL_FUNCTION_KW_5     5  '5 total positional and keyword args'
+                  32  POP_BLOCK        
+->                34  ROT_TWO          
+                  36  BEGIN_FINALLY    
+                  38  WITH_CLEANUP_START
+                  40  WITH_CLEANUP_FINISH
+                  42  POP_FINALLY           0  ''
+                  44  RETURN_VALUE     
+                46_0  COME_FROM_WITH       10  '10'
+                  46  WITH_CLEANUP_START
+                  48  WITH_CLEANUP_FINISH
+
+../test/118269.pyc -- 
+# decompile failed
+
+# file ../test/118269.pyc
+# Deparsing stopped due to parse error

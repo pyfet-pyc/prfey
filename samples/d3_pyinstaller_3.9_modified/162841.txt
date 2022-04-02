@@ -1,0 +1,137 @@
+Instruction context:
+   
+ L.  27       136  LOAD_STR                 'RequestHistory'
+                 138  BUILD_LIST_0          0 
+                 140  LOAD_CONST               ('method', 'url', 'error', 'status', 'redirect_location')
+->               142  CALL_FINALLY        145  'to 145'
+
+test/162841.pyc -- 
+# decompile failed
+
+# file test/162841.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.   3        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              email
+               18  STORE_NAME               email
+
+ L.   4        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              logging
+               26  STORE_NAME               logging
+
+ L.   5        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              re
+               34  STORE_NAME               re
+
+ L.   6        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              time
+               42  STORE_NAME               time
+
+ L.   7        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              warnings
+               50  STORE_NAME               warnings
+
+ L.   8        52  LOAD_CONST               0
+               54  LOAD_CONST               ('namedtuple',)
+               56  IMPORT_NAME              collections
+               58  IMPORT_FROM              namedtuple
+               60  STORE_NAME               namedtuple
+               62  POP_TOP          
+
+ L.   9        64  LOAD_CONST               0
+               66  LOAD_CONST               ('takewhile',)
+               68  IMPORT_NAME              itertools
+               70  IMPORT_FROM              takewhile
+               72  STORE_NAME               takewhile
+               74  POP_TOP          
+
+ L.  11        76  LOAD_CONST               2
+               78  LOAD_CONST               ('ConnectTimeoutError', 'InvalidHeader', 'MaxRetryError', 'ProtocolError', 'ProxyError', 'ReadTimeoutError', 'ResponseError')
+               80  IMPORT_NAME              exceptions
+               82  IMPORT_FROM              ConnectTimeoutError
+               84  STORE_NAME               ConnectTimeoutError
+               86  IMPORT_FROM              InvalidHeader
+               88  STORE_NAME               InvalidHeader
+               90  IMPORT_FROM              MaxRetryError
+               92  STORE_NAME               MaxRetryError
+               94  IMPORT_FROM              ProtocolError
+               96  STORE_NAME               ProtocolError
+               98  IMPORT_FROM              ProxyError
+              100  STORE_NAME               ProxyError
+              102  IMPORT_FROM              ReadTimeoutError
+              104  STORE_NAME               ReadTimeoutError
+              106  IMPORT_FROM              ResponseError
+              108  STORE_NAME               ResponseError
+              110  POP_TOP          
+
+ L.  20       112  LOAD_CONST               2
+              114  LOAD_CONST               ('six',)
+              116  IMPORT_NAME              packages
+              118  IMPORT_FROM              six
+              120  STORE_NAME               six
+              122  POP_TOP          
+
+ L.  22       124  LOAD_NAME                logging
+              126  LOAD_METHOD              getLogger
+              128  LOAD_NAME                __name__
+              130  CALL_METHOD_1         1  ''
+              132  STORE_NAME               log
+
+ L.  26       134  LOAD_NAME                namedtuple
+
+ L.  27       136  LOAD_STR                 'RequestHistory'
+              138  BUILD_LIST_0          0 
+              140  LOAD_CONST               ('method', 'url', 'error', 'status', 'redirect_location')
+              142  CALL_FINALLY        145  'to 145'
+
+ L.  26       144  CALL_FUNCTION_2       2  ''
+              146  STORE_NAME               RequestHistory
+
+ L.  32       148  LOAD_NAME                object
+              150  CALL_FUNCTION_0       0  ''
+              152  STORE_NAME               _Default
+
+ L.  35       154  LOAD_BUILD_CLASS 
+              156  LOAD_CODE                <code_object _RetryMeta>
+              158  LOAD_STR                 '_RetryMeta'
+              160  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              162  LOAD_STR                 '_RetryMeta'
+              164  LOAD_NAME                type
+              166  CALL_FUNCTION_3       3  ''
+              168  STORE_NAME               _RetryMeta
+
+ L.  73       170  LOAD_NAME                six
+              172  LOAD_METHOD              add_metaclass
+              174  LOAD_NAME                _RetryMeta
+              176  CALL_METHOD_1         1  ''
+
+ L.  74       178  LOAD_BUILD_CLASS 
+              180  LOAD_CODE                <code_object Retry>
+              182  LOAD_STR                 'Retry'
+              184  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              186  LOAD_STR                 'Retry'
+              188  LOAD_NAME                object
+              190  CALL_FUNCTION_3       3  ''
+              192  CALL_FUNCTION_1       1  ''
+              194  STORE_NAME               Retry
+
+ L. 602       196  LOAD_NAME                Retry
+              198  LOAD_CONST               3
+              200  CALL_FUNCTION_1       1  ''
+              202  LOAD_NAME                Retry
+              204  STORE_ATTR               DEFAULT
+
+Parse error at or near `CALL_FINALLY' instruction at offset 142
+

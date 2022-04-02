@@ -1,0 +1,296 @@
+
+# file test/101110.pyc
+# --- This code section failed: ---
+
+ L.   2         0  LOAD_STR                 'Interfaces for launching and remotely controlling Web browsers.'
+                2  STORE_NAME               __doc__
+
+ L.   5         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.   6        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              shlex
+               18  STORE_NAME               shlex
+
+ L.   7        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              shutil
+               26  STORE_NAME               shutil
+
+ L.   8        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              sys
+               34  STORE_NAME               sys
+
+ L.   9        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              subprocess
+               42  STORE_NAME               subprocess
+
+ L.  10        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              threading
+               50  STORE_NAME               threading
+
+ L.  12        52  BUILD_LIST_0          0 
+               54  LOAD_CONST               ('Error', 'open', 'open_new', 'open_new_tab', 'get', 'register')
+               56  CALL_FINALLY         59  'to 59'
+               58  STORE_NAME               __all__
+
+ L.  14        60  LOAD_BUILD_CLASS 
+               62  LOAD_CODE                <code_object Error>
+               64  LOAD_STR                 'Error'
+               66  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               68  LOAD_STR                 'Error'
+               70  LOAD_NAME                Exception
+               72  CALL_FUNCTION_3       3  ''
+               74  STORE_NAME               Error
+
+ L.  17        76  LOAD_NAME                threading
+               78  LOAD_METHOD              RLock
+               80  CALL_METHOD_0         0  ''
+               82  STORE_NAME               _lock
+
+ L.  18        84  BUILD_MAP_0           0 
+               86  STORE_NAME               _browsers
+
+ L.  19        88  LOAD_CONST               None
+               90  STORE_GLOBAL             _tryorder
+
+ L.  20        92  LOAD_CONST               None
+               94  STORE_GLOBAL             _os_preferred_browser
+
+ L.  22        96  LOAD_CONST               (None,)
+               98  LOAD_CONST               False
+              100  LOAD_CONST               ('preferred',)
+              102  BUILD_CONST_KEY_MAP_1     1 
+              104  LOAD_CODE                <code_object register>
+              106  LOAD_STR                 'register'
+              108  MAKE_FUNCTION_3          'default, keyword-only'
+              110  STORE_NAME               register
+
+ L.  37       112  LOAD_CONST               (None,)
+              114  LOAD_CODE                <code_object get>
+              116  LOAD_STR                 'get'
+              118  MAKE_FUNCTION_1          'default'
+              120  STORE_NAME               get
+
+ L.  71       122  LOAD_CONST               (0, True)
+              124  LOAD_CODE                <code_object open>
+              126  LOAD_STR                 'open'
+              128  MAKE_FUNCTION_1          'default'
+              130  STORE_NAME               open
+
+ L.  90       132  LOAD_CODE                <code_object open_new>
+              134  LOAD_STR                 'open_new'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  STORE_NAME               open_new
+
+ L.  97       140  LOAD_CODE                <code_object open_new_tab>
+              142  LOAD_STR                 'open_new_tab'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  STORE_NAME               open_new_tab
+
+ L. 105       148  LOAD_CONST               False
+              150  LOAD_CONST               ('preferred',)
+              152  BUILD_CONST_KEY_MAP_1     1 
+              154  LOAD_CODE                <code_object _synthesize>
+              156  LOAD_STR                 '_synthesize'
+              158  MAKE_FUNCTION_2          'keyword-only'
+              160  STORE_NAME               _synthesize
+
+ L. 139       162  LOAD_BUILD_CLASS 
+              164  LOAD_CODE                <code_object BaseBrowser>
+              166  LOAD_STR                 'BaseBrowser'
+              168  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              170  LOAD_STR                 'BaseBrowser'
+              172  LOAD_NAME                object
+              174  CALL_FUNCTION_3       3  ''
+              176  STORE_NAME               BaseBrowser
+
+ L. 158       178  LOAD_BUILD_CLASS 
+              180  LOAD_CODE                <code_object GenericBrowser>
+              182  LOAD_STR                 'GenericBrowser'
+              184  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              186  LOAD_STR                 'GenericBrowser'
+              188  LOAD_NAME                BaseBrowser
+              190  CALL_FUNCTION_3       3  ''
+              192  STORE_NAME               GenericBrowser
+
+ L. 186       194  LOAD_BUILD_CLASS 
+              196  LOAD_CODE                <code_object BackgroundBrowser>
+              198  LOAD_STR                 'BackgroundBrowser'
+              200  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              202  LOAD_STR                 'BackgroundBrowser'
+              204  LOAD_NAME                GenericBrowser
+              206  CALL_FUNCTION_3       3  ''
+              208  STORE_NAME               BackgroundBrowser
+
+ L. 205       210  LOAD_BUILD_CLASS 
+              212  LOAD_CODE                <code_object UnixBrowser>
+              214  LOAD_STR                 'UnixBrowser'
+              216  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              218  LOAD_STR                 'UnixBrowser'
+              220  LOAD_NAME                BaseBrowser
+              222  CALL_FUNCTION_3       3  ''
+              224  STORE_NAME               UnixBrowser
+
+ L. 284       226  LOAD_BUILD_CLASS 
+              228  LOAD_CODE                <code_object Mozilla>
+              230  LOAD_STR                 'Mozilla'
+              232  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              234  LOAD_STR                 'Mozilla'
+              236  LOAD_NAME                UnixBrowser
+              238  CALL_FUNCTION_3       3  ''
+              240  STORE_NAME               Mozilla
+
+ L. 294       242  LOAD_BUILD_CLASS 
+              244  LOAD_CODE                <code_object Netscape>
+              246  LOAD_STR                 'Netscape'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  LOAD_STR                 'Netscape'
+              252  LOAD_NAME                UnixBrowser
+              254  CALL_FUNCTION_3       3  ''
+              256  STORE_NAME               Netscape
+
+ L. 305       258  LOAD_BUILD_CLASS 
+              260  LOAD_CODE                <code_object Galeon>
+              262  LOAD_STR                 'Galeon'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  LOAD_STR                 'Galeon'
+              268  LOAD_NAME                UnixBrowser
+              270  CALL_FUNCTION_3       3  ''
+              272  STORE_NAME               Galeon
+
+ L. 315       274  LOAD_BUILD_CLASS 
+              276  LOAD_CODE                <code_object Chrome>
+              278  LOAD_STR                 'Chrome'
+              280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              282  LOAD_STR                 'Chrome'
+              284  LOAD_NAME                UnixBrowser
+              286  CALL_FUNCTION_3       3  ''
+              288  STORE_NAME               Chrome
+
+ L. 324       290  LOAD_NAME                Chrome
+              292  STORE_NAME               Chromium
+
+ L. 327       294  LOAD_BUILD_CLASS 
+              296  LOAD_CODE                <code_object Opera>
+              298  LOAD_STR                 'Opera'
+              300  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              302  LOAD_STR                 'Opera'
+              304  LOAD_NAME                UnixBrowser
+              306  CALL_FUNCTION_3       3  ''
+              308  STORE_NAME               Opera
+
+ L. 337       310  LOAD_BUILD_CLASS 
+              312  LOAD_CODE                <code_object Elinks>
+              314  LOAD_STR                 'Elinks'
+              316  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              318  LOAD_STR                 'Elinks'
+              320  LOAD_NAME                UnixBrowser
+              322  CALL_FUNCTION_3       3  ''
+              324  STORE_NAME               Elinks
+
+ L. 351       326  LOAD_BUILD_CLASS 
+              328  LOAD_CODE                <code_object Konqueror>
+              330  LOAD_STR                 'Konqueror'
+              332  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              334  LOAD_STR                 'Konqueror'
+              336  LOAD_NAME                BaseBrowser
+              338  CALL_FUNCTION_3       3  ''
+              340  STORE_NAME               Konqueror
+
+ L. 404       342  LOAD_BUILD_CLASS 
+              344  LOAD_CODE                <code_object Grail>
+              346  LOAD_STR                 'Grail'
+              348  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              350  LOAD_STR                 'Grail'
+              352  LOAD_NAME                BaseBrowser
+              354  CALL_FUNCTION_3       3  ''
+              356  STORE_NAME               Grail
+
+ L. 458       358  LOAD_CODE                <code_object register_X_browsers>
+              360  LOAD_STR                 'register_X_browsers'
+              362  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              364  STORE_NAME               register_X_browsers
+
+ L. 523       366  LOAD_CODE                <code_object register_standard_browsers>
+              368  LOAD_STR                 'register_standard_browsers'
+              370  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              372  STORE_NAME               register_standard_browsers
+
+ L. 598       374  LOAD_NAME                sys
+              376  LOAD_ATTR                platform
+              378  LOAD_CONST               None
+              380  LOAD_CONST               3
+              382  BUILD_SLICE_2         2 
+              384  BINARY_SUBSCR    
+              386  LOAD_STR                 'win'
+              388  COMPARE_OP               ==
+          390_392  POP_JUMP_IF_FALSE   410  'to 410'
+
+ L. 599       394  LOAD_BUILD_CLASS 
+              396  LOAD_CODE                <code_object WindowsDefault>
+              398  LOAD_STR                 'WindowsDefault'
+              400  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              402  LOAD_STR                 'WindowsDefault'
+              404  LOAD_NAME                BaseBrowser
+              406  CALL_FUNCTION_3       3  ''
+              408  STORE_NAME               WindowsDefault
+            410_0  COME_FROM           390  '390'
+
+ L. 615       410  LOAD_NAME                sys
+              412  LOAD_ATTR                platform
+              414  LOAD_STR                 'darwin'
+              416  COMPARE_OP               ==
+          418_420  POP_JUMP_IF_FALSE   454  'to 454'
+
+ L. 617       422  LOAD_BUILD_CLASS 
+              424  LOAD_CODE                <code_object MacOSX>
+              426  LOAD_STR                 'MacOSX'
+              428  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              430  LOAD_STR                 'MacOSX'
+              432  LOAD_NAME                BaseBrowser
+              434  CALL_FUNCTION_3       3  ''
+              436  STORE_NAME               MacOSX
+
+ L. 664       438  LOAD_BUILD_CLASS 
+              440  LOAD_CODE                <code_object MacOSXOSAScript>
+              442  LOAD_STR                 'MacOSXOSAScript'
+              444  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              446  LOAD_STR                 'MacOSXOSAScript'
+              448  LOAD_NAME                BaseBrowser
+              450  CALL_FUNCTION_3       3  ''
+              452  STORE_NAME               MacOSXOSAScript
+            454_0  COME_FROM           418  '418'
+
+ L. 688       454  LOAD_CODE                <code_object main>
+              456  LOAD_STR                 'main'
+              458  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              460  STORE_NAME               main
+
+ L. 712       462  LOAD_NAME                __name__
+              464  LOAD_STR                 '__main__'
+              466  COMPARE_OP               ==
+          468_470  POP_JUMP_IF_FALSE   478  'to 478'
+
+ L. 713       472  LOAD_NAME                main
+              474  CALL_FUNCTION_0       0  ''
+              476  POP_TOP          
+            478_0  COME_FROM           468  '468'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 56
+
+Instruction context:
+   
+ L.  12        52  BUILD_LIST_0          0 
+                  54  LOAD_CONST               ('Error', 'open', 'open_new', 'open_new_tab', 'get', 'register')
+->                56  CALL_FINALLY         59  'to 59'
+                  58  STORE_NAME               __all__
+
+test/101110.pyc -- 
+# decompile failed

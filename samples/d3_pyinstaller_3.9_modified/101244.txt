@@ -1,0 +1,238 @@
+
+# file test/101244.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'A pure Python implementation of import.'
+                2  STORE_NAME               __doc__
+
+ L.   2         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('__import__', 'import_module', 'invalidate_caches', 'reload')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  12        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              _imp
+               18  STORE_NAME               _imp
+
+ L.  13        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              sys
+               26  STORE_NAME               sys
+
+ L.  15        28  SETUP_FINALLY        42  'to 42'
+
+ L.  16        30  LOAD_CONST               0
+               32  LOAD_CONST               None
+               34  IMPORT_NAME              _frozen_importlib
+               36  STORE_NAME               _bootstrap
+               38  POP_BLOCK        
+               40  JUMP_FORWARD         84  'to 84'
+             42_0  COME_FROM_FINALLY    28  '28'
+
+ L.  17        42  DUP_TOP          
+               44  LOAD_NAME                ImportError
+               46  <121>                82  ''
+               48  POP_TOP          
+               50  POP_TOP          
+               52  POP_TOP          
+
+ L.  18        54  LOAD_CONST               1
+               56  LOAD_CONST               ('_bootstrap',)
+               58  IMPORT_NAME              
+               60  IMPORT_FROM              _bootstrap
+               62  STORE_NAME               _bootstrap
+               64  POP_TOP          
+
+ L.  19        66  LOAD_NAME                _bootstrap
+               68  LOAD_METHOD              _setup
+               70  LOAD_NAME                sys
+               72  LOAD_NAME                _imp
+               74  CALL_METHOD_2         2  ''
+               76  POP_TOP          
+               78  POP_EXCEPT       
+               80  JUMP_FORWARD        144  'to 144'
+               82  <48>             
+             84_0  COME_FROM            40  '40'
+
+ L.  23        84  LOAD_STR                 'importlib._bootstrap'
+               86  LOAD_NAME                _bootstrap
+               88  STORE_ATTR               __name__
+
+ L.  24        90  LOAD_STR                 'importlib'
+               92  LOAD_NAME                _bootstrap
+               94  STORE_ATTR               __package__
+
+ L.  25        96  SETUP_FINALLY       116  'to 116'
+
+ L.  26        98  LOAD_NAME                __file__
+              100  LOAD_METHOD              replace
+              102  LOAD_STR                 '__init__.py'
+              104  LOAD_STR                 '_bootstrap.py'
+              106  CALL_METHOD_2         2  ''
+              108  LOAD_NAME                _bootstrap
+              110  STORE_ATTR               __file__
+              112  POP_BLOCK        
+              114  JUMP_FORWARD        134  'to 134'
+            116_0  COME_FROM_FINALLY    96  '96'
+
+ L.  27       116  DUP_TOP          
+              118  LOAD_NAME                NameError
+              120  <121>               132  ''
+              122  POP_TOP          
+              124  POP_TOP          
+              126  POP_TOP          
+
+ L.  30       128  POP_EXCEPT       
+              130  JUMP_FORWARD        134  'to 134'
+              132  <48>             
+            134_0  COME_FROM           130  '130'
+            134_1  COME_FROM           114  '114'
+
+ L.  31       134  LOAD_NAME                _bootstrap
+              136  LOAD_NAME                sys
+              138  LOAD_ATTR                modules
+              140  LOAD_STR                 'importlib._bootstrap'
+              142  STORE_SUBSCR     
+            144_0  COME_FROM            80  '80'
+
+ L.  33       144  SETUP_FINALLY       158  'to 158'
+
+ L.  34       146  LOAD_CONST               0
+              148  LOAD_CONST               None
+              150  IMPORT_NAME              _frozen_importlib_external
+              152  STORE_NAME               _bootstrap_external
+              154  POP_BLOCK        
+              156  JUMP_FORWARD        204  'to 204'
+            158_0  COME_FROM_FINALLY   144  '144'
+
+ L.  35       158  DUP_TOP          
+              160  LOAD_NAME                ImportError
+              162  <121>               202  ''
+              164  POP_TOP          
+              166  POP_TOP          
+              168  POP_TOP          
+
+ L.  36       170  LOAD_CONST               1
+              172  LOAD_CONST               ('_bootstrap_external',)
+              174  IMPORT_NAME              
+              176  IMPORT_FROM              _bootstrap_external
+              178  STORE_NAME               _bootstrap_external
+              180  POP_TOP          
+
+ L.  37       182  LOAD_NAME                _bootstrap_external
+              184  LOAD_METHOD              _setup
+              186  LOAD_NAME                _bootstrap
+              188  CALL_METHOD_1         1  ''
+              190  POP_TOP          
+
+ L.  38       192  LOAD_NAME                _bootstrap_external
+              194  LOAD_NAME                _bootstrap
+              196  STORE_ATTR               _bootstrap_external
+              198  POP_EXCEPT       
+              200  JUMP_FORWARD        264  'to 264'
+              202  <48>             
+            204_0  COME_FROM           156  '156'
+
+ L.  40       204  LOAD_STR                 'importlib._bootstrap_external'
+              206  LOAD_NAME                _bootstrap_external
+              208  STORE_ATTR               __name__
+
+ L.  41       210  LOAD_STR                 'importlib'
+              212  LOAD_NAME                _bootstrap_external
+              214  STORE_ATTR               __package__
+
+ L.  42       216  SETUP_FINALLY       236  'to 236'
+
+ L.  43       218  LOAD_NAME                __file__
+              220  LOAD_METHOD              replace
+              222  LOAD_STR                 '__init__.py'
+              224  LOAD_STR                 '_bootstrap_external.py'
+              226  CALL_METHOD_2         2  ''
+              228  LOAD_NAME                _bootstrap_external
+              230  STORE_ATTR               __file__
+              232  POP_BLOCK        
+              234  JUMP_FORWARD        254  'to 254'
+            236_0  COME_FROM_FINALLY   216  '216'
+
+ L.  44       236  DUP_TOP          
+              238  LOAD_NAME                NameError
+              240  <121>               252  ''
+              242  POP_TOP          
+              244  POP_TOP          
+              246  POP_TOP          
+
+ L.  47       248  POP_EXCEPT       
+              250  JUMP_FORWARD        254  'to 254'
+              252  <48>             
+            254_0  COME_FROM           250  '250'
+            254_1  COME_FROM           234  '234'
+
+ L.  48       254  LOAD_NAME                _bootstrap_external
+              256  LOAD_NAME                sys
+              258  LOAD_ATTR                modules
+              260  LOAD_STR                 'importlib._bootstrap_external'
+              262  STORE_SUBSCR     
+            264_0  COME_FROM           200  '200'
+
+ L.  51       264  LOAD_NAME                _bootstrap_external
+              266  LOAD_ATTR                _pack_uint32
+              268  STORE_NAME               _pack_uint32
+
+ L.  52       270  LOAD_NAME                _bootstrap_external
+              272  LOAD_ATTR                _unpack_uint32
+              274  STORE_NAME               _unpack_uint32
+
+ L.  57       276  LOAD_CONST               0
+              278  LOAD_CONST               None
+              280  IMPORT_NAME              types
+              282  STORE_NAME               types
+
+ L.  58       284  LOAD_CONST               0
+              286  LOAD_CONST               None
+              288  IMPORT_NAME              warnings
+              290  STORE_NAME               warnings
+
+ L.  63       292  LOAD_CONST               1
+              294  LOAD_CONST               ('__import__',)
+              296  IMPORT_NAME              _bootstrap
+              298  IMPORT_FROM              __import__
+              300  STORE_NAME               __import__
+              302  POP_TOP          
+
+ L.  66       304  LOAD_CODE                <code_object invalidate_caches>
+              306  LOAD_STR                 'invalidate_caches'
+              308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              310  STORE_NAME               invalidate_caches
+
+ L.  74       312  LOAD_CONST               (None,)
+              314  LOAD_CODE                <code_object find_loader>
+              316  LOAD_STR                 'find_loader'
+              318  MAKE_FUNCTION_1          'default'
+              320  STORE_NAME               find_loader
+
+ L. 109       322  LOAD_CONST               (None,)
+              324  LOAD_CODE                <code_object import_module>
+              326  LOAD_STR                 'import_module'
+              328  MAKE_FUNCTION_1          'default'
+              330  STORE_NAME               import_module
+
+ L. 130       332  BUILD_MAP_0           0 
+              334  STORE_NAME               _RELOADING
+
+ L. 133       336  LOAD_CODE                <code_object reload>
+              338  LOAD_STR                 'reload'
+              340  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              342  STORE_NAME               reload
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L.   2         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('__import__', 'import_module', 'invalidate_caches', 'reload')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101244.pyc -- 
+# decompile failed

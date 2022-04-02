@@ -1,0 +1,282 @@
+
+# file test/101095.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nBasic statistics module.\n\nThis module provides functions for calculating statistics of data, including\naverages, variance, and standard deviation.\n\nCalculating averages\n--------------------\n\n==================  ==================================================\nFunction            Description\n==================  ==================================================\nmean                Arithmetic mean (average) of data.\nfmean               Fast, floating point arithmetic mean.\ngeometric_mean      Geometric mean of data.\nharmonic_mean       Harmonic mean of data.\nmedian              Median (middle value) of data.\nmedian_low          Low median of data.\nmedian_high         High median of data.\nmedian_grouped      Median, or 50th percentile, of grouped data.\nmode                Mode (most common value) of data.\nmultimode           List of modes (most common values of data).\nquantiles           Divide data into intervals with equal probability.\n==================  ==================================================\n\nCalculate the arithmetic mean ("the average") of data:\n\n>>> mean([-1.0, 2.5, 3.25, 5.75])\n2.625\n\n\nCalculate the standard median of discrete data:\n\n>>> median([2, 3, 4, 5])\n3.5\n\n\nCalculate the median, or 50th percentile, of data grouped into class intervals\ncentred on the data values provided. E.g. if your data points are rounded to\nthe nearest whole number:\n\n>>> median_grouped([2, 2, 3, 3, 3, 4])  #doctest: +ELLIPSIS\n2.8333333333...\n\nThis should be interpreted in this way: you have two data points in the class\ninterval 1.5-2.5, three data points in the class interval 2.5-3.5, and one in\nthe class interval 3.5-4.5. The median of these data points is 2.8333...\n\n\nCalculating variability or spread\n---------------------------------\n\n==================  =============================================\nFunction            Description\n==================  =============================================\npvariance           Population variance of data.\nvariance            Sample variance of data.\npstdev              Population standard deviation of data.\nstdev               Sample standard deviation of data.\n==================  =============================================\n\nCalculate the standard deviation of sample data:\n\n>>> stdev([2.5, 3.25, 5.5, 11.25, 11.75])  #doctest: +ELLIPSIS\n4.38961843444...\n\nIf you have previously calculated the mean, you can pass it as the optional\nsecond argument to the four "spread" functions to avoid recalculating it:\n\n>>> data = [1, 2, 2, 4, 4, 4, 5, 6]\n>>> mu = mean(data)\n>>> pvariance(data, mu)\n2.5\n\n\nExceptions\n----------\n\nA single exception is defined: StatisticsError is a subclass of ValueError.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  83         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('NormalDist', 'StatisticsError', 'fmean', 'geometric_mean', 'harmonic_mean', 'mean', 'median', 'median_grouped', 'median_high', 'median_low', 'mode', 'multimode', 'pstdev', 'pvariance', 'quantiles', 'stdev', 'variance')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L. 103        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              math
+               18  STORE_NAME               math
+
+ L. 104        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              numbers
+               26  STORE_NAME               numbers
+
+ L. 105        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              random
+               34  STORE_NAME               random
+
+ L. 107        36  LOAD_CONST               0
+               38  LOAD_CONST               ('Fraction',)
+               40  IMPORT_NAME              fractions
+               42  IMPORT_FROM              Fraction
+               44  STORE_NAME               Fraction
+               46  POP_TOP          
+
+ L. 108        48  LOAD_CONST               0
+               50  LOAD_CONST               ('Decimal',)
+               52  IMPORT_NAME              decimal
+               54  IMPORT_FROM              Decimal
+               56  STORE_NAME               Decimal
+               58  POP_TOP          
+
+ L. 109        60  LOAD_CONST               0
+               62  LOAD_CONST               ('groupby',)
+               64  IMPORT_NAME              itertools
+               66  IMPORT_FROM              groupby
+               68  STORE_NAME               groupby
+               70  POP_TOP          
+
+ L. 110        72  LOAD_CONST               0
+               74  LOAD_CONST               ('bisect_left', 'bisect_right')
+               76  IMPORT_NAME              bisect
+               78  IMPORT_FROM              bisect_left
+               80  STORE_NAME               bisect_left
+               82  IMPORT_FROM              bisect_right
+               84  STORE_NAME               bisect_right
+               86  POP_TOP          
+
+ L. 111        88  LOAD_CONST               0
+               90  LOAD_CONST               ('hypot', 'sqrt', 'fabs', 'exp', 'erf', 'tau', 'log', 'fsum')
+               92  IMPORT_NAME              math
+               94  IMPORT_FROM              hypot
+               96  STORE_NAME               hypot
+               98  IMPORT_FROM              sqrt
+              100  STORE_NAME               sqrt
+              102  IMPORT_FROM              fabs
+              104  STORE_NAME               fabs
+              106  IMPORT_FROM              exp
+              108  STORE_NAME               exp
+              110  IMPORT_FROM              erf
+              112  STORE_NAME               erf
+              114  IMPORT_FROM              tau
+              116  STORE_NAME               tau
+              118  IMPORT_FROM              log
+              120  STORE_NAME               log
+              122  IMPORT_FROM              fsum
+              124  STORE_NAME               fsum
+              126  POP_TOP          
+
+ L. 112       128  LOAD_CONST               0
+              130  LOAD_CONST               ('itemgetter',)
+              132  IMPORT_NAME              operator
+              134  IMPORT_FROM              itemgetter
+              136  STORE_NAME               itemgetter
+              138  POP_TOP          
+
+ L. 113       140  LOAD_CONST               0
+              142  LOAD_CONST               ('Counter',)
+              144  IMPORT_NAME              collections
+              146  IMPORT_FROM              Counter
+              148  STORE_NAME               Counter
+              150  POP_TOP          
+
+ L. 117       152  LOAD_BUILD_CLASS 
+              154  LOAD_CODE                <code_object StatisticsError>
+              156  LOAD_STR                 'StatisticsError'
+              158  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              160  LOAD_STR                 'StatisticsError'
+              162  LOAD_NAME                ValueError
+              164  CALL_FUNCTION_3       3  ''
+              166  STORE_NAME               StatisticsError
+
+ L. 123       168  LOAD_CONST               (0,)
+              170  LOAD_CODE                <code_object _sum>
+              172  LOAD_STR                 '_sum'
+              174  MAKE_FUNCTION_1          'default'
+              176  STORE_NAME               _sum
+
+ L. 181       178  LOAD_CODE                <code_object _isfinite>
+              180  LOAD_STR                 '_isfinite'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  STORE_NAME               _isfinite
+
+ L. 188       186  LOAD_CODE                <code_object _coerce>
+              188  LOAD_STR                 '_coerce'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  STORE_NAME               _coerce
+
+ L. 219       194  LOAD_CODE                <code_object _exact_ratio>
+              196  LOAD_STR                 '_exact_ratio'
+              198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              200  STORE_NAME               _exact_ratio
+
+ L. 251       202  LOAD_CODE                <code_object _convert>
+              204  LOAD_STR                 '_convert'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  STORE_NAME               _convert
+
+ L. 269       210  LOAD_CODE                <code_object _find_lteq>
+              212  LOAD_STR                 '_find_lteq'
+              214  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              216  STORE_NAME               _find_lteq
+
+ L. 277       218  LOAD_CODE                <code_object _find_rteq>
+              220  LOAD_STR                 '_find_rteq'
+              222  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              224  STORE_NAME               _find_rteq
+
+ L. 285       226  LOAD_CONST               ('negative value',)
+              228  LOAD_CODE                <code_object _fail_neg>
+              230  LOAD_STR                 '_fail_neg'
+              232  MAKE_FUNCTION_1          'default'
+              234  STORE_NAME               _fail_neg
+
+ L. 295       236  LOAD_CODE                <code_object mean>
+              238  LOAD_STR                 'mean'
+              240  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              242  STORE_NAME               mean
+
+ L. 321       244  LOAD_CODE                <code_object fmean>
+              246  LOAD_STR                 'fmean'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  STORE_NAME               fmean
+
+ L. 348       252  LOAD_CODE                <code_object geometric_mean>
+              254  LOAD_STR                 'geometric_mean'
+              256  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              258  STORE_NAME               geometric_mean
+
+ L. 367       260  LOAD_CODE                <code_object harmonic_mean>
+              262  LOAD_STR                 'harmonic_mean'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  STORE_NAME               harmonic_mean
+
+ L. 414       268  LOAD_CODE                <code_object median>
+              270  LOAD_STR                 'median'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  STORE_NAME               median
+
+ L. 438       276  LOAD_CODE                <code_object median_low>
+              278  LOAD_STR                 'median_low'
+              280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              282  STORE_NAME               median_low
+
+ L. 460       284  LOAD_CODE                <code_object median_high>
+              286  LOAD_STR                 'median_high'
+              288  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              290  STORE_NAME               median_high
+
+ L. 479       292  LOAD_CONST               (1,)
+              294  LOAD_CODE                <code_object median_grouped>
+              296  LOAD_STR                 'median_grouped'
+              298  MAKE_FUNCTION_1          'default'
+              300  STORE_NAME               median_grouped
+
+ L. 534       302  LOAD_CODE                <code_object mode>
+              304  LOAD_STR                 'mode'
+              306  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              308  STORE_NAME               mode
+
+ L. 564       310  LOAD_CODE                <code_object multimode>
+              312  LOAD_STR                 'multimode'
+              314  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              316  STORE_NAME               multimode
+
+ L. 619       318  LOAD_CONST               4
+              320  LOAD_STR                 'exclusive'
+              322  LOAD_CONST               ('n', 'method')
+              324  BUILD_CONST_KEY_MAP_2     2 
+              326  LOAD_CODE                <code_object quantiles>
+              328  LOAD_STR                 'quantiles'
+              330  MAKE_FUNCTION_2          'keyword-only'
+              332  STORE_NAME               quantiles
+
+ L. 675       334  LOAD_CONST               (None,)
+              336  LOAD_CODE                <code_object _ss>
+              338  LOAD_STR                 '_ss'
+              340  MAKE_FUNCTION_1          'default'
+              342  STORE_NAME               _ss
+
+ L. 697       344  LOAD_CONST               (None,)
+              346  LOAD_CODE                <code_object variance>
+              348  LOAD_STR                 'variance'
+              350  MAKE_FUNCTION_1          'default'
+              352  STORE_NAME               variance
+
+ L. 744       354  LOAD_CONST               (None,)
+              356  LOAD_CODE                <code_object pvariance>
+              358  LOAD_STR                 'pvariance'
+              360  MAKE_FUNCTION_1          'default'
+              362  STORE_NAME               pvariance
+
+ L. 788       364  LOAD_CONST               (None,)
+              366  LOAD_CODE                <code_object stdev>
+              368  LOAD_STR                 'stdev'
+              370  MAKE_FUNCTION_1          'default'
+              372  STORE_NAME               stdev
+
+ L. 804       374  LOAD_CONST               (None,)
+              376  LOAD_CODE                <code_object pstdev>
+              378  LOAD_STR                 'pstdev'
+              380  MAKE_FUNCTION_1          'default'
+              382  STORE_NAME               pstdev
+
+ L. 823       384  LOAD_CODE                <code_object _normal_dist_inv_cdf>
+              386  LOAD_STR                 '_normal_dist_inv_cdf'
+              388  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              390  STORE_NAME               _normal_dist_inv_cdf
+
+ L. 898       392  SETUP_FINALLY       410  'to 410'
+
+ L. 899       394  LOAD_CONST               0
+              396  LOAD_CONST               ('_normal_dist_inv_cdf',)
+              398  IMPORT_NAME              _statistics
+              400  IMPORT_FROM              _normal_dist_inv_cdf
+              402  STORE_NAME               _normal_dist_inv_cdf
+              404  POP_TOP          
+              406  POP_BLOCK        
+              408  JUMP_FORWARD        430  'to 430'
+            410_0  COME_FROM_FINALLY   392  '392'
+
+ L. 900       410  DUP_TOP          
+              412  LOAD_NAME                ImportError
+          414_416  <121>               428  ''
+              418  POP_TOP          
+              420  POP_TOP          
+              422  POP_TOP          
+
+ L. 901       424  POP_EXCEPT       
+              426  JUMP_FORWARD        430  'to 430'
+              428  <48>             
+            430_0  COME_FROM           426  '426'
+            430_1  COME_FROM           408  '408'
+
+ L. 904       430  LOAD_BUILD_CLASS 
+              432  LOAD_CODE                <code_object NormalDist>
+              434  LOAD_STR                 'NormalDist'
+              436  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              438  LOAD_STR                 'NormalDist'
+              440  CALL_FUNCTION_2       2  ''
+              442  STORE_NAME               NormalDist
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L.  83         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('NormalDist', 'StatisticsError', 'fmean', 'geometric_mean', 'harmonic_mean', 'mean', 'median', 'median_grouped', 'median_high', 'median_low', 'mode', 'multimode', 'pstdev', 'pvariance', 'quantiles', 'stdev', 'variance')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101095.pyc -- 
+# decompile failed

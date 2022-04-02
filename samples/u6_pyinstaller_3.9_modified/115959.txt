@@ -1,0 +1,161 @@
+
+# file test/115959.pyc
+# --- This code section failed: ---
+
+ L.   4         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import', 'division', 'print_function')
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  IMPORT_FROM              division
+               12  STORE_NAME               division
+               14  IMPORT_FROM              print_function
+               16  STORE_NAME               print_function
+               18  POP_TOP          
+
+ L.   6        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              collections
+               26  STORE_NAME               collections
+
+ L.   7        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              itertools
+               34  STORE_NAME               itertools
+
+ L.   8        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              re
+               42  STORE_NAME               re
+
+ L.  10        44  LOAD_CONST               1
+               46  LOAD_CONST               ('Infinity',)
+               48  IMPORT_NAME              _structures
+               50  IMPORT_FROM              Infinity
+               52  STORE_NAME               Infinity
+               54  POP_TOP          
+
+ L.  13        56  BUILD_LIST_0          0 
+               58  LOAD_CONST               ('parse', 'Version', 'LegacyVersion', 'InvalidVersion', 'VERSION_PATTERN')
+               60  CALL_FINALLY         63  'to 63'
+               62  STORE_NAME               __all__
+
+ L.  16        64  LOAD_NAME                collections
+               66  LOAD_METHOD              namedtuple
+
+ L.  17        68  LOAD_STR                 '_Version'
+               70  BUILD_LIST_0          0 
+               72  LOAD_CONST               ('epoch', 'release', 'dev', 'pre', 'post', 'local')
+               74  CALL_FINALLY         77  'to 77'
+
+ L.  16        76  CALL_METHOD_2         2  ''
+               78  STORE_NAME               _Version
+
+ L.  21        80  LOAD_CODE                <code_object parse>
+               82  LOAD_STR                 'parse'
+               84  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               86  STORE_NAME               parse
+
+ L.  33        88  LOAD_BUILD_CLASS 
+               90  LOAD_CODE                <code_object InvalidVersion>
+               92  LOAD_STR                 'InvalidVersion'
+               94  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               96  LOAD_STR                 'InvalidVersion'
+               98  LOAD_NAME                ValueError
+              100  CALL_FUNCTION_3       3  ''
+              102  STORE_NAME               InvalidVersion
+
+ L.  39       104  LOAD_BUILD_CLASS 
+              106  LOAD_CODE                <code_object _BaseVersion>
+              108  LOAD_STR                 '_BaseVersion'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  LOAD_STR                 '_BaseVersion'
+              114  LOAD_NAME                object
+              116  CALL_FUNCTION_3       3  ''
+              118  STORE_NAME               _BaseVersion
+
+ L.  68       120  LOAD_BUILD_CLASS 
+              122  LOAD_CODE                <code_object LegacyVersion>
+              124  LOAD_STR                 'LegacyVersion'
+              126  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              128  LOAD_STR                 'LegacyVersion'
+              130  LOAD_NAME                _BaseVersion
+              132  CALL_FUNCTION_3       3  ''
+              134  STORE_NAME               LegacyVersion
+
+ L. 124       136  LOAD_NAME                re
+              138  LOAD_METHOD              compile
+              140  LOAD_STR                 '(\\d+ | [a-z]+ | \\.| -)'
+              142  LOAD_NAME                re
+              144  LOAD_ATTR                VERBOSE
+              146  CALL_METHOD_2         2  ''
+              148  STORE_NAME               _legacy_version_component_re
+
+ L. 127       150  LOAD_STR                 'c'
+
+ L. 128       152  LOAD_STR                 'c'
+
+ L. 129       154  LOAD_STR                 'final-'
+
+ L. 130       156  LOAD_STR                 'c'
+
+ L. 131       158  LOAD_STR                 '@'
+
+ L. 126       160  LOAD_CONST               ('pre', 'preview', '-', 'rc', 'dev')
+              162  BUILD_CONST_KEY_MAP_5     5 
+              164  STORE_NAME               _legacy_version_replacement_map
+
+ L. 135       166  LOAD_CODE                <code_object _parse_version_parts>
+              168  LOAD_STR                 '_parse_version_parts'
+              170  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              172  STORE_NAME               _parse_version_parts
+
+ L. 152       174  LOAD_CODE                <code_object _legacy_cmpkey>
+              176  LOAD_STR                 '_legacy_cmpkey'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  STORE_NAME               _legacy_cmpkey
+
+ L. 181       182  LOAD_STR                 '\n    v?\n    (?:\n        (?:(?P<epoch>[0-9]+)!)?                           # epoch\n        (?P<release>[0-9]+(?:\\.[0-9]+)*)                  # release segment\n        (?P<pre>                                          # pre-release\n            [-_\\.]?\n            (?P<pre_l>(a|b|c|rc|alpha|beta|pre|preview))\n            [-_\\.]?\n            (?P<pre_n>[0-9]+)?\n        )?\n        (?P<post>                                         # post release\n            (?:-(?P<post_n1>[0-9]+))\n            |\n            (?:\n                [-_\\.]?\n                (?P<post_l>post|rev|r)\n                [-_\\.]?\n                (?P<post_n2>[0-9]+)?\n            )\n        )?\n        (?P<dev>                                          # dev release\n            [-_\\.]?\n            (?P<dev_l>dev)\n            [-_\\.]?\n            (?P<dev_n>[0-9]+)?\n        )?\n    )\n    (?:\\+(?P<local>[a-z0-9]+(?:[-_\\.][a-z0-9]+)*))?       # local version\n'
+              184  STORE_NAME               VERSION_PATTERN
+
+ L. 213       186  LOAD_BUILD_CLASS 
+              188  LOAD_CODE                <code_object Version>
+              190  LOAD_STR                 'Version'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  LOAD_STR                 'Version'
+              196  LOAD_NAME                _BaseVersion
+              198  CALL_FUNCTION_3       3  ''
+              200  STORE_NAME               Version
+
+ L. 333       202  LOAD_CODE                <code_object _parse_letter_version>
+              204  LOAD_STR                 '_parse_letter_version'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  STORE_NAME               _parse_letter_version
+
+ L. 364       210  LOAD_NAME                re
+              212  LOAD_METHOD              compile
+              214  LOAD_STR                 '[\\._-]'
+              216  CALL_METHOD_1         1  ''
+              218  STORE_NAME               _local_version_separators
+
+ L. 367       220  LOAD_CODE                <code_object _parse_local_version>
+              222  LOAD_STR                 '_parse_local_version'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  STORE_NAME               _parse_local_version
+
+ L. 378       228  LOAD_CODE                <code_object _cmpkey>
+              230  LOAD_STR                 '_cmpkey'
+              232  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              234  STORE_NAME               _cmpkey
+
+Parse error at or near `CALL_FINALLY' instruction at offset 60
+
+Instruction context:
+   
+ L.  13        56  BUILD_LIST_0          0 
+                  58  LOAD_CONST               ('parse', 'Version', 'LegacyVersion', 'InvalidVersion', 'VERSION_PATTERN')
+->                60  CALL_FINALLY         63  'to 63'
+                  62  STORE_NAME               __all__
+
+test/115959.pyc -- 
+# decompile failed

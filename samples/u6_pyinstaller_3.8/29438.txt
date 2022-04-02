@@ -1,0 +1,51 @@
+Instruction context:
+   
+ L. 853        32  DUP_TOP          
+                  34  LOAD_GLOBAL              NoSuchCookieException
+                  36  COMPARE_OP               exception-match
+                  38  POP_JUMP_IF_FALSE    52  'to 52'
+                  40  POP_TOP          
+->                42  POP_TOP          
+                  44  POP_TOP          
+Instruction context:
+   
+ L.1037        88  POP_EXCEPT       
+                  90  POP_BLOCK        
+->                92  CALL_FINALLY        104  'to 104'
+                  94  LOAD_CONST               False
+                  96  RETURN_VALUE     
+                98_0  COME_FROM            80  '80'
+                  98  END_FINALLY      
+               100_0  COME_FROM            72  '72'
+                 100  POP_BLOCK        
+                 102  BEGIN_FINALLY    
+               104_0  COME_FROM            92  '92'
+               104_1  COME_FROM_FINALLY    34  '34'
+Instruction context:
+   
+ L.1115        80  LOAD_CLOSURE             'size'
+                  82  BUILD_TUPLE_1         1 
+->                84  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  86  LOAD_STR                 'WebDriver.get_window_size.<locals>.<dictcomp>'
+                  88  MAKE_FUNCTION_8          'closure'
+                  90  LOAD_CONST               ('width', 'height')
+                  92  GET_ITER         
+                  94  CALL_FUNCTION_1       1  ''
+                  96  RETURN_VALUE     
+Instruction context:
+   
+ L.1155        56  LOAD_CLOSURE             'position'
+                  58  BUILD_TUPLE_1         1 
+->                60  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  62  LOAD_STR                 'WebDriver.get_window_position.<locals>.<dictcomp>'
+                  64  MAKE_FUNCTION_8          'closure'
+                  66  LOAD_CONST               ('x', 'y')
+                  68  GET_ITER         
+                  70  CALL_FUNCTION_1       1  ''
+                  72  RETURN_VALUE     
+
+../test/29438.pyc -- 
+# decompile failed
+
+# file ../test/29438.pyc
+# Deparsing stopped due to parse error

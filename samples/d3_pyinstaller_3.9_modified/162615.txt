@@ -1,0 +1,408 @@
+
+# file test/162615.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nnumerictypes: Define the numeric type objects\n\nThis module is designed so "from numerictypes import \\*" is safe.\nExported symbols include:\n\n  Dictionary with all registered number types (including aliases):\n    sctypeDict\n\n  Type objects (not all will be available, depends on platform):\n      see variable sctypes for which ones you have\n\n    Bit-width names\n\n    int8 int16 int32 int64 int128\n    uint8 uint16 uint32 uint64 uint128\n    float16 float32 float64 float96 float128 float256\n    complex32 complex64 complex128 complex192 complex256 complex512\n    datetime64 timedelta64\n\n    c-based names\n\n    bool_\n\n    object_\n\n    void, str_, unicode_\n\n    byte, ubyte,\n    short, ushort\n    intc, uintc,\n    intp, uintp,\n    int_, uint,\n    longlong, ulonglong,\n\n    single, csingle,\n    float_, complex_,\n    longfloat, clongfloat,\n\n   As part of the type-hierarchy:    xx -- is bit-width\n\n   generic\n     +-> bool_                                  (kind=b)\n     +-> number\n     |   +-> integer\n     |   |   +-> signedinteger     (intxx)      (kind=i)\n     |   |   |     byte\n     |   |   |     short\n     |   |   |     intc\n     |   |   |     intp            int0\n     |   |   |     int_\n     |   |   |     longlong\n     |   |   \\-> unsignedinteger  (uintxx)     (kind=u)\n     |   |         ubyte\n     |   |         ushort\n     |   |         uintc\n     |   |         uintp           uint0\n     |   |         uint_\n     |   |         ulonglong\n     |   +-> inexact\n     |       +-> floating          (floatxx)    (kind=f)\n     |       |     half\n     |       |     single\n     |       |     float_          (double)\n     |       |     longfloat\n     |       \\-> complexfloating  (complexxx)  (kind=c)\n     |             csingle         (singlecomplex)\n     |             complex_        (cfloat, cdouble)\n     |             clongfloat      (longcomplex)\n     +-> flexible\n     |   +-> character\n     |   |     str_     (string_, bytes_)       (kind=S)    [Python 2]\n     |   |     unicode_                         (kind=U)    [Python 2]\n     |   |\n     |   |     bytes_   (string_)               (kind=S)    [Python 3]\n     |   |     str_     (unicode_)              (kind=U)    [Python 3]\n     |   |\n     |   \\-> void                              (kind=V)\n     \\-> object_ (not used much)               (kind=O)\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  82         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              numbers
+               10  STORE_NAME               numbers
+
+ L.  83        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              warnings
+               18  STORE_NAME               warnings
+
+ L.  85        20  LOAD_CONST               0
+               22  LOAD_CONST               ('typeinfo', 'ndarray', 'array', 'empty', 'dtype', 'datetime_data', 'datetime_as_string', 'busday_offset', 'busday_count', 'is_busday', 'busdaycalendar')
+               24  IMPORT_NAME_ATTR         numpy.core.multiarray
+               26  IMPORT_FROM              typeinfo
+               28  STORE_NAME               typeinfo
+               30  IMPORT_FROM              ndarray
+               32  STORE_NAME               ndarray
+               34  IMPORT_FROM              array
+               36  STORE_NAME               array
+               38  IMPORT_FROM              empty
+               40  STORE_NAME               empty
+               42  IMPORT_FROM              dtype
+               44  STORE_NAME               dtype
+               46  IMPORT_FROM              datetime_data
+               48  STORE_NAME               datetime_data
+               50  IMPORT_FROM              datetime_as_string
+               52  STORE_NAME               datetime_as_string
+               54  IMPORT_FROM              busday_offset
+               56  STORE_NAME               busday_offset
+               58  IMPORT_FROM              busday_count
+               60  STORE_NAME               busday_count
+               62  IMPORT_FROM              is_busday
+               64  STORE_NAME               is_busday
+               66  IMPORT_FROM              busdaycalendar
+               68  STORE_NAME               busdaycalendar
+               70  POP_TOP          
+
+ L.  90        72  LOAD_CONST               0
+               74  LOAD_CONST               ('set_module',)
+               76  IMPORT_NAME_ATTR         numpy.core.overrides
+               78  IMPORT_FROM              set_module
+               80  STORE_NAME               set_module
+               82  POP_TOP          
+
+ L.  93        84  BUILD_LIST_0          0 
+               86  LOAD_CONST               ('sctypeDict', 'sctypes', 'ScalarType', 'obj2sctype', 'cast', 'nbytes', 'sctype2char', 'maximum_sctype', 'issctype', 'typecodes', 'find_common_type', 'issubdtype', 'datetime_data', 'datetime_as_string', 'busday_offset', 'busday_count', 'is_busday', 'busdaycalendar')
+               88  CALL_FINALLY         91  'to 91'
+               90  STORE_NAME               __all__
+
+ L. 102        92  LOAD_CONST               1
+               94  LOAD_CONST               ('english_lower', 'english_upper', 'english_capitalize', 'LOWER_TABLE', 'UPPER_TABLE')
+               96  IMPORT_NAME              _string_helpers
+               98  IMPORT_FROM              english_lower
+              100  STORE_NAME               english_lower
+              102  IMPORT_FROM              english_upper
+              104  STORE_NAME               english_upper
+              106  IMPORT_FROM              english_capitalize
+              108  STORE_NAME               english_capitalize
+              110  IMPORT_FROM              LOWER_TABLE
+              112  STORE_NAME               LOWER_TABLE
+              114  IMPORT_FROM              UPPER_TABLE
+              116  STORE_NAME               UPPER_TABLE
+              118  POP_TOP          
+
+ L. 106       120  LOAD_CONST               1
+              122  LOAD_CONST               ('sctypeDict', 'allTypes', 'bitname', 'sctypes', '_concrete_types', '_concrete_typeinfo', '_bits_of')
+              124  IMPORT_NAME              _type_aliases
+              126  IMPORT_FROM              sctypeDict
+              128  STORE_NAME               sctypeDict
+              130  IMPORT_FROM              allTypes
+              132  STORE_NAME               allTypes
+              134  IMPORT_FROM              bitname
+              136  STORE_NAME               bitname
+              138  IMPORT_FROM              sctypes
+              140  STORE_NAME               sctypes
+              142  IMPORT_FROM              _concrete_types
+              144  STORE_NAME               _concrete_types
+              146  IMPORT_FROM              _concrete_typeinfo
+              148  STORE_NAME               _concrete_typeinfo
+              150  IMPORT_FROM              _bits_of
+              152  STORE_NAME               _bits_of
+              154  POP_TOP          
+
+ L. 115       156  LOAD_CONST               1
+              158  LOAD_CONST               ('_kind_name',)
+              160  IMPORT_NAME              _dtype
+              162  IMPORT_FROM              _kind_name
+              164  STORE_NAME               _kind_name
+              166  POP_TOP          
+
+ L. 119       168  LOAD_CONST               0
+              170  LOAD_CONST               ('bool', 'int', 'float', 'complex', 'object', 'str', 'bytes')
+              172  IMPORT_NAME              builtins
+              174  IMPORT_FROM              bool
+              176  STORE_NAME               bool
+              178  IMPORT_FROM              int
+              180  STORE_NAME               int
+              182  IMPORT_FROM              float
+              184  STORE_NAME               float
+              186  IMPORT_FROM              complex
+              188  STORE_NAME               complex
+              190  IMPORT_FROM              object
+              192  STORE_NAME               object
+              194  IMPORT_FROM              str
+              196  STORE_NAME               str
+              198  IMPORT_FROM              bytes
+              200  STORE_NAME               bytes
+              202  POP_TOP          
+
+ L. 120       204  LOAD_CONST               0
+              206  LOAD_CONST               ('long', 'unicode')
+              208  IMPORT_NAME_ATTR         numpy.compat
+              210  IMPORT_FROM              long
+              212  STORE_NAME               long
+              214  IMPORT_FROM              unicode
+              216  STORE_NAME               unicode
+              218  POP_TOP          
+
+ L. 124       220  LOAD_NAME                allTypes
+              222  LOAD_STR                 'generic'
+              224  BINARY_SUBSCR    
+              226  STORE_NAME               generic
+
+ L. 126       228  BUILD_LIST_0          0 
+              230  LOAD_CONST               ('bool', 'int8', 'uint8', 'int16', 'uint16', 'int32', 'uint32', 'int64', 'uint64', 'int128', 'uint128', 'float16', 'float32', 'float64', 'float80', 'float96', 'float128', 'float256', 'complex32', 'complex64', 'complex128', 'complex160', 'complex192', 'complex256', 'complex512', 'object')
+              232  CALL_FINALLY        235  'to 235'
+              234  STORE_NAME               genericTypeRank
+
+ L. 134       236  LOAD_NAME                set_module
+              238  LOAD_STR                 'numpy'
+              240  CALL_FUNCTION_1       1  ''
+
+ L. 135       242  LOAD_CODE                <code_object maximum_sctype>
+              244  LOAD_STR                 'maximum_sctype'
+              246  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              248  CALL_FUNCTION_1       1  ''
+              250  STORE_NAME               maximum_sctype
+
+ L. 184       252  LOAD_NAME                set_module
+              254  LOAD_STR                 'numpy'
+              256  CALL_FUNCTION_1       1  ''
+
+ L. 185       258  LOAD_CODE                <code_object issctype>
+              260  LOAD_STR                 'issctype'
+              262  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              264  CALL_FUNCTION_1       1  ''
+              266  STORE_NAME               issctype
+
+ L. 230       268  LOAD_NAME                set_module
+              270  LOAD_STR                 'numpy'
+              272  CALL_FUNCTION_1       1  ''
+
+ L. 231       274  LOAD_CONST               (None,)
+              276  LOAD_CODE                <code_object obj2sctype>
+              278  LOAD_STR                 'obj2sctype'
+              280  MAKE_FUNCTION_1          'default'
+              282  CALL_FUNCTION_1       1  ''
+              284  STORE_NAME               obj2sctype
+
+ L. 284       286  LOAD_NAME                set_module
+              288  LOAD_STR                 'numpy'
+              290  CALL_FUNCTION_1       1  ''
+
+ L. 285       292  LOAD_CODE                <code_object issubclass_>
+              294  LOAD_STR                 'issubclass_'
+              296  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              298  CALL_FUNCTION_1       1  ''
+              300  STORE_NAME               issubclass_
+
+ L. 326       302  LOAD_NAME                set_module
+              304  LOAD_STR                 'numpy'
+              306  CALL_FUNCTION_1       1  ''
+
+ L. 327       308  LOAD_CODE                <code_object issubsctype>
+              310  LOAD_STR                 'issubsctype'
+              312  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              314  CALL_FUNCTION_1       1  ''
+              316  STORE_NAME               issubsctype
+
+ L. 358       318  LOAD_NAME                set_module
+              320  LOAD_STR                 'numpy'
+              322  CALL_FUNCTION_1       1  ''
+
+ L. 359       324  LOAD_CODE                <code_object issubdtype>
+              326  LOAD_STR                 'issubdtype'
+              328  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              330  CALL_FUNCTION_1       1  ''
+              332  STORE_NAME               issubdtype
+
+ L. 426       334  LOAD_BUILD_CLASS 
+              336  LOAD_CODE                <code_object _typedict>
+              338  LOAD_STR                 '_typedict'
+              340  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              342  LOAD_STR                 '_typedict'
+              344  LOAD_NAME                dict
+              346  CALL_FUNCTION_3       3  ''
+              348  STORE_NAME               _typedict
+
+ L. 438       350  LOAD_NAME                _typedict
+              352  CALL_FUNCTION_0       0  ''
+              354  STORE_NAME               nbytes
+
+ L. 439       356  LOAD_NAME                _typedict
+              358  CALL_FUNCTION_0       0  ''
+              360  STORE_NAME               _alignment
+
+ L. 440       362  LOAD_NAME                _typedict
+              364  CALL_FUNCTION_0       0  ''
+              366  STORE_NAME               _maxvals
+
+ L. 441       368  LOAD_NAME                _typedict
+              370  CALL_FUNCTION_0       0  ''
+              372  STORE_NAME               _minvals
+
+ L. 442       374  LOAD_CODE                <code_object _construct_lookups>
+              376  LOAD_STR                 '_construct_lookups'
+              378  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              380  STORE_NAME               _construct_lookups
+
+ L. 454       382  LOAD_NAME                _construct_lookups
+              384  CALL_FUNCTION_0       0  ''
+              386  POP_TOP          
+
+ L. 457       388  LOAD_NAME                set_module
+              390  LOAD_STR                 'numpy'
+              392  CALL_FUNCTION_1       1  ''
+
+ L. 458       394  LOAD_CODE                <code_object sctype2char>
+              396  LOAD_STR                 'sctype2char'
+              398  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              400  CALL_FUNCTION_1       1  ''
+              402  STORE_NAME               sctype2char
+
+ L. 510       404  LOAD_NAME                _typedict
+              406  CALL_FUNCTION_0       0  ''
+              408  STORE_NAME               cast
+
+ L. 511       410  LOAD_NAME                _concrete_types
+              412  GET_ITER         
+            414_0  COME_FROM           434  '434'
+              414  FOR_ITER            438  'to 438'
+              416  STORE_NAME               key
+
+ L. 512       418  LOAD_NAME                key
+              420  BUILD_TUPLE_1         1 
+              422  LOAD_LAMBDA              '<code_object <lambda>>'
+              424  LOAD_STR                 '<lambda>'
+              426  MAKE_FUNCTION_1          'default'
+              428  LOAD_NAME                cast
+              430  LOAD_NAME                key
+              432  STORE_SUBSCR     
+          434_436  JUMP_BACK           414  'to 414'
+            438_0  COME_FROM           414  '414'
+
+ L. 515       438  LOAD_CODE                <code_object _scalar_type_key>
+              440  LOAD_STR                 '_scalar_type_key'
+              442  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              444  STORE_NAME               _scalar_type_key
+
+ L. 521       446  LOAD_NAME                int
+              448  LOAD_NAME                float
+              450  LOAD_NAME                complex
+              452  LOAD_NAME                int
+              454  LOAD_NAME                bool
+              456  LOAD_NAME                bytes
+              458  LOAD_NAME                str
+              460  LOAD_NAME                memoryview
+              462  BUILD_LIST_8          8 
+              464  STORE_NAME               ScalarType
+
+ L. 522       466  LOAD_NAME                ScalarType
+              468  LOAD_NAME                sorted
+              470  LOAD_NAME                _concrete_types
+              472  LOAD_NAME                _scalar_type_key
+              474  LOAD_CONST               ('key',)
+              476  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              478  INPLACE_ADD      
+              480  STORE_NAME               ScalarType
+
+ L. 523       482  LOAD_NAME                tuple
+              484  LOAD_NAME                ScalarType
+              486  CALL_FUNCTION_1       1  ''
+              488  STORE_NAME               ScalarType
+
+ L. 527       490  LOAD_NAME                allTypes
+              492  GET_ITER         
+            494_0  COME_FROM           522  '522'
+              494  FOR_ITER            526  'to 526'
+              496  STORE_NAME               key
+
+ L. 528       498  LOAD_NAME                allTypes
+              500  LOAD_NAME                key
+              502  BINARY_SUBSCR    
+              504  LOAD_NAME                globals
+              506  CALL_FUNCTION_0       0  ''
+              508  LOAD_NAME                key
+              510  STORE_SUBSCR     
+
+ L. 529       512  LOAD_NAME                __all__
+              514  LOAD_METHOD              append
+              516  LOAD_NAME                key
+              518  CALL_METHOD_1         1  ''
+              520  POP_TOP          
+          522_524  JUMP_BACK           494  'to 494'
+            526_0  COME_FROM           494  '494'
+
+ L. 531       526  DELETE_NAME              key
+
+ L. 533       528  LOAD_STR                 'c'
+
+ L. 534       530  LOAD_STR                 'bhilqp'
+
+ L. 535       532  LOAD_STR                 'BHILQP'
+
+ L. 536       534  LOAD_STR                 'efdg'
+
+ L. 537       536  LOAD_STR                 'FDG'
+
+ L. 538       538  LOAD_STR                 'bBhHiIlLqQpP'
+
+ L. 539       540  LOAD_STR                 'efdgFDG'
+
+ L. 540       542  LOAD_STR                 'Mm'
+
+ L. 541       544  LOAD_STR                 '?bhilqpBHILQPefdgFDGSUVOMm'
+
+ L. 533       546  LOAD_CONST               ('Character', 'Integer', 'UnsignedInteger', 'Float', 'Complex', 'AllInteger', 'AllFloat', 'Datetime', 'All')
+              548  BUILD_CONST_KEY_MAP_9     9 
+              550  STORE_NAME               typecodes
+
+ L. 545       552  LOAD_NAME                sctypeDict
+              554  STORE_NAME               typeDict
+
+ L. 558       556  BUILD_LIST_0          0 
+              558  LOAD_CONST               ('b', 'u', 'i', 'f', 'c', 'S', 'U', 'V', 'O', 'M', 'm')
+              560  CALL_FINALLY        563  'to 563'
+              562  STORE_NAME               _kind_list
+
+ L. 560       564  LOAD_STR                 '?'
+              566  LOAD_NAME                typecodes
+              568  LOAD_STR                 'AllInteger'
+              570  BINARY_SUBSCR    
+              572  LOAD_CONST               None
+              574  LOAD_CONST               -2
+              576  BUILD_SLICE_2         2 
+              578  BINARY_SUBSCR    
+              580  BINARY_ADD       
+              582  LOAD_NAME                typecodes
+              584  LOAD_STR                 'AllFloat'
+              586  BINARY_SUBSCR    
+              588  BINARY_ADD       
+              590  LOAD_STR                 'O'
+              592  BINARY_ADD       
+              594  STORE_NAME               __test_types
+
+ L. 561       596  LOAD_NAME                len
+              598  LOAD_NAME                __test_types
+              600  CALL_FUNCTION_1       1  ''
+              602  STORE_NAME               __len_test_types
+
+ L. 565       604  LOAD_CODE                <code_object _find_common_coerce>
+              606  LOAD_STR                 '_find_common_coerce'
+              608  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              610  STORE_NAME               _find_common_coerce
+
+ L. 575       612  LOAD_CONST               (0,)
+              614  LOAD_CODE                <code_object _can_coerce_all>
+              616  LOAD_STR                 '_can_coerce_all'
+              618  MAKE_FUNCTION_1          'default'
+              620  STORE_NAME               _can_coerce_all
+
+ L. 590       622  LOAD_CODE                <code_object _register_types>
+              624  LOAD_STR                 '_register_types'
+              626  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              628  STORE_NAME               _register_types
+
+ L. 596       630  LOAD_NAME                _register_types
+              632  CALL_FUNCTION_0       0  ''
+              634  POP_TOP          
+
+ L. 599       636  LOAD_NAME                set_module
+              638  LOAD_STR                 'numpy'
+              640  CALL_FUNCTION_1       1  ''
+
+ L. 600       642  LOAD_CODE                <code_object find_common_type>
+              644  LOAD_STR                 'find_common_type'
+              646  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              648  CALL_FUNCTION_1       1  ''
+              650  STORE_NAME               find_common_type
+
+Parse error at or near `CALL_FINALLY' instruction at offset 88
+
+Instruction context:
+   
+ L.  93        84  BUILD_LIST_0          0 
+                  86  LOAD_CONST               ('sctypeDict', 'sctypes', 'ScalarType', 'obj2sctype', 'cast', 'nbytes', 'sctype2char', 'maximum_sctype', 'issctype', 'typecodes', 'find_common_type', 'issubdtype', 'datetime_data', 'datetime_as_string', 'busday_offset', 'busday_count', 'is_busday', 'busdaycalendar')
+->                88  CALL_FINALLY         91  'to 91'
+                  90  STORE_NAME               __all__
+
+test/162615.pyc -- 
+# decompile failed

@@ -1,0 +1,52 @@
+Instruction context:
+   
+ L.  21        60  BUILD_LIST_0          0 
+                  62  LOAD_CONST               ('SSL', 'crypto', '__author__', '__copyright__', '__email__', '__license__', '__summary__', '__title__', '__uri__', '__version__')
+->                64  CALL_FINALLY         67  'to 67'
+
+test/103988.pyc -- 
+# decompile failed
+
+# file test/103988.pyc
+# --- This code section failed: ---
+
+ L.   4         0  LOAD_STR                 '\npyOpenSSL - A simple wrapper around the OpenSSL library\n'
+                2  STORE_NAME               __doc__
+
+ L.   8         4  LOAD_CONST               0
+                6  LOAD_CONST               ('crypto', 'SSL')
+                8  IMPORT_NAME              OpenSSL
+               10  IMPORT_FROM              crypto
+               12  STORE_NAME               crypto
+               14  IMPORT_FROM              SSL
+               16  STORE_NAME               SSL
+               18  POP_TOP          
+
+ L.   9        20  LOAD_CONST               0
+               22  LOAD_CONST               ('__author__', '__copyright__', '__email__', '__license__', '__summary__', '__title__', '__uri__', '__version__')
+               24  IMPORT_NAME_ATTR         OpenSSL.version
+               26  IMPORT_FROM              __author__
+               28  STORE_NAME               __author__
+               30  IMPORT_FROM              __copyright__
+               32  STORE_NAME               __copyright__
+               34  IMPORT_FROM              __email__
+               36  STORE_NAME               __email__
+               38  IMPORT_FROM              __license__
+               40  STORE_NAME               __license__
+               42  IMPORT_FROM              __summary__
+               44  STORE_NAME               __summary__
+               46  IMPORT_FROM              __title__
+               48  STORE_NAME               __title__
+               50  IMPORT_FROM              __uri__
+               52  STORE_NAME               __uri__
+               54  IMPORT_FROM              __version__
+               56  STORE_NAME               __version__
+               58  POP_TOP          
+
+ L.  21        60  BUILD_LIST_0          0 
+               62  LOAD_CONST               ('SSL', 'crypto', '__author__', '__copyright__', '__email__', '__license__', '__summary__', '__title__', '__uri__', '__version__')
+               64  CALL_FINALLY         67  'to 67'
+               66  STORE_NAME               __all__
+
+Parse error at or near `CALL_FINALLY' instruction at offset 64
+

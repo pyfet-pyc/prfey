@@ -1,0 +1,302 @@
+
+# file test/2064.pyc
+# --- This code section failed: ---
+
+ L.  20         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              io
+                6  STORE_NAME               io
+
+ L.  21         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              os
+               14  STORE_NAME               os
+
+ L.  22        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              struct
+               22  STORE_NAME               struct
+
+ L.  23        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              sys
+               30  STORE_NAME               sys
+
+ L.  25        32  LOAD_CONST               0
+               34  LOAD_CONST               ('Image', 'ImageFile', 'PngImagePlugin', 'features')
+               36  IMPORT_NAME              PIL
+               38  IMPORT_FROM              Image
+               40  STORE_NAME               Image
+               42  IMPORT_FROM              ImageFile
+               44  STORE_NAME               ImageFile
+               46  IMPORT_FROM              PngImagePlugin
+               48  STORE_NAME               PngImagePlugin
+               50  IMPORT_FROM              features
+               52  STORE_NAME               features
+               54  POP_TOP          
+
+ L.  27        56  LOAD_NAME                features
+               58  LOAD_METHOD              check_codec
+               60  LOAD_STR                 'jpg_2000'
+               62  CALL_METHOD_1         1  ''
+               64  STORE_NAME               enable_jpeg2k
+
+ L.  28        66  LOAD_NAME                enable_jpeg2k
+               68  POP_JUMP_IF_FALSE    82  'to 82'
+
+ L.  29        70  LOAD_CONST               0
+               72  LOAD_CONST               ('Jpeg2KImagePlugin',)
+               74  IMPORT_NAME              PIL
+               76  IMPORT_FROM              Jpeg2KImagePlugin
+               78  STORE_NAME               Jpeg2KImagePlugin
+               80  POP_TOP          
+             82_0  COME_FROM            68  '68'
+
+ L.  31        82  LOAD_CONST               b'icns'
+               84  STORE_NAME               MAGIC
+
+ L.  32        86  LOAD_CONST               8
+               88  STORE_NAME               HEADERSIZE
+
+ L.  35        90  LOAD_CODE                <code_object nextheader>
+               92  LOAD_STR                 'nextheader'
+               94  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               96  STORE_NAME               nextheader
+
+ L.  39        98  LOAD_CODE                <code_object read_32t>
+              100  LOAD_STR                 'read_32t'
+              102  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              104  STORE_NAME               read_32t
+
+ L.  49       106  LOAD_CODE                <code_object read_32>
+              108  LOAD_STR                 'read_32'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  STORE_NAME               read_32
+
+ L.  91       114  LOAD_CODE                <code_object read_mk>
+              116  LOAD_STR                 'read_mk'
+              118  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              120  STORE_NAME               read_mk
+
+ L. 101       122  LOAD_CODE                <code_object read_png_or_jpeg2000>
+              124  LOAD_STR                 'read_png_or_jpeg2000'
+              126  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              128  STORE_NAME               read_png_or_jpeg2000
+
+ L. 133       130  LOAD_BUILD_CLASS 
+              132  LOAD_CODE                <code_object IcnsFile>
+              134  LOAD_STR                 'IcnsFile'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  LOAD_STR                 'IcnsFile'
+              140  CALL_FUNCTION_2       2  ''
+              142  STORE_NAME               IcnsFile
+
+ L. 234       144  LOAD_BUILD_CLASS 
+              146  LOAD_CODE                <code_object IcnsImageFile>
+              148  LOAD_STR                 'IcnsImageFile'
+              150  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              152  LOAD_STR                 'IcnsImageFile'
+              154  LOAD_NAME                ImageFile
+              156  LOAD_ATTR                ImageFile
+              158  CALL_FUNCTION_3       3  ''
+              160  STORE_NAME               IcnsImageFile
+
+ L. 306       162  LOAD_CODE                <code_object _save>
+              164  LOAD_STR                 '_save'
+              166  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              168  STORE_NAME               _save
+
+ L. 363       170  LOAD_CODE                <code_object _accept>
+              172  LOAD_STR                 '_accept'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  STORE_NAME               _accept
+
+ L. 367       178  LOAD_NAME                Image
+              180  LOAD_METHOD              register_open
+              182  LOAD_NAME                IcnsImageFile
+              184  LOAD_ATTR                format
+              186  LOAD_NAME                IcnsImageFile
+              188  LOAD_NAME                _accept
+              190  CALL_METHOD_3         3  ''
+              192  POP_TOP          
+
+ L. 368       194  LOAD_NAME                Image
+              196  LOAD_METHOD              register_extension
+              198  LOAD_NAME                IcnsImageFile
+              200  LOAD_ATTR                format
+              202  LOAD_STR                 '.icns'
+              204  CALL_METHOD_2         2  ''
+              206  POP_TOP          
+
+ L. 370       208  LOAD_NAME                Image
+              210  LOAD_METHOD              register_save
+              212  LOAD_NAME                IcnsImageFile
+              214  LOAD_ATTR                format
+              216  LOAD_NAME                _save
+              218  CALL_METHOD_2         2  ''
+              220  POP_TOP          
+
+ L. 371       222  LOAD_NAME                Image
+              224  LOAD_METHOD              register_mime
+              226  LOAD_NAME                IcnsImageFile
+              228  LOAD_ATTR                format
+              230  LOAD_STR                 'image/icns'
+              232  CALL_METHOD_2         2  ''
+              234  POP_TOP          
+
+ L. 373       236  LOAD_NAME                __name__
+              238  LOAD_STR                 '__main__'
+              240  COMPARE_OP               ==
+          242_244  POP_JUMP_IF_FALSE   456  'to 456'
+
+ L. 374       246  LOAD_NAME                len
+              248  LOAD_NAME                sys
+              250  LOAD_ATTR                argv
+              252  CALL_FUNCTION_1       1  ''
+              254  LOAD_CONST               2
+              256  COMPARE_OP               <
+          258_260  POP_JUMP_IF_FALSE   278  'to 278'
+
+ L. 375       262  LOAD_NAME                print
+              264  LOAD_STR                 'Syntax: python3 IcnsImagePlugin.py [file]'
+              266  CALL_FUNCTION_1       1  ''
+              268  POP_TOP          
+
+ L. 376       270  LOAD_NAME                sys
+              272  LOAD_METHOD              exit
+              274  CALL_METHOD_0         0  ''
+              276  POP_TOP          
+            278_0  COME_FROM           258  '258'
+
+ L. 378       278  LOAD_NAME                open
+              280  LOAD_NAME                sys
+              282  LOAD_ATTR                argv
+              284  LOAD_CONST               1
+              286  BINARY_SUBSCR    
+              288  LOAD_STR                 'rb'
+              290  CALL_FUNCTION_2       2  ''
+              292  SETUP_WITH          438  'to 438'
+              294  STORE_NAME               fp
+
+ L. 379       296  LOAD_NAME                IcnsImageFile
+              298  LOAD_NAME                fp
+              300  CALL_FUNCTION_1       1  ''
+              302  STORE_NAME               imf
+
+ L. 380       304  LOAD_NAME                imf
+              306  LOAD_ATTR                info
+              308  LOAD_STR                 'sizes'
+              310  BINARY_SUBSCR    
+              312  GET_ITER         
+              314  FOR_ITER            342  'to 342'
+              316  STORE_NAME               size
+
+ L. 381       318  LOAD_NAME                size
+              320  LOAD_NAME                imf
+              322  STORE_ATTR               size
+
+ L. 382       324  LOAD_NAME                imf
+              326  LOAD_METHOD              save
+              328  LOAD_STR                 'out-%s-%s-%s.png'
+              330  LOAD_NAME                size
+              332  BINARY_MODULO    
+              334  CALL_METHOD_1         1  ''
+              336  POP_TOP          
+          338_340  JUMP_BACK           314  'to 314'
+
+ L. 383       342  LOAD_NAME                Image
+              344  LOAD_METHOD              open
+              346  LOAD_NAME                sys
+              348  LOAD_ATTR                argv
+              350  LOAD_CONST               1
+              352  BINARY_SUBSCR    
+              354  CALL_METHOD_1         1  ''
+              356  SETUP_WITH          384  'to 384'
+              358  STORE_NAME               im
+
+ L. 384       360  LOAD_NAME                im
+              362  LOAD_METHOD              save
+              364  LOAD_STR                 'out.png'
+              366  CALL_METHOD_1         1  ''
+              368  POP_TOP          
+              370  POP_BLOCK        
+              372  LOAD_CONST               None
+              374  DUP_TOP          
+              376  DUP_TOP          
+              378  CALL_FUNCTION_3       3  ''
+              380  POP_TOP          
+              382  JUMP_FORWARD        402  'to 402'
+            384_0  COME_FROM_WITH      356  '356'
+              384  <49>             
+          386_388  POP_JUMP_IF_TRUE    392  'to 392'
+              390  <48>             
+            392_0  COME_FROM           386  '386'
+              392  POP_TOP          
+              394  POP_TOP          
+              396  POP_TOP          
+              398  POP_EXCEPT       
+              400  POP_TOP          
+            402_0  COME_FROM           382  '382'
+
+ L. 385       402  LOAD_NAME                sys
+              404  LOAD_ATTR                platform
+              406  LOAD_STR                 'windows'
+              408  COMPARE_OP               ==
+          410_412  POP_JUMP_IF_FALSE   424  'to 424'
+
+ L. 386       414  LOAD_NAME                os
+              416  LOAD_METHOD              startfile
+              418  LOAD_STR                 'out.png'
+              420  CALL_METHOD_1         1  ''
+              422  POP_TOP          
+            424_0  COME_FROM           410  '410'
+              424  POP_BLOCK        
+              426  LOAD_CONST               None
+              428  DUP_TOP          
+              430  DUP_TOP          
+              432  CALL_FUNCTION_3       3  ''
+              434  POP_TOP          
+              436  JUMP_FORWARD        456  'to 456'
+            438_0  COME_FROM_WITH      292  '292'
+              438  <49>             
+          440_442  POP_JUMP_IF_TRUE    446  'to 446'
+              444  <48>             
+            446_0  COME_FROM           440  '440'
+              446  POP_TOP          
+              448  POP_TOP          
+              450  POP_TOP          
+              452  POP_EXCEPT       
+              454  POP_TOP          
+            456_0  COME_FROM           436  '436'
+            456_1  COME_FROM           242  '242'
+
+Parse error at or near `DUP_TOP' instruction at offset 374
+
+Instruction context:
+   
+ L. 384       360  LOAD_NAME                im
+                 362  LOAD_METHOD              save
+                 364  LOAD_STR                 'out.png'
+                 366  CALL_METHOD_1         1  ''
+                 368  POP_TOP          
+                 370  POP_BLOCK        
+                 372  LOAD_CONST               None
+->               374  DUP_TOP          
+                 376  DUP_TOP          
+                 378  CALL_FUNCTION_3       3  ''
+                 380  POP_TOP          
+                 382  JUMP_FORWARD        402  'to 402'
+               384_0  COME_FROM_WITH      356  '356'
+                 384  <49>             
+             386_388  POP_JUMP_IF_TRUE    392  'to 392'
+                 390  <48>             
+               392_0  COME_FROM           386  '386'
+                 392  POP_TOP          
+                 394  POP_TOP          
+                 396  POP_TOP          
+                 398  POP_EXCEPT       
+                 400  POP_TOP          
+               402_0  COME_FROM           382  '382'
+
+test/2064.pyc -- 
+# decompile failed

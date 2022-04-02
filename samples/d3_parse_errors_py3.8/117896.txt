@@ -1,0 +1,49 @@
+Instruction context:
+-> 
+ L. 484        96  DUP_TOP          
+                  98  LOAD_GLOBAL              Exception
+                 100  COMPARE_OP               exception-match
+                 102  POP_JUMP_IF_FALSE   140  'to 140'
+                 104  POP_TOP          
+                 106  POP_TOP          
+                 108  POP_TOP          
+Instruction context:
+   
+ L. 814        40  POP_EXCEPT       
+                  42  JUMP_FORWARD         46  'to 46'
+->              44_0  COME_FROM            32  '32'
+                  44  END_FINALLY      
+                46_0  COME_FROM            42  '42'
+Instruction context:
+-> 
+ L.1045       234  DUP_TOP          
+                 236  LOAD_GLOBAL              Exception
+                 238  COMPARE_OP               exception-match
+             240_242  POP_JUMP_IF_FALSE   280  'to 280'
+                 244  POP_TOP          
+                 246  POP_TOP          
+                 248  POP_TOP          
+Instruction context:
+   
+ L.1170        76  LOAD_GLOBAL              _bson_to_dict
+                  78  LOAD_FAST                'elements'
+                  80  LOAD_FAST                'codec_options'
+                  82  CALL_FUNCTION_2       2  ''
+                  84  YIELD_VALUE      
+                  86  POP_TOP          
+->                88  JUMP_BACK             0  'to 0'
+Instruction context:
+-> 
+ L.1189        36  DUP_TOP          
+                  38  LOAD_GLOBAL              Exception
+                  40  COMPARE_OP               exception-match
+                  42  POP_JUMP_IF_FALSE    56  'to 56'
+                  44  POP_TOP          
+                  46  POP_TOP          
+                  48  POP_TOP          
+
+../test/117896.pyc -- 
+# decompile failed
+
+# file ../test/117896.pyc
+# Deparsing stopped due to parse error

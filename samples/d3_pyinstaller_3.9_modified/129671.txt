@@ -1,0 +1,107 @@
+Instruction context:
+   
+ L. 311       124  LOAD_NAME                Jpeg2KImageFile
+                 126  LOAD_ATTR                format
+                 128  BUILD_LIST_0          0 
+                 130  LOAD_CONST               ('.jp2', '.j2k', '.jpc', '.jpf', '.jpx', '.j2c')
+->               132  CALL_FINALLY        135  'to 135'
+
+test/129671.pyc -- 
+# decompile failed
+
+# file test/129671.pyc
+# --- This code section failed: ---
+
+ L.  15         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              io
+                6  STORE_NAME               io
+
+ L.  16         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              os
+               14  STORE_NAME               os
+
+ L.  17        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              struct
+               22  STORE_NAME               struct
+
+ L.  19        24  LOAD_CONST               1
+               26  LOAD_CONST               ('Image', 'ImageFile')
+               28  IMPORT_NAME              
+               30  IMPORT_FROM              Image
+               32  STORE_NAME               Image
+               34  IMPORT_FROM              ImageFile
+               36  STORE_NAME               ImageFile
+               38  POP_TOP          
+
+ L.  22        40  LOAD_CODE                <code_object _parse_codestream>
+               42  LOAD_STR                 '_parse_codestream'
+               44  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               46  STORE_NAME               _parse_codestream
+
+ L.  56        48  LOAD_CODE                <code_object _parse_jp2_header>
+               50  LOAD_STR                 '_parse_jp2_header'
+               52  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               54  STORE_NAME               _parse_jp2_header
+
+ L. 157        56  LOAD_BUILD_CLASS 
+               58  LOAD_CODE                <code_object Jpeg2KImageFile>
+               60  LOAD_STR                 'Jpeg2KImageFile'
+               62  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               64  LOAD_STR                 'Jpeg2KImageFile'
+               66  LOAD_NAME                ImageFile
+               68  LOAD_ATTR                ImageFile
+               70  CALL_FUNCTION_3       3  ''
+               72  STORE_NAME               Jpeg2KImageFile
+
+ L. 235        74  LOAD_CODE                <code_object _accept>
+               76  LOAD_STR                 '_accept'
+               78  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               80  STORE_NAME               _accept
+
+ L. 246        82  LOAD_CODE                <code_object _save>
+               84  LOAD_STR                 '_save'
+               86  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               88  STORE_NAME               _save
+
+ L. 307        90  LOAD_NAME                Image
+               92  LOAD_METHOD              register_open
+               94  LOAD_NAME                Jpeg2KImageFile
+               96  LOAD_ATTR                format
+               98  LOAD_NAME                Jpeg2KImageFile
+              100  LOAD_NAME                _accept
+              102  CALL_METHOD_3         3  ''
+              104  POP_TOP          
+
+ L. 308       106  LOAD_NAME                Image
+              108  LOAD_METHOD              register_save
+              110  LOAD_NAME                Jpeg2KImageFile
+              112  LOAD_ATTR                format
+              114  LOAD_NAME                _save
+              116  CALL_METHOD_2         2  ''
+              118  POP_TOP          
+
+ L. 310       120  LOAD_NAME                Image
+              122  LOAD_METHOD              register_extensions
+
+ L. 311       124  LOAD_NAME                Jpeg2KImageFile
+              126  LOAD_ATTR                format
+              128  BUILD_LIST_0          0 
+              130  LOAD_CONST               ('.jp2', '.j2k', '.jpc', '.jpf', '.jpx', '.j2c')
+              132  CALL_FINALLY        135  'to 135'
+
+ L. 310       134  CALL_METHOD_2         2  ''
+              136  POP_TOP          
+
+ L. 314       138  LOAD_NAME                Image
+              140  LOAD_METHOD              register_mime
+              142  LOAD_NAME                Jpeg2KImageFile
+              144  LOAD_ATTR                format
+              146  LOAD_STR                 'image/jp2'
+              148  CALL_METHOD_2         2  ''
+              150  POP_TOP          
+
+Parse error at or near `CALL_FINALLY' instruction at offset 132
+

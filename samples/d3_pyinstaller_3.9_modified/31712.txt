@@ -1,0 +1,170 @@
+Instruction context:
+   
+ L.  54       172  LOAD_NAME                typeDecoder
+                 174  LOAD_ATTR                protoComponent
+                 176  LOAD_CONST               None
+->               178  <117>                 1  ''
+                 180  POP_JUMP_IF_FALSE_BACK   168  'to 168'
+
+test/31712.pyc -- 
+# decompile failed
+
+# file test/31712.pyc
+# --- This code section failed: ---
+
+ L.   7         0  LOAD_CONST               0
+                2  LOAD_CONST               ('error',)
+                4  IMPORT_NAME              pyasn1
+                6  IMPORT_FROM              error
+                8  STORE_NAME               error
+               10  POP_TOP          
+
+ L.   8        12  LOAD_CONST               0
+               14  LOAD_CONST               ('decoder',)
+               16  IMPORT_NAME_ATTR         pyasn1.codec.ber
+               18  IMPORT_FROM              decoder
+               20  STORE_NAME               decoder
+               22  POP_TOP          
+
+ L.   9        24  LOAD_CONST               0
+               26  LOAD_CONST               ('oct2int',)
+               28  IMPORT_NAME_ATTR         pyasn1.compat.octets
+               30  IMPORT_FROM              oct2int
+               32  STORE_NAME               oct2int
+               34  POP_TOP          
+
+ L.  10        36  LOAD_CONST               0
+               38  LOAD_CONST               ('univ',)
+               40  IMPORT_NAME_ATTR         pyasn1.type
+               42  IMPORT_FROM              univ
+               44  STORE_NAME               univ
+               46  POP_TOP          
+
+ L.  12        48  LOAD_STR                 'decode'
+               50  BUILD_LIST_1          1 
+               52  STORE_NAME               __all__
+
+ L.  15        54  LOAD_BUILD_CLASS 
+               56  LOAD_CODE                <code_object BooleanDecoder>
+               58  LOAD_STR                 'BooleanDecoder'
+               60  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               62  LOAD_STR                 'BooleanDecoder'
+               64  LOAD_NAME                decoder
+               66  LOAD_ATTR                AbstractSimpleDecoder
+               68  CALL_FUNCTION_3       3  ''
+               70  STORE_NAME               BooleanDecoder
+
+ L.  38        72  LOAD_NAME                decoder
+               74  LOAD_ATTR                BitStringDecoder
+               76  STORE_NAME               BitStringDecoder
+
+ L.  39        78  LOAD_NAME                decoder
+               80  LOAD_ATTR                OctetStringDecoder
+               82  STORE_NAME               OctetStringDecoder
+
+ L.  40        84  LOAD_NAME                decoder
+               86  LOAD_ATTR                RealDecoder
+               88  STORE_NAME               RealDecoder
+
+ L.  42        90  LOAD_NAME                decoder
+               92  LOAD_ATTR                tagMap
+               94  LOAD_METHOD              copy
+               96  CALL_METHOD_0         0  ''
+               98  STORE_NAME               tagMap
+
+ L.  43       100  LOAD_NAME                tagMap
+              102  LOAD_METHOD              update
+
+ L.  44       104  LOAD_NAME                univ
+              106  LOAD_ATTR                Boolean
+              108  LOAD_ATTR                tagSet
+              110  LOAD_NAME                BooleanDecoder
+              112  CALL_FUNCTION_0       0  ''
+
+ L.  45       114  LOAD_NAME                univ
+              116  LOAD_ATTR                BitString
+              118  LOAD_ATTR                tagSet
+              120  LOAD_NAME                BitStringDecoder
+              122  CALL_FUNCTION_0       0  ''
+
+ L.  46       124  LOAD_NAME                univ
+              126  LOAD_ATTR                OctetString
+              128  LOAD_ATTR                tagSet
+              130  LOAD_NAME                OctetStringDecoder
+              132  CALL_FUNCTION_0       0  ''
+
+ L.  47       134  LOAD_NAME                univ
+              136  LOAD_ATTR                Real
+              138  LOAD_ATTR                tagSet
+              140  LOAD_NAME                RealDecoder
+              142  CALL_FUNCTION_0       0  ''
+
+ L.  44       144  BUILD_MAP_4           4 
+
+ L.  43       146  CALL_METHOD_1         1  ''
+              148  POP_TOP          
+
+ L.  50       150  LOAD_NAME                decoder
+              152  LOAD_ATTR                typeMap
+              154  LOAD_METHOD              copy
+              156  CALL_METHOD_0         0  ''
+              158  STORE_NAME               typeMap
+
+ L.  53       160  LOAD_NAME                tagMap
+              162  LOAD_METHOD              values
+              164  CALL_METHOD_0         0  ''
+              166  GET_ITER         
+            168_0  COME_FROM           216  '216'
+            168_1  COME_FROM           206  '206'
+            168_2  COME_FROM           198  '198'
+            168_3  COME_FROM           180  '180'
+              168  FOR_ITER            218  'to 218'
+              170  STORE_NAME               typeDecoder
+
+ L.  54       172  LOAD_NAME                typeDecoder
+              174  LOAD_ATTR                protoComponent
+              176  LOAD_CONST               None
+              178  <117>                 1  ''
+              180  POP_JUMP_IF_FALSE_BACK   168  'to 168'
+
+ L.  55       182  LOAD_NAME                typeDecoder
+              184  LOAD_ATTR                protoComponent
+              186  LOAD_ATTR                __class__
+              188  LOAD_ATTR                typeId
+              190  STORE_NAME               typeId
+
+ L.  56       192  LOAD_NAME                typeId
+              194  LOAD_CONST               None
+              196  <117>                 1  ''
+              198  POP_JUMP_IF_FALSE_BACK   168  'to 168'
+              200  LOAD_NAME                typeId
+              202  LOAD_NAME                typeMap
+              204  <118>                 1  ''
+              206  POP_JUMP_IF_FALSE_BACK   168  'to 168'
+
+ L.  57       208  LOAD_NAME                typeDecoder
+              210  LOAD_NAME                typeMap
+              212  LOAD_NAME                typeId
+              214  STORE_SUBSCR     
+              216  JUMP_BACK           168  'to 168'
+            218_0  COME_FROM           168  '168'
+
+ L.  60       218  LOAD_BUILD_CLASS 
+              220  LOAD_CODE                <code_object Decoder>
+              222  LOAD_STR                 'Decoder'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  LOAD_STR                 'Decoder'
+              228  LOAD_NAME                decoder
+              230  LOAD_ATTR                Decoder
+              232  CALL_FUNCTION_3       3  ''
+              234  STORE_NAME               Decoder
+
+ L. 114       236  LOAD_NAME                Decoder
+              238  LOAD_NAME                tagMap
+              240  LOAD_NAME                decoder
+              242  LOAD_ATTR                typeMap
+              244  CALL_FUNCTION_2       2  ''
+              246  STORE_NAME               decode
+
+Parse error at or near `<117>' instruction at offset 178
+

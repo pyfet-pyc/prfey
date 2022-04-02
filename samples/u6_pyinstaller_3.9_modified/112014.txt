@@ -1,0 +1,49 @@
+Instruction context:
+   
+ L.   5        26  DUP_TOP          
+                  28  LOAD_NAME                Exception
+->                30  <121>                46  ''
+                  32  POP_TOP          
+                  34  POP_TOP          
+                  36  POP_TOP          
+
+test/112014.pyc -- 
+# decompile failed
+
+# file test/112014.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              pkg_resources
+                6  STORE_NAME               pkg_resources
+
+ L.   3         8  SETUP_FINALLY        26  'to 26'
+
+ L.   4        10  LOAD_NAME                pkg_resources
+               12  LOAD_METHOD              get_distribution
+               14  LOAD_STR                 'setuptools'
+               16  CALL_METHOD_1         1  ''
+               18  LOAD_ATTR                version
+               20  STORE_NAME               __version__
+               22  POP_BLOCK        
+               24  JUMP_FORWARD         48  'to 48'
+             26_0  COME_FROM_FINALLY     8  '8'
+
+ L.   5        26  DUP_TOP          
+               28  LOAD_NAME                Exception
+               30  <121>                46  ''
+               32  POP_TOP          
+               34  POP_TOP          
+               36  POP_TOP          
+
+ L.   6        38  LOAD_STR                 'unknown'
+               40  STORE_NAME               __version__
+               42  POP_EXCEPT       
+               44  JUMP_FORWARD         48  'to 48'
+               46  <48>             
+             48_0  COME_FROM            44  '44'
+             48_1  COME_FROM            24  '24'
+
+Parse error at or near `<121>' instruction at offset 30
+

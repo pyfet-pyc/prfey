@@ -1,0 +1,30 @@
+Instruction context:
+   
+ L.  53       190  LOAD_GLOBAL              spawn
+                 192  LOAD_ATTR                spawn_main
+                 194  BUILD_TUPLE_0         0 
+                 196  BUILD_MAP_0           0 
+                 198  LOAD_FAST                'kwds'
+->               200  <164>                 1  ''
+                 202  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                 204  POP_TOP          
+Instruction context:
+   
+ L.  76        26  LOAD_GLOBAL              super
+                  28  LOAD_GLOBAL              _Popen
+                  30  LOAD_FAST                'self'
+                  32  CALL_FUNCTION_2       2  ''
+                  34  LOAD_ATTR                __init__
+                  36  LOAD_FAST                'args'
+                  38  BUILD_MAP_0           0 
+                  40  LOAD_FAST                'kw'
+->                42  <164>                 1  ''
+                  44  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  46  POP_TOP          
+                  48  POP_BLOCK        
+
+test/103379.pyc -- 
+# decompile failed
+
+# file test/103379.pyc
+# Deparsing stopped due to parse error

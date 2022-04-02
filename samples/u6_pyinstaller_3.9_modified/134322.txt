@@ -1,0 +1,100 @@
+Instruction context:
+   
+ L.  77        82  DUP_TOP          
+                  84  LOAD_GLOBAL              OverflowError
+->                86  <121>               106  ''
+                  88  POP_TOP          
+                  90  POP_TOP          
+                  92  POP_TOP          
+Instruction context:
+   
+ L.  83        24  LOAD_GLOBAL              pickle
+                  26  LOAD_METHOD              dump
+                  28  LOAD_FAST                'self'
+                  30  LOAD_ATTR                _cookies
+                  32  LOAD_FAST                'f'
+                  34  LOAD_GLOBAL              pickle
+                  36  LOAD_ATTR                HIGHEST_PROTOCOL
+                  38  CALL_METHOD_3         3  ''
+                  40  POP_TOP          
+                  42  POP_BLOCK        
+                  44  LOAD_CONST               None
+->                46  DUP_TOP          
+                  48  DUP_TOP          
+                  50  CALL_FUNCTION_3       3  ''
+                  52  POP_TOP          
+                  54  JUMP_FORWARD         72  'to 72'
+                56_0  COME_FROM_WITH       20  '20'
+                  56  <49>             
+                  58  POP_JUMP_IF_TRUE     62  'to 62'
+                  60  <48>             
+                62_0  COME_FROM            58  '58'
+                  62  POP_TOP          
+                  64  POP_TOP          
+                  66  POP_TOP          
+                  68  POP_EXCEPT       
+                  70  POP_TOP          
+Instruction context:
+   
+ L.  88        24  LOAD_GLOBAL              pickle
+                  26  LOAD_METHOD              load
+                  28  LOAD_FAST                'f'
+                  30  CALL_METHOD_1         1  ''
+                  32  LOAD_FAST                'self'
+                  34  STORE_ATTR               _cookies
+                  36  POP_BLOCK        
+                  38  LOAD_CONST               None
+->                40  DUP_TOP          
+                  42  DUP_TOP          
+                  44  CALL_FUNCTION_3       3  ''
+                  46  POP_TOP          
+                  48  JUMP_FORWARD         66  'to 66'
+                50_0  COME_FROM_WITH       20  '20'
+                  50  <49>             
+                  52  POP_JUMP_IF_TRUE     56  'to 56'
+                  54  <48>             
+                56_0  COME_FROM            52  '52'
+                  56  POP_TOP          
+                  58  POP_TOP          
+                  60  POP_TOP          
+                  62  POP_EXCEPT       
+                  64  POP_TOP          
+Instruction context:
+   
+ L. 128       198  DUP_TOP          
+                 200  LOAD_GLOBAL              OverflowError
+->               202  <121>               222  ''
+                 204  POP_TOP          
+                 206  POP_TOP          
+                 208  POP_TOP          
+Instruction context:
+   
+ L. 159       116  LOAD_FAST                'domain'
+                 118  POP_JUMP_IF_TRUE    156  'to 156'
+                 120  LOAD_FAST                'hostname'
+                 122  LOAD_CONST               None
+->               124  <117>                 1  ''
+                 126  POP_JUMP_IF_FALSE   156  'to 156'
+Instruction context:
+   
+ L. 222        44  LOAD_FAST                'request_url'
+                  46  LOAD_ATTR                scheme
+                  48  LOAD_CONST               ('https', 'wss')
+->                50  <118>                 1  ''
+                  52  STORE_FAST               'is_not_secure'
+Instruction context:
+   
+ L. 329       186  LOAD_FAST                'month_match'
+                 188  LOAD_ATTR                lastindex
+                 190  LOAD_CONST               None
+->               192  <117>                 1  ''
+                 194  POP_JUMP_IF_TRUE    200  'to 200'
+                 196  <74>             
+                 198  RAISE_VARARGS_1       1  'exception instance'
+               200_0  COME_FROM           194  '194'
+
+test/134322.pyc -- 
+# decompile failed
+
+# file test/134322.pyc
+# Deparsing stopped due to parse error

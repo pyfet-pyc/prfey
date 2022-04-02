@@ -1,0 +1,22 @@
+Instruction context:
+   
+ L.  20         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('dom', 'parsers', 'sax', 'etree')
+->                 8  CALL_FINALLY         11  'to 11'
+
+test/101358.pyc -- 
+# decompile failed
+
+# file test/101358.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Core XML support for Python.\n\nThis package contains four sub-packages:\n\ndom -- The W3C Document Object Model.  This supports DOM Level 1 +\n       Namespaces.\n\nparsers -- Python wrappers for XML parsers (currently only supports Expat).\n\nsax -- The Simple API for XML, developed by XML-Dev, led by David\n       Megginson and ported to Python by Lars Marius Garshol.  This\n       supports the SAX 2 API.\n\netree -- The ElementTree XML library.  This is a subset of the full\n       ElementTree XML release.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  20         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('dom', 'parsers', 'sax', 'etree')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

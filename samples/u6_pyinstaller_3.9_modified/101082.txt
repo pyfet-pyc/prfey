@@ -1,0 +1,170 @@
+Instruction context:
+   
+ L.  10        78  DUP_TOP          
+                  80  LOAD_NAME                ImportError
+->                82  <121>                98  ''
+                  84  POP_TOP          
+                  86  POP_TOP          
+                  88  POP_TOP          
+
+test/101082.pyc -- 
+# decompile failed
+
+# file test/101082.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'A multi-producer, multi-consumer queue.'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              threading
+               10  STORE_NAME               threading
+
+ L.   4        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              types
+               18  STORE_NAME               types
+
+ L.   5        20  LOAD_CONST               0
+               22  LOAD_CONST               ('deque',)
+               24  IMPORT_NAME              collections
+               26  IMPORT_FROM              deque
+               28  STORE_NAME               deque
+               30  POP_TOP          
+
+ L.   6        32  LOAD_CONST               0
+               34  LOAD_CONST               ('heappush', 'heappop')
+               36  IMPORT_NAME              heapq
+               38  IMPORT_FROM              heappush
+               40  STORE_NAME               heappush
+               42  IMPORT_FROM              heappop
+               44  STORE_NAME               heappop
+               46  POP_TOP          
+
+ L.   7        48  LOAD_CONST               0
+               50  LOAD_CONST               ('monotonic',)
+               52  IMPORT_NAME              time
+               54  IMPORT_FROM              monotonic
+               56  STORE_NAME               time
+               58  POP_TOP          
+
+ L.   8        60  SETUP_FINALLY        78  'to 78'
+
+ L.   9        62  LOAD_CONST               0
+               64  LOAD_CONST               ('SimpleQueue',)
+               66  IMPORT_NAME              _queue
+               68  IMPORT_FROM              SimpleQueue
+               70  STORE_NAME               SimpleQueue
+               72  POP_TOP          
+               74  POP_BLOCK        
+               76  JUMP_FORWARD        100  'to 100'
+             78_0  COME_FROM_FINALLY    60  '60'
+
+ L.  10        78  DUP_TOP          
+               80  LOAD_NAME                ImportError
+               82  <121>                98  ''
+               84  POP_TOP          
+               86  POP_TOP          
+               88  POP_TOP          
+
+ L.  11        90  LOAD_CONST               None
+               92  STORE_NAME               SimpleQueue
+               94  POP_EXCEPT       
+               96  JUMP_FORWARD        100  'to 100'
+               98  <48>             
+            100_0  COME_FROM            96  '96'
+            100_1  COME_FROM            76  '76'
+
+ L.  13       100  BUILD_LIST_0          0 
+              102  LOAD_CONST               ('Empty', 'Full', 'Queue', 'PriorityQueue', 'LifoQueue', 'SimpleQueue')
+              104  CALL_FINALLY        107  'to 107'
+              106  STORE_NAME               __all__
+
+ L.  16       108  SETUP_FINALLY       126  'to 126'
+
+ L.  17       110  LOAD_CONST               0
+              112  LOAD_CONST               ('Empty',)
+              114  IMPORT_NAME              _queue
+              116  IMPORT_FROM              Empty
+              118  STORE_NAME               Empty
+              120  POP_TOP          
+              122  POP_BLOCK        
+              124  JUMP_FORWARD        160  'to 160'
+            126_0  COME_FROM_FINALLY   108  '108'
+
+ L.  18       126  DUP_TOP          
+              128  LOAD_NAME                ImportError
+              130  <121>               158  ''
+              132  POP_TOP          
+              134  POP_TOP          
+              136  POP_TOP          
+
+ L.  19       138  LOAD_BUILD_CLASS 
+              140  LOAD_CODE                <code_object Empty>
+              142  LOAD_STR                 'Empty'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  LOAD_STR                 'Empty'
+              148  LOAD_NAME                Exception
+              150  CALL_FUNCTION_3       3  ''
+              152  STORE_NAME               Empty
+              154  POP_EXCEPT       
+              156  JUMP_FORWARD        160  'to 160'
+              158  <48>             
+            160_0  COME_FROM           156  '156'
+            160_1  COME_FROM           124  '124'
+
+ L.  23       160  LOAD_BUILD_CLASS 
+              162  LOAD_CODE                <code_object Full>
+              164  LOAD_STR                 'Full'
+              166  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              168  LOAD_STR                 'Full'
+              170  LOAD_NAME                Exception
+              172  CALL_FUNCTION_3       3  ''
+              174  STORE_NAME               Full
+
+ L.  28       176  LOAD_BUILD_CLASS 
+              178  LOAD_CODE                <code_object Queue>
+              180  LOAD_STR                 'Queue'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  LOAD_STR                 'Queue'
+              186  CALL_FUNCTION_2       2  ''
+              188  STORE_NAME               Queue
+
+ L. 223       190  LOAD_BUILD_CLASS 
+              192  LOAD_CODE                <code_object PriorityQueue>
+              194  LOAD_STR                 'PriorityQueue'
+              196  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              198  LOAD_STR                 'PriorityQueue'
+              200  LOAD_NAME                Queue
+              202  CALL_FUNCTION_3       3  ''
+              204  STORE_NAME               PriorityQueue
+
+ L. 242       206  LOAD_BUILD_CLASS 
+              208  LOAD_CODE                <code_object LifoQueue>
+              210  LOAD_STR                 'LifoQueue'
+              212  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              214  LOAD_STR                 'LifoQueue'
+              216  LOAD_NAME                Queue
+              218  CALL_FUNCTION_3       3  ''
+              220  STORE_NAME               LifoQueue
+
+ L. 258       222  LOAD_BUILD_CLASS 
+              224  LOAD_CODE                <code_object _PySimpleQueue>
+              226  LOAD_STR                 '_PySimpleQueue'
+              228  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              230  LOAD_STR                 '_PySimpleQueue'
+              232  CALL_FUNCTION_2       2  ''
+              234  STORE_NAME               _PySimpleQueue
+
+ L. 325       236  LOAD_NAME                SimpleQueue
+              238  LOAD_CONST               None
+              240  <117>                 0  ''
+              242  POP_JUMP_IF_FALSE   248  'to 248'
+
+ L. 326       244  LOAD_NAME                _PySimpleQueue
+              246  STORE_NAME               SimpleQueue
+            248_0  COME_FROM           242  '242'
+
+Parse error at or near `<121>' instruction at offset 82
+

@@ -1,0 +1,59 @@
+Instruction context:
+   
+ L.  20        12  LOAD_GLOBAL              len
+                  14  LOAD_FAST                'key'
+                  16  CALL_FUNCTION_1       1  ''
+                  18  LOAD_CONST               8
+                  20  BINARY_MULTIPLY  
+                  22  LOAD_FAST                'algorithm'
+                  24  LOAD_ATTR                key_sizes
+->                26  <118>                 1  ''
+                  28  POP_JUMP_IF_FALSE    56  'to 56'
+Instruction context:
+   
+ L.  35        16  LOAD_NAME                frozenset
+                  18  BUILD_LIST_0          0 
+                  20  LOAD_CONST               (128, 192, 256, 512)
+->                22  CALL_FINALLY         25  'to 25'
+                  24  CALL_FUNCTION_1       1  ''
+                  26  STORE_NAME               key_sizes
+
+test/103875.pyc -- 
+# decompile failed
+
+# file test/103875.pyc
+# --- This code section failed: ---
+
+ L.  29         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'AES'
+                6  STORE_NAME               __qualname__
+
+ L.  32         8  LOAD_STR                 'AES'
+               10  STORE_NAME               name
+
+ L.  33        12  LOAD_CONST               128
+               14  STORE_NAME               block_size
+
+ L.  35        16  LOAD_NAME                frozenset
+               18  BUILD_LIST_0          0 
+               20  LOAD_CONST               (128, 192, 256, 512)
+               22  CALL_FINALLY         25  'to 25'
+               24  CALL_FUNCTION_1       1  ''
+               26  STORE_NAME               key_sizes
+
+ L.  37        28  LOAD_CODE                <code_object __init__>
+               30  LOAD_STR                 'AES.__init__'
+               32  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               34  STORE_NAME               __init__
+
+ L.  40        36  LOAD_NAME                property
+
+ L.  41        38  LOAD_CODE                <code_object key_size>
+               40  LOAD_STR                 'AES.key_size'
+               42  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               44  CALL_FUNCTION_1       1  ''
+               46  STORE_NAME               key_size
+
+Parse error at or near `CALL_FINALLY' instruction at offset 22
+

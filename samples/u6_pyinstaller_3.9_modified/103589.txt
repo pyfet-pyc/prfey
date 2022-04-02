@@ -1,0 +1,648 @@
+
+# file test/103589.pyc
+# --- This code section failed: ---
+
+ L.  11         0  BUILD_LIST_0          0 
+                2  LOAD_CONST               ('BaseManager', 'SyncManager', 'BaseProxy', 'Token', 'SharedMemoryManager')
+                4  CALL_FINALLY          7  'to 7'
+                6  STORE_NAME               __all__
+
+ L.  18         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              sys
+               14  STORE_NAME               sys
+
+ L.  19        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              threading
+               22  STORE_NAME               threading
+
+ L.  20        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              signal
+               30  STORE_NAME               signal
+
+ L.  21        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              array
+               38  STORE_NAME               array
+
+ L.  22        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              queue
+               46  STORE_NAME               queue
+
+ L.  23        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              time
+               54  STORE_NAME               time
+
+ L.  24        56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              types
+               62  STORE_NAME               types
+
+ L.  25        64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              os
+               70  STORE_NAME               os
+
+ L.  26        72  LOAD_CONST               0
+               74  LOAD_CONST               ('getpid',)
+               76  IMPORT_NAME              os
+               78  IMPORT_FROM              getpid
+               80  STORE_NAME               getpid
+               82  POP_TOP          
+
+ L.  28        84  LOAD_CONST               0
+               86  LOAD_CONST               ('format_exc',)
+               88  IMPORT_NAME              traceback
+               90  IMPORT_FROM              format_exc
+               92  STORE_NAME               format_exc
+               94  POP_TOP          
+
+ L.  30        96  LOAD_CONST               1
+               98  LOAD_CONST               ('connection',)
+              100  IMPORT_NAME              
+              102  IMPORT_FROM              connection
+              104  STORE_NAME               connection
+              106  POP_TOP          
+
+ L.  31       108  LOAD_CONST               1
+              110  LOAD_CONST               ('reduction', 'get_spawning_popen', 'ProcessError')
+              112  IMPORT_NAME              context
+              114  IMPORT_FROM              reduction
+              116  STORE_NAME               reduction
+              118  IMPORT_FROM              get_spawning_popen
+              120  STORE_NAME               get_spawning_popen
+              122  IMPORT_FROM              ProcessError
+              124  STORE_NAME               ProcessError
+              126  POP_TOP          
+
+ L.  32       128  LOAD_CONST               1
+              130  LOAD_CONST               ('pool',)
+              132  IMPORT_NAME              
+              134  IMPORT_FROM              pool
+              136  STORE_NAME               pool
+              138  POP_TOP          
+
+ L.  33       140  LOAD_CONST               1
+              142  LOAD_CONST               ('process',)
+              144  IMPORT_NAME              
+              146  IMPORT_FROM              process
+              148  STORE_NAME               process
+              150  POP_TOP          
+
+ L.  34       152  LOAD_CONST               1
+              154  LOAD_CONST               ('util',)
+              156  IMPORT_NAME              
+              158  IMPORT_FROM              util
+              160  STORE_NAME               util
+              162  POP_TOP          
+
+ L.  35       164  LOAD_CONST               1
+              166  LOAD_CONST               ('get_context',)
+              168  IMPORT_NAME              
+              170  IMPORT_FROM              get_context
+              172  STORE_NAME               get_context
+              174  POP_TOP          
+
+ L.  36       176  SETUP_FINALLY       198  'to 198'
+
+ L.  37       178  LOAD_CONST               1
+              180  LOAD_CONST               ('shared_memory',)
+              182  IMPORT_NAME              
+              184  IMPORT_FROM              shared_memory
+              186  STORE_NAME               shared_memory
+              188  POP_TOP          
+
+ L.  38       190  LOAD_CONST               True
+              192  STORE_NAME               HAS_SHMEM
+              194  POP_BLOCK        
+              196  JUMP_FORWARD        220  'to 220'
+            198_0  COME_FROM_FINALLY   176  '176'
+
+ L.  39       198  DUP_TOP          
+              200  LOAD_NAME                ImportError
+              202  <121>               218  ''
+              204  POP_TOP          
+              206  POP_TOP          
+              208  POP_TOP          
+
+ L.  40       210  LOAD_CONST               False
+              212  STORE_NAME               HAS_SHMEM
+              214  POP_EXCEPT       
+              216  JUMP_FORWARD        220  'to 220'
+              218  <48>             
+            220_0  COME_FROM           216  '216'
+            220_1  COME_FROM           196  '196'
+
+ L.  46       220  LOAD_CODE                <code_object reduce_array>
+              222  LOAD_STR                 'reduce_array'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  STORE_NAME               reduce_array
+
+ L.  48       228  LOAD_NAME                reduction
+              230  LOAD_METHOD              register
+              232  LOAD_NAME                array
+              234  LOAD_ATTR                array
+              236  LOAD_NAME                reduce_array
+              238  CALL_METHOD_2         2  ''
+              240  POP_TOP          
+
+ L.  50       242  LOAD_LISTCOMP            '<code_object <listcomp>>'
+              244  LOAD_STR                 '<listcomp>'
+              246  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              248  LOAD_CONST               ('items', 'keys', 'values')
+              250  GET_ITER         
+              252  CALL_FUNCTION_1       1  ''
+              254  STORE_NAME               view_types
+
+ L.  51       256  LOAD_NAME                view_types
+              258  LOAD_CONST               0
+              260  BINARY_SUBSCR    
+              262  LOAD_NAME                list
+              264  <117>                 1  ''
+          266_268  POP_JUMP_IF_FALSE   302  'to 302'
+
+ L.  52       270  LOAD_CODE                <code_object rebuild_as_list>
+              272  LOAD_STR                 'rebuild_as_list'
+              274  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              276  STORE_NAME               rebuild_as_list
+
+ L.  54       278  LOAD_NAME                view_types
+              280  GET_ITER         
+              282  FOR_ITER            302  'to 302'
+              284  STORE_NAME               view_type
+
+ L.  55       286  LOAD_NAME                reduction
+              288  LOAD_METHOD              register
+              290  LOAD_NAME                view_type
+              292  LOAD_NAME                rebuild_as_list
+              294  CALL_METHOD_2         2  ''
+              296  POP_TOP          
+          298_300  JUMP_BACK           282  'to 282'
+            302_0  COME_FROM           266  '266'
+
+ L.  61       302  LOAD_BUILD_CLASS 
+              304  LOAD_CODE                <code_object Token>
+              306  LOAD_STR                 'Token'
+              308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              310  LOAD_STR                 'Token'
+              312  LOAD_NAME                object
+              314  CALL_FUNCTION_3       3  ''
+              316  STORE_NAME               Token
+
+ L.  84       318  LOAD_CONST               ()
+              320  BUILD_MAP_0           0 
+              322  BUILD_TUPLE_2         2 
+              324  LOAD_CODE                <code_object dispatch>
+              326  LOAD_STR                 'dispatch'
+              328  MAKE_FUNCTION_1          'default'
+              330  STORE_NAME               dispatch
+
+ L.  94       332  LOAD_CODE                <code_object convert_to_error>
+              334  LOAD_STR                 'convert_to_error'
+              336  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              338  STORE_NAME               convert_to_error
+
+ L. 109       340  LOAD_BUILD_CLASS 
+              342  LOAD_CODE                <code_object RemoteError>
+              344  LOAD_STR                 'RemoteError'
+              346  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              348  LOAD_STR                 'RemoteError'
+              350  LOAD_NAME                Exception
+              352  CALL_FUNCTION_3       3  ''
+              354  STORE_NAME               RemoteError
+
+ L. 117       356  LOAD_CODE                <code_object all_methods>
+              358  LOAD_STR                 'all_methods'
+              360  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              362  STORE_NAME               all_methods
+
+ L. 128       364  LOAD_CODE                <code_object public_methods>
+              366  LOAD_STR                 'public_methods'
+              368  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              370  STORE_NAME               public_methods
+
+ L. 138       372  LOAD_BUILD_CLASS 
+              374  LOAD_CODE                <code_object Server>
+              376  LOAD_STR                 'Server'
+              378  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              380  LOAD_STR                 'Server'
+              382  LOAD_NAME                object
+              384  CALL_FUNCTION_3       3  ''
+              386  STORE_NAME               Server
+
+ L. 464       388  LOAD_BUILD_CLASS 
+              390  LOAD_CODE                <code_object State>
+              392  LOAD_STR                 'State'
+              394  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              396  LOAD_STR                 'State'
+              398  LOAD_NAME                object
+              400  CALL_FUNCTION_3       3  ''
+              402  STORE_NAME               State
+
+ L. 475       404  LOAD_NAME                connection
+              406  LOAD_ATTR                Listener
+              408  LOAD_NAME                connection
+              410  LOAD_ATTR                Client
+              412  BUILD_TUPLE_2         2 
+
+ L. 476       414  LOAD_NAME                connection
+              416  LOAD_ATTR                XmlListener
+              418  LOAD_NAME                connection
+              420  LOAD_ATTR                XmlClient
+              422  BUILD_TUPLE_2         2 
+
+ L. 474       424  LOAD_CONST               ('pickle', 'xmlrpclib')
+              426  BUILD_CONST_KEY_MAP_2     2 
+              428  STORE_NAME               listener_client
+
+ L. 483       430  LOAD_BUILD_CLASS 
+              432  LOAD_CODE                <code_object BaseManager>
+              434  LOAD_STR                 'BaseManager'
+              436  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              438  LOAD_STR                 'BaseManager'
+              440  LOAD_NAME                object
+              442  CALL_FUNCTION_3       3  ''
+              444  STORE_NAME               BaseManager
+
+ L. 729       446  LOAD_BUILD_CLASS 
+              448  LOAD_CODE                <code_object ProcessLocalSet>
+              450  LOAD_STR                 'ProcessLocalSet'
+              452  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              454  LOAD_STR                 'ProcessLocalSet'
+              456  LOAD_NAME                set
+              458  CALL_FUNCTION_3       3  ''
+              460  STORE_NAME               ProcessLocalSet
+
+ L. 739       462  LOAD_BUILD_CLASS 
+              464  LOAD_CODE                <code_object BaseProxy>
+              466  LOAD_STR                 'BaseProxy'
+              468  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              470  LOAD_STR                 'BaseProxy'
+              472  LOAD_NAME                object
+              474  CALL_FUNCTION_3       3  ''
+              476  STORE_NAME               BaseProxy
+
+ L. 918       478  LOAD_CODE                <code_object RebuildProxy>
+              480  LOAD_STR                 'RebuildProxy'
+              482  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              484  STORE_NAME               RebuildProxy
+
+ L. 939       486  BUILD_MAP_0           0 
+              488  BUILD_TUPLE_1         1 
+              490  LOAD_CODE                <code_object MakeProxyType>
+              492  LOAD_STR                 'MakeProxyType'
+              494  MAKE_FUNCTION_1          'default'
+              496  STORE_NAME               MakeProxyType
+
+ L. 961       498  LOAD_CONST               (None, None, None, True)
+              500  LOAD_CODE                <code_object AutoProxy>
+              502  LOAD_STR                 'AutoProxy'
+              504  MAKE_FUNCTION_1          'default'
+              506  STORE_NAME               AutoProxy
+
+ L. 990       508  LOAD_BUILD_CLASS 
+              510  LOAD_CODE                <code_object Namespace>
+              512  LOAD_STR                 'Namespace'
+              514  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              516  LOAD_STR                 'Namespace'
+              518  LOAD_NAME                object
+              520  CALL_FUNCTION_3       3  ''
+              522  STORE_NAME               Namespace
+
+ L.1002       524  LOAD_BUILD_CLASS 
+              526  LOAD_CODE                <code_object Value>
+              528  LOAD_STR                 'Value'
+              530  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              532  LOAD_STR                 'Value'
+              534  LOAD_NAME                object
+              536  CALL_FUNCTION_3       3  ''
+              538  STORE_NAME               Value
+
+ L.1014       540  LOAD_CONST               (True,)
+              542  LOAD_CODE                <code_object Array>
+              544  LOAD_STR                 'Array'
+              546  MAKE_FUNCTION_1          'default'
+              548  STORE_NAME               Array
+
+ L.1021       550  LOAD_BUILD_CLASS 
+              552  LOAD_CODE                <code_object IteratorProxy>
+              554  LOAD_STR                 'IteratorProxy'
+              556  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              558  LOAD_STR                 'IteratorProxy'
+              560  LOAD_NAME                BaseProxy
+              562  CALL_FUNCTION_3       3  ''
+              564  STORE_NAME               IteratorProxy
+
+ L.1035       566  LOAD_BUILD_CLASS 
+              568  LOAD_CODE                <code_object AcquirerProxy>
+              570  LOAD_STR                 'AcquirerProxy'
+              572  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              574  LOAD_STR                 'AcquirerProxy'
+              576  LOAD_NAME                BaseProxy
+              578  CALL_FUNCTION_3       3  ''
+              580  STORE_NAME               AcquirerProxy
+
+ L.1048       582  LOAD_BUILD_CLASS 
+              584  LOAD_CODE                <code_object ConditionProxy>
+              586  LOAD_STR                 'ConditionProxy'
+              588  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              590  LOAD_STR                 'ConditionProxy'
+              592  LOAD_NAME                AcquirerProxy
+              594  CALL_FUNCTION_3       3  ''
+              596  STORE_NAME               ConditionProxy
+
+ L.1075       598  LOAD_BUILD_CLASS 
+              600  LOAD_CODE                <code_object EventProxy>
+              602  LOAD_STR                 'EventProxy'
+              604  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              606  LOAD_STR                 'EventProxy'
+              608  LOAD_NAME                BaseProxy
+              610  CALL_FUNCTION_3       3  ''
+              612  STORE_NAME               EventProxy
+
+ L.1087       614  LOAD_BUILD_CLASS 
+              616  LOAD_CODE                <code_object BarrierProxy>
+              618  LOAD_STR                 'BarrierProxy'
+              620  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              622  LOAD_STR                 'BarrierProxy'
+              624  LOAD_NAME                BaseProxy
+              626  CALL_FUNCTION_3       3  ''
+              628  STORE_NAME               BarrierProxy
+
+ L.1106       630  LOAD_BUILD_CLASS 
+              632  LOAD_CODE                <code_object NamespaceProxy>
+              634  LOAD_STR                 'NamespaceProxy'
+              636  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              638  LOAD_STR                 'NamespaceProxy'
+              640  LOAD_NAME                BaseProxy
+              642  CALL_FUNCTION_3       3  ''
+              644  STORE_NAME               NamespaceProxy
+
+ L.1125       646  LOAD_BUILD_CLASS 
+              648  LOAD_CODE                <code_object ValueProxy>
+              650  LOAD_STR                 'ValueProxy'
+              652  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              654  LOAD_STR                 'ValueProxy'
+              656  LOAD_NAME                BaseProxy
+              658  CALL_FUNCTION_3       3  ''
+              660  STORE_NAME               ValueProxy
+
+ L.1136       662  LOAD_NAME                MakeProxyType
+              664  LOAD_STR                 'BaseListProxy'
+              666  LOAD_CONST               ('__add__', '__contains__', '__delitem__', '__getitem__', '__len__', '__mul__', '__reversed__', '__rmul__', '__setitem__', 'append', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort', '__imul__')
+              668  CALL_FUNCTION_2       2  ''
+              670  STORE_NAME               BaseListProxy
+
+ L.1142       672  LOAD_BUILD_CLASS 
+              674  LOAD_CODE                <code_object ListProxy>
+              676  LOAD_STR                 'ListProxy'
+              678  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              680  LOAD_STR                 'ListProxy'
+              682  LOAD_NAME                BaseListProxy
+              684  CALL_FUNCTION_3       3  ''
+              686  STORE_NAME               ListProxy
+
+ L.1151       688  LOAD_NAME                MakeProxyType
+              690  LOAD_STR                 'DictProxy'
+              692  LOAD_CONST               ('__contains__', '__delitem__', '__getitem__', '__iter__', '__len__', '__setitem__', 'clear', 'copy', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values')
+              694  CALL_FUNCTION_2       2  ''
+              696  STORE_NAME               DictProxy
+
+ L.1157       698  LOAD_STR                 '__iter__'
+              700  LOAD_STR                 'Iterator'
+
+ L.1156       702  BUILD_MAP_1           1 
+              704  LOAD_NAME                DictProxy
+              706  STORE_ATTR               _method_to_typeid_
+
+ L.1161       708  LOAD_NAME                MakeProxyType
+              710  LOAD_STR                 'ArrayProxy'
+              712  LOAD_CONST               ('__len__', '__getitem__', '__setitem__')
+              714  CALL_FUNCTION_2       2  ''
+              716  STORE_NAME               ArrayProxy
+
+ L.1166       718  LOAD_NAME                MakeProxyType
+              720  LOAD_STR                 'PoolProxy'
+              722  LOAD_CONST               ('apply', 'apply_async', 'close', 'imap', 'imap_unordered', 'join', 'map', 'map_async', 'starmap', 'starmap_async', 'terminate')
+              724  CALL_FUNCTION_2       2  ''
+              726  STORE_NAME               BasePoolProxy
+
+ L.1171       728  LOAD_STR                 'AsyncResult'
+
+ L.1172       730  LOAD_STR                 'AsyncResult'
+
+ L.1173       732  LOAD_STR                 'AsyncResult'
+
+ L.1174       734  LOAD_STR                 'Iterator'
+
+ L.1175       736  LOAD_STR                 'Iterator'
+
+ L.1170       738  LOAD_CONST               ('apply_async', 'map_async', 'starmap_async', 'imap', 'imap_unordered')
+              740  BUILD_CONST_KEY_MAP_5     5 
+              742  LOAD_NAME                BasePoolProxy
+              744  STORE_ATTR               _method_to_typeid_
+
+ L.1177       746  LOAD_BUILD_CLASS 
+              748  LOAD_CODE                <code_object PoolProxy>
+              750  LOAD_STR                 'PoolProxy'
+              752  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              754  LOAD_STR                 'PoolProxy'
+              756  LOAD_NAME                BasePoolProxy
+              758  CALL_FUNCTION_3       3  ''
+              760  STORE_NAME               PoolProxy
+
+ L.1187       762  LOAD_BUILD_CLASS 
+              764  LOAD_CODE                <code_object SyncManager>
+              766  LOAD_STR                 'SyncManager'
+              768  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              770  LOAD_STR                 'SyncManager'
+              772  LOAD_NAME                BaseManager
+              774  CALL_FUNCTION_3       3  ''
+              776  STORE_NAME               SyncManager
+
+ L.1198       778  LOAD_NAME                SyncManager
+              780  LOAD_METHOD              register
+              782  LOAD_STR                 'Queue'
+              784  LOAD_NAME                queue
+              786  LOAD_ATTR                Queue
+              788  CALL_METHOD_2         2  ''
+              790  POP_TOP          
+
+ L.1199       792  LOAD_NAME                SyncManager
+              794  LOAD_METHOD              register
+              796  LOAD_STR                 'JoinableQueue'
+              798  LOAD_NAME                queue
+              800  LOAD_ATTR                Queue
+              802  CALL_METHOD_2         2  ''
+              804  POP_TOP          
+
+ L.1200       806  LOAD_NAME                SyncManager
+              808  LOAD_METHOD              register
+              810  LOAD_STR                 'Event'
+              812  LOAD_NAME                threading
+              814  LOAD_ATTR                Event
+              816  LOAD_NAME                EventProxy
+              818  CALL_METHOD_3         3  ''
+              820  POP_TOP          
+
+ L.1201       822  LOAD_NAME                SyncManager
+              824  LOAD_METHOD              register
+              826  LOAD_STR                 'Lock'
+              828  LOAD_NAME                threading
+              830  LOAD_ATTR                Lock
+              832  LOAD_NAME                AcquirerProxy
+              834  CALL_METHOD_3         3  ''
+              836  POP_TOP          
+
+ L.1202       838  LOAD_NAME                SyncManager
+              840  LOAD_METHOD              register
+              842  LOAD_STR                 'RLock'
+              844  LOAD_NAME                threading
+              846  LOAD_ATTR                RLock
+              848  LOAD_NAME                AcquirerProxy
+              850  CALL_METHOD_3         3  ''
+              852  POP_TOP          
+
+ L.1203       854  LOAD_NAME                SyncManager
+              856  LOAD_METHOD              register
+              858  LOAD_STR                 'Semaphore'
+              860  LOAD_NAME                threading
+              862  LOAD_ATTR                Semaphore
+              864  LOAD_NAME                AcquirerProxy
+              866  CALL_METHOD_3         3  ''
+              868  POP_TOP          
+
+ L.1204       870  LOAD_NAME                SyncManager
+              872  LOAD_METHOD              register
+              874  LOAD_STR                 'BoundedSemaphore'
+              876  LOAD_NAME                threading
+              878  LOAD_ATTR                BoundedSemaphore
+
+ L.1205       880  LOAD_NAME                AcquirerProxy
+
+ L.1204       882  CALL_METHOD_3         3  ''
+              884  POP_TOP          
+
+ L.1206       886  LOAD_NAME                SyncManager
+              888  LOAD_METHOD              register
+              890  LOAD_STR                 'Condition'
+              892  LOAD_NAME                threading
+              894  LOAD_ATTR                Condition
+              896  LOAD_NAME                ConditionProxy
+              898  CALL_METHOD_3         3  ''
+              900  POP_TOP          
+
+ L.1207       902  LOAD_NAME                SyncManager
+              904  LOAD_METHOD              register
+              906  LOAD_STR                 'Barrier'
+              908  LOAD_NAME                threading
+              910  LOAD_ATTR                Barrier
+              912  LOAD_NAME                BarrierProxy
+              914  CALL_METHOD_3         3  ''
+              916  POP_TOP          
+
+ L.1208       918  LOAD_NAME                SyncManager
+              920  LOAD_METHOD              register
+              922  LOAD_STR                 'Pool'
+              924  LOAD_NAME                pool
+              926  LOAD_ATTR                Pool
+              928  LOAD_NAME                PoolProxy
+              930  CALL_METHOD_3         3  ''
+              932  POP_TOP          
+
+ L.1209       934  LOAD_NAME                SyncManager
+              936  LOAD_METHOD              register
+              938  LOAD_STR                 'list'
+              940  LOAD_NAME                list
+              942  LOAD_NAME                ListProxy
+              944  CALL_METHOD_3         3  ''
+              946  POP_TOP          
+
+ L.1210       948  LOAD_NAME                SyncManager
+              950  LOAD_METHOD              register
+              952  LOAD_STR                 'dict'
+              954  LOAD_NAME                dict
+              956  LOAD_NAME                DictProxy
+              958  CALL_METHOD_3         3  ''
+              960  POP_TOP          
+
+ L.1211       962  LOAD_NAME                SyncManager
+              964  LOAD_METHOD              register
+              966  LOAD_STR                 'Value'
+              968  LOAD_NAME                Value
+              970  LOAD_NAME                ValueProxy
+              972  CALL_METHOD_3         3  ''
+              974  POP_TOP          
+
+ L.1212       976  LOAD_NAME                SyncManager
+              978  LOAD_METHOD              register
+              980  LOAD_STR                 'Array'
+              982  LOAD_NAME                Array
+              984  LOAD_NAME                ArrayProxy
+              986  CALL_METHOD_3         3  ''
+              988  POP_TOP          
+
+ L.1213       990  LOAD_NAME                SyncManager
+              992  LOAD_METHOD              register
+              994  LOAD_STR                 'Namespace'
+              996  LOAD_NAME                Namespace
+              998  LOAD_NAME                NamespaceProxy
+             1000  CALL_METHOD_3         3  ''
+             1002  POP_TOP          
+
+ L.1216      1004  LOAD_NAME                SyncManager
+             1006  LOAD_ATTR                register
+             1008  LOAD_STR                 'Iterator'
+             1010  LOAD_NAME                IteratorProxy
+             1012  LOAD_CONST               False
+             1014  LOAD_CONST               ('proxytype', 'create_method')
+             1016  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+             1018  POP_TOP          
+
+ L.1217      1020  LOAD_NAME                SyncManager
+             1022  LOAD_ATTR                register
+             1024  LOAD_STR                 'AsyncResult'
+             1026  LOAD_CONST               False
+             1028  LOAD_CONST               ('create_method',)
+             1030  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+             1032  POP_TOP          
+
+ L.1223      1034  LOAD_NAME                HAS_SHMEM
+         1036_1038  POP_JUMP_IF_FALSE  1086  'to 1086'
+
+ L.1224      1040  LOAD_BUILD_CLASS 
+             1042  LOAD_CODE                <code_object _SharedMemoryTracker>
+             1044  LOAD_STR                 '_SharedMemoryTracker'
+             1046  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1048  LOAD_STR                 '_SharedMemoryTracker'
+             1050  CALL_FUNCTION_2       2  ''
+             1052  STORE_NAME               _SharedMemoryTracker
+
+ L.1261      1054  LOAD_BUILD_CLASS 
+             1056  LOAD_CODE                <code_object SharedMemoryServer>
+             1058  LOAD_STR                 'SharedMemoryServer'
+             1060  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1062  LOAD_STR                 'SharedMemoryServer'
+             1064  LOAD_NAME                Server
+             1066  CALL_FUNCTION_3       3  ''
+             1068  STORE_NAME               SharedMemoryServer
+
+ L.1306      1070  LOAD_BUILD_CLASS 
+             1072  LOAD_CODE                <code_object SharedMemoryManager>
+             1074  LOAD_STR                 'SharedMemoryManager'
+             1076  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1078  LOAD_STR                 'SharedMemoryManager'
+             1080  LOAD_NAME                BaseManager
+             1082  CALL_FUNCTION_3       3  ''
+             1084  STORE_NAME               SharedMemoryManager
+           1086_0  COME_FROM          1036  '1036'
+
+Parse error at or near `None' instruction at offset -1
+
+
+test/103589.pyc -- 
+# decompile failed

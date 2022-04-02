@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L.  78        66  POP_EXCEPT       
+                  68  BREAK_LOOP           78  'to 78'
+                  70  POP_EXCEPT       
+                  72  JUMP_BACK             4  'to 4'
+                74_0  COME_FROM            58  '58'
+                  74  END_FINALLY      
+                  76  JUMP_BACK             4  'to 4'
+                78_0  COME_FROM_EXCEPT_CLAUSE    68  '68'
+->              78_1  COME_FROM_EXCEPT_CLAUSE     8  '8'
+Instruction context:
+   
+ L. 123        66  POP_EXCEPT       
+                  68  BREAK_LOOP           78  'to 78'
+                  70  POP_EXCEPT       
+                  72  JUMP_BACK             4  'to 4'
+                74_0  COME_FROM            58  '58'
+                  74  END_FINALLY      
+                  76  JUMP_BACK             4  'to 4'
+                78_0  COME_FROM_EXCEPT_CLAUSE    68  '68'
+->              78_1  COME_FROM_EXCEPT_CLAUSE     8  '8'
+
+../test/118004.pyc -- 
+# decompile failed
+
+# file ../test/118004.pyc
+# Deparsing stopped due to parse error

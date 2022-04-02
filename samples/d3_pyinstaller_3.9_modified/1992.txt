@@ -1,0 +1,199 @@
+
+# file test/1992.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nFunctions for changing global ufunc configuration\n\nThis provides helpers which wrap `umath.geterrobj` and `umath.seterrobj`\n'
+                2  STORE_NAME               __doc__
+
+ L.   6         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME_ATTR         collections.abc
+               10  STORE_NAME               collections
+
+ L.   7        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              contextlib
+               18  STORE_NAME               contextlib
+
+ L.   9        20  LOAD_CONST               1
+               22  LOAD_CONST               ('set_module',)
+               24  IMPORT_NAME              overrides
+               26  IMPORT_FROM              set_module
+               28  STORE_NAME               set_module
+               30  POP_TOP          
+
+ L.  10        32  LOAD_CONST               1
+               34  LOAD_CONST               ('UFUNC_BUFSIZE_DEFAULT', 'ERR_IGNORE', 'ERR_WARN', 'ERR_RAISE', 'ERR_CALL', 'ERR_PRINT', 'ERR_LOG', 'ERR_DEFAULT', 'SHIFT_DIVIDEBYZERO', 'SHIFT_OVERFLOW', 'SHIFT_UNDERFLOW', 'SHIFT_INVALID')
+               36  IMPORT_NAME              umath
+               38  IMPORT_FROM              UFUNC_BUFSIZE_DEFAULT
+               40  STORE_NAME               UFUNC_BUFSIZE_DEFAULT
+               42  IMPORT_FROM              ERR_IGNORE
+               44  STORE_NAME               ERR_IGNORE
+               46  IMPORT_FROM              ERR_WARN
+               48  STORE_NAME               ERR_WARN
+               50  IMPORT_FROM              ERR_RAISE
+               52  STORE_NAME               ERR_RAISE
+               54  IMPORT_FROM              ERR_CALL
+               56  STORE_NAME               ERR_CALL
+               58  IMPORT_FROM              ERR_PRINT
+               60  STORE_NAME               ERR_PRINT
+               62  IMPORT_FROM              ERR_LOG
+               64  STORE_NAME               ERR_LOG
+               66  IMPORT_FROM              ERR_DEFAULT
+               68  STORE_NAME               ERR_DEFAULT
+               70  IMPORT_FROM              SHIFT_DIVIDEBYZERO
+               72  STORE_NAME               SHIFT_DIVIDEBYZERO
+               74  IMPORT_FROM              SHIFT_OVERFLOW
+               76  STORE_NAME               SHIFT_OVERFLOW
+               78  IMPORT_FROM              SHIFT_UNDERFLOW
+               80  STORE_NAME               SHIFT_UNDERFLOW
+               82  IMPORT_FROM              SHIFT_INVALID
+               84  STORE_NAME               SHIFT_INVALID
+               86  POP_TOP          
+
+ L.  15        88  LOAD_CONST               1
+               90  LOAD_CONST               ('umath',)
+               92  IMPORT_NAME              
+               94  IMPORT_FROM              umath
+               96  STORE_NAME               umath
+               98  POP_TOP          
+
+ L.  17       100  BUILD_LIST_0          0 
+              102  LOAD_CONST               ('seterr', 'geterr', 'setbufsize', 'getbufsize', 'seterrcall', 'geterrcall', 'errstate')
+              104  CALL_FINALLY        107  'to 107'
+              106  STORE_NAME               __all__
+
+ L.  22       108  LOAD_NAME                ERR_IGNORE
+
+ L.  23       110  LOAD_NAME                ERR_WARN
+
+ L.  24       112  LOAD_NAME                ERR_RAISE
+
+ L.  25       114  LOAD_NAME                ERR_CALL
+
+ L.  26       116  LOAD_NAME                ERR_PRINT
+
+ L.  27       118  LOAD_NAME                ERR_LOG
+
+ L.  22       120  LOAD_CONST               ('ignore', 'warn', 'raise', 'call', 'print', 'log')
+              122  BUILD_CONST_KEY_MAP_6     6 
+              124  STORE_NAME               _errdict
+
+ L.  29       126  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+              128  LOAD_STR                 '<dictcomp>'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  LOAD_NAME                _errdict
+              134  LOAD_METHOD              items
+              136  CALL_METHOD_0         0  ''
+              138  GET_ITER         
+              140  CALL_FUNCTION_1       1  ''
+              142  STORE_NAME               _errdict_rev
+
+ L.  32       144  LOAD_NAME                set_module
+              146  LOAD_STR                 'numpy'
+              148  CALL_FUNCTION_1       1  ''
+
+ L.  33       150  LOAD_CONST               (None, None, None, None, None)
+              152  LOAD_CODE                <code_object seterr>
+              154  LOAD_STR                 'seterr'
+              156  MAKE_FUNCTION_1          'default'
+              158  CALL_FUNCTION_1       1  ''
+              160  STORE_NAME               seterr
+
+ L. 132       162  LOAD_NAME                set_module
+              164  LOAD_STR                 'numpy'
+              166  CALL_FUNCTION_1       1  ''
+
+ L. 133       168  LOAD_CODE                <code_object geterr>
+              170  LOAD_STR                 'geterr'
+              172  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              174  CALL_FUNCTION_1       1  ''
+              176  STORE_NAME               geterr
+
+ L. 183       178  LOAD_NAME                set_module
+              180  LOAD_STR                 'numpy'
+              182  CALL_FUNCTION_1       1  ''
+
+ L. 184       184  LOAD_CODE                <code_object setbufsize>
+              186  LOAD_STR                 'setbufsize'
+              188  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              190  CALL_FUNCTION_1       1  ''
+              192  STORE_NAME               setbufsize
+
+ L. 208       194  LOAD_NAME                set_module
+              196  LOAD_STR                 'numpy'
+              198  CALL_FUNCTION_1       1  ''
+
+ L. 209       200  LOAD_CODE                <code_object getbufsize>
+              202  LOAD_STR                 'getbufsize'
+              204  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              206  CALL_FUNCTION_1       1  ''
+              208  STORE_NAME               getbufsize
+
+ L. 222       210  LOAD_NAME                set_module
+              212  LOAD_STR                 'numpy'
+              214  CALL_FUNCTION_1       1  ''
+
+ L. 223       216  LOAD_CODE                <code_object seterrcall>
+              218  LOAD_STR                 'seterrcall'
+              220  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              222  CALL_FUNCTION_1       1  ''
+              224  STORE_NAME               seterrcall
+
+ L. 316       226  LOAD_NAME                set_module
+              228  LOAD_STR                 'numpy'
+              230  CALL_FUNCTION_1       1  ''
+
+ L. 317       232  LOAD_CODE                <code_object geterrcall>
+              234  LOAD_STR                 'geterrcall'
+              236  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              238  CALL_FUNCTION_1       1  ''
+              240  STORE_NAME               geterrcall
+
+ L. 362       242  LOAD_BUILD_CLASS 
+              244  LOAD_CODE                <code_object _unspecified>
+              246  LOAD_STR                 '_unspecified'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  LOAD_STR                 '_unspecified'
+              252  CALL_FUNCTION_2       2  ''
+              254  STORE_NAME               _unspecified
+
+ L. 366       256  LOAD_NAME                _unspecified
+              258  CALL_FUNCTION_0       0  ''
+              260  STORE_NAME               _Unspecified
+
+ L. 369       262  LOAD_NAME                set_module
+              264  LOAD_STR                 'numpy'
+              266  CALL_FUNCTION_1       1  ''
+
+ L. 370       268  LOAD_BUILD_CLASS 
+              270  LOAD_CODE                <code_object errstate>
+              272  LOAD_STR                 'errstate'
+              274  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              276  LOAD_STR                 'errstate'
+              278  LOAD_NAME                contextlib
+              280  LOAD_ATTR                ContextDecorator
+              282  CALL_FUNCTION_3       3  ''
+              284  CALL_FUNCTION_1       1  ''
+              286  STORE_NAME               errstate
+
+ L. 444       288  LOAD_CODE                <code_object _setdef>
+              290  LOAD_STR                 '_setdef'
+              292  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              294  STORE_NAME               _setdef
+
+ L. 450       296  LOAD_NAME                _setdef
+              298  CALL_FUNCTION_0       0  ''
+              300  POP_TOP          
+
+Parse error at or near `CALL_FINALLY' instruction at offset 104
+
+Instruction context:
+   
+ L.  17       100  BUILD_LIST_0          0 
+                 102  LOAD_CONST               ('seterr', 'geterr', 'setbufsize', 'getbufsize', 'seterrcall', 'geterrcall', 'errstate')
+->               104  CALL_FINALLY        107  'to 107'
+                 106  STORE_NAME               __all__
+
+test/1992.pyc -- 
+# decompile failed

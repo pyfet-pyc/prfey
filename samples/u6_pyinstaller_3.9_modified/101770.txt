@@ -1,0 +1,302 @@
+
+# file test/101770.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nPyperclip\n\nA cross-platform clipboard module for Python, with copy & paste functions for plain text.\nBy Al Sweigart al@inventwithpython.com\nBSD License\n\nUsage:\n  import pyperclip\n  pyperclip.copy(\'The text to be copied to the clipboard.\')\n  spam = pyperclip.paste()\n\n  if not pyperclip.is_available():\n    print("Copy functionality unavailable!")\n\nOn Windows, no additional modules are needed.\nOn Mac, the pyobjc module is used, falling back to the pbcopy and pbpaste cli\n    commands. (These commands should come with OS X.).\nOn Linux, install xclip, xsel, or wl-clipboard (for "wayland" sessions) via package manager.\nFor example, in Debian:\n    sudo apt-get install xclip\n    sudo apt-get install xsel\n    sudo apt-get install wl-clipboard\n\nOtherwise on Linux, you will need the gtk or PyQt5/PyQt4 modules installed.\n\ngtk and PyQt4 modules are not available for Python 3,\nand this module does not work with PyGObject yet.\n\nNote: There seems to be a way to get gtk on Python 3, according to:\n    https://askubuntu.com/questions/697397/python3-is-not-supporting-gtk-module\n\nCygwin is currently not supported.\n\nSecurity Note: This module runs programs with these names:\n    - which\n    - where\n    - pbcopy\n    - pbpaste\n    - xclip\n    - xsel\n    - wl-copy/wl-paste\n    - klipper\n    - qdbus\nA malicious user could rename or add programs with these names, tricking\nPyperclip into running them with whatever permissions the Python process has.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  49         4  LOAD_STR                 '1.8.1'
+                6  STORE_NAME               __version__
+
+ L.  51         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              contextlib
+               14  STORE_NAME               contextlib
+
+ L.  52        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              ctypes
+               22  STORE_NAME               ctypes
+
+ L.  53        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              os
+               30  STORE_NAME               os
+
+ L.  54        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              platform
+               38  STORE_NAME               platform
+
+ L.  55        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              subprocess
+               46  STORE_NAME               subprocess
+
+ L.  56        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              sys
+               54  STORE_NAME               sys
+
+ L.  57        56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              time
+               62  STORE_NAME               time
+
+ L.  58        64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              warnings
+               70  STORE_NAME               warnings
+
+ L.  60        72  LOAD_CONST               0
+               74  LOAD_CONST               ('c_size_t', 'sizeof', 'c_wchar_p', 'get_errno', 'c_wchar')
+               76  IMPORT_NAME              ctypes
+               78  IMPORT_FROM              c_size_t
+               80  STORE_NAME               c_size_t
+               82  IMPORT_FROM              sizeof
+               84  STORE_NAME               sizeof
+               86  IMPORT_FROM              c_wchar_p
+               88  STORE_NAME               c_wchar_p
+               90  IMPORT_FROM              get_errno
+               92  STORE_NAME               get_errno
+               94  IMPORT_FROM              c_wchar
+               96  STORE_NAME               c_wchar
+               98  POP_TOP          
+
+ L.  66       100  LOAD_NAME                os
+              102  LOAD_METHOD              getenv
+              104  LOAD_STR                 'DISPLAY'
+              106  LOAD_CONST               False
+              108  CALL_METHOD_2         2  ''
+              110  STORE_NAME               HAS_DISPLAY
+
+ L.  68       112  LOAD_STR                 '\n    Pyperclip could not find a copy/paste mechanism for your system.\n    For more information, please visit https://pyperclip.readthedocs.io/en/latest/index.html#not-implemented-error '
+              114  STORE_NAME               EXCEPT_MSG
+
+ L.  72       116  LOAD_NAME                sys
+              118  LOAD_ATTR                version_info
+              120  LOAD_CONST               0
+              122  BINARY_SUBSCR    
+              124  LOAD_CONST               2
+              126  COMPARE_OP               ==
+              128  STORE_NAME               PY2
+
+ L.  74       130  LOAD_NAME                PY2
+              132  POP_JUMP_IF_FALSE   138  'to 138'
+              134  LOAD_NAME                unicode
+              136  JUMP_FORWARD        140  'to 140'
+            138_0  COME_FROM           132  '132'
+              138  LOAD_NAME                str
+            140_0  COME_FROM           136  '136'
+              140  STORE_NAME               STR_OR_UNICODE
+
+ L.  76       142  LOAD_STR                 'utf-8'
+              144  STORE_NAME               ENCODING
+
+ L.  78       146  SETUP_FINALLY       164  'to 164'
+
+ L.  79       148  LOAD_CONST               0
+              150  LOAD_CONST               ('which',)
+              152  IMPORT_NAME              shutil
+              154  IMPORT_FROM              which
+              156  STORE_NAME               _executable_exists
+              158  POP_TOP          
+              160  POP_BLOCK        
+              162  JUMP_FORWARD        212  'to 212'
+            164_0  COME_FROM_FINALLY   146  '146'
+
+ L.  80       164  DUP_TOP          
+              166  LOAD_NAME                ImportError
+              168  <121>               210  ''
+              170  POP_TOP          
+              172  POP_TOP          
+              174  POP_TOP          
+
+ L.  82       176  LOAD_NAME                platform
+              178  LOAD_METHOD              system
+              180  CALL_METHOD_0         0  ''
+              182  LOAD_STR                 'Windows'
+              184  COMPARE_OP               ==
+              186  POP_JUMP_IF_FALSE   194  'to 194'
+
+ L.  83       188  LOAD_STR                 'where'
+              190  STORE_NAME               WHICH_CMD
+              192  JUMP_FORWARD        198  'to 198'
+            194_0  COME_FROM           186  '186'
+
+ L.  85       194  LOAD_STR                 'which'
+              196  STORE_NAME               WHICH_CMD
+            198_0  COME_FROM           192  '192'
+
+ L.  87       198  LOAD_CODE                <code_object _executable_exists>
+              200  LOAD_STR                 '_executable_exists'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  STORE_NAME               _executable_exists
+              206  POP_EXCEPT       
+              208  JUMP_FORWARD        212  'to 212'
+              210  <48>             
+            212_0  COME_FROM           208  '208'
+            212_1  COME_FROM           162  '162'
+
+ L.  94       212  LOAD_BUILD_CLASS 
+              214  LOAD_CODE                <code_object PyperclipException>
+              216  LOAD_STR                 'PyperclipException'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  LOAD_STR                 'PyperclipException'
+              222  LOAD_NAME                RuntimeError
+              224  CALL_FUNCTION_3       3  ''
+              226  STORE_NAME               PyperclipException
+
+ L.  97       228  LOAD_BUILD_CLASS 
+              230  LOAD_CODE                <code_object PyperclipWindowsException>
+              232  LOAD_STR                 'PyperclipWindowsException'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  LOAD_STR                 'PyperclipWindowsException'
+              238  LOAD_NAME                PyperclipException
+              240  CALL_FUNCTION_3       3  ''
+              242  STORE_NAME               PyperclipWindowsException
+
+ L. 102       244  LOAD_BUILD_CLASS 
+              246  LOAD_CODE                <code_object PyperclipTimeoutException>
+              248  LOAD_STR                 'PyperclipTimeoutException'
+              250  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              252  LOAD_STR                 'PyperclipTimeoutException'
+              254  LOAD_NAME                PyperclipException
+              256  CALL_FUNCTION_3       3  ''
+              258  STORE_NAME               PyperclipTimeoutException
+
+ L. 105       260  LOAD_CODE                <code_object _stringifyText>
+              262  LOAD_STR                 '_stringifyText'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  STORE_NAME               _stringifyText
+
+ L. 115       268  LOAD_CODE                <code_object init_osx_pbcopy_clipboard>
+              270  LOAD_STR                 'init_osx_pbcopy_clipboard'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  STORE_NAME               init_osx_pbcopy_clipboard
+
+ L. 132       276  LOAD_CODE                <code_object init_osx_pyobjc_clipboard>
+              278  LOAD_STR                 'init_osx_pyobjc_clipboard'
+              280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              282  STORE_NAME               init_osx_pyobjc_clipboard
+
+ L. 151       284  LOAD_CODE                <code_object init_gtk_clipboard>
+              286  LOAD_STR                 'init_gtk_clipboard'
+              288  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              290  STORE_NAME               init_gtk_clipboard
+
+ L. 173       292  LOAD_CODE                <code_object init_qt_clipboard>
+              294  LOAD_STR                 'init_qt_clipboard'
+              296  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              298  STORE_NAME               init_qt_clipboard
+
+ L. 202       300  LOAD_CODE                <code_object init_xclip_clipboard>
+              302  LOAD_STR                 'init_xclip_clipboard'
+              304  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              306  STORE_NAME               init_xclip_clipboard
+
+ L. 230       308  LOAD_CODE                <code_object init_xsel_clipboard>
+              310  LOAD_STR                 'init_xsel_clipboard'
+              312  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              314  STORE_NAME               init_xsel_clipboard
+
+ L. 255       316  LOAD_CODE                <code_object init_wl_clipboard>
+              318  LOAD_STR                 'init_wl_clipboard'
+              320  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              322  STORE_NAME               init_wl_clipboard
+
+ L. 282       324  LOAD_CODE                <code_object init_klipper_clipboard>
+              326  LOAD_STR                 'init_klipper_clipboard'
+              328  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              330  STORE_NAME               init_klipper_clipboard
+
+ L. 311       332  LOAD_CODE                <code_object init_dev_clipboard_clipboard>
+              334  LOAD_STR                 'init_dev_clipboard_clipboard'
+              336  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              338  STORE_NAME               init_dev_clipboard_clipboard
+
+ L. 332       340  LOAD_CODE                <code_object init_no_clipboard>
+              342  LOAD_STR                 'init_no_clipboard'
+              344  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              346  STORE_NAME               init_no_clipboard
+
+ L. 351       348  LOAD_BUILD_CLASS 
+              350  LOAD_CODE                <code_object CheckedCall>
+              352  LOAD_STR                 'CheckedCall'
+              354  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              356  LOAD_STR                 'CheckedCall'
+              358  LOAD_NAME                object
+              360  CALL_FUNCTION_3       3  ''
+              362  STORE_NAME               CheckedCall
+
+ L. 365       364  LOAD_CODE                <code_object init_windows_clipboard>
+              366  LOAD_STR                 'init_windows_clipboard'
+              368  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              370  STORE_NAME               init_windows_clipboard
+
+ L. 503       372  LOAD_CODE                <code_object init_wsl_clipboard>
+              374  LOAD_STR                 'init_wsl_clipboard'
+              376  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              378  STORE_NAME               init_wsl_clipboard
+
+ L. 523       380  LOAD_CODE                <code_object determine_clipboard>
+              382  LOAD_STR                 'determine_clipboard'
+              384  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              386  STORE_NAME               determine_clipboard
+
+ L. 603       388  LOAD_CODE                <code_object set_clipboard>
+              390  LOAD_STR                 'set_clipboard'
+              392  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              394  STORE_NAME               set_clipboard
+
+ L. 640       396  LOAD_CODE                <code_object lazy_load_stub_copy>
+              398  LOAD_STR                 'lazy_load_stub_copy'
+              400  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              402  STORE_NAME               lazy_load_stub_copy
+
+ L. 662       404  LOAD_CODE                <code_object lazy_load_stub_paste>
+              406  LOAD_STR                 'lazy_load_stub_paste'
+              408  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              410  STORE_NAME               lazy_load_stub_paste
+
+ L. 684       412  LOAD_CODE                <code_object is_available>
+              414  LOAD_STR                 'is_available'
+              416  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              418  STORE_NAME               is_available
+
+ L. 691       420  LOAD_NAME                lazy_load_stub_copy
+              422  LOAD_NAME                lazy_load_stub_paste
+              424  ROT_TWO          
+              426  STORE_GLOBAL             copy
+              428  STORE_GLOBAL             paste
+
+ L. 695       430  LOAD_CONST               (None,)
+              432  LOAD_CODE                <code_object waitForPaste>
+              434  LOAD_STR                 'waitForPaste'
+              436  MAKE_FUNCTION_1          'default'
+              438  STORE_NAME               waitForPaste
+
+ L. 713       440  LOAD_CONST               (None,)
+              442  LOAD_CODE                <code_object waitForNewPaste>
+              444  LOAD_STR                 'waitForNewPaste'
+              446  MAKE_FUNCTION_1          'default'
+              448  STORE_NAME               waitForNewPaste
+
+ L. 733       450  BUILD_LIST_0          0 
+              452  LOAD_CONST               ('copy', 'paste', 'waitForPaste', 'waitForNewPaste', 'set_clipboard', 'determine_clipboard')
+              454  CALL_FINALLY        457  'to 457'
+              456  STORE_NAME               __all__
+
+Parse error at or near `<121>' instruction at offset 168
+
+Instruction context:
+   
+ L.  80       164  DUP_TOP          
+                 166  LOAD_NAME                ImportError
+->               168  <121>               210  ''
+                 170  POP_TOP          
+                 172  POP_TOP          
+                 174  POP_TOP          
+
+test/101770.pyc -- 
+# decompile failed

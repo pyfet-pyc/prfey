@@ -1,0 +1,282 @@
+
+# file test/112012.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              os
+                6  STORE_NAME               os
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              socket
+               14  STORE_NAME               socket
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              atexit
+               22  STORE_NAME               atexit
+
+ L.   4        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              re
+               30  STORE_NAME               re
+
+ L.   5        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              functools
+               38  STORE_NAME               functools
+
+ L.   6        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME_ATTR         urllib.request
+               46  STORE_NAME               urllib
+
+ L.   7        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME_ATTR         http.client
+               54  STORE_NAME               http
+
+ L.  10        56  LOAD_CONST               0
+               58  LOAD_CONST               ('ResolutionError', 'ExtractionError')
+               60  IMPORT_NAME              pkg_resources
+               62  IMPORT_FROM              ResolutionError
+               64  STORE_NAME               ResolutionError
+               66  IMPORT_FROM              ExtractionError
+               68  STORE_NAME               ExtractionError
+               70  POP_TOP          
+
+ L.  12        72  SETUP_FINALLY        86  'to 86'
+
+ L.  13        74  LOAD_CONST               0
+               76  LOAD_CONST               None
+               78  IMPORT_NAME              ssl
+               80  STORE_NAME               ssl
+               82  POP_BLOCK        
+               84  JUMP_FORWARD        108  'to 108'
+             86_0  COME_FROM_FINALLY    72  '72'
+
+ L.  14        86  DUP_TOP          
+               88  LOAD_NAME                ImportError
+               90  <121>               106  ''
+               92  POP_TOP          
+               94  POP_TOP          
+               96  POP_TOP          
+
+ L.  15        98  LOAD_CONST               None
+              100  STORE_NAME               ssl
+              102  POP_EXCEPT       
+              104  JUMP_FORWARD        108  'to 108'
+              106  <48>             
+            108_0  COME_FROM           104  '104'
+            108_1  COME_FROM            84  '84'
+
+ L.  17       108  BUILD_LIST_0          0 
+              110  LOAD_CONST               ('VerifyingHTTPSHandler', 'find_ca_bundle', 'is_available', 'cert_paths', 'opener_for')
+              112  CALL_FINALLY        115  'to 115'
+              114  STORE_NAME               __all__
+
+ L.  22       116  LOAD_STR                 '\n/etc/pki/tls/certs/ca-bundle.crt\n/etc/ssl/certs/ca-certificates.crt\n/usr/share/ssl/certs/ca-bundle.crt\n/usr/local/share/certs/ca-root.crt\n/etc/ssl/cert.pem\n/System/Library/OpenSSL/certs/cert.pem\n/usr/local/share/certs/ca-root-nss.crt\n/etc/ssl/ca-bundle.pem\n'
+              118  LOAD_METHOD              strip
+              120  CALL_METHOD_0         0  ''
+              122  LOAD_METHOD              split
+              124  CALL_METHOD_0         0  ''
+              126  STORE_NAME               cert_paths
+
+ L.  33       128  SETUP_FINALLY       150  'to 150'
+
+ L.  34       130  LOAD_NAME                urllib
+              132  LOAD_ATTR                request
+              134  LOAD_ATTR                HTTPSHandler
+              136  STORE_NAME               HTTPSHandler
+
+ L.  35       138  LOAD_NAME                http
+              140  LOAD_ATTR                client
+              142  LOAD_ATTR                HTTPSConnection
+              144  STORE_NAME               HTTPSConnection
+              146  POP_BLOCK        
+              148  JUMP_FORWARD        176  'to 176'
+            150_0  COME_FROM_FINALLY   128  '128'
+
+ L.  36       150  DUP_TOP          
+              152  LOAD_NAME                AttributeError
+              154  <121>               174  ''
+              156  POP_TOP          
+              158  POP_TOP          
+              160  POP_TOP          
+
+ L.  37       162  LOAD_NAME                object
+              164  DUP_TOP          
+              166  STORE_NAME               HTTPSHandler
+              168  STORE_NAME               HTTPSConnection
+              170  POP_EXCEPT       
+              172  JUMP_FORWARD        176  'to 176'
+              174  <48>             
+            176_0  COME_FROM           172  '172'
+            176_1  COME_FROM           148  '148'
+
+ L.  39       176  LOAD_NAME                ssl
+              178  LOAD_CONST               None
+              180  <117>                 1  ''
+              182  JUMP_IF_FALSE_OR_POP   194  'to 194'
+              184  LOAD_NAME                object
+
+ L.  40       186  LOAD_NAME                HTTPSHandler
+              188  LOAD_NAME                HTTPSConnection
+
+ L.  39       190  BUILD_TUPLE_2         2 
+              192  <118>                 1  ''
+            194_0  COME_FROM           182  '182'
+              194  STORE_NAME               is_available
+
+ L.  43       196  SETUP_FINALLY       218  'to 218'
+
+ L.  44       198  LOAD_CONST               0
+              200  LOAD_CONST               ('CertificateError', 'match_hostname')
+              202  IMPORT_NAME              ssl
+              204  IMPORT_FROM              CertificateError
+              206  STORE_NAME               CertificateError
+              208  IMPORT_FROM              match_hostname
+              210  STORE_NAME               match_hostname
+              212  POP_TOP          
+              214  POP_BLOCK        
+              216  JUMP_FORWARD        296  'to 296'
+            218_0  COME_FROM_FINALLY   196  '196'
+
+ L.  45       218  DUP_TOP          
+              220  LOAD_NAME                ImportError
+          222_224  <121>               294  ''
+              226  POP_TOP          
+              228  POP_TOP          
+              230  POP_TOP          
+
+ L.  46       232  SETUP_FINALLY       262  'to 262'
+
+ L.  47       234  LOAD_CONST               0
+              236  LOAD_CONST               ('CertificateError',)
+              238  IMPORT_NAME_ATTR         backports.ssl_match_hostname
+              240  IMPORT_FROM              CertificateError
+              242  STORE_NAME               CertificateError
+              244  POP_TOP          
+
+ L.  48       246  LOAD_CONST               0
+              248  LOAD_CONST               ('match_hostname',)
+              250  IMPORT_NAME_ATTR         backports.ssl_match_hostname
+              252  IMPORT_FROM              match_hostname
+              254  STORE_NAME               match_hostname
+              256  POP_TOP          
+              258  POP_BLOCK        
+              260  JUMP_FORWARD        290  'to 290'
+            262_0  COME_FROM_FINALLY   232  '232'
+
+ L.  49       262  DUP_TOP          
+              264  LOAD_NAME                ImportError
+          266_268  <121>               288  ''
+              270  POP_TOP          
+              272  POP_TOP          
+              274  POP_TOP          
+
+ L.  50       276  LOAD_CONST               None
+              278  STORE_NAME               CertificateError
+
+ L.  51       280  LOAD_CONST               None
+              282  STORE_NAME               match_hostname
+              284  POP_EXCEPT       
+              286  JUMP_FORWARD        290  'to 290'
+              288  <48>             
+            290_0  COME_FROM           286  '286'
+            290_1  COME_FROM           260  '260'
+              290  POP_EXCEPT       
+              292  JUMP_FORWARD        296  'to 296'
+              294  <48>             
+            296_0  COME_FROM           292  '292'
+            296_1  COME_FROM           216  '216'
+
+ L.  53       296  LOAD_NAME                CertificateError
+          298_300  POP_JUMP_IF_TRUE    318  'to 318'
+
+ L.  55       302  LOAD_BUILD_CLASS 
+              304  LOAD_CODE                <code_object CertificateError>
+              306  LOAD_STR                 'CertificateError'
+              308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              310  LOAD_STR                 'CertificateError'
+              312  LOAD_NAME                ValueError
+              314  CALL_FUNCTION_3       3  ''
+              316  STORE_NAME               CertificateError
+            318_0  COME_FROM           298  '298'
+
+ L.  59       318  LOAD_NAME                match_hostname
+          320_322  POP_JUMP_IF_TRUE    342  'to 342'
+
+ L.  61       324  LOAD_CONST               (1,)
+              326  LOAD_CODE                <code_object _dnsname_match>
+              328  LOAD_STR                 '_dnsname_match'
+              330  MAKE_FUNCTION_1          'default'
+              332  STORE_NAME               _dnsname_match
+
+ L. 115       334  LOAD_CODE                <code_object match_hostname>
+              336  LOAD_STR                 'match_hostname'
+              338  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              340  STORE_NAME               match_hostname
+            342_0  COME_FROM           320  '320'
+
+ L. 157       342  LOAD_BUILD_CLASS 
+              344  LOAD_CODE                <code_object VerifyingHTTPSHandler>
+              346  LOAD_STR                 'VerifyingHTTPSHandler'
+              348  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              350  LOAD_STR                 'VerifyingHTTPSHandler'
+              352  LOAD_NAME                HTTPSHandler
+              354  CALL_FUNCTION_3       3  ''
+              356  STORE_NAME               VerifyingHTTPSHandler
+
+ L. 171       358  LOAD_BUILD_CLASS 
+              360  LOAD_CODE                <code_object VerifyingHTTPSConn>
+              362  LOAD_STR                 'VerifyingHTTPSConn'
+              364  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              366  LOAD_STR                 'VerifyingHTTPSConn'
+              368  LOAD_NAME                HTTPSConnection
+              370  CALL_FUNCTION_3       3  ''
+              372  STORE_NAME               VerifyingHTTPSConn
+
+ L. 211       374  LOAD_CONST               (None,)
+              376  LOAD_CODE                <code_object opener_for>
+              378  LOAD_STR                 'opener_for'
+              380  MAKE_FUNCTION_1          'default'
+              382  STORE_NAME               opener_for
+
+ L. 219       384  LOAD_CODE                <code_object once>
+              386  LOAD_STR                 'once'
+              388  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              390  STORE_NAME               once
+
+ L. 228       392  LOAD_NAME                once
+
+ L. 229       394  LOAD_CODE                <code_object get_win_certfile>
+              396  LOAD_STR                 'get_win_certfile'
+              398  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              400  CALL_FUNCTION_1       1  ''
+              402  STORE_NAME               get_win_certfile
+
+ L. 252       404  LOAD_CODE                <code_object find_ca_bundle>
+              406  LOAD_STR                 'find_ca_bundle'
+              408  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              410  STORE_NAME               find_ca_bundle
+
+ L. 262       412  LOAD_CODE                <code_object _certifi_where>
+              414  LOAD_STR                 '_certifi_where'
+              416  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              418  STORE_NAME               _certifi_where
+
+Parse error at or near `<121>' instruction at offset 90
+
+Instruction context:
+   
+ L.  14        86  DUP_TOP          
+                  88  LOAD_NAME                ImportError
+->                90  <121>               106  ''
+                  92  POP_TOP          
+                  94  POP_TOP          
+                  96  POP_TOP          
+
+test/112012.pyc -- 
+# decompile failed

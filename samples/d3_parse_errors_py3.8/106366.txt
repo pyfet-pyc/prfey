@@ -1,0 +1,60 @@
+Instruction context:
+   
+ L.  81       182  LOAD_FAST                'i'
+                 184  LOAD_CONST               3
+                 186  BINARY_FLOOR_DIVIDE
+                 188  LOAD_GLOBAL              i8
+                 190  LOAD_FAST                'p'
+                 192  LOAD_FAST                'i'
+                 194  BINARY_SUBSCR    
+                 196  CALL_FUNCTION_1       1  ''
+                 198  DUP_TOP          
+                 200  ROT_THREE        
+                 202  COMPARE_OP               ==
+                 204  POP_JUMP_IF_FALSE   248  'to 248'
+                 206  LOAD_GLOBAL              i8
+                 208  LOAD_FAST                'p'
+                 210  LOAD_FAST                'i'
+                 212  LOAD_CONST               1
+                 214  BINARY_ADD       
+                 216  BINARY_SUBSCR    
+                 218  CALL_FUNCTION_1       1  ''
+                 220  DUP_TOP          
+                 222  ROT_THREE        
+                 224  COMPARE_OP               ==
+                 226  POP_JUMP_IF_FALSE   248  'to 248'
+                 228  LOAD_GLOBAL              i8
+                 230  LOAD_FAST                'p'
+                 232  LOAD_FAST                'i'
+                 234  LOAD_CONST               2
+                 236  BINARY_ADD       
+                 238  BINARY_SUBSCR    
+                 240  CALL_FUNCTION_1       1  ''
+                 242  COMPARE_OP               ==
+                 244  POP_JUMP_IF_TRUE_BACK   178  'to 178'
+                 246  JUMP_FORWARD        250  'to 250'
+               248_0  COME_FROM           226  '226'
+->             248_1  COME_FROM           204  '204'
+                 248  POP_TOP          
+               250_0  COME_FROM           246  '246'
+Instruction context:
+   
+ L. 226   572_574  JUMP_BACK           562  'to 562'
+->               576  JUMP_BACK           216  'to 216'
+               578_0  COME_FROM           252  '252'
+Instruction context:
+-> 
+ L. 769        94  LOAD_FAST                'im'
+                  96  LOAD_ATTR                info
+                  98  LOAD_METHOD              get
+                 100  LOAD_STR                 'version'
+                 102  CALL_METHOD_1         1  ''
+                 104  LOAD_CONST               b'89a'
+                 106  COMPARE_OP               ==
+                 108  POP_JUMP_IF_FALSE   114  'to 114'
+
+../test/106366.pyc -- 
+# decompile failed
+
+# file ../test/106366.pyc
+# Deparsing stopped due to parse error

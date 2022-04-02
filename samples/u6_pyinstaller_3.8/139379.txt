@@ -1,0 +1,36 @@
+Instruction context:
+   
+ L. 257        40  DUP_TOP          
+                  42  LOAD_GLOBAL              AttributeError
+                  44  COMPARE_OP               exception-match
+                  46  POP_JUMP_IF_FALSE    58  'to 58'
+                  48  POP_TOP          
+->                50  POP_TOP          
+                  52  POP_TOP          
+Instruction context:
+   
+ L. 457        16  DUP_TOP          
+                  18  LOAD_GLOBAL              AttributeError
+                  20  COMPARE_OP               exception-match
+                  22  POP_JUMP_IF_FALSE    34  'to 34'
+                  24  POP_TOP          
+->                26  POP_TOP          
+                  28  POP_TOP          
+Instruction context:
+   
+ L. 853        22  LOAD_FAST                'fd'
+                  24  LOAD_METHOD              tell
+                  26  CALL_METHOD_0         0  ''
+                  28  LOAD_FAST                'pos'
+                  30  BINARY_SUBTRACT  
+                  32  POP_BLOCK        
+->                34  CALL_FINALLY         38  'to 38'
+                  36  RETURN_VALUE     
+                38_0  COME_FROM            34  '34'
+                38_1  COME_FROM_FINALLY     8  '8'
+
+../test/139379.pyc -- 
+# decompile failed
+
+# file ../test/139379.pyc
+# Deparsing stopped due to parse error

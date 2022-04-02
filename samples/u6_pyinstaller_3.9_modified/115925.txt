@@ -1,0 +1,27 @@
+Instruction context:
+   
+ L.  20        22  POP_BLOCK        
+                  24  LOAD_CONST               True
+->                26  RETURN_VALUE     
+                28_0  COME_FROM_FINALLY     4  '4'
+Instruction context:
+   
+ L.  39        14  LOAD_GLOBAL              _Extension
+                  16  LOAD_ATTR                __init__
+                  18  LOAD_FAST                'self'
+                  20  LOAD_FAST                'name'
+                  22  LOAD_FAST                'sources'
+                  24  BUILD_LIST_3          3 
+                  26  LOAD_FAST                'args'
+->                28  CALL_FINALLY         31  'to 31'
+                  30  WITH_CLEANUP_FINISH
+                  32  BUILD_MAP_0           0 
+                  34  LOAD_FAST                'kw'
+                  36  <164>                 1  ''
+                  38  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+
+test/115925.pyc -- 
+# decompile failed
+
+# file test/115925.pyc
+# Deparsing stopped due to parse error

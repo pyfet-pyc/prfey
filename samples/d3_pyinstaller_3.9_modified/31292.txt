@@ -1,0 +1,120 @@
+Instruction context:
+   
+ L.  12        36  BUILD_LIST_0          0 
+                  38  LOAD_CONST               ('InteractiveInterpreter', 'InteractiveConsole', 'interact', 'compile_command')
+->                40  CALL_FINALLY         43  'to 43'
+                  42  STORE_NAME               __all__
+
+test/31292.pyc -- 
+# decompile failed
+
+# file test/31292.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "Utilities needed to emulate Python's interactive interpreter.\n\n"
+                2  STORE_NAME               __doc__
+
+ L.   8         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.   9        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              traceback
+               18  STORE_NAME               traceback
+
+ L.  10        20  LOAD_CONST               0
+               22  LOAD_CONST               ('CommandCompiler', 'compile_command')
+               24  IMPORT_NAME              codeop
+               26  IMPORT_FROM              CommandCompiler
+               28  STORE_NAME               CommandCompiler
+               30  IMPORT_FROM              compile_command
+               32  STORE_NAME               compile_command
+               34  POP_TOP          
+
+ L.  12        36  BUILD_LIST_0          0 
+               38  LOAD_CONST               ('InteractiveInterpreter', 'InteractiveConsole', 'interact', 'compile_command')
+               40  CALL_FINALLY         43  'to 43'
+               42  STORE_NAME               __all__
+
+ L.  15        44  LOAD_BUILD_CLASS 
+               46  LOAD_CODE                <code_object InteractiveInterpreter>
+               48  LOAD_STR                 'InteractiveInterpreter'
+               50  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               52  LOAD_STR                 'InteractiveInterpreter'
+               54  CALL_FUNCTION_2       2  ''
+               56  STORE_NAME               InteractiveInterpreter
+
+ L. 162        58  LOAD_BUILD_CLASS 
+               60  LOAD_CODE                <code_object InteractiveConsole>
+               62  LOAD_STR                 'InteractiveConsole'
+               64  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               66  LOAD_STR                 'InteractiveConsole'
+               68  LOAD_NAME                InteractiveInterpreter
+               70  CALL_FUNCTION_3       3  ''
+               72  STORE_NAME               InteractiveConsole
+
+ L. 278        74  LOAD_CONST               (None, None, None, None)
+               76  LOAD_CODE                <code_object interact>
+               78  LOAD_STR                 'interact'
+               80  MAKE_FUNCTION_1          'default'
+               82  STORE_NAME               interact
+
+ L. 304        84  LOAD_NAME                __name__
+               86  LOAD_STR                 '__main__'
+               88  COMPARE_OP               ==
+               90  POP_JUMP_IF_FALSE   164  'to 164'
+
+ L. 305        92  LOAD_CONST               0
+               94  LOAD_CONST               None
+               96  IMPORT_NAME              argparse
+               98  STORE_NAME               argparse
+
+ L. 307       100  LOAD_NAME                argparse
+              102  LOAD_METHOD              ArgumentParser
+              104  CALL_METHOD_0         0  ''
+              106  STORE_NAME               parser
+
+ L. 308       108  LOAD_NAME                parser
+              110  LOAD_ATTR                add_argument
+              112  LOAD_STR                 '-q'
+              114  LOAD_STR                 'store_true'
+
+ L. 309       116  LOAD_STR                 "don't print version and copyright messages"
+
+ L. 308       118  LOAD_CONST               ('action', 'help')
+              120  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              122  POP_TOP          
+
+ L. 310       124  LOAD_NAME                parser
+              126  LOAD_METHOD              parse_args
+              128  CALL_METHOD_0         0  ''
+              130  STORE_NAME               args
+
+ L. 311       132  LOAD_NAME                args
+              134  LOAD_ATTR                q
+              136  POP_JUMP_IF_TRUE    146  'to 146'
+              138  LOAD_NAME                sys
+              140  LOAD_ATTR                flags
+              142  LOAD_ATTR                quiet
+              144  POP_JUMP_IF_FALSE   152  'to 152'
+            146_0  COME_FROM           136  '136'
+
+ L. 312       146  LOAD_STR                 ''
+              148  STORE_NAME               banner
+              150  JUMP_FORWARD        156  'to 156'
+            152_0  COME_FROM           144  '144'
+
+ L. 314       152  LOAD_CONST               None
+              154  STORE_NAME               banner
+            156_0  COME_FROM           150  '150'
+
+ L. 315       156  LOAD_NAME                interact
+              158  LOAD_NAME                banner
+              160  CALL_FUNCTION_1       1  ''
+              162  POP_TOP          
+            164_0  COME_FROM            90  '90'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 40
+

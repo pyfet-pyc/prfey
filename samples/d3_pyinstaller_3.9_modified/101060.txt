@@ -1,0 +1,121 @@
+Instruction context:
+   
+ L.   9        26  DUP_TOP          
+                  28  LOAD_NAME                ImportError
+->                30  <121>                62  ''
+                  32  POP_TOP          
+                  34  POP_TOP          
+                  36  POP_TOP          
+
+test/101060.pyc -- 
+# decompile failed
+
+# file test/101060.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'HMAC (Keyed-Hashing for Message Authentication) module.\n\nImplements the HMAC algorithm as described by RFC 2104.\n'
+                2  STORE_NAME               __doc__
+
+ L.   6         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              warnings
+               10  STORE_NAME               _warnings
+
+ L.   7        12  SETUP_FINALLY        26  'to 26'
+
+ L.   8        14  LOAD_CONST               0
+               16  LOAD_CONST               None
+               18  IMPORT_NAME              _hashlib
+               20  STORE_NAME               _hashopenssl
+               22  POP_BLOCK        
+               24  JUMP_FORWARD         64  'to 64'
+             26_0  COME_FROM_FINALLY    12  '12'
+
+ L.   9        26  DUP_TOP          
+               28  LOAD_NAME                ImportError
+               30  <121>                62  ''
+               32  POP_TOP          
+               34  POP_TOP          
+               36  POP_TOP          
+
+ L.  10        38  LOAD_CONST               None
+               40  STORE_NAME               _hashopenssl
+
+ L.  11        42  LOAD_CONST               None
+               44  STORE_NAME               _openssl_md_meths
+
+ L.  12        46  LOAD_CONST               0
+               48  LOAD_CONST               ('_compare_digest',)
+               50  IMPORT_NAME              _operator
+               52  IMPORT_FROM              _compare_digest
+               54  STORE_NAME               compare_digest
+               56  POP_TOP          
+               58  POP_EXCEPT       
+               60  JUMP_FORWARD         80  'to 80'
+               62  <48>             
+             64_0  COME_FROM            24  '24'
+
+ L.  14        64  LOAD_NAME                frozenset
+               66  LOAD_NAME                _hashopenssl
+               68  LOAD_ATTR                openssl_md_meth_names
+               70  CALL_FUNCTION_1       1  ''
+               72  STORE_NAME               _openssl_md_meths
+
+ L.  15        74  LOAD_NAME                _hashopenssl
+               76  LOAD_ATTR                compare_digest
+               78  STORE_NAME               compare_digest
+             80_0  COME_FROM            60  '60'
+
+ L.  16        80  LOAD_CONST               0
+               82  LOAD_CONST               None
+               84  IMPORT_NAME              hashlib
+               86  STORE_NAME               _hashlib
+
+ L.  18        88  LOAD_NAME                bytes
+               90  LOAD_GENEXPR             '<code_object <genexpr>>'
+               92  LOAD_STR                 '<genexpr>'
+               94  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               96  LOAD_NAME                range
+               98  LOAD_CONST               256
+              100  CALL_FUNCTION_1       1  ''
+              102  GET_ITER         
+              104  CALL_FUNCTION_1       1  ''
+              106  CALL_FUNCTION_1       1  ''
+              108  STORE_NAME               trans_5C
+
+ L.  19       110  LOAD_NAME                bytes
+              112  LOAD_GENEXPR             '<code_object <genexpr>>'
+              114  LOAD_STR                 '<genexpr>'
+              116  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              118  LOAD_NAME                range
+              120  LOAD_CONST               256
+              122  CALL_FUNCTION_1       1  ''
+              124  GET_ITER         
+              126  CALL_FUNCTION_1       1  ''
+              128  CALL_FUNCTION_1       1  ''
+              130  STORE_NAME               trans_36
+
+ L.  23       132  LOAD_CONST               None
+              134  STORE_NAME               digest_size
+
+ L.  27       136  LOAD_BUILD_CLASS 
+              138  LOAD_CODE                <code_object HMAC>
+              140  LOAD_STR                 'HMAC'
+              142  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              144  LOAD_STR                 'HMAC'
+              146  CALL_FUNCTION_2       2  ''
+              148  STORE_NAME               HMAC
+
+ L. 153       150  LOAD_CONST               (None, '')
+              152  LOAD_CODE                <code_object new>
+              154  LOAD_STR                 'new'
+              156  MAKE_FUNCTION_1          'default'
+              158  STORE_NAME               new
+
+ L. 173       160  LOAD_CODE                <code_object digest>
+              162  LOAD_STR                 'digest'
+              164  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              166  STORE_NAME               digest
+
+Parse error at or near `<121>' instruction at offset 30
+

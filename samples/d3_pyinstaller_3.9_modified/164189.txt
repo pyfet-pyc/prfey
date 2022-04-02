@@ -1,0 +1,68 @@
+Instruction context:
+   
+ L.  20        36  BUILD_LIST_0          0 
+                  38  LOAD_CONST               ('__title__', '__summary__', '__uri__', '__version__', '__author__', '__email__', '__license__', '__copyright__')
+->                40  CALL_FINALLY         43  'to 43'
+                  42  STORE_NAME               __all__
+
+test/164189.pyc -- 
+# decompile failed
+
+# file test/164189.pyc
+# --- This code section failed: ---
+
+ L.  16         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.  17        12  LOAD_CONST               0
+               14  LOAD_CONST               ('division',)
+               16  IMPORT_NAME              __future__
+               18  IMPORT_FROM              division
+               20  STORE_NAME               division
+               22  POP_TOP          
+
+ L.  18        24  LOAD_CONST               0
+               26  LOAD_CONST               ('unicode_literals',)
+               28  IMPORT_NAME              __future__
+               30  IMPORT_FROM              unicode_literals
+               32  STORE_NAME               unicode_literals
+               34  POP_TOP          
+
+ L.  20        36  BUILD_LIST_0          0 
+               38  LOAD_CONST               ('__title__', '__summary__', '__uri__', '__version__', '__author__', '__email__', '__license__', '__copyright__')
+               40  CALL_FINALLY         43  'to 43'
+               42  STORE_NAME               __all__
+
+ L.  31        44  LOAD_STR                 'bcrypt'
+               46  STORE_NAME               __title__
+
+ L.  32        48  LOAD_STR                 'Modern password hashing for your software and your servers'
+               50  STORE_NAME               __summary__
+
+ L.  33        52  LOAD_STR                 'https://github.com/pyca/bcrypt/'
+               54  STORE_NAME               __uri__
+
+ L.  35        56  LOAD_STR                 '3.2.0'
+               58  STORE_NAME               __version__
+
+ L.  37        60  LOAD_STR                 'The Python Cryptographic Authority developers'
+               62  STORE_NAME               __author__
+
+ L.  38        64  LOAD_STR                 'cryptography-dev@python.org'
+               66  STORE_NAME               __email__
+
+ L.  40        68  LOAD_STR                 'Apache License, Version 2.0'
+               70  STORE_NAME               __license__
+
+ L.  41        72  LOAD_STR                 'Copyright 2013-2020 {0}'
+               74  LOAD_METHOD              format
+               76  LOAD_NAME                __author__
+               78  CALL_METHOD_1         1  ''
+               80  STORE_NAME               __copyright__
+
+Parse error at or near `CALL_FINALLY' instruction at offset 40
+

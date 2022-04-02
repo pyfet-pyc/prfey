@@ -1,0 +1,164 @@
+Instruction context:
+   
+ L. 251        48  POP_EXCEPT       
+                  50  JUMP_BACK            10  'to 10'
+->                52  POP_EXCEPT       
+                  54  JUMP_BACK            10  'to 10'
+                56_0  COME_FROM            40  '40'
+                  56  END_FINALLY      
+                58_0  COME_FROM            32  '32'
+Instruction context:
+   
+ L. 333        32  DUP_TOP          
+                  34  LOAD_GLOBAL              Exception
+                  36  COMPARE_OP               exception-match
+                  38  POP_JUMP_IF_FALSE    52  'to 52'
+                  40  POP_TOP          
+->                42  POP_TOP          
+                  44  POP_TOP          
+Instruction context:
+   
+ L. 345        20  DUP_TOP          
+                  22  LOAD_GLOBAL              ProcessLookupError
+                  24  COMPARE_OP               exception-match
+                  26  POP_JUMP_IF_FALSE    82  'to 82'
+                  28  POP_TOP          
+->                30  POP_TOP          
+                  32  POP_TOP          
+Instruction context:
+   
+ L. 426        10  LOAD_GLOBAL              cext
+                  12  LOAD_METHOD              proc_exe
+                  14  LOAD_FAST                'self'
+                  16  LOAD_ATTR                pid
+                  18  CALL_METHOD_1         1  ''
+                  20  POP_BLOCK        
+->                22  ROT_TWO          
+                  24  BEGIN_FINALLY    
+                  26  WITH_CLEANUP_START
+                  28  WITH_CLEANUP_FINISH
+                  30  POP_FINALLY           0  ''
+                  32  RETURN_VALUE     
+                34_0  COME_FROM_WITH        6  '6'
+                  34  WITH_CLEANUP_START
+                  36  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 431        10  LOAD_GLOBAL              cext
+                  12  LOAD_METHOD              proc_cmdline
+                  14  LOAD_FAST                'self'
+                  16  LOAD_ATTR                pid
+                  18  CALL_METHOD_1         1  ''
+                  20  POP_BLOCK        
+->                22  ROT_TWO          
+                  24  BEGIN_FINALLY    
+                  26  WITH_CLEANUP_START
+                  28  WITH_CLEANUP_FINISH
+                  30  POP_FINALLY           0  ''
+                  32  RETURN_VALUE     
+                34_0  COME_FROM_WITH        6  '6'
+                  34  WITH_CLEANUP_START
+                  36  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 436        10  LOAD_GLOBAL              parse_environ_block
+                  12  LOAD_GLOBAL              cext
+                  14  LOAD_METHOD              proc_environ
+                  16  LOAD_FAST                'self'
+                  18  LOAD_ATTR                pid
+                  20  CALL_METHOD_1         1  ''
+                  22  CALL_FUNCTION_1       1  ''
+                  24  POP_BLOCK        
+->                26  ROT_TWO          
+                  28  BEGIN_FINALLY    
+                  30  WITH_CLEANUP_START
+                  32  WITH_CLEANUP_FINISH
+                  34  POP_FINALLY           0  ''
+                  36  RETURN_VALUE     
+                38_0  COME_FROM_WITH        6  '6'
+                  38  WITH_CLEANUP_START
+                  40  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 446        10  LOAD_GLOBAL              cext
+                  12  LOAD_METHOD              proc_cwd
+                  14  LOAD_FAST                'self'
+                  16  LOAD_ATTR                pid
+                  18  CALL_METHOD_1         1  ''
+                  20  POP_BLOCK        
+->                22  ROT_TWO          
+                  24  BEGIN_FINALLY    
+                  26  WITH_CLEANUP_START
+                  28  WITH_CLEANUP_FINISH
+                  30  POP_FINALLY           0  ''
+                  32  RETURN_VALUE     
+                34_0  COME_FROM_WITH        6  '6'
+                  34  WITH_CLEANUP_START
+                  36  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 470        36  DUP_TOP          
+                  38  LOAD_GLOBAL              KeyError
+                  40  COMPARE_OP               exception-match
+                  42  POP_JUMP_IF_FALSE    56  'to 56'
+                  44  POP_TOP          
+->                46  POP_TOP          
+                  48  POP_TOP          
+Instruction context:
+   
+ L. 548        24  LOAD_GLOBAL              cext
+                  26  LOAD_METHOD              proc_num_fds
+                  28  LOAD_FAST                'self'
+                  30  LOAD_ATTR                pid
+                  32  CALL_METHOD_1         1  ''
+                  34  POP_BLOCK        
+->                36  ROT_TWO          
+                  38  BEGIN_FINALLY    
+                  40  WITH_CLEANUP_START
+                  42  WITH_CLEANUP_FINISH
+                  44  POP_FINALLY           0  ''
+                  46  RETURN_VALUE     
+                48_0  COME_FROM_WITH       20  '20'
+                  48  WITH_CLEANUP_START
+                  50  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 557        10  LOAD_GLOBAL              cext_posix
+                  12  LOAD_METHOD              getpriority
+                  14  LOAD_FAST                'self'
+                  16  LOAD_ATTR                pid
+                  18  CALL_METHOD_1         1  ''
+                  20  POP_BLOCK        
+->                22  ROT_TWO          
+                  24  BEGIN_FINALLY    
+                  26  WITH_CLEANUP_START
+                  28  WITH_CLEANUP_FINISH
+                  30  POP_FINALLY           0  ''
+                  32  RETURN_VALUE     
+                34_0  COME_FROM_WITH        6  '6'
+                  34  WITH_CLEANUP_START
+                  36  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 562        10  LOAD_GLOBAL              cext_posix
+                  12  LOAD_METHOD              setpriority
+                  14  LOAD_FAST                'self'
+                  16  LOAD_ATTR                pid
+                  18  LOAD_FAST                'value'
+                  20  CALL_METHOD_2         2  ''
+                  22  POP_BLOCK        
+->                24  ROT_TWO          
+                  26  BEGIN_FINALLY    
+                  28  WITH_CLEANUP_START
+                  30  WITH_CLEANUP_FINISH
+                  32  POP_FINALLY           0  ''
+                  34  RETURN_VALUE     
+                36_0  COME_FROM_WITH        6  '6'
+                  36  WITH_CLEANUP_START
+                  38  WITH_CLEANUP_FINISH
+
+../test/139534.pyc -- 
+# decompile failed
+
+# file ../test/139534.pyc
+# Deparsing stopped due to parse error

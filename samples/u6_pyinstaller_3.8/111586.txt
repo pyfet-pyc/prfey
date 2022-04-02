@@ -1,0 +1,38 @@
+Instruction context:
+   
+ L. 161       362  JUMP_BACK           194  'to 194'
+->               364  JUMP_FORWARD        370  'to 370'
+               366_0  COME_FROM           358  '358'
+Instruction context:
+   
+ L. 193        18  POP_BLOCK        
+                  20  LOAD_CONST               True
+->                22  RETURN_VALUE     
+                24_0  COME_FROM_FINALLY     0  '0'
+Instruction context:
+   
+ L. 656        12  LOAD_CLOSURE             'self'
+                  14  BUILD_TUPLE_1         1 
+->                16  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  18  LOAD_STR                 'Response.__getstate__.<locals>.<dictcomp>'
+                  20  MAKE_FUNCTION_8          'closure'
+                  22  LOAD_DEREF               'self'
+                  24  LOAD_ATTR                __attrs__
+                  26  GET_ITER         
+                  28  CALL_FUNCTION_1       1  ''
+                  30  RETURN_VALUE     
+Instruction context:
+   
+ L. 892        70  DUP_TOP          
+                  72  LOAD_GLOBAL              UnicodeDecodeError
+                  74  COMPARE_OP               exception-match
+                  76  POP_JUMP_IF_FALSE    88  'to 88'
+                  78  POP_TOP          
+->                80  POP_TOP          
+                  82  POP_TOP          
+
+../test/111586.pyc -- 
+# decompile failed
+
+# file ../test/111586.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,42 @@
+Instruction context:
+   
+ L. 131       574  POP_EXCEPT       
+             576_578  JUMP_BACK           480  'to 480'
+->               580  POP_EXCEPT       
+                 582  JUMP_BACK           480  'to 480'
+               584_0  COME_FROM           540  '540'
+                 584  END_FINALLY      
+             586_588  JUMP_BACK           480  'to 480'
+Instruction context:
+   
+ L. 238       572  LOAD_FAST                'self'
+                 574  LOAD_ATTR                caputer
+                 576  LOAD_METHOD              put
+                 578  LOAD_FAST                'data'
+                 580  CALL_METHOD_1         1  ''
+                 582  POP_TOP          
+               584_0  COME_FROM           206  '206'
+                 584  POP_BLOCK        
+->               586  JUMP_FORWARD        702  'to 702'
+               588_0  COME_FROM_FINALLY     0  '0'
+Instruction context:
+   
+ L. 268       104  POP_BLOCK        
+                 106  JUMP_ABSOLUTE       130  'to 130'
+->               108  POP_BLOCK        
+                 110  JUMP_BACK            64  'to 64'
+               112_0  COME_FROM_FINALLY    64  '64'
+Instruction context:
+   
+ L. 286        52  POP_EXCEPT       
+                  54  JUMP_BACK             2  'to 2'
+->                56  POP_EXCEPT       
+                  58  JUMP_BACK             2  'to 2'
+                  60  END_FINALLY      
+                  62  JUMP_BACK             2  'to 2'
+
+../test/113366.pyc -- 
+# decompile failed
+
+# file ../test/113366.pyc
+# Deparsing stopped due to parse error

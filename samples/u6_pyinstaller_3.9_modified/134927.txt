@@ -1,0 +1,47 @@
+Instruction context:
+   
+ L.  14        48  BUILD_LIST_0          0 
+                  50  LOAD_CONST               ('win32api', 'win32cred', 'pywintypes')
+->                52  CALL_FINALLY         55  'to 55'
+
+test/134927.pyc -- 
+# decompile failed
+
+# file test/134927.pyc
+# --- This code section failed: ---
+
+ L.   8         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.  10        12  LOAD_CONST               0
+               14  LOAD_CONST               ('pywintypes',)
+               16  IMPORT_NAME_ATTR         win32ctypes.pywin32
+               18  IMPORT_FROM              pywintypes
+               20  STORE_NAME               pywintypes
+               22  POP_TOP          
+
+ L.  11        24  LOAD_CONST               0
+               26  LOAD_CONST               ('win32api',)
+               28  IMPORT_NAME_ATTR         win32ctypes.pywin32
+               30  IMPORT_FROM              win32api
+               32  STORE_NAME               win32api
+               34  POP_TOP          
+
+ L.  12        36  LOAD_CONST               0
+               38  LOAD_CONST               ('win32cred',)
+               40  IMPORT_NAME_ATTR         win32ctypes.pywin32
+               42  IMPORT_FROM              win32cred
+               44  STORE_NAME               win32cred
+               46  POP_TOP          
+
+ L.  14        48  BUILD_LIST_0          0 
+               50  LOAD_CONST               ('win32api', 'win32cred', 'pywintypes')
+               52  CALL_FINALLY         55  'to 55'
+               54  STORE_NAME               __all__
+
+Parse error at or near `CALL_FINALLY' instruction at offset 52
+

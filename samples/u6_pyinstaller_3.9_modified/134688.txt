@@ -1,0 +1,25 @@
+Instruction context:
+   
+ L.  22        10  LOAD_DEREF               'func'
+                  12  LOAD_FAST                'args'
+                  14  BUILD_MAP_0           0 
+                  16  LOAD_FAST                'kwargs'
+->                18  <164>                 1  ''
+                  20  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  22  LOAD_DEREF               'func'
+                  24  STORE_ATTR               always_returns
+                26_0  COME_FROM             8  '8'
+Instruction context:
+   
+ L.  36        22  DUP_TOP          
+                  24  LOAD_FAST                'exceptions'
+->                26  <121>                38  ''
+                  28  POP_TOP          
+                  30  POP_TOP          
+                  32  POP_TOP          
+
+test/134688.pyc -- 
+# decompile failed
+
+# file test/134688.pyc
+# Deparsing stopped due to parse error

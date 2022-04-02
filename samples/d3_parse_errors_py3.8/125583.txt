@@ -1,0 +1,35 @@
+Instruction context:
+   
+ L.  62       116  LOAD_FAST                'self'
+                 118  LOAD_METHOD              decompress
+                 120  LOAD_FAST                'self'
+                 122  LOAD_ATTR                _data
+                 124  CALL_METHOD_1         1  ''
+                 126  POP_BLOCK        
+                 128  CALL_FINALLY        136  'to 136'
+->               130  ROT_FOUR         
+                 132  POP_EXCEPT       
+                 134  RETURN_VALUE     
+               136_0  COME_FROM           128  '128'
+               136_1  COME_FROM_FINALLY   114  '114'
+Instruction context:
+   
+ L. 367       220  LOAD_FAST                'length'
+->               222  RETURN_VALUE     
+Instruction context:
+   
+ L. 756        74  POP_BLOCK        
+->                76  BEGIN_FINALLY    
+                  78  WITH_CLEANUP_START
+                  80  WITH_CLEANUP_FINISH
+                  82  POP_FINALLY           0  ''
+                  84  LOAD_CONST               None
+                  86  RETURN_VALUE     
+                88_0  COME_FROM            62  '62'
+                88_1  COME_FROM            52  '52'
+
+../test/125583.pyc -- 
+# decompile failed
+
+# file ../test/125583.pyc
+# Deparsing stopped due to parse error

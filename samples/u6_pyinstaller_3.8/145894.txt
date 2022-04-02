@@ -1,0 +1,33 @@
+Instruction context:
+   
+ L.  58        84  LOAD_GLOBAL              StrictVersion
+                  86  LOAD_STR                 '1.2'
+                  88  CALL_FUNCTION_1       1  ''
+                  90  STORE_FAST               'mv'
+->                92  JUMP_FORWARD        142  'to 142'
+                94_0  COME_FROM            82  '82'
+Instruction context:
+   
+ L. 425       120  LOAD_GLOBAL              _Distribution
+                 122  LOAD_METHOD              __init__
+                 124  LOAD_DEREF               'self'
+                 126  LOAD_CLOSURE             'self'
+                 128  BUILD_TUPLE_1         1 
+->               130  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                 132  LOAD_STR                 'Distribution.__init__.<locals>.<dictcomp>'
+                 134  MAKE_FUNCTION_8          'closure'
+Instruction context:
+   
+ L. 631        22  DUP_TOP          
+                  24  LOAD_GLOBAL              UnicodeEncodeError
+                  26  COMPARE_OP               exception-match
+                  28  POP_JUMP_IF_FALSE    40  'to 40'
+                  30  POP_TOP          
+->                32  POP_TOP          
+                  34  POP_TOP          
+
+../test/145894.pyc -- 
+# decompile failed
+
+# file ../test/145894.pyc
+# Deparsing stopped due to parse error

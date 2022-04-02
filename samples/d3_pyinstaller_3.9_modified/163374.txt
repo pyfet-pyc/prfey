@@ -1,0 +1,528 @@
+
+# file test/163374.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Tokenization help for Python programs.\n\ntokenize(readline) is a generator that breaks a stream of bytes into\nPython tokens.  It decodes the bytes according to PEP-0263 for\ndetermining source file encoding.\n\nIt accepts a readline-like method which is called repeatedly to get the\nnext line of input (or b"" for EOF).  It generates 5-tuples with these\nmembers:\n\n    the token type (see token.py)\n    the token (a string)\n    the starting (row, column) indices of the token (a 2-tuple of ints)\n    the ending (row, column) indices of the token (a 2-tuple of ints)\n    the original line (string)\n\nIt is designed to match the working of the Python tokenizer exactly, except\nthat it produces COMMENT tokens for comments and gives type OP for all\noperators.  Additionally, all token lists start with an ENCODING token\nwhich tells you which encoding was used to decode the bytes stream.\n'
+                2  STORE_NAME               __doc__
+
+ L.  23         4  LOAD_STR                 'Ka-Ping Yee <ping@lfw.org>'
+                6  STORE_NAME               __author__
+
+ L.  24         8  LOAD_STR                 'GvR, ESR, Tim Peters, Thomas Wouters, Fred Drake, Skip Montanaro, Raymond Hettinger, Trent Nelson, Michael Foord'
+               10  STORE_NAME               __credits__
+
+ L.  27        12  LOAD_CONST               0
+               14  LOAD_CONST               ('open',)
+               16  IMPORT_NAME              builtins
+               18  IMPORT_FROM              open
+               20  STORE_NAME               _builtin_open
+               22  POP_TOP          
+
+ L.  28        24  LOAD_CONST               0
+               26  LOAD_CONST               ('lookup', 'BOM_UTF8')
+               28  IMPORT_NAME              codecs
+               30  IMPORT_FROM              lookup
+               32  STORE_NAME               lookup
+               34  IMPORT_FROM              BOM_UTF8
+               36  STORE_NAME               BOM_UTF8
+               38  POP_TOP          
+
+ L.  29        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              collections
+               46  STORE_NAME               collections
+
+ L.  30        48  LOAD_CONST               0
+               50  LOAD_CONST               ('TextIOWrapper',)
+               52  IMPORT_NAME              io
+               54  IMPORT_FROM              TextIOWrapper
+               56  STORE_NAME               TextIOWrapper
+               58  POP_TOP          
+
+ L.  31        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              itertools
+               66  STORE_NAME               _itertools
+
+ L.  32        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              re
+               74  STORE_NAME               re
+
+ L.  33        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME              sys
+               82  STORE_NAME               sys
+
+ L.  34        84  LOAD_CONST               0
+               86  LOAD_CONST               ('*',)
+               88  IMPORT_NAME              token
+               90  IMPORT_STAR      
+
+ L.  35        92  LOAD_CONST               0
+               94  LOAD_CONST               ('EXACT_TOKEN_TYPES',)
+               96  IMPORT_NAME              token
+               98  IMPORT_FROM              EXACT_TOKEN_TYPES
+              100  STORE_NAME               EXACT_TOKEN_TYPES
+              102  POP_TOP          
+
+ L.  37       104  LOAD_NAME                re
+              106  LOAD_METHOD              compile
+              108  LOAD_STR                 '^[ \\t\\f]*#.*?coding[:=][ \\t]*([-\\w.]+)'
+              110  LOAD_NAME                re
+              112  LOAD_ATTR                ASCII
+              114  CALL_METHOD_2         2  ''
+              116  STORE_NAME               cookie_re
+
+ L.  38       118  LOAD_NAME                re
+              120  LOAD_METHOD              compile
+              122  LOAD_CONST               b'^[ \\t\\f]*(?:[#\\r\\n]|$)'
+              124  LOAD_NAME                re
+              126  LOAD_ATTR                ASCII
+              128  CALL_METHOD_2         2  ''
+              130  STORE_NAME               blank_re
+
+ L.  40       132  LOAD_CONST               0
+              134  LOAD_CONST               None
+              136  IMPORT_NAME              token
+              138  STORE_NAME               token
+
+ L.  41       140  LOAD_NAME                token
+              142  LOAD_ATTR                __all__
+              144  BUILD_LIST_0          0 
+              146  LOAD_CONST               ('tokenize', 'generate_tokens', 'detect_encoding', 'untokenize', 'TokenInfo')
+              148  CALL_FINALLY        151  'to 151'
+              150  BINARY_ADD       
+              152  STORE_NAME               __all__
+
+ L.  43       154  DELETE_NAME              token
+
+ L.  45       156  LOAD_BUILD_CLASS 
+              158  LOAD_CODE                <code_object TokenInfo>
+              160  LOAD_STR                 'TokenInfo'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  LOAD_STR                 'TokenInfo'
+              166  LOAD_NAME                collections
+              168  LOAD_METHOD              namedtuple
+              170  LOAD_STR                 'TokenInfo'
+              172  LOAD_STR                 'type string start end line'
+              174  CALL_METHOD_2         2  ''
+              176  CALL_FUNCTION_3       3  ''
+              178  STORE_NAME               TokenInfo
+
+ L.  58       180  LOAD_CODE                <code_object group>
+              182  LOAD_STR                 'group'
+              184  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              186  STORE_NAME               group
+
+ L.  59       188  LOAD_CODE                <code_object any>
+              190  LOAD_STR                 'any'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  STORE_NAME               any
+
+ L.  60       196  LOAD_CODE                <code_object maybe>
+              198  LOAD_STR                 'maybe'
+              200  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              202  STORE_NAME               maybe
+
+ L.  64       204  LOAD_STR                 '[ \\f\\t]*'
+              206  STORE_NAME               Whitespace
+
+ L.  65       208  LOAD_STR                 '#[^\\r\\n]*'
+              210  STORE_NAME               Comment
+
+ L.  66       212  LOAD_NAME                Whitespace
+              214  LOAD_NAME                any
+              216  LOAD_STR                 '\\\\\\r?\\n'
+              218  LOAD_NAME                Whitespace
+              220  BINARY_ADD       
+              222  CALL_FUNCTION_1       1  ''
+              224  BINARY_ADD       
+              226  LOAD_NAME                maybe
+              228  LOAD_NAME                Comment
+              230  CALL_FUNCTION_1       1  ''
+              232  BINARY_ADD       
+              234  STORE_NAME               Ignore
+
+ L.  67       236  LOAD_STR                 '\\w+'
+              238  STORE_NAME               Name
+
+ L.  69       240  LOAD_STR                 '0[xX](?:_?[0-9a-fA-F])+'
+              242  STORE_NAME               Hexnumber
+
+ L.  70       244  LOAD_STR                 '0[bB](?:_?[01])+'
+              246  STORE_NAME               Binnumber
+
+ L.  71       248  LOAD_STR                 '0[oO](?:_?[0-7])+'
+              250  STORE_NAME               Octnumber
+
+ L.  72       252  LOAD_STR                 '(?:0(?:_?0)*|[1-9](?:_?[0-9])*)'
+              254  STORE_NAME               Decnumber
+
+ L.  73       256  LOAD_NAME                group
+              258  LOAD_NAME                Hexnumber
+              260  LOAD_NAME                Binnumber
+              262  LOAD_NAME                Octnumber
+              264  LOAD_NAME                Decnumber
+              266  CALL_FUNCTION_4       4  ''
+              268  STORE_NAME               Intnumber
+
+ L.  74       270  LOAD_STR                 '[eE][-+]?[0-9](?:_?[0-9])*'
+              272  STORE_NAME               Exponent
+
+ L.  75       274  LOAD_NAME                group
+              276  LOAD_STR                 '[0-9](?:_?[0-9])*\\.(?:[0-9](?:_?[0-9])*)?'
+
+ L.  76       278  LOAD_STR                 '\\.[0-9](?:_?[0-9])*'
+
+ L.  75       280  CALL_FUNCTION_2       2  ''
+
+ L.  76       282  LOAD_NAME                maybe
+              284  LOAD_NAME                Exponent
+              286  CALL_FUNCTION_1       1  ''
+
+ L.  75       288  BINARY_ADD       
+              290  STORE_NAME               Pointfloat
+
+ L.  77       292  LOAD_STR                 '[0-9](?:_?[0-9])*'
+              294  LOAD_NAME                Exponent
+              296  BINARY_ADD       
+              298  STORE_NAME               Expfloat
+
+ L.  78       300  LOAD_NAME                group
+              302  LOAD_NAME                Pointfloat
+              304  LOAD_NAME                Expfloat
+              306  CALL_FUNCTION_2       2  ''
+              308  STORE_NAME               Floatnumber
+
+ L.  79       310  LOAD_NAME                group
+              312  LOAD_STR                 '[0-9](?:_?[0-9])*[jJ]'
+              314  LOAD_NAME                Floatnumber
+              316  LOAD_STR                 '[jJ]'
+              318  BINARY_ADD       
+              320  CALL_FUNCTION_2       2  ''
+              322  STORE_NAME               Imagnumber
+
+ L.  80       324  LOAD_NAME                group
+              326  LOAD_NAME                Imagnumber
+              328  LOAD_NAME                Floatnumber
+              330  LOAD_NAME                Intnumber
+              332  CALL_FUNCTION_3       3  ''
+              334  STORE_NAME               Number
+
+ L.  83       336  LOAD_CODE                <code_object _all_string_prefixes>
+              338  LOAD_STR                 '_all_string_prefixes'
+              340  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              342  STORE_NAME               _all_string_prefixes
+
+ L.  98       344  LOAD_CODE                <code_object _compile>
+              346  LOAD_STR                 '_compile'
+              348  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              350  STORE_NAME               _compile
+
+ L. 103       352  LOAD_NAME                group
+              354  LOAD_NAME                _all_string_prefixes
+              356  CALL_FUNCTION_0       0  ''
+              358  CALL_FUNCTION_EX      0  'positional arguments only'
+              360  STORE_NAME               StringPrefix
+
+ L. 106       362  LOAD_STR                 "[^'\\\\]*(?:\\\\.[^'\\\\]*)*'"
+              364  STORE_NAME               Single
+
+ L. 108       366  LOAD_STR                 '[^"\\\\]*(?:\\\\.[^"\\\\]*)*"'
+              368  STORE_NAME               Double
+
+ L. 110       370  LOAD_STR                 "[^'\\\\]*(?:(?:\\\\.|'(?!''))[^'\\\\]*)*'''"
+              372  STORE_NAME               Single3
+
+ L. 112       374  LOAD_STR                 '[^"\\\\]*(?:(?:\\\\.|"(?!""))[^"\\\\]*)*"""'
+              376  STORE_NAME               Double3
+
+ L. 113       378  LOAD_NAME                group
+              380  LOAD_NAME                StringPrefix
+              382  LOAD_STR                 "'''"
+              384  BINARY_ADD       
+              386  LOAD_NAME                StringPrefix
+              388  LOAD_STR                 '"""'
+              390  BINARY_ADD       
+              392  CALL_FUNCTION_2       2  ''
+              394  STORE_NAME               Triple
+
+ L. 115       396  LOAD_NAME                group
+              398  LOAD_NAME                StringPrefix
+              400  LOAD_STR                 "'[^\\n'\\\\]*(?:\\\\.[^\\n'\\\\]*)*'"
+              402  BINARY_ADD       
+
+ L. 116       404  LOAD_NAME                StringPrefix
+              406  LOAD_STR                 '"[^\\n"\\\\]*(?:\\\\.[^\\n"\\\\]*)*"'
+              408  BINARY_ADD       
+
+ L. 115       410  CALL_FUNCTION_2       2  ''
+              412  STORE_NAME               String
+
+ L. 121       414  LOAD_NAME                group
+              416  LOAD_NAME                map
+              418  LOAD_NAME                re
+              420  LOAD_ATTR                escape
+              422  LOAD_NAME                sorted
+              424  LOAD_NAME                EXACT_TOKEN_TYPES
+              426  LOAD_CONST               True
+              428  LOAD_CONST               ('reverse',)
+              430  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              432  CALL_FUNCTION_2       2  ''
+              434  CALL_FUNCTION_EX      0  'positional arguments only'
+              436  STORE_NAME               Special
+
+ L. 122       438  LOAD_NAME                group
+              440  LOAD_STR                 '\\r?\\n'
+              442  LOAD_NAME                Special
+              444  CALL_FUNCTION_2       2  ''
+              446  STORE_NAME               Funny
+
+ L. 124       448  LOAD_NAME                group
+              450  LOAD_NAME                Number
+              452  LOAD_NAME                Funny
+              454  LOAD_NAME                String
+              456  LOAD_NAME                Name
+              458  CALL_FUNCTION_4       4  ''
+              460  STORE_NAME               PlainToken
+
+ L. 125       462  LOAD_NAME                Ignore
+              464  LOAD_NAME                PlainToken
+              466  BINARY_ADD       
+              468  STORE_NAME               Token
+
+ L. 128       470  LOAD_NAME                group
+              472  LOAD_NAME                StringPrefix
+              474  LOAD_STR                 "'[^\\n'\\\\]*(?:\\\\.[^\\n'\\\\]*)*"
+              476  BINARY_ADD       
+
+ L. 129       478  LOAD_NAME                group
+              480  LOAD_STR                 "'"
+              482  LOAD_STR                 '\\\\\\r?\\n'
+              484  CALL_FUNCTION_2       2  ''
+
+ L. 128       486  BINARY_ADD       
+
+ L. 130       488  LOAD_NAME                StringPrefix
+              490  LOAD_STR                 '"[^\\n"\\\\]*(?:\\\\.[^\\n"\\\\]*)*'
+              492  BINARY_ADD       
+
+ L. 131       494  LOAD_NAME                group
+              496  LOAD_STR                 '"'
+              498  LOAD_STR                 '\\\\\\r?\\n'
+              500  CALL_FUNCTION_2       2  ''
+
+ L. 130       502  BINARY_ADD       
+
+ L. 128       504  CALL_FUNCTION_2       2  ''
+              506  STORE_NAME               ContStr
+
+ L. 132       508  LOAD_NAME                group
+              510  LOAD_STR                 '\\\\\\r?\\n|\\Z'
+              512  LOAD_NAME                Comment
+              514  LOAD_NAME                Triple
+              516  CALL_FUNCTION_3       3  ''
+              518  STORE_NAME               PseudoExtras
+
+ L. 133       520  LOAD_NAME                Whitespace
+              522  LOAD_NAME                group
+              524  LOAD_NAME                PseudoExtras
+              526  LOAD_NAME                Number
+              528  LOAD_NAME                Funny
+              530  LOAD_NAME                ContStr
+              532  LOAD_NAME                Name
+              534  CALL_FUNCTION_5       5  ''
+              536  BINARY_ADD       
+              538  STORE_NAME               PseudoToken
+
+ L. 138       540  BUILD_MAP_0           0 
+              542  STORE_NAME               endpats
+
+ L. 139       544  LOAD_NAME                _all_string_prefixes
+              546  CALL_FUNCTION_0       0  ''
+              548  GET_ITER         
+            550_0  COME_FROM           602  '602'
+              550  FOR_ITER            606  'to 606'
+              552  STORE_NAME               _prefix
+
+ L. 140       554  LOAD_NAME                Single
+              556  LOAD_NAME                endpats
+              558  LOAD_NAME                _prefix
+              560  LOAD_STR                 "'"
+              562  BINARY_ADD       
+              564  STORE_SUBSCR     
+
+ L. 141       566  LOAD_NAME                Double
+              568  LOAD_NAME                endpats
+              570  LOAD_NAME                _prefix
+              572  LOAD_STR                 '"'
+              574  BINARY_ADD       
+              576  STORE_SUBSCR     
+
+ L. 142       578  LOAD_NAME                Single3
+              580  LOAD_NAME                endpats
+              582  LOAD_NAME                _prefix
+              584  LOAD_STR                 "'''"
+              586  BINARY_ADD       
+              588  STORE_SUBSCR     
+
+ L. 143       590  LOAD_NAME                Double3
+              592  LOAD_NAME                endpats
+              594  LOAD_NAME                _prefix
+              596  LOAD_STR                 '"""'
+              598  BINARY_ADD       
+              600  STORE_SUBSCR     
+          602_604  JUMP_BACK           550  'to 550'
+            606_0  COME_FROM           550  '550'
+
+ L. 147       606  LOAD_NAME                set
+              608  CALL_FUNCTION_0       0  ''
+              610  STORE_NAME               single_quoted
+
+ L. 148       612  LOAD_NAME                set
+              614  CALL_FUNCTION_0       0  ''
+              616  STORE_NAME               triple_quoted
+
+ L. 149       618  LOAD_NAME                _all_string_prefixes
+              620  CALL_FUNCTION_0       0  ''
+              622  GET_ITER         
+            624_0  COME_FROM           696  '696'
+              624  FOR_ITER            700  'to 700'
+              626  STORE_NAME               t
+
+ L. 150       628  LOAD_NAME                t
+              630  LOAD_STR                 '"'
+              632  BINARY_ADD       
+              634  LOAD_NAME                t
+              636  LOAD_STR                 "'"
+              638  BINARY_ADD       
+              640  BUILD_TUPLE_2         2 
+              642  GET_ITER         
+            644_0  COME_FROM           658  '658'
+              644  FOR_ITER            662  'to 662'
+              646  STORE_NAME               u
+
+ L. 151       648  LOAD_NAME                single_quoted
+              650  LOAD_METHOD              add
+              652  LOAD_NAME                u
+              654  CALL_METHOD_1         1  ''
+              656  POP_TOP          
+          658_660  JUMP_BACK           644  'to 644'
+            662_0  COME_FROM           644  '644'
+
+ L. 152       662  LOAD_NAME                t
+              664  LOAD_STR                 '"""'
+              666  BINARY_ADD       
+              668  LOAD_NAME                t
+              670  LOAD_STR                 "'''"
+              672  BINARY_ADD       
+              674  BUILD_TUPLE_2         2 
+              676  GET_ITER         
+            678_0  COME_FROM           692  '692'
+              678  FOR_ITER            696  'to 696'
+              680  STORE_NAME               u
+
+ L. 153       682  LOAD_NAME                triple_quoted
+              684  LOAD_METHOD              add
+              686  LOAD_NAME                u
+              688  CALL_METHOD_1         1  ''
+              690  POP_TOP          
+          692_694  JUMP_BACK           678  'to 678'
+            696_0  COME_FROM           678  '678'
+          696_698  JUMP_BACK           624  'to 624'
+            700_0  COME_FROM           624  '624'
+
+ L. 155       700  LOAD_CONST               8
+              702  STORE_NAME               tabsize
+
+ L. 157       704  LOAD_BUILD_CLASS 
+              706  LOAD_CODE                <code_object TokenError>
+              708  LOAD_STR                 'TokenError'
+              710  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              712  LOAD_STR                 'TokenError'
+              714  LOAD_NAME                Exception
+              716  CALL_FUNCTION_3       3  ''
+              718  STORE_NAME               TokenError
+
+ L. 159       720  LOAD_BUILD_CLASS 
+              722  LOAD_CODE                <code_object StopTokenizing>
+              724  LOAD_STR                 'StopTokenizing'
+              726  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              728  LOAD_STR                 'StopTokenizing'
+              730  LOAD_NAME                Exception
+              732  CALL_FUNCTION_3       3  ''
+              734  STORE_NAME               StopTokenizing
+
+ L. 162       736  LOAD_BUILD_CLASS 
+              738  LOAD_CODE                <code_object Untokenizer>
+              740  LOAD_STR                 'Untokenizer'
+              742  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              744  LOAD_STR                 'Untokenizer'
+              746  CALL_FUNCTION_2       2  ''
+              748  STORE_NAME               Untokenizer
+
+ L. 257       750  LOAD_CODE                <code_object untokenize>
+              752  LOAD_STR                 'untokenize'
+              754  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              756  STORE_NAME               untokenize
+
+ L. 284       758  LOAD_CODE                <code_object _get_normal_name>
+              760  LOAD_STR                 '_get_normal_name'
+              762  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              764  STORE_NAME               _get_normal_name
+
+ L. 295       766  LOAD_CODE                <code_object detect_encoding>
+              768  LOAD_STR                 'detect_encoding'
+              770  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              772  STORE_NAME               detect_encoding
+
+ L. 388       774  LOAD_CODE                <code_object open>
+              776  LOAD_STR                 'open'
+              778  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              780  STORE_NAME               open
+
+ L. 404       782  LOAD_CODE                <code_object tokenize>
+              784  LOAD_STR                 'tokenize'
+              786  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              788  STORE_NAME               tokenize
+
+ L. 429       790  LOAD_CODE                <code_object _tokenize>
+              792  LOAD_STR                 '_tokenize'
+              794  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              796  STORE_NAME               _tokenize
+
+ L. 612       798  LOAD_CODE                <code_object generate_tokens>
+              800  LOAD_STR                 'generate_tokens'
+              802  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              804  STORE_NAME               generate_tokens
+
+ L. 620       806  LOAD_CODE                <code_object main>
+              808  LOAD_STR                 'main'
+              810  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              812  STORE_NAME               main
+
+ L. 681       814  LOAD_NAME                __name__
+              816  LOAD_STR                 '__main__'
+              818  COMPARE_OP               ==
+          820_822  POP_JUMP_IF_FALSE   830  'to 830'
+
+ L. 682       824  LOAD_NAME                main
+              826  CALL_FUNCTION_0       0  ''
+              828  POP_TOP          
+            830_0  COME_FROM           820  '820'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 148
+
+Instruction context:
+   
+ L.  41       140  LOAD_NAME                token
+                 142  LOAD_ATTR                __all__
+                 144  BUILD_LIST_0          0 
+                 146  LOAD_CONST               ('tokenize', 'generate_tokens', 'detect_encoding', 'untokenize', 'TokenInfo')
+->               148  CALL_FINALLY        151  'to 151'
+                 150  BINARY_ADD       
+                 152  STORE_NAME               __all__
+
+test/163374.pyc -- 
+# decompile failed

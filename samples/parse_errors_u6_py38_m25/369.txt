@@ -1,0 +1,35 @@
+Instruction context:
+   
+ L.  34        44  POP_EXCEPT       
+->                46  LOAD_CONST               None
+                  48  RETURN_VALUE     
+                50_0  COME_FROM            42  '42'
+Instruction context:
+   
+ L. 295        12  LOAD_FAST                'file'
+                  14  LOAD_METHOD              read
+                  16  CALL_METHOD_0         0  ''
+                  18  POP_BLOCK        
+->                20  ROT_TWO          
+                  22  BEGIN_FINALLY    
+                  24  WITH_CLEANUP_START
+                  26  WITH_CLEANUP_FINISH
+                  28  POP_FINALLY           0  ''
+                  30  RETURN_VALUE     
+                32_0  COME_FROM_WITH        8  '8'
+                  32  WITH_CLEANUP_START
+                  34  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 421        64  POP_BLOCK        
+                  66  POP_TOP          
+->                68  JUMP_ABSOLUTE       100  'to 100'
+                  70  POP_BLOCK        
+                  72  JUMP_BACK            36  'to 36'
+                74_0  COME_FROM_FINALLY    40  '40'
+
+test/369.pyc -- 
+# decompile failed
+
+# file test/369.pyc
+# Deparsing stopped due to parse error

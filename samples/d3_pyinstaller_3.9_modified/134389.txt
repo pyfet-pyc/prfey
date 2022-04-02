@@ -1,0 +1,79 @@
+Instruction context:
+   
+ L.  16        76  BUILD_LIST_0          0 
+                  78  LOAD_CONST               ('pipe', 'optional', 'default_if_none')
+->                80  CALL_FINALLY         83  'to 83'
+                  82  STORE_NAME               __all__
+
+test/134389.pyc -- 
+# decompile failed
+
+# file test/134389.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nCommonly useful converters.\n'
+                2  STORE_NAME               __doc__
+
+ L.   5         4  LOAD_CONST               0
+                6  LOAD_CONST               ('absolute_import', 'division', 'print_function')
+                8  IMPORT_NAME              __future__
+               10  IMPORT_FROM              absolute_import
+               12  STORE_NAME               absolute_import
+               14  IMPORT_FROM              division
+               16  STORE_NAME               division
+               18  IMPORT_FROM              print_function
+               20  STORE_NAME               print_function
+               22  POP_TOP          
+
+ L.   7        24  LOAD_CONST               1
+               26  LOAD_CONST               ('PY2',)
+               28  IMPORT_NAME              _compat
+               30  IMPORT_FROM              PY2
+               32  STORE_NAME               PY2
+               34  POP_TOP          
+
+ L.   8        36  LOAD_CONST               1
+               38  LOAD_CONST               ('NOTHING', 'Factory', 'pipe')
+               40  IMPORT_NAME              _make
+               42  IMPORT_FROM              NOTHING
+               44  STORE_NAME               NOTHING
+               46  IMPORT_FROM              Factory
+               48  STORE_NAME               Factory
+               50  IMPORT_FROM              pipe
+               52  STORE_NAME               pipe
+               54  POP_TOP          
+
+ L.  11        56  LOAD_NAME                PY2
+               58  POP_JUMP_IF_TRUE     76  'to 76'
+
+ L.  12        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              inspect
+               66  STORE_NAME               inspect
+
+ L.  13        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              typing
+               74  STORE_NAME               typing
+             76_0  COME_FROM            58  '58'
+
+ L.  16        76  BUILD_LIST_0          0 
+               78  LOAD_CONST               ('pipe', 'optional', 'default_if_none')
+               80  CALL_FINALLY         83  'to 83'
+               82  STORE_NAME               __all__
+
+ L.  23        84  LOAD_CODE                <code_object optional>
+               86  LOAD_STR                 'optional'
+               88  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               90  STORE_NAME               optional
+
+ L.  62        92  LOAD_NAME                NOTHING
+               94  LOAD_CONST               None
+               96  BUILD_TUPLE_2         2 
+               98  LOAD_CODE                <code_object default_if_none>
+              100  LOAD_STR                 'default_if_none'
+              102  MAKE_FUNCTION_1          'default'
+              104  STORE_NAME               default_if_none
+
+Parse error at or near `CALL_FINALLY' instruction at offset 80
+

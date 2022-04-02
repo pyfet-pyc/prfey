@@ -1,0 +1,48 @@
+Instruction context:
+   
+ L. 124        16  DUP_TOP          
+                  18  LOAD_GLOBAL              KeyError
+                  20  COMPARE_OP               exception-match
+                  22  POP_JUMP_IF_FALSE    74  'to 74'
+                  24  POP_TOP          
+->                26  POP_TOP          
+                  28  POP_TOP          
+Instruction context:
+   
+ L. 285        70  POP_TOP          
+->                72  POP_TOP          
+                  74  LOAD_CONST               True
+                  76  RETURN_VALUE     
+                  78  JUMP_BACK            50  'to 50'
+                  80  JUMP_BACK            22  'to 22'
+Instruction context:
+   
+ L. 414        56  LOAD_STR                 'inplace'
+                  58  LOAD_FAST                'var'
+                  60  LOAD_STR                 'intent'
+                  62  BINARY_SUBSCR    
+                  64  COMPARE_OP               not-in
+                66_0  COME_FROM            54  '54'
+                66_1  COME_FROM            42  '42'
+                66_2  COME_FROM            30  '30'
+->              66_3  COME_FROM             6  '6'
+Instruction context:
+   
+ L. 588        20  DUP_TOP          
+                  22  LOAD_GLOBAL              KeyError
+                  24  COMPARE_OP               exception-match
+                  26  POP_JUMP_IF_FALSE    40  'to 40'
+                  28  POP_TOP          
+->                30  POP_TOP          
+                  32  POP_TOP          
+Instruction context:
+   
+ L. 824       306  JUMP_BACK           144  'to 144'
+->           308_310  JUMP_FORWARD        598  'to 598'
+               312_0  COME_FROM           302  '302'
+
+../test/183759.pyc -- 
+# decompile failed
+
+# file ../test/183759.pyc
+# Deparsing stopped due to parse error

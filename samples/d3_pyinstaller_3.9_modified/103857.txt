@@ -1,0 +1,147 @@
+Instruction context:
+   
+ L.  18       108  LOAD_STR                 '_OpenSSLErrorWithText'
+                 110  BUILD_LIST_0          0 
+                 112  LOAD_CONST               ('code', 'lib', 'func', 'reason', 'reason_text')
+->               114  CALL_FINALLY        117  'to 117'
+
+test/103857.pyc -- 
+# decompile failed
+
+# file test/103857.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import', 'division', 'print_function')
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  IMPORT_FROM              division
+               12  STORE_NAME               division
+               14  IMPORT_FROM              print_function
+               16  STORE_NAME               print_function
+               18  POP_TOP          
+
+ L.   7        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              collections
+               26  STORE_NAME               collections
+
+ L.   8        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              threading
+               34  STORE_NAME               threading
+
+ L.   9        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              types
+               42  STORE_NAME               types
+
+ L.  11        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              cryptography
+               50  STORE_NAME               cryptography
+
+ L.  12        52  LOAD_CONST               0
+               54  LOAD_CONST               ('utils',)
+               56  IMPORT_NAME              cryptography
+               58  IMPORT_FROM              utils
+               60  STORE_NAME               utils
+               62  POP_TOP          
+
+ L.  13        64  LOAD_CONST               0
+               66  LOAD_CONST               ('InternalError',)
+               68  IMPORT_NAME_ATTR         cryptography.exceptions
+               70  IMPORT_FROM              InternalError
+               72  STORE_NAME               InternalError
+               74  POP_TOP          
+
+ L.  14        76  LOAD_CONST               0
+               78  LOAD_CONST               ('ffi', 'lib')
+               80  IMPORT_NAME_ATTR         cryptography.hazmat.bindings._openssl
+               82  IMPORT_FROM              ffi
+               84  STORE_NAME               ffi
+               86  IMPORT_FROM              lib
+               88  STORE_NAME               lib
+               90  POP_TOP          
+
+ L.  15        92  LOAD_CONST               0
+               94  LOAD_CONST               ('CONDITIONAL_NAMES',)
+               96  IMPORT_NAME_ATTR         cryptography.hazmat.bindings.openssl._conditional
+               98  IMPORT_FROM              CONDITIONAL_NAMES
+              100  STORE_NAME               CONDITIONAL_NAMES
+              102  POP_TOP          
+
+ L.  17       104  LOAD_NAME                collections
+              106  LOAD_METHOD              namedtuple
+
+ L.  18       108  LOAD_STR                 '_OpenSSLErrorWithText'
+              110  BUILD_LIST_0          0 
+              112  LOAD_CONST               ('code', 'lib', 'func', 'reason', 'reason_text')
+              114  CALL_FINALLY        117  'to 117'
+
+ L.  17       116  CALL_METHOD_2         2  ''
+              118  STORE_NAME               _OpenSSLErrorWithText
+
+ L.  22       120  LOAD_BUILD_CLASS 
+              122  LOAD_CODE                <code_object _OpenSSLError>
+              124  LOAD_STR                 '_OpenSSLError'
+              126  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              128  LOAD_STR                 '_OpenSSLError'
+              130  LOAD_NAME                object
+              132  CALL_FUNCTION_3       3  ''
+              134  STORE_NAME               _OpenSSLError
+
+ L.  38       136  LOAD_CODE                <code_object _consume_errors>
+              138  LOAD_STR                 '_consume_errors'
+              140  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              142  STORE_NAME               _consume_errors
+
+ L.  54       144  LOAD_CODE                <code_object _errors_with_text>
+              146  LOAD_STR                 '_errors_with_text'
+              148  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              150  STORE_NAME               _errors_with_text
+
+ L.  70       152  LOAD_CODE                <code_object _consume_errors_with_text>
+              154  LOAD_STR                 '_consume_errors_with_text'
+              156  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              158  STORE_NAME               _consume_errors_with_text
+
+ L.  74       160  LOAD_CONST               (None,)
+              162  LOAD_CODE                <code_object _openssl_assert>
+              164  LOAD_STR                 '_openssl_assert'
+              166  MAKE_FUNCTION_1          'default'
+              168  STORE_NAME               _openssl_assert
+
+ L.  92       170  LOAD_CODE                <code_object build_conditional_library>
+              172  LOAD_STR                 'build_conditional_library'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  STORE_NAME               build_conditional_library
+
+ L. 107       178  LOAD_BUILD_CLASS 
+              180  LOAD_CODE                <code_object Binding>
+              182  LOAD_STR                 'Binding'
+              184  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              186  LOAD_STR                 'Binding'
+              188  LOAD_NAME                object
+              190  CALL_FUNCTION_3       3  ''
+              192  STORE_NAME               Binding
+
+ L. 149       194  LOAD_CODE                <code_object _verify_package_version>
+              196  LOAD_STR                 '_verify_package_version'
+              198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              200  STORE_NAME               _verify_package_version
+
+ L. 170       202  LOAD_NAME                _verify_package_version
+              204  LOAD_NAME                cryptography
+              206  LOAD_ATTR                __version__
+              208  CALL_FUNCTION_1       1  ''
+              210  POP_TOP          
+
+ L. 172       212  LOAD_NAME                Binding
+              214  LOAD_METHOD              init_static_locks
+              216  CALL_METHOD_0         0  ''
+              218  POP_TOP          
+
+Parse error at or near `CALL_FINALLY' instruction at offset 114
+

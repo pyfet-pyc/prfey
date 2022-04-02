@@ -1,0 +1,106 @@
+Instruction context:
+   
+ L. 210        10  LOAD_FAST                'self'
+                  12  LOAD_ATTR                transport
+                  14  LOAD_CONST               None
+->                16  <117>                 1  ''
+                  18  POP_JUMP_IF_FALSE    24  'to 24'
+                  20  LOAD_STR                 'connected'
+                  22  JUMP_FORWARD         26  'to 26'
+                24_0  COME_FROM            18  '18'
+                  24  LOAD_STR                 'disconnected'
+                26_0  COME_FROM            22  '22'
+Instruction context:
+   
+ L. 223         6  LOAD_FAST                'self'
+                   8  LOAD_ATTR                _keepalive_handle
+                  10  LOAD_CONST               None
+->                12  <117>                 1  ''
+                  14  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L. 257        56  LOAD_FAST                'self'
+                  58  LOAD_ATTR                _manager
+                  60  LOAD_CONST               None
+->                62  <117>                 1  ''
+                  64  POP_JUMP_IF_TRUE     70  'to 70'
+                  66  <74>             
+                  68  RAISE_VARARGS_1       1  'exception instance'
+                70_0  COME_FROM            64  '64'
+Instruction context:
+   
+ L. 311        16  LOAD_FAST                'self'
+                  18  LOAD_ATTR                _payload_parser
+                  20  LOAD_CONST               None
+->                22  <117>                 0  ''
+               24_26  POP_JUMP_IF_FALSE   340  'to 340'
+                  28  LOAD_FAST                'self'
+                  30  LOAD_ATTR                _upgrade
+               32_34  POP_JUMP_IF_TRUE    340  'to 340'
+Instruction context:
+   
+ L. 378        22  LOAD_FAST                'self'
+                  24  LOAD_ATTR                transport
+                  26  LOAD_CONST               None
+->                28  <117>                 1  ''
+                  30  POP_JUMP_IF_FALSE    48  'to 48'
+Instruction context:
+   
+ L. 390         6  LOAD_FAST                'self'
+                   8  LOAD_ATTR                logger
+                  10  LOAD_ATTR                debug
+                  12  LOAD_FAST                'args'
+                  14  BUILD_MAP_0           0 
+                  16  LOAD_FAST                'kw'
+->                18  <164>                 1  ''
+                  20  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  22  POP_TOP          
+Instruction context:
+   
+ L. 455        12  LOAD_FAST                'handler'
+                  14  LOAD_CONST               None
+->                16  <117>                 1  ''
+                  18  POP_JUMP_IF_TRUE     24  'to 24'
+                  20  <74>             
+                  22  RAISE_VARARGS_1       1  'exception instance'
+                24_0  COME_FROM            18  '18'
+Instruction context:
+   
+ L. 620        68  LOAD_GLOBAL              traceback
+                  70  LOAD_METHOD              format_exc
+                  72  CALL_METHOD_0         0  ''
+                  74  STORE_FAST               'tb'
+                  76  POP_BLOCK        
+                  78  LOAD_CONST               None
+->                80  DUP_TOP          
+                  82  DUP_TOP          
+                  84  CALL_FUNCTION_3       3  ''
+                  86  POP_TOP          
+                  88  JUMP_FORWARD        106  'to 106'
+                90_0  COME_FROM_WITH       64  '64'
+                  90  <49>             
+                  92  POP_JUMP_IF_TRUE     96  'to 96'
+                  94  <48>             
+                96_0  COME_FROM            92  '92'
+                  96  POP_TOP          
+                  98  POP_TOP          
+                 100  POP_TOP          
+                 102  POP_EXCEPT       
+                 104  POP_TOP          
+               106_0  COME_FROM            88  '88'
+               106_1  COME_FROM            56  '56'
+Instruction context:
+   
+ L. 655         6  LOAD_FAST                'task'
+                   8  LOAD_CONST               None
+->                10  <117>                 1  ''
+                  12  POP_JUMP_IF_TRUE     18  'to 18'
+                  14  <74>             
+                  16  RAISE_VARARGS_1       1  'exception instance'
+                18_0  COME_FROM            12  '12'
+
+test/134349.pyc -- 
+# decompile failed
+
+# file test/134349.pyc
+# Deparsing stopped due to parse error

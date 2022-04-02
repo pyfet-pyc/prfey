@@ -1,0 +1,218 @@
+
+# file test/111698.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "An FTP client class and some helper functions.\n\nBased on RFC 959: File Transfer Protocol (FTP), by J. Postel and J. Reynolds\n\nExample:\n\n>>> from ftplib import FTP\n>>> ftp = FTP('ftp.python.org') # connect to host, default port\n>>> ftp.login() # default, i.e.: user anonymous, passwd anonymous@\n'230 Guest login ok, access restrictions apply.'\n>>> ftp.retrlines('LIST') # list directory contents\ntotal 9\ndrwxr-xr-x   8 root     wheel        1024 Jan  3  1994 .\ndrwxr-xr-x   8 root     wheel        1024 Jan  3  1994 ..\ndrwxr-xr-x   2 root     wheel        1024 Jan  3  1994 bin\ndrwxr-xr-x   2 root     wheel        1024 Jan  3  1994 etc\nd-wxrwxr-x   2 ftp      wheel        1024 Sep  5 13:43 incoming\ndrwxr-xr-x   2 root     wheel        1024 Nov 17  1993 lib\ndrwxr-xr-x   6 1094     wheel        1024 Sep 13 19:07 pub\ndrwxr-xr-x   3 root     wheel        1024 Jan  3  1994 usr\n-rw-r--r--   1 root     root          312 Aug  1  1994 welcome.msg\n'226 Transfer complete.'\n>>> ftp.quit()\n'221 Goodbye.'\n>>>\n\nA nice test that reveals some of the network dialogue would be:\npython ftplib.py -d localhost -l -p -l\n"
+                2  STORE_NAME               __doc__
+
+ L.  39         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.  40        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              socket
+               18  STORE_NAME               socket
+
+ L.  41        20  LOAD_CONST               0
+               22  LOAD_CONST               ('_GLOBAL_DEFAULT_TIMEOUT',)
+               24  IMPORT_NAME              socket
+               26  IMPORT_FROM              _GLOBAL_DEFAULT_TIMEOUT
+               28  STORE_NAME               _GLOBAL_DEFAULT_TIMEOUT
+               30  POP_TOP          
+
+ L.  43        32  BUILD_LIST_0          0 
+               34  LOAD_CONST               ('FTP', 'error_reply', 'error_temp', 'error_perm', 'error_proto', 'all_errors')
+               36  CALL_FINALLY         39  'to 39'
+               38  STORE_NAME               __all__
+
+ L.  47        40  LOAD_CONST               1
+               42  STORE_NAME               MSG_OOB
+
+ L.  51        44  LOAD_CONST               21
+               46  STORE_NAME               FTP_PORT
+
+ L.  53        48  LOAD_CONST               8192
+               50  STORE_NAME               MAXLINE
+
+ L.  57        52  LOAD_BUILD_CLASS 
+               54  LOAD_CODE                <code_object Error>
+               56  LOAD_STR                 'Error'
+               58  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               60  LOAD_STR                 'Error'
+               62  LOAD_NAME                Exception
+               64  CALL_FUNCTION_3       3  ''
+               66  STORE_NAME               Error
+
+ L.  58        68  LOAD_BUILD_CLASS 
+               70  LOAD_CODE                <code_object error_reply>
+               72  LOAD_STR                 'error_reply'
+               74  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               76  LOAD_STR                 'error_reply'
+               78  LOAD_NAME                Error
+               80  CALL_FUNCTION_3       3  ''
+               82  STORE_NAME               error_reply
+
+ L.  59        84  LOAD_BUILD_CLASS 
+               86  LOAD_CODE                <code_object error_temp>
+               88  LOAD_STR                 'error_temp'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  LOAD_STR                 'error_temp'
+               94  LOAD_NAME                Error
+               96  CALL_FUNCTION_3       3  ''
+               98  STORE_NAME               error_temp
+
+ L.  60       100  LOAD_BUILD_CLASS 
+              102  LOAD_CODE                <code_object error_perm>
+              104  LOAD_STR                 'error_perm'
+              106  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              108  LOAD_STR                 'error_perm'
+              110  LOAD_NAME                Error
+              112  CALL_FUNCTION_3       3  ''
+              114  STORE_NAME               error_perm
+
+ L.  61       116  LOAD_BUILD_CLASS 
+              118  LOAD_CODE                <code_object error_proto>
+              120  LOAD_STR                 'error_proto'
+              122  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              124  LOAD_STR                 'error_proto'
+              126  LOAD_NAME                Error
+              128  CALL_FUNCTION_3       3  ''
+              130  STORE_NAME               error_proto
+
+ L.  66       132  LOAD_NAME                Error
+              134  LOAD_NAME                OSError
+              136  LOAD_NAME                EOFError
+              138  BUILD_TUPLE_3         3 
+              140  STORE_NAME               all_errors
+
+ L.  70       142  LOAD_STR                 '\r\n'
+              144  STORE_NAME               CRLF
+
+ L.  71       146  LOAD_CONST               b'\r\n'
+              148  STORE_NAME               B_CRLF
+
+ L.  74       150  LOAD_BUILD_CLASS 
+              152  LOAD_CODE                <code_object FTP>
+              154  LOAD_STR                 'FTP'
+              156  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              158  LOAD_STR                 'FTP'
+              160  CALL_FUNCTION_2       2  ''
+              162  STORE_NAME               FTP
+
+ L. 676       164  SETUP_FINALLY       178  'to 178'
+
+ L. 677       166  LOAD_CONST               0
+              168  LOAD_CONST               None
+              170  IMPORT_NAME              ssl
+              172  STORE_NAME               ssl
+              174  POP_BLOCK        
+              176  JUMP_FORWARD        200  'to 200'
+            178_0  COME_FROM_FINALLY   164  '164'
+
+ L. 678       178  DUP_TOP          
+              180  LOAD_NAME                ImportError
+              182  <121>               198  ''
+              184  POP_TOP          
+              186  POP_TOP          
+              188  POP_TOP          
+
+ L. 679       190  LOAD_CONST               None
+              192  STORE_NAME               _SSLSocket
+              194  POP_EXCEPT       
+              196  JUMP_FORWARD        246  'to 246'
+              198  <48>             
+            200_0  COME_FROM           176  '176'
+
+ L. 681       200  LOAD_NAME                ssl
+              202  LOAD_ATTR                SSLSocket
+              204  STORE_NAME               _SSLSocket
+
+ L. 683       206  LOAD_BUILD_CLASS 
+              208  LOAD_CODE                <code_object FTP_TLS>
+              210  LOAD_STR                 'FTP_TLS'
+              212  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              214  LOAD_STR                 'FTP_TLS'
+              216  LOAD_NAME                FTP
+              218  CALL_FUNCTION_3       3  ''
+              220  STORE_NAME               FTP_TLS
+
+ L. 808       222  LOAD_NAME                __all__
+              224  LOAD_METHOD              append
+              226  LOAD_STR                 'FTP_TLS'
+              228  CALL_METHOD_1         1  ''
+              230  POP_TOP          
+
+ L. 809       232  LOAD_NAME                Error
+              234  LOAD_NAME                OSError
+              236  LOAD_NAME                EOFError
+              238  LOAD_NAME                ssl
+              240  LOAD_ATTR                SSLError
+              242  BUILD_TUPLE_4         4 
+              244  STORE_NAME               all_errors
+            246_0  COME_FROM           196  '196'
+
+ L. 812       246  LOAD_CONST               None
+              248  STORE_GLOBAL             _150_re
+
+ L. 814       250  LOAD_CODE                <code_object parse150>
+              252  LOAD_STR                 'parse150'
+              254  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              256  STORE_NAME               parse150
+
+ L. 832       258  LOAD_CONST               None
+              260  STORE_GLOBAL             _227_re
+
+ L. 834       262  LOAD_CODE                <code_object parse227>
+              264  LOAD_STR                 'parse227'
+              266  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              268  STORE_NAME               parse227
+
+ L. 853       270  LOAD_CODE                <code_object parse229>
+              272  LOAD_STR                 'parse229'
+              274  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              276  STORE_NAME               parse229
+
+ L. 874       278  LOAD_CODE                <code_object parse257>
+              280  LOAD_STR                 'parse257'
+              282  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              284  STORE_NAME               parse257
+
+ L. 896       286  LOAD_CODE                <code_object print_line>
+              288  LOAD_STR                 'print_line'
+              290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              292  STORE_NAME               print_line
+
+ L. 901       294  LOAD_CONST               ('', 'I')
+              296  LOAD_CODE                <code_object ftpcp>
+              298  LOAD_STR                 'ftpcp'
+              300  MAKE_FUNCTION_1          'default'
+              302  STORE_NAME               ftpcp
+
+ L. 923       304  LOAD_CODE                <code_object test>
+              306  LOAD_STR                 'test'
+              308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              310  STORE_NAME               test
+
+ L. 980       312  LOAD_NAME                __name__
+              314  LOAD_STR                 '__main__'
+              316  COMPARE_OP               ==
+          318_320  POP_JUMP_IF_FALSE   328  'to 328'
+
+ L. 981       322  LOAD_NAME                test
+              324  CALL_FUNCTION_0       0  ''
+              326  POP_TOP          
+            328_0  COME_FROM           318  '318'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 36
+
+Instruction context:
+   
+ L.  43        32  BUILD_LIST_0          0 
+                  34  LOAD_CONST               ('FTP', 'error_reply', 'error_temp', 'error_perm', 'error_proto', 'all_errors')
+->                36  CALL_FINALLY         39  'to 39'
+                  38  STORE_NAME               __all__
+
+test/111698.pyc -- 
+# decompile failed

@@ -1,0 +1,719 @@
+
+# file test/4105.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              types
+                6  STORE_NAME               types
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              sys
+               14  STORE_NAME               sys
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              os
+               22  STORE_NAME               os
+
+ L.   6        24  LOAD_STR                 '1.1.9'
+               26  STORE_NAME               __version__
+
+ L.   8        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              logging
+               34  STORE_NAME               logging
+
+ L.   9        36  LOAD_BUILD_CLASS 
+               38  LOAD_CODE                <code_object NullHandler>
+               40  LOAD_STR                 'NullHandler'
+               42  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               44  LOAD_STR                 'NullHandler'
+               46  LOAD_NAME                logging
+               48  LOAD_ATTR                Handler
+               50  CALL_FUNCTION_3       3  ''
+               52  STORE_NAME               NullHandler
+
+ L.  14        54  LOAD_NAME                logging
+               56  LOAD_METHOD              getLogger
+               58  LOAD_NAME                __name__
+               60  CALL_METHOD_1         1  ''
+               62  STORE_NAME               logger
+
+ L.  20        64  LOAD_NAME                logger
+               66  LOAD_METHOD              addHandler
+               68  LOAD_NAME                NullHandler
+               70  CALL_FUNCTION_0       0  ''
+               72  CALL_METHOD_1         1  ''
+               74  POP_TOP          
+
+ L.  22        76  LOAD_CONST               0
+               78  LOAD_CONST               ('*',)
+               80  IMPORT_NAME              ctypes
+               82  IMPORT_STAR      
+
+ L.  23        84  LOAD_CONST               0
+               86  LOAD_CONST               ('COMError',)
+               88  IMPORT_NAME              _ctypes
+               90  IMPORT_FROM              COMError
+               92  STORE_NAME               COMError
+               94  POP_TOP          
+
+ L.  24        96  LOAD_CONST               0
+               98  LOAD_CONST               ('patcher',)
+              100  IMPORT_NAME              comtypes
+              102  IMPORT_FROM              patcher
+              104  STORE_NAME               patcher
+              106  POP_TOP          
+
+ L.  26       108  LOAD_CONST               (None,)
+              110  LOAD_CODE                <code_object _check_version>
+              112  LOAD_STR                 '_check_version'
+              114  MAKE_FUNCTION_1          'default'
+              116  STORE_NAME               _check_version
+
+ L.  40       118  SETUP_FINALLY       130  'to 130'
+
+ L.  41       120  LOAD_NAME                COMError
+              122  CALL_FUNCTION_0       0  ''
+              124  POP_TOP          
+              126  POP_BLOCK        
+              128  JUMP_FORWARD        148  'to 148'
+            130_0  COME_FROM_FINALLY   118  '118'
+
+ L.  42       130  DUP_TOP          
+              132  LOAD_NAME                TypeError
+              134  <121>               146  ''
+              136  POP_TOP          
+              138  POP_TOP          
+              140  POP_TOP          
+
+ L.  43       142  POP_EXCEPT       
+              144  JUMP_FORWARD        164  'to 164'
+              146  <48>             
+            148_0  COME_FROM           128  '128'
+
+ L.  49       148  LOAD_CODE                <code_object monkeypatch_COMError>
+              150  LOAD_STR                 'monkeypatch_COMError'
+              152  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              154  STORE_NAME               monkeypatch_COMError
+
+ L.  56       156  LOAD_NAME                monkeypatch_COMError
+              158  CALL_FUNCTION_0       0  ''
+              160  POP_TOP          
+
+ L.  57       162  DELETE_NAME              monkeypatch_COMError
+            164_0  COME_FROM           144  '144'
+
+ L.  59       164  LOAD_NAME                sys
+              166  LOAD_ATTR                version_info
+              168  LOAD_CONST               (3, 0)
+              170  COMPARE_OP               >=
+              172  POP_JUMP_IF_FALSE   216  'to 216'
+
+ L.  60       174  LOAD_NAME                py_object
+              176  BUILD_LIST_1          1 
+              178  LOAD_NAME                pythonapi
+              180  LOAD_ATTR                PyInstanceMethod_New
+              182  STORE_ATTR               argtypes
+
+ L.  61       184  LOAD_NAME                py_object
+              186  LOAD_NAME                pythonapi
+              188  LOAD_ATTR                PyInstanceMethod_New
+              190  STORE_ATTR               restype
+
+ L.  62       192  LOAD_NAME                type
+              194  LOAD_NAME                pythonapi
+              196  LOAD_METHOD              PyInstanceMethod_New
+              198  LOAD_NAME                id
+              200  CALL_METHOD_1         1  ''
+              202  CALL_FUNCTION_1       1  ''
+              204  STORE_NAME               PyInstanceMethod_Type
+
+ L.  64       206  LOAD_CODE                <code_object instancemethod>
+              208  LOAD_STR                 'instancemethod'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               instancemethod
+              214  JUMP_FORWARD        224  'to 224'
+            216_0  COME_FROM           172  '172'
+
+ L.  70       216  LOAD_CODE                <code_object instancemethod>
+              218  LOAD_STR                 'instancemethod'
+              220  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              222  STORE_NAME               instancemethod
+            224_0  COME_FROM           214  '214'
+
+ L.  73       224  LOAD_BUILD_CLASS 
+              226  LOAD_CODE                <code_object ReturnHRESULT>
+              228  LOAD_STR                 'ReturnHRESULT'
+              230  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              232  LOAD_STR                 'ReturnHRESULT'
+              234  LOAD_NAME                Exception
+              236  CALL_FUNCTION_3       3  ''
+              238  STORE_NAME               ReturnHRESULT
+
+ L.  83       240  LOAD_CONST               0
+              242  LOAD_CONST               ('GUID',)
+              244  IMPORT_NAME_ATTR         comtypes.GUID
+              246  IMPORT_FROM              GUID
+              248  STORE_NAME               GUID
+              250  POP_TOP          
+
+ L.  84       252  LOAD_NAME                GUID
+              254  STORE_NAME               _GUID
+
+ L.  85       256  LOAD_NAME                GUID
+              258  STORE_NAME               IID
+
+ L.  86       260  LOAD_NAME                c_ulong
+              262  STORE_NAME               DWORD
+
+ L.  88       264  LOAD_NAME                c_ulong
+              266  STORE_NAME               wireHWND
+
+ L.  97       268  LOAD_CONST               1
+              270  STORE_NAME               CLSCTX_INPROC_SERVER
+
+ L.  98       272  LOAD_CONST               2
+              274  STORE_NAME               CLSCTX_INPROC_HANDLER
+
+ L.  99       276  LOAD_CONST               4
+              278  STORE_NAME               CLSCTX_LOCAL_SERVER
+
+ L. 101       280  LOAD_CONST               3
+              282  STORE_NAME               CLSCTX_INPROC
+
+ L. 102       284  LOAD_CONST               5
+              286  STORE_NAME               CLSCTX_SERVER
+
+ L. 103       288  LOAD_CONST               7
+              290  STORE_NAME               CLSCTX_ALL
+
+ L. 105       292  LOAD_CONST               8
+              294  STORE_NAME               CLSCTX_INPROC_SERVER16
+
+ L. 106       296  LOAD_CONST               16
+              298  STORE_NAME               CLSCTX_REMOTE_SERVER
+
+ L. 107       300  LOAD_CONST               32
+              302  STORE_NAME               CLSCTX_INPROC_HANDLER16
+
+ L. 108       304  LOAD_CONST               64
+              306  STORE_NAME               CLSCTX_RESERVED1
+
+ L. 109       308  LOAD_CONST               128
+              310  STORE_NAME               CLSCTX_RESERVED2
+
+ L. 110       312  LOAD_CONST               256
+              314  STORE_NAME               CLSCTX_RESERVED3
+
+ L. 111       316  LOAD_CONST               512
+              318  STORE_NAME               CLSCTX_RESERVED4
+
+ L. 112       320  LOAD_CONST               1024
+              322  STORE_NAME               CLSCTX_NO_CODE_DOWNLOAD
+
+ L. 113       324  LOAD_CONST               2048
+              326  STORE_NAME               CLSCTX_RESERVED5
+
+ L. 114       328  LOAD_CONST               4096
+              330  STORE_NAME               CLSCTX_NO_CUSTOM_MARSHAL
+
+ L. 115       332  LOAD_CONST               8192
+              334  STORE_NAME               CLSCTX_ENABLE_CODE_DOWNLOAD
+
+ L. 116       336  LOAD_CONST               16384
+              338  STORE_NAME               CLSCTX_NO_FAILURE_LOG
+
+ L. 117       340  LOAD_CONST               32768
+              342  STORE_NAME               CLSCTX_DISABLE_AAA
+
+ L. 118       344  LOAD_CONST               65536
+              346  STORE_NAME               CLSCTX_ENABLE_AAA
+
+ L. 119       348  LOAD_CONST               131072
+              350  STORE_NAME               CLSCTX_FROM_DEFAULT_CONTEXT
+
+ L. 121       352  LOAD_NAME                c_int
+              354  STORE_NAME               tagCLSCTX
+
+ L. 122       356  LOAD_NAME                tagCLSCTX
+              358  STORE_NAME               CLSCTX
+
+ L. 125       360  LOAD_CONST               2
+              362  STORE_NAME               SEC_WINNT_AUTH_IDENTITY_UNICODE
+
+ L. 126       364  LOAD_CONST               10
+              366  STORE_NAME               RPC_C_AUTHN_WINNT
+
+ L. 127       368  LOAD_CONST               0
+              370  STORE_NAME               RPC_C_AUTHZ_NONE
+
+ L. 128       372  LOAD_CONST               2
+              374  STORE_NAME               RPC_C_AUTHN_LEVEL_CONNECT
+
+ L. 129       376  LOAD_CONST               3
+              378  STORE_NAME               RPC_C_IMP_LEVEL_IMPERSONATE
+
+ L. 130       380  LOAD_CONST               0
+              382  STORE_NAME               EOAC_NONE
+
+ L. 136       384  LOAD_NAME                oledll
+              386  LOAD_ATTR                ole32
+              388  STORE_NAME               _ole32
+
+ L. 137       390  LOAD_NAME                windll
+              392  LOAD_ATTR                ole32
+              394  STORE_NAME               _ole32_nohresult
+
+ L. 139       396  LOAD_CONST               0
+              398  STORE_NAME               COINIT_MULTITHREADED
+
+ L. 140       400  LOAD_CONST               2
+              402  STORE_NAME               COINIT_APARTMENTTHREADED
+
+ L. 141       404  LOAD_CONST               4
+              406  STORE_NAME               COINIT_DISABLE_OLE1DDE
+
+ L. 142       408  LOAD_CONST               8
+              410  STORE_NAME               COINIT_SPEED_OVER_MEMORY
+
+ L. 144       412  LOAD_CODE                <code_object CoInitialize>
+              414  LOAD_STR                 'CoInitialize'
+              416  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              418  STORE_NAME               CoInitialize
+
+ L. 147       420  LOAD_CONST               (None,)
+              422  LOAD_CODE                <code_object CoInitializeEx>
+              424  LOAD_STR                 'CoInitializeEx'
+              426  MAKE_FUNCTION_1          'default'
+              428  STORE_NAME               CoInitializeEx
+
+ L. 160       430  LOAD_NAME                CoInitializeEx
+              432  CALL_FUNCTION_0       0  ''
+              434  POP_TOP          
+
+ L. 165       436  LOAD_CODE                <code_object CoUninitialize>
+              438  LOAD_STR                 'CoUninitialize'
+              440  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              442  STORE_NAME               CoUninitialize
+
+ L. 170       444  LOAD_NAME                _ole32_nohresult
+              446  LOAD_ATTR                CoUninitialize
+
+ L. 171       448  LOAD_NAME                logger
+              450  LOAD_ATTR                debug
+
+ L. 172       452  LOAD_NAME                getattr
+              454  LOAD_NAME                sys
+              456  LOAD_STR                 'exc_clear'
+              458  LOAD_LAMBDA              '<code_object <lambda>>'
+              460  LOAD_STR                 '<lambda>'
+              462  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              464  CALL_FUNCTION_3       3  ''
+
+ L. 170       466  BUILD_TUPLE_3         3 
+              468  LOAD_CODE                <code_object _shutdown>
+              470  LOAD_STR                 '_shutdown'
+              472  MAKE_FUNCTION_1          'default'
+              474  STORE_NAME               _shutdown
+
+ L. 190       476  LOAD_CONST               0
+              478  LOAD_CONST               None
+              480  IMPORT_NAME              atexit
+              482  STORE_NAME               atexit
+
+ L. 191       484  LOAD_NAME                atexit
+              486  LOAD_METHOD              register
+              488  LOAD_NAME                _shutdown
+              490  CALL_METHOD_1         1  ''
+              492  POP_TOP          
+
+ L. 197       494  BUILD_MAP_0           0 
+              496  STORE_NAME               com_interface_registry
+
+ L. 200       498  BUILD_MAP_0           0 
+              500  STORE_NAME               com_coclass_registry
+
+ L. 202       502  LOAD_CODE                <code_object _is_object>
+              504  LOAD_STR                 '_is_object'
+              506  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              508  STORE_NAME               _is_object
+
+ L. 219       510  LOAD_BUILD_CLASS 
+              512  LOAD_CODE                <code_object _cominterface_meta>
+              514  LOAD_STR                 '_cominterface_meta'
+              516  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              518  LOAD_STR                 '_cominterface_meta'
+              520  LOAD_NAME                type
+              522  CALL_FUNCTION_3       3  ''
+              524  STORE_NAME               _cominterface_meta
+
+ L. 828       526  LOAD_NAME                slice
+              528  LOAD_CONST               None
+              530  LOAD_CONST               None
+              532  LOAD_CONST               None
+              534  CALL_FUNCTION_3       3  ''
+              536  STORE_NAME               _all_slice
+
+ L. 831       538  LOAD_BUILD_CLASS 
+              540  LOAD_CODE                <code_object bound_named_property>
+              542  LOAD_STR                 'bound_named_property'
+              544  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              546  LOAD_STR                 'bound_named_property'
+              548  LOAD_NAME                object
+              550  CALL_FUNCTION_3       3  ''
+              552  STORE_NAME               bound_named_property
+
+ L. 873       554  LOAD_BUILD_CLASS 
+              556  LOAD_CODE                <code_object named_property>
+              558  LOAD_STR                 'named_property'
+              560  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              562  LOAD_STR                 'named_property'
+              564  LOAD_NAME                object
+              566  CALL_FUNCTION_3       3  ''
+              568  STORE_NAME               named_property
+
+ L. 894       570  LOAD_BUILD_CLASS 
+              572  LOAD_CODE                <code_object _compointer_meta>
+              574  LOAD_STR                 '_compointer_meta'
+              576  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              578  LOAD_STR                 '_compointer_meta'
+              580  LOAD_NAME                type
+              582  LOAD_NAME                c_void_p
+              584  CALL_FUNCTION_1       1  ''
+              586  LOAD_NAME                _cominterface_meta
+              588  CALL_FUNCTION_4       4  ''
+              590  STORE_NAME               _compointer_meta
+
+ L. 898       592  LOAD_BUILD_CLASS 
+              594  LOAD_CODE                <code_object _compointer_base>
+              596  LOAD_STR                 '_compointer_base'
+              598  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              600  LOAD_STR                 '_compointer_base'
+              602  LOAD_NAME                c_void_p
+              604  LOAD_NAME                _compointer_meta
+              606  LOAD_CONST               ('metaclass',)
+              608  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              610  STORE_NAME               _compointer_base
+
+ L. 986       612  LOAD_CONST               0
+              614  LOAD_CONST               ('_SimpleCData',)
+              616  IMPORT_NAME              ctypes
+              618  IMPORT_FROM              _SimpleCData
+              620  STORE_NAME               _SimpleCData
+              622  POP_TOP          
+
+ L. 988       624  LOAD_BUILD_CLASS 
+              626  LOAD_CODE                <code_object BSTR>
+              628  LOAD_STR                 'BSTR'
+              630  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              632  LOAD_STR                 'BSTR'
+              634  LOAD_NAME                _SimpleCData
+              636  CALL_FUNCTION_3       3  ''
+              638  STORE_NAME               BSTR
+
+ L.1019       640  LOAD_BUILD_CLASS 
+              642  LOAD_CODE                <code_object helpstring>
+              644  LOAD_STR                 'helpstring'
+              646  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              648  LOAD_STR                 'helpstring'
+              650  LOAD_NAME                str
+              652  CALL_FUNCTION_3       3  ''
+              654  STORE_NAME               helpstring
+
+ L.1022       656  LOAD_BUILD_CLASS 
+              658  LOAD_CODE                <code_object defaultvalue>
+              660  LOAD_STR                 'defaultvalue'
+              662  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              664  LOAD_STR                 'defaultvalue'
+              666  LOAD_NAME                object
+              668  CALL_FUNCTION_3       3  ''
+              670  STORE_NAME               defaultvalue
+
+ L.1027       672  LOAD_BUILD_CLASS 
+              674  LOAD_CODE                <code_object dispid>
+              676  LOAD_STR                 'dispid'
+              678  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              680  LOAD_STR                 'dispid'
+              682  LOAD_NAME                int
+              684  CALL_FUNCTION_3       3  ''
+              686  STORE_NAME               dispid
+
+ L.1033       688  LOAD_CONST               ((),)
+              690  LOAD_CODE                <code_object STDMETHOD>
+              692  LOAD_STR                 'STDMETHOD'
+              694  MAKE_FUNCTION_1          'default'
+              696  STORE_NAME               STDMETHOD
+
+ L.1038       698  LOAD_CODE                <code_object DISPMETHOD>
+              700  LOAD_STR                 'DISPMETHOD'
+              702  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              704  STORE_NAME               DISPMETHOD
+
+ L.1042       706  LOAD_CODE                <code_object DISPPROPERTY>
+              708  LOAD_STR                 'DISPPROPERTY'
+              710  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              712  STORE_NAME               DISPPROPERTY
+
+ L.1064       714  LOAD_CONST               1
+
+ L.1065       716  LOAD_CONST               2
+
+ L.1066       718  LOAD_CONST               4
+
+ L.1067       720  LOAD_CONST               8
+
+ L.1068       722  LOAD_CONST               16
+
+ L.1063       724  LOAD_CONST               ('in', 'out', 'lcid', 'retval', 'optional')
+              726  BUILD_CONST_KEY_MAP_5     5 
+              728  STORE_NAME               _PARAMFLAGS
+
+ L.1071       730  LOAD_CODE                <code_object _encode_idl>
+              732  LOAD_STR                 '_encode_idl'
+              734  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              736  STORE_NAME               _encode_idl
+
+ L.1075       738  LOAD_NAME                object
+              740  CALL_FUNCTION_0       0  ''
+              742  STORE_NAME               _NOTHING
+
+ L.1076       744  LOAD_CONST               None
+              746  LOAD_NAME                _NOTHING
+              748  BUILD_TUPLE_2         2 
+              750  LOAD_CODE                <code_object _unpack_argspec>
+              752  LOAD_STR                 '_unpack_argspec'
+              754  MAKE_FUNCTION_1          'default'
+              756  STORE_NAME               _unpack_argspec
+
+ L.1079       758  LOAD_CODE                <code_object COMMETHOD>
+              760  LOAD_STR                 'COMMETHOD'
+              762  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              764  STORE_NAME               COMMETHOD
+
+ L.1125       766  LOAD_BUILD_CLASS 
+              768  LOAD_CODE                <code_object IUnknown>
+              770  LOAD_STR                 'IUnknown'
+              772  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              774  LOAD_STR                 'IUnknown'
+              776  LOAD_NAME                object
+              778  LOAD_NAME                _cominterface_meta
+              780  LOAD_CONST               ('metaclass',)
+              782  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              784  STORE_NAME               IUnknown
+
+ L.1170       786  LOAD_BUILD_CLASS 
+              788  LOAD_CODE                <code_object IPersist>
+              790  LOAD_STR                 'IPersist'
+              792  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              794  LOAD_STR                 'IPersist'
+              796  LOAD_NAME                IUnknown
+              798  CALL_FUNCTION_3       3  ''
+              800  STORE_NAME               IPersist
+
+ L.1178       802  LOAD_BUILD_CLASS 
+              804  LOAD_CODE                <code_object IServiceProvider>
+              806  LOAD_STR                 'IServiceProvider'
+              808  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              810  LOAD_STR                 'IServiceProvider'
+              812  LOAD_NAME                IUnknown
+              814  CALL_FUNCTION_3       3  ''
+              816  STORE_NAME               IServiceProvider
+
+ L.1196       818  LOAD_CODE                <code_object CoGetObject>
+              820  LOAD_STR                 'CoGetObject'
+              822  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              824  STORE_NAME               CoGetObject
+
+ L.1209       826  LOAD_CONST               (None, None, None)
+              828  LOAD_CODE                <code_object CoCreateInstance>
+              830  LOAD_STR                 'CoCreateInstance'
+              832  MAKE_FUNCTION_1          'default'
+              834  STORE_NAME               CoCreateInstance
+
+ L.1222       836  LOAD_CONST               (None, None, None)
+              838  LOAD_CODE                <code_object CoGetClassObject>
+              840  LOAD_STR                 'CoGetClassObject'
+              842  MAKE_FUNCTION_1          'default'
+              844  STORE_NAME               CoGetClassObject
+
+ L.1236       846  LOAD_CONST               (None,)
+              848  LOAD_CODE                <code_object GetActiveObject>
+              850  LOAD_STR                 'GetActiveObject'
+              852  MAKE_FUNCTION_1          'default'
+              854  STORE_NAME               GetActiveObject
+
+ L.1244       856  LOAD_BUILD_CLASS 
+              858  LOAD_CODE                <code_object MULTI_QI>
+              860  LOAD_STR                 'MULTI_QI'
+              862  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              864  LOAD_STR                 'MULTI_QI'
+              866  LOAD_NAME                Structure
+              868  CALL_FUNCTION_3       3  ''
+              870  STORE_NAME               MULTI_QI
+
+ L.1249       872  LOAD_BUILD_CLASS 
+              874  LOAD_CODE                <code_object _COAUTHIDENTITY>
+              876  LOAD_STR                 '_COAUTHIDENTITY'
+              878  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              880  LOAD_STR                 '_COAUTHIDENTITY'
+              882  LOAD_NAME                Structure
+              884  CALL_FUNCTION_3       3  ''
+              886  STORE_NAME               _COAUTHIDENTITY
+
+ L.1259       888  LOAD_NAME                _COAUTHIDENTITY
+              890  STORE_NAME               COAUTHIDENTITY
+
+ L.1261       892  LOAD_BUILD_CLASS 
+              894  LOAD_CODE                <code_object _COAUTHINFO>
+              896  LOAD_STR                 '_COAUTHINFO'
+              898  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              900  LOAD_STR                 '_COAUTHINFO'
+              902  LOAD_NAME                Structure
+              904  CALL_FUNCTION_3       3  ''
+              906  STORE_NAME               _COAUTHINFO
+
+ L.1271       908  LOAD_NAME                _COAUTHINFO
+              910  STORE_NAME               COAUTHINFO
+
+ L.1273       912  LOAD_BUILD_CLASS 
+              914  LOAD_CODE                <code_object _COSERVERINFO>
+              916  LOAD_STR                 '_COSERVERINFO'
+              918  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              920  LOAD_STR                 '_COSERVERINFO'
+              922  LOAD_NAME                Structure
+              924  CALL_FUNCTION_3       3  ''
+              926  STORE_NAME               _COSERVERINFO
+
+ L.1280       928  LOAD_NAME                _COSERVERINFO
+              930  STORE_NAME               COSERVERINFO
+
+ L.1281       932  LOAD_NAME                _ole32
+              934  LOAD_ATTR                CoGetClassObject
+              936  STORE_NAME               _CoGetClassObject
+
+ L.1282       938  LOAD_NAME                POINTER
+              940  LOAD_NAME                GUID
+              942  CALL_FUNCTION_1       1  ''
+              944  LOAD_NAME                DWORD
+              946  LOAD_NAME                POINTER
+              948  LOAD_NAME                COSERVERINFO
+              950  CALL_FUNCTION_1       1  ''
+
+ L.1283       952  LOAD_NAME                POINTER
+              954  LOAD_NAME                GUID
+              956  CALL_FUNCTION_1       1  ''
+              958  LOAD_NAME                POINTER
+              960  LOAD_NAME                c_void_p
+              962  CALL_FUNCTION_1       1  ''
+
+ L.1282       964  BUILD_LIST_5          5 
+              966  LOAD_NAME                _CoGetClassObject
+              968  STORE_ATTR               argtypes
+
+ L.1285       970  LOAD_BUILD_CLASS 
+              972  LOAD_CODE                <code_object tagBIND_OPTS>
+              974  LOAD_STR                 'tagBIND_OPTS'
+              976  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              978  LOAD_STR                 'tagBIND_OPTS'
+              980  LOAD_NAME                Structure
+              982  CALL_FUNCTION_3       3  ''
+              984  STORE_NAME               tagBIND_OPTS
+
+ L.1293       986  LOAD_NAME                tagBIND_OPTS
+              988  STORE_NAME               BIND_OPTS
+
+ L.1295       990  LOAD_BUILD_CLASS 
+              992  LOAD_CODE                <code_object tagBIND_OPTS2>
+              994  LOAD_STR                 'tagBIND_OPTS2'
+              996  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              998  LOAD_STR                 'tagBIND_OPTS2'
+             1000  LOAD_NAME                Structure
+             1002  CALL_FUNCTION_3       3  ''
+             1004  STORE_NAME               tagBIND_OPTS2
+
+ L.1307      1006  LOAD_NAME                tagBIND_OPTS2
+             1008  STORE_NAME               BINDOPTS2
+
+ L.1311      1010  LOAD_BUILD_CLASS 
+             1012  LOAD_CODE                <code_object _SEC_WINNT_AUTH_IDENTITY>
+             1014  LOAD_STR                 '_SEC_WINNT_AUTH_IDENTITY'
+             1016  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1018  LOAD_STR                 '_SEC_WINNT_AUTH_IDENTITY'
+             1020  LOAD_NAME                Structure
+             1022  CALL_FUNCTION_3       3  ''
+             1024  STORE_NAME               _SEC_WINNT_AUTH_IDENTITY
+
+ L.1321      1026  LOAD_NAME                _SEC_WINNT_AUTH_IDENTITY
+             1028  STORE_NAME               SEC_WINNT_AUTH_IDENTITY
+
+ L.1323      1030  LOAD_BUILD_CLASS 
+             1032  LOAD_CODE                <code_object _SOLE_AUTHENTICATION_INFO>
+             1034  LOAD_STR                 '_SOLE_AUTHENTICATION_INFO'
+             1036  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1038  LOAD_STR                 '_SOLE_AUTHENTICATION_INFO'
+             1040  LOAD_NAME                Structure
+             1042  CALL_FUNCTION_3       3  ''
+             1044  STORE_NAME               _SOLE_AUTHENTICATION_INFO
+
+ L.1329      1046  LOAD_NAME                _SOLE_AUTHENTICATION_INFO
+             1048  STORE_NAME               SOLE_AUTHENTICATION_INFO
+
+ L.1331      1050  LOAD_BUILD_CLASS 
+             1052  LOAD_CODE                <code_object _SOLE_AUTHENTICATION_LIST>
+             1054  LOAD_STR                 '_SOLE_AUTHENTICATION_LIST'
+             1056  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1058  LOAD_STR                 '_SOLE_AUTHENTICATION_LIST'
+             1060  LOAD_NAME                Structure
+             1062  CALL_FUNCTION_3       3  ''
+             1064  STORE_NAME               _SOLE_AUTHENTICATION_LIST
+
+ L.1336      1066  LOAD_NAME                _SOLE_AUTHENTICATION_LIST
+             1068  STORE_NAME               SOLE_AUTHENTICATION_LIST
+
+ L.1338      1070  LOAD_CONST               (None, None, None, None)
+             1072  LOAD_CODE                <code_object CoCreateInstanceEx>
+             1074  LOAD_STR                 'CoCreateInstanceEx'
+             1076  MAKE_FUNCTION_1          'default'
+             1078  STORE_NAME               CoCreateInstanceEx
+
+ L.1374      1080  LOAD_CONST               0
+             1082  LOAD_CONST               ('COMObject',)
+             1084  IMPORT_NAME_ATTR         comtypes._comobject
+             1086  IMPORT_FROM              COMObject
+             1088  STORE_NAME               COMObject
+             1090  POP_TOP          
+
+ L.1380      1092  LOAD_CONST               0
+             1094  LOAD_CONST               ('_coclass_meta',)
+             1096  IMPORT_NAME_ATTR         comtypes._meta
+             1098  IMPORT_FROM              _coclass_meta
+             1100  STORE_NAME               _coclass_meta
+             1102  POP_TOP          
+
+ L.1382      1104  LOAD_BUILD_CLASS 
+             1106  LOAD_CODE                <code_object CoClass>
+             1108  LOAD_STR                 'CoClass'
+             1110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1112  LOAD_STR                 'CoClass'
+             1114  LOAD_NAME                COMObject
+             1116  LOAD_NAME                _coclass_meta
+             1118  LOAD_CONST               ('metaclass',)
+             1120  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+             1122  STORE_NAME               CoClass
+
+Parse error at or near `<121>' instruction at offset 134
+
+Instruction context:
+   
+ L.  42       130  DUP_TOP          
+                 132  LOAD_NAME                TypeError
+->               134  <121>               146  ''
+                 136  POP_TOP          
+                 138  POP_TOP          
+                 140  POP_TOP          
+
+test/4105.pyc -- 
+# decompile failed

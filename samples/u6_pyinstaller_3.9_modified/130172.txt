@@ -1,0 +1,135 @@
+Instruction context:
+   
+ L.  83       152  LOAD_FAST                'i'
+                 154  LOAD_CONST               3
+                 156  BINARY_FLOOR_DIVIDE
+                 158  LOAD_FAST                'p'
+                 160  LOAD_FAST                'i'
+                 162  BINARY_SUBSCR    
+                 164  DUP_TOP          
+                 166  ROT_THREE        
+                 168  COMPARE_OP               ==
+                 170  POP_JUMP_IF_FALSE   206  'to 206'
+                 172  LOAD_FAST                'p'
+                 174  LOAD_FAST                'i'
+                 176  LOAD_CONST               1
+                 178  BINARY_ADD       
+                 180  BINARY_SUBSCR    
+                 182  DUP_TOP          
+                 184  ROT_THREE        
+                 186  COMPARE_OP               ==
+                 188  POP_JUMP_IF_FALSE   206  'to 206'
+                 190  LOAD_FAST                'p'
+                 192  LOAD_FAST                'i'
+                 194  LOAD_CONST               2
+                 196  BINARY_ADD       
+                 198  BINARY_SUBSCR    
+                 200  COMPARE_OP               ==
+                 202  POP_JUMP_IF_TRUE    148  'to 148'
+                 204  JUMP_FORWARD        208  'to 208'
+               206_0  COME_FROM           188  '188'
+               206_1  COME_FROM           170  '170'
+                 206  POP_TOP          
+->             208_0  COME_FROM           204  '204'
+Instruction context:
+   
+ L. 135        94  DUP_TOP          
+                  96  LOAD_GLOBAL              EOFError
+->                98  <121>               148  ''
+                 100  POP_TOP          
+                 102  STORE_FAST               'e'
+                 104  POP_TOP          
+                 106  SETUP_FINALLY       140  'to 140'
+Instruction context:
+   
+ L. 145        20  BUILD_LIST_0          0 
+                  22  LOAD_CONST               (0, 0, 0, 0)
+->                24  CALL_FINALLY         27  'to 27'
+                  26  LOAD_FAST                'self'
+                  28  STORE_ATTR               dispose_extent
+Instruction context:
+   
+ L. 319        30  DUP_TOP          
+                  32  LOAD_GLOBAL              AttributeError
+->                34  <121>                46  ''
+                  36  POP_TOP          
+                  38  POP_TOP          
+                  40  POP_TOP          
+Instruction context:
+   
+ L. 399       194  LOAD_FAST                'used_palette_colors'
+                 196  LOAD_CONST               None
+->               198  <117>                 1  ''
+                 200  POP_JUMP_IF_FALSE   214  'to 214'
+Instruction context:
+   
+ L. 455       270  LOAD_FAST                'background_im'
+                 272  LOAD_CONST               None
+->               274  <117>                 0  ''
+             276_278  POP_JUMP_IF_FALSE   344  'to 344'
+Instruction context:
+   
+ L. 539        20  DUP_TOP          
+                  22  LOAD_GLOBAL              KeyError
+->                24  <121>                36  ''
+                  26  POP_TOP          
+                  28  POP_TOP          
+                  30  POP_TOP          
+Instruction context:
+   
+ L. 659       160  LOAD_GLOBAL              subprocess
+                 162  LOAD_METHOD              CalledProcessError
+                 164  LOAD_FAST                'retcode'
+                 166  LOAD_FAST                'togif_cmd'
+                 168  CALL_METHOD_2         2  ''
+                 170  RAISE_VARARGS_1       1  'exception instance'
+               172_0  COME_FROM           158  '158'
+               172_1  COME_FROM            54  '54'
+                 172  POP_BLOCK        
+                 174  LOAD_CONST               None
+->               176  DUP_TOP          
+                 178  DUP_TOP          
+                 180  CALL_FUNCTION_3       3  ''
+                 182  POP_TOP          
+                 184  JUMP_FORWARD        202  'to 202'
+               186_0  COME_FROM_WITH       18  '18'
+                 186  <49>             
+                 188  POP_JUMP_IF_TRUE    192  'to 192'
+                 190  <48>             
+               192_0  COME_FROM           188  '188'
+                 192  POP_TOP          
+                 194  POP_TOP          
+                 196  POP_TOP          
+                 198  POP_EXCEPT       
+                 200  POP_TOP          
+               202_0  COME_FROM           184  '184'
+                 202  POP_BLOCK        
+Instruction context:
+   
+ L. 767        12  LOAD_FAST                'info'
+                  14  POP_JUMP_IF_FALSE     8  'to 8'
+                  16  LOAD_FAST                'extensionKey'
+                  18  LOAD_FAST                'info'
+->                20  <118>                 0  ''
+                  22  POP_JUMP_IF_FALSE     8  'to 8'
+Instruction context:
+-> 
+ L. 811        70  LOAD_FAST                'im_frame'
+                  72  DELETE_ATTR              encoderinfo
+                  74  JUMP_FORWARD         82  'to 82'
+                76_0  COME_FROM_FINALLY     0  '0'
+                  76  LOAD_FAST                'im_frame'
+                  78  DELETE_ATTR              encoderinfo
+                  80  <48>             
+Instruction context:
+   
+ L. 832        10  LOAD_FAST                'info'
+                  12  LOAD_CONST               None
+->                14  <117>                 0  ''
+                  16  POP_JUMP_IF_FALSE    22  'to 22'
+
+test/130172.pyc -- 
+# decompile failed
+
+# file test/130172.pyc
+# Deparsing stopped due to parse error

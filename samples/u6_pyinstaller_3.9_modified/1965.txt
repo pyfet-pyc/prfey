@@ -1,0 +1,210 @@
+
+# file test/1965.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nPython 3.X compatibility tools.\n\nWhile this file was originally intended for Python 2 -> 3 transition,\nit is now used to create a compatibility layer between different\nminor versions of Python 3.\n\nWhile the active version of numpy may not support a given version of python, we\nallow downstream libraries to continue to use these shims for forward\ncompatibility with numpy while they transition their code to newer versions of\nPython.\n'
+                2  STORE_NAME               __doc__
+
+ L.  13         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('bytes', 'asbytes', 'isfileobj', 'getexception', 'strchar', 'unicode', 'asunicode', 'asbytes_nested', 'asunicode_nested', 'asstr', 'open_latin1', 'long', 'basestring', 'sixu', 'integer_types', 'is_pathlib_path', 'npy_load_module', 'Path', 'pickle', 'contextlib_nullcontext', 'os_fspath', 'os_PathLike')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  19        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L.  20        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              os
+               26  STORE_NAME               os
+
+ L.  21        28  LOAD_CONST               0
+               30  LOAD_CONST               ('Path', 'PurePath')
+               32  IMPORT_NAME              pathlib
+               34  IMPORT_FROM              Path
+               36  STORE_NAME               Path
+               38  IMPORT_FROM              PurePath
+               40  STORE_NAME               PurePath
+               42  POP_TOP          
+
+ L.  22        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              io
+               50  STORE_NAME               io
+
+ L.  24        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              abc
+               58  STORE_NAME               abc
+
+ L.  25        60  LOAD_CONST               0
+               62  LOAD_CONST               ('ABC',)
+               64  IMPORT_NAME              abc
+               66  IMPORT_FROM              ABC
+               68  STORE_NAME               abc_ABC
+               70  POP_TOP          
+
+ L.  27        72  SETUP_FINALLY        86  'to 86'
+
+ L.  28        74  LOAD_CONST               0
+               76  LOAD_CONST               None
+               78  IMPORT_NAME              pickle5
+               80  STORE_NAME               pickle
+               82  POP_BLOCK        
+               84  JUMP_FORWARD        112  'to 112'
+             86_0  COME_FROM_FINALLY    72  '72'
+
+ L.  29        86  DUP_TOP          
+               88  LOAD_NAME                ImportError
+               90  <121>               110  ''
+               92  POP_TOP          
+               94  POP_TOP          
+               96  POP_TOP          
+
+ L.  30        98  LOAD_CONST               0
+              100  LOAD_CONST               None
+              102  IMPORT_NAME              pickle
+              104  STORE_NAME               pickle
+              106  POP_EXCEPT       
+              108  JUMP_FORWARD        112  'to 112'
+              110  <48>             
+            112_0  COME_FROM           108  '108'
+            112_1  COME_FROM            84  '84'
+
+ L.  32       112  LOAD_NAME                int
+              114  STORE_NAME               long
+
+ L.  33       116  LOAD_NAME                int
+              118  BUILD_TUPLE_1         1 
+              120  STORE_NAME               integer_types
+
+ L.  34       122  LOAD_NAME                str
+              124  STORE_NAME               basestring
+
+ L.  35       126  LOAD_NAME                str
+              128  STORE_NAME               unicode
+
+ L.  36       130  LOAD_NAME                bytes
+              132  STORE_NAME               bytes
+
+ L.  38       134  LOAD_CODE                <code_object asunicode>
+              136  LOAD_STR                 'asunicode'
+              138  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              140  STORE_NAME               asunicode
+
+ L.  43       142  LOAD_CODE                <code_object asbytes>
+              144  LOAD_STR                 'asbytes'
+              146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              148  STORE_NAME               asbytes
+
+ L.  48       150  LOAD_CODE                <code_object asstr>
+              152  LOAD_STR                 'asstr'
+              154  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              156  STORE_NAME               asstr
+
+ L.  53       158  LOAD_CODE                <code_object isfileobj>
+              160  LOAD_STR                 'isfileobj'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  STORE_NAME               isfileobj
+
+ L.  56       166  LOAD_CONST               ('r',)
+              168  LOAD_CODE                <code_object open_latin1>
+              170  LOAD_STR                 'open_latin1'
+              172  MAKE_FUNCTION_1          'default'
+              174  STORE_NAME               open_latin1
+
+ L.  59       176  LOAD_CODE                <code_object sixu>
+              178  LOAD_STR                 'sixu'
+              180  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              182  STORE_NAME               sixu
+
+ L.  62       184  LOAD_STR                 'U'
+              186  STORE_NAME               strchar
+
+ L.  64       188  LOAD_CODE                <code_object getexception>
+              190  LOAD_STR                 'getexception'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  STORE_NAME               getexception
+
+ L.  67       196  LOAD_CODE                <code_object asbytes_nested>
+              198  LOAD_STR                 'asbytes_nested'
+              200  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              202  STORE_NAME               asbytes_nested
+
+ L.  73       204  LOAD_CODE                <code_object asunicode_nested>
+              206  LOAD_STR                 'asunicode_nested'
+              208  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              210  STORE_NAME               asunicode_nested
+
+ L.  79       212  LOAD_CODE                <code_object is_pathlib_path>
+              214  LOAD_STR                 'is_pathlib_path'
+              216  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              218  STORE_NAME               is_pathlib_path
+
+ L.  88       220  LOAD_BUILD_CLASS 
+              222  LOAD_CODE                <code_object contextlib_nullcontext>
+              224  LOAD_STR                 'contextlib_nullcontext'
+              226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              228  LOAD_STR                 'contextlib_nullcontext'
+              230  CALL_FUNCTION_2       2  ''
+              232  STORE_NAME               contextlib_nullcontext
+
+ L. 109       234  LOAD_CONST               (None,)
+              236  LOAD_CODE                <code_object npy_load_module>
+              238  LOAD_STR                 'npy_load_module'
+              240  MAKE_FUNCTION_1          'default'
+              242  STORE_NAME               npy_load_module
+
+ L. 136       244  LOAD_NAME                sys
+              246  LOAD_ATTR                version_info
+              248  LOAD_CONST               None
+              250  LOAD_CONST               2
+              252  BUILD_SLICE_2         2 
+              254  BINARY_SUBSCR    
+              256  LOAD_CONST               (3, 6)
+              258  COMPARE_OP               >=
+          260_262  POP_JUMP_IF_FALSE   278  'to 278'
+
+ L. 137       264  LOAD_NAME                os
+              266  LOAD_ATTR                fspath
+              268  STORE_NAME               os_fspath
+
+ L. 138       270  LOAD_NAME                os
+              272  LOAD_ATTR                PathLike
+              274  STORE_NAME               os_PathLike
+              276  JUMP_FORWARD        310  'to 310'
+            278_0  COME_FROM           260  '260'
+
+ L. 140       278  LOAD_CODE                <code_object _PurePath__fspath__>
+              280  LOAD_STR                 '_PurePath__fspath__'
+              282  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              284  STORE_NAME               _PurePath__fspath__
+
+ L. 143       286  LOAD_BUILD_CLASS 
+              288  LOAD_CODE                <code_object os_PathLike>
+              290  LOAD_STR                 'os_PathLike'
+              292  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              294  LOAD_STR                 'os_PathLike'
+              296  LOAD_NAME                abc_ABC
+              298  CALL_FUNCTION_3       3  ''
+              300  STORE_NAME               os_PathLike
+
+ L. 158       302  LOAD_CODE                <code_object os_fspath>
+              304  LOAD_STR                 'os_fspath'
+              306  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              308  STORE_NAME               os_fspath
+            310_0  COME_FROM           276  '276'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L.  13         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('bytes', 'asbytes', 'isfileobj', 'getexception', 'strchar', 'unicode', 'asunicode', 'asbytes_nested', 'asunicode_nested', 'asstr', 'open_latin1', 'long', 'basestring', 'sixu', 'integer_types', 'is_pathlib_path', 'npy_load_module', 'Path', 'pickle', 'contextlib_nullcontext', 'os_fspath', 'os_PathLike')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/1965.pyc -- 
+# decompile failed

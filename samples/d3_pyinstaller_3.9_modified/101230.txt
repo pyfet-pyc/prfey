@@ -1,0 +1,95 @@
+Instruction context:
+   
+ L.  11        48  BUILD_LIST_0          0 
+                  50  LOAD_CONST               ('Policy', 'Compat32', 'compat32')
+->                52  CALL_FINALLY         55  'to 55'
+                  54  STORE_NAME               __all__
+
+test/101230.pyc -- 
+# decompile failed
+
+# file test/101230.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Policy framework for the email package.\n\nAllows fine grained feature control of how the package parses and emits data.\n'
+                2  STORE_NAME               __doc__
+
+ L.   6         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              abc
+               10  STORE_NAME               abc
+
+ L.   7        12  LOAD_CONST               0
+               14  LOAD_CONST               ('header',)
+               16  IMPORT_NAME              email
+               18  IMPORT_FROM              header
+               20  STORE_NAME               header
+               22  POP_TOP          
+
+ L.   8        24  LOAD_CONST               0
+               26  LOAD_CONST               ('charset',)
+               28  IMPORT_NAME              email
+               30  IMPORT_FROM              charset
+               32  STORE_NAME               _charset
+               34  POP_TOP          
+
+ L.   9        36  LOAD_CONST               0
+               38  LOAD_CONST               ('_has_surrogates',)
+               40  IMPORT_NAME_ATTR         email.utils
+               42  IMPORT_FROM              _has_surrogates
+               44  STORE_NAME               _has_surrogates
+               46  POP_TOP          
+
+ L.  11        48  BUILD_LIST_0          0 
+               50  LOAD_CONST               ('Policy', 'Compat32', 'compat32')
+               52  CALL_FINALLY         55  'to 55'
+               54  STORE_NAME               __all__
+
+ L.  18        56  LOAD_BUILD_CLASS 
+               58  LOAD_CODE                <code_object _PolicyBase>
+               60  LOAD_STR                 '_PolicyBase'
+               62  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               64  LOAD_STR                 '_PolicyBase'
+               66  CALL_FUNCTION_2       2  ''
+               68  STORE_NAME               _PolicyBase
+
+ L.  94        70  LOAD_CODE                <code_object _append_doc>
+               72  LOAD_STR                 '_append_doc'
+               74  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               76  STORE_NAME               _append_doc
+
+ L.  99        78  LOAD_CODE                <code_object _extend_docstrings>
+               80  LOAD_STR                 '_extend_docstrings'
+               82  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               84  STORE_NAME               _extend_docstrings
+
+ L. 112        86  LOAD_BUILD_CLASS 
+               88  LOAD_CODE                <code_object Policy>
+               90  LOAD_STR                 'Policy'
+               92  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               94  LOAD_STR                 'Policy'
+               96  LOAD_NAME                _PolicyBase
+               98  LOAD_NAME                abc
+              100  LOAD_ATTR                ABCMeta
+              102  LOAD_CONST               ('metaclass',)
+              104  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              106  STORE_NAME               Policy
+
+ L. 271       108  LOAD_NAME                _extend_docstrings
+
+ L. 272       110  LOAD_BUILD_CLASS 
+              112  LOAD_CODE                <code_object Compat32>
+              114  LOAD_STR                 'Compat32'
+              116  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              118  LOAD_STR                 'Compat32'
+              120  LOAD_NAME                Policy
+              122  CALL_FUNCTION_3       3  ''
+              124  CALL_FUNCTION_1       1  ''
+              126  STORE_NAME               Compat32
+
+ L. 374       128  LOAD_NAME                Compat32
+              130  CALL_FUNCTION_0       0  ''
+              132  STORE_NAME               compat32
+
+Parse error at or near `CALL_FINALLY' instruction at offset 52
+

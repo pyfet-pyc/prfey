@@ -1,0 +1,40 @@
+Instruction context:
+   
+ L.  27        14  DUP_TOP          
+                  16  LOAD_GLOBAL              KeyError
+->                18  <121>                66  ''
+                  20  POP_TOP          
+                  22  STORE_FAST               'e'
+                  24  POP_TOP          
+                  26  SETUP_FINALLY        58  'to 58'
+Instruction context:
+   
+ L. 145       248  LOAD_FAST                'short'
+             250_252  POP_JUMP_IF_TRUE    266  'to 266'
+                 254  LOAD_FAST                'dtype'
+                 256  LOAD_ATTR                byteorder
+                 258  LOAD_CONST               ('=', '|')
+->               260  <118>                 1  ''
+             262_264  POP_JUMP_IF_FALSE   284  'to 284'
+               266_0  COME_FROM           250  '250'
+
+test/162623.pyc -- 
+# decompile failed
+
+# file test/162623.pyc
+# --- This code section failed: ---
+
+ L. 217         0  LOAD_FAST                '.0'
+              2_0  COME_FROM            16  '16'
+                2  FOR_ITER             18  'to 18'
+                4  STORE_FAST               'title'
+                6  LOAD_FAST                'title'
+                8  LOAD_CONST               None
+               10  <117>                 1  ''
+               12  YIELD_VALUE      
+               14  POP_TOP          
+               16  JUMP_BACK             2  'to 2'
+             18_0  COME_FROM             2  '2'
+
+Parse error at or near `None' instruction at offset -1
+

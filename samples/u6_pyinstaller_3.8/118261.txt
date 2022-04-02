@@ -1,0 +1,43 @@
+Instruction context:
+   
+ L. 515        96  POP_BLOCK        
+->                98  POP_EXCEPT       
+                 100  CALL_FINALLY        110  'to 110'
+                 102  JUMP_BACK             8  'to 8'
+               104_0  COME_FROM            94  '94'
+               104_1  COME_FROM            86  '86'
+               104_2  COME_FROM            76  '76'
+Instruction context:
+   
+ L. 658        16  DUP_TOP          
+                  18  LOAD_GLOBAL              ServerSelectionTimeoutError
+                  20  COMPARE_OP               exception-match
+                  22  POP_JUMP_IF_FALSE    36  'to 36'
+                  24  POP_TOP          
+->                26  POP_TOP          
+                  28  POP_TOP          
+Instruction context:
+   
+ L. 698       144  LOAD_CONST               ('session', 'write_concern', 'parse_write_concern_error')
+                 146  CALL_FUNCTION_KW_5     5  '5 total positional and keyword args'
+                 148  POP_BLOCK        
+->               150  ROT_TWO          
+                 152  BEGIN_FINALLY    
+                 154  WITH_CLEANUP_START
+                 156  WITH_CLEANUP_FINISH
+                 158  POP_FINALLY           0  ''
+                 160  RETURN_VALUE     
+               162_0  COME_FROM_WITH      122  '122'
+                 162  WITH_CLEANUP_START
+                 164  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 922        28  BREAK_LOOP           32  'to 32'
+                  30  JUMP_BACK             0  'to 0'
+->              32_0  COME_FROM            16  '16'
+
+../test/118261.pyc -- 
+# decompile failed
+
+# file ../test/118261.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,37 @@
+Instruction context:
+   
+ L.  29        50  DUP_TOP          
+                  52  LOAD_GLOBAL              comtypes
+                  54  LOAD_ATTR                COMError
+                  56  LOAD_GLOBAL              WindowsError
+                  58  BUILD_TUPLE_2         2 
+->                60  <121>                80  ''
+                  62  POP_TOP          
+                  64  POP_TOP          
+                  66  POP_TOP          
+Instruction context:
+   
+ L.  50        12  LOAD_FAST                'self'
+                  14  LOAD_ATTR                _obj
+                  16  LOAD_ATTR                _comobj
+                  18  LOAD_ATTR                Invoke
+                  20  LOAD_FAST                'self'
+                  22  LOAD_ATTR                _id
+                  24  BUILD_LIST_1          1 
+                  26  LOAD_FAST                'args'
+->                28  CALL_FINALLY         31  'to 31'
+                  30  WITH_CLEANUP_FINISH
+                  32  BUILD_MAP_0           0 
+Instruction context:
+   
+ L. 113        70  LOAD_FAST                'name'
+                  72  LOAD_FAST                'self'
+                  74  LOAD_ATTR                _methods
+->                76  <118>                 0  ''
+                  78  POP_JUMP_IF_FALSE   104  'to 104'
+
+test/101568.pyc -- 
+# decompile failed
+
+# file test/101568.pyc
+# Deparsing stopped due to parse error

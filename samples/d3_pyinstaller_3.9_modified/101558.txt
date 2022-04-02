@@ -1,0 +1,100 @@
+Instruction context:
+   
+ L.  50       128  BUILD_LIST_0          0 
+                 130  LOAD_CONST               ('run', 'insert_filter', 'remove_filter')
+->               132  CALL_FINALLY        135  'to 135'
+
+test/101558.pyc -- 
+# decompile failed
+
+# file test/101558.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              ctypes
+                6  STORE_NAME               ctypes
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               ('WinDLL', 'byref', 'WinError')
+               12  IMPORT_NAME              ctypes
+               14  IMPORT_FROM              WinDLL
+               16  STORE_NAME               WinDLL
+               18  IMPORT_FROM              byref
+               20  STORE_NAME               byref
+               22  IMPORT_FROM              WinError
+               24  STORE_NAME               WinError
+               26  POP_TOP          
+
+ L.   3        28  LOAD_CONST               0
+               30  LOAD_CONST               ('MSG',)
+               32  IMPORT_NAME_ATTR         ctypes.wintypes
+               34  IMPORT_FROM              MSG
+               36  STORE_NAME               MSG
+               38  POP_TOP          
+
+ L.   4        40  LOAD_NAME                WinDLL
+               42  LOAD_STR                 'user32'
+               44  CALL_FUNCTION_1       1  ''
+               46  STORE_NAME               _user32
+
+ L.   6        48  LOAD_NAME                _user32
+               50  LOAD_ATTR                GetMessageA
+               52  STORE_NAME               GetMessage
+
+ L.   8        54  LOAD_NAME                ctypes
+               56  LOAD_ATTR                c_void_p
+
+ L.   9        58  LOAD_NAME                ctypes
+               60  LOAD_ATTR                c_void_p
+
+ L.  10        62  LOAD_NAME                ctypes
+               64  LOAD_ATTR                c_uint
+
+ L.  11        66  LOAD_NAME                ctypes
+               68  LOAD_ATTR                c_uint
+
+ L.   7        70  BUILD_LIST_4          4 
+               72  LOAD_NAME                GetMessage
+               74  STORE_ATTR               argtypes
+
+ L.  13        76  LOAD_NAME                _user32
+               78  LOAD_ATTR                TranslateMessage
+               80  STORE_NAME               TranslateMessage
+
+ L.  14        82  LOAD_NAME                _user32
+               84  LOAD_ATTR                DispatchMessageA
+               86  STORE_NAME               DispatchMessage
+
+ L.  17        88  LOAD_BUILD_CLASS 
+               90  LOAD_CODE                <code_object _MessageLoop>
+               92  LOAD_STR                 '_MessageLoop'
+               94  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               96  LOAD_STR                 '_MessageLoop'
+               98  LOAD_NAME                object
+              100  CALL_FUNCTION_3       3  ''
+              102  STORE_NAME               _MessageLoop
+
+ L.  44       104  LOAD_NAME                _MessageLoop
+              106  CALL_FUNCTION_0       0  ''
+              108  STORE_NAME               _messageloop
+
+ L.  46       110  LOAD_NAME                _messageloop
+              112  LOAD_ATTR                run
+              114  STORE_NAME               run
+
+ L.  47       116  LOAD_NAME                _messageloop
+              118  LOAD_ATTR                insert_filter
+              120  STORE_NAME               insert_filter
+
+ L.  48       122  LOAD_NAME                _messageloop
+              124  LOAD_ATTR                remove_filter
+              126  STORE_NAME               remove_filter
+
+ L.  50       128  BUILD_LIST_0          0 
+              130  LOAD_CONST               ('run', 'insert_filter', 'remove_filter')
+              132  CALL_FINALLY        135  'to 135'
+              134  STORE_NAME               __all__
+
+Parse error at or near `CALL_FINALLY' instruction at offset 132
+

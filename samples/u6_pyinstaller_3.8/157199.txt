@@ -1,0 +1,65 @@
+Instruction context:
+   
+ L. 931       156  POP_TOP          
+->               158  CONTINUE            102  'to 102'
+                 160  JUMP_BACK           114  'to 114'
+                 162  JUMP_BACK           102  'to 102'
+Instruction context:
+   
+ L.1096   296_298  JUMP_BACK           256  'to 256'
+->               300  JUMP_FORWARD        316  'to 316'
+               302_0  COME_FROM           292  '292'
+Instruction context:
+   
+ L.1139        62  LOAD_DEREF               'feature'
+                  64  LOAD_METHOD              update
+                  66  LOAD_CLOSURE             'feature'
+                  68  BUILD_TUPLE_1         1 
+->                70  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  72  LOAD_STR                 '_Feature.__init__.<locals>.<dictcomp>'
+                  74  MAKE_FUNCTION_8          'closure'
+Instruction context:
+   
+ L.1395        66  LOAD_CLOSURE             'til'
+                  68  BUILD_TUPLE_1         1 
+->                70  LOAD_SETCOMP             '<code_object <setcomp>>'
+                  72  LOAD_STR                 '_Feature.feature_get_til.<locals>.<setcomp>'
+                  74  MAKE_FUNCTION_8          'closure'
+                  76  LOAD_FAST                'names'
+                  78  GET_ITER         
+                  80  CALL_FUNCTION_1       1  ''
+                  82  STORE_FAST               'names'
+Instruction context:
+   
+ L.1686       218  LOAD_CLOSURE             'self'
+                 220  BUILD_TUPLE_1         1 
+->               222  LOAD_SETCOMP             '<code_object <setcomp>>'
+                 224  LOAD_STR                 '_Parse.__init__.<locals>.<setcomp>'
+                 226  MAKE_FUNCTION_8          'closure'
+Instruction context:
+   
+ L.2465       100  POP_BLOCK        
+->               102  BEGIN_FINALLY    
+                 104  WITH_CLEANUP_START
+                 106  WITH_CLEANUP_FINISH
+                 108  POP_FINALLY           0  ''
+                 110  POP_BLOCK        
+                 112  LOAD_CONST               True
+                 114  RETURN_VALUE     
+               116_0  COME_FROM            98  '98'
+               116_1  COME_FROM            82  '82'
+                 116  POP_BLOCK        
+                 118  BEGIN_FINALLY    
+               120_0  COME_FROM_WITH       54  '54'
+                 120  WITH_CLEANUP_START
+                 122  WITH_CLEANUP_FINISH
+                 124  END_FINALLY      
+                 126  POP_BLOCK        
+                 128  JUMP_FORWARD        150  'to 150'
+               130_0  COME_FROM_FINALLY    46  '46'
+
+../test/157199.pyc -- 
+# decompile failed
+
+# file ../test/157199.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,36 @@
+Instruction context:
+   
+ L. 131        48  DUP_TOP          
+                  50  LOAD_GLOBAL              ReferenceError
+                  52  COMPARE_OP               exception-match
+                  54  POP_JUMP_IF_FALSE    70  'to 70'
+                  56  POP_TOP          
+->                58  POP_TOP          
+                  60  POP_TOP          
+Instruction context:
+   
+ L. 179       108  LOAD_FAST                'sd'
+                 110  POP_BLOCK        
+->               112  ROT_TWO          
+                 114  BEGIN_FINALLY    
+                 116  WITH_CLEANUP_START
+                 118  WITH_CLEANUP_FINISH
+                 120  POP_FINALLY           0  ''
+                 122  RETURN_VALUE     
+               124_0  COME_FROM_WITH       36  '36'
+                 124  WITH_CLEANUP_START
+                 126  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 257        62  POP_EXCEPT       
+->                64  LOAD_CONST               None
+                  66  RETURN_VALUE     
+                68_0  COME_FROM            46  '46'
+                  68  END_FINALLY      
+                70_0  COME_FROM            38  '38'
+
+../test/118281.pyc -- 
+# decompile failed
+
+# file ../test/118281.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,33 @@
+Instruction context:
+-> 
+ L. 755       220  JUMP_FORWARD        224  'to 224'
+                 222  JUMP_BACK           158  'to 158'
+               224_0  COME_FROM           220  '220'
+               224_1  COME_FROM           170  '170'
+Instruction context:
+-> 
+ L. 776       132  DUP_TOP          
+                 134  LOAD_GLOBAL              urllib
+                 136  LOAD_ATTR                error
+                 138  LOAD_ATTR                HTTPError
+                 140  COMPARE_OP               exception-match
+                 142  POP_JUMP_IF_FALSE   176  'to 176'
+                 144  POP_TOP          
+                 146  STORE_FAST               'v'
+                 148  POP_TOP          
+                 150  SETUP_FINALLY       164  'to 164'
+Instruction context:
+   
+ L.1134       222  LOAD_CONST               (200, 'OK')
+                 224  UNPACK_SEQUENCE_2     2 
+                 226  STORE_FAST               'status'
+                 228  STORE_FAST               'message'
+->               230  JUMP_FORWARD        242  'to 242'
+               232_0  COME_FROM            80  '80'
+               232_1  COME_FROM            68  '68'
+
+../test/133178.pyc -- 
+# decompile failed
+
+# file ../test/133178.pyc
+# Deparsing stopped due to parse error

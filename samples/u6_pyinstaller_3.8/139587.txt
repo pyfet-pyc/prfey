@@ -1,0 +1,45 @@
+Instruction context:
+   
+ L. 346        16  LOAD_FAST                'f'
+                  18  LOAD_METHOD              read
+                  20  CALL_METHOD_0         0  ''
+                  22  POP_BLOCK        
+->                24  ROT_TWO          
+                  26  BEGIN_FINALLY    
+                  28  WITH_CLEANUP_START
+                  30  WITH_CLEANUP_FINISH
+                  32  POP_FINALLY           0  ''
+                  34  RETURN_VALUE     
+                36_0  COME_FROM_WITH       12  '12'
+                  36  WITH_CLEANUP_START
+                  38  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 387       206  LOAD_GLOBAL              getattr
+                 208  LOAD_GLOBAL              StaticModule
+                 210  LOAD_FAST                'module_name'
+                 212  CALL_FUNCTION_1       1  ''
+                 214  LOAD_FAST                'attr_name'
+                 216  CALL_FUNCTION_2       2  ''
+                 218  POP_BLOCK        
+->               220  POP_BLOCK        
+                 222  ROT_TWO          
+                 224  BEGIN_FINALLY    
+                 226  WITH_CLEANUP_START
+                 228  WITH_CLEANUP_FINISH
+                 230  POP_FINALLY           0  ''
+                 232  RETURN_VALUE     
+               234_0  COME_FROM_FINALLY   204  '204'
+Instruction context:
+   
+ L. 611         8  LOAD_CLOSURE             'resolve_class'
+                  10  BUILD_TUPLE_1         1 
+->                12  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  14  LOAD_STR                 'ConfigOptionsHandler._parse_cmdclass.<locals>.<dictcomp>'
+                  16  MAKE_FUNCTION_8          'closure'
+
+../test/139587.pyc -- 
+# decompile failed
+
+# file ../test/139587.pyc
+# Deparsing stopped due to parse error

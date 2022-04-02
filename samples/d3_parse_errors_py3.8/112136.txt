@@ -1,0 +1,37 @@
+Instruction context:
+-> 
+ L. 104       220  LOAD_FAST                'result_path'
+             222_224  POP_JUMP_IF_FALSE   278  'to 278'
+                 226  LOAD_FAST                'result_path'
+                 228  LOAD_CONST               0
+                 230  BINARY_SUBSCR    
+                 232  LOAD_FAST                'seps'
+                 234  COMPARE_OP               not-in
+             236_238  POP_JUMP_IF_FALSE   278  'to 278'
+Instruction context:
+   
+ L. 555        84  POP_BLOCK        
+->                86  POP_EXCEPT       
+                  88  CALL_FINALLY         98  'to 98'
+                  90  JUMP_FORWARD        136  'to 136'
+                92_0  COME_FROM            82  '82'
+Instruction context:
+   
+ L. 596       106  LOAD_GLOBAL              abspath
+                 108  LOAD_FAST                'path'
+                 110  LOAD_FAST                'tail'
+                 112  BINARY_ADD       
+                 114  CALL_FUNCTION_1       1  ''
+                 116  ROT_FOUR         
+->               118  POP_BLOCK        
+                 120  POP_EXCEPT       
+                 122  CALL_FINALLY        148  'to 148'
+                 124  RETURN_VALUE     
+               126_0  COME_FROM           104  '104'
+               126_1  COME_FROM           100  '100'
+
+../test/112136.pyc -- 
+# decompile failed
+
+# file ../test/112136.pyc
+# Deparsing stopped due to parse error

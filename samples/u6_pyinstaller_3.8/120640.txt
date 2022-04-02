@@ -1,0 +1,71 @@
+Instruction context:
+   
+ L.  88        20  LOAD_GLOBAL              util
+                  22  LOAD_METHOD              cache_from_source
+                  24  LOAD_FAST                'path'
+                  26  LOAD_FAST                'debug_override'
+                  28  CALL_METHOD_2         2  ''
+                  30  POP_BLOCK        
+->                32  ROT_TWO          
+                  34  BEGIN_FINALLY    
+                  36  WITH_CLEANUP_START
+                  38  WITH_CLEANUP_FINISH
+                  40  POP_FINALLY           0  ''
+                  42  RETURN_VALUE     
+                44_0  COME_FROM_WITH        6  '6'
+                  44  WITH_CLEANUP_START
+                  46  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 155        80  LOAD_FAST                'file'
+                  82  LOAD_METHOD              read
+                  84  CALL_METHOD_0         0  ''
+                  86  POP_BLOCK        
+->                88  ROT_TWO          
+                  90  BEGIN_FINALLY    
+                  92  WITH_CLEANUP_START
+                  94  WITH_CLEANUP_FINISH
+                  96  POP_FINALLY           0  ''
+                  98  RETURN_VALUE     
+               100_0  COME_FROM_WITH       76  '76'
+                 100  WITH_CLEANUP_START
+                 102  WITH_CLEANUP_FINISH
+                 104  END_FINALLY      
+                 106  JUMP_FORWARD        120  'to 120'
+               108_0  COME_FROM            14  '14'
+               108_1  COME_FROM             4  '4'
+Instruction context:
+   
+ L. 240       164  LOAD_GLOBAL              load_dynamic
+                 166  LOAD_FAST                'name'
+                 168  LOAD_FAST                'filename'
+                 170  LOAD_FAST                'opened_file'
+                 172  CALL_FUNCTION_3       3  ''
+                 174  POP_BLOCK        
+->               176  ROT_TWO          
+                 178  BEGIN_FINALLY    
+                 180  WITH_CLEANUP_START
+                 182  WITH_CLEANUP_FINISH
+                 184  POP_FINALLY           0  ''
+                 186  RETURN_VALUE     
+               188_0  COME_FROM_WITH      160  '160'
+                 188  WITH_CLEANUP_START
+                 190  WITH_CLEANUP_FINISH
+                 192  END_FINALLY      
+                 194  JUMP_FORWARD        208  'to 208'
+               196_0  COME_FROM           150  '150'
+Instruction context:
+   
+ L. 325        12  DUP_TOP          
+                  14  LOAD_GLOBAL              ImportError
+                  16  COMPARE_OP               exception-match
+                  18  POP_JUMP_IF_FALSE    32  'to 32'
+                  20  POP_TOP          
+->                22  POP_TOP          
+                  24  POP_TOP          
+
+../test/120640.pyc -- 
+# decompile failed
+
+# file ../test/120640.pyc
+# Deparsing stopped due to parse error

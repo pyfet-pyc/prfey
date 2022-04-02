@@ -1,0 +1,35 @@
+Instruction context:
+   
+ L. 223        96  DUP_TOP          
+                  98  LOAD_GLOBAL              Exception
+                 100  COMPARE_OP               exception-match
+                 102  POP_JUMP_IF_FALSE   116  'to 116'
+                 104  POP_TOP          
+->               106  POP_TOP          
+                 108  POP_TOP          
+Instruction context:
+   
+ L. 360   894_896  BREAK_LOOP          900  'to 900'
+               898_0  COME_FROM           868  '868'
+                 898  JUMP_BACK            46  'to 46'
+->             900_0  COME_FROM           708  '708'
+               900_1  COME_FROM           698  '698'
+               900_2  COME_FROM           682  '682'
+               900_3  COME_FROM            52  '52'
+Instruction context:
+   
+ L. 675       708  LOAD_FAST                'chunk'
+                 710  LOAD_FAST                'pos'
+                 712  LOAD_CONST               2
+                 714  BINARY_ADD       
+                 716  LOAD_CONST               None
+                 718  BUILD_SLICE_2         2 
+                 720  BINARY_SUBSCR    
+               722_0  COME_FROM            82  '82'
+->               722  STORE_FAST               'chunk'
+
+../test/117803.pyc -- 
+# decompile failed
+
+# file ../test/117803.pyc
+# Deparsing stopped due to parse error

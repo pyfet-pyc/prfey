@@ -1,0 +1,479 @@
+
+# file test/39679.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Core implementation of path-based import.\n\nThis module is NOT meant to be directly imported! It has been designed such\nthat it can be bootstrapped into Python as the implementation of import. As\nsuch it requires the injection of specific modules and attributes in order to\nwork. One should use importlib as the public-facing version of this module.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  23         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              _imp
+               10  STORE_GLOBAL             _imp
+
+ L.  24        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              _io
+               18  STORE_NAME               _io
+
+ L.  25        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              sys
+               26  STORE_GLOBAL             sys
+
+ L.  26        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              _warnings
+               34  STORE_NAME               _warnings
+
+ L.  27        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              marshal
+               42  STORE_NAME               marshal
+
+ L.  30        44  LOAD_GLOBAL              sys
+               46  LOAD_ATTR                platform
+               48  LOAD_STR                 'win32'
+               50  COMPARE_OP               ==
+               52  STORE_NAME               _MS_WINDOWS
+
+ L.  31        54  LOAD_NAME                _MS_WINDOWS
+               56  POP_JUMP_IF_FALSE    76  'to 76'
+
+ L.  32        58  LOAD_CONST               0
+               60  LOAD_CONST               None
+               62  IMPORT_NAME              nt
+               64  STORE_NAME               _os
+
+ L.  33        66  LOAD_CONST               0
+               68  LOAD_CONST               None
+               70  IMPORT_NAME              winreg
+               72  STORE_NAME               winreg
+               74  JUMP_FORWARD         84  'to 84'
+             76_0  COME_FROM            56  '56'
+
+ L.  35        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME              posix
+               82  STORE_NAME               _os
+             84_0  COME_FROM            74  '74'
+
+ L.  38        84  LOAD_NAME                _MS_WINDOWS
+               86  POP_JUMP_IF_FALSE    98  'to 98'
+
+ L.  39        88  LOAD_STR                 '\\'
+               90  LOAD_STR                 '/'
+               92  BUILD_LIST_2          2 
+               94  STORE_NAME               path_separators
+               96  JUMP_FORWARD        104  'to 104'
+             98_0  COME_FROM            86  '86'
+
+ L.  41        98  LOAD_STR                 '/'
+              100  BUILD_LIST_1          1 
+              102  STORE_NAME               path_separators
+            104_0  COME_FROM            96  '96'
+
+ L.  43       104  LOAD_NAME                all
+              106  LOAD_GENEXPR             '<code_object <genexpr>>'
+              108  LOAD_STR                 '<genexpr>'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  LOAD_NAME                path_separators
+              114  GET_ITER         
+              116  CALL_FUNCTION_1       1  ''
+              118  CALL_FUNCTION_1       1  ''
+              120  POP_JUMP_IF_TRUE    126  'to 126'
+              122  <74>             
+              124  RAISE_VARARGS_1       1  'exception instance'
+            126_0  COME_FROM           120  '120'
+
+ L.  44       126  LOAD_NAME                path_separators
+              128  LOAD_CONST               0
+              130  BINARY_SUBSCR    
+              132  STORE_NAME               path_sep
+
+ L.  45       134  LOAD_NAME                tuple
+              136  LOAD_NAME                path_separators
+              138  CALL_FUNCTION_1       1  ''
+              140  STORE_NAME               path_sep_tuple
+
+ L.  46       142  LOAD_STR                 ''
+              144  LOAD_METHOD              join
+              146  LOAD_NAME                path_separators
+              148  CALL_METHOD_1         1  ''
+              150  STORE_NAME               path_separators
+
+ L.  47       152  LOAD_SETCOMP             '<code_object <setcomp>>'
+              154  LOAD_STR                 '<setcomp>'
+              156  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              158  LOAD_NAME                path_separators
+              160  GET_ITER         
+              162  CALL_FUNCTION_1       1  ''
+              164  STORE_NAME               _pathseps_with_colon
+
+ L.  51       166  LOAD_CONST               ('win',)
+              168  STORE_NAME               _CASE_INSENSITIVE_PLATFORMS_STR_KEY
+
+ L.  52       170  LOAD_CONST               ('cygwin', 'darwin')
+              172  STORE_NAME               _CASE_INSENSITIVE_PLATFORMS_BYTES_KEY
+
+ L.  53       174  LOAD_NAME                _CASE_INSENSITIVE_PLATFORMS_BYTES_KEY
+
+ L.  54       176  LOAD_NAME                _CASE_INSENSITIVE_PLATFORMS_STR_KEY
+
+ L.  53       178  BINARY_ADD       
+              180  STORE_NAME               _CASE_INSENSITIVE_PLATFORMS
+
+ L.  57       182  LOAD_CODE                <code_object _make_relax_case>
+              184  LOAD_STR                 '_make_relax_case'
+              186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              188  STORE_NAME               _make_relax_case
+
+ L.  74       190  LOAD_CODE                <code_object _pack_uint32>
+              192  LOAD_STR                 '_pack_uint32'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  STORE_NAME               _pack_uint32
+
+ L.  79       198  LOAD_CODE                <code_object _unpack_uint32>
+              200  LOAD_STR                 '_unpack_uint32'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  STORE_NAME               _unpack_uint32
+
+ L.  84       206  LOAD_CODE                <code_object _unpack_uint16>
+              208  LOAD_STR                 '_unpack_uint16'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               _unpack_uint16
+
+ L.  90       214  LOAD_NAME                _MS_WINDOWS
+              216  POP_JUMP_IF_FALSE   228  'to 228'
+
+ L.  91       218  LOAD_CODE                <code_object _path_join>
+              220  LOAD_STR                 '_path_join'
+              222  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              224  STORE_NAME               _path_join
+              226  JUMP_FORWARD        236  'to 236'
+            228_0  COME_FROM           216  '216'
+
+ L. 121       228  LOAD_CODE                <code_object _path_join>
+              230  LOAD_STR                 '_path_join'
+              232  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              234  STORE_NAME               _path_join
+            236_0  COME_FROM           226  '226'
+
+ L. 127       236  LOAD_CODE                <code_object _path_split>
+              238  LOAD_STR                 '_path_split'
+              240  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              242  STORE_NAME               _path_split
+
+ L. 135       244  LOAD_CODE                <code_object _path_stat>
+              246  LOAD_STR                 '_path_stat'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  STORE_NAME               _path_stat
+
+ L. 145       252  LOAD_CODE                <code_object _path_is_mode_type>
+              254  LOAD_STR                 '_path_is_mode_type'
+              256  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              258  STORE_NAME               _path_is_mode_type
+
+ L. 154       260  LOAD_CODE                <code_object _path_isfile>
+              262  LOAD_STR                 '_path_isfile'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  STORE_NAME               _path_isfile
+
+ L. 159       268  LOAD_CODE                <code_object _path_isdir>
+              270  LOAD_STR                 '_path_isdir'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  STORE_NAME               _path_isdir
+
+ L. 166       276  LOAD_NAME                _MS_WINDOWS
+          278_280  POP_JUMP_IF_FALSE   292  'to 292'
+
+ L. 167       282  LOAD_CODE                <code_object _path_isabs>
+              284  LOAD_STR                 '_path_isabs'
+              286  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              288  STORE_NAME               _path_isabs
+              290  JUMP_FORWARD        300  'to 300'
+            292_0  COME_FROM           278  '278'
+
+ L. 175       292  LOAD_CODE                <code_object _path_isabs>
+              294  LOAD_STR                 '_path_isabs'
+              296  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              298  STORE_NAME               _path_isabs
+            300_0  COME_FROM           290  '290'
+
+ L. 180       300  LOAD_CONST               (438,)
+              302  LOAD_CODE                <code_object _write_atomic>
+              304  LOAD_STR                 '_write_atomic'
+              306  MAKE_FUNCTION_1          'default'
+              308  STORE_NAME               _write_atomic
+
+ L. 202       310  LOAD_NAME                type
+              312  LOAD_NAME                _write_atomic
+              314  LOAD_ATTR                __code__
+              316  CALL_FUNCTION_1       1  ''
+              318  STORE_NAME               _code_type
+
+ L. 349       320  LOAD_CONST               3425
+              322  LOAD_METHOD              to_bytes
+              324  LOAD_CONST               2
+              326  LOAD_STR                 'little'
+              328  CALL_METHOD_2         2  ''
+              330  LOAD_CONST               b'\r\n'
+              332  BINARY_ADD       
+              334  STORE_NAME               MAGIC_NUMBER
+
+ L. 350       336  LOAD_NAME                int
+              338  LOAD_METHOD              from_bytes
+              340  LOAD_NAME                MAGIC_NUMBER
+              342  LOAD_STR                 'little'
+              344  CALL_METHOD_2         2  ''
+              346  STORE_NAME               _RAW_MAGIC_NUMBER
+
+ L. 352       348  LOAD_STR                 '__pycache__'
+              350  STORE_NAME               _PYCACHE
+
+ L. 353       352  LOAD_STR                 'opt-'
+              354  STORE_NAME               _OPT
+
+ L. 355       356  LOAD_STR                 '.py'
+              358  BUILD_LIST_1          1 
+              360  STORE_NAME               SOURCE_SUFFIXES
+
+ L. 357       362  LOAD_STR                 '.pyc'
+              364  BUILD_LIST_1          1 
+              366  STORE_NAME               BYTECODE_SUFFIXES
+
+ L. 359       368  LOAD_NAME                BYTECODE_SUFFIXES
+              370  DUP_TOP          
+              372  STORE_NAME               DEBUG_BYTECODE_SUFFIXES
+              374  STORE_NAME               OPTIMIZED_BYTECODE_SUFFIXES
+
+ L. 361       376  LOAD_CONST               (None,)
+              378  LOAD_CONST               None
+              380  LOAD_CONST               ('optimization',)
+              382  BUILD_CONST_KEY_MAP_1     1 
+              384  LOAD_CODE                <code_object cache_from_source>
+              386  LOAD_STR                 'cache_from_source'
+              388  MAKE_FUNCTION_3          'default, keyword-only'
+              390  STORE_NAME               cache_from_source
+
+ L. 432       392  LOAD_CODE                <code_object source_from_cache>
+              394  LOAD_STR                 'source_from_cache'
+              396  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              398  STORE_NAME               source_from_cache
+
+ L. 472       400  LOAD_CODE                <code_object _get_sourcefile>
+              402  LOAD_STR                 '_get_sourcefile'
+              404  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              406  STORE_NAME               _get_sourcefile
+
+ L. 491       408  LOAD_CODE                <code_object _get_cached>
+              410  LOAD_STR                 '_get_cached'
+              412  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              414  STORE_NAME               _get_cached
+
+ L. 503       416  LOAD_CODE                <code_object _calc_mode>
+              418  LOAD_STR                 '_calc_mode'
+              420  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              422  STORE_NAME               _calc_mode
+
+ L. 515       424  LOAD_CODE                <code_object _check_name>
+              426  LOAD_STR                 '_check_name'
+              428  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              430  STORE_NAME               _check_name
+
+ L. 543       432  LOAD_CODE                <code_object _find_module_shim>
+              434  LOAD_STR                 '_find_module_shim'
+              436  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              438  STORE_NAME               _find_module_shim
+
+ L. 560       440  LOAD_CODE                <code_object _classify_pyc>
+              442  LOAD_STR                 '_classify_pyc'
+              444  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              446  STORE_NAME               _classify_pyc
+
+ L. 593       448  LOAD_CODE                <code_object _validate_timestamp_pyc>
+              450  LOAD_STR                 '_validate_timestamp_pyc'
+              452  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              454  STORE_NAME               _validate_timestamp_pyc
+
+ L. 621       456  LOAD_CODE                <code_object _validate_hash_pyc>
+              458  LOAD_STR                 '_validate_hash_pyc'
+              460  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              462  STORE_NAME               _validate_hash_pyc
+
+ L. 645       464  LOAD_CONST               (None, None, None)
+              466  LOAD_CODE                <code_object _compile_bytecode>
+              468  LOAD_STR                 '_compile_bytecode'
+              470  MAKE_FUNCTION_1          'default'
+              472  STORE_NAME               _compile_bytecode
+
+ L. 658       474  LOAD_CONST               (0, 0)
+              476  LOAD_CODE                <code_object _code_to_timestamp_pyc>
+              478  LOAD_STR                 '_code_to_timestamp_pyc'
+              480  MAKE_FUNCTION_1          'default'
+              482  STORE_NAME               _code_to_timestamp_pyc
+
+ L. 668       484  LOAD_CONST               (True,)
+              486  LOAD_CODE                <code_object _code_to_hash_pyc>
+              488  LOAD_STR                 '_code_to_hash_pyc'
+              490  MAKE_FUNCTION_1          'default'
+              492  STORE_NAME               _code_to_hash_pyc
+
+ L. 679       494  LOAD_CODE                <code_object decode_source>
+              496  LOAD_STR                 'decode_source'
+              498  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              500  STORE_NAME               decode_source
+
+ L. 693       502  LOAD_NAME                object
+              504  CALL_FUNCTION_0       0  ''
+              506  STORE_NAME               _POPULATE
+
+ L. 696       508  LOAD_CONST               (None,)
+              510  LOAD_CONST               None
+
+ L. 697       512  LOAD_NAME                _POPULATE
+
+ L. 696       514  LOAD_CONST               ('loader', 'submodule_search_locations')
+              516  BUILD_CONST_KEY_MAP_2     2 
+              518  LOAD_CODE                <code_object spec_from_file_location>
+              520  LOAD_STR                 'spec_from_file_location'
+              522  MAKE_FUNCTION_3          'default, keyword-only'
+              524  STORE_NAME               spec_from_file_location
+
+ L. 764       526  LOAD_BUILD_CLASS 
+              528  LOAD_CODE                <code_object WindowsRegistryFinder>
+              530  LOAD_STR                 'WindowsRegistryFinder'
+              532  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              534  LOAD_STR                 'WindowsRegistryFinder'
+              536  CALL_FUNCTION_2       2  ''
+              538  STORE_NAME               WindowsRegistryFinder
+
+ L. 828       540  LOAD_BUILD_CLASS 
+              542  LOAD_CODE                <code_object _LoaderBasics>
+              544  LOAD_STR                 '_LoaderBasics'
+              546  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              548  LOAD_STR                 '_LoaderBasics'
+              550  CALL_FUNCTION_2       2  ''
+              552  STORE_NAME               _LoaderBasics
+
+ L. 857       554  LOAD_BUILD_CLASS 
+              556  LOAD_CODE                <code_object SourceLoader>
+              558  LOAD_STR                 'SourceLoader'
+              560  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              562  LOAD_STR                 'SourceLoader'
+              564  LOAD_NAME                _LoaderBasics
+              566  CALL_FUNCTION_3       3  ''
+              568  STORE_NAME               SourceLoader
+
+ L.1001       570  LOAD_BUILD_CLASS 
+              572  LOAD_CODE                <code_object FileLoader>
+              574  LOAD_STR                 'FileLoader'
+              576  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              578  LOAD_STR                 'FileLoader'
+              580  CALL_FUNCTION_2       2  ''
+              582  STORE_NAME               FileLoader
+
+ L.1073       584  LOAD_BUILD_CLASS 
+              586  LOAD_CODE                <code_object SourceFileLoader>
+              588  LOAD_STR                 'SourceFileLoader'
+              590  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              592  LOAD_STR                 'SourceFileLoader'
+              594  LOAD_NAME                FileLoader
+              596  LOAD_NAME                SourceLoader
+              598  CALL_FUNCTION_4       4  ''
+              600  STORE_NAME               SourceFileLoader
+
+ L.1118       602  LOAD_BUILD_CLASS 
+              604  LOAD_CODE                <code_object SourcelessFileLoader>
+              606  LOAD_STR                 'SourcelessFileLoader'
+              608  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              610  LOAD_STR                 'SourcelessFileLoader'
+              612  LOAD_NAME                FileLoader
+              614  LOAD_NAME                _LoaderBasics
+              616  CALL_FUNCTION_4       4  ''
+              618  STORE_NAME               SourcelessFileLoader
+
+ L.1144       620  BUILD_LIST_0          0 
+              622  STORE_NAME               EXTENSION_SUFFIXES
+
+ L.1147       624  LOAD_BUILD_CLASS 
+              626  LOAD_CODE                <code_object ExtensionFileLoader>
+              628  LOAD_STR                 'ExtensionFileLoader'
+              630  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              632  LOAD_STR                 'ExtensionFileLoader'
+              634  LOAD_NAME                FileLoader
+              636  LOAD_NAME                _LoaderBasics
+              638  CALL_FUNCTION_4       4  ''
+              640  STORE_NAME               ExtensionFileLoader
+
+ L.1205       642  LOAD_BUILD_CLASS 
+              644  LOAD_CODE                <code_object _NamespacePath>
+              646  LOAD_STR                 '_NamespacePath'
+              648  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              650  LOAD_STR                 '_NamespacePath'
+              652  CALL_FUNCTION_2       2  ''
+              654  STORE_NAME               _NamespacePath
+
+ L.1268       656  LOAD_BUILD_CLASS 
+              658  LOAD_CODE                <code_object _NamespaceLoader>
+              660  LOAD_STR                 '_NamespaceLoader'
+              662  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              664  LOAD_STR                 '_NamespaceLoader'
+              666  CALL_FUNCTION_2       2  ''
+              668  STORE_NAME               _NamespaceLoader
+
+ L.1310       670  LOAD_BUILD_CLASS 
+              672  LOAD_CODE                <code_object PathFinder>
+              674  LOAD_STR                 'PathFinder'
+              676  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              678  LOAD_STR                 'PathFinder'
+              680  CALL_FUNCTION_2       2  ''
+              682  STORE_NAME               PathFinder
+
+ L.1457       684  LOAD_BUILD_CLASS 
+              686  LOAD_CODE                <code_object FileFinder>
+              688  LOAD_STR                 'FileFinder'
+              690  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              692  LOAD_STR                 'FileFinder'
+              694  CALL_FUNCTION_2       2  ''
+              696  STORE_NAME               FileFinder
+
+ L.1611       698  LOAD_CONST               (None,)
+              700  LOAD_CODE                <code_object _fix_up_module>
+              702  LOAD_STR                 '_fix_up_module'
+              704  MAKE_FUNCTION_1          'default'
+              706  STORE_NAME               _fix_up_module
+
+ L.1634       708  LOAD_CODE                <code_object _get_supported_file_loaders>
+              710  LOAD_STR                 '_get_supported_file_loaders'
+              712  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              714  STORE_NAME               _get_supported_file_loaders
+
+ L.1645       716  LOAD_CODE                <code_object _setup>
+              718  LOAD_STR                 '_setup'
+              720  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              722  STORE_NAME               _setup
+
+ L.1702       724  LOAD_CODE                <code_object _install>
+              726  LOAD_STR                 '_install'
+              728  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              730  STORE_NAME               _install
+
+Parse error at or near `<74>' instruction at offset 122
+
+Instruction context:
+   
+ L.  43       104  LOAD_NAME                all
+                 106  LOAD_GENEXPR             '<code_object <genexpr>>'
+                 108  LOAD_STR                 '<genexpr>'
+                 110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+                 112  LOAD_NAME                path_separators
+                 114  GET_ITER         
+                 116  CALL_FUNCTION_1       1  ''
+                 118  CALL_FUNCTION_1       1  ''
+                 120  POP_JUMP_IF_TRUE    126  'to 126'
+->               122  <74>             
+                 124  RAISE_VARARGS_1       1  'exception instance'
+               126_0  COME_FROM           120  '120'
+
+test/39679.pyc -- 
+# decompile failed

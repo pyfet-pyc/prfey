@@ -1,0 +1,76 @@
+Instruction context:
+   
+ L.   8        50  DUP_TOP          
+                  52  LOAD_NAME                ImportError
+->                54  <121>                78  ''
+                  56  POP_TOP          
+                  58  POP_TOP          
+                  60  POP_TOP          
+
+test/101728.pyc -- 
+# decompile failed
+
+# file test/101728.pyc
+# --- This code section failed: ---
+
+ L.   2         0  LOAD_CONST               0
+                2  LOAD_CONST               ('Thread', 'Lock')
+                4  IMPORT_NAME              threading
+                6  IMPORT_FROM              Thread
+                8  STORE_NAME               Thread
+               10  IMPORT_FROM              Lock
+               12  STORE_NAME               Lock
+               14  POP_TOP          
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              traceback
+               22  STORE_NAME               traceback
+
+ L.   4        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              functools
+               30  STORE_NAME               functools
+
+ L.   6        32  SETUP_FINALLY        50  'to 50'
+
+ L.   7        34  LOAD_CONST               0
+               36  LOAD_CONST               ('Queue',)
+               38  IMPORT_NAME              queue
+               40  IMPORT_FROM              Queue
+               42  STORE_NAME               Queue
+               44  POP_TOP          
+               46  POP_BLOCK        
+               48  JUMP_FORWARD         80  'to 80'
+             50_0  COME_FROM_FINALLY    32  '32'
+
+ L.   8        50  DUP_TOP          
+               52  LOAD_NAME                ImportError
+               54  <121>                78  ''
+               56  POP_TOP          
+               58  POP_TOP          
+               60  POP_TOP          
+
+ L.   9        62  LOAD_CONST               0
+               64  LOAD_CONST               ('Queue',)
+               66  IMPORT_NAME              Queue
+               68  IMPORT_FROM              Queue
+               70  STORE_NAME               Queue
+               72  POP_TOP          
+               74  POP_EXCEPT       
+               76  JUMP_FORWARD         80  'to 80'
+               78  <48>             
+             80_0  COME_FROM            76  '76'
+             80_1  COME_FROM            48  '48'
+
+ L.  11        80  LOAD_BUILD_CLASS 
+               82  LOAD_CODE                <code_object GenericListener>
+               84  LOAD_STR                 'GenericListener'
+               86  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               88  LOAD_STR                 'GenericListener'
+               90  LOAD_NAME                object
+               92  CALL_FUNCTION_3       3  ''
+               94  STORE_NAME               GenericListener
+
+Parse error at or near `<121>' instruction at offset 54
+

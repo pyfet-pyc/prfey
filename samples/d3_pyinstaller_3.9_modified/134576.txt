@@ -1,0 +1,123 @@
+Instruction context:
+   
+ L.  16       130  DUP_TOP          
+                 132  LOAD_NAME                ImportError
+->               134  <121>               154  ''
+                 136  POP_TOP          
+                 138  POP_TOP          
+                 140  POP_TOP          
+
+test/134576.pyc -- 
+# decompile failed
+
+# file test/134576.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              re
+                6  STORE_NAME               re
+
+ L.   3         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              aiohttp
+               14  STORE_NAME               aiohttp
+
+ L.   4        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              requests
+               22  STORE_NAME               requests
+
+ L.   5        24  LOAD_CONST               0
+               26  LOAD_CONST               ('Union', 'List', 'Optional', 'Coroutine')
+               28  IMPORT_NAME              typing
+               30  IMPORT_FROM              Union
+               32  STORE_NAME               Union
+               34  IMPORT_FROM              List
+               36  STORE_NAME               List
+               38  IMPORT_FROM              Optional
+               40  STORE_NAME               Optional
+               42  IMPORT_FROM              Coroutine
+               44  STORE_NAME               Coroutine
+               46  POP_TOP          
+
+ L.   6        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              time
+               54  STORE_NAME               time
+
+ L.   7        56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              asyncio
+               62  STORE_NAME               asyncio
+
+ L.   9        64  LOAD_CONST               1
+               66  LOAD_CONST               ('bytes_to_base64_data',)
+               68  IMPORT_NAME              utils
+               70  IMPORT_FROM              bytes_to_base64_data
+               72  STORE_NAME               bytes_to_base64_data
+               74  POP_TOP          
+
+ L.  10        76  LOAD_CONST               1
+               78  LOAD_CONST               ('aliased', 'alias')
+               80  IMPORT_NAME              utils
+               82  IMPORT_FROM              aliased
+               84  STORE_NAME               aliased
+               86  IMPORT_FROM              alias
+               88  STORE_NAME               alias
+               90  POP_TOP          
+
+ L.  11        92  LOAD_CONST               1
+               94  LOAD_CONST               ('Embed',)
+               96  IMPORT_NAME              embed
+               98  IMPORT_FROM              Embed
+              100  STORE_NAME               Embed
+              102  POP_TOP          
+
+ L.  12       104  LOAD_CONST               1
+              106  LOAD_CONST               ('File',)
+              108  IMPORT_NAME              file
+              110  IMPORT_FROM              File
+              112  STORE_NAME               File
+              114  POP_TOP          
+
+ L.  14       116  SETUP_FINALLY       130  'to 130'
+
+ L.  15       118  LOAD_CONST               0
+              120  LOAD_CONST               None
+              122  IMPORT_NAME              ujson
+              124  STORE_NAME               json
+              126  POP_BLOCK        
+              128  JUMP_FORWARD        156  'to 156'
+            130_0  COME_FROM_FINALLY   116  '116'
+
+ L.  16       130  DUP_TOP          
+              132  LOAD_NAME                ImportError
+              134  <121>               154  ''
+              136  POP_TOP          
+              138  POP_TOP          
+              140  POP_TOP          
+
+ L.  17       142  LOAD_CONST               0
+              144  LOAD_CONST               None
+              146  IMPORT_NAME              json
+              148  STORE_NAME               json
+              150  POP_EXCEPT       
+              152  JUMP_FORWARD        156  'to 156'
+              154  <48>             
+            156_0  COME_FROM           152  '152'
+            156_1  COME_FROM           128  '128'
+
+ L.  20       156  LOAD_NAME                aliased
+
+ L.  21       158  LOAD_BUILD_CLASS 
+              160  LOAD_CODE                <code_object Webhook>
+              162  LOAD_STR                 'Webhook'
+              164  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              166  LOAD_STR                 'Webhook'
+              168  CALL_FUNCTION_2       2  ''
+              170  CALL_FUNCTION_1       1  ''
+              172  STORE_NAME               Webhook
+
+Parse error at or near `<121>' instruction at offset 134
+

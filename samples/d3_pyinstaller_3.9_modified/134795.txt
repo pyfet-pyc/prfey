@@ -1,0 +1,118 @@
+Instruction context:
+   
+ L.  25       144  BUILD_LIST_0          0 
+                 146  LOAD_CONST               ('Collection', 'Item', 'ItemNotFoundException', 'LockedException', 'PromptDismissedException', 'SecretServiceNotAvailableException', 'SecretStorageException', 'check_service_availability', 'create_collection', 'dbus_init', 'get_all_collections', 'get_any_collection', 'get_collection_by_alias', 'get_default_collection', 'search_items')
+->               148  CALL_FINALLY        151  'to 151'
+                 150  STORE_NAME               __all__
+
+test/134795.pyc -- 
+# decompile failed
+
+# file test/134795.pyc
+# --- This code section failed: ---
+
+ L.   6         0  LOAD_STR                 'This file provides quick access to all SecretStorage API. Please\nrefer to documentation of individual modules for API details.\n'
+                2  STORE_NAME               __doc__
+
+ L.  10         4  LOAD_CONST               0
+                6  LOAD_CONST               ('message_bus',)
+                8  IMPORT_NAME_ATTR         jeepney.bus_messages
+               10  IMPORT_FROM              message_bus
+               12  STORE_NAME               message_bus
+               14  POP_TOP          
+
+ L.  11        16  LOAD_CONST               0
+               18  LOAD_CONST               ('DBusConnection', 'Proxy', 'open_dbus_connection')
+               20  IMPORT_NAME_ATTR         jeepney.io.blocking
+               22  IMPORT_FROM              DBusConnection
+               24  STORE_NAME               DBusConnection
+               26  IMPORT_FROM              Proxy
+               28  STORE_NAME               Proxy
+               30  IMPORT_FROM              open_dbus_connection
+               32  STORE_NAME               open_dbus_connection
+               34  POP_TOP          
+
+ L.  13        36  LOAD_CONST               0
+               38  LOAD_CONST               ('Collection', 'create_collection', 'get_all_collections', 'get_default_collection', 'get_any_collection', 'get_collection_by_alias', 'search_items')
+               40  IMPORT_NAME_ATTR         secretstorage.collection
+               42  IMPORT_FROM              Collection
+               44  STORE_NAME               Collection
+               46  IMPORT_FROM              create_collection
+               48  STORE_NAME               create_collection
+               50  IMPORT_FROM              get_all_collections
+               52  STORE_NAME               get_all_collections
+               54  IMPORT_FROM              get_default_collection
+               56  STORE_NAME               get_default_collection
+               58  IMPORT_FROM              get_any_collection
+               60  STORE_NAME               get_any_collection
+               62  IMPORT_FROM              get_collection_by_alias
+               64  STORE_NAME               get_collection_by_alias
+               66  IMPORT_FROM              search_items
+               68  STORE_NAME               search_items
+               70  POP_TOP          
+
+ L.  16        72  LOAD_CONST               0
+               74  LOAD_CONST               ('Item',)
+               76  IMPORT_NAME_ATTR         secretstorage.item
+               78  IMPORT_FROM              Item
+               80  STORE_NAME               Item
+               82  POP_TOP          
+
+ L.  17        84  LOAD_CONST               0
+               86  LOAD_CONST               ('SecretStorageException', 'SecretServiceNotAvailableException', 'LockedException', 'ItemNotFoundException', 'PromptDismissedException')
+               88  IMPORT_NAME_ATTR         secretstorage.exceptions
+               90  IMPORT_FROM              SecretStorageException
+               92  STORE_NAME               SecretStorageException
+               94  IMPORT_FROM              SecretServiceNotAvailableException
+               96  STORE_NAME               SecretServiceNotAvailableException
+               98  IMPORT_FROM              LockedException
+              100  STORE_NAME               LockedException
+              102  IMPORT_FROM              ItemNotFoundException
+              104  STORE_NAME               ItemNotFoundException
+              106  IMPORT_FROM              PromptDismissedException
+              108  STORE_NAME               PromptDismissedException
+              110  POP_TOP          
+
+ L.  20       112  LOAD_CONST               0
+              114  LOAD_CONST               ('add_match_rules',)
+              116  IMPORT_NAME_ATTR         secretstorage.util
+              118  IMPORT_FROM              add_match_rules
+              120  STORE_NAME               add_match_rules
+              122  POP_TOP          
+
+ L.  22       124  LOAD_CONST               (3, 3, 1)
+              126  STORE_NAME               __version_tuple__
+
+ L.  23       128  LOAD_STR                 '.'
+              130  LOAD_METHOD              join
+              132  LOAD_NAME                map
+              134  LOAD_NAME                str
+              136  LOAD_NAME                __version_tuple__
+              138  CALL_FUNCTION_2       2  ''
+              140  CALL_METHOD_1         1  ''
+              142  STORE_NAME               __version__
+
+ L.  25       144  BUILD_LIST_0          0 
+              146  LOAD_CONST               ('Collection', 'Item', 'ItemNotFoundException', 'LockedException', 'PromptDismissedException', 'SecretServiceNotAvailableException', 'SecretStorageException', 'check_service_availability', 'create_collection', 'dbus_init', 'get_all_collections', 'get_any_collection', 'get_collection_by_alias', 'get_default_collection', 'search_items')
+              148  CALL_FINALLY        151  'to 151'
+              150  STORE_NAME               __all__
+
+ L.  43       152  LOAD_NAME                DBusConnection
+              154  LOAD_CONST               ('return',)
+              156  BUILD_CONST_KEY_MAP_1     1 
+              158  LOAD_CODE                <code_object dbus_init>
+              160  LOAD_STR                 'dbus_init'
+              162  MAKE_FUNCTION_4          'annotation'
+              164  STORE_NAME               dbus_init
+
+ L.  83       166  LOAD_NAME                DBusConnection
+              168  LOAD_NAME                bool
+              170  LOAD_CONST               ('connection', 'return')
+              172  BUILD_CONST_KEY_MAP_2     2 
+              174  LOAD_CODE                <code_object check_service_availability>
+              176  LOAD_STR                 'check_service_availability'
+              178  MAKE_FUNCTION_4          'annotation'
+              180  STORE_NAME               check_service_availability
+
+Parse error at or near `CALL_FINALLY' instruction at offset 148
+

@@ -1,0 +1,35 @@
+Instruction context:
+   
+ L. 647        58  POP_EXCEPT       
+                  60  BREAK_LOOP           88  'to 88'
+                62_0  COME_FROM            50  '50'
+->                62  END_FINALLY      
+                  64  JUMP_BACK            18  'to 18'
+                66_0  COME_FROM            28  '28'
+Instruction context:
+   
+ L. 701       114  LOAD_FAST                'host'
+                 116  LOAD_METHOD              encode
+                 118  LOAD_STR                 'idna'
+                 120  CALL_METHOD_1         1  ''
+                 122  LOAD_METHOD              decode
+                 124  LOAD_STR                 'ascii'
+                 126  CALL_METHOD_1         1  ''
+                 128  STORE_FAST               'host'
+                 130  POP_EXCEPT       
+                 132  JUMP_FORWARD        136  'to 136'
+               134_0  COME_FROM           106  '106'
+                 134  END_FINALLY      
+               136_0  COME_FROM           132  '132'
+               136_1  COME_FROM            98  '98'
+                 136  POP_EXCEPT       
+                 138  JUMP_FORWARD        186  'to 186'
+->             140_0  COME_FROM            36  '36'
+                 140  END_FINALLY      
+               142_0  COME_FROM            28  '28'
+
+../test/118460.pyc -- 
+# decompile failed
+
+# file ../test/118460.pyc
+# Deparsing stopped due to parse error

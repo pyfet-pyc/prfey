@@ -1,0 +1,85 @@
+Instruction context:
+   
+ L.   9         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('choice', 'randbelow', 'randbits', 'SystemRandom', 'token_bytes', 'token_hex', 'token_urlsafe', 'compare_digest')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101086.pyc -- 
+# decompile failed
+
+# file test/101086.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Generate cryptographically strong pseudo-random numbers suitable for\nmanaging secrets such as account authentication, tokens, and similar.\n\nSee PEP 506 for more information.\nhttps://www.python.org/dev/peps/pep-0506/\n\n'
+                2  STORE_NAME               __doc__
+
+ L.   9         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('choice', 'randbelow', 'randbits', 'SystemRandom', 'token_bytes', 'token_hex', 'token_urlsafe', 'compare_digest')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  15        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              base64
+               18  STORE_NAME               base64
+
+ L.  16        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              binascii
+               26  STORE_NAME               binascii
+
+ L.  18        28  LOAD_CONST               0
+               30  LOAD_CONST               ('compare_digest',)
+               32  IMPORT_NAME              hmac
+               34  IMPORT_FROM              compare_digest
+               36  STORE_NAME               compare_digest
+               38  POP_TOP          
+
+ L.  19        40  LOAD_CONST               0
+               42  LOAD_CONST               ('SystemRandom',)
+               44  IMPORT_NAME              random
+               46  IMPORT_FROM              SystemRandom
+               48  STORE_NAME               SystemRandom
+               50  POP_TOP          
+
+ L.  21        52  LOAD_NAME                SystemRandom
+               54  CALL_FUNCTION_0       0  ''
+               56  STORE_NAME               _sysrand
+
+ L.  23        58  LOAD_NAME                _sysrand
+               60  LOAD_ATTR                getrandbits
+               62  STORE_NAME               randbits
+
+ L.  24        64  LOAD_NAME                _sysrand
+               66  LOAD_ATTR                choice
+               68  STORE_NAME               choice
+
+ L.  26        70  LOAD_CODE                <code_object randbelow>
+               72  LOAD_STR                 'randbelow'
+               74  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               76  STORE_NAME               randbelow
+
+ L.  32        78  LOAD_CONST               32
+               80  STORE_NAME               DEFAULT_ENTROPY
+
+ L.  34        82  LOAD_CONST               (None,)
+               84  LOAD_CODE                <code_object token_bytes>
+               86  LOAD_STR                 'token_bytes'
+               88  MAKE_FUNCTION_1          'default'
+               90  STORE_NAME               token_bytes
+
+ L.  48        92  LOAD_CONST               (None,)
+               94  LOAD_CODE                <code_object token_hex>
+               96  LOAD_STR                 'token_hex'
+               98  MAKE_FUNCTION_1          'default'
+              100  STORE_NAME               token_hex
+
+ L.  61       102  LOAD_CONST               (None,)
+              104  LOAD_CODE                <code_object token_urlsafe>
+              106  LOAD_STR                 'token_urlsafe'
+              108  MAKE_FUNCTION_1          'default'
+              110  STORE_NAME               token_urlsafe
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

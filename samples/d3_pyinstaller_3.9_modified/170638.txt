@@ -1,0 +1,278 @@
+
+# file test/170638.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              random
+                6  STORE_NAME               random
+                8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              string
+               14  STORE_NAME               string
+               16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              requests
+               22  STORE_NAME               requests
+               24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              threading
+               30  STORE_NAME               threading
+               32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              os
+               38  STORE_NAME               os
+               40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              sys
+               46  STORE_NAME               sys
+               48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              time
+               54  STORE_NAME               time
+
+ L.   2        56  LOAD_CONST               0
+               58  LOAD_CONST               ('sleep',)
+               60  IMPORT_NAME              time
+               62  IMPORT_FROM              sleep
+               64  STORE_NAME               sleep
+               66  POP_TOP          
+
+ L.   3        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME_ATTR         os.path
+               74  STORE_NAME               os
+
+ L.   4        76  LOAD_CONST               0
+               78  LOAD_CONST               ('ProxyError', 'SSLError', 'ConnectionError', 'InvalidProxyURL')
+               80  IMPORT_NAME_ATTR         requests.exceptions
+               82  IMPORT_FROM              ProxyError
+               84  STORE_NAME               ProxyError
+               86  IMPORT_FROM              SSLError
+               88  STORE_NAME               SSLError
+               90  IMPORT_FROM              ConnectionError
+               92  STORE_NAME               ConnectionError
+               94  IMPORT_FROM              InvalidProxyURL
+               96  STORE_NAME               InvalidProxyURL
+               98  POP_TOP          
+
+ L.   6       100  LOAD_BUILD_CLASS 
+              102  LOAD_CODE                <code_object bcolors>
+              104  LOAD_STR                 'bcolors'
+              106  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              108  LOAD_STR                 'bcolors'
+              110  CALL_FUNCTION_2       2  ''
+              112  STORE_NAME               bcolors
+
+ L.  16       114  LOAD_NAME                print
+              116  LOAD_STR                 "TayZer's Nitro Code Generator v1.8a\n"
+              118  CALL_FUNCTION_1       1  ''
+              120  POP_TOP          
+
+ L.  18       122  LOAD_NAME                print
+              124  LOAD_STR                 'Amount of workers to use at once?'
+              126  CALL_FUNCTION_1       1  ''
+              128  POP_TOP          
+
+ L.  19       130  LOAD_NAME                int
+              132  LOAD_NAME                input
+              134  LOAD_STR                 'Threads: '
+              136  CALL_FUNCTION_1       1  ''
+              138  CALL_FUNCTION_1       1  ''
+              140  STORE_NAME               _THREADS
+
+ L.  21       142  LOAD_STR                 '0'
+              144  LOAD_NAME                os
+              146  LOAD_ATTR                environ
+              148  LOAD_STR                 '_THREADS'
+              150  STORE_SUBSCR     
+
+ L.  22       152  LOAD_CONST               0
+              154  STORE_GLOBAL             generation
+
+ L.  23       156  LOAD_CONST               0
+              158  STORE_GLOBAL             banned
+
+ L.  24       160  LOAD_CONST               0
+              162  STORE_GLOBAL             nitro_codes
+
+ L.  25       164  LOAD_NAME                time
+              166  LOAD_METHOD              time
+              168  CALL_METHOD_0         0  ''
+              170  STORE_NAME               start_time
+
+ L.  27       172  LOAD_CODE                <code_object clearterminal>
+              174  LOAD_STR                 'clearterminal'
+              176  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              178  STORE_NAME               clearterminal
+
+ L.  30       180  LOAD_CODE                <code_object codeGenerator>
+              182  LOAD_STR                 'codeGenerator'
+              184  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              186  STORE_NAME               codeGenerator
+
+ L.  35       188  LOAD_LISTCOMP            '<code_object <listcomp>>'
+              190  LOAD_STR                 '<listcomp>'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  LOAD_NAME                open
+              196  LOAD_STR                 'proxy.txt'
+              198  CALL_FUNCTION_1       1  ''
+              200  GET_ITER         
+              202  CALL_FUNCTION_1       1  ''
+              204  STORE_GLOBAL             proxies
+
+ L.  36       206  LOAD_CODE                <code_object getProxy>
+              208  LOAD_STR                 'getProxy'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               getProxy
+
+ L.  40       214  LOAD_CODE                <code_object banProxy>
+              216  LOAD_STR                 'banProxy'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  STORE_NAME               banProxy
+
+ L.  48       222  LOAD_CODE                <code_object saveCode>
+              224  LOAD_STR                 'saveCode'
+              226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              228  STORE_NAME               saveCode
+
+ L.  53       230  LOAD_CODE                <code_object getRuntime>
+              232  LOAD_STR                 'getRuntime'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  STORE_NAME               getRuntime
+
+ L.  57       238  LOAD_BUILD_CLASS 
+              240  LOAD_CODE                <code_object masterThread>
+              242  LOAD_STR                 'masterThread'
+              244  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              246  LOAD_STR                 'masterThread'
+              248  LOAD_NAME                threading
+              250  LOAD_ATTR                Thread
+              252  CALL_FUNCTION_3       3  ''
+              254  STORE_NAME               masterThread
+
+ L.  95       256  LOAD_BUILD_CLASS 
+              258  LOAD_CODE                <code_object monitorThread>
+              260  LOAD_STR                 'monitorThread'
+              262  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              264  LOAD_STR                 'monitorThread'
+              266  LOAD_NAME                threading
+              268  LOAD_ATTR                Thread
+              270  CALL_FUNCTION_3       3  ''
+              272  STORE_NAME               monitorThread
+
+ L. 111       274  BUILD_LIST_0          0 
+              276  STORE_NAME               threads
+
+ L. 112       278  LOAD_NAME                range
+              280  LOAD_NAME                _THREADS
+              282  CALL_FUNCTION_1       1  ''
+              284  GET_ITER         
+            286_0  COME_FROM           302  '302'
+              286  FOR_ITER            306  'to 306'
+              288  STORE_NAME               x
+
+ L. 113       290  LOAD_NAME                threads
+              292  LOAD_METHOD              append
+              294  LOAD_NAME                masterThread
+              296  CALL_FUNCTION_0       0  ''
+              298  CALL_METHOD_1         1  ''
+              300  POP_TOP          
+          302_304  JUMP_BACK           286  'to 286'
+            306_0  COME_FROM           286  '286'
+
+ L. 115       306  LOAD_NAME                threads
+              308  GET_ITER         
+            310_0  COME_FROM           360  '360'
+              310  FOR_ITER            364  'to 364'
+              312  STORE_NAME               thread
+
+ L. 116       314  LOAD_CONST               True
+              316  LOAD_NAME                thread
+              318  STORE_ATTR               daemon
+
+ L. 117       320  LOAD_NAME                thread
+              322  LOAD_METHOD              start
+              324  CALL_METHOD_0         0  ''
+              326  POP_TOP          
+
+ L. 118       328  LOAD_NAME                int
+              330  LOAD_NAME                os
+              332  LOAD_ATTR                environ
+              334  LOAD_STR                 '_THREADS'
+              336  BINARY_SUBSCR    
+              338  CALL_FUNCTION_1       1  ''
+              340  STORE_NAME               thr
+
+ L. 119       342  LOAD_NAME                str
+              344  LOAD_NAME                thr
+              346  LOAD_CONST               1
+              348  BINARY_ADD       
+              350  CALL_FUNCTION_1       1  ''
+              352  LOAD_NAME                os
+              354  LOAD_ATTR                environ
+              356  LOAD_STR                 '_THREADS'
+              358  STORE_SUBSCR     
+          360_362  JUMP_BACK           310  'to 310'
+            364_0  COME_FROM           310  '310'
+
+ L. 121       364  LOAD_NAME                monitorThread
+              366  CALL_FUNCTION_0       0  ''
+              368  STORE_NAME               monitor
+
+ L. 122       370  LOAD_CONST               True
+              372  LOAD_NAME                monitor
+              374  STORE_ATTR               daemon
+
+ L. 123       376  LOAD_NAME                monitor
+              378  LOAD_METHOD              start
+              380  CALL_METHOD_0         0  ''
+              382  POP_TOP          
+            384_0  COME_FROM           434  '434'
+            384_1  COME_FROM           430  '430'
+            384_2  COME_FROM           396  '396'
+
+ L. 126       384  SETUP_FINALLY       398  'to 398'
+
+ L. 127       386  LOAD_NAME                sleep
+              388  LOAD_CONST               1
+              390  CALL_FUNCTION_1       1  ''
+              392  POP_TOP          
+              394  POP_BLOCK        
+              396  JUMP_BACK           384  'to 384'
+            398_0  COME_FROM_FINALLY   384  '384'
+
+ L. 128       398  DUP_TOP          
+              400  LOAD_NAME                KeyboardInterrupt
+          402_404  <121>               432  ''
+              406  POP_TOP          
+              408  POP_TOP          
+              410  POP_TOP          
+
+ L. 129       412  LOAD_NAME                print
+              414  LOAD_STR                 '\n Quitting...'
+              416  CALL_FUNCTION_1       1  ''
+              418  POP_TOP          
+
+ L. 130       420  LOAD_NAME                exit
+              422  LOAD_CONST               0
+              424  CALL_FUNCTION_1       1  ''
+              426  POP_TOP          
+              428  POP_EXCEPT       
+              430  JUMP_BACK           384  'to 384'
+              432  <48>             
+          434_436  JUMP_BACK           384  'to 384'
+
+Parse error at or near `<121>' instruction at offset 402_404
+
+Instruction context:
+   
+ L. 128       398  DUP_TOP          
+                 400  LOAD_NAME                KeyboardInterrupt
+->           402_404  <121>               432  ''
+                 406  POP_TOP          
+                 408  POP_TOP          
+                 410  POP_TOP          
+
+test/170638.pyc -- 
+# decompile failed

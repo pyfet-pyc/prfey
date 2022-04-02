@@ -1,0 +1,69 @@
+Instruction context:
+   
+ L. 203       160  JUMP_FORWARD        240  'to 240'
+->               162  JUMP_BACK           132  'to 132'
+                 164  JUMP_FORWARD        240  'to 240'
+               166_0  COME_FROM           130  '130'
+Instruction context:
+   
+ L. 280   294_296  JUMP_FORWARD        300  'to 300'
+->               298  JUMP_BACK            96  'to 96'
+               300_0  COME_FROM           294  '294'
+               300_1  COME_FROM           284  '284'
+Instruction context:
+   
+ L. 534        88  POP_BLOCK        
+                  90  POP_EXCEPT       
+->                92  CALL_FINALLY         98  'to 98'
+                  94  LOAD_CONST               None
+                  96  RETURN_VALUE     
+                98_0  COME_FROM            92  '92'
+                98_1  COME_FROM_FINALLY    74  '74'
+                  98  LOAD_CONST               None
+                 100  STORE_FAST               'e'
+                 102  DELETE_FAST              'e'
+                 104  END_FINALLY      
+                 106  POP_EXCEPT       
+                 108  JUMP_FORWARD        112  'to 112'
+               110_0  COME_FROM            66  '66'
+                 110  END_FINALLY      
+               112_0  COME_FROM           108  '108'
+               112_1  COME_FROM            58  '58'
+               112_2  COME_FROM            34  '34'
+Instruction context:
+   
+ L. 643       124  POP_BLOCK        
+                 126  POP_EXCEPT       
+->               128  CALL_FINALLY        134  'to 134'
+                 130  LOAD_CONST               None
+                 132  RETURN_VALUE     
+               134_0  COME_FROM           128  '128'
+               134_1  COME_FROM_FINALLY    88  '88'
+                 134  LOAD_CONST               None
+                 136  STORE_FAST               'exc'
+                 138  DELETE_FAST              'exc'
+                 140  END_FINALLY      
+                 142  POP_EXCEPT       
+                 144  JUMP_FORWARD        148  'to 148'
+               146_0  COME_FROM            80  '80'
+                 146  END_FINALLY      
+               148_0  COME_FROM           144  '144'
+               148_1  COME_FROM            72  '72'
+               148_2  COME_FROM            48  '48'
+Instruction context:
+   
+ L. 700       238  DUP_TOP          
+                 240  LOAD_GLOBAL              SystemExit
+                 242  LOAD_GLOBAL              KeyboardInterrupt
+                 244  BUILD_TUPLE_2         2 
+                 246  COMPARE_OP               exception-match
+             248_250  POP_JUMP_IF_FALSE   264  'to 264'
+                 252  POP_TOP          
+->               254  POP_TOP          
+                 256  POP_TOP          
+
+../test/10361.pyc -- 
+# decompile failed
+
+# file ../test/10361.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,53 @@
+Instruction context:
+-> 
+ L.  68        34  DUP_TOP          
+                  36  LOAD_GLOBAL              Exception
+                  38  COMPARE_OP               exception-match
+                  40  POP_JUMP_IF_FALSE    54  'to 54'
+                  42  POP_TOP          
+                  44  POP_TOP          
+                  46  POP_TOP          
+Instruction context:
+-> 
+ L. 884       188  LOAD_FAST                'items'
+                 190  RETURN_VALUE     
+Instruction context:
+   
+ L.1927       190  LOAD_FAST                'self'
+                 192  LOAD_ATTR                _urlunparse
+->               194  LOAD_FAST                'control'
+Instruction context:
+   
+ L.2449       670  LOAD_CONST               False
+             672_674  POP_JUMP_IF_TRUE    680  'to 680'
+                 676  LOAD_ASSERT              AssertionError
+->               678  RAISE_VARARGS_1       1  'exception instance'
+Instruction context:
+   
+ L.2480       190  LOAD_FAST                'control'
+                 192  LOAD_METHOD              _click
+                 194  LOAD_FAST                'self'
+                 196  LOAD_FAST                'coord'
+                 198  LOAD_FAST                'return_type'
+                 200  LOAD_FAST                'request_class'
+                 202  CALL_METHOD_4         4  ''
+                 204  POP_BLOCK        
+->               206  CALL_FINALLY        210  'to 210'
+                 208  RETURN_VALUE     
+               210_0  COME_FROM           206  '206'
+               210_1  COME_FROM_FINALLY   118  '118'
+Instruction context:
+   
+ L.2570       118  POP_EXCEPT       
+                 120  BREAK_LOOP          124  'to 124'
+               122_0  COME_FROM           110  '110'
+->               122  END_FINALLY      
+               124_0  COME_FROM           120  '120'
+               124_1  COME_FROM           102  '102'
+               124_2  COME_FROM            90  '90'
+
+../test/118210.pyc -- 
+# decompile failed
+
+# file ../test/118210.pyc
+# Deparsing stopped due to parse error

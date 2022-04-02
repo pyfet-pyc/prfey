@@ -1,0 +1,53 @@
+Instruction context:
+   
+ L.  76        60  LOAD_FAST                'direction'
+                  62  LOAD_CONST               ('R', 'AL', 'AN')
+->                64  <118>                 0  ''
+                  66  POP_JUMP_IF_FALSE    14  'to 14'
+Instruction context:
+   
+ L. 164       114  LOAD_FAST                'joining_type'
+                 116  LOAD_GLOBAL              ord
+                 118  LOAD_STR                 'L'
+                 120  CALL_FUNCTION_1       1  ''
+                 122  LOAD_GLOBAL              ord
+                 124  LOAD_STR                 'D'
+                 126  CALL_FUNCTION_1       1  ''
+                 128  BUILD_TUPLE_2         2 
+->               130  <118>                 0  ''
+                 132  POP_JUMP_IF_FALSE    76  'to 76'
+Instruction context:
+   
+ L. 254       174  DUP_TOP          
+                 176  LOAD_GLOBAL              ValueError
+->               178  <121>               220  ''
+                 180  POP_TOP          
+                 182  POP_TOP          
+                 184  POP_TOP          
+Instruction context:
+   
+ L. 274        42  DUP_TOP          
+                  44  LOAD_GLOBAL              UnicodeEncodeError
+->                46  <121>                58  ''
+                  48  POP_TOP          
+                  50  POP_TOP          
+                  52  POP_TOP          
+Instruction context:
+   
+ L. 296        30  DUP_TOP          
+                  32  LOAD_GLOBAL              UnicodeEncodeError
+->                34  <121>                58  ''
+                  36  POP_TOP          
+                  38  POP_TOP          
+                  40  POP_TOP          
+Instruction context:
+   
+ L. 329       142  LOAD_FAST                'replacement'
+                 144  LOAD_CONST               None
+->               146  <117>                 0  ''
+
+test/103941.pyc -- 
+# decompile failed
+
+# file test/103941.pyc
+# Deparsing stopped due to parse error

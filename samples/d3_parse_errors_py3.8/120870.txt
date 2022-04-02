@@ -1,0 +1,39 @@
+Instruction context:
+   
+ L. 112       172  LOAD_FAST                'index'
+                 174  ROT_FOUR         
+->               176  POP_BLOCK        
+                 178  POP_EXCEPT       
+                 180  CALL_FINALLY        184  'to 184'
+                 182  RETURN_VALUE     
+               184_0  COME_FROM           180  '180'
+               184_1  COME_FROM_FINALLY    52  '52'
+                 184  LOAD_CONST               None
+                 186  STORE_FAST               'e'
+                 188  DELETE_FAST              'e'
+                 190  END_FINALLY      
+                 192  POP_EXCEPT       
+                 194  JUMP_FORWARD        218  'to 218'
+               196_0  COME_FROM            44  '44'
+                 196  END_FINALLY      
+                 198  JUMP_FORWARD        218  'to 218'
+               200_0  COME_FROM            22  '22'
+Instruction context:
+   
+ L. 219        96  LOAD_GLOBAL              OSError
+                  98  LOAD_STR                 'cannot load palette'
+                 100  CALL_FUNCTION_1       1  ''
+                 102  RAISE_VARARGS_1       1  'exception instance'
+               104_0  COME_FROM            64  '64'
+                 104  POP_BLOCK        
+->               106  BEGIN_FINALLY    
+               108_0  COME_FROM_WITH        8  '8'
+                 108  WITH_CLEANUP_START
+                 110  WITH_CLEANUP_FINISH
+                 112  END_FINALLY      
+
+../test/120870.pyc -- 
+# decompile failed
+
+# file ../test/120870.pyc
+# Deparsing stopped due to parse error

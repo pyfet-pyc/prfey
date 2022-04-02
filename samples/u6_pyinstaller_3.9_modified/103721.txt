@@ -1,0 +1,401 @@
+
+# file test/103721.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('b64encode',)
+                4  IMPORT_NAME              base64
+                6  IMPORT_FROM              b64encode
+                8  STORE_NAME               b64encode
+               10  POP_TOP          
+
+ L.   2        12  SETUP_FINALLY        30  'to 30'
+
+ L.   3        14  LOAD_CONST               0
+               16  LOAD_CONST               ('Callable',)
+               18  IMPORT_NAME_ATTR         collections.abc
+               20  IMPORT_FROM              Callable
+               22  STORE_NAME               Callable
+               24  POP_TOP          
+               26  POP_BLOCK        
+               28  JUMP_FORWARD         60  'to 60'
+             30_0  COME_FROM_FINALLY    12  '12'
+
+ L.   4        30  DUP_TOP          
+               32  LOAD_NAME                ImportError
+               34  <121>                58  ''
+               36  POP_TOP          
+               38  POP_TOP          
+               40  POP_TOP          
+
+ L.   5        42  LOAD_CONST               0
+               44  LOAD_CONST               ('Callable',)
+               46  IMPORT_NAME              collections
+               48  IMPORT_FROM              Callable
+               50  STORE_NAME               Callable
+               52  POP_TOP          
+               54  POP_EXCEPT       
+               56  JUMP_FORWARD         60  'to 60'
+               58  <48>             
+             60_0  COME_FROM            56  '56'
+             60_1  COME_FROM            28  '28'
+
+ L.   6        60  LOAD_CONST               0
+               62  LOAD_CONST               ('EOPNOTSUPP', 'EINVAL', 'EAGAIN')
+               64  IMPORT_NAME              errno
+               66  IMPORT_FROM              EOPNOTSUPP
+               68  STORE_NAME               EOPNOTSUPP
+               70  IMPORT_FROM              EINVAL
+               72  STORE_NAME               EINVAL
+               74  IMPORT_FROM              EAGAIN
+               76  STORE_NAME               EAGAIN
+               78  POP_TOP          
+
+ L.   7        80  LOAD_CONST               0
+               82  LOAD_CONST               None
+               84  IMPORT_NAME              functools
+               86  STORE_NAME               functools
+
+ L.   8        88  LOAD_CONST               0
+               90  LOAD_CONST               ('BytesIO',)
+               92  IMPORT_NAME              io
+               94  IMPORT_FROM              BytesIO
+               96  STORE_NAME               BytesIO
+               98  POP_TOP          
+
+ L.   9       100  LOAD_CONST               0
+              102  LOAD_CONST               None
+              104  IMPORT_NAME              logging
+              106  STORE_NAME               logging
+
+ L.  10       108  LOAD_CONST               0
+              110  LOAD_CONST               None
+              112  IMPORT_NAME              os
+              114  STORE_NAME               os
+
+ L.  11       116  LOAD_CONST               0
+              118  LOAD_CONST               ('SEEK_CUR',)
+              120  IMPORT_NAME              os
+              122  IMPORT_FROM              SEEK_CUR
+              124  STORE_NAME               SEEK_CUR
+              126  POP_TOP          
+
+ L.  12       128  LOAD_CONST               0
+              130  LOAD_CONST               None
+              132  IMPORT_NAME              socket
+              134  STORE_NAME               socket
+
+ L.  13       136  LOAD_CONST               0
+              138  LOAD_CONST               None
+              140  IMPORT_NAME              struct
+              142  STORE_NAME               struct
+
+ L.  14       144  LOAD_CONST               0
+              146  LOAD_CONST               None
+              148  IMPORT_NAME              sys
+              150  STORE_NAME               sys
+
+ L.  16       152  LOAD_STR                 '1.7.1'
+              154  STORE_NAME               __version__
+
+ L.  19       156  LOAD_NAME                os
+              158  LOAD_ATTR                name
+              160  LOAD_STR                 'nt'
+              162  COMPARE_OP               ==
+              164  POP_JUMP_IF_FALSE   216  'to 216'
+              166  LOAD_NAME                sys
+              168  LOAD_ATTR                version_info
+              170  LOAD_CONST               (3, 0)
+              172  COMPARE_OP               <
+              174  POP_JUMP_IF_FALSE   216  'to 216'
+
+ L.  20       176  SETUP_FINALLY       190  'to 190'
+
+ L.  21       178  LOAD_CONST               0
+              180  LOAD_CONST               None
+              182  IMPORT_NAME              win_inet_pton
+              184  STORE_NAME               win_inet_pton
+              186  POP_BLOCK        
+              188  JUMP_FORWARD        216  'to 216'
+            190_0  COME_FROM_FINALLY   176  '176'
+
+ L.  22       190  DUP_TOP          
+              192  LOAD_NAME                ImportError
+              194  <121>               214  ''
+              196  POP_TOP          
+              198  POP_TOP          
+              200  POP_TOP          
+
+ L.  23       202  LOAD_NAME                ImportError
+
+ L.  24       204  LOAD_STR                 'To run PySocks on Windows you must install win_inet_pton'
+
+ L.  23       206  CALL_FUNCTION_1       1  ''
+              208  RAISE_VARARGS_1       1  'exception instance'
+              210  POP_EXCEPT       
+              212  JUMP_FORWARD        216  'to 216'
+              214  <48>             
+            216_0  COME_FROM           212  '212'
+            216_1  COME_FROM           188  '188'
+            216_2  COME_FROM           174  '174'
+            216_3  COME_FROM           164  '164'
+
+ L.  26       216  LOAD_NAME                logging
+              218  LOAD_METHOD              getLogger
+              220  LOAD_NAME                __name__
+              222  CALL_METHOD_1         1  ''
+              224  STORE_NAME               log
+
+ L.  28       226  LOAD_CONST               1
+              228  DUP_TOP          
+              230  STORE_NAME               PROXY_TYPE_SOCKS4
+              232  STORE_NAME               SOCKS4
+
+ L.  29       234  LOAD_CONST               2
+              236  DUP_TOP          
+              238  STORE_NAME               PROXY_TYPE_SOCKS5
+              240  STORE_NAME               SOCKS5
+
+ L.  30       242  LOAD_CONST               3
+              244  DUP_TOP          
+              246  STORE_NAME               PROXY_TYPE_HTTP
+              248  STORE_NAME               HTTP
+
+ L.  32       250  LOAD_NAME                SOCKS4
+              252  LOAD_NAME                SOCKS5
+              254  LOAD_NAME                HTTP
+              256  LOAD_CONST               ('SOCKS4', 'SOCKS5', 'HTTP')
+              258  BUILD_CONST_KEY_MAP_3     3 
+              260  STORE_NAME               PROXY_TYPES
+
+ L.  33       262  LOAD_NAME                dict
+              264  LOAD_NAME                zip
+              266  LOAD_NAME                PROXY_TYPES
+              268  LOAD_METHOD              values
+              270  CALL_METHOD_0         0  ''
+              272  LOAD_NAME                PROXY_TYPES
+              274  LOAD_METHOD              keys
+              276  CALL_METHOD_0         0  ''
+              278  CALL_FUNCTION_2       2  ''
+              280  CALL_FUNCTION_1       1  ''
+              282  STORE_NAME               PRINTABLE_PROXY_TYPES
+
+ L.  35       284  LOAD_NAME                socket
+              286  LOAD_ATTR                socket
+              288  DUP_TOP          
+              290  STORE_NAME               _orgsocket
+              292  STORE_NAME               _orig_socket
+
+ L.  38       294  LOAD_CODE                <code_object set_self_blocking>
+              296  LOAD_STR                 'set_self_blocking'
+              298  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              300  STORE_NAME               set_self_blocking
+
+ L.  57       302  LOAD_BUILD_CLASS 
+              304  LOAD_CODE                <code_object ProxyError>
+              306  LOAD_STR                 'ProxyError'
+              308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              310  LOAD_STR                 'ProxyError'
+              312  LOAD_NAME                IOError
+              314  CALL_FUNCTION_3       3  ''
+              316  STORE_NAME               ProxyError
+
+ L.  70       318  LOAD_BUILD_CLASS 
+              320  LOAD_CODE                <code_object GeneralProxyError>
+              322  LOAD_STR                 'GeneralProxyError'
+              324  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              326  LOAD_STR                 'GeneralProxyError'
+              328  LOAD_NAME                ProxyError
+              330  CALL_FUNCTION_3       3  ''
+              332  STORE_NAME               GeneralProxyError
+
+ L.  74       334  LOAD_BUILD_CLASS 
+              336  LOAD_CODE                <code_object ProxyConnectionError>
+              338  LOAD_STR                 'ProxyConnectionError'
+              340  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              342  LOAD_STR                 'ProxyConnectionError'
+              344  LOAD_NAME                ProxyError
+              346  CALL_FUNCTION_3       3  ''
+              348  STORE_NAME               ProxyConnectionError
+
+ L.  78       350  LOAD_BUILD_CLASS 
+              352  LOAD_CODE                <code_object SOCKS5AuthError>
+              354  LOAD_STR                 'SOCKS5AuthError'
+              356  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              358  LOAD_STR                 'SOCKS5AuthError'
+              360  LOAD_NAME                ProxyError
+              362  CALL_FUNCTION_3       3  ''
+              364  STORE_NAME               SOCKS5AuthError
+
+ L.  82       366  LOAD_BUILD_CLASS 
+              368  LOAD_CODE                <code_object SOCKS5Error>
+              370  LOAD_STR                 'SOCKS5Error'
+              372  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              374  LOAD_STR                 'SOCKS5Error'
+              376  LOAD_NAME                ProxyError
+              378  CALL_FUNCTION_3       3  ''
+              380  STORE_NAME               SOCKS5Error
+
+ L.  86       382  LOAD_BUILD_CLASS 
+              384  LOAD_CODE                <code_object SOCKS4Error>
+              386  LOAD_STR                 'SOCKS4Error'
+              388  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              390  LOAD_STR                 'SOCKS4Error'
+              392  LOAD_NAME                ProxyError
+              394  CALL_FUNCTION_3       3  ''
+              396  STORE_NAME               SOCKS4Error
+
+ L.  90       398  LOAD_BUILD_CLASS 
+              400  LOAD_CODE                <code_object HTTPError>
+              402  LOAD_STR                 'HTTPError'
+              404  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              406  LOAD_STR                 'HTTPError'
+              408  LOAD_NAME                ProxyError
+              410  CALL_FUNCTION_3       3  ''
+              412  STORE_NAME               HTTPError
+
+ L.  94       414  LOAD_STR                 'Request rejected or failed'
+
+ L.  95       416  LOAD_STR                 'Request rejected because SOCKS server cannot connect to identd on the client'
+
+ L.  97       418  LOAD_STR                 'Request rejected because the client program and identd report different user-ids'
+
+ L.  93       420  LOAD_CONST               (91, 92, 93)
+              422  BUILD_CONST_KEY_MAP_3     3 
+              424  STORE_NAME               SOCKS4_ERRORS
+
+ L. 102       426  LOAD_STR                 'General SOCKS server failure'
+
+ L. 103       428  LOAD_STR                 'Connection not allowed by ruleset'
+
+ L. 104       430  LOAD_STR                 'Network unreachable'
+
+ L. 105       432  LOAD_STR                 'Host unreachable'
+
+ L. 106       434  LOAD_STR                 'Connection refused'
+
+ L. 107       436  LOAD_STR                 'TTL expired'
+
+ L. 108       438  LOAD_STR                 'Command not supported, or protocol error'
+
+ L. 109       440  LOAD_STR                 'Address type not supported'
+
+ L. 101       442  LOAD_CONST               (1, 2, 3, 4, 5, 6, 7, 8)
+              444  BUILD_CONST_KEY_MAP_8     8 
+              446  STORE_NAME               SOCKS5_ERRORS
+
+ L. 112       448  LOAD_NAME                SOCKS4
+              450  LOAD_CONST               1080
+              452  LOAD_NAME                SOCKS5
+              454  LOAD_CONST               1080
+              456  LOAD_NAME                HTTP
+              458  LOAD_CONST               8080
+              460  BUILD_MAP_3           3 
+              462  STORE_NAME               DEFAULT_PORTS
+
+ L. 115       464  LOAD_CONST               (None, None, None, True, None, None)
+              466  LOAD_CODE                <code_object set_default_proxy>
+              468  LOAD_STR                 'set_default_proxy'
+              470  MAKE_FUNCTION_1          'default'
+              472  STORE_NAME               set_default_proxy
+
+ L. 126       474  LOAD_CODE                <code_object setdefaultproxy>
+              476  LOAD_STR                 'setdefaultproxy'
+              478  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              480  STORE_NAME               setdefaultproxy
+
+ L. 132       482  LOAD_CODE                <code_object get_default_proxy>
+              484  LOAD_STR                 'get_default_proxy'
+              486  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              488  STORE_NAME               get_default_proxy
+
+ L. 136       490  LOAD_NAME                get_default_proxy
+              492  STORE_NAME               getdefaultproxy
+
+ L. 139       494  LOAD_CODE                <code_object wrap_module>
+              496  LOAD_STR                 'wrap_module'
+              498  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              500  STORE_NAME               wrap_module
+
+ L. 150       502  LOAD_NAME                wrap_module
+              504  STORE_NAME               wrapmodule
+
+ L. 153       506  LOAD_CONST               (None, None, None, None, None, True, None, None, None)
+              508  LOAD_CODE                <code_object create_connection>
+              510  LOAD_STR                 'create_connection'
+              512  MAKE_FUNCTION_1          'default'
+              514  STORE_NAME               create_connection
+
+ L. 214       516  LOAD_BUILD_CLASS 
+              518  LOAD_CODE                <code_object _BaseSocket>
+              520  LOAD_STR                 '_BaseSocket'
+              522  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              524  LOAD_STR                 '_BaseSocket'
+              526  LOAD_NAME                socket
+              528  LOAD_ATTR                socket
+              530  CALL_FUNCTION_3       3  ''
+              532  STORE_NAME               _BaseSocket
+
+ L. 227       534  LOAD_CODE                <code_object _makemethod>
+              536  LOAD_STR                 '_makemethod'
+              538  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              540  STORE_NAME               _makemethod
+
+ L. 229       542  LOAD_CONST               ('sendto', 'send', 'recvfrom', 'recv')
+              544  GET_ITER         
+            546_0  COME_FROM           570  '570'
+              546  FOR_ITER            606  'to 606'
+              548  STORE_NAME               name
+
+ L. 230       550  LOAD_NAME                getattr
+              552  LOAD_NAME                _BaseSocket
+              554  LOAD_NAME                name
+              556  LOAD_CONST               None
+              558  CALL_FUNCTION_3       3  ''
+              560  STORE_NAME               method
+
+ L. 236       562  LOAD_NAME                isinstance
+              564  LOAD_NAME                method
+              566  LOAD_NAME                Callable
+              568  CALL_FUNCTION_2       2  ''
+          570_572  POP_JUMP_IF_TRUE    546  'to 546'
+
+ L. 237       574  LOAD_NAME                _BaseSocket
+              576  LOAD_ATTR                _savenames
+              578  LOAD_METHOD              append
+              580  LOAD_NAME                name
+              582  CALL_METHOD_1         1  ''
+              584  POP_TOP          
+
+ L. 238       586  LOAD_NAME                setattr
+              588  LOAD_NAME                _BaseSocket
+              590  LOAD_NAME                name
+              592  LOAD_NAME                _makemethod
+              594  LOAD_NAME                name
+              596  CALL_FUNCTION_1       1  ''
+              598  CALL_FUNCTION_3       3  ''
+              600  POP_TOP          
+          602_604  JUMP_BACK           546  'to 546'
+
+ L. 241       606  LOAD_BUILD_CLASS 
+              608  LOAD_CODE                <code_object socksocket>
+              610  LOAD_STR                 'socksocket'
+              612  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              614  LOAD_STR                 'socksocket'
+              616  LOAD_NAME                _BaseSocket
+              618  CALL_FUNCTION_3       3  ''
+              620  STORE_NAME               socksocket
+
+Parse error at or near `<121>' instruction at offset 34
+
+Instruction context:
+   
+ L.   4        30  DUP_TOP          
+                  32  LOAD_NAME                ImportError
+->                34  <121>                58  ''
+                  36  POP_TOP          
+                  38  POP_TOP          
+                  40  POP_TOP          
+
+test/103721.pyc -- 
+# decompile failed

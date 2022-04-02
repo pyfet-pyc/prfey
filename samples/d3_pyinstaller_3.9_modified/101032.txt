@@ -1,0 +1,120 @@
+Instruction context:
+   
+ L.   8        48  BUILD_LIST_0          0 
+                  50  LOAD_CONST               ('BdbQuit', 'Bdb', 'Breakpoint')
+->                52  CALL_FINALLY         55  'to 55'
+                  54  STORE_NAME               __all__
+
+test/101032.pyc -- 
+# decompile failed
+
+# file test/101032.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Debugger basics'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              fnmatch
+               10  STORE_NAME               fnmatch
+
+ L.   4        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L.   5        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              os
+               26  STORE_NAME               os
+
+ L.   6        28  LOAD_CONST               0
+               30  LOAD_CONST               ('CO_GENERATOR', 'CO_COROUTINE', 'CO_ASYNC_GENERATOR')
+               32  IMPORT_NAME              inspect
+               34  IMPORT_FROM              CO_GENERATOR
+               36  STORE_NAME               CO_GENERATOR
+               38  IMPORT_FROM              CO_COROUTINE
+               40  STORE_NAME               CO_COROUTINE
+               42  IMPORT_FROM              CO_ASYNC_GENERATOR
+               44  STORE_NAME               CO_ASYNC_GENERATOR
+               46  POP_TOP          
+
+ L.   8        48  BUILD_LIST_0          0 
+               50  LOAD_CONST               ('BdbQuit', 'Bdb', 'Breakpoint')
+               52  CALL_FINALLY         55  'to 55'
+               54  STORE_NAME               __all__
+
+ L.  10        56  LOAD_NAME                CO_GENERATOR
+               58  LOAD_NAME                CO_COROUTINE
+               60  BINARY_OR        
+               62  LOAD_NAME                CO_ASYNC_GENERATOR
+               64  BINARY_OR        
+               66  STORE_NAME               GENERATOR_AND_COROUTINE_FLAGS
+
+ L.  13        68  LOAD_BUILD_CLASS 
+               70  LOAD_CODE                <code_object BdbQuit>
+               72  LOAD_STR                 'BdbQuit'
+               74  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               76  LOAD_STR                 'BdbQuit'
+               78  LOAD_NAME                Exception
+               80  CALL_FUNCTION_3       3  ''
+               82  STORE_NAME               BdbQuit
+
+ L.  17        84  LOAD_BUILD_CLASS 
+               86  LOAD_CODE                <code_object Bdb>
+               88  LOAD_STR                 'Bdb'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  LOAD_STR                 'Bdb'
+               94  CALL_FUNCTION_2       2  ''
+               96  STORE_NAME               Bdb
+
+ L. 632        98  LOAD_CODE                <code_object set_trace>
+              100  LOAD_STR                 'set_trace'
+              102  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              104  STORE_NAME               set_trace
+
+ L. 637       106  LOAD_BUILD_CLASS 
+              108  LOAD_CODE                <code_object Breakpoint>
+              110  LOAD_STR                 'Breakpoint'
+              112  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              114  LOAD_STR                 'Breakpoint'
+              116  CALL_FUNCTION_2       2  ''
+              118  STORE_NAME               Breakpoint
+
+ L. 753       120  LOAD_CODE                <code_object checkfuncname>
+              122  LOAD_STR                 'checkfuncname'
+              124  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              126  STORE_NAME               checkfuncname
+
+ L. 787       128  LOAD_CODE                <code_object effective>
+              130  LOAD_STR                 'effective'
+              132  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              134  STORE_NAME               effective
+
+ L. 835       136  LOAD_BUILD_CLASS 
+              138  LOAD_CODE                <code_object Tdb>
+              140  LOAD_STR                 'Tdb'
+              142  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              144  LOAD_STR                 'Tdb'
+              146  LOAD_NAME                Bdb
+              148  CALL_FUNCTION_3       3  ''
+              150  STORE_NAME               Tdb
+
+ L. 853       152  LOAD_CODE                <code_object foo>
+              154  LOAD_STR                 'foo'
+              156  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              158  STORE_NAME               foo
+
+ L. 858       160  LOAD_CODE                <code_object bar>
+              162  LOAD_STR                 'bar'
+              164  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              166  STORE_NAME               bar
+
+ L. 862       168  LOAD_CODE                <code_object test>
+              170  LOAD_STR                 'test'
+              172  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              174  STORE_NAME               test
+
+Parse error at or near `CALL_FINALLY' instruction at offset 52
+

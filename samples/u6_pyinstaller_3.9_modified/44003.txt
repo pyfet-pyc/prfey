@@ -1,0 +1,371 @@
+
+# file test/44003.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              fnmatch
+                6  STORE_NAME               fnmatch
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              functools
+               14  STORE_NAME               functools
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              io
+               22  STORE_NAME               io
+
+ L.   4        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              ntpath
+               30  STORE_NAME               ntpath
+
+ L.   5        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              os
+               38  STORE_NAME               os
+
+ L.   6        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              posixpath
+               46  STORE_NAME               posixpath
+
+ L.   7        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              re
+               54  STORE_NAME               re
+
+ L.   8        56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              sys
+               62  STORE_NAME               sys
+
+ L.   9        64  LOAD_CONST               0
+               66  LOAD_CONST               ('Sequence',)
+               68  IMPORT_NAME              _collections_abc
+               70  IMPORT_FROM              Sequence
+               72  STORE_NAME               Sequence
+               74  POP_TOP          
+
+ L.  10        76  LOAD_CONST               0
+               78  LOAD_CONST               ('EINVAL', 'ENOENT', 'ENOTDIR', 'EBADF', 'ELOOP')
+               80  IMPORT_NAME              errno
+               82  IMPORT_FROM              EINVAL
+               84  STORE_NAME               EINVAL
+               86  IMPORT_FROM              ENOENT
+               88  STORE_NAME               ENOENT
+               90  IMPORT_FROM              ENOTDIR
+               92  STORE_NAME               ENOTDIR
+               94  IMPORT_FROM              EBADF
+               96  STORE_NAME               EBADF
+               98  IMPORT_FROM              ELOOP
+              100  STORE_NAME               ELOOP
+              102  POP_TOP          
+
+ L.  11       104  LOAD_CONST               0
+              106  LOAD_CONST               ('attrgetter',)
+              108  IMPORT_NAME              operator
+              110  IMPORT_FROM              attrgetter
+              112  STORE_NAME               attrgetter
+              114  POP_TOP          
+
+ L.  12       116  LOAD_CONST               0
+              118  LOAD_CONST               ('S_ISDIR', 'S_ISLNK', 'S_ISREG', 'S_ISSOCK', 'S_ISBLK', 'S_ISCHR', 'S_ISFIFO')
+              120  IMPORT_NAME              stat
+              122  IMPORT_FROM              S_ISDIR
+              124  STORE_NAME               S_ISDIR
+              126  IMPORT_FROM              S_ISLNK
+              128  STORE_NAME               S_ISLNK
+              130  IMPORT_FROM              S_ISREG
+              132  STORE_NAME               S_ISREG
+              134  IMPORT_FROM              S_ISSOCK
+              136  STORE_NAME               S_ISSOCK
+              138  IMPORT_FROM              S_ISBLK
+              140  STORE_NAME               S_ISBLK
+              142  IMPORT_FROM              S_ISCHR
+              144  STORE_NAME               S_ISCHR
+              146  IMPORT_FROM              S_ISFIFO
+              148  STORE_NAME               S_ISFIFO
+              150  POP_TOP          
+
+ L.  13       152  LOAD_CONST               0
+              154  LOAD_CONST               ('quote_from_bytes',)
+              156  IMPORT_NAME_ATTR         urllib.parse
+              158  IMPORT_FROM              quote_from_bytes
+              160  STORE_NAME               urlquote_from_bytes
+              162  POP_TOP          
+
+ L.  16       164  LOAD_CONST               True
+              166  STORE_NAME               supports_symlinks
+
+ L.  17       168  LOAD_NAME                os
+              170  LOAD_ATTR                name
+              172  LOAD_STR                 'nt'
+              174  COMPARE_OP               ==
+              176  POP_JUMP_IF_FALSE   230  'to 230'
+
+ L.  18       178  LOAD_CONST               0
+              180  LOAD_CONST               None
+              182  IMPORT_NAME              nt
+              184  STORE_NAME               nt
+
+ L.  19       186  LOAD_NAME                sys
+              188  LOAD_METHOD              getwindowsversion
+              190  CALL_METHOD_0         0  ''
+              192  LOAD_CONST               None
+              194  LOAD_CONST               2
+              196  BUILD_SLICE_2         2 
+              198  BINARY_SUBSCR    
+              200  LOAD_CONST               (6, 0)
+              202  COMPARE_OP               >=
+              204  POP_JUMP_IF_FALSE   220  'to 220'
+
+ L.  20       206  LOAD_CONST               0
+              208  LOAD_CONST               ('_getfinalpathname',)
+              210  IMPORT_NAME              nt
+              212  IMPORT_FROM              _getfinalpathname
+              214  STORE_NAME               _getfinalpathname
+              216  POP_TOP          
+              218  JUMP_ABSOLUTE       234  'to 234'
+            220_0  COME_FROM           204  '204'
+
+ L.  22       220  LOAD_CONST               False
+              222  STORE_NAME               supports_symlinks
+
+ L.  23       224  LOAD_CONST               None
+              226  STORE_NAME               _getfinalpathname
+              228  JUMP_FORWARD        234  'to 234'
+            230_0  COME_FROM           176  '176'
+
+ L.  25       230  LOAD_CONST               None
+              232  STORE_NAME               nt
+            234_0  COME_FROM           228  '228'
+
+ L.  28       234  BUILD_LIST_0          0 
+              236  LOAD_CONST               ('PurePath', 'PurePosixPath', 'PureWindowsPath', 'Path', 'PosixPath', 'WindowsPath')
+              238  CALL_FINALLY        241  'to 241'
+              240  STORE_NAME               __all__
+
+ L.  38       242  LOAD_NAME                ENOENT
+              244  LOAD_NAME                ENOTDIR
+              246  LOAD_NAME                EBADF
+              248  LOAD_NAME                ELOOP
+              250  BUILD_TUPLE_4         4 
+              252  STORE_NAME               _IGNORED_ERROS
+
+ L.  40       254  LOAD_CONST               (21, 1921)
+              256  STORE_NAME               _IGNORED_WINERRORS
+
+ L.  45       258  LOAD_CODE                <code_object _ignore_error>
+              260  LOAD_STR                 '_ignore_error'
+              262  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              264  STORE_NAME               _ignore_error
+
+ L.  50       266  LOAD_CODE                <code_object _is_wildcard_pattern>
+              268  LOAD_STR                 '_is_wildcard_pattern'
+              270  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              272  STORE_NAME               _is_wildcard_pattern
+
+ L.  56       274  LOAD_BUILD_CLASS 
+              276  LOAD_CODE                <code_object _Flavour>
+              278  LOAD_STR                 '_Flavour'
+              280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              282  LOAD_STR                 '_Flavour'
+              284  LOAD_NAME                object
+              286  CALL_FUNCTION_3       3  ''
+              288  STORE_NAME               _Flavour
+
+ L. 119       290  LOAD_BUILD_CLASS 
+              292  LOAD_CODE                <code_object _WindowsFlavour>
+              294  LOAD_STR                 '_WindowsFlavour'
+              296  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              298  LOAD_STR                 '_WindowsFlavour'
+              300  LOAD_NAME                _Flavour
+              302  CALL_FUNCTION_3       3  ''
+              304  STORE_NAME               _WindowsFlavour
+
+ L. 284       306  LOAD_BUILD_CLASS 
+              308  LOAD_CODE                <code_object _PosixFlavour>
+              310  LOAD_STR                 '_PosixFlavour'
+              312  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              314  LOAD_STR                 '_PosixFlavour'
+              316  LOAD_NAME                _Flavour
+              318  CALL_FUNCTION_3       3  ''
+              320  STORE_NAME               _PosixFlavour
+
+ L. 389       322  LOAD_NAME                _WindowsFlavour
+              324  CALL_FUNCTION_0       0  ''
+              326  STORE_NAME               _windows_flavour
+
+ L. 390       328  LOAD_NAME                _PosixFlavour
+              330  CALL_FUNCTION_0       0  ''
+              332  STORE_NAME               _posix_flavour
+
+ L. 393       334  LOAD_BUILD_CLASS 
+              336  LOAD_CODE                <code_object _Accessor>
+              338  LOAD_STR                 '_Accessor'
+              340  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              342  LOAD_STR                 '_Accessor'
+              344  CALL_FUNCTION_2       2  ''
+              346  STORE_NAME               _Accessor
+
+ L. 398       348  LOAD_BUILD_CLASS 
+              350  LOAD_CODE                <code_object _NormalAccessor>
+              352  LOAD_STR                 '_NormalAccessor'
+              354  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              356  LOAD_STR                 '_NormalAccessor'
+              358  LOAD_NAME                _Accessor
+              360  CALL_FUNCTION_3       3  ''
+              362  STORE_NAME               _NormalAccessor
+
+ L. 468       364  LOAD_NAME                _NormalAccessor
+              366  CALL_FUNCTION_0       0  ''
+              368  STORE_NAME               _normal_accessor
+
+ L. 475       370  LOAD_CODE                <code_object _make_selector>
+              372  LOAD_STR                 '_make_selector'
+              374  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              376  STORE_NAME               _make_selector
+
+ L. 488       378  LOAD_NAME                hasattr
+              380  LOAD_NAME                functools
+              382  LOAD_STR                 'lru_cache'
+              384  CALL_FUNCTION_2       2  ''
+          386_388  POP_JUMP_IF_FALSE   402  'to 402'
+
+ L. 489       390  LOAD_NAME                functools
+              392  LOAD_METHOD              lru_cache
+              394  CALL_METHOD_0         0  ''
+              396  LOAD_NAME                _make_selector
+              398  CALL_FUNCTION_1       1  ''
+              400  STORE_NAME               _make_selector
+            402_0  COME_FROM           386  '386'
+
+ L. 492       402  LOAD_BUILD_CLASS 
+              404  LOAD_CODE                <code_object _Selector>
+              406  LOAD_STR                 '_Selector'
+              408  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              410  LOAD_STR                 '_Selector'
+              412  CALL_FUNCTION_2       2  ''
+              414  STORE_NAME               _Selector
+
+ L. 517       416  LOAD_BUILD_CLASS 
+              418  LOAD_CODE                <code_object _TerminatingSelector>
+              420  LOAD_STR                 '_TerminatingSelector'
+              422  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              424  LOAD_STR                 '_TerminatingSelector'
+              426  CALL_FUNCTION_2       2  ''
+              428  STORE_NAME               _TerminatingSelector
+
+ L. 523       430  LOAD_BUILD_CLASS 
+              432  LOAD_CODE                <code_object _PreciseSelector>
+              434  LOAD_STR                 '_PreciseSelector'
+              436  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              438  LOAD_STR                 '_PreciseSelector'
+              440  LOAD_NAME                _Selector
+              442  CALL_FUNCTION_3       3  ''
+              444  STORE_NAME               _PreciseSelector
+
+ L. 539       446  LOAD_BUILD_CLASS 
+              448  LOAD_CODE                <code_object _WildcardSelector>
+              450  LOAD_STR                 '_WildcardSelector'
+              452  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              454  LOAD_STR                 '_WildcardSelector'
+              456  LOAD_NAME                _Selector
+              458  CALL_FUNCTION_3       3  ''
+              460  STORE_NAME               _WildcardSelector
+
+ L. 570       462  LOAD_BUILD_CLASS 
+              464  LOAD_CODE                <code_object _RecursiveWildcardSelector>
+              466  LOAD_STR                 '_RecursiveWildcardSelector'
+              468  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              470  LOAD_STR                 '_RecursiveWildcardSelector'
+              472  LOAD_NAME                _Selector
+              474  CALL_FUNCTION_3       3  ''
+              476  STORE_NAME               _RecursiveWildcardSelector
+
+ L. 614       478  LOAD_BUILD_CLASS 
+              480  LOAD_CODE                <code_object _PathParents>
+              482  LOAD_STR                 '_PathParents'
+              484  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              486  LOAD_STR                 '_PathParents'
+              488  LOAD_NAME                Sequence
+              490  CALL_FUNCTION_3       3  ''
+              492  STORE_NAME               _PathParents
+
+ L. 642       494  LOAD_BUILD_CLASS 
+              496  LOAD_CODE                <code_object PurePath>
+              498  LOAD_STR                 'PurePath'
+              500  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              502  LOAD_STR                 'PurePath'
+              504  LOAD_NAME                object
+              506  CALL_FUNCTION_3       3  ''
+              508  STORE_NAME               PurePath
+
+ L.1029       510  LOAD_NAME                os
+              512  LOAD_ATTR                PathLike
+              514  LOAD_METHOD              register
+              516  LOAD_NAME                PurePath
+              518  CALL_METHOD_1         1  ''
+              520  POP_TOP          
+
+ L.1032       522  LOAD_BUILD_CLASS 
+              524  LOAD_CODE                <code_object PurePosixPath>
+              526  LOAD_STR                 'PurePosixPath'
+              528  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              530  LOAD_STR                 'PurePosixPath'
+              532  LOAD_NAME                PurePath
+              534  CALL_FUNCTION_3       3  ''
+              536  STORE_NAME               PurePosixPath
+
+ L.1042       538  LOAD_BUILD_CLASS 
+              540  LOAD_CODE                <code_object PureWindowsPath>
+              542  LOAD_STR                 'PureWindowsPath'
+              544  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              546  LOAD_STR                 'PureWindowsPath'
+              548  LOAD_NAME                PurePath
+              550  CALL_FUNCTION_3       3  ''
+              552  STORE_NAME               PureWindowsPath
+
+ L.1055       554  LOAD_BUILD_CLASS 
+              556  LOAD_CODE                <code_object Path>
+              558  LOAD_STR                 'Path'
+              560  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              562  LOAD_STR                 'Path'
+              564  LOAD_NAME                PurePath
+              566  CALL_FUNCTION_3       3  ''
+              568  STORE_NAME               Path
+
+ L.1561       570  LOAD_BUILD_CLASS 
+              572  LOAD_CODE                <code_object PosixPath>
+              574  LOAD_STR                 'PosixPath'
+              576  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              578  LOAD_STR                 'PosixPath'
+              580  LOAD_NAME                Path
+              582  LOAD_NAME                PurePosixPath
+              584  CALL_FUNCTION_4       4  ''
+              586  STORE_NAME               PosixPath
+
+ L.1568       588  LOAD_BUILD_CLASS 
+              590  LOAD_CODE                <code_object WindowsPath>
+              592  LOAD_STR                 'WindowsPath'
+              594  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              596  LOAD_STR                 'WindowsPath'
+              598  LOAD_NAME                Path
+              600  LOAD_NAME                PureWindowsPath
+              602  CALL_FUNCTION_4       4  ''
+              604  STORE_NAME               WindowsPath
+
+Parse error at or near `CALL_FINALLY' instruction at offset 238
+
+Instruction context:
+   
+ L.  28       234  BUILD_LIST_0          0 
+                 236  LOAD_CONST               ('PurePath', 'PurePosixPath', 'PureWindowsPath', 'Path', 'PosixPath', 'WindowsPath')
+->               238  CALL_FINALLY        241  'to 241'
+                 240  STORE_NAME               __all__
+
+test/44003.pyc -- 
+# decompile failed

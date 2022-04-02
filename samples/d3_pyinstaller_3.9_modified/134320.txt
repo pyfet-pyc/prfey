@@ -1,0 +1,45 @@
+Instruction context:
+   
+ L.  60        86  LOAD_FAST                'heartbeat'
+                  88  LOAD_CONST               None
+->                90  <117>                 1  ''
+                  92  POP_JUMP_IF_FALSE   104  'to 104'
+Instruction context:
+   
+ L.  83         8  LOAD_FAST                'self'
+                  10  LOAD_ATTR                _heartbeat
+                  12  LOAD_CONST               None
+->                14  <117>                 1  ''
+                  16  POP_JUMP_IF_FALSE    38  'to 38'
+Instruction context:
+   
+ L. 131         8  LOAD_FAST                'conn'
+                  10  LOAD_CONST               None
+->                12  <117>                 0  ''
+                  14  POP_JUMP_IF_FALSE    20  'to 20'
+Instruction context:
+   
+ L. 215         0  LOAD_FAST                'self'
+                   2  LOAD_ATTR                _waiting
+                   4  LOAD_CONST               None
+->                 6  <117>                 1  ''
+                   8  POP_JUMP_IF_FALSE    18  'to 18'
+Instruction context:
+   
+ L. 299        14  LOAD_FAST                'msg'
+                  16  LOAD_ATTR                type
+                  18  LOAD_GLOBAL              WSMsgType
+                  20  LOAD_ATTR                CLOSE
+                  22  LOAD_GLOBAL              WSMsgType
+                  24  LOAD_ATTR                CLOSING
+                  26  LOAD_GLOBAL              WSMsgType
+                  28  LOAD_ATTR                CLOSED
+                  30  BUILD_TUPLE_3         3 
+->                32  <118>                 0  ''
+                  34  POP_JUMP_IF_FALSE    40  'to 40'
+
+test/134320.pyc -- 
+# decompile failed
+
+# file test/134320.pyc
+# Deparsing stopped due to parse error

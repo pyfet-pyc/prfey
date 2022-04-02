@@ -1,0 +1,1169 @@
+
+# file test/137246.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nThe typing module: Support for gradual typing as defined by PEP 484.\n\nAt large scale, the structure of the module is following:\n* Imports and exports, all public names should be explicitly added to __all__.\n* Internal helper functions: these should never be used in code outside this module.\n* _SpecialForm and its instances (special forms): Any, NoReturn, ClassVar, Union, Optional\n* Two classes whose instances can be type arguments in addition to types: ForwardRef and TypeVar\n* The core of internal generics API: _GenericAlias and _VariadicGenericAlias, the latter is\n  currently only used by Tuple and Callable. All subscripted types like X[int], Union[int, str],\n  etc., are instances of either of these classes.\n* The public counterpart of the generics API consists of two classes: Generic and Protocol.\n* Public helper functions: get_type_hints, overload, cast, no_type_check,\n  no_type_check_decorator.\n* Generic aliases for collections.abc ABCs and few additional protocols.\n* Special types: NewType, NamedTuple, TypedDict.\n* Wrapper submodules for re and io related types.\n'
+                2  STORE_NAME               __doc__
+
+ L.  20         4  LOAD_CONST               0
+                6  LOAD_CONST               ('abstractmethod', 'ABCMeta')
+                8  IMPORT_NAME              abc
+               10  IMPORT_FROM              abstractmethod
+               12  STORE_NAME               abstractmethod
+               14  IMPORT_FROM              ABCMeta
+               16  STORE_NAME               ABCMeta
+               18  POP_TOP          
+
+ L.  21        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              collections
+               26  STORE_NAME               collections
+
+ L.  22        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME_ATTR         collections.abc
+               34  STORE_NAME               collections
+
+ L.  23        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              contextlib
+               42  STORE_NAME               contextlib
+
+ L.  24        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              functools
+               50  STORE_NAME               functools
+
+ L.  25        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              operator
+               58  STORE_NAME               operator
+
+ L.  26        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              re
+               66  STORE_NAME               stdlib_re
+
+ L.  27        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              sys
+               74  STORE_NAME               sys
+
+ L.  28        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME              types
+               82  STORE_NAME               types
+
+ L.  29        84  LOAD_CONST               0
+               86  LOAD_CONST               ('WrapperDescriptorType', 'MethodWrapperType', 'MethodDescriptorType', 'GenericAlias')
+               88  IMPORT_NAME              types
+               90  IMPORT_FROM              WrapperDescriptorType
+               92  STORE_NAME               WrapperDescriptorType
+               94  IMPORT_FROM              MethodWrapperType
+               96  STORE_NAME               MethodWrapperType
+               98  IMPORT_FROM              MethodDescriptorType
+              100  STORE_NAME               MethodDescriptorType
+              102  IMPORT_FROM              GenericAlias
+              104  STORE_NAME               GenericAlias
+              106  POP_TOP          
+
+ L.  32       108  BUILD_LIST_0          0 
+              110  LOAD_CONST               ('Annotated', 'Any', 'Callable', 'ClassVar', 'Final', 'ForwardRef', 'Generic', 'Literal', 'Optional', 'Protocol', 'Tuple', 'Type', 'TypeVar', 'Union', 'AbstractSet', 'ByteString', 'Container', 'ContextManager', 'Hashable', 'ItemsView', 'Iterable', 'Iterator', 'KeysView', 'Mapping', 'MappingView', 'MutableMapping', 'MutableSequence', 'MutableSet', 'Sequence', 'Sized', 'ValuesView', 'Awaitable', 'AsyncIterator', 'AsyncIterable', 'Coroutine', 'Collection', 'AsyncGenerator', 'AsyncContextManager', 'Reversible', 'SupportsAbs', 'SupportsBytes', 'SupportsComplex', 'SupportsFloat', 'SupportsIndex', 'SupportsInt', 'SupportsRound', 'ChainMap', 'Counter', 'Deque', 'Dict', 'DefaultDict', 'List', 'OrderedDict', 'Set', 'FrozenSet', 'NamedTuple', 'TypedDict', 'Generator', 'AnyStr', 'cast', 'final', 'get_args', 'get_origin', 'get_type_hints', 'NewType', 'no_type_check', 'no_type_check_decorator', 'NoReturn', 'overload', 'runtime_checkable', 'Text', 'TYPE_CHECKING')
+              112  CALL_FINALLY        115  'to 115'
+              114  STORE_NAME               __all__
+
+ L. 121       116  LOAD_CONST               (True,)
+              118  LOAD_CODE                <code_object _type_check>
+              120  LOAD_STR                 '_type_check'
+              122  MAKE_FUNCTION_1          'default'
+              124  STORE_NAME               _type_check
+
+ L. 155       126  LOAD_CODE                <code_object _type_repr>
+              128  LOAD_STR                 '_type_repr'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  STORE_NAME               _type_repr
+
+ L. 174       134  LOAD_CODE                <code_object _collect_type_vars>
+              136  LOAD_STR                 '_collect_type_vars'
+              138  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              140  STORE_NAME               _collect_type_vars
+
+ L. 189       142  LOAD_CODE                <code_object _check_generic>
+              144  LOAD_STR                 '_check_generic'
+              146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              148  STORE_NAME               _check_generic
+
+ L. 201       150  LOAD_CODE                <code_object _remove_dups_flatten>
+              152  LOAD_STR                 '_remove_dups_flatten'
+              154  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              156  STORE_NAME               _remove_dups_flatten
+
+ L. 227       158  BUILD_LIST_0          0 
+              160  STORE_NAME               _cleanups
+
+ L. 230       162  LOAD_CODE                <code_object _tp_cache>
+              164  LOAD_STR                 '_tp_cache'
+              166  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              168  STORE_NAME               _tp_cache
+
+ L. 247       170  LOAD_NAME                frozenset
+              172  CALL_FUNCTION_0       0  ''
+              174  BUILD_TUPLE_1         1 
+              176  LOAD_CODE                <code_object _eval_type>
+              178  LOAD_STR                 '_eval_type'
+              180  MAKE_FUNCTION_1          'default'
+              182  STORE_NAME               _eval_type
+
+ L. 266       184  LOAD_BUILD_CLASS 
+              186  LOAD_CODE                <code_object _Final>
+              188  LOAD_STR                 '_Final'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  LOAD_STR                 '_Final'
+              194  CALL_FUNCTION_2       2  ''
+              196  STORE_NAME               _Final
+
+ L. 275       198  LOAD_BUILD_CLASS 
+              200  LOAD_CODE                <code_object _Immutable>
+              202  LOAD_STR                 '_Immutable'
+              204  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              206  LOAD_STR                 '_Immutable'
+              208  CALL_FUNCTION_2       2  ''
+              210  STORE_NAME               _Immutable
+
+ L. 288       212  LOAD_BUILD_CLASS 
+              214  LOAD_CODE                <code_object _SpecialForm>
+              216  LOAD_STR                 '_SpecialForm'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  LOAD_STR                 '_SpecialForm'
+              222  LOAD_NAME                _Final
+              224  LOAD_CONST               True
+              226  LOAD_CONST               ('_root',)
+              228  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              230  STORE_NAME               _SpecialForm
+
+ L. 318       232  LOAD_NAME                _SpecialForm
+
+ L. 319       234  LOAD_CODE                <code_object Any>
+              236  LOAD_STR                 'Any'
+              238  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              240  CALL_FUNCTION_1       1  ''
+              242  STORE_NAME               Any
+
+ L. 332       244  LOAD_NAME                _SpecialForm
+
+ L. 333       246  LOAD_CODE                <code_object NoReturn>
+              248  LOAD_STR                 'NoReturn'
+              250  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              252  CALL_FUNCTION_1       1  ''
+              254  STORE_NAME               NoReturn
+
+ L. 347       256  LOAD_NAME                _SpecialForm
+
+ L. 348       258  LOAD_CODE                <code_object ClassVar>
+              260  LOAD_STR                 'ClassVar'
+              262  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              264  CALL_FUNCTION_1       1  ''
+              266  STORE_NAME               ClassVar
+
+ L. 367       268  LOAD_NAME                _SpecialForm
+
+ L. 368       270  LOAD_CODE                <code_object Final>
+              272  LOAD_STR                 'Final'
+              274  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              276  CALL_FUNCTION_1       1  ''
+              278  STORE_NAME               Final
+
+ L. 388       280  LOAD_NAME                _SpecialForm
+
+ L. 389       282  LOAD_CODE                <code_object Union>
+              284  LOAD_STR                 'Union'
+              286  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              288  CALL_FUNCTION_1       1  ''
+              290  STORE_NAME               Union
+
+ L. 426       292  LOAD_NAME                _SpecialForm
+
+ L. 427       294  LOAD_CODE                <code_object Optional>
+              296  LOAD_STR                 'Optional'
+              298  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              300  CALL_FUNCTION_1       1  ''
+              302  STORE_NAME               Optional
+
+ L. 435       304  LOAD_NAME                _SpecialForm
+
+ L. 436       306  LOAD_CODE                <code_object Literal>
+              308  LOAD_STR                 'Literal'
+              310  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              312  CALL_FUNCTION_1       1  ''
+              314  STORE_NAME               Literal
+
+ L. 462       316  LOAD_BUILD_CLASS 
+              318  LOAD_CODE                <code_object ForwardRef>
+              320  LOAD_STR                 'ForwardRef'
+              322  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              324  LOAD_STR                 'ForwardRef'
+              326  LOAD_NAME                _Final
+              328  LOAD_CONST               True
+              330  LOAD_CONST               ('_root',)
+              332  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              334  STORE_NAME               ForwardRef
+
+ L. 518       336  LOAD_BUILD_CLASS 
+              338  LOAD_CODE                <code_object TypeVar>
+              340  LOAD_STR                 'TypeVar'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  LOAD_STR                 'TypeVar'
+              346  LOAD_NAME                _Final
+              348  LOAD_NAME                _Immutable
+              350  LOAD_CONST               True
+              352  LOAD_CONST               ('_root',)
+              354  CALL_FUNCTION_KW_5     5  '5 total positional and keyword args'
+              356  STORE_NAME               TypeVar
+
+ L. 602       358  LOAD_CODE                <code_object _is_dunder>
+              360  LOAD_STR                 '_is_dunder'
+              362  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              364  STORE_NAME               _is_dunder
+
+ L. 605       366  LOAD_BUILD_CLASS 
+              368  LOAD_CODE                <code_object _BaseGenericAlias>
+              370  LOAD_STR                 '_BaseGenericAlias'
+              372  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              374  LOAD_STR                 '_BaseGenericAlias'
+              376  LOAD_NAME                _Final
+              378  LOAD_CONST               True
+              380  LOAD_CONST               ('_root',)
+              382  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              384  STORE_NAME               _BaseGenericAlias
+
+ L. 675       386  LOAD_BUILD_CLASS 
+              388  LOAD_CODE                <code_object _GenericAlias>
+              390  LOAD_STR                 '_GenericAlias'
+              392  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              394  LOAD_STR                 '_GenericAlias'
+              396  LOAD_NAME                _BaseGenericAlias
+              398  LOAD_CONST               True
+              400  LOAD_CONST               ('_root',)
+              402  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              404  STORE_NAME               _GenericAlias
+
+ L. 758       406  LOAD_BUILD_CLASS 
+              408  LOAD_CODE                <code_object _SpecialGenericAlias>
+              410  LOAD_STR                 '_SpecialGenericAlias'
+              412  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              414  LOAD_STR                 '_SpecialGenericAlias'
+              416  LOAD_NAME                _BaseGenericAlias
+              418  LOAD_CONST               True
+              420  LOAD_CONST               ('_root',)
+              422  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              424  STORE_NAME               _SpecialGenericAlias
+
+ L. 796       426  LOAD_BUILD_CLASS 
+              428  LOAD_CODE                <code_object _CallableGenericAlias>
+              430  LOAD_STR                 '_CallableGenericAlias'
+              432  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              434  LOAD_STR                 '_CallableGenericAlias'
+              436  LOAD_NAME                _GenericAlias
+              438  LOAD_CONST               True
+              440  LOAD_CONST               ('_root',)
+              442  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              444  STORE_NAME               _CallableGenericAlias
+
+ L. 812       446  LOAD_BUILD_CLASS 
+              448  LOAD_CODE                <code_object _CallableType>
+              450  LOAD_STR                 '_CallableType'
+              452  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              454  LOAD_STR                 '_CallableType'
+              456  LOAD_NAME                _SpecialGenericAlias
+              458  LOAD_CONST               True
+              460  LOAD_CONST               ('_root',)
+              462  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              464  STORE_NAME               _CallableType
+
+ L. 844       466  LOAD_BUILD_CLASS 
+              468  LOAD_CODE                <code_object _TupleType>
+              470  LOAD_STR                 '_TupleType'
+              472  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              474  LOAD_STR                 '_TupleType'
+              476  LOAD_NAME                _SpecialGenericAlias
+              478  LOAD_CONST               True
+              480  LOAD_CONST               ('_root',)
+              482  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              484  STORE_NAME               _TupleType
+
+ L. 860       486  LOAD_BUILD_CLASS 
+              488  LOAD_CODE                <code_object _UnionGenericAlias>
+              490  LOAD_STR                 '_UnionGenericAlias'
+              492  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              494  LOAD_STR                 '_UnionGenericAlias'
+              496  LOAD_NAME                _GenericAlias
+              498  LOAD_CONST               True
+              500  LOAD_CONST               ('_root',)
+              502  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              504  STORE_NAME               _UnionGenericAlias
+
+ L. 882       506  LOAD_BUILD_CLASS 
+              508  LOAD_CODE                <code_object Generic>
+              510  LOAD_STR                 'Generic'
+              512  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              514  LOAD_STR                 'Generic'
+              516  CALL_FUNCTION_2       2  ''
+              518  STORE_NAME               Generic
+
+ L. 963       520  LOAD_BUILD_CLASS 
+              522  LOAD_CODE                <code_object _TypingEmpty>
+              524  LOAD_STR                 '_TypingEmpty'
+              526  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              528  LOAD_STR                 '_TypingEmpty'
+              530  CALL_FUNCTION_2       2  ''
+              532  STORE_NAME               _TypingEmpty
+
+ L. 970       534  LOAD_BUILD_CLASS 
+              536  LOAD_CODE                <code_object _TypingEllipsis>
+              538  LOAD_STR                 '_TypingEllipsis'
+              540  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              542  LOAD_STR                 '_TypingEllipsis'
+              544  CALL_FUNCTION_2       2  ''
+              546  STORE_NAME               _TypingEllipsis
+
+ L. 974       548  BUILD_LIST_0          0 
+              550  LOAD_CONST               ('__parameters__', '__orig_bases__', '__orig_class__', '_is_protocol', '_is_runtime_protocol')
+              552  CALL_FINALLY        555  'to 555'
+              554  STORE_NAME               _TYPING_INTERNALS
+
+ L. 977       556  BUILD_LIST_0          0 
+              558  LOAD_CONST               ('__abstractmethods__', '__annotations__', '__dict__', '__doc__', '__init__', '__module__', '__new__', '__slots__', '__subclasshook__', '__weakref__', '__class_getitem__')
+              560  CALL_FINALLY        563  'to 563'
+              562  STORE_NAME               _SPECIAL_NAMES
+
+ L. 982       564  LOAD_NAME                _TYPING_INTERNALS
+              566  LOAD_NAME                _SPECIAL_NAMES
+              568  BINARY_ADD       
+              570  LOAD_STR                 '_MutableMapping__marker'
+              572  BUILD_LIST_1          1 
+              574  BINARY_ADD       
+              576  STORE_NAME               EXCLUDED_ATTRIBUTES
+
+ L. 985       578  LOAD_CODE                <code_object _get_protocol_attrs>
+              580  LOAD_STR                 '_get_protocol_attrs'
+              582  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              584  STORE_NAME               _get_protocol_attrs
+
+ L.1002       586  LOAD_CODE                <code_object _is_callable_members_only>
+              588  LOAD_STR                 '_is_callable_members_only'
+              590  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              592  STORE_NAME               _is_callable_members_only
+
+ L.1007       594  LOAD_CODE                <code_object _no_init>
+              596  LOAD_STR                 '_no_init'
+              598  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              600  STORE_NAME               _no_init
+
+ L.1012       602  LOAD_CODE                <code_object _allow_reckless_class_cheks>
+              604  LOAD_STR                 '_allow_reckless_class_cheks'
+              606  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              608  STORE_NAME               _allow_reckless_class_cheks
+
+ L.1025       610  BUILD_LIST_0          0 
+              612  LOAD_CONST               ('Callable', 'Awaitable', 'Iterable', 'Iterator', 'AsyncIterable', 'Hashable', 'Sized', 'Container', 'Collection', 'Reversible')
+              614  CALL_FINALLY        617  'to 617'
+
+ L.1029       616  LOAD_STR                 'AbstractContextManager'
+              618  LOAD_STR                 'AbstractAsyncContextManager'
+              620  BUILD_LIST_2          2 
+
+ L.1024       622  LOAD_CONST               ('collections.abc', 'contextlib')
+              624  BUILD_CONST_KEY_MAP_2     2 
+              626  STORE_NAME               _PROTO_WHITELIST
+
+ L.1033       628  LOAD_BUILD_CLASS 
+              630  LOAD_CODE                <code_object _ProtocolMeta>
+              632  LOAD_STR                 '_ProtocolMeta'
+              634  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              636  LOAD_STR                 '_ProtocolMeta'
+              638  LOAD_NAME                ABCMeta
+              640  CALL_FUNCTION_3       3  ''
+              642  STORE_NAME               _ProtocolMeta
+
+ L.1053       644  LOAD_BUILD_CLASS 
+              646  LOAD_CODE                <code_object Protocol>
+              648  LOAD_STR                 'Protocol'
+              650  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              652  LOAD_STR                 'Protocol'
+              654  LOAD_NAME                Generic
+              656  LOAD_NAME                _ProtocolMeta
+              658  LOAD_CONST               ('metaclass',)
+              660  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              662  STORE_NAME               Protocol
+
+ L.1151       664  LOAD_BUILD_CLASS 
+              666  LOAD_CODE                <code_object _AnnotatedAlias>
+              668  LOAD_STR                 '_AnnotatedAlias'
+              670  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              672  LOAD_STR                 '_AnnotatedAlias'
+              674  LOAD_NAME                _GenericAlias
+              676  LOAD_CONST               True
+              678  LOAD_CONST               ('_root',)
+              680  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              682  STORE_NAME               _AnnotatedAlias
+
+ L.1192       684  LOAD_BUILD_CLASS 
+              686  LOAD_CODE                <code_object Annotated>
+              688  LOAD_STR                 'Annotated'
+              690  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              692  LOAD_STR                 'Annotated'
+              694  CALL_FUNCTION_2       2  ''
+              696  STORE_NAME               Annotated
+
+ L.1245       698  LOAD_CODE                <code_object runtime_checkable>
+              700  LOAD_STR                 'runtime_checkable'
+              702  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              704  STORE_NAME               runtime_checkable
+
+ L.1270       706  LOAD_CODE                <code_object cast>
+              708  LOAD_STR                 'cast'
+              710  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              712  STORE_NAME               cast
+
+ L.1281       714  LOAD_CODE                <code_object _get_defaults>
+              716  LOAD_STR                 '_get_defaults'
+              718  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              720  STORE_NAME               _get_defaults
+
+ L.1301       722  LOAD_NAME                types
+              724  LOAD_ATTR                FunctionType
+              726  LOAD_NAME                types
+              728  LOAD_ATTR                BuiltinFunctionType
+
+ L.1302       730  LOAD_NAME                types
+              732  LOAD_ATTR                MethodType
+              734  LOAD_NAME                types
+              736  LOAD_ATTR                ModuleType
+
+ L.1303       738  LOAD_NAME                WrapperDescriptorType
+              740  LOAD_NAME                MethodWrapperType
+              742  LOAD_NAME                MethodDescriptorType
+
+ L.1301       744  BUILD_TUPLE_7         7 
+              746  STORE_NAME               _allowed_types
+
+ L.1306       748  LOAD_CONST               (None, None, False)
+              750  LOAD_CODE                <code_object get_type_hints>
+              752  LOAD_STR                 'get_type_hints'
+              754  MAKE_FUNCTION_1          'default'
+              756  STORE_NAME               get_type_hints
+
+ L.1393       758  LOAD_CODE                <code_object _strip_annotations>
+              760  LOAD_STR                 '_strip_annotations'
+              762  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              764  STORE_NAME               _strip_annotations
+
+ L.1411       766  LOAD_CODE                <code_object get_origin>
+              768  LOAD_STR                 'get_origin'
+              770  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              772  STORE_NAME               get_origin
+
+ L.1434       774  LOAD_CODE                <code_object get_args>
+              776  LOAD_STR                 'get_args'
+              778  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              780  STORE_NAME               get_args
+
+ L.1457       782  LOAD_CODE                <code_object no_type_check>
+              784  LOAD_STR                 'no_type_check'
+              786  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              788  STORE_NAME               no_type_check
+
+ L.1483       790  LOAD_CODE                <code_object no_type_check_decorator>
+              792  LOAD_STR                 'no_type_check_decorator'
+              794  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              796  STORE_NAME               no_type_check_decorator
+
+ L.1499       798  LOAD_CODE                <code_object _overload_dummy>
+              800  LOAD_STR                 '_overload_dummy'
+              802  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              804  STORE_NAME               _overload_dummy
+
+ L.1508       806  LOAD_CODE                <code_object overload>
+              808  LOAD_STR                 'overload'
+              810  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              812  STORE_NAME               overload
+
+ L.1537       814  LOAD_CODE                <code_object final>
+              816  LOAD_STR                 'final'
+              818  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              820  STORE_NAME               final
+
+ L.1565       822  LOAD_NAME                TypeVar
+              824  LOAD_STR                 'T'
+              826  CALL_FUNCTION_1       1  ''
+              828  STORE_NAME               T
+
+ L.1566       830  LOAD_NAME                TypeVar
+              832  LOAD_STR                 'KT'
+              834  CALL_FUNCTION_1       1  ''
+              836  STORE_NAME               KT
+
+ L.1567       838  LOAD_NAME                TypeVar
+              840  LOAD_STR                 'VT'
+              842  CALL_FUNCTION_1       1  ''
+              844  STORE_NAME               VT
+
+ L.1568       846  LOAD_NAME                TypeVar
+              848  LOAD_STR                 'T_co'
+              850  LOAD_CONST               True
+              852  LOAD_CONST               ('covariant',)
+              854  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              856  STORE_NAME               T_co
+
+ L.1569       858  LOAD_NAME                TypeVar
+              860  LOAD_STR                 'V_co'
+              862  LOAD_CONST               True
+              864  LOAD_CONST               ('covariant',)
+              866  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              868  STORE_NAME               V_co
+
+ L.1570       870  LOAD_NAME                TypeVar
+              872  LOAD_STR                 'VT_co'
+              874  LOAD_CONST               True
+              876  LOAD_CONST               ('covariant',)
+              878  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              880  STORE_NAME               VT_co
+
+ L.1571       882  LOAD_NAME                TypeVar
+              884  LOAD_STR                 'T_contra'
+              886  LOAD_CONST               True
+              888  LOAD_CONST               ('contravariant',)
+              890  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              892  STORE_NAME               T_contra
+
+ L.1573       894  LOAD_NAME                TypeVar
+              896  LOAD_STR                 'CT_co'
+              898  LOAD_CONST               True
+              900  LOAD_NAME                type
+              902  LOAD_CONST               ('covariant', 'bound')
+              904  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              906  STORE_NAME               CT_co
+
+ L.1577       908  LOAD_NAME                TypeVar
+              910  LOAD_STR                 'AnyStr'
+              912  LOAD_NAME                bytes
+              914  LOAD_NAME                str
+              916  CALL_FUNCTION_3       3  ''
+              918  STORE_NAME               AnyStr
+
+ L.1581       920  LOAD_NAME                _SpecialGenericAlias
+              922  STORE_NAME               _alias
+
+ L.1583       924  LOAD_NAME                _alias
+              926  LOAD_NAME                collections
+              928  LOAD_ATTR                abc
+              930  LOAD_ATTR                Hashable
+              932  LOAD_CONST               0
+              934  CALL_FUNCTION_2       2  ''
+              936  STORE_NAME               Hashable
+
+ L.1584       938  LOAD_NAME                _alias
+              940  LOAD_NAME                collections
+              942  LOAD_ATTR                abc
+              944  LOAD_ATTR                Awaitable
+              946  LOAD_CONST               1
+              948  CALL_FUNCTION_2       2  ''
+              950  STORE_NAME               Awaitable
+
+ L.1585       952  LOAD_NAME                _alias
+              954  LOAD_NAME                collections
+              956  LOAD_ATTR                abc
+              958  LOAD_ATTR                Coroutine
+              960  LOAD_CONST               3
+              962  CALL_FUNCTION_2       2  ''
+              964  STORE_NAME               Coroutine
+
+ L.1586       966  LOAD_NAME                _alias
+              968  LOAD_NAME                collections
+              970  LOAD_ATTR                abc
+              972  LOAD_ATTR                AsyncIterable
+              974  LOAD_CONST               1
+              976  CALL_FUNCTION_2       2  ''
+              978  STORE_NAME               AsyncIterable
+
+ L.1587       980  LOAD_NAME                _alias
+              982  LOAD_NAME                collections
+              984  LOAD_ATTR                abc
+              986  LOAD_ATTR                AsyncIterator
+              988  LOAD_CONST               1
+              990  CALL_FUNCTION_2       2  ''
+              992  STORE_NAME               AsyncIterator
+
+ L.1588       994  LOAD_NAME                _alias
+              996  LOAD_NAME                collections
+              998  LOAD_ATTR                abc
+             1000  LOAD_ATTR                Iterable
+             1002  LOAD_CONST               1
+             1004  CALL_FUNCTION_2       2  ''
+             1006  STORE_NAME               Iterable
+
+ L.1589      1008  LOAD_NAME                _alias
+             1010  LOAD_NAME                collections
+             1012  LOAD_ATTR                abc
+             1014  LOAD_ATTR                Iterator
+             1016  LOAD_CONST               1
+             1018  CALL_FUNCTION_2       2  ''
+             1020  STORE_NAME               Iterator
+
+ L.1590      1022  LOAD_NAME                _alias
+             1024  LOAD_NAME                collections
+             1026  LOAD_ATTR                abc
+             1028  LOAD_ATTR                Reversible
+             1030  LOAD_CONST               1
+             1032  CALL_FUNCTION_2       2  ''
+             1034  STORE_NAME               Reversible
+
+ L.1591      1036  LOAD_NAME                _alias
+             1038  LOAD_NAME                collections
+             1040  LOAD_ATTR                abc
+             1042  LOAD_ATTR                Sized
+             1044  LOAD_CONST               0
+             1046  CALL_FUNCTION_2       2  ''
+             1048  STORE_NAME               Sized
+
+ L.1592      1050  LOAD_NAME                _alias
+             1052  LOAD_NAME                collections
+             1054  LOAD_ATTR                abc
+             1056  LOAD_ATTR                Container
+             1058  LOAD_CONST               1
+             1060  CALL_FUNCTION_2       2  ''
+             1062  STORE_NAME               Container
+
+ L.1593      1064  LOAD_NAME                _alias
+             1066  LOAD_NAME                collections
+             1068  LOAD_ATTR                abc
+             1070  LOAD_ATTR                Collection
+             1072  LOAD_CONST               1
+             1074  CALL_FUNCTION_2       2  ''
+             1076  STORE_NAME               Collection
+
+ L.1594      1078  LOAD_NAME                _CallableType
+             1080  LOAD_NAME                collections
+             1082  LOAD_ATTR                abc
+             1084  LOAD_ATTR                Callable
+             1086  LOAD_CONST               2
+             1088  CALL_FUNCTION_2       2  ''
+             1090  STORE_NAME               Callable
+
+ L.1596      1092  LOAD_STR                 'Callable type; Callable[[int], str] is a function of (int) -> str.\n\n    The subscription syntax must always be used with exactly two\n    values: the argument list and the return type.  The argument list\n    must be a list of types or ellipsis; the return type must be a single type.\n\n    There is no syntax to indicate optional or keyword arguments,\n    such function types are rarely used as callback types.\n    '
+
+ L.1595      1094  LOAD_NAME                Callable
+             1096  STORE_ATTR               __doc__
+
+ L.1605      1098  LOAD_NAME                _alias
+             1100  LOAD_NAME                collections
+             1102  LOAD_ATTR                abc
+             1104  LOAD_ATTR                Set
+             1106  LOAD_CONST               1
+             1108  LOAD_STR                 'AbstractSet'
+             1110  LOAD_CONST               ('name',)
+             1112  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+             1114  STORE_NAME               AbstractSet
+
+ L.1606      1116  LOAD_NAME                _alias
+             1118  LOAD_NAME                collections
+             1120  LOAD_ATTR                abc
+             1122  LOAD_ATTR                MutableSet
+             1124  LOAD_CONST               1
+             1126  CALL_FUNCTION_2       2  ''
+             1128  STORE_NAME               MutableSet
+
+ L.1608      1130  LOAD_NAME                _alias
+             1132  LOAD_NAME                collections
+             1134  LOAD_ATTR                abc
+             1136  LOAD_ATTR                Mapping
+             1138  LOAD_CONST               2
+             1140  CALL_FUNCTION_2       2  ''
+             1142  STORE_NAME               Mapping
+
+ L.1609      1144  LOAD_NAME                _alias
+             1146  LOAD_NAME                collections
+             1148  LOAD_ATTR                abc
+             1150  LOAD_ATTR                MutableMapping
+             1152  LOAD_CONST               2
+             1154  CALL_FUNCTION_2       2  ''
+             1156  STORE_NAME               MutableMapping
+
+ L.1610      1158  LOAD_NAME                _alias
+             1160  LOAD_NAME                collections
+             1162  LOAD_ATTR                abc
+             1164  LOAD_ATTR                Sequence
+             1166  LOAD_CONST               1
+             1168  CALL_FUNCTION_2       2  ''
+             1170  STORE_NAME               Sequence
+
+ L.1611      1172  LOAD_NAME                _alias
+             1174  LOAD_NAME                collections
+             1176  LOAD_ATTR                abc
+             1178  LOAD_ATTR                MutableSequence
+             1180  LOAD_CONST               1
+             1182  CALL_FUNCTION_2       2  ''
+             1184  STORE_NAME               MutableSequence
+
+ L.1612      1186  LOAD_NAME                _alias
+             1188  LOAD_NAME                collections
+             1190  LOAD_ATTR                abc
+             1192  LOAD_ATTR                ByteString
+             1194  LOAD_CONST               0
+             1196  CALL_FUNCTION_2       2  ''
+             1198  STORE_NAME               ByteString
+
+ L.1614      1200  LOAD_NAME                _TupleType
+             1202  LOAD_NAME                tuple
+             1204  LOAD_CONST               -1
+             1206  LOAD_CONST               False
+             1208  LOAD_STR                 'Tuple'
+             1210  LOAD_CONST               ('inst', 'name')
+             1212  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+             1214  STORE_NAME               Tuple
+
+ L.1616      1216  LOAD_STR                 'Tuple type; Tuple[X, Y] is the cross-product type of X and Y.\n\n    Example: Tuple[T1, T2] is a tuple of two elements corresponding\n    to type variables T1 and T2.  Tuple[int, float, str] is a tuple\n    of an int, a float and a string.\n\n    To specify a variable-length tuple of homogeneous type, use Tuple[T, ...].\n    '
+
+ L.1615      1218  LOAD_NAME                Tuple
+             1220  STORE_ATTR               __doc__
+
+ L.1624      1222  LOAD_NAME                _alias
+             1224  LOAD_NAME                list
+             1226  LOAD_CONST               1
+             1228  LOAD_CONST               False
+             1230  LOAD_STR                 'List'
+             1232  LOAD_CONST               ('inst', 'name')
+             1234  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+             1236  STORE_NAME               List
+
+ L.1625      1238  LOAD_NAME                _alias
+             1240  LOAD_NAME                collections
+             1242  LOAD_ATTR                deque
+             1244  LOAD_CONST               1
+             1246  LOAD_STR                 'Deque'
+             1248  LOAD_CONST               ('name',)
+             1250  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+             1252  STORE_NAME               Deque
+
+ L.1626      1254  LOAD_NAME                _alias
+             1256  LOAD_NAME                set
+             1258  LOAD_CONST               1
+             1260  LOAD_CONST               False
+             1262  LOAD_STR                 'Set'
+             1264  LOAD_CONST               ('inst', 'name')
+             1266  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+             1268  STORE_NAME               Set
+
+ L.1627      1270  LOAD_NAME                _alias
+             1272  LOAD_NAME                frozenset
+             1274  LOAD_CONST               1
+             1276  LOAD_CONST               False
+             1278  LOAD_STR                 'FrozenSet'
+             1280  LOAD_CONST               ('inst', 'name')
+             1282  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+             1284  STORE_NAME               FrozenSet
+
+ L.1628      1286  LOAD_NAME                _alias
+             1288  LOAD_NAME                collections
+             1290  LOAD_ATTR                abc
+             1292  LOAD_ATTR                MappingView
+             1294  LOAD_CONST               1
+             1296  CALL_FUNCTION_2       2  ''
+             1298  STORE_NAME               MappingView
+
+ L.1629      1300  LOAD_NAME                _alias
+             1302  LOAD_NAME                collections
+             1304  LOAD_ATTR                abc
+             1306  LOAD_ATTR                KeysView
+             1308  LOAD_CONST               1
+             1310  CALL_FUNCTION_2       2  ''
+             1312  STORE_NAME               KeysView
+
+ L.1630      1314  LOAD_NAME                _alias
+             1316  LOAD_NAME                collections
+             1318  LOAD_ATTR                abc
+             1320  LOAD_ATTR                ItemsView
+             1322  LOAD_CONST               2
+             1324  CALL_FUNCTION_2       2  ''
+             1326  STORE_NAME               ItemsView
+
+ L.1631      1328  LOAD_NAME                _alias
+             1330  LOAD_NAME                collections
+             1332  LOAD_ATTR                abc
+             1334  LOAD_ATTR                ValuesView
+             1336  LOAD_CONST               1
+             1338  CALL_FUNCTION_2       2  ''
+             1340  STORE_NAME               ValuesView
+
+ L.1632      1342  LOAD_NAME                _alias
+             1344  LOAD_NAME                contextlib
+             1346  LOAD_ATTR                AbstractContextManager
+             1348  LOAD_CONST               1
+             1350  LOAD_STR                 'ContextManager'
+             1352  LOAD_CONST               ('name',)
+             1354  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+             1356  STORE_NAME               ContextManager
+
+ L.1633      1358  LOAD_NAME                _alias
+             1360  LOAD_NAME                contextlib
+             1362  LOAD_ATTR                AbstractAsyncContextManager
+             1364  LOAD_CONST               1
+             1366  LOAD_STR                 'AsyncContextManager'
+             1368  LOAD_CONST               ('name',)
+             1370  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+             1372  STORE_NAME               AsyncContextManager
+
+ L.1634      1374  LOAD_NAME                _alias
+             1376  LOAD_NAME                dict
+             1378  LOAD_CONST               2
+             1380  LOAD_CONST               False
+             1382  LOAD_STR                 'Dict'
+             1384  LOAD_CONST               ('inst', 'name')
+             1386  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+             1388  STORE_NAME               Dict
+
+ L.1635      1390  LOAD_NAME                _alias
+             1392  LOAD_NAME                collections
+             1394  LOAD_ATTR                defaultdict
+             1396  LOAD_CONST               2
+             1398  LOAD_STR                 'DefaultDict'
+             1400  LOAD_CONST               ('name',)
+             1402  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+             1404  STORE_NAME               DefaultDict
+
+ L.1636      1406  LOAD_NAME                _alias
+             1408  LOAD_NAME                collections
+             1410  LOAD_ATTR                OrderedDict
+             1412  LOAD_CONST               2
+             1414  CALL_FUNCTION_2       2  ''
+             1416  STORE_NAME               OrderedDict
+
+ L.1637      1418  LOAD_NAME                _alias
+             1420  LOAD_NAME                collections
+             1422  LOAD_ATTR                Counter
+             1424  LOAD_CONST               1
+             1426  CALL_FUNCTION_2       2  ''
+             1428  STORE_NAME               Counter
+
+ L.1638      1430  LOAD_NAME                _alias
+             1432  LOAD_NAME                collections
+             1434  LOAD_ATTR                ChainMap
+             1436  LOAD_CONST               2
+             1438  CALL_FUNCTION_2       2  ''
+             1440  STORE_NAME               ChainMap
+
+ L.1639      1442  LOAD_NAME                _alias
+             1444  LOAD_NAME                collections
+             1446  LOAD_ATTR                abc
+             1448  LOAD_ATTR                Generator
+             1450  LOAD_CONST               3
+             1452  CALL_FUNCTION_2       2  ''
+             1454  STORE_NAME               Generator
+
+ L.1640      1456  LOAD_NAME                _alias
+             1458  LOAD_NAME                collections
+             1460  LOAD_ATTR                abc
+             1462  LOAD_ATTR                AsyncGenerator
+             1464  LOAD_CONST               2
+             1466  CALL_FUNCTION_2       2  ''
+             1468  STORE_NAME               AsyncGenerator
+
+ L.1641      1470  LOAD_NAME                _alias
+             1472  LOAD_NAME                type
+             1474  LOAD_CONST               1
+             1476  LOAD_CONST               False
+             1478  LOAD_STR                 'Type'
+             1480  LOAD_CONST               ('inst', 'name')
+             1482  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+             1484  STORE_NAME               Type
+
+ L.1643      1486  LOAD_STR                 "A special construct usable to annotate class objects.\n\n    For example, suppose we have the following classes::\n\n      class User: ...  # Abstract base for User classes\n      class BasicUser(User): ...\n      class ProUser(User): ...\n      class TeamUser(User): ...\n\n    And a function that takes a class argument that's a subclass of\n    User and returns an instance of the corresponding class::\n\n      U = TypeVar('U', bound=User)\n      def new_user(user_class: Type[U]) -> U:\n          user = user_class()\n          # (Here we could write the user object to a database)\n          return user\n\n      joe = new_user(BasicUser)\n\n    At this point the type checker knows that joe has type BasicUser.\n    "
+
+ L.1642      1488  LOAD_NAME                Type
+             1490  STORE_ATTR               __doc__
+
+ L.1667      1492  LOAD_NAME                runtime_checkable
+
+ L.1668      1494  LOAD_BUILD_CLASS 
+             1496  LOAD_CODE                <code_object SupportsInt>
+             1498  LOAD_STR                 'SupportsInt'
+             1500  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1502  LOAD_STR                 'SupportsInt'
+             1504  LOAD_NAME                Protocol
+             1506  CALL_FUNCTION_3       3  ''
+             1508  CALL_FUNCTION_1       1  ''
+             1510  STORE_NAME               SupportsInt
+
+ L.1677      1512  LOAD_NAME                runtime_checkable
+
+ L.1678      1514  LOAD_BUILD_CLASS 
+             1516  LOAD_CODE                <code_object SupportsFloat>
+             1518  LOAD_STR                 'SupportsFloat'
+             1520  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1522  LOAD_STR                 'SupportsFloat'
+             1524  LOAD_NAME                Protocol
+             1526  CALL_FUNCTION_3       3  ''
+             1528  CALL_FUNCTION_1       1  ''
+             1530  STORE_NAME               SupportsFloat
+
+ L.1687      1532  LOAD_NAME                runtime_checkable
+
+ L.1688      1534  LOAD_BUILD_CLASS 
+             1536  LOAD_CODE                <code_object SupportsComplex>
+             1538  LOAD_STR                 'SupportsComplex'
+             1540  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1542  LOAD_STR                 'SupportsComplex'
+             1544  LOAD_NAME                Protocol
+             1546  CALL_FUNCTION_3       3  ''
+             1548  CALL_FUNCTION_1       1  ''
+             1550  STORE_NAME               SupportsComplex
+
+ L.1697      1552  LOAD_NAME                runtime_checkable
+
+ L.1698      1554  LOAD_BUILD_CLASS 
+             1556  LOAD_CODE                <code_object SupportsBytes>
+             1558  LOAD_STR                 'SupportsBytes'
+             1560  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1562  LOAD_STR                 'SupportsBytes'
+             1564  LOAD_NAME                Protocol
+             1566  CALL_FUNCTION_3       3  ''
+             1568  CALL_FUNCTION_1       1  ''
+             1570  STORE_NAME               SupportsBytes
+
+ L.1707      1572  LOAD_NAME                runtime_checkable
+
+ L.1708      1574  LOAD_BUILD_CLASS 
+             1576  LOAD_CODE                <code_object SupportsIndex>
+             1578  LOAD_STR                 'SupportsIndex'
+             1580  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1582  LOAD_STR                 'SupportsIndex'
+             1584  LOAD_NAME                Protocol
+             1586  CALL_FUNCTION_3       3  ''
+             1588  CALL_FUNCTION_1       1  ''
+             1590  STORE_NAME               SupportsIndex
+
+ L.1717      1592  LOAD_NAME                runtime_checkable
+
+ L.1718      1594  LOAD_BUILD_CLASS 
+             1596  LOAD_CODE                <code_object SupportsAbs>
+             1598  LOAD_STR                 'SupportsAbs'
+             1600  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1602  LOAD_STR                 'SupportsAbs'
+             1604  LOAD_NAME                Protocol
+             1606  LOAD_NAME                T_co
+             1608  BINARY_SUBSCR    
+             1610  CALL_FUNCTION_3       3  ''
+             1612  CALL_FUNCTION_1       1  ''
+             1614  STORE_NAME               SupportsAbs
+
+ L.1727      1616  LOAD_NAME                runtime_checkable
+
+ L.1728      1618  LOAD_BUILD_CLASS 
+             1620  LOAD_CODE                <code_object SupportsRound>
+             1622  LOAD_STR                 'SupportsRound'
+             1624  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1626  LOAD_STR                 'SupportsRound'
+             1628  LOAD_NAME                Protocol
+             1630  LOAD_NAME                T_co
+             1632  BINARY_SUBSCR    
+             1634  CALL_FUNCTION_3       3  ''
+             1636  CALL_FUNCTION_1       1  ''
+             1638  STORE_NAME               SupportsRound
+
+ L.1737      1640  LOAD_CONST               ((),)
+             1642  LOAD_CODE                <code_object _make_nmtuple>
+             1644  LOAD_STR                 '_make_nmtuple'
+             1646  MAKE_FUNCTION_1          'default'
+             1648  STORE_NAME               _make_nmtuple
+
+ L.1748      1650  LOAD_NAME                frozenset
+             1652  BUILD_SET_0           0 
+             1654  LOAD_CONST               frozenset({'__new__', '_asdict', '_source', '__slots__', '__getnewargs__', '_make', '_field_defaults', '_fields', '__init__', '_replace'})
+             1656  POP_FINALLY           1  ''
+             1658  CALL_FUNCTION_1       1  ''
+             1660  STORE_NAME               _prohibited
+
+ L.1752      1662  LOAD_NAME                frozenset
+             1664  BUILD_SET_0           0 
+             1666  LOAD_CONST               frozenset({'__module__', '__name__', '__annotations__'})
+             1668  POP_FINALLY           1  ''
+             1670  CALL_FUNCTION_1       1  ''
+             1672  STORE_NAME               _special
+
+ L.1755      1674  LOAD_BUILD_CLASS 
+             1676  LOAD_CODE                <code_object NamedTupleMeta>
+             1678  LOAD_STR                 'NamedTupleMeta'
+             1680  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1682  LOAD_STR                 'NamedTupleMeta'
+             1684  LOAD_NAME                type
+             1686  CALL_FUNCTION_3       3  ''
+             1688  STORE_NAME               NamedTupleMeta
+
+ L.1781      1690  LOAD_CONST               (None,)
+             1692  LOAD_CODE                <code_object NamedTuple>
+             1694  LOAD_STR                 'NamedTuple'
+             1696  MAKE_FUNCTION_1          'default'
+             1698  STORE_NAME               NamedTuple
+
+ L.1816      1700  LOAD_NAME                type
+             1702  LOAD_METHOD              __new__
+             1704  LOAD_NAME                NamedTupleMeta
+             1706  LOAD_STR                 'NamedTuple'
+             1708  LOAD_CONST               ()
+             1710  BUILD_MAP_0           0 
+             1712  CALL_METHOD_4         4  ''
+             1714  STORE_NAME               _NamedTuple
+
+ L.1818      1716  LOAD_CODE                <code_object _namedtuple_mro_entries>
+             1718  LOAD_STR                 '_namedtuple_mro_entries'
+             1720  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1722  STORE_NAME               _namedtuple_mro_entries
+
+ L.1824      1724  LOAD_NAME                _namedtuple_mro_entries
+             1726  LOAD_NAME                NamedTuple
+             1728  STORE_ATTR               __mro_entries__
+
+ L.1827      1730  LOAD_BUILD_CLASS 
+             1732  LOAD_CODE                <code_object _TypedDictMeta>
+             1734  LOAD_STR                 '_TypedDictMeta'
+             1736  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1738  LOAD_STR                 '_TypedDictMeta'
+             1740  LOAD_NAME                type
+             1742  CALL_FUNCTION_3       3  ''
+             1744  STORE_NAME               _TypedDictMeta
+
+ L.1879      1746  LOAD_CONST               (None,)
+             1748  LOAD_CONST               True
+             1750  LOAD_CONST               ('total',)
+             1752  BUILD_CONST_KEY_MAP_1     1 
+             1754  LOAD_CODE                <code_object TypedDict>
+             1756  LOAD_STR                 'TypedDict'
+             1758  MAKE_FUNCTION_3          'default, keyword-only'
+             1760  STORE_NAME               TypedDict
+
+ L.1936      1762  LOAD_NAME                type
+             1764  LOAD_METHOD              __new__
+             1766  LOAD_NAME                _TypedDictMeta
+             1768  LOAD_STR                 'TypedDict'
+             1770  LOAD_CONST               ()
+             1772  BUILD_MAP_0           0 
+             1774  CALL_METHOD_4         4  ''
+             1776  STORE_NAME               _TypedDict
+
+ L.1937      1778  LOAD_LAMBDA              '<code_object <lambda>>'
+             1780  LOAD_STR                 '<lambda>'
+             1782  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1784  LOAD_NAME                TypedDict
+             1786  STORE_ATTR               __mro_entries__
+
+ L.1940      1788  LOAD_CODE                <code_object NewType>
+             1790  LOAD_STR                 'NewType'
+             1792  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1794  STORE_NAME               NewType
+
+ L.1968      1796  LOAD_NAME                str
+             1798  STORE_NAME               Text
+
+ L.1972      1800  LOAD_CONST               False
+             1802  STORE_NAME               TYPE_CHECKING
+
+ L.1975      1804  LOAD_BUILD_CLASS 
+             1806  LOAD_CODE                <code_object IO>
+             1808  LOAD_STR                 'IO'
+             1810  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1812  LOAD_STR                 'IO'
+             1814  LOAD_NAME                Generic
+             1816  LOAD_NAME                AnyStr
+             1818  BINARY_SUBSCR    
+             1820  CALL_FUNCTION_3       3  ''
+             1822  STORE_NAME               IO
+
+ L.2074      1824  LOAD_BUILD_CLASS 
+             1826  LOAD_CODE                <code_object BinaryIO>
+             1828  LOAD_STR                 'BinaryIO'
+             1830  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1832  LOAD_STR                 'BinaryIO'
+             1834  LOAD_NAME                IO
+             1836  LOAD_NAME                bytes
+             1838  BINARY_SUBSCR    
+             1840  CALL_FUNCTION_3       3  ''
+             1842  STORE_NAME               BinaryIO
+
+ L.2088      1844  LOAD_BUILD_CLASS 
+             1846  LOAD_CODE                <code_object TextIO>
+             1848  LOAD_STR                 'TextIO'
+             1850  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1852  LOAD_STR                 'TextIO'
+             1854  LOAD_NAME                IO
+             1856  LOAD_NAME                str
+             1858  BINARY_SUBSCR    
+             1860  CALL_FUNCTION_3       3  ''
+             1862  STORE_NAME               TextIO
+
+ L.2123      1864  LOAD_BUILD_CLASS 
+             1866  LOAD_CODE                <code_object io>
+             1868  LOAD_STR                 'io'
+             1870  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1872  LOAD_STR                 'io'
+             1874  CALL_FUNCTION_2       2  ''
+             1876  STORE_NAME               io
+
+ L.2132      1878  LOAD_NAME                __name__
+             1880  LOAD_STR                 '.io'
+             1882  BINARY_ADD       
+             1884  LOAD_NAME                io
+             1886  STORE_ATTR               __name__
+
+ L.2133      1888  LOAD_NAME                io
+             1890  LOAD_NAME                sys
+             1892  LOAD_ATTR                modules
+             1894  LOAD_NAME                io
+             1896  LOAD_ATTR                __name__
+             1898  STORE_SUBSCR     
+
+ L.2135      1900  LOAD_NAME                _alias
+             1902  LOAD_NAME                stdlib_re
+             1904  LOAD_ATTR                Pattern
+             1906  LOAD_CONST               1
+             1908  CALL_FUNCTION_2       2  ''
+             1910  STORE_NAME               Pattern
+
+ L.2136      1912  LOAD_NAME                _alias
+             1914  LOAD_NAME                stdlib_re
+             1916  LOAD_ATTR                Match
+             1918  LOAD_CONST               1
+             1920  CALL_FUNCTION_2       2  ''
+             1922  STORE_NAME               Match
+
+ L.2138      1924  LOAD_BUILD_CLASS 
+             1926  LOAD_CODE                <code_object re>
+             1928  LOAD_STR                 're'
+             1930  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1932  LOAD_STR                 're'
+             1934  CALL_FUNCTION_2       2  ''
+             1936  STORE_NAME               re
+
+ L.2146      1938  LOAD_NAME                __name__
+             1940  LOAD_STR                 '.re'
+             1942  BINARY_ADD       
+             1944  LOAD_NAME                re
+             1946  STORE_ATTR               __name__
+
+ L.2147      1948  LOAD_NAME                re
+             1950  LOAD_NAME                sys
+             1952  LOAD_ATTR                modules
+             1954  LOAD_NAME                re
+             1956  LOAD_ATTR                __name__
+             1958  STORE_SUBSCR     
+
+Parse error at or near `CALL_FINALLY' instruction at offset 112
+
+Instruction context:
+   
+ L.  32       108  BUILD_LIST_0          0 
+                 110  LOAD_CONST               ('Annotated', 'Any', 'Callable', 'ClassVar', 'Final', 'ForwardRef', 'Generic', 'Literal', 'Optional', 'Protocol', 'Tuple', 'Type', 'TypeVar', 'Union', 'AbstractSet', 'ByteString', 'Container', 'ContextManager', 'Hashable', 'ItemsView', 'Iterable', 'Iterator', 'KeysView', 'Mapping', 'MappingView', 'MutableMapping', 'MutableSequence', 'MutableSet', 'Sequence', 'Sized', 'ValuesView', 'Awaitable', 'AsyncIterator', 'AsyncIterable', 'Coroutine', 'Collection', 'AsyncGenerator', 'AsyncContextManager', 'Reversible', 'SupportsAbs', 'SupportsBytes', 'SupportsComplex', 'SupportsFloat', 'SupportsIndex', 'SupportsInt', 'SupportsRound', 'ChainMap', 'Counter', 'Deque', 'Dict', 'DefaultDict', 'List', 'OrderedDict', 'Set', 'FrozenSet', 'NamedTuple', 'TypedDict', 'Generator', 'AnyStr', 'cast', 'final', 'get_args', 'get_origin', 'get_type_hints', 'NewType', 'no_type_check', 'no_type_check_decorator', 'NoReturn', 'overload', 'runtime_checkable', 'Text', 'TYPE_CHECKING')
+->               112  CALL_FINALLY        115  'to 115'
+                 114  STORE_NAME               __all__
+
+test/137246.pyc -- 
+# decompile failed

@@ -1,0 +1,19 @@
+Instruction context:
+   
+ L.  48        10  LOAD_GLOBAL              UnicodeError
+                  12  LOAD_ATTR                __init__
+                  14  LOAD_FAST                'self'
+                  16  BUILD_LIST_1          1 
+                  18  LOAD_FAST                'unicode_error'
+                  20  LOAD_ATTR                args
+->                22  CALL_FINALLY         25  'to 25'
+                  24  WITH_CLEANUP_FINISH
+                  26  CALL_FUNCTION_EX      0  'positional arguments only'
+                  28  POP_TOP          
+                30_0  COME_FROM             8  '8'
+
+test/31706.pyc -- 
+# decompile failed
+
+# file test/31706.pyc
+# Deparsing stopped due to parse error

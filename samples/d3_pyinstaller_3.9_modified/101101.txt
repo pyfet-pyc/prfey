@@ -1,0 +1,315 @@
+
+# file test/101101.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "Temporary files.\n\nThis module provides generic, low- and high-level interfaces for\ncreating temporary files and directories.  All of the interfaces\nprovided by this module can be used without fear of race conditions\nexcept for 'mktemp'.  'mktemp' is subject to race conditions and\nshould not be used; it is provided for backward compatibility only.\n\nThe default path names are returned as str.  If you supply bytes as\ninput, all return values will be in bytes.  Ex:\n\n    >>> tempfile.mkstemp()\n    (4, '/tmp/tmptpu9nin8')\n    >>> tempfile.mkdtemp(suffix=b'')\n    b'/tmp/tmppbi8f0hy'\n\nThis module also provides some data items to the user:\n\n  TMP_MAX  - maximum number of names that will be tried before\n             giving up.\n  tempdir  - If this is set to a string before the first use of\n             any routine from this module, it will be considered as\n             another candidate location to store temporary files.\n"
+                2  STORE_NAME               __doc__
+
+ L.  26         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('NamedTemporaryFile', 'TemporaryFile', 'SpooledTemporaryFile', 'TemporaryDirectory', 'mkstemp', 'mkdtemp', 'mktemp', 'TMP_MAX', 'gettempprefix', 'tempdir', 'gettempdir', 'gettempprefixb', 'gettempdirb')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  39        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              functools
+               18  STORE_NAME               _functools
+
+ L.  40        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              warnings
+               26  STORE_NAME               _warnings
+
+ L.  41        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              io
+               34  STORE_NAME               _io
+
+ L.  42        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              os
+               42  STORE_NAME               _os
+
+ L.  43        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              shutil
+               50  STORE_NAME               _shutil
+
+ L.  44        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              errno
+               58  STORE_NAME               _errno
+
+ L.  45        60  LOAD_CONST               0
+               62  LOAD_CONST               ('Random',)
+               64  IMPORT_NAME              random
+               66  IMPORT_FROM              Random
+               68  STORE_NAME               _Random
+               70  POP_TOP          
+
+ L.  46        72  LOAD_CONST               0
+               74  LOAD_CONST               None
+               76  IMPORT_NAME              sys
+               78  STORE_NAME               _sys
+
+ L.  47        80  LOAD_CONST               0
+               82  LOAD_CONST               None
+               84  IMPORT_NAME              types
+               86  STORE_NAME               _types
+
+ L.  48        88  LOAD_CONST               0
+               90  LOAD_CONST               None
+               92  IMPORT_NAME              weakref
+               94  STORE_NAME               _weakref
+
+ L.  49        96  LOAD_CONST               0
+               98  LOAD_CONST               None
+              100  IMPORT_NAME              _thread
+              102  STORE_NAME               _thread
+
+ L.  50       104  LOAD_NAME                _thread
+              106  LOAD_ATTR                allocate_lock
+              108  STORE_NAME               _allocate_lock
+
+ L.  52       110  LOAD_NAME                _os
+              112  LOAD_ATTR                O_RDWR
+              114  LOAD_NAME                _os
+              116  LOAD_ATTR                O_CREAT
+              118  BINARY_OR        
+              120  LOAD_NAME                _os
+              122  LOAD_ATTR                O_EXCL
+              124  BINARY_OR        
+              126  STORE_NAME               _text_openflags
+
+ L.  53       128  LOAD_NAME                hasattr
+              130  LOAD_NAME                _os
+              132  LOAD_STR                 'O_NOFOLLOW'
+              134  CALL_FUNCTION_2       2  ''
+              136  POP_JUMP_IF_FALSE   148  'to 148'
+
+ L.  54       138  LOAD_NAME                _text_openflags
+              140  LOAD_NAME                _os
+              142  LOAD_ATTR                O_NOFOLLOW
+              144  INPLACE_OR       
+              146  STORE_NAME               _text_openflags
+            148_0  COME_FROM           136  '136'
+
+ L.  56       148  LOAD_NAME                _text_openflags
+              150  STORE_NAME               _bin_openflags
+
+ L.  57       152  LOAD_NAME                hasattr
+              154  LOAD_NAME                _os
+              156  LOAD_STR                 'O_BINARY'
+              158  CALL_FUNCTION_2       2  ''
+              160  POP_JUMP_IF_FALSE   172  'to 172'
+
+ L.  58       162  LOAD_NAME                _bin_openflags
+              164  LOAD_NAME                _os
+              166  LOAD_ATTR                O_BINARY
+              168  INPLACE_OR       
+              170  STORE_NAME               _bin_openflags
+            172_0  COME_FROM           160  '160'
+
+ L.  60       172  LOAD_NAME                hasattr
+              174  LOAD_NAME                _os
+              176  LOAD_STR                 'TMP_MAX'
+              178  CALL_FUNCTION_2       2  ''
+              180  POP_JUMP_IF_FALSE   190  'to 190'
+
+ L.  61       182  LOAD_NAME                _os
+              184  LOAD_ATTR                TMP_MAX
+              186  STORE_NAME               TMP_MAX
+              188  JUMP_FORWARD        194  'to 194'
+            190_0  COME_FROM           180  '180'
+
+ L.  63       190  LOAD_CONST               10000
+              192  STORE_NAME               TMP_MAX
+            194_0  COME_FROM           188  '188'
+
+ L.  69       194  LOAD_STR                 'tmp'
+              196  STORE_NAME               template
+
+ L.  73       198  LOAD_NAME                _allocate_lock
+              200  CALL_FUNCTION_0       0  ''
+              202  STORE_NAME               _once_lock
+
+ L.  76       204  LOAD_CODE                <code_object _exists>
+              206  LOAD_STR                 '_exists'
+              208  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              210  STORE_NAME               _exists
+
+ L.  85       212  LOAD_CODE                <code_object _infer_return_type>
+              214  LOAD_STR                 '_infer_return_type'
+              216  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              218  STORE_NAME               _infer_return_type
+
+ L. 106       220  LOAD_CODE                <code_object _sanitize_params>
+              222  LOAD_STR                 '_sanitize_params'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  STORE_NAME               _sanitize_params
+
+ L. 124       228  LOAD_BUILD_CLASS 
+              230  LOAD_CODE                <code_object _RandomNameSequence>
+              232  LOAD_STR                 '_RandomNameSequence'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  LOAD_STR                 '_RandomNameSequence'
+              238  CALL_FUNCTION_2       2  ''
+              240  STORE_NAME               _RandomNameSequence
+
+ L. 151       242  LOAD_CODE                <code_object _candidate_tempdir_list>
+              244  LOAD_STR                 '_candidate_tempdir_list'
+              246  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              248  STORE_NAME               _candidate_tempdir_list
+
+ L. 178       250  LOAD_CODE                <code_object _get_default_tempdir>
+              252  LOAD_STR                 '_get_default_tempdir'
+              254  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              256  STORE_NAME               _get_default_tempdir
+
+ L. 223       258  LOAD_CONST               None
+              260  STORE_GLOBAL             _name_sequence
+
+ L. 225       262  LOAD_CODE                <code_object _get_candidate_names>
+              264  LOAD_STR                 '_get_candidate_names'
+              266  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              268  STORE_NAME               _get_candidate_names
+
+ L. 239       270  LOAD_CODE                <code_object _mkstemp_inner>
+              272  LOAD_STR                 '_mkstemp_inner'
+              274  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              276  STORE_NAME               _mkstemp_inner
+
+ L. 270       278  LOAD_CODE                <code_object gettempprefix>
+              280  LOAD_STR                 'gettempprefix'
+              282  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              284  STORE_NAME               gettempprefix
+
+ L. 274       286  LOAD_CODE                <code_object gettempprefixb>
+              288  LOAD_STR                 'gettempprefixb'
+              290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              292  STORE_NAME               gettempprefixb
+
+ L. 278       294  LOAD_CONST               None
+              296  STORE_GLOBAL             tempdir
+
+ L. 280       298  LOAD_CODE                <code_object gettempdir>
+              300  LOAD_STR                 'gettempdir'
+              302  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              304  STORE_NAME               gettempdir
+
+ L. 292       306  LOAD_CODE                <code_object gettempdirb>
+              308  LOAD_STR                 'gettempdirb'
+              310  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              312  STORE_NAME               gettempdirb
+
+ L. 296       314  LOAD_CONST               (None, None, None, False)
+              316  LOAD_CODE                <code_object mkstemp>
+              318  LOAD_STR                 'mkstemp'
+              320  MAKE_FUNCTION_1          'default'
+              322  STORE_NAME               mkstemp
+
+ L. 335       324  LOAD_CONST               (None, None, None)
+              326  LOAD_CODE                <code_object mkdtemp>
+              328  LOAD_STR                 'mkdtemp'
+              330  MAKE_FUNCTION_1          'default'
+              332  STORE_NAME               mkdtemp
+
+ L. 375       334  LOAD_STR                 ''
+              336  LOAD_NAME                template
+              338  LOAD_CONST               None
+              340  BUILD_TUPLE_3         3 
+              342  LOAD_CODE                <code_object mktemp>
+              344  LOAD_STR                 'mktemp'
+              346  MAKE_FUNCTION_1          'default'
+              348  STORE_NAME               mktemp
+
+ L. 407       350  LOAD_BUILD_CLASS 
+              352  LOAD_CODE                <code_object _TemporaryFileCloser>
+              354  LOAD_STR                 '_TemporaryFileCloser'
+              356  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              358  LOAD_STR                 '_TemporaryFileCloser'
+              360  CALL_FUNCTION_2       2  ''
+              362  STORE_NAME               _TemporaryFileCloser
+
+ L. 450       364  LOAD_BUILD_CLASS 
+              366  LOAD_CODE                <code_object _TemporaryFileWrapper>
+              368  LOAD_STR                 '_TemporaryFileWrapper'
+              370  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              372  LOAD_STR                 '_TemporaryFileWrapper'
+              374  CALL_FUNCTION_2       2  ''
+              376  STORE_NAME               _TemporaryFileWrapper
+
+ L. 513       378  LOAD_CONST               ('w+b', -1, None, None, None, None, None, True)
+
+ L. 515       380  LOAD_CONST               None
+
+ L. 513       382  LOAD_CONST               ('errors',)
+              384  BUILD_CONST_KEY_MAP_1     1 
+              386  LOAD_CODE                <code_object NamedTemporaryFile>
+              388  LOAD_STR                 'NamedTemporaryFile'
+              390  MAKE_FUNCTION_3          'default, keyword-only'
+              392  STORE_NAME               NamedTemporaryFile
+
+ L. 552       394  LOAD_NAME                _os
+              396  LOAD_ATTR                name
+              398  LOAD_STR                 'posix'
+              400  COMPARE_OP               !=
+          402_404  POP_JUMP_IF_TRUE    418  'to 418'
+              406  LOAD_NAME                _sys
+              408  LOAD_ATTR                platform
+              410  LOAD_STR                 'cygwin'
+              412  COMPARE_OP               ==
+          414_416  POP_JUMP_IF_FALSE   424  'to 424'
+            418_0  COME_FROM           402  '402'
+
+ L. 555       418  LOAD_NAME                NamedTemporaryFile
+              420  STORE_NAME               TemporaryFile
+              422  JUMP_FORWARD        450  'to 450'
+            424_0  COME_FROM           414  '414'
+
+ L. 561       424  LOAD_NAME                hasattr
+              426  LOAD_NAME                _os
+              428  LOAD_STR                 'O_TMPFILE'
+              430  CALL_FUNCTION_2       2  ''
+              432  STORE_GLOBAL             _O_TMPFILE_WORKS
+
+ L. 563       434  LOAD_CONST               ('w+b', -1, None, None, None, None, None)
+
+ L. 565       436  LOAD_CONST               None
+
+ L. 563       438  LOAD_CONST               ('errors',)
+              440  BUILD_CONST_KEY_MAP_1     1 
+              442  LOAD_CODE                <code_object TemporaryFile>
+              444  LOAD_STR                 'TemporaryFile'
+              446  MAKE_FUNCTION_3          'default, keyword-only'
+              448  STORE_NAME               TemporaryFile
+            450_0  COME_FROM           422  '422'
+
+ L. 623       450  LOAD_BUILD_CLASS 
+              452  LOAD_CODE                <code_object SpooledTemporaryFile>
+              454  LOAD_STR                 'SpooledTemporaryFile'
+              456  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              458  LOAD_STR                 'SpooledTemporaryFile'
+              460  CALL_FUNCTION_2       2  ''
+              462  STORE_NAME               SpooledTemporaryFile
+
+ L. 766       464  LOAD_BUILD_CLASS 
+              466  LOAD_CODE                <code_object TemporaryDirectory>
+              468  LOAD_STR                 'TemporaryDirectory'
+              470  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              472  LOAD_STR                 'TemporaryDirectory'
+              474  LOAD_NAME                object
+              476  CALL_FUNCTION_3       3  ''
+              478  STORE_NAME               TemporaryDirectory
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L.  26         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('NamedTemporaryFile', 'TemporaryFile', 'SpooledTemporaryFile', 'TemporaryDirectory', 'mkstemp', 'mkdtemp', 'mktemp', 'TMP_MAX', 'gettempprefix', 'tempdir', 'gettempdir', 'gettempprefixb', 'gettempdirb')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101101.pyc -- 
+# decompile failed

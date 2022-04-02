@@ -1,0 +1,382 @@
+
+# file test/39486.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'WebSocket protocol versions 13 and 8.'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              asyncio
+               10  STORE_NAME               asyncio
+
+ L.   4        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              collections
+               18  STORE_NAME               collections
+
+ L.   5        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              json
+               26  STORE_NAME               json
+
+ L.   6        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              random
+               34  STORE_NAME               random
+
+ L.   7        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              re
+               42  STORE_NAME               re
+
+ L.   8        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              sys
+               50  STORE_NAME               sys
+
+ L.   9        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              zlib
+               58  STORE_NAME               zlib
+
+ L.  10        60  LOAD_CONST               0
+               62  LOAD_CONST               ('IntEnum',)
+               64  IMPORT_NAME              enum
+               66  IMPORT_FROM              IntEnum
+               68  STORE_NAME               IntEnum
+               70  POP_TOP          
+
+ L.  11        72  LOAD_CONST               0
+               74  LOAD_CONST               ('Struct',)
+               76  IMPORT_NAME              struct
+               78  IMPORT_FROM              Struct
+               80  STORE_NAME               Struct
+               82  POP_TOP          
+
+ L.  12        84  LOAD_CONST               0
+               86  LOAD_CONST               ('Any', 'Callable', 'List', 'Optional', 'Tuple', 'Union')
+               88  IMPORT_NAME              typing
+               90  IMPORT_FROM              Any
+               92  STORE_NAME               Any
+               94  IMPORT_FROM              Callable
+               96  STORE_NAME               Callable
+               98  IMPORT_FROM              List
+              100  STORE_NAME               List
+              102  IMPORT_FROM              Optional
+              104  STORE_NAME               Optional
+              106  IMPORT_FROM              Tuple
+              108  STORE_NAME               Tuple
+              110  IMPORT_FROM              Union
+              112  STORE_NAME               Union
+              114  POP_TOP          
+
+ L.  14       116  LOAD_CONST               1
+              118  LOAD_CONST               ('BaseProtocol',)
+              120  IMPORT_NAME              base_protocol
+              122  IMPORT_FROM              BaseProtocol
+              124  STORE_NAME               BaseProtocol
+              126  POP_TOP          
+
+ L.  15       128  LOAD_CONST               1
+              130  LOAD_CONST               ('NO_EXTENSIONS',)
+              132  IMPORT_NAME              helpers
+              134  IMPORT_FROM              NO_EXTENSIONS
+              136  STORE_NAME               NO_EXTENSIONS
+              138  POP_TOP          
+
+ L.  16       140  LOAD_CONST               1
+              142  LOAD_CONST               ('DataQueue',)
+              144  IMPORT_NAME              streams
+              146  IMPORT_FROM              DataQueue
+              148  STORE_NAME               DataQueue
+              150  POP_TOP          
+
+ L.  18       152  LOAD_CONST               ('WS_CLOSED_MESSAGE', 'WS_CLOSING_MESSAGE', 'WS_KEY', 'WebSocketReader', 'WebSocketWriter', 'WSMessage', 'WebSocketError', 'WSMsgType', 'WSCloseCode')
+              154  STORE_NAME               __all__
+
+ L.  31       156  LOAD_BUILD_CLASS 
+              158  LOAD_CODE                <code_object WSCloseCode>
+              160  LOAD_STR                 'WSCloseCode'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  LOAD_STR                 'WSCloseCode'
+              166  LOAD_NAME                IntEnum
+              168  CALL_FUNCTION_3       3  ''
+              170  STORE_NAME               WSCloseCode
+
+ L.  45       172  LOAD_SETCOMP             '<code_object <setcomp>>'
+              174  LOAD_STR                 '<setcomp>'
+              176  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              178  LOAD_NAME                WSCloseCode
+              180  GET_ITER         
+              182  CALL_FUNCTION_1       1  ''
+              184  STORE_NAME               ALLOWED_CLOSE_CODES
+
+ L.  48       186  LOAD_BUILD_CLASS 
+              188  LOAD_CODE                <code_object WSMsgType>
+              190  LOAD_STR                 'WSMsgType'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  LOAD_STR                 'WSMsgType'
+              196  LOAD_NAME                IntEnum
+              198  CALL_FUNCTION_3       3  ''
+              200  STORE_NAME               WSMsgType
+
+ L.  72       202  LOAD_CONST               b'258EAFA5-E914-47DA-95CA-C5AB0DC85B11'
+              204  STORE_NAME               WS_KEY
+
+ L.  75       206  LOAD_NAME                Struct
+              208  LOAD_STR                 '!H'
+              210  CALL_FUNCTION_1       1  ''
+              212  LOAD_ATTR                unpack_from
+              214  STORE_NAME               UNPACK_LEN2
+
+ L.  76       216  LOAD_NAME                Struct
+              218  LOAD_STR                 '!Q'
+              220  CALL_FUNCTION_1       1  ''
+              222  LOAD_ATTR                unpack_from
+              224  STORE_NAME               UNPACK_LEN3
+
+ L.  77       226  LOAD_NAME                Struct
+              228  LOAD_STR                 '!H'
+              230  CALL_FUNCTION_1       1  ''
+              232  LOAD_ATTR                unpack
+              234  STORE_NAME               UNPACK_CLOSE_CODE
+
+ L.  78       236  LOAD_NAME                Struct
+              238  LOAD_STR                 '!BB'
+              240  CALL_FUNCTION_1       1  ''
+              242  LOAD_ATTR                pack
+              244  STORE_NAME               PACK_LEN1
+
+ L.  79       246  LOAD_NAME                Struct
+              248  LOAD_STR                 '!BBH'
+              250  CALL_FUNCTION_1       1  ''
+              252  LOAD_ATTR                pack
+              254  STORE_NAME               PACK_LEN2
+
+ L.  80       256  LOAD_NAME                Struct
+              258  LOAD_STR                 '!BBQ'
+              260  CALL_FUNCTION_1       1  ''
+              262  LOAD_ATTR                pack
+              264  STORE_NAME               PACK_LEN3
+
+ L.  81       266  LOAD_NAME                Struct
+              268  LOAD_STR                 '!H'
+              270  CALL_FUNCTION_1       1  ''
+              272  LOAD_ATTR                pack
+              274  STORE_NAME               PACK_CLOSE_CODE
+
+ L.  82       276  LOAD_CONST               16384
+              278  STORE_NAME               MSG_SIZE
+
+ L.  83       280  LOAD_CONST               65536
+              282  STORE_NAME               DEFAULT_LIMIT
+
+ L.  86       284  LOAD_NAME                collections
+              286  LOAD_METHOD              namedtuple
+              288  LOAD_STR                 '_WSMessageBase'
+              290  BUILD_LIST_0          0 
+              292  LOAD_CONST               ('type', 'data', 'extra')
+              294  CALL_FINALLY        297  'to 297'
+              296  CALL_METHOD_2         2  ''
+              298  STORE_NAME               _WSMessageBase
+
+ L.  89       300  LOAD_BUILD_CLASS 
+              302  LOAD_CODE                <code_object WSMessage>
+              304  LOAD_STR                 'WSMessage'
+              306  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              308  LOAD_STR                 'WSMessage'
+              310  LOAD_NAME                _WSMessageBase
+              312  CALL_FUNCTION_3       3  ''
+              314  STORE_NAME               WSMessage
+
+ L.  98       316  LOAD_NAME                WSMessage
+              318  LOAD_NAME                WSMsgType
+              320  LOAD_ATTR                CLOSED
+              322  LOAD_CONST               None
+              324  LOAD_CONST               None
+              326  CALL_FUNCTION_3       3  ''
+              328  STORE_NAME               WS_CLOSED_MESSAGE
+
+ L.  99       330  LOAD_NAME                WSMessage
+              332  LOAD_NAME                WSMsgType
+              334  LOAD_ATTR                CLOSING
+              336  LOAD_CONST               None
+              338  LOAD_CONST               None
+              340  CALL_FUNCTION_3       3  ''
+              342  STORE_NAME               WS_CLOSING_MESSAGE
+
+ L. 102       344  LOAD_BUILD_CLASS 
+              346  LOAD_CODE                <code_object WebSocketError>
+              348  LOAD_STR                 'WebSocketError'
+              350  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              352  LOAD_STR                 'WebSocketError'
+              354  LOAD_NAME                Exception
+              356  CALL_FUNCTION_3       3  ''
+              358  STORE_NAME               WebSocketError
+
+ L. 113       360  LOAD_BUILD_CLASS 
+              362  LOAD_CODE                <code_object WSHandshakeError>
+              364  LOAD_STR                 'WSHandshakeError'
+              366  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              368  LOAD_STR                 'WSHandshakeError'
+              370  LOAD_NAME                Exception
+              372  CALL_FUNCTION_3       3  ''
+              374  STORE_NAME               WSHandshakeError
+
+ L. 117       376  LOAD_NAME                sys
+              378  LOAD_ATTR                byteorder
+              380  STORE_NAME               native_byteorder
+
+ L. 121       382  LOAD_LISTCOMP            '<code_object <listcomp>>'
+              384  LOAD_STR                 '<listcomp>'
+              386  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              388  LOAD_NAME                range
+              390  LOAD_CONST               256
+              392  CALL_FUNCTION_1       1  ''
+              394  GET_ITER         
+              396  CALL_FUNCTION_1       1  ''
+              398  STORE_NAME               _XOR_TABLE
+
+ L. 124       400  LOAD_NAME                bytes
+              402  LOAD_NAME                bytearray
+              404  LOAD_CONST               None
+              406  LOAD_CONST               ('mask', 'data', 'return')
+              408  BUILD_CONST_KEY_MAP_3     3 
+              410  LOAD_CODE                <code_object _websocket_mask_python>
+              412  LOAD_STR                 '_websocket_mask_python'
+              414  MAKE_FUNCTION_4          'annotation'
+              416  STORE_NAME               _websocket_mask_python
+
+ L. 148       418  LOAD_NAME                NO_EXTENSIONS
+          420_422  POP_JUMP_IF_FALSE   430  'to 430'
+
+ L. 149       424  LOAD_NAME                _websocket_mask_python
+              426  STORE_NAME               _websocket_mask
+              428  JUMP_FORWARD        476  'to 476'
+            430_0  COME_FROM           420  '420'
+
+ L. 151       430  SETUP_FINALLY       452  'to 452'
+
+ L. 152       432  LOAD_CONST               1
+              434  LOAD_CONST               ('_websocket_mask_cython',)
+              436  IMPORT_NAME              _websocket
+              438  IMPORT_FROM              _websocket_mask_cython
+              440  STORE_NAME               _websocket_mask_cython
+              442  POP_TOP          
+
+ L. 154       444  LOAD_NAME                _websocket_mask_cython
+              446  STORE_NAME               _websocket_mask
+              448  POP_BLOCK        
+              450  JUMP_FORWARD        476  'to 476'
+            452_0  COME_FROM_FINALLY   430  '430'
+
+ L. 155       452  DUP_TOP          
+              454  LOAD_NAME                ImportError
+          456_458  <121>               474  ''
+              460  POP_TOP          
+              462  POP_TOP          
+              464  POP_TOP          
+
+ L. 156       466  LOAD_NAME                _websocket_mask_python
+              468  STORE_NAME               _websocket_mask
+              470  POP_EXCEPT       
+              472  JUMP_FORWARD        476  'to 476'
+              474  <48>             
+            476_0  COME_FROM           472  '472'
+            476_1  COME_FROM           450  '450'
+            476_2  COME_FROM           428  '428'
+
+ L. 158       476  LOAD_NAME                bytes
+              478  BUILD_LIST_0          0 
+              480  LOAD_CONST               (0, 0, 255, 255)
+              482  CALL_FINALLY        485  'to 485'
+              484  CALL_FUNCTION_1       1  ''
+              486  STORE_NAME               _WS_DEFLATE_TRAILING
+
+ L. 161       488  LOAD_NAME                re
+              490  LOAD_METHOD              compile
+
+ L. 162       492  LOAD_STR                 '^(?:;\\s*(?:(server_no_context_takeover)|(client_no_context_takeover)|(server_max_window_bits(?:=(\\d+))?)|(client_max_window_bits(?:=(\\d+))?)))*$'
+
+ L. 161       494  CALL_METHOD_1         1  ''
+              496  STORE_NAME               _WS_EXT_RE
+
+ L. 169       498  LOAD_NAME                re
+              500  LOAD_METHOD              compile
+              502  LOAD_STR                 'permessage-deflate([^,]+)?'
+              504  CALL_METHOD_1         1  ''
+              506  STORE_NAME               _WS_EXT_RE_SPLIT
+
+ L. 172       508  LOAD_CONST               (False,)
+              510  LOAD_NAME                Optional
+              512  LOAD_NAME                str
+              514  BINARY_SUBSCR    
+              516  LOAD_NAME                bool
+              518  LOAD_NAME                Tuple
+              520  LOAD_NAME                int
+              522  LOAD_NAME                bool
+              524  BUILD_TUPLE_2         2 
+              526  BINARY_SUBSCR    
+              528  LOAD_CONST               ('extstr', 'isserver', 'return')
+              530  BUILD_CONST_KEY_MAP_3     3 
+              532  LOAD_CODE                <code_object ws_ext_parse>
+              534  LOAD_STR                 'ws_ext_parse'
+              536  MAKE_FUNCTION_5          'default, annotation'
+              538  STORE_NAME               ws_ext_parse
+
+ L. 223       540  LOAD_CONST               (15, False, False)
+
+ L. 224       542  LOAD_NAME                int
+              544  LOAD_NAME                bool
+              546  LOAD_NAME                bool
+
+ L. 225       548  LOAD_NAME                str
+
+ L. 223       550  LOAD_CONST               ('compress', 'isserver', 'server_notakeover', 'return')
+              552  BUILD_CONST_KEY_MAP_4     4 
+              554  LOAD_CODE                <code_object ws_ext_gen>
+              556  LOAD_STR                 'ws_ext_gen'
+              558  MAKE_FUNCTION_5          'default, annotation'
+              560  STORE_NAME               ws_ext_gen
+
+ L. 245       562  LOAD_BUILD_CLASS 
+              564  LOAD_CODE                <code_object WSParserState>
+              566  LOAD_STR                 'WSParserState'
+              568  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              570  LOAD_STR                 'WSParserState'
+              572  LOAD_NAME                IntEnum
+              574  CALL_FUNCTION_3       3  ''
+              576  STORE_NAME               WSParserState
+
+ L. 252       578  LOAD_BUILD_CLASS 
+              580  LOAD_CODE                <code_object WebSocketReader>
+              582  LOAD_STR                 'WebSocketReader'
+              584  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              586  LOAD_STR                 'WebSocketReader'
+              588  CALL_FUNCTION_2       2  ''
+              590  STORE_NAME               WebSocketReader
+
+ L. 570       592  LOAD_BUILD_CLASS 
+              594  LOAD_CODE                <code_object WebSocketWriter>
+              596  LOAD_STR                 'WebSocketWriter'
+              598  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              600  LOAD_STR                 'WebSocketWriter'
+              602  CALL_FUNCTION_2       2  ''
+              604  STORE_NAME               WebSocketWriter
+
+Parse error at or near `CALL_FINALLY' instruction at offset 294
+
+Instruction context:
+   
+ L.  86       284  LOAD_NAME                collections
+                 286  LOAD_METHOD              namedtuple
+                 288  LOAD_STR                 '_WSMessageBase'
+                 290  BUILD_LIST_0          0 
+                 292  LOAD_CONST               ('type', 'data', 'extra')
+->               294  CALL_FINALLY        297  'to 297'
+                 296  CALL_METHOD_2         2  ''
+                 298  STORE_NAME               _WSMessageBase
+
+test/39486.pyc -- 
+# decompile failed

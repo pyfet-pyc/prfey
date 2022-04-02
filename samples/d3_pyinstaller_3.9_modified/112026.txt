@@ -1,0 +1,93 @@
+Instruction context:
+   
+ L.  10        72  BUILD_LIST_0          0 
+                  74  LOAD_CONST               ('config_file', 'edit_config', 'option_base', 'setopt')
+->                76  CALL_FINALLY         79  'to 79'
+                  78  STORE_NAME               __all__
+
+test/112026.pyc -- 
+# decompile failed
+
+# file test/112026.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('convert_path',)
+                4  IMPORT_NAME_ATTR         distutils.util
+                6  IMPORT_FROM              convert_path
+                8  STORE_NAME               convert_path
+               10  POP_TOP          
+
+ L.   2        12  LOAD_CONST               0
+               14  LOAD_CONST               ('log',)
+               16  IMPORT_NAME              distutils
+               18  IMPORT_FROM              log
+               20  STORE_NAME               log
+               22  POP_TOP          
+
+ L.   3        24  LOAD_CONST               0
+               26  LOAD_CONST               ('DistutilsOptionError',)
+               28  IMPORT_NAME_ATTR         distutils.errors
+               30  IMPORT_FROM              DistutilsOptionError
+               32  STORE_NAME               DistutilsOptionError
+               34  POP_TOP          
+
+ L.   4        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              distutils
+               42  STORE_NAME               distutils
+
+ L.   5        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              os
+               50  STORE_NAME               os
+
+ L.   6        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              configparser
+               58  STORE_NAME               configparser
+
+ L.   8        60  LOAD_CONST               0
+               62  LOAD_CONST               ('Command',)
+               64  IMPORT_NAME              setuptools
+               66  IMPORT_FROM              Command
+               68  STORE_NAME               Command
+               70  POP_TOP          
+
+ L.  10        72  BUILD_LIST_0          0 
+               74  LOAD_CONST               ('config_file', 'edit_config', 'option_base', 'setopt')
+               76  CALL_FINALLY         79  'to 79'
+               78  STORE_NAME               __all__
+
+ L.  13        80  LOAD_CONST               ('local',)
+               82  LOAD_CODE                <code_object config_file>
+               84  LOAD_STR                 'config_file'
+               86  MAKE_FUNCTION_1          'default'
+               88  STORE_NAME               config_file
+
+ L.  32        90  LOAD_CONST               (False,)
+               92  LOAD_CODE                <code_object edit_config>
+               94  LOAD_STR                 'edit_config'
+               96  MAKE_FUNCTION_1          'default'
+               98  STORE_NAME               edit_config
+
+ L.  75       100  LOAD_BUILD_CLASS 
+              102  LOAD_CODE                <code_object option_base>
+              104  LOAD_STR                 'option_base'
+              106  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              108  LOAD_STR                 'option_base'
+              110  LOAD_NAME                Command
+              112  CALL_FUNCTION_3       3  ''
+              114  STORE_NAME               option_base
+
+ L. 114       116  LOAD_BUILD_CLASS 
+              118  LOAD_CODE                <code_object setopt>
+              120  LOAD_STR                 'setopt'
+              122  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              124  LOAD_STR                 'setopt'
+              126  LOAD_NAME                option_base
+              128  CALL_FUNCTION_3       3  ''
+              130  STORE_NAME               setopt
+
+Parse error at or near `CALL_FINALLY' instruction at offset 76
+

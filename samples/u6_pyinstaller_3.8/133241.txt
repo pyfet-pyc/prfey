@@ -1,0 +1,31 @@
+Instruction context:
+   
+ L.  58        76  DUP_TOP          
+                  78  LOAD_GLOBAL              zlib
+                  80  LOAD_ATTR                error
+                  82  COMPARE_OP               exception-match
+                  84  POP_JUMP_IF_FALSE   148  'to 148'
+                  86  POP_TOP          
+->                88  POP_TOP          
+                  90  POP_TOP          
+Instruction context:
+   
+ L. 367       220  LOAD_FAST                'length'
+->               222  RETURN_VALUE     
+Instruction context:
+   
+ L. 756        74  POP_BLOCK        
+->                76  BEGIN_FINALLY    
+                  78  WITH_CLEANUP_START
+                  80  WITH_CLEANUP_FINISH
+                  82  POP_FINALLY           0  ''
+                  84  LOAD_CONST               None
+                  86  RETURN_VALUE     
+                88_0  COME_FROM            62  '62'
+                88_1  COME_FROM            52  '52'
+
+../test/133241.pyc -- 
+# decompile failed
+
+# file ../test/133241.pyc
+# Deparsing stopped due to parse error

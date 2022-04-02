@@ -1,0 +1,180 @@
+
+# file test/101371.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "Simple API for XML (SAX) implementation for Python.\n\nThis module provides an implementation of the SAX 2 interface;\ninformation about the Java version of the interface can be found at\nhttp://www.megginson.com/SAX/.  The Python version of the interface is\ndocumented at <...>.\n\nThis package contains the following modules:\n\nhandler -- Base classes and constants which define the SAX 2 API for\n           the 'client-side' of SAX for Python.\n\nsaxutils -- Implementation of the convenience classes commonly used to\n            work with SAX.\n\nxmlreader -- Base classes and constants which define the SAX 2 API for\n             the parsers used with SAX for Python.\n\nexpatreader -- Driver that allows use of the Expat parser with SAX.\n"
+                2  STORE_NAME               __doc__
+
+ L.  22         4  LOAD_CONST               1
+                6  LOAD_CONST               ('InputSource',)
+                8  IMPORT_NAME              xmlreader
+               10  IMPORT_FROM              InputSource
+               12  STORE_NAME               InputSource
+               14  POP_TOP          
+
+ L.  23        16  LOAD_CONST               1
+               18  LOAD_CONST               ('ContentHandler', 'ErrorHandler')
+               20  IMPORT_NAME              handler
+               22  IMPORT_FROM              ContentHandler
+               24  STORE_NAME               ContentHandler
+               26  IMPORT_FROM              ErrorHandler
+               28  STORE_NAME               ErrorHandler
+               30  POP_TOP          
+
+ L.  24        32  LOAD_CONST               1
+               34  LOAD_CONST               ('SAXException', 'SAXNotRecognizedException', 'SAXParseException', 'SAXNotSupportedException', 'SAXReaderNotAvailable')
+               36  IMPORT_NAME              _exceptions
+               38  IMPORT_FROM              SAXException
+               40  STORE_NAME               SAXException
+               42  IMPORT_FROM              SAXNotRecognizedException
+               44  STORE_NAME               SAXNotRecognizedException
+               46  IMPORT_FROM              SAXParseException
+               48  STORE_NAME               SAXParseException
+               50  IMPORT_FROM              SAXNotSupportedException
+               52  STORE_NAME               SAXNotSupportedException
+               54  IMPORT_FROM              SAXReaderNotAvailable
+               56  STORE_NAME               SAXReaderNotAvailable
+               58  POP_TOP          
+
+ L.  29        60  LOAD_NAME                ErrorHandler
+               62  CALL_FUNCTION_0       0  ''
+               64  BUILD_TUPLE_1         1 
+               66  LOAD_CODE                <code_object parse>
+               68  LOAD_STR                 'parse'
+               70  MAKE_FUNCTION_1          'default'
+               72  STORE_NAME               parse
+
+ L.  35        74  LOAD_NAME                ErrorHandler
+               76  CALL_FUNCTION_0       0  ''
+               78  BUILD_TUPLE_1         1 
+               80  LOAD_CODE                <code_object parseString>
+               82  LOAD_STR                 'parseString'
+               84  MAKE_FUNCTION_1          'default'
+               86  STORE_NAME               parseString
+
+ L.  53        88  LOAD_STR                 'xml.sax.expatreader'
+               90  BUILD_LIST_1          1 
+               92  STORE_NAME               default_parser_list
+
+ L.  56        94  LOAD_CONST               0
+               96  STORE_NAME               _false
+
+ L.  57        98  LOAD_NAME                _false
+              100  POP_JUMP_IF_FALSE   110  'to 110'
+
+ L.  58       102  LOAD_CONST               0
+              104  LOAD_CONST               None
+              106  IMPORT_NAME_ATTR         xml.sax.expatreader
+              108  STORE_NAME               xml
+            110_0  COME_FROM           100  '100'
+
+ L.  60       110  LOAD_CONST               0
+              112  LOAD_CONST               None
+              114  IMPORT_NAME              os
+              116  STORE_NAME               os
+              118  LOAD_CONST               0
+              120  LOAD_CONST               None
+              122  IMPORT_NAME              sys
+              124  STORE_NAME               sys
+
+ L.  61       126  LOAD_NAME                sys
+              128  LOAD_ATTR                flags
+              130  LOAD_ATTR                ignore_environment
+              132  POP_JUMP_IF_TRUE    160  'to 160'
+              134  LOAD_STR                 'PY_SAX_PARSER'
+              136  LOAD_NAME                os
+              138  LOAD_ATTR                environ
+              140  <118>                 0  ''
+              142  POP_JUMP_IF_FALSE   160  'to 160'
+
+ L.  62       144  LOAD_NAME                os
+              146  LOAD_ATTR                environ
+              148  LOAD_STR                 'PY_SAX_PARSER'
+              150  BINARY_SUBSCR    
+              152  LOAD_METHOD              split
+              154  LOAD_STR                 ','
+              156  CALL_METHOD_1         1  ''
+              158  STORE_NAME               default_parser_list
+            160_0  COME_FROM           142  '142'
+            160_1  COME_FROM           132  '132'
+
+ L.  63       160  DELETE_NAME              os
+
+ L.  65       162  LOAD_STR                 'python.xml.sax.parser'
+              164  STORE_NAME               _key
+
+ L.  66       166  LOAD_NAME                sys
+              168  LOAD_ATTR                platform
+              170  LOAD_CONST               None
+              172  LOAD_CONST               4
+              174  BUILD_SLICE_2         2 
+              176  BINARY_SUBSCR    
+              178  LOAD_STR                 'java'
+              180  COMPARE_OP               ==
+              182  POP_JUMP_IF_FALSE   214  'to 214'
+              184  LOAD_NAME                sys
+              186  LOAD_ATTR                registry
+              188  LOAD_METHOD              containsKey
+              190  LOAD_NAME                _key
+              192  CALL_METHOD_1         1  ''
+              194  POP_JUMP_IF_FALSE   214  'to 214'
+
+ L.  67       196  LOAD_NAME                sys
+              198  LOAD_ATTR                registry
+              200  LOAD_METHOD              getProperty
+              202  LOAD_NAME                _key
+              204  CALL_METHOD_1         1  ''
+              206  LOAD_METHOD              split
+              208  LOAD_STR                 ','
+              210  CALL_METHOD_1         1  ''
+              212  STORE_NAME               default_parser_list
+            214_0  COME_FROM           194  '194'
+            214_1  COME_FROM           182  '182'
+
+ L.  70       214  LOAD_CONST               ((),)
+              216  LOAD_CODE                <code_object make_parser>
+              218  LOAD_STR                 'make_parser'
+              220  MAKE_FUNCTION_1          'default'
+              222  STORE_NAME               make_parser
+
+ L.  96       224  LOAD_NAME                sys
+              226  LOAD_ATTR                platform
+              228  LOAD_CONST               None
+              230  LOAD_CONST               4
+              232  BUILD_SLICE_2         2 
+              234  BINARY_SUBSCR    
+              236  LOAD_STR                 'java'
+              238  COMPARE_OP               ==
+              240  POP_JUMP_IF_FALSE   252  'to 252'
+
+ L.  97       242  LOAD_CODE                <code_object _create_parser>
+              244  LOAD_STR                 '_create_parser'
+              246  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              248  STORE_NAME               _create_parser
+              250  JUMP_FORWARD        260  'to 260'
+            252_0  COME_FROM           240  '240'
+
+ L. 103       252  LOAD_CODE                <code_object _create_parser>
+              254  LOAD_STR                 '_create_parser'
+              256  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              258  STORE_NAME               _create_parser
+            260_0  COME_FROM           250  '250'
+
+ L. 107       260  DELETE_NAME              sys
+
+Parse error at or near `<118>' instruction at offset 140
+
+Instruction context:
+   
+ L.  61       126  LOAD_NAME                sys
+                 128  LOAD_ATTR                flags
+                 130  LOAD_ATTR                ignore_environment
+                 132  POP_JUMP_IF_TRUE    160  'to 160'
+                 134  LOAD_STR                 'PY_SAX_PARSER'
+                 136  LOAD_NAME                os
+                 138  LOAD_ATTR                environ
+->               140  <118>                 0  ''
+                 142  POP_JUMP_IF_FALSE   160  'to 160'
+
+test/101371.pyc -- 
+# decompile failed

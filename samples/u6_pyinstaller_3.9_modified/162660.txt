@@ -1,0 +1,534 @@
+
+# file test/162660.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nMasked arrays add-ons.\n\nA collection of utilities for `numpy.ma`.\n\n:author: Pierre Gerard-Marchant\n:contact: pierregm_at_uga_dot_edu\n:version: $Id: extras.py 3473 2007-10-29 15:18:13Z jarrod.millman $\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  11         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('apply_along_axis', 'apply_over_axes', 'atleast_1d', 'atleast_2d', 'atleast_3d', 'average', 'clump_masked', 'clump_unmasked', 'column_stack', 'compress_cols', 'compress_nd', 'compress_rowcols', 'compress_rows', 'count_masked', 'corrcoef', 'cov', 'diagflat', 'dot', 'dstack', 'ediff1d', 'flatnotmasked_contiguous', 'flatnotmasked_edges', 'hsplit', 'hstack', 'isin', 'in1d', 'intersect1d', 'mask_cols', 'mask_rowcols', 'mask_rows', 'masked_all', 'masked_all_like', 'median', 'mr_', 'notmasked_contiguous', 'notmasked_edges', 'polyfit', 'row_stack', 'setdiff1d', 'setxor1d', 'stack', 'unique', 'union1d', 'vander', 'vstack')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  23        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              itertools
+               18  STORE_NAME               itertools
+
+ L.  24        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              warnings
+               26  STORE_NAME               warnings
+
+ L.  26        28  LOAD_CONST               1
+               30  LOAD_CONST               ('core',)
+               32  IMPORT_NAME              
+               34  IMPORT_FROM              core
+               36  STORE_NAME               ma
+               38  POP_TOP          
+
+ L.  27        40  LOAD_CONST               1
+               42  LOAD_CONST               ('MaskedArray', 'MAError', 'add', 'array', 'asarray', 'concatenate', 'filled', 'count', 'getmask', 'getmaskarray', 'make_mask_descr', 'masked', 'masked_array', 'mask_or', 'nomask', 'ones', 'sort', 'zeros', 'getdata', 'get_masked_subclass', 'dot', 'mask_rowcols')
+               44  IMPORT_NAME              core
+               46  IMPORT_FROM              MaskedArray
+               48  STORE_NAME               MaskedArray
+               50  IMPORT_FROM              MAError
+               52  STORE_NAME               MAError
+               54  IMPORT_FROM              add
+               56  STORE_NAME               add
+               58  IMPORT_FROM              array
+               60  STORE_NAME               array
+               62  IMPORT_FROM              asarray
+               64  STORE_NAME               asarray
+               66  IMPORT_FROM              concatenate
+               68  STORE_NAME               concatenate
+               70  IMPORT_FROM              filled
+               72  STORE_NAME               filled
+               74  IMPORT_FROM              count
+               76  STORE_NAME               count
+               78  IMPORT_FROM              getmask
+               80  STORE_NAME               getmask
+               82  IMPORT_FROM              getmaskarray
+               84  STORE_NAME               getmaskarray
+               86  IMPORT_FROM              make_mask_descr
+               88  STORE_NAME               make_mask_descr
+               90  IMPORT_FROM              masked
+               92  STORE_NAME               masked
+               94  IMPORT_FROM              masked_array
+               96  STORE_NAME               masked_array
+               98  IMPORT_FROM              mask_or
+              100  STORE_NAME               mask_or
+              102  IMPORT_FROM              nomask
+              104  STORE_NAME               nomask
+              106  IMPORT_FROM              ones
+              108  STORE_NAME               ones
+              110  IMPORT_FROM              sort
+              112  STORE_NAME               sort
+              114  IMPORT_FROM              zeros
+              116  STORE_NAME               zeros
+              118  IMPORT_FROM              getdata
+              120  STORE_NAME               getdata
+              122  IMPORT_FROM              get_masked_subclass
+              124  STORE_NAME               get_masked_subclass
+              126  IMPORT_FROM              dot
+              128  STORE_NAME               dot
+              130  IMPORT_FROM              mask_rowcols
+              132  STORE_NAME               mask_rowcols
+              134  POP_TOP          
+
+ L.  34       136  LOAD_CONST               0
+              138  LOAD_CONST               None
+              140  IMPORT_NAME              numpy
+              142  STORE_NAME               np
+
+ L.  35       144  LOAD_CONST               0
+              146  LOAD_CONST               ('ndarray', 'array')
+              148  IMPORT_NAME              numpy
+              150  IMPORT_FROM              ndarray
+              152  STORE_NAME               ndarray
+              154  IMPORT_FROM              array
+              156  STORE_NAME               nxarray
+              158  POP_TOP          
+
+ L.  36       160  LOAD_CONST               0
+              162  LOAD_CONST               None
+              164  IMPORT_NAME_ATTR         numpy.core.umath
+              166  IMPORT_FROM              core
+              168  ROT_TWO          
+              170  POP_TOP          
+              172  IMPORT_FROM              umath
+              174  STORE_NAME               umath
+              176  POP_TOP          
+
+ L.  37       178  LOAD_CONST               0
+              180  LOAD_CONST               ('normalize_axis_index',)
+              182  IMPORT_NAME_ATTR         numpy.core.multiarray
+              184  IMPORT_FROM              normalize_axis_index
+              186  STORE_NAME               normalize_axis_index
+              188  POP_TOP          
+
+ L.  38       190  LOAD_CONST               0
+              192  LOAD_CONST               ('normalize_axis_tuple',)
+              194  IMPORT_NAME_ATTR         numpy.core.numeric
+              196  IMPORT_FROM              normalize_axis_tuple
+              198  STORE_NAME               normalize_axis_tuple
+              200  POP_TOP          
+
+ L.  39       202  LOAD_CONST               0
+              204  LOAD_CONST               ('_ureduce',)
+              206  IMPORT_NAME_ATTR         numpy.lib.function_base
+              208  IMPORT_FROM              _ureduce
+              210  STORE_NAME               _ureduce
+              212  POP_TOP          
+
+ L.  40       214  LOAD_CONST               0
+              216  LOAD_CONST               ('AxisConcatenator',)
+              218  IMPORT_NAME_ATTR         numpy.lib.index_tricks
+              220  IMPORT_FROM              AxisConcatenator
+              222  STORE_NAME               AxisConcatenator
+              224  POP_TOP          
+
+ L.  43       226  LOAD_CODE                <code_object issequence>
+              228  LOAD_STR                 'issequence'
+              230  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              232  STORE_NAME               issequence
+
+ L.  51       234  LOAD_CONST               (None,)
+              236  LOAD_CODE                <code_object count_masked>
+              238  LOAD_STR                 'count_masked'
+              240  MAKE_FUNCTION_1          'default'
+              242  STORE_NAME               count_masked
+
+ L. 105       244  LOAD_NAME                float
+              246  BUILD_TUPLE_1         1 
+              248  LOAD_CODE                <code_object masked_all>
+              250  LOAD_STR                 'masked_all'
+              252  MAKE_FUNCTION_1          'default'
+              254  STORE_NAME               masked_all
+
+ L. 157       256  LOAD_CODE                <code_object masked_all_like>
+              258  LOAD_STR                 'masked_all_like'
+              260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              262  STORE_NAME               masked_all_like
+
+ L. 215       264  LOAD_BUILD_CLASS 
+              266  LOAD_CODE                <code_object _fromnxfunction>
+              268  LOAD_STR                 '_fromnxfunction'
+              270  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              272  LOAD_STR                 '_fromnxfunction'
+              274  CALL_FUNCTION_2       2  ''
+              276  STORE_NAME               _fromnxfunction
+
+ L. 265       278  LOAD_BUILD_CLASS 
+              280  LOAD_CODE                <code_object _fromnxfunction_single>
+              282  LOAD_STR                 '_fromnxfunction_single'
+              284  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              286  LOAD_STR                 '_fromnxfunction_single'
+              288  LOAD_NAME                _fromnxfunction
+              290  CALL_FUNCTION_3       3  ''
+              292  STORE_NAME               _fromnxfunction_single
+
+ L. 283       294  LOAD_BUILD_CLASS 
+              296  LOAD_CODE                <code_object _fromnxfunction_seq>
+              298  LOAD_STR                 '_fromnxfunction_seq'
+              300  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              302  LOAD_STR                 '_fromnxfunction_seq'
+              304  LOAD_NAME                _fromnxfunction
+              306  CALL_FUNCTION_3       3  ''
+              308  STORE_NAME               _fromnxfunction_seq
+
+ L. 296       310  LOAD_BUILD_CLASS 
+              312  LOAD_CODE                <code_object _fromnxfunction_args>
+              314  LOAD_STR                 '_fromnxfunction_args'
+              316  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              318  LOAD_STR                 '_fromnxfunction_args'
+              320  LOAD_NAME                _fromnxfunction
+              322  CALL_FUNCTION_3       3  ''
+              324  STORE_NAME               _fromnxfunction_args
+
+ L. 321       326  LOAD_BUILD_CLASS 
+              328  LOAD_CODE                <code_object _fromnxfunction_allargs>
+              330  LOAD_STR                 '_fromnxfunction_allargs'
+              332  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              334  LOAD_STR                 '_fromnxfunction_allargs'
+              336  LOAD_NAME                _fromnxfunction
+              338  CALL_FUNCTION_3       3  ''
+              340  STORE_NAME               _fromnxfunction_allargs
+
+ L. 344       342  LOAD_NAME                _fromnxfunction_allargs
+              344  LOAD_STR                 'atleast_1d'
+              346  CALL_FUNCTION_1       1  ''
+              348  STORE_NAME               atleast_1d
+
+ L. 345       350  LOAD_NAME                _fromnxfunction_allargs
+              352  LOAD_STR                 'atleast_2d'
+              354  CALL_FUNCTION_1       1  ''
+              356  STORE_NAME               atleast_2d
+
+ L. 346       358  LOAD_NAME                _fromnxfunction_allargs
+              360  LOAD_STR                 'atleast_3d'
+              362  CALL_FUNCTION_1       1  ''
+              364  STORE_NAME               atleast_3d
+
+ L. 348       366  LOAD_NAME                _fromnxfunction_seq
+              368  LOAD_STR                 'vstack'
+              370  CALL_FUNCTION_1       1  ''
+              372  DUP_TOP          
+              374  STORE_NAME               vstack
+              376  STORE_NAME               row_stack
+
+ L. 349       378  LOAD_NAME                _fromnxfunction_seq
+              380  LOAD_STR                 'hstack'
+              382  CALL_FUNCTION_1       1  ''
+              384  STORE_NAME               hstack
+
+ L. 350       386  LOAD_NAME                _fromnxfunction_seq
+              388  LOAD_STR                 'column_stack'
+              390  CALL_FUNCTION_1       1  ''
+              392  STORE_NAME               column_stack
+
+ L. 351       394  LOAD_NAME                _fromnxfunction_seq
+              396  LOAD_STR                 'dstack'
+              398  CALL_FUNCTION_1       1  ''
+              400  STORE_NAME               dstack
+
+ L. 352       402  LOAD_NAME                _fromnxfunction_seq
+              404  LOAD_STR                 'stack'
+              406  CALL_FUNCTION_1       1  ''
+              408  STORE_NAME               stack
+
+ L. 354       410  LOAD_NAME                _fromnxfunction_single
+              412  LOAD_STR                 'hsplit'
+              414  CALL_FUNCTION_1       1  ''
+              416  STORE_NAME               hsplit
+
+ L. 356       418  LOAD_NAME                _fromnxfunction_single
+              420  LOAD_STR                 'diagflat'
+              422  CALL_FUNCTION_1       1  ''
+              424  STORE_NAME               diagflat
+
+ L. 362       426  LOAD_CODE                <code_object flatten_inplace>
+              428  LOAD_STR                 'flatten_inplace'
+              430  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              432  STORE_NAME               flatten_inplace
+
+ L. 372       434  LOAD_CODE                <code_object apply_along_axis>
+              436  LOAD_STR                 'apply_along_axis'
+              438  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              440  STORE_NAME               apply_along_axis
+
+ L. 452       442  LOAD_NAME                np
+              444  LOAD_ATTR                apply_along_axis
+              446  LOAD_ATTR                __doc__
+              448  LOAD_NAME                apply_along_axis
+              450  STORE_ATTR               __doc__
+
+ L. 455       452  LOAD_CODE                <code_object apply_over_axes>
+              454  LOAD_STR                 'apply_over_axes'
+              456  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              458  STORE_NAME               apply_over_axes
+
+ L. 479       460  LOAD_NAME                apply_over_axes
+              462  LOAD_ATTR                __doc__
+              464  LOAD_CONST               None
+              466  <117>                 1  ''
+          468_470  POP_JUMP_IF_FALSE   508  'to 508'
+
+ L. 480       472  LOAD_NAME                np
+              474  LOAD_ATTR                apply_over_axes
+              476  LOAD_ATTR                __doc__
+
+ L. 481       478  LOAD_CONST               None
+              480  LOAD_NAME                np
+              482  LOAD_ATTR                apply_over_axes
+              484  LOAD_ATTR                __doc__
+              486  LOAD_METHOD              find
+              488  LOAD_STR                 'Notes'
+              490  CALL_METHOD_1         1  ''
+              492  BUILD_SLICE_2         2 
+
+ L. 480       494  BINARY_SUBSCR    
+              496  LOAD_METHOD              rstrip
+              498  CALL_METHOD_0         0  ''
+
+ L. 482       500  LOAD_STR                 '\n\n    Examples\n    --------\n    >>> a = np.ma.arange(24).reshape(2,3,4)\n    >>> a[:,0,1] = np.ma.masked\n    >>> a[:,1,:] = np.ma.masked\n    >>> a\n    masked_array(\n      data=[[[0, --, 2, 3],\n             [--, --, --, --],\n             [8, 9, 10, 11]],\n            [[12, --, 14, 15],\n             [--, --, --, --],\n             [20, 21, 22, 23]]],\n      mask=[[[False,  True, False, False],\n             [ True,  True,  True,  True],\n             [False, False, False, False]],\n            [[False,  True, False, False],\n             [ True,  True,  True,  True],\n             [False, False, False, False]]],\n      fill_value=999999)\n    >>> np.ma.apply_over_axes(np.ma.sum, a, [0,2])\n    masked_array(\n      data=[[[46],\n             [--],\n             [124]]],\n      mask=[[[False],\n             [ True],\n             [False]]],\n      fill_value=999999)\n\n    Tuple axis arguments to ufuncs are equivalent:\n\n    >>> np.ma.sum(a, axis=(0,2)).reshape((1,-1,1))\n    masked_array(\n      data=[[[46],\n             [--],\n             [124]]],\n      mask=[[[False],\n             [ True],\n             [False]]],\n      fill_value=999999)\n    '
+
+ L. 480       502  BINARY_ADD       
+              504  LOAD_NAME                apply_over_axes
+              506  STORE_ATTR               __doc__
+            508_0  COME_FROM           468  '468'
+
+ L. 528       508  LOAD_CONST               (None, None, False)
+              510  LOAD_CODE                <code_object average>
+              512  LOAD_STR                 'average'
+              514  MAKE_FUNCTION_1          'default'
+              516  STORE_NAME               average
+
+ L. 634       518  LOAD_CONST               (None, None, False, False)
+              520  LOAD_CODE                <code_object median>
+              522  LOAD_STR                 'median'
+              524  MAKE_FUNCTION_1          'default'
+              526  STORE_NAME               median
+
+ L. 716       528  LOAD_CONST               (None, None, False)
+              530  LOAD_CODE                <code_object _median>
+              532  LOAD_STR                 '_median'
+              534  MAKE_FUNCTION_1          'default'
+              536  STORE_NAME               _median
+
+ L. 802       538  LOAD_CONST               (None,)
+              540  LOAD_CODE                <code_object compress_nd>
+              542  LOAD_STR                 'compress_nd'
+              544  MAKE_FUNCTION_1          'default'
+              546  STORE_NAME               compress_nd
+
+ L. 844       548  LOAD_CONST               (None,)
+              550  LOAD_CODE                <code_object compress_rowcols>
+              552  LOAD_STR                 'compress_rowcols'
+              554  MAKE_FUNCTION_1          'default'
+              556  STORE_NAME               compress_rowcols
+
+ L. 899       558  LOAD_CODE                <code_object compress_rows>
+              560  LOAD_STR                 'compress_rows'
+              562  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              564  STORE_NAME               compress_rows
+
+ L. 916       566  LOAD_CODE                <code_object compress_cols>
+              568  LOAD_STR                 'compress_cols'
+              570  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              572  STORE_NAME               compress_cols
+
+ L. 933       574  LOAD_NAME                np
+              576  LOAD_ATTR                _NoValue
+              578  BUILD_TUPLE_1         1 
+              580  LOAD_CODE                <code_object mask_rows>
+              582  LOAD_STR                 'mask_rows'
+              584  MAKE_FUNCTION_1          'default'
+              586  STORE_NAME               mask_rows
+
+ L. 983       588  LOAD_NAME                np
+              590  LOAD_ATTR                _NoValue
+              592  BUILD_TUPLE_1         1 
+              594  LOAD_CODE                <code_object mask_cols>
+              596  LOAD_STR                 'mask_cols'
+              598  MAKE_FUNCTION_1          'default'
+              600  STORE_NAME               mask_cols
+
+ L.1037       602  LOAD_CONST               (None, None)
+              604  LOAD_CODE                <code_object ediff1d>
+              606  LOAD_STR                 'ediff1d'
+              608  MAKE_FUNCTION_1          'default'
+              610  STORE_NAME               ediff1d
+
+ L.1066       612  LOAD_CONST               (False, False)
+              614  LOAD_CODE                <code_object unique>
+              616  LOAD_STR                 'unique'
+              618  MAKE_FUNCTION_1          'default'
+              620  STORE_NAME               unique
+
+ L.1090       622  LOAD_CONST               (False,)
+              624  LOAD_CODE                <code_object intersect1d>
+              626  LOAD_STR                 'intersect1d'
+              628  MAKE_FUNCTION_1          'default'
+              630  STORE_NAME               intersect1d
+
+ L.1122       632  LOAD_CONST               (False,)
+              634  LOAD_CODE                <code_object setxor1d>
+              636  LOAD_STR                 'setxor1d'
+              638  MAKE_FUNCTION_1          'default'
+              640  STORE_NAME               setxor1d
+
+ L.1149       642  LOAD_CONST               (False, False)
+              644  LOAD_CODE                <code_object in1d>
+              646  LOAD_STR                 'in1d'
+              648  MAKE_FUNCTION_1          'default'
+              650  STORE_NAME               in1d
+
+ L.1191       652  LOAD_CONST               (False, False)
+              654  LOAD_CODE                <code_object isin>
+              656  LOAD_STR                 'isin'
+              658  MAKE_FUNCTION_1          'default'
+              660  STORE_NAME               isin
+
+ L.1214       662  LOAD_CODE                <code_object union1d>
+              664  LOAD_STR                 'union1d'
+              666  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              668  STORE_NAME               union1d
+
+ L.1228       670  LOAD_CONST               (False,)
+              672  LOAD_CODE                <code_object setdiff1d>
+              674  LOAD_STR                 'setdiff1d'
+              676  MAKE_FUNCTION_1          'default'
+              678  STORE_NAME               setdiff1d
+
+ L.1261       680  LOAD_CONST               (None, True, True)
+              682  LOAD_CODE                <code_object _covhelper>
+              684  LOAD_STR                 '_covhelper'
+              686  MAKE_FUNCTION_1          'default'
+              688  STORE_NAME               _covhelper
+
+ L.1304       690  LOAD_CONST               (None, True, False, True, None)
+              692  LOAD_CODE                <code_object cov>
+              694  LOAD_STR                 'cov'
+              696  MAKE_FUNCTION_1          'default'
+              698  STORE_NAME               cov
+
+ L.1377       700  LOAD_CONST               None
+              702  LOAD_CONST               True
+              704  LOAD_NAME                np
+              706  LOAD_ATTR                _NoValue
+              708  LOAD_CONST               True
+
+ L.1378       710  LOAD_NAME                np
+              712  LOAD_ATTR                _NoValue
+
+ L.1377       714  BUILD_TUPLE_5         5 
+              716  LOAD_CODE                <code_object corrcoef>
+              718  LOAD_STR                 'corrcoef'
+              720  MAKE_FUNCTION_1          'default'
+              722  STORE_NAME               corrcoef
+
+ L.1467       724  LOAD_BUILD_CLASS 
+              726  LOAD_CODE                <code_object MAxisConcatenator>
+              728  LOAD_STR                 'MAxisConcatenator'
+              730  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              732  LOAD_STR                 'MAxisConcatenator'
+              734  LOAD_NAME                AxisConcatenator
+              736  CALL_FUNCTION_3       3  ''
+              738  STORE_NAME               MAxisConcatenator
+
+ L.1497       740  LOAD_BUILD_CLASS 
+              742  LOAD_CODE                <code_object mr_class>
+              744  LOAD_STR                 'mr_class'
+              746  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              748  LOAD_STR                 'mr_class'
+              750  LOAD_NAME                MAxisConcatenator
+              752  CALL_FUNCTION_3       3  ''
+              754  STORE_NAME               mr_class
+
+ L.1518       756  LOAD_NAME                mr_class
+              758  CALL_FUNCTION_0       0  ''
+              760  STORE_NAME               mr_
+
+ L.1524       762  LOAD_CODE                <code_object flatnotmasked_edges>
+              764  LOAD_STR                 'flatnotmasked_edges'
+              766  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              768  STORE_NAME               flatnotmasked_edges
+
+ L.1579       770  LOAD_CONST               (None,)
+              772  LOAD_CODE                <code_object notmasked_edges>
+              774  LOAD_STR                 'notmasked_edges'
+              776  MAKE_FUNCTION_1          'default'
+              778  STORE_NAME               notmasked_edges
+
+ L.1630       780  LOAD_CODE                <code_object flatnotmasked_contiguous>
+              782  LOAD_STR                 'flatnotmasked_contiguous'
+              784  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              786  STORE_NAME               flatnotmasked_contiguous
+
+ L.1686       788  LOAD_CONST               (None,)
+              790  LOAD_CODE                <code_object notmasked_contiguous>
+              792  LOAD_STR                 'notmasked_contiguous'
+              794  MAKE_FUNCTION_1          'default'
+              796  STORE_NAME               notmasked_contiguous
+
+ L.1763       798  LOAD_CODE                <code_object _ezclump>
+              800  LOAD_STR                 '_ezclump'
+              802  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              804  STORE_NAME               _ezclump
+
+ L.1792       806  LOAD_CODE                <code_object clump_unmasked>
+              808  LOAD_STR                 'clump_unmasked'
+              810  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              812  STORE_NAME               clump_unmasked
+
+ L.1831       814  LOAD_CODE                <code_object clump_masked>
+              816  LOAD_STR                 'clump_masked'
+              818  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              820  STORE_NAME               clump_masked
+
+ L.1875       822  LOAD_CONST               (None,)
+              824  LOAD_CODE                <code_object vander>
+              826  LOAD_STR                 'vander'
+              828  MAKE_FUNCTION_1          'default'
+              830  STORE_NAME               vander
+
+ L.1886       832  LOAD_NAME                ma
+              834  LOAD_METHOD              doc_note
+              836  LOAD_NAME                np
+              838  LOAD_ATTR                vander
+              840  LOAD_ATTR                __doc__
+              842  LOAD_NAME                vander
+              844  LOAD_ATTR                __doc__
+              846  CALL_METHOD_2         2  ''
+              848  LOAD_NAME                vander
+              850  STORE_ATTR               __doc__
+
+ L.1889       852  LOAD_CONST               (None, False, None, False)
+              854  LOAD_CODE                <code_object polyfit>
+              856  LOAD_STR                 'polyfit'
+              858  MAKE_FUNCTION_1          'default'
+              860  STORE_NAME               polyfit
+
+ L.1923       862  LOAD_NAME                ma
+              864  LOAD_METHOD              doc_note
+              866  LOAD_NAME                np
+              868  LOAD_ATTR                polyfit
+              870  LOAD_ATTR                __doc__
+              872  LOAD_NAME                polyfit
+              874  LOAD_ATTR                __doc__
+              876  CALL_METHOD_2         2  ''
+              878  LOAD_NAME                polyfit
+              880  STORE_ATTR               __doc__
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L.  11         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('apply_along_axis', 'apply_over_axes', 'atleast_1d', 'atleast_2d', 'atleast_3d', 'average', 'clump_masked', 'clump_unmasked', 'column_stack', 'compress_cols', 'compress_nd', 'compress_rowcols', 'compress_rows', 'count_masked', 'corrcoef', 'cov', 'diagflat', 'dot', 'dstack', 'ediff1d', 'flatnotmasked_contiguous', 'flatnotmasked_edges', 'hsplit', 'hstack', 'isin', 'in1d', 'intersect1d', 'mask_cols', 'mask_rowcols', 'mask_rows', 'masked_all', 'masked_all_like', 'median', 'mr_', 'notmasked_contiguous', 'notmasked_edges', 'polyfit', 'row_stack', 'setdiff1d', 'setxor1d', 'stack', 'unique', 'union1d', 'vander', 'vstack')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/162660.pyc -- 
+# decompile failed

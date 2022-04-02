@@ -1,0 +1,62 @@
+Instruction context:
+   
+ L.   7         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('encode_7or8bit', 'encode_base64', 'encode_noop', 'encode_quopri')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101215.pyc -- 
+# decompile failed
+
+# file test/101215.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_STR                 'Encodings and related functions.'
+                2  STORE_NAME               __doc__
+
+ L.   7         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('encode_7or8bit', 'encode_base64', 'encode_noop', 'encode_quopri')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  15        12  LOAD_CONST               0
+               14  LOAD_CONST               ('encodebytes',)
+               16  IMPORT_NAME              base64
+               18  IMPORT_FROM              encodebytes
+               20  STORE_NAME               _bencode
+               22  POP_TOP          
+
+ L.  16        24  LOAD_CONST               0
+               26  LOAD_CONST               ('encodestring',)
+               28  IMPORT_NAME              quopri
+               30  IMPORT_FROM              encodestring
+               32  STORE_NAME               _encodestring
+               34  POP_TOP          
+
+ L.  20        36  LOAD_CODE                <code_object _qencode>
+               38  LOAD_STR                 '_qencode'
+               40  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               42  STORE_NAME               _qencode
+
+ L.  26        44  LOAD_CODE                <code_object encode_base64>
+               46  LOAD_STR                 'encode_base64'
+               48  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               50  STORE_NAME               encode_base64
+
+ L.  38        52  LOAD_CODE                <code_object encode_quopri>
+               54  LOAD_STR                 'encode_quopri'
+               56  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               58  STORE_NAME               encode_quopri
+
+ L.  50        60  LOAD_CODE                <code_object encode_7or8bit>
+               62  LOAD_STR                 'encode_7or8bit'
+               64  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               66  STORE_NAME               encode_7or8bit
+
+ L.  68        68  LOAD_CODE                <code_object encode_noop>
+               70  LOAD_STR                 'encode_noop'
+               72  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               74  STORE_NAME               encode_noop
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

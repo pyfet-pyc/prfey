@@ -1,0 +1,138 @@
+Instruction context:
+   
+ L.  14        54  DUP_TOP          
+                  56  LOAD_NAME                ImportError
+->                58  <121>                74  ''
+                  60  POP_TOP          
+                  62  POP_TOP          
+                  64  POP_TOP          
+
+test/111873.pyc -- 
+# decompile failed
+
+# file test/111873.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'distutils.dist\n\nProvides the Distribution class, which represents the module distribution\nbeing built/installed/distributed.\n'
+                2  STORE_NAME               __doc__
+
+ L.   7         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.   8        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              os
+               18  STORE_NAME               os
+
+ L.   9        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              re
+               26  STORE_NAME               re
+
+ L.  10        28  LOAD_CONST               0
+               30  LOAD_CONST               ('message_from_file',)
+               32  IMPORT_NAME              email
+               34  IMPORT_FROM              message_from_file
+               36  STORE_NAME               message_from_file
+               38  POP_TOP          
+
+ L.  12        40  SETUP_FINALLY        54  'to 54'
+
+ L.  13        42  LOAD_CONST               0
+               44  LOAD_CONST               None
+               46  IMPORT_NAME              warnings
+               48  STORE_NAME               warnings
+               50  POP_BLOCK        
+               52  JUMP_FORWARD         76  'to 76'
+             54_0  COME_FROM_FINALLY    40  '40'
+
+ L.  14        54  DUP_TOP          
+               56  LOAD_NAME                ImportError
+               58  <121>                74  ''
+               60  POP_TOP          
+               62  POP_TOP          
+               64  POP_TOP          
+
+ L.  15        66  LOAD_CONST               None
+               68  STORE_NAME               warnings
+               70  POP_EXCEPT       
+               72  JUMP_FORWARD         76  'to 76'
+               74  <48>             
+             76_0  COME_FROM            72  '72'
+             76_1  COME_FROM            52  '52'
+
+ L.  17        76  LOAD_CONST               0
+               78  LOAD_CONST               ('*',)
+               80  IMPORT_NAME_ATTR         distutils.errors
+               82  IMPORT_STAR      
+
+ L.  18        84  LOAD_CONST               0
+               86  LOAD_CONST               ('FancyGetopt', 'translate_longopt')
+               88  IMPORT_NAME_ATTR         distutils.fancy_getopt
+               90  IMPORT_FROM              FancyGetopt
+               92  STORE_NAME               FancyGetopt
+               94  IMPORT_FROM              translate_longopt
+               96  STORE_NAME               translate_longopt
+               98  POP_TOP          
+
+ L.  19       100  LOAD_CONST               0
+              102  LOAD_CONST               ('check_environ', 'strtobool', 'rfc822_escape')
+              104  IMPORT_NAME_ATTR         distutils.util
+              106  IMPORT_FROM              check_environ
+              108  STORE_NAME               check_environ
+              110  IMPORT_FROM              strtobool
+              112  STORE_NAME               strtobool
+              114  IMPORT_FROM              rfc822_escape
+              116  STORE_NAME               rfc822_escape
+              118  POP_TOP          
+
+ L.  20       120  LOAD_CONST               0
+              122  LOAD_CONST               ('log',)
+              124  IMPORT_NAME              distutils
+              126  IMPORT_FROM              log
+              128  STORE_NAME               log
+              130  POP_TOP          
+
+ L.  21       132  LOAD_CONST               0
+              134  LOAD_CONST               ('DEBUG',)
+              136  IMPORT_NAME_ATTR         distutils.debug
+              138  IMPORT_FROM              DEBUG
+              140  STORE_NAME               DEBUG
+              142  POP_TOP          
+
+ L.  27       144  LOAD_NAME                re
+              146  LOAD_METHOD              compile
+              148  LOAD_STR                 '^[a-zA-Z]([a-zA-Z0-9_]*)$'
+              150  CALL_METHOD_1         1  ''
+              152  STORE_NAME               command_re
+
+ L.  30       154  LOAD_CODE                <code_object _ensure_list>
+              156  LOAD_STR                 '_ensure_list'
+              158  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              160  STORE_NAME               _ensure_list
+
+ L.  44       162  LOAD_BUILD_CLASS 
+              164  LOAD_CODE                <code_object Distribution>
+              166  LOAD_STR                 'Distribution'
+              168  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              170  LOAD_STR                 'Distribution'
+              172  CALL_FUNCTION_2       2  ''
+              174  STORE_NAME               Distribution
+
+ L.1023       176  LOAD_BUILD_CLASS 
+              178  LOAD_CODE                <code_object DistributionMetadata>
+              180  LOAD_STR                 'DistributionMetadata'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  LOAD_STR                 'DistributionMetadata'
+              186  CALL_FUNCTION_2       2  ''
+              188  STORE_NAME               DistributionMetadata
+
+ L.1249       190  LOAD_CODE                <code_object fix_help_options>
+              192  LOAD_STR                 'fix_help_options'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  STORE_NAME               fix_help_options
+
+Parse error at or near `<121>' instruction at offset 58
+

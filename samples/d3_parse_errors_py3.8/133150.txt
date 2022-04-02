@@ -1,0 +1,73 @@
+Instruction context:
+   
+ L. 187       100  BUILD_LIST_0          0 
+                 102  ROT_FOUR         
+->               104  POP_BLOCK        
+                 106  POP_EXCEPT       
+                 108  CALL_FINALLY        112  'to 112'
+                 110  RETURN_VALUE     
+               112_0  COME_FROM           108  '108'
+               112_1  COME_FROM_FINALLY    86  '86'
+                 112  LOAD_CONST               None
+                 114  STORE_FAST               'e'
+                 116  DELETE_FAST              'e'
+                 118  END_FINALLY      
+                 120  POP_EXCEPT       
+                 122  JUMP_FORWARD        126  'to 126'
+               124_0  COME_FROM            78  '78'
+                 124  END_FINALLY      
+               126_0  COME_FROM           122  '122'
+               126_1  COME_FROM            32  '32'
+Instruction context:
+   
+ L. 236        56  POP_BLOCK        
+->                58  POP_EXCEPT       
+                  60  CALL_FINALLY         82  'to 82'
+                  62  LOAD_CONST               b''
+                  64  RETURN_VALUE     
+                66_0  COME_FROM            54  '54'
+                66_1  COME_FROM            44  '44'
+Instruction context:
+   
+ L. 259        54  POP_BLOCK        
+->                56  POP_EXCEPT       
+                  58  CALL_FINALLY         80  'to 80'
+                  60  LOAD_CONST               0
+                  62  RETURN_VALUE     
+                64_0  COME_FROM            52  '52'
+                64_1  COME_FROM            42  '42'
+Instruction context:
+   
+ L. 287        76  POP_EXCEPT       
+->                78  JUMP_BACK             0  'to 0'
+                  80  POP_EXCEPT       
+                  82  JUMP_BACK             0  'to 0'
+                84_0  COME_FROM            26  '26'
+                  84  END_FINALLY      
+Instruction context:
+   
+ L. 305        48  POP_EXCEPT       
+->                50  LOAD_CONST               None
+                  52  RETURN_VALUE     
+                54_0  COME_FROM            40  '40'
+                  54  END_FINALLY      
+                  56  JUMP_FORWARD         72  'to 72'
+                58_0  COME_FROM             8  '8'
+Instruction context:
+-> 
+ L. 423       144  DUP_TOP          
+                 146  LOAD_GLOBAL              OpenSSL
+                 148  LOAD_ATTR                SSL
+                 150  LOAD_ATTR                Error
+                 152  COMPARE_OP               exception-match
+                 154  POP_JUMP_IF_FALSE   194  'to 194'
+                 156  POP_TOP          
+                 158  STORE_FAST               'e'
+                 160  POP_TOP          
+                 162  SETUP_FINALLY       182  'to 182'
+
+../test/133150.pyc -- 
+# decompile failed
+
+# file ../test/133150.pyc
+# Deparsing stopped due to parse error

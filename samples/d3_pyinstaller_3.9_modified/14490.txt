@@ -1,0 +1,280 @@
+
+# file test/14490.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.   2        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              datetime
+               18  STORE_NAME               datetime
+
+ L.   3        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              logging
+               26  STORE_NAME               logging
+
+ L.   4        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              os
+               34  STORE_NAME               os
+
+ L.   5        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              socket
+               42  STORE_NAME               socket
+
+ L.   6        44  LOAD_CONST               0
+               46  LOAD_CONST               ('error', 'timeout')
+               48  IMPORT_NAME              socket
+               50  IMPORT_FROM              error
+               52  STORE_NAME               SocketError
+               54  IMPORT_FROM              timeout
+               56  STORE_NAME               SocketTimeout
+               58  POP_TOP          
+
+ L.   7        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              warnings
+               66  STORE_NAME               warnings
+
+ L.   8        68  LOAD_CONST               1
+               70  LOAD_CONST               ('six',)
+               72  IMPORT_NAME              packages
+               74  IMPORT_FROM              six
+               76  STORE_NAME               six
+               78  POP_TOP          
+
+ L.   9        80  LOAD_CONST               1
+               82  LOAD_CONST               ('HTTPConnection',)
+               84  IMPORT_NAME_ATTR         packages.six.moves.http_client
+               86  IMPORT_FROM              HTTPConnection
+               88  STORE_NAME               _HTTPConnection
+               90  POP_TOP          
+
+ L.  10        92  LOAD_CONST               1
+               94  LOAD_CONST               ('HTTPException',)
+               96  IMPORT_NAME_ATTR         packages.six.moves.http_client
+               98  IMPORT_FROM              HTTPException
+              100  STORE_NAME               HTTPException
+              102  POP_TOP          
+
+ L.  12       104  SETUP_FINALLY       124  'to 124'
+
+ L.  13       106  LOAD_CONST               0
+              108  LOAD_CONST               None
+              110  IMPORT_NAME              ssl
+              112  STORE_NAME               ssl
+
+ L.  14       114  LOAD_NAME                ssl
+              116  LOAD_ATTR                SSLError
+              118  STORE_NAME               BaseSSLError
+              120  POP_BLOCK        
+              122  JUMP_FORWARD        166  'to 166'
+            124_0  COME_FROM_FINALLY   104  '104'
+
+ L.  15       124  DUP_TOP          
+              126  LOAD_NAME                ImportError
+              128  LOAD_NAME                AttributeError
+              130  BUILD_TUPLE_2         2 
+              132  <121>               164  ''
+              134  POP_TOP          
+              136  POP_TOP          
+              138  POP_TOP          
+
+ L.  16       140  LOAD_CONST               None
+              142  STORE_NAME               ssl
+
+ L.  18       144  LOAD_BUILD_CLASS 
+              146  LOAD_CODE                <code_object BaseSSLError>
+              148  LOAD_STR                 'BaseSSLError'
+              150  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              152  LOAD_STR                 'BaseSSLError'
+              154  LOAD_NAME                BaseException
+              156  CALL_FUNCTION_3       3  ''
+              158  STORE_NAME               BaseSSLError
+              160  POP_EXCEPT       
+              162  JUMP_FORWARD        166  'to 166'
+              164  <48>             
+            166_0  COME_FROM           162  '162'
+            166_1  COME_FROM           122  '122'
+
+ L.  22       166  SETUP_FINALLY       176  'to 176'
+
+ L.  24       168  LOAD_NAME                ConnectionError
+              170  STORE_NAME               ConnectionError
+              172  POP_BLOCK        
+              174  JUMP_FORWARD        210  'to 210'
+            176_0  COME_FROM_FINALLY   166  '166'
+
+ L.  25       176  DUP_TOP          
+              178  LOAD_NAME                NameError
+              180  <121>               208  ''
+              182  POP_TOP          
+              184  POP_TOP          
+              186  POP_TOP          
+
+ L.  26       188  LOAD_BUILD_CLASS 
+              190  LOAD_CODE                <code_object ConnectionError>
+              192  LOAD_STR                 'ConnectionError'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  LOAD_STR                 'ConnectionError'
+              198  LOAD_NAME                Exception
+              200  CALL_FUNCTION_3       3  ''
+              202  STORE_NAME               ConnectionError
+              204  POP_EXCEPT       
+              206  JUMP_FORWARD        210  'to 210'
+              208  <48>             
+            210_0  COME_FROM           206  '206'
+            210_1  COME_FROM           174  '174'
+
+ L.  30       210  LOAD_CONST               1
+              212  LOAD_CONST               ('NewConnectionError', 'ConnectTimeoutError', 'SubjectAltNameWarning', 'SystemTimeWarning')
+              214  IMPORT_NAME              exceptions
+              216  IMPORT_FROM              NewConnectionError
+              218  STORE_NAME               NewConnectionError
+              220  IMPORT_FROM              ConnectTimeoutError
+              222  STORE_NAME               ConnectTimeoutError
+              224  IMPORT_FROM              SubjectAltNameWarning
+              226  STORE_NAME               SubjectAltNameWarning
+              228  IMPORT_FROM              SystemTimeWarning
+              230  STORE_NAME               SystemTimeWarning
+              232  POP_TOP          
+
+ L.  36       234  LOAD_CONST               1
+              236  LOAD_CONST               ('match_hostname', 'CertificateError')
+              238  IMPORT_NAME_ATTR         packages.ssl_match_hostname
+              240  IMPORT_FROM              match_hostname
+              242  STORE_NAME               match_hostname
+              244  IMPORT_FROM              CertificateError
+              246  STORE_NAME               CertificateError
+              248  POP_TOP          
+
+ L.  38       250  LOAD_CONST               1
+              252  LOAD_CONST               ('resolve_cert_reqs', 'resolve_ssl_version', 'assert_fingerprint', 'create_urllib3_context', 'ssl_wrap_socket')
+              254  IMPORT_NAME_ATTR         util.ssl_
+              256  IMPORT_FROM              resolve_cert_reqs
+              258  STORE_NAME               resolve_cert_reqs
+              260  IMPORT_FROM              resolve_ssl_version
+              262  STORE_NAME               resolve_ssl_version
+              264  IMPORT_FROM              assert_fingerprint
+              266  STORE_NAME               assert_fingerprint
+              268  IMPORT_FROM              create_urllib3_context
+              270  STORE_NAME               create_urllib3_context
+              272  IMPORT_FROM              ssl_wrap_socket
+              274  STORE_NAME               ssl_wrap_socket
+              276  POP_TOP          
+
+ L.  47       278  LOAD_CONST               1
+              280  LOAD_CONST               ('connection',)
+              282  IMPORT_NAME              util
+              284  IMPORT_FROM              connection
+              286  STORE_NAME               connection
+              288  POP_TOP          
+
+ L.  49       290  LOAD_CONST               1
+              292  LOAD_CONST               ('HTTPHeaderDict',)
+              294  IMPORT_NAME              _collections
+              296  IMPORT_FROM              HTTPHeaderDict
+              298  STORE_NAME               HTTPHeaderDict
+              300  POP_TOP          
+
+ L.  51       302  LOAD_NAME                logging
+              304  LOAD_METHOD              getLogger
+              306  LOAD_NAME                __name__
+              308  CALL_METHOD_1         1  ''
+              310  STORE_NAME               log
+
+ L.  54       312  LOAD_CONST               80
+
+ L.  55       314  LOAD_CONST               443
+
+ L.  53       316  LOAD_CONST               ('http', 'https')
+              318  BUILD_CONST_KEY_MAP_2     2 
+              320  STORE_NAME               port_by_scheme
+
+ L.  62       322  LOAD_NAME                datetime
+              324  LOAD_METHOD              date
+              326  LOAD_CONST               2017
+              328  LOAD_CONST               6
+              330  LOAD_CONST               30
+              332  CALL_METHOD_3         3  ''
+              334  STORE_NAME               RECENT_DATE
+
+ L.  65       336  LOAD_BUILD_CLASS 
+              338  LOAD_CODE                <code_object DummyConnection>
+              340  LOAD_STR                 'DummyConnection'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  LOAD_STR                 'DummyConnection'
+              346  LOAD_NAME                object
+              348  CALL_FUNCTION_3       3  ''
+              350  STORE_NAME               DummyConnection
+
+ L.  70       352  LOAD_BUILD_CLASS 
+              354  LOAD_CODE                <code_object HTTPConnection>
+              356  LOAD_STR                 'HTTPConnection'
+              358  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              360  LOAD_STR                 'HTTPConnection'
+              362  LOAD_NAME                _HTTPConnection
+              364  LOAD_NAME                object
+              366  CALL_FUNCTION_4       4  ''
+              368  STORE_NAME               HTTPConnection
+
+ L. 223       370  LOAD_BUILD_CLASS 
+              372  LOAD_CODE                <code_object HTTPSConnection>
+              374  LOAD_STR                 'HTTPSConnection'
+              376  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              378  LOAD_STR                 'HTTPSConnection'
+              380  LOAD_NAME                HTTPConnection
+              382  CALL_FUNCTION_3       3  ''
+              384  STORE_NAME               HTTPSConnection
+
+ L. 263       386  LOAD_BUILD_CLASS 
+              388  LOAD_CODE                <code_object VerifiedHTTPSConnection>
+              390  LOAD_STR                 'VerifiedHTTPSConnection'
+              392  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              394  LOAD_STR                 'VerifiedHTTPSConnection'
+              396  LOAD_NAME                HTTPSConnection
+              398  CALL_FUNCTION_3       3  ''
+              400  STORE_NAME               VerifiedHTTPSConnection
+
+ L. 372       402  LOAD_CODE                <code_object _match_hostname>
+              404  LOAD_STR                 '_match_hostname'
+              406  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              408  STORE_NAME               _match_hostname
+
+ L. 386       410  LOAD_NAME                ssl
+          412_414  POP_JUMP_IF_FALSE   426  'to 426'
+
+ L. 388       416  LOAD_NAME                HTTPSConnection
+              418  STORE_NAME               UnverifiedHTTPSConnection
+
+ L. 389       420  LOAD_NAME                VerifiedHTTPSConnection
+              422  STORE_NAME               HTTPSConnection
+              424  JUMP_FORWARD        430  'to 430'
+            426_0  COME_FROM           412  '412'
+
+ L. 391       426  LOAD_NAME                DummyConnection
+              428  STORE_NAME               HTTPSConnection
+            430_0  COME_FROM           424  '424'
+
+Parse error at or near `<121>' instruction at offset 132
+
+Instruction context:
+   
+ L.  15       124  DUP_TOP          
+                 126  LOAD_NAME                ImportError
+                 128  LOAD_NAME                AttributeError
+                 130  BUILD_TUPLE_2         2 
+->               132  <121>               164  ''
+                 134  POP_TOP          
+                 136  POP_TOP          
+                 138  POP_TOP          
+
+test/14490.pyc -- 
+# decompile failed

@@ -1,0 +1,130 @@
+Instruction context:
+   
+ L.   8        62  DUP_TOP          
+                  64  LOAD_NAME                NameError
+->                66  <121>                98  ''
+                  68  POP_TOP          
+                  70  POP_TOP          
+                  72  POP_TOP          
+
+test/31419.pyc -- 
+# decompile failed
+
+# file test/31419.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+                8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              types
+               14  STORE_NAME               types
+
+ L.   2        16  LOAD_CONST               1
+               18  LOAD_CONST               ('allocate_lock',)
+               20  IMPORT_NAME              lock
+               22  IMPORT_FROM              allocate_lock
+               24  STORE_NAME               allocate_lock
+               26  POP_TOP          
+
+ L.   3        28  LOAD_CONST               1
+               30  LOAD_CONST               ('CDefError',)
+               32  IMPORT_NAME              error
+               34  IMPORT_FROM              CDefError
+               36  STORE_NAME               CDefError
+               38  POP_TOP          
+
+ L.   4        40  LOAD_CONST               1
+               42  LOAD_CONST               ('model',)
+               44  IMPORT_NAME              
+               46  IMPORT_FROM              model
+               48  STORE_NAME               model
+               50  POP_TOP          
+
+ L.   6        52  SETUP_FINALLY        62  'to 62'
+
+ L.   7        54  LOAD_NAME                callable
+               56  POP_TOP          
+               58  POP_BLOCK        
+               60  JUMP_FORWARD        100  'to 100'
+             62_0  COME_FROM_FINALLY    52  '52'
+
+ L.   8        62  DUP_TOP          
+               64  LOAD_NAME                NameError
+               66  <121>                98  ''
+               68  POP_TOP          
+               70  POP_TOP          
+               72  POP_TOP          
+
+ L.  10        74  LOAD_CONST               0
+               76  LOAD_CONST               ('Callable',)
+               78  IMPORT_NAME              collections
+               80  IMPORT_FROM              Callable
+               82  STORE_NAME               Callable
+               84  POP_TOP          
+
+ L.  11        86  LOAD_LAMBDA              '<code_object <lambda>>'
+               88  LOAD_STR                 '<lambda>'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  STORE_NAME               callable
+               94  POP_EXCEPT       
+               96  JUMP_FORWARD        100  'to 100'
+               98  <48>             
+            100_0  COME_FROM            96  '96'
+            100_1  COME_FROM            60  '60'
+
+ L.  13       100  SETUP_FINALLY       110  'to 110'
+
+ L.  14       102  LOAD_NAME                basestring
+              104  POP_TOP          
+              106  POP_BLOCK        
+              108  JUMP_FORWARD        132  'to 132'
+            110_0  COME_FROM_FINALLY   100  '100'
+
+ L.  15       110  DUP_TOP          
+              112  LOAD_NAME                NameError
+              114  <121>               130  ''
+              116  POP_TOP          
+              118  POP_TOP          
+              120  POP_TOP          
+
+ L.  17       122  LOAD_NAME                str
+              124  STORE_NAME               basestring
+              126  POP_EXCEPT       
+              128  JUMP_FORWARD        132  'to 132'
+              130  <48>             
+            132_0  COME_FROM           128  '128'
+            132_1  COME_FROM           108  '108'
+
+ L.  19       132  LOAD_NAME                object
+              134  CALL_FUNCTION_0       0  ''
+              136  STORE_NAME               _unspecified
+
+ L.  23       138  LOAD_BUILD_CLASS 
+              140  LOAD_CODE                <code_object FFI>
+              142  LOAD_STR                 'FFI'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  LOAD_STR                 'FFI'
+              148  LOAD_NAME                object
+              150  CALL_FUNCTION_3       3  ''
+              152  STORE_NAME               FFI
+
+ L. 804       154  LOAD_CODE                <code_object _load_backend_lib>
+              156  LOAD_STR                 '_load_backend_lib'
+              158  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              160  STORE_NAME               _load_backend_lib
+
+ L. 830       162  LOAD_CODE                <code_object _make_ffi_library>
+              164  LOAD_STR                 '_make_ffi_library'
+              166  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              168  STORE_NAME               _make_ffi_library
+
+ L. 952       170  LOAD_CODE                <code_object _builtin_function_type>
+              172  LOAD_STR                 '_builtin_function_type'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  STORE_NAME               _builtin_function_type
+
+Parse error at or near `<121>' instruction at offset 66
+

@@ -1,0 +1,69 @@
+Instruction context:
+   
+ L.  36        30  DUP_TOP          
+                  32  LOAD_GLOBAL              KeyError
+->                34  <121>                46  ''
+                  36  POP_TOP          
+                  38  POP_TOP          
+                  40  POP_TOP          
+Instruction context:
+   
+ L. 112        52  DUP_TOP          
+                  54  LOAD_GLOBAL              ImportError
+->                56  <121>               124  ''
+                  58  POP_TOP          
+                  60  STORE_FAST               'e'
+                  62  POP_TOP          
+                  64  SETUP_FINALLY       116  'to 116'
+Instruction context:
+   
+ L. 191        50  DUP_TOP          
+                  52  LOAD_GLOBAL              _Error
+->                54  <121>               108  ''
+                  56  POP_TOP          
+                  58  STORE_FAST               'exc'
+                  60  POP_TOP          
+                  62  SETUP_FINALLY       100  'to 100'
+Instruction context:
+   
+ L. 207        14  LOAD_FAST                'run_name'
+                  16  LOAD_CONST               None
+->                18  <117>                 0  ''
+                  20  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L. 224        26  LOAD_GLOBAL              _get_module_details
+                  28  LOAD_FAST                'main_name'
+                  30  CALL_FUNCTION_1       1  ''
+                  32  POP_BLOCK        
+->                34  POP_BLOCK        
+Instruction context:
+   
+ L. 238        30  LOAD_GLOBAL              read_code
+                  32  LOAD_FAST                'f'
+                  34  CALL_FUNCTION_1       1  ''
+                  36  STORE_FAST               'code'
+                  38  POP_BLOCK        
+                  40  LOAD_CONST               None
+->                42  DUP_TOP          
+                  44  DUP_TOP          
+                  46  CALL_FUNCTION_3       3  ''
+                  48  POP_TOP          
+                  50  JUMP_FORWARD         68  'to 68'
+                52_0  COME_FROM_WITH       26  '26'
+                  52  <49>             
+                  54  POP_JUMP_IF_TRUE     58  'to 58'
+                  56  <48>             
+                58_0  COME_FROM            54  '54'
+                  58  POP_TOP          
+                  60  POP_TOP          
+                  62  POP_TOP          
+                  64  POP_EXCEPT       
+                  66  POP_TOP          
+                68_0  COME_FROM            50  '50'
+
+test/101085.pyc -- 
+# decompile failed
+
+# file test/101085.pyc
+# Deparsing stopped due to parse error

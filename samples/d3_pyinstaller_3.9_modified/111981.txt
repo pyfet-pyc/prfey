@@ -1,0 +1,78 @@
+Instruction context:
+   
+ L.  91        54  BUILD_LIST_0          0 
+                  56  LOAD_CONST               ('abstract_declarator', 'assignment_expression', 'declaration_list', 'declaration_specifiers_no_type', 'designation', 'expression', 'identifier_list', 'init_declarator_list', 'id_init_declarator_list', 'initializer_list', 'parameter_type_list', 'block_item_list', 'type_qualifier_list', 'struct_declarator_list')
+->                58  CALL_FINALLY         61  'to 61'
+                  60  STORE_FAST               'rules_with_opt'
+Instruction context:
+   
+ L. 189        24  LOAD_FAST                'in_scope'
+                  26  LOAD_CONST               None
+->                28  <117>                 1  ''
+                  30  POP_JUMP_IF_FALSE_BACK    10  'to 10'
+                  32  LOAD_FAST                'in_scope'
+                  34  ROT_TWO          
+                  36  POP_TOP          
+                  38  RETURN_VALUE     
+                  40  JUMP_BACK            10  'to 10'
+                42_0  COME_FROM            10  '10'
+Instruction context:
+   
+ L. 688         8  LOAD_FAST                'p'
+                  10  LOAD_CONST               2
+                  12  BINARY_SUBSCR    
+                  14  LOAD_CONST               None
+->                16  <117>                 0  ''
+                  18  POP_JUMP_IF_FALSE   150  'to 150'
+Instruction context:
+   
+ L. 974         8  LOAD_STR                 'typedef'
+                  10  LOAD_FAST                'spec'
+                  12  LOAD_STR                 'storage'
+                  14  BINARY_SUBSCR    
+->                16  <118>                 1  ''
+                  18  POP_JUMP_IF_TRUE     24  'to 24'
+                  20  <74>             
+                  22  RAISE_VARARGS_1       1  'exception instance'
+                24_0  COME_FROM            18  '18'
+Instruction context:
+   
+ L.1147        16  LOAD_FAST                'qual'
+                  18  LOAD_CONST               None
+->                20  <117>                 1  ''
+                  22  POP_JUMP_IF_FALSE_BACK    12  'to 12'
+
+test/111981.pyc -- 
+# decompile failed
+
+# file test/111981.pyc
+# --- This code section failed: ---
+
+ L.1146         0  BUILD_LIST_0          0 
+                2  LOAD_FAST                '.0'
+              4_0  COME_FROM            30  '30'
+                4  FOR_ITER             32  'to 32'
+                6  STORE_FAST               'sublist'
+                8  LOAD_FAST                'sublist'
+               10  GET_ITER         
+             12_0  COME_FROM            28  '28'
+             12_1  COME_FROM            22  '22'
+               12  FOR_ITER             30  'to 30'
+               14  STORE_FAST               'qual'
+
+ L.1147        16  LOAD_FAST                'qual'
+               18  LOAD_CONST               None
+               20  <117>                 1  ''
+               22  POP_JUMP_IF_FALSE_BACK    12  'to 12'
+
+ L.1146        24  LOAD_FAST                'qual'
+               26  LIST_APPEND           3  ''
+               28  JUMP_BACK            12  'to 12'
+             30_0  COME_FROM            12  '12'
+               30  JUMP_BACK             4  'to 4'
+             32_0  COME_FROM             4  '4'
+               32  RETURN_VALUE     
+               -1  RETURN_LAST      
+
+Parse error at or near `<117>' instruction at offset 20
+

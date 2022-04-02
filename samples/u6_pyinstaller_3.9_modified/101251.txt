@@ -1,0 +1,189 @@
+Instruction context:
+   
+ L. 159         6  LOAD_GLOBAL              super
+                   8  CALL_FUNCTION_0       0  ''
+                  10  LOAD_ATTR                __init__
+                  12  LOAD_FAST                'args'
+                  14  BUILD_MAP_0           0 
+                  16  LOAD_FAST                'kwds'
+->                18  <164>                 1  ''
+                  20  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+Instruction context:
+   
+ L. 202        86  LOAD_FAST                'processes'
+                  88  LOAD_CONST               None
+->                90  <117>                 0  ''
+                  92  POP_JUMP_IF_FALSE   106  'to 106'
+Instruction context:
+   
+ L. 267        30  LOAD_GLOBAL              getattr
+                  32  LOAD_FAST                'self'
+                  34  LOAD_STR                 '_change_notifier'
+                  36  LOAD_CONST               None
+                  38  CALL_FUNCTION_3       3  ''
+                  40  LOAD_CONST               None
+->                42  <117>                 1  ''
+                  44  POP_JUMP_IF_FALSE    58  'to 58'
+Instruction context:
+   
+ L. 279        20  BUILD_LIST_0          0 
+                  22  LOAD_FAST                'task_queue_sentinels'
+->                24  CALL_FINALLY         27  'to 27'
+                  26  LOAD_FAST                'self_notifier_sentinels'
+                  28  CALL_FINALLY         31  'to 31'
+                  30  RETURN_VALUE     
+Instruction context:
+   
+ L. 294        32  LOAD_FAST                'worker'
+                  34  LOAD_ATTR                exitcode
+                  36  LOAD_CONST               None
+->                38  <117>                 1  ''
+                  40  POP_JUMP_IF_FALSE    20  'to 20'
+Instruction context:
+   
+ L. 390        46  DUP_TOP          
+                  48  LOAD_GLOBAL              Exception
+->                50  <121>               102  ''
+                  52  POP_TOP          
+                  54  STORE_FAST               'e'
+                  56  POP_TOP          
+                  58  SETUP_FINALLY        94  'to 94'
+Instruction context:
+   
+ L. 477        26  LOAD_FAST                'chunksize'
+                  28  LOAD_CONST               None
+->                30  <117>                 0  ''
+                  32  POP_JUMP_IF_FALSE    74  'to 74'
+Instruction context:
+   
+ L. 517        60  BUILD_LIST_0          0 
+                  62  LOAD_FAST                'cls'
+                  64  LOAD_METHOD              _get_worker_sentinels
+                  66  LOAD_FAST                'pool'
+                  68  CALL_METHOD_1         1  ''
+->                70  CALL_FINALLY         73  'to 73'
+                  72  LOAD_FAST                'sentinels'
+                  74  CALL_FINALLY         77  'to 77'
+                  76  STORE_FAST               'current_sentinels'
+Instruction context:
+   
+ L. 538        82  DUP_TOP          
+                  84  LOAD_GLOBAL              Exception
+->                86  <121>               176  ''
+                  88  POP_TOP          
+                  90  STORE_FAST               'e'
+                  92  POP_TOP          
+                  94  SETUP_FINALLY       168  'to 168'
+Instruction context:
+   
+ L. 577        20  DUP_TOP          
+                  22  LOAD_GLOBAL              OSError
+                  24  LOAD_GLOBAL              EOFError
+                  26  BUILD_TUPLE_2         2 
+->                28  <121>                52  ''
+                  30  POP_TOP          
+                  32  POP_TOP          
+                  34  POP_TOP          
+Instruction context:
+   
+ L. 660        30  LOAD_FAST                'self'
+                  32  LOAD_ATTR                _state
+                  34  LOAD_GLOBAL              CLOSE
+                  36  LOAD_GLOBAL              TERMINATE
+                  38  BUILD_TUPLE_2         2 
+->                40  <118>                 1  ''
+                  42  POP_JUMP_IF_FALSE    52  'to 52'
+Instruction context:
+   
+ L. 705       124  LOAD_GLOBAL              threading
+                 126  LOAD_METHOD              current_thread
+                 128  CALL_METHOD_0         0  ''
+                 130  LOAD_FAST                'worker_handler'
+->               132  <117>                 1  ''
+                 134  POP_JUMP_IF_FALSE   144  'to 144'
+Instruction context:
+   
+ L. 854        24  DUP_TOP          
+                  26  LOAD_GLOBAL              IndexError
+->                28  <121>               140  ''
+                  30  POP_TOP          
+                  32  POP_TOP          
+                  34  POP_TOP          
+Instruction context:
+   
+ L. 879        44  LOAD_FAST                'self'
+                  46  LOAD_ATTR                _index
+                  48  LOAD_FAST                'self'
+                  50  LOAD_ATTR                _unsorted
+->                52  <118>                 0  ''
+                  54  POP_JUMP_IF_FALSE    98  'to 98'
+Instruction context:
+   
+ L. 897        46  LOAD_CONST               None
+                  48  LOAD_FAST                'self'
+                  50  STORE_ATTR               _pool
+                52_0  COME_FROM            24  '24'
+                  52  POP_BLOCK        
+                  54  LOAD_CONST               None
+->                56  DUP_TOP          
+                  58  DUP_TOP          
+                  60  CALL_FUNCTION_3       3  ''
+                  62  POP_TOP          
+                  64  JUMP_FORWARD         82  'to 82'
+                66_0  COME_FROM_WITH        4  '4'
+                  66  <49>             
+                  68  POP_JUMP_IF_TRUE     72  'to 72'
+                  70  <48>             
+                72_0  COME_FROM            68  '68'
+                  72  POP_TOP          
+                  74  POP_TOP          
+                  76  POP_TOP          
+                  78  POP_EXCEPT       
+                  80  POP_TOP          
+Instruction context:
+   
+ L. 912        66  LOAD_CONST               None
+                  68  LOAD_FAST                'self'
+                  70  STORE_ATTR               _pool
+                72_0  COME_FROM            54  '54'
+                  72  POP_BLOCK        
+                  74  LOAD_CONST               None
+->                76  DUP_TOP          
+                  78  DUP_TOP          
+                  80  CALL_FUNCTION_3       3  ''
+                  82  POP_TOP          
+                  84  JUMP_FORWARD        102  'to 102'
+                86_0  COME_FROM_WITH        4  '4'
+                  86  <49>             
+                  88  POP_JUMP_IF_TRUE     92  'to 92'
+                  90  <48>             
+                92_0  COME_FROM            88  '88'
+                  92  POP_TOP          
+                  94  POP_TOP          
+                  96  POP_TOP          
+                  98  POP_EXCEPT       
+                 100  POP_TOP          
+Instruction context:
+   
+ L. 924        12  LOAD_FAST                'Process'
+                  14  LOAD_FAST                'args'
+                  16  BUILD_MAP_0           0 
+                  18  LOAD_FAST                'kwds'
+->                20  <164>                 1  ''
+                  22  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  24  RETURN_VALUE     
+Instruction context:
+   
+ L. 948        20  DUP_TOP          
+                  22  LOAD_GLOBAL              queue
+                  24  LOAD_ATTR                Empty
+->                26  <121>                38  ''
+                  28  POP_TOP          
+                  30  POP_TOP          
+                  32  POP_TOP          
+
+test/101251.pyc -- 
+# decompile failed
+
+# file test/101251.pyc
+# Deparsing stopped due to parse error

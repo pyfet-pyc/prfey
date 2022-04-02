@@ -1,0 +1,80 @@
+Instruction context:
+   
+ L.  20        32  BUILD_LIST_0          0 
+                  34  LOAD_CONST               ('slow', 'setastest', 'skipif', 'knownfailureif', 'deprecated', 'parametrize', '_needs_refcount')
+->                36  CALL_FINALLY         39  'to 39'
+                  38  STORE_NAME               __all__
+
+test/2040.pyc -- 
+# decompile failed
+
+# file test/2040.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nDecorators for labeling and modifying behavior of test objects.\n\nDecorators that merely return a modified version of the original\nfunction object are straightforward. Decorators that return a new\nfunction object need to use\n::\n\n  nose.tools.make_decorator(original_function)(decorator)\n\nin returning the decorator, in order to preserve meta-data such as\nfunction name, setup and teardown functions and so on - see\n``nose.tools`` for more information.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  16         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME_ATTR         collections.abc
+               10  STORE_NAME               collections
+
+ L.  18        12  LOAD_CONST               1
+               14  LOAD_CONST               ('SkipTest', 'assert_warns', 'HAS_REFCOUNT')
+               16  IMPORT_NAME              utils
+               18  IMPORT_FROM              SkipTest
+               20  STORE_NAME               SkipTest
+               22  IMPORT_FROM              assert_warns
+               24  STORE_NAME               assert_warns
+               26  IMPORT_FROM              HAS_REFCOUNT
+               28  STORE_NAME               HAS_REFCOUNT
+               30  POP_TOP          
+
+ L.  20        32  BUILD_LIST_0          0 
+               34  LOAD_CONST               ('slow', 'setastest', 'skipif', 'knownfailureif', 'deprecated', 'parametrize', '_needs_refcount')
+               36  CALL_FINALLY         39  'to 39'
+               38  STORE_NAME               __all__
+
+ L.  24        40  LOAD_CODE                <code_object slow>
+               42  LOAD_STR                 'slow'
+               44  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               46  STORE_NAME               slow
+
+ L.  59        48  LOAD_CONST               (True,)
+               50  LOAD_CODE                <code_object setastest>
+               52  LOAD_STR                 'setastest'
+               54  MAKE_FUNCTION_1          'default'
+               56  STORE_NAME               setastest
+
+ L.  92        58  LOAD_CONST               (None,)
+               60  LOAD_CODE                <code_object skipif>
+               62  LOAD_STR                 'skipif'
+               64  MAKE_FUNCTION_1          'default'
+               66  STORE_NAME               skipif
+
+ L. 168        68  LOAD_CONST               (None,)
+               70  LOAD_CODE                <code_object knownfailureif>
+               72  LOAD_STR                 'knownfailureif'
+               74  MAKE_FUNCTION_1          'default'
+               76  STORE_NAME               knownfailureif
+
+ L. 222        78  LOAD_CONST               (True,)
+               80  LOAD_CODE                <code_object deprecated>
+               82  LOAD_STR                 'deprecated'
+               84  MAKE_FUNCTION_1          'default'
+               86  STORE_NAME               deprecated
+
+ L. 268        88  LOAD_CODE                <code_object parametrize>
+               90  LOAD_STR                 'parametrize'
+               92  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               94  STORE_NAME               parametrize
+
+ L. 284        96  LOAD_NAME                skipif
+               98  LOAD_NAME                HAS_REFCOUNT
+              100  UNARY_NOT        
+              102  LOAD_STR                 'python has no sys.getrefcount'
+              104  CALL_FUNCTION_2       2  ''
+              106  STORE_NAME               _needs_refcount
+
+Parse error at or near `CALL_FINALLY' instruction at offset 36
+

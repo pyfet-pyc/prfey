@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L. 329       292  POP_EXCEPT       
+                 294  JUMP_BACK           244  'to 244'
+                 296  POP_EXCEPT       
+->               298  JUMP_BACK           244  'to 244'
+               300_0  COME_FROM           282  '282'
+                 300  END_FINALLY      
+                 302  JUMP_BACK           244  'to 244'
+Instruction context:
+   
+ L. 388        58  LOAD_FAST                'reaction'
+->                60  RETURN_VALUE     
+Instruction context:
+   
+ L. 396        50  POP_EXCEPT       
+                  52  JUMP_BACK            14  'to 14'
+                  54  POP_EXCEPT       
+->                56  JUMP_BACK            14  'to 14'
+                58_0  COME_FROM            42  '42'
+                  58  END_FINALLY      
+                60_0  COME_FROM            34  '34'
+
+../test/117974.pyc -- 
+# decompile failed
+
+# file ../test/117974.pyc
+# Deparsing stopped due to parse error

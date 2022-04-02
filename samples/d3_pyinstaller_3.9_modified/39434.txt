@@ -1,0 +1,876 @@
+
+# file test/39434.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "Utility functions for copying and archiving files and directory trees.\n\nXXX The functions here don't copy the resource fork or other metadata on Mac.\n\n"
+                2  STORE_NAME               __doc__
+
+ L.   7         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.   8        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L.   9        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              stat
+               26  STORE_NAME               stat
+
+ L.  10        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              fnmatch
+               34  STORE_NAME               fnmatch
+
+ L.  11        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              collections
+               42  STORE_NAME               collections
+
+ L.  12        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              errno
+               50  STORE_NAME               errno
+
+ L.  14        52  SETUP_FINALLY        72  'to 72'
+
+ L.  15        54  LOAD_CONST               0
+               56  LOAD_CONST               None
+               58  IMPORT_NAME              zlib
+               60  STORE_NAME               zlib
+
+ L.  16        62  DELETE_NAME              zlib
+
+ L.  17        64  LOAD_CONST               True
+               66  STORE_NAME               _ZLIB_SUPPORTED
+               68  POP_BLOCK        
+               70  JUMP_FORWARD         94  'to 94'
+             72_0  COME_FROM_FINALLY    52  '52'
+
+ L.  18        72  DUP_TOP          
+               74  LOAD_NAME                ImportError
+               76  <121>                92  ''
+               78  POP_TOP          
+               80  POP_TOP          
+               82  POP_TOP          
+
+ L.  19        84  LOAD_CONST               False
+               86  STORE_NAME               _ZLIB_SUPPORTED
+               88  POP_EXCEPT       
+               90  JUMP_FORWARD         94  'to 94'
+               92  <48>             
+             94_0  COME_FROM            90  '90'
+             94_1  COME_FROM            70  '70'
+
+ L.  21        94  SETUP_FINALLY       114  'to 114'
+
+ L.  22        96  LOAD_CONST               0
+               98  LOAD_CONST               None
+              100  IMPORT_NAME              bz2
+              102  STORE_NAME               bz2
+
+ L.  23       104  DELETE_NAME              bz2
+
+ L.  24       106  LOAD_CONST               True
+              108  STORE_NAME               _BZ2_SUPPORTED
+              110  POP_BLOCK        
+              112  JUMP_FORWARD        136  'to 136'
+            114_0  COME_FROM_FINALLY    94  '94'
+
+ L.  25       114  DUP_TOP          
+              116  LOAD_NAME                ImportError
+              118  <121>               134  ''
+              120  POP_TOP          
+              122  POP_TOP          
+              124  POP_TOP          
+
+ L.  26       126  LOAD_CONST               False
+              128  STORE_NAME               _BZ2_SUPPORTED
+              130  POP_EXCEPT       
+              132  JUMP_FORWARD        136  'to 136'
+              134  <48>             
+            136_0  COME_FROM           132  '132'
+            136_1  COME_FROM           112  '112'
+
+ L.  28       136  SETUP_FINALLY       156  'to 156'
+
+ L.  29       138  LOAD_CONST               0
+              140  LOAD_CONST               None
+              142  IMPORT_NAME              lzma
+              144  STORE_NAME               lzma
+
+ L.  30       146  DELETE_NAME              lzma
+
+ L.  31       148  LOAD_CONST               True
+              150  STORE_NAME               _LZMA_SUPPORTED
+              152  POP_BLOCK        
+              154  JUMP_FORWARD        178  'to 178'
+            156_0  COME_FROM_FINALLY   136  '136'
+
+ L.  32       156  DUP_TOP          
+              158  LOAD_NAME                ImportError
+              160  <121>               176  ''
+              162  POP_TOP          
+              164  POP_TOP          
+              166  POP_TOP          
+
+ L.  33       168  LOAD_CONST               False
+              170  STORE_NAME               _LZMA_SUPPORTED
+              172  POP_EXCEPT       
+              174  JUMP_FORWARD        178  'to 178'
+              176  <48>             
+            178_0  COME_FROM           174  '174'
+            178_1  COME_FROM           154  '154'
+
+ L.  35       178  SETUP_FINALLY       196  'to 196'
+
+ L.  36       180  LOAD_CONST               0
+              182  LOAD_CONST               ('getpwnam',)
+              184  IMPORT_NAME              pwd
+              186  IMPORT_FROM              getpwnam
+              188  STORE_NAME               getpwnam
+              190  POP_TOP          
+              192  POP_BLOCK        
+              194  JUMP_FORWARD        218  'to 218'
+            196_0  COME_FROM_FINALLY   178  '178'
+
+ L.  37       196  DUP_TOP          
+              198  LOAD_NAME                ImportError
+              200  <121>               216  ''
+              202  POP_TOP          
+              204  POP_TOP          
+              206  POP_TOP          
+
+ L.  38       208  LOAD_CONST               None
+              210  STORE_NAME               getpwnam
+              212  POP_EXCEPT       
+              214  JUMP_FORWARD        218  'to 218'
+              216  <48>             
+            218_0  COME_FROM           214  '214'
+            218_1  COME_FROM           194  '194'
+
+ L.  40       218  SETUP_FINALLY       236  'to 236'
+
+ L.  41       220  LOAD_CONST               0
+              222  LOAD_CONST               ('getgrnam',)
+              224  IMPORT_NAME              grp
+              226  IMPORT_FROM              getgrnam
+              228  STORE_NAME               getgrnam
+              230  POP_TOP          
+              232  POP_BLOCK        
+              234  JUMP_FORWARD        260  'to 260'
+            236_0  COME_FROM_FINALLY   218  '218'
+
+ L.  42       236  DUP_TOP          
+              238  LOAD_NAME                ImportError
+          240_242  <121>               258  ''
+              244  POP_TOP          
+              246  POP_TOP          
+              248  POP_TOP          
+
+ L.  43       250  LOAD_CONST               None
+              252  STORE_NAME               getgrnam
+              254  POP_EXCEPT       
+              256  JUMP_FORWARD        260  'to 260'
+              258  <48>             
+            260_0  COME_FROM           256  '256'
+            260_1  COME_FROM           234  '234'
+
+ L.  45       260  LOAD_NAME                os
+              262  LOAD_ATTR                name
+              264  LOAD_STR                 'nt'
+              266  COMPARE_OP               ==
+              268  STORE_NAME               _WINDOWS
+
+ L.  46       270  LOAD_CONST               None
+              272  DUP_TOP          
+              274  STORE_NAME               posix
+              276  STORE_NAME               nt
+
+ L.  47       278  LOAD_NAME                os
+              280  LOAD_ATTR                name
+              282  LOAD_STR                 'posix'
+              284  COMPARE_OP               ==
+          286_288  POP_JUMP_IF_FALSE   300  'to 300'
+
+ L.  48       290  LOAD_CONST               0
+              292  LOAD_CONST               None
+              294  IMPORT_NAME              posix
+              296  STORE_NAME               posix
+              298  JUMP_FORWARD        314  'to 314'
+            300_0  COME_FROM           286  '286'
+
+ L.  49       300  LOAD_NAME                _WINDOWS
+          302_304  POP_JUMP_IF_FALSE   314  'to 314'
+
+ L.  50       306  LOAD_CONST               0
+              308  LOAD_CONST               None
+              310  IMPORT_NAME              nt
+              312  STORE_NAME               nt
+            314_0  COME_FROM           302  '302'
+            314_1  COME_FROM           298  '298'
+
+ L.  52       314  LOAD_NAME                _WINDOWS
+          316_318  POP_JUMP_IF_FALSE   324  'to 324'
+              320  LOAD_CONST               1048576
+              322  JUMP_FORWARD        326  'to 326'
+            324_0  COME_FROM           316  '316'
+              324  LOAD_CONST               65536
+            326_0  COME_FROM           322  '322'
+              326  STORE_NAME               COPY_BUFSIZE
+
+ L.  53       328  LOAD_NAME                hasattr
+              330  LOAD_NAME                os
+              332  LOAD_STR                 'sendfile'
+              334  CALL_FUNCTION_2       2  ''
+          336_338  JUMP_IF_FALSE_OR_POP   350  'to 350'
+              340  LOAD_NAME                sys
+              342  LOAD_ATTR                platform
+              344  LOAD_METHOD              startswith
+              346  LOAD_STR                 'linux'
+              348  CALL_METHOD_1         1  ''
+            350_0  COME_FROM           336  '336'
+              350  STORE_GLOBAL             _USE_CP_SENDFILE
+
+ L.  54       352  LOAD_NAME                posix
+          354_356  JUMP_IF_FALSE_OR_POP   366  'to 366'
+              358  LOAD_NAME                hasattr
+              360  LOAD_NAME                posix
+              362  LOAD_STR                 '_fcopyfile'
+              364  CALL_FUNCTION_2       2  ''
+            366_0  COME_FROM           354  '354'
+              366  STORE_NAME               _HAS_FCOPYFILE
+
+ L.  57       368  LOAD_STR                 '.COM;.EXE;.BAT;.CMD;.VBS;.JS;.WS;.MSC'
+              370  STORE_NAME               _WIN_DEFAULT_PATHEXT
+
+ L.  59       372  BUILD_LIST_0          0 
+              374  LOAD_CONST               ('copyfileobj', 'copyfile', 'copymode', 'copystat', 'copy', 'copy2', 'copytree', 'move', 'rmtree', 'Error', 'SpecialFileError', 'ExecError', 'make_archive', 'get_archive_formats', 'register_archive_format', 'unregister_archive_format', 'get_unpack_formats', 'register_unpack_format', 'unregister_unpack_format', 'unpack_archive', 'ignore_patterns', 'chown', 'which', 'get_terminal_size', 'SameFileError')
+              376  CALL_FINALLY        379  'to 379'
+              378  STORE_NAME               __all__
+
+ L.  69       380  LOAD_BUILD_CLASS 
+              382  LOAD_CODE                <code_object Error>
+              384  LOAD_STR                 'Error'
+              386  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              388  LOAD_STR                 'Error'
+              390  LOAD_NAME                OSError
+              392  CALL_FUNCTION_3       3  ''
+              394  STORE_NAME               Error
+
+ L.  72       396  LOAD_BUILD_CLASS 
+              398  LOAD_CODE                <code_object SameFileError>
+              400  LOAD_STR                 'SameFileError'
+              402  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              404  LOAD_STR                 'SameFileError'
+              406  LOAD_NAME                Error
+              408  CALL_FUNCTION_3       3  ''
+              410  STORE_NAME               SameFileError
+
+ L.  75       412  LOAD_BUILD_CLASS 
+              414  LOAD_CODE                <code_object SpecialFileError>
+              416  LOAD_STR                 'SpecialFileError'
+              418  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              420  LOAD_STR                 'SpecialFileError'
+              422  LOAD_NAME                OSError
+              424  CALL_FUNCTION_3       3  ''
+              426  STORE_NAME               SpecialFileError
+
+ L.  79       428  LOAD_BUILD_CLASS 
+              430  LOAD_CODE                <code_object ExecError>
+              432  LOAD_STR                 'ExecError'
+              434  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              436  LOAD_STR                 'ExecError'
+              438  LOAD_NAME                OSError
+              440  CALL_FUNCTION_3       3  ''
+              442  STORE_NAME               ExecError
+
+ L.  82       444  LOAD_BUILD_CLASS 
+              446  LOAD_CODE                <code_object ReadError>
+              448  LOAD_STR                 'ReadError'
+              450  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              452  LOAD_STR                 'ReadError'
+              454  LOAD_NAME                OSError
+              456  CALL_FUNCTION_3       3  ''
+              458  STORE_NAME               ReadError
+
+ L.  85       460  LOAD_BUILD_CLASS 
+              462  LOAD_CODE                <code_object RegistryError>
+              464  LOAD_STR                 'RegistryError'
+              466  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              468  LOAD_STR                 'RegistryError'
+              470  LOAD_NAME                Exception
+              472  CALL_FUNCTION_3       3  ''
+              474  STORE_NAME               RegistryError
+
+ L.  89       476  LOAD_BUILD_CLASS 
+              478  LOAD_CODE                <code_object _GiveupOnFastCopy>
+              480  LOAD_STR                 '_GiveupOnFastCopy'
+              482  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              484  LOAD_STR                 '_GiveupOnFastCopy'
+              486  LOAD_NAME                Exception
+              488  CALL_FUNCTION_3       3  ''
+              490  STORE_NAME               _GiveupOnFastCopy
+
+ L.  94       492  LOAD_CODE                <code_object _fastcopy_fcopyfile>
+              494  LOAD_STR                 '_fastcopy_fcopyfile'
+              496  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              498  STORE_NAME               _fastcopy_fcopyfile
+
+ L. 114       500  LOAD_CODE                <code_object _fastcopy_sendfile>
+              502  LOAD_STR                 '_fastcopy_sendfile'
+              504  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              506  STORE_NAME               _fastcopy_sendfile
+
+ L. 178       508  LOAD_NAME                COPY_BUFSIZE
+              510  BUILD_TUPLE_1         1 
+              512  LOAD_CODE                <code_object _copyfileobj_readinto>
+              514  LOAD_STR                 '_copyfileobj_readinto'
+              516  MAKE_FUNCTION_1          'default'
+              518  STORE_NAME               _copyfileobj_readinto
+
+ L. 197       520  LOAD_CONST               (0,)
+              522  LOAD_CODE                <code_object copyfileobj>
+              524  LOAD_STR                 'copyfileobj'
+              526  MAKE_FUNCTION_1          'default'
+              528  STORE_NAME               copyfileobj
+
+ L. 210       530  LOAD_CODE                <code_object _samefile>
+              532  LOAD_STR                 '_samefile'
+              534  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              536  STORE_NAME               _samefile
+
+ L. 228       538  LOAD_CODE                <code_object _stat>
+              540  LOAD_STR                 '_stat'
+              542  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              544  STORE_NAME               _stat
+
+ L. 231       546  LOAD_CODE                <code_object _islink>
+              548  LOAD_STR                 '_islink'
+              550  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              552  STORE_NAME               _islink
+
+ L. 234       554  LOAD_CONST               True
+              556  LOAD_CONST               ('follow_symlinks',)
+              558  BUILD_CONST_KEY_MAP_1     1 
+              560  LOAD_CODE                <code_object copyfile>
+              562  LOAD_STR                 'copyfile'
+              564  MAKE_FUNCTION_2          'keyword-only'
+              566  STORE_NAME               copyfile
+
+ L. 289       568  LOAD_CONST               True
+              570  LOAD_CONST               ('follow_symlinks',)
+              572  BUILD_CONST_KEY_MAP_1     1 
+              574  LOAD_CODE                <code_object copymode>
+              576  LOAD_STR                 'copymode'
+              578  MAKE_FUNCTION_2          'keyword-only'
+              580  STORE_NAME               copymode
+
+ L. 310       582  LOAD_NAME                hasattr
+              584  LOAD_NAME                os
+              586  LOAD_STR                 'listxattr'
+              588  CALL_FUNCTION_2       2  ''
+          590_592  POP_JUMP_IF_FALSE   610  'to 610'
+
+ L. 311       594  LOAD_CONST               True
+              596  LOAD_CONST               ('follow_symlinks',)
+              598  BUILD_CONST_KEY_MAP_1     1 
+              600  LOAD_CODE                <code_object _copyxattr>
+              602  LOAD_STR                 '_copyxattr'
+              604  MAKE_FUNCTION_2          'keyword-only'
+              606  STORE_NAME               _copyxattr
+              608  JUMP_FORWARD        618  'to 618'
+            610_0  COME_FROM           590  '590'
+
+ L. 335       610  LOAD_CODE                <code_object _copyxattr>
+              612  LOAD_STR                 '_copyxattr'
+              614  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              616  STORE_NAME               _copyxattr
+            618_0  COME_FROM           608  '608'
+
+ L. 338       618  LOAD_CONST               True
+              620  LOAD_CONST               ('follow_symlinks',)
+              622  BUILD_CONST_KEY_MAP_1     1 
+              624  LOAD_CODE                <code_object copystat>
+              626  LOAD_STR                 'copystat'
+              628  MAKE_FUNCTION_2          'keyword-only'
+              630  STORE_NAME               copystat
+
+ L. 404       632  LOAD_CONST               True
+              634  LOAD_CONST               ('follow_symlinks',)
+              636  BUILD_CONST_KEY_MAP_1     1 
+              638  LOAD_CODE                <code_object copy>
+              640  LOAD_STR                 'copy'
+              642  MAKE_FUNCTION_2          'keyword-only'
+              644  STORE_NAME               copy
+
+ L. 422       646  LOAD_CONST               True
+              648  LOAD_CONST               ('follow_symlinks',)
+              650  BUILD_CONST_KEY_MAP_1     1 
+              652  LOAD_CODE                <code_object copy2>
+              654  LOAD_STR                 'copy2'
+              656  MAKE_FUNCTION_2          'keyword-only'
+              658  STORE_NAME               copy2
+
+ L. 439       660  LOAD_CODE                <code_object ignore_patterns>
+              662  LOAD_STR                 'ignore_patterns'
+              664  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              666  STORE_NAME               ignore_patterns
+
+ L. 451       668  LOAD_CONST               (False,)
+              670  LOAD_CODE                <code_object _copytree>
+              672  LOAD_STR                 '_copytree'
+              674  MAKE_FUNCTION_1          'default'
+              676  STORE_NAME               _copytree
+
+ L. 516       678  LOAD_CONST               False
+              680  LOAD_CONST               None
+              682  LOAD_NAME                copy2
+
+ L. 517       684  LOAD_CONST               False
+              686  LOAD_CONST               False
+
+ L. 516       688  BUILD_TUPLE_5         5 
+              690  LOAD_CODE                <code_object copytree>
+              692  LOAD_STR                 'copytree'
+              694  MAKE_FUNCTION_1          'default'
+              696  STORE_NAME               copytree
+
+ L. 562       698  LOAD_NAME                hasattr
+              700  LOAD_NAME                os
+              702  LOAD_ATTR                stat_result
+              704  LOAD_STR                 'st_file_attributes'
+              706  CALL_FUNCTION_2       2  ''
+          708_710  POP_JUMP_IF_FALSE   730  'to 730'
+
+ L. 566       712  LOAD_CODE                <code_object _rmtree_isdir>
+              714  LOAD_STR                 '_rmtree_isdir'
+              716  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              718  STORE_NAME               _rmtree_isdir
+
+ L. 575       720  LOAD_CODE                <code_object _rmtree_islink>
+              722  LOAD_STR                 '_rmtree_islink'
+              724  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              726  STORE_NAME               _rmtree_islink
+              728  JUMP_FORWARD        746  'to 746'
+            730_0  COME_FROM           708  '708'
+
+ L. 584       730  LOAD_CODE                <code_object _rmtree_isdir>
+              732  LOAD_STR                 '_rmtree_isdir'
+              734  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              736  STORE_NAME               _rmtree_isdir
+
+ L. 590       738  LOAD_CODE                <code_object _rmtree_islink>
+              740  LOAD_STR                 '_rmtree_islink'
+              742  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              744  STORE_NAME               _rmtree_islink
+            746_0  COME_FROM           728  '728'
+
+ L. 594       746  LOAD_CODE                <code_object _rmtree_unsafe>
+              748  LOAD_STR                 '_rmtree_unsafe'
+              750  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              752  STORE_NAME               _rmtree_unsafe
+
+ L. 625       754  LOAD_CODE                <code_object _rmtree_safe_fd>
+              756  LOAD_STR                 '_rmtree_safe_fd'
+              758  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              760  STORE_NAME               _rmtree_safe_fd
+
+ L. 677       762  LOAD_NAME                os
+              764  LOAD_ATTR                open
+              766  LOAD_NAME                os
+              768  LOAD_ATTR                stat
+              770  LOAD_NAME                os
+              772  LOAD_ATTR                unlink
+              774  LOAD_NAME                os
+              776  LOAD_ATTR                rmdir
+              778  BUILD_SET_4           4 
+
+ L. 678       780  LOAD_NAME                os
+              782  LOAD_ATTR                supports_dir_fd
+
+ L. 677       784  COMPARE_OP               <=
+          786_788  JUMP_IF_FALSE_OR_POP   814  'to 814'
+
+ L. 679       790  LOAD_NAME                os
+              792  LOAD_ATTR                scandir
+              794  LOAD_NAME                os
+              796  LOAD_ATTR                supports_fd
+              798  <118>                 0  ''
+
+ L. 677   800_802  JUMP_IF_FALSE_OR_POP   814  'to 814'
+
+ L. 680       804  LOAD_NAME                os
+              806  LOAD_ATTR                stat
+              808  LOAD_NAME                os
+              810  LOAD_ATTR                supports_follow_symlinks
+              812  <118>                 0  ''
+            814_0  COME_FROM           800  '800'
+            814_1  COME_FROM           786  '786'
+
+ L. 677       814  STORE_NAME               _use_fd_functions
+
+ L. 682       816  LOAD_CONST               (False, None)
+              818  LOAD_CODE                <code_object rmtree>
+              820  LOAD_STR                 'rmtree'
+              822  MAKE_FUNCTION_1          'default'
+              824  STORE_NAME               rmtree
+
+ L. 744       826  LOAD_NAME                _use_fd_functions
+              828  LOAD_NAME                rmtree
+              830  STORE_ATTR               avoids_symlink_attacks
+
+ L. 746       832  LOAD_CODE                <code_object _basename>
+              834  LOAD_STR                 '_basename'
+              836  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              838  STORE_NAME               _basename
+
+ L. 764       840  LOAD_NAME                copy2
+              842  BUILD_TUPLE_1         1 
+              844  LOAD_CODE                <code_object move>
+              846  LOAD_STR                 'move'
+              848  MAKE_FUNCTION_1          'default'
+              850  STORE_NAME               move
+
+ L. 830       852  LOAD_CODE                <code_object _destinsrc>
+              854  LOAD_STR                 '_destinsrc'
+              856  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              858  STORE_NAME               _destinsrc
+
+ L. 839       860  LOAD_CODE                <code_object _is_immutable>
+              862  LOAD_STR                 '_is_immutable'
+              864  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              866  STORE_NAME               _is_immutable
+
+ L. 844       868  LOAD_CODE                <code_object _get_gid>
+              870  LOAD_STR                 '_get_gid'
+              872  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              874  STORE_NAME               _get_gid
+
+ L. 856       876  LOAD_CODE                <code_object _get_uid>
+              878  LOAD_STR                 '_get_uid'
+              880  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              882  STORE_NAME               _get_uid
+
+ L. 868       884  LOAD_CONST               ('gzip', 0, 0, None, None, None)
+              886  LOAD_CODE                <code_object _make_tarball>
+              888  LOAD_STR                 '_make_tarball'
+              890  MAKE_FUNCTION_1          'default'
+              892  STORE_NAME               _make_tarball
+
+ L. 933       894  LOAD_CONST               (0, 0, None)
+              896  LOAD_CODE                <code_object _make_zipfile>
+              898  LOAD_STR                 '_make_zipfile'
+              900  MAKE_FUNCTION_1          'default'
+              902  STORE_NAME               _make_zipfile
+
+ L. 978       904  LOAD_STR                 'tar'
+              906  LOAD_NAME                _make_tarball
+              908  LOAD_CONST               ('compress', None)
+              910  BUILD_LIST_1          1 
+              912  LOAD_STR                 'uncompressed tar file'
+              914  BUILD_TUPLE_3         3 
+
+ L. 977       916  BUILD_MAP_1           1 
+              918  STORE_NAME               _ARCHIVE_FORMATS
+
+ L. 981       920  LOAD_NAME                _ZLIB_SUPPORTED
+          922_924  POP_JUMP_IF_FALSE   956  'to 956'
+
+ L. 982       926  LOAD_NAME                _make_tarball
+              928  LOAD_CONST               ('compress', 'gzip')
+              930  BUILD_LIST_1          1 
+
+ L. 983       932  LOAD_STR                 "gzip'ed tar-file"
+
+ L. 982       934  BUILD_TUPLE_3         3 
+              936  LOAD_NAME                _ARCHIVE_FORMATS
+              938  LOAD_STR                 'gztar'
+              940  STORE_SUBSCR     
+
+ L. 984       942  LOAD_NAME                _make_zipfile
+              944  BUILD_LIST_0          0 
+              946  LOAD_STR                 'ZIP file'
+              948  BUILD_TUPLE_3         3 
+              950  LOAD_NAME                _ARCHIVE_FORMATS
+              952  LOAD_STR                 'zip'
+              954  STORE_SUBSCR     
+            956_0  COME_FROM           922  '922'
+
+ L. 986       956  LOAD_NAME                _BZ2_SUPPORTED
+          958_960  POP_JUMP_IF_FALSE   978  'to 978'
+
+ L. 987       962  LOAD_NAME                _make_tarball
+              964  LOAD_CONST               ('compress', 'bzip2')
+              966  BUILD_LIST_1          1 
+
+ L. 988       968  LOAD_STR                 "bzip2'ed tar-file"
+
+ L. 987       970  BUILD_TUPLE_3         3 
+              972  LOAD_NAME                _ARCHIVE_FORMATS
+              974  LOAD_STR                 'bztar'
+              976  STORE_SUBSCR     
+            978_0  COME_FROM           958  '958'
+
+ L. 990       978  LOAD_NAME                _LZMA_SUPPORTED
+          980_982  POP_JUMP_IF_FALSE  1000  'to 1000'
+
+ L. 991       984  LOAD_NAME                _make_tarball
+              986  LOAD_CONST               ('compress', 'xz')
+              988  BUILD_LIST_1          1 
+
+ L. 992       990  LOAD_STR                 "xz'ed tar-file"
+
+ L. 991       992  BUILD_TUPLE_3         3 
+              994  LOAD_NAME                _ARCHIVE_FORMATS
+              996  LOAD_STR                 'xztar'
+              998  STORE_SUBSCR     
+           1000_0  COME_FROM           980  '980'
+
+ L. 994      1000  LOAD_CODE                <code_object get_archive_formats>
+             1002  LOAD_STR                 'get_archive_formats'
+             1004  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1006  STORE_NAME               get_archive_formats
+
+ L.1004      1008  LOAD_CONST               (None, '')
+             1010  LOAD_CODE                <code_object register_archive_format>
+             1012  LOAD_STR                 'register_archive_format'
+             1014  MAKE_FUNCTION_1          'default'
+             1016  STORE_NAME               register_archive_format
+
+ L.1025      1018  LOAD_CODE                <code_object unregister_archive_format>
+             1020  LOAD_STR                 'unregister_archive_format'
+             1022  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1024  STORE_NAME               unregister_archive_format
+
+ L.1028      1026  LOAD_CONST               (None, None, 0, 0, None, None, None)
+             1028  LOAD_CODE                <code_object make_archive>
+             1030  LOAD_STR                 'make_archive'
+             1032  MAKE_FUNCTION_1          'default'
+             1034  STORE_NAME               make_archive
+
+ L.1084      1036  LOAD_CODE                <code_object get_unpack_formats>
+             1038  LOAD_STR                 'get_unpack_formats'
+             1040  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1042  STORE_NAME               get_unpack_formats
+
+ L.1095      1044  LOAD_CODE                <code_object _check_unpack_options>
+             1046  LOAD_STR                 '_check_unpack_options'
+             1048  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1050  STORE_NAME               _check_unpack_options
+
+ L.1113      1052  LOAD_CONST               (None, '')
+             1054  LOAD_CODE                <code_object register_unpack_format>
+             1056  LOAD_STR                 'register_unpack_format'
+             1058  MAKE_FUNCTION_1          'default'
+             1060  STORE_NAME               register_unpack_format
+
+ L.1135      1062  LOAD_CODE                <code_object unregister_unpack_format>
+             1064  LOAD_STR                 'unregister_unpack_format'
+             1066  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1068  STORE_NAME               unregister_unpack_format
+
+ L.1139      1070  LOAD_CODE                <code_object _ensure_directory>
+             1072  LOAD_STR                 '_ensure_directory'
+             1074  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1076  STORE_NAME               _ensure_directory
+
+ L.1145      1078  LOAD_CODE                <code_object _unpack_zipfile>
+             1080  LOAD_STR                 '_unpack_zipfile'
+             1082  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1084  STORE_NAME               _unpack_zipfile
+
+ L.1175      1086  LOAD_CODE                <code_object _unpack_tarfile>
+             1088  LOAD_STR                 '_unpack_tarfile'
+             1090  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1092  STORE_NAME               _unpack_tarfile
+
+ L.1190      1094  LOAD_STR                 '.tar'
+             1096  BUILD_LIST_1          1 
+             1098  LOAD_NAME                _unpack_tarfile
+             1100  BUILD_LIST_0          0 
+             1102  LOAD_STR                 'uncompressed tar file'
+             1104  BUILD_TUPLE_4         4 
+
+ L.1191      1106  LOAD_STR                 '.zip'
+             1108  BUILD_LIST_1          1 
+             1110  LOAD_NAME                _unpack_zipfile
+             1112  BUILD_LIST_0          0 
+             1114  LOAD_STR                 'ZIP file'
+             1116  BUILD_TUPLE_4         4 
+
+ L.1189      1118  LOAD_CONST               ('tar', 'zip')
+             1120  BUILD_CONST_KEY_MAP_2     2 
+             1122  STORE_NAME               _UNPACK_FORMATS
+
+ L.1194      1124  LOAD_NAME                _ZLIB_SUPPORTED
+         1126_1128  POP_JUMP_IF_FALSE  1150  'to 1150'
+
+ L.1195      1130  LOAD_STR                 '.tar.gz'
+             1132  LOAD_STR                 '.tgz'
+             1134  BUILD_LIST_2          2 
+             1136  LOAD_NAME                _unpack_tarfile
+             1138  BUILD_LIST_0          0 
+
+ L.1196      1140  LOAD_STR                 "gzip'ed tar-file"
+
+ L.1195      1142  BUILD_TUPLE_4         4 
+             1144  LOAD_NAME                _UNPACK_FORMATS
+             1146  LOAD_STR                 'gztar'
+             1148  STORE_SUBSCR     
+           1150_0  COME_FROM          1126  '1126'
+
+ L.1198      1150  LOAD_NAME                _BZ2_SUPPORTED
+         1152_1154  POP_JUMP_IF_FALSE  1176  'to 1176'
+
+ L.1199      1156  LOAD_STR                 '.tar.bz2'
+             1158  LOAD_STR                 '.tbz2'
+             1160  BUILD_LIST_2          2 
+             1162  LOAD_NAME                _unpack_tarfile
+             1164  BUILD_LIST_0          0 
+
+ L.1200      1166  LOAD_STR                 "bzip2'ed tar-file"
+
+ L.1199      1168  BUILD_TUPLE_4         4 
+             1170  LOAD_NAME                _UNPACK_FORMATS
+             1172  LOAD_STR                 'bztar'
+             1174  STORE_SUBSCR     
+           1176_0  COME_FROM          1152  '1152'
+
+ L.1202      1176  LOAD_NAME                _LZMA_SUPPORTED
+         1178_1180  POP_JUMP_IF_FALSE  1202  'to 1202'
+
+ L.1203      1182  LOAD_STR                 '.tar.xz'
+             1184  LOAD_STR                 '.txz'
+             1186  BUILD_LIST_2          2 
+             1188  LOAD_NAME                _unpack_tarfile
+             1190  BUILD_LIST_0          0 
+
+ L.1204      1192  LOAD_STR                 "xz'ed tar-file"
+
+ L.1203      1194  BUILD_TUPLE_4         4 
+             1196  LOAD_NAME                _UNPACK_FORMATS
+             1198  LOAD_STR                 'xztar'
+             1200  STORE_SUBSCR     
+           1202_0  COME_FROM          1178  '1178'
+
+ L.1206      1202  LOAD_CODE                <code_object _find_unpack_format>
+             1204  LOAD_STR                 '_find_unpack_format'
+             1206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1208  STORE_NAME               _find_unpack_format
+
+ L.1213      1210  LOAD_CONST               (None, None)
+             1212  LOAD_CODE                <code_object unpack_archive>
+             1214  LOAD_STR                 'unpack_archive'
+             1216  MAKE_FUNCTION_1          'default'
+             1218  STORE_NAME               unpack_archive
+
+ L.1255      1220  LOAD_NAME                hasattr
+             1222  LOAD_NAME                os
+             1224  LOAD_STR                 'statvfs'
+             1226  CALL_FUNCTION_2       2  ''
+         1228_1230  POP_JUMP_IF_FALSE  1288  'to 1288'
+
+ L.1257      1232  LOAD_NAME                __all__
+             1234  LOAD_METHOD              append
+             1236  LOAD_STR                 'disk_usage'
+             1238  CALL_METHOD_1         1  ''
+             1240  POP_TOP          
+
+ L.1258      1242  LOAD_NAME                collections
+             1244  LOAD_METHOD              namedtuple
+             1246  LOAD_STR                 'usage'
+             1248  LOAD_STR                 'total used free'
+             1250  CALL_METHOD_2         2  ''
+             1252  STORE_NAME               _ntuple_diskusage
+
+ L.1259      1254  LOAD_STR                 'Total space in bytes'
+             1256  LOAD_NAME                _ntuple_diskusage
+             1258  LOAD_ATTR                total
+             1260  STORE_ATTR               __doc__
+
+ L.1260      1262  LOAD_STR                 'Used space in bytes'
+             1264  LOAD_NAME                _ntuple_diskusage
+             1266  LOAD_ATTR                used
+             1268  STORE_ATTR               __doc__
+
+ L.1261      1270  LOAD_STR                 'Free space in bytes'
+             1272  LOAD_NAME                _ntuple_diskusage
+             1274  LOAD_ATTR                free
+             1276  STORE_ATTR               __doc__
+
+ L.1263      1278  LOAD_CODE                <code_object disk_usage>
+             1280  LOAD_STR                 'disk_usage'
+             1282  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1284  STORE_NAME               disk_usage
+             1286  JUMP_FORWARD       1324  'to 1324'
+           1288_0  COME_FROM          1228  '1228'
+
+ L.1275      1288  LOAD_NAME                _WINDOWS
+         1290_1292  POP_JUMP_IF_FALSE  1324  'to 1324'
+
+ L.1277      1294  LOAD_NAME                __all__
+             1296  LOAD_METHOD              append
+             1298  LOAD_STR                 'disk_usage'
+             1300  CALL_METHOD_1         1  ''
+             1302  POP_TOP          
+
+ L.1278      1304  LOAD_NAME                collections
+             1306  LOAD_METHOD              namedtuple
+             1308  LOAD_STR                 'usage'
+             1310  LOAD_STR                 'total used free'
+             1312  CALL_METHOD_2         2  ''
+             1314  STORE_NAME               _ntuple_diskusage
+
+ L.1280      1316  LOAD_CODE                <code_object disk_usage>
+             1318  LOAD_STR                 'disk_usage'
+             1320  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1322  STORE_NAME               disk_usage
+           1324_0  COME_FROM          1290  '1290'
+           1324_1  COME_FROM          1286  '1286'
+
+ L.1291      1324  LOAD_CONST               (None, None)
+             1326  LOAD_CODE                <code_object chown>
+             1328  LOAD_STR                 'chown'
+             1330  MAKE_FUNCTION_1          'default'
+             1332  STORE_NAME               chown
+
+ L.1323      1334  LOAD_CONST               ((80, 24),)
+             1336  LOAD_CODE                <code_object get_terminal_size>
+             1338  LOAD_STR                 'get_terminal_size'
+             1340  MAKE_FUNCTION_1          'default'
+             1342  STORE_NAME               get_terminal_size
+
+ L.1372      1344  LOAD_CODE                <code_object _access_check>
+             1346  LOAD_STR                 '_access_check'
+             1348  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1350  STORE_NAME               _access_check
+
+ L.1377      1352  LOAD_NAME                os
+             1354  LOAD_ATTR                F_OK
+             1356  LOAD_NAME                os
+             1358  LOAD_ATTR                X_OK
+             1360  BINARY_OR        
+             1362  LOAD_CONST               None
+             1364  BUILD_TUPLE_2         2 
+             1366  LOAD_CODE                <code_object which>
+             1368  LOAD_STR                 'which'
+             1370  MAKE_FUNCTION_1          'default'
+             1372  STORE_NAME               which
+
+Parse error at or near `<121>' instruction at offset 76
+
+Instruction context:
+   
+ L.  18        72  DUP_TOP          
+                  74  LOAD_NAME                ImportError
+->                76  <121>                92  ''
+                  78  POP_TOP          
+                  80  POP_TOP          
+                  82  POP_TOP          
+
+test/39434.pyc -- 
+# decompile failed

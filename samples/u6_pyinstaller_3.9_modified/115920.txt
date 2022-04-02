@@ -1,0 +1,118 @@
+Instruction context:
+   
+ L.  13        76  BUILD_LIST_0          0 
+                  78  LOAD_CONST               ('unpack_archive', 'unpack_zipfile', 'unpack_tarfile', 'default_filter', 'UnrecognizedFormat', 'extraction_drivers', 'unpack_directory')
+->                80  CALL_FINALLY         83  'to 83'
+                  82  STORE_NAME               __all__
+
+test/115920.pyc -- 
+# decompile failed
+
+# file test/115920.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Utilities for extracting common archive formats'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              zipfile
+               10  STORE_NAME               zipfile
+
+ L.   4        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              tarfile
+               18  STORE_NAME               tarfile
+
+ L.   5        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              os
+               26  STORE_NAME               os
+
+ L.   6        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              shutil
+               34  STORE_NAME               shutil
+
+ L.   7        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              posixpath
+               42  STORE_NAME               posixpath
+
+ L.   8        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              contextlib
+               50  STORE_NAME               contextlib
+
+ L.   9        52  LOAD_CONST               0
+               54  LOAD_CONST               ('DistutilsError',)
+               56  IMPORT_NAME_ATTR         distutils.errors
+               58  IMPORT_FROM              DistutilsError
+               60  STORE_NAME               DistutilsError
+               62  POP_TOP          
+
+ L.  11        64  LOAD_CONST               0
+               66  LOAD_CONST               ('ensure_directory',)
+               68  IMPORT_NAME              pkg_resources
+               70  IMPORT_FROM              ensure_directory
+               72  STORE_NAME               ensure_directory
+               74  POP_TOP          
+
+ L.  13        76  BUILD_LIST_0          0 
+               78  LOAD_CONST               ('unpack_archive', 'unpack_zipfile', 'unpack_tarfile', 'default_filter', 'UnrecognizedFormat', 'extraction_drivers', 'unpack_directory')
+               80  CALL_FINALLY         83  'to 83'
+               82  STORE_NAME               __all__
+
+ L.  19        84  LOAD_BUILD_CLASS 
+               86  LOAD_CODE                <code_object UnrecognizedFormat>
+               88  LOAD_STR                 'UnrecognizedFormat'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  LOAD_STR                 'UnrecognizedFormat'
+               94  LOAD_NAME                DistutilsError
+               96  CALL_FUNCTION_3       3  ''
+               98  STORE_NAME               UnrecognizedFormat
+
+ L.  23       100  LOAD_CODE                <code_object default_filter>
+              102  LOAD_STR                 'default_filter'
+              104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              106  STORE_NAME               default_filter
+
+ L.  29       108  LOAD_NAME                default_filter
+
+ L.  30       110  LOAD_CONST               None
+
+ L.  28       112  BUILD_TUPLE_2         2 
+              114  LOAD_CODE                <code_object unpack_archive>
+              116  LOAD_STR                 'unpack_archive'
+              118  MAKE_FUNCTION_1          'default'
+              120  STORE_NAME               unpack_archive
+
+ L.  64       122  LOAD_NAME                default_filter
+              124  BUILD_TUPLE_1         1 
+              126  LOAD_CODE                <code_object unpack_directory>
+              128  LOAD_STR                 'unpack_directory'
+              130  MAKE_FUNCTION_1          'default'
+              132  STORE_NAME               unpack_directory
+
+ L.  91       134  LOAD_NAME                default_filter
+              136  BUILD_TUPLE_1         1 
+              138  LOAD_CODE                <code_object unpack_zipfile>
+              140  LOAD_STR                 'unpack_zipfile'
+              142  MAKE_FUNCTION_1          'default'
+              144  STORE_NAME               unpack_zipfile
+
+ L. 128       146  LOAD_NAME                default_filter
+              148  BUILD_TUPLE_1         1 
+              150  LOAD_CODE                <code_object unpack_tarfile>
+              152  LOAD_STR                 'unpack_tarfile'
+              154  MAKE_FUNCTION_1          'default'
+              156  STORE_NAME               unpack_tarfile
+
+ L. 175       158  LOAD_NAME                unpack_directory
+              160  LOAD_NAME                unpack_zipfile
+              162  LOAD_NAME                unpack_tarfile
+              164  BUILD_TUPLE_3         3 
+              166  STORE_NAME               extraction_drivers
+
+Parse error at or near `CALL_FINALLY' instruction at offset 80
+

@@ -1,0 +1,2058 @@
+
+# file test/101773.pyc
+# --- This code section failed: ---
+
+ L.   3         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.   5        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              functools
+               18  STORE_NAME               functools
+
+ L.   6        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              itertools
+               26  STORE_NAME               itertools
+
+ L.   7        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              operator
+               34  STORE_NAME               operator
+
+ L.   8        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              sys
+               42  STORE_NAME               sys
+
+ L.   9        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              types
+               50  STORE_NAME               types
+
+ L.  11        52  LOAD_STR                 'Benjamin Peterson <benjamin@python.org>'
+               54  STORE_NAME               __author__
+
+ L.  12        56  LOAD_STR                 '1.9.0'
+               58  STORE_NAME               __version__
+
+ L.  16        60  LOAD_NAME                sys
+               62  LOAD_ATTR                version_info
+               64  LOAD_CONST               0
+               66  BINARY_SUBSCR    
+               68  LOAD_CONST               2
+               70  COMPARE_OP               ==
+               72  STORE_NAME               PY2
+
+ L.  17        74  LOAD_NAME                sys
+               76  LOAD_ATTR                version_info
+               78  LOAD_CONST               0
+               80  BINARY_SUBSCR    
+               82  LOAD_CONST               3
+               84  COMPARE_OP               ==
+               86  STORE_NAME               PY3
+
+ L.  19        88  LOAD_NAME                PY3
+               90  POP_JUMP_IF_FALSE   126  'to 126'
+
+ L.  20        92  LOAD_NAME                str
+               94  BUILD_TUPLE_1         1 
+               96  STORE_NAME               string_types
+
+ L.  21        98  LOAD_NAME                int
+              100  BUILD_TUPLE_1         1 
+              102  STORE_NAME               integer_types
+
+ L.  22       104  LOAD_NAME                type
+              106  BUILD_TUPLE_1         1 
+              108  STORE_NAME               class_types
+
+ L.  23       110  LOAD_NAME                str
+              112  STORE_NAME               text_type
+
+ L.  24       114  LOAD_NAME                bytes
+              116  STORE_NAME               binary_type
+
+ L.  26       118  LOAD_NAME                sys
+              120  LOAD_ATTR                maxsize
+              122  STORE_NAME               MAXSIZE
+              124  JUMP_FORWARD        248  'to 248'
+            126_0  COME_FROM            90  '90'
+
+ L.  28       126  LOAD_NAME                basestring
+              128  BUILD_TUPLE_1         1 
+              130  STORE_NAME               string_types
+
+ L.  29       132  LOAD_NAME                int
+              134  LOAD_NAME                long
+              136  BUILD_TUPLE_2         2 
+              138  STORE_NAME               integer_types
+
+ L.  30       140  LOAD_NAME                type
+              142  LOAD_NAME                types
+              144  LOAD_ATTR                ClassType
+              146  BUILD_TUPLE_2         2 
+              148  STORE_NAME               class_types
+
+ L.  31       150  LOAD_NAME                unicode
+              152  STORE_NAME               text_type
+
+ L.  32       154  LOAD_NAME                str
+              156  STORE_NAME               binary_type
+
+ L.  34       158  LOAD_NAME                sys
+              160  LOAD_ATTR                platform
+              162  LOAD_METHOD              startswith
+              164  LOAD_STR                 'java'
+              166  CALL_METHOD_1         1  ''
+              168  POP_JUMP_IF_FALSE   180  'to 180'
+
+ L.  36       170  LOAD_NAME                int
+              172  LOAD_CONST               2147483647
+              174  CALL_FUNCTION_1       1  ''
+              176  STORE_NAME               MAXSIZE
+              178  JUMP_FORWARD        248  'to 248'
+            180_0  COME_FROM           168  '168'
+
+ L.  39       180  LOAD_BUILD_CLASS 
+              182  LOAD_CODE                <code_object X>
+              184  LOAD_STR                 'X'
+              186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              188  LOAD_STR                 'X'
+              190  LOAD_NAME                object
+              192  CALL_FUNCTION_3       3  ''
+              194  STORE_NAME               X
+
+ L.  42       196  SETUP_FINALLY       212  'to 212'
+
+ L.  43       198  LOAD_NAME                len
+              200  LOAD_NAME                X
+              202  CALL_FUNCTION_0       0  ''
+              204  CALL_FUNCTION_1       1  ''
+              206  POP_TOP          
+              208  POP_BLOCK        
+              210  JUMP_FORWARD        238  'to 238'
+            212_0  COME_FROM_FINALLY   196  '196'
+
+ L.  44       212  DUP_TOP          
+              214  LOAD_NAME                OverflowError
+              216  <121>               236  ''
+              218  POP_TOP          
+              220  POP_TOP          
+              222  POP_TOP          
+
+ L.  46       224  LOAD_NAME                int
+              226  LOAD_CONST               2147483647
+              228  CALL_FUNCTION_1       1  ''
+              230  STORE_NAME               MAXSIZE
+              232  POP_EXCEPT       
+              234  JUMP_FORWARD        246  'to 246'
+              236  <48>             
+            238_0  COME_FROM           210  '210'
+
+ L.  49       238  LOAD_NAME                int
+              240  LOAD_CONST               9223372036854775807
+              242  CALL_FUNCTION_1       1  ''
+              244  STORE_NAME               MAXSIZE
+            246_0  COME_FROM           234  '234'
+
+ L.  50       246  DELETE_NAME              X
+            248_0  COME_FROM           178  '178'
+            248_1  COME_FROM           124  '124'
+
+ L.  53       248  LOAD_CODE                <code_object _add_doc>
+              250  LOAD_STR                 '_add_doc'
+              252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              254  STORE_NAME               _add_doc
+
+ L.  58       256  LOAD_CODE                <code_object _import_module>
+              258  LOAD_STR                 '_import_module'
+              260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              262  STORE_NAME               _import_module
+
+ L.  64       264  LOAD_BUILD_CLASS 
+              266  LOAD_CODE                <code_object _LazyDescr>
+              268  LOAD_STR                 '_LazyDescr'
+              270  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              272  LOAD_STR                 '_LazyDescr'
+              274  LOAD_NAME                object
+              276  CALL_FUNCTION_3       3  ''
+              278  STORE_NAME               _LazyDescr
+
+ L.  81       280  LOAD_BUILD_CLASS 
+              282  LOAD_CODE                <code_object MovedModule>
+              284  LOAD_STR                 'MovedModule'
+              286  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              288  LOAD_STR                 'MovedModule'
+              290  LOAD_NAME                _LazyDescr
+              292  CALL_FUNCTION_3       3  ''
+              294  STORE_NAME               MovedModule
+
+ L. 102       296  LOAD_BUILD_CLASS 
+              298  LOAD_CODE                <code_object _LazyModule>
+              300  LOAD_STR                 '_LazyModule'
+              302  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              304  LOAD_STR                 '_LazyModule'
+              306  LOAD_NAME                types
+              308  LOAD_ATTR                ModuleType
+              310  CALL_FUNCTION_3       3  ''
+              312  STORE_NAME               _LazyModule
+
+ L. 117       314  LOAD_BUILD_CLASS 
+              316  LOAD_CODE                <code_object MovedAttribute>
+              318  LOAD_STR                 'MovedAttribute'
+              320  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              322  LOAD_STR                 'MovedAttribute'
+              324  LOAD_NAME                _LazyDescr
+              326  CALL_FUNCTION_3       3  ''
+              328  STORE_NAME               MovedAttribute
+
+ L. 142       330  LOAD_BUILD_CLASS 
+              332  LOAD_CODE                <code_object _SixMetaPathImporter>
+              334  LOAD_STR                 '_SixMetaPathImporter'
+              336  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              338  LOAD_STR                 '_SixMetaPathImporter'
+              340  LOAD_NAME                object
+              342  CALL_FUNCTION_3       3  ''
+              344  STORE_NAME               _SixMetaPathImporter
+
+ L. 204       346  LOAD_NAME                _SixMetaPathImporter
+              348  LOAD_NAME                __name__
+              350  CALL_FUNCTION_1       1  ''
+              352  STORE_NAME               _importer
+
+ L. 207       354  LOAD_BUILD_CLASS 
+              356  LOAD_CODE                <code_object _MovedItems>
+              358  LOAD_STR                 '_MovedItems'
+              360  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              362  LOAD_STR                 '_MovedItems'
+              364  LOAD_NAME                _LazyModule
+              366  CALL_FUNCTION_3       3  ''
+              368  STORE_NAME               _MovedItems
+
+ L. 213       370  LOAD_NAME                MovedAttribute
+              372  LOAD_STR                 'cStringIO'
+              374  LOAD_STR                 'cStringIO'
+              376  LOAD_STR                 'io'
+              378  LOAD_STR                 'StringIO'
+              380  CALL_FUNCTION_4       4  ''
+
+ L. 214       382  LOAD_NAME                MovedAttribute
+              384  LOAD_STR                 'filter'
+              386  LOAD_STR                 'itertools'
+              388  LOAD_STR                 'builtins'
+              390  LOAD_STR                 'ifilter'
+              392  LOAD_STR                 'filter'
+              394  CALL_FUNCTION_5       5  ''
+
+ L. 215       396  LOAD_NAME                MovedAttribute
+              398  LOAD_STR                 'filterfalse'
+              400  LOAD_STR                 'itertools'
+              402  LOAD_STR                 'itertools'
+
+ L. 216       404  LOAD_STR                 'ifilterfalse'
+              406  LOAD_STR                 'filterfalse'
+
+ L. 215       408  CALL_FUNCTION_5       5  ''
+
+ L. 217       410  LOAD_NAME                MovedAttribute
+              412  LOAD_STR                 'input'
+              414  LOAD_STR                 '__builtin__'
+              416  LOAD_STR                 'builtins'
+              418  LOAD_STR                 'raw_input'
+              420  LOAD_STR                 'input'
+              422  CALL_FUNCTION_5       5  ''
+
+ L. 218       424  LOAD_NAME                MovedAttribute
+              426  LOAD_STR                 'intern'
+              428  LOAD_STR                 '__builtin__'
+              430  LOAD_STR                 'sys'
+              432  CALL_FUNCTION_3       3  ''
+
+ L. 219       434  LOAD_NAME                MovedAttribute
+              436  LOAD_STR                 'map'
+              438  LOAD_STR                 'itertools'
+              440  LOAD_STR                 'builtins'
+              442  LOAD_STR                 'imap'
+              444  LOAD_STR                 'map'
+              446  CALL_FUNCTION_5       5  ''
+
+ L. 220       448  LOAD_NAME                MovedAttribute
+              450  LOAD_STR                 'range'
+              452  LOAD_STR                 '__builtin__'
+              454  LOAD_STR                 'builtins'
+              456  LOAD_STR                 'xrange'
+              458  LOAD_STR                 'range'
+              460  CALL_FUNCTION_5       5  ''
+
+ L. 221       462  LOAD_NAME                MovedAttribute
+              464  LOAD_STR                 'reload_module'
+              466  LOAD_STR                 '__builtin__'
+              468  LOAD_STR                 'imp'
+              470  LOAD_STR                 'reload'
+              472  CALL_FUNCTION_4       4  ''
+
+ L. 222       474  LOAD_NAME                MovedAttribute
+              476  LOAD_STR                 'reduce'
+              478  LOAD_STR                 '__builtin__'
+              480  LOAD_STR                 'functools'
+              482  CALL_FUNCTION_3       3  ''
+
+ L. 223       484  LOAD_NAME                MovedAttribute
+              486  LOAD_STR                 'shlex_quote'
+              488  LOAD_STR                 'pipes'
+              490  LOAD_STR                 'shlex'
+              492  LOAD_STR                 'quote'
+              494  CALL_FUNCTION_4       4  ''
+
+ L. 224       496  LOAD_NAME                MovedAttribute
+              498  LOAD_STR                 'StringIO'
+              500  LOAD_STR                 'StringIO'
+              502  LOAD_STR                 'io'
+              504  CALL_FUNCTION_3       3  ''
+
+ L. 225       506  LOAD_NAME                MovedAttribute
+              508  LOAD_STR                 'UserDict'
+              510  LOAD_STR                 'UserDict'
+              512  LOAD_STR                 'collections'
+              514  CALL_FUNCTION_3       3  ''
+
+ L. 226       516  LOAD_NAME                MovedAttribute
+              518  LOAD_STR                 'UserList'
+              520  LOAD_STR                 'UserList'
+              522  LOAD_STR                 'collections'
+              524  CALL_FUNCTION_3       3  ''
+
+ L. 227       526  LOAD_NAME                MovedAttribute
+              528  LOAD_STR                 'UserString'
+              530  LOAD_STR                 'UserString'
+              532  LOAD_STR                 'collections'
+              534  CALL_FUNCTION_3       3  ''
+
+ L. 228       536  LOAD_NAME                MovedAttribute
+              538  LOAD_STR                 'xrange'
+              540  LOAD_STR                 '__builtin__'
+              542  LOAD_STR                 'builtins'
+              544  LOAD_STR                 'xrange'
+              546  LOAD_STR                 'range'
+              548  CALL_FUNCTION_5       5  ''
+
+ L. 229       550  LOAD_NAME                MovedAttribute
+              552  LOAD_STR                 'zip'
+              554  LOAD_STR                 'itertools'
+              556  LOAD_STR                 'builtins'
+              558  LOAD_STR                 'izip'
+              560  LOAD_STR                 'zip'
+              562  CALL_FUNCTION_5       5  ''
+
+ L. 230       564  LOAD_NAME                MovedAttribute
+              566  LOAD_STR                 'zip_longest'
+              568  LOAD_STR                 'itertools'
+              570  LOAD_STR                 'itertools'
+
+ L. 231       572  LOAD_STR                 'izip_longest'
+              574  LOAD_STR                 'zip_longest'
+
+ L. 230       576  CALL_FUNCTION_5       5  ''
+
+ L. 233       578  LOAD_NAME                MovedModule
+              580  LOAD_STR                 'builtins'
+              582  LOAD_STR                 '__builtin__'
+              584  CALL_FUNCTION_2       2  ''
+
+ L. 234       586  LOAD_NAME                MovedModule
+              588  LOAD_STR                 'configparser'
+              590  LOAD_STR                 'ConfigParser'
+              592  CALL_FUNCTION_2       2  ''
+
+ L. 235       594  LOAD_NAME                MovedModule
+              596  LOAD_STR                 'copyreg'
+              598  LOAD_STR                 'copy_reg'
+              600  CALL_FUNCTION_2       2  ''
+
+ L. 236       602  LOAD_NAME                MovedModule
+              604  LOAD_STR                 'dbm_gnu'
+              606  LOAD_STR                 'gdbm'
+              608  LOAD_STR                 'dbm.gnu'
+              610  CALL_FUNCTION_3       3  ''
+
+ L. 237       612  LOAD_NAME                MovedModule
+              614  LOAD_STR                 '_dummy_thread'
+              616  LOAD_STR                 'dummy_thread'
+              618  LOAD_STR                 '_dummy_thread'
+              620  CALL_FUNCTION_3       3  ''
+
+ L. 238       622  LOAD_NAME                MovedModule
+              624  LOAD_STR                 'http_cookiejar'
+              626  LOAD_STR                 'cookielib'
+              628  LOAD_STR                 'http.cookiejar'
+              630  CALL_FUNCTION_3       3  ''
+
+ L. 239       632  LOAD_NAME                MovedModule
+              634  LOAD_STR                 'http_cookies'
+              636  LOAD_STR                 'Cookie'
+              638  LOAD_STR                 'http.cookies'
+              640  CALL_FUNCTION_3       3  ''
+
+ L. 240       642  LOAD_NAME                MovedModule
+              644  LOAD_STR                 'html_entities'
+              646  LOAD_STR                 'htmlentitydefs'
+              648  LOAD_STR                 'html.entities'
+              650  CALL_FUNCTION_3       3  ''
+
+ L. 241       652  LOAD_NAME                MovedModule
+              654  LOAD_STR                 'html_parser'
+              656  LOAD_STR                 'HTMLParser'
+              658  LOAD_STR                 'html.parser'
+              660  CALL_FUNCTION_3       3  ''
+
+ L. 242       662  LOAD_NAME                MovedModule
+              664  LOAD_STR                 'http_client'
+              666  LOAD_STR                 'httplib'
+              668  LOAD_STR                 'http.client'
+              670  CALL_FUNCTION_3       3  ''
+
+ L. 243       672  LOAD_NAME                MovedModule
+              674  LOAD_STR                 'email_mime_multipart'
+              676  LOAD_STR                 'email.MIMEMultipart'
+
+ L. 244       678  LOAD_STR                 'email.mime.multipart'
+
+ L. 243       680  CALL_FUNCTION_3       3  ''
+
+ L. 245       682  LOAD_NAME                MovedModule
+              684  LOAD_STR                 'email_mime_nonmultipart'
+
+ L. 246       686  LOAD_STR                 'email.MIMENonMultipart'
+              688  LOAD_STR                 'email.mime.nonmultipart'
+
+ L. 245       690  CALL_FUNCTION_3       3  ''
+
+ L. 247       692  LOAD_NAME                MovedModule
+              694  LOAD_STR                 'email_mime_text'
+              696  LOAD_STR                 'email.MIMEText'
+              698  LOAD_STR                 'email.mime.text'
+              700  CALL_FUNCTION_3       3  ''
+
+ L. 248       702  LOAD_NAME                MovedModule
+              704  LOAD_STR                 'email_mime_base'
+              706  LOAD_STR                 'email.MIMEBase'
+              708  LOAD_STR                 'email.mime.base'
+              710  CALL_FUNCTION_3       3  ''
+
+ L. 249       712  LOAD_NAME                MovedModule
+              714  LOAD_STR                 'BaseHTTPServer'
+              716  LOAD_STR                 'BaseHTTPServer'
+              718  LOAD_STR                 'http.server'
+              720  CALL_FUNCTION_3       3  ''
+
+ L. 250       722  LOAD_NAME                MovedModule
+              724  LOAD_STR                 'CGIHTTPServer'
+              726  LOAD_STR                 'CGIHTTPServer'
+              728  LOAD_STR                 'http.server'
+              730  CALL_FUNCTION_3       3  ''
+
+ L. 251       732  LOAD_NAME                MovedModule
+              734  LOAD_STR                 'SimpleHTTPServer'
+              736  LOAD_STR                 'SimpleHTTPServer'
+              738  LOAD_STR                 'http.server'
+              740  CALL_FUNCTION_3       3  ''
+
+ L. 252       742  LOAD_NAME                MovedModule
+              744  LOAD_STR                 'cPickle'
+              746  LOAD_STR                 'cPickle'
+              748  LOAD_STR                 'pickle'
+              750  CALL_FUNCTION_3       3  ''
+
+ L. 253       752  LOAD_NAME                MovedModule
+              754  LOAD_STR                 'queue'
+              756  LOAD_STR                 'Queue'
+              758  CALL_FUNCTION_2       2  ''
+
+ L. 254       760  LOAD_NAME                MovedModule
+              762  LOAD_STR                 'reprlib'
+              764  LOAD_STR                 'repr'
+              766  CALL_FUNCTION_2       2  ''
+
+ L. 255       768  LOAD_NAME                MovedModule
+              770  LOAD_STR                 'socketserver'
+              772  LOAD_STR                 'SocketServer'
+              774  CALL_FUNCTION_2       2  ''
+
+ L. 256       776  LOAD_NAME                MovedModule
+              778  LOAD_STR                 '_thread'
+              780  LOAD_STR                 'thread'
+              782  LOAD_STR                 '_thread'
+              784  CALL_FUNCTION_3       3  ''
+
+ L. 257       786  LOAD_NAME                MovedModule
+              788  LOAD_STR                 'tkinter'
+              790  LOAD_STR                 'Tkinter'
+              792  CALL_FUNCTION_2       2  ''
+
+ L. 258       794  LOAD_NAME                MovedModule
+              796  LOAD_STR                 'tkinter_dialog'
+              798  LOAD_STR                 'Dialog'
+              800  LOAD_STR                 'tkinter.dialog'
+              802  CALL_FUNCTION_3       3  ''
+
+ L. 259       804  LOAD_NAME                MovedModule
+              806  LOAD_STR                 'tkinter_filedialog'
+              808  LOAD_STR                 'FileDialog'
+              810  LOAD_STR                 'tkinter.filedialog'
+              812  CALL_FUNCTION_3       3  ''
+
+ L. 260       814  LOAD_NAME                MovedModule
+              816  LOAD_STR                 'tkinter_scrolledtext'
+              818  LOAD_STR                 'ScrolledText'
+
+ L. 261       820  LOAD_STR                 'tkinter.scrolledtext'
+
+ L. 260       822  CALL_FUNCTION_3       3  ''
+
+ L. 262       824  LOAD_NAME                MovedModule
+              826  LOAD_STR                 'tkinter_simpledialog'
+              828  LOAD_STR                 'SimpleDialog'
+
+ L. 263       830  LOAD_STR                 'tkinter.simpledialog'
+
+ L. 262       832  CALL_FUNCTION_3       3  ''
+
+ L. 264       834  LOAD_NAME                MovedModule
+              836  LOAD_STR                 'tkinter_tix'
+              838  LOAD_STR                 'Tix'
+              840  LOAD_STR                 'tkinter.tix'
+              842  CALL_FUNCTION_3       3  ''
+
+ L. 265       844  LOAD_NAME                MovedModule
+              846  LOAD_STR                 'tkinter_ttk'
+              848  LOAD_STR                 'ttk'
+              850  LOAD_STR                 'tkinter.ttk'
+              852  CALL_FUNCTION_3       3  ''
+
+ L. 266       854  LOAD_NAME                MovedModule
+              856  LOAD_STR                 'tkinter_constants'
+              858  LOAD_STR                 'Tkconstants'
+              860  LOAD_STR                 'tkinter.constants'
+              862  CALL_FUNCTION_3       3  ''
+
+ L. 267       864  LOAD_NAME                MovedModule
+              866  LOAD_STR                 'tkinter_dnd'
+              868  LOAD_STR                 'Tkdnd'
+              870  LOAD_STR                 'tkinter.dnd'
+              872  CALL_FUNCTION_3       3  ''
+
+ L. 268       874  LOAD_NAME                MovedModule
+              876  LOAD_STR                 'tkinter_colorchooser'
+              878  LOAD_STR                 'tkColorChooser'
+
+ L. 269       880  LOAD_STR                 'tkinter.colorchooser'
+
+ L. 268       882  CALL_FUNCTION_3       3  ''
+
+ L. 270       884  LOAD_NAME                MovedModule
+              886  LOAD_STR                 'tkinter_commondialog'
+              888  LOAD_STR                 'tkCommonDialog'
+
+ L. 271       890  LOAD_STR                 'tkinter.commondialog'
+
+ L. 270       892  CALL_FUNCTION_3       3  ''
+
+ L. 272       894  LOAD_NAME                MovedModule
+              896  LOAD_STR                 'tkinter_tkfiledialog'
+              898  LOAD_STR                 'tkFileDialog'
+              900  LOAD_STR                 'tkinter.filedialog'
+              902  CALL_FUNCTION_3       3  ''
+
+ L. 273       904  LOAD_NAME                MovedModule
+              906  LOAD_STR                 'tkinter_font'
+              908  LOAD_STR                 'tkFont'
+              910  LOAD_STR                 'tkinter.font'
+              912  CALL_FUNCTION_3       3  ''
+
+ L. 274       914  LOAD_NAME                MovedModule
+              916  LOAD_STR                 'tkinter_messagebox'
+              918  LOAD_STR                 'tkMessageBox'
+              920  LOAD_STR                 'tkinter.messagebox'
+              922  CALL_FUNCTION_3       3  ''
+
+ L. 275       924  LOAD_NAME                MovedModule
+              926  LOAD_STR                 'tkinter_tksimpledialog'
+              928  LOAD_STR                 'tkSimpleDialog'
+
+ L. 276       930  LOAD_STR                 'tkinter.simpledialog'
+
+ L. 275       932  CALL_FUNCTION_3       3  ''
+
+ L. 277       934  LOAD_NAME                MovedModule
+              936  LOAD_STR                 'urllib_parse'
+              938  LOAD_NAME                __name__
+
+ L. 278       940  LOAD_STR                 '.moves.urllib_parse'
+
+ L. 277       942  BINARY_ADD       
+
+ L. 278       944  LOAD_STR                 'urllib.parse'
+
+ L. 277       946  CALL_FUNCTION_3       3  ''
+
+ L. 279       948  LOAD_NAME                MovedModule
+              950  LOAD_STR                 'urllib_error'
+              952  LOAD_NAME                __name__
+
+ L. 280       954  LOAD_STR                 '.moves.urllib_error'
+
+ L. 279       956  BINARY_ADD       
+
+ L. 280       958  LOAD_STR                 'urllib.error'
+
+ L. 279       960  CALL_FUNCTION_3       3  ''
+
+ L. 281       962  LOAD_NAME                MovedModule
+              964  LOAD_STR                 'urllib'
+              966  LOAD_NAME                __name__
+              968  LOAD_STR                 '.moves.urllib'
+              970  BINARY_ADD       
+
+ L. 282       972  LOAD_NAME                __name__
+              974  LOAD_STR                 '.moves.urllib'
+              976  BINARY_ADD       
+
+ L. 281       978  CALL_FUNCTION_3       3  ''
+
+ L. 283       980  LOAD_NAME                MovedModule
+              982  LOAD_STR                 'urllib_robotparser'
+              984  LOAD_STR                 'robotparser'
+              986  LOAD_STR                 'urllib.robotparser'
+              988  CALL_FUNCTION_3       3  ''
+
+ L. 284       990  LOAD_NAME                MovedModule
+              992  LOAD_STR                 'xmlrpc_client'
+              994  LOAD_STR                 'xmlrpclib'
+              996  LOAD_STR                 'xmlrpc.client'
+              998  CALL_FUNCTION_3       3  ''
+
+ L. 285      1000  LOAD_NAME                MovedModule
+             1002  LOAD_STR                 'xmlrpc_server'
+             1004  LOAD_STR                 'SimpleXMLRPCServer'
+             1006  LOAD_STR                 'xmlrpc.server'
+             1008  CALL_FUNCTION_3       3  ''
+
+ L. 286      1010  LOAD_NAME                MovedModule
+             1012  LOAD_STR                 'winreg'
+             1014  LOAD_STR                 '_winreg'
+             1016  CALL_FUNCTION_2       2  ''
+
+ L. 212      1018  BUILD_LIST_61        61 
+             1020  STORE_NAME               _moved_attributes
+
+ L. 288      1022  LOAD_NAME                _moved_attributes
+             1024  GET_ITER         
+           1026_0  COME_FROM          1074  '1074'
+           1026_1  COME_FROM          1052  '1052'
+             1026  FOR_ITER           1078  'to 1078'
+             1028  STORE_NAME               attr
+
+ L. 289      1030  LOAD_NAME                setattr
+             1032  LOAD_NAME                _MovedItems
+             1034  LOAD_NAME                attr
+             1036  LOAD_ATTR                name
+             1038  LOAD_NAME                attr
+             1040  CALL_FUNCTION_3       3  ''
+             1042  POP_TOP          
+
+ L. 290      1044  LOAD_NAME                isinstance
+             1046  LOAD_NAME                attr
+             1048  LOAD_NAME                MovedModule
+             1050  CALL_FUNCTION_2       2  ''
+         1052_1054  POP_JUMP_IF_FALSE_BACK  1026  'to 1026'
+
+ L. 291      1056  LOAD_NAME                _importer
+             1058  LOAD_METHOD              _add_module
+             1060  LOAD_NAME                attr
+             1062  LOAD_STR                 'moves.'
+             1064  LOAD_NAME                attr
+             1066  LOAD_ATTR                name
+             1068  BINARY_ADD       
+             1070  CALL_METHOD_2         2  ''
+             1072  POP_TOP          
+         1074_1076  JUMP_BACK          1026  'to 1026'
+           1078_0  COME_FROM          1026  '1026'
+
+ L. 292      1078  DELETE_NAME              attr
+
+ L. 294      1080  LOAD_NAME                _moved_attributes
+             1082  LOAD_NAME                _MovedItems
+             1084  STORE_ATTR               _moved_attributes
+
+ L. 296      1086  LOAD_NAME                _MovedItems
+             1088  LOAD_NAME                __name__
+             1090  LOAD_STR                 '.moves'
+             1092  BINARY_ADD       
+             1094  CALL_FUNCTION_1       1  ''
+             1096  STORE_NAME               moves
+
+ L. 297      1098  LOAD_NAME                _importer
+             1100  LOAD_METHOD              _add_module
+             1102  LOAD_NAME                moves
+             1104  LOAD_STR                 'moves'
+             1106  CALL_METHOD_2         2  ''
+             1108  POP_TOP          
+
+ L. 300      1110  LOAD_BUILD_CLASS 
+             1112  LOAD_CODE                <code_object Module_six_moves_urllib_parse>
+             1114  LOAD_STR                 'Module_six_moves_urllib_parse'
+             1116  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1118  LOAD_STR                 'Module_six_moves_urllib_parse'
+             1120  LOAD_NAME                _LazyModule
+             1122  CALL_FUNCTION_3       3  ''
+             1124  STORE_NAME               Module_six_moves_urllib_parse
+
+ L. 305      1126  LOAD_NAME                MovedAttribute
+             1128  LOAD_STR                 'ParseResult'
+             1130  LOAD_STR                 'urlparse'
+             1132  LOAD_STR                 'urllib.parse'
+             1134  CALL_FUNCTION_3       3  ''
+
+ L. 306      1136  LOAD_NAME                MovedAttribute
+             1138  LOAD_STR                 'SplitResult'
+             1140  LOAD_STR                 'urlparse'
+             1142  LOAD_STR                 'urllib.parse'
+             1144  CALL_FUNCTION_3       3  ''
+
+ L. 307      1146  LOAD_NAME                MovedAttribute
+             1148  LOAD_STR                 'parse_qs'
+             1150  LOAD_STR                 'urlparse'
+             1152  LOAD_STR                 'urllib.parse'
+             1154  CALL_FUNCTION_3       3  ''
+
+ L. 308      1156  LOAD_NAME                MovedAttribute
+             1158  LOAD_STR                 'parse_qsl'
+             1160  LOAD_STR                 'urlparse'
+             1162  LOAD_STR                 'urllib.parse'
+             1164  CALL_FUNCTION_3       3  ''
+
+ L. 309      1166  LOAD_NAME                MovedAttribute
+             1168  LOAD_STR                 'urldefrag'
+             1170  LOAD_STR                 'urlparse'
+             1172  LOAD_STR                 'urllib.parse'
+             1174  CALL_FUNCTION_3       3  ''
+
+ L. 310      1176  LOAD_NAME                MovedAttribute
+             1178  LOAD_STR                 'urljoin'
+             1180  LOAD_STR                 'urlparse'
+             1182  LOAD_STR                 'urllib.parse'
+             1184  CALL_FUNCTION_3       3  ''
+
+ L. 311      1186  LOAD_NAME                MovedAttribute
+             1188  LOAD_STR                 'urlparse'
+             1190  LOAD_STR                 'urlparse'
+             1192  LOAD_STR                 'urllib.parse'
+             1194  CALL_FUNCTION_3       3  ''
+
+ L. 312      1196  LOAD_NAME                MovedAttribute
+             1198  LOAD_STR                 'urlsplit'
+             1200  LOAD_STR                 'urlparse'
+             1202  LOAD_STR                 'urllib.parse'
+             1204  CALL_FUNCTION_3       3  ''
+
+ L. 313      1206  LOAD_NAME                MovedAttribute
+             1208  LOAD_STR                 'urlunparse'
+             1210  LOAD_STR                 'urlparse'
+             1212  LOAD_STR                 'urllib.parse'
+             1214  CALL_FUNCTION_3       3  ''
+
+ L. 314      1216  LOAD_NAME                MovedAttribute
+             1218  LOAD_STR                 'urlunsplit'
+             1220  LOAD_STR                 'urlparse'
+             1222  LOAD_STR                 'urllib.parse'
+             1224  CALL_FUNCTION_3       3  ''
+
+ L. 315      1226  LOAD_NAME                MovedAttribute
+             1228  LOAD_STR                 'quote'
+             1230  LOAD_STR                 'urllib'
+             1232  LOAD_STR                 'urllib.parse'
+             1234  CALL_FUNCTION_3       3  ''
+
+ L. 316      1236  LOAD_NAME                MovedAttribute
+             1238  LOAD_STR                 'quote_plus'
+             1240  LOAD_STR                 'urllib'
+             1242  LOAD_STR                 'urllib.parse'
+             1244  CALL_FUNCTION_3       3  ''
+
+ L. 317      1246  LOAD_NAME                MovedAttribute
+             1248  LOAD_STR                 'unquote'
+             1250  LOAD_STR                 'urllib'
+             1252  LOAD_STR                 'urllib.parse'
+             1254  CALL_FUNCTION_3       3  ''
+
+ L. 318      1256  LOAD_NAME                MovedAttribute
+             1258  LOAD_STR                 'unquote_plus'
+             1260  LOAD_STR                 'urllib'
+             1262  LOAD_STR                 'urllib.parse'
+             1264  CALL_FUNCTION_3       3  ''
+
+ L. 319      1266  LOAD_NAME                MovedAttribute
+             1268  LOAD_STR                 'urlencode'
+             1270  LOAD_STR                 'urllib'
+             1272  LOAD_STR                 'urllib.parse'
+             1274  CALL_FUNCTION_3       3  ''
+
+ L. 320      1276  LOAD_NAME                MovedAttribute
+             1278  LOAD_STR                 'splitquery'
+             1280  LOAD_STR                 'urllib'
+             1282  LOAD_STR                 'urllib.parse'
+             1284  CALL_FUNCTION_3       3  ''
+
+ L. 321      1286  LOAD_NAME                MovedAttribute
+             1288  LOAD_STR                 'splittag'
+             1290  LOAD_STR                 'urllib'
+             1292  LOAD_STR                 'urllib.parse'
+             1294  CALL_FUNCTION_3       3  ''
+
+ L. 322      1296  LOAD_NAME                MovedAttribute
+             1298  LOAD_STR                 'splituser'
+             1300  LOAD_STR                 'urllib'
+             1302  LOAD_STR                 'urllib.parse'
+             1304  CALL_FUNCTION_3       3  ''
+
+ L. 323      1306  LOAD_NAME                MovedAttribute
+             1308  LOAD_STR                 'uses_fragment'
+             1310  LOAD_STR                 'urlparse'
+             1312  LOAD_STR                 'urllib.parse'
+             1314  CALL_FUNCTION_3       3  ''
+
+ L. 324      1316  LOAD_NAME                MovedAttribute
+             1318  LOAD_STR                 'uses_netloc'
+             1320  LOAD_STR                 'urlparse'
+             1322  LOAD_STR                 'urllib.parse'
+             1324  CALL_FUNCTION_3       3  ''
+
+ L. 325      1326  LOAD_NAME                MovedAttribute
+             1328  LOAD_STR                 'uses_params'
+             1330  LOAD_STR                 'urlparse'
+             1332  LOAD_STR                 'urllib.parse'
+             1334  CALL_FUNCTION_3       3  ''
+
+ L. 326      1336  LOAD_NAME                MovedAttribute
+             1338  LOAD_STR                 'uses_query'
+             1340  LOAD_STR                 'urlparse'
+             1342  LOAD_STR                 'urllib.parse'
+             1344  CALL_FUNCTION_3       3  ''
+
+ L. 327      1346  LOAD_NAME                MovedAttribute
+             1348  LOAD_STR                 'uses_relative'
+             1350  LOAD_STR                 'urlparse'
+             1352  LOAD_STR                 'urllib.parse'
+             1354  CALL_FUNCTION_3       3  ''
+
+ L. 304      1356  BUILD_LIST_23        23 
+             1358  STORE_NAME               _urllib_parse_moved_attributes
+
+ L. 329      1360  LOAD_NAME                _urllib_parse_moved_attributes
+             1362  GET_ITER         
+           1364_0  COME_FROM          1382  '1382'
+             1364  FOR_ITER           1386  'to 1386'
+             1366  STORE_NAME               attr
+
+ L. 330      1368  LOAD_NAME                setattr
+             1370  LOAD_NAME                Module_six_moves_urllib_parse
+             1372  LOAD_NAME                attr
+             1374  LOAD_ATTR                name
+             1376  LOAD_NAME                attr
+             1378  CALL_FUNCTION_3       3  ''
+             1380  POP_TOP          
+         1382_1384  JUMP_BACK          1364  'to 1364'
+           1386_0  COME_FROM          1364  '1364'
+
+ L. 331      1386  DELETE_NAME              attr
+
+ L. 333      1388  LOAD_NAME                _urllib_parse_moved_attributes
+             1390  LOAD_NAME                Module_six_moves_urllib_parse
+             1392  STORE_ATTR               _moved_attributes
+
+ L. 335      1394  LOAD_NAME                _importer
+             1396  LOAD_METHOD              _add_module
+             1398  LOAD_NAME                Module_six_moves_urllib_parse
+             1400  LOAD_NAME                __name__
+             1402  LOAD_STR                 '.moves.urllib_parse'
+             1404  BINARY_ADD       
+             1406  CALL_FUNCTION_1       1  ''
+
+ L. 336      1408  LOAD_STR                 'moves.urllib_parse'
+             1410  LOAD_STR                 'moves.urllib.parse'
+
+ L. 335      1412  CALL_METHOD_3         3  ''
+             1414  POP_TOP          
+
+ L. 339      1416  LOAD_BUILD_CLASS 
+             1418  LOAD_CODE                <code_object Module_six_moves_urllib_error>
+             1420  LOAD_STR                 'Module_six_moves_urllib_error'
+             1422  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1424  LOAD_STR                 'Module_six_moves_urllib_error'
+             1426  LOAD_NAME                _LazyModule
+             1428  CALL_FUNCTION_3       3  ''
+             1430  STORE_NAME               Module_six_moves_urllib_error
+
+ L. 344      1432  LOAD_NAME                MovedAttribute
+             1434  LOAD_STR                 'URLError'
+             1436  LOAD_STR                 'urllib2'
+             1438  LOAD_STR                 'urllib.error'
+             1440  CALL_FUNCTION_3       3  ''
+
+ L. 345      1442  LOAD_NAME                MovedAttribute
+             1444  LOAD_STR                 'HTTPError'
+             1446  LOAD_STR                 'urllib2'
+             1448  LOAD_STR                 'urllib.error'
+             1450  CALL_FUNCTION_3       3  ''
+
+ L. 346      1452  LOAD_NAME                MovedAttribute
+             1454  LOAD_STR                 'ContentTooShortError'
+             1456  LOAD_STR                 'urllib'
+             1458  LOAD_STR                 'urllib.error'
+             1460  CALL_FUNCTION_3       3  ''
+
+ L. 343      1462  BUILD_LIST_3          3 
+             1464  STORE_NAME               _urllib_error_moved_attributes
+
+ L. 348      1466  LOAD_NAME                _urllib_error_moved_attributes
+             1468  GET_ITER         
+           1470_0  COME_FROM          1488  '1488'
+             1470  FOR_ITER           1492  'to 1492'
+             1472  STORE_NAME               attr
+
+ L. 349      1474  LOAD_NAME                setattr
+             1476  LOAD_NAME                Module_six_moves_urllib_error
+             1478  LOAD_NAME                attr
+             1480  LOAD_ATTR                name
+             1482  LOAD_NAME                attr
+             1484  CALL_FUNCTION_3       3  ''
+             1486  POP_TOP          
+         1488_1490  JUMP_BACK          1470  'to 1470'
+           1492_0  COME_FROM          1470  '1470'
+
+ L. 350      1492  DELETE_NAME              attr
+
+ L. 352      1494  LOAD_NAME                _urllib_error_moved_attributes
+             1496  LOAD_NAME                Module_six_moves_urllib_error
+             1498  STORE_ATTR               _moved_attributes
+
+ L. 354      1500  LOAD_NAME                _importer
+             1502  LOAD_METHOD              _add_module
+             1504  LOAD_NAME                Module_six_moves_urllib_error
+             1506  LOAD_NAME                __name__
+             1508  LOAD_STR                 '.moves.urllib.error'
+             1510  BINARY_ADD       
+             1512  CALL_FUNCTION_1       1  ''
+
+ L. 355      1514  LOAD_STR                 'moves.urllib_error'
+             1516  LOAD_STR                 'moves.urllib.error'
+
+ L. 354      1518  CALL_METHOD_3         3  ''
+             1520  POP_TOP          
+
+ L. 358      1522  LOAD_BUILD_CLASS 
+             1524  LOAD_CODE                <code_object Module_six_moves_urllib_request>
+             1526  LOAD_STR                 'Module_six_moves_urllib_request'
+             1528  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1530  LOAD_STR                 'Module_six_moves_urllib_request'
+             1532  LOAD_NAME                _LazyModule
+             1534  CALL_FUNCTION_3       3  ''
+             1536  STORE_NAME               Module_six_moves_urllib_request
+
+ L. 363      1538  LOAD_NAME                MovedAttribute
+             1540  LOAD_STR                 'urlopen'
+             1542  LOAD_STR                 'urllib2'
+             1544  LOAD_STR                 'urllib.request'
+             1546  CALL_FUNCTION_3       3  ''
+
+ L. 364      1548  LOAD_NAME                MovedAttribute
+             1550  LOAD_STR                 'install_opener'
+             1552  LOAD_STR                 'urllib2'
+             1554  LOAD_STR                 'urllib.request'
+             1556  CALL_FUNCTION_3       3  ''
+
+ L. 365      1558  LOAD_NAME                MovedAttribute
+             1560  LOAD_STR                 'build_opener'
+             1562  LOAD_STR                 'urllib2'
+             1564  LOAD_STR                 'urllib.request'
+             1566  CALL_FUNCTION_3       3  ''
+
+ L. 366      1568  LOAD_NAME                MovedAttribute
+             1570  LOAD_STR                 'pathname2url'
+             1572  LOAD_STR                 'urllib'
+             1574  LOAD_STR                 'urllib.request'
+             1576  CALL_FUNCTION_3       3  ''
+
+ L. 367      1578  LOAD_NAME                MovedAttribute
+             1580  LOAD_STR                 'url2pathname'
+             1582  LOAD_STR                 'urllib'
+             1584  LOAD_STR                 'urllib.request'
+             1586  CALL_FUNCTION_3       3  ''
+
+ L. 368      1588  LOAD_NAME                MovedAttribute
+             1590  LOAD_STR                 'getproxies'
+             1592  LOAD_STR                 'urllib'
+             1594  LOAD_STR                 'urllib.request'
+             1596  CALL_FUNCTION_3       3  ''
+
+ L. 369      1598  LOAD_NAME                MovedAttribute
+             1600  LOAD_STR                 'Request'
+             1602  LOAD_STR                 'urllib2'
+             1604  LOAD_STR                 'urllib.request'
+             1606  CALL_FUNCTION_3       3  ''
+
+ L. 370      1608  LOAD_NAME                MovedAttribute
+             1610  LOAD_STR                 'OpenerDirector'
+             1612  LOAD_STR                 'urllib2'
+             1614  LOAD_STR                 'urllib.request'
+             1616  CALL_FUNCTION_3       3  ''
+
+ L. 371      1618  LOAD_NAME                MovedAttribute
+             1620  LOAD_STR                 'HTTPDefaultErrorHandler'
+             1622  LOAD_STR                 'urllib2'
+             1624  LOAD_STR                 'urllib.request'
+             1626  CALL_FUNCTION_3       3  ''
+
+ L. 372      1628  LOAD_NAME                MovedAttribute
+             1630  LOAD_STR                 'HTTPRedirectHandler'
+             1632  LOAD_STR                 'urllib2'
+             1634  LOAD_STR                 'urllib.request'
+             1636  CALL_FUNCTION_3       3  ''
+
+ L. 373      1638  LOAD_NAME                MovedAttribute
+             1640  LOAD_STR                 'HTTPCookieProcessor'
+             1642  LOAD_STR                 'urllib2'
+             1644  LOAD_STR                 'urllib.request'
+             1646  CALL_FUNCTION_3       3  ''
+
+ L. 374      1648  LOAD_NAME                MovedAttribute
+             1650  LOAD_STR                 'ProxyHandler'
+             1652  LOAD_STR                 'urllib2'
+             1654  LOAD_STR                 'urllib.request'
+             1656  CALL_FUNCTION_3       3  ''
+
+ L. 375      1658  LOAD_NAME                MovedAttribute
+             1660  LOAD_STR                 'BaseHandler'
+             1662  LOAD_STR                 'urllib2'
+             1664  LOAD_STR                 'urllib.request'
+             1666  CALL_FUNCTION_3       3  ''
+
+ L. 376      1668  LOAD_NAME                MovedAttribute
+             1670  LOAD_STR                 'HTTPPasswordMgr'
+             1672  LOAD_STR                 'urllib2'
+             1674  LOAD_STR                 'urllib.request'
+             1676  CALL_FUNCTION_3       3  ''
+
+ L. 377      1678  LOAD_NAME                MovedAttribute
+             1680  LOAD_STR                 'HTTPPasswordMgrWithDefaultRealm'
+
+ L. 378      1682  LOAD_STR                 'urllib2'
+             1684  LOAD_STR                 'urllib.request'
+
+ L. 377      1686  CALL_FUNCTION_3       3  ''
+
+ L. 379      1688  LOAD_NAME                MovedAttribute
+             1690  LOAD_STR                 'AbstractBasicAuthHandler'
+             1692  LOAD_STR                 'urllib2'
+             1694  LOAD_STR                 'urllib.request'
+             1696  CALL_FUNCTION_3       3  ''
+
+ L. 380      1698  LOAD_NAME                MovedAttribute
+             1700  LOAD_STR                 'HTTPBasicAuthHandler'
+             1702  LOAD_STR                 'urllib2'
+             1704  LOAD_STR                 'urllib.request'
+             1706  CALL_FUNCTION_3       3  ''
+
+ L. 381      1708  LOAD_NAME                MovedAttribute
+             1710  LOAD_STR                 'ProxyBasicAuthHandler'
+             1712  LOAD_STR                 'urllib2'
+             1714  LOAD_STR                 'urllib.request'
+             1716  CALL_FUNCTION_3       3  ''
+
+ L. 382      1718  LOAD_NAME                MovedAttribute
+             1720  LOAD_STR                 'AbstractDigestAuthHandler'
+             1722  LOAD_STR                 'urllib2'
+             1724  LOAD_STR                 'urllib.request'
+             1726  CALL_FUNCTION_3       3  ''
+
+ L. 383      1728  LOAD_NAME                MovedAttribute
+             1730  LOAD_STR                 'HTTPDigestAuthHandler'
+             1732  LOAD_STR                 'urllib2'
+             1734  LOAD_STR                 'urllib.request'
+             1736  CALL_FUNCTION_3       3  ''
+
+ L. 384      1738  LOAD_NAME                MovedAttribute
+             1740  LOAD_STR                 'ProxyDigestAuthHandler'
+             1742  LOAD_STR                 'urllib2'
+             1744  LOAD_STR                 'urllib.request'
+             1746  CALL_FUNCTION_3       3  ''
+
+ L. 385      1748  LOAD_NAME                MovedAttribute
+             1750  LOAD_STR                 'HTTPHandler'
+             1752  LOAD_STR                 'urllib2'
+             1754  LOAD_STR                 'urllib.request'
+             1756  CALL_FUNCTION_3       3  ''
+
+ L. 386      1758  LOAD_NAME                MovedAttribute
+             1760  LOAD_STR                 'HTTPSHandler'
+             1762  LOAD_STR                 'urllib2'
+             1764  LOAD_STR                 'urllib.request'
+             1766  CALL_FUNCTION_3       3  ''
+
+ L. 387      1768  LOAD_NAME                MovedAttribute
+             1770  LOAD_STR                 'FileHandler'
+             1772  LOAD_STR                 'urllib2'
+             1774  LOAD_STR                 'urllib.request'
+             1776  CALL_FUNCTION_3       3  ''
+
+ L. 388      1778  LOAD_NAME                MovedAttribute
+             1780  LOAD_STR                 'FTPHandler'
+             1782  LOAD_STR                 'urllib2'
+             1784  LOAD_STR                 'urllib.request'
+             1786  CALL_FUNCTION_3       3  ''
+
+ L. 389      1788  LOAD_NAME                MovedAttribute
+             1790  LOAD_STR                 'CacheFTPHandler'
+             1792  LOAD_STR                 'urllib2'
+             1794  LOAD_STR                 'urllib.request'
+             1796  CALL_FUNCTION_3       3  ''
+
+ L. 390      1798  LOAD_NAME                MovedAttribute
+             1800  LOAD_STR                 'UnknownHandler'
+             1802  LOAD_STR                 'urllib2'
+             1804  LOAD_STR                 'urllib.request'
+             1806  CALL_FUNCTION_3       3  ''
+
+ L. 391      1808  LOAD_NAME                MovedAttribute
+             1810  LOAD_STR                 'HTTPErrorProcessor'
+             1812  LOAD_STR                 'urllib2'
+             1814  LOAD_STR                 'urllib.request'
+             1816  CALL_FUNCTION_3       3  ''
+
+ L. 392      1818  LOAD_NAME                MovedAttribute
+             1820  LOAD_STR                 'urlretrieve'
+             1822  LOAD_STR                 'urllib'
+             1824  LOAD_STR                 'urllib.request'
+             1826  CALL_FUNCTION_3       3  ''
+
+ L. 393      1828  LOAD_NAME                MovedAttribute
+             1830  LOAD_STR                 'urlcleanup'
+             1832  LOAD_STR                 'urllib'
+             1834  LOAD_STR                 'urllib.request'
+             1836  CALL_FUNCTION_3       3  ''
+
+ L. 394      1838  LOAD_NAME                MovedAttribute
+             1840  LOAD_STR                 'URLopener'
+             1842  LOAD_STR                 'urllib'
+             1844  LOAD_STR                 'urllib.request'
+             1846  CALL_FUNCTION_3       3  ''
+
+ L. 395      1848  LOAD_NAME                MovedAttribute
+             1850  LOAD_STR                 'FancyURLopener'
+             1852  LOAD_STR                 'urllib'
+             1854  LOAD_STR                 'urllib.request'
+             1856  CALL_FUNCTION_3       3  ''
+
+ L. 396      1858  LOAD_NAME                MovedAttribute
+             1860  LOAD_STR                 'proxy_bypass'
+             1862  LOAD_STR                 'urllib'
+             1864  LOAD_STR                 'urllib.request'
+             1866  CALL_FUNCTION_3       3  ''
+
+ L. 362      1868  BUILD_LIST_33        33 
+             1870  STORE_NAME               _urllib_request_moved_attributes
+
+ L. 398      1872  LOAD_NAME                _urllib_request_moved_attributes
+             1874  GET_ITER         
+           1876_0  COME_FROM          1894  '1894'
+             1876  FOR_ITER           1898  'to 1898'
+             1878  STORE_NAME               attr
+
+ L. 399      1880  LOAD_NAME                setattr
+             1882  LOAD_NAME                Module_six_moves_urllib_request
+             1884  LOAD_NAME                attr
+             1886  LOAD_ATTR                name
+             1888  LOAD_NAME                attr
+             1890  CALL_FUNCTION_3       3  ''
+             1892  POP_TOP          
+         1894_1896  JUMP_BACK          1876  'to 1876'
+           1898_0  COME_FROM          1876  '1876'
+
+ L. 400      1898  DELETE_NAME              attr
+
+ L. 402      1900  LOAD_NAME                _urllib_request_moved_attributes
+             1902  LOAD_NAME                Module_six_moves_urllib_request
+             1904  STORE_ATTR               _moved_attributes
+
+ L. 404      1906  LOAD_NAME                _importer
+             1908  LOAD_METHOD              _add_module
+             1910  LOAD_NAME                Module_six_moves_urllib_request
+             1912  LOAD_NAME                __name__
+             1914  LOAD_STR                 '.moves.urllib.request'
+             1916  BINARY_ADD       
+             1918  CALL_FUNCTION_1       1  ''
+
+ L. 405      1920  LOAD_STR                 'moves.urllib_request'
+             1922  LOAD_STR                 'moves.urllib.request'
+
+ L. 404      1924  CALL_METHOD_3         3  ''
+             1926  POP_TOP          
+
+ L. 408      1928  LOAD_BUILD_CLASS 
+             1930  LOAD_CODE                <code_object Module_six_moves_urllib_response>
+             1932  LOAD_STR                 'Module_six_moves_urllib_response'
+             1934  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1936  LOAD_STR                 'Module_six_moves_urllib_response'
+             1938  LOAD_NAME                _LazyModule
+             1940  CALL_FUNCTION_3       3  ''
+             1942  STORE_NAME               Module_six_moves_urllib_response
+
+ L. 413      1944  LOAD_NAME                MovedAttribute
+             1946  LOAD_STR                 'addbase'
+             1948  LOAD_STR                 'urllib'
+             1950  LOAD_STR                 'urllib.response'
+             1952  CALL_FUNCTION_3       3  ''
+
+ L. 414      1954  LOAD_NAME                MovedAttribute
+             1956  LOAD_STR                 'addclosehook'
+             1958  LOAD_STR                 'urllib'
+             1960  LOAD_STR                 'urllib.response'
+             1962  CALL_FUNCTION_3       3  ''
+
+ L. 415      1964  LOAD_NAME                MovedAttribute
+         1966_1968  LOAD_STR                 'addinfo'
+             1970  LOAD_STR                 'urllib'
+             1972  LOAD_STR                 'urllib.response'
+             1974  CALL_FUNCTION_3       3  ''
+
+ L. 416      1976  LOAD_NAME                MovedAttribute
+         1978_1980  LOAD_STR                 'addinfourl'
+             1982  LOAD_STR                 'urllib'
+             1984  LOAD_STR                 'urllib.response'
+             1986  CALL_FUNCTION_3       3  ''
+
+ L. 412      1988  BUILD_LIST_4          4 
+             1990  STORE_NAME               _urllib_response_moved_attributes
+
+ L. 418      1992  LOAD_NAME                _urllib_response_moved_attributes
+             1994  GET_ITER         
+           1996_0  COME_FROM          2014  '2014'
+             1996  FOR_ITER           2018  'to 2018'
+             1998  STORE_NAME               attr
+
+ L. 419      2000  LOAD_NAME                setattr
+             2002  LOAD_NAME                Module_six_moves_urllib_response
+             2004  LOAD_NAME                attr
+             2006  LOAD_ATTR                name
+             2008  LOAD_NAME                attr
+             2010  CALL_FUNCTION_3       3  ''
+             2012  POP_TOP          
+         2014_2016  JUMP_BACK          1996  'to 1996'
+           2018_0  COME_FROM          1996  '1996'
+
+ L. 420      2018  DELETE_NAME              attr
+
+ L. 422      2020  LOAD_NAME                _urllib_response_moved_attributes
+             2022  LOAD_NAME                Module_six_moves_urllib_response
+             2024  STORE_ATTR               _moved_attributes
+
+ L. 424      2026  LOAD_NAME                _importer
+             2028  LOAD_METHOD              _add_module
+             2030  LOAD_NAME                Module_six_moves_urllib_response
+             2032  LOAD_NAME                __name__
+         2034_2036  LOAD_STR                 '.moves.urllib.response'
+             2038  BINARY_ADD       
+             2040  CALL_FUNCTION_1       1  ''
+
+ L. 425  2042_2044  LOAD_STR                 'moves.urllib_response'
+         2046_2048  LOAD_STR                 'moves.urllib.response'
+
+ L. 424      2050  CALL_METHOD_3         3  ''
+             2052  POP_TOP          
+
+ L. 428      2054  LOAD_BUILD_CLASS 
+         2056_2058  LOAD_CODE                <code_object Module_six_moves_urllib_robotparser>
+         2060_2062  LOAD_STR                 'Module_six_moves_urllib_robotparser'
+             2064  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2066_2068  LOAD_STR                 'Module_six_moves_urllib_robotparser'
+             2070  LOAD_NAME                _LazyModule
+             2072  CALL_FUNCTION_3       3  ''
+             2074  STORE_NAME               Module_six_moves_urllib_robotparser
+
+ L. 433      2076  LOAD_NAME                MovedAttribute
+         2078_2080  LOAD_STR                 'RobotFileParser'
+             2082  LOAD_STR                 'robotparser'
+             2084  LOAD_STR                 'urllib.robotparser'
+             2086  CALL_FUNCTION_3       3  ''
+
+ L. 432      2088  BUILD_LIST_1          1 
+             2090  STORE_NAME               _urllib_robotparser_moved_attributes
+
+ L. 435      2092  LOAD_NAME                _urllib_robotparser_moved_attributes
+             2094  GET_ITER         
+           2096_0  COME_FROM          2114  '2114'
+             2096  FOR_ITER           2118  'to 2118'
+             2098  STORE_NAME               attr
+
+ L. 436      2100  LOAD_NAME                setattr
+             2102  LOAD_NAME                Module_six_moves_urllib_robotparser
+             2104  LOAD_NAME                attr
+             2106  LOAD_ATTR                name
+             2108  LOAD_NAME                attr
+             2110  CALL_FUNCTION_3       3  ''
+             2112  POP_TOP          
+         2114_2116  JUMP_BACK          2096  'to 2096'
+           2118_0  COME_FROM          2096  '2096'
+
+ L. 437      2118  DELETE_NAME              attr
+
+ L. 439      2120  LOAD_NAME                _urllib_robotparser_moved_attributes
+             2122  LOAD_NAME                Module_six_moves_urllib_robotparser
+             2124  STORE_ATTR               _moved_attributes
+
+ L. 441      2126  LOAD_NAME                _importer
+             2128  LOAD_METHOD              _add_module
+             2130  LOAD_NAME                Module_six_moves_urllib_robotparser
+             2132  LOAD_NAME                __name__
+         2134_2136  LOAD_STR                 '.moves.urllib.robotparser'
+             2138  BINARY_ADD       
+             2140  CALL_FUNCTION_1       1  ''
+
+ L. 442  2142_2144  LOAD_STR                 'moves.urllib_robotparser'
+         2146_2148  LOAD_STR                 'moves.urllib.robotparser'
+
+ L. 441      2150  CALL_METHOD_3         3  ''
+             2152  POP_TOP          
+
+ L. 445      2154  LOAD_BUILD_CLASS 
+         2156_2158  LOAD_CODE                <code_object Module_six_moves_urllib>
+         2160_2162  LOAD_STR                 'Module_six_moves_urllib'
+             2164  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2166_2168  LOAD_STR                 'Module_six_moves_urllib'
+             2170  LOAD_NAME                types
+             2172  LOAD_ATTR                ModuleType
+             2174  CALL_FUNCTION_3       3  ''
+             2176  STORE_NAME               Module_six_moves_urllib
+
+ L. 458      2178  LOAD_NAME                _importer
+             2180  LOAD_METHOD              _add_module
+             2182  LOAD_NAME                Module_six_moves_urllib
+             2184  LOAD_NAME                __name__
+             2186  LOAD_STR                 '.moves.urllib'
+             2188  BINARY_ADD       
+             2190  CALL_FUNCTION_1       1  ''
+
+ L. 459  2192_2194  LOAD_STR                 'moves.urllib'
+
+ L. 458      2196  CALL_METHOD_2         2  ''
+             2198  POP_TOP          
+
+ L. 462  2200_2202  LOAD_CODE                <code_object add_move>
+         2204_2206  LOAD_STR                 'add_move'
+             2208  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2210  STORE_NAME               add_move
+
+ L. 467  2212_2214  LOAD_CODE                <code_object remove_move>
+         2216_2218  LOAD_STR                 'remove_move'
+             2220  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2222  STORE_NAME               remove_move
+
+ L. 478      2224  LOAD_NAME                PY3
+         2226_2228  POP_JUMP_IF_FALSE  2268  'to 2268'
+
+ L. 479  2230_2232  LOAD_STR                 '__func__'
+             2234  STORE_NAME               _meth_func
+
+ L. 480  2236_2238  LOAD_STR                 '__self__'
+             2240  STORE_NAME               _meth_self
+
+ L. 482  2242_2244  LOAD_STR                 '__closure__'
+             2246  STORE_NAME               _func_closure
+
+ L. 483  2248_2250  LOAD_STR                 '__code__'
+             2252  STORE_NAME               _func_code
+
+ L. 484  2254_2256  LOAD_STR                 '__defaults__'
+             2258  STORE_NAME               _func_defaults
+
+ L. 485  2260_2262  LOAD_STR                 '__globals__'
+             2264  STORE_NAME               _func_globals
+             2266  JUMP_FORWARD       2304  'to 2304'
+           2268_0  COME_FROM          2226  '2226'
+
+ L. 487  2268_2270  LOAD_STR                 'im_func'
+             2272  STORE_NAME               _meth_func
+
+ L. 488  2274_2276  LOAD_STR                 'im_self'
+             2278  STORE_NAME               _meth_self
+
+ L. 490  2280_2282  LOAD_STR                 'func_closure'
+             2284  STORE_NAME               _func_closure
+
+ L. 491  2286_2288  LOAD_STR                 'func_code'
+             2290  STORE_NAME               _func_code
+
+ L. 492  2292_2294  LOAD_STR                 'func_defaults'
+             2296  STORE_NAME               _func_defaults
+
+ L. 493  2298_2300  LOAD_STR                 'func_globals'
+             2302  STORE_NAME               _func_globals
+           2304_0  COME_FROM          2266  '2266'
+
+ L. 496      2304  SETUP_FINALLY      2314  'to 2314'
+
+ L. 497      2306  LOAD_NAME                next
+             2308  STORE_NAME               advance_iterator
+             2310  POP_BLOCK        
+             2312  JUMP_FORWARD       2346  'to 2346'
+           2314_0  COME_FROM_FINALLY  2304  '2304'
+
+ L. 498      2314  DUP_TOP          
+             2316  LOAD_NAME                NameError
+         2318_2320  <121>              2344  ''
+             2322  POP_TOP          
+             2324  POP_TOP          
+             2326  POP_TOP          
+
+ L. 499  2328_2330  LOAD_CODE                <code_object advance_iterator>
+         2332_2334  LOAD_STR                 'advance_iterator'
+             2336  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2338  STORE_NAME               advance_iterator
+             2340  POP_EXCEPT       
+             2342  JUMP_FORWARD       2346  'to 2346'
+             2344  <48>             
+           2346_0  COME_FROM          2342  '2342'
+           2346_1  COME_FROM          2312  '2312'
+
+ L. 501      2346  LOAD_NAME                advance_iterator
+             2348  STORE_NAME               next
+
+ L. 504      2350  SETUP_FINALLY      2360  'to 2360'
+
+ L. 505      2352  LOAD_NAME                callable
+             2354  STORE_NAME               callable
+             2356  POP_BLOCK        
+             2358  JUMP_FORWARD       2392  'to 2392'
+           2360_0  COME_FROM_FINALLY  2350  '2350'
+
+ L. 506      2360  DUP_TOP          
+             2362  LOAD_NAME                NameError
+         2364_2366  <121>              2390  ''
+             2368  POP_TOP          
+             2370  POP_TOP          
+             2372  POP_TOP          
+
+ L. 507  2374_2376  LOAD_CODE                <code_object callable>
+         2378_2380  LOAD_STR                 'callable'
+             2382  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2384  STORE_NAME               callable
+             2386  POP_EXCEPT       
+             2388  JUMP_FORWARD       2392  'to 2392'
+             2390  <48>             
+           2392_0  COME_FROM          2388  '2388'
+           2392_1  COME_FROM          2358  '2358'
+
+ L. 511      2392  LOAD_NAME                PY3
+         2394_2396  POP_JUMP_IF_FALSE  2422  'to 2422'
+
+ L. 512  2398_2400  LOAD_CODE                <code_object get_unbound_function>
+         2402_2404  LOAD_STR                 'get_unbound_function'
+             2406  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2408  STORE_NAME               get_unbound_function
+
+ L. 515      2410  LOAD_NAME                types
+             2412  LOAD_ATTR                MethodType
+             2414  STORE_NAME               create_bound_method
+
+ L. 517      2416  LOAD_NAME                object
+             2418  STORE_NAME               Iterator
+             2420  JUMP_FORWARD       2472  'to 2472'
+           2422_0  COME_FROM          2394  '2394'
+
+ L. 519  2422_2424  LOAD_CODE                <code_object get_unbound_function>
+         2426_2428  LOAD_STR                 'get_unbound_function'
+             2430  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2432  STORE_NAME               get_unbound_function
+
+ L. 522  2434_2436  LOAD_CODE                <code_object create_bound_method>
+         2438_2440  LOAD_STR                 'create_bound_method'
+             2442  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2444  STORE_NAME               create_bound_method
+
+ L. 525      2446  LOAD_BUILD_CLASS 
+         2448_2450  LOAD_CODE                <code_object Iterator>
+         2452_2454  LOAD_STR                 'Iterator'
+             2456  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2458_2460  LOAD_STR                 'Iterator'
+             2462  LOAD_NAME                object
+             2464  CALL_FUNCTION_3       3  ''
+             2466  STORE_NAME               Iterator
+
+ L. 530      2468  LOAD_NAME                callable
+             2470  STORE_NAME               callable
+           2472_0  COME_FROM          2420  '2420'
+
+ L. 531      2472  LOAD_NAME                _add_doc
+             2474  LOAD_NAME                get_unbound_function
+
+ L. 532  2476_2478  LOAD_STR                 'Get the function out of a possibly unbound function'
+
+ L. 531      2480  CALL_FUNCTION_2       2  ''
+             2482  POP_TOP          
+
+ L. 535      2484  LOAD_NAME                operator
+             2486  LOAD_METHOD              attrgetter
+             2488  LOAD_NAME                _meth_func
+             2490  CALL_METHOD_1         1  ''
+             2492  STORE_NAME               get_method_function
+
+ L. 536      2494  LOAD_NAME                operator
+             2496  LOAD_METHOD              attrgetter
+             2498  LOAD_NAME                _meth_self
+             2500  CALL_METHOD_1         1  ''
+             2502  STORE_NAME               get_method_self
+
+ L. 537      2504  LOAD_NAME                operator
+             2506  LOAD_METHOD              attrgetter
+             2508  LOAD_NAME                _func_closure
+             2510  CALL_METHOD_1         1  ''
+             2512  STORE_NAME               get_function_closure
+
+ L. 538      2514  LOAD_NAME                operator
+             2516  LOAD_METHOD              attrgetter
+             2518  LOAD_NAME                _func_code
+             2520  CALL_METHOD_1         1  ''
+             2522  STORE_NAME               get_function_code
+
+ L. 539      2524  LOAD_NAME                operator
+             2526  LOAD_METHOD              attrgetter
+             2528  LOAD_NAME                _func_defaults
+             2530  CALL_METHOD_1         1  ''
+             2532  STORE_NAME               get_function_defaults
+
+ L. 540      2534  LOAD_NAME                operator
+             2536  LOAD_METHOD              attrgetter
+             2538  LOAD_NAME                _func_globals
+             2540  CALL_METHOD_1         1  ''
+             2542  STORE_NAME               get_function_globals
+
+ L. 543      2544  LOAD_NAME                PY3
+         2546_2548  POP_JUMP_IF_FALSE  2636  'to 2636'
+
+ L. 544  2550_2552  LOAD_CODE                <code_object iterkeys>
+         2554_2556  LOAD_STR                 'iterkeys'
+             2558  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2560  STORE_NAME               iterkeys
+
+ L. 547  2562_2564  LOAD_CODE                <code_object itervalues>
+         2566_2568  LOAD_STR                 'itervalues'
+             2570  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2572  STORE_NAME               itervalues
+
+ L. 550  2574_2576  LOAD_CODE                <code_object iteritems>
+         2578_2580  LOAD_STR                 'iteritems'
+             2582  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2584  STORE_NAME               iteritems
+
+ L. 553  2586_2588  LOAD_CODE                <code_object iterlists>
+         2590_2592  LOAD_STR                 'iterlists'
+             2594  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2596  STORE_NAME               iterlists
+
+ L. 556      2598  LOAD_NAME                operator
+             2600  LOAD_METHOD              methodcaller
+         2602_2604  LOAD_STR                 'keys'
+             2606  CALL_METHOD_1         1  ''
+             2608  STORE_NAME               viewkeys
+
+ L. 558      2610  LOAD_NAME                operator
+             2612  LOAD_METHOD              methodcaller
+         2614_2616  LOAD_STR                 'values'
+             2618  CALL_METHOD_1         1  ''
+             2620  STORE_NAME               viewvalues
+
+ L. 560      2622  LOAD_NAME                operator
+             2624  LOAD_METHOD              methodcaller
+         2626_2628  LOAD_STR                 'items'
+             2630  CALL_METHOD_1         1  ''
+             2632  STORE_NAME               viewitems
+             2634  JUMP_FORWARD       2720  'to 2720'
+           2636_0  COME_FROM          2546  '2546'
+
+ L. 562  2636_2638  LOAD_CODE                <code_object iterkeys>
+         2640_2642  LOAD_STR                 'iterkeys'
+             2644  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2646  STORE_NAME               iterkeys
+
+ L. 565  2648_2650  LOAD_CODE                <code_object itervalues>
+         2652_2654  LOAD_STR                 'itervalues'
+             2656  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2658  STORE_NAME               itervalues
+
+ L. 568  2660_2662  LOAD_CODE                <code_object iteritems>
+         2664_2666  LOAD_STR                 'iteritems'
+             2668  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2670  STORE_NAME               iteritems
+
+ L. 571  2672_2674  LOAD_CODE                <code_object iterlists>
+         2676_2678  LOAD_STR                 'iterlists'
+             2680  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2682  STORE_NAME               iterlists
+
+ L. 574      2684  LOAD_NAME                operator
+             2686  LOAD_METHOD              methodcaller
+         2688_2690  LOAD_STR                 'viewkeys'
+             2692  CALL_METHOD_1         1  ''
+             2694  STORE_NAME               viewkeys
+
+ L. 576      2696  LOAD_NAME                operator
+             2698  LOAD_METHOD              methodcaller
+         2700_2702  LOAD_STR                 'viewvalues'
+             2704  CALL_METHOD_1         1  ''
+             2706  STORE_NAME               viewvalues
+
+ L. 578      2708  LOAD_NAME                operator
+             2710  LOAD_METHOD              methodcaller
+         2712_2714  LOAD_STR                 'viewitems'
+             2716  CALL_METHOD_1         1  ''
+             2718  STORE_NAME               viewitems
+           2720_0  COME_FROM          2634  '2634'
+
+ L. 580      2720  LOAD_NAME                _add_doc
+             2722  LOAD_NAME                iterkeys
+         2724_2726  LOAD_STR                 'Return an iterator over the keys of a dictionary.'
+             2728  CALL_FUNCTION_2       2  ''
+             2730  POP_TOP          
+
+ L. 581      2732  LOAD_NAME                _add_doc
+             2734  LOAD_NAME                itervalues
+         2736_2738  LOAD_STR                 'Return an iterator over the values of a dictionary.'
+             2740  CALL_FUNCTION_2       2  ''
+             2742  POP_TOP          
+
+ L. 582      2744  LOAD_NAME                _add_doc
+             2746  LOAD_NAME                iteritems
+
+ L. 583  2748_2750  LOAD_STR                 'Return an iterator over the (key, value) pairs of a dictionary.'
+
+ L. 582      2752  CALL_FUNCTION_2       2  ''
+             2754  POP_TOP          
+
+ L. 584      2756  LOAD_NAME                _add_doc
+             2758  LOAD_NAME                iterlists
+
+ L. 585  2760_2762  LOAD_STR                 'Return an iterator over the (key, [values]) pairs of a dictionary.'
+
+ L. 584      2764  CALL_FUNCTION_2       2  ''
+             2766  POP_TOP          
+
+ L. 588      2768  LOAD_NAME                PY3
+         2770_2772  POP_JUMP_IF_FALSE  2916  'to 2916'
+
+ L. 589  2774_2776  LOAD_CODE                <code_object b>
+         2778_2780  LOAD_STR                 'b'
+             2782  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2784  STORE_NAME               b
+
+ L. 592  2786_2788  LOAD_CODE                <code_object u>
+         2790_2792  LOAD_STR                 'u'
+             2794  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2796  STORE_NAME               u
+
+ L. 594      2798  LOAD_NAME                chr
+             2800  STORE_NAME               unichr
+
+ L. 595      2802  LOAD_NAME                sys
+             2804  LOAD_ATTR                version_info
+         2806_2808  LOAD_CONST               1
+             2810  BINARY_SUBSCR    
+         2812_2814  LOAD_CONST               1
+             2816  COMPARE_OP               <=
+         2818_2820  POP_JUMP_IF_FALSE  2836  'to 2836'
+
+ L. 596  2822_2824  LOAD_CODE                <code_object int2byte>
+         2826_2828  LOAD_STR                 'int2byte'
+             2830  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2832  STORE_NAME               int2byte
+             2834  JUMP_FORWARD       2856  'to 2856'
+           2836_0  COME_FROM          2818  '2818'
+
+ L. 600      2836  LOAD_NAME                operator
+             2838  LOAD_METHOD              methodcaller
+         2840_2842  LOAD_STR                 'to_bytes'
+         2844_2846  LOAD_CONST               1
+         2848_2850  LOAD_STR                 'big'
+             2852  CALL_METHOD_3         3  ''
+             2854  STORE_NAME               int2byte
+           2856_0  COME_FROM          2834  '2834'
+
+ L. 601      2856  LOAD_NAME                operator
+             2858  LOAD_METHOD              itemgetter
+             2860  LOAD_CONST               0
+             2862  CALL_METHOD_1         1  ''
+             2864  STORE_NAME               byte2int
+
+ L. 602      2866  LOAD_NAME                operator
+             2868  LOAD_ATTR                getitem
+             2870  STORE_NAME               indexbytes
+
+ L. 603      2872  LOAD_NAME                iter
+             2874  STORE_NAME               iterbytes
+
+ L. 604      2876  LOAD_CONST               0
+             2878  LOAD_CONST               None
+             2880  IMPORT_NAME              io
+             2882  STORE_NAME               io
+
+ L. 605      2884  LOAD_NAME                io
+             2886  LOAD_ATTR                StringIO
+             2888  STORE_NAME               StringIO
+
+ L. 606      2890  LOAD_NAME                io
+             2892  LOAD_ATTR                BytesIO
+             2894  STORE_NAME               BytesIO
+
+ L. 607  2896_2898  LOAD_STR                 'assertCountEqual'
+             2900  STORE_NAME               _assertCountEqual
+
+ L. 608  2902_2904  LOAD_STR                 'assertRaisesRegex'
+             2906  STORE_NAME               _assertRaisesRegex
+
+ L. 609  2908_2910  LOAD_STR                 'assertRegex'
+             2912  STORE_NAME               _assertRegex
+             2914  JUMP_FORWARD       3022  'to 3022'
+           2916_0  COME_FROM          2770  '2770'
+
+ L. 611  2916_2918  LOAD_CODE                <code_object b>
+         2920_2922  LOAD_STR                 'b'
+             2924  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2926  STORE_NAME               b
+
+ L. 615  2928_2930  LOAD_CODE                <code_object u>
+         2932_2934  LOAD_STR                 'u'
+             2936  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2938  STORE_NAME               u
+
+ L. 617      2940  LOAD_NAME                unichr
+             2942  STORE_NAME               unichr
+
+ L. 618      2944  LOAD_NAME                chr
+             2946  STORE_NAME               int2byte
+
+ L. 620  2948_2950  LOAD_CODE                <code_object byte2int>
+         2952_2954  LOAD_STR                 'byte2int'
+             2956  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2958  STORE_NAME               byte2int
+
+ L. 623  2960_2962  LOAD_CODE                <code_object indexbytes>
+         2964_2966  LOAD_STR                 'indexbytes'
+             2968  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2970  STORE_NAME               indexbytes
+
+ L. 625      2972  LOAD_NAME                functools
+             2974  LOAD_METHOD              partial
+             2976  LOAD_NAME                itertools
+             2978  LOAD_ATTR                imap
+             2980  LOAD_NAME                ord
+             2982  CALL_METHOD_2         2  ''
+             2984  STORE_NAME               iterbytes
+
+ L. 626      2986  LOAD_CONST               0
+             2988  LOAD_CONST               None
+             2990  IMPORT_NAME              StringIO
+             2992  STORE_NAME               StringIO
+
+ L. 627      2994  LOAD_NAME                StringIO
+             2996  LOAD_ATTR                StringIO
+             2998  DUP_TOP          
+             3000  STORE_NAME               StringIO
+             3002  STORE_NAME               BytesIO
+
+ L. 628  3004_3006  LOAD_STR                 'assertItemsEqual'
+             3008  STORE_NAME               _assertCountEqual
+
+ L. 629  3010_3012  LOAD_STR                 'assertRaisesRegexp'
+             3014  STORE_NAME               _assertRaisesRegex
+
+ L. 630  3016_3018  LOAD_STR                 'assertRegexpMatches'
+             3020  STORE_NAME               _assertRegex
+           3022_0  COME_FROM          2914  '2914'
+
+ L. 631      3022  LOAD_NAME                _add_doc
+             3024  LOAD_NAME                b
+         3026_3028  LOAD_STR                 'Byte literal'
+             3030  CALL_FUNCTION_2       2  ''
+             3032  POP_TOP          
+
+ L. 632      3034  LOAD_NAME                _add_doc
+             3036  LOAD_NAME                u
+         3038_3040  LOAD_STR                 'Text literal'
+             3042  CALL_FUNCTION_2       2  ''
+             3044  POP_TOP          
+
+ L. 635  3046_3048  LOAD_CODE                <code_object assertCountEqual>
+         3050_3052  LOAD_STR                 'assertCountEqual'
+             3054  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             3056  STORE_NAME               assertCountEqual
+
+ L. 639  3058_3060  LOAD_CODE                <code_object assertRaisesRegex>
+         3062_3064  LOAD_STR                 'assertRaisesRegex'
+             3066  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             3068  STORE_NAME               assertRaisesRegex
+
+ L. 643  3070_3072  LOAD_CODE                <code_object assertRegex>
+         3074_3076  LOAD_STR                 'assertRegex'
+             3078  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             3080  STORE_NAME               assertRegex
+
+ L. 647      3082  LOAD_NAME                PY3
+         3084_3086  POP_JUMP_IF_FALSE  3120  'to 3120'
+
+ L. 648      3088  LOAD_NAME                getattr
+             3090  LOAD_NAME                moves
+             3092  LOAD_ATTR                builtins
+         3094_3096  LOAD_STR                 'exec'
+             3098  CALL_FUNCTION_2       2  ''
+             3100  STORE_NAME               exec_
+
+ L. 650  3102_3104  LOAD_CONST               (None,)
+         3106_3108  LOAD_CODE                <code_object reraise>
+         3110_3112  LOAD_STR                 'reraise'
+             3114  MAKE_FUNCTION_1          'default'
+             3116  STORE_NAME               reraise
+             3118  JUMP_FORWARD       3146  'to 3146'
+           3120_0  COME_FROM          3084  '3084'
+
+ L. 658  3120_3122  LOAD_CONST               (None, None)
+         3124_3126  LOAD_CODE                <code_object exec_>
+         3128_3130  LOAD_STR                 'exec_'
+             3132  MAKE_FUNCTION_1          'default'
+             3134  STORE_NAME               exec_
+
+ L. 670      3136  LOAD_NAME                exec_
+         3138_3140  LOAD_STR                 'def reraise(tp, value, tb=None):\n    raise tp, value, tb\n'
+             3142  CALL_FUNCTION_1       1  ''
+             3144  POP_TOP          
+           3146_0  COME_FROM          3118  '3118'
+
+ L. 675      3146  LOAD_NAME                sys
+             3148  LOAD_ATTR                version_info
+             3150  LOAD_CONST               None
+             3152  LOAD_CONST               2
+             3154  BUILD_SLICE_2         2 
+             3156  BINARY_SUBSCR    
+         3158_3160  LOAD_CONST               (3, 2)
+             3162  COMPARE_OP               ==
+         3164_3166  POP_JUMP_IF_FALSE  3180  'to 3180'
+
+ L. 676      3168  LOAD_NAME                exec_
+         3170_3172  LOAD_STR                 'def raise_from(value, from_value):\n    if from_value is None:\n        raise value\n    raise value from from_value\n'
+             3174  CALL_FUNCTION_1       1  ''
+             3176  POP_TOP          
+             3178  JUMP_FORWARD       3226  'to 3226'
+           3180_0  COME_FROM          3164  '3164'
+
+ L. 681      3180  LOAD_NAME                sys
+             3182  LOAD_ATTR                version_info
+             3184  LOAD_CONST               None
+             3186  LOAD_CONST               2
+             3188  BUILD_SLICE_2         2 
+             3190  BINARY_SUBSCR    
+         3192_3194  LOAD_CONST               (3, 2)
+             3196  COMPARE_OP               >
+         3198_3200  POP_JUMP_IF_FALSE  3214  'to 3214'
+
+ L. 682      3202  LOAD_NAME                exec_
+         3204_3206  LOAD_STR                 'def raise_from(value, from_value):\n    raise value from from_value\n'
+             3208  CALL_FUNCTION_1       1  ''
+             3210  POP_TOP          
+             3212  JUMP_FORWARD       3226  'to 3226'
+           3214_0  COME_FROM          3198  '3198'
+
+ L. 686  3214_3216  LOAD_CODE                <code_object raise_from>
+         3218_3220  LOAD_STR                 'raise_from'
+             3222  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             3224  STORE_NAME               raise_from
+           3226_0  COME_FROM          3212  '3212'
+           3226_1  COME_FROM          3178  '3178'
+
+ L. 690      3226  LOAD_NAME                getattr
+             3228  LOAD_NAME                moves
+             3230  LOAD_ATTR                builtins
+         3232_3234  LOAD_STR                 'print'
+             3236  LOAD_CONST               None
+             3238  CALL_FUNCTION_3       3  ''
+             3240  STORE_NAME               print_
+
+ L. 691      3242  LOAD_NAME                print_
+             3244  LOAD_CONST               None
+             3246  <117>                 0  ''
+         3248_3250  POP_JUMP_IF_FALSE  3264  'to 3264'
+
+ L. 692  3252_3254  LOAD_CODE                <code_object print_>
+         3256_3258  LOAD_STR                 'print_'
+             3260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             3262  STORE_NAME               print_
+           3264_0  COME_FROM          3248  '3248'
+
+ L. 745      3264  LOAD_NAME                sys
+             3266  LOAD_ATTR                version_info
+             3268  LOAD_CONST               None
+             3270  LOAD_CONST               2
+             3272  BUILD_SLICE_2         2 
+             3274  BINARY_SUBSCR    
+         3276_3278  LOAD_CONST               (3, 3)
+             3280  COMPARE_OP               <
+         3282_3284  POP_JUMP_IF_FALSE  3302  'to 3302'
+
+ L. 746      3286  LOAD_NAME                print_
+             3288  STORE_NAME               _print
+
+ L. 748  3290_3292  LOAD_CODE                <code_object print_>
+         3294_3296  LOAD_STR                 'print_'
+             3298  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             3300  STORE_NAME               print_
+           3302_0  COME_FROM          3282  '3282'
+
+ L. 755      3302  LOAD_NAME                _add_doc
+             3304  LOAD_NAME                reraise
+         3306_3308  LOAD_STR                 'Reraise an exception.'
+             3310  CALL_FUNCTION_2       2  ''
+             3312  POP_TOP          
+
+ L. 757      3314  LOAD_NAME                sys
+             3316  LOAD_ATTR                version_info
+             3318  LOAD_CONST               0
+             3320  LOAD_CONST               2
+             3322  BUILD_SLICE_2         2 
+             3324  BINARY_SUBSCR    
+         3326_3328  LOAD_CONST               (3, 4)
+             3330  COMPARE_OP               <
+         3332_3334  POP_JUMP_IF_FALSE  3360  'to 3360'
+
+ L. 758      3336  LOAD_NAME                functools
+             3338  LOAD_ATTR                WRAPPER_ASSIGNMENTS
+
+ L. 759      3340  LOAD_NAME                functools
+             3342  LOAD_ATTR                WRAPPER_UPDATES
+
+ L. 758      3344  BUILD_TUPLE_2         2 
+         3346_3348  LOAD_CODE                <code_object wraps>
+         3350_3352  LOAD_STR                 'wraps'
+             3354  MAKE_FUNCTION_1          'default'
+             3356  STORE_NAME               wraps
+             3358  JUMP_FORWARD       3366  'to 3366'
+           3360_0  COME_FROM          3332  '3332'
+
+ L. 766      3360  LOAD_NAME                functools
+             3362  LOAD_ATTR                wraps
+             3364  STORE_NAME               wraps
+           3366_0  COME_FROM          3358  '3358'
+
+ L. 769  3366_3368  LOAD_CODE                <code_object with_metaclass>
+         3370_3372  LOAD_STR                 'with_metaclass'
+             3374  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             3376  STORE_NAME               with_metaclass
+
+ L. 780  3378_3380  LOAD_CODE                <code_object add_metaclass>
+         3382_3384  LOAD_STR                 'add_metaclass'
+             3386  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             3388  STORE_NAME               add_metaclass
+
+ L. 796  3390_3392  LOAD_CODE                <code_object python_2_unicode_compatible>
+         3394_3396  LOAD_STR                 'python_2_unicode_compatible'
+             3398  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             3400  STORE_NAME               python_2_unicode_compatible
+
+ L. 817      3402  BUILD_LIST_0          0 
+             3404  STORE_NAME               __path__
+
+ L. 818      3406  LOAD_NAME                __name__
+             3408  STORE_NAME               __package__
+
+ L. 819      3410  LOAD_NAME                globals
+             3412  CALL_FUNCTION_0       0  ''
+             3414  LOAD_METHOD              get
+         3416_3418  LOAD_STR                 '__spec__'
+             3420  CALL_METHOD_1         1  ''
+             3422  LOAD_CONST               None
+             3424  <117>                 1  ''
+         3426_3428  POP_JUMP_IF_FALSE  3436  'to 3436'
+
+ L. 820      3430  BUILD_LIST_0          0 
+             3432  LOAD_NAME                __spec__
+             3434  STORE_ATTR               submodule_search_locations
+           3436_0  COME_FROM          3426  '3426'
+
+ L. 824      3436  LOAD_NAME                sys
+             3438  LOAD_ATTR                meta_path
+         3440_3442  POP_JUMP_IF_FALSE  3512  'to 3512'
+
+ L. 825      3444  LOAD_NAME                enumerate
+             3446  LOAD_NAME                sys
+             3448  LOAD_ATTR                meta_path
+             3450  CALL_FUNCTION_1       1  ''
+             3452  GET_ITER         
+           3454_0  COME_FROM          3504  '3504'
+           3454_1  COME_FROM          3486  '3486'
+           3454_2  COME_FROM          3474  '3474'
+             3454  FOR_ITER           3508  'to 3508'
+             3456  UNPACK_SEQUENCE_2     2 
+             3458  STORE_NAME               i
+             3460  STORE_NAME               importer
+
+ L. 830      3462  LOAD_NAME                type
+             3464  LOAD_NAME                importer
+             3466  CALL_FUNCTION_1       1  ''
+             3468  LOAD_ATTR                __name__
+             3470  LOAD_STR                 '_SixMetaPathImporter'
+             3472  COMPARE_OP               ==
+         3474_3476  POP_JUMP_IF_FALSE_BACK  3454  'to 3454'
+
+ L. 831      3478  LOAD_NAME                importer
+             3480  LOAD_ATTR                name
+             3482  LOAD_NAME                __name__
+             3484  COMPARE_OP               ==
+
+ L. 830  3486_3488  POP_JUMP_IF_FALSE_BACK  3454  'to 3454'
+
+ L. 832      3490  LOAD_NAME                sys
+             3492  LOAD_ATTR                meta_path
+             3494  LOAD_NAME                i
+             3496  DELETE_SUBSCR    
+
+ L. 833      3498  POP_TOP          
+         3500_3502  BREAK_LOOP         3508  'to 3508'
+         3504_3506  JUMP_BACK          3454  'to 3454'
+           3508_0  COME_FROM          3500  '3500'
+           3508_1  COME_FROM          3454  '3454'
+
+ L. 834      3508  DELETE_NAME              i
+             3510  DELETE_NAME              importer
+           3512_0  COME_FROM          3440  '3440'
+
+ L. 836      3512  LOAD_NAME                sys
+             3514  LOAD_ATTR                meta_path
+             3516  LOAD_METHOD              append
+             3518  LOAD_NAME                _importer
+             3520  CALL_METHOD_1         1  ''
+             3522  POP_TOP          
+
+Parse error at or near `<121>' instruction at offset 216
+
+Instruction context:
+   
+ L.  44       212  DUP_TOP          
+                 214  LOAD_NAME                OverflowError
+->               216  <121>               236  ''
+                 218  POP_TOP          
+                 220  POP_TOP          
+                 222  POP_TOP          
+
+test/101773.pyc -- 
+# decompile failed

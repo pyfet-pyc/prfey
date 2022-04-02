@@ -1,0 +1,43 @@
+Instruction context:
+   
+ L. 446       180  LOAD_FAST                'ret'
+                 182  POP_BLOCK        
+->               184  CALL_FINALLY        320  'to 320'
+                 186  RETURN_VALUE     
+               188_0  COME_FROM           158  '158'
+Instruction context:
+   
+ L.1139       780  POP_EXCEPT       
+             782_784  JUMP_BACK           734  'to 734'
+                 786  POP_EXCEPT       
+                 788  JUMP_FORWARD        792  'to 792'
+->             790_0  COME_FROM           770  '770'
+                 790  END_FINALLY      
+               792_0  COME_FROM           788  '788'
+               792_1  COME_FROM           762  '762'
+               792_2  COME_FROM           744  '744'
+Instruction context:
+   
+ L.1550       240  LOAD_FAST                'output'
+                 242  POP_BLOCK        
+->               244  CALL_FINALLY        248  'to 248'
+                 246  RETURN_VALUE     
+               248_0  COME_FROM           244  '244'
+               248_1  COME_FROM_FINALLY    38  '38'
+Instruction context:
+   
+ L.1887      1076  POP_EXCEPT       
+            1078_1080  JUMP_BACK          1026  'to 1026'
+                1082  POP_EXCEPT       
+                1084  JUMP_FORWARD       1088  'to 1088'
+->            1086_0  COME_FROM          1066  '1066'
+                1086  END_FINALLY      
+              1088_0  COME_FROM          1084  '1084'
+              1088_1  COME_FROM          1058  '1058'
+              1088_2  COME_FROM          1040  '1040'
+
+../test/183787.pyc -- 
+# decompile failed
+
+# file ../test/183787.pyc
+# Deparsing stopped due to parse error

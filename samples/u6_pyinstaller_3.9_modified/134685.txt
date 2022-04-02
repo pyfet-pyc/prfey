@@ -1,0 +1,103 @@
+Instruction context:
+   
+ L.  13       106  DUP_TOP          
+                 108  LOAD_NAME                Exception
+->               110  <121>               122  ''
+                 112  POP_TOP          
+                 114  POP_TOP          
+                 116  POP_TOP          
+
+test/134685.pyc -- 
+# decompile failed
+
+# file test/134685.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              platform
+                6  STORE_NAME               platform
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              os
+               14  STORE_NAME               os
+
+ L.   4        16  LOAD_CONST               3
+               18  LOAD_CONST               ('KeyringBackend',)
+               20  IMPORT_NAME              backend
+               22  IMPORT_FROM              KeyringBackend
+               24  STORE_NAME               KeyringBackend
+               26  POP_TOP          
+
+ L.   5        28  LOAD_CONST               3
+               30  LOAD_CONST               ('PasswordSetError',)
+               32  IMPORT_NAME              errors
+               34  IMPORT_FROM              PasswordSetError
+               36  STORE_NAME               PasswordSetError
+               38  POP_TOP          
+
+ L.   6        40  LOAD_CONST               3
+               42  LOAD_CONST               ('PasswordDeleteError',)
+               44  IMPORT_NAME              errors
+               46  IMPORT_FROM              PasswordDeleteError
+               48  STORE_NAME               PasswordDeleteError
+               50  POP_TOP          
+
+ L.   7        52  LOAD_CONST               3
+               54  LOAD_CONST               ('KeyringLocked',)
+               56  IMPORT_NAME              errors
+               58  IMPORT_FROM              KeyringLocked
+               60  STORE_NAME               KeyringLocked
+               62  POP_TOP          
+
+ L.   8        64  LOAD_CONST               3
+               66  LOAD_CONST               ('KeyringError',)
+               68  IMPORT_NAME              errors
+               70  IMPORT_FROM              KeyringError
+               72  STORE_NAME               KeyringError
+               74  POP_TOP          
+
+ L.   9        76  LOAD_CONST               3
+               78  LOAD_CONST               ('properties',)
+               80  IMPORT_NAME              util
+               82  IMPORT_FROM              properties
+               84  STORE_NAME               properties
+               86  POP_TOP          
+
+ L.  11        88  SETUP_FINALLY       106  'to 106'
+
+ L.  12        90  LOAD_CONST               1
+               92  LOAD_CONST               ('api',)
+               94  IMPORT_NAME              
+               96  IMPORT_FROM              api
+               98  STORE_NAME               api
+              100  POP_TOP          
+              102  POP_BLOCK        
+              104  JUMP_FORWARD        124  'to 124'
+            106_0  COME_FROM_FINALLY    88  '88'
+
+ L.  13       106  DUP_TOP          
+              108  LOAD_NAME                Exception
+              110  <121>               122  ''
+              112  POP_TOP          
+              114  POP_TOP          
+              116  POP_TOP          
+
+ L.  14       118  POP_EXCEPT       
+              120  JUMP_FORWARD        124  'to 124'
+              122  <48>             
+            124_0  COME_FROM           120  '120'
+            124_1  COME_FROM           104  '104'
+
+ L.  17       124  LOAD_BUILD_CLASS 
+              126  LOAD_CODE                <code_object Keyring>
+              128  LOAD_STR                 'Keyring'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  LOAD_STR                 'Keyring'
+              134  LOAD_NAME                KeyringBackend
+              136  CALL_FUNCTION_3       3  ''
+              138  STORE_NAME               Keyring
+
+Parse error at or near `<121>' instruction at offset 110
+

@@ -1,0 +1,338 @@
+
+# file test/101793.pyc
+# --- This code section failed: ---
+
+ L.   8         0  LOAD_STR                 '\nRequests HTTP Library\n~~~~~~~~~~~~~~~~~~~~~\n\nRequests is an HTTP library, written in Python, for human beings.\nBasic GET usage:\n\n   >>> import requests\n   >>> r = requests.get(\'https://www.python.org\')\n   >>> r.status_code\n   200\n   >>> b\'Python is a programming language\' in r.content\n   True\n\n... or POST:\n\n   >>> payload = dict(key1=\'value1\', key2=\'value2\')\n   >>> r = requests.post(\'https://httpbin.org/post\', data=payload)\n   >>> print(r.text)\n   {\n     ...\n     "form": {\n       "key1": "value1",\n       "key2": "value2"\n     },\n     ...\n   }\n\nThe other HTTP methods are supported - see `requests.api`. Full documentation\nis at <https://requests.readthedocs.io>.\n\n:copyright: (c) 2017 by Kenneth Reitz.\n:license: Apache 2.0, see LICENSE for more details.\n'
+                2  STORE_NAME               __doc__
+
+ L.  43         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              urllib3
+               10  STORE_NAME               urllib3
+
+ L.  44        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              chardet
+               18  STORE_NAME               chardet
+
+ L.  45        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              warnings
+               26  STORE_NAME               warnings
+
+ L.  46        28  LOAD_CONST               1
+               30  LOAD_CONST               ('RequestsDependencyWarning',)
+               32  IMPORT_NAME              exceptions
+               34  IMPORT_FROM              RequestsDependencyWarning
+               36  STORE_NAME               RequestsDependencyWarning
+               38  POP_TOP          
+
+ L.  49        40  LOAD_CODE                <code_object check_compatibility>
+               42  LOAD_STR                 'check_compatibility'
+               44  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               46  STORE_NAME               check_compatibility
+
+ L.  72        48  LOAD_CODE                <code_object _check_cryptography>
+               50  LOAD_STR                 '_check_cryptography'
+               52  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               54  STORE_NAME               _check_cryptography
+
+ L.  84        56  SETUP_FINALLY        76  'to 76'
+
+ L.  85        58  LOAD_NAME                check_compatibility
+               60  LOAD_NAME                urllib3
+               62  LOAD_ATTR                __version__
+               64  LOAD_NAME                chardet
+               66  LOAD_ATTR                __version__
+               68  CALL_FUNCTION_2       2  ''
+               70  POP_TOP          
+               72  POP_BLOCK        
+               74  JUMP_FORWARD        122  'to 122'
+             76_0  COME_FROM_FINALLY    56  '56'
+
+ L.  86        76  DUP_TOP          
+               78  LOAD_NAME                AssertionError
+               80  LOAD_NAME                ValueError
+               82  BUILD_TUPLE_2         2 
+               84  <121>               120  ''
+               86  POP_TOP          
+               88  POP_TOP          
+               90  POP_TOP          
+
+ L.  87        92  LOAD_NAME                warnings
+               94  LOAD_METHOD              warn
+               96  LOAD_STR                 "urllib3 ({}) or chardet ({}) doesn't match a supported version!"
+               98  LOAD_METHOD              format
+
+ L.  88       100  LOAD_NAME                urllib3
+              102  LOAD_ATTR                __version__
+              104  LOAD_NAME                chardet
+              106  LOAD_ATTR                __version__
+
+ L.  87       108  CALL_METHOD_2         2  ''
+
+ L.  89       110  LOAD_NAME                RequestsDependencyWarning
+
+ L.  87       112  CALL_METHOD_2         2  ''
+              114  POP_TOP          
+              116  POP_EXCEPT       
+              118  JUMP_FORWARD        122  'to 122'
+              120  <48>             
+            122_0  COME_FROM           118  '118'
+            122_1  COME_FROM            74  '74'
+
+ L.  94       122  SETUP_FINALLY       216  'to 216'
+
+ L.  95       124  SETUP_FINALLY       138  'to 138'
+
+ L.  96       126  LOAD_CONST               0
+              128  LOAD_CONST               None
+              130  IMPORT_NAME              ssl
+              132  STORE_NAME               ssl
+              134  POP_BLOCK        
+              136  JUMP_FORWARD        160  'to 160'
+            138_0  COME_FROM_FINALLY   124  '124'
+
+ L.  97       138  DUP_TOP          
+              140  LOAD_NAME                ImportError
+              142  <121>               158  ''
+              144  POP_TOP          
+              146  POP_TOP          
+              148  POP_TOP          
+
+ L.  98       150  LOAD_CONST               None
+              152  STORE_NAME               ssl
+              154  POP_EXCEPT       
+              156  JUMP_FORWARD        160  'to 160'
+              158  <48>             
+            160_0  COME_FROM           156  '156'
+            160_1  COME_FROM           136  '136'
+
+ L. 100       160  LOAD_NAME                getattr
+              162  LOAD_NAME                ssl
+              164  LOAD_STR                 'HAS_SNI'
+              166  LOAD_CONST               False
+              168  CALL_FUNCTION_3       3  ''
+              170  POP_JUMP_IF_TRUE    212  'to 212'
+
+ L. 101       172  LOAD_CONST               0
+              174  LOAD_CONST               ('pyopenssl',)
+              176  IMPORT_NAME_ATTR         urllib3.contrib
+              178  IMPORT_FROM              pyopenssl
+              180  STORE_NAME               pyopenssl
+              182  POP_TOP          
+
+ L. 102       184  LOAD_NAME                pyopenssl
+              186  LOAD_METHOD              inject_into_urllib3
+              188  CALL_METHOD_0         0  ''
+              190  POP_TOP          
+
+ L. 105       192  LOAD_CONST               0
+              194  LOAD_CONST               ('__version__',)
+              196  IMPORT_NAME              cryptography
+              198  IMPORT_FROM              __version__
+              200  STORE_NAME               cryptography_version
+              202  POP_TOP          
+
+ L. 106       204  LOAD_NAME                _check_cryptography
+              206  LOAD_NAME                cryptography_version
+              208  CALL_FUNCTION_1       1  ''
+              210  POP_TOP          
+            212_0  COME_FROM           170  '170'
+              212  POP_BLOCK        
+              214  JUMP_FORWARD        234  'to 234'
+            216_0  COME_FROM_FINALLY   122  '122'
+
+ L. 107       216  DUP_TOP          
+              218  LOAD_NAME                ImportError
+              220  <121>               232  ''
+              222  POP_TOP          
+              224  POP_TOP          
+              226  POP_TOP          
+
+ L. 108       228  POP_EXCEPT       
+              230  JUMP_FORWARD        234  'to 234'
+              232  <48>             
+            234_0  COME_FROM           230  '230'
+            234_1  COME_FROM           214  '214'
+
+ L. 111       234  LOAD_CONST               0
+              236  LOAD_CONST               ('DependencyWarning',)
+              238  IMPORT_NAME_ATTR         urllib3.exceptions
+              240  IMPORT_FROM              DependencyWarning
+              242  STORE_NAME               DependencyWarning
+              244  POP_TOP          
+
+ L. 112       246  LOAD_NAME                warnings
+              248  LOAD_METHOD              simplefilter
+              250  LOAD_STR                 'ignore'
+              252  LOAD_NAME                DependencyWarning
+              254  CALL_METHOD_2         2  ''
+              256  POP_TOP          
+
+ L. 114       258  LOAD_CONST               1
+              260  LOAD_CONST               ('__title__', '__description__', '__url__', '__version__')
+              262  IMPORT_NAME              __version__
+              264  IMPORT_FROM              __title__
+              266  STORE_NAME               __title__
+              268  IMPORT_FROM              __description__
+              270  STORE_NAME               __description__
+              272  IMPORT_FROM              __url__
+              274  STORE_NAME               __url__
+              276  IMPORT_FROM              __version__
+              278  STORE_NAME               __version__
+              280  POP_TOP          
+
+ L. 115       282  LOAD_CONST               1
+              284  LOAD_CONST               ('__build__', '__author__', '__author_email__', '__license__')
+              286  IMPORT_NAME              __version__
+              288  IMPORT_FROM              __build__
+              290  STORE_NAME               __build__
+              292  IMPORT_FROM              __author__
+              294  STORE_NAME               __author__
+              296  IMPORT_FROM              __author_email__
+              298  STORE_NAME               __author_email__
+              300  IMPORT_FROM              __license__
+              302  STORE_NAME               __license__
+              304  POP_TOP          
+
+ L. 116       306  LOAD_CONST               1
+              308  LOAD_CONST               ('__copyright__', '__cake__')
+              310  IMPORT_NAME              __version__
+              312  IMPORT_FROM              __copyright__
+              314  STORE_NAME               __copyright__
+              316  IMPORT_FROM              __cake__
+              318  STORE_NAME               __cake__
+              320  POP_TOP          
+
+ L. 118       322  LOAD_CONST               1
+              324  LOAD_CONST               ('utils',)
+              326  IMPORT_NAME              
+              328  IMPORT_FROM              utils
+              330  STORE_NAME               utils
+              332  POP_TOP          
+
+ L. 119       334  LOAD_CONST               1
+              336  LOAD_CONST               ('packages',)
+              338  IMPORT_NAME              
+              340  IMPORT_FROM              packages
+              342  STORE_NAME               packages
+              344  POP_TOP          
+
+ L. 120       346  LOAD_CONST               1
+              348  LOAD_CONST               ('Request', 'Response', 'PreparedRequest')
+              350  IMPORT_NAME              models
+              352  IMPORT_FROM              Request
+              354  STORE_NAME               Request
+              356  IMPORT_FROM              Response
+              358  STORE_NAME               Response
+              360  IMPORT_FROM              PreparedRequest
+              362  STORE_NAME               PreparedRequest
+              364  POP_TOP          
+
+ L. 121       366  LOAD_CONST               1
+              368  LOAD_CONST               ('request', 'get', 'head', 'post', 'patch', 'put', 'delete', 'options')
+              370  IMPORT_NAME              api
+              372  IMPORT_FROM              request
+              374  STORE_NAME               request
+              376  IMPORT_FROM              get
+              378  STORE_NAME               get
+              380  IMPORT_FROM              head
+              382  STORE_NAME               head
+              384  IMPORT_FROM              post
+              386  STORE_NAME               post
+              388  IMPORT_FROM              patch
+              390  STORE_NAME               patch
+              392  IMPORT_FROM              put
+              394  STORE_NAME               put
+              396  IMPORT_FROM              delete
+              398  STORE_NAME               delete
+              400  IMPORT_FROM              options
+              402  STORE_NAME               options
+              404  POP_TOP          
+
+ L. 122       406  LOAD_CONST               1
+              408  LOAD_CONST               ('session', 'Session')
+              410  IMPORT_NAME              sessions
+              412  IMPORT_FROM              session
+              414  STORE_NAME               session
+              416  IMPORT_FROM              Session
+              418  STORE_NAME               Session
+              420  POP_TOP          
+
+ L. 123       422  LOAD_CONST               1
+              424  LOAD_CONST               ('codes',)
+              426  IMPORT_NAME              status_codes
+              428  IMPORT_FROM              codes
+              430  STORE_NAME               codes
+              432  POP_TOP          
+
+ L. 124       434  LOAD_CONST               1
+              436  LOAD_CONST               ('RequestException', 'Timeout', 'URLRequired', 'TooManyRedirects', 'HTTPError', 'ConnectionError', 'FileModeWarning', 'ConnectTimeout', 'ReadTimeout')
+              438  IMPORT_NAME              exceptions
+              440  IMPORT_FROM              RequestException
+              442  STORE_NAME               RequestException
+              444  IMPORT_FROM              Timeout
+              446  STORE_NAME               Timeout
+              448  IMPORT_FROM              URLRequired
+              450  STORE_NAME               URLRequired
+              452  IMPORT_FROM              TooManyRedirects
+              454  STORE_NAME               TooManyRedirects
+              456  IMPORT_FROM              HTTPError
+              458  STORE_NAME               HTTPError
+              460  IMPORT_FROM              ConnectionError
+              462  STORE_NAME               ConnectionError
+              464  IMPORT_FROM              FileModeWarning
+              466  STORE_NAME               FileModeWarning
+              468  IMPORT_FROM              ConnectTimeout
+              470  STORE_NAME               ConnectTimeout
+              472  IMPORT_FROM              ReadTimeout
+              474  STORE_NAME               ReadTimeout
+              476  POP_TOP          
+
+ L. 131       478  LOAD_CONST               0
+              480  LOAD_CONST               None
+              482  IMPORT_NAME              logging
+              484  STORE_NAME               logging
+
+ L. 132       486  LOAD_CONST               0
+              488  LOAD_CONST               ('NullHandler',)
+              490  IMPORT_NAME              logging
+              492  IMPORT_FROM              NullHandler
+              494  STORE_NAME               NullHandler
+              496  POP_TOP          
+
+ L. 134       498  LOAD_NAME                logging
+              500  LOAD_METHOD              getLogger
+              502  LOAD_NAME                __name__
+              504  CALL_METHOD_1         1  ''
+              506  LOAD_METHOD              addHandler
+              508  LOAD_NAME                NullHandler
+              510  CALL_FUNCTION_0       0  ''
+              512  CALL_METHOD_1         1  ''
+              514  POP_TOP          
+
+ L. 137       516  LOAD_NAME                warnings
+              518  LOAD_ATTR                simplefilter
+              520  LOAD_STR                 'default'
+              522  LOAD_NAME                FileModeWarning
+              524  LOAD_CONST               True
+              526  LOAD_CONST               ('append',)
+              528  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              530  POP_TOP          
+
+Parse error at or near `<121>' instruction at offset 84
+
+Instruction context:
+   
+ L.  86        76  DUP_TOP          
+                  78  LOAD_NAME                AssertionError
+                  80  LOAD_NAME                ValueError
+                  82  BUILD_TUPLE_2         2 
+->                84  <121>               120  ''
+                  86  POP_TOP          
+                  88  POP_TOP          
+                  90  POP_TOP          
+
+test/101793.pyc -- 
+# decompile failed

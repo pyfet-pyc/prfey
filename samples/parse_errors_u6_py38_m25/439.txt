@@ -1,0 +1,65 @@
+Instruction context:
+   
+ L.  40        22  LOAD_GLOBAL              socket
+                  24  LOAD_METHOD              fromshare
+                  26  LOAD_FAST                'share'
+                  28  CALL_METHOD_1         1  ''
+                  30  POP_BLOCK        
+->                32  ROT_TWO          
+                  34  BEGIN_FINALLY    
+                  36  WITH_CLEANUP_START
+                  38  WITH_CLEANUP_FINISH
+                  40  POP_FINALLY           0  ''
+                  42  RETURN_VALUE     
+                44_0  COME_FROM_WITH       10  '10'
+                  44  WITH_CLEANUP_START
+                  46  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L.  58        14  LOAD_GLOBAL              reduction
+                  16  LOAD_METHOD              recv_handle
+                  18  LOAD_FAST                'conn'
+                  20  CALL_METHOD_1         1  ''
+                  22  POP_BLOCK        
+->                24  ROT_TWO          
+                  26  BEGIN_FINALLY    
+                  28  WITH_CLEANUP_START
+                  30  WITH_CLEANUP_FINISH
+                  32  POP_FINALLY           0  ''
+                  34  RETURN_VALUE     
+                36_0  COME_FROM_WITH       10  '10'
+                  36  WITH_CLEANUP_START
+                  38  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L.  80        56  LOAD_FAST                'self'
+                  58  LOAD_ATTR                _address
+                  60  LOAD_FAST                'self'
+                  62  LOAD_ATTR                _key
+                  64  BUILD_TUPLE_2         2 
+                  66  POP_BLOCK        
+->                68  ROT_TWO          
+                  70  BEGIN_FINALLY    
+                  72  WITH_CLEANUP_START
+                  74  WITH_CLEANUP_FINISH
+                  76  POP_FINALLY           0  ''
+                  78  RETURN_VALUE     
+                80_0  COME_FROM_WITH        4  '4'
+                  80  WITH_CLEANUP_START
+                  82  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 145        58  POP_BLOCK        
+->                60  BEGIN_FINALLY    
+                  62  WITH_CLEANUP_START
+                  64  WITH_CLEANUP_FINISH
+                  66  POP_FINALLY           0  ''
+                  68  POP_BLOCK        
+                  70  BREAK_LOOP          170  'to 170'
+                72_0  COME_FROM            56  '56'
+
+test/439.pyc -- 
+# decompile failed
+
+# file test/439.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,100 @@
+Instruction context:
+   
+ L.   7         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('BZ2File', 'BZ2Compressor', 'BZ2Decompressor', 'open', 'compress', 'decompress')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101034.pyc -- 
+# decompile failed
+
+# file test/101034.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Interface to the libbzip2 compression library.\n\nThis module provides a file interface, classes for incremental\n(de)compression, and functions for one-shot (de)compression.\n'
+                2  STORE_NAME               __doc__
+
+ L.   7         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('BZ2File', 'BZ2Compressor', 'BZ2Decompressor', 'open', 'compress', 'decompress')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  10        12  LOAD_STR                 'Nadeem Vawda <nadeem.vawda@gmail.com>'
+               14  STORE_NAME               __author__
+
+ L.  12        16  LOAD_CONST               0
+               18  LOAD_CONST               ('open',)
+               20  IMPORT_NAME              builtins
+               22  IMPORT_FROM              open
+               24  STORE_NAME               _builtin_open
+               26  POP_TOP          
+
+ L.  13        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              io
+               34  STORE_NAME               io
+
+ L.  14        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              os
+               42  STORE_NAME               os
+
+ L.  15        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              _compression
+               50  STORE_NAME               _compression
+
+ L.  16        52  LOAD_CONST               0
+               54  LOAD_CONST               ('RLock',)
+               56  IMPORT_NAME              threading
+               58  IMPORT_FROM              RLock
+               60  STORE_NAME               RLock
+               62  POP_TOP          
+
+ L.  18        64  LOAD_CONST               0
+               66  LOAD_CONST               ('BZ2Compressor', 'BZ2Decompressor')
+               68  IMPORT_NAME              _bz2
+               70  IMPORT_FROM              BZ2Compressor
+               72  STORE_NAME               BZ2Compressor
+               74  IMPORT_FROM              BZ2Decompressor
+               76  STORE_NAME               BZ2Decompressor
+               78  POP_TOP          
+
+ L.  21        80  LOAD_CONST               0
+               82  STORE_NAME               _MODE_CLOSED
+
+ L.  22        84  LOAD_CONST               1
+               86  STORE_NAME               _MODE_READ
+
+ L.  24        88  LOAD_CONST               3
+               90  STORE_NAME               _MODE_WRITE
+
+ L.  27        92  LOAD_BUILD_CLASS 
+               94  LOAD_CODE                <code_object BZ2File>
+               96  LOAD_STR                 'BZ2File'
+               98  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              100  LOAD_STR                 'BZ2File'
+              102  LOAD_NAME                _compression
+              104  LOAD_ATTR                BaseStream
+              106  CALL_FUNCTION_3       3  ''
+              108  STORE_NAME               BZ2File
+
+ L. 278       110  LOAD_CONST               ('rb', 9, None, None, None)
+              112  LOAD_CODE                <code_object open>
+              114  LOAD_STR                 'open'
+              116  MAKE_FUNCTION_1          'default'
+              118  STORE_NAME               open
+
+ L. 319       120  LOAD_CONST               (9,)
+              122  LOAD_CODE                <code_object compress>
+              124  LOAD_STR                 'compress'
+              126  MAKE_FUNCTION_1          'default'
+              128  STORE_NAME               compress
+
+ L. 330       130  LOAD_CODE                <code_object decompress>
+              132  LOAD_STR                 'decompress'
+              134  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              136  STORE_NAME               decompress
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

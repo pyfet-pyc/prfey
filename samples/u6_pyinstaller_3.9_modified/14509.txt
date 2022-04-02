@@ -1,0 +1,98 @@
+Instruction context:
+   
+ L.  10        48  DUP_TOP          
+                  50  LOAD_NAME                ImportError
+->                52  <121>               120  ''
+                  54  POP_TOP          
+                  56  POP_TOP          
+                  58  POP_TOP          
+
+test/14509.pyc -- 
+# decompile failed
+
+# file test/14509.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   3         8  SETUP_FINALLY        48  'to 48'
+
+ L.   6        10  LOAD_NAME                sys
+               12  LOAD_ATTR                version_info
+               14  LOAD_CONST               (3, 5)
+               16  COMPARE_OP               <
+               18  POP_JUMP_IF_FALSE    28  'to 28'
+
+ L.   7        20  LOAD_NAME                ImportError
+               22  LOAD_STR                 'Fallback to vendored code'
+               24  CALL_FUNCTION_1       1  ''
+               26  RAISE_VARARGS_1       1  'exception instance'
+             28_0  COME_FROM            18  '18'
+
+ L.   9        28  LOAD_CONST               0
+               30  LOAD_CONST               ('CertificateError', 'match_hostname')
+               32  IMPORT_NAME              ssl
+               34  IMPORT_FROM              CertificateError
+               36  STORE_NAME               CertificateError
+               38  IMPORT_FROM              match_hostname
+               40  STORE_NAME               match_hostname
+               42  POP_TOP          
+               44  POP_BLOCK        
+               46  JUMP_FORWARD        122  'to 122'
+             48_0  COME_FROM_FINALLY     8  '8'
+
+ L.  10        48  DUP_TOP          
+               50  LOAD_NAME                ImportError
+               52  <121>               120  ''
+               54  POP_TOP          
+               56  POP_TOP          
+               58  POP_TOP          
+
+ L.  11        60  SETUP_FINALLY        82  'to 82'
+
+ L.  13        62  LOAD_CONST               0
+               64  LOAD_CONST               ('CertificateError', 'match_hostname')
+               66  IMPORT_NAME_ATTR         backports.ssl_match_hostname
+               68  IMPORT_FROM              CertificateError
+               70  STORE_NAME               CertificateError
+               72  IMPORT_FROM              match_hostname
+               74  STORE_NAME               match_hostname
+               76  POP_TOP          
+               78  POP_BLOCK        
+               80  JUMP_FORWARD        116  'to 116'
+             82_0  COME_FROM_FINALLY    60  '60'
+
+ L.  14        82  DUP_TOP          
+               84  LOAD_NAME                ImportError
+               86  <121>               114  ''
+               88  POP_TOP          
+               90  POP_TOP          
+               92  POP_TOP          
+
+ L.  16        94  LOAD_CONST               1
+               96  LOAD_CONST               ('CertificateError', 'match_hostname')
+               98  IMPORT_NAME              _implementation
+              100  IMPORT_FROM              CertificateError
+              102  STORE_NAME               CertificateError
+              104  IMPORT_FROM              match_hostname
+              106  STORE_NAME               match_hostname
+              108  POP_TOP          
+              110  POP_EXCEPT       
+              112  JUMP_FORWARD        116  'to 116'
+              114  <48>             
+            116_0  COME_FROM           112  '112'
+            116_1  COME_FROM            80  '80'
+              116  POP_EXCEPT       
+              118  JUMP_FORWARD        122  'to 122'
+              120  <48>             
+            122_0  COME_FROM           118  '118'
+            122_1  COME_FROM            46  '46'
+
+ L.  19       122  LOAD_CONST               ('CertificateError', 'match_hostname')
+              124  STORE_NAME               __all__
+
+Parse error at or near `<121>' instruction at offset 52
+

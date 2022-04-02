@@ -1,0 +1,102 @@
+Instruction context:
+   
+ L.  82        60  BUILD_LIST_0          0 
+                  62  LOAD_CONST               ('open', 'Error', 'Wave_read', 'Wave_write')
+->                64  CALL_FINALLY         67  'to 67'
+                  66  STORE_NAME               __all__
+
+test/101470.pyc -- 
+# decompile failed
+
+# file test/101470.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "Stuff to parse WAVE files.\n\nUsage.\n\nReading WAVE files:\n      f = wave.open(file, 'r')\nwhere file is either the name of a file or an open file pointer.\nThe open file pointer must have methods read(), seek(), and close().\nWhen the setpos() and rewind() methods are not used, the seek()\nmethod is not  necessary.\n\nThis returns an instance of a class with the following public methods:\n      getnchannels()  -- returns number of audio channels (1 for\n                         mono, 2 for stereo)\n      getsampwidth()  -- returns sample width in bytes\n      getframerate()  -- returns sampling frequency\n      getnframes()    -- returns number of audio frames\n      getcomptype()   -- returns compression type ('NONE' for linear samples)\n      getcompname()   -- returns human-readable version of\n                         compression type ('not compressed' linear samples)\n      getparams()     -- returns a namedtuple consisting of all of the\n                         above in the above order\n      getmarkers()    -- returns None (for compatibility with the\n                         aifc module)\n      getmark(id)     -- raises an error since the mark does not\n                         exist (for compatibility with the aifc module)\n      readframes(n)   -- returns at most n frames of audio\n      rewind()        -- rewind to the beginning of the audio stream\n      setpos(pos)     -- seek to the specified position\n      tell()          -- return the current position\n      close()         -- close the instance (make it unusable)\nThe position returned by tell() and the position given to setpos()\nare compatible and have nothing to do with the actual position in the\nfile.\nThe close() method is called automatically when the class instance\nis destroyed.\n\nWriting WAVE files:\n      f = wave.open(file, 'w')\nwhere file is either the name of a file or an open file pointer.\nThe open file pointer must have methods write(), tell(), seek(), and\nclose().\n\nThis returns an instance of a class with the following public methods:\n      setnchannels(n) -- set the number of channels\n      setsampwidth(n) -- set the sample width\n      setframerate(n) -- set the frame rate\n      setnframes(n)   -- set the number of frames\n      setcomptype(type, name)\n                      -- set the compression type and the\n                         human-readable compression type\n      setparams(tuple)\n                      -- set all parameters at once\n      tell()          -- return current position in output file\n      writeframesraw(data)\n                      -- write audio frames without patching up the\n                         file header\n      writeframes(data)\n                      -- write audio frames and patch up the file header\n      close()         -- patch up the file header and close the\n                         output file\nYou should set the parameters before the first writeframesraw or\nwriteframes.  The total number of frames does not need to be set,\nbut when it is set to the correct value, the header does not have to\nbe patched up.\nIt is best to first set all parameters, perhaps possibly the\ncompression type, and then write audio frames using writeframesraw.\nWhen all frames have been written, either call writeframes(b'') or\nclose() to patch up the sizes in the header.\nThe close() method is called automatically when the class instance\nis destroyed.\n"
+                2  STORE_NAME               __doc__
+
+ L.  74         4  LOAD_CONST               0
+                6  LOAD_CONST               ('Chunk',)
+                8  IMPORT_NAME              chunk
+               10  IMPORT_FROM              Chunk
+               12  STORE_NAME               Chunk
+               14  POP_TOP          
+
+ L.  75        16  LOAD_CONST               0
+               18  LOAD_CONST               ('namedtuple',)
+               20  IMPORT_NAME              collections
+               22  IMPORT_FROM              namedtuple
+               24  STORE_NAME               namedtuple
+               26  POP_TOP          
+
+ L.  76        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              audioop
+               34  STORE_NAME               audioop
+
+ L.  77        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              builtins
+               42  STORE_NAME               builtins
+
+ L.  78        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              struct
+               50  STORE_NAME               struct
+
+ L.  79        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              sys
+               58  STORE_NAME               sys
+
+ L.  82        60  BUILD_LIST_0          0 
+               62  LOAD_CONST               ('open', 'Error', 'Wave_read', 'Wave_write')
+               64  CALL_FINALLY         67  'to 67'
+               66  STORE_NAME               __all__
+
+ L.  84        68  LOAD_BUILD_CLASS 
+               70  LOAD_CODE                <code_object Error>
+               72  LOAD_STR                 'Error'
+               74  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               76  LOAD_STR                 'Error'
+               78  LOAD_NAME                Exception
+               80  CALL_FUNCTION_3       3  ''
+               82  STORE_NAME               Error
+
+ L.  87        84  LOAD_CONST               1
+               86  STORE_NAME               WAVE_FORMAT_PCM
+
+ L.  89        88  LOAD_CONST               (None, 'b', 'h', None, 'i')
+               90  STORE_NAME               _array_fmts
+
+ L.  91        92  LOAD_NAME                namedtuple
+               94  LOAD_STR                 '_wave_params'
+
+ L.  92        96  LOAD_STR                 'nchannels sampwidth framerate nframes comptype compname'
+
+ L.  91        98  CALL_FUNCTION_2       2  ''
+              100  STORE_NAME               _wave_params
+
+ L.  94       102  LOAD_BUILD_CLASS 
+              104  LOAD_CODE                <code_object Wave_read>
+              106  LOAD_STR                 'Wave_read'
+              108  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              110  LOAD_STR                 'Wave_read'
+              112  CALL_FUNCTION_2       2  ''
+              114  STORE_NAME               Wave_read
+
+ L. 275       116  LOAD_BUILD_CLASS 
+              118  LOAD_CODE                <code_object Wave_write>
+              120  LOAD_STR                 'Wave_write'
+              122  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              124  LOAD_STR                 'Wave_write'
+              126  CALL_FUNCTION_2       2  ''
+              128  STORE_NAME               Wave_write
+
+ L. 502       130  LOAD_CONST               (None,)
+              132  LOAD_CODE                <code_object open>
+              134  LOAD_STR                 'open'
+              136  MAKE_FUNCTION_1          'default'
+              138  STORE_NAME               open
+
+Parse error at or near `CALL_FINALLY' instruction at offset 64
+

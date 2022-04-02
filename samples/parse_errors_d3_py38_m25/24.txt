@@ -1,0 +1,25 @@
+Instruction context:
+   
+ L. 415   282_284  JUMP_FORWARD        288  'to 288'
+->               286  JUMP_BACK            28  'to 28'
+               288_0  COME_FROM           282  '282'
+               288_1  COME_FROM           256  '256'
+Instruction context:
+   
+ L. 729       158  LOAD_FAST                'code'
+                 160  LOAD_FAST                'resp'
+                 162  BUILD_TUPLE_2         2 
+                 164  POP_BLOCK        
+->               166  ROT_TWO          
+                 168  POP_TOP          
+                 170  RETURN_VALUE     
+               172_0  COME_FROM           156  '156'
+                 172  POP_BLOCK        
+                 174  JUMP_BACK            98  'to 98'
+               176_0  COME_FROM_FINALLY   122  '122'
+
+test/24.pyc -- 
+# decompile failed
+
+# file test/24.pyc
+# Deparsing stopped due to parse error

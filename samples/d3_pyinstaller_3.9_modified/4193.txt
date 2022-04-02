@@ -1,0 +1,391 @@
+
+# file test/4193.pyc
+# --- This code section failed: ---
+
+ L.  31         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              abc
+                6  STORE_NAME               abc
+
+ L.  32         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              sys
+               14  STORE_NAME               sys
+
+ L.  33        16  LOAD_CONST               0
+               18  LOAD_CONST               ('byte_string',)
+               20  IMPORT_NAME_ATTR         Crypto.Util.py3compat
+               22  IMPORT_FROM              byte_string
+               24  STORE_NAME               byte_string
+               26  POP_TOP          
+
+ L.  34        28  LOAD_CONST               0
+               30  LOAD_CONST               ('pycryptodome_filename',)
+               32  IMPORT_NAME_ATTR         Crypto.Util._file_system
+               34  IMPORT_FROM              pycryptodome_filename
+               36  STORE_NAME               pycryptodome_filename
+               38  POP_TOP          
+
+ L.  39        40  LOAD_NAME                sys
+               42  LOAD_ATTR                version_info
+               44  LOAD_CONST               0
+               46  BINARY_SUBSCR    
+               48  LOAD_CONST               3
+               50  COMPARE_OP               <
+               52  POP_JUMP_IF_FALSE   108  'to 108'
+
+ L.  41        54  LOAD_CONST               0
+               56  LOAD_CONST               None
+               58  IMPORT_NAME              imp
+               60  STORE_NAME               imp
+
+ L.  42        62  BUILD_LIST_0          0 
+               64  STORE_NAME               extension_suffixes
+
+ L.  43        66  LOAD_NAME                imp
+               68  LOAD_METHOD              get_suffixes
+               70  CALL_METHOD_0         0  ''
+               72  GET_ITER         
+             74_0  COME_FROM           104  '104'
+             74_1  COME_FROM            92  '92'
+               74  FOR_ITER            106  'to 106'
+               76  UNPACK_SEQUENCE_3     3 
+               78  STORE_NAME               ext
+               80  STORE_NAME               mod
+               82  STORE_NAME               typ
+
+ L.  44        84  LOAD_NAME                typ
+               86  LOAD_NAME                imp
+               88  LOAD_ATTR                C_EXTENSION
+               90  COMPARE_OP               ==
+               92  POP_JUMP_IF_FALSE_BACK    74  'to 74'
+
+ L.  45        94  LOAD_NAME                extension_suffixes
+               96  LOAD_METHOD              append
+               98  LOAD_NAME                ext
+              100  CALL_METHOD_1         1  ''
+              102  POP_TOP          
+              104  JUMP_BACK            74  'to 74'
+            106_0  COME_FROM            74  '74'
+              106  JUMP_FORWARD        126  'to 126'
+            108_0  COME_FROM            52  '52'
+
+ L.  49       108  LOAD_CONST               0
+              110  LOAD_CONST               ('machinery',)
+              112  IMPORT_NAME              importlib
+              114  IMPORT_FROM              machinery
+              116  STORE_NAME               machinery
+              118  POP_TOP          
+
+ L.  50       120  LOAD_NAME                machinery
+              122  LOAD_ATTR                EXTENSION_SUFFIXES
+              124  STORE_NAME               extension_suffixes
+            126_0  COME_FROM           106  '106'
+
+ L.  53       126  LOAD_NAME                bytearray
+              128  LOAD_NAME                memoryview
+              130  BUILD_TUPLE_2         2 
+              132  STORE_NAME               _buffer_type
+
+ L.  56       134  LOAD_BUILD_CLASS 
+              136  LOAD_CODE                <code_object _VoidPointer>
+              138  LOAD_STR                 '_VoidPointer'
+              140  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              142  LOAD_STR                 '_VoidPointer'
+              144  LOAD_NAME                object
+              146  CALL_FUNCTION_3       3  ''
+              148  STORE_NAME               _VoidPointer
+
+ L.  68       150  SETUP_FINALLY       334  'to 334'
+
+ L.  75       152  LOAD_STR                 '__pypy__'
+              154  LOAD_NAME                sys
+              156  LOAD_ATTR                builtin_module_names
+              158  <118>                 1  ''
+              160  POP_JUMP_IF_FALSE   182  'to 182'
+              162  LOAD_NAME                sys
+              164  LOAD_ATTR                flags
+              166  LOAD_ATTR                optimize
+              168  LOAD_CONST               2
+              170  COMPARE_OP               ==
+              172  POP_JUMP_IF_FALSE   182  'to 182'
+
+ L.  76       174  LOAD_NAME                ImportError
+              176  LOAD_STR                 'CFFI with optimize=2 fails due to pycparser bug.'
+              178  CALL_FUNCTION_1       1  ''
+              180  RAISE_VARARGS_1       1  'exception instance'
+            182_0  COME_FROM           172  '172'
+            182_1  COME_FROM           160  '160'
+
+ L.  78       182  LOAD_CONST               0
+              184  LOAD_CONST               ('FFI',)
+              186  IMPORT_NAME              cffi
+              188  IMPORT_FROM              FFI
+              190  STORE_NAME               FFI
+              192  POP_TOP          
+
+ L.  80       194  LOAD_NAME                FFI
+              196  CALL_FUNCTION_0       0  ''
+              198  STORE_NAME               ffi
+
+ L.  81       200  LOAD_NAME                ffi
+              202  LOAD_ATTR                NULL
+              204  STORE_NAME               null_pointer
+
+ L.  82       206  LOAD_NAME                ffi
+              208  LOAD_METHOD              typeof
+              210  LOAD_NAME                ffi
+              212  LOAD_METHOD              new
+              214  LOAD_STR                 'const uint8_t*'
+              216  CALL_METHOD_1         1  ''
+              218  CALL_METHOD_1         1  ''
+              220  STORE_NAME               uint8_t_type
+
+ L.  84       222  LOAD_NAME                ffi
+              224  LOAD_METHOD              new
+              226  LOAD_STR                 'uint8_t[1]'
+              228  CALL_METHOD_1         1  ''
+              230  LOAD_ATTR                __class__
+              232  LOAD_ATTR                __bases__
+              234  STORE_NAME               _Array
+
+ L.  86       236  LOAD_CODE                <code_object load_lib>
+              238  LOAD_STR                 'load_lib'
+              240  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              242  STORE_NAME               load_lib
+
+ L.  99       244  LOAD_CODE                <code_object c_ulong>
+              246  LOAD_STR                 'c_ulong'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  STORE_NAME               c_ulong
+
+ L. 103       252  LOAD_NAME                c_ulong
+              254  STORE_NAME               c_ulonglong
+
+ L. 104       256  LOAD_NAME                c_ulong
+              258  STORE_NAME               c_uint
+
+ L. 106       260  LOAD_CODE                <code_object c_size_t>
+              262  LOAD_STR                 'c_size_t'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  STORE_NAME               c_size_t
+
+ L. 110       268  LOAD_CONST               (None,)
+              270  LOAD_CODE                <code_object create_string_buffer>
+              272  LOAD_STR                 'create_string_buffer'
+              274  MAKE_FUNCTION_1          'default'
+              276  STORE_NAME               create_string_buffer
+
+ L. 123       278  LOAD_CODE                <code_object get_c_string>
+              280  LOAD_STR                 'get_c_string'
+              282  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              284  STORE_NAME               get_c_string
+
+ L. 127       286  LOAD_CODE                <code_object get_raw_buffer>
+              288  LOAD_STR                 'get_raw_buffer'
+              290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              292  STORE_NAME               get_raw_buffer
+
+ L. 131       294  LOAD_CODE                <code_object c_uint8_ptr>
+              296  LOAD_STR                 'c_uint8_ptr'
+              298  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              300  STORE_NAME               c_uint8_ptr
+
+ L. 140       302  LOAD_BUILD_CLASS 
+              304  LOAD_CODE                <code_object VoidPointer_cffi>
+              306  LOAD_STR                 'VoidPointer_cffi'
+              308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              310  LOAD_STR                 'VoidPointer_cffi'
+              312  LOAD_NAME                _VoidPointer
+              314  CALL_FUNCTION_3       3  ''
+              316  STORE_NAME               VoidPointer_cffi
+
+ L. 152       318  LOAD_CODE                <code_object VoidPointer>
+              320  LOAD_STR                 'VoidPointer'
+              322  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              324  STORE_NAME               VoidPointer
+
+ L. 155       326  LOAD_STR                 'cffi'
+              328  STORE_NAME               backend
+              330  POP_BLOCK        
+              332  JUMP_FORWARD        560  'to 560'
+            334_0  COME_FROM_FINALLY   150  '150'
+
+ L. 157       334  DUP_TOP          
+              336  LOAD_NAME                ImportError
+          338_340  <121>               558  ''
+              342  POP_TOP          
+              344  POP_TOP          
+              346  POP_TOP          
+
+ L. 159       348  LOAD_CONST               0
+              350  LOAD_CONST               None
+              352  IMPORT_NAME              ctypes
+              354  STORE_NAME               ctypes
+
+ L. 160       356  LOAD_CONST               0
+              358  LOAD_CONST               ('CDLL', 'c_void_p', 'byref', 'c_ulong', 'c_ulonglong', 'c_size_t', 'create_string_buffer', 'c_ubyte', 'c_uint')
+              360  IMPORT_NAME              ctypes
+              362  IMPORT_FROM              CDLL
+              364  STORE_NAME               CDLL
+              366  IMPORT_FROM              c_void_p
+              368  STORE_NAME               c_void_p
+              370  IMPORT_FROM              byref
+              372  STORE_NAME               byref
+              374  IMPORT_FROM              c_ulong
+              376  STORE_NAME               c_ulong
+              378  IMPORT_FROM              c_ulonglong
+              380  STORE_NAME               c_ulonglong
+              382  IMPORT_FROM              c_size_t
+              384  STORE_NAME               c_size_t
+              386  IMPORT_FROM              create_string_buffer
+              388  STORE_NAME               create_string_buffer
+              390  IMPORT_FROM              c_ubyte
+              392  STORE_NAME               c_ubyte
+              394  IMPORT_FROM              c_uint
+              396  STORE_NAME               c_uint
+              398  POP_TOP          
+
+ L. 162       400  LOAD_CONST               0
+              402  LOAD_CONST               ('find_library',)
+              404  IMPORT_NAME_ATTR         ctypes.util
+              406  IMPORT_FROM              find_library
+              408  STORE_NAME               find_library
+              410  POP_TOP          
+
+ L. 163       412  LOAD_CONST               0
+              414  LOAD_CONST               ('Array',)
+              416  IMPORT_NAME              ctypes
+              418  IMPORT_FROM              Array
+              420  STORE_NAME               _Array
+              422  POP_TOP          
+
+ L. 165       424  LOAD_CONST               None
+              426  STORE_NAME               null_pointer
+
+ L. 166       428  BUILD_LIST_0          0 
+              430  STORE_NAME               cached_architecture
+
+ L. 168       432  LOAD_CODE                <code_object load_lib>
+              434  LOAD_STR                 'load_lib'
+              436  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              438  STORE_NAME               load_lib
+
+ L. 182       440  LOAD_CODE                <code_object get_c_string>
+              442  LOAD_STR                 'get_c_string'
+              444  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              446  STORE_NAME               get_c_string
+
+ L. 185       448  LOAD_CODE                <code_object get_raw_buffer>
+              450  LOAD_STR                 'get_raw_buffer'
+              452  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              454  STORE_NAME               get_raw_buffer
+
+ L. 190       456  LOAD_NAME                ctypes
+              458  LOAD_ATTR                c_ssize_t
+              460  STORE_NAME               _c_ssize_t
+
+ L. 192       462  LOAD_CONST               0
+              464  STORE_NAME               _PyBUF_SIMPLE
+
+ L. 193       466  LOAD_NAME                ctypes
+              468  LOAD_ATTR                pythonapi
+              470  LOAD_ATTR                PyObject_GetBuffer
+              472  STORE_NAME               _PyObject_GetBuffer
+
+ L. 194       474  LOAD_NAME                ctypes
+              476  LOAD_ATTR                pythonapi
+              478  LOAD_ATTR                PyBuffer_Release
+              480  STORE_NAME               _PyBuffer_Release
+
+ L. 195       482  LOAD_NAME                ctypes
+              484  LOAD_ATTR                py_object
+              486  STORE_NAME               _py_object
+
+ L. 196       488  LOAD_NAME                ctypes
+              490  LOAD_METHOD              POINTER
+              492  LOAD_NAME                _c_ssize_t
+              494  CALL_METHOD_1         1  ''
+              496  STORE_NAME               _c_ssize_p
+
+ L. 200       498  LOAD_BUILD_CLASS 
+              500  LOAD_CODE                <code_object _Py_buffer>
+              502  LOAD_STR                 '_Py_buffer'
+              504  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              506  LOAD_STR                 '_Py_buffer'
+              508  LOAD_NAME                ctypes
+              510  LOAD_ATTR                Structure
+              512  CALL_FUNCTION_3       3  ''
+              514  STORE_NAME               _Py_buffer
+
+ L. 219       516  LOAD_CODE                <code_object c_uint8_ptr>
+              518  LOAD_STR                 'c_uint8_ptr'
+              520  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              522  STORE_NAME               c_uint8_ptr
+
+ L. 236       524  LOAD_BUILD_CLASS 
+              526  LOAD_CODE                <code_object VoidPointer_ctypes>
+              528  LOAD_STR                 'VoidPointer_ctypes'
+              530  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              532  LOAD_STR                 'VoidPointer_ctypes'
+              534  LOAD_NAME                _VoidPointer
+              536  CALL_FUNCTION_3       3  ''
+              538  STORE_NAME               VoidPointer_ctypes
+
+ L. 248       540  LOAD_CODE                <code_object VoidPointer>
+              542  LOAD_STR                 'VoidPointer'
+              544  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              546  STORE_NAME               VoidPointer
+
+ L. 251       548  LOAD_STR                 'ctypes'
+              550  STORE_NAME               backend
+
+ L. 252       552  DELETE_NAME              ctypes
+              554  POP_EXCEPT       
+              556  JUMP_FORWARD        560  'to 560'
+              558  <48>             
+            560_0  COME_FROM           556  '556'
+            560_1  COME_FROM           332  '332'
+
+ L. 255       560  LOAD_BUILD_CLASS 
+              562  LOAD_CODE                <code_object SmartPointer>
+              564  LOAD_STR                 'SmartPointer'
+              566  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              568  LOAD_STR                 'SmartPointer'
+              570  LOAD_NAME                object
+              572  CALL_FUNCTION_3       3  ''
+              574  STORE_NAME               SmartPointer
+
+ L. 278       576  LOAD_CODE                <code_object load_pycryptodome_raw_lib>
+              578  LOAD_STR                 'load_pycryptodome_raw_lib'
+              580  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              582  STORE_NAME               load_pycryptodome_raw_lib
+
+ L. 300       584  LOAD_CODE                <code_object is_buffer>
+              586  LOAD_STR                 'is_buffer'
+              588  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              590  STORE_NAME               is_buffer
+
+ L. 305       592  LOAD_CODE                <code_object is_writeable_buffer>
+              594  LOAD_STR                 'is_writeable_buffer'
+              596  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              598  STORE_NAME               is_writeable_buffer
+
+Parse error at or near `<118>' instruction at offset 158
+
+Instruction context:
+   
+ L.  75       152  LOAD_STR                 '__pypy__'
+                 154  LOAD_NAME                sys
+                 156  LOAD_ATTR                builtin_module_names
+->               158  <118>                 1  ''
+                 160  POP_JUMP_IF_FALSE   182  'to 182'
+                 162  LOAD_NAME                sys
+                 164  LOAD_ATTR                flags
+                 166  LOAD_ATTR                optimize
+                 168  LOAD_CONST               2
+                 170  COMPARE_OP               ==
+                 172  POP_JUMP_IF_FALSE   182  'to 182'
+
+test/4193.pyc -- 
+# decompile failed

@@ -1,0 +1,342 @@
+
+# file test/162797.pyc
+# --- This code section failed: ---
+
+ L.   2         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              random
+                6  STORE_NAME               random
+
+ L.   3         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              re
+               14  STORE_NAME               re
+
+ L.   4        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              string
+               22  STORE_NAME               string
+
+ L.   5        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              threading
+               30  STORE_NAME               threading
+
+ L.   6        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              traceback
+               38  STORE_NAME               traceback
+
+ L.   7        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              warnings
+               46  STORE_NAME               warnings
+
+ L.   8        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              functools
+               54  STORE_NAME               functools
+
+ L.   9        56  LOAD_CONST               0
+               58  LOAD_CONST               ('Any', 'List', 'Dict', 'Union')
+               60  IMPORT_NAME              typing
+               62  IMPORT_FROM              Any
+               64  STORE_NAME               Any
+               66  IMPORT_FROM              List
+               68  STORE_NAME               List
+               70  IMPORT_FROM              Dict
+               72  STORE_NAME               Dict
+               74  IMPORT_FROM              Union
+               76  STORE_NAME               Union
+               78  POP_TOP          
+
+ L.  11        80  LOAD_CONST               0
+               82  LOAD_CONST               None
+               84  IMPORT_NAME              queue
+               86  STORE_NAME               Queue
+
+ L.  12        88  LOAD_CONST               0
+               90  LOAD_CONST               None
+               92  IMPORT_NAME              logging
+               94  STORE_NAME               logging
+
+ L.  14        96  LOAD_CONST               0
+               98  LOAD_CONST               ('types',)
+              100  IMPORT_NAME              telebot
+              102  IMPORT_FROM              types
+              104  STORE_NAME               types
+              106  POP_TOP          
+
+ L.  16       108  SETUP_FINALLY       142  'to 142'
+
+ L.  17       110  LOAD_CONST               0
+              112  LOAD_CONST               ('Image',)
+              114  IMPORT_NAME              PIL
+              116  IMPORT_FROM              Image
+              118  STORE_NAME               Image
+              120  POP_TOP          
+
+ L.  18       122  LOAD_CONST               0
+              124  LOAD_CONST               ('BytesIO',)
+              126  IMPORT_NAME              io
+              128  IMPORT_FROM              BytesIO
+              130  STORE_NAME               BytesIO
+              132  POP_TOP          
+
+ L.  19       134  LOAD_CONST               True
+              136  STORE_NAME               pil_imported
+              138  POP_BLOCK        
+              140  JUMP_FORWARD        158  'to 158'
+            142_0  COME_FROM_FINALLY   108  '108'
+
+ L.  20       142  POP_TOP          
+              144  POP_TOP          
+              146  POP_TOP          
+
+ L.  21       148  LOAD_CONST               False
+              150  STORE_NAME               pil_imported
+              152  POP_EXCEPT       
+              154  JUMP_FORWARD        158  'to 158'
+              156  <48>             
+            158_0  COME_FROM           154  '154'
+            158_1  COME_FROM           140  '140'
+
+ L.  23       158  LOAD_CONST               4096
+              160  STORE_NAME               MAX_MESSAGE_LENGTH
+
+ L.  25       162  LOAD_NAME                logging
+              164  LOAD_METHOD              getLogger
+              166  LOAD_STR                 'TeleBot'
+              168  CALL_METHOD_1         1  ''
+              170  STORE_NAME               logger
+
+ L.  27       172  LOAD_NAME                threading
+              174  LOAD_METHOD              local
+              176  CALL_METHOD_0         0  ''
+              178  STORE_NAME               thread_local
+
+ L.  29       180  BUILD_LIST_0          0 
+              182  LOAD_CONST               ('text', 'audio', 'document', 'photo', 'sticker', 'video', 'video_note', 'voice', 'contact', 'dice', 'poll', 'venue', 'location')
+              184  CALL_FINALLY        187  'to 187'
+              186  STORE_NAME               content_type_media
+
+ L.  34       188  BUILD_LIST_0          0 
+              190  LOAD_CONST               ('new_chat_members', 'left_chat_member', 'new_chat_title', 'new_chat_photo', 'delete_chat_photo', 'group_chat_created', 'supergroup_chat_created', 'channel_chat_created', 'migrate_to_chat_id', 'migrate_from_chat_id', 'pinned_message', 'proximity_alert_triggered', 'voice_chat_scheduled', 'voice_chat_started', 'voice_chat_ended', 'voice_chat_participants_invited', 'message_auto_delete_timer_changed')
+              192  CALL_FINALLY        195  'to 195'
+              194  STORE_NAME               content_type_service
+
+ L.  41       196  BUILD_LIST_0          0 
+              198  LOAD_CONST               ('update_id', 'message', 'edited_message', 'channel_post', 'edited_channel_post', 'inline_query', 'chosen_inline_result', 'callback_query', 'shipping_query', 'pre_checkout_query', 'poll', 'poll_answer', 'my_chat_member', 'chat_member')
+              200  CALL_FINALLY        203  'to 203'
+              202  STORE_NAME               update_types
+
+ L.  47       204  LOAD_BUILD_CLASS 
+              206  LOAD_CODE                <code_object WorkerThread>
+              208  LOAD_STR                 'WorkerThread'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  LOAD_STR                 'WorkerThread'
+              214  LOAD_NAME                threading
+              216  LOAD_ATTR                Thread
+              218  CALL_FUNCTION_3       3  ''
+              220  STORE_NAME               WorkerThread
+
+ L. 110       222  LOAD_BUILD_CLASS 
+              224  LOAD_CODE                <code_object ThreadPool>
+              226  LOAD_STR                 'ThreadPool'
+              228  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              230  LOAD_STR                 'ThreadPool'
+              232  CALL_FUNCTION_2       2  ''
+              234  STORE_NAME               ThreadPool
+
+ L. 142       236  LOAD_BUILD_CLASS 
+              238  LOAD_CODE                <code_object AsyncTask>
+              240  LOAD_STR                 'AsyncTask'
+              242  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              244  LOAD_STR                 'AsyncTask'
+              246  CALL_FUNCTION_2       2  ''
+              248  STORE_NAME               AsyncTask
+
+ L. 168       250  LOAD_CODE                <code_object async_dec>
+              252  LOAD_STR                 'async_dec'
+              254  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              256  STORE_NAME               async_dec
+
+ L. 178       258  LOAD_CODE                <code_object is_string>
+              260  LOAD_STR                 'is_string'
+              262  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              264  STORE_NAME               is_string
+
+ L. 182       266  LOAD_CODE                <code_object is_dict>
+              268  LOAD_STR                 'is_dict'
+              270  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              272  STORE_NAME               is_dict
+
+ L. 186       274  LOAD_CODE                <code_object is_bytes>
+              276  LOAD_STR                 'is_bytes'
+              278  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              280  STORE_NAME               is_bytes
+
+ L. 190       282  LOAD_CODE                <code_object is_pil_image>
+              284  LOAD_STR                 'is_pil_image'
+              286  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              288  STORE_NAME               is_pil_image
+
+ L. 194       290  LOAD_CONST               ('JPEG', 'web_low')
+              292  LOAD_CODE                <code_object pil_image_to_file>
+              294  LOAD_STR                 'pil_image_to_file'
+              296  MAKE_FUNCTION_1          'default'
+              298  STORE_NAME               pil_image_to_file
+
+ L. 205       300  LOAD_NAME                str
+              302  LOAD_NAME                bool
+              304  LOAD_CONST               ('text', 'return')
+              306  BUILD_CONST_KEY_MAP_2     2 
+              308  LOAD_CODE                <code_object is_command>
+              310  LOAD_STR                 'is_command'
+              312  MAKE_FUNCTION_4          'annotation'
+              314  STORE_NAME               is_command
+
+ L. 215       316  LOAD_NAME                str
+              318  LOAD_NAME                Union
+              320  LOAD_NAME                str
+              322  LOAD_CONST               None
+              324  BUILD_TUPLE_2         2 
+              326  BINARY_SUBSCR    
+              328  LOAD_CONST               ('text', 'return')
+              330  BUILD_CONST_KEY_MAP_2     2 
+              332  LOAD_CODE                <code_object extract_command>
+              334  LOAD_STR                 'extract_command'
+              336  MAKE_FUNCTION_4          'annotation'
+              338  STORE_NAME               extract_command
+
+ L. 233       340  LOAD_NAME                str
+              342  LOAD_NAME                str
+              344  LOAD_CONST               ('text', 'return')
+              346  BUILD_CONST_KEY_MAP_2     2 
+              348  LOAD_CODE                <code_object extract_arguments>
+              350  LOAD_STR                 'extract_arguments'
+              352  MAKE_FUNCTION_4          'annotation'
+              354  STORE_NAME               extract_arguments
+
+ L. 250       356  LOAD_NAME                str
+              358  LOAD_NAME                int
+              360  LOAD_NAME                List
+              362  LOAD_NAME                str
+              364  BINARY_SUBSCR    
+              366  LOAD_CONST               ('text', 'chars_per_string', 'return')
+              368  BUILD_CONST_KEY_MAP_3     3 
+              370  LOAD_CODE                <code_object split_string>
+              372  LOAD_STR                 'split_string'
+              374  MAKE_FUNCTION_4          'annotation'
+              376  STORE_NAME               split_string
+
+ L. 262       378  LOAD_NAME                MAX_MESSAGE_LENGTH
+              380  BUILD_TUPLE_1         1 
+              382  LOAD_NAME                str
+              384  LOAD_NAME                int
+              386  LOAD_NAME                List
+              388  LOAD_NAME                str
+              390  BINARY_SUBSCR    
+              392  LOAD_CONST               ('text', 'chars_per_string', 'return')
+              394  BUILD_CONST_KEY_MAP_3     3 
+              396  LOAD_CODE                <code_object smart_split>
+              398  LOAD_STR                 'smart_split'
+              400  MAKE_FUNCTION_5          'default, annotation'
+              402  STORE_NAME               smart_split
+
+ L. 295       404  LOAD_NAME                str
+              406  LOAD_NAME                str
+              408  LOAD_CONST               ('text', 'return')
+              410  BUILD_CONST_KEY_MAP_2     2 
+              412  LOAD_CODE                <code_object escape>
+              414  LOAD_STR                 'escape'
+              416  MAKE_FUNCTION_4          'annotation'
+              418  STORE_NAME               escape
+
+ L. 307       420  LOAD_CONST               (False,)
+              422  LOAD_NAME                types
+              424  LOAD_ATTR                User
+              426  LOAD_NAME                bool
+              428  LOAD_NAME                str
+              430  LOAD_CONST               ('user', 'include_id', 'return')
+              432  BUILD_CONST_KEY_MAP_3     3 
+              434  LOAD_CODE                <code_object user_link>
+              436  LOAD_STR                 'user_link'
+              438  MAKE_FUNCTION_5          'default, annotation'
+              440  STORE_NAME               user_link
+
+ L. 324       442  LOAD_CONST               (2,)
+              444  LOAD_NAME                Dict
+              446  LOAD_NAME                str
+              448  LOAD_NAME                Dict
+              450  LOAD_NAME                str
+              452  LOAD_NAME                Any
+              454  BUILD_TUPLE_2         2 
+              456  BINARY_SUBSCR    
+              458  BUILD_TUPLE_2         2 
+              460  BINARY_SUBSCR    
+              462  LOAD_NAME                int
+              464  LOAD_NAME                types
+              466  LOAD_ATTR                InlineKeyboardMarkup
+              468  LOAD_CONST               ('values', 'row_width', 'return')
+              470  BUILD_CONST_KEY_MAP_3     3 
+              472  LOAD_CODE                <code_object quick_markup>
+              474  LOAD_STR                 'quick_markup'
+              476  MAKE_FUNCTION_5          'default, annotation'
+              478  STORE_NAME               quick_markup
+
+ L. 362       480  LOAD_CODE                <code_object or_set>
+              482  LOAD_STR                 'or_set'
+              484  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              486  STORE_NAME               or_set
+
+ L. 367       488  LOAD_CODE                <code_object or_clear>
+              490  LOAD_STR                 'or_clear'
+              492  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              494  STORE_NAME               or_clear
+
+ L. 372       496  LOAD_CODE                <code_object orify>
+              498  LOAD_STR                 'orify'
+              500  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              502  STORE_NAME               orify
+
+ L. 382       504  LOAD_CODE                <code_object OrEvent>
+              506  LOAD_STR                 'OrEvent'
+              508  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              510  STORE_NAME               OrEvent
+
+ L. 404       512  LOAD_CONST               (False,)
+              514  LOAD_CODE                <code_object per_thread>
+              516  LOAD_STR                 'per_thread'
+              518  MAKE_FUNCTION_1          'default'
+              520  STORE_NAME               per_thread
+
+ L. 412       522  LOAD_CODE                <code_object chunks>
+              524  LOAD_STR                 'chunks'
+              526  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              528  STORE_NAME               chunks
+
+ L. 419       530  LOAD_CODE                <code_object generate_random_token>
+              532  LOAD_STR                 'generate_random_token'
+              534  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              536  STORE_NAME               generate_random_token
+
+ L. 423       538  LOAD_CODE                <code_object deprecated>
+              540  LOAD_STR                 'deprecated'
+              542  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              544  STORE_NAME               deprecated
+
+Parse error at or near `<48>' instruction at offset 156
+
+Instruction context:
+   
+ L.  21       148  LOAD_CONST               False
+                 150  STORE_NAME               pil_imported
+                 152  POP_EXCEPT       
+                 154  JUMP_FORWARD        158  'to 158'
+->               156  <48>             
+               158_0  COME_FROM           154  '154'
+               158_1  COME_FROM           140  '140'
+
+test/162797.pyc -- 
+# decompile failed

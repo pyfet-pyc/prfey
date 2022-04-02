@@ -1,0 +1,48 @@
+Instruction context:
+   
+ L. 355       172  POP_BLOCK        
+                 174  POP_EXCEPT       
+->               176  CALL_FINALLY        184  'to 184'
+                 178  JUMP_BACK            84  'to 84'
+               180_0  COME_FROM           150  '150'
+                 180  POP_BLOCK        
+                 182  BEGIN_FINALLY    
+               184_0  COME_FROM           176  '176'
+               184_1  COME_FROM_FINALLY   126  '126'
+                 184  LOAD_CONST               None
+                 186  STORE_FAST               'e'
+                 188  DELETE_FAST              'e'
+                 190  END_FINALLY      
+                 192  POP_EXCEPT       
+                 194  JUMP_FORWARD        198  'to 198'
+               196_0  COME_FROM           118  '118'
+                 196  END_FINALLY      
+               198_0  COME_FROM           194  '194'
+               198_1  COME_FROM           110  '110'
+               198_2  COME_FROM            94  '94'
+Instruction context:
+   
+ L. 493       126  POP_BLOCK        
+                 128  POP_EXCEPT       
+->               130  CALL_FINALLY        138  'to 138'
+                 132  JUMP_BACK             0  'to 0'
+                 134  POP_BLOCK        
+                 136  BEGIN_FINALLY    
+               138_0  COME_FROM           130  '130'
+               138_1  COME_FROM_FINALLY    54  '54'
+                 138  LOAD_CONST               None
+                 140  STORE_FAST               'e'
+                 142  DELETE_FAST              'e'
+                 144  END_FINALLY      
+                 146  POP_EXCEPT       
+                 148  JUMP_FORWARD        152  'to 152'
+               150_0  COME_FROM            46  '46'
+                 150  END_FINALLY      
+               152_0  COME_FROM           148  '148'
+               152_1  COME_FROM            38  '38'
+
+../test/156052.pyc -- 
+# decompile failed
+
+# file ../test/156052.pyc
+# Deparsing stopped due to parse error

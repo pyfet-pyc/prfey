@@ -1,0 +1,125 @@
+Instruction context:
+   
+ L.  14         4  LOAD_FAST                'stream'
+                   6  LOAD_CONST               None
+->                 8  <117>                 0  ''
+                  10  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L.  66        22  LOAD_FAST                'label'
+                  24  LOAD_FAST                'c'
+                  26  LOAD_ATTR                symbol2number
+->                28  <118>                 0  ''
+                  30  POP_JUMP_IF_FALSE    90  'to 90'
+Instruction context:
+   
+ L. 111        30  LOAD_FAST                'name'
+                  32  LOAD_FAST                'self'
+                  34  LOAD_ATTR                first
+->                36  <118>                 1  ''
+                  38  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L. 122        54  LOAD_FAST                'label'
+                  56  LOAD_FAST                'self'
+                  58  LOAD_ATTR                dfas
+->                60  <118>                 0  ''
+                  62  POP_JUMP_IF_FALSE   146  'to 146'
+Instruction context:
+   
+ L. 165       138  LOAD_FAST                'startsymbol'
+                 140  LOAD_CONST               None
+->               142  <117>                 0  ''
+                 144  POP_JUMP_IF_FALSE     8  'to 8'
+Instruction context:
+   
+ L. 209        32  LOAD_GLOBAL              print
+                  34  LOAD_STR                 '  State'
+                  36  LOAD_FAST                'i'
+                  38  LOAD_FAST                'state'
+                  40  LOAD_FAST                'finish'
+->                42  <117>                 0  ''
+                  44  POP_JUMP_IF_FALSE    50  'to 50'
+                  46  LOAD_STR                 '(final)'
+                  48  JUMP_IF_TRUE_OR_POP    52  'to 52'
+                50_0  COME_FROM            44  '44'
+                  50  LOAD_STR                 ''
+                52_0  COME_FROM            48  '48'
+                  52  CALL_FUNCTION_3       3  ''
+                  54  POP_TOP          
+Instruction context:
+   
+ L. 247        98  POP_TOP          
+->               100  CONTINUE             20  'to 20'
+                 102  JUMP_BACK            46  'to 46'
+                 104  JUMP_BACK            20  'to 20'
+                 106  JUMP_BACK             4  'to 4'
+Instruction context:
+   
+ L. 269        12  LOAD_FAST                'self'
+                  14  LOAD_ATTR                value
+                  16  LOAD_CONST               ('(', '[')
+->                18  <118>                 0  ''
+                  20  POP_JUMP_IF_TRUE     40  'to 40'
+Instruction context:
+   
+ L. 287        80  LOAD_FAST                'value'
+                  82  LOAD_CONST               ('+', '*')
+->                84  <118>                 1  ''
+                  86  POP_JUMP_IF_FALSE    96  'to 96'
+Instruction context:
+   
+ L. 303        52  LOAD_FAST                'self'
+                  54  LOAD_ATTR                type
+                  56  LOAD_GLOBAL              token
+                  58  LOAD_ATTR                NAME
+                  60  LOAD_GLOBAL              token
+                  62  LOAD_ATTR                STRING
+                  64  BUILD_TUPLE_2         2 
+->                66  <118>                 0  ''
+                  68  POP_JUMP_IF_FALSE   112  'to 112'
+Instruction context:
+   
+ L. 323        10  LOAD_FAST                'tup'
+                  12  LOAD_CONST               0
+                  14  BINARY_SUBSCR    
+                  16  LOAD_GLOBAL              tokenize
+                  18  LOAD_ATTR                COMMENT
+                  20  LOAD_GLOBAL              tokenize
+                  22  LOAD_ATTR                NL
+                  24  BUILD_TUPLE_2         2 
+->                26  <118>                 0  ''
+                  28  POP_JUMP_IF_FALSE    42  'to 42'
+Instruction context:
+   
+ L. 333        24  LOAD_STR                 ' '
+                  26  LOAD_METHOD              join
+                  28  LOAD_FAST                'msg'
+                  30  BUILD_LIST_1          1 
+                  32  LOAD_GLOBAL              list
+                  34  LOAD_GLOBAL              map
+                  36  LOAD_GLOBAL              str
+                  38  LOAD_FAST                'args'
+                  40  CALL_FUNCTION_2       2  ''
+                  42  CALL_FUNCTION_1       1  ''
+                  44  BINARY_ADD       
+                  46  CALL_METHOD_1         1  ''
+                  48  STORE_FAST               'msg'
+                  50  POP_EXCEPT       
+                  52  JUMP_FORWARD         56  'to 56'
+->                54  <48>             
+                56_0  COME_FROM            52  '52'
+                56_1  COME_FROM            16  '16'
+                56_2  COME_FROM             2  '2'
+Instruction context:
+   
+ L. 365        18  LOAD_FAST                'next'
+                  20  LOAD_FAST                'old'
+->                22  <117>                 0  ''
+                  24  POP_JUMP_IF_FALSE    10  'to 10'
+
+test/103580.pyc -- 
+# decompile failed
+
+# file test/103580.pyc
+# Deparsing stopped due to parse error

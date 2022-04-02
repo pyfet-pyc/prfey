@@ -1,0 +1,1825 @@
+
+# file test/4371.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nnumpy.ma : a package to handle missing or invalid values.\n\nThis package was initially written for numarray by Paul F. Dubois\nat Lawrence Livermore National Laboratory.\nIn 2006, the package was completely rewritten by Pierre Gerard-Marchant\n(University of Georgia) to make the MaskedArray class a subclass of ndarray,\nand to improve support of structured arrays.\n\n\nCopyright 1999, 2000, 2001 Regents of the University of California.\nReleased for unlimited redistribution.\n\n* Adapted for numpy_core 2005 by Travis Oliphant and (mainly) Paul Dubois.\n* Subclassing of the base `ndarray` 2006 by Pierre Gerard-Marchant\n  (pgmdevlist_AT_gmail_DOT_com)\n* Improvements suggested by Reggie Dugard (reggie_AT_merfinllc_DOT_com)\n\n.. moduleauthor:: Pierre Gerard-Marchant\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  23         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              builtins
+               10  STORE_NAME               builtins
+
+ L.  24        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              inspect
+               18  STORE_NAME               inspect
+
+ L.  25        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              operator
+               26  STORE_NAME               operator
+
+ L.  26        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              warnings
+               34  STORE_NAME               warnings
+
+ L.  27        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              textwrap
+               42  STORE_NAME               textwrap
+
+ L.  28        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              re
+               50  STORE_NAME               re
+
+ L.  29        52  LOAD_CONST               0
+               54  LOAD_CONST               ('reduce',)
+               56  IMPORT_NAME              functools
+               58  IMPORT_FROM              reduce
+               60  STORE_NAME               reduce
+               62  POP_TOP          
+
+ L.  31        64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              numpy
+               70  STORE_NAME               np
+
+ L.  32        72  LOAD_CONST               0
+               74  LOAD_CONST               None
+               76  IMPORT_NAME_ATTR         numpy.core.umath
+               78  IMPORT_FROM              core
+               80  ROT_TWO          
+               82  POP_TOP          
+               84  IMPORT_FROM              umath
+               86  STORE_NAME               umath
+               88  POP_TOP          
+
+ L.  33        90  LOAD_CONST               0
+               92  LOAD_CONST               None
+               94  IMPORT_NAME_ATTR         numpy.core.numerictypes
+               96  IMPORT_FROM              core
+               98  ROT_TWO          
+              100  POP_TOP          
+              102  IMPORT_FROM              numerictypes
+              104  STORE_NAME               ntypes
+              106  POP_TOP          
+
+ L.  34       108  LOAD_CONST               0
+              110  LOAD_CONST               ('ndarray', 'amax', 'amin', 'iscomplexobj', 'bool_', '_NoValue')
+              112  IMPORT_NAME              numpy
+              114  IMPORT_FROM              ndarray
+              116  STORE_NAME               ndarray
+              118  IMPORT_FROM              amax
+              120  STORE_NAME               amax
+              122  IMPORT_FROM              amin
+              124  STORE_NAME               amin
+              126  IMPORT_FROM              iscomplexobj
+              128  STORE_NAME               iscomplexobj
+              130  IMPORT_FROM              bool_
+              132  STORE_NAME               bool_
+              134  IMPORT_FROM              _NoValue
+              136  STORE_NAME               _NoValue
+              138  POP_TOP          
+
+ L.  35       140  LOAD_CONST               0
+              142  LOAD_CONST               ('array',)
+              144  IMPORT_NAME              numpy
+              146  IMPORT_FROM              array
+              148  STORE_NAME               narray
+              150  POP_TOP          
+
+ L.  36       152  LOAD_CONST               0
+              154  LOAD_CONST               ('angle',)
+              156  IMPORT_NAME_ATTR         numpy.lib.function_base
+              158  IMPORT_FROM              angle
+              160  STORE_NAME               angle
+              162  POP_TOP          
+
+ L.  37       164  LOAD_CONST               0
+              166  LOAD_CONST               ('getargspec', 'formatargspec', 'long', 'unicode', 'bytes')
+              168  IMPORT_NAME_ATTR         numpy.compat
+              170  IMPORT_FROM              getargspec
+              172  STORE_NAME               getargspec
+              174  IMPORT_FROM              formatargspec
+              176  STORE_NAME               formatargspec
+              178  IMPORT_FROM              long
+              180  STORE_NAME               long
+              182  IMPORT_FROM              unicode
+              184  STORE_NAME               unicode
+              186  IMPORT_FROM              bytes
+              188  STORE_NAME               bytes
+              190  POP_TOP          
+
+ L.  40       192  LOAD_CONST               0
+              194  LOAD_CONST               ('expand_dims',)
+              196  IMPORT_NAME              numpy
+              198  IMPORT_FROM              expand_dims
+              200  STORE_NAME               expand_dims
+              202  POP_TOP          
+
+ L.  41       204  LOAD_CONST               0
+              206  LOAD_CONST               ('normalize_axis_tuple',)
+              208  IMPORT_NAME_ATTR         numpy.core.numeric
+              210  IMPORT_FROM              normalize_axis_tuple
+              212  STORE_NAME               normalize_axis_tuple
+              214  POP_TOP          
+
+ L.  42       216  LOAD_CONST               0
+              218  LOAD_CONST               ('recursive',)
+              220  IMPORT_NAME_ATTR         numpy.core._internal
+              222  IMPORT_FROM              recursive
+              224  STORE_NAME               recursive
+              226  POP_TOP          
+
+ L.  43       228  LOAD_CONST               0
+              230  LOAD_CONST               ('pickle',)
+              232  IMPORT_NAME_ATTR         numpy.compat
+              234  IMPORT_FROM              pickle
+              236  STORE_NAME               pickle
+              238  POP_TOP          
+
+ L.  46       240  BUILD_LIST_0          0 
+              242  LOAD_CONST               ('MAError', 'MaskError', 'MaskType', 'MaskedArray', 'abs', 'absolute', 'add', 'all', 'allclose', 'allequal', 'alltrue', 'amax', 'amin', 'angle', 'anom', 'anomalies', 'any', 'append', 'arange', 'arccos', 'arccosh', 'arcsin', 'arcsinh', 'arctan', 'arctan2', 'arctanh', 'argmax', 'argmin', 'argsort', 'around', 'array', 'asanyarray', 'asarray', 'bitwise_and', 'bitwise_or', 'bitwise_xor', 'bool_', 'ceil', 'choose', 'clip', 'common_fill_value', 'compress', 'compressed', 'concatenate', 'conjugate', 'convolve', 'copy', 'correlate', 'cos', 'cosh', 'count', 'cumprod', 'cumsum', 'default_fill_value', 'diag', 'diagonal', 'diff', 'divide', 'empty', 'empty_like', 'equal', 'exp', 'expand_dims', 'fabs', 'filled', 'fix_invalid', 'flatten_mask', 'flatten_structured_array', 'floor', 'floor_divide', 'fmod', 'frombuffer', 'fromflex', 'fromfunction', 'getdata', 'getmask', 'getmaskarray', 'greater', 'greater_equal', 'harden_mask', 'hypot', 'identity', 'ids', 'indices', 'inner', 'innerproduct', 'isMA', 'isMaskedArray', 'is_mask', 'is_masked', 'isarray', 'left_shift', 'less', 'less_equal', 'log', 'log10', 'log2', 'logical_and', 'logical_not', 'logical_or', 'logical_xor', 'make_mask', 'make_mask_descr', 'make_mask_none', 'mask_or', 'masked', 'masked_array', 'masked_equal', 'masked_greater', 'masked_greater_equal', 'masked_inside', 'masked_invalid', 'masked_less', 'masked_less_equal', 'masked_not_equal', 'masked_object', 'masked_outside', 'masked_print_option', 'masked_singleton', 'masked_values', 'masked_where', 'max', 'maximum', 'maximum_fill_value', 'mean', 'min', 'minimum', 'minimum_fill_value', 'mod', 'multiply', 'mvoid', 'ndim', 'negative', 'nomask', 'nonzero', 'not_equal', 'ones', 'outer', 'outerproduct', 'power', 'prod', 'product', 'ptp', 'put', 'putmask', 'ravel', 'remainder', 'repeat', 'reshape', 'resize', 'right_shift', 'round', 'round_', 'set_fill_value', 'shape', 'sin', 'sinh', 'size', 'soften_mask', 'sometrue', 'sort', 'sqrt', 'squeeze', 'std', 'subtract', 'sum', 'swapaxes', 'take', 'tan', 'tanh', 'trace', 'transpose', 'true_divide', 'var', 'where', 'zeros')
+              244  CALL_FINALLY        247  'to 247'
+              246  STORE_NAME               __all__
+
+ L.  82       248  LOAD_NAME                np
+              250  LOAD_ATTR                bool_
+              252  STORE_NAME               MaskType
+
+ L.  83       254  LOAD_NAME                MaskType
+              256  LOAD_CONST               0
+              258  CALL_FUNCTION_1       1  ''
+              260  STORE_NAME               nomask
+
+ L.  85       262  LOAD_BUILD_CLASS 
+              264  LOAD_CODE                <code_object MaskedArrayFutureWarning>
+              266  LOAD_STR                 'MaskedArrayFutureWarning'
+              268  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              270  LOAD_STR                 'MaskedArrayFutureWarning'
+              272  LOAD_NAME                FutureWarning
+              274  CALL_FUNCTION_3       3  ''
+              276  STORE_NAME               MaskedArrayFutureWarning
+
+ L.  88       278  LOAD_CODE                <code_object _deprecate_argsort_axis>
+              280  LOAD_STR                 '_deprecate_argsort_axis'
+              282  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              284  STORE_NAME               _deprecate_argsort_axis
+
+ L. 116       286  LOAD_CODE                <code_object doc_note>
+              288  LOAD_STR                 'doc_note'
+              290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              292  STORE_NAME               doc_note
+
+ L. 132       294  LOAD_CODE                <code_object get_object_signature>
+              296  LOAD_STR                 'get_object_signature'
+              298  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              300  STORE_NAME               get_object_signature
+
+ L. 149       302  LOAD_BUILD_CLASS 
+              304  LOAD_CODE                <code_object MAError>
+              306  LOAD_STR                 'MAError'
+              308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              310  LOAD_STR                 'MAError'
+              312  LOAD_NAME                Exception
+              314  CALL_FUNCTION_3       3  ''
+              316  STORE_NAME               MAError
+
+ L. 157       318  LOAD_BUILD_CLASS 
+              320  LOAD_CODE                <code_object MaskError>
+              322  LOAD_STR                 'MaskError'
+              324  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              326  LOAD_STR                 'MaskError'
+              328  LOAD_NAME                MAError
+              330  CALL_FUNCTION_3       3  ''
+              332  STORE_NAME               MaskError
+
+ L. 171       334  LOAD_CONST               True
+
+ L. 172       336  LOAD_CONST               (1e+20+0j)
+
+ L. 173       338  LOAD_CONST               1e+20
+
+ L. 174       340  LOAD_CONST               999999
+
+ L. 175       342  LOAD_STR                 '?'
+
+ L. 176       344  LOAD_CONST               b'N/A'
+
+ L. 177       346  LOAD_CONST               999999
+
+ L. 178       348  LOAD_CONST               b'???'
+
+ L. 179       350  LOAD_STR                 'N/A'
+
+ L. 171       352  LOAD_CONST               ('b', 'c', 'f', 'i', 'O', 'S', 'u', 'V', 'U')
+              354  BUILD_CONST_KEY_MAP_9     9 
+              356  STORE_NAME               default_filler
+
+ L. 183       358  LOAD_CONST               ('Y', 'M', 'W', 'D', 'h', 'm', 's', 'ms', 'us', 'ns', 'ps', 'fs', 'as')
+              360  GET_ITER         
+              362  FOR_ITER            418  'to 418'
+              364  STORE_NAME               v
+
+ L. 185       366  LOAD_NAME                np
+              368  LOAD_METHOD              datetime64
+              370  LOAD_STR                 'NaT'
+              372  LOAD_NAME                v
+              374  CALL_METHOD_2         2  ''
+              376  LOAD_NAME                default_filler
+              378  LOAD_STR                 'M8['
+              380  LOAD_NAME                v
+              382  BINARY_ADD       
+              384  LOAD_STR                 ']'
+              386  BINARY_ADD       
+              388  STORE_SUBSCR     
+
+ L. 186       390  LOAD_NAME                np
+              392  LOAD_METHOD              timedelta64
+              394  LOAD_STR                 'NaT'
+              396  LOAD_NAME                v
+              398  CALL_METHOD_2         2  ''
+              400  LOAD_NAME                default_filler
+              402  LOAD_STR                 'm8['
+              404  LOAD_NAME                v
+              406  BINARY_ADD       
+              408  LOAD_STR                 ']'
+              410  BINARY_ADD       
+              412  STORE_SUBSCR     
+          414_416  JUMP_BACK           362  'to 362'
+
+ L. 188       418  LOAD_NAME                np
+              420  LOAD_ATTR                half
+              422  LOAD_NAME                np
+              424  LOAD_ATTR                single
+              426  LOAD_NAME                np
+              428  LOAD_ATTR                double
+              430  LOAD_NAME                np
+              432  LOAD_ATTR                longdouble
+
+ L. 189       434  LOAD_NAME                np
+              436  LOAD_ATTR                csingle
+              438  LOAD_NAME                np
+              440  LOAD_ATTR                cdouble
+              442  LOAD_NAME                np
+              444  LOAD_ATTR                clongdouble
+
+ L. 188       446  BUILD_LIST_7          7 
+              448  STORE_NAME               float_types_list
+
+ L. 190       450  LOAD_NAME                ntypes
+              452  LOAD_ATTR                _minvals
+              454  STORE_NAME               max_filler
+
+ L. 191       456  LOAD_NAME                max_filler
+              458  LOAD_METHOD              update
+              460  LOAD_LISTCOMP            '<code_object <listcomp>>'
+              462  LOAD_STR                 '<listcomp>'
+              464  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              466  LOAD_NAME                float_types_list
+              468  LOAD_CONST               None
+              470  LOAD_CONST               4
+              472  BUILD_SLICE_2         2 
+              474  BINARY_SUBSCR    
+              476  GET_ITER         
+              478  CALL_FUNCTION_1       1  ''
+              480  CALL_METHOD_1         1  ''
+              482  POP_TOP          
+
+ L. 192       484  LOAD_NAME                max_filler
+              486  LOAD_METHOD              update
+              488  LOAD_LISTCOMP            '<code_object <listcomp>>'
+              490  LOAD_STR                 '<listcomp>'
+              492  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              494  LOAD_NAME                float_types_list
+              496  LOAD_CONST               -3
+              498  LOAD_CONST               None
+              500  BUILD_SLICE_2         2 
+              502  BINARY_SUBSCR    
+              504  GET_ITER         
+              506  CALL_FUNCTION_1       1  ''
+              508  CALL_METHOD_1         1  ''
+              510  POP_TOP          
+
+ L. 194       512  LOAD_NAME                ntypes
+              514  LOAD_ATTR                _maxvals
+              516  STORE_NAME               min_filler
+
+ L. 195       518  LOAD_NAME                min_filler
+              520  LOAD_METHOD              update
+              522  LOAD_LISTCOMP            '<code_object <listcomp>>'
+              524  LOAD_STR                 '<listcomp>'
+              526  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              528  LOAD_NAME                float_types_list
+              530  LOAD_CONST               None
+              532  LOAD_CONST               4
+              534  BUILD_SLICE_2         2 
+              536  BINARY_SUBSCR    
+              538  GET_ITER         
+              540  CALL_FUNCTION_1       1  ''
+              542  CALL_METHOD_1         1  ''
+              544  POP_TOP          
+
+ L. 196       546  LOAD_NAME                min_filler
+              548  LOAD_METHOD              update
+              550  LOAD_LISTCOMP            '<code_object <listcomp>>'
+              552  LOAD_STR                 '<listcomp>'
+              554  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              556  LOAD_NAME                float_types_list
+              558  LOAD_CONST               -3
+              560  LOAD_CONST               None
+              562  BUILD_SLICE_2         2 
+              564  BINARY_SUBSCR    
+              566  GET_ITER         
+              568  CALL_FUNCTION_1       1  ''
+              570  CALL_METHOD_1         1  ''
+              572  POP_TOP          
+
+ L. 198       574  DELETE_NAME              float_types_list
+
+ L. 200       576  LOAD_CODE                <code_object _recursive_fill_value>
+              578  LOAD_STR                 '_recursive_fill_value'
+              580  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              582  STORE_NAME               _recursive_fill_value
+
+ L. 215       584  LOAD_CODE                <code_object _get_dtype_of>
+              586  LOAD_STR                 '_get_dtype_of'
+              588  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              590  STORE_NAME               _get_dtype_of
+
+ L. 225       592  LOAD_CODE                <code_object default_fill_value>
+              594  LOAD_STR                 'default_fill_value'
+              596  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              598  STORE_NAME               default_fill_value
+
+ L. 280       600  LOAD_CODE                <code_object _extremum_fill_value>
+              602  LOAD_STR                 '_extremum_fill_value'
+              604  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              606  STORE_NAME               _extremum_fill_value
+
+ L. 294       608  LOAD_CODE                <code_object minimum_fill_value>
+              610  LOAD_STR                 'minimum_fill_value'
+              612  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              614  STORE_NAME               minimum_fill_value
+
+ L. 345       616  LOAD_CODE                <code_object maximum_fill_value>
+              618  LOAD_STR                 'maximum_fill_value'
+              620  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              622  STORE_NAME               maximum_fill_value
+
+ L. 396       624  LOAD_CODE                <code_object _recursive_set_fill_value>
+              626  LOAD_STR                 '_recursive_set_fill_value'
+              628  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              630  STORE_NAME               _recursive_set_fill_value
+
+ L. 428       632  LOAD_CODE                <code_object _check_fill_value>
+              634  LOAD_STR                 '_check_fill_value'
+              636  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              638  STORE_NAME               _check_fill_value
+
+ L. 472       640  LOAD_CODE                <code_object set_fill_value>
+              642  LOAD_STR                 'set_fill_value'
+              644  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              646  STORE_NAME               set_fill_value
+
+ L. 537       648  LOAD_CODE                <code_object get_fill_value>
+              650  LOAD_STR                 'get_fill_value'
+              652  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              654  STORE_NAME               get_fill_value
+
+ L. 550       656  LOAD_CODE                <code_object common_fill_value>
+              658  LOAD_STR                 'common_fill_value'
+              660  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              662  STORE_NAME               common_fill_value
+
+ L. 582   664_666  LOAD_CONST               (None,)
+              668  LOAD_CODE                <code_object filled>
+              670  LOAD_STR                 'filled'
+              672  MAKE_FUNCTION_1          'default'
+              674  STORE_NAME               filled
+
+ L. 639       676  LOAD_CODE                <code_object get_masked_subclass>
+              678  LOAD_STR                 'get_masked_subclass'
+              680  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              682  STORE_NAME               get_masked_subclass
+
+ L. 666   684_686  LOAD_CONST               (True,)
+              688  LOAD_CODE                <code_object getdata>
+              690  LOAD_STR                 'getdata'
+              692  MAKE_FUNCTION_1          'default'
+              694  STORE_NAME               getdata
+
+ L. 717       696  LOAD_NAME                getdata
+              698  STORE_NAME               get_data
+
+ L. 720       700  LOAD_NAME                nomask
+              702  LOAD_CONST               True
+              704  LOAD_CONST               None
+              706  BUILD_TUPLE_3         3 
+              708  LOAD_CODE                <code_object fix_invalid>
+              710  LOAD_STR                 'fix_invalid'
+              712  MAKE_FUNCTION_1          'default'
+              714  STORE_NAME               fix_invalid
+
+ L. 778       716  LOAD_CODE                <code_object is_string_or_list_of_strings>
+              718  LOAD_STR                 'is_string_or_list_of_strings'
+              720  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              722  STORE_NAME               is_string_or_list_of_strings
+
+ L. 788       724  BUILD_MAP_0           0 
+              726  STORE_NAME               ufunc_domain
+
+ L. 789       728  BUILD_MAP_0           0 
+              730  STORE_NAME               ufunc_fills
+
+ L. 792       732  LOAD_BUILD_CLASS 
+              734  LOAD_CODE                <code_object _DomainCheckInterval>
+              736  LOAD_STR                 '_DomainCheckInterval'
+              738  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              740  LOAD_STR                 '_DomainCheckInterval'
+              742  CALL_FUNCTION_2       2  ''
+              744  STORE_NAME               _DomainCheckInterval
+
+ L. 817       746  LOAD_BUILD_CLASS 
+              748  LOAD_CODE                <code_object _DomainTan>
+              750  LOAD_STR                 '_DomainTan'
+              752  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              754  LOAD_STR                 '_DomainTan'
+              756  CALL_FUNCTION_2       2  ''
+              758  STORE_NAME               _DomainTan
+
+ L. 835       760  LOAD_BUILD_CLASS 
+              762  LOAD_CODE                <code_object _DomainSafeDivide>
+              764  LOAD_STR                 '_DomainSafeDivide'
+              766  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              768  LOAD_STR                 '_DomainSafeDivide'
+              770  CALL_FUNCTION_2       2  ''
+              772  STORE_NAME               _DomainSafeDivide
+
+ L. 856       774  LOAD_BUILD_CLASS 
+              776  LOAD_CODE                <code_object _DomainGreater>
+              778  LOAD_STR                 '_DomainGreater'
+              780  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              782  LOAD_STR                 '_DomainGreater'
+              784  CALL_FUNCTION_2       2  ''
+              786  STORE_NAME               _DomainGreater
+
+ L. 872       788  LOAD_BUILD_CLASS 
+              790  LOAD_CODE                <code_object _DomainGreaterEqual>
+              792  LOAD_STR                 '_DomainGreaterEqual'
+              794  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              796  LOAD_STR                 '_DomainGreaterEqual'
+              798  CALL_FUNCTION_2       2  ''
+              800  STORE_NAME               _DomainGreaterEqual
+
+ L. 888       802  LOAD_BUILD_CLASS 
+              804  LOAD_CODE                <code_object _MaskedUFunc>
+              806  LOAD_STR                 '_MaskedUFunc'
+              808  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              810  LOAD_STR                 '_MaskedUFunc'
+              812  CALL_FUNCTION_2       2  ''
+              814  STORE_NAME               _MaskedUFunc
+
+ L. 898       816  LOAD_BUILD_CLASS 
+              818  LOAD_CODE                <code_object _MaskedUnaryOperation>
+              820  LOAD_STR                 '_MaskedUnaryOperation'
+              822  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              824  LOAD_STR                 '_MaskedUnaryOperation'
+              826  LOAD_NAME                _MaskedUFunc
+              828  CALL_FUNCTION_3       3  ''
+              830  STORE_NAME               _MaskedUnaryOperation
+
+ L. 972       832  LOAD_BUILD_CLASS 
+              834  LOAD_CODE                <code_object _MaskedBinaryOperation>
+              836  LOAD_STR                 '_MaskedBinaryOperation'
+              838  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              840  LOAD_STR                 '_MaskedBinaryOperation'
+              842  LOAD_NAME                _MaskedUFunc
+              844  CALL_FUNCTION_3       3  ''
+              846  STORE_NAME               _MaskedBinaryOperation
+
+ L.1120       848  LOAD_BUILD_CLASS 
+              850  LOAD_CODE                <code_object _DomainedBinaryOperation>
+              852  LOAD_STR                 '_DomainedBinaryOperation'
+              854  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              856  LOAD_STR                 '_DomainedBinaryOperation'
+              858  LOAD_NAME                _MaskedUFunc
+              860  CALL_FUNCTION_3       3  ''
+              862  STORE_NAME               _DomainedBinaryOperation
+
+ L.1196       864  LOAD_NAME                _MaskedUnaryOperation
+              866  LOAD_NAME                umath
+              868  LOAD_ATTR                exp
+              870  CALL_FUNCTION_1       1  ''
+              872  STORE_NAME               exp
+
+ L.1197       874  LOAD_NAME                _MaskedUnaryOperation
+              876  LOAD_NAME                umath
+              878  LOAD_ATTR                conjugate
+              880  CALL_FUNCTION_1       1  ''
+              882  STORE_NAME               conjugate
+
+ L.1198       884  LOAD_NAME                _MaskedUnaryOperation
+              886  LOAD_NAME                umath
+              888  LOAD_ATTR                sin
+              890  CALL_FUNCTION_1       1  ''
+              892  STORE_NAME               sin
+
+ L.1199       894  LOAD_NAME                _MaskedUnaryOperation
+              896  LOAD_NAME                umath
+              898  LOAD_ATTR                cos
+              900  CALL_FUNCTION_1       1  ''
+              902  STORE_NAME               cos
+
+ L.1200       904  LOAD_NAME                _MaskedUnaryOperation
+              906  LOAD_NAME                umath
+              908  LOAD_ATTR                arctan
+              910  CALL_FUNCTION_1       1  ''
+              912  STORE_NAME               arctan
+
+ L.1201       914  LOAD_NAME                _MaskedUnaryOperation
+              916  LOAD_NAME                umath
+              918  LOAD_ATTR                arcsinh
+              920  CALL_FUNCTION_1       1  ''
+              922  STORE_NAME               arcsinh
+
+ L.1202       924  LOAD_NAME                _MaskedUnaryOperation
+              926  LOAD_NAME                umath
+              928  LOAD_ATTR                sinh
+              930  CALL_FUNCTION_1       1  ''
+              932  STORE_NAME               sinh
+
+ L.1203       934  LOAD_NAME                _MaskedUnaryOperation
+              936  LOAD_NAME                umath
+              938  LOAD_ATTR                cosh
+              940  CALL_FUNCTION_1       1  ''
+              942  STORE_NAME               cosh
+
+ L.1204       944  LOAD_NAME                _MaskedUnaryOperation
+              946  LOAD_NAME                umath
+              948  LOAD_ATTR                tanh
+              950  CALL_FUNCTION_1       1  ''
+              952  STORE_NAME               tanh
+
+ L.1205       954  LOAD_NAME                _MaskedUnaryOperation
+              956  LOAD_NAME                umath
+              958  LOAD_ATTR                absolute
+              960  CALL_FUNCTION_1       1  ''
+              962  DUP_TOP          
+              964  STORE_NAME               abs
+              966  STORE_NAME               absolute
+
+ L.1206       968  LOAD_NAME                _MaskedUnaryOperation
+              970  LOAD_NAME                angle
+              972  CALL_FUNCTION_1       1  ''
+              974  STORE_NAME               angle
+
+ L.1207       976  LOAD_NAME                _MaskedUnaryOperation
+              978  LOAD_NAME                umath
+              980  LOAD_ATTR                fabs
+              982  CALL_FUNCTION_1       1  ''
+              984  STORE_NAME               fabs
+
+ L.1208       986  LOAD_NAME                _MaskedUnaryOperation
+              988  LOAD_NAME                umath
+              990  LOAD_ATTR                negative
+              992  CALL_FUNCTION_1       1  ''
+              994  STORE_NAME               negative
+
+ L.1209       996  LOAD_NAME                _MaskedUnaryOperation
+              998  LOAD_NAME                umath
+             1000  LOAD_ATTR                floor
+             1002  CALL_FUNCTION_1       1  ''
+             1004  STORE_NAME               floor
+
+ L.1210      1006  LOAD_NAME                _MaskedUnaryOperation
+             1008  LOAD_NAME                umath
+             1010  LOAD_ATTR                ceil
+             1012  CALL_FUNCTION_1       1  ''
+             1014  STORE_NAME               ceil
+
+ L.1211      1016  LOAD_NAME                _MaskedUnaryOperation
+             1018  LOAD_NAME                np
+             1020  LOAD_ATTR                round_
+             1022  CALL_FUNCTION_1       1  ''
+             1024  STORE_NAME               around
+
+ L.1212      1026  LOAD_NAME                _MaskedUnaryOperation
+             1028  LOAD_NAME                umath
+             1030  LOAD_ATTR                logical_not
+             1032  CALL_FUNCTION_1       1  ''
+             1034  STORE_NAME               logical_not
+
+ L.1215      1036  LOAD_NAME                _MaskedUnaryOperation
+             1038  LOAD_NAME                umath
+             1040  LOAD_ATTR                sqrt
+             1042  LOAD_CONST               0.0
+
+ L.1216      1044  LOAD_NAME                _DomainGreaterEqual
+             1046  LOAD_CONST               0.0
+             1048  CALL_FUNCTION_1       1  ''
+
+ L.1215      1050  CALL_FUNCTION_3       3  ''
+             1052  STORE_NAME               sqrt
+
+ L.1217      1054  LOAD_NAME                _MaskedUnaryOperation
+             1056  LOAD_NAME                umath
+             1058  LOAD_ATTR                log
+             1060  LOAD_CONST               1.0
+
+ L.1218      1062  LOAD_NAME                _DomainGreater
+             1064  LOAD_CONST               0.0
+             1066  CALL_FUNCTION_1       1  ''
+
+ L.1217      1068  CALL_FUNCTION_3       3  ''
+             1070  STORE_NAME               log
+
+ L.1219      1072  LOAD_NAME                _MaskedUnaryOperation
+             1074  LOAD_NAME                umath
+             1076  LOAD_ATTR                log2
+             1078  LOAD_CONST               1.0
+
+ L.1220      1080  LOAD_NAME                _DomainGreater
+             1082  LOAD_CONST               0.0
+             1084  CALL_FUNCTION_1       1  ''
+
+ L.1219      1086  CALL_FUNCTION_3       3  ''
+             1088  STORE_NAME               log2
+
+ L.1221      1090  LOAD_NAME                _MaskedUnaryOperation
+             1092  LOAD_NAME                umath
+             1094  LOAD_ATTR                log10
+             1096  LOAD_CONST               1.0
+
+ L.1222      1098  LOAD_NAME                _DomainGreater
+             1100  LOAD_CONST               0.0
+             1102  CALL_FUNCTION_1       1  ''
+
+ L.1221      1104  CALL_FUNCTION_3       3  ''
+             1106  STORE_NAME               log10
+
+ L.1223      1108  LOAD_NAME                _MaskedUnaryOperation
+             1110  LOAD_NAME                umath
+             1112  LOAD_ATTR                tan
+             1114  LOAD_CONST               0.0
+
+ L.1224      1116  LOAD_NAME                _DomainTan
+             1118  LOAD_CONST               1e-35
+             1120  CALL_FUNCTION_1       1  ''
+
+ L.1223      1122  CALL_FUNCTION_3       3  ''
+             1124  STORE_NAME               tan
+
+ L.1225      1126  LOAD_NAME                _MaskedUnaryOperation
+             1128  LOAD_NAME                umath
+             1130  LOAD_ATTR                arcsin
+             1132  LOAD_CONST               0.0
+
+ L.1226      1134  LOAD_NAME                _DomainCheckInterval
+             1136  LOAD_CONST               -1.0
+             1138  LOAD_CONST               1.0
+             1140  CALL_FUNCTION_2       2  ''
+
+ L.1225      1142  CALL_FUNCTION_3       3  ''
+             1144  STORE_NAME               arcsin
+
+ L.1227      1146  LOAD_NAME                _MaskedUnaryOperation
+             1148  LOAD_NAME                umath
+             1150  LOAD_ATTR                arccos
+             1152  LOAD_CONST               0.0
+
+ L.1228      1154  LOAD_NAME                _DomainCheckInterval
+             1156  LOAD_CONST               -1.0
+             1158  LOAD_CONST               1.0
+             1160  CALL_FUNCTION_2       2  ''
+
+ L.1227      1162  CALL_FUNCTION_3       3  ''
+             1164  STORE_NAME               arccos
+
+ L.1229      1166  LOAD_NAME                _MaskedUnaryOperation
+             1168  LOAD_NAME                umath
+             1170  LOAD_ATTR                arccosh
+             1172  LOAD_CONST               1.0
+
+ L.1230      1174  LOAD_NAME                _DomainGreaterEqual
+             1176  LOAD_CONST               1.0
+             1178  CALL_FUNCTION_1       1  ''
+
+ L.1229      1180  CALL_FUNCTION_3       3  ''
+             1182  STORE_NAME               arccosh
+
+ L.1231      1184  LOAD_NAME                _MaskedUnaryOperation
+             1186  LOAD_NAME                umath
+             1188  LOAD_ATTR                arctanh
+             1190  LOAD_CONST               0.0
+
+ L.1232      1192  LOAD_NAME                _DomainCheckInterval
+             1194  LOAD_CONST               -0.999999999999999
+             1196  LOAD_CONST               0.999999999999999
+             1198  CALL_FUNCTION_2       2  ''
+
+ L.1231      1200  CALL_FUNCTION_3       3  ''
+             1202  STORE_NAME               arctanh
+
+ L.1235      1204  LOAD_NAME                _MaskedBinaryOperation
+             1206  LOAD_NAME                umath
+             1208  LOAD_ATTR                add
+             1210  CALL_FUNCTION_1       1  ''
+             1212  STORE_NAME               add
+
+ L.1236      1214  LOAD_NAME                _MaskedBinaryOperation
+             1216  LOAD_NAME                umath
+             1218  LOAD_ATTR                subtract
+             1220  CALL_FUNCTION_1       1  ''
+             1222  STORE_NAME               subtract
+
+ L.1237      1224  LOAD_NAME                _MaskedBinaryOperation
+             1226  LOAD_NAME                umath
+             1228  LOAD_ATTR                multiply
+             1230  LOAD_CONST               1
+             1232  LOAD_CONST               1
+             1234  CALL_FUNCTION_3       3  ''
+             1236  STORE_NAME               multiply
+
+ L.1238      1238  LOAD_NAME                _MaskedBinaryOperation
+             1240  LOAD_NAME                umath
+             1242  LOAD_ATTR                arctan2
+             1244  LOAD_CONST               0.0
+             1246  LOAD_CONST               1.0
+             1248  CALL_FUNCTION_3       3  ''
+             1250  STORE_NAME               arctan2
+
+ L.1239      1252  LOAD_NAME                _MaskedBinaryOperation
+             1254  LOAD_NAME                umath
+             1256  LOAD_ATTR                equal
+             1258  CALL_FUNCTION_1       1  ''
+             1260  STORE_NAME               equal
+
+ L.1240      1262  LOAD_CONST               None
+             1264  LOAD_NAME                equal
+             1266  STORE_ATTR               reduce
+
+ L.1241      1268  LOAD_NAME                _MaskedBinaryOperation
+             1270  LOAD_NAME                umath
+             1272  LOAD_ATTR                not_equal
+             1274  CALL_FUNCTION_1       1  ''
+             1276  STORE_NAME               not_equal
+
+ L.1242      1278  LOAD_CONST               None
+             1280  LOAD_NAME                not_equal
+             1282  STORE_ATTR               reduce
+
+ L.1243      1284  LOAD_NAME                _MaskedBinaryOperation
+             1286  LOAD_NAME                umath
+             1288  LOAD_ATTR                less_equal
+             1290  CALL_FUNCTION_1       1  ''
+             1292  STORE_NAME               less_equal
+
+ L.1244      1294  LOAD_CONST               None
+             1296  LOAD_NAME                less_equal
+             1298  STORE_ATTR               reduce
+
+ L.1245      1300  LOAD_NAME                _MaskedBinaryOperation
+             1302  LOAD_NAME                umath
+             1304  LOAD_ATTR                greater_equal
+             1306  CALL_FUNCTION_1       1  ''
+             1308  STORE_NAME               greater_equal
+
+ L.1246      1310  LOAD_CONST               None
+             1312  LOAD_NAME                greater_equal
+             1314  STORE_ATTR               reduce
+
+ L.1247      1316  LOAD_NAME                _MaskedBinaryOperation
+             1318  LOAD_NAME                umath
+             1320  LOAD_ATTR                less
+             1322  CALL_FUNCTION_1       1  ''
+             1324  STORE_NAME               less
+
+ L.1248      1326  LOAD_CONST               None
+             1328  LOAD_NAME                less
+             1330  STORE_ATTR               reduce
+
+ L.1249      1332  LOAD_NAME                _MaskedBinaryOperation
+             1334  LOAD_NAME                umath
+             1336  LOAD_ATTR                greater
+             1338  CALL_FUNCTION_1       1  ''
+             1340  STORE_NAME               greater
+
+ L.1250      1342  LOAD_CONST               None
+             1344  LOAD_NAME                greater
+             1346  STORE_ATTR               reduce
+
+ L.1251      1348  LOAD_NAME                _MaskedBinaryOperation
+             1350  LOAD_NAME                umath
+             1352  LOAD_ATTR                logical_and
+             1354  CALL_FUNCTION_1       1  ''
+             1356  STORE_NAME               logical_and
+
+ L.1252      1358  LOAD_NAME                _MaskedBinaryOperation
+             1360  LOAD_NAME                umath
+             1362  LOAD_ATTR                logical_and
+             1364  LOAD_CONST               1
+             1366  LOAD_CONST               1
+             1368  CALL_FUNCTION_3       3  ''
+             1370  LOAD_ATTR                reduce
+             1372  STORE_NAME               alltrue
+
+ L.1253      1374  LOAD_NAME                _MaskedBinaryOperation
+             1376  LOAD_NAME                umath
+             1378  LOAD_ATTR                logical_or
+             1380  CALL_FUNCTION_1       1  ''
+             1382  STORE_NAME               logical_or
+
+ L.1254      1384  LOAD_NAME                logical_or
+             1386  LOAD_ATTR                reduce
+             1388  STORE_NAME               sometrue
+
+ L.1255      1390  LOAD_NAME                _MaskedBinaryOperation
+             1392  LOAD_NAME                umath
+             1394  LOAD_ATTR                logical_xor
+             1396  CALL_FUNCTION_1       1  ''
+             1398  STORE_NAME               logical_xor
+
+ L.1256      1400  LOAD_NAME                _MaskedBinaryOperation
+             1402  LOAD_NAME                umath
+             1404  LOAD_ATTR                bitwise_and
+             1406  CALL_FUNCTION_1       1  ''
+             1408  STORE_NAME               bitwise_and
+
+ L.1257      1410  LOAD_NAME                _MaskedBinaryOperation
+             1412  LOAD_NAME                umath
+             1414  LOAD_ATTR                bitwise_or
+             1416  CALL_FUNCTION_1       1  ''
+             1418  STORE_NAME               bitwise_or
+
+ L.1258      1420  LOAD_NAME                _MaskedBinaryOperation
+             1422  LOAD_NAME                umath
+             1424  LOAD_ATTR                bitwise_xor
+             1426  CALL_FUNCTION_1       1  ''
+             1428  STORE_NAME               bitwise_xor
+
+ L.1259      1430  LOAD_NAME                _MaskedBinaryOperation
+             1432  LOAD_NAME                umath
+             1434  LOAD_ATTR                hypot
+             1436  CALL_FUNCTION_1       1  ''
+             1438  STORE_NAME               hypot
+
+ L.1262      1440  LOAD_NAME                _DomainedBinaryOperation
+             1442  LOAD_NAME                umath
+             1444  LOAD_ATTR                divide
+             1446  LOAD_NAME                _DomainSafeDivide
+             1448  CALL_FUNCTION_0       0  ''
+             1450  LOAD_CONST               0
+             1452  LOAD_CONST               1
+             1454  CALL_FUNCTION_4       4  ''
+             1456  STORE_NAME               divide
+
+ L.1263      1458  LOAD_NAME                _DomainedBinaryOperation
+             1460  LOAD_NAME                umath
+             1462  LOAD_ATTR                true_divide
+
+ L.1264      1464  LOAD_NAME                _DomainSafeDivide
+             1466  CALL_FUNCTION_0       0  ''
+             1468  LOAD_CONST               0
+             1470  LOAD_CONST               1
+
+ L.1263      1472  CALL_FUNCTION_4       4  ''
+             1474  STORE_NAME               true_divide
+
+ L.1265      1476  LOAD_NAME                _DomainedBinaryOperation
+             1478  LOAD_NAME                umath
+             1480  LOAD_ATTR                floor_divide
+
+ L.1266      1482  LOAD_NAME                _DomainSafeDivide
+             1484  CALL_FUNCTION_0       0  ''
+             1486  LOAD_CONST               0
+             1488  LOAD_CONST               1
+
+ L.1265      1490  CALL_FUNCTION_4       4  ''
+             1492  STORE_NAME               floor_divide
+
+ L.1267      1494  LOAD_NAME                _DomainedBinaryOperation
+             1496  LOAD_NAME                umath
+             1498  LOAD_ATTR                remainder
+
+ L.1268      1500  LOAD_NAME                _DomainSafeDivide
+             1502  CALL_FUNCTION_0       0  ''
+             1504  LOAD_CONST               0
+             1506  LOAD_CONST               1
+
+ L.1267      1508  CALL_FUNCTION_4       4  ''
+             1510  STORE_NAME               remainder
+
+ L.1269      1512  LOAD_NAME                _DomainedBinaryOperation
+             1514  LOAD_NAME                umath
+             1516  LOAD_ATTR                fmod
+             1518  LOAD_NAME                _DomainSafeDivide
+             1520  CALL_FUNCTION_0       0  ''
+             1522  LOAD_CONST               0
+             1524  LOAD_CONST               1
+             1526  CALL_FUNCTION_4       4  ''
+             1528  STORE_NAME               fmod
+
+ L.1270      1530  LOAD_NAME                _DomainedBinaryOperation
+             1532  LOAD_NAME                umath
+             1534  LOAD_ATTR                mod
+             1536  LOAD_NAME                _DomainSafeDivide
+             1538  CALL_FUNCTION_0       0  ''
+             1540  LOAD_CONST               0
+             1542  LOAD_CONST               1
+             1544  CALL_FUNCTION_4       4  ''
+             1546  STORE_NAME               mod
+
+ L.1278      1548  LOAD_CODE                <code_object _replace_dtype_fields_recursive>
+             1550  LOAD_STR                 '_replace_dtype_fields_recursive'
+             1552  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1554  STORE_NAME               _replace_dtype_fields_recursive
+
+ L.1310      1556  LOAD_CODE                <code_object _replace_dtype_fields>
+             1558  LOAD_STR                 '_replace_dtype_fields'
+             1560  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1562  STORE_NAME               _replace_dtype_fields
+
+ L.1324      1564  LOAD_CODE                <code_object make_mask_descr>
+             1566  LOAD_STR                 'make_mask_descr'
+             1568  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1570  STORE_NAME               make_mask_descr
+
+ L.1357      1572  LOAD_CODE                <code_object getmask>
+             1574  LOAD_STR                 'getmask'
+             1576  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1578  STORE_NAME               getmask
+
+ L.1416      1580  LOAD_NAME                getmask
+             1582  STORE_NAME               get_mask
+
+ L.1419      1584  LOAD_CODE                <code_object getmaskarray>
+             1586  LOAD_STR                 'getmaskarray'
+             1588  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1590  STORE_NAME               getmaskarray
+
+ L.1472      1592  LOAD_CODE                <code_object is_mask>
+             1594  LOAD_STR                 'is_mask'
+             1596  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1598  STORE_NAME               is_mask
+
+ L.1540      1600  LOAD_CODE                <code_object _shrink_mask>
+             1602  LOAD_STR                 '_shrink_mask'
+             1604  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1606  STORE_NAME               _shrink_mask
+
+ L.1550      1608  LOAD_CONST               False
+             1610  LOAD_CONST               True
+             1612  LOAD_NAME                MaskType
+             1614  BUILD_TUPLE_3         3 
+             1616  LOAD_CODE                <code_object make_mask>
+             1618  LOAD_STR                 'make_mask'
+             1620  MAKE_FUNCTION_1          'default'
+             1622  STORE_NAME               make_mask
+
+ L.1639  1624_1626  LOAD_CONST               (None,)
+             1628  LOAD_CODE                <code_object make_mask_none>
+             1630  LOAD_STR                 'make_mask_none'
+             1632  MAKE_FUNCTION_1          'default'
+             1634  STORE_NAME               make_mask_none
+
+ L.1689  1636_1638  LOAD_CONST               (False, True)
+             1640  LOAD_CODE                <code_object mask_or>
+             1642  LOAD_STR                 'mask_or'
+             1644  MAKE_FUNCTION_1          'default'
+             1646  STORE_NAME               mask_or
+
+ L.1756      1648  LOAD_CODE                <code_object flatten_mask>
+             1650  LOAD_STR                 'flatten_mask'
+             1652  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1654  STORE_NAME               flatten_mask
+
+ L.1812      1656  LOAD_NAME                np
+             1658  LOAD_ATTR                _NoValue
+             1660  BUILD_TUPLE_1         1 
+             1662  LOAD_CODE                <code_object _check_mask_axis>
+             1664  LOAD_STR                 '_check_mask_axis'
+             1666  MAKE_FUNCTION_1          'default'
+             1668  STORE_NAME               _check_mask_axis
+
+ L.1824  1670_1672  LOAD_CONST               (True,)
+             1674  LOAD_CODE                <code_object masked_where>
+             1676  LOAD_STR                 'masked_where'
+             1678  MAKE_FUNCTION_1          'default'
+             1680  STORE_NAME               masked_where
+
+ L.1942  1682_1684  LOAD_CONST               (True,)
+             1686  LOAD_CODE                <code_object masked_greater>
+             1688  LOAD_STR                 'masked_greater'
+             1690  MAKE_FUNCTION_1          'default'
+             1692  STORE_NAME               masked_greater
+
+ L.1968  1694_1696  LOAD_CONST               (True,)
+             1698  LOAD_CODE                <code_object masked_greater_equal>
+             1700  LOAD_STR                 'masked_greater_equal'
+             1702  MAKE_FUNCTION_1          'default'
+             1704  STORE_NAME               masked_greater_equal
+
+ L.1994  1706_1708  LOAD_CONST               (True,)
+             1710  LOAD_CODE                <code_object masked_less>
+             1712  LOAD_STR                 'masked_less'
+             1714  MAKE_FUNCTION_1          'default'
+             1716  STORE_NAME               masked_less
+
+ L.2020  1718_1720  LOAD_CONST               (True,)
+             1722  LOAD_CODE                <code_object masked_less_equal>
+             1724  LOAD_STR                 'masked_less_equal'
+             1726  MAKE_FUNCTION_1          'default'
+             1728  STORE_NAME               masked_less_equal
+
+ L.2046  1730_1732  LOAD_CONST               (True,)
+             1734  LOAD_CODE                <code_object masked_not_equal>
+             1736  LOAD_STR                 'masked_not_equal'
+             1738  MAKE_FUNCTION_1          'default'
+             1740  STORE_NAME               masked_not_equal
+
+ L.2072  1742_1744  LOAD_CONST               (True,)
+             1746  LOAD_CODE                <code_object masked_equal>
+             1748  LOAD_STR                 'masked_equal'
+             1750  MAKE_FUNCTION_1          'default'
+             1752  STORE_NAME               masked_equal
+
+ L.2102  1754_1756  LOAD_CONST               (True,)
+             1758  LOAD_CODE                <code_object masked_inside>
+             1760  LOAD_STR                 'masked_inside'
+             1762  MAKE_FUNCTION_1          'default'
+             1764  STORE_NAME               masked_inside
+
+ L.2142  1766_1768  LOAD_CONST               (True,)
+             1770  LOAD_CODE                <code_object masked_outside>
+             1772  LOAD_STR                 'masked_outside'
+             1774  MAKE_FUNCTION_1          'default'
+             1776  STORE_NAME               masked_outside
+
+ L.2182  1778_1780  LOAD_CONST               (True, True)
+             1782  LOAD_CODE                <code_object masked_object>
+             1784  LOAD_STR                 'masked_object'
+             1786  MAKE_FUNCTION_1          'default'
+             1788  STORE_NAME               masked_object
+
+ L.2250  1790_1792  LOAD_CONST               (1e-05, 1e-08, True, True)
+             1794  LOAD_CODE                <code_object masked_values>
+             1796  LOAD_STR                 'masked_values'
+             1798  MAKE_FUNCTION_1          'default'
+             1800  STORE_NAME               masked_values
+
+ L.2330  1802_1804  LOAD_CONST               (True,)
+             1806  LOAD_CODE                <code_object masked_invalid>
+             1808  LOAD_STR                 'masked_invalid'
+             1810  MAKE_FUNCTION_1          'default'
+             1812  STORE_NAME               masked_invalid
+
+ L.2377      1814  LOAD_BUILD_CLASS 
+             1816  LOAD_CODE                <code_object _MaskedPrintOption>
+             1818  LOAD_STR                 '_MaskedPrintOption'
+             1820  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1822  LOAD_STR                 '_MaskedPrintOption'
+             1824  CALL_FUNCTION_2       2  ''
+             1826  STORE_NAME               _MaskedPrintOption
+
+ L.2425      1828  LOAD_NAME                _MaskedPrintOption
+             1830  LOAD_STR                 '--'
+             1832  CALL_FUNCTION_1       1  ''
+             1834  STORE_NAME               masked_print_option
+
+ L.2428      1836  LOAD_CODE                <code_object _recursive_printoption>
+             1838  LOAD_STR                 '_recursive_printoption'
+             1840  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1842  STORE_NAME               _recursive_printoption
+
+ L.2446      1844  LOAD_NAME                dict
+
+ L.2447      1846  LOAD_NAME                textwrap
+             1848  LOAD_METHOD              dedent
+             1850  LOAD_STR                 '        masked_%(name)s(data =\n         %(data)s,\n        %(nlen)s        mask =\n         %(mask)s,\n        %(nlen)s  fill_value = %(fill)s)\n        '
+             1852  CALL_METHOD_1         1  ''
+
+ L.2454      1854  LOAD_NAME                textwrap
+             1856  LOAD_METHOD              dedent
+             1858  LOAD_STR                 '        masked_%(name)s(data =\n         %(data)s,\n        %(nlen)s        mask =\n         %(mask)s,\n        %(nlen)s  fill_value = %(fill)s,\n        %(nlen)s       dtype = %(dtype)s)\n        '
+             1860  CALL_METHOD_1         1  ''
+
+ L.2462      1862  LOAD_NAME                textwrap
+             1864  LOAD_METHOD              dedent
+             1866  LOAD_STR                 '        masked_%(name)s(data = %(data)s,\n        %(nlen)s        mask = %(mask)s,\n        %(nlen)s  fill_value = %(fill)s)\n        '
+             1868  CALL_METHOD_1         1  ''
+
+ L.2467      1870  LOAD_NAME                textwrap
+             1872  LOAD_METHOD              dedent
+             1874  LOAD_STR                 '        masked_%(name)s(data = %(data)s,\n        %(nlen)s        mask = %(mask)s,\n        %(nlen)s  fill_value = %(fill)s,\n        %(nlen)s       dtype = %(dtype)s)\n        '
+             1876  CALL_METHOD_1         1  ''
+
+ L.2446      1878  LOAD_CONST               ('long_std', 'long_flx', 'short_std', 'short_flx')
+             1880  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+             1882  STORE_NAME               _legacy_print_templates
+
+ L.2480      1884  LOAD_CODE                <code_object _recursive_filled>
+             1886  LOAD_STR                 '_recursive_filled'
+             1888  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1890  STORE_NAME               _recursive_filled
+
+ L.2494      1892  LOAD_CODE                <code_object flatten_structured_array>
+             1894  LOAD_STR                 'flatten_structured_array'
+             1896  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1898  STORE_NAME               flatten_structured_array
+
+ L.2549  1900_1902  LOAD_CONST               (True,)
+             1904  LOAD_CODE                <code_object _arraymethod>
+             1906  LOAD_STR                 '_arraymethod'
+             1908  MAKE_FUNCTION_1          'default'
+             1910  STORE_NAME               _arraymethod
+
+ L.2594      1912  LOAD_BUILD_CLASS 
+             1914  LOAD_CODE                <code_object MaskedIterator>
+             1916  LOAD_STR                 'MaskedIterator'
+             1918  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1920  LOAD_STR                 'MaskedIterator'
+             1922  CALL_FUNCTION_2       2  ''
+             1924  STORE_NAME               MaskedIterator
+
+ L.2702      1926  LOAD_BUILD_CLASS 
+             1928  LOAD_CODE                <code_object MaskedArray>
+             1930  LOAD_STR                 'MaskedArray'
+             1932  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1934  LOAD_STR                 'MaskedArray'
+             1936  LOAD_NAME                ndarray
+             1938  CALL_FUNCTION_3       3  ''
+             1940  STORE_NAME               MaskedArray
+
+ L.6221      1942  LOAD_CODE                <code_object _mareconstruct>
+             1944  LOAD_STR                 '_mareconstruct'
+             1946  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1948  STORE_NAME               _mareconstruct
+
+ L.6231      1950  LOAD_BUILD_CLASS 
+             1952  LOAD_CODE                <code_object mvoid>
+             1954  LOAD_STR                 'mvoid'
+             1956  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1958  LOAD_STR                 'mvoid'
+             1960  LOAD_NAME                MaskedArray
+             1962  CALL_FUNCTION_3       3  ''
+             1964  STORE_NAME               mvoid
+
+ L.6371      1966  LOAD_CODE                <code_object isMaskedArray>
+             1968  LOAD_STR                 'isMaskedArray'
+             1970  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1972  STORE_NAME               isMaskedArray
+
+ L.6422      1974  LOAD_NAME                isMaskedArray
+             1976  STORE_NAME               isarray
+
+ L.6423      1978  LOAD_NAME                isMaskedArray
+             1980  STORE_NAME               isMA
+
+ L.6426      1982  LOAD_BUILD_CLASS 
+             1984  LOAD_CODE                <code_object MaskedConstant>
+             1986  LOAD_STR                 'MaskedConstant'
+             1988  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1990  LOAD_STR                 'MaskedConstant'
+             1992  LOAD_NAME                MaskedArray
+             1994  CALL_FUNCTION_3       3  ''
+             1996  STORE_NAME               MaskedConstant
+
+ L.6542      1998  LOAD_NAME                MaskedConstant
+             2000  CALL_FUNCTION_0       0  ''
+             2002  DUP_TOP          
+             2004  STORE_NAME               masked
+             2006  STORE_NAME               masked_singleton
+
+ L.6543      2008  LOAD_NAME                MaskedArray
+             2010  STORE_NAME               masked_array
+
+ L.6546      2012  LOAD_CONST               None
+             2014  LOAD_CONST               False
+             2016  LOAD_CONST               None
+
+ L.6547      2018  LOAD_NAME                nomask
+             2020  LOAD_CONST               None
+             2022  LOAD_CONST               True
+
+ L.6548      2024  LOAD_CONST               False
+             2026  LOAD_CONST               True
+             2028  LOAD_CONST               True
+             2030  LOAD_CONST               0
+
+ L.6546      2032  BUILD_TUPLE_10       10 
+             2034  LOAD_CODE                <code_object array>
+             2036  LOAD_STR                 'array'
+             2038  MAKE_FUNCTION_1          'default'
+             2040  STORE_NAME               array
+
+ L.6560      2042  LOAD_NAME                masked_array
+             2044  LOAD_ATTR                __doc__
+             2046  LOAD_NAME                array
+             2048  STORE_ATTR               __doc__
+
+ L.6563      2050  LOAD_CODE                <code_object is_masked>
+             2052  LOAD_STR                 'is_masked'
+             2054  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2056  STORE_NAME               is_masked
+
+ L.6621      2058  LOAD_BUILD_CLASS 
+             2060  LOAD_CODE                <code_object _extrema_operation>
+             2062  LOAD_STR                 '_extrema_operation'
+             2064  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2066  LOAD_STR                 '_extrema_operation'
+             2068  LOAD_NAME                _MaskedUFunc
+             2070  CALL_FUNCTION_3       3  ''
+             2072  STORE_NAME               _extrema_operation
+
+ L.6694      2074  LOAD_CONST               None
+             2076  LOAD_CONST               None
+             2078  LOAD_CONST               None
+             2080  LOAD_NAME                np
+             2082  LOAD_ATTR                _NoValue
+             2084  BUILD_TUPLE_4         4 
+             2086  LOAD_CODE                <code_object min>
+             2088  LOAD_STR                 'min'
+             2090  MAKE_FUNCTION_1          'default'
+             2092  STORE_NAME               min
+
+ L.6704      2094  LOAD_NAME                MaskedArray
+             2096  LOAD_ATTR                min
+             2098  LOAD_ATTR                __doc__
+             2100  LOAD_NAME                min
+             2102  STORE_ATTR               __doc__
+
+ L.6706      2104  LOAD_CONST               None
+             2106  LOAD_CONST               None
+             2108  LOAD_CONST               None
+             2110  LOAD_NAME                np
+             2112  LOAD_ATTR                _NoValue
+             2114  BUILD_TUPLE_4         4 
+             2116  LOAD_CODE                <code_object max>
+             2118  LOAD_STR                 'max'
+             2120  MAKE_FUNCTION_1          'default'
+             2122  STORE_NAME               max
+
+ L.6716      2124  LOAD_NAME                MaskedArray
+             2126  LOAD_ATTR                max
+             2128  LOAD_ATTR                __doc__
+             2130  LOAD_NAME                max
+             2132  STORE_ATTR               __doc__
+
+ L.6719      2134  LOAD_CONST               None
+             2136  LOAD_CONST               None
+             2138  LOAD_CONST               None
+             2140  LOAD_NAME                np
+             2142  LOAD_ATTR                _NoValue
+             2144  BUILD_TUPLE_4         4 
+             2146  LOAD_CODE                <code_object ptp>
+             2148  LOAD_STR                 'ptp'
+             2150  MAKE_FUNCTION_1          'default'
+             2152  STORE_NAME               ptp
+
+ L.6728      2154  LOAD_NAME                MaskedArray
+             2156  LOAD_ATTR                ptp
+             2158  LOAD_ATTR                __doc__
+             2160  LOAD_NAME                ptp
+             2162  STORE_ATTR               __doc__
+
+ L.6736      2164  LOAD_BUILD_CLASS 
+             2166  LOAD_CODE                <code_object _frommethod>
+             2168  LOAD_STR                 '_frommethod'
+             2170  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2172  LOAD_STR                 '_frommethod'
+             2174  CALL_FUNCTION_2       2  ''
+             2176  STORE_NAME               _frommethod
+
+ L.6777      2178  LOAD_NAME                _frommethod
+             2180  LOAD_STR                 'all'
+             2182  CALL_FUNCTION_1       1  ''
+             2184  STORE_NAME               all
+
+ L.6778      2186  LOAD_NAME                _frommethod
+             2188  LOAD_STR                 'anom'
+             2190  CALL_FUNCTION_1       1  ''
+             2192  DUP_TOP          
+             2194  STORE_NAME               anomalies
+             2196  STORE_NAME               anom
+
+ L.6779      2198  LOAD_NAME                _frommethod
+             2200  LOAD_STR                 'any'
+             2202  CALL_FUNCTION_1       1  ''
+             2204  STORE_NAME               any
+
+ L.6780      2206  LOAD_NAME                _frommethod
+             2208  LOAD_STR                 'compress'
+             2210  LOAD_CONST               True
+             2212  LOAD_CONST               ('reversed',)
+             2214  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+             2216  STORE_NAME               compress
+
+ L.6781      2218  LOAD_NAME                _frommethod
+             2220  LOAD_STR                 'cumprod'
+             2222  CALL_FUNCTION_1       1  ''
+             2224  STORE_NAME               cumprod
+
+ L.6782      2226  LOAD_NAME                _frommethod
+             2228  LOAD_STR                 'cumsum'
+             2230  CALL_FUNCTION_1       1  ''
+             2232  STORE_NAME               cumsum
+
+ L.6783      2234  LOAD_NAME                _frommethod
+             2236  LOAD_STR                 'copy'
+             2238  CALL_FUNCTION_1       1  ''
+             2240  STORE_NAME               copy
+
+ L.6784      2242  LOAD_NAME                _frommethod
+             2244  LOAD_STR                 'diagonal'
+             2246  CALL_FUNCTION_1       1  ''
+             2248  STORE_NAME               diagonal
+
+ L.6785      2250  LOAD_NAME                _frommethod
+             2252  LOAD_STR                 'harden_mask'
+             2254  CALL_FUNCTION_1       1  ''
+             2256  STORE_NAME               harden_mask
+
+ L.6786      2258  LOAD_NAME                _frommethod
+             2260  LOAD_STR                 'ids'
+             2262  CALL_FUNCTION_1       1  ''
+             2264  STORE_NAME               ids
+
+ L.6787      2266  LOAD_NAME                _extrema_operation
+             2268  LOAD_NAME                umath
+             2270  LOAD_ATTR                maximum
+             2272  LOAD_NAME                greater
+             2274  LOAD_NAME                maximum_fill_value
+             2276  CALL_FUNCTION_3       3  ''
+             2278  STORE_NAME               maximum
+
+ L.6788      2280  LOAD_NAME                _frommethod
+             2282  LOAD_STR                 'mean'
+             2284  CALL_FUNCTION_1       1  ''
+             2286  STORE_NAME               mean
+
+ L.6789      2288  LOAD_NAME                _extrema_operation
+             2290  LOAD_NAME                umath
+             2292  LOAD_ATTR                minimum
+             2294  LOAD_NAME                less
+             2296  LOAD_NAME                minimum_fill_value
+             2298  CALL_FUNCTION_3       3  ''
+             2300  STORE_NAME               minimum
+
+ L.6790      2302  LOAD_NAME                _frommethod
+             2304  LOAD_STR                 'nonzero'
+             2306  CALL_FUNCTION_1       1  ''
+             2308  STORE_NAME               nonzero
+
+ L.6791      2310  LOAD_NAME                _frommethod
+             2312  LOAD_STR                 'prod'
+             2314  CALL_FUNCTION_1       1  ''
+             2316  STORE_NAME               prod
+
+ L.6792      2318  LOAD_NAME                _frommethod
+             2320  LOAD_STR                 'prod'
+             2322  CALL_FUNCTION_1       1  ''
+             2324  STORE_NAME               product
+
+ L.6793      2326  LOAD_NAME                _frommethod
+             2328  LOAD_STR                 'ravel'
+             2330  CALL_FUNCTION_1       1  ''
+             2332  STORE_NAME               ravel
+
+ L.6794      2334  LOAD_NAME                _frommethod
+             2336  LOAD_STR                 'repeat'
+             2338  CALL_FUNCTION_1       1  ''
+             2340  STORE_NAME               repeat
+
+ L.6795      2342  LOAD_NAME                _frommethod
+             2344  LOAD_STR                 'shrink_mask'
+             2346  CALL_FUNCTION_1       1  ''
+             2348  STORE_NAME               shrink_mask
+
+ L.6796      2350  LOAD_NAME                _frommethod
+             2352  LOAD_STR                 'soften_mask'
+             2354  CALL_FUNCTION_1       1  ''
+             2356  STORE_NAME               soften_mask
+
+ L.6797      2358  LOAD_NAME                _frommethod
+             2360  LOAD_STR                 'std'
+             2362  CALL_FUNCTION_1       1  ''
+             2364  STORE_NAME               std
+
+ L.6798      2366  LOAD_NAME                _frommethod
+             2368  LOAD_STR                 'sum'
+             2370  CALL_FUNCTION_1       1  ''
+             2372  STORE_NAME               sum
+
+ L.6799      2374  LOAD_NAME                _frommethod
+             2376  LOAD_STR                 'swapaxes'
+             2378  CALL_FUNCTION_1       1  ''
+             2380  STORE_NAME               swapaxes
+
+ L.6801      2382  LOAD_NAME                _frommethod
+             2384  LOAD_STR                 'trace'
+             2386  CALL_FUNCTION_1       1  ''
+             2388  STORE_NAME               trace
+
+ L.6802      2390  LOAD_NAME                _frommethod
+             2392  LOAD_STR                 'var'
+             2394  CALL_FUNCTION_1       1  ''
+             2396  STORE_NAME               var
+
+ L.6804      2398  LOAD_NAME                _frommethod
+             2400  LOAD_STR                 'count'
+             2402  CALL_FUNCTION_1       1  ''
+             2404  STORE_NAME               count
+
+ L.6806  2406_2408  LOAD_CONST               (None, None, 'raise')
+             2410  LOAD_CODE                <code_object take>
+             2412  LOAD_STR                 'take'
+             2414  MAKE_FUNCTION_1          'default'
+             2416  STORE_NAME               take
+
+ L.6813  2418_2420  LOAD_CONST               (None,)
+             2422  LOAD_CODE                <code_object power>
+             2424  LOAD_STR                 'power'
+             2426  MAKE_FUNCTION_1          'default'
+             2428  STORE_NAME               power
+
+ L.6864      2430  LOAD_NAME                _frommethod
+             2432  LOAD_STR                 'argmin'
+             2434  CALL_FUNCTION_1       1  ''
+             2436  STORE_NAME               argmin
+
+ L.6865      2438  LOAD_NAME                _frommethod
+             2440  LOAD_STR                 'argmax'
+             2442  CALL_FUNCTION_1       1  ''
+             2444  STORE_NAME               argmax
+
+ L.6867      2446  LOAD_NAME                np
+             2448  LOAD_ATTR                _NoValue
+             2450  LOAD_CONST               None
+             2452  LOAD_CONST               None
+             2454  LOAD_CONST               True
+             2456  LOAD_CONST               None
+             2458  BUILD_TUPLE_5         5 
+             2460  LOAD_CODE                <code_object argsort>
+             2462  LOAD_STR                 'argsort'
+             2464  MAKE_FUNCTION_1          'default'
+             2466  STORE_NAME               argsort
+
+ L.6880      2468  LOAD_NAME                MaskedArray
+             2470  LOAD_ATTR                argsort
+             2472  LOAD_ATTR                __doc__
+             2474  LOAD_NAME                argsort
+             2476  STORE_ATTR               __doc__
+
+ L.6882  2478_2480  LOAD_CONST               (-1, None, None, True, None)
+             2482  LOAD_CODE                <code_object sort>
+             2484  LOAD_STR                 'sort'
+             2486  MAKE_FUNCTION_1          'default'
+             2488  STORE_NAME               sort
+
+ L.6908      2490  LOAD_CODE                <code_object compressed>
+             2492  LOAD_STR                 'compressed'
+             2494  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2496  STORE_NAME               compressed
+
+ L.6924  2498_2500  LOAD_CONST               (0,)
+             2502  LOAD_CODE                <code_object concatenate>
+             2504  LOAD_STR                 'concatenate'
+             2506  MAKE_FUNCTION_1          'default'
+             2508  STORE_NAME               concatenate
+
+ L.6984  2510_2512  LOAD_CONST               (0,)
+             2514  LOAD_CODE                <code_object diag>
+             2516  LOAD_STR                 'diag'
+             2518  MAKE_FUNCTION_1          'default'
+             2520  STORE_NAME               diag
+
+ L.7002      2522  LOAD_CODE                <code_object left_shift>
+             2524  LOAD_STR                 'left_shift'
+             2526  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2528  STORE_NAME               left_shift
+
+ L.7023      2530  LOAD_CODE                <code_object right_shift>
+             2532  LOAD_STR                 'right_shift'
+             2534  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2536  STORE_NAME               right_shift
+
+ L.7044  2538_2540  LOAD_CONST               ('raise',)
+             2542  LOAD_CODE                <code_object put>
+             2544  LOAD_STR                 'put'
+             2546  MAKE_FUNCTION_1          'default'
+             2548  STORE_NAME               put
+
+ L.7063      2550  LOAD_CODE                <code_object putmask>
+             2552  LOAD_STR                 'putmask'
+             2554  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2556  STORE_NAME               putmask
+
+ L.7102  2558_2560  LOAD_CONST               (None,)
+             2562  LOAD_CODE                <code_object transpose>
+             2564  LOAD_STR                 'transpose'
+             2566  MAKE_FUNCTION_1          'default'
+             2568  STORE_NAME               transpose
+
+ L.7140  2570_2572  LOAD_CONST               ('C',)
+             2574  LOAD_CODE                <code_object reshape>
+             2576  LOAD_STR                 'reshape'
+             2578  MAKE_FUNCTION_1          'default'
+             2580  STORE_NAME               reshape
+
+ L.7159      2582  LOAD_CODE                <code_object resize>
+             2584  LOAD_STR                 'resize'
+             2586  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2588  STORE_NAME               resize
+
+ L.7223      2590  LOAD_CODE                <code_object ndim>
+             2592  LOAD_STR                 'ndim'
+             2594  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2596  STORE_NAME               ndim
+
+ L.7230      2598  LOAD_NAME                np
+             2600  LOAD_ATTR                ndim
+             2602  LOAD_ATTR                __doc__
+             2604  LOAD_NAME                ndim
+             2606  STORE_ATTR               __doc__
+
+ L.7233      2608  LOAD_CODE                <code_object shape>
+         2610_2612  LOAD_STR                 'shape'
+             2614  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2616  STORE_NAME               shape
+
+ L.7236      2618  LOAD_NAME                np
+             2620  LOAD_ATTR                shape
+             2622  LOAD_ATTR                __doc__
+             2624  LOAD_NAME                shape
+             2626  STORE_ATTR               __doc__
+
+ L.7239  2628_2630  LOAD_CONST               (None,)
+         2632_2634  LOAD_CODE                <code_object size>
+         2636_2638  LOAD_STR                 'size'
+             2640  MAKE_FUNCTION_1          'default'
+             2642  STORE_NAME               size
+
+ L.7242      2644  LOAD_NAME                np
+             2646  LOAD_ATTR                size
+             2648  LOAD_ATTR                __doc__
+             2650  LOAD_NAME                size
+             2652  STORE_ATTR               __doc__
+
+ L.7250      2654  LOAD_NAME                _NoValue
+             2656  LOAD_NAME                _NoValue
+             2658  BUILD_TUPLE_2         2 
+         2660_2662  LOAD_CODE                <code_object where>
+         2664_2666  LOAD_STR                 'where'
+             2668  MAKE_FUNCTION_1          'default'
+             2670  STORE_NAME               where
+
+ L.7341  2672_2674  LOAD_CONST               (None, 'raise')
+         2676_2678  LOAD_CODE                <code_object choose>
+         2680_2682  LOAD_STR                 'choose'
+             2684  MAKE_FUNCTION_1          'default'
+             2686  STORE_NAME               choose
+
+ L.7416  2688_2690  LOAD_CONST               (0, None)
+         2692_2694  LOAD_CODE                <code_object round_>
+         2696_2698  LOAD_STR                 'round_'
+             2700  MAKE_FUNCTION_1          'default'
+             2702  STORE_NAME               round_
+
+ L.7447      2704  LOAD_NAME                round_
+             2706  STORE_NAME               round
+
+ L.7452  2708_2710  LOAD_CONST               (None,)
+         2712_2714  LOAD_CODE                <code_object mask_rowcols>
+         2716_2718  LOAD_STR                 'mask_rowcols'
+             2720  MAKE_FUNCTION_1          'default'
+             2722  STORE_NAME               mask_rowcols
+
+ L.7544  2724_2726  LOAD_CONST               (False, None)
+         2728_2730  LOAD_CODE                <code_object dot>
+         2732_2734  LOAD_STR                 'dot'
+             2736  MAKE_FUNCTION_1          'default'
+             2738  STORE_NAME               dot
+
+ L.7626  2740_2742  LOAD_CODE                <code_object inner>
+         2744_2746  LOAD_STR                 'inner'
+             2748  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2750  STORE_NAME               inner
+
+ L.7641      2752  LOAD_NAME                doc_note
+             2754  LOAD_NAME                np
+             2756  LOAD_ATTR                inner
+             2758  LOAD_ATTR                __doc__
+
+ L.7642  2760_2762  LOAD_STR                 'Masked values are replaced by 0.'
+
+ L.7641      2764  CALL_FUNCTION_2       2  ''
+             2766  LOAD_NAME                inner
+             2768  STORE_ATTR               __doc__
+
+ L.7643      2770  LOAD_NAME                inner
+             2772  STORE_NAME               innerproduct
+
+ L.7646  2774_2776  LOAD_CODE                <code_object outer>
+         2778_2780  LOAD_STR                 'outer'
+             2782  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2784  STORE_NAME               outer
+
+ L.7659      2786  LOAD_NAME                doc_note
+             2788  LOAD_NAME                np
+             2790  LOAD_ATTR                outer
+             2792  LOAD_ATTR                __doc__
+
+ L.7660  2794_2796  LOAD_STR                 'Masked values are replaced by 0.'
+
+ L.7659      2798  CALL_FUNCTION_2       2  ''
+             2800  LOAD_NAME                outer
+             2802  STORE_ATTR               __doc__
+
+ L.7661      2804  LOAD_NAME                outer
+             2806  STORE_NAME               outerproduct
+
+ L.7664  2808_2810  LOAD_CODE                <code_object _convolve_or_correlate>
+         2812_2814  LOAD_STR                 '_convolve_or_correlate'
+             2816  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2818  STORE_NAME               _convolve_or_correlate
+
+ L.7683  2820_2822  LOAD_CONST               ('valid', True)
+         2824_2826  LOAD_CODE                <code_object correlate>
+         2828_2830  LOAD_STR                 'correlate'
+             2832  MAKE_FUNCTION_1          'default'
+             2834  STORE_NAME               correlate
+
+ L.7711  2836_2838  LOAD_CONST               ('full', True)
+         2840_2842  LOAD_CODE                <code_object convolve>
+         2844_2846  LOAD_STR                 'convolve'
+             2848  MAKE_FUNCTION_1          'default'
+             2850  STORE_NAME               convolve
+
+ L.7739  2852_2854  LOAD_CONST               (True,)
+         2856_2858  LOAD_CODE                <code_object allequal>
+         2860_2862  LOAD_STR                 'allequal'
+             2864  MAKE_FUNCTION_1          'default'
+         2866_2868  STORE_NAME               allequal
+
+ L.7797  2870_2872  LOAD_CONST               (True, 1e-05, 1e-08)
+         2874_2876  LOAD_CODE                <code_object allclose>
+         2878_2880  LOAD_STR                 'allclose'
+             2882  MAKE_FUNCTION_1          'default'
+         2884_2886  STORE_NAME               allclose
+
+ L.7905  2888_2890  LOAD_CONST               (None, None)
+         2892_2894  LOAD_CODE                <code_object asarray>
+         2896_2898  LOAD_STR                 'asarray'
+             2900  MAKE_FUNCTION_1          'default'
+         2902_2904  STORE_NAME               asarray
+
+ L.7954  2906_2908  LOAD_CONST               (None,)
+         2910_2912  LOAD_CODE                <code_object asanyarray>
+         2914_2916  LOAD_STR                 'asanyarray'
+             2918  MAKE_FUNCTION_1          'default'
+         2920_2922  STORE_NAME               asanyarray
+
+ L.8007  2924_2926  LOAD_CODE                <code_object _pickle_warn>
+         2928_2930  LOAD_STR                 '_pickle_warn'
+             2932  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2934_2936  STORE_NAME               _pickle_warn
+
+ L.8014  2938_2940  LOAD_NAME                float
+             2942  LOAD_CONST               -1
+         2944_2946  LOAD_STR                 ''
+             2948  BUILD_TUPLE_3         3 
+         2950_2952  LOAD_CODE                <code_object fromfile>
+         2954_2956  LOAD_STR                 'fromfile'
+             2958  MAKE_FUNCTION_1          'default'
+         2960_2962  STORE_NAME               fromfile
+
+ L.8019  2964_2966  LOAD_CODE                <code_object fromflex>
+         2968_2970  LOAD_STR                 'fromflex'
+             2972  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2974_2976  STORE_NAME               fromflex
+
+ L.8083      2978  LOAD_BUILD_CLASS 
+         2980_2982  LOAD_CODE                <code_object _convert2ma>
+         2984_2986  LOAD_STR                 '_convert2ma'
+             2988  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2990_2992  LOAD_STR                 '_convert2ma'
+             2994  CALL_FUNCTION_2       2  ''
+         2996_2998  STORE_NAME               _convert2ma
+
+ L.8127  3000_3002  LOAD_NAME                _convert2ma
+         3004_3006  LOAD_STR                 'arange'
+             3008  LOAD_NAME                dict
+             3010  LOAD_CONST               None
+             3012  LOAD_CONST               False
+         3014_3016  LOAD_CONST               ('fill_value', 'hardmask')
+             3018  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+         3020_3022  LOAD_CONST               ('params',)
+             3024  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+         3026_3028  STORE_NAME               arange
+
+ L.8128      3030  LOAD_NAME                np
+         3032_3034  LOAD_ATTR                clip
+         3036_3038  STORE_NAME               clip
+
+ L.8129      3040  LOAD_NAME                np
+         3042_3044  LOAD_ATTR                diff
+         3046_3048  STORE_NAME               diff
+
+ L.8130  3050_3052  LOAD_NAME                _convert2ma
+         3054_3056  LOAD_STR                 'empty'
+             3058  LOAD_NAME                dict
+             3060  LOAD_CONST               None
+             3062  LOAD_CONST               False
+         3064_3066  LOAD_CONST               ('fill_value', 'hardmask')
+             3068  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+         3070_3072  LOAD_CONST               ('params',)
+             3074  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+         3076_3078  STORE_NAME               empty
+
+ L.8131  3080_3082  LOAD_NAME                _convert2ma
+         3084_3086  LOAD_STR                 'empty_like'
+             3088  CALL_FUNCTION_1       1  ''
+         3090_3092  STORE_NAME               empty_like
+
+ L.8132  3094_3096  LOAD_NAME                _convert2ma
+         3098_3100  LOAD_STR                 'frombuffer'
+             3102  CALL_FUNCTION_1       1  ''
+         3104_3106  STORE_NAME               frombuffer
+
+ L.8133  3108_3110  LOAD_NAME                _convert2ma
+         3112_3114  LOAD_STR                 'fromfunction'
+             3116  CALL_FUNCTION_1       1  ''
+         3118_3120  STORE_NAME               fromfunction
+
+ L.8134  3122_3124  LOAD_NAME                _convert2ma
+
+ L.8135  3126_3128  LOAD_STR                 'identity'
+             3130  LOAD_NAME                dict
+             3132  LOAD_CONST               None
+             3134  LOAD_CONST               False
+         3136_3138  LOAD_CONST               ('fill_value', 'hardmask')
+             3140  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+
+ L.8134  3142_3144  LOAD_CONST               ('params',)
+             3146  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+         3148_3150  STORE_NAME               identity
+
+ L.8136      3152  LOAD_NAME                np
+         3154_3156  LOAD_ATTR                indices
+         3158_3160  STORE_NAME               indices
+
+ L.8137  3162_3164  LOAD_NAME                _convert2ma
+         3166_3168  LOAD_STR                 'ones'
+             3170  LOAD_NAME                dict
+             3172  LOAD_CONST               None
+             3174  LOAD_CONST               False
+         3176_3178  LOAD_CONST               ('fill_value', 'hardmask')
+             3180  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+         3182_3184  LOAD_CONST               ('params',)
+             3186  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+         3188_3190  STORE_NAME               ones
+
+ L.8138      3192  LOAD_NAME                np
+         3194_3196  LOAD_ATTR                ones_like
+         3198_3200  STORE_NAME               ones_like
+
+ L.8139      3202  LOAD_NAME                np
+         3204_3206  LOAD_ATTR                squeeze
+         3208_3210  STORE_NAME               squeeze
+
+ L.8140  3212_3214  LOAD_NAME                _convert2ma
+         3216_3218  LOAD_STR                 'zeros'
+             3220  LOAD_NAME                dict
+             3222  LOAD_CONST               None
+             3224  LOAD_CONST               False
+         3226_3228  LOAD_CONST               ('fill_value', 'hardmask')
+             3230  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+         3232_3234  LOAD_CONST               ('params',)
+             3236  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+         3238_3240  STORE_NAME               zeros
+
+ L.8141      3242  LOAD_NAME                np
+         3244_3246  LOAD_ATTR                zeros_like
+         3248_3250  STORE_NAME               zeros_like
+
+ L.8144  3252_3254  LOAD_CONST               (None,)
+         3256_3258  LOAD_CODE                <code_object append>
+         3260_3262  LOAD_STR                 'append'
+             3264  MAKE_FUNCTION_1          'default'
+         3266_3268  STORE_NAME               append
+
+Parse error at or near `CALL_FINALLY' instruction at offset 244
+
+Instruction context:
+   
+ L.  46       240  BUILD_LIST_0          0 
+                 242  LOAD_CONST               ('MAError', 'MaskError', 'MaskType', 'MaskedArray', 'abs', 'absolute', 'add', 'all', 'allclose', 'allequal', 'alltrue', 'amax', 'amin', 'angle', 'anom', 'anomalies', 'any', 'append', 'arange', 'arccos', 'arccosh', 'arcsin', 'arcsinh', 'arctan', 'arctan2', 'arctanh', 'argmax', 'argmin', 'argsort', 'around', 'array', 'asanyarray', 'asarray', 'bitwise_and', 'bitwise_or', 'bitwise_xor', 'bool_', 'ceil', 'choose', 'clip', 'common_fill_value', 'compress', 'compressed', 'concatenate', 'conjugate', 'convolve', 'copy', 'correlate', 'cos', 'cosh', 'count', 'cumprod', 'cumsum', 'default_fill_value', 'diag', 'diagonal', 'diff', 'divide', 'empty', 'empty_like', 'equal', 'exp', 'expand_dims', 'fabs', 'filled', 'fix_invalid', 'flatten_mask', 'flatten_structured_array', 'floor', 'floor_divide', 'fmod', 'frombuffer', 'fromflex', 'fromfunction', 'getdata', 'getmask', 'getmaskarray', 'greater', 'greater_equal', 'harden_mask', 'hypot', 'identity', 'ids', 'indices', 'inner', 'innerproduct', 'isMA', 'isMaskedArray', 'is_mask', 'is_masked', 'isarray', 'left_shift', 'less', 'less_equal', 'log', 'log10', 'log2', 'logical_and', 'logical_not', 'logical_or', 'logical_xor', 'make_mask', 'make_mask_descr', 'make_mask_none', 'mask_or', 'masked', 'masked_array', 'masked_equal', 'masked_greater', 'masked_greater_equal', 'masked_inside', 'masked_invalid', 'masked_less', 'masked_less_equal', 'masked_not_equal', 'masked_object', 'masked_outside', 'masked_print_option', 'masked_singleton', 'masked_values', 'masked_where', 'max', 'maximum', 'maximum_fill_value', 'mean', 'min', 'minimum', 'minimum_fill_value', 'mod', 'multiply', 'mvoid', 'ndim', 'negative', 'nomask', 'nonzero', 'not_equal', 'ones', 'outer', 'outerproduct', 'power', 'prod', 'product', 'ptp', 'put', 'putmask', 'ravel', 'remainder', 'repeat', 'reshape', 'resize', 'right_shift', 'round', 'round_', 'set_fill_value', 'shape', 'sin', 'sinh', 'size', 'soften_mask', 'sometrue', 'sort', 'sqrt', 'squeeze', 'std', 'subtract', 'sum', 'swapaxes', 'take', 'tan', 'tanh', 'trace', 'transpose', 'true_divide', 'var', 'where', 'zeros')
+->               244  CALL_FINALLY        247  'to 247'
+                 246  STORE_NAME               __all__
+
+test/4371.pyc -- 
+# decompile failed

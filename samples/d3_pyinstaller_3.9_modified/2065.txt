@@ -1,0 +1,30 @@
+Instruction context:
+   
+ L.  45        18  BUILD_LIST_0          0 
+                  20  LOAD_CONST               ((16, 16), (24, 24), (32, 32), (48, 48), (64, 64), (128, 128), (256, 256))
+->                22  CALL_FINALLY         25  'to 25'
+Instruction context:
+   
+ L. 172        18  LOAD_FAST                'size'
+                  20  LOAD_FAST                'h'
+                  22  LOAD_STR                 'dim'
+                  24  BINARY_SUBSCR    
+                  26  COMPARE_OP               ==
+                  28  POP_JUMP_IF_FALSE_BACK    10  'to 10'
+                  30  LOAD_FAST                'bpp'
+                  32  LOAD_CONST               False
+->                34  <117>                 0  ''
+                  36  POP_JUMP_IF_TRUE     50  'to 50'
+                  38  LOAD_FAST                'bpp'
+                  40  LOAD_FAST                'h'
+                  42  LOAD_STR                 'color_depth'
+                  44  BINARY_SUBSCR    
+                  46  COMPARE_OP               ==
+                  48  POP_JUMP_IF_FALSE_BACK    10  'to 10'
+                50_0  COME_FROM            36  '36'
+
+test/2065.pyc -- 
+# decompile failed
+
+# file test/2065.pyc
+# Deparsing stopped due to parse error

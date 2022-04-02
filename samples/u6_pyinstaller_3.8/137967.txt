@@ -1,0 +1,24 @@
+Instruction context:
+   
+ L.  67        50  POP_EXCEPT       
+->                52  LOAD_CONST               False
+                  54  RETURN_VALUE     
+                56_0  COME_FROM            32  '32'
+                  56  END_FINALLY      
+                58_0  COME_FROM            18  '18'
+Instruction context:
+   
+ L. 230       206  POP_EXCEPT       
+->               208  POP_BLOCK        
+             210_212  BREAK_LOOP          280  'to 280'
+                 214  POP_EXCEPT       
+                 216  JUMP_FORWARD        230  'to 230'
+               218_0  COME_FROM           188  '188'
+                 218  END_FINALLY      
+               220_0  COME_FROM           180  '180'
+
+../test/137967.pyc -- 
+# decompile failed
+
+# file ../test/137967.pyc
+# Deparsing stopped due to parse error

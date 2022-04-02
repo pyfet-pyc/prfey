@@ -1,0 +1,194 @@
+
+# file test/101662.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\ndyld emulation\n'
+                2  STORE_NAME               __doc__
+
+ L.   5         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.   6        12  LOAD_CONST               0
+               14  LOAD_CONST               ('framework_info',)
+               16  IMPORT_NAME_ATTR         ctypes.macholib.framework
+               18  IMPORT_FROM              framework_info
+               20  STORE_NAME               framework_info
+               22  POP_TOP          
+
+ L.   7        24  LOAD_CONST               0
+               26  LOAD_CONST               ('dylib_info',)
+               28  IMPORT_NAME_ATTR         ctypes.macholib.dylib
+               30  IMPORT_FROM              dylib_info
+               32  STORE_NAME               dylib_info
+               34  POP_TOP          
+
+ L.   8        36  LOAD_CONST               0
+               38  LOAD_CONST               ('*',)
+               40  IMPORT_NAME              itertools
+               42  IMPORT_STAR      
+
+ L.   9        44  SETUP_FINALLY        62  'to 62'
+
+ L.  10        46  LOAD_CONST               0
+               48  LOAD_CONST               ('_dyld_shared_cache_contains_path',)
+               50  IMPORT_NAME              _ctypes
+               52  IMPORT_FROM              _dyld_shared_cache_contains_path
+               54  STORE_NAME               _dyld_shared_cache_contains_path
+               56  POP_TOP          
+               58  POP_BLOCK        
+               60  JUMP_FORWARD         88  'to 88'
+             62_0  COME_FROM_FINALLY    44  '44'
+
+ L.  11        62  DUP_TOP          
+               64  LOAD_NAME                ImportError
+               66  <121>                86  ''
+               68  POP_TOP          
+               70  POP_TOP          
+               72  POP_TOP          
+
+ L.  12        74  LOAD_CODE                <code_object _dyld_shared_cache_contains_path>
+               76  LOAD_STR                 '_dyld_shared_cache_contains_path'
+               78  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               80  STORE_NAME               _dyld_shared_cache_contains_path
+               82  POP_EXCEPT       
+               84  JUMP_FORWARD         88  'to 88'
+               86  <48>             
+             88_0  COME_FROM            84  '84'
+             88_1  COME_FROM            60  '60'
+
+ L.  15        88  BUILD_LIST_0          0 
+               90  LOAD_CONST               ('dyld_find', 'framework_find', 'framework_info', 'dylib_info')
+               92  CALL_FINALLY         95  'to 95'
+               94  STORE_NAME               __all__
+
+ L.  23        96  LOAD_NAME                os
+               98  LOAD_ATTR                path
+              100  LOAD_METHOD              expanduser
+              102  LOAD_STR                 '~/Library/Frameworks'
+              104  CALL_METHOD_1         1  ''
+
+ L.  24       106  LOAD_STR                 '/Library/Frameworks'
+
+ L.  25       108  LOAD_STR                 '/Network/Library/Frameworks'
+
+ L.  26       110  LOAD_STR                 '/System/Library/Frameworks'
+
+ L.  22       112  BUILD_LIST_4          4 
+              114  STORE_NAME               DEFAULT_FRAMEWORK_FALLBACK
+
+ L.  30       116  LOAD_NAME                os
+              118  LOAD_ATTR                path
+              120  LOAD_METHOD              expanduser
+              122  LOAD_STR                 '~/lib'
+              124  CALL_METHOD_1         1  ''
+
+ L.  31       126  LOAD_STR                 '/usr/local/lib'
+
+ L.  32       128  LOAD_STR                 '/lib'
+
+ L.  33       130  LOAD_STR                 '/usr/lib'
+
+ L.  29       132  BUILD_LIST_4          4 
+              134  STORE_NAME               DEFAULT_LIBRARY_FALLBACK
+
+ L.  36       136  LOAD_CODE                <code_object dyld_env>
+              138  LOAD_STR                 'dyld_env'
+              140  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              142  STORE_NAME               dyld_env
+
+ L.  44       144  LOAD_CONST               (None,)
+              146  LOAD_CODE                <code_object dyld_image_suffix>
+              148  LOAD_STR                 'dyld_image_suffix'
+              150  MAKE_FUNCTION_1          'default'
+              152  STORE_NAME               dyld_image_suffix
+
+ L.  49       154  LOAD_CONST               (None,)
+              156  LOAD_CODE                <code_object dyld_framework_path>
+              158  LOAD_STR                 'dyld_framework_path'
+              160  MAKE_FUNCTION_1          'default'
+              162  STORE_NAME               dyld_framework_path
+
+ L.  52       164  LOAD_CONST               (None,)
+              166  LOAD_CODE                <code_object dyld_library_path>
+              168  LOAD_STR                 'dyld_library_path'
+              170  MAKE_FUNCTION_1          'default'
+              172  STORE_NAME               dyld_library_path
+
+ L.  55       174  LOAD_CONST               (None,)
+              176  LOAD_CODE                <code_object dyld_fallback_framework_path>
+              178  LOAD_STR                 'dyld_fallback_framework_path'
+              180  MAKE_FUNCTION_1          'default'
+              182  STORE_NAME               dyld_fallback_framework_path
+
+ L.  58       184  LOAD_CONST               (None,)
+              186  LOAD_CODE                <code_object dyld_fallback_library_path>
+              188  LOAD_STR                 'dyld_fallback_library_path'
+              190  MAKE_FUNCTION_1          'default'
+              192  STORE_NAME               dyld_fallback_library_path
+
+ L.  61       194  LOAD_CONST               (None,)
+              196  LOAD_CODE                <code_object dyld_image_suffix_search>
+              198  LOAD_STR                 'dyld_image_suffix_search'
+              200  MAKE_FUNCTION_1          'default'
+              202  STORE_NAME               dyld_image_suffix_search
+
+ L.  75       204  LOAD_CONST               (None,)
+              206  LOAD_CODE                <code_object dyld_override_search>
+              208  LOAD_STR                 'dyld_override_search'
+              210  MAKE_FUNCTION_1          'default'
+              212  STORE_NAME               dyld_override_search
+
+ L.  92       214  LOAD_CONST               (None,)
+              216  LOAD_CODE                <code_object dyld_executable_path_search>
+              218  LOAD_STR                 'dyld_executable_path_search'
+              220  MAKE_FUNCTION_1          'default'
+              222  STORE_NAME               dyld_executable_path_search
+
+ L.  99       224  LOAD_CONST               (None,)
+              226  LOAD_CODE                <code_object dyld_default_search>
+              228  LOAD_STR                 'dyld_default_search'
+              230  MAKE_FUNCTION_1          'default'
+              232  STORE_NAME               dyld_default_search
+
+ L. 121       234  LOAD_CONST               (None, None)
+              236  LOAD_CODE                <code_object dyld_find>
+              238  LOAD_STR                 'dyld_find'
+              240  MAKE_FUNCTION_1          'default'
+              242  STORE_NAME               dyld_find
+
+ L. 141       244  LOAD_CONST               (None, None)
+              246  LOAD_CODE                <code_object framework_find>
+              248  LOAD_STR                 'framework_find'
+              250  MAKE_FUNCTION_1          'default'
+              252  STORE_NAME               framework_find
+
+ L. 167       254  LOAD_CODE                <code_object test_dyld_find>
+              256  LOAD_STR                 'test_dyld_find'
+              258  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              260  STORE_NAME               test_dyld_find
+
+ L. 172       262  LOAD_NAME                __name__
+              264  LOAD_STR                 '__main__'
+              266  COMPARE_OP               ==
+          268_270  POP_JUMP_IF_FALSE   278  'to 278'
+
+ L. 173       272  LOAD_NAME                test_dyld_find
+              274  CALL_FUNCTION_0       0  ''
+              276  POP_TOP          
+            278_0  COME_FROM           268  '268'
+
+Parse error at or near `<121>' instruction at offset 66
+
+Instruction context:
+   
+ L.  11        62  DUP_TOP          
+                  64  LOAD_NAME                ImportError
+->                66  <121>                86  ''
+                  68  POP_TOP          
+                  70  POP_TOP          
+                  72  POP_TOP          
+
+test/101662.pyc -- 
+# decompile failed

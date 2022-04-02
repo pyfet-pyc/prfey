@@ -1,0 +1,105 @@
+Instruction context:
+   
+ L.   8        40  LOAD_STR                 '__pypy__'
+                  42  LOAD_NAME                sys
+                  44  LOAD_ATTR                builtin_module_names
+->                46  <118>                 0  ''
+                  48  STORE_NAME               is_pypy
+
+test/134949.pyc -- 
+# decompile failed
+
+# file test/134949.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              os
+               14  STORE_NAME               os
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              re
+               22  STORE_NAME               re
+
+ L.   4        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              importlib
+               30  STORE_NAME               importlib
+
+ L.   5        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              warnings
+               38  STORE_NAME               warnings
+
+ L.   8        40  LOAD_STR                 '__pypy__'
+               42  LOAD_NAME                sys
+               44  LOAD_ATTR                builtin_module_names
+               46  <118>                 0  ''
+               48  STORE_NAME               is_pypy
+
+ L.  11        50  LOAD_NAME                warnings
+               52  LOAD_METHOD              filterwarnings
+               54  LOAD_STR                 'ignore'
+
+ L.  12        56  LOAD_STR                 '.+ distutils\\b.+ deprecated'
+
+ L.  13        58  LOAD_NAME                DeprecationWarning
+
+ L.  11        60  CALL_METHOD_3         3  ''
+               62  POP_TOP          
+
+ L.  16        64  LOAD_CODE                <code_object warn_distutils_present>
+               66  LOAD_STR                 'warn_distutils_present'
+               68  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               70  STORE_NAME               warn_distutils_present
+
+ L.  32        72  LOAD_CODE                <code_object clear_distutils>
+               74  LOAD_STR                 'clear_distutils'
+               76  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               78  STORE_NAME               clear_distutils
+
+ L.  41        80  LOAD_CODE                <code_object enabled>
+               82  LOAD_STR                 'enabled'
+               84  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               86  STORE_NAME               enabled
+
+ L.  49        88  LOAD_CODE                <code_object ensure_local_distutils>
+               90  LOAD_STR                 'ensure_local_distutils'
+               92  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               94  STORE_NAME               ensure_local_distutils
+
+ L.  60        96  LOAD_CODE                <code_object do_override>
+               98  LOAD_STR                 'do_override'
+              100  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              102  STORE_NAME               do_override
+
+ L.  72       104  LOAD_BUILD_CLASS 
+              106  LOAD_CODE                <code_object DistutilsMetaFinder>
+              108  LOAD_STR                 'DistutilsMetaFinder'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  LOAD_STR                 'DistutilsMetaFinder'
+              114  CALL_FUNCTION_2       2  ''
+              116  STORE_NAME               DistutilsMetaFinder
+
+ L. 117       118  LOAD_NAME                DistutilsMetaFinder
+              120  CALL_FUNCTION_0       0  ''
+              122  STORE_NAME               DISTUTILS_FINDER
+
+ L. 120       124  LOAD_CODE                <code_object add_shim>
+              126  LOAD_STR                 'add_shim'
+              128  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              130  STORE_NAME               add_shim
+
+ L. 124       132  LOAD_CODE                <code_object remove_shim>
+              134  LOAD_STR                 'remove_shim'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  STORE_NAME               remove_shim
+
+Parse error at or near `<118>' instruction at offset 46
+

@@ -1,0 +1,214 @@
+
+# file test/101225.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_STR                 "Quoted-printable content transfer encoding per RFCs 2045-2047.\n\nThis module handles the content transfer encoding method defined in RFC 2045\nto encode US ASCII-like 8-bit data called `quoted-printable'.  It is used to\nsafely encode text that is in a character set similar to the 7-bit US ASCII\ncharacter set, but that includes some 8-bit characters that are normally not\nallowed in email bodies or headers.\n\nQuoted-printable is very space-inefficient for encoding binary files; use the\nemail.base64mime module for that instead.\n\nThis module provides an interface to encode and decode both headers and bodies\nwith quoted-printable encoding.\n\nRFC 2045 defines a method for including character set information in an\n`encoded-word' in a header.  This method is commonly used for 8-bit real names\nin To:/From:/Cc: etc. fields, as well as Subject: lines.\n\nThis module does not do the line wrapping or end-of-line character\nconversion necessary for proper internationalized headers; it only\ndoes dumb encoding and decoding.  To deal with the various line\nwrapping issues, use the email.header module.\n"
+                2  STORE_NAME               __doc__
+
+ L.  29         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('body_decode', 'body_encode', 'body_length', 'decode', 'decodestring', 'header_decode', 'header_encode', 'header_length', 'quote', 'unquote')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  42        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              re
+               18  STORE_NAME               re
+
+ L.  44        20  LOAD_CONST               0
+               22  LOAD_CONST               ('ascii_letters', 'digits', 'hexdigits')
+               24  IMPORT_NAME              string
+               26  IMPORT_FROM              ascii_letters
+               28  STORE_NAME               ascii_letters
+               30  IMPORT_FROM              digits
+               32  STORE_NAME               digits
+               34  IMPORT_FROM              hexdigits
+               36  STORE_NAME               hexdigits
+               38  POP_TOP          
+
+ L.  46        40  LOAD_STR                 '\r\n'
+               42  STORE_NAME               CRLF
+
+ L.  47        44  LOAD_STR                 '\n'
+               46  STORE_NAME               NL
+
+ L.  48        48  LOAD_STR                 ''
+               50  STORE_NAME               EMPTYSTRING
+
+ L.  55        52  LOAD_LISTCOMP            '<code_object <listcomp>>'
+               54  LOAD_STR                 '<listcomp>'
+               56  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               58  LOAD_NAME                range
+               60  LOAD_CONST               256
+               62  CALL_FUNCTION_1       1  ''
+               64  GET_ITER         
+               66  CALL_FUNCTION_1       1  ''
+               68  STORE_NAME               _QUOPRI_MAP
+
+ L.  56        70  LOAD_NAME                _QUOPRI_MAP
+               72  LOAD_CONST               None
+               74  LOAD_CONST               None
+               76  BUILD_SLICE_2         2 
+               78  BINARY_SUBSCR    
+               80  STORE_NAME               _QUOPRI_HEADER_MAP
+
+ L.  57        82  LOAD_NAME                _QUOPRI_MAP
+               84  LOAD_CONST               None
+               86  LOAD_CONST               None
+               88  BUILD_SLICE_2         2 
+               90  BINARY_SUBSCR    
+               92  STORE_NAME               _QUOPRI_BODY_MAP
+
+ L.  60        94  LOAD_CONST               b'-!*+/'
+               96  LOAD_NAME                ascii_letters
+               98  LOAD_METHOD              encode
+              100  LOAD_STR                 'ascii'
+              102  CALL_METHOD_1         1  ''
+              104  BINARY_ADD       
+              106  LOAD_NAME                digits
+              108  LOAD_METHOD              encode
+              110  LOAD_STR                 'ascii'
+              112  CALL_METHOD_1         1  ''
+              114  BINARY_ADD       
+              116  GET_ITER         
+            118_0  COME_FROM           134  '134'
+              118  FOR_ITER            136  'to 136'
+              120  STORE_NAME               c
+
+ L.  61       122  LOAD_NAME                chr
+              124  LOAD_NAME                c
+              126  CALL_FUNCTION_1       1  ''
+              128  LOAD_NAME                _QUOPRI_HEADER_MAP
+              130  LOAD_NAME                c
+              132  STORE_SUBSCR     
+              134  JUMP_BACK           118  'to 118'
+            136_0  COME_FROM           118  '118'
+
+ L.  63       136  LOAD_STR                 '_'
+              138  LOAD_NAME                _QUOPRI_HEADER_MAP
+              140  LOAD_NAME                ord
+              142  LOAD_STR                 ' '
+              144  CALL_FUNCTION_1       1  ''
+              146  STORE_SUBSCR     
+
+ L.  66       148  LOAD_CONST               b' !"#$%&\'()*+,-./0123456789:;<>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~\t'
+              150  GET_ITER         
+            152_0  COME_FROM           168  '168'
+              152  FOR_ITER            170  'to 170'
+              154  STORE_NAME               c
+
+ L.  69       156  LOAD_NAME                chr
+              158  LOAD_NAME                c
+              160  CALL_FUNCTION_1       1  ''
+              162  LOAD_NAME                _QUOPRI_BODY_MAP
+              164  LOAD_NAME                c
+              166  STORE_SUBSCR     
+              168  JUMP_BACK           152  'to 152'
+            170_0  COME_FROM           152  '152'
+
+ L.  74       170  LOAD_CODE                <code_object header_check>
+              172  LOAD_STR                 'header_check'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  STORE_NAME               header_check
+
+ L.  79       178  LOAD_CODE                <code_object body_check>
+              180  LOAD_STR                 'body_check'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  STORE_NAME               body_check
+
+ L.  84       186  LOAD_CODE                <code_object header_length>
+              188  LOAD_STR                 'header_length'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  STORE_NAME               header_length
+
+ L.  97       194  LOAD_CODE                <code_object body_length>
+              196  LOAD_STR                 'body_length'
+              198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              200  STORE_NAME               body_length
+
+ L. 107       202  LOAD_CONST               ('',)
+              204  LOAD_CODE                <code_object _max_append>
+              206  LOAD_STR                 '_max_append'
+              208  MAKE_FUNCTION_1          'default'
+              210  STORE_NAME               _max_append
+
+ L. 118       212  LOAD_CODE                <code_object unquote>
+              214  LOAD_STR                 'unquote'
+              216  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              218  STORE_NAME               unquote
+
+ L. 123       220  LOAD_CODE                <code_object quote>
+              222  LOAD_STR                 'quote'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  STORE_NAME               quote
+
+ L. 127       228  LOAD_CONST               ('iso-8859-1',)
+              230  LOAD_CODE                <code_object header_encode>
+              232  LOAD_STR                 'header_encode'
+              234  MAKE_FUNCTION_1          'default'
+              236  STORE_NAME               header_encode
+
+ L. 148       238  LOAD_NAME                _QUOPRI_BODY_MAP
+              240  LOAD_CONST               None
+              242  LOAD_CONST               None
+              244  BUILD_SLICE_2         2 
+              246  BINARY_SUBSCR    
+              248  STORE_NAME               _QUOPRI_BODY_ENCODE_MAP
+
+ L. 149       250  LOAD_CONST               b'\r\n'
+              252  GET_ITER         
+            254_0  COME_FROM           270  '270'
+              254  FOR_ITER            274  'to 274'
+              256  STORE_NAME               c
+
+ L. 150       258  LOAD_NAME                chr
+              260  LOAD_NAME                c
+              262  CALL_FUNCTION_1       1  ''
+              264  LOAD_NAME                _QUOPRI_BODY_ENCODE_MAP
+              266  LOAD_NAME                c
+              268  STORE_SUBSCR     
+          270_272  JUMP_BACK           254  'to 254'
+            274_0  COME_FROM           254  '254'
+
+ L. 152       274  LOAD_CONST               76
+              276  LOAD_NAME                NL
+              278  BUILD_TUPLE_2         2 
+              280  LOAD_CODE                <code_object body_encode>
+              282  LOAD_STR                 'body_encode'
+              284  MAKE_FUNCTION_1          'default'
+              286  STORE_NAME               body_encode
+
+ L. 231       288  LOAD_NAME                NL
+              290  BUILD_TUPLE_1         1 
+              292  LOAD_CODE                <code_object decode>
+              294  LOAD_STR                 'decode'
+              296  MAKE_FUNCTION_1          'default'
+              298  STORE_NAME               decode
+
+ L. 279       300  LOAD_NAME                decode
+              302  STORE_NAME               body_decode
+
+ L. 280       304  LOAD_NAME                decode
+              306  STORE_NAME               decodestring
+
+ L. 284       308  LOAD_CODE                <code_object _unquote_match>
+              310  LOAD_STR                 '_unquote_match'
+              312  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              314  STORE_NAME               _unquote_match
+
+ L. 291       316  LOAD_CODE                <code_object header_decode>
+              318  LOAD_STR                 'header_decode'
+              320  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              322  STORE_NAME               header_decode
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L.  29         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('body_decode', 'body_encode', 'body_length', 'decode', 'decodestring', 'header_decode', 'header_encode', 'header_length', 'quote', 'unquote')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101225.pyc -- 
+# decompile failed

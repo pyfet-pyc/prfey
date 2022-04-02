@@ -1,0 +1,58 @@
+Instruction context:
+   
+ L. 115        62  POP_BLOCK        
+                  64  POP_TOP          
+->                66  LOAD_CONST               None
+                  68  RETURN_VALUE     
+                70_0  COME_FROM_FINALLY    10  '10'
+Instruction context:
+   
+ L. 155         4  LOAD_FAST                'fullname'
+                   6  LOAD_FAST                'self'
+                   8  LOAD_ATTR                toc
+->                10  <118>                 0  ''
+                  12  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L. 201         4  LOAD_FAST                'entry_name'
+                   6  LOAD_CONST               None
+->                 8  <117>                 0  ''
+                  10  POP_JUMP_IF_FALSE    16  'to 16'
+Instruction context:
+   
+ L. 318        20  DUP_TOP          
+                  22  LOAD_GLOBAL              Exception
+->                24  <121>                68  ''
+                  26  POP_TOP          
+                  28  STORE_FAST               'e'
+                  30  POP_TOP          
+                  32  SETUP_FINALLY        60  'to 60'
+Instruction context:
+   
+ L. 411         4  LOAD_FAST                'fullname'
+                   6  LOAD_FAST                'self'
+                   8  LOAD_ATTR                toc
+->                10  <118>                 0  ''
+                  12  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L. 523        18  LOAD_GLOBAL              hasattr
+                  20  LOAD_FAST                'module'
+                  22  LOAD_STR                 '__file__'
+                  24  CALL_FUNCTION_2       2  ''
+                  26  POP_JUMP_IF_TRUE     32  'to 32'
+->                28  <74>             
+                  30  RAISE_VARARGS_1       1  'exception instance'
+                32_0  COME_FROM            26  '26'
+Instruction context:
+   
+ L. 583       112  LOAD_FAST                'item'
+                 114  LOAD_FAST                'pathFinders'
+->               116  <118>                 1  ''
+                 118  POP_JUMP_IF_FALSE    80  'to 80'
+
+test/103651.pyc -- 
+# decompile failed
+
+# file test/103651.pyc
+# Deparsing stopped due to parse error

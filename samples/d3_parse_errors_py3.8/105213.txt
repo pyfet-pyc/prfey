@@ -1,0 +1,20 @@
+Instruction context:
+   
+ L. 331       186  LOAD_FAST                'key_code'
+                 188  LOAD_FAST                'shift_state'
+                 190  BUILD_TUPLE_2         2 
+                 192  LOAD_FAST                'mapping'
+                 194  LOAD_FAST                'keysym'
+                 196  STORE_SUBSCR     
+                 198  JUMP_BACK           118  'to 118'
+               200_0  COME_FROM           118  '118'
+->               200  JUMP_BACK           100  'to 100'
+               202_0  COME_FROM           100  '100'
+                 202  JUMP_BACK            60  'to 60'
+               204_0  COME_FROM            60  '60'
+
+../test/105213.pyc -- 
+# decompile failed
+
+# file ../test/105213.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,97 @@
+Instruction context:
+   
+ L.  11        78  BUILD_LIST_0          0 
+                  80  LOAD_CONST               ('r', 'c', 'r+', 'w+')
+->                82  CALL_FINALLY         85  'to 85'
+                  84  STORE_NAME               valid_filemodes
+
+test/162612.pyc -- 
+# decompile failed
+
+# file test/162612.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('nullcontext',)
+                4  IMPORT_NAME              contextlib
+                6  IMPORT_FROM              nullcontext
+                8  STORE_NAME               nullcontext
+               10  POP_TOP          
+
+ L.   3        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              numpy
+               18  STORE_NAME               np
+
+ L.   4        20  LOAD_CONST               1
+               22  LOAD_CONST               ('uint8', 'ndarray', 'dtype')
+               24  IMPORT_NAME              numeric
+               26  IMPORT_FROM              uint8
+               28  STORE_NAME               uint8
+               30  IMPORT_FROM              ndarray
+               32  STORE_NAME               ndarray
+               34  IMPORT_FROM              dtype
+               36  STORE_NAME               dtype
+               38  POP_TOP          
+
+ L.   5        40  LOAD_CONST               0
+               42  LOAD_CONST               ('os_fspath', 'is_pathlib_path')
+               44  IMPORT_NAME_ATTR         numpy.compat
+               46  IMPORT_FROM              os_fspath
+               48  STORE_NAME               os_fspath
+               50  IMPORT_FROM              is_pathlib_path
+               52  STORE_NAME               is_pathlib_path
+               54  POP_TOP          
+
+ L.   6        56  LOAD_CONST               0
+               58  LOAD_CONST               ('set_module',)
+               60  IMPORT_NAME_ATTR         numpy.core.overrides
+               62  IMPORT_FROM              set_module
+               64  STORE_NAME               set_module
+               66  POP_TOP          
+
+ L.   8        68  LOAD_STR                 'memmap'
+               70  BUILD_LIST_1          1 
+               72  STORE_NAME               __all__
+
+ L.  10        74  LOAD_NAME                dtype
+               76  STORE_NAME               dtypedescr
+
+ L.  11        78  BUILD_LIST_0          0 
+               80  LOAD_CONST               ('r', 'c', 'r+', 'w+')
+               82  CALL_FINALLY         85  'to 85'
+               84  STORE_NAME               valid_filemodes
+
+ L.  12        86  LOAD_STR                 'r+'
+               88  LOAD_STR                 'w+'
+               90  BUILD_LIST_2          2 
+               92  STORE_NAME               writeable_filemodes
+
+ L.  15        94  LOAD_STR                 'r'
+
+ L.  16        96  LOAD_STR                 'c'
+
+ L.  17        98  LOAD_STR                 'r+'
+
+ L.  18       100  LOAD_STR                 'w+'
+
+ L.  14       102  LOAD_CONST               ('readonly', 'copyonwrite', 'readwrite', 'write')
+              104  BUILD_CONST_KEY_MAP_4     4 
+              106  STORE_NAME               mode_equivalents
+
+ L.  22       108  LOAD_NAME                set_module
+              110  LOAD_STR                 'numpy'
+              112  CALL_FUNCTION_1       1  ''
+
+ L.  23       114  LOAD_BUILD_CLASS 
+              116  LOAD_CODE                <code_object memmap>
+              118  LOAD_STR                 'memmap'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  LOAD_STR                 'memmap'
+              124  LOAD_NAME                ndarray
+              126  CALL_FUNCTION_3       3  ''
+              128  CALL_FUNCTION_1       1  ''
+              130  STORE_NAME               memmap
+
+Parse error at or near `CALL_FINALLY' instruction at offset 82
+

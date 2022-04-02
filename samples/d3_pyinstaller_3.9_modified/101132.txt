@@ -1,0 +1,171 @@
+Instruction context:
+   
+ L. 419       216  DUP_TOP          
+                 218  LOAD_NAME                ImportError
+->               220  <121>               232  ''
+                 222  POP_TOP          
+                 224  POP_TOP          
+                 226  POP_TOP          
+
+test/101132.pyc -- 
+# decompile failed
+
+# file test/101132.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'A Future class similar to the one in PEP 3148.'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               ('Future', 'wrap_future', 'isfuture')
+                6  STORE_NAME               __all__
+
+ L.   7         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME_ATTR         concurrent.futures
+               14  STORE_NAME               concurrent
+
+ L.   8        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              contextvars
+               22  STORE_NAME               contextvars
+
+ L.   9        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              logging
+               30  STORE_NAME               logging
+
+ L.  10        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              sys
+               38  STORE_NAME               sys
+
+ L.  12        40  LOAD_CONST               1
+               42  LOAD_CONST               ('base_futures',)
+               44  IMPORT_NAME              
+               46  IMPORT_FROM              base_futures
+               48  STORE_NAME               base_futures
+               50  POP_TOP          
+
+ L.  13        52  LOAD_CONST               1
+               54  LOAD_CONST               ('events',)
+               56  IMPORT_NAME              
+               58  IMPORT_FROM              events
+               60  STORE_NAME               events
+               62  POP_TOP          
+
+ L.  14        64  LOAD_CONST               1
+               66  LOAD_CONST               ('exceptions',)
+               68  IMPORT_NAME              
+               70  IMPORT_FROM              exceptions
+               72  STORE_NAME               exceptions
+               74  POP_TOP          
+
+ L.  15        76  LOAD_CONST               1
+               78  LOAD_CONST               ('format_helpers',)
+               80  IMPORT_NAME              
+               82  IMPORT_FROM              format_helpers
+               84  STORE_NAME               format_helpers
+               86  POP_TOP          
+
+ L.  18        88  LOAD_NAME                base_futures
+               90  LOAD_ATTR                isfuture
+               92  STORE_NAME               isfuture
+
+ L.  21        94  LOAD_NAME                base_futures
+               96  LOAD_ATTR                _PENDING
+               98  STORE_NAME               _PENDING
+
+ L.  22       100  LOAD_NAME                base_futures
+              102  LOAD_ATTR                _CANCELLED
+              104  STORE_NAME               _CANCELLED
+
+ L.  23       106  LOAD_NAME                base_futures
+              108  LOAD_ATTR                _FINISHED
+              110  STORE_NAME               _FINISHED
+
+ L.  26       112  LOAD_NAME                logging
+              114  LOAD_ATTR                DEBUG
+              116  LOAD_CONST               1
+              118  BINARY_SUBTRACT  
+              120  STORE_NAME               STACK_DEBUG
+
+ L.  29       122  LOAD_BUILD_CLASS 
+              124  LOAD_CODE                <code_object Future>
+              126  LOAD_STR                 'Future'
+              128  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              130  LOAD_STR                 'Future'
+              132  CALL_FUNCTION_2       2  ''
+              134  STORE_NAME               Future
+
+ L. 293       136  LOAD_NAME                Future
+              138  STORE_NAME               _PyFuture
+
+ L. 296       140  LOAD_CODE                <code_object _get_loop>
+              142  LOAD_STR                 '_get_loop'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  STORE_NAME               _get_loop
+
+ L. 308       148  LOAD_CODE                <code_object _set_result_unless_cancelled>
+              150  LOAD_STR                 '_set_result_unless_cancelled'
+              152  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              154  STORE_NAME               _set_result_unless_cancelled
+
+ L. 315       156  LOAD_CODE                <code_object _convert_future_exc>
+              158  LOAD_STR                 '_convert_future_exc'
+              160  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              162  STORE_NAME               _convert_future_exc
+
+ L. 327       164  LOAD_CODE                <code_object _set_concurrent_future_state>
+              166  LOAD_STR                 '_set_concurrent_future_state'
+              168  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              170  STORE_NAME               _set_concurrent_future_state
+
+ L. 342       172  LOAD_CODE                <code_object _copy_future_state>
+              174  LOAD_STR                 '_copy_future_state'
+              176  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              178  STORE_NAME               _copy_future_state
+
+ L. 362       180  LOAD_CODE                <code_object _chain_future>
+              182  LOAD_STR                 '_chain_future'
+              184  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              186  STORE_NAME               _chain_future
+
+ L. 404       188  LOAD_CONST               None
+              190  LOAD_CONST               ('loop',)
+              192  BUILD_CONST_KEY_MAP_1     1 
+              194  LOAD_CODE                <code_object wrap_future>
+              196  LOAD_STR                 'wrap_future'
+              198  MAKE_FUNCTION_2          'keyword-only'
+              200  STORE_NAME               wrap_future
+
+ L. 417       202  SETUP_FINALLY       216  'to 216'
+
+ L. 418       204  LOAD_CONST               0
+              206  LOAD_CONST               None
+              208  IMPORT_NAME              _asyncio
+              210  STORE_NAME               _asyncio
+              212  POP_BLOCK        
+              214  JUMP_FORWARD        234  'to 234'
+            216_0  COME_FROM_FINALLY   202  '202'
+
+ L. 419       216  DUP_TOP          
+              218  LOAD_NAME                ImportError
+              220  <121>               232  ''
+              222  POP_TOP          
+              224  POP_TOP          
+              226  POP_TOP          
+
+ L. 420       228  POP_EXCEPT       
+              230  JUMP_FORWARD        244  'to 244'
+              232  <48>             
+            234_0  COME_FROM           214  '214'
+
+ L. 423       234  LOAD_NAME                _asyncio
+              236  LOAD_ATTR                Future
+              238  DUP_TOP          
+              240  STORE_NAME               Future
+              242  STORE_NAME               _CFuture
+            244_0  COME_FROM           230  '230'
+
+Parse error at or near `<121>' instruction at offset 220
+

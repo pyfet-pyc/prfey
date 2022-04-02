@@ -1,0 +1,34 @@
+Instruction context:
+   
+ L. 344         8  LOAD_FAST                'x'
+                  10  LOAD_ATTR                token_type
+                  12  LOAD_CONST               ('mailbox', 'invalid-mailbox')
+->                14  <118>                 0  ''
+                  16  POP_JUMP_IF_FALSE     4  'to 4'
+
+test/182068.pyc -- 
+# decompile failed
+
+# file test/182068.pyc
+# --- This code section failed: ---
+
+ L. 343         0  BUILD_LIST_0          0 
+                2  LOAD_FAST                '.0'
+              4_0  COME_FROM            16  '16'
+                4  FOR_ITER             24  'to 24'
+                6  STORE_FAST               'x'
+
+ L. 344         8  LOAD_FAST                'x'
+               10  LOAD_ATTR                token_type
+               12  LOAD_CONST               ('mailbox', 'invalid-mailbox')
+               14  <118>                 0  ''
+               16  POP_JUMP_IF_FALSE     4  'to 4'
+
+ L. 343        18  LOAD_FAST                'x'
+               20  LIST_APPEND           2  ''
+               22  JUMP_BACK             4  'to 4'
+               24  RETURN_VALUE     
+               -1  RETURN_LAST      
+
+Parse error at or near `<118>' instruction at offset 14
+

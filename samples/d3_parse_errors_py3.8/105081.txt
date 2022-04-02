@@ -1,0 +1,27 @@
+Instruction context:
+   
+ L.  71        30  JUMP_FORWARD         34  'to 34'
+->                32  JUMP_BACK             0  'to 0'
+                34_0  COME_FROM            30  '30'
+Instruction context:
+   
+ L. 134        92  POP_EXCEPT       
+                  94  BREAK_LOOP           98  'to 98'
+                96_0  COME_FROM            84  '84'
+->                96  END_FINALLY      
+                98_0  COME_FROM            94  '94'
+                98_1  COME_FROM            76  '76'
+Instruction context:
+   
+ L. 172        92  POP_EXCEPT       
+                  94  BREAK_LOOP           98  'to 98'
+                96_0  COME_FROM            84  '84'
+->                96  END_FINALLY      
+                98_0  COME_FROM            94  '94'
+                98_1  COME_FROM            76  '76'
+
+../test/105081.pyc -- 
+# decompile failed
+
+# file ../test/105081.pyc
+# Deparsing stopped due to parse error

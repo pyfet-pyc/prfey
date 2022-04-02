@@ -1,0 +1,92 @@
+Instruction context:
+   
+ L.  10        28  BUILD_LIST_0          0 
+                  30  LOAD_CONST               ('asarray', 'asanyarray', 'ascontiguousarray', 'asfortranarray', 'require')
+->                32  CALL_FINALLY         35  'to 35'
+                  34  STORE_NAME               __all__
+
+test/1984.pyc -- 
+# decompile failed
+
+# file test/1984.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nFunctions in the ``as*array`` family that promote array-likes into arrays.\n\n`require` fits this category despite its name not matching this pattern.\n'
+                2  STORE_NAME               __doc__
+
+ L.   6         4  LOAD_CONST               1
+                6  LOAD_CONST               ('set_module',)
+                8  IMPORT_NAME              overrides
+               10  IMPORT_FROM              set_module
+               12  STORE_NAME               set_module
+               14  POP_TOP          
+
+ L.   7        16  LOAD_CONST               1
+               18  LOAD_CONST               ('array',)
+               20  IMPORT_NAME              multiarray
+               22  IMPORT_FROM              array
+               24  STORE_NAME               array
+               26  POP_TOP          
+
+ L.  10        28  BUILD_LIST_0          0 
+               30  LOAD_CONST               ('asarray', 'asanyarray', 'ascontiguousarray', 'asfortranarray', 'require')
+               32  CALL_FINALLY         35  'to 35'
+               34  STORE_NAME               __all__
+
+ L.  14        36  LOAD_NAME                set_module
+               38  LOAD_STR                 'numpy'
+               40  CALL_FUNCTION_1       1  ''
+
+ L.  15        42  LOAD_CONST               (None, None)
+               44  LOAD_CODE                <code_object asarray>
+               46  LOAD_STR                 'asarray'
+               48  MAKE_FUNCTION_1          'default'
+               50  CALL_FUNCTION_1       1  ''
+               52  STORE_NAME               asarray
+
+ L.  86        54  LOAD_NAME                set_module
+               56  LOAD_STR                 'numpy'
+               58  CALL_FUNCTION_1       1  ''
+
+ L.  87        60  LOAD_CONST               (None, None)
+               62  LOAD_CODE                <code_object asanyarray>
+               64  LOAD_STR                 'asanyarray'
+               66  MAKE_FUNCTION_1          'default'
+               68  CALL_FUNCTION_1       1  ''
+               70  STORE_NAME               asanyarray
+
+ L. 139        72  LOAD_NAME                set_module
+               74  LOAD_STR                 'numpy'
+               76  CALL_FUNCTION_1       1  ''
+
+ L. 140        78  LOAD_CONST               (None,)
+               80  LOAD_CODE                <code_object ascontiguousarray>
+               82  LOAD_STR                 'ascontiguousarray'
+               84  MAKE_FUNCTION_1          'default'
+               86  CALL_FUNCTION_1       1  ''
+               88  STORE_NAME               ascontiguousarray
+
+ L. 180        90  LOAD_NAME                set_module
+               92  LOAD_STR                 'numpy'
+               94  CALL_FUNCTION_1       1  ''
+
+ L. 181        96  LOAD_CONST               (None,)
+               98  LOAD_CODE                <code_object asfortranarray>
+              100  LOAD_STR                 'asfortranarray'
+              102  MAKE_FUNCTION_1          'default'
+              104  CALL_FUNCTION_1       1  ''
+              106  STORE_NAME               asfortranarray
+
+ L. 221       108  LOAD_NAME                set_module
+              110  LOAD_STR                 'numpy'
+              112  CALL_FUNCTION_1       1  ''
+
+ L. 222       114  LOAD_CONST               (None, None)
+              116  LOAD_CODE                <code_object require>
+              118  LOAD_STR                 'require'
+              120  MAKE_FUNCTION_1          'default'
+              122  CALL_FUNCTION_1       1  ''
+              124  STORE_NAME               require
+
+Parse error at or near `CALL_FINALLY' instruction at offset 32
+

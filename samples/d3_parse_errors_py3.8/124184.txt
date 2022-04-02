@@ -1,0 +1,26 @@
+Instruction context:
+-> 
+ L. 116        70  DUP_TOP          
+                  72  LOAD_GLOBAL              IOError
+                  74  COMPARE_OP               exception-match
+                  76  POP_JUMP_IF_FALSE    92  'to 92'
+                  78  POP_TOP          
+                  80  POP_TOP          
+                  82  POP_TOP          
+Instruction context:
+   
+ L. 302        26  LOAD_GLOBAL              ImportError
+                  28  LOAD_STR                 'Loader FrozenImporter cannot handle module '
+                  30  LOAD_FAST                'fullname'
+                  32  BINARY_ADD       
+                  34  CALL_FUNCTION_1       1  ''
+->                36  RAISE_VARARGS_1       1  'exception instance'
+                  38  POP_EXCEPT       
+                  40  JUMP_FORWARD         44  'to 44'
+                  42  END_FINALLY      
+
+../test/124184.pyc -- 
+# decompile failed
+
+# file ../test/124184.pyc
+# Deparsing stopped due to parse error

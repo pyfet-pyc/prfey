@@ -1,0 +1,46 @@
+Instruction context:
+   
+ L.  71        96  LOAD_GLOBAL              os
+                  98  LOAD_METHOD              system
+                 100  LOAD_FAST                'cmd'
+                 102  CALL_METHOD_1         1  ''
+                 104  POP_JUMP_IF_TRUE    124  'to 124'
+                 106  LOAD_FAST                'fp'
+                 108  LOAD_METHOD              read
+                 110  CALL_METHOD_0         0  ''
+                 112  LOAD_METHOD              decode
+                 114  LOAD_STR                 'utf-8'
+                 116  CALL_METHOD_1         1  ''
+                 118  LOAD_METHOD              strip
+                 120  CALL_METHOD_0         0  ''
+                 122  JUMP_FORWARD        126  'to 126'
+               124_0  COME_FROM           104  '104'
+                 124  LOAD_CONST               None
+               126_0  COME_FROM           122  '122'
+                 126  POP_BLOCK        
+->               128  ROT_TWO          
+                 130  BEGIN_FINALLY    
+                 132  WITH_CLEANUP_START
+                 134  WITH_CLEANUP_FINISH
+                 136  POP_FINALLY           0  ''
+                 138  RETURN_VALUE     
+               140_0  COME_FROM_WITH       78  '78'
+                 140  WITH_CLEANUP_START
+                 142  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 332       116  POP_EXCEPT       
+                 118  BREAK_LOOP          128  'to 128'
+                 120  POP_EXCEPT       
+                 122  JUMP_BACK            72  'to 72'
+               124_0  COME_FROM           108  '108'
+                 124  END_FINALLY      
+                 126  JUMP_BACK            72  'to 72'
+               128_0  COME_FROM_EXCEPT_CLAUSE   118  '118'
+->             128_1  COME_FROM_EXCEPT_CLAUSE    70  '70'
+
+../test/120693.pyc -- 
+# decompile failed
+
+# file ../test/120693.pyc
+# Deparsing stopped due to parse error

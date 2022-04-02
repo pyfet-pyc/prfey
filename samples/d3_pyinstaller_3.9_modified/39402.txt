@@ -1,0 +1,141 @@
+Instruction context:
+   
+ L.   9        44  BUILD_LIST_0          0 
+                  46  LOAD_CONST               ('glob', 'iglob', 'escape')
+->                48  CALL_FINALLY         51  'to 51'
+                  50  STORE_NAME               __all__
+
+test/39402.pyc -- 
+# decompile failed
+
+# file test/39402.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Filename globbing utility.'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              contextlib
+               10  STORE_NAME               contextlib
+
+ L.   4        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              os
+               18  STORE_NAME               os
+
+ L.   5        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              re
+               26  STORE_NAME               re
+
+ L.   6        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              fnmatch
+               34  STORE_NAME               fnmatch
+
+ L.   7        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              sys
+               42  STORE_NAME               sys
+
+ L.   9        44  BUILD_LIST_0          0 
+               46  LOAD_CONST               ('glob', 'iglob', 'escape')
+               48  CALL_FINALLY         51  'to 51'
+               50  STORE_NAME               __all__
+
+ L.  11        52  LOAD_CONST               False
+               54  LOAD_CONST               ('recursive',)
+               56  BUILD_CONST_KEY_MAP_1     1 
+               58  LOAD_CODE                <code_object glob>
+               60  LOAD_STR                 'glob'
+               62  MAKE_FUNCTION_2          'keyword-only'
+               64  STORE_NAME               glob
+
+ L.  24        66  LOAD_CONST               False
+               68  LOAD_CONST               ('recursive',)
+               70  BUILD_CONST_KEY_MAP_1     1 
+               72  LOAD_CODE                <code_object iglob>
+               74  LOAD_STR                 'iglob'
+               76  MAKE_FUNCTION_2          'keyword-only'
+               78  STORE_NAME               iglob
+
+ L.  42        80  LOAD_CODE                <code_object _iglob>
+               82  LOAD_STR                 '_iglob'
+               84  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               86  STORE_NAME               _iglob
+
+ L.  82        88  LOAD_CODE                <code_object _glob1>
+               90  LOAD_STR                 '_glob1'
+               92  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               94  STORE_NAME               _glob1
+
+ L.  88        96  LOAD_CODE                <code_object _glob0>
+               98  LOAD_STR                 '_glob0'
+              100  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              102  STORE_NAME               _glob0
+
+ L. 101       104  LOAD_CODE                <code_object glob0>
+              106  LOAD_STR                 'glob0'
+              108  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              110  STORE_NAME               glob0
+
+ L. 104       112  LOAD_CODE                <code_object glob1>
+              114  LOAD_STR                 'glob1'
+              116  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              118  STORE_NAME               glob1
+
+ L. 110       120  LOAD_CODE                <code_object _glob2>
+              122  LOAD_STR                 '_glob2'
+              124  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              126  STORE_NAME               _glob2
+
+ L. 117       128  LOAD_CODE                <code_object _iterdir>
+              130  LOAD_STR                 '_iterdir'
+              132  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              134  STORE_NAME               _iterdir
+
+ L. 134       136  LOAD_CODE                <code_object _listdir>
+              138  LOAD_STR                 '_listdir'
+              140  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              142  STORE_NAME               _listdir
+
+ L. 139       144  LOAD_CODE                <code_object _rlistdir>
+              146  LOAD_STR                 '_rlistdir'
+              148  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              150  STORE_NAME               _rlistdir
+
+ L. 149       152  LOAD_NAME                re
+              154  LOAD_METHOD              compile
+              156  LOAD_STR                 '([*?[])'
+              158  CALL_METHOD_1         1  ''
+              160  STORE_NAME               magic_check
+
+ L. 150       162  LOAD_NAME                re
+              164  LOAD_METHOD              compile
+              166  LOAD_CONST               b'([*?[])'
+              168  CALL_METHOD_1         1  ''
+              170  STORE_NAME               magic_check_bytes
+
+ L. 152       172  LOAD_CODE                <code_object has_magic>
+              174  LOAD_STR                 'has_magic'
+              176  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              178  STORE_NAME               has_magic
+
+ L. 159       180  LOAD_CODE                <code_object _ishidden>
+              182  LOAD_STR                 '_ishidden'
+              184  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              186  STORE_NAME               _ishidden
+
+ L. 162       188  LOAD_CODE                <code_object _isrecursive>
+              190  LOAD_STR                 '_isrecursive'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  STORE_NAME               _isrecursive
+
+ L. 168       196  LOAD_CODE                <code_object escape>
+              198  LOAD_STR                 'escape'
+              200  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              202  STORE_NAME               escape
+
+Parse error at or near `CALL_FINALLY' instruction at offset 48
+

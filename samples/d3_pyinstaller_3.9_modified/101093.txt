@@ -1,0 +1,599 @@
+
+# file test/101093.pyc
+# --- This code section failed: ---
+
+ L.   4         0  LOAD_STR                 'This module provides some more Pythonic support for SSL.\n\nObject types:\n\n  SSLSocket -- subtype of socket.socket which does SSL over the socket\n\nExceptions:\n\n  SSLError -- exception raised for I/O errors\n\nFunctions:\n\n  cert_time_to_seconds -- convert time string used for certificate\n                          notBefore and notAfter functions to integer\n                          seconds past the Epoch (the time values\n                          returned from time.time())\n\n  fetch_server_certificate (HOST, PORT) -- fetch the certificate provided\n                          by the server running on HOST at port PORT.  No\n                          validation of the certificate is performed.\n\nInteger constants:\n\nSSL_ERROR_ZERO_RETURN\nSSL_ERROR_WANT_READ\nSSL_ERROR_WANT_WRITE\nSSL_ERROR_WANT_X509_LOOKUP\nSSL_ERROR_SYSCALL\nSSL_ERROR_SSL\nSSL_ERROR_WANT_CONNECT\n\nSSL_ERROR_EOF\nSSL_ERROR_INVALID_ERROR_CODE\n\nThe following group define certificate requirements that one side is\nallowing/requiring from the other side:\n\nCERT_NONE - no certificates from the other side are required (or will\n            be looked at if provided)\nCERT_OPTIONAL - certificates are not required, but if provided will be\n                validated, and if validation fails, the connection will\n                also fail\nCERT_REQUIRED - certificates are required, and will be validated, and\n                if validation fails, the connection will also fail\n\nThe following constants identify various SSL protocol variants:\n\nPROTOCOL_SSLv2\nPROTOCOL_SSLv3\nPROTOCOL_SSLv23\nPROTOCOL_TLS\nPROTOCOL_TLS_CLIENT\nPROTOCOL_TLS_SERVER\nPROTOCOL_TLSv1\nPROTOCOL_TLSv1_1\nPROTOCOL_TLSv1_2\n\nThe following constants identify various SSL alert message descriptions as per\nhttp://www.iana.org/assignments/tls-parameters/tls-parameters.xml#tls-parameters-6\n\nALERT_DESCRIPTION_CLOSE_NOTIFY\nALERT_DESCRIPTION_UNEXPECTED_MESSAGE\nALERT_DESCRIPTION_BAD_RECORD_MAC\nALERT_DESCRIPTION_RECORD_OVERFLOW\nALERT_DESCRIPTION_DECOMPRESSION_FAILURE\nALERT_DESCRIPTION_HANDSHAKE_FAILURE\nALERT_DESCRIPTION_BAD_CERTIFICATE\nALERT_DESCRIPTION_UNSUPPORTED_CERTIFICATE\nALERT_DESCRIPTION_CERTIFICATE_REVOKED\nALERT_DESCRIPTION_CERTIFICATE_EXPIRED\nALERT_DESCRIPTION_CERTIFICATE_UNKNOWN\nALERT_DESCRIPTION_ILLEGAL_PARAMETER\nALERT_DESCRIPTION_UNKNOWN_CA\nALERT_DESCRIPTION_ACCESS_DENIED\nALERT_DESCRIPTION_DECODE_ERROR\nALERT_DESCRIPTION_DECRYPT_ERROR\nALERT_DESCRIPTION_PROTOCOL_VERSION\nALERT_DESCRIPTION_INSUFFICIENT_SECURITY\nALERT_DESCRIPTION_INTERNAL_ERROR\nALERT_DESCRIPTION_USER_CANCELLED\nALERT_DESCRIPTION_NO_RENEGOTIATION\nALERT_DESCRIPTION_UNSUPPORTED_EXTENSION\nALERT_DESCRIPTION_CERTIFICATE_UNOBTAINABLE\nALERT_DESCRIPTION_UNRECOGNIZED_NAME\nALERT_DESCRIPTION_BAD_CERTIFICATE_STATUS_RESPONSE\nALERT_DESCRIPTION_BAD_CERTIFICATE_HASH_VALUE\nALERT_DESCRIPTION_UNKNOWN_PSK_IDENTITY\n'
+                2  STORE_NAME               __doc__
+
+ L.  93         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.  94        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              os
+               18  STORE_NAME               os
+
+ L.  95        20  LOAD_CONST               0
+               22  LOAD_CONST               ('namedtuple',)
+               24  IMPORT_NAME              collections
+               26  IMPORT_FROM              namedtuple
+               28  STORE_NAME               namedtuple
+               30  POP_TOP          
+
+ L.  96        32  LOAD_CONST               0
+               34  LOAD_CONST               ('Enum', 'IntEnum', 'IntFlag')
+               36  IMPORT_NAME              enum
+               38  IMPORT_FROM              Enum
+               40  STORE_NAME               _Enum
+               42  IMPORT_FROM              IntEnum
+               44  STORE_NAME               _IntEnum
+               46  IMPORT_FROM              IntFlag
+               48  STORE_NAME               _IntFlag
+               50  POP_TOP          
+
+ L.  98        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              _ssl
+               58  STORE_NAME               _ssl
+
+ L. 100        60  LOAD_CONST               0
+               62  LOAD_CONST               ('OPENSSL_VERSION_NUMBER', 'OPENSSL_VERSION_INFO', 'OPENSSL_VERSION')
+               64  IMPORT_NAME              _ssl
+               66  IMPORT_FROM              OPENSSL_VERSION_NUMBER
+               68  STORE_NAME               OPENSSL_VERSION_NUMBER
+               70  IMPORT_FROM              OPENSSL_VERSION_INFO
+               72  STORE_NAME               OPENSSL_VERSION_INFO
+               74  IMPORT_FROM              OPENSSL_VERSION
+               76  STORE_NAME               OPENSSL_VERSION
+               78  POP_TOP          
+
+ L. 101        80  LOAD_CONST               0
+               82  LOAD_CONST               ('_SSLContext', 'MemoryBIO', 'SSLSession')
+               84  IMPORT_NAME              _ssl
+               86  IMPORT_FROM              _SSLContext
+               88  STORE_NAME               _SSLContext
+               90  IMPORT_FROM              MemoryBIO
+               92  STORE_NAME               MemoryBIO
+               94  IMPORT_FROM              SSLSession
+               96  STORE_NAME               SSLSession
+               98  POP_TOP          
+
+ L. 102       100  LOAD_CONST               0
+              102  LOAD_CONST               ('SSLError', 'SSLZeroReturnError', 'SSLWantReadError', 'SSLWantWriteError', 'SSLSyscallError', 'SSLEOFError', 'SSLCertVerificationError')
+              104  IMPORT_NAME              _ssl
+              106  IMPORT_FROM              SSLError
+              108  STORE_NAME               SSLError
+              110  IMPORT_FROM              SSLZeroReturnError
+              112  STORE_NAME               SSLZeroReturnError
+              114  IMPORT_FROM              SSLWantReadError
+              116  STORE_NAME               SSLWantReadError
+              118  IMPORT_FROM              SSLWantWriteError
+              120  STORE_NAME               SSLWantWriteError
+              122  IMPORT_FROM              SSLSyscallError
+              124  STORE_NAME               SSLSyscallError
+              126  IMPORT_FROM              SSLEOFError
+              128  STORE_NAME               SSLEOFError
+              130  IMPORT_FROM              SSLCertVerificationError
+              132  STORE_NAME               SSLCertVerificationError
+              134  POP_TOP          
+
+ L. 106       136  LOAD_CONST               0
+              138  LOAD_CONST               ('txt2obj', 'nid2obj')
+              140  IMPORT_NAME              _ssl
+              142  IMPORT_FROM              txt2obj
+              144  STORE_NAME               _txt2obj
+              146  IMPORT_FROM              nid2obj
+              148  STORE_NAME               _nid2obj
+              150  POP_TOP          
+
+ L. 107       152  LOAD_CONST               0
+              154  LOAD_CONST               ('RAND_status', 'RAND_add', 'RAND_bytes', 'RAND_pseudo_bytes')
+              156  IMPORT_NAME              _ssl
+              158  IMPORT_FROM              RAND_status
+              160  STORE_NAME               RAND_status
+              162  IMPORT_FROM              RAND_add
+              164  STORE_NAME               RAND_add
+              166  IMPORT_FROM              RAND_bytes
+              168  STORE_NAME               RAND_bytes
+              170  IMPORT_FROM              RAND_pseudo_bytes
+              172  STORE_NAME               RAND_pseudo_bytes
+              174  POP_TOP          
+
+ L. 108       176  SETUP_FINALLY       194  'to 194'
+
+ L. 109       178  LOAD_CONST               0
+              180  LOAD_CONST               ('RAND_egd',)
+              182  IMPORT_NAME              _ssl
+              184  IMPORT_FROM              RAND_egd
+              186  STORE_NAME               RAND_egd
+              188  POP_TOP          
+              190  POP_BLOCK        
+              192  JUMP_FORWARD        212  'to 212'
+            194_0  COME_FROM_FINALLY   176  '176'
+
+ L. 110       194  DUP_TOP          
+              196  LOAD_NAME                ImportError
+              198  <121>               210  ''
+              200  POP_TOP          
+              202  POP_TOP          
+              204  POP_TOP          
+
+ L. 112       206  POP_EXCEPT       
+              208  JUMP_FORWARD        212  'to 212'
+              210  <48>             
+            212_0  COME_FROM           208  '208'
+            212_1  COME_FROM           192  '192'
+
+ L. 115       212  LOAD_CONST               0
+              214  LOAD_CONST               ('HAS_SNI', 'HAS_ECDH', 'HAS_NPN', 'HAS_ALPN', 'HAS_SSLv2', 'HAS_SSLv3', 'HAS_TLSv1', 'HAS_TLSv1_1', 'HAS_TLSv1_2', 'HAS_TLSv1_3')
+              216  IMPORT_NAME              _ssl
+              218  IMPORT_FROM              HAS_SNI
+              220  STORE_NAME               HAS_SNI
+              222  IMPORT_FROM              HAS_ECDH
+              224  STORE_NAME               HAS_ECDH
+              226  IMPORT_FROM              HAS_NPN
+              228  STORE_NAME               HAS_NPN
+              230  IMPORT_FROM              HAS_ALPN
+              232  STORE_NAME               HAS_ALPN
+              234  IMPORT_FROM              HAS_SSLv2
+              236  STORE_NAME               HAS_SSLv2
+              238  IMPORT_FROM              HAS_SSLv3
+              240  STORE_NAME               HAS_SSLv3
+              242  IMPORT_FROM              HAS_TLSv1
+              244  STORE_NAME               HAS_TLSv1
+              246  IMPORT_FROM              HAS_TLSv1_1
+              248  STORE_NAME               HAS_TLSv1_1
+              250  IMPORT_FROM              HAS_TLSv1_2
+              252  STORE_NAME               HAS_TLSv1_2
+              254  IMPORT_FROM              HAS_TLSv1_3
+              256  STORE_NAME               HAS_TLSv1_3
+              258  POP_TOP          
+
+ L. 119       260  LOAD_CONST               0
+              262  LOAD_CONST               ('_DEFAULT_CIPHERS', '_OPENSSL_API_VERSION')
+              264  IMPORT_NAME              _ssl
+              266  IMPORT_FROM              _DEFAULT_CIPHERS
+              268  STORE_NAME               _DEFAULT_CIPHERS
+              270  IMPORT_FROM              _OPENSSL_API_VERSION
+              272  STORE_NAME               _OPENSSL_API_VERSION
+              274  POP_TOP          
+
+ L. 122       276  LOAD_NAME                _IntEnum
+              278  LOAD_ATTR                _convert_
+
+ L. 123       280  LOAD_STR                 '_SSLMethod'
+              282  LOAD_NAME                __name__
+
+ L. 124       284  LOAD_LAMBDA              '<code_object <lambda>>'
+              286  LOAD_STR                 '<lambda>'
+              288  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+
+ L. 125       290  LOAD_NAME                _ssl
+
+ L. 122       292  LOAD_CONST               ('source',)
+              294  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              296  POP_TOP          
+
+ L. 127       298  LOAD_NAME                _IntFlag
+              300  LOAD_ATTR                _convert_
+
+ L. 128       302  LOAD_STR                 'Options'
+              304  LOAD_NAME                __name__
+
+ L. 129       306  LOAD_LAMBDA              '<code_object <lambda>>'
+              308  LOAD_STR                 '<lambda>'
+              310  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+
+ L. 130       312  LOAD_NAME                _ssl
+
+ L. 127       314  LOAD_CONST               ('source',)
+              316  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              318  POP_TOP          
+
+ L. 132       320  LOAD_NAME                _IntEnum
+              322  LOAD_ATTR                _convert_
+
+ L. 133       324  LOAD_STR                 'AlertDescription'
+              326  LOAD_NAME                __name__
+
+ L. 134       328  LOAD_LAMBDA              '<code_object <lambda>>'
+              330  LOAD_STR                 '<lambda>'
+              332  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+
+ L. 135       334  LOAD_NAME                _ssl
+
+ L. 132       336  LOAD_CONST               ('source',)
+              338  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              340  POP_TOP          
+
+ L. 137       342  LOAD_NAME                _IntEnum
+              344  LOAD_ATTR                _convert_
+
+ L. 138       346  LOAD_STR                 'SSLErrorNumber'
+              348  LOAD_NAME                __name__
+
+ L. 139       350  LOAD_LAMBDA              '<code_object <lambda>>'
+              352  LOAD_STR                 '<lambda>'
+              354  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+
+ L. 140       356  LOAD_NAME                _ssl
+
+ L. 137       358  LOAD_CONST               ('source',)
+              360  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              362  POP_TOP          
+
+ L. 142       364  LOAD_NAME                _IntFlag
+              366  LOAD_ATTR                _convert_
+
+ L. 143       368  LOAD_STR                 'VerifyFlags'
+              370  LOAD_NAME                __name__
+
+ L. 144       372  LOAD_LAMBDA              '<code_object <lambda>>'
+              374  LOAD_STR                 '<lambda>'
+              376  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+
+ L. 145       378  LOAD_NAME                _ssl
+
+ L. 142       380  LOAD_CONST               ('source',)
+              382  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              384  POP_TOP          
+
+ L. 147       386  LOAD_NAME                _IntEnum
+              388  LOAD_ATTR                _convert_
+
+ L. 148       390  LOAD_STR                 'VerifyMode'
+              392  LOAD_NAME                __name__
+
+ L. 149       394  LOAD_LAMBDA              '<code_object <lambda>>'
+              396  LOAD_STR                 '<lambda>'
+              398  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+
+ L. 150       400  LOAD_NAME                _ssl
+
+ L. 147       402  LOAD_CONST               ('source',)
+              404  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              406  POP_TOP          
+
+ L. 152       408  LOAD_NAME                _SSLMethod
+              410  LOAD_ATTR                PROTOCOL_TLS
+              412  DUP_TOP          
+              414  STORE_NAME               PROTOCOL_SSLv23
+              416  LOAD_NAME                _SSLMethod
+              418  STORE_ATTR               PROTOCOL_SSLv23
+
+ L. 153       420  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+              422  LOAD_STR                 '<dictcomp>'
+              424  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              426  LOAD_NAME                _SSLMethod
+              428  LOAD_ATTR                __members__
+              430  LOAD_METHOD              items
+              432  CALL_METHOD_0         0  ''
+              434  GET_ITER         
+              436  CALL_FUNCTION_1       1  ''
+              438  STORE_NAME               _PROTOCOL_NAMES
+
+ L. 155       440  LOAD_NAME                getattr
+              442  LOAD_NAME                _SSLMethod
+              444  LOAD_STR                 'PROTOCOL_SSLv2'
+              446  LOAD_CONST               None
+              448  CALL_FUNCTION_3       3  ''
+              450  STORE_NAME               _SSLv2_IF_EXISTS
+
+ L. 158       452  LOAD_BUILD_CLASS 
+              454  LOAD_CODE                <code_object TLSVersion>
+              456  LOAD_STR                 'TLSVersion'
+              458  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              460  LOAD_STR                 'TLSVersion'
+              462  LOAD_NAME                _IntEnum
+              464  CALL_FUNCTION_3       3  ''
+              466  STORE_NAME               TLSVersion
+
+ L. 168       468  LOAD_BUILD_CLASS 
+              470  LOAD_CODE                <code_object _TLSContentType>
+              472  LOAD_STR                 '_TLSContentType'
+              474  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              476  LOAD_STR                 '_TLSContentType'
+              478  LOAD_NAME                _IntEnum
+              480  CALL_FUNCTION_3       3  ''
+              482  STORE_NAME               _TLSContentType
+
+ L. 182       484  LOAD_BUILD_CLASS 
+              486  LOAD_CODE                <code_object _TLSAlertType>
+              488  LOAD_STR                 '_TLSAlertType'
+              490  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              492  LOAD_STR                 '_TLSAlertType'
+              494  LOAD_NAME                _IntEnum
+              496  CALL_FUNCTION_3       3  ''
+              498  STORE_NAME               _TLSAlertType
+
+ L. 223       500  LOAD_BUILD_CLASS 
+              502  LOAD_CODE                <code_object _TLSMessageType>
+              504  LOAD_STR                 '_TLSMessageType'
+              506  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              508  LOAD_STR                 '_TLSMessageType'
+              510  LOAD_NAME                _IntEnum
+              512  CALL_FUNCTION_3       3  ''
+              514  STORE_NAME               _TLSMessageType
+
+ L. 252       516  LOAD_NAME                sys
+              518  LOAD_ATTR                platform
+              520  LOAD_STR                 'win32'
+              522  COMPARE_OP               ==
+          524_526  POP_JUMP_IF_FALSE   544  'to 544'
+
+ L. 253       528  LOAD_CONST               0
+              530  LOAD_CONST               ('enum_certificates', 'enum_crls')
+              532  IMPORT_NAME              _ssl
+              534  IMPORT_FROM              enum_certificates
+              536  STORE_NAME               enum_certificates
+              538  IMPORT_FROM              enum_crls
+              540  STORE_NAME               enum_crls
+              542  POP_TOP          
+            544_0  COME_FROM           524  '524'
+
+ L. 255       544  LOAD_CONST               0
+              546  LOAD_CONST               ('socket', 'SOCK_STREAM', 'create_connection')
+              548  IMPORT_NAME              socket
+              550  IMPORT_FROM              socket
+              552  STORE_NAME               socket
+              554  IMPORT_FROM              SOCK_STREAM
+              556  STORE_NAME               SOCK_STREAM
+              558  IMPORT_FROM              create_connection
+              560  STORE_NAME               create_connection
+              562  POP_TOP          
+
+ L. 256       564  LOAD_CONST               0
+              566  LOAD_CONST               ('SOL_SOCKET', 'SO_TYPE')
+              568  IMPORT_NAME              socket
+              570  IMPORT_FROM              SOL_SOCKET
+              572  STORE_NAME               SOL_SOCKET
+              574  IMPORT_FROM              SO_TYPE
+              576  STORE_NAME               SO_TYPE
+              578  POP_TOP          
+
+ L. 257       580  LOAD_CONST               0
+              582  LOAD_CONST               None
+              584  IMPORT_NAME              socket
+              586  STORE_NAME               _socket
+
+ L. 258       588  LOAD_CONST               0
+              590  LOAD_CONST               None
+              592  IMPORT_NAME              base64
+              594  STORE_NAME               base64
+
+ L. 259       596  LOAD_CONST               0
+              598  LOAD_CONST               None
+              600  IMPORT_NAME              errno
+              602  STORE_NAME               errno
+
+ L. 260       604  LOAD_CONST               0
+              606  LOAD_CONST               None
+              608  IMPORT_NAME              warnings
+              610  STORE_NAME               warnings
+
+ L. 263       612  LOAD_NAME                OSError
+              614  STORE_NAME               socket_error
+
+ L. 265       616  LOAD_STR                 'tls-unique'
+              618  BUILD_LIST_1          1 
+              620  STORE_NAME               CHANNEL_BINDING_TYPES
+
+ L. 267       622  LOAD_NAME                hasattr
+              624  LOAD_NAME                _ssl
+              626  LOAD_STR                 'HOSTFLAG_NEVER_CHECK_SUBJECT'
+              628  CALL_FUNCTION_2       2  ''
+              630  STORE_NAME               HAS_NEVER_CHECK_COMMON_NAME
+
+ L. 270       632  LOAD_NAME                _DEFAULT_CIPHERS
+              634  STORE_NAME               _RESTRICTED_SERVER_CIPHERS
+
+ L. 272       636  LOAD_NAME                SSLCertVerificationError
+              638  STORE_NAME               CertificateError
+
+ L. 275       640  LOAD_CODE                <code_object _dnsname_match>
+              642  LOAD_STR                 '_dnsname_match'
+              644  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              646  STORE_NAME               _dnsname_match
+
+ L. 324       648  LOAD_CODE                <code_object _inet_paton>
+              650  LOAD_STR                 '_inet_paton'
+              652  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              654  STORE_NAME               _inet_paton
+
+ L. 359       656  LOAD_CODE                <code_object _ipaddress_match>
+              658  LOAD_STR                 '_ipaddress_match'
+              660  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              662  STORE_NAME               _ipaddress_match
+
+ L. 371       664  LOAD_CODE                <code_object match_hostname>
+              666  LOAD_STR                 'match_hostname'
+              668  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              670  STORE_NAME               match_hostname
+
+ L. 428       672  LOAD_NAME                namedtuple
+              674  LOAD_STR                 'DefaultVerifyPaths'
+
+ L. 429       676  LOAD_STR                 'cafile capath openssl_cafile_env openssl_cafile openssl_capath_env openssl_capath'
+
+ L. 428       678  CALL_FUNCTION_2       2  ''
+              680  STORE_NAME               DefaultVerifyPaths
+
+ L. 432       682  LOAD_CODE                <code_object get_default_verify_paths>
+              684  LOAD_STR                 'get_default_verify_paths'
+              686  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              688  STORE_NAME               get_default_verify_paths
+
+ L. 446       690  LOAD_BUILD_CLASS 
+              692  LOAD_CODE                <code_object _ASN1Object>
+              694  LOAD_STR                 '_ASN1Object'
+              696  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              698  LOAD_STR                 '_ASN1Object'
+              700  LOAD_NAME                namedtuple
+              702  LOAD_STR                 '_ASN1Object'
+              704  LOAD_STR                 'nid shortname longname oid'
+              706  CALL_FUNCTION_2       2  ''
+              708  CALL_FUNCTION_3       3  ''
+              710  STORE_NAME               _ASN1Object
+
+ L. 467       712  LOAD_BUILD_CLASS 
+              714  LOAD_CODE                <code_object Purpose>
+              716  LOAD_STR                 'Purpose'
+              718  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              720  LOAD_STR                 'Purpose'
+              722  LOAD_NAME                _ASN1Object
+              724  LOAD_NAME                _Enum
+              726  CALL_FUNCTION_4       4  ''
+              728  STORE_NAME               Purpose
+
+ L. 474       730  LOAD_BUILD_CLASS 
+              732  LOAD_CODE                <code_object SSLContext>
+              734  LOAD_STR                 'SSLContext'
+              736  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              738  LOAD_STR                 'SSLContext'
+              740  LOAD_NAME                _SSLContext
+              742  CALL_FUNCTION_3       3  ''
+              744  STORE_NAME               SSLContext
+
+ L. 723       746  LOAD_NAME                Purpose
+              748  LOAD_ATTR                SERVER_AUTH
+              750  BUILD_TUPLE_1         1 
+              752  LOAD_CONST               None
+
+ L. 724       754  LOAD_CONST               None
+              756  LOAD_CONST               None
+
+ L. 723       758  LOAD_CONST               ('cafile', 'capath', 'cadata')
+              760  BUILD_CONST_KEY_MAP_3     3 
+              762  LOAD_CODE                <code_object create_default_context>
+              764  LOAD_STR                 'create_default_context'
+              766  MAKE_FUNCTION_3          'default, keyword-only'
+              768  STORE_NAME               create_default_context
+
+ L. 758       770  LOAD_NAME                PROTOCOL_TLS
+              772  BUILD_TUPLE_1         1 
+              774  LOAD_NAME                CERT_NONE
+
+ L. 759       776  LOAD_CONST               False
+              778  LOAD_NAME                Purpose
+              780  LOAD_ATTR                SERVER_AUTH
+
+ L. 760       782  LOAD_CONST               None
+              784  LOAD_CONST               None
+
+ L. 761       786  LOAD_CONST               None
+              788  LOAD_CONST               None
+              790  LOAD_CONST               None
+
+ L. 758       792  LOAD_CONST               ('cert_reqs', 'check_hostname', 'purpose', 'certfile', 'keyfile', 'cafile', 'capath', 'cadata')
+              794  BUILD_CONST_KEY_MAP_8     8 
+              796  LOAD_CODE                <code_object _create_unverified_context>
+              798  LOAD_STR                 '_create_unverified_context'
+              800  MAKE_FUNCTION_3          'default, keyword-only'
+              802  STORE_NAME               _create_unverified_context
+
+ L. 805       804  LOAD_NAME                create_default_context
+              806  STORE_NAME               _create_default_https_context
+
+ L. 809       808  LOAD_NAME                _create_unverified_context
+              810  STORE_NAME               _create_stdlib_context
+
+ L. 812       812  LOAD_BUILD_CLASS 
+              814  LOAD_CODE                <code_object SSLObject>
+              816  LOAD_STR                 'SSLObject'
+              818  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              820  LOAD_STR                 'SSLObject'
+              822  CALL_FUNCTION_2       2  ''
+              824  STORE_NAME               SSLObject
+
+ L. 965       826  LOAD_CODE                <code_object _sslcopydoc>
+              828  LOAD_STR                 '_sslcopydoc'
+              830  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              832  STORE_NAME               _sslcopydoc
+
+ L. 971       834  LOAD_BUILD_CLASS 
+              836  LOAD_CODE                <code_object SSLSocket>
+              838  LOAD_STR                 'SSLSocket'
+              840  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              842  LOAD_STR                 'SSLSocket'
+              844  LOAD_NAME                socket
+              846  CALL_FUNCTION_3       3  ''
+              848  STORE_NAME               SSLSocket
+
+ L.1381       850  LOAD_NAME                SSLSocket
+              852  LOAD_NAME                SSLContext
+              854  STORE_ATTR               sslsocket_class
+
+ L.1382       856  LOAD_NAME                SSLObject
+              858  LOAD_NAME                SSLContext
+              860  STORE_ATTR               sslobject_class
+
+ L.1385       862  LOAD_CONST               None
+              864  LOAD_CONST               None
+
+ L.1386       866  LOAD_CONST               False
+              868  LOAD_NAME                CERT_NONE
+
+ L.1387       870  LOAD_NAME                PROTOCOL_TLS
+              872  LOAD_CONST               None
+
+ L.1388       874  LOAD_CONST               True
+
+ L.1389       876  LOAD_CONST               True
+
+ L.1390       878  LOAD_CONST               None
+
+ L.1385       880  BUILD_TUPLE_9         9 
+              882  LOAD_CODE                <code_object wrap_socket>
+              884  LOAD_STR                 'wrap_socket'
+              886  MAKE_FUNCTION_1          'default'
+              888  STORE_NAME               wrap_socket
+
+ L.1413       890  LOAD_CODE                <code_object cert_time_to_seconds>
+              892  LOAD_STR                 'cert_time_to_seconds'
+              894  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              896  STORE_NAME               cert_time_to_seconds
+
+ L.1443       898  LOAD_STR                 '-----BEGIN CERTIFICATE-----'
+              900  STORE_NAME               PEM_HEADER
+
+ L.1444       902  LOAD_STR                 '-----END CERTIFICATE-----'
+              904  STORE_NAME               PEM_FOOTER
+
+ L.1446       906  LOAD_CODE                <code_object DER_cert_to_PEM_cert>
+              908  LOAD_STR                 'DER_cert_to_PEM_cert'
+              910  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              912  STORE_NAME               DER_cert_to_PEM_cert
+
+ L.1456       914  LOAD_CODE                <code_object PEM_cert_to_DER_cert>
+              916  LOAD_STR                 'PEM_cert_to_DER_cert'
+              918  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              920  STORE_NAME               PEM_cert_to_DER_cert
+
+ L.1469       922  LOAD_NAME                PROTOCOL_TLS
+              924  LOAD_CONST               None
+              926  BUILD_TUPLE_2         2 
+              928  LOAD_CODE                <code_object get_server_certificate>
+              930  LOAD_STR                 'get_server_certificate'
+              932  MAKE_FUNCTION_1          'default'
+              934  STORE_NAME               get_server_certificate
+
+ L.1488       936  LOAD_CODE                <code_object get_protocol_name>
+              938  LOAD_STR                 'get_protocol_name'
+              940  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              942  STORE_NAME               get_protocol_name
+
+Parse error at or near `<121>' instruction at offset 198
+
+Instruction context:
+   
+ L. 110       194  DUP_TOP          
+                 196  LOAD_NAME                ImportError
+->               198  <121>               210  ''
+                 200  POP_TOP          
+                 202  POP_TOP          
+                 204  POP_TOP          
+
+test/101093.pyc -- 
+# decompile failed

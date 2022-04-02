@@ -1,0 +1,53 @@
+Instruction context:
+   
+ L.  24        40  BUILD_LIST_0          0 
+                  42  LOAD_CONST               ('UniversalDetector', 'detect', 'detect_all', '__version__', 'VERSION')
+->                44  CALL_FINALLY         47  'to 47'
+                  46  STORE_NAME               __all__
+
+test/101552.pyc -- 
+# decompile failed
+
+# file test/101552.pyc
+# --- This code section failed: ---
+
+ L.  19         0  LOAD_CONST               1
+                2  LOAD_CONST               ('UniversalDetector',)
+                4  IMPORT_NAME              universaldetector
+                6  IMPORT_FROM              UniversalDetector
+                8  STORE_NAME               UniversalDetector
+               10  POP_TOP          
+
+ L.  20        12  LOAD_CONST               1
+               14  LOAD_CONST               ('InputState',)
+               16  IMPORT_NAME              enums
+               18  IMPORT_FROM              InputState
+               20  STORE_NAME               InputState
+               22  POP_TOP          
+
+ L.  21        24  LOAD_CONST               1
+               26  LOAD_CONST               ('__version__', 'VERSION')
+               28  IMPORT_NAME              version
+               30  IMPORT_FROM              __version__
+               32  STORE_NAME               __version__
+               34  IMPORT_FROM              VERSION
+               36  STORE_NAME               VERSION
+               38  POP_TOP          
+
+ L.  24        40  BUILD_LIST_0          0 
+               42  LOAD_CONST               ('UniversalDetector', 'detect', 'detect_all', '__version__', 'VERSION')
+               44  CALL_FINALLY         47  'to 47'
+               46  STORE_NAME               __all__
+
+ L.  27        48  LOAD_CODE                <code_object detect>
+               50  LOAD_STR                 'detect'
+               52  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               54  STORE_NAME               detect
+
+ L.  45        56  LOAD_CODE                <code_object detect_all>
+               58  LOAD_STR                 'detect_all'
+               60  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               62  STORE_NAME               detect_all
+
+Parse error at or near `CALL_FINALLY' instruction at offset 44
+

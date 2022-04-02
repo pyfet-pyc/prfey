@@ -1,0 +1,52 @@
+Instruction context:
+   
+ L.  41        22  LOAD_DEREF               'func'
+                  24  LOAD_FAST                'self'
+                  26  BUILD_LIST_1          1 
+                  28  LOAD_FAST                'args'
+->                30  CALL_FINALLY         33  'to 33'
+                  32  WITH_CLEANUP_FINISH
+                  34  CALL_FUNCTION_EX      0  'positional arguments only'
+                  36  RETURN_VALUE     
+Instruction context:
+   
+ L.  98       106  DUP_TOP          
+                 108  LOAD_GLOBAL              KeyError
+->               110  <121>               136  ''
+                 112  POP_TOP          
+                 114  POP_TOP          
+                 116  POP_TOP          
+Instruction context:
+   
+ L. 110        28  LOAD_FAST                'self'
+                  30  LOAD_ATTR                _backend
+                  32  LOAD_METHOD              openssl_assert
+                  34  LOAD_FAST                'status'
+                  36  LOAD_GLOBAL              _RESPONSE_STATUS_TO_ENUM
+->                38  <118>                 0  ''
+                  40  CALL_METHOD_1         1  ''
+                  42  POP_TOP          
+Instruction context:
+   
+ L. 154        20  DUP_TOP          
+                  22  LOAD_GLOBAL              KeyError
+->                24  <121>                50  ''
+                  26  POP_TOP          
+                  28  POP_TOP          
+                  30  POP_TOP          
+Instruction context:
+   
+ L. 243        48  LOAD_FAST                'self'
+                  50  LOAD_ATTR                _backend
+                  52  LOAD_METHOD              openssl_assert
+                  54  LOAD_FAST                'status'
+                  56  LOAD_GLOBAL              _CERT_STATUS_TO_ENUM
+->                58  <118>                 0  ''
+                  60  CALL_METHOD_1         1  ''
+                  62  POP_TOP          
+
+test/103848.pyc -- 
+# decompile failed
+
+# file test/103848.pyc
+# Deparsing stopped due to parse error

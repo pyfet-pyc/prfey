@@ -1,0 +1,27 @@
+Instruction context:
+   
+ L.  98        18  LOAD_FAST                'msg'
+                  20  LOAD_CONST               None
+->                22  <117>                 1  ''
+                  24  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L. 130        16  LOAD_FAST                'unwrap'
+                  18  LOAD_CONST               None
+->                20  <117>                 0  ''
+                  22  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L. 221        14  LOAD_DEREF               'make_msg'
+                  16  LOAD_FAST                'args'
+                  18  BUILD_MAP_0           0 
+                  20  LOAD_FAST                'kwargs'
+->                22  <164>                 1  ''
+                  24  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  26  STORE_FAST               'msg'
+
+test/134664.pyc -- 
+# decompile failed
+
+# file test/134664.pyc
+# Deparsing stopped due to parse error

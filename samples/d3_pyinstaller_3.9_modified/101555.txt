@@ -1,0 +1,118 @@
+Instruction context:
+   
+ L. 103       166  BUILD_LIST_0          0 
+                 168  LOAD_CONST               ('ICreateErrorInfo', 'IErrorInfo', 'ISupportErrorInfo', 'ReportError', 'ReportException', 'SetErrorInfo', 'GetErrorInfo', 'CreateErrorInfo')
+->               170  CALL_FINALLY        173  'to 173'
+
+test/101555.pyc -- 
+# decompile failed
+
+# file test/101555.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               ('*',)
+               12  IMPORT_NAME              ctypes
+               14  IMPORT_STAR      
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               ('IUnknown', 'HRESULT', 'COMMETHOD', 'GUID', 'BSTR')
+               20  IMPORT_NAME              comtypes
+               22  IMPORT_FROM              IUnknown
+               24  STORE_NAME               IUnknown
+               26  IMPORT_FROM              HRESULT
+               28  STORE_NAME               HRESULT
+               30  IMPORT_FROM              COMMETHOD
+               32  STORE_NAME               COMMETHOD
+               34  IMPORT_FROM              GUID
+               36  STORE_NAME               GUID
+               38  IMPORT_FROM              BSTR
+               40  STORE_NAME               BSTR
+               42  POP_TOP          
+
+ L.   4        44  LOAD_CONST               0
+               46  LOAD_CONST               ('*',)
+               48  IMPORT_NAME_ATTR         comtypes.hresult
+               50  IMPORT_STAR      
+
+ L.   6        52  LOAD_NAME                c_wchar_p
+               54  STORE_NAME               LPCOLESTR
+
+ L.   7        56  LOAD_NAME                c_ulong
+               58  STORE_NAME               DWORD
+
+ L.   9        60  LOAD_BUILD_CLASS 
+               62  LOAD_CODE                <code_object ICreateErrorInfo>
+               64  LOAD_STR                 'ICreateErrorInfo'
+               66  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               68  LOAD_STR                 'ICreateErrorInfo'
+               70  LOAD_NAME                IUnknown
+               72  CALL_FUNCTION_3       3  ''
+               74  STORE_NAME               ICreateErrorInfo
+
+ L.  24        76  LOAD_BUILD_CLASS 
+               78  LOAD_CODE                <code_object IErrorInfo>
+               80  LOAD_STR                 'IErrorInfo'
+               82  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               84  LOAD_STR                 'IErrorInfo'
+               86  LOAD_NAME                IUnknown
+               88  CALL_FUNCTION_3       3  ''
+               90  STORE_NAME               IErrorInfo
+
+ L.  39        92  LOAD_BUILD_CLASS 
+               94  LOAD_CODE                <code_object ISupportErrorInfo>
+               96  LOAD_STR                 'ISupportErrorInfo'
+               98  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              100  LOAD_STR                 'ISupportErrorInfo'
+              102  LOAD_NAME                IUnknown
+              104  CALL_FUNCTION_3       3  ''
+              106  STORE_NAME               ISupportErrorInfo
+
+ L.  47       108  LOAD_NAME                oledll
+              110  LOAD_ATTR                oleaut32
+              112  STORE_NAME               _oleaut32
+
+ L.  49       114  LOAD_CODE                <code_object CreateErrorInfo>
+              116  LOAD_STR                 'CreateErrorInfo'
+              118  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              120  STORE_NAME               CreateErrorInfo
+
+ L.  54       122  LOAD_CODE                <code_object GetErrorInfo>
+              124  LOAD_STR                 'GetErrorInfo'
+              126  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              128  STORE_NAME               GetErrorInfo
+
+ L.  61       130  LOAD_CODE                <code_object SetErrorInfo>
+              132  LOAD_STR                 'SetErrorInfo'
+              134  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              136  STORE_NAME               SetErrorInfo
+
+ L.  66       138  LOAD_CONST               None
+              140  LOAD_CONST               None
+              142  LOAD_CONST               0
+              144  LOAD_NAME                DISP_E_EXCEPTION
+
+ L.  65       146  BUILD_TUPLE_4         4 
+              148  LOAD_CODE                <code_object ReportError>
+              150  LOAD_STR                 'ReportError'
+              152  MAKE_FUNCTION_1          'default'
+              154  STORE_NAME               ReportError
+
+ L.  87       156  LOAD_CONST               (None, None, None, None)
+              158  LOAD_CODE                <code_object ReportException>
+              160  LOAD_STR                 'ReportException'
+              162  MAKE_FUNCTION_1          'default'
+              164  STORE_NAME               ReportException
+
+ L. 103       166  BUILD_LIST_0          0 
+              168  LOAD_CONST               ('ICreateErrorInfo', 'IErrorInfo', 'ISupportErrorInfo', 'ReportError', 'ReportException', 'SetErrorInfo', 'GetErrorInfo', 'CreateErrorInfo')
+              170  CALL_FINALLY        173  'to 173'
+              172  STORE_NAME               __all__
+
+Parse error at or near `CALL_FINALLY' instruction at offset 170
+

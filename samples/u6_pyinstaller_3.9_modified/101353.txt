@@ -1,0 +1,58 @@
+Instruction context:
+   
+ L.  16        12  BUILD_LIST_0          0 
+                  14  LOAD_CONST               ('URLError', 'HTTPError', 'ContentTooShortError')
+->                16  CALL_FINALLY         19  'to 19'
+                  18  STORE_NAME               __all__
+
+test/101353.pyc -- 
+# decompile failed
+
+# file test/101353.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "Exception classes raised by urllib.\n\nThe base exception class is URLError, which inherits from OSError.  It\ndoesn't define any behavior of its own, but is the base class for all\nexceptions defined in this package.\n\nHTTPError is an exception class that is also a valid HTTP response\ninstance.  It behaves this way because HTTP protocol errors are valid\nresponses, with a status code, headers, and a body.  In some contexts,\nan application may want to handle an exception like a regular\nresponse.\n"
+                2  STORE_NAME               __doc__
+
+ L.  14         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME_ATTR         urllib.response
+               10  STORE_NAME               urllib
+
+ L.  16        12  BUILD_LIST_0          0 
+               14  LOAD_CONST               ('URLError', 'HTTPError', 'ContentTooShortError')
+               16  CALL_FINALLY         19  'to 19'
+               18  STORE_NAME               __all__
+
+ L.  19        20  LOAD_BUILD_CLASS 
+               22  LOAD_CODE                <code_object URLError>
+               24  LOAD_STR                 'URLError'
+               26  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               28  LOAD_STR                 'URLError'
+               30  LOAD_NAME                OSError
+               32  CALL_FUNCTION_3       3  ''
+               34  STORE_NAME               URLError
+
+ L.  35        36  LOAD_BUILD_CLASS 
+               38  LOAD_CODE                <code_object HTTPError>
+               40  LOAD_STR                 'HTTPError'
+               42  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               44  LOAD_STR                 'HTTPError'
+               46  LOAD_NAME                URLError
+               48  LOAD_NAME                urllib
+               50  LOAD_ATTR                response
+               52  LOAD_ATTR                addinfourl
+               54  CALL_FUNCTION_4       4  ''
+               56  STORE_NAME               HTTPError
+
+ L.  73        58  LOAD_BUILD_CLASS 
+               60  LOAD_CODE                <code_object ContentTooShortError>
+               62  LOAD_STR                 'ContentTooShortError'
+               64  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               66  LOAD_STR                 'ContentTooShortError'
+               68  LOAD_NAME                URLError
+               70  CALL_FUNCTION_3       3  ''
+               72  STORE_NAME               ContentTooShortError
+
+Parse error at or near `CALL_FINALLY' instruction at offset 16
+

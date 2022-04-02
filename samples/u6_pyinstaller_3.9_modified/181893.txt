@@ -1,0 +1,255 @@
+
+# file test/181893.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Internationalization and localization support.\n\nThis module provides internationalization (I18N) and localization (L10N)\nsupport for your Python programs by providing an interface to the GNU gettext\nmessage catalog library.\n\nI18N refers to the operation by which a program is made aware of multiple\nlanguages.  L10N refers to the adaptation of your program, once\ninternationalized, to the local language and cultural habits.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  49         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.  50        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              re
+               18  STORE_NAME               re
+
+ L.  51        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              sys
+               26  STORE_NAME               sys
+
+ L.  54        28  BUILD_LIST_0          0 
+               30  LOAD_CONST               ('NullTranslations', 'GNUTranslations', 'Catalog', 'find', 'translation', 'install', 'textdomain', 'bindtextdomain', 'bind_textdomain_codeset', 'dgettext', 'dngettext', 'gettext', 'lgettext', 'ldgettext', 'ldngettext', 'lngettext', 'ngettext', 'pgettext', 'dpgettext', 'npgettext', 'dnpgettext')
+               32  CALL_FINALLY         35  'to 35'
+               34  STORE_NAME               __all__
+
+ L.  62        36  LOAD_NAME                os
+               38  LOAD_ATTR                path
+               40  LOAD_METHOD              join
+               42  LOAD_NAME                sys
+               44  LOAD_ATTR                base_prefix
+               46  LOAD_STR                 'share'
+               48  LOAD_STR                 'locale'
+               50  CALL_METHOD_3         3  ''
+               52  STORE_NAME               _default_localedir
+
+ L.  73        54  LOAD_NAME                re
+               56  LOAD_METHOD              compile
+               58  LOAD_STR                 '\n        (?P<WHITESPACES>[ \\t]+)                    | # spaces and horizontal tabs\n        (?P<NUMBER>[0-9]+\\b)                       | # decimal integer\n        (?P<NAME>n\\b)                              | # only n is allowed\n        (?P<PARENTHESIS>[()])                      |\n        (?P<OPERATOR>[-*/%+?:]|[><!]=?|==|&&|\\|\\|) | # !, *, /, %, +, -, <, >,\n                                                     # <=, >=, ==, !=, &&, ||,\n                                                     # ? :\n                                                     # unary and bitwise ops\n                                                     # not allowed\n        (?P<INVALID>\\w+|.)                           # invalid token\n    '
+
+ L.  84        60  LOAD_NAME                re
+               62  LOAD_ATTR                VERBOSE
+               64  LOAD_NAME                re
+               66  LOAD_ATTR                DOTALL
+               68  BINARY_OR        
+
+ L.  73        70  CALL_METHOD_2         2  ''
+               72  STORE_NAME               _token_pattern
+
+ L.  86        74  LOAD_CODE                <code_object _tokenize>
+               76  LOAD_STR                 '_tokenize'
+               78  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               80  STORE_NAME               _tokenize
+
+ L.  97        82  LOAD_CODE                <code_object _error>
+               84  LOAD_STR                 '_error'
+               86  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               88  STORE_NAME               _error
+
+ L. 103        90  LOAD_CONST               (('||',), ('&&',), ('==', '!='), ('<', '>', '<=', '>='), ('+', '-'), ('*', '/', '%'))
+               92  STORE_NAME               _binary_ops
+
+ L. 111        94  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+               96  LOAD_STR                 '<dictcomp>'
+               98  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              100  LOAD_NAME                enumerate
+              102  LOAD_NAME                _binary_ops
+              104  LOAD_CONST               1
+              106  CALL_FUNCTION_2       2  ''
+              108  GET_ITER         
+              110  CALL_FUNCTION_1       1  ''
+              112  STORE_NAME               _binary_ops
+
+ L. 112       114  LOAD_STR                 'or'
+              116  LOAD_STR                 'and'
+              118  LOAD_STR                 '//'
+              120  LOAD_CONST               ('||', '&&', '/')
+              122  BUILD_CONST_KEY_MAP_3     3 
+              124  STORE_NAME               _c2py_ops
+
+ L. 114       126  LOAD_CONST               (-1,)
+              128  LOAD_CODE                <code_object _parse>
+              130  LOAD_STR                 '_parse'
+              132  MAKE_FUNCTION_1          'default'
+              134  STORE_NAME               _parse
+
+ L. 163       136  LOAD_CODE                <code_object _as_int>
+              138  LOAD_STR                 '_as_int'
+              140  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              142  STORE_NAME               _as_int
+
+ L. 175       144  LOAD_CODE                <code_object c2py>
+              146  LOAD_STR                 'c2py'
+              148  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              150  STORE_NAME               c2py
+
+ L. 211       152  LOAD_CODE                <code_object _expand_lang>
+              154  LOAD_STR                 '_expand_lang'
+              156  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              158  STORE_NAME               _expand_lang
+
+ L. 254       160  LOAD_BUILD_CLASS 
+              162  LOAD_CODE                <code_object NullTranslations>
+              164  LOAD_STR                 'NullTranslations'
+              166  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              168  LOAD_STR                 'NullTranslations'
+              170  CALL_FUNCTION_2       2  ''
+              172  STORE_NAME               NullTranslations
+
+ L. 358       174  LOAD_BUILD_CLASS 
+              176  LOAD_CODE                <code_object GNUTranslations>
+              178  LOAD_STR                 'GNUTranslations'
+              180  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              182  LOAD_STR                 'GNUTranslations'
+              184  LOAD_NAME                NullTranslations
+              186  CALL_FUNCTION_3       3  ''
+              188  STORE_NAME               GNUTranslations
+
+ L. 542       190  LOAD_CONST               (None, None, False)
+              192  LOAD_CODE                <code_object find>
+              194  LOAD_STR                 'find'
+              196  MAKE_FUNCTION_1          'default'
+              198  STORE_NAME               find
+
+ L. 580       200  BUILD_MAP_0           0 
+              202  STORE_NAME               _translations
+
+ L. 581       204  LOAD_STR                 'unspecified'
+              206  BUILD_LIST_1          1 
+              208  STORE_NAME               _unspecified
+
+ L. 583       210  LOAD_CONST               None
+              212  LOAD_CONST               None
+
+ L. 584       214  LOAD_CONST               None
+              216  LOAD_CONST               False
+              218  LOAD_NAME                _unspecified
+
+ L. 583       220  BUILD_TUPLE_5         5 
+              222  LOAD_CODE                <code_object translation>
+              224  LOAD_STR                 'translation'
+              226  MAKE_FUNCTION_1          'default'
+              228  STORE_NAME               translation
+
+ L. 626       230  LOAD_CONST               None
+              232  LOAD_NAME                _unspecified
+              234  LOAD_CONST               None
+              236  BUILD_TUPLE_3         3 
+              238  LOAD_CODE                <code_object install>
+              240  LOAD_STR                 'install'
+              242  MAKE_FUNCTION_1          'default'
+              244  STORE_NAME               install
+
+ L. 633       246  BUILD_MAP_0           0 
+              248  STORE_GLOBAL             _localedirs
+
+ L. 635       250  BUILD_MAP_0           0 
+              252  STORE_GLOBAL             _localecodesets
+
+ L. 637       254  LOAD_STR                 'messages'
+              256  STORE_GLOBAL             _current_domain
+
+ L. 640       258  LOAD_CONST               (None,)
+              260  LOAD_CODE                <code_object textdomain>
+              262  LOAD_STR                 'textdomain'
+              264  MAKE_FUNCTION_1          'default'
+              266  STORE_NAME               textdomain
+
+ L. 647       268  LOAD_CONST               (None,)
+              270  LOAD_CODE                <code_object bindtextdomain>
+              272  LOAD_STR                 'bindtextdomain'
+              274  MAKE_FUNCTION_1          'default'
+              276  STORE_NAME               bindtextdomain
+
+ L. 654       278  LOAD_CONST               (None,)
+              280  LOAD_CODE                <code_object bind_textdomain_codeset>
+              282  LOAD_STR                 'bind_textdomain_codeset'
+              284  MAKE_FUNCTION_1          'default'
+              286  STORE_NAME               bind_textdomain_codeset
+
+ L. 664       288  LOAD_CODE                <code_object dgettext>
+              290  LOAD_STR                 'dgettext'
+              292  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              294  STORE_NAME               dgettext
+
+ L. 671       296  LOAD_CODE                <code_object ldgettext>
+              298  LOAD_STR                 'ldgettext'
+              300  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              302  STORE_NAME               ldgettext
+
+ L. 689       304  LOAD_CODE                <code_object dngettext>
+              306  LOAD_STR                 'dngettext'
+              308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              310  STORE_NAME               dngettext
+
+ L. 699       312  LOAD_CODE                <code_object ldngettext>
+              314  LOAD_STR                 'ldngettext'
+              316  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              318  STORE_NAME               ldngettext
+
+ L. 722       320  LOAD_CODE                <code_object dpgettext>
+              322  LOAD_STR                 'dpgettext'
+              324  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              326  STORE_NAME               dpgettext
+
+ L. 730       328  LOAD_CODE                <code_object dnpgettext>
+              330  LOAD_STR                 'dnpgettext'
+              332  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              334  STORE_NAME               dnpgettext
+
+ L. 741       336  LOAD_CODE                <code_object gettext>
+              338  LOAD_STR                 'gettext'
+              340  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              342  STORE_NAME               gettext
+
+ L. 744       344  LOAD_CODE                <code_object lgettext>
+              346  LOAD_STR                 'lgettext'
+              348  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              350  STORE_NAME               lgettext
+
+ L. 753       352  LOAD_CODE                <code_object ngettext>
+              354  LOAD_STR                 'ngettext'
+              356  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              358  STORE_NAME               ngettext
+
+ L. 756       360  LOAD_CODE                <code_object lngettext>
+              362  LOAD_STR                 'lngettext'
+              364  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              366  STORE_NAME               lngettext
+
+ L. 766       368  LOAD_CODE                <code_object pgettext>
+              370  LOAD_STR                 'pgettext'
+              372  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              374  STORE_NAME               pgettext
+
+ L. 770       376  LOAD_CODE                <code_object npgettext>
+              378  LOAD_STR                 'npgettext'
+              380  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              382  STORE_NAME               npgettext
+
+ L. 788       384  LOAD_NAME                translation
+              386  STORE_NAME               Catalog
+
+Parse error at or near `CALL_FINALLY' instruction at offset 32
+
+Instruction context:
+   
+ L.  54        28  BUILD_LIST_0          0 
+                  30  LOAD_CONST               ('NullTranslations', 'GNUTranslations', 'Catalog', 'find', 'translation', 'install', 'textdomain', 'bindtextdomain', 'bind_textdomain_codeset', 'dgettext', 'dngettext', 'gettext', 'lgettext', 'ldgettext', 'ldngettext', 'lngettext', 'ngettext', 'pgettext', 'dpgettext', 'npgettext', 'dnpgettext')
+->                32  CALL_FINALLY         35  'to 35'
+                  34  STORE_NAME               __all__
+
+test/181893.pyc -- 
+# decompile failed

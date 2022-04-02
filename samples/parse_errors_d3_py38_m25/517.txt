@@ -1,0 +1,36 @@
+Instruction context:
+   
+ L. 217        70  POP_BLOCK        
+->                72  POP_BLOCK        
+                  74  CALL_FINALLY        140  'to 140'
+                  76  POP_TOP          
+                  78  LOAD_CONST               None
+                  80  RETURN_VALUE     
+                82_0  COME_FROM_FINALLY    18  '18'
+Instruction context:
+   
+ L. 436        26  LOAD_GLOBAL              ImportError
+                  28  LOAD_STR                 'Loader FrozenImporter cannot handle module '
+                  30  LOAD_FAST                'fullname'
+                  32  BINARY_ADD       
+                  34  CALL_FUNCTION_1       1  ''
+->                36  RAISE_VARARGS_1       1  'exception instance'
+                  38  POP_EXCEPT       
+                  40  JUMP_FORWARD         44  'to 44'
+                  42  END_FINALLY      
+Instruction context:
+   
+ L. 704       260  POP_EXCEPT       
+                 262  JUMP_BACK           198  'to 198'
+                 264  POP_EXCEPT       
+                 266  JUMP_FORWARD        270  'to 270'
+->             268_0  COME_FROM           250  '250'
+                 268  END_FINALLY      
+               270_0  COME_FROM           266  '266'
+               270_1  COME_FROM           242  '242'
+
+test/517.pyc -- 
+# decompile failed
+
+# file test/517.pyc
+# Deparsing stopped due to parse error

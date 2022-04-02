@@ -1,0 +1,152 @@
+Instruction context:
+   
+ L. 125        50  POP_EXCEPT       
+                  52  JUMP_BACK             0  'to 0'
+                  54  POP_EXCEPT       
+->                56  JUMP_BACK             0  'to 0'
+                58_0  COME_FROM            42  '42'
+Instruction context:
+   
+ L. 362        66  POP_EXCEPT       
+                  68  JUMP_FORWARD         72  'to 72'
+->              70_0  COME_FROM            58  '58'
+                  70  END_FINALLY      
+                72_0  COME_FROM            68  '68'
+Instruction context:
+   
+ L. 401        66  POP_EXCEPT       
+                  68  JUMP_FORWARD         72  'to 72'
+->              70_0  COME_FROM            58  '58'
+                  70  END_FINALLY      
+                72_0  COME_FROM            68  '68'
+Instruction context:
+   
+ L. 469       118  POP_BLOCK        
+                 120  POP_EXCEPT       
+->               122  CALL_FINALLY        128  'to 128'
+                 124  LOAD_CONST               None
+                 126  RETURN_VALUE     
+               128_0  COME_FROM           122  '122'
+               128_1  COME_FROM_FINALLY   106  '106'
+                 128  LOAD_CONST               None
+                 130  STORE_FAST               'exc'
+                 132  DELETE_FAST              'exc'
+                 134  END_FINALLY      
+                 136  POP_EXCEPT       
+                 138  JUMP_FORWARD        142  'to 142'
+               140_0  COME_FROM            98  '98'
+                 140  END_FINALLY      
+               142_0  COME_FROM           138  '138'
+               142_1  COME_FROM            90  '90'
+               142_2  COME_FROM            42  '42'
+Instruction context:
+   
+ L. 818        96  POP_BLOCK        
+                  98  POP_EXCEPT       
+->               100  CALL_FINALLY        106  'to 106'
+                 102  LOAD_CONST               None
+                 104  RETURN_VALUE     
+               106_0  COME_FROM           100  '100'
+               106_1  COME_FROM_FINALLY    82  '82'
+                 106  LOAD_CONST               None
+                 108  STORE_FAST               'exc'
+                 110  DELETE_FAST              'exc'
+                 112  END_FINALLY      
+                 114  POP_EXCEPT       
+                 116  JUMP_FORWARD        120  'to 120'
+               118_0  COME_FROM            74  '74'
+                 118  END_FINALLY      
+               120_0  COME_FROM           116  '116'
+               120_1  COME_FROM            66  '66'
+               120_2  COME_FROM            42  '42'
+Instruction context:
+   
+ L. 853       106  POP_BLOCK        
+                 108  POP_EXCEPT       
+->               110  CALL_FINALLY        116  'to 116'
+                 112  LOAD_CONST               None
+                 114  RETURN_VALUE     
+               116_0  COME_FROM           110  '110'
+               116_1  COME_FROM_FINALLY    92  '92'
+                 116  LOAD_CONST               None
+                 118  STORE_FAST               'exc'
+                 120  DELETE_FAST              'exc'
+                 122  END_FINALLY      
+                 124  POP_EXCEPT       
+                 126  JUMP_FORWARD        130  'to 130'
+               128_0  COME_FROM            84  '84'
+                 128  END_FINALLY      
+               130_0  COME_FROM           126  '126'
+               130_1  COME_FROM            76  '76'
+               130_2  COME_FROM            28  '28'
+Instruction context:
+   
+ L. 878        90  POP_BLOCK        
+                  92  POP_EXCEPT       
+->                94  CALL_FINALLY        100  'to 100'
+                  96  LOAD_CONST               None
+                  98  RETURN_VALUE     
+               100_0  COME_FROM            94  '94'
+               100_1  COME_FROM_FINALLY    76  '76'
+                 100  LOAD_CONST               None
+                 102  STORE_FAST               'exc'
+                 104  DELETE_FAST              'exc'
+                 106  END_FINALLY      
+                 108  POP_EXCEPT       
+                 110  JUMP_FORWARD        114  'to 114'
+               112_0  COME_FROM            68  '68'
+                 112  END_FINALLY      
+               114_0  COME_FROM           110  '110'
+               114_1  COME_FROM            60  '60'
+               114_2  COME_FROM            36  '36'
+Instruction context:
+   
+ L. 915       222  POP_BLOCK        
+                 224  POP_EXCEPT       
+->               226  CALL_FINALLY        232  'to 232'
+                 228  LOAD_CONST               None
+                 230  RETURN_VALUE     
+               232_0  COME_FROM           226  '226'
+               232_1  COME_FROM_FINALLY   208  '208'
+                 232  LOAD_CONST               None
+                 234  STORE_FAST               'exc'
+                 236  DELETE_FAST              'exc'
+                 238  END_FINALLY      
+                 240  POP_EXCEPT       
+                 242  JUMP_FORWARD        268  'to 268'
+               244_0  COME_FROM           200  '200'
+                 244  END_FINALLY      
+               246_0  COME_FROM           146  '146'
+Instruction context:
+-> 
+ L.1048       192  DUP_TOP          
+                 194  LOAD_GLOBAL              BlockingIOError
+                 196  LOAD_GLOBAL              InterruptedError
+                 198  BUILD_TUPLE_2         2 
+                 200  COMPARE_OP               exception-match
+                 202  POP_JUMP_IF_FALSE   232  'to 232'
+                 204  POP_TOP          
+                 206  POP_TOP          
+                 208  POP_TOP          
+Instruction context:
+   
+ L.1077       134  POP_BLOCK        
+                 136  POP_EXCEPT       
+->               138  CALL_FINALLY        144  'to 144'
+                 140  LOAD_CONST               None
+                 142  RETURN_VALUE     
+               144_0  COME_FROM           138  '138'
+               144_1  COME_FROM_FINALLY   120  '120'
+                 144  LOAD_CONST               None
+                 146  STORE_FAST               'exc'
+                 148  DELETE_FAST              'exc'
+                 150  END_FINALLY      
+                 152  POP_EXCEPT       
+                 154  JUMP_BACK             0  'to 0'
+               156_0  COME_FROM           112  '112'
+
+../test/106186.pyc -- 
+# decompile failed
+
+# file ../test/106186.pyc
+# Deparsing stopped due to parse error

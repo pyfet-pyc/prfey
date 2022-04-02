@@ -1,0 +1,29 @@
+Instruction context:
+   
+ L.  71        24  LOAD_GLOBAL              SSHException
+                  26  LOAD_STR                 'Channel is not open'
+                  28  CALL_FUNCTION_1       1  '1 positional argument'
+                  30  RAISE_VARARGS_1       1  'exception instance'
+->              32_0  COME_FROM            22  '22'
+Instruction context:
+   
+ L.1152       550  LOAD_FAST                'server'
+                 552  LOAD_METHOD              check_channel_forward_agent_request
+                 554  LOAD_FAST                'self'
+                 556  CALL_METHOD_1         1  '1 positional argument'
+->             558_0  COME_FROM           148  '148'
+                 558  STORE_FAST               'ok'
+               560_0  COME_FROM           548  '548'
+                 560  JUMP_FORWARD        584  'to 584'
+               562_0  COME_FROM           530  '530'
+Instruction context:
+   
+ L.1292       126  LOAD_FAST                'out'
+                 128  RETURN_VALUE     
+->             130_0  COME_FROM_FINALLY    10  '10'
+
+../test/38214.pyc -- 
+# decompile failed
+
+# file ../test/38214.pyc
+# Deparsing stopped due to parse error

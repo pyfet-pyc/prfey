@@ -1,0 +1,37 @@
+Instruction context:
+-> 
+ L. 368       108  DUP_TOP          
+                 110  LOAD_GLOBAL              IndexError
+                 112  COMPARE_OP               exception-match
+                 114  POP_JUMP_IF_FALSE   138  'to 138'
+                 116  POP_TOP          
+                 118  POP_TOP          
+                 120  POP_TOP          
+Instruction context:
+   
+ L. 544       102  LOAD_FAST                'type_info'
+                 104  BUILD_LIST_1          1 
+                 106  POP_BLOCK        
+->               108  ROT_TWO          
+                 110  POP_TOP          
+                 112  RETURN_VALUE     
+               114_0  COME_FROM           100  '100'
+                 114  POP_BLOCK        
+                 116  JUMP_BACK            74  'to 74'
+               118_0  COME_FROM_FINALLY    78  '78'
+Instruction context:
+   
+ L. 644       108  POP_EXCEPT       
+                 110  BREAK_LOOP          114  'to 114'
+               112_0  COME_FROM           100  '100'
+->               112  END_FINALLY      
+               114_0  COME_FROM           110  '110'
+               114_1  COME_FROM            90  '90'
+               114_2  COME_FROM            56  '56'
+               114_3  COME_FROM            48  '48'
+
+../test/125623.pyc -- 
+# decompile failed
+
+# file ../test/125623.pyc
+# Deparsing stopped due to parse error

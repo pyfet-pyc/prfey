@@ -1,0 +1,26 @@
+Instruction context:
+   
+ L.  51        50  LOAD_FAST                'self'
+                  52  LOAD_ATTR                name
+                  54  UNARY_NOT        
+                  56  JUMP_IF_TRUE_OR_POP    76  'to 76'
+                  58  LOAD_FAST                'other'
+                  60  LOAD_ATTR                name
+                  62  UNARY_NOT        
+                  64  JUMP_IF_TRUE_OR_POP    76  'to 76'
+                  66  LOAD_FAST                'self'
+                  68  LOAD_ATTR                name
+                  70  LOAD_FAST                'other'
+                  72  LOAD_ATTR                name
+                  74  COMPARE_OP               ==
+                76_0  COME_FROM            64  '64'
+                76_1  COME_FROM            56  '56'
+                76_2  COME_FROM            48  '48'
+                76_3  COME_FROM            20  '20'
+->              76_4  COME_FROM             8  '8'
+
+../test/157105.pyc -- 
+# decompile failed
+
+# file ../test/157105.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,152 @@
+Instruction context:
+   
+ L. 349       112  DUP_TOP          
+                 114  LOAD_GLOBAL              Exception
+->               116  <121>               202  ''
+                 118  POP_TOP          
+                 120  STORE_FAST               'e'
+                 122  POP_TOP          
+                 124  SETUP_FINALLY       194  'to 194'
+Instruction context:
+   
+ L. 454        18  LOAD_GLOBAL              getattr
+                  20  LOAD_FAST                'update'
+                  22  LOAD_FAST                'update_type'
+                  24  CALL_FUNCTION_2       2  ''
+                  26  LOAD_CONST               None
+->                28  <117>                 1  ''
+                  30  POP_JUMP_IF_FALSE    10  'to 10'
+Instruction context:
+   
+ L. 486        12  LOAD_FAST                'self'
+                  14  LOAD_ATTR                polling
+                  16  LOAD_FAST                'args'
+                  18  LOAD_CONST               True
+                  20  LOAD_FAST                'timeout'
+                  22  LOAD_FAST                'long_polling_timeout'
+                  24  LOAD_CONST               ('none_stop', 'timeout', 'long_polling_timeout')
+                  26  BUILD_CONST_KEY_MAP_3     3 
+                  28  LOAD_FAST                'kwargs'
+->                30  <164>                 1  ''
+                  32  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  34  POP_TOP          
+                  36  POP_BLOCK        
+                  38  JUMP_FORWARD        158  'to 158'
+                40_0  COME_FROM_FINALLY    10  '10'
+Instruction context:
+   
+ L. 538       132  DUP_TOP          
+                 134  LOAD_GLOBAL              apihelper
+                 136  LOAD_ATTR                ApiException
+->           138_140  <121>               304  ''
+                 142  POP_TOP          
+                 144  STORE_FAST               'e'
+                 146  POP_TOP          
+                 148  SETUP_FINALLY       296  'to 296'
+Instruction context:
+   
+ L. 593        60  DUP_TOP          
+                  62  LOAD_GLOBAL              apihelper
+                  64  LOAD_ATTR                ApiException
+->                66  <121>               210  ''
+                  68  POP_TOP          
+                  70  STORE_FAST               'e'
+                  72  POP_TOP          
+                  74  SETUP_FINALLY       202  'to 202'
+Instruction context:
+   
+ L. 628         6  LOAD_FAST                'self'
+                   8  LOAD_ATTR                worker_pool
+                  10  LOAD_ATTR                put
+                  12  LOAD_FAST                'task'
+                  14  BUILD_LIST_1          1 
+                  16  LOAD_FAST                'args'
+->                18  CALL_FINALLY         21  'to 21'
+                  20  WITH_CLEANUP_FINISH
+                  22  BUILD_MAP_0           0 
+                  24  LOAD_FAST                'kwargs'
+                  26  <164>                 1  ''
+                  28  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  30  POP_TOP          
+                  32  JUMP_FORWARD         48  'to 48'
+                34_0  COME_FROM             4  '4'
+Instruction context:
+   
+ L.1708         6  LOAD_FAST                'self'
+                   8  LOAD_ATTR                register_for_reply_by_message_id
+                  10  LOAD_FAST                'message_id'
+                  12  LOAD_FAST                'callback'
+                  14  BUILD_LIST_2          2 
+                  16  LOAD_FAST                'args'
+->                18  CALL_FINALLY         21  'to 21'
+                  20  WITH_CLEANUP_FINISH
+                  22  BUILD_MAP_0           0 
+                  24  LOAD_FAST                'kwargs'
+                  26  <164>                 1  ''
+                  28  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+Instruction context:
+   
+ L.1729         8  LOAD_GLOBAL              hasattr
+                  10  LOAD_FAST                'message'
+                  12  LOAD_STR                 'reply_to_message'
+                  14  CALL_FUNCTION_2       2  ''
+                  16  POP_JUMP_IF_FALSE     4  'to 4'
+                  18  LOAD_FAST                'message'
+                  20  LOAD_ATTR                reply_to_message
+                  22  LOAD_CONST               None
+->                24  <117>                 1  ''
+                  26  POP_JUMP_IF_FALSE     4  'to 4'
+Instruction context:
+   
+ L.1747         8  LOAD_FAST                'self'
+                  10  LOAD_ATTR                register_next_step_handler_by_chat_id
+                  12  LOAD_FAST                'chat_id'
+                  14  LOAD_FAST                'callback'
+                  16  BUILD_LIST_2          2 
+                  18  LOAD_FAST                'args'
+->                20  CALL_FINALLY         23  'to 23'
+                  22  WITH_CLEANUP_FINISH
+                  24  BUILD_MAP_0           0 
+                  26  LOAD_FAST                'kwargs'
+                  28  <164>                 1  ''
+                  30  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+Instruction context:
+   
+ L.1808        52  LOAD_FAST                'self'
+                  54  LOAD_ATTR                _exec_task
+                  56  LOAD_FAST                'handler'
+                  58  LOAD_STR                 'callback'
+                  60  BINARY_SUBSCR    
+                  62  LOAD_FAST                'message'
+                  64  BUILD_LIST_2          2 
+                  66  LOAD_FAST                'handler'
+                  68  LOAD_STR                 'args'
+                  70  BINARY_SUBSCR    
+->                72  CALL_FINALLY         75  'to 75'
+                  74  WITH_CLEANUP_FINISH
+                  76  BUILD_MAP_0           0 
+                  78  LOAD_FAST                'handler'
+                  80  LOAD_STR                 'kwargs'
+                  82  BINARY_SUBSCR    
+                  84  <164>                 1  ''
+                  86  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  88  POP_TOP          
+                  90  JUMP_BACK            44  'to 44'
+                92_0  COME_FROM            38  '38'
+Instruction context:
+   
+ L.2198        20  LOAD_FAST                'filter_value'
+                  22  LOAD_CONST               None
+->                24  <117>                 0  ''
+                  26  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L.2237        60  POP_TOP          
+->                62  CONTINUE             20  'to 20'
+                  64  JUMP_BACK            28  'to 28'
+
+test/164854.pyc -- 
+# decompile failed
+
+# file test/164854.pyc
+# Deparsing stopped due to parse error

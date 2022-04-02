@@ -1,0 +1,190 @@
+
+# file test/162638.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nBinary serialization\n\nNPY format\n==========\n\nA simple format for saving numpy arrays to disk with the full\ninformation about them.\n\nThe ``.npy`` format is the standard binary file format in NumPy for\npersisting a *single* arbitrary NumPy array on disk. The format stores all\nof the shape and dtype information necessary to reconstruct the array\ncorrectly even on another machine with a different architecture.\nThe format is designed to be as simple as possible while achieving\nits limited goals.\n\nThe ``.npz`` format is the standard format for persisting *multiple* NumPy\narrays on disk. A ``.npz`` file is a zip file containing multiple ``.npy``\nfiles, one for each array.\n\nCapabilities\n------------\n\n- Can represent all NumPy arrays including nested record arrays and\n  object arrays.\n\n- Represents the data in its native binary form.\n\n- Supports Fortran-contiguous arrays directly.\n\n- Stores all of the necessary information to reconstruct the array\n  including shape and dtype on a machine of a different\n  architecture.  Both little-endian and big-endian arrays are\n  supported, and a file with little-endian numbers will yield\n  a little-endian array on any machine reading the file. The\n  types are described in terms of their actual sizes. For example,\n  if a machine with a 64-bit C "long int" writes out an array with\n  "long ints", a reading machine with 32-bit C "long ints" will yield\n  an array with 64-bit integers.\n\n- Is straightforward to reverse engineer. Datasets often live longer than\n  the programs that created them. A competent developer should be\n  able to create a solution in their preferred programming language to\n  read most ``.npy`` files that they have been given without much\n  documentation.\n\n- Allows memory-mapping of the data. See `open_memmep`.\n\n- Can be read from a filelike stream object instead of an actual file.\n\n- Stores object arrays, i.e. arrays containing elements that are arbitrary\n  Python objects. Files with object arrays are not to be mmapable, but\n  can be read and written to disk.\n\nLimitations\n-----------\n\n- Arbitrary subclasses of numpy.ndarray are not completely preserved.\n  Subclasses will be accepted for writing, but only the array data will\n  be written out. A regular numpy.ndarray object will be created\n  upon reading the file.\n\n.. warning::\n\n  Due to limitations in the interpretation of structured dtypes, dtypes\n  with fields with empty names will have the names replaced by \'f0\', \'f1\',\n  etc. Such arrays will not round-trip through the format entirely\n  accurately. The data is intact; only the field names will differ. We are\n  working on a fix for this. This fix will not require a change in the\n  file format. The arrays with such structures can still be saved and\n  restored, and the correct dtype may be restored by using the\n  ``loadedarray.view(correct_dtype)`` method.\n\nFile extensions\n---------------\n\nWe recommend using the ``.npy`` and ``.npz`` extensions for files saved\nin this format. This is by no means a requirement; applications may wish\nto use these file formats but use an extension specific to the\napplication. In the absence of an obvious alternative, however,\nwe suggest using ``.npy`` and ``.npz``.\n\nVersion numbering\n-----------------\n\nThe version numbering of these formats is independent of NumPy version\nnumbering. If the format is upgraded, the code in `numpy.io` will still\nbe able to read and write Version 1.0 files.\n\nFormat Version 1.0\n------------------\n\nThe first 6 bytes are a magic string: exactly ``\\x93NUMPY``.\n\nThe next 1 byte is an unsigned byte: the major version number of the file\nformat, e.g. ``\\x01``.\n\nThe next 1 byte is an unsigned byte: the minor version number of the file\nformat, e.g. ``\\x00``. Note: the version of the file format is not tied\nto the version of the numpy package.\n\nThe next 2 bytes form a little-endian unsigned short int: the length of\nthe header data HEADER_LEN.\n\nThe next HEADER_LEN bytes form the header data describing the array\'s\nformat. It is an ASCII string which contains a Python literal expression\nof a dictionary. It is terminated by a newline (``\\n``) and padded with\nspaces (``\\x20``) to make the total of\n``len(magic string) + 2 + len(length) + HEADER_LEN`` be evenly divisible\nby 64 for alignment purposes.\n\nThe dictionary contains three keys:\n\n    "descr" : dtype.descr\n      An object that can be passed as an argument to the `numpy.dtype`\n      constructor to create the array\'s dtype.\n    "fortran_order" : bool\n      Whether the array data is Fortran-contiguous or not. Since\n      Fortran-contiguous arrays are a common form of non-C-contiguity,\n      we allow them to be written directly to disk for efficiency.\n    "shape" : tuple of int\n      The shape of the array.\n\nFor repeatability and readability, the dictionary keys are sorted in\nalphabetic order. This is for convenience only. A writer SHOULD implement\nthis if possible. A reader MUST NOT depend on this.\n\nFollowing the header comes the array data. If the dtype contains Python\nobjects (i.e. ``dtype.hasobject is True``), then the data is a Python\npickle of the array. Otherwise the data is the contiguous (either C-\nor Fortran-, depending on ``fortran_order``) bytes of the array.\nConsumers can figure out the number of bytes by multiplying the number\nof elements given by the shape (noting that ``shape=()`` means there is\n1 element) by ``dtype.itemsize``.\n\nFormat Version 2.0\n------------------\n\nThe version 1.0 format only allowed the array header to have a total size of\n65535 bytes.  This can be exceeded by structured arrays with a large number of\ncolumns.  The version 2.0 format extends the header size to 4 GiB.\n`numpy.save` will automatically save in 2.0 format if the data requires it,\nelse it will always use the more compatible 1.0 format.\n\nThe description of the fourth element of the header therefore has become:\n"The next 4 bytes form a little-endian unsigned int: the length of the header\ndata HEADER_LEN."\n\nFormat Version 3.0\n------------------\n\nThis version replaces the ASCII string (which in practice was latin1) with\na utf8-encoded string, so supports structured types with any unicode field\nnames.\n\nNotes\n-----\nThe ``.npy`` format, including motivation for creating it and a comparison of\nalternatives, is described in the\n:doc:`"npy-format" NEP <neps:nep-0001-npy-format>`, however details have\nevolved with time and this document is more current.\n\n'
+                2  STORE_NAME               __doc__
+
+ L. 164         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              numpy
+               10  STORE_NAME               numpy
+
+ L. 165        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              io
+               18  STORE_NAME               io
+
+ L. 166        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              warnings
+               26  STORE_NAME               warnings
+
+ L. 167        28  LOAD_CONST               0
+               30  LOAD_CONST               ('safe_eval',)
+               32  IMPORT_NAME_ATTR         numpy.lib.utils
+               34  IMPORT_FROM              safe_eval
+               36  STORE_NAME               safe_eval
+               38  POP_TOP          
+
+ L. 168        40  LOAD_CONST               0
+               42  LOAD_CONST               ('isfileobj', 'os_fspath', 'pickle')
+               44  IMPORT_NAME_ATTR         numpy.compat
+               46  IMPORT_FROM              isfileobj
+               48  STORE_NAME               isfileobj
+               50  IMPORT_FROM              os_fspath
+               52  STORE_NAME               os_fspath
+               54  IMPORT_FROM              pickle
+               56  STORE_NAME               pickle
+               58  POP_TOP          
+
+ L. 173        60  BUILD_LIST_0          0 
+               62  STORE_NAME               __all__
+
+ L. 176        64  BUILD_SET_0           0 
+               66  LOAD_CONST               frozenset({'fortran_order', 'descr', 'shape'})
+               68  POP_FINALLY           1  ''
+               70  STORE_NAME               EXPECTED_KEYS
+
+ L. 177        72  LOAD_CONST               b'\x93NUMPY'
+               74  STORE_NAME               MAGIC_PREFIX
+
+ L. 178        76  LOAD_NAME                len
+               78  LOAD_NAME                MAGIC_PREFIX
+               80  CALL_FUNCTION_1       1  ''
+               82  LOAD_CONST               2
+               84  BINARY_ADD       
+               86  STORE_NAME               MAGIC_LEN
+
+ L. 179        88  LOAD_CONST               64
+               90  STORE_NAME               ARRAY_ALIGN
+
+ L. 180        92  LOAD_CONST               262144
+               94  STORE_NAME               BUFFER_SIZE
+
+ L. 185        96  LOAD_CONST               ('<H', 'latin1')
+
+ L. 186        98  LOAD_CONST               ('<I', 'latin1')
+
+ L. 187       100  LOAD_CONST               ('<I', 'utf8')
+
+ L. 184       102  LOAD_CONST               ((1, 0), (2, 0), (3, 0))
+              104  BUILD_CONST_KEY_MAP_3     3 
+              106  STORE_NAME               _header_size_info
+
+ L. 191       108  LOAD_CODE                <code_object _check_version>
+              110  LOAD_STR                 '_check_version'
+              112  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              114  STORE_NAME               _check_version
+
+ L. 196       116  LOAD_CODE                <code_object magic>
+              118  LOAD_STR                 'magic'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  STORE_NAME               magic
+
+ L. 218       124  LOAD_CODE                <code_object read_magic>
+              126  LOAD_STR                 'read_magic'
+              128  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              130  STORE_NAME               read_magic
+
+ L. 237       132  LOAD_CODE                <code_object _has_metadata>
+              134  LOAD_STR                 '_has_metadata'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  STORE_NAME               _has_metadata
+
+ L. 247       140  LOAD_CODE                <code_object dtype_to_descr>
+              142  LOAD_STR                 'dtype_to_descr'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  STORE_NAME               dtype_to_descr
+
+ L. 283       148  LOAD_CODE                <code_object descr_to_dtype>
+              150  LOAD_STR                 'descr_to_dtype'
+              152  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              154  STORE_NAME               descr_to_dtype
+
+ L. 339       156  LOAD_CODE                <code_object header_data_from_array_1_0>
+              158  LOAD_STR                 'header_data_from_array_1_0'
+              160  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              162  STORE_NAME               header_data_from_array_1_0
+
+ L. 367       164  LOAD_CODE                <code_object _wrap_header>
+              166  LOAD_STR                 '_wrap_header'
+              168  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              170  STORE_NAME               _wrap_header
+
+ L. 392       172  LOAD_CODE                <code_object _wrap_header_guess_version>
+              174  LOAD_STR                 '_wrap_header_guess_version'
+              176  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              178  STORE_NAME               _wrap_header_guess_version
+
+ L. 416       180  LOAD_CONST               (None,)
+              182  LOAD_CODE                <code_object _write_array_header>
+              184  LOAD_STR                 '_write_array_header'
+              186  MAKE_FUNCTION_1          'default'
+              188  STORE_NAME               _write_array_header
+
+ L. 442       190  LOAD_CODE                <code_object write_array_header_1_0>
+              192  LOAD_STR                 'write_array_header_1_0'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  STORE_NAME               write_array_header_1_0
+
+ L. 455       198  LOAD_CODE                <code_object write_array_header_2_0>
+              200  LOAD_STR                 'write_array_header_2_0'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  STORE_NAME               write_array_header_2_0
+
+ L. 470       206  LOAD_CODE                <code_object read_array_header_1_0>
+              208  LOAD_STR                 'read_array_header_1_0'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               read_array_header_1_0
+
+ L. 501       214  LOAD_CODE                <code_object read_array_header_2_0>
+              216  LOAD_STR                 'read_array_header_2_0'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  STORE_NAME               read_array_header_2_0
+
+ L. 535       222  LOAD_CODE                <code_object _filter_header>
+              224  LOAD_STR                 '_filter_header'
+              226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              228  STORE_NAME               _filter_header
+
+ L. 570       230  LOAD_CODE                <code_object _read_array_header>
+              232  LOAD_STR                 '_read_array_header'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  STORE_NAME               _read_array_header
+
+ L. 627       238  LOAD_CONST               (None, True, None)
+              240  LOAD_CODE                <code_object write_array>
+              242  LOAD_STR                 'write_array'
+              244  MAKE_FUNCTION_1          'default'
+              246  STORE_NAME               write_array
+
+ L. 699       248  LOAD_CONST               (False, None)
+              250  LOAD_CODE                <code_object read_array>
+              252  LOAD_STR                 'read_array'
+              254  MAKE_FUNCTION_1          'default'
+              256  STORE_NAME               read_array
+
+ L. 792       258  LOAD_CONST               ('r+', None, None, False, None)
+              260  LOAD_CODE                <code_object open_memmap>
+              262  LOAD_STR                 'open_memmap'
+              264  MAKE_FUNCTION_1          'default'
+              266  STORE_NAME               open_memmap
+
+ L. 893       268  LOAD_CONST               ('ran out of data',)
+              270  LOAD_CODE                <code_object _read_bytes>
+              272  LOAD_STR                 '_read_bytes'
+              274  MAKE_FUNCTION_1          'default'
+              276  STORE_NAME               _read_bytes
+
+Parse error at or near `POP_FINALLY' instruction at offset 68
+
+Instruction context:
+   
+ L. 176        64  BUILD_SET_0           0 
+                  66  LOAD_CONST               frozenset({'fortran_order', 'descr', 'shape'})
+->                68  POP_FINALLY           1  ''
+                  70  STORE_NAME               EXPECTED_KEYS
+
+test/162638.pyc -- 
+# decompile failed

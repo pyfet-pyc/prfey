@@ -1,0 +1,55 @@
+Instruction context:
+   
+ L.  43         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('NodeList', 'EmptyNodeList', 'StringTypes', 'defproperty')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101855.pyc -- 
+# decompile failed
+
+# file test/101855.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Python version compatibility support for minidom.\n\nThis module contains internal implementation details and\nshould not be imported; use xml.dom.minidom instead.\n'
+                2  STORE_NAME               __doc__
+
+ L.  43         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('NodeList', 'EmptyNodeList', 'StringTypes', 'defproperty')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  45        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME_ATTR         xml.dom
+               18  STORE_NAME               xml
+
+ L.  47        20  LOAD_NAME                str
+               22  BUILD_TUPLE_1         1 
+               24  STORE_NAME               StringTypes
+
+ L.  50        26  LOAD_BUILD_CLASS 
+               28  LOAD_CODE                <code_object NodeList>
+               30  LOAD_STR                 'NodeList'
+               32  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               34  LOAD_STR                 'NodeList'
+               36  LOAD_NAME                list
+               38  CALL_FUNCTION_3       3  ''
+               40  STORE_NAME               NodeList
+
+ L.  74        42  LOAD_BUILD_CLASS 
+               44  LOAD_CODE                <code_object EmptyNodeList>
+               46  LOAD_STR                 'EmptyNodeList'
+               48  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               50  LOAD_STR                 'EmptyNodeList'
+               52  LOAD_NAME                tuple
+               54  CALL_FUNCTION_3       3  ''
+               56  STORE_NAME               EmptyNodeList
+
+ L. 101        58  LOAD_CODE                <code_object defproperty>
+               60  LOAD_STR                 'defproperty'
+               62  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               64  STORE_NAME               defproperty
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

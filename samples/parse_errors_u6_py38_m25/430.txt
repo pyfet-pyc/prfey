@@ -1,0 +1,53 @@
+Instruction context:
+   
+ L. 349        86  DUP_TOP          
+                  88  LOAD_GLOBAL              OSError
+                  90  COMPARE_OP               exception-match
+                  92  POP_JUMP_IF_FALSE   118  'to 118'
+                  94  POP_TOP          
+->                96  POP_TOP          
+                  98  POP_TOP          
+Instruction context:
+   
+ L. 414       224  LOAD_FAST                'dnsnames'
+                 226  LOAD_METHOD              append
+                 228  LOAD_FAST                'value'
+                 230  CALL_METHOD_1         1  ''
+                 232  POP_TOP          
+                 234  JUMP_BACK           190  'to 190'
+->               236  JUMP_BACK           182  'to 182'
+               238_0  COME_FROM           168  '168'
+Instruction context:
+   
+ L. 715        20  DUP_TOP          
+                  22  LOAD_GLOBAL              ValueError
+                  24  COMPARE_OP               exception-match
+                  26  POP_JUMP_IF_FALSE    42  'to 42'
+                  28  POP_TOP          
+->                30  POP_TOP          
+                  32  POP_TOP          
+Instruction context:
+   
+ L.1105       114  POP_BLOCK        
+->               116  POP_EXCEPT       
+                 118  CALL_FINALLY        142  'to 142'
+                 120  LOAD_CONST               0
+                 122  RETURN_VALUE     
+               124_0  COME_FROM           112  '112'
+Instruction context:
+   
+ L.1335       132  DUP_TOP          
+                 134  LOAD_GLOBAL              OSError
+                 136  LOAD_GLOBAL              ValueError
+                 138  BUILD_TUPLE_2         2 
+                 140  COMPARE_OP               exception-match
+                 142  POP_JUMP_IF_FALSE   162  'to 162'
+                 144  POP_TOP          
+->               146  POP_TOP          
+                 148  POP_TOP          
+
+test/430.pyc -- 
+# decompile failed
+
+# file test/430.pyc
+# Deparsing stopped due to parse error

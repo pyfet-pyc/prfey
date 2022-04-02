@@ -1,0 +1,43 @@
+Instruction context:
+   
+ L. 206       170  LOAD_FAST                'dir'
+                 172  POP_BLOCK        
+                 174  ROT_TWO          
+->               176  POP_TOP          
+                 178  ROT_TWO          
+                 180  POP_TOP          
+                 182  RETURN_VALUE     
+               184_0  COME_FROM_FINALLY    80  '80'
+Instruction context:
+   
+ L. 252       114  POP_EXCEPT       
+                 116  JUMP_BACK            34  'to 34'
+                 118  POP_EXCEPT       
+                 120  JUMP_FORWARD        186  'to 186'
+->             122_0  COME_FROM           106  '106'
+Instruction context:
+   
+ L. 361       132  POP_EXCEPT       
+                 134  JUMP_BACK            54  'to 54'
+                 136  POP_EXCEPT       
+                 138  JUMP_FORWARD        204  'to 204'
+->             140_0  COME_FROM           124  '124'
+Instruction context:
+   
+ L. 610       140  LOAD_GLOBAL              _os
+                 142  LOAD_METHOD              close
+                 144  LOAD_FAST                'fd'
+                 146  CALL_METHOD_1         1  ''
+->               148  POP_TOP          
+Instruction context:
+   
+ L. 722        26  POP_EXCEPT       
+->                28  LOAD_CONST               None
+                  30  RETURN_VALUE     
+                32_0  COME_FROM            18  '18'
+
+../test/105044.pyc -- 
+# decompile failed
+
+# file ../test/105044.pyc
+# Deparsing stopped due to parse error

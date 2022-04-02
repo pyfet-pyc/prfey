@@ -1,0 +1,289 @@
+
+# file test/162633.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nDiscrete Fourier Transforms\n\nRoutines in this module:\n\nfft(a, n=None, axis=-1, norm="backward")\nifft(a, n=None, axis=-1, norm="backward")\nrfft(a, n=None, axis=-1, norm="backward")\nirfft(a, n=None, axis=-1, norm="backward")\nhfft(a, n=None, axis=-1, norm="backward")\nihfft(a, n=None, axis=-1, norm="backward")\nfftn(a, s=None, axes=None, norm="backward")\nifftn(a, s=None, axes=None, norm="backward")\nrfftn(a, s=None, axes=None, norm="backward")\nirfftn(a, s=None, axes=None, norm="backward")\nfft2(a, s=None, axes=(-2,-1), norm="backward")\nifft2(a, s=None, axes=(-2, -1), norm="backward")\nrfft2(a, s=None, axes=(-2,-1), norm="backward")\nirfft2(a, s=None, axes=(-2, -1), norm="backward")\n\ni = inverse transform\nr = transform of purely real data\nh = Hermite transform\nn = n-dimensional transform\n2 = 2-dimensional transform\n(Note: 2D routines are just nD routines with different default\nbehavior.)\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  30         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('fft', 'ifft', 'rfft', 'irfft', 'hfft', 'ihfft', 'rfftn', 'irfftn', 'rfft2', 'irfft2', 'fft2', 'ifft2', 'fftn', 'ifftn')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  33        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              functools
+               18  STORE_NAME               functools
+
+ L.  35        20  LOAD_CONST               0
+               22  LOAD_CONST               ('asarray', 'zeros', 'swapaxes', 'conjugate', 'take', 'sqrt')
+               24  IMPORT_NAME_ATTR         numpy.core
+               26  IMPORT_FROM              asarray
+               28  STORE_NAME               asarray
+               30  IMPORT_FROM              zeros
+               32  STORE_NAME               zeros
+               34  IMPORT_FROM              swapaxes
+               36  STORE_NAME               swapaxes
+               38  IMPORT_FROM              conjugate
+               40  STORE_NAME               conjugate
+               42  IMPORT_FROM              take
+               44  STORE_NAME               take
+               46  IMPORT_FROM              sqrt
+               48  STORE_NAME               sqrt
+               50  POP_TOP          
+
+ L.  36        52  LOAD_CONST               1
+               54  LOAD_CONST               ('_pocketfft_internal',)
+               56  IMPORT_NAME              
+               58  IMPORT_FROM              _pocketfft_internal
+               60  STORE_NAME               pfi
+               62  POP_TOP          
+
+ L.  37        64  LOAD_CONST               0
+               66  LOAD_CONST               ('normalize_axis_index',)
+               68  IMPORT_NAME_ATTR         numpy.core.multiarray
+               70  IMPORT_FROM              normalize_axis_index
+               72  STORE_NAME               normalize_axis_index
+               74  POP_TOP          
+
+ L.  38        76  LOAD_CONST               0
+               78  LOAD_CONST               ('overrides',)
+               80  IMPORT_NAME_ATTR         numpy.core
+               82  IMPORT_FROM              overrides
+               84  STORE_NAME               overrides
+               86  POP_TOP          
+
+ L.  41        88  LOAD_NAME                functools
+               90  LOAD_ATTR                partial
+
+ L.  42        92  LOAD_NAME                overrides
+               94  LOAD_ATTR                array_function_dispatch
+               96  LOAD_STR                 'numpy.fft'
+
+ L.  41        98  LOAD_CONST               ('module',)
+              100  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              102  STORE_NAME               array_function_dispatch
+
+ L.  49       104  LOAD_CODE                <code_object _raw_fft>
+              106  LOAD_STR                 '_raw_fft'
+              108  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              110  STORE_NAME               _raw_fft
+
+ L.  78       112  LOAD_CODE                <code_object _get_forward_norm>
+              114  LOAD_STR                 '_get_forward_norm'
+              116  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              118  STORE_NAME               _get_forward_norm
+
+ L.  92       120  LOAD_CODE                <code_object _get_backward_norm>
+              122  LOAD_STR                 '_get_backward_norm'
+              124  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              126  STORE_NAME               _get_backward_norm
+
+ L. 106       128  LOAD_STR                 'forward'
+              130  LOAD_STR                 'forward'
+
+ L. 107       132  LOAD_STR                 'ortho'
+              134  LOAD_STR                 'backward'
+
+ L. 106       136  LOAD_CONST               ('backward', None, 'ortho', 'forward')
+              138  BUILD_CONST_KEY_MAP_4     4 
+              140  STORE_NAME               _SWAP_DIRECTION_MAP
+
+ L. 110       142  LOAD_CODE                <code_object _swap_direction>
+              144  LOAD_STR                 '_swap_direction'
+              146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              148  STORE_NAME               _swap_direction
+
+ L. 118       150  LOAD_CONST               (None, None, None)
+              152  LOAD_CODE                <code_object _fft_dispatcher>
+              154  LOAD_STR                 '_fft_dispatcher'
+              156  MAKE_FUNCTION_1          'default'
+              158  STORE_NAME               _fft_dispatcher
+
+ L. 122       160  LOAD_NAME                array_function_dispatch
+              162  LOAD_NAME                _fft_dispatcher
+              164  CALL_FUNCTION_1       1  ''
+
+ L. 123       166  LOAD_CONST               (None, -1, None)
+              168  LOAD_CODE                <code_object fft>
+              170  LOAD_STR                 'fft'
+              172  MAKE_FUNCTION_1          'default'
+              174  CALL_FUNCTION_1       1  ''
+              176  STORE_NAME               fft
+
+ L. 219       178  LOAD_NAME                array_function_dispatch
+              180  LOAD_NAME                _fft_dispatcher
+              182  CALL_FUNCTION_1       1  ''
+
+ L. 220       184  LOAD_CONST               (None, -1, None)
+              186  LOAD_CODE                <code_object ifft>
+              188  LOAD_STR                 'ifft'
+              190  MAKE_FUNCTION_1          'default'
+              192  CALL_FUNCTION_1       1  ''
+              194  STORE_NAME               ifft
+
+ L. 320       196  LOAD_NAME                array_function_dispatch
+              198  LOAD_NAME                _fft_dispatcher
+              200  CALL_FUNCTION_1       1  ''
+
+ L. 321       202  LOAD_CONST               (None, -1, None)
+              204  LOAD_CODE                <code_object rfft>
+              206  LOAD_STR                 'rfft'
+              208  MAKE_FUNCTION_1          'default'
+              210  CALL_FUNCTION_1       1  ''
+              212  STORE_NAME               rfft
+
+ L. 413       214  LOAD_NAME                array_function_dispatch
+              216  LOAD_NAME                _fft_dispatcher
+              218  CALL_FUNCTION_1       1  ''
+
+ L. 414       220  LOAD_CONST               (None, -1, None)
+              222  LOAD_CODE                <code_object irfft>
+              224  LOAD_STR                 'irfft'
+              226  MAKE_FUNCTION_1          'default'
+              228  CALL_FUNCTION_1       1  ''
+              230  STORE_NAME               irfft
+
+ L. 517       232  LOAD_NAME                array_function_dispatch
+              234  LOAD_NAME                _fft_dispatcher
+              236  CALL_FUNCTION_1       1  ''
+
+ L. 518       238  LOAD_CONST               (None, -1, None)
+              240  LOAD_CODE                <code_object hfft>
+              242  LOAD_STR                 'hfft'
+              244  MAKE_FUNCTION_1          'default'
+              246  CALL_FUNCTION_1       1  ''
+              248  STORE_NAME               hfft
+
+ L. 615       250  LOAD_NAME                array_function_dispatch
+              252  LOAD_NAME                _fft_dispatcher
+              254  CALL_FUNCTION_1       1  ''
+
+ L. 616       256  LOAD_CONST               (None, -1, None)
+              258  LOAD_CODE                <code_object ihfft>
+              260  LOAD_STR                 'ihfft'
+              262  MAKE_FUNCTION_1          'default'
+              264  CALL_FUNCTION_1       1  ''
+              266  STORE_NAME               ihfft
+
+ L. 682       268  LOAD_CONST               (None, None, 0)
+              270  LOAD_CODE                <code_object _cook_nd_args>
+              272  LOAD_STR                 '_cook_nd_args'
+              274  MAKE_FUNCTION_1          'default'
+              276  STORE_NAME               _cook_nd_args
+
+ L. 701       278  LOAD_CONST               None
+              280  LOAD_CONST               None
+              282  LOAD_NAME                fft
+              284  LOAD_CONST               None
+              286  BUILD_TUPLE_4         4 
+              288  LOAD_CODE                <code_object _raw_fftnd>
+              290  LOAD_STR                 '_raw_fftnd'
+              292  MAKE_FUNCTION_1          'default'
+              294  STORE_NAME               _raw_fftnd
+
+ L. 711       296  LOAD_CONST               (None, None, None)
+              298  LOAD_CODE                <code_object _fftn_dispatcher>
+              300  LOAD_STR                 '_fftn_dispatcher'
+              302  MAKE_FUNCTION_1          'default'
+              304  STORE_NAME               _fftn_dispatcher
+
+ L. 715       306  LOAD_NAME                array_function_dispatch
+              308  LOAD_NAME                _fftn_dispatcher
+              310  CALL_FUNCTION_1       1  ''
+
+ L. 716       312  LOAD_CONST               (None, None, None)
+              314  LOAD_CODE                <code_object fftn>
+              316  LOAD_STR                 'fftn'
+              318  MAKE_FUNCTION_1          'default'
+              320  CALL_FUNCTION_1       1  ''
+              322  STORE_NAME               fftn
+
+ L. 818       324  LOAD_NAME                array_function_dispatch
+              326  LOAD_NAME                _fftn_dispatcher
+              328  CALL_FUNCTION_1       1  ''
+
+ L. 819       330  LOAD_CONST               (None, None, None)
+              332  LOAD_CODE                <code_object ifftn>
+              334  LOAD_STR                 'ifftn'
+              336  MAKE_FUNCTION_1          'default'
+              338  CALL_FUNCTION_1       1  ''
+              340  STORE_NAME               ifftn
+
+ L. 921       342  LOAD_NAME                array_function_dispatch
+              344  LOAD_NAME                _fftn_dispatcher
+              346  CALL_FUNCTION_1       1  ''
+
+ L. 922       348  LOAD_CONST               (None, (-2, -1), None)
+              350  LOAD_CODE                <code_object fft2>
+              352  LOAD_STR                 'fft2'
+              354  MAKE_FUNCTION_1          'default'
+              356  CALL_FUNCTION_1       1  ''
+              358  STORE_NAME               fft2
+
+ L.1017       360  LOAD_NAME                array_function_dispatch
+              362  LOAD_NAME                _fftn_dispatcher
+              364  CALL_FUNCTION_1       1  ''
+
+ L.1018       366  LOAD_CONST               (None, (-2, -1), None)
+              368  LOAD_CODE                <code_object ifft2>
+              370  LOAD_STR                 'ifft2'
+              372  MAKE_FUNCTION_1          'default'
+              374  CALL_FUNCTION_1       1  ''
+              376  STORE_NAME               ifft2
+
+ L.1110       378  LOAD_NAME                array_function_dispatch
+              380  LOAD_NAME                _fftn_dispatcher
+              382  CALL_FUNCTION_1       1  ''
+
+ L.1111       384  LOAD_CONST               (None, None, None)
+              386  LOAD_CODE                <code_object rfftn>
+              388  LOAD_STR                 'rfftn'
+              390  MAKE_FUNCTION_1          'default'
+              392  CALL_FUNCTION_1       1  ''
+              394  STORE_NAME               rfftn
+
+ L.1208       396  LOAD_NAME                array_function_dispatch
+              398  LOAD_NAME                _fftn_dispatcher
+              400  CALL_FUNCTION_1       1  ''
+
+ L.1209       402  LOAD_CONST               (None, (-2, -1), None)
+              404  LOAD_CODE                <code_object rfft2>
+              406  LOAD_STR                 'rfft2'
+              408  MAKE_FUNCTION_1          'default'
+              410  CALL_FUNCTION_1       1  ''
+              412  STORE_NAME               rfft2
+
+ L.1260       414  LOAD_NAME                array_function_dispatch
+              416  LOAD_NAME                _fftn_dispatcher
+              418  CALL_FUNCTION_1       1  ''
+
+ L.1261       420  LOAD_CONST               (None, None, None)
+              422  LOAD_CODE                <code_object irfftn>
+              424  LOAD_STR                 'irfftn'
+              426  MAKE_FUNCTION_1          'default'
+              428  CALL_FUNCTION_1       1  ''
+              430  STORE_NAME               irfftn
+
+ L.1370       432  LOAD_NAME                array_function_dispatch
+              434  LOAD_NAME                _fftn_dispatcher
+              436  CALL_FUNCTION_1       1  ''
+
+ L.1371       438  LOAD_CONST               (None, (-2, -1), None)
+              440  LOAD_CODE                <code_object irfft2>
+              442  LOAD_STR                 'irfft2'
+              444  MAKE_FUNCTION_1          'default'
+              446  CALL_FUNCTION_1       1  ''
+              448  STORE_NAME               irfft2
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L.  30         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('fft', 'ifft', 'rfft', 'irfft', 'hfft', 'ihfft', 'rfftn', 'irfftn', 'rfft2', 'irfft2', 'fft2', 'ifft2', 'fftn', 'ifftn')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/162633.pyc -- 
+# decompile failed

@@ -1,0 +1,22 @@
+Instruction context:
+   
+ L. 115       484  POP_EXCEPT       
+             486_488  JUMP_ABSOLUTE       698  'to 698'
+->               490  POP_EXCEPT       
+                 492  JUMP_FORWARD        496  'to 496'
+               494_0  COME_FROM           474  '474'
+                 494  END_FINALLY      
+               496_0  COME_FROM           492  '492'
+               496_1  COME_FROM           464  '464'
+Instruction context:
+   
+ L. 389       304  LOAD_GLOBAL              SyntaxError
+                 306  LOAD_STR                 'no marker found'
+                 308  CALL_FUNCTION_1       1  ''
+->               310  RAISE_VARARGS_1       1  'exception instance'
+
+../test/18544.pyc -- 
+# decompile failed
+
+# file ../test/18544.pyc
+# Deparsing stopped due to parse error

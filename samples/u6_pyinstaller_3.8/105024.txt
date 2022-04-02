@@ -1,0 +1,78 @@
+Instruction context:
+   
+ L.  94         8  LOAD_FAST                'self'
+                  10  LOAD_METHOD              _qsize
+                  12  CALL_METHOD_0         0  ''
+                  14  POP_BLOCK        
+->                16  ROT_TWO          
+                  18  BEGIN_FINALLY    
+                  20  WITH_CLEANUP_START
+                  22  WITH_CLEANUP_FINISH
+                  24  POP_FINALLY           0  ''
+                  26  RETURN_VALUE     
+                28_0  COME_FROM_WITH        4  '4'
+                  28  WITH_CLEANUP_START
+                  30  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 108         8  LOAD_FAST                'self'
+                  10  LOAD_METHOD              _qsize
+                  12  CALL_METHOD_0         0  ''
+                  14  UNARY_NOT        
+                  16  POP_BLOCK        
+->                18  ROT_TWO          
+                  20  BEGIN_FINALLY    
+                  22  WITH_CLEANUP_START
+                  24  WITH_CLEANUP_FINISH
+                  26  POP_FINALLY           0  ''
+                  28  RETURN_VALUE     
+                30_0  COME_FROM_WITH        4  '4'
+                  30  WITH_CLEANUP_START
+                  32  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 119         8  LOAD_CONST               0
+                  10  LOAD_FAST                'self'
+                  12  LOAD_ATTR                maxsize
+                  14  DUP_TOP          
+                  16  ROT_THREE        
+                  18  COMPARE_OP               <
+                  20  JUMP_IF_FALSE_OR_POP    32  'to 32'
+                  22  LOAD_FAST                'self'
+                  24  LOAD_METHOD              _qsize
+                  26  CALL_METHOD_0         0  ''
+                  28  COMPARE_OP               <=
+                  30  JUMP_FORWARD         36  'to 36'
+                32_0  COME_FROM            20  '20'
+                  32  ROT_TWO          
+                  34  POP_TOP          
+                36_0  COME_FROM            30  '30'
+                  36  POP_BLOCK        
+->                38  ROT_TWO          
+                  40  BEGIN_FINALLY    
+                  42  WITH_CLEANUP_START
+                  44  WITH_CLEANUP_FINISH
+                  46  POP_FINALLY           0  ''
+                  48  RETURN_VALUE     
+                50_0  COME_FROM_WITH        4  '4'
+                  50  WITH_CLEANUP_START
+                  52  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 182       146  LOAD_FAST                'item'
+                 148  POP_BLOCK        
+->               150  ROT_TWO          
+                 152  BEGIN_FINALLY    
+                 154  WITH_CLEANUP_START
+                 156  WITH_CLEANUP_FINISH
+                 158  POP_FINALLY           0  ''
+                 160  RETURN_VALUE     
+               162_0  COME_FROM_WITH        4  '4'
+                 162  WITH_CLEANUP_START
+                 164  WITH_CLEANUP_FINISH
+
+../test/105024.pyc -- 
+# decompile failed
+
+# file ../test/105024.pyc
+# Deparsing stopped due to parse error

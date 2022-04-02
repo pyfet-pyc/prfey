@@ -1,0 +1,21 @@
+Instruction context:
+   
+ L.  18        44  LOAD_FAST                'r'
+                  46  LOAD_FAST                's'
+                  48  BUILD_TUPLE_2         2 
+                  50  POP_BLOCK        
+->                52  ROT_TWO          
+                  54  BEGIN_FINALLY    
+                  56  WITH_CLEANUP_START
+                  58  WITH_CLEANUP_FINISH
+                  60  POP_FINALLY           0  ''
+                  62  RETURN_VALUE     
+                64_0  COME_FROM_WITH       12  '12'
+                  64  WITH_CLEANUP_START
+                  66  WITH_CLEANUP_FINISH
+
+../test/183513.pyc -- 
+# decompile failed
+
+# file ../test/183513.pyc
+# Deparsing stopped due to parse error

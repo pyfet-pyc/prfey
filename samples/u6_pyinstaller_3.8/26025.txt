@@ -1,0 +1,48 @@
+Instruction context:
+   
+ L.  56        14  DUP_TOP          
+                  16  LOAD_GLOBAL              ValueError
+                  18  COMPARE_OP               exception-match
+                  20  POP_JUMP_IF_FALSE    46  'to 46'
+                  22  POP_TOP          
+->                24  POP_TOP          
+                  26  POP_TOP          
+Instruction context:
+   
+ L. 756       224  LOAD_FAST                'self'
+                 226  LOAD_METHOD              check_hash
+                 228  LOAD_FAST                'checker'
+                 230  LOAD_FAST                'filename'
+                 232  LOAD_FAST                'tfp'
+                 234  CALL_METHOD_3         3  ''
+                 236  POP_TOP          
+                 238  POP_BLOCK        
+->               240  BEGIN_FINALLY    
+               242_0  COME_FROM_WITH      154  '154'
+                 242  WITH_CLEANUP_START
+                 244  WITH_CLEANUP_FINISH
+                 246  END_FINALLY      
+Instruction context:
+-> 
+ L. 776       130  DUP_TOP          
+                 132  LOAD_GLOBAL              urllib
+                 134  LOAD_ATTR                error
+                 136  LOAD_ATTR                HTTPError
+                 138  COMPARE_OP               exception-match
+                 140  POP_JUMP_IF_FALSE   174  'to 174'
+                 142  POP_TOP          
+                 144  STORE_FAST               'v'
+                 146  POP_TOP          
+                 148  SETUP_FINALLY       162  'to 162'
+Instruction context:
+   
+ L.1125       152  POP_TOP          
+->               154  JUMP_ABSOLUTE       222  'to 222'
+                 156  JUMP_FORWARD        178  'to 178'
+               158_0  COME_FROM           120  '120'
+
+../test/26025.pyc -- 
+# decompile failed
+
+# file ../test/26025.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,167 @@
+Instruction context:
+   
+ L.  27       118  BUILD_LIST_0          0 
+                 120  LOAD_CONST               ('CreateObject', 'GetActiveObject', 'CoGetObject', 'GetEvents', 'ShowEvents', 'PumpEvents', 'GetModule', 'GetClassObject')
+->               122  CALL_FINALLY        125  'to 125'
+                 124  STORE_NAME               __all__
+
+test/14176.pyc -- 
+# decompile failed
+
+# file test/14176.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'comtypes.client - High level client level COM support package.\n'
+                2  STORE_NAME               __doc__
+
+ L.  12         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+               12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              os
+               18  STORE_NAME               os
+
+ L.  13        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              ctypes
+               26  STORE_NAME               ctypes
+
+ L.  15        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              comtypes
+               34  STORE_NAME               comtypes
+
+ L.  16        36  LOAD_CONST               0
+               38  LOAD_CONST               ('*',)
+               40  IMPORT_NAME_ATTR         comtypes.hresult
+               42  IMPORT_STAR      
+
+ L.  17        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME_ATTR         comtypes.automation
+               50  STORE_NAME               comtypes
+
+ L.  18        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME_ATTR         comtypes.typeinfo
+               58  STORE_NAME               comtypes
+
+ L.  19        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME_ATTR         comtypes.client.dynamic
+               66  STORE_NAME               comtypes
+
+ L.  21        68  LOAD_CONST               0
+               70  LOAD_CONST               ('GetEvents', 'ShowEvents', 'PumpEvents')
+               72  IMPORT_NAME_ATTR         comtypes.client._events
+               74  IMPORT_FROM              GetEvents
+               76  STORE_NAME               GetEvents
+               78  IMPORT_FROM              ShowEvents
+               80  STORE_NAME               ShowEvents
+               82  IMPORT_FROM              PumpEvents
+               84  STORE_NAME               PumpEvents
+               86  POP_TOP          
+
+ L.  22        88  LOAD_CONST               0
+               90  LOAD_CONST               ('GetModule',)
+               92  IMPORT_NAME_ATTR         comtypes.client._generate
+               94  IMPORT_FROM              GetModule
+               96  STORE_NAME               GetModule
+               98  POP_TOP          
+
+ L.  24       100  LOAD_CONST               0
+              102  LOAD_CONST               None
+              104  IMPORT_NAME              logging
+              106  STORE_NAME               logging
+
+ L.  25       108  LOAD_NAME                logging
+              110  LOAD_METHOD              getLogger
+              112  LOAD_NAME                __name__
+              114  CALL_METHOD_1         1  ''
+              116  STORE_NAME               logger
+
+ L.  27       118  BUILD_LIST_0          0 
+              120  LOAD_CONST               ('CreateObject', 'GetActiveObject', 'CoGetObject', 'GetEvents', 'ShowEvents', 'PumpEvents', 'GetModule', 'GetClassObject')
+              122  CALL_FINALLY        125  'to 125'
+              124  STORE_NAME               __all__
+
+ L.  31       126  LOAD_CONST               0
+              128  LOAD_CONST               ('_find_gen_dir',)
+              130  IMPORT_NAME_ATTR         comtypes.client._code_cache
+              132  IMPORT_FROM              _find_gen_dir
+              134  STORE_NAME               _find_gen_dir
+              136  POP_TOP          
+
+ L.  33       138  LOAD_NAME                _find_gen_dir
+              140  CALL_FUNCTION_0       0  ''
+              142  STORE_NAME               gen_dir
+
+ L.  34       144  LOAD_CONST               0
+              146  LOAD_CONST               None
+              148  IMPORT_NAME_ATTR         comtypes.gen
+              150  STORE_NAME               comtypes
+
+ L.  39       152  LOAD_CODE                <code_object wrap_outparam>
+              154  LOAD_STR                 'wrap_outparam'
+              156  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              158  STORE_NAME               wrap_outparam
+
+ L.  47       160  LOAD_CODE                <code_object GetBestInterface>
+              162  LOAD_STR                 'GetBestInterface'
+              164  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              166  STORE_NAME               GetBestInterface
+
+ L. 130       168  LOAD_NAME                GetBestInterface
+              170  STORE_NAME               wrap
+
+ L. 133       172  LOAD_NAME                wrap_outparam
+              174  LOAD_NAME                ctypes
+              176  LOAD_METHOD              POINTER
+              178  LOAD_NAME                comtypes
+              180  LOAD_ATTR                automation
+              182  LOAD_ATTR                IDispatch
+              184  CALL_METHOD_1         1  ''
+              186  STORE_ATTR               __ctypes_from_outparam__
+
+ L. 139       188  LOAD_BUILD_CLASS 
+              190  LOAD_CODE                <code_object Constants>
+              192  LOAD_STR                 'Constants'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  LOAD_STR                 'Constants'
+              198  LOAD_NAME                object
+              200  CALL_FUNCTION_3       3  ''
+              202  STORE_NAME               Constants
+
+ L. 163       204  LOAD_CONST               (None, False)
+              206  LOAD_CODE                <code_object GetActiveObject>
+              208  LOAD_STR                 'GetActiveObject'
+              210  MAKE_FUNCTION_1          'default'
+              212  STORE_NAME               GetActiveObject
+
+ L. 185       214  LOAD_CODE                <code_object _manage>
+              216  LOAD_STR                 '_manage'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  STORE_NAME               _manage
+
+ L. 191       222  LOAD_CONST               (None, None, None)
+              224  LOAD_CODE                <code_object GetClassObject>
+              226  LOAD_STR                 'GetClassObject'
+              228  MAKE_FUNCTION_1          'default'
+              230  STORE_NAME               GetClassObject
+
+ L. 205       232  LOAD_CONST               (None, None, None, False, None)
+              234  LOAD_CODE                <code_object CreateObject>
+              236  LOAD_STR                 'CreateObject'
+              238  MAKE_FUNCTION_1          'default'
+              240  STORE_NAME               CreateObject
+
+ L. 252       242  LOAD_CONST               (None, False)
+              244  LOAD_CODE                <code_object CoGetObject>
+              246  LOAD_STR                 'CoGetObject'
+              248  MAKE_FUNCTION_1          'default'
+              250  STORE_NAME               CoGetObject
+
+Parse error at or near `CALL_FINALLY' instruction at offset 122
+

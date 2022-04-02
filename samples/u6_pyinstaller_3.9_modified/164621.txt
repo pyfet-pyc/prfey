@@ -1,0 +1,280 @@
+
+# file test/164621.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\n====================================================\nChebyshev Series (:mod:`numpy.polynomial.chebyshev`)\n====================================================\n\nThis module provides a number of objects (mostly functions) useful for\ndealing with Chebyshev series, including a `Chebyshev` class that\nencapsulates the usual arithmetic operations.  (General information\non how this module represents and works with such polynomials is in the\ndocstring for its "parent" sub-package, `numpy.polynomial`).\n\nClasses\n-------\n\n.. autosummary::\n   :toctree: generated/\n\n   Chebyshev\n\n\nConstants\n---------\n\n.. autosummary::\n   :toctree: generated/\n\n   chebdomain\n   chebzero\n   chebone\n   chebx\n\nArithmetic\n----------\n\n.. autosummary::\n   :toctree: generated/\n\n   chebadd\n   chebsub\n   chebmulx\n   chebmul\n   chebdiv\n   chebpow\n   chebval\n   chebval2d\n   chebval3d\n   chebgrid2d\n   chebgrid3d\n\nCalculus\n--------\n\n.. autosummary::\n   :toctree: generated/\n\n   chebder\n   chebint\n\nMisc Functions\n--------------\n\n.. autosummary::\n   :toctree: generated/\n\n   chebfromroots\n   chebroots\n   chebvander\n   chebvander2d\n   chebvander3d\n   chebgauss\n   chebweight\n   chebcompanion\n   chebfit\n   chebpts1\n   chebpts2\n   chebtrim\n   chebline\n   cheb2poly\n   poly2cheb\n   chebinterpolate\n\nSee also\n--------\n`numpy.polynomial`\n\nNotes\n-----\nThe implementations of multiplication, division, integration, and\ndifferentiation use the algebraic identities [1]_:\n\n.. math ::\n    T_n(x) = \\frac{z^n + z^{-n}}{2} \\\\\n    z\\frac{dx}{dz} = \\frac{z - z^{-1}}{2}.\n\nwhere\n\n.. math :: x = \\frac{z + z^{-1}}{2}.\n\nThese identities allow a Chebyshev series to be expressed as a finite,\nsymmetric Laurent series.  In this module, this sort of Laurent series\nis referred to as a "z-series."\n\nReferences\n----------\n.. [1] A. T. Benjamin, et al., "Combinatorial Trigonometry with Chebyshev\n  Polynomials," *Journal of Statistical Planning and Inference 14*, 2008\n  (https://web.archive.org/web/20080221202153/https://www.math.hmc.edu/~benjamin/papers/CombTrig.pdf, pg. 4)\n\n'
+                2  STORE_NAME               __doc__
+
+ L. 110         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              numpy
+               10  STORE_NAME               np
+
+ L. 111        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME_ATTR         numpy.linalg
+               18  IMPORT_FROM              linalg
+               20  STORE_NAME               la
+               22  POP_TOP          
+
+ L. 112        24  LOAD_CONST               0
+               26  LOAD_CONST               ('normalize_axis_index',)
+               28  IMPORT_NAME_ATTR         numpy.core.multiarray
+               30  IMPORT_FROM              normalize_axis_index
+               32  STORE_NAME               normalize_axis_index
+               34  POP_TOP          
+
+ L. 114        36  LOAD_CONST               1
+               38  LOAD_CONST               ('polyutils',)
+               40  IMPORT_NAME              
+               42  IMPORT_FROM              polyutils
+               44  STORE_NAME               pu
+               46  POP_TOP          
+
+ L. 115        48  LOAD_CONST               1
+               50  LOAD_CONST               ('ABCPolyBase',)
+               52  IMPORT_NAME              _polybase
+               54  IMPORT_FROM              ABCPolyBase
+               56  STORE_NAME               ABCPolyBase
+               58  POP_TOP          
+
+ L. 117        60  BUILD_LIST_0          0 
+               62  LOAD_CONST               ('chebzero', 'chebone', 'chebx', 'chebdomain', 'chebline', 'chebadd', 'chebsub', 'chebmulx', 'chebmul', 'chebdiv', 'chebpow', 'chebval', 'chebder', 'chebint', 'cheb2poly', 'poly2cheb', 'chebfromroots', 'chebvander', 'chebfit', 'chebtrim', 'chebroots', 'chebpts1', 'chebpts2', 'Chebyshev', 'chebval2d', 'chebval3d', 'chebgrid2d', 'chebgrid3d', 'chebvander2d', 'chebvander3d', 'chebcompanion', 'chebgauss', 'chebweight', 'chebinterpolate')
+               64  CALL_FINALLY         67  'to 67'
+               66  STORE_NAME               __all__
+
+ L. 126        68  LOAD_NAME                pu
+               70  LOAD_ATTR                trimcoef
+               72  STORE_NAME               chebtrim
+
+ L. 133        74  LOAD_CODE                <code_object _cseries_to_zseries>
+               76  LOAD_STR                 '_cseries_to_zseries'
+               78  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               80  STORE_NAME               _cseries_to_zseries
+
+ L. 158        82  LOAD_CODE                <code_object _zseries_to_cseries>
+               84  LOAD_STR                 '_zseries_to_cseries'
+               86  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               88  STORE_NAME               _zseries_to_cseries
+
+ L. 183        90  LOAD_CODE                <code_object _zseries_mul>
+               92  LOAD_STR                 '_zseries_mul'
+               94  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               96  STORE_NAME               _zseries_mul
+
+ L. 210        98  LOAD_CODE                <code_object _zseries_div>
+              100  LOAD_STR                 '_zseries_div'
+              102  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              104  STORE_NAME               _zseries_div
+
+ L. 277       106  LOAD_CODE                <code_object _zseries_der>
+              108  LOAD_STR                 '_zseries_der'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  STORE_NAME               _zseries_der
+
+ L. 309       114  LOAD_CODE                <code_object _zseries_int>
+              116  LOAD_STR                 '_zseries_int'
+              118  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              120  STORE_NAME               _zseries_int
+
+ L. 347       122  LOAD_CODE                <code_object poly2cheb>
+              124  LOAD_STR                 'poly2cheb'
+              126  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              128  STORE_NAME               poly2cheb
+
+ L. 397       130  LOAD_CODE                <code_object cheb2poly>
+              132  LOAD_STR                 'cheb2poly'
+              134  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              136  STORE_NAME               cheb2poly
+
+ L. 464       138  LOAD_NAME                np
+              140  LOAD_METHOD              array
+              142  LOAD_CONST               -1
+              144  LOAD_CONST               1
+              146  BUILD_LIST_2          2 
+              148  CALL_METHOD_1         1  ''
+              150  STORE_NAME               chebdomain
+
+ L. 467       152  LOAD_NAME                np
+              154  LOAD_METHOD              array
+              156  LOAD_CONST               0
+              158  BUILD_LIST_1          1 
+              160  CALL_METHOD_1         1  ''
+              162  STORE_NAME               chebzero
+
+ L. 470       164  LOAD_NAME                np
+              166  LOAD_METHOD              array
+              168  LOAD_CONST               1
+              170  BUILD_LIST_1          1 
+              172  CALL_METHOD_1         1  ''
+              174  STORE_NAME               chebone
+
+ L. 473       176  LOAD_NAME                np
+              178  LOAD_METHOD              array
+              180  LOAD_CONST               0
+              182  LOAD_CONST               1
+              184  BUILD_LIST_2          2 
+              186  CALL_METHOD_1         1  ''
+              188  STORE_NAME               chebx
+
+ L. 476       190  LOAD_CODE                <code_object chebline>
+              192  LOAD_STR                 'chebline'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  STORE_NAME               chebline
+
+ L. 514       198  LOAD_CODE                <code_object chebfromroots>
+              200  LOAD_STR                 'chebfromroots'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  STORE_NAME               chebfromroots
+
+ L. 569       206  LOAD_CODE                <code_object chebadd>
+              208  LOAD_STR                 'chebadd'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               chebadd
+
+ L. 611       214  LOAD_CODE                <code_object chebsub>
+              216  LOAD_STR                 'chebsub'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  STORE_NAME               chebsub
+
+ L. 655       222  LOAD_CODE                <code_object chebmulx>
+              224  LOAD_STR                 'chebmulx'
+              226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              228  STORE_NAME               chebmulx
+
+ L. 701       230  LOAD_CODE                <code_object chebmul>
+              232  LOAD_STR                 'chebmul'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  STORE_NAME               chebmul
+
+ L. 750       238  LOAD_CODE                <code_object chebdiv>
+              240  LOAD_STR                 'chebdiv'
+              242  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              244  STORE_NAME               chebdiv
+
+ L. 817       246  LOAD_CONST               (16,)
+              248  LOAD_CODE                <code_object chebpow>
+              250  LOAD_STR                 'chebpow'
+              252  MAKE_FUNCTION_1          'default'
+              254  STORE_NAME               chebpow
+
+ L. 875       256  LOAD_CONST               (1, 1, 0)
+              258  LOAD_CODE                <code_object chebder>
+              260  LOAD_STR                 'chebder'
+              262  MAKE_FUNCTION_1          'default'
+              264  STORE_NAME               chebder
+
+ L. 967       266  LOAD_CONST               1
+              268  BUILD_LIST_0          0 
+              270  LOAD_CONST               0
+              272  LOAD_CONST               1
+              274  LOAD_CONST               0
+              276  BUILD_TUPLE_5         5 
+              278  LOAD_CODE                <code_object chebint>
+              280  LOAD_STR                 'chebint'
+              282  MAKE_FUNCTION_1          'default'
+              284  STORE_NAME               chebint
+
+ L.1094       286  LOAD_CONST               (True,)
+              288  LOAD_CODE                <code_object chebval>
+              290  LOAD_STR                 'chebval'
+              292  MAKE_FUNCTION_1          'default'
+              294  STORE_NAME               chebval
+
+ L.1181       296  LOAD_CODE                <code_object chebval2d>
+              298  LOAD_STR                 'chebval2d'
+              300  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              302  STORE_NAME               chebval2d
+
+ L.1230       304  LOAD_CODE                <code_object chebgrid2d>
+              306  LOAD_STR                 'chebgrid2d'
+              308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              310  STORE_NAME               chebgrid2d
+
+ L.1283       312  LOAD_CODE                <code_object chebval3d>
+              314  LOAD_STR                 'chebval3d'
+              316  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              318  STORE_NAME               chebval3d
+
+ L.1334       320  LOAD_CODE                <code_object chebgrid3d>
+              322  LOAD_STR                 'chebgrid3d'
+              324  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              326  STORE_NAME               chebgrid3d
+
+ L.1390       328  LOAD_CODE                <code_object chebvander>
+              330  LOAD_STR                 'chebvander'
+              332  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              334  STORE_NAME               chebvander
+
+ L.1443       336  LOAD_CODE                <code_object chebvander2d>
+              338  LOAD_STR                 'chebvander2d'
+              340  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              342  STORE_NAME               chebvander2d
+
+ L.1496       344  LOAD_CODE                <code_object chebvander3d>
+              346  LOAD_STR                 'chebvander3d'
+              348  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              350  STORE_NAME               chebvander3d
+
+ L.1550       352  LOAD_CONST               (None, False, None)
+              354  LOAD_CODE                <code_object chebfit>
+              356  LOAD_STR                 'chebfit'
+              358  MAKE_FUNCTION_1          'default'
+              360  STORE_NAME               chebfit
+
+ L.1676       362  LOAD_CODE                <code_object chebcompanion>
+              364  LOAD_STR                 'chebcompanion'
+              366  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              368  STORE_NAME               chebcompanion
+
+ L.1721       370  LOAD_CODE                <code_object chebroots>
+              372  LOAD_STR                 'chebroots'
+              374  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              376  STORE_NAME               chebroots
+
+ L.1782       378  LOAD_CONST               ((),)
+              380  LOAD_CODE                <code_object chebinterpolate>
+              382  LOAD_STR                 'chebinterpolate'
+              384  MAKE_FUNCTION_1          'default'
+              386  STORE_NAME               chebinterpolate
+
+ L.1849       388  LOAD_CODE                <code_object chebgauss>
+              390  LOAD_STR                 'chebgauss'
+              392  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              394  STORE_NAME               chebgauss
+
+ L.1894       396  LOAD_CODE                <code_object chebweight>
+              398  LOAD_STR                 'chebweight'
+              400  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              402  STORE_NAME               chebweight
+
+ L.1922       404  LOAD_CODE                <code_object chebpts1>
+              406  LOAD_STR                 'chebpts1'
+              408  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              410  STORE_NAME               chebpts1
+
+ L.1959       412  LOAD_CODE                <code_object chebpts2>
+              414  LOAD_STR                 'chebpts2'
+              416  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              418  STORE_NAME               chebpts2
+
+ L.1996       420  LOAD_BUILD_CLASS 
+              422  LOAD_CODE                <code_object Chebyshev>
+              424  LOAD_STR                 'Chebyshev'
+              426  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              428  LOAD_STR                 'Chebyshev'
+              430  LOAD_NAME                ABCPolyBase
+              432  CALL_FUNCTION_3       3  ''
+              434  STORE_NAME               Chebyshev
+
+Parse error at or near `CALL_FINALLY' instruction at offset 64
+
+Instruction context:
+   
+ L. 117        60  BUILD_LIST_0          0 
+                  62  LOAD_CONST               ('chebzero', 'chebone', 'chebx', 'chebdomain', 'chebline', 'chebadd', 'chebsub', 'chebmulx', 'chebmul', 'chebdiv', 'chebpow', 'chebval', 'chebder', 'chebint', 'cheb2poly', 'poly2cheb', 'chebfromroots', 'chebvander', 'chebfit', 'chebtrim', 'chebroots', 'chebpts1', 'chebpts2', 'Chebyshev', 'chebval2d', 'chebval3d', 'chebgrid2d', 'chebgrid3d', 'chebvander2d', 'chebvander3d', 'chebcompanion', 'chebgauss', 'chebweight', 'chebinterpolate')
+->                64  CALL_FINALLY         67  'to 67'
+                  66  STORE_NAME               __all__
+
+test/164621.pyc -- 
+# decompile failed

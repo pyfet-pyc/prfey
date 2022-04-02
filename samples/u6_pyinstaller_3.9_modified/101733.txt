@@ -1,0 +1,575 @@
+
+# file test/101733.pyc
+# --- This code section failed: ---
+
+ L.   2         0  LOAD_STR                 '\nkeyboard\n========\n\nTake full control of your keyboard with this small Python library. Hook global events, register hotkeys, simulate key presses and much more.\n\n## Features\n\n- **Global event hook** on all keyboards (captures keys regardless of focus).\n- **Listen** and **send** keyboard events.\n- Works with **Windows** and **Linux** (requires sudo), with experimental **OS X** support (thanks @glitchassassin!).\n- **Pure Python**, no C modules to be compiled.\n- **Zero dependencies**. Trivial to install and deploy, just copy the files.\n- **Python 2 and 3**.\n- Complex hotkey support (e.g. `ctrl+shift+m, ctrl+space`) with controllable timeout.\n- Includes **high level API** (e.g. [record](#keyboard.record) and [play](#keyboard.play), [add_abbreviation](#keyboard.add_abbreviation)).\n- Maps keys as they actually are in your layout, with **full internationalization support** (e.g. `Ctrl+ç`).\n- Events automatically captured in separate thread, doesn\'t block main program.\n- Tested and documented.\n- Doesn\'t break accented dead keys (I\'m looking at you, pyHook).\n- Mouse support available via project [mouse](https://github.com/boppreh/mouse) (`pip install mouse`).\n\n## Usage\n\nInstall the [PyPI package](https://pypi.python.org/pypi/keyboard/):\n\n    pip install keyboard\n\nor clone the repository (no installation required, source files are sufficient):\n\n    git clone https://github.com/boppreh/keyboard\n\nor [download and extract the zip](https://github.com/boppreh/keyboard/archive/master.zip) into your project folder.\n\nThen check the [API docs below](https://github.com/boppreh/keyboard#api) to see what features are available.\n\n\n## Example\n\n\n```py\nimport keyboard\n\nkeyboard.press_and_release(\'shift+s, space\')\n\nkeyboard.write(\'The quick brown fox jumps over the lazy dog.\')\n\nkeyboard.add_hotkey(\'ctrl+shift+a\', print, args=(\'triggered\', \'hotkey\'))\n\n# Press PAGE UP then PAGE DOWN to type "foobar".\nkeyboard.add_hotkey(\'page up, page down\', lambda: keyboard.write(\'foobar\'))\n\n# Blocks until you press esc.\nkeyboard.wait(\'esc\')\n\n# Record events until \'esc\' is pressed.\nrecorded = keyboard.record(until=\'esc\')\n# Then replay back at three times the speed.\nkeyboard.play(recorded, speed_factor=3)\n\n# Type @@ then press space to replace with abbreviation.\nkeyboard.add_abbreviation(\'@@\', \'my.long.email@example.com\')\n\n# Block forever, like `while True`.\nkeyboard.wait()\n```\n\n## Known limitations:\n\n- Events generated under Windows don\'t report device id (`event.device == None`). [#21](https://github.com/boppreh/keyboard/issues/21)\n- Media keys on Linux may appear nameless (scan-code only) or not at all. [#20](https://github.com/boppreh/keyboard/issues/20)\n- Key suppression/blocking only available on Windows. [#22](https://github.com/boppreh/keyboard/issues/22)\n- To avoid depending on X, the Linux parts reads raw device files (`/dev/input/input*`)\nbut this requires root.\n- Other applications, such as some games, may register hooks that swallow all \nkey events. In this case `keyboard` will be unable to report events.\n- This program makes no attempt to hide itself, so don\'t use it for keyloggers or online gaming bots. Be responsible.\n'
+                2  STORE_NAME               __doc__
+
+ L.  80         4  LOAD_CONST               0
+                6  LOAD_CONST               ('print_function',)
+                8  IMPORT_NAME              __future__
+               10  IMPORT_FROM              print_function
+               12  STORE_NAME               _print_function
+               14  POP_TOP          
+
+ L.  82        16  LOAD_STR                 '0.13.5'
+               18  STORE_NAME               version
+
+ L.  84        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              re
+               26  STORE_NAME               _re
+
+ L.  85        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              itertools
+               34  STORE_NAME               _itertools
+
+ L.  86        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              collections
+               42  STORE_NAME               _collections
+
+ L.  87        44  LOAD_CONST               0
+               46  LOAD_CONST               ('Thread', 'Lock')
+               48  IMPORT_NAME              threading
+               50  IMPORT_FROM              Thread
+               52  STORE_NAME               _Thread
+               54  IMPORT_FROM              Lock
+               56  STORE_NAME               _Lock
+               58  POP_TOP          
+
+ L.  88        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              time
+               66  STORE_NAME               _time
+
+ L.  90        68  LOAD_NAME                getattr
+               70  LOAD_NAME                _time
+               72  LOAD_STR                 'monotonic'
+               74  LOAD_CONST               None
+               76  CALL_FUNCTION_3       3  ''
+               78  JUMP_IF_TRUE_OR_POP    84  'to 84'
+               80  LOAD_NAME                _time
+               82  LOAD_ATTR                time
+             84_0  COME_FROM            78  '78'
+               84  LOAD_NAME                _time
+               86  STORE_ATTR               monotonic
+
+ L.  92        88  SETUP_FINALLY       138  'to 138'
+
+ L.  94        90  LOAD_NAME                long
+               92  LOAD_NAME                basestring
+               94  BUILD_TUPLE_2         2 
+               96  POP_TOP          
+
+ L.  95        98  LOAD_LAMBDA              '<code_object <lambda>>'
+              100  LOAD_STR                 '<lambda>'
+              102  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              104  STORE_NAME               _is_str
+
+ L.  96       106  LOAD_LAMBDA              '<code_object <lambda>>'
+              108  LOAD_STR                 '<lambda>'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  STORE_NAME               _is_number
+
+ L.  97       114  LOAD_CONST               0
+              116  LOAD_CONST               None
+              118  IMPORT_NAME              Queue
+              120  STORE_NAME               _queue
+
+ L.  99       122  LOAD_CONST               0
+              124  LOAD_CONST               ('_Event',)
+              126  IMPORT_NAME              threading
+              128  IMPORT_FROM              _Event
+              130  STORE_NAME               _UninterruptibleEvent
+              132  POP_TOP          
+              134  POP_BLOCK        
+              136  JUMP_FORWARD        192  'to 192'
+            138_0  COME_FROM_FINALLY    88  '88'
+
+ L. 100       138  DUP_TOP          
+              140  LOAD_NAME                NameError
+              142  <121>               190  ''
+              144  POP_TOP          
+              146  POP_TOP          
+              148  POP_TOP          
+
+ L. 102       150  LOAD_LAMBDA              '<code_object <lambda>>'
+              152  LOAD_STR                 '<lambda>'
+              154  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              156  STORE_NAME               _is_str
+
+ L. 103       158  LOAD_LAMBDA              '<code_object <lambda>>'
+              160  LOAD_STR                 '<lambda>'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  STORE_NAME               _is_number
+
+ L. 104       166  LOAD_CONST               0
+              168  LOAD_CONST               None
+              170  IMPORT_NAME              queue
+              172  STORE_NAME               _queue
+
+ L. 105       174  LOAD_CONST               0
+              176  LOAD_CONST               ('Event',)
+              178  IMPORT_NAME              threading
+              180  IMPORT_FROM              Event
+              182  STORE_NAME               _UninterruptibleEvent
+              184  POP_TOP          
+              186  POP_EXCEPT       
+              188  JUMP_FORWARD        192  'to 192'
+              190  <48>             
+            192_0  COME_FROM           188  '188'
+            192_1  COME_FROM           136  '136'
+
+ L. 106       192  LOAD_LAMBDA              '<code_object <lambda>>'
+              194  LOAD_STR                 '<lambda>'
+              196  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              198  STORE_NAME               _is_list
+
+ L. 109       200  LOAD_BUILD_CLASS 
+              202  LOAD_CODE                <code_object _State>
+              204  LOAD_STR                 '_State'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  LOAD_STR                 '_State'
+              210  LOAD_NAME                object
+              212  CALL_FUNCTION_3       3  ''
+              214  STORE_NAME               _State
+
+ L. 114       216  LOAD_BUILD_CLASS 
+              218  LOAD_CODE                <code_object _Event>
+              220  LOAD_STR                 '_Event'
+              222  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              224  LOAD_STR                 '_Event'
+              226  LOAD_NAME                _UninterruptibleEvent
+              228  CALL_FUNCTION_3       3  ''
+              230  STORE_NAME               _Event
+
+ L. 120       232  LOAD_CONST               0
+              234  LOAD_CONST               None
+              236  IMPORT_NAME              platform
+              238  STORE_NAME               _platform
+
+ L. 121       240  LOAD_NAME                _platform
+              242  LOAD_METHOD              system
+              244  CALL_METHOD_0         0  ''
+              246  LOAD_STR                 'Windows'
+              248  COMPARE_OP               ==
+          250_252  POP_JUMP_IF_FALSE   268  'to 268'
+
+ L. 122       254  LOAD_CONST               1
+              256  LOAD_CONST               ('_winkeyboard',)
+              258  IMPORT_NAME              
+              260  IMPORT_FROM              _winkeyboard
+              262  STORE_NAME               _os_keyboard
+              264  POP_TOP          
+              266  JUMP_FORWARD        342  'to 342'
+            268_0  COME_FROM           250  '250'
+
+ L. 123       268  LOAD_NAME                _platform
+              270  LOAD_METHOD              system
+              272  CALL_METHOD_0         0  ''
+              274  LOAD_STR                 'Linux'
+              276  COMPARE_OP               ==
+          278_280  POP_JUMP_IF_FALSE   296  'to 296'
+
+ L. 124       282  LOAD_CONST               1
+              284  LOAD_CONST               ('_nixkeyboard',)
+              286  IMPORT_NAME              
+              288  IMPORT_FROM              _nixkeyboard
+              290  STORE_NAME               _os_keyboard
+              292  POP_TOP          
+              294  JUMP_FORWARD        342  'to 342'
+            296_0  COME_FROM           278  '278'
+
+ L. 125       296  LOAD_NAME                _platform
+              298  LOAD_METHOD              system
+              300  CALL_METHOD_0         0  ''
+              302  LOAD_STR                 'Darwin'
+              304  COMPARE_OP               ==
+          306_308  POP_JUMP_IF_FALSE   324  'to 324'
+
+ L. 126       310  LOAD_CONST               1
+              312  LOAD_CONST               ('_darwinkeyboard',)
+              314  IMPORT_NAME              
+              316  IMPORT_FROM              _darwinkeyboard
+              318  STORE_NAME               _os_keyboard
+              320  POP_TOP          
+              322  JUMP_FORWARD        342  'to 342'
+            324_0  COME_FROM           306  '306'
+
+ L. 128       324  LOAD_NAME                OSError
+              326  LOAD_STR                 "Unsupported platform '{}'"
+              328  LOAD_METHOD              format
+              330  LOAD_NAME                _platform
+              332  LOAD_METHOD              system
+              334  CALL_METHOD_0         0  ''
+              336  CALL_METHOD_1         1  ''
+              338  CALL_FUNCTION_1       1  ''
+              340  RAISE_VARARGS_1       1  'exception instance'
+            342_0  COME_FROM           322  '322'
+            342_1  COME_FROM           294  '294'
+            342_2  COME_FROM           266  '266'
+
+ L. 130       342  LOAD_CONST               1
+              344  LOAD_CONST               ('KEY_DOWN', 'KEY_UP', 'KeyboardEvent')
+              346  IMPORT_NAME              _keyboard_event
+              348  IMPORT_FROM              KEY_DOWN
+              350  STORE_NAME               KEY_DOWN
+              352  IMPORT_FROM              KEY_UP
+              354  STORE_NAME               KEY_UP
+              356  IMPORT_FROM              KeyboardEvent
+              358  STORE_NAME               KeyboardEvent
+              360  POP_TOP          
+
+ L. 131       362  LOAD_CONST               1
+              364  LOAD_CONST               ('GenericListener',)
+              366  IMPORT_NAME              _generic
+              368  IMPORT_FROM              GenericListener
+              370  STORE_NAME               _GenericListener
+              372  POP_TOP          
+
+ L. 132       374  LOAD_CONST               1
+              376  LOAD_CONST               ('all_modifiers', 'sided_modifiers', 'normalize_name')
+              378  IMPORT_NAME              _canonical_names
+              380  IMPORT_FROM              all_modifiers
+              382  STORE_NAME               all_modifiers
+              384  IMPORT_FROM              sided_modifiers
+              386  STORE_NAME               sided_modifiers
+              388  IMPORT_FROM              normalize_name
+              390  STORE_NAME               normalize_name
+              392  POP_TOP          
+
+ L. 134       394  LOAD_NAME                set
+              396  CALL_FUNCTION_0       0  ''
+              398  STORE_NAME               _modifier_scan_codes
+
+ L. 135       400  LOAD_CODE                <code_object is_modifier>
+              402  LOAD_STR                 'is_modifier'
+              404  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              406  STORE_NAME               is_modifier
+
+ L. 147       408  LOAD_NAME                _Lock
+              410  CALL_FUNCTION_0       0  ''
+              412  STORE_NAME               _pressed_events_lock
+
+ L. 148       414  BUILD_MAP_0           0 
+              416  STORE_NAME               _pressed_events
+
+ L. 149       418  LOAD_NAME                _pressed_events
+              420  STORE_NAME               _physically_pressed_keys
+
+ L. 150       422  BUILD_MAP_0           0 
+              424  STORE_NAME               _logically_pressed_keys
+
+ L. 151       426  LOAD_BUILD_CLASS 
+              428  LOAD_CODE                <code_object _KeyboardListener>
+              430  LOAD_STR                 '_KeyboardListener'
+              432  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              434  LOAD_STR                 '_KeyboardListener'
+              436  LOAD_NAME                _GenericListener
+              438  CALL_FUNCTION_3       3  ''
+              440  STORE_NAME               _KeyboardListener
+
+ L. 296       442  LOAD_NAME                _KeyboardListener
+              444  CALL_FUNCTION_0       0  ''
+              446  STORE_NAME               _listener
+
+ L. 298       448  LOAD_CONST               (True,)
+              450  LOAD_CODE                <code_object key_to_scan_codes>
+              452  LOAD_STR                 'key_to_scan_codes'
+              454  MAKE_FUNCTION_1          'default'
+              456  STORE_NAME               key_to_scan_codes
+
+ L. 328       458  LOAD_CODE                <code_object parse_hotkey>
+              460  LOAD_STR                 'parse_hotkey'
+              462  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              464  STORE_NAME               parse_hotkey
+
+ L. 361       466  LOAD_CONST               (True, True)
+              468  LOAD_CODE                <code_object send>
+              470  LOAD_STR                 'send'
+              472  MAKE_FUNCTION_1          'default'
+              474  STORE_NAME               send
+
+ L. 392       476  LOAD_NAME                send
+              478  STORE_NAME               press_and_release
+
+ L. 394       480  LOAD_CODE                <code_object press>
+              482  LOAD_STR                 'press'
+              484  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              486  STORE_NAME               press
+
+ L. 398       488  LOAD_CODE                <code_object release>
+              490  LOAD_STR                 'release'
+              492  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              494  STORE_NAME               release
+
+ L. 402       496  LOAD_CODE                <code_object is_pressed>
+              498  LOAD_STR                 'is_pressed'
+              500  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              502  STORE_NAME               is_pressed
+
+ L. 429       504  LOAD_CONST               ((), 0.001)
+              506  LOAD_CODE                <code_object call_later>
+              508  LOAD_STR                 'call_later'
+              510  MAKE_FUNCTION_1          'default'
+              512  STORE_NAME               call_later
+
+ L. 438       514  BUILD_MAP_0           0 
+              516  STORE_NAME               _hooks
+
+ L. 439       518  LOAD_CONST               False
+              520  LOAD_LAMBDA              '<code_object <lambda>>'
+              522  LOAD_STR                 '<lambda>'
+              524  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              526  BUILD_TUPLE_2         2 
+              528  LOAD_CODE                <code_object hook>
+              530  LOAD_STR                 'hook'
+              532  MAKE_FUNCTION_1          'default'
+              534  STORE_NAME               hook
+
+ L. 470       536  LOAD_CONST               (False,)
+              538  LOAD_CODE                <code_object on_press>
+              540  LOAD_STR                 'on_press'
+              542  MAKE_FUNCTION_1          'default'
+              544  STORE_NAME               on_press
+
+ L. 476       546  LOAD_CONST               (False,)
+              548  LOAD_CODE                <code_object on_release>
+              550  LOAD_STR                 'on_release'
+              552  MAKE_FUNCTION_1          'default'
+              554  STORE_NAME               on_release
+
+ L. 482       556  LOAD_CONST               (False,)
+              558  LOAD_CODE                <code_object hook_key>
+              560  LOAD_STR                 'hook_key'
+              562  MAKE_FUNCTION_1          'default'
+              564  STORE_NAME               hook_key
+
+ L. 506       566  LOAD_CONST               (False,)
+              568  LOAD_CODE                <code_object on_press_key>
+              570  LOAD_STR                 'on_press_key'
+              572  MAKE_FUNCTION_1          'default'
+              574  STORE_NAME               on_press_key
+
+ L. 512       576  LOAD_CONST               (False,)
+              578  LOAD_CODE                <code_object on_release_key>
+              580  LOAD_STR                 'on_release_key'
+              582  MAKE_FUNCTION_1          'default'
+              584  STORE_NAME               on_release_key
+
+ L. 518       586  LOAD_CODE                <code_object unhook>
+              588  LOAD_STR                 'unhook'
+              590  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              592  STORE_NAME               unhook
+
+ L. 524       594  LOAD_NAME                unhook
+              596  STORE_NAME               unhook_key
+
+ L. 526       598  LOAD_CODE                <code_object unhook_all>
+              600  LOAD_STR                 'unhook_all'
+              602  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              604  STORE_NAME               unhook_all
+
+ L. 538       606  LOAD_CODE                <code_object block_key>
+              608  LOAD_STR                 'block_key'
+              610  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              612  STORE_NAME               block_key
+
+ L. 543       614  LOAD_NAME                unhook_key
+              616  STORE_NAME               unblock_key
+
+ L. 545       618  LOAD_CODE                <code_object remap_key>
+              620  LOAD_STR                 'remap_key'
+              622  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              624  STORE_NAME               remap_key
+
+ L. 557       626  LOAD_NAME                unhook_key
+              628  STORE_NAME               unremap_key
+
+ L. 559       630  LOAD_CODE                <code_object parse_hotkey_combinations>
+              632  LOAD_STR                 'parse_hotkey_combinations'
+              634  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              636  STORE_NAME               parse_hotkey_combinations
+
+ L. 575       638  LOAD_CODE                <code_object _add_hotkey_step>
+              640  LOAD_STR                 '_add_hotkey_step'
+              642  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              644  STORE_NAME               _add_hotkey_step
+
+ L. 598       646  BUILD_MAP_0           0 
+              648  STORE_NAME               _hotkeys
+
+ L. 599       650  LOAD_CONST               ((), False, 1, False)
+              652  LOAD_CODE                <code_object add_hotkey>
+              654  LOAD_STR                 'add_hotkey'
+              656  MAKE_FUNCTION_1          'default'
+              658  STORE_NAME               add_hotkey
+
+ L. 743       660  LOAD_NAME                add_hotkey
+              662  STORE_NAME               register_hotkey
+
+ L. 745       664  LOAD_CODE                <code_object remove_hotkey>
+              666  LOAD_STR                 'remove_hotkey'
+              668  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              670  STORE_NAME               remove_hotkey
+
+ L. 751       672  LOAD_NAME                remove_hotkey
+              674  DUP_TOP          
+              676  STORE_NAME               unregister_hotkey
+              678  STORE_NAME               clear_hotkey
+
+ L. 753       680  LOAD_CODE                <code_object unhook_all_hotkeys>
+              682  LOAD_STR                 'unhook_all_hotkeys'
+              684  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              686  STORE_NAME               unhook_all_hotkeys
+
+ L. 762       688  LOAD_NAME                unhook_all_hotkeys
+              690  DUP_TOP          
+              692  STORE_NAME               unregister_all_hotkeys
+              694  DUP_TOP          
+              696  STORE_NAME               remove_all_hotkeys
+              698  STORE_NAME               clear_all_hotkeys
+
+ L. 764       700  LOAD_CONST               (True, False)
+              702  LOAD_CODE                <code_object remap_hotkey>
+              704  LOAD_STR                 'remap_hotkey'
+              706  MAKE_FUNCTION_1          'default'
+              708  STORE_NAME               remap_hotkey
+
+ L. 782       710  LOAD_NAME                remove_hotkey
+              712  STORE_NAME               unremap_hotkey
+
+ L. 784       714  LOAD_CODE                <code_object stash_state>
+              716  LOAD_STR                 'stash_state'
+              718  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              720  STORE_NAME               stash_state
+
+ L. 796       722  LOAD_CODE                <code_object restore_state>
+              724  LOAD_STR                 'restore_state'
+              726  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              728  STORE_NAME               restore_state
+
+ L. 813       730  LOAD_CODE                <code_object restore_modifiers>
+              732  LOAD_STR                 'restore_modifiers'
+              734  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              736  STORE_NAME               restore_modifiers
+
+ L. 819       738  LOAD_CONST               (0, True, None)
+              740  LOAD_CODE                <code_object write>
+              742  LOAD_STR                 'write'
+              744  MAKE_FUNCTION_1          'default'
+              746  STORE_NAME               write
+
+ L. 874       748  LOAD_CONST               (None, False, False)
+              750  LOAD_CODE                <code_object wait>
+              752  LOAD_STR                 'wait'
+              754  MAKE_FUNCTION_1          'default'
+              756  STORE_NAME               wait
+
+ L. 888       758  LOAD_CONST               (None,)
+              760  LOAD_CODE                <code_object get_hotkey_name>
+              762  LOAD_STR                 'get_hotkey_name'
+              764  MAKE_FUNCTION_1          'default'
+              766  STORE_NAME               get_hotkey_name
+
+ L. 919       768  LOAD_CONST               (False,)
+              770  LOAD_CODE                <code_object read_event>
+              772  LOAD_STR                 'read_event'
+              774  MAKE_FUNCTION_1          'default'
+              776  STORE_NAME               read_event
+
+ L. 930       778  LOAD_CONST               (False,)
+              780  LOAD_CODE                <code_object read_key>
+              782  LOAD_STR                 'read_key'
+              784  MAKE_FUNCTION_1          'default'
+              786  STORE_NAME               read_key
+
+ L. 938       788  LOAD_CONST               (True,)
+              790  LOAD_CODE                <code_object read_hotkey>
+              792  LOAD_STR                 'read_hotkey'
+              794  MAKE_FUNCTION_1          'default'
+              796  STORE_NAME               read_hotkey
+
+ L. 960       798  LOAD_CONST               (True,)
+              800  LOAD_CODE                <code_object get_typed_strings>
+              802  LOAD_STR                 'get_typed_strings'
+              804  MAKE_FUNCTION_1          'default'
+              806  STORE_NAME               get_typed_strings
+
+ L.1006       808  LOAD_CONST               None
+              810  STORE_GLOBAL             _recording
+
+ L.1007       812  LOAD_CONST               (None,)
+              814  LOAD_CODE                <code_object start_recording>
+              816  LOAD_STR                 'start_recording'
+              818  MAKE_FUNCTION_1          'default'
+              820  STORE_NAME               start_recording
+
+ L.1019       822  LOAD_CODE                <code_object stop_recording>
+              824  LOAD_STR                 'stop_recording'
+              826  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              828  STORE_NAME               stop_recording
+
+ L.1031       830  LOAD_CONST               ('escape', False, False)
+              832  LOAD_CODE                <code_object record>
+              834  LOAD_STR                 'record'
+              836  MAKE_FUNCTION_1          'default'
+              838  STORE_NAME               record
+
+ L.1045       840  LOAD_CONST               (1.0,)
+              842  LOAD_CODE                <code_object play>
+              844  LOAD_STR                 'play'
+              846  MAKE_FUNCTION_1          'default'
+              848  STORE_NAME               play
+
+ L.1066       850  LOAD_NAME                play
+              852  STORE_NAME               replay
+
+ L.1068       854  BUILD_MAP_0           0 
+              856  STORE_NAME               _word_listeners
+
+ L.1069       858  LOAD_STR                 'space'
+              860  BUILD_LIST_1          1 
+              862  LOAD_CONST               False
+              864  LOAD_CONST               2
+              866  BUILD_TUPLE_3         3 
+              868  LOAD_CODE                <code_object add_word_listener>
+              870  LOAD_STR                 'add_word_listener'
+              872  MAKE_FUNCTION_1          'default'
+              874  STORE_NAME               add_word_listener
+
+ L.1125       876  LOAD_CODE                <code_object remove_word_listener>
+              878  LOAD_STR                 'remove_word_listener'
+              880  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              882  STORE_NAME               remove_word_listener
+
+ L.1133       884  LOAD_CONST               (False, 2)
+              886  LOAD_CODE                <code_object add_abbreviation>
+              888  LOAD_STR                 'add_abbreviation'
+              890  MAKE_FUNCTION_1          'default'
+              892  STORE_NAME               add_abbreviation
+
+ L.1155       894  LOAD_NAME                add_word_listener
+              896  STORE_NAME               register_word_listener
+
+ L.1156       898  LOAD_NAME                add_abbreviation
+              900  STORE_NAME               register_abbreviation
+
+ L.1157       902  LOAD_NAME                remove_word_listener
+              904  STORE_NAME               remove_abbreviation
+
+Parse error at or near `<121>' instruction at offset 142
+
+Instruction context:
+   
+ L. 100       138  DUP_TOP          
+                 140  LOAD_NAME                NameError
+->               142  <121>               190  ''
+                 144  POP_TOP          
+                 146  POP_TOP          
+                 148  POP_TOP          
+
+test/101733.pyc -- 
+# decompile failed

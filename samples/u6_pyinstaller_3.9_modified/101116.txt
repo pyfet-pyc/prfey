@@ -1,0 +1,81 @@
+Instruction context:
+   
+ L.  53        36  LOAD_FAST                'self'
+                  38  LOAD_ATTR                _decomp_factory
+                  40  BUILD_TUPLE_0         0 
+                  42  BUILD_MAP_0           0 
+                  44  LOAD_FAST                'self'
+                  46  LOAD_ATTR                _decomp_args
+->                48  <164>                 1  ''
+                  50  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  52  LOAD_FAST                'self'
+                  54  STORE_ATTR               _decompressor
+Instruction context:
+   
+ L.  69        36  LOAD_FAST                'data'
+                  38  LOAD_FAST                'byte_view'
+                  40  LOAD_CONST               None
+                  42  LOAD_GLOBAL              len
+                  44  LOAD_FAST                'data'
+                  46  CALL_FUNCTION_1       1  ''
+                  48  BUILD_SLICE_2         2 
+                  50  STORE_SUBSCR     
+                  52  POP_BLOCK        
+                  54  LOAD_CONST               None
+->                56  DUP_TOP          
+                  58  DUP_TOP          
+                  60  CALL_FUNCTION_3       3  ''
+                  62  POP_TOP          
+                  64  JUMP_FORWARD         82  'to 82'
+                66_0  COME_FROM_WITH       18  '18'
+                  66  <49>             
+                  68  POP_JUMP_IF_TRUE     72  'to 72'
+                  70  <48>             
+                72_0  COME_FROM            68  '68'
+                  72  POP_TOP          
+                  74  POP_TOP          
+                  76  POP_TOP          
+                  78  POP_EXCEPT       
+                  80  POP_TOP          
+                82_0  COME_FROM            64  '64'
+                  82  POP_BLOCK        
+                  84  LOAD_CONST               None
+                  86  DUP_TOP          
+                  88  DUP_TOP          
+                  90  CALL_FUNCTION_3       3  ''
+                  92  POP_TOP          
+                  94  JUMP_FORWARD        112  'to 112'
+                96_0  COME_FROM_WITH        6  '6'
+                  96  <49>             
+                  98  POP_JUMP_IF_TRUE    102  'to 102'
+                 100  <48>             
+               102_0  COME_FROM            98  '98'
+                 102  POP_TOP          
+                 104  POP_TOP          
+                 106  POP_TOP          
+                 108  POP_EXCEPT       
+                 110  POP_TOP          
+               112_0  COME_FROM            94  '94'
+Instruction context:
+-> 
+ L.  88        80  <164>                 1  ''
+                  82  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  84  LOAD_FAST                'self'
+                  86  STORE_ATTR               _decompressor
+Instruction context:
+   
+ L. 118        24  LOAD_FAST                'self'
+                  26  LOAD_ATTR                _decomp_factory
+                  28  BUILD_TUPLE_0         0 
+                  30  BUILD_MAP_0           0 
+                  32  LOAD_FAST                'self'
+                  34  LOAD_ATTR                _decomp_args
+->                36  <164>                 1  ''
+                  38  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  40  LOAD_FAST                'self'
+
+test/101116.pyc -- 
+# decompile failed
+
+# file test/101116.pyc
+# Deparsing stopped due to parse error

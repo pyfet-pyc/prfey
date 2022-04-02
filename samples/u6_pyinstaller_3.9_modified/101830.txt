@@ -1,0 +1,383 @@
+
+# file test/101830.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nTLS with SNI_-support for Python 2. Follow these instructions if you would\nlike to verify TLS certificates in Python 2. Note, the default libraries do\n*not* do certificate checking; you need to do additional work to validate\ncertificates yourself.\n\nThis needs the following packages installed:\n\n* `pyOpenSSL`_ (tested with 16.0.0)\n* `cryptography`_ (minimum 1.3.4, from pyopenssl)\n* `idna`_ (minimum 2.0, from cryptography)\n\nHowever, pyopenssl depends on cryptography, which depends on idna, so while we\nuse all three directly here we end up having relatively few packages required.\n\nYou can install them with the following command:\n\n.. code-block:: bash\n\n    $ python -m pip install pyopenssl cryptography idna\n\nTo activate certificate checking, call\n:func:`~urllib3.contrib.pyopenssl.inject_into_urllib3` from your Python code\nbefore you begin making HTTP requests. This can be done in a ``sitecustomize``\nmodule, or at any other time before your application begins using ``urllib3``,\nlike this:\n\n.. code-block:: python\n\n    try:\n        import urllib3.contrib.pyopenssl\n        urllib3.contrib.pyopenssl.inject_into_urllib3()\n    except ImportError:\n        pass\n\nNow you can use :mod:`urllib3` as you normally would, and it will support SNI\nwhen the required modules are installed.\n\nActivating this module also has the positive side effect of disabling SSL/TLS\ncompression in Python 2 (see `CRIME attack`_).\n\n.. _sni: https://en.wikipedia.org/wiki/Server_Name_Indication\n.. _crime attack: https://en.wikipedia.org/wiki/CRIME_(security_exploit)\n.. _pyopenssl: https://www.pyopenssl.org\n.. _cryptography: https://cryptography.io\n.. _idna: https://github.com/kjd/idna\n'
+                2  STORE_NAME               __doc__
+
+ L.  48         4  LOAD_CONST               0
+                6  LOAD_CONST               ('absolute_import',)
+                8  IMPORT_NAME              __future__
+               10  IMPORT_FROM              absolute_import
+               12  STORE_NAME               absolute_import
+               14  POP_TOP          
+
+ L.  50        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME_ATTR         OpenSSL.SSL
+               22  STORE_NAME               OpenSSL
+
+ L.  51        24  LOAD_CONST               0
+               26  LOAD_CONST               ('x509',)
+               28  IMPORT_NAME              cryptography
+               30  IMPORT_FROM              x509
+               32  STORE_NAME               x509
+               34  POP_TOP          
+
+ L.  52        36  LOAD_CONST               0
+               38  LOAD_CONST               ('backend',)
+               40  IMPORT_NAME_ATTR         cryptography.hazmat.backends.openssl
+               42  IMPORT_FROM              backend
+               44  STORE_NAME               openssl_backend
+               46  POP_TOP          
+
+ L.  53        48  LOAD_CONST               0
+               50  LOAD_CONST               ('_Certificate',)
+               52  IMPORT_NAME_ATTR         cryptography.hazmat.backends.openssl.x509
+               54  IMPORT_FROM              _Certificate
+               56  STORE_NAME               _Certificate
+               58  POP_TOP          
+
+ L.  55        60  SETUP_FINALLY        78  'to 78'
+
+ L.  56        62  LOAD_CONST               0
+               64  LOAD_CONST               ('UnsupportedExtension',)
+               66  IMPORT_NAME_ATTR         cryptography.x509
+               68  IMPORT_FROM              UnsupportedExtension
+               70  STORE_NAME               UnsupportedExtension
+               72  POP_TOP          
+               74  POP_BLOCK        
+               76  JUMP_FORWARD        112  'to 112'
+             78_0  COME_FROM_FINALLY    60  '60'
+
+ L.  57        78  DUP_TOP          
+               80  LOAD_NAME                ImportError
+               82  <121>               110  ''
+               84  POP_TOP          
+               86  POP_TOP          
+               88  POP_TOP          
+
+ L.  59        90  LOAD_BUILD_CLASS 
+               92  LOAD_CODE                <code_object UnsupportedExtension>
+               94  LOAD_STR                 'UnsupportedExtension'
+               96  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               98  LOAD_STR                 'UnsupportedExtension'
+              100  LOAD_NAME                Exception
+              102  CALL_FUNCTION_3       3  ''
+              104  STORE_NAME               UnsupportedExtension
+              106  POP_EXCEPT       
+              108  JUMP_FORWARD        112  'to 112'
+              110  <48>             
+            112_0  COME_FROM           108  '108'
+            112_1  COME_FROM            76  '76'
+
+ L.  63       112  LOAD_CONST               0
+              114  LOAD_CONST               ('BytesIO',)
+              116  IMPORT_NAME              io
+              118  IMPORT_FROM              BytesIO
+              120  STORE_NAME               BytesIO
+              122  POP_TOP          
+
+ L.  64       124  LOAD_CONST               0
+              126  LOAD_CONST               ('error',)
+              128  IMPORT_NAME              socket
+              130  IMPORT_FROM              error
+              132  STORE_NAME               SocketError
+              134  POP_TOP          
+
+ L.  65       136  LOAD_CONST               0
+              138  LOAD_CONST               ('timeout',)
+              140  IMPORT_NAME              socket
+              142  IMPORT_FROM              timeout
+              144  STORE_NAME               timeout
+              146  POP_TOP          
+
+ L.  67       148  SETUP_FINALLY       166  'to 166'
+
+ L.  68       150  LOAD_CONST               0
+              152  LOAD_CONST               ('_fileobject',)
+              154  IMPORT_NAME              socket
+              156  IMPORT_FROM              _fileobject
+              158  STORE_NAME               _fileobject
+              160  POP_TOP          
+              162  POP_BLOCK        
+              164  JUMP_FORWARD        200  'to 200'
+            166_0  COME_FROM_FINALLY   148  '148'
+
+ L.  69       166  DUP_TOP          
+              168  LOAD_NAME                ImportError
+              170  <121>               198  ''
+              172  POP_TOP          
+              174  POP_TOP          
+              176  POP_TOP          
+
+ L.  70       178  LOAD_CONST               None
+              180  STORE_NAME               _fileobject
+
+ L.  71       182  LOAD_CONST               2
+              184  LOAD_CONST               ('backport_makefile',)
+              186  IMPORT_NAME_ATTR         packages.backports.makefile
+              188  IMPORT_FROM              backport_makefile
+              190  STORE_NAME               backport_makefile
+              192  POP_TOP          
+              194  POP_EXCEPT       
+              196  JUMP_FORWARD        200  'to 200'
+              198  <48>             
+            200_0  COME_FROM           196  '196'
+            200_1  COME_FROM           164  '164'
+
+ L.  73       200  LOAD_CONST               0
+              202  LOAD_CONST               None
+              204  IMPORT_NAME              logging
+              206  STORE_NAME               logging
+
+ L.  74       208  LOAD_CONST               0
+              210  LOAD_CONST               None
+              212  IMPORT_NAME              ssl
+              214  STORE_NAME               ssl
+
+ L.  75       216  LOAD_CONST               0
+              218  LOAD_CONST               None
+              220  IMPORT_NAME              sys
+              222  STORE_NAME               sys
+
+ L.  77       224  LOAD_CONST               2
+              226  LOAD_CONST               ('util',)
+              228  IMPORT_NAME              
+              230  IMPORT_FROM              util
+              232  STORE_NAME               util
+              234  POP_TOP          
+
+ L.  78       236  LOAD_CONST               2
+              238  LOAD_CONST               ('six',)
+              240  IMPORT_NAME              packages
+              242  IMPORT_FROM              six
+              244  STORE_NAME               six
+              246  POP_TOP          
+
+ L.  80       248  LOAD_STR                 'inject_into_urllib3'
+              250  LOAD_STR                 'extract_from_urllib3'
+              252  BUILD_LIST_2          2 
+              254  STORE_NAME               __all__
+
+ L.  83       256  LOAD_CONST               True
+              258  STORE_NAME               HAS_SNI
+
+ L.  87       260  LOAD_NAME                util
+              262  LOAD_ATTR                PROTOCOL_TLS
+              264  LOAD_NAME                OpenSSL
+              266  LOAD_ATTR                SSL
+              268  LOAD_ATTR                SSLv23_METHOD
+
+ L.  88       270  LOAD_NAME                ssl
+              272  LOAD_ATTR                PROTOCOL_TLSv1
+              274  LOAD_NAME                OpenSSL
+              276  LOAD_ATTR                SSL
+              278  LOAD_ATTR                TLSv1_METHOD
+
+ L.  86       280  BUILD_MAP_2           2 
+              282  STORE_NAME               _openssl_versions
+
+ L.  91       284  LOAD_NAME                hasattr
+              286  LOAD_NAME                ssl
+              288  LOAD_STR                 'PROTOCOL_SSLv3'
+              290  CALL_FUNCTION_2       2  ''
+          292_294  POP_JUMP_IF_FALSE   324  'to 324'
+              296  LOAD_NAME                hasattr
+              298  LOAD_NAME                OpenSSL
+              300  LOAD_ATTR                SSL
+              302  LOAD_STR                 'SSLv3_METHOD'
+              304  CALL_FUNCTION_2       2  ''
+          306_308  POP_JUMP_IF_FALSE   324  'to 324'
+
+ L.  92       310  LOAD_NAME                OpenSSL
+              312  LOAD_ATTR                SSL
+              314  LOAD_ATTR                SSLv3_METHOD
+              316  LOAD_NAME                _openssl_versions
+              318  LOAD_NAME                ssl
+              320  LOAD_ATTR                PROTOCOL_SSLv3
+              322  STORE_SUBSCR     
+            324_0  COME_FROM           306  '306'
+            324_1  COME_FROM           292  '292'
+
+ L.  94       324  LOAD_NAME                hasattr
+              326  LOAD_NAME                ssl
+              328  LOAD_STR                 'PROTOCOL_TLSv1_1'
+              330  CALL_FUNCTION_2       2  ''
+          332_334  POP_JUMP_IF_FALSE   364  'to 364'
+              336  LOAD_NAME                hasattr
+              338  LOAD_NAME                OpenSSL
+              340  LOAD_ATTR                SSL
+              342  LOAD_STR                 'TLSv1_1_METHOD'
+              344  CALL_FUNCTION_2       2  ''
+          346_348  POP_JUMP_IF_FALSE   364  'to 364'
+
+ L.  95       350  LOAD_NAME                OpenSSL
+              352  LOAD_ATTR                SSL
+              354  LOAD_ATTR                TLSv1_1_METHOD
+              356  LOAD_NAME                _openssl_versions
+              358  LOAD_NAME                ssl
+              360  LOAD_ATTR                PROTOCOL_TLSv1_1
+              362  STORE_SUBSCR     
+            364_0  COME_FROM           346  '346'
+            364_1  COME_FROM           332  '332'
+
+ L.  97       364  LOAD_NAME                hasattr
+              366  LOAD_NAME                ssl
+              368  LOAD_STR                 'PROTOCOL_TLSv1_2'
+              370  CALL_FUNCTION_2       2  ''
+          372_374  POP_JUMP_IF_FALSE   404  'to 404'
+              376  LOAD_NAME                hasattr
+              378  LOAD_NAME                OpenSSL
+              380  LOAD_ATTR                SSL
+              382  LOAD_STR                 'TLSv1_2_METHOD'
+              384  CALL_FUNCTION_2       2  ''
+          386_388  POP_JUMP_IF_FALSE   404  'to 404'
+
+ L.  98       390  LOAD_NAME                OpenSSL
+              392  LOAD_ATTR                SSL
+              394  LOAD_ATTR                TLSv1_2_METHOD
+              396  LOAD_NAME                _openssl_versions
+              398  LOAD_NAME                ssl
+              400  LOAD_ATTR                PROTOCOL_TLSv1_2
+              402  STORE_SUBSCR     
+            404_0  COME_FROM           386  '386'
+            404_1  COME_FROM           372  '372'
+
+ L. 102       404  LOAD_NAME                ssl
+              406  LOAD_ATTR                CERT_NONE
+              408  LOAD_NAME                OpenSSL
+              410  LOAD_ATTR                SSL
+              412  LOAD_ATTR                VERIFY_NONE
+
+ L. 103       414  LOAD_NAME                ssl
+              416  LOAD_ATTR                CERT_OPTIONAL
+              418  LOAD_NAME                OpenSSL
+              420  LOAD_ATTR                SSL
+              422  LOAD_ATTR                VERIFY_PEER
+
+ L. 104       424  LOAD_NAME                ssl
+              426  LOAD_ATTR                CERT_REQUIRED
+              428  LOAD_NAME                OpenSSL
+              430  LOAD_ATTR                SSL
+              432  LOAD_ATTR                VERIFY_PEER
+
+ L. 105       434  LOAD_NAME                OpenSSL
+              436  LOAD_ATTR                SSL
+              438  LOAD_ATTR                VERIFY_FAIL_IF_NO_PEER_CERT
+
+ L. 104       440  BINARY_ADD       
+
+ L. 101       442  BUILD_MAP_3           3 
+              444  STORE_NAME               _stdlib_to_openssl_verify
+
+ L. 107       446  LOAD_NAME                dict
+              448  LOAD_GENEXPR             '<code_object <genexpr>>'
+              450  LOAD_STR                 '<genexpr>'
+              452  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              454  LOAD_NAME                _stdlib_to_openssl_verify
+              456  LOAD_METHOD              items
+              458  CALL_METHOD_0         0  ''
+              460  GET_ITER         
+              462  CALL_FUNCTION_1       1  ''
+              464  CALL_FUNCTION_1       1  ''
+              466  STORE_NAME               _openssl_to_stdlib_verify
+
+ L. 110       468  LOAD_CONST               16384
+              470  STORE_NAME               SSL_WRITE_BLOCKSIZE
+
+ L. 112       472  LOAD_NAME                util
+              474  LOAD_ATTR                HAS_SNI
+              476  STORE_NAME               orig_util_HAS_SNI
+
+ L. 113       478  LOAD_NAME                util
+              480  LOAD_ATTR                ssl_
+              482  LOAD_ATTR                SSLContext
+              484  STORE_NAME               orig_util_SSLContext
+
+ L. 116       486  LOAD_NAME                logging
+              488  LOAD_METHOD              getLogger
+              490  LOAD_NAME                __name__
+              492  CALL_METHOD_1         1  ''
+              494  STORE_NAME               log
+
+ L. 119       496  LOAD_CODE                <code_object inject_into_urllib3>
+              498  LOAD_STR                 'inject_into_urllib3'
+              500  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              502  STORE_NAME               inject_into_urllib3
+
+ L. 132       504  LOAD_CODE                <code_object extract_from_urllib3>
+              506  LOAD_STR                 'extract_from_urllib3'
+              508  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              510  STORE_NAME               extract_from_urllib3
+
+ L. 143       512  LOAD_CODE                <code_object _validate_dependencies_met>
+              514  LOAD_STR                 '_validate_dependencies_met'
+              516  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              518  STORE_NAME               _validate_dependencies_met
+
+ L. 169       520  LOAD_CODE                <code_object _dnsname_to_stdlib>
+              522  LOAD_STR                 '_dnsname_to_stdlib'
+              524  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              526  STORE_NAME               _dnsname_to_stdlib
+
+ L. 212       528  LOAD_CODE                <code_object get_subj_alt_name>
+              530  LOAD_STR                 'get_subj_alt_name'
+              532  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              534  STORE_NAME               get_subj_alt_name
+
+ L. 266       536  LOAD_BUILD_CLASS 
+              538  LOAD_CODE                <code_object WrappedSocket>
+              540  LOAD_STR                 'WrappedSocket'
+              542  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              544  LOAD_STR                 'WrappedSocket'
+              546  LOAD_NAME                object
+              548  CALL_FUNCTION_3       3  ''
+              550  STORE_NAME               WrappedSocket
+
+ L. 401       552  LOAD_NAME                _fileobject
+          554_556  POP_JUMP_IF_FALSE   570  'to 570'
+
+ L. 403       558  LOAD_CONST               (-1,)
+              560  LOAD_CODE                <code_object makefile>
+              562  LOAD_STR                 'makefile'
+              564  MAKE_FUNCTION_1          'default'
+              566  STORE_NAME               makefile
+              568  JUMP_FORWARD        574  'to 574'
+            570_0  COME_FROM           554  '554'
+
+ L. 409       570  LOAD_NAME                backport_makefile
+              572  STORE_NAME               makefile
+            574_0  COME_FROM           568  '568'
+
+ L. 411       574  LOAD_NAME                makefile
+              576  LOAD_NAME                WrappedSocket
+              578  STORE_ATTR               makefile
+
+ L. 414       580  LOAD_BUILD_CLASS 
+              582  LOAD_CODE                <code_object PyOpenSSLContext>
+              584  LOAD_STR                 'PyOpenSSLContext'
+              586  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              588  LOAD_STR                 'PyOpenSSLContext'
+              590  LOAD_NAME                object
+              592  CALL_FUNCTION_3       3  ''
+              594  STORE_NAME               PyOpenSSLContext
+
+ L. 508       596  LOAD_CODE                <code_object _verify_callback>
+              598  LOAD_STR                 '_verify_callback'
+              600  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              602  STORE_NAME               _verify_callback
+
+Parse error at or near `<121>' instruction at offset 82
+
+Instruction context:
+   
+ L.  57        78  DUP_TOP          
+                  80  LOAD_NAME                ImportError
+->                82  <121>               110  ''
+                  84  POP_TOP          
+                  86  POP_TOP          
+                  88  POP_TOP          
+
+test/101830.pyc -- 
+# decompile failed

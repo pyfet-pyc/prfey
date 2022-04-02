@@ -1,0 +1,47 @@
+Instruction context:
+   
+ L.  59        66  LOAD_FAST                'color'
+                  68  LOAD_FAST                'self'
+                  70  LOAD_ATTR                colors
+->                72  <118>                 0  ''
+                  74  POP_JUMP_IF_FALSE    78  'to 78'
+Instruction context:
+   
+ L.  68        22  LOAD_FAST                'self'
+                  24  LOAD_ATTR                palette
+                  26  LOAD_CONST               None
+->                28  <117>                 1  ''
+                  30  POP_JUMP_IF_FALSE    48  'to 48'
+Instruction context:
+   
+ L. 116       118  DUP_TOP          
+                 120  LOAD_GLOBAL              KeyError
+->           122_124  <121>               452  ''
+                 126  POP_TOP          
+                 128  STORE_FAST               'e'
+                 130  POP_TOP          
+             132_134  SETUP_FINALLY       444  'to 444'
+Instruction context:
+   
+ L. 168       154  DUP_TOP          
+                 156  LOAD_GLOBAL              IndexError
+->               158  <121>               180  ''
+                 160  POP_TOP          
+                 162  POP_TOP          
+                 164  POP_TOP          
+Instruction context:
+   
+ L. 250        70  DUP_TOP          
+                  72  LOAD_GLOBAL              SyntaxError
+                  74  LOAD_GLOBAL              ValueError
+                  76  BUILD_TUPLE_2         2 
+->                78  <121>                90  ''
+                  80  POP_TOP          
+                  82  POP_TOP          
+                  84  POP_TOP          
+
+test/2072.pyc -- 
+# decompile failed
+
+# file test/2072.pyc
+# Deparsing stopped due to parse error

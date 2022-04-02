@@ -1,0 +1,40 @@
+Instruction context:
+   
+ L. 140       160  POP_BLOCK        
+->               162  POP_EXCEPT       
+                 164  CALL_FINALLY        204  'to 204'
+                 166  LOAD_CONST               False
+                 168  RETURN_VALUE     
+               170_0  COME_FROM           158  '158'
+Instruction context:
+   
+ L. 195       180  POP_BLOCK        
+->               182  POP_EXCEPT       
+                 184  CALL_FINALLY        230  'to 230'
+                 186  LOAD_CONST               False
+                 188  RETURN_VALUE     
+               190_0  COME_FROM           178  '178'
+Instruction context:
+   
+ L. 519       134  LOAD_FAST                'new_exc_details'
+                 136  STORE_FAST               'exc_details'
+                 138  POP_EXCEPT       
+->               140  JUMP_BACK            44  'to 44'
+                 142  END_FINALLY      
+                 144  JUMP_BACK            44  'to 44'
+               146_0  COME_FROM            48  '48'
+Instruction context:
+   
+ L. 673       150  LOAD_FAST                'new_exc_details'
+                 152  STORE_FAST               'exc_details'
+                 154  POP_EXCEPT       
+->               156  JUMP_BACK            44  'to 44'
+                 158  END_FINALLY      
+                 160  JUMP_BACK            44  'to 44'
+               162_0  COME_FROM            48  '48'
+
+test/503.pyc -- 
+# decompile failed
+
+# file test/503.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,21 @@
+Instruction context:
+   
+ L. 134       220  LOAD_FAST                'results'
+                 222  LOAD_FAST                'fixer'
+                 224  BINARY_SUBSCR    
+                 226  LOAD_METHOD              append
+                 228  LOAD_FAST                'current_ast_node'
+                 230  CALL_METHOD_1         1  '1 positional argument'
+                 232  POP_TOP          
+                 234  JUMP_BACK           216  'to 216'
+                 236  POP_BLOCK        
+               238_0  COME_FROM_LOOP      208  '208'
+               238_1  COME_FROM           196  '196'
+               238_2  COME_FROM           160  '160'
+->             238_3  COME_FROM_LOOP      130  '130'
+
+test/110.pyc -- 
+# decompile failed
+
+# file test/110.pyc
+# Deparsing stopped due to parse error

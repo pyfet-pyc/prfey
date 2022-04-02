@@ -1,0 +1,76 @@
+Instruction context:
+   
+ L.  18         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('ModuleDeprecationWarning', 'VisibleDeprecationWarning', '_NoValue')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __ALL__
+
+test/164554.pyc -- 
+# decompile failed
+
+# file test/164554.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nModule defining global singleton classes.\n\nThis module raises a RuntimeError if an attempt to reload it is made. In that\nway the identities of the classes defined here are fixed and will remain so\neven if numpy itself is reloaded. In particular, a function like the following\nwill still work correctly after numpy is reloaded::\n\n    def foo(arg=np._NoValue):\n        if arg is np._NoValue:\n            ...\n\nThat was not the case when the singleton classes were defined in the numpy\n``__init__.py`` file. See gh-7844 for a discussion of the reload problem that\nmotivated this module.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  18         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('ModuleDeprecationWarning', 'VisibleDeprecationWarning', '_NoValue')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __ALL__
+
+ L.  25        12  LOAD_STR                 '_is_loaded'
+               14  LOAD_NAME                globals
+               16  CALL_FUNCTION_0       0  ''
+               18  <118>                 0  ''
+               20  POP_JUMP_IF_FALSE    30  'to 30'
+
+ L.  26        22  LOAD_NAME                RuntimeError
+               24  LOAD_STR                 'Reloading numpy._globals is not allowed'
+               26  CALL_FUNCTION_1       1  ''
+               28  RAISE_VARARGS_1       1  'exception instance'
+             30_0  COME_FROM            20  '20'
+
+ L.  27        30  LOAD_CONST               True
+               32  STORE_NAME               _is_loaded
+
+ L.  30        34  LOAD_BUILD_CLASS 
+               36  LOAD_CODE                <code_object ModuleDeprecationWarning>
+               38  LOAD_STR                 'ModuleDeprecationWarning'
+               40  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               42  LOAD_STR                 'ModuleDeprecationWarning'
+               44  LOAD_NAME                DeprecationWarning
+               46  CALL_FUNCTION_3       3  ''
+               48  STORE_NAME               ModuleDeprecationWarning
+
+ L.  41        50  LOAD_STR                 'numpy'
+               52  LOAD_NAME                ModuleDeprecationWarning
+               54  STORE_ATTR               __module__
+
+ L.  44        56  LOAD_BUILD_CLASS 
+               58  LOAD_CODE                <code_object VisibleDeprecationWarning>
+               60  LOAD_STR                 'VisibleDeprecationWarning'
+               62  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               64  LOAD_STR                 'VisibleDeprecationWarning'
+               66  LOAD_NAME                UserWarning
+               68  CALL_FUNCTION_3       3  ''
+               70  STORE_NAME               VisibleDeprecationWarning
+
+ L.  54        72  LOAD_STR                 'numpy'
+               74  LOAD_NAME                VisibleDeprecationWarning
+               76  STORE_ATTR               __module__
+
+ L.  57        78  LOAD_BUILD_CLASS 
+               80  LOAD_CODE                <code_object _NoValueType>
+               82  LOAD_STR                 '_NoValueType'
+               84  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               86  LOAD_STR                 '_NoValueType'
+               88  CALL_FUNCTION_2       2  ''
+               90  STORE_NAME               _NoValueType
+
+ L.  79        92  LOAD_NAME                _NoValueType
+               94  CALL_FUNCTION_0       0  ''
+               96  STORE_NAME               _NoValue
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

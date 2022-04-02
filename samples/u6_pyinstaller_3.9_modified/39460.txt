@@ -1,0 +1,87 @@
+Instruction context:
+   
+ L.   8        34  DUP_TOP          
+                  36  LOAD_NAME                ImportError
+->                38  <121>                58  ''
+                  40  POP_TOP          
+                  42  POP_TOP          
+                  44  POP_TOP          
+
+test/39460.pyc -- 
+# decompile failed
+
+# file test/39460.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Shared AIX support functions.'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.   4        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sysconfig
+               18  STORE_NAME               sysconfig
+
+ L.   6        20  SETUP_FINALLY        34  'to 34'
+
+ L.   7        22  LOAD_CONST               0
+               24  LOAD_CONST               None
+               26  IMPORT_NAME              subprocess
+               28  STORE_NAME               subprocess
+               30  POP_BLOCK        
+               32  JUMP_FORWARD         60  'to 60'
+             34_0  COME_FROM_FINALLY    20  '20'
+
+ L.   8        34  DUP_TOP          
+               36  LOAD_NAME                ImportError
+               38  <121>                58  ''
+               40  POP_TOP          
+               42  POP_TOP          
+               44  POP_TOP          
+
+ L.  11        46  LOAD_CONST               0
+               48  LOAD_CONST               None
+               50  IMPORT_NAME              _bootsubprocess
+               52  STORE_NAME               subprocess
+               54  POP_EXCEPT       
+               56  JUMP_FORWARD         60  'to 60'
+               58  <48>             
+             60_0  COME_FROM            56  '56'
+             60_1  COME_FROM            32  '32'
+
+ L.  14        60  LOAD_CODE                <code_object _aix_tag>
+               62  LOAD_STR                 '_aix_tag'
+               64  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               66  STORE_NAME               _aix_tag
+
+ L.  24        68  LOAD_CODE                <code_object _aix_vrtl>
+               70  LOAD_STR                 '_aix_vrtl'
+               72  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               74  STORE_NAME               _aix_vrtl
+
+ L.  30        76  LOAD_CODE                <code_object _aix_bos_rte>
+               78  LOAD_STR                 '_aix_bos_rte'
+               80  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               82  STORE_NAME               _aix_bos_rte
+
+ L.  46        84  LOAD_CODE                <code_object aix_platform>
+               86  LOAD_STR                 'aix_platform'
+               88  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               90  STORE_NAME               aix_platform
+
+ L.  70        92  LOAD_CODE                <code_object _aix_bgt>
+               94  LOAD_STR                 '_aix_bgt'
+               96  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               98  STORE_NAME               _aix_bgt
+
+ L.  78       100  LOAD_CODE                <code_object aix_buildtag>
+              102  LOAD_STR                 'aix_buildtag'
+              104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              106  STORE_NAME               aix_buildtag
+
+Parse error at or near `<121>' instruction at offset 38
+

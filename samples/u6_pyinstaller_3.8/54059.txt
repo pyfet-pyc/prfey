@@ -1,0 +1,35 @@
+Instruction context:
+   
+ L. 464        22  POP_BLOCK        
+->                24  BEGIN_FINALLY    
+                  26  WITH_CLEANUP_START
+                  28  WITH_CLEANUP_FINISH
+                  30  POP_FINALLY           0  ''
+                  32  LOAD_STR                 ''
+                  34  RETURN_VALUE     
+                36_0  COME_FROM            20  '20'
+Instruction context:
+   
+ L. 513       110  LOAD_GLOBAL              init_wsl_clipboard
+                 112  CALL_FUNCTION_0       0  ''
+                 114  POP_BLOCK        
+->               116  ROT_TWO          
+                 118  BEGIN_FINALLY    
+                 120  WITH_CLEANUP_START
+                 122  WITH_CLEANUP_FINISH
+                 124  POP_FINALLY           0  ''
+                 126  RETURN_VALUE     
+               128_0  COME_FROM           108  '108'
+                 128  POP_BLOCK        
+                 130  BEGIN_FINALLY    
+               132_0  COME_FROM_WITH       94  '94'
+                 132  WITH_CLEANUP_START
+                 134  WITH_CLEANUP_FINISH
+                 136  END_FINALLY      
+               138_0  COME_FROM            84  '84'
+
+../test/54059.pyc -- 
+# decompile failed
+
+# file ../test/54059.pyc
+# Deparsing stopped due to parse error

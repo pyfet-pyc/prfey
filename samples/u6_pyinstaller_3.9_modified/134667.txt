@@ -1,0 +1,191 @@
+Instruction context:
+   
+ L.   8        42  DUP_TOP          
+                  44  LOAD_NAME                ImportError
+->                46  <121>                62  ''
+                  48  POP_TOP          
+                  50  POP_TOP          
+                  52  POP_TOP          
+
+test/134667.pyc -- 
+# decompile failed
+
+# file test/134667.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Implementation of JSONDecoder\n'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              re
+               10  STORE_NAME               re
+
+ L.   5        12  LOAD_CONST               0
+               14  LOAD_CONST               ('scanner',)
+               16  IMPORT_NAME              json
+               18  IMPORT_FROM              scanner
+               20  STORE_NAME               scanner
+               22  POP_TOP          
+
+ L.   6        24  SETUP_FINALLY        42  'to 42'
+
+ L.   7        26  LOAD_CONST               0
+               28  LOAD_CONST               ('scanstring',)
+               30  IMPORT_NAME              _json
+               32  IMPORT_FROM              scanstring
+               34  STORE_NAME               c_scanstring
+               36  POP_TOP          
+               38  POP_BLOCK        
+               40  JUMP_FORWARD         64  'to 64'
+             42_0  COME_FROM_FINALLY    24  '24'
+
+ L.   8        42  DUP_TOP          
+               44  LOAD_NAME                ImportError
+               46  <121>                62  ''
+               48  POP_TOP          
+               50  POP_TOP          
+               52  POP_TOP          
+
+ L.   9        54  LOAD_CONST               None
+               56  STORE_NAME               c_scanstring
+               58  POP_EXCEPT       
+               60  JUMP_FORWARD         64  'to 64'
+               62  <48>             
+             64_0  COME_FROM            60  '60'
+             64_1  COME_FROM            40  '40'
+
+ L.  11        64  LOAD_STR                 'JSONDecoder'
+               66  LOAD_STR                 'JSONDecodeError'
+               68  BUILD_LIST_2          2 
+               70  STORE_NAME               __all__
+
+ L.  13        72  LOAD_NAME                re
+               74  LOAD_ATTR                VERBOSE
+               76  LOAD_NAME                re
+               78  LOAD_ATTR                MULTILINE
+               80  BINARY_OR        
+               82  LOAD_NAME                re
+               84  LOAD_ATTR                DOTALL
+               86  BINARY_OR        
+               88  STORE_NAME               FLAGS
+
+ L.  15        90  LOAD_NAME                float
+               92  LOAD_STR                 'nan'
+               94  CALL_FUNCTION_1       1  ''
+               96  STORE_NAME               NaN
+
+ L.  16        98  LOAD_NAME                float
+              100  LOAD_STR                 'inf'
+              102  CALL_FUNCTION_1       1  ''
+              104  STORE_NAME               PosInf
+
+ L.  17       106  LOAD_NAME                float
+              108  LOAD_STR                 '-inf'
+              110  CALL_FUNCTION_1       1  ''
+              112  STORE_NAME               NegInf
+
+ L.  20       114  LOAD_BUILD_CLASS 
+              116  LOAD_CODE                <code_object JSONDecodeError>
+              118  LOAD_STR                 'JSONDecodeError'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  LOAD_STR                 'JSONDecodeError'
+              124  LOAD_NAME                ValueError
+              126  CALL_FUNCTION_3       3  ''
+              128  STORE_NAME               JSONDecodeError
+
+ L.  47       130  LOAD_NAME                NegInf
+
+ L.  48       132  LOAD_NAME                PosInf
+
+ L.  49       134  LOAD_NAME                NaN
+
+ L.  46       136  LOAD_CONST               ('-Infinity', 'Infinity', 'NaN')
+              138  BUILD_CONST_KEY_MAP_3     3 
+              140  STORE_NAME               _CONSTANTS
+
+ L.  53       142  LOAD_NAME                re
+              144  LOAD_METHOD              compile
+              146  LOAD_STR                 '(.*?)(["\\\\\\x00-\\x1f])'
+              148  LOAD_NAME                FLAGS
+              150  CALL_METHOD_2         2  ''
+              152  STORE_NAME               STRINGCHUNK
+
+ L.  55       154  LOAD_STR                 '"'
+              156  LOAD_STR                 '\\'
+              158  LOAD_STR                 '/'
+
+ L.  56       160  LOAD_STR                 '\x08'
+              162  LOAD_STR                 '\x0c'
+              164  LOAD_STR                 '\n'
+              166  LOAD_STR                 '\r'
+              168  LOAD_STR                 '\t'
+
+ L.  54       170  LOAD_CONST               ('"', '\\', '/', 'b', 'f', 'n', 'r', 't')
+              172  BUILD_CONST_KEY_MAP_8     8 
+              174  STORE_NAME               BACKSLASH
+
+ L.  59       176  LOAD_CODE                <code_object _decode_uXXXX>
+              178  LOAD_STR                 '_decode_uXXXX'
+              180  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              182  STORE_NAME               _decode_uXXXX
+
+ L.  69       184  LOAD_CONST               True
+
+ L.  70       186  LOAD_NAME                BACKSLASH
+              188  LOAD_NAME                STRINGCHUNK
+              190  LOAD_ATTR                match
+
+ L.  69       192  BUILD_TUPLE_3         3 
+              194  LOAD_CODE                <code_object py_scanstring>
+              196  LOAD_STR                 'py_scanstring'
+              198  MAKE_FUNCTION_1          'default'
+              200  STORE_NAME               py_scanstring
+
+ L. 130       202  LOAD_NAME                c_scanstring
+              204  JUMP_IF_TRUE_OR_POP   208  'to 208'
+              206  LOAD_NAME                py_scanstring
+            208_0  COME_FROM           204  '204'
+              208  STORE_NAME               scanstring
+
+ L. 132       210  LOAD_NAME                re
+              212  LOAD_METHOD              compile
+              214  LOAD_STR                 '[ \\t\\n\\r]*'
+              216  LOAD_NAME                FLAGS
+              218  CALL_METHOD_2         2  ''
+              220  STORE_NAME               WHITESPACE
+
+ L. 133       222  LOAD_STR                 ' \t\n\r'
+              224  STORE_NAME               WHITESPACE_STR
+
+ L. 137       226  LOAD_CONST               None
+              228  LOAD_NAME                WHITESPACE
+              230  LOAD_ATTR                match
+              232  LOAD_NAME                WHITESPACE_STR
+
+ L. 136       234  BUILD_TUPLE_3         3 
+              236  LOAD_CODE                <code_object JSONObject>
+              238  LOAD_STR                 'JSONObject'
+              240  MAKE_FUNCTION_1          'default'
+              242  STORE_NAME               JSONObject
+
+ L. 217       244  LOAD_NAME                WHITESPACE
+              246  LOAD_ATTR                match
+              248  LOAD_NAME                WHITESPACE_STR
+              250  BUILD_TUPLE_2         2 
+              252  LOAD_CODE                <code_object JSONArray>
+              254  LOAD_STR                 'JSONArray'
+              256  MAKE_FUNCTION_1          'default'
+              258  STORE_NAME               JSONArray
+
+ L. 254       260  LOAD_BUILD_CLASS 
+              262  LOAD_CODE                <code_object JSONDecoder>
+              264  LOAD_STR                 'JSONDecoder'
+              266  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              268  LOAD_STR                 'JSONDecoder'
+              270  LOAD_NAME                object
+              272  CALL_FUNCTION_3       3  ''
+              274  STORE_NAME               JSONDecoder
+
+Parse error at or near `<121>' instruction at offset 46
+

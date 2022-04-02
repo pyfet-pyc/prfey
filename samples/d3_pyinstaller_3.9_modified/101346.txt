@@ -1,0 +1,33 @@
+Instruction context:
+   
+ L.  17        20  LOAD_DEREF               'method'
+                  22  LOAD_FAST                'self'
+                  24  BUILD_LIST_1          1 
+                  26  LOAD_FAST                'args'
+->                28  CALL_FINALLY         31  'to 31'
+                  30  WITH_CLEANUP_FINISH
+                  32  BUILD_MAP_0           0 
+                  34  LOAD_FAST                'kw'
+                  36  <164>                 1  ''
+                  38  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  40  RETURN_VALUE     
+Instruction context:
+   
+ L.  66         6  LOAD_FAST                'self'
+                   8  LOAD_ATTR                _stderr_buffer
+                  10  LOAD_CONST               None
+->                12  <117>                 0  ''
+                  14  POP_JUMP_IF_FALSE    36  'to 36'
+Instruction context:
+   
+ L. 180        32  LOAD_FAST                'exctype'
+                  34  LOAD_FAST                'test'
+                  36  LOAD_ATTR                failureException
+->                38  <117>                 0  ''
+                  40  POP_JUMP_IF_FALSE    54  'to 54'
+
+test/101346.pyc -- 
+# decompile failed
+
+# file test/101346.pyc
+# Deparsing stopped due to parse error

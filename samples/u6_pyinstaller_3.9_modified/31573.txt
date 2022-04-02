@@ -1,0 +1,59 @@
+Instruction context:
+   
+ L.  59       114  LOAD_FAST                'public_key_info'
+                 116  LOAD_METHOD              read_element
+                 118  LOAD_GLOBAL              BIT_STRING
+                 120  CALL_METHOD_1         1  ''
+                 122  STORE_FAST               'public_key'
+                 124  POP_BLOCK        
+                 126  LOAD_CONST               None
+->               128  DUP_TOP          
+                 130  DUP_TOP          
+                 132  CALL_FUNCTION_3       3  ''
+                 134  POP_TOP          
+                 136  JUMP_FORWARD        154  'to 154'
+               138_0  COME_FROM_WITH      100  '100'
+                 138  <49>             
+                 140  POP_JUMP_IF_TRUE    144  'to 144'
+                 142  <48>             
+               144_0  COME_FROM           140  '140'
+                 144  POP_TOP          
+                 146  POP_TOP          
+                 148  POP_TOP          
+                 150  POP_EXCEPT       
+                 152  POP_TOP          
+               154_0  COME_FROM           136  '136'
+Instruction context:
+   
+ L. 402        18  LOAD_FAST                'path_length'
+                  20  LOAD_CONST               None
+->                22  <117>                 1  ''
+                  24  POP_JUMP_IF_FALSE    38  'to 38'
+                  26  LOAD_FAST                'ca'
+                  28  POP_JUMP_IF_TRUE     38  'to 38'
+Instruction context:
+   
+ L. 571       158  LOAD_GLOBAL              ReasonFlags
+                 160  LOAD_ATTR                unspecified
+                 162  LOAD_FAST                'reasons'
+->               164  <118>                 0  ''
+Instruction context:
+   
+ L.1070        18  DUP_TOP          
+                  20  LOAD_GLOBAL              ValueError
+->                22  <121>                42  ''
+                  24  POP_TOP          
+                  26  POP_TOP          
+                  28  POP_TOP          
+Instruction context:
+   
+ L.1556        44  LOAD_GLOBAL              ReasonFlags
+                  46  LOAD_ATTR                unspecified
+                  48  LOAD_FAST                'only_some_reasons'
+->                50  <118>                 0  ''
+
+test/31573.pyc -- 
+# decompile failed
+
+# file test/31573.pyc
+# Deparsing stopped due to parse error

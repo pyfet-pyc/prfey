@@ -1,0 +1,169 @@
+Instruction context:
+   
+ L.  18       112  DUP_TOP          
+                 114  LOAD_NAME                ImportError
+->               116  <121>               150  ''
+                 118  POP_TOP          
+                 120  POP_TOP          
+                 122  POP_TOP          
+
+test/134682.pyc -- 
+# decompile failed
+
+# file test/134682.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              functools
+                6  STORE_NAME               functools
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              logging
+               14  STORE_NAME               logging
+
+ L.   4        16  LOAD_CONST               2
+               18  LOAD_CONST               ('properties',)
+               20  IMPORT_NAME              util
+               22  IMPORT_FROM              properties
+               24  STORE_NAME               properties
+               26  POP_TOP          
+
+ L.   5        28  LOAD_CONST               2
+               30  LOAD_CONST               ('KeyringBackend',)
+               32  IMPORT_NAME              backend
+               34  IMPORT_FROM              KeyringBackend
+               36  STORE_NAME               KeyringBackend
+               38  POP_TOP          
+
+ L.   6        40  LOAD_CONST               2
+               42  LOAD_CONST               ('SimpleCredential',)
+               44  IMPORT_NAME              credentials
+               46  IMPORT_FROM              SimpleCredential
+               48  STORE_NAME               SimpleCredential
+               50  POP_TOP          
+
+ L.   7        52  LOAD_CONST               2
+               54  LOAD_CONST               ('PasswordDeleteError', 'ExceptionRaisedContext')
+               56  IMPORT_NAME              errors
+               58  IMPORT_FROM              PasswordDeleteError
+               60  STORE_NAME               PasswordDeleteError
+               62  IMPORT_FROM              ExceptionRaisedContext
+               64  STORE_NAME               ExceptionRaisedContext
+               66  POP_TOP          
+
+ L.  10        68  LOAD_NAME                ExceptionRaisedContext
+               70  CALL_FUNCTION_0       0  ''
+               72  SETUP_WITH          166  'to 166'
+               74  STORE_NAME               missing_deps
+
+ L.  11        76  SETUP_FINALLY       112  'to 112'
+
+ L.  13        78  LOAD_CONST               0
+               80  LOAD_CONST               ('pywintypes',)
+               82  IMPORT_NAME_ATTR         win32ctypes.pywin32
+               84  IMPORT_FROM              pywintypes
+               86  STORE_NAME               pywintypes
+               88  POP_TOP          
+
+ L.  14        90  LOAD_CONST               0
+               92  LOAD_CONST               ('win32cred',)
+               94  IMPORT_NAME_ATTR         win32ctypes.pywin32
+               96  IMPORT_FROM              win32cred
+               98  STORE_NAME               win32cred
+              100  POP_TOP          
+
+ L.  17       102  LOAD_NAME                win32cred
+              104  LOAD_ATTR                __name__
+              106  POP_TOP          
+              108  POP_BLOCK        
+              110  JUMP_FORWARD        152  'to 152'
+            112_0  COME_FROM_FINALLY    76  '76'
+
+ L.  18       112  DUP_TOP          
+              114  LOAD_NAME                ImportError
+              116  <121>               150  ''
+              118  POP_TOP          
+              120  POP_TOP          
+              122  POP_TOP          
+
+ L.  20       124  LOAD_CONST               0
+              126  LOAD_CONST               None
+              128  IMPORT_NAME              pywintypes
+              130  STORE_NAME               pywintypes
+
+ L.  21       132  LOAD_CONST               0
+              134  LOAD_CONST               None
+              136  IMPORT_NAME              win32cred
+              138  STORE_NAME               win32cred
+
+ L.  24       140  LOAD_NAME                win32cred
+              142  LOAD_ATTR                __name__
+              144  POP_TOP          
+              146  POP_EXCEPT       
+              148  JUMP_FORWARD        152  'to 152'
+              150  <48>             
+            152_0  COME_FROM           148  '148'
+            152_1  COME_FROM           110  '110'
+              152  POP_BLOCK        
+              154  LOAD_CONST               None
+              156  DUP_TOP          
+              158  DUP_TOP          
+              160  CALL_FUNCTION_3       3  ''
+              162  POP_TOP          
+              164  JUMP_FORWARD        182  'to 182'
+            166_0  COME_FROM_WITH       72  '72'
+              166  <49>             
+              168  POP_JUMP_IF_TRUE    172  'to 172'
+              170  <48>             
+            172_0  COME_FROM           168  '168'
+              172  POP_TOP          
+              174  POP_TOP          
+              176  POP_TOP          
+              178  POP_EXCEPT       
+              180  POP_TOP          
+            182_0  COME_FROM           164  '164'
+
+ L.  26       182  LOAD_NAME                logging
+              184  LOAD_METHOD              getLogger
+              186  LOAD_NAME                __name__
+              188  CALL_METHOD_1         1  ''
+              190  STORE_NAME               log
+
+ L.  29       192  LOAD_BUILD_CLASS 
+              194  LOAD_CODE                <code_object Persistence>
+              196  LOAD_STR                 'Persistence'
+              198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              200  LOAD_STR                 'Persistence'
+              202  CALL_FUNCTION_2       2  ''
+              204  STORE_NAME               Persistence
+
+ L.  46       206  LOAD_BUILD_CLASS 
+              208  LOAD_CODE                <code_object DecodingCredential>
+              210  LOAD_STR                 'DecodingCredential'
+              212  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              214  LOAD_STR                 'DecodingCredential'
+              216  LOAD_NAME                dict
+              218  CALL_FUNCTION_3       3  ''
+              220  STORE_NAME               DecodingCredential
+
+ L.  64       222  LOAD_BUILD_CLASS 
+              224  LOAD_CODE                <code_object WinVaultKeyring>
+              226  LOAD_STR                 'WinVaultKeyring'
+              228  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              230  LOAD_STR                 'WinVaultKeyring'
+              232  LOAD_NAME                KeyringBackend
+              234  CALL_FUNCTION_3       3  ''
+              236  STORE_NAME               WinVaultKeyring
+
+ L. 177       238  LOAD_BUILD_CLASS 
+              240  LOAD_CODE                <code_object OldPywinError>
+              242  LOAD_STR                 'OldPywinError'
+              244  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              246  LOAD_STR                 'OldPywinError'
+              248  CALL_FUNCTION_2       2  ''
+              250  STORE_NAME               OldPywinError
+
+Parse error at or near `<121>' instruction at offset 116
+

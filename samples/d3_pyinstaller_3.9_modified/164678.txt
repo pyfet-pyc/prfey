@@ -1,0 +1,253 @@
+
+# file test/164678.pyc
+# --- This code section failed: ---
+
+ L.  17         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              functools
+                6  STORE_NAME               functools
+
+ L.  19         8  SETUP_FINALLY        22  'to 22'
+
+ L.  20        10  LOAD_CONST               0
+               12  LOAD_CONST               None
+               14  IMPORT_NAME              numpy
+               16  STORE_NAME               numpy
+               18  POP_BLOCK        
+               20  JUMP_FORWARD         44  'to 44'
+             22_0  COME_FROM_FINALLY     8  '8'
+
+ L.  21        22  DUP_TOP          
+               24  LOAD_NAME                ImportError
+               26  <121>                42  ''
+               28  POP_TOP          
+               30  POP_TOP          
+               32  POP_TOP          
+
+ L.  22        34  LOAD_CONST               None
+               36  STORE_NAME               numpy
+               38  POP_EXCEPT       
+               40  JUMP_FORWARD         44  'to 44'
+               42  <48>             
+             44_0  COME_FROM            40  '40'
+             44_1  COME_FROM            20  '20'
+
+ L.  25        44  LOAD_BUILD_CLASS 
+               46  LOAD_CODE                <code_object Filter>
+               48  LOAD_STR                 'Filter'
+               50  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               52  LOAD_STR                 'Filter'
+               54  CALL_FUNCTION_2       2  ''
+               56  STORE_NAME               Filter
+
+ L.  29        58  LOAD_BUILD_CLASS 
+               60  LOAD_CODE                <code_object MultibandFilter>
+               62  LOAD_STR                 'MultibandFilter'
+               64  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               66  LOAD_STR                 'MultibandFilter'
+               68  LOAD_NAME                Filter
+               70  CALL_FUNCTION_3       3  ''
+               72  STORE_NAME               MultibandFilter
+
+ L.  33        74  LOAD_BUILD_CLASS 
+               76  LOAD_CODE                <code_object BuiltinFilter>
+               78  LOAD_STR                 'BuiltinFilter'
+               80  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               82  LOAD_STR                 'BuiltinFilter'
+               84  LOAD_NAME                MultibandFilter
+               86  CALL_FUNCTION_3       3  ''
+               88  STORE_NAME               BuiltinFilter
+
+ L.  40        90  LOAD_BUILD_CLASS 
+               92  LOAD_CODE                <code_object Kernel>
+               94  LOAD_STR                 'Kernel'
+               96  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               98  LOAD_STR                 'Kernel'
+              100  LOAD_NAME                BuiltinFilter
+              102  CALL_FUNCTION_3       3  ''
+              104  STORE_NAME               Kernel
+
+ L.  69       106  LOAD_BUILD_CLASS 
+              108  LOAD_CODE                <code_object RankFilter>
+              110  LOAD_STR                 'RankFilter'
+              112  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              114  LOAD_STR                 'RankFilter'
+              116  LOAD_NAME                Filter
+              118  CALL_FUNCTION_3       3  ''
+              120  STORE_NAME               RankFilter
+
+ L.  93       122  LOAD_BUILD_CLASS 
+              124  LOAD_CODE                <code_object MedianFilter>
+              126  LOAD_STR                 'MedianFilter'
+              128  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              130  LOAD_STR                 'MedianFilter'
+              132  LOAD_NAME                RankFilter
+              134  CALL_FUNCTION_3       3  ''
+              136  STORE_NAME               MedianFilter
+
+ L. 108       138  LOAD_BUILD_CLASS 
+              140  LOAD_CODE                <code_object MinFilter>
+              142  LOAD_STR                 'MinFilter'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  LOAD_STR                 'MinFilter'
+              148  LOAD_NAME                RankFilter
+              150  CALL_FUNCTION_3       3  ''
+              152  STORE_NAME               MinFilter
+
+ L. 123       154  LOAD_BUILD_CLASS 
+              156  LOAD_CODE                <code_object MaxFilter>
+              158  LOAD_STR                 'MaxFilter'
+              160  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              162  LOAD_STR                 'MaxFilter'
+              164  LOAD_NAME                RankFilter
+              166  CALL_FUNCTION_3       3  ''
+              168  STORE_NAME               MaxFilter
+
+ L. 138       170  LOAD_BUILD_CLASS 
+              172  LOAD_CODE                <code_object ModeFilter>
+              174  LOAD_STR                 'ModeFilter'
+              176  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              178  LOAD_STR                 'ModeFilter'
+              180  LOAD_NAME                Filter
+              182  CALL_FUNCTION_3       3  ''
+              184  STORE_NAME               ModeFilter
+
+ L. 156       186  LOAD_BUILD_CLASS 
+              188  LOAD_CODE                <code_object GaussianBlur>
+              190  LOAD_STR                 'GaussianBlur'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  LOAD_STR                 'GaussianBlur'
+              196  LOAD_NAME                MultibandFilter
+              198  CALL_FUNCTION_3       3  ''
+              200  STORE_NAME               GaussianBlur
+
+ L. 171       202  LOAD_BUILD_CLASS 
+              204  LOAD_CODE                <code_object BoxBlur>
+              206  LOAD_STR                 'BoxBlur'
+              208  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              210  LOAD_STR                 'BoxBlur'
+              212  LOAD_NAME                MultibandFilter
+              214  CALL_FUNCTION_3       3  ''
+              216  STORE_NAME               BoxBlur
+
+ L. 192       218  LOAD_BUILD_CLASS 
+              220  LOAD_CODE                <code_object UnsharpMask>
+              222  LOAD_STR                 'UnsharpMask'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  LOAD_STR                 'UnsharpMask'
+              228  LOAD_NAME                MultibandFilter
+              230  CALL_FUNCTION_3       3  ''
+              232  STORE_NAME               UnsharpMask
+
+ L. 218       234  LOAD_BUILD_CLASS 
+              236  LOAD_CODE                <code_object BLUR>
+              238  LOAD_STR                 'BLUR'
+              240  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              242  LOAD_STR                 'BLUR'
+              244  LOAD_NAME                BuiltinFilter
+              246  CALL_FUNCTION_3       3  ''
+              248  STORE_NAME               BLUR
+
+ L. 231       250  LOAD_BUILD_CLASS 
+              252  LOAD_CODE                <code_object CONTOUR>
+              254  LOAD_STR                 'CONTOUR'
+              256  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              258  LOAD_STR                 'CONTOUR'
+              260  LOAD_NAME                BuiltinFilter
+              262  CALL_FUNCTION_3       3  ''
+              264  STORE_NAME               CONTOUR
+
+ L. 242       266  LOAD_BUILD_CLASS 
+              268  LOAD_CODE                <code_object DETAIL>
+              270  LOAD_STR                 'DETAIL'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  LOAD_STR                 'DETAIL'
+              276  LOAD_NAME                BuiltinFilter
+              278  CALL_FUNCTION_3       3  ''
+              280  STORE_NAME               DETAIL
+
+ L. 253       282  LOAD_BUILD_CLASS 
+              284  LOAD_CODE                <code_object EDGE_ENHANCE>
+              286  LOAD_STR                 'EDGE_ENHANCE'
+              288  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              290  LOAD_STR                 'EDGE_ENHANCE'
+              292  LOAD_NAME                BuiltinFilter
+              294  CALL_FUNCTION_3       3  ''
+              296  STORE_NAME               EDGE_ENHANCE
+
+ L. 264       298  LOAD_BUILD_CLASS 
+              300  LOAD_CODE                <code_object EDGE_ENHANCE_MORE>
+              302  LOAD_STR                 'EDGE_ENHANCE_MORE'
+              304  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              306  LOAD_STR                 'EDGE_ENHANCE_MORE'
+              308  LOAD_NAME                BuiltinFilter
+              310  CALL_FUNCTION_3       3  ''
+              312  STORE_NAME               EDGE_ENHANCE_MORE
+
+ L. 275       314  LOAD_BUILD_CLASS 
+              316  LOAD_CODE                <code_object EMBOSS>
+              318  LOAD_STR                 'EMBOSS'
+              320  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              322  LOAD_STR                 'EMBOSS'
+              324  LOAD_NAME                BuiltinFilter
+              326  CALL_FUNCTION_3       3  ''
+              328  STORE_NAME               EMBOSS
+
+ L. 286       330  LOAD_BUILD_CLASS 
+              332  LOAD_CODE                <code_object FIND_EDGES>
+              334  LOAD_STR                 'FIND_EDGES'
+              336  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              338  LOAD_STR                 'FIND_EDGES'
+              340  LOAD_NAME                BuiltinFilter
+              342  CALL_FUNCTION_3       3  ''
+              344  STORE_NAME               FIND_EDGES
+
+ L. 297       346  LOAD_BUILD_CLASS 
+              348  LOAD_CODE                <code_object SHARPEN>
+              350  LOAD_STR                 'SHARPEN'
+              352  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              354  LOAD_STR                 'SHARPEN'
+              356  LOAD_NAME                BuiltinFilter
+              358  CALL_FUNCTION_3       3  ''
+              360  STORE_NAME               SHARPEN
+
+ L. 308       362  LOAD_BUILD_CLASS 
+              364  LOAD_CODE                <code_object SMOOTH>
+              366  LOAD_STR                 'SMOOTH'
+              368  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              370  LOAD_STR                 'SMOOTH'
+              372  LOAD_NAME                BuiltinFilter
+              374  CALL_FUNCTION_3       3  ''
+              376  STORE_NAME               SMOOTH
+
+ L. 319       378  LOAD_BUILD_CLASS 
+              380  LOAD_CODE                <code_object SMOOTH_MORE>
+              382  LOAD_STR                 'SMOOTH_MORE'
+              384  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              386  LOAD_STR                 'SMOOTH_MORE'
+              388  LOAD_NAME                BuiltinFilter
+              390  CALL_FUNCTION_3       3  ''
+              392  STORE_NAME               SMOOTH_MORE
+
+ L. 332       394  LOAD_BUILD_CLASS 
+              396  LOAD_CODE                <code_object Color3DLUT>
+              398  LOAD_STR                 'Color3DLUT'
+              400  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              402  LOAD_STR                 'Color3DLUT'
+              404  LOAD_NAME                MultibandFilter
+              406  CALL_FUNCTION_3       3  ''
+              408  STORE_NAME               Color3DLUT
+
+Parse error at or near `<121>' instruction at offset 26
+
+Instruction context:
+   
+ L.  21        22  DUP_TOP          
+                  24  LOAD_NAME                ImportError
+->                26  <121>                42  ''
+                  28  POP_TOP          
+                  30  POP_TOP          
+                  32  POP_TOP          
+
+test/164678.pyc -- 
+# decompile failed

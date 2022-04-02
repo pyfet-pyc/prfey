@@ -1,0 +1,34 @@
+Instruction context:
+-> 
+ L. 169       410  LOAD_GLOBAL              encode_multipart_formdata
+                 412  LOAD_FAST                'new_fields'
+                 414  CALL_FUNCTION_1       1  ''
+                 416  UNPACK_SEQUENCE_2     2 
+                 418  STORE_FAST               'body'
+                 420  STORE_FAST               'content_type'
+Instruction context:
+-> 
+ L. 194        24  DUP_TOP          
+                  26  LOAD_GLOBAL              ValueError
+                  28  COMPARE_OP               exception-match
+                  30  POP_JUMP_IF_FALSE    44  'to 44'
+                  32  POP_TOP          
+                  34  POP_TOP          
+                  36  POP_TOP          
+Instruction context:
+   
+ L. 897        84  POP_EXCEPT       
+                  86  JUMP_FORWARD         90  'to 90'
+->              88_0  COME_FROM            76  '76'
+                  88  END_FINALLY      
+                90_0  COME_FROM            86  '86'
+                90_1  COME_FROM            42  '42'
+                90_2  COME_FROM            24  '24'
+                90_3  COME_FROM            10  '10'
+                90_4  COME_FROM             4  '4'
+
+../test/145882.pyc -- 
+# decompile failed
+
+# file ../test/145882.pyc
+# Deparsing stopped due to parse error

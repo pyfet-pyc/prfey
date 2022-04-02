@@ -1,0 +1,37 @@
+Instruction context:
+   
+ L.  54        36  LOAD_FAST                'filename'
+                  38  LOAD_CONST               None
+->                40  <117>                 0  ''
+                  42  POP_JUMP_IF_FALSE    56  'to 56'
+                  44  LOAD_FAST                'content_transfer_encoding'
+                  46  LOAD_CONST               None
+                  48  <117>                 0  ''
+                  50  POP_JUMP_IF_FALSE    56  'to 56'
+Instruction context:
+   
+ L. 117        40  LOAD_FAST                'self'
+                  42  LOAD_ATTR                _charset
+                  44  LOAD_CONST               None
+->                46  <117>                 1  ''
+                  48  POP_JUMP_IF_FALSE    56  'to 56'
+                  50  LOAD_FAST                'self'
+                  52  LOAD_ATTR                _charset
+                  54  JUMP_FORWARD         58  'to 58'
+                56_0  COME_FROM            48  '48'
+                  56  LOAD_STR                 'utf-8'
+                58_0  COME_FROM            54  '54'
+                  58  STORE_FAST               'charset'
+Instruction context:
+   
+ L. 135        32  LOAD_GLOBAL              hdrs
+                  34  LOAD_ATTR                CONTENT_TYPE
+                  36  LOAD_FAST                'headers'
+->                38  <118>                 0  ''
+                  40  POP_JUMP_IF_FALSE    70  'to 70'
+
+test/134323.pyc -- 
+# decompile failed
+
+# file test/134323.pyc
+# Deparsing stopped due to parse error

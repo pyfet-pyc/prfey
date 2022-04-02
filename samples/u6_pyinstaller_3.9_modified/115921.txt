@@ -1,0 +1,159 @@
+Instruction context:
+   
+ L.  31        24  LOAD_FAST                'strm'
+                  26  LOAD_METHOD              read
+                  28  CALL_METHOD_0         0  ''
+                  30  STORE_FAST               'src'
+                  32  POP_BLOCK        
+                  34  LOAD_CONST               None
+->                36  DUP_TOP          
+                  38  DUP_TOP          
+                  40  CALL_FUNCTION_3       3  ''
+                  42  POP_TOP          
+                  44  JUMP_FORWARD         62  'to 62'
+                46_0  COME_FROM_WITH       20  '20'
+                  46  <49>             
+                  48  POP_JUMP_IF_TRUE     52  'to 52'
+                  50  <48>             
+                52_0  COME_FROM            48  '48'
+                  52  POP_TOP          
+                  54  POP_TOP          
+                  56  POP_TOP          
+                  58  POP_EXCEPT       
+                  60  POP_TOP          
+                62_0  COME_FROM            44  '44'
+Instruction context:
+   
+ L.  45        30  DUP_TOP          
+                  32  LOAD_GLOBAL              Exception
+->                34  <121>                88  ''
+                  36  POP_TOP          
+                  38  STORE_FAST               'e'
+                  40  POP_TOP          
+                  42  SETUP_FINALLY        80  'to 80'
+Instruction context:
+-> 
+ L.  60        24  LOAD_GLOBAL              sys
+                  26  LOAD_ATTR                path
+                  28  LOAD_METHOD              remove
+                  30  LOAD_FAST                'path'
+                  32  CALL_METHOD_1         1  ''
+                  34  POP_TOP          
+                  36  JUMP_FORWARD         52  'to 52'
+                38_0  COME_FROM_FINALLY     0  '0'
+                  38  LOAD_GLOBAL              sys
+                  40  LOAD_ATTR                path
+                  42  LOAD_METHOD              remove
+                  44  LOAD_FAST                'path'
+                  46  CALL_METHOD_1         1  ''
+                  48  POP_TOP          
+                  50  <48>             
+Instruction context:
+   
+ L.  95       102  LOAD_FAST                'filepath'
+                 104  LOAD_FAST                'filenames'
+->               106  <118>                 1  ''
+                 108  POP_JUMP_IF_FALSE   120  'to 120'
+Instruction context:
+   
+ L. 214        38  LOAD_FAST                'current_value'
+                  40  LOAD_FAST                'unknown'
+->                42  <117>                 0  ''
+                  44  POP_JUMP_IF_FALSE    54  'to 54'
+Instruction context:
+   
+ L. 256        14  LOAD_STR                 '\n'
+                  16  LOAD_FAST                'value'
+->                18  <118>                 0  ''
+                  20  POP_JUMP_IF_FALSE    32  'to 32'
+Instruction context:
+   
+ L. 289         8  LOAD_FAST                'value'
+                  10  LOAD_CONST               ('1', 'true', 'yes')
+->                12  <118>                 0  ''
+                  14  RETURN_VALUE     
+Instruction context:
+   
+ L. 351        16  LOAD_FAST                'f'
+                  18  LOAD_METHOD              read
+                  20  CALL_METHOD_0         0  ''
+                  22  POP_BLOCK        
+->                24  ROT_TWO          
+                  26  LOAD_CONST               None
+                  28  DUP_TOP          
+                  30  DUP_TOP          
+                  32  CALL_FUNCTION_3       3  ''
+                  34  POP_TOP          
+                  36  RETURN_VALUE     
+                38_0  COME_FROM_WITH       12  '12'
+                  38  <49>             
+                  40  POP_JUMP_IF_TRUE     44  'to 44'
+                  42  <48>             
+                44_0  COME_FROM            40  '40'
+                  44  POP_TOP          
+                  46  POP_TOP          
+                  48  POP_TOP          
+                  50  POP_EXCEPT       
+Instruction context:
+   
+ L. 376        78  LOAD_FAST                'attrs_path'
+                  80  LOAD_CONST               0
+                  82  BINARY_SUBSCR    
+                  84  LOAD_FAST                'package_dir'
+->                86  <118>                 0  ''
+                  88  POP_JUMP_IF_FALSE   164  'to 164'
+Instruction context:
+   
+ L. 443        34  DUP_TOP          
+                  36  LOAD_GLOBAL              KeyError
+->                38  <121>                50  ''
+                  40  POP_TOP          
+                  42  POP_TOP          
+                  44  POP_TOP          
+Instruction context:
+   
+ L. 463        58  LOAD_FAST                'section_parser_method'
+                  60  LOAD_CONST               None
+->                62  <117>                 0  ''
+                  64  POP_JUMP_IF_FALSE    84  'to 84'
+Instruction context:
+   
+ L. 480        12  LOAD_DEREF               'func'
+                  14  LOAD_FAST                'args'
+                  16  BUILD_MAP_0           0 
+                  18  LOAD_FAST                'kwargs'
+->                20  <164>                 1  ''
+                  22  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  24  RETURN_VALUE     
+Instruction context:
+   
+ L. 553        44  LOAD_GLOBAL              DistutilsOptionError
+                  46  LOAD_FAST                'tmpl'
+                  48  LOAD_ATTR                format
+                  50  BUILD_TUPLE_0         0 
+                  52  BUILD_MAP_0           0 
+                  54  LOAD_GLOBAL              locals
+                  56  CALL_FUNCTION_0       0  ''
+->                58  <164>                 1  ''
+                  60  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  62  CALL_FUNCTION_1       1  ''
+                  64  RAISE_VARARGS_1       1  'exception instance'
+                66_0  COME_FROM            38  '38'
+Instruction context:
+   
+ L. 613        16  LOAD_FAST                'trimmed_value'
+                  18  LOAD_FAST                'find_directives'
+->                20  <118>                 1  ''
+                  22  POP_JUMP_IF_FALSE    34  'to 34'
+Instruction context:
+   
+ L. 642        14  BUILD_LIST_0          0 
+                  16  LOAD_CONST               ('where', 'include', 'exclude')
+->                18  CALL_FINALLY         21  'to 21'
+                  20  STORE_DEREF              'valid_keys'
+
+test/115921.pyc -- 
+# decompile failed
+
+# file test/115921.pyc
+# Deparsing stopped due to parse error

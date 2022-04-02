@@ -1,0 +1,90 @@
+Instruction context:
+   
+ L.  14        46  DUP_TOP          
+                  48  LOAD_NAME                ImportError
+->                50  <121>                78  ''
+                  52  POP_TOP          
+                  54  POP_TOP          
+                  56  POP_TOP          
+
+test/112029.pyc -- 
+# decompile failed
+
+# file test/112029.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nAn OrderedSet is a custom MutableSet that remembers its order, so that every\nentry has an index that can be looked up.\n\nBased on a recipe originally posted to ActiveState Recipes by Raymond Hettiger,\nand released under the MIT license.\n'
+                2  STORE_NAME               __doc__
+
+ L.   8         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              itertools
+               10  STORE_NAME               it
+
+ L.   9        12  LOAD_CONST               0
+               14  LOAD_CONST               ('deque',)
+               16  IMPORT_NAME              collections
+               18  IMPORT_FROM              deque
+               20  STORE_NAME               deque
+               22  POP_TOP          
+
+ L.  11        24  SETUP_FINALLY        46  'to 46'
+
+ L.  13        26  LOAD_CONST               0
+               28  LOAD_CONST               ('MutableSet', 'Sequence')
+               30  IMPORT_NAME_ATTR         collections.abc
+               32  IMPORT_FROM              MutableSet
+               34  STORE_NAME               MutableSet
+               36  IMPORT_FROM              Sequence
+               38  STORE_NAME               Sequence
+               40  POP_TOP          
+               42  POP_BLOCK        
+               44  JUMP_FORWARD         80  'to 80'
+             46_0  COME_FROM_FINALLY    24  '24'
+
+ L.  14        46  DUP_TOP          
+               48  LOAD_NAME                ImportError
+               50  <121>                78  ''
+               52  POP_TOP          
+               54  POP_TOP          
+               56  POP_TOP          
+
+ L.  16        58  LOAD_CONST               0
+               60  LOAD_CONST               ('MutableSet', 'Sequence')
+               62  IMPORT_NAME              collections
+               64  IMPORT_FROM              MutableSet
+               66  STORE_NAME               MutableSet
+               68  IMPORT_FROM              Sequence
+               70  STORE_NAME               Sequence
+               72  POP_TOP          
+               74  POP_EXCEPT       
+               76  JUMP_FORWARD         80  'to 80'
+               78  <48>             
+             80_0  COME_FROM            76  '76'
+             80_1  COME_FROM            44  '44'
+
+ L.  18        80  LOAD_NAME                slice
+               82  LOAD_CONST               None
+               84  CALL_FUNCTION_1       1  ''
+               86  STORE_NAME               SLICE_ALL
+
+ L.  19        88  LOAD_STR                 '3.1'
+               90  STORE_NAME               __version__
+
+ L.  22        92  LOAD_CODE                <code_object is_iterable>
+               94  LOAD_STR                 'is_iterable'
+               96  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               98  STORE_NAME               is_iterable
+
+ L.  42       100  LOAD_BUILD_CLASS 
+              102  LOAD_CODE                <code_object OrderedSet>
+              104  LOAD_STR                 'OrderedSet'
+              106  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              108  LOAD_STR                 'OrderedSet'
+              110  LOAD_NAME                MutableSet
+              112  LOAD_NAME                Sequence
+              114  CALL_FUNCTION_4       4  ''
+              116  STORE_NAME               OrderedSet
+
+Parse error at or near `<121>' instruction at offset 50
+

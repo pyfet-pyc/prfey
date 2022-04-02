@@ -1,0 +1,876 @@
+Instruction context:
+   
+ L.  88        46  LOAD_FAST                'normdir'
+                  48  LOAD_FAST                'normdirs'
+->                50  <118>                 1  ''
+                  52  POP_JUMP_IF_FALSE_BACK    14  'to 14'
+                  54  LOAD_GLOBAL              os
+                  56  LOAD_ATTR                path
+                  58  LOAD_METHOD              isdir
+                  60  LOAD_FAST                'dir'
+                  62  CALL_METHOD_1         1  ''
+                  64  POP_JUMP_IF_FALSE_BACK    14  'to 14'
+Instruction context:
+   
+ L.  95        14  LOAD_FAST                'cls'
+                  16  LOAD_CONST               None
+->                18  <117>                 0  ''
+                  20  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L. 108        34  LOAD_GLOBAL              getattr
+                  36  LOAD_GLOBAL              getattr
+                  38  LOAD_FAST                'self'
+                  40  LOAD_FAST                'name'
+                  42  LOAD_CONST               None
+                  44  CALL_FUNCTION_3       3  ''
+                  46  LOAD_STR                 '__func__'
+                  48  CALL_FUNCTION_2       2  ''
+                  50  LOAD_FAST                'obj'
+                  52  LOAD_ATTR                __func__
+->                54  <117>                 0  ''
+Instruction context:
+   
+ L. 159        14  LOAD_FAST                'doc'
+                  16  LOAD_CONST               None
+->                18  <117>                 0  ''
+                  20  POP_JUMP_IF_FALSE    28  'to 28'
+Instruction context:
+   
+ L. 176         8  LOAD_FAST                'doc'
+                  10  LOAD_CONST               None
+->                12  <117>                 0  ''
+                  14  POP_JUMP_IF_FALSE    54  'to 54'
+Instruction context:
+   
+ L. 242        36  LOAD_GLOBAL              inspect
+                  38  LOAD_METHOD              ismodule
+                  40  LOAD_FAST                'self'
+                  42  CALL_METHOD_1         1  ''
+                  44  JUMP_IF_TRUE_OR_POP    52  'to 52'
+                  46  LOAD_FAST                'self'
+                  48  LOAD_CONST               None
+->                50  <117>                 0  ''
+                52_0  COME_FROM            44  '44'
+                  52  UNARY_NOT        
+                  54  RETURN_VALUE     
+                56_0  COME_FROM            22  '22'
+Instruction context:
+   
+ L. 299        40  LOAD_GLOBAL              isinstance
+                  42  LOAD_FAST                'value'
+                  44  LOAD_GLOBAL              property
+                  46  CALL_FUNCTION_2       2  ''
+                  48  POP_JUMP_IF_FALSE    64  'to 64'
+                  50  LOAD_FAST                'value'
+                  52  LOAD_ATTR                fset
+                  54  LOAD_CONST               None
+->                56  <117>                 0  ''
+                  58  POP_JUMP_IF_FALSE    64  'to 64'
+Instruction context:
+   
+ L. 311        40  DUP_TOP          
+                  42  LOAD_GLOBAL              TypeError
+->                44  <121>                60  ''
+                  46  POP_TOP          
+                  48  POP_TOP          
+                  50  POP_TOP          
+Instruction context:
+   
+ L. 330        40  LOAD_FAST                'line'
+                  42  POP_JUMP_IF_TRUE_BACK     8  'to 8'
+                  44  JUMP_FORWARD         48  'to 48'
+->                46  JUMP_BACK             8  'to 8'
+                48_0  COME_FROM            44  '44'
+                48_1  COME_FROM            30  '30'
+Instruction context:
+   
+ L. 347        28  LOAD_FAST                'lastupdate'
+                  30  LOAD_CONST               None
+->                32  <117>                 0  ''
+                  34  POP_JUMP_IF_TRUE     46  'to 46'
+                  36  LOAD_FAST                'lastupdate'
+                  38  LOAD_FAST                'mtime'
+                  40  COMPARE_OP               <
+               42_44  POP_JUMP_IF_FALSE   302  'to 302'
+                46_0  COME_FROM            34  '34'
+Instruction context:
+   
+ L. 396        20  LOAD_FAST                'magic'
+                  22  LOAD_FAST                'file'
+                  24  LOAD_METHOD              read
+                  26  LOAD_GLOBAL              len
+                  28  LOAD_FAST                'magic'
+                  30  CALL_FUNCTION_1       1  ''
+                  32  CALL_METHOD_1         1  ''
+                  34  COMPARE_OP               ==
+                  36  STORE_FAST               'is_bytecode'
+                  38  POP_BLOCK        
+                  40  LOAD_CONST               None
+->                42  DUP_TOP          
+                  44  DUP_TOP          
+                  46  CALL_FUNCTION_3       3  ''
+                  48  POP_TOP          
+                  50  JUMP_FORWARD         68  'to 68'
+                52_0  COME_FROM_WITH       16  '16'
+                  52  <49>             
+                  54  POP_JUMP_IF_TRUE     58  'to 58'
+                  56  <48>             
+                58_0  COME_FROM            54  '54'
+                  58  POP_TOP          
+                  60  POP_TOP          
+                  62  POP_TOP          
+                  64  POP_EXCEPT       
+                  66  POP_TOP          
+                68_0  COME_FROM            50  '50'
+Instruction context:
+   
+ L. 423         2  LOAD_FAST                'forceload'
+                   4  POP_JUMP_IF_FALSE    84  'to 84'
+                   6  LOAD_DEREF               'path'
+                   8  LOAD_GLOBAL              sys
+                  10  LOAD_ATTR                modules
+->                12  <118>                 0  ''
+                  14  POP_JUMP_IF_FALSE    84  'to 84'
+Instruction context:
+   
+ L. 475        84  DUP_TOP          
+                  86  LOAD_GLOBAL              AttributeError
+->                88  <121>               100  ''
+                  90  POP_TOP          
+                  92  POP_TOP          
+                  94  POP_TOP          
+Instruction context:
+   
+ L. 493        16  DUP_TOP          
+                  18  LOAD_GLOBAL              TypeError
+->                20  <121>                36  ''
+                  22  POP_TOP          
+                  24  POP_TOP          
+                  26  POP_TOP          
+Instruction context:
+   
+ L. 540        20  LOAD_STR                 '\\'
+                  22  LOAD_FAST                'test'
+->                24  <118>                 0  ''
+                  26  POP_JUMP_IF_FALSE    74  'to 74'
+                  28  LOAD_STR                 '\\'
+                  30  LOAD_GLOBAL              replace
+                  32  LOAD_FAST                'testrepr'
+                  34  LOAD_STR                 '\\\\'
+                  36  LOAD_STR                 ''
+                  38  CALL_FUNCTION_3       3  ''
+                  40  <118>                 1  ''
+                  42  POP_JUMP_IF_FALSE    74  'to 74'
+Instruction context:
+   
+ L. 554        36  LOAD_FAST                'self'
+                  38  LOAD_METHOD              escape
+                  40  LOAD_STR                 '<%s instance>'
+                  42  LOAD_FAST                'x'
+                  44  LOAD_ATTR                __class__
+                  46  LOAD_ATTR                __name__
+                  48  BINARY_MODULO    
+                  50  CALL_METHOD_1         1  ''
+                  52  ROT_FOUR         
+                  54  POP_EXCEPT       
+->                56  RETURN_VALUE     
+Instruction context:
+   
+ L. 613         8  LOAD_FAST                'self'
+                  10  LOAD_ATTR                section
+                  12  LOAD_FAST                'title'
+                  14  BUILD_LIST_1          1 
+                  16  LOAD_FAST                'args'
+->                18  CALL_FINALLY         21  'to 21'
+                  20  WITH_CLEANUP_FINISH
+                  22  CALL_FUNCTION_EX      0  'positional arguments only'
+                  24  RETURN_VALUE     
+Instruction context:
+   
+ L. 638         8  LOAD_FAST                'name'
+                  10  LOAD_FAST                'dict'
+->                12  <118>                 0  ''
+                  14  POP_JUMP_IF_FALSE_BACK     4  'to 4'
+Instruction context:
+   
+ L. 645        22  LOAD_GLOBAL              hasattr
+                  24  LOAD_FAST                'module'
+                  26  LOAD_FAST                'name'
+                  28  CALL_FUNCTION_2       2  ''
+                  30  POP_JUMP_IF_FALSE    68  'to 68'
+                  32  LOAD_GLOBAL              getattr
+                  34  LOAD_FAST                'module'
+                  36  LOAD_FAST                'name'
+                  38  CALL_FUNCTION_2       2  ''
+                  40  LOAD_FAST                'object'
+->                42  <117>                 0  ''
+                  44  POP_JUMP_IF_FALSE    68  'to 68'
+Instruction context:
+   
+ L. 720        12  LOAD_GLOBAL              type
+                  14  LOAD_FAST                'entry'
+                  16  CALL_FUNCTION_1       1  ''
+                  18  LOAD_GLOBAL              type
+                  20  LOAD_CONST               ()
+                  22  CALL_FUNCTION_1       1  ''
+->                24  <117>                 0  ''
+                  26  POP_JUMP_IF_FALSE   138  'to 138'
+Instruction context:
+   
+ L. 740        18  DUP_TOP          
+                  20  LOAD_GLOBAL              AttributeError
+->                22  <121>                38  ''
+                  24  POP_TOP          
+                  26  POP_TOP          
+                  28  POP_TOP          
+Instruction context:
+   
+ L. 940       288  DUP_TOP          
+                 290  LOAD_GLOBAL              Exception
+->           292_294  <121>               306  ''
+                 296  POP_TOP          
+                 298  POP_TOP          
+                 300  POP_TOP          
+Instruction context:
+   
+ L.1033        64  LOAD_FAST                'imclass'
+                  66  LOAD_FAST                'cl'
+->                68  <117>                 1  ''
+                  70  POP_JUMP_IF_FALSE   138  'to 138'
+Instruction context:
+   
+ L.1111         4  LOAD_FAST                'shadowed'
+                   6  LOAD_CONST               None
+->                 8  <117>                 0  ''
+                  10  POP_JUMP_IF_FALSE    16  'to 16'
+                  12  BUILD_MAP_0           0 
+                  14  STORE_FAST               'shadowed'
+                16_0  COME_FROM            10  '10'
+Instruction context:
+   
+ L.1143        20  LOAD_STR                 '\\'
+                  22  LOAD_FAST                'test'
+->                24  <118>                 0  ''
+                  26  POP_JUMP_IF_FALSE    68  'to 68'
+                  28  LOAD_STR                 '\\'
+                  30  LOAD_GLOBAL              replace
+                  32  LOAD_FAST                'testrepr'
+                  34  LOAD_STR                 '\\\\'
+                  36  LOAD_STR                 ''
+                  38  CALL_FUNCTION_3       3  ''
+                  40  <118>                 1  ''
+                  42  POP_JUMP_IF_FALSE    68  'to 68'
+Instruction context:
+   
+ L.1155        30  LOAD_STR                 '<%s instance>'
+                  32  LOAD_FAST                'x'
+                  34  LOAD_ATTR                __class__
+                  36  LOAD_ATTR                __name__
+                  38  BINARY_MODULO    
+                  40  ROT_FOUR         
+                  42  POP_EXCEPT       
+->                44  RETURN_VALUE     
+Instruction context:
+   
+ L.1187        12  LOAD_GLOBAL              type
+                  14  LOAD_FAST                'entry'
+                  16  CALL_FUNCTION_1       1  ''
+                  18  LOAD_GLOBAL              type
+                  20  LOAD_CONST               ()
+                  22  CALL_FUNCTION_1       1  ''
+->                24  <117>                 0  ''
+                  26  POP_JUMP_IF_FALSE   114  'to 114'
+Instruction context:
+   
+ L.1206        68  LOAD_FAST                'docloc'
+                  70  LOAD_CONST               None
+->                72  <117>                 1  ''
+                  74  POP_JUMP_IF_FALSE    96  'to 96'
+Instruction context:
+   
+ L.1322       134  DUP_TOP          
+                 136  LOAD_GLOBAL              ValueError
+                 138  LOAD_GLOBAL              TypeError
+                 140  BUILD_TUPLE_2         2 
+->               142  <121>               158  ''
+                 144  POP_TOP          
+                 146  POP_TOP          
+                 148  POP_TOP          
+Instruction context:
+   
+ L.1467        42  LOAD_FAST                'imclass'
+                  44  LOAD_FAST                'cl'
+->                46  <117>                 1  ''
+                  48  POP_JUMP_IF_FALSE   110  'to 110'
+Instruction context:
+   
+ L.1568       106  LOAD_GLOBAL              os
+                 108  LOAD_ATTR                environ
+                 110  LOAD_METHOD              get
+                 112  LOAD_STR                 'TERM'
+                 114  CALL_METHOD_1         1  ''
+                 116  LOAD_CONST               ('dumb', 'emacs')
+->               118  <118>                 0  ''
+                 120  POP_JUMP_IF_FALSE   134  'to 134'
+Instruction context:
+   
+ L.1602        62  DUP_TOP          
+                  64  LOAD_GLOBAL              KeyboardInterrupt
+->                66  <121>                78  ''
+                  68  POP_TOP          
+                  70  POP_TOP          
+                  72  POP_TOP          
+Instruction context:
+   
+ L.1622        32  LOAD_FAST                'file'
+                  34  LOAD_METHOD              write
+                  36  LOAD_FAST                'text'
+                  38  CALL_METHOD_1         1  ''
+                  40  POP_TOP          
+                  42  POP_BLOCK        
+                  44  LOAD_CONST               None
+->                46  DUP_TOP          
+                  48  DUP_TOP          
+                  50  CALL_FUNCTION_3       3  ''
+                  52  POP_TOP          
+                  54  JUMP_FORWARD         72  'to 72'
+                56_0  COME_FROM_WITH       28  '28'
+                  56  <49>             
+                  58  POP_JUMP_IF_TRUE     62  'to 62'
+                  60  <48>             
+                62_0  COME_FROM            58  '58'
+                  62  POP_TOP          
+                  64  POP_TOP          
+                  66  POP_TOP          
+                  68  POP_EXCEPT       
+                  70  POP_TOP          
+                72_0  COME_FROM            54  '54'
+Instruction context:
+   
+ L.1642        70  DUP_TOP          
+                  72  LOAD_GLOBAL              ImportError
+                  74  LOAD_GLOBAL              AttributeError
+                  76  LOAD_GLOBAL              io
+                  78  LOAD_ATTR                UnsupportedOperation
+                  80  BUILD_TUPLE_3         3 
+->                82  <121>               106  ''
+                  84  POP_TOP          
+                  86  POP_TOP          
+                  88  POP_TOP          
+Instruction context:
+   
+ L.1684        10  LOAD_FAST                'thing'
+                  12  LOAD_ATTR                __name__
+                  14  LOAD_GLOBAL              sys
+                  16  LOAD_ATTR                builtin_module_names
+->                18  <118>                 0  ''
+                  20  POP_JUMP_IF_FALSE    32  'to 32'
+Instruction context:
+   
+ L.1715        88  JUMP_FORWARD         92  'to 92'
+->                90  JUMP_BACK            28  'to 28'
+                92_0  COME_FROM            88  '88'
+                92_1  COME_FROM            70  '70'
+                92_2  COME_FROM            38  '38'
+Instruction context:
+   
+ L.1737        20  LOAD_FAST                'object'
+                  22  LOAD_CONST               None
+->                24  <117>                 0  ''
+
+# file test/43501.pyc
+# --- This code section failed: ---
+
+ L.1803         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'Helper'
+                6  STORE_NAME               __qualname__
+
+ L.1817         8  LOAD_STR                 ''
+
+ L.1818        10  LOAD_STR                 ''
+
+ L.1819        12  LOAD_STR                 ''
+
+ L.1820        14  LOAD_STR                 ''
+
+ L.1821        16  LOAD_STR                 'BOOLEAN'
+
+ L.1822        18  LOAD_STR                 'with'
+
+ L.1823        20  LOAD_CONST               ('assert', '')
+
+ L.1824        22  LOAD_CONST               ('async', '')
+
+ L.1825        24  LOAD_CONST               ('await', '')
+
+ L.1826        26  LOAD_CONST               ('break', 'while for')
+
+ L.1827        28  LOAD_CONST               ('class', 'CLASSES SPECIALMETHODS')
+
+ L.1828        30  LOAD_CONST               ('continue', 'while for')
+
+ L.1829        32  LOAD_CONST               ('function', '')
+
+ L.1830        34  LOAD_CONST               ('del', 'BASICMETHODS')
+
+ L.1831        36  LOAD_STR                 'if'
+
+ L.1832        38  LOAD_CONST               ('else', 'while for')
+
+ L.1833        40  LOAD_STR                 'try'
+
+ L.1834        42  LOAD_STR                 'try'
+
+ L.1835        44  LOAD_CONST               ('for', 'break continue while')
+
+ L.1836        46  LOAD_STR                 'import'
+
+ L.1837        48  LOAD_CONST               ('global', 'nonlocal NAMESPACES')
+
+ L.1838        50  LOAD_CONST               ('if', 'TRUTHVALUE')
+
+ L.1839        52  LOAD_CONST               ('import', 'MODULES')
+
+ L.1840        54  LOAD_CONST               ('in', 'SEQUENCEMETHODS')
+
+ L.1841        56  LOAD_STR                 'COMPARISON'
+
+ L.1842        58  LOAD_CONST               ('lambda', 'FUNCTIONS')
+
+ L.1843        60  LOAD_CONST               ('nonlocal', 'global NAMESPACES')
+
+ L.1844        62  LOAD_STR                 'BOOLEAN'
+
+ L.1845        64  LOAD_STR                 'BOOLEAN'
+
+ L.1846        66  LOAD_CONST               ('pass', '')
+
+ L.1847        68  LOAD_CONST               ('raise', 'EXCEPTIONS')
+
+ L.1848        70  LOAD_CONST               ('return', 'FUNCTIONS')
+
+ L.1849        72  LOAD_CONST               ('try', 'EXCEPTIONS')
+
+ L.1850        74  LOAD_CONST               ('while', 'break continue if TRUTHVALUE')
+
+ L.1851        76  LOAD_CONST               ('with', 'CONTEXTMANAGERS EXCEPTIONS yield')
+
+ L.1852        78  LOAD_CONST               ('yield', '')
+
+ L.1816        80  LOAD_CONST               ('False', 'None', 'True', '__peg_parser__', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield')
+               82  BUILD_CONST_KEY_MAP_36    36 
+               84  STORE_NAME               keywords
+
+ L.1856        86  LOAD_LISTCOMP            '<code_object <listcomp>>'
+               88  LOAD_STR                 'Helper.<listcomp>'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  LOAD_CONST               ('b', 'f', 'r', 'u')
+               94  GET_ITER         
+               96  CALL_FUNCTION_1       1  ''
+               98  STORE_NAME               _strprefixes
+
+ L.1858       100  LOAD_STR                 "'"
+              102  LOAD_STR                 "'''"
+              104  LOAD_STR                 '"'
+              106  LOAD_STR                 '"""'
+              108  BUILD_LIST_4          4 
+              110  LOAD_NAME                _strprefixes
+              112  CALL_FINALLY        115  'to 115'
+              114  WITH_CLEANUP_FINISH
+
+ L.1859       116  LOAD_CONST               ('+', '-', '*', '**', '/', '//', '%', '<<', '>>', '&', '|', '^', '~', '<', '>', '<=', '>=', '==', '!=', '<>')
+
+ L.1861       118  LOAD_CONST               ('<', '>', '<=', '>=', '==', '!=', '<>')
+
+ L.1862       120  LOAD_CONST               ('-', '~')
+
+ L.1863       122  LOAD_CONST               ('+=', '-=', '*=', '/=', '%=', '&=', '|=', '^=', '<<=', '>>=', '**=', '//=')
+
+ L.1865       124  LOAD_CONST               ('<<', '>>', '&', '|', '^', '~')
+
+ L.1866       126  LOAD_CONST               ('j', 'J')
+
+ L.1857       128  LOAD_CONST               ('STRINGS', 'OPERATORS', 'COMPARISON', 'UNARY', 'AUGMENTEDASSIGNMENT', 'BITWISE', 'COMPLEX')
+              130  BUILD_CONST_KEY_MAP_7     7 
+              132  STORE_NAME               _symbols_inverse
+
+ L.1869       134  LOAD_STR                 'OPERATORS FORMATTING'
+
+ L.1870       136  LOAD_STR                 'POWER'
+
+ L.1871       138  LOAD_STR                 'TUPLES LISTS FUNCTIONS'
+
+ L.1872       140  LOAD_STR                 'ATTRIBUTES FLOAT MODULES OBJECTS'
+
+ L.1873       142  LOAD_STR                 'ELLIPSIS'
+
+ L.1874       144  LOAD_STR                 'SLICINGS DICTIONARYLITERALS'
+
+ L.1875       146  LOAD_STR                 'def class'
+
+ L.1876       148  LOAD_STR                 'STRINGS'
+
+ L.1877       150  LOAD_STR                 'PRIVATENAMES'
+
+ L.1878       152  LOAD_STR                 'PRIVATENAMES SPECIALMETHODS'
+
+ L.1879       154  LOAD_STR                 'BACKQUOTES'
+
+ L.1880       156  LOAD_STR                 'TUPLES FUNCTIONS CALLS'
+
+ L.1881       158  LOAD_STR                 'TUPLES FUNCTIONS CALLS'
+
+ L.1882       160  LOAD_STR                 'LISTS SUBSCRIPTS SLICINGS'
+
+ L.1883       162  LOAD_STR                 'LISTS SUBSCRIPTS SLICINGS'
+
+ L.1868       164  LOAD_CONST               ('%', '**', ',', '.', '...', ':', '@', '\\', '_', '__', '`', '(', ')', '[', ']')
+              166  BUILD_CONST_KEY_MAP_15    15 
+              168  STORE_NAME               symbols
+
+ L.1885       170  LOAD_NAME                _symbols_inverse
+              172  LOAD_METHOD              items
+              174  CALL_METHOD_0         0  ''
+              176  GET_ITER         
+            178_0  COME_FROM           236  '236'
+              178  FOR_ITER            238  'to 238'
+              180  UNPACK_SEQUENCE_2     2 
+              182  STORE_NAME               topic
+              184  STORE_NAME               symbols_
+
+ L.1886       186  LOAD_NAME                symbols_
+              188  GET_ITER         
+            190_0  COME_FROM           234  '234'
+              190  FOR_ITER            236  'to 236'
+              192  STORE_NAME               symbol
+
+ L.1887       194  LOAD_NAME                symbols
+              196  LOAD_METHOD              get
+              198  LOAD_NAME                symbol
+              200  LOAD_NAME                topic
+              202  CALL_METHOD_2         2  ''
+              204  STORE_NAME               topics
+
+ L.1888       206  LOAD_NAME                topic
+              208  LOAD_NAME                topics
+              210  <118>                 1  ''
+              212  POP_JUMP_IF_FALSE   226  'to 226'
+
+ L.1889       214  LOAD_NAME                topics
+              216  LOAD_STR                 ' '
+              218  BINARY_ADD       
+              220  LOAD_NAME                topic
+              222  BINARY_ADD       
+              224  STORE_NAME               topics
+            226_0  COME_FROM           212  '212'
+
+ L.1890       226  LOAD_NAME                topics
+              228  LOAD_NAME                symbols
+              230  LOAD_NAME                symbol
+              232  STORE_SUBSCR     
+              234  JUMP_BACK           190  'to 190'
+            236_0  COME_FROM           190  '190'
+              236  JUMP_BACK           178  'to 178'
+            238_0  COME_FROM           178  '178'
+
+ L.1893       238  LOAD_CONST               ('types', 'STRINGS UNICODE NUMBERS SEQUENCES MAPPINGS FUNCTIONS CLASSES MODULES FILES inspect')
+
+ L.1895       240  LOAD_CONST               ('strings', 'str UNICODE SEQUENCES STRINGMETHODS FORMATTING TYPES')
+
+ L.1897       242  LOAD_CONST               ('string-methods', 'STRINGS FORMATTING')
+
+ L.1898       244  LOAD_CONST               ('formatstrings', 'OPERATORS')
+
+ L.1899       246  LOAD_CONST               ('strings', 'encodings unicode SEQUENCES STRINGMETHODS FORMATTING TYPES')
+
+ L.1901       248  LOAD_CONST               ('numbers', 'INTEGER FLOAT COMPLEX TYPES')
+
+ L.1902       250  LOAD_CONST               ('integers', 'int range')
+
+ L.1903       252  LOAD_CONST               ('floating', 'float math')
+
+ L.1904       254  LOAD_CONST               ('imaginary', 'complex cmath')
+
+ L.1905       256  LOAD_CONST               ('typesseq', 'STRINGMETHODS FORMATTING range LISTS')
+
+ L.1906       258  LOAD_STR                 'DICTIONARIES'
+
+ L.1907       260  LOAD_CONST               ('typesfunctions', 'def TYPES')
+
+ L.1908       262  LOAD_CONST               ('typesmethods', 'class def CLASSES TYPES')
+
+ L.1909       264  LOAD_CONST               ('bltin-code-objects', 'compile FUNCTIONS TYPES')
+
+ L.1910       266  LOAD_CONST               ('bltin-type-objects', 'types TYPES')
+
+ L.1911       268  LOAD_STR                 'TYPES'
+
+ L.1912       270  LOAD_STR                 'TYPES'
+
+ L.1913       272  LOAD_CONST               ('bltin-null-object', '')
+
+ L.1914       274  LOAD_CONST               ('bltin-ellipsis-object', 'SLICINGS')
+
+ L.1915       276  LOAD_CONST               ('specialattrs', '')
+
+ L.1916       278  LOAD_CONST               ('types', 'class SPECIALMETHODS PRIVATENAMES')
+
+ L.1917       280  LOAD_CONST               ('typesmodules', 'import')
+
+ L.1918       282  LOAD_STR                 'import'
+
+ L.1919       284  LOAD_CONST               ('operator-summary', 'lambda or and not in is BOOLEAN COMPARISON BITWISE SHIFTING BINARY FORMATTING POWER UNARY ATTRIBUTES SUBSCRIPTS SLICINGS CALLS TUPLES LISTS DICTIONARIES')
+
+ L.1923       286  LOAD_STR                 'EXPRESSIONS'
+
+ L.1924       288  LOAD_STR                 'EXPRESSIONS'
+
+ L.1925       290  LOAD_CONST               ('objects', 'TYPES')
+
+ L.1926       292  LOAD_CONST               ('specialnames', 'BASICMETHODS ATTRIBUTEMETHODS CALLABLEMETHODS SEQUENCEMETHODS MAPPINGMETHODS NUMBERMETHODS CLASSES')
+
+ L.1929       294  LOAD_CONST               ('customization', 'hash repr str SPECIALMETHODS')
+
+ L.1930       296  LOAD_CONST               ('attribute-access', 'ATTRIBUTES SPECIALMETHODS')
+
+ L.1931       298  LOAD_CONST               ('callable-types', 'CALLS SPECIALMETHODS')
+
+ L.1932       300  LOAD_CONST               ('sequence-types', 'SEQUENCES SEQUENCEMETHODS SPECIALMETHODS')
+
+ L.1934       302  LOAD_CONST               ('sequence-types', 'MAPPINGS SPECIALMETHODS')
+
+ L.1935       304  LOAD_CONST               ('numeric-types', 'NUMBERS AUGMENTEDASSIGNMENT SPECIALMETHODS')
+
+ L.1937       306  LOAD_CONST               ('execmodel', 'NAMESPACES DYNAMICFEATURES EXCEPTIONS')
+
+ L.1938       308  LOAD_CONST               ('naming', 'global nonlocal ASSIGNMENT DELETION DYNAMICFEATURES')
+
+ L.1939       310  LOAD_CONST               ('dynamic-features', '')
+
+ L.1940       312  LOAD_STR                 'NAMESPACES'
+
+ L.1941       314  LOAD_STR                 'NAMESPACES'
+
+ L.1942       316  LOAD_CONST               ('exceptions', 'try except finally raise')
+
+ L.1943       318  LOAD_CONST               ('conversions', '')
+
+ L.1944       320  LOAD_CONST               ('identifiers', 'keywords SPECIALIDENTIFIERS')
+
+ L.1945       322  LOAD_CONST               ('id-classes', '')
+
+ L.1946       324  LOAD_CONST               ('atom-identifiers', '')
+
+ L.1947       326  LOAD_CONST               ('atom-literals', 'STRINGS NUMBERS TUPLELITERALS LISTLITERALS DICTIONARYLITERALS')
+
+ L.1949       328  LOAD_STR                 'SEQUENCES'
+
+ L.1950       330  LOAD_CONST               ('exprlists', 'TUPLES LITERALS')
+
+ L.1951       332  LOAD_CONST               ('typesseq-mutable', 'LISTLITERALS')
+
+ L.1952       334  LOAD_CONST               ('lists', 'LISTS LITERALS')
+
+ L.1953       336  LOAD_CONST               ('typesmapping', 'DICTIONARYLITERALS')
+
+ L.1954       338  LOAD_CONST               ('dict', 'DICTIONARIES LITERALS')
+
+ L.1955       340  LOAD_CONST               ('attribute-references', 'getattr hasattr setattr ATTRIBUTEMETHODS')
+
+ L.1956       342  LOAD_CONST               ('subscriptions', 'SEQUENCEMETHODS')
+
+ L.1957       344  LOAD_CONST               ('slicings', 'SEQUENCEMETHODS')
+
+ L.1958       346  LOAD_CONST               ('calls', 'EXPRESSIONS')
+
+ L.1959       348  LOAD_CONST               ('power', 'EXPRESSIONS')
+
+ L.1960       350  LOAD_CONST               ('unary', 'EXPRESSIONS')
+
+ L.1961       352  LOAD_CONST               ('binary', 'EXPRESSIONS')
+
+ L.1962       354  LOAD_CONST               ('shifting', 'EXPRESSIONS')
+
+ L.1963       356  LOAD_CONST               ('bitwise', 'EXPRESSIONS')
+
+ L.1964       358  LOAD_CONST               ('comparisons', 'EXPRESSIONS BASICMETHODS')
+
+ L.1965       360  LOAD_CONST               ('booleans', 'EXPRESSIONS TRUTHVALUE')
+
+ L.1966       362  LOAD_STR                 'assert'
+
+ L.1967       364  LOAD_CONST               ('assignment', 'AUGMENTEDASSIGNMENT')
+
+ L.1968       366  LOAD_CONST               ('augassign', 'NUMBERMETHODS')
+
+ L.1969       368  LOAD_STR                 'del'
+
+ L.1970       370  LOAD_STR                 'return'
+
+ L.1971       372  LOAD_STR                 'import'
+
+ L.1972       374  LOAD_STR                 'if'
+
+ L.1973       376  LOAD_CONST               ('compound', 'for while break continue')
+
+ L.1974       378  LOAD_CONST               ('truth', 'if while and or not BASICMETHODS')
+
+ L.1975       380  LOAD_CONST               ('debugger', 'pdb')
+
+ L.1976       382  LOAD_CONST               ('context-managers', 'with')
+
+ L.1892       384  LOAD_CONST               ('TYPES', 'STRINGS', 'STRINGMETHODS', 'FORMATTING', 'UNICODE', 'NUMBERS', 'INTEGER', 'FLOAT', 'COMPLEX', 'SEQUENCES', 'MAPPINGS', 'FUNCTIONS', 'METHODS', 'CODEOBJECTS', 'TYPEOBJECTS', 'FRAMEOBJECTS', 'TRACEBACKS', 'NONE', 'ELLIPSIS', 'SPECIALATTRIBUTES', 'CLASSES', 'MODULES', 'PACKAGES', 'EXPRESSIONS', 'OPERATORS', 'PRECEDENCE', 'OBJECTS', 'SPECIALMETHODS', 'BASICMETHODS', 'ATTRIBUTEMETHODS', 'CALLABLEMETHODS', 'SEQUENCEMETHODS', 'MAPPINGMETHODS', 'NUMBERMETHODS', 'EXECUTION', 'NAMESPACES', 'DYNAMICFEATURES', 'SCOPING', 'FRAMES', 'EXCEPTIONS', 'CONVERSIONS', 'IDENTIFIERS', 'SPECIALIDENTIFIERS', 'PRIVATENAMES', 'LITERALS', 'TUPLES', 'TUPLELITERALS', 'LISTS', 'LISTLITERALS', 'DICTIONARIES', 'DICTIONARYLITERALS', 'ATTRIBUTES', 'SUBSCRIPTS', 'SLICINGS', 'CALLS', 'POWER', 'UNARY', 'BINARY', 'SHIFTING', 'BITWISE', 'COMPARISON', 'BOOLEAN', 'ASSERTION', 'ASSIGNMENT', 'AUGMENTEDASSIGNMENT', 'DELETION', 'RETURNING', 'IMPORTING', 'CONDITIONAL', 'LOOPING', 'TRUTHVALUE', 'DEBUGGING', 'CONTEXTMANAGERS')
+              386  BUILD_CONST_KEY_MAP_73    73 
+              388  STORE_NAME               topics
+
+ L.1979       390  LOAD_CONST               (None, None)
+              392  LOAD_CODE                <code_object __init__>
+              394  LOAD_STR                 'Helper.__init__'
+              396  MAKE_FUNCTION_1          'default'
+              398  STORE_NAME               __init__
+
+ L.1983       400  LOAD_NAME                property
+
+ L.1984       402  LOAD_CODE                <code_object input>
+              404  LOAD_STR                 'Helper.input'
+              406  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              408  CALL_FUNCTION_1       1  ''
+              410  STORE_NAME               input
+
+ L.1987       412  LOAD_NAME                property
+
+ L.1988       414  LOAD_CODE                <code_object output>
+              416  LOAD_STR                 'Helper.output'
+              418  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              420  CALL_FUNCTION_1       1  ''
+              422  STORE_NAME               output
+
+ L.1991       424  LOAD_CODE                <code_object __repr__>
+              426  LOAD_STR                 'Helper.__repr__'
+              428  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              430  STORE_NAME               __repr__
+
+ L.1998       432  LOAD_NAME                object
+              434  CALL_FUNCTION_0       0  ''
+              436  STORE_NAME               _GoInteractive
+
+ L.1999       438  LOAD_NAME                _GoInteractive
+              440  BUILD_TUPLE_1         1 
+              442  LOAD_CODE                <code_object __call__>
+              444  LOAD_STR                 'Helper.__call__'
+              446  MAKE_FUNCTION_1          'default'
+              448  STORE_NAME               __call__
+
+ L.2012       450  LOAD_CODE                <code_object interact>
+              452  LOAD_STR                 'Helper.interact'
+              454  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              456  STORE_NAME               interact
+
+ L.2033       458  LOAD_CODE                <code_object getline>
+              460  LOAD_STR                 'Helper.getline'
+              462  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              464  STORE_NAME               getline
+
+ L.2042       466  LOAD_CODE                <code_object help>
+              468  LOAD_STR                 'Helper.help'
+              470  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              472  STORE_NAME               help
+
+ L.2063       474  LOAD_CODE                <code_object intro>
+              476  LOAD_STR                 'Helper.intro'
+              478  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              480  STORE_NAME               intro
+
+ L.2080       482  LOAD_CONST               (4, 80)
+              484  LOAD_CODE                <code_object list>
+              486  LOAD_STR                 'Helper.list'
+              488  MAKE_FUNCTION_1          'default'
+              490  STORE_NAME               list
+
+ L.2093       492  LOAD_CODE                <code_object listkeywords>
+              494  LOAD_STR                 'Helper.listkeywords'
+              496  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              498  STORE_NAME               listkeywords
+
+ L.2100       500  LOAD_CODE                <code_object listsymbols>
+              502  LOAD_STR                 'Helper.listsymbols'
+              504  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              506  STORE_NAME               listsymbols
+
+ L.2108       508  LOAD_CODE                <code_object listtopics>
+              510  LOAD_STR                 'Helper.listtopics'
+              512  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              514  STORE_NAME               listtopics
+
+ L.2115       516  LOAD_CONST               ('',)
+              518  LOAD_CODE                <code_object showtopic>
+              520  LOAD_STR                 'Helper.showtopic'
+              522  MAKE_FUNCTION_1          'default'
+              524  STORE_NAME               showtopic
+
+ L.2147       526  LOAD_CONST               ('',)
+              528  LOAD_CODE                <code_object _gettopic>
+              530  LOAD_STR                 'Helper._gettopic'
+              532  MAKE_FUNCTION_1          'default'
+              534  STORE_NAME               _gettopic
+
+ L.2174       536  LOAD_CODE                <code_object showsymbol>
+              538  LOAD_STR                 'Helper.showsymbol'
+              540  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              542  STORE_NAME               showsymbol
+
+ L.2179       544  LOAD_CONST               ('',)
+              546  LOAD_CODE                <code_object listmodules>
+              548  LOAD_STR                 'Helper.listmodules'
+              550  MAKE_FUNCTION_1          'default'
+              552  STORE_NAME               listmodules
+
+Parse error at or near `CALL_FINALLY' instruction at offset 112
+
+                  26  POP_JUMP_IF_FALSE    40  'to 40'
+Instruction context:
+   
+ L.1778         2  LOAD_FAST                'output'
+                   4  LOAD_CONST               None
+->                 6  <117>                 0  ''
+                   8  POP_JUMP_IF_FALSE    28  'to 28'
+Instruction context:
+   
+ L.1791        60  LOAD_FAST                'file'
+                  62  LOAD_METHOD              write
+                  64  LOAD_FAST                'page'
+                  66  CALL_METHOD_1         1  ''
+                  68  POP_TOP          
+                  70  POP_BLOCK        
+                  72  LOAD_CONST               None
+->                74  DUP_TOP          
+                  76  DUP_TOP          
+                  78  CALL_FUNCTION_3       3  ''
+                  80  POP_TOP          
+                  82  JUMP_FORWARD        100  'to 100'
+                84_0  COME_FROM_WITH       56  '56'
+                  84  <49>             
+                  86  POP_JUMP_IF_TRUE     90  'to 90'
+                  88  <48>             
+                90_0  COME_FROM            86  '86'
+                  90  POP_TOP          
+                  92  POP_TOP          
+                  94  POP_TOP          
+                  96  POP_EXCEPT       
+                  98  POP_TOP          
+               100_0  COME_FROM            82  '82'
+Instruction context:
+   
+ L.1858       100  LOAD_STR                 "'"
+                 102  LOAD_STR                 "'''"
+                 104  LOAD_STR                 '"'
+                 106  LOAD_STR                 '"""'
+                 108  BUILD_LIST_4          4 
+                 110  LOAD_NAME                _strprefixes
+->               112  CALL_FINALLY        115  'to 115'
+                 114  WITH_CLEANUP_FINISH
+
+test/43501.pyc -- 
+# decompile failed

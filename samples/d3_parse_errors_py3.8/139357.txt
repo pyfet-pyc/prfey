@@ -1,0 +1,24 @@
+Instruction context:
+   
+ L. 148       200  LOAD_GLOBAL              ctypes
+                 202  LOAD_ATTR                cdll
+                 204  LOAD_FAST                'libpath'
+                 206  BINARY_SUBSCR    
+                 208  POP_BLOCK        
+->               210  ROT_TWO          
+                 212  POP_TOP          
+                 214  RETURN_VALUE     
+               216_0  COME_FROM_FINALLY   198  '198'
+Instruction context:
+   
+ L. 313       270  POP_EXCEPT       
+                 272  JUMP_FORWARD        276  'to 276'
+->             274_0  COME_FROM           260  '260'
+                 274  END_FINALLY      
+               276_0  COME_FROM           272  '272'
+
+../test/139357.pyc -- 
+# decompile failed
+
+# file ../test/139357.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,167 @@
+Instruction context:
+   
+ L.  10        78  DUP_TOP          
+                  80  LOAD_NAME                ImportError
+->                82  <121>               106  ''
+                  84  POP_TOP          
+                  86  POP_TOP          
+                  88  POP_TOP          
+
+test/101730.pyc -- 
+# decompile failed
+
+# file test/101730.pyc
+# --- This code section failed: ---
+
+ L.   2         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              struct
+                6  STORE_NAME               struct
+
+ L.   3         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              os
+               14  STORE_NAME               os
+
+ L.   4        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              atexit
+               22  STORE_NAME               atexit
+
+ L.   5        24  LOAD_CONST               0
+               26  LOAD_CONST               ('time',)
+               28  IMPORT_NAME              time
+               30  IMPORT_FROM              time
+               32  STORE_NAME               now
+               34  POP_TOP          
+
+ L.   6        36  LOAD_CONST               0
+               38  LOAD_CONST               ('Thread',)
+               40  IMPORT_NAME              threading
+               42  IMPORT_FROM              Thread
+               44  STORE_NAME               Thread
+               46  POP_TOP          
+
+ L.   7        48  LOAD_CONST               0
+               50  LOAD_CONST               ('glob',)
+               52  IMPORT_NAME              glob
+               54  IMPORT_FROM              glob
+               56  STORE_NAME               glob
+               58  POP_TOP          
+
+ L.   8        60  SETUP_FINALLY        78  'to 78'
+
+ L.   9        62  LOAD_CONST               0
+               64  LOAD_CONST               ('Queue',)
+               66  IMPORT_NAME              queue
+               68  IMPORT_FROM              Queue
+               70  STORE_NAME               Queue
+               72  POP_TOP          
+               74  POP_BLOCK        
+               76  JUMP_FORWARD        108  'to 108'
+             78_0  COME_FROM_FINALLY    60  '60'
+
+ L.  10        78  DUP_TOP          
+               80  LOAD_NAME                ImportError
+               82  <121>               106  ''
+               84  POP_TOP          
+               86  POP_TOP          
+               88  POP_TOP          
+
+ L.  11        90  LOAD_CONST               0
+               92  LOAD_CONST               ('Queue',)
+               94  IMPORT_NAME              Queue
+               96  IMPORT_FROM              Queue
+               98  STORE_NAME               Queue
+              100  POP_TOP          
+              102  POP_EXCEPT       
+              104  JUMP_FORWARD        108  'to 108'
+              106  <48>             
+            108_0  COME_FROM           104  '104'
+            108_1  COME_FROM            76  '76'
+
+ L.  13       108  LOAD_STR                 'llHHI'
+              110  STORE_NAME               event_bin_format
+
+ L.  17       112  LOAD_CONST               0
+              114  STORE_NAME               EV_SYN
+
+ L.  18       116  LOAD_CONST               1
+              118  STORE_NAME               EV_KEY
+
+ L.  19       120  LOAD_CONST               2
+              122  STORE_NAME               EV_REL
+
+ L.  20       124  LOAD_CONST               3
+              126  STORE_NAME               EV_ABS
+
+ L.  21       128  LOAD_CONST               4
+              130  STORE_NAME               EV_MSC
+
+ L.  23       132  LOAD_CODE                <code_object make_uinput>
+              134  LOAD_STR                 'make_uinput'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  STORE_NAME               make_uinput
+
+ L.  51       140  LOAD_BUILD_CLASS 
+              142  LOAD_CODE                <code_object EventDevice>
+              144  LOAD_STR                 'EventDevice'
+              146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              148  LOAD_STR                 'EventDevice'
+              150  LOAD_NAME                object
+              152  CALL_FUNCTION_3       3  ''
+              154  STORE_NAME               EventDevice
+
+ L.  99       156  LOAD_BUILD_CLASS 
+              158  LOAD_CODE                <code_object AggregatedEventDevice>
+              160  LOAD_STR                 'AggregatedEventDevice'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  LOAD_STR                 'AggregatedEventDevice'
+              166  LOAD_NAME                object
+              168  CALL_FUNCTION_3       3  ''
+              170  STORE_NAME               AggregatedEventDevice
+
+ L. 118       172  LOAD_CONST               0
+              174  LOAD_CONST               None
+              176  IMPORT_NAME              re
+              178  STORE_NAME               re
+
+ L. 119       180  LOAD_CONST               0
+              182  LOAD_CONST               ('namedtuple',)
+              184  IMPORT_NAME              collections
+              186  IMPORT_FROM              namedtuple
+              188  STORE_NAME               namedtuple
+              190  POP_TOP          
+
+ L. 120       192  LOAD_NAME                namedtuple
+              194  LOAD_STR                 'DeviceDescription'
+              196  LOAD_STR                 'event_file is_mouse is_keyboard'
+              198  CALL_FUNCTION_2       2  ''
+              200  STORE_NAME               DeviceDescription
+
+ L. 121       202  LOAD_STR                 'N: Name="([^"]+?)".+?H: Handlers=([^\\n]+)'
+              204  STORE_NAME               device_pattern
+
+ L. 122       206  LOAD_CODE                <code_object list_devices_from_proc>
+              208  LOAD_STR                 'list_devices_from_proc'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               list_devices_from_proc
+
+ L. 135       214  LOAD_CONST               (True,)
+              216  LOAD_CODE                <code_object list_devices_from_by_id>
+              218  LOAD_STR                 'list_devices_from_by_id'
+              220  MAKE_FUNCTION_1          'default'
+              222  STORE_NAME               list_devices_from_by_id
+
+ L. 139       224  LOAD_CODE                <code_object aggregate_devices>
+              226  LOAD_STR                 'aggregate_devices'
+              228  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              230  STORE_NAME               aggregate_devices
+
+ L. 172       232  LOAD_CODE                <code_object ensure_root>
+              234  LOAD_STR                 'ensure_root'
+              236  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              238  STORE_NAME               ensure_root
+
+Parse error at or near `<121>' instruction at offset 82
+

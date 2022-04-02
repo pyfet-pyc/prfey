@@ -1,0 +1,51 @@
+Instruction context:
+   
+ L.   5        18  DUP_TOP          
+                  20  LOAD_NAME                ImportError
+->                22  <121>                42  ''
+                  24  POP_TOP          
+                  26  POP_TOP          
+                  28  POP_TOP          
+
+test/101613.pyc -- 
+# decompile failed
+
+# file test/101613.pyc
+# --- This code section failed: ---
+
+ L.   3         0  SETUP_FINALLY        18  'to 18'
+
+ L.   4         2  LOAD_CONST               0
+                4  LOAD_CONST               ('write',)
+                6  IMPORT_NAME              keyboard
+                8  IMPORT_FROM              write
+               10  STORE_NAME               write
+               12  POP_TOP          
+               14  POP_BLOCK        
+               16  JUMP_FORWARD         44  'to 44'
+             18_0  COME_FROM_FINALLY     0  '0'
+
+ L.   5        18  DUP_TOP          
+               20  LOAD_NAME                ImportError
+               22  <121>                42  ''
+               24  POP_TOP          
+               26  POP_TOP          
+               28  POP_TOP          
+
+ L.   6        30  LOAD_NAME                SystemExit
+               32  LOAD_STR                 'Please run › pip install keyboard'
+               34  CALL_FUNCTION_1       1  ''
+               36  RAISE_VARARGS_1       1  'exception instance'
+               38  POP_EXCEPT       
+               40  JUMP_FORWARD         44  'to 44'
+               42  <48>             
+             44_0  COME_FROM            40  '40'
+             44_1  COME_FROM            16  '16'
+
+ L.  11        44  LOAD_CODE                <code_object SendKeyPress>
+               46  LOAD_STR                 'SendKeyPress'
+               48  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               50  STORE_NAME               SendKeyPress
+
+Parse error at or near `<121>' instruction at offset 22
+

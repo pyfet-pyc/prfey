@@ -1,0 +1,62 @@
+Instruction context:
+   
+ L. 484        52  POP_BLOCK        
+                  54  POP_EXCEPT       
+->                56  CALL_FINALLY         62  'to 62'
+                  58  LOAD_CONST               False
+                  60  RETURN_VALUE     
+                62_0  COME_FROM            56  '56'
+                62_1  COME_FROM_FINALLY    30  '30'
+                  62  LOAD_CONST               None
+                  64  STORE_FAST               'err'
+                  66  DELETE_FAST              'err'
+                  68  END_FINALLY      
+                  70  POP_EXCEPT       
+                  72  JUMP_FORWARD         88  'to 88'
+                74_0  COME_FROM            22  '22'
+                  74  END_FINALLY      
+                76_0  COME_FROM            14  '14'
+Instruction context:
+   
+ L. 499        52  POP_BLOCK        
+                  54  POP_EXCEPT       
+->                56  CALL_FINALLY         62  'to 62'
+                  58  LOAD_CONST               False
+                  60  RETURN_VALUE     
+                62_0  COME_FROM            56  '56'
+                62_1  COME_FROM_FINALLY    30  '30'
+                  62  LOAD_CONST               None
+                  64  STORE_FAST               'err'
+                  66  DELETE_FAST              'err'
+                  68  END_FINALLY      
+                  70  POP_EXCEPT       
+                  72  JUMP_FORWARD         80  'to 80'
+                74_0  COME_FROM            22  '22'
+                  74  END_FINALLY      
+                76_0  COME_FROM            14  '14'
+Instruction context:
+-> 
+ L. 514        72  DUP_TOP          
+                  74  LOAD_GLOBAL              socket
+                  76  LOAD_ATTR                error
+                  78  COMPARE_OP               exception-match
+                  80  POP_JUMP_IF_FALSE    94  'to 94'
+                  82  POP_TOP          
+                  84  POP_TOP          
+                  86  POP_TOP          
+Instruction context:
+   
+ L. 660       108  POP_EXCEPT       
+                 110  JUMP_BACK            60  'to 60'
+                 112  POP_EXCEPT       
+                 114  JUMP_FORWARD        118  'to 118'
+->             116_0  COME_FROM            92  '92'
+                 116  END_FINALLY      
+               118_0  COME_FROM           114  '114'
+               118_1  COME_FROM            84  '84'
+
+../test/157319.pyc -- 
+# decompile failed
+
+# file ../test/157319.pyc
+# Deparsing stopped due to parse error

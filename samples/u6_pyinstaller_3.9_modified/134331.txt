@@ -1,0 +1,172 @@
+Instruction context:
+   
+ L. 181       236  DUP_TOP          
+                 238  LOAD_NAME                ImportError
+->               240  <121>               252  ''
+                 242  POP_TOP          
+                 244  POP_TOP          
+                 246  POP_TOP          
+
+test/134331.pyc -- 
+# decompile failed
+
+# file test/134331.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Http related parsers and protocol.'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              asyncio
+               10  STORE_NAME               asyncio
+
+ L.   4        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              collections
+               18  STORE_NAME               collections
+
+ L.   5        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              zlib
+               26  STORE_NAME               zlib
+
+ L.   6        28  LOAD_CONST               0
+               30  LOAD_CONST               ('Any', 'Awaitable', 'Callable', 'Optional', 'Union')
+               32  IMPORT_NAME              typing
+               34  IMPORT_FROM              Any
+               36  STORE_NAME               Any
+               38  IMPORT_FROM              Awaitable
+               40  STORE_NAME               Awaitable
+               42  IMPORT_FROM              Callable
+               44  STORE_NAME               Callable
+               46  IMPORT_FROM              Optional
+               48  STORE_NAME               Optional
+               50  IMPORT_FROM              Union
+               52  STORE_NAME               Union
+               54  POP_TOP          
+
+ L.   8        56  LOAD_CONST               0
+               58  LOAD_CONST               ('CIMultiDict',)
+               60  IMPORT_NAME              multidict
+               62  IMPORT_FROM              CIMultiDict
+               64  STORE_NAME               CIMultiDict
+               66  POP_TOP          
+
+ L.  10        68  LOAD_CONST               1
+               70  LOAD_CONST               ('AbstractStreamWriter',)
+               72  IMPORT_NAME              abc
+               74  IMPORT_FROM              AbstractStreamWriter
+               76  STORE_NAME               AbstractStreamWriter
+               78  POP_TOP          
+
+ L.  11        80  LOAD_CONST               1
+               82  LOAD_CONST               ('BaseProtocol',)
+               84  IMPORT_NAME              base_protocol
+               86  IMPORT_FROM              BaseProtocol
+               88  STORE_NAME               BaseProtocol
+               90  POP_TOP          
+
+ L.  12        92  LOAD_CONST               1
+               94  LOAD_CONST               ('NO_EXTENSIONS',)
+               96  IMPORT_NAME              helpers
+               98  IMPORT_FROM              NO_EXTENSIONS
+              100  STORE_NAME               NO_EXTENSIONS
+              102  POP_TOP          
+
+ L.  14       104  LOAD_CONST               ('StreamWriter', 'HttpVersion', 'HttpVersion10', 'HttpVersion11')
+              106  STORE_NAME               __all__
+
+ L.  16       108  LOAD_NAME                collections
+              110  LOAD_METHOD              namedtuple
+              112  LOAD_STR                 'HttpVersion'
+              114  LOAD_STR                 'major'
+              116  LOAD_STR                 'minor'
+              118  BUILD_LIST_2          2 
+              120  CALL_METHOD_2         2  ''
+              122  STORE_NAME               HttpVersion
+
+ L.  17       124  LOAD_NAME                HttpVersion
+              126  LOAD_CONST               1
+              128  LOAD_CONST               0
+              130  CALL_FUNCTION_2       2  ''
+              132  STORE_NAME               HttpVersion10
+
+ L.  18       134  LOAD_NAME                HttpVersion
+              136  LOAD_CONST               1
+              138  LOAD_CONST               1
+              140  CALL_FUNCTION_2       2  ''
+              142  STORE_NAME               HttpVersion11
+
+ L.  21       144  LOAD_NAME                Optional
+              146  LOAD_NAME                Callable
+              148  LOAD_NAME                bytes
+              150  BUILD_LIST_1          1 
+              152  LOAD_NAME                Awaitable
+              154  LOAD_CONST               None
+              156  BINARY_SUBSCR    
+              158  BUILD_TUPLE_2         2 
+              160  BINARY_SUBSCR    
+              162  BINARY_SUBSCR    
+              164  STORE_NAME               _T_OnChunkSent
+
+ L.  24       166  LOAD_BUILD_CLASS 
+              168  LOAD_CODE                <code_object StreamWriter>
+              170  LOAD_STR                 'StreamWriter'
+              172  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              174  LOAD_STR                 'StreamWriter'
+              176  LOAD_NAME                AbstractStreamWriter
+              178  CALL_FUNCTION_3       3  ''
+              180  STORE_NAME               StreamWriter
+
+ L. 164       182  LOAD_NAME                str
+              184  LOAD_STR                 'CIMultiDict[str]'
+              186  LOAD_NAME                bytes
+              188  LOAD_CONST               ('status_line', 'headers', 'return')
+              190  BUILD_CONST_KEY_MAP_3     3 
+              192  LOAD_CODE                <code_object _py_serialize_headers>
+              194  LOAD_STR                 '_py_serialize_headers'
+              196  MAKE_FUNCTION_4          'annotation'
+              198  STORE_NAME               _py_serialize_headers
+
+ L. 173       200  LOAD_NAME                _py_serialize_headers
+              202  STORE_NAME               _serialize_headers
+
+ L. 175       204  SETUP_FINALLY       236  'to 236'
+
+ L. 176       206  LOAD_CONST               0
+              208  LOAD_CONST               None
+              210  IMPORT_NAME_ATTR         aiohttp._http_writer
+              212  IMPORT_FROM              _http_writer
+              214  STORE_NAME               _http_writer
+              216  POP_TOP          
+
+ L. 178       218  LOAD_NAME                _http_writer
+              220  LOAD_ATTR                _serialize_headers
+              222  STORE_NAME               _c_serialize_headers
+
+ L. 179       224  LOAD_NAME                NO_EXTENSIONS
+              226  POP_JUMP_IF_TRUE    232  'to 232'
+
+ L. 180       228  LOAD_NAME                _c_serialize_headers
+              230  STORE_NAME               _serialize_headers
+            232_0  COME_FROM           226  '226'
+              232  POP_BLOCK        
+              234  JUMP_FORWARD        254  'to 254'
+            236_0  COME_FROM_FINALLY   204  '204'
+
+ L. 181       236  DUP_TOP          
+              238  LOAD_NAME                ImportError
+              240  <121>               252  ''
+              242  POP_TOP          
+              244  POP_TOP          
+              246  POP_TOP          
+
+ L. 182       248  POP_EXCEPT       
+              250  JUMP_FORWARD        254  'to 254'
+              252  <48>             
+            254_0  COME_FROM           250  '250'
+            254_1  COME_FROM           234  '234'
+
+Parse error at or near `<121>' instruction at offset 240
+

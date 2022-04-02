@@ -1,0 +1,172 @@
+Instruction context:
+   
+ L.  13       102  DUP_TOP          
+                 104  LOAD_NAME                NameError
+->               106  <121>               122  ''
+                 108  POP_TOP          
+                 110  POP_TOP          
+                 112  POP_TOP          
+
+test/162553.pyc -- 
+# decompile failed
+
+# file test/162553.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              ctypes
+                6  STORE_NAME               ctypes
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME_ATTR         ctypes.util
+               14  STORE_NAME               ctypes
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              Quartz
+               22  STORE_NAME               Quartz
+
+ L.   4        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              time
+               30  STORE_NAME               time
+
+ L.   5        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              os
+               38  STORE_NAME               os
+
+ L.   6        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              threading
+               46  STORE_NAME               threading
+
+ L.   7        48  LOAD_CONST               0
+               50  LOAD_CONST               ('NSEvent',)
+               52  IMPORT_NAME              AppKit
+               54  IMPORT_FROM              NSEvent
+               56  STORE_NAME               NSEvent
+               58  POP_TOP          
+
+ L.   8        60  LOAD_CONST               1
+               62  LOAD_CONST               ('KeyboardEvent', 'KEY_DOWN', 'KEY_UP')
+               64  IMPORT_NAME              _keyboard_event
+               66  IMPORT_FROM              KeyboardEvent
+               68  STORE_NAME               KeyboardEvent
+               70  IMPORT_FROM              KEY_DOWN
+               72  STORE_NAME               KEY_DOWN
+               74  IMPORT_FROM              KEY_UP
+               76  STORE_NAME               KEY_UP
+               78  POP_TOP          
+
+ L.   9        80  LOAD_CONST               1
+               82  LOAD_CONST               ('normalize_name',)
+               84  IMPORT_NAME              _canonical_names
+               86  IMPORT_FROM              normalize_name
+               88  STORE_NAME               normalize_name
+               90  POP_TOP          
+
+ L.  11        92  SETUP_FINALLY       102  'to 102'
+
+ L.  12        94  LOAD_NAME                unichr
+               96  POP_TOP          
+               98  POP_BLOCK        
+              100  JUMP_FORWARD        124  'to 124'
+            102_0  COME_FROM_FINALLY    92  '92'
+
+ L.  13       102  DUP_TOP          
+              104  LOAD_NAME                NameError
+              106  <121>               122  ''
+              108  POP_TOP          
+              110  POP_TOP          
+              112  POP_TOP          
+
+ L.  14       114  LOAD_NAME                chr
+              116  STORE_NAME               unichr
+              118  POP_EXCEPT       
+              120  JUMP_FORWARD        124  'to 124'
+              122  <48>             
+            124_0  COME_FROM           120  '120'
+            124_1  COME_FROM           100  '100'
+
+ L.  16       124  LOAD_NAME                ctypes
+              126  LOAD_ATTR                cdll
+              128  LOAD_METHOD              LoadLibrary
+              130  LOAD_NAME                ctypes
+              132  LOAD_ATTR                util
+              134  LOAD_METHOD              find_library
+              136  LOAD_STR                 'Carbon'
+              138  CALL_METHOD_1         1  ''
+              140  CALL_METHOD_1         1  ''
+              142  STORE_NAME               Carbon
+
+ L.  18       144  LOAD_BUILD_CLASS 
+              146  LOAD_CODE                <code_object KeyMap>
+              148  LOAD_STR                 'KeyMap'
+              150  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              152  LOAD_STR                 'KeyMap'
+              154  LOAD_NAME                object
+              156  CALL_FUNCTION_3       3  ''
+              158  STORE_NAME               KeyMap
+
+ L. 202       160  LOAD_BUILD_CLASS 
+              162  LOAD_CODE                <code_object KeyController>
+              164  LOAD_STR                 'KeyController'
+              166  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              168  LOAD_STR                 'KeyController'
+              170  LOAD_NAME                object
+              172  CALL_FUNCTION_3       3  ''
+              174  STORE_NAME               KeyController
+
+ L. 347       176  LOAD_BUILD_CLASS 
+              178  LOAD_CODE                <code_object KeyEventListener>
+              180  LOAD_STR                 'KeyEventListener'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  LOAD_STR                 'KeyEventListener'
+              186  LOAD_NAME                object
+              188  CALL_FUNCTION_3       3  ''
+              190  STORE_NAME               KeyEventListener
+
+ L. 404       192  LOAD_NAME                KeyController
+              194  CALL_FUNCTION_0       0  ''
+              196  STORE_NAME               key_controller
+
+ L. 408       198  LOAD_CODE                <code_object init>
+              200  LOAD_STR                 'init'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  STORE_NAME               init
+
+ L. 411       206  LOAD_CODE                <code_object press>
+              208  LOAD_STR                 'press'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               press
+
+ L. 415       214  LOAD_CODE                <code_object release>
+              216  LOAD_STR                 'release'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  STORE_NAME               release
+
+ L. 419       222  LOAD_CODE                <code_object map_name>
+              224  LOAD_STR                 'map_name'
+              226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              228  STORE_NAME               map_name
+
+ L. 424       230  LOAD_CODE                <code_object name_from_scancode>
+              232  LOAD_STR                 'name_from_scancode'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  STORE_NAME               name_from_scancode
+
+ L. 428       238  LOAD_CODE                <code_object listen>
+              240  LOAD_STR                 'listen'
+              242  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              244  STORE_NAME               listen
+
+ L. 433       246  LOAD_CODE                <code_object type_unicode>
+              248  LOAD_STR                 'type_unicode'
+              250  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              252  STORE_NAME               type_unicode
+
+Parse error at or near `<121>' instruction at offset 106
+

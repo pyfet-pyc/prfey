@@ -1,0 +1,23 @@
+Instruction context:
+   
+ L.1547       208  JUMP_FORWARD        212  'to 212'
+->               210  JUMP_BACK            64  'to 64'
+               212_0  COME_FROM           208  '208'
+               212_1  COME_FROM            72  '72'
+Instruction context:
+   
+ L.2133        82  POP_EXCEPT       
+                  84  BREAK_LOOP           88  'to 88'
+                86_0  COME_FROM            74  '74'
+->                86  END_FINALLY      
+                88_0  COME_FROM            84  '84'
+                88_1  COME_FROM            62  '62'
+                  88  POP_BLOCK        
+                  90  BEGIN_FINALLY    
+                92_0  COME_FROM_FINALLY    32  '32'
+
+../test/12685.pyc -- 
+# decompile failed
+
+# file ../test/12685.pyc
+# Deparsing stopped due to parse error

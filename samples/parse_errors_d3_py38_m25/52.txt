@@ -1,0 +1,84 @@
+Instruction context:
+   
+ L. 362       210  POP_EXCEPT       
+->               212  JUMP_BACK           130  'to 130'
+               214_0  COME_FROM           206  '206'
+                 214  POP_EXCEPT       
+                 216  JUMP_FORWARD        220  'to 220'
+               218_0  COME_FROM           168  '168'
+                 218  END_FINALLY      
+               220_0  COME_FROM           216  '216'
+               220_1  COME_FROM           160  '160'
+Instruction context:
+   
+ L. 451       334  POP_EXCEPT       
+             336_338  JUMP_BACK           296  'to 296'
+                 340  POP_EXCEPT       
+                 342  JUMP_FORWARD        346  'to 346'
+->             344_0  COME_FROM           324  '324'
+                 344  END_FINALLY      
+               346_0  COME_FROM           342  '342'
+               346_1  COME_FROM           316  '316'
+Instruction context:
+   
+ L. 551        52  POP_EXCEPT       
+                  54  JUMP_BACK            14  'to 14'
+                  56  POP_EXCEPT       
+                  58  JUMP_FORWARD         62  'to 62'
+->              60_0  COME_FROM            44  '44'
+                  60  END_FINALLY      
+                62_0  COME_FROM            58  '58'
+                62_1  COME_FROM            36  '36'
+Instruction context:
+   
+ L.1541        30  LOAD_FAST                'entry'
+                  32  LOAD_ATTR                __dict__
+                  34  LOAD_FAST                'attr'
+                  36  BINARY_SUBSCR    
+                  38  POP_BLOCK        
+->                40  ROT_TWO          
+                  42  POP_TOP          
+                  44  RETURN_VALUE     
+                46_0  COME_FROM_FINALLY    28  '28'
+Instruction context:
+   
+ L.1605       198  LOAD_FAST                'entry'
+                 200  LOAD_ATTR                __dict__
+                 202  LOAD_FAST                'attr'
+                 204  BINARY_SUBSCR    
+                 206  POP_BLOCK        
+->               208  ROT_TWO          
+                 210  POP_TOP          
+                 212  RETURN_VALUE     
+               214_0  COME_FROM_FINALLY   196  '196'
+Instruction context:
+   
+ L.2639        72  POP_EXCEPT       
+                  74  POP_TOP          
+->                76  JUMP_FORWARD        118  'to 118'
+                  78  POP_EXCEPT       
+                  80  JUMP_BACK            16  'to 16'
+                82_0  COME_FROM            64  '64'
+                  82  END_FINALLY      
+                84_0  COME_FROM            56  '56'
+Instruction context:
+   
+ L.2705       122  LOAD_FAST                'new_arguments'
+                 124  LOAD_METHOD              append
+                 126  LOAD_FAST                'name'
+                 128  LOAD_FAST                'val'
+                 130  BUILD_TUPLE_2         2 
+                 132  CALL_METHOD_1         1  ''
+                 134  POP_TOP          
+                 136  POP_EXCEPT       
+->               138  JUMP_BACK            22  'to 22'
+               140_0  COME_FROM            60  '60'
+                 140  END_FINALLY      
+                 142  JUMP_BACK            22  'to 22'
+               144_0  COME_FROM            22  '22'
+
+test/52.pyc -- 
+# decompile failed
+
+# file test/52.pyc
+# Deparsing stopped due to parse error

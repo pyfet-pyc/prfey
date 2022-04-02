@@ -1,0 +1,86 @@
+Instruction context:
+   
+ L.  13        82  DUP_TOP          
+                  84  LOAD_NAME                ImportError
+->                86  <121>               106  ''
+                  88  POP_TOP          
+                  90  POP_TOP          
+                  92  POP_TOP          
+
+test/134694.pyc -- 
+# decompile failed
+
+# file test/134694.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              os
+                6  STORE_NAME               os
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              platform
+               14  STORE_NAME               platform
+
+ L.   4        16  LOAD_NAME                bool
+               18  LOAD_NAME                os
+               20  LOAD_ATTR                environ
+               22  LOAD_METHOD              get
+               24  LOAD_STR                 'MULTIDICT_NO_EXTENSIONS'
+               26  CALL_METHOD_1         1  ''
+               28  CALL_FUNCTION_1       1  ''
+               30  STORE_NAME               NO_EXTENSIONS
+
+ L.   6        32  LOAD_NAME                platform
+               34  LOAD_METHOD              python_implementation
+               36  CALL_METHOD_0         0  ''
+               38  LOAD_STR                 'PyPy'
+               40  COMPARE_OP               ==
+               42  STORE_NAME               PYPY
+
+ L.   8        44  LOAD_NAME                NO_EXTENSIONS
+               46  UNARY_NOT        
+               48  JUMP_IF_FALSE_OR_POP    54  'to 54'
+               50  LOAD_NAME                PYPY
+               52  UNARY_NOT        
+             54_0  COME_FROM            48  '48'
+               54  DUP_TOP          
+               56  STORE_NAME               USE_CYTHON_EXTENSIONS
+               58  STORE_NAME               USE_CYTHON
+
+ L.  10        60  LOAD_NAME                USE_CYTHON_EXTENSIONS
+               62  POP_JUMP_IF_FALSE   108  'to 108'
+
+ L.  11        64  SETUP_FINALLY        82  'to 82'
+
+ L.  12        66  LOAD_CONST               1
+               68  LOAD_CONST               ('_multidict',)
+               70  IMPORT_NAME              
+               72  IMPORT_FROM              _multidict
+               74  STORE_NAME               _multidict
+               76  POP_TOP          
+               78  POP_BLOCK        
+               80  JUMP_FORWARD        108  'to 108'
+             82_0  COME_FROM_FINALLY    64  '64'
+
+ L.  13        82  DUP_TOP          
+               84  LOAD_NAME                ImportError
+               86  <121>               106  ''
+               88  POP_TOP          
+               90  POP_TOP          
+               92  POP_TOP          
+
+ L.  14        94  LOAD_CONST               False
+               96  DUP_TOP          
+               98  STORE_NAME               USE_CYTHON_EXTENSIONS
+              100  STORE_NAME               USE_CYTHON
+              102  POP_EXCEPT       
+              104  JUMP_FORWARD        108  'to 108'
+              106  <48>             
+            108_0  COME_FROM           104  '104'
+            108_1  COME_FROM            80  '80'
+            108_2  COME_FROM            62  '62'
+
+Parse error at or near `<121>' instruction at offset 86
+

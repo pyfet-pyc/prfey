@@ -1,0 +1,149 @@
+Instruction context:
+   
+ L.  38       108  BUILD_LIST_0          0 
+                 110  LOAD_CONST               ('__title__', '__summary__', '__uri__', '__version__', '__author__', '__email__', '__license__', '__copyright__', 'gensalt', 'hashpw', 'kdf', 'checkpw')
+->               112  CALL_FINALLY        115  'to 115'
+                 114  STORE_NAME               __all__
+
+test/164190.pyc -- 
+# decompile failed
+
+# file test/164190.pyc
+# --- This code section failed: ---
+
+ L.  16         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.  17        12  LOAD_CONST               0
+               14  LOAD_CONST               ('division',)
+               16  IMPORT_NAME              __future__
+               18  IMPORT_FROM              division
+               20  STORE_NAME               division
+               22  POP_TOP          
+
+ L.  19        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              os
+               30  STORE_NAME               os
+
+ L.  20        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              re
+               38  STORE_NAME               re
+
+ L.  21        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              warnings
+               46  STORE_NAME               warnings
+
+ L.  23        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              six
+               54  STORE_NAME               six
+
+ L.  25        56  LOAD_CONST               1
+               58  LOAD_CONST               ('_bcrypt',)
+               60  IMPORT_NAME              
+               62  IMPORT_FROM              _bcrypt
+               64  STORE_NAME               _bcrypt
+               66  POP_TOP          
+
+ L.  26        68  LOAD_CONST               1
+               70  LOAD_CONST               ('__author__', '__copyright__', '__email__', '__license__', '__summary__', '__title__', '__uri__', '__version__')
+               72  IMPORT_NAME              __about__
+               74  IMPORT_FROM              __author__
+               76  STORE_NAME               __author__
+               78  IMPORT_FROM              __copyright__
+               80  STORE_NAME               __copyright__
+               82  IMPORT_FROM              __email__
+               84  STORE_NAME               __email__
+               86  IMPORT_FROM              __license__
+               88  STORE_NAME               __license__
+               90  IMPORT_FROM              __summary__
+               92  STORE_NAME               __summary__
+               94  IMPORT_FROM              __title__
+               96  STORE_NAME               __title__
+               98  IMPORT_FROM              __uri__
+              100  STORE_NAME               __uri__
+              102  IMPORT_FROM              __version__
+              104  STORE_NAME               __version__
+              106  POP_TOP          
+
+ L.  38       108  BUILD_LIST_0          0 
+              110  LOAD_CONST               ('__title__', '__summary__', '__uri__', '__version__', '__author__', '__email__', '__license__', '__copyright__', 'gensalt', 'hashpw', 'kdf', 'checkpw')
+              112  CALL_FINALLY        115  'to 115'
+              114  STORE_NAME               __all__
+
+ L.  54       116  LOAD_NAME                re
+              118  LOAD_METHOD              compile
+              120  LOAD_CONST               b'^\\$2y\\$'
+              122  CALL_METHOD_1         1  ''
+              124  STORE_NAME               _normalize_re
+
+ L.  57       126  LOAD_CONST               (12, b'2b')
+              128  LOAD_NAME                int
+              130  LOAD_NAME                bytes
+              132  LOAD_NAME                bytes
+              134  LOAD_CONST               ('rounds', 'prefix', 'return')
+              136  BUILD_CONST_KEY_MAP_3     3 
+              138  LOAD_CODE                <code_object gensalt>
+              140  LOAD_STR                 'gensalt'
+              142  MAKE_FUNCTION_5          'default, annotation'
+              144  STORE_NAME               gensalt
+
+ L.  78       146  LOAD_NAME                bytes
+              148  LOAD_NAME                bytes
+              150  LOAD_NAME                bytes
+              152  LOAD_CONST               ('password', 'salt', 'return')
+              154  BUILD_CONST_KEY_MAP_3     3 
+              156  LOAD_CODE                <code_object hashpw>
+              158  LOAD_STR                 'hashpw'
+              160  MAKE_FUNCTION_4          'annotation'
+              162  STORE_NAME               hashpw
+
+ L. 116       164  LOAD_NAME                bytes
+              166  LOAD_NAME                bytes
+              168  LOAD_NAME                bool
+              170  LOAD_CONST               ('password', 'hashed_password', 'return')
+              172  BUILD_CONST_KEY_MAP_3     3 
+              174  LOAD_CODE                <code_object checkpw>
+              176  LOAD_STR                 'checkpw'
+              178  MAKE_FUNCTION_4          'annotation'
+              180  STORE_NAME               checkpw
+
+ L. 135       182  LOAD_CONST               (False,)
+
+ L. 136       184  LOAD_NAME                bytes
+
+ L. 137       186  LOAD_NAME                bytes
+
+ L. 138       188  LOAD_NAME                int
+
+ L. 139       190  LOAD_NAME                int
+
+ L. 140       192  LOAD_NAME                bool
+
+ L. 141       194  LOAD_NAME                bytes
+
+ L. 135       196  LOAD_CONST               ('password', 'salt', 'desired_key_bytes', 'rounds', 'ignore_few_rounds', 'return')
+              198  BUILD_CONST_KEY_MAP_6     6 
+              200  LOAD_CODE                <code_object kdf>
+              202  LOAD_STR                 'kdf'
+              204  MAKE_FUNCTION_5          'default, annotation'
+              206  STORE_NAME               kdf
+
+ L. 176       208  LOAD_NAME                bool
+              210  LOAD_CONST               None
+              212  LOAD_CONST               ('ok', 'return')
+              214  BUILD_CONST_KEY_MAP_2     2 
+              216  LOAD_CODE                <code_object _bcrypt_assert>
+              218  LOAD_STR                 '_bcrypt_assert'
+              220  MAKE_FUNCTION_4          'annotation'
+              222  STORE_NAME               _bcrypt_assert
+
+Parse error at or near `CALL_FINALLY' instruction at offset 112
+

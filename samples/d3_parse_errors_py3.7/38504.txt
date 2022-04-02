@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L.1044        80  LOAD_FAST                'index'
+                  82  LOAD_CONST               1
+                  84  INPLACE_ADD      
+                  86  STORE_FAST               'index'
+                  88  JUMP_BACK            68  'to 68'
+                90_0  COME_FROM            78  '78'
+                  90  POP_BLOCK        
+->                92  JUMP_BACK            12  'to 12'
+                94_0  COME_FROM            64  '64'
+Instruction context:
+   
+ L.1084        88  LOAD_FAST                'index'
+                  90  LOAD_CONST               1
+                  92  INPLACE_SUBTRACT 
+                  94  STORE_FAST               'index'
+                  96  JUMP_BACK            76  'to 76'
+                98_0  COME_FROM            86  '86'
+                  98  POP_BLOCK        
+->               100  JUMP_BACK            20  'to 20'
+               102_0  COME_FROM            72  '72'
+
+../test/38504.pyc -- 
+# decompile failed
+
+# file ../test/38504.pyc
+# Deparsing stopped due to parse error

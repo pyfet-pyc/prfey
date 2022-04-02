@@ -1,0 +1,34 @@
+Instruction context:
+   
+ L.  85        68  POP_EXCEPT       
+                  70  POP_TOP          
+->                72  POP_BLOCK        
+                  74  LOAD_CONST               None
+                  76  RETURN_VALUE     
+                78_0  COME_FROM            60  '60'
+                  78  END_FINALLY      
+                80_0  COME_FROM            52  '52'
+Instruction context:
+   
+ L. 379        46  DUP_TOP          
+                  48  LOAD_GLOBAL              UnicodeError
+                  50  COMPARE_OP               exception-match
+                  52  POP_JUMP_IF_FALSE    74  'to 74'
+                  54  POP_TOP          
+->                56  POP_TOP          
+                  58  POP_TOP          
+Instruction context:
+   
+ L. 430        28  DUP_TOP          
+                  30  LOAD_GLOBAL              InvalidURL
+                  32  COMPARE_OP               exception-match
+                  34  POP_JUMP_IF_FALSE    58  'to 58'
+                  36  POP_TOP          
+->                38  POP_TOP          
+                  40  POP_TOP          
+
+../test/144234.pyc -- 
+# decompile failed
+
+# file ../test/144234.pyc
+# Deparsing stopped due to parse error

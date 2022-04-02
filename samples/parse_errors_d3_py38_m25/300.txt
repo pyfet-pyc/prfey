@@ -1,0 +1,63 @@
+Instruction context:
+   
+ L. 342        14  LOAD_FAST                'p'
+                  16  LOAD_ATTR                wait
+                  18  LOAD_FAST                'timeout'
+                  20  LOAD_CONST               ('timeout',)
+                  22  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+                  24  POP_BLOCK        
+->                26  POP_BLOCK        
+                  28  ROT_TWO          
+                  30  BEGIN_FINALLY    
+                  32  WITH_CLEANUP_START
+                  34  WITH_CLEANUP_FINISH
+                  36  POP_FINALLY           0  ''
+                  38  RETURN_VALUE     
+                40_0  COME_FROM_FINALLY    12  '12'
+Instruction context:
+   
+ L. 669       130  POP_BLOCK        
+->               132  LOAD_CONST               True
+                 134  RETURN_VALUE     
+               136_0  COME_FROM           128  '128'
+               136_1  COME_FROM           120  '120'
+               136_2  COME_FROM           112  '112'
+                 136  POP_BLOCK        
+                 138  JUMP_FORWARD        166  'to 166'
+               140_0  COME_FROM_FINALLY    32  '32'
+Instruction context:
+-> 
+ L. 916        56  LOAD_FAST                'exc_type'
+                  58  LOAD_GLOBAL              KeyboardInterrupt
+                  60  COMPARE_OP               ==
+                  62  POP_JUMP_IF_FALSE   128  'to 128'
+Instruction context:
+   
+ L.1661   684_686  JUMP_FORWARD        692  'to 692'
+->           688_690  JUMP_BACK           644  'to 644'
+               692_0  COME_FROM           684  '684'
+               692_1  COME_FROM           666  '666'
+                 692  POP_BLOCK        
+                 694  BEGIN_FINALLY    
+               696_0  COME_FROM_FINALLY   362  '362'
+Instruction context:
+   
+ L.1740        40  LOAD_FAST                'self'
+                  42  LOAD_ATTR                returncode
+                  44  POP_BLOCK        
+->                46  POP_BLOCK        
+                  48  CALL_FINALLY        162  'to 162'
+                  50  RETURN_VALUE     
+                52_0  COME_FROM            38  '38'
+Instruction context:
+   
+ L.1786        62  POP_BLOCK        
+->                64  CALL_FINALLY        136  'to 136'
+                  66  JUMP_FORWARD        206  'to 206'
+                68_0  COME_FROM            60  '60'
+
+test/300.pyc -- 
+# decompile failed
+
+# file test/300.pyc
+# Deparsing stopped due to parse error

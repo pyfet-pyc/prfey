@@ -1,0 +1,287 @@
+
+# file test/39597.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('splitext', 'basename')
+                4  IMPORT_NAME_ATTR         os.path
+                6  IMPORT_FROM              splitext
+                8  STORE_NAME               splitext
+               10  IMPORT_FROM              basename
+               12  STORE_NAME               basename
+               14  POP_TOP          
+
+ L.   2        16  LOAD_CONST               0
+               18  LOAD_CONST               ('List', 'BinaryIO', 'Optional', 'Set', 'Union')
+               20  IMPORT_NAME              typing
+               22  IMPORT_FROM              List
+               24  STORE_NAME               List
+               26  IMPORT_FROM              BinaryIO
+               28  STORE_NAME               BinaryIO
+               30  IMPORT_FROM              Optional
+               32  STORE_NAME               Optional
+               34  IMPORT_FROM              Set
+               36  STORE_NAME               Set
+               38  IMPORT_FROM              Union
+               40  STORE_NAME               Union
+               42  POP_TOP          
+
+ L.   4        44  SETUP_FINALLY        62  'to 62'
+
+ L.   5        46  LOAD_CONST               0
+               48  LOAD_CONST               ('PathLike',)
+               50  IMPORT_NAME              os
+               52  IMPORT_FROM              PathLike
+               54  STORE_NAME               PathLike
+               56  POP_TOP          
+               58  POP_BLOCK        
+               60  JUMP_FORWARD         92  'to 92'
+             62_0  COME_FROM_FINALLY    44  '44'
+
+ L.   6        62  DUP_TOP          
+               64  LOAD_NAME                ImportError
+               66  <121>                90  ''
+               68  POP_TOP          
+               70  POP_TOP          
+               72  POP_TOP          
+
+ L.   7        74  LOAD_NAME                Union
+               76  LOAD_NAME                str
+               78  LOAD_STR                 'os.PathLike[str]'
+               80  BUILD_TUPLE_2         2 
+               82  BINARY_SUBSCR    
+               84  STORE_NAME               PathLike
+               86  POP_EXCEPT       
+               88  JUMP_FORWARD         92  'to 92'
+               90  <48>             
+             92_0  COME_FROM            88  '88'
+             92_1  COME_FROM            60  '60'
+
+ L.   9        92  LOAD_CONST               0
+               94  LOAD_CONST               ('TOO_SMALL_SEQUENCE', 'TOO_BIG_SEQUENCE', 'IANA_SUPPORTED')
+               96  IMPORT_NAME_ATTR         charset_normalizer.constant
+               98  IMPORT_FROM              TOO_SMALL_SEQUENCE
+              100  STORE_NAME               TOO_SMALL_SEQUENCE
+              102  IMPORT_FROM              TOO_BIG_SEQUENCE
+              104  STORE_NAME               TOO_BIG_SEQUENCE
+              106  IMPORT_FROM              IANA_SUPPORTED
+              108  STORE_NAME               IANA_SUPPORTED
+              110  POP_TOP          
+
+ L.  10       112  LOAD_CONST               0
+              114  LOAD_CONST               ('mess_ratio',)
+              116  IMPORT_NAME_ATTR         charset_normalizer.md
+              118  IMPORT_FROM              mess_ratio
+              120  STORE_NAME               mess_ratio
+              122  POP_TOP          
+
+ L.  11       124  LOAD_CONST               0
+              126  LOAD_CONST               ('CharsetMatches', 'CharsetMatch')
+              128  IMPORT_NAME_ATTR         charset_normalizer.models
+              130  IMPORT_FROM              CharsetMatches
+              132  STORE_NAME               CharsetMatches
+              134  IMPORT_FROM              CharsetMatch
+              136  STORE_NAME               CharsetMatch
+              138  POP_TOP          
+
+ L.  12       140  LOAD_CONST               0
+              142  LOAD_CONST               ('warn',)
+              144  IMPORT_NAME              warnings
+              146  IMPORT_FROM              warn
+              148  STORE_NAME               warn
+              150  POP_TOP          
+
+ L.  13       152  LOAD_CONST               0
+              154  LOAD_CONST               None
+              156  IMPORT_NAME              logging
+              158  STORE_NAME               logging
+
+ L.  15       160  LOAD_CONST               0
+              162  LOAD_CONST               ('any_specified_encoding', 'is_multi_byte_encoding', 'identify_sig_or_bom', 'should_strip_sig_or_bom', 'is_cp_similar', 'iana_name')
+              164  IMPORT_NAME_ATTR         charset_normalizer.utils
+              166  IMPORT_FROM              any_specified_encoding
+              168  STORE_NAME               any_specified_encoding
+              170  IMPORT_FROM              is_multi_byte_encoding
+              172  STORE_NAME               is_multi_byte_encoding
+              174  IMPORT_FROM              identify_sig_or_bom
+              176  STORE_NAME               identify_sig_or_bom
+              178  IMPORT_FROM              should_strip_sig_or_bom
+              180  STORE_NAME               should_strip_sig_or_bom
+              182  IMPORT_FROM              is_cp_similar
+              184  STORE_NAME               is_cp_similar
+              186  IMPORT_FROM              iana_name
+              188  STORE_NAME               iana_name
+              190  POP_TOP          
+
+ L.  17       192  LOAD_CONST               0
+              194  LOAD_CONST               ('coherence_ratio', 'encoding_languages', 'mb_encoding_languages', 'merge_coherence_ratios')
+              196  IMPORT_NAME_ATTR         charset_normalizer.cd
+              198  IMPORT_FROM              coherence_ratio
+              200  STORE_NAME               coherence_ratio
+              202  IMPORT_FROM              encoding_languages
+              204  STORE_NAME               encoding_languages
+              206  IMPORT_FROM              mb_encoding_languages
+              208  STORE_NAME               mb_encoding_languages
+              210  IMPORT_FROM              merge_coherence_ratios
+              212  STORE_NAME               merge_coherence_ratios
+              214  POP_TOP          
+
+ L.  19       216  LOAD_NAME                logging
+              218  LOAD_METHOD              getLogger
+              220  LOAD_STR                 'charset_normalizer'
+              222  CALL_METHOD_1         1  ''
+              224  STORE_NAME               logger
+
+ L.  20       226  LOAD_NAME                logger
+              228  LOAD_METHOD              setLevel
+              230  LOAD_NAME                logging
+              232  LOAD_ATTR                DEBUG
+              234  CALL_METHOD_1         1  ''
+              236  POP_TOP          
+
+ L.  22       238  LOAD_NAME                logging
+              240  LOAD_METHOD              StreamHandler
+              242  CALL_METHOD_0         0  ''
+              244  STORE_NAME               handler
+
+ L.  23       246  LOAD_NAME                handler
+              248  LOAD_METHOD              setFormatter
+              250  LOAD_NAME                logging
+              252  LOAD_METHOD              Formatter
+              254  LOAD_STR                 '%(asctime)s | %(levelname)s | %(message)s'
+              256  CALL_METHOD_1         1  ''
+              258  CALL_METHOD_1         1  ''
+              260  POP_TOP          
+
+ L.  24       262  LOAD_NAME                logger
+              264  LOAD_METHOD              addHandler
+              266  LOAD_NAME                handler
+              268  CALL_METHOD_1         1  ''
+              270  POP_TOP          
+
+ L.  27       272  LOAD_CONST               (5, 512, 0.2, None, None, True, False)
+
+ L.  28       274  LOAD_NAME                bytes
+
+ L.  29       276  LOAD_NAME                int
+
+ L.  30       278  LOAD_NAME                int
+
+ L.  31       280  LOAD_NAME                float
+
+ L.  32       282  LOAD_NAME                List
+              284  LOAD_NAME                str
+              286  BINARY_SUBSCR    
+
+ L.  33       288  LOAD_NAME                List
+              290  LOAD_NAME                str
+              292  BINARY_SUBSCR    
+
+ L.  34       294  LOAD_NAME                bool
+
+ L.  35       296  LOAD_NAME                bool
+
+ L.  36       298  LOAD_NAME                CharsetMatches
+
+ L.  27       300  LOAD_CONST               ('sequences', 'steps', 'chunk_size', 'threshold', 'cp_isolation', 'cp_exclusion', 'preemptive_behaviour', 'explain', 'return')
+              302  BUILD_CONST_KEY_MAP_9     9 
+              304  LOAD_CODE                <code_object from_bytes>
+              306  LOAD_STR                 'from_bytes'
+              308  MAKE_FUNCTION_5          'default, annotation'
+              310  STORE_NAME               from_bytes
+
+ L. 320       312  LOAD_CONST               (5, 512, 0.2, None, None, True, False)
+
+ L. 321       314  LOAD_NAME                BinaryIO
+
+ L. 322       316  LOAD_NAME                int
+
+ L. 323       318  LOAD_NAME                int
+
+ L. 324       320  LOAD_NAME                float
+
+ L. 325       322  LOAD_NAME                List
+              324  LOAD_NAME                str
+              326  BINARY_SUBSCR    
+
+ L. 326       328  LOAD_NAME                List
+              330  LOAD_NAME                str
+              332  BINARY_SUBSCR    
+
+ L. 327       334  LOAD_NAME                bool
+
+ L. 328       336  LOAD_NAME                bool
+
+ L. 329       338  LOAD_NAME                CharsetMatches
+
+ L. 320       340  LOAD_CONST               ('fp', 'steps', 'chunk_size', 'threshold', 'cp_isolation', 'cp_exclusion', 'preemptive_behaviour', 'explain', 'return')
+              342  BUILD_CONST_KEY_MAP_9     9 
+              344  LOAD_CODE                <code_object from_fp>
+              346  LOAD_STR                 'from_fp'
+              348  MAKE_FUNCTION_5          'default, annotation'
+              350  STORE_NAME               from_fp
+
+ L. 346       352  LOAD_CONST               (5, 512, 0.2, None, None, True, False)
+
+ L. 347       354  LOAD_NAME                PathLike
+
+ L. 348       356  LOAD_NAME                int
+
+ L. 349       358  LOAD_NAME                int
+
+ L. 350       360  LOAD_NAME                float
+
+ L. 351       362  LOAD_NAME                List
+              364  LOAD_NAME                str
+              366  BINARY_SUBSCR    
+
+ L. 352       368  LOAD_NAME                List
+              370  LOAD_NAME                str
+              372  BINARY_SUBSCR    
+
+ L. 353       374  LOAD_NAME                bool
+
+ L. 354       376  LOAD_NAME                bool
+
+ L. 355       378  LOAD_NAME                CharsetMatches
+
+ L. 346       380  LOAD_CONST               ('path', 'steps', 'chunk_size', 'threshold', 'cp_isolation', 'cp_exclusion', 'preemptive_behaviour', 'explain', 'return')
+              382  BUILD_CONST_KEY_MAP_9     9 
+              384  LOAD_CODE                <code_object from_path>
+              386  LOAD_STR                 'from_path'
+              388  MAKE_FUNCTION_5          'default, annotation'
+              390  STORE_NAME               from_path
+
+ L. 364       392  LOAD_CONST               (5, 512, 0.2, None, None, True)
+              394  LOAD_NAME                PathLike
+              396  LOAD_NAME                int
+              398  LOAD_NAME                int
+              400  LOAD_NAME                float
+              402  LOAD_NAME                List
+              404  LOAD_NAME                str
+              406  BINARY_SUBSCR    
+              408  LOAD_NAME                List
+              410  LOAD_NAME                str
+              412  BINARY_SUBSCR    
+              414  LOAD_NAME                bool
+              416  LOAD_NAME                CharsetMatch
+              418  LOAD_CONST               ('path', 'steps', 'chunk_size', 'threshold', 'cp_isolation', 'cp_exclusion', 'preemptive_behaviour', 'return')
+              420  BUILD_CONST_KEY_MAP_8     8 
+              422  LOAD_CODE                <code_object normalize>
+              424  LOAD_STR                 'normalize'
+              426  MAKE_FUNCTION_5          'default, annotation'
+              428  STORE_NAME               normalize
+
+Parse error at or near `<121>' instruction at offset 66
+
+Instruction context:
+   
+ L.   6        62  DUP_TOP          
+                  64  LOAD_NAME                ImportError
+->                66  <121>                90  ''
+                  68  POP_TOP          
+                  70  POP_TOP          
+                  72  POP_TOP          
+
+test/39597.pyc -- 
+# decompile failed

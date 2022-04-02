@@ -1,0 +1,74 @@
+Instruction context:
+-> 
+ L.  14        30  LOAD_CONST               None
+                  32  STORE_GLOBAL             _CACERT_CTX
+
+test/101514.pyc -- 
+# decompile failed
+
+# file test/101514.pyc
+# --- This code section failed: ---
+
+ L.   3         0  LOAD_STR                 '\ncertifi.py\n~~~~~~~~~~\n\nThis module returns the installation location of cacert.pem or its contents.\n'
+                2  STORE_NAME               __doc__
+
+ L.   9         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.  11        12  SETUP_FINALLY        50  'to 50'
+
+ L.  12        14  LOAD_CONST               0
+               16  LOAD_CONST               ('path', 'read_text')
+               18  IMPORT_NAME_ATTR         importlib.resources
+               20  IMPORT_FROM              path
+               22  STORE_NAME               get_path
+               24  IMPORT_FROM              read_text
+               26  STORE_NAME               read_text
+               28  POP_TOP          
+
+ L.  14        30  LOAD_CONST               None
+               32  STORE_GLOBAL             _CACERT_CTX
+
+ L.  15        34  LOAD_CONST               None
+               36  STORE_GLOBAL             _CACERT_PATH
+
+ L.  17        38  LOAD_CODE                <code_object where>
+               40  LOAD_STR                 'where'
+               42  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               44  STORE_NAME               where
+               46  POP_BLOCK        
+               48  JUMP_FORWARD         86  'to 86'
+             50_0  COME_FROM_FINALLY    12  '12'
+
+ L.  42        50  DUP_TOP          
+               52  LOAD_NAME                ImportError
+               54  <121>                84  ''
+               56  POP_TOP          
+               58  POP_TOP          
+               60  POP_TOP          
+
+ L.  47        62  LOAD_CONST               ('ascii',)
+               64  LOAD_CODE                <code_object read_text>
+               66  LOAD_STR                 'read_text'
+               68  MAKE_FUNCTION_1          'default'
+               70  STORE_NAME               read_text
+
+ L.  53        72  LOAD_CODE                <code_object where>
+               74  LOAD_STR                 'where'
+               76  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               78  STORE_NAME               where
+               80  POP_EXCEPT       
+               82  JUMP_FORWARD         86  'to 86'
+               84  <48>             
+             86_0  COME_FROM            82  '82'
+             86_1  COME_FROM            48  '48'
+
+ L.  59        86  LOAD_CODE                <code_object contents>
+               88  LOAD_STR                 'contents'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  STORE_NAME               contents
+
+Parse error at or near `LOAD_CONST' instruction at offset 30
+

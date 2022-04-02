@@ -1,0 +1,26 @@
+Instruction context:
+-> 
+ L. 189        24  DUP_TOP          
+                  26  LOAD_GLOBAL              ValueError
+                  28  COMPARE_OP               exception-match
+                  30  POP_JUMP_IF_FALSE    44  'to 44'
+                  32  POP_TOP          
+                  34  POP_TOP          
+                  36  POP_TOP          
+Instruction context:
+   
+ L. 849        84  POP_EXCEPT       
+                  86  JUMP_FORWARD         90  'to 90'
+->              88_0  COME_FROM            76  '76'
+                  88  END_FINALLY      
+                90_0  COME_FROM            86  '86'
+                90_1  COME_FROM            42  '42'
+                90_2  COME_FROM            24  '24'
+                90_3  COME_FROM            10  '10'
+                90_4  COME_FROM             4  '4'
+
+../test/133090.pyc -- 
+# decompile failed
+
+# file ../test/133090.pyc
+# Deparsing stopped due to parse error

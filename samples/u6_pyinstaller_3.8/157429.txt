@@ -1,0 +1,32 @@
+Instruction context:
+   
+ L. 456       288  POP_EXCEPT       
+             290_292  JUMP_ABSOLUTE       302  'to 302'
+->               294  POP_EXCEPT       
+                 296  JUMP_BACK            58  'to 58'
+               298_0  COME_FROM           258  '258'
+                 298  END_FINALLY      
+                 300  JUMP_BACK            58  'to 58'
+               302_0  COME_FROM            68  '68'
+Instruction context:
+   
+ L. 482       194  POP_EXCEPT       
+                 196  BREAK_LOOP          206  'to 206'
+                 198  POP_EXCEPT       
+                 200  JUMP_BACK            24  'to 24'
+               202_0  COME_FROM           166  '166'
+                 202  END_FINALLY      
+                 204  JUMP_BACK            24  'to 24'
+               206_0  COME_FROM_EXCEPT_CLAUSE   196  '196'
+->             206_1  COME_FROM_EXCEPT_CLAUSE    34  '34'
+Instruction context:
+   
+ L.1909        44  POP_TOP          
+->                46  CONTINUE              4  'to 4'
+                  48  JUMP_BACK            12  'to 12'
+
+../test/157429.pyc -- 
+# decompile failed
+
+# file ../test/157429.pyc
+# Deparsing stopped due to parse error

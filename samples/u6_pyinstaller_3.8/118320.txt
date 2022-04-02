@@ -1,0 +1,23 @@
+Instruction context:
+   
+ L.  60        46  DUP_TOP          
+                  48  LOAD_GLOBAL              timeout
+                  50  COMPARE_OP               exception-match
+                  52  POP_JUMP_IF_FALSE    72  'to 72'
+                  54  POP_TOP          
+->                56  POP_TOP          
+                  58  POP_TOP          
+Instruction context:
+   
+ L.  84        62  POP_BLOCK        
+->                64  POP_EXCEPT       
+                  66  CALL_FINALLY         78  'to 78'
+                  68  LOAD_CONST               None
+                  70  RETURN_VALUE     
+                72_0  COME_FROM            60  '60'
+
+../test/118320.pyc -- 
+# decompile failed
+
+# file ../test/118320.pyc
+# Deparsing stopped due to parse error

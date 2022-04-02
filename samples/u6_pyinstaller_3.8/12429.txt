@@ -1,0 +1,71 @@
+Instruction context:
+   
+ L.  54        34  DUP_TOP          
+                  36  LOAD_GLOBAL              RuntimeError
+                  38  COMPARE_OP               exception-match
+                  40  POP_JUMP_IF_FALSE    70  'to 70'
+                  42  POP_TOP          
+->                44  POP_TOP          
+                  46  POP_TOP          
+Instruction context:
+   
+ L.  79        34  DUP_TOP          
+                  36  LOAD_GLOBAL              RuntimeError
+                  38  COMPARE_OP               exception-match
+                  40  POP_JUMP_IF_FALSE    70  'to 70'
+                  42  POP_TOP          
+->                44  POP_TOP          
+                  46  POP_TOP          
+Instruction context:
+   
+ L. 424       114  LOAD_CLOSURE             'loop'
+                 116  BUILD_TUPLE_1         1 
+->               118  LOAD_SETCOMP             '<code_object <setcomp>>'
+                 120  LOAD_STR                 'wait.<locals>.<setcomp>'
+                 122  MAKE_FUNCTION_8          'closure'
+                 124  LOAD_GLOBAL              set
+                 126  LOAD_FAST                'fs'
+                 128  CALL_FUNCTION_1       1  ''
+                 130  GET_ITER         
+                 132  CALL_FUNCTION_1       1  ''
+                 134  STORE_FAST               'fs'
+Instruction context:
+   
+ L. 484       276  LOAD_FAST                'fut'
+                 278  LOAD_METHOD              result
+                 280  CALL_METHOD_0         0  ''
+                 282  ROT_FOUR         
+                 284  POP_EXCEPT       
+->               286  POP_BLOCK        
+                 288  CALL_FINALLY        390  'to 390'
+                 290  RETURN_VALUE     
+               292_0  COME_FROM           272  '272'
+Instruction context:
+   
+ L. 528        76  LOAD_DEREF               'waiter'
+                  78  LOAD_METHOD              set_result
+                  80  LOAD_CONST               None
+                  82  CALL_METHOD_1         1  ''
+                  84  POP_TOP          
+                86_0  COME_FROM            74  '74'
+                86_1  COME_FROM            50  '50'
+->              86_2  COME_FROM            38  '38'
+Instruction context:
+   
+ L. 597        96  LOAD_CLOSURE             'loop'
+                  98  BUILD_TUPLE_1         1 
+->               100  LOAD_SETCOMP             '<code_object <setcomp>>'
+                 102  LOAD_STR                 'as_completed.<locals>.<setcomp>'
+                 104  MAKE_FUNCTION_8          'closure'
+                 106  LOAD_GLOBAL              set
+                 108  LOAD_FAST                'fs'
+                 110  CALL_FUNCTION_1       1  ''
+                 112  GET_ITER         
+                 114  CALL_FUNCTION_1       1  ''
+                 116  STORE_DEREF              'todo'
+
+../test/12429.pyc -- 
+# decompile failed
+
+# file ../test/12429.pyc
+# Deparsing stopped due to parse error

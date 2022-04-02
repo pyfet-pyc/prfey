@@ -1,0 +1,73 @@
+Instruction context:
+   
+ L.  75        58  DUP_TOP          
+                  60  LOAD_NAME                ImportError
+->                62  <121>                74  ''
+                  64  POP_TOP          
+                  66  POP_TOP          
+                  68  POP_TOP          
+
+test/101388.pyc -- 
+# decompile failed
+
+# file test/101388.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Bisection algorithms.'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               (0, None)
+                6  LOAD_CODE                <code_object insort_right>
+                8  LOAD_STR                 'insort_right'
+               10  MAKE_FUNCTION_1          'default'
+               12  STORE_NAME               insort_right
+
+ L.  15        14  LOAD_CONST               (0, None)
+               16  LOAD_CODE                <code_object bisect_right>
+               18  LOAD_STR                 'bisect_right'
+               20  MAKE_FUNCTION_1          'default'
+               22  STORE_NAME               bisect_right
+
+ L.  37        24  LOAD_CONST               (0, None)
+               26  LOAD_CODE                <code_object insort_left>
+               28  LOAD_STR                 'insort_left'
+               30  MAKE_FUNCTION_1          'default'
+               32  STORE_NAME               insort_left
+
+ L.  50        34  LOAD_CONST               (0, None)
+               36  LOAD_CODE                <code_object bisect_left>
+               38  LOAD_STR                 'bisect_left'
+               40  MAKE_FUNCTION_1          'default'
+               42  STORE_NAME               bisect_left
+
+ L.  73        44  SETUP_FINALLY        58  'to 58'
+
+ L.  74        46  LOAD_CONST               0
+               48  LOAD_CONST               ('*',)
+               50  IMPORT_NAME              _bisect
+               52  IMPORT_STAR      
+               54  POP_BLOCK        
+               56  JUMP_FORWARD         76  'to 76'
+             58_0  COME_FROM_FINALLY    44  '44'
+
+ L.  75        58  DUP_TOP          
+               60  LOAD_NAME                ImportError
+               62  <121>                74  ''
+               64  POP_TOP          
+               66  POP_TOP          
+               68  POP_TOP          
+
+ L.  76        70  POP_EXCEPT       
+               72  JUMP_FORWARD         76  'to 76'
+               74  <48>             
+             76_0  COME_FROM            72  '72'
+             76_1  COME_FROM            56  '56'
+
+ L.  79        76  LOAD_NAME                bisect_right
+               78  STORE_NAME               bisect
+
+ L.  80        80  LOAD_NAME                insort_right
+               82  STORE_NAME               insort
+
+Parse error at or near `<121>' instruction at offset 62
+

@@ -1,0 +1,135 @@
+Instruction context:
+   
+ L.  14       118  DUP_TOP          
+                 120  LOAD_NAME                ImportError
+->               122  <121>               134  ''
+                 124  POP_TOP          
+                 126  POP_TOP          
+                 128  POP_TOP          
+
+test/134678.pyc -- 
+# decompile failed
+
+# file test/134678.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              os
+               14  STORE_NAME               os
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              contextlib
+               22  STORE_NAME               contextlib
+
+ L.   5        24  LOAD_CONST               2
+               26  LOAD_CONST               ('KeyringBackend',)
+               28  IMPORT_NAME              backend
+               30  IMPORT_FROM              KeyringBackend
+               32  STORE_NAME               KeyringBackend
+               34  POP_TOP          
+
+ L.   6        36  LOAD_CONST               2
+               38  LOAD_CONST               ('SimpleCredential',)
+               40  IMPORT_NAME              credentials
+               42  IMPORT_FROM              SimpleCredential
+               44  STORE_NAME               SimpleCredential
+               46  POP_TOP          
+
+ L.   7        48  LOAD_CONST               2
+               50  LOAD_CONST               ('PasswordDeleteError',)
+               52  IMPORT_NAME              errors
+               54  IMPORT_FROM              PasswordDeleteError
+               56  STORE_NAME               PasswordDeleteError
+               58  POP_TOP          
+
+ L.   8        60  LOAD_CONST               2
+               62  LOAD_CONST               ('PasswordSetError', 'InitError', 'KeyringLocked')
+               64  IMPORT_NAME              errors
+               66  IMPORT_FROM              PasswordSetError
+               68  STORE_NAME               PasswordSetError
+               70  IMPORT_FROM              InitError
+               72  STORE_NAME               InitError
+               74  IMPORT_FROM              KeyringLocked
+               76  STORE_NAME               KeyringLocked
+               78  POP_TOP          
+
+ L.   9        80  LOAD_CONST               2
+               82  LOAD_CONST               ('properties',)
+               84  IMPORT_NAME              util
+               86  IMPORT_FROM              properties
+               88  STORE_NAME               properties
+               90  POP_TOP          
+
+ L.  11        92  SETUP_FINALLY       118  'to 118'
+
+ L.  12        94  LOAD_CONST               0
+               96  LOAD_CONST               None
+               98  IMPORT_NAME              dbus
+              100  STORE_NAME               dbus
+
+ L.  13       102  LOAD_CONST               0
+              104  LOAD_CONST               ('DBusGMainLoop',)
+              106  IMPORT_NAME_ATTR         dbus.mainloop.glib
+              108  IMPORT_FROM              DBusGMainLoop
+              110  STORE_NAME               DBusGMainLoop
+              112  POP_TOP          
+              114  POP_BLOCK        
+              116  JUMP_FORWARD        152  'to 152'
+            118_0  COME_FROM_FINALLY    92  '92'
+
+ L.  14       118  DUP_TOP          
+              120  LOAD_NAME                ImportError
+              122  <121>               134  ''
+              124  POP_TOP          
+              126  POP_TOP          
+              128  POP_TOP          
+
+ L.  15       130  POP_EXCEPT       
+              132  JUMP_FORWARD        152  'to 152'
+
+ L.  16       134  DUP_TOP          
+              136  LOAD_NAME                AttributeError
+              138  <121>               150  ''
+              140  POP_TOP          
+              142  POP_TOP          
+              144  POP_TOP          
+
+ L.  18       146  POP_EXCEPT       
+              148  JUMP_FORWARD        152  'to 152'
+              150  <48>             
+            152_0  COME_FROM           148  '148'
+            152_1  COME_FROM           132  '132'
+            152_2  COME_FROM           116  '116'
+
+ L.  21       152  LOAD_CODE                <code_object _id_from_argv>
+              154  LOAD_STR                 '_id_from_argv'
+              156  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              158  STORE_NAME               _id_from_argv
+
+ L.  30       160  LOAD_BUILD_CLASS 
+              162  LOAD_CODE                <code_object DBusKeyring>
+              164  LOAD_STR                 'DBusKeyring'
+              166  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              168  LOAD_STR                 'DBusKeyring'
+              170  LOAD_NAME                KeyringBackend
+              172  CALL_FUNCTION_3       3  ''
+              174  STORE_NAME               DBusKeyring
+
+ L. 156       176  LOAD_BUILD_CLASS 
+              178  LOAD_CODE                <code_object DBusKeyringKWallet4>
+              180  LOAD_STR                 'DBusKeyringKWallet4'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  LOAD_STR                 'DBusKeyringKWallet4'
+              186  LOAD_NAME                DBusKeyring
+              188  CALL_FUNCTION_3       3  ''
+              190  STORE_NAME               DBusKeyringKWallet4
+
+Parse error at or near `<121>' instruction at offset 122
+

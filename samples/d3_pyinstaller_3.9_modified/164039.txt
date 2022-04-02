@@ -1,0 +1,72 @@
+Instruction context:
+   
+ L. 103        66  DUP_TOP          
+                  68  LOAD_NAME                ImportError
+->                70  <121>                82  ''
+                  72  POP_TOP          
+                  74  POP_TOP          
+                  76  POP_TOP          
+
+test/164039.pyc -- 
+# decompile failed
+
+# file test/164039.pyc
+# --- This code section failed: ---
+
+ L.  10         0  LOAD_STR                 '\nHooks to make ctypes.CDLL, .PyDLL, etc. look in sys._MEIPASS first.\n'
+                2  STORE_NAME               __doc__
+
+ L.  14         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.  17        12  LOAD_CODE                <code_object install>
+               14  LOAD_STR                 'install'
+               16  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               18  STORE_NAME               install
+
+ L.  99        20  LOAD_NAME                sys
+               22  LOAD_ATTR                platform
+               24  LOAD_METHOD              startswith
+               26  LOAD_STR                 'darwin'
+               28  CALL_METHOD_1         1  ''
+               30  POP_JUMP_IF_FALSE    84  'to 84'
+
+ L. 100        32  SETUP_FINALLY        66  'to 66'
+
+ L. 101        34  LOAD_CONST               0
+               36  LOAD_CONST               ('dyld',)
+               38  IMPORT_NAME_ATTR         ctypes.macholib
+               40  IMPORT_FROM              dyld
+               42  STORE_NAME               dyld
+               44  POP_TOP          
+
+ L. 102        46  LOAD_NAME                dyld
+               48  LOAD_ATTR                DEFAULT_LIBRARY_FALLBACK
+               50  LOAD_METHOD              insert
+               52  LOAD_CONST               0
+               54  LOAD_NAME                sys
+               56  LOAD_ATTR                _MEIPASS
+               58  CALL_METHOD_2         2  ''
+               60  POP_TOP          
+               62  POP_BLOCK        
+               64  JUMP_FORWARD         84  'to 84'
+             66_0  COME_FROM_FINALLY    32  '32'
+
+ L. 103        66  DUP_TOP          
+               68  LOAD_NAME                ImportError
+               70  <121>                82  ''
+               72  POP_TOP          
+               74  POP_TOP          
+               76  POP_TOP          
+
+ L. 105        78  POP_EXCEPT       
+               80  JUMP_FORWARD         84  'to 84'
+               82  <48>             
+             84_0  COME_FROM            80  '80'
+             84_1  COME_FROM            64  '64'
+             84_2  COME_FROM            30  '30'
+
+Parse error at or near `<121>' instruction at offset 70
+

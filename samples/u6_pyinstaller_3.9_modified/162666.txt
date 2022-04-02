@@ -1,0 +1,239 @@
+
+# file test/162666.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\n==============================================================\nHermite Series, "Physicists" (:mod:`numpy.polynomial.hermite`)\n==============================================================\n\nThis module provides a number of objects (mostly functions) useful for\ndealing with Hermite series, including a `Hermite` class that\nencapsulates the usual arithmetic operations.  (General information\non how this module represents and works with such polynomials is in the\ndocstring for its "parent" sub-package, `numpy.polynomial`).\n\nClasses\n-------\n.. autosummary::\n   :toctree: generated/\n\n   Hermite\n\nConstants\n---------\n.. autosummary::\n   :toctree: generated/\n\n   hermdomain\n   hermzero\n   hermone\n   hermx\n\nArithmetic\n----------\n.. autosummary::\n   :toctree: generated/\n\n   hermadd\n   hermsub\n   hermmulx\n   hermmul\n   hermdiv\n   hermpow\n   hermval\n   hermval2d\n   hermval3d\n   hermgrid2d\n   hermgrid3d\n\nCalculus\n--------\n.. autosummary::\n   :toctree: generated/\n\n   hermder\n   hermint\n\nMisc Functions\n--------------\n.. autosummary::\n   :toctree: generated/\n\n   hermfromroots\n   hermroots\n   hermvander\n   hermvander2d\n   hermvander3d\n   hermgauss\n   hermweight\n   hermcompanion\n   hermfit\n   hermtrim\n   hermline\n   herm2poly\n   poly2herm\n\nSee also\n--------\n`numpy.polynomial`\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  78         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              numpy
+               10  STORE_NAME               np
+
+ L.  79        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME_ATTR         numpy.linalg
+               18  IMPORT_FROM              linalg
+               20  STORE_NAME               la
+               22  POP_TOP          
+
+ L.  80        24  LOAD_CONST               0
+               26  LOAD_CONST               ('normalize_axis_index',)
+               28  IMPORT_NAME_ATTR         numpy.core.multiarray
+               30  IMPORT_FROM              normalize_axis_index
+               32  STORE_NAME               normalize_axis_index
+               34  POP_TOP          
+
+ L.  82        36  LOAD_CONST               1
+               38  LOAD_CONST               ('polyutils',)
+               40  IMPORT_NAME              
+               42  IMPORT_FROM              polyutils
+               44  STORE_NAME               pu
+               46  POP_TOP          
+
+ L.  83        48  LOAD_CONST               1
+               50  LOAD_CONST               ('ABCPolyBase',)
+               52  IMPORT_NAME              _polybase
+               54  IMPORT_FROM              ABCPolyBase
+               56  STORE_NAME               ABCPolyBase
+               58  POP_TOP          
+
+ L.  85        60  BUILD_LIST_0          0 
+               62  LOAD_CONST               ('hermzero', 'hermone', 'hermx', 'hermdomain', 'hermline', 'hermadd', 'hermsub', 'hermmulx', 'hermmul', 'hermdiv', 'hermpow', 'hermval', 'hermder', 'hermint', 'herm2poly', 'poly2herm', 'hermfromroots', 'hermvander', 'hermfit', 'hermtrim', 'hermroots', 'Hermite', 'hermval2d', 'hermval3d', 'hermgrid2d', 'hermgrid3d', 'hermvander2d', 'hermvander3d', 'hermcompanion', 'hermgauss', 'hermweight')
+               64  CALL_FINALLY         67  'to 67'
+               66  STORE_NAME               __all__
+
+ L.  93        68  LOAD_NAME                pu
+               70  LOAD_ATTR                trimcoef
+               72  STORE_NAME               hermtrim
+
+ L.  96        74  LOAD_CODE                <code_object poly2herm>
+               76  LOAD_STR                 'poly2herm'
+               78  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               80  STORE_NAME               poly2herm
+
+ L. 142        82  LOAD_CODE                <code_object herm2poly>
+               84  LOAD_STR                 'herm2poly'
+               86  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               88  STORE_NAME               herm2poly
+
+ L. 205        90  LOAD_NAME                np
+               92  LOAD_METHOD              array
+               94  LOAD_CONST               -1
+               96  LOAD_CONST               1
+               98  BUILD_LIST_2          2 
+              100  CALL_METHOD_1         1  ''
+              102  STORE_NAME               hermdomain
+
+ L. 208       104  LOAD_NAME                np
+              106  LOAD_METHOD              array
+              108  LOAD_CONST               0
+              110  BUILD_LIST_1          1 
+              112  CALL_METHOD_1         1  ''
+              114  STORE_NAME               hermzero
+
+ L. 211       116  LOAD_NAME                np
+              118  LOAD_METHOD              array
+              120  LOAD_CONST               1
+              122  BUILD_LIST_1          1 
+              124  CALL_METHOD_1         1  ''
+              126  STORE_NAME               hermone
+
+ L. 214       128  LOAD_NAME                np
+              130  LOAD_METHOD              array
+              132  LOAD_CONST               0
+              134  LOAD_CONST               0.5
+              136  BUILD_LIST_2          2 
+              138  CALL_METHOD_1         1  ''
+              140  STORE_NAME               hermx
+
+ L. 217       142  LOAD_CODE                <code_object hermline>
+              144  LOAD_STR                 'hermline'
+              146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              148  STORE_NAME               hermline
+
+ L. 257       150  LOAD_CODE                <code_object hermfromroots>
+              152  LOAD_STR                 'hermfromroots'
+              154  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              156  STORE_NAME               hermfromroots
+
+ L. 313       158  LOAD_CODE                <code_object hermadd>
+              160  LOAD_STR                 'hermadd'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  STORE_NAME               hermadd
+
+ L. 353       166  LOAD_CODE                <code_object hermsub>
+              168  LOAD_STR                 'hermsub'
+              170  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              172  STORE_NAME               hermsub
+
+ L. 393       174  LOAD_CODE                <code_object hermmulx>
+              176  LOAD_STR                 'hermmulx'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  STORE_NAME               hermmulx
+
+ L. 446       182  LOAD_CODE                <code_object hermmul>
+              184  LOAD_STR                 'hermmul'
+              186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              188  STORE_NAME               hermmul
+
+ L. 512       190  LOAD_CODE                <code_object hermdiv>
+              192  LOAD_STR                 'hermdiv'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  STORE_NAME               hermdiv
+
+ L. 560       198  LOAD_CONST               (16,)
+              200  LOAD_CODE                <code_object hermpow>
+              202  LOAD_STR                 'hermpow'
+              204  MAKE_FUNCTION_1          'default'
+              206  STORE_NAME               hermpow
+
+ L. 597       208  LOAD_CONST               (1, 1, 0)
+              210  LOAD_CODE                <code_object hermder>
+              212  LOAD_STR                 'hermder'
+              214  MAKE_FUNCTION_1          'default'
+              216  STORE_NAME               hermder
+
+ L. 680       218  LOAD_CONST               1
+              220  BUILD_LIST_0          0 
+              222  LOAD_CONST               0
+              224  LOAD_CONST               1
+              226  LOAD_CONST               0
+              228  BUILD_TUPLE_5         5 
+              230  LOAD_CODE                <code_object hermint>
+              232  LOAD_STR                 'hermint'
+              234  MAKE_FUNCTION_1          'default'
+              236  STORE_NAME               hermint
+
+ L. 802       238  LOAD_CONST               (True,)
+              240  LOAD_CODE                <code_object hermval>
+              242  LOAD_STR                 'hermval'
+              244  MAKE_FUNCTION_1          'default'
+              246  STORE_NAME               hermval
+
+ L. 898       248  LOAD_CODE                <code_object hermval2d>
+              250  LOAD_STR                 'hermval2d'
+              252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              254  STORE_NAME               hermval2d
+
+ L. 947       256  LOAD_CODE                <code_object hermgrid2d>
+              258  LOAD_STR                 'hermgrid2d'
+              260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              262  STORE_NAME               hermgrid2d
+
+ L.1000       264  LOAD_CODE                <code_object hermval3d>
+              266  LOAD_STR                 'hermval3d'
+              268  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              270  STORE_NAME               hermval3d
+
+ L.1051       272  LOAD_CODE                <code_object hermgrid3d>
+              274  LOAD_STR                 'hermgrid3d'
+              276  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              278  STORE_NAME               hermgrid3d
+
+ L.1107       280  LOAD_CODE                <code_object hermvander>
+              282  LOAD_STR                 'hermvander'
+              284  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              286  STORE_NAME               hermvander
+
+ L.1168       288  LOAD_CODE                <code_object hermvander2d>
+              290  LOAD_STR                 'hermvander2d'
+              292  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              294  STORE_NAME               hermvander2d
+
+ L.1221       296  LOAD_CODE                <code_object hermvander3d>
+              298  LOAD_STR                 'hermvander3d'
+              300  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              302  STORE_NAME               hermvander3d
+
+ L.1275       304  LOAD_CONST               (None, False, None)
+              306  LOAD_CODE                <code_object hermfit>
+              308  LOAD_STR                 'hermfit'
+              310  MAKE_FUNCTION_1          'default'
+              312  STORE_NAME               hermfit
+
+ L.1406       314  LOAD_CODE                <code_object hermcompanion>
+              316  LOAD_STR                 'hermcompanion'
+              318  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              320  STORE_NAME               hermcompanion
+
+ L.1451       322  LOAD_CODE                <code_object hermroots>
+              324  LOAD_STR                 'hermroots'
+              326  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              328  STORE_NAME               hermroots
+
+ L.1515       330  LOAD_CODE                <code_object _normed_hermite_n>
+              332  LOAD_STR                 '_normed_hermite_n'
+              334  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              336  STORE_NAME               _normed_hermite_n
+
+ L.1558       338  LOAD_CODE                <code_object hermgauss>
+              340  LOAD_STR                 'hermgauss'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  STORE_NAME               hermgauss
+
+ L.1625       346  LOAD_CODE                <code_object hermweight>
+              348  LOAD_STR                 'hermweight'
+              350  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              352  STORE_NAME               hermweight
+
+ L.1657       354  LOAD_BUILD_CLASS 
+              356  LOAD_CODE                <code_object Hermite>
+              358  LOAD_STR                 'Hermite'
+              360  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              362  LOAD_STR                 'Hermite'
+              364  LOAD_NAME                ABCPolyBase
+              366  CALL_FUNCTION_3       3  ''
+              368  STORE_NAME               Hermite
+
+Parse error at or near `CALL_FINALLY' instruction at offset 64
+
+Instruction context:
+   
+ L.  85        60  BUILD_LIST_0          0 
+                  62  LOAD_CONST               ('hermzero', 'hermone', 'hermx', 'hermdomain', 'hermline', 'hermadd', 'hermsub', 'hermmulx', 'hermmul', 'hermdiv', 'hermpow', 'hermval', 'hermder', 'hermint', 'herm2poly', 'poly2herm', 'hermfromroots', 'hermvander', 'hermfit', 'hermtrim', 'hermroots', 'Hermite', 'hermval2d', 'hermval3d', 'hermgrid2d', 'hermgrid3d', 'hermvander2d', 'hermvander3d', 'hermcompanion', 'hermgauss', 'hermweight')
+->                64  CALL_FINALLY         67  'to 67'
+                  66  STORE_NAME               __all__
+
+test/162666.pyc -- 
+# decompile failed

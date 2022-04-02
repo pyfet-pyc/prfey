@@ -1,0 +1,321 @@
+
+# file test/101238.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Abstract base classes related to import.'
+                2  STORE_NAME               __doc__
+
+ L.   2         4  LOAD_CONST               1
+                6  LOAD_CONST               ('_bootstrap',)
+                8  IMPORT_NAME              
+               10  IMPORT_FROM              _bootstrap
+               12  STORE_NAME               _bootstrap
+               14  POP_TOP          
+
+ L.   3        16  LOAD_CONST               1
+               18  LOAD_CONST               ('_bootstrap_external',)
+               20  IMPORT_NAME              
+               22  IMPORT_FROM              _bootstrap_external
+               24  STORE_NAME               _bootstrap_external
+               26  POP_TOP          
+
+ L.   4        28  LOAD_CONST               1
+               30  LOAD_CONST               ('machinery',)
+               32  IMPORT_NAME              
+               34  IMPORT_FROM              machinery
+               36  STORE_NAME               machinery
+               38  POP_TOP          
+
+ L.   5        40  SETUP_FINALLY        54  'to 54'
+
+ L.   6        42  LOAD_CONST               0
+               44  LOAD_CONST               None
+               46  IMPORT_NAME              _frozen_importlib
+               48  STORE_NAME               _frozen_importlib
+               50  POP_BLOCK        
+               52  JUMP_FORWARD        106  'to 106'
+             54_0  COME_FROM_FINALLY    40  '40'
+
+ L.   7        54  DUP_TOP          
+               56  LOAD_NAME                ImportError
+               58  <121>               104  ''
+               60  POP_TOP          
+               62  STORE_NAME               exc
+               64  POP_TOP          
+               66  SETUP_FINALLY        96  'to 96'
+
+ L.   8        68  LOAD_NAME                exc
+               70  LOAD_ATTR                name
+               72  LOAD_STR                 '_frozen_importlib'
+               74  COMPARE_OP               !=
+               76  POP_JUMP_IF_FALSE    80  'to 80'
+
+ L.   9        78  RAISE_VARARGS_0       0  'reraise'
+             80_0  COME_FROM            76  '76'
+
+ L.  10        80  LOAD_CONST               None
+               82  STORE_NAME               _frozen_importlib
+               84  POP_BLOCK        
+               86  POP_EXCEPT       
+               88  LOAD_CONST               None
+               90  STORE_NAME               exc
+               92  DELETE_NAME              exc
+               94  JUMP_FORWARD        106  'to 106'
+             96_0  COME_FROM_FINALLY    66  '66'
+               96  LOAD_CONST               None
+               98  STORE_NAME               exc
+              100  DELETE_NAME              exc
+              102  <48>             
+              104  <48>             
+            106_0  COME_FROM            94  '94'
+            106_1  COME_FROM            52  '52'
+
+ L.  11       106  SETUP_FINALLY       120  'to 120'
+
+ L.  12       108  LOAD_CONST               0
+              110  LOAD_CONST               None
+              112  IMPORT_NAME              _frozen_importlib_external
+              114  STORE_NAME               _frozen_importlib_external
+              116  POP_BLOCK        
+              118  JUMP_FORWARD        142  'to 142'
+            120_0  COME_FROM_FINALLY   106  '106'
+
+ L.  13       120  DUP_TOP          
+              122  LOAD_NAME                ImportError
+              124  <121>               140  ''
+              126  POP_TOP          
+              128  POP_TOP          
+              130  POP_TOP          
+
+ L.  14       132  LOAD_NAME                _bootstrap_external
+              134  STORE_NAME               _frozen_importlib_external
+              136  POP_EXCEPT       
+              138  JUMP_FORWARD        142  'to 142'
+              140  <48>             
+            142_0  COME_FROM           138  '138'
+            142_1  COME_FROM           118  '118'
+
+ L.  15       142  LOAD_CONST               0
+              144  LOAD_CONST               None
+              146  IMPORT_NAME              abc
+              148  STORE_NAME               abc
+
+ L.  16       150  LOAD_CONST               0
+              152  LOAD_CONST               None
+              154  IMPORT_NAME              warnings
+              156  STORE_NAME               warnings
+
+ L.  17       158  LOAD_CONST               0
+              160  LOAD_CONST               ('Protocol', 'runtime_checkable')
+              162  IMPORT_NAME              typing
+              164  IMPORT_FROM              Protocol
+              166  STORE_NAME               Protocol
+              168  IMPORT_FROM              runtime_checkable
+              170  STORE_NAME               runtime_checkable
+              172  POP_TOP          
+
+ L.  20       174  LOAD_CODE                <code_object _register>
+              176  LOAD_STR                 '_register'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  STORE_NAME               _register
+
+ L.  31       182  LOAD_BUILD_CLASS 
+              184  LOAD_CODE                <code_object Finder>
+              186  LOAD_STR                 'Finder'
+              188  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              190  LOAD_STR                 'Finder'
+              192  LOAD_NAME                abc
+              194  LOAD_ATTR                ABCMeta
+              196  LOAD_CONST               ('metaclass',)
+              198  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              200  STORE_NAME               Finder
+
+ L.  51       202  LOAD_BUILD_CLASS 
+              204  LOAD_CODE                <code_object MetaPathFinder>
+              206  LOAD_STR                 'MetaPathFinder'
+              208  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              210  LOAD_STR                 'MetaPathFinder'
+              212  LOAD_NAME                Finder
+              214  CALL_FUNCTION_3       3  ''
+              216  STORE_NAME               MetaPathFinder
+
+ L.  84       218  LOAD_NAME                _register
+              220  LOAD_NAME                MetaPathFinder
+              222  LOAD_NAME                machinery
+              224  LOAD_ATTR                BuiltinImporter
+              226  LOAD_NAME                machinery
+              228  LOAD_ATTR                FrozenImporter
+
+ L.  85       230  LOAD_NAME                machinery
+              232  LOAD_ATTR                PathFinder
+              234  LOAD_NAME                machinery
+              236  LOAD_ATTR                WindowsRegistryFinder
+
+ L.  84       238  CALL_FUNCTION_5       5  ''
+              240  POP_TOP          
+
+ L.  88       242  LOAD_BUILD_CLASS 
+              244  LOAD_CODE                <code_object PathEntryFinder>
+              246  LOAD_STR                 'PathEntryFinder'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  LOAD_STR                 'PathEntryFinder'
+              252  LOAD_NAME                Finder
+              254  CALL_FUNCTION_3       3  ''
+              256  STORE_NAME               PathEntryFinder
+
+ L. 134       258  LOAD_NAME                _register
+              260  LOAD_NAME                PathEntryFinder
+              262  LOAD_NAME                machinery
+              264  LOAD_ATTR                FileFinder
+              266  CALL_FUNCTION_2       2  ''
+              268  POP_TOP          
+
+ L. 137       270  LOAD_BUILD_CLASS 
+              272  LOAD_CODE                <code_object Loader>
+              274  LOAD_STR                 'Loader'
+              276  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              278  LOAD_STR                 'Loader'
+              280  LOAD_NAME                abc
+              282  LOAD_ATTR                ABCMeta
+              284  LOAD_CONST               ('metaclass',)
+              286  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              288  STORE_NAME               Loader
+
+ L. 184       290  LOAD_BUILD_CLASS 
+              292  LOAD_CODE                <code_object ResourceLoader>
+              294  LOAD_STR                 'ResourceLoader'
+              296  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              298  LOAD_STR                 'ResourceLoader'
+              300  LOAD_NAME                Loader
+              302  CALL_FUNCTION_3       3  ''
+              304  STORE_NAME               ResourceLoader
+
+ L. 200       306  LOAD_BUILD_CLASS 
+              308  LOAD_CODE                <code_object InspectLoader>
+              310  LOAD_STR                 'InspectLoader'
+              312  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              314  LOAD_STR                 'InspectLoader'
+              316  LOAD_NAME                Loader
+              318  CALL_FUNCTION_3       3  ''
+              320  STORE_NAME               InspectLoader
+
+ L. 250       322  LOAD_NAME                _register
+              324  LOAD_NAME                InspectLoader
+              326  LOAD_NAME                machinery
+              328  LOAD_ATTR                BuiltinImporter
+              330  LOAD_NAME                machinery
+              332  LOAD_ATTR                FrozenImporter
+              334  CALL_FUNCTION_3       3  ''
+              336  POP_TOP          
+
+ L. 253       338  LOAD_BUILD_CLASS 
+              340  LOAD_CODE                <code_object ExecutionLoader>
+              342  LOAD_STR                 'ExecutionLoader'
+              344  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              346  LOAD_STR                 'ExecutionLoader'
+              348  LOAD_NAME                InspectLoader
+              350  CALL_FUNCTION_3       3  ''
+              352  STORE_NAME               ExecutionLoader
+
+ L. 287       354  LOAD_NAME                _register
+              356  LOAD_NAME                ExecutionLoader
+              358  LOAD_NAME                machinery
+              360  LOAD_ATTR                ExtensionFileLoader
+              362  CALL_FUNCTION_2       2  ''
+              364  POP_TOP          
+
+ L. 290       366  LOAD_BUILD_CLASS 
+              368  LOAD_CODE                <code_object FileLoader>
+              370  LOAD_STR                 'FileLoader'
+              372  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              374  LOAD_STR                 'FileLoader'
+              376  LOAD_NAME                _bootstrap_external
+              378  LOAD_ATTR                FileLoader
+              380  LOAD_NAME                ResourceLoader
+              382  LOAD_NAME                ExecutionLoader
+              384  CALL_FUNCTION_5       5  ''
+              386  STORE_NAME               FileLoader
+
+ L. 295       388  LOAD_NAME                _register
+              390  LOAD_NAME                FileLoader
+              392  LOAD_NAME                machinery
+              394  LOAD_ATTR                SourceFileLoader
+
+ L. 296       396  LOAD_NAME                machinery
+              398  LOAD_ATTR                SourcelessFileLoader
+
+ L. 295       400  CALL_FUNCTION_3       3  ''
+              402  POP_TOP          
+
+ L. 299       404  LOAD_BUILD_CLASS 
+              406  LOAD_CODE                <code_object SourceLoader>
+              408  LOAD_STR                 'SourceLoader'
+              410  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              412  LOAD_STR                 'SourceLoader'
+              414  LOAD_NAME                _bootstrap_external
+              416  LOAD_ATTR                SourceLoader
+              418  LOAD_NAME                ResourceLoader
+              420  LOAD_NAME                ExecutionLoader
+              422  CALL_FUNCTION_5       5  ''
+              424  STORE_NAME               SourceLoader
+
+ L. 343       426  LOAD_NAME                _register
+              428  LOAD_NAME                SourceLoader
+              430  LOAD_NAME                machinery
+              432  LOAD_ATTR                SourceFileLoader
+              434  CALL_FUNCTION_2       2  ''
+              436  POP_TOP          
+
+ L. 346       438  LOAD_BUILD_CLASS 
+              440  LOAD_CODE                <code_object ResourceReader>
+              442  LOAD_STR                 'ResourceReader'
+              444  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              446  LOAD_STR                 'ResourceReader'
+              448  LOAD_NAME                abc
+              450  LOAD_ATTR                ABCMeta
+              452  LOAD_CONST               ('metaclass',)
+              454  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              456  STORE_NAME               ResourceReader
+
+ L. 389       458  LOAD_NAME                _register
+              460  LOAD_NAME                ResourceReader
+              462  LOAD_NAME                machinery
+              464  LOAD_ATTR                SourceFileLoader
+              466  CALL_FUNCTION_2       2  ''
+              468  POP_TOP          
+
+ L. 392       470  LOAD_NAME                runtime_checkable
+
+ L. 393       472  LOAD_BUILD_CLASS 
+              474  LOAD_CODE                <code_object Traversable>
+              476  LOAD_STR                 'Traversable'
+              478  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              480  LOAD_STR                 'Traversable'
+              482  LOAD_NAME                Protocol
+              484  CALL_FUNCTION_3       3  ''
+              486  CALL_FUNCTION_1       1  ''
+              488  STORE_NAME               Traversable
+
+ L. 459       490  LOAD_BUILD_CLASS 
+              492  LOAD_CODE                <code_object TraversableResources>
+              494  LOAD_STR                 'TraversableResources'
+              496  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              498  LOAD_STR                 'TraversableResources'
+              500  LOAD_NAME                ResourceReader
+              502  CALL_FUNCTION_3       3  ''
+              504  STORE_NAME               TraversableResources
+
+Parse error at or near `<121>' instruction at offset 58
+
+Instruction context:
+   
+ L.   7        54  DUP_TOP          
+                  56  LOAD_NAME                ImportError
+->                58  <121>               104  ''
+                  60  POP_TOP          
+                  62  STORE_NAME               exc
+                  64  POP_TOP          
+                  66  SETUP_FINALLY        96  'to 96'
+
+test/101238.pyc -- 
+# decompile failed

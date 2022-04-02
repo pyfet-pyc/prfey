@@ -1,0 +1,187 @@
+
+# file test/101179.pyc
+# --- This code section failed: ---
+
+ L.  25         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              re
+                6  STORE_NAME               re
+
+ L.  26         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              struct
+               14  STORE_NAME               struct
+
+ L.  27        16  LOAD_CONST               0
+               18  LOAD_CONST               ('reduce',)
+               20  IMPORT_NAME              functools
+               22  IMPORT_FROM              reduce
+               24  STORE_NAME               reduce
+               26  POP_TOP          
+
+ L.  29        28  LOAD_CONST               0
+               30  LOAD_CONST               ('tobytes', 'bord', '_copy_bytes', 'iter_range', 'tostr', 'bchr', 'bstr')
+               32  IMPORT_NAME_ATTR         Crypto.Util.py3compat
+               34  IMPORT_FROM              tobytes
+               36  STORE_NAME               tobytes
+               38  IMPORT_FROM              bord
+               40  STORE_NAME               bord
+               42  IMPORT_FROM              _copy_bytes
+               44  STORE_NAME               _copy_bytes
+               46  IMPORT_FROM              iter_range
+               48  STORE_NAME               iter_range
+               50  IMPORT_FROM              tostr
+               52  STORE_NAME               tostr
+               54  IMPORT_FROM              bchr
+               56  STORE_NAME               bchr
+               58  IMPORT_FROM              bstr
+               60  STORE_NAME               bstr
+               62  POP_TOP          
+
+ L.  32        64  LOAD_CONST               0
+               66  LOAD_CONST               ('SHA1', 'SHA256', 'HMAC', 'CMAC', 'BLAKE2s')
+               68  IMPORT_NAME_ATTR         Crypto.Hash
+               70  IMPORT_FROM              SHA1
+               72  STORE_NAME               SHA1
+               74  IMPORT_FROM              SHA256
+               76  STORE_NAME               SHA256
+               78  IMPORT_FROM              HMAC
+               80  STORE_NAME               HMAC
+               82  IMPORT_FROM              CMAC
+               84  STORE_NAME               CMAC
+               86  IMPORT_FROM              BLAKE2s
+               88  STORE_NAME               BLAKE2s
+               90  POP_TOP          
+
+ L.  33        92  LOAD_CONST               0
+               94  LOAD_CONST               ('strxor',)
+               96  IMPORT_NAME_ATTR         Crypto.Util.strxor
+               98  IMPORT_FROM              strxor
+              100  STORE_NAME               strxor
+              102  POP_TOP          
+
+ L.  34       104  LOAD_CONST               0
+              106  LOAD_CONST               ('get_random_bytes',)
+              108  IMPORT_NAME_ATTR         Crypto.Random
+              110  IMPORT_FROM              get_random_bytes
+              112  STORE_NAME               get_random_bytes
+              114  POP_TOP          
+
+ L.  35       116  LOAD_CONST               0
+              118  LOAD_CONST               ('size', 'long_to_bytes', 'bytes_to_long')
+              120  IMPORT_NAME_ATTR         Crypto.Util.number
+              122  IMPORT_FROM              size
+              124  STORE_NAME               bit_size
+              126  IMPORT_FROM              long_to_bytes
+              128  STORE_NAME               long_to_bytes
+              130  IMPORT_FROM              bytes_to_long
+              132  STORE_NAME               bytes_to_long
+              134  POP_TOP          
+
+ L.  37       136  LOAD_CONST               0
+              138  LOAD_CONST               ('load_pycryptodome_raw_lib', 'create_string_buffer', 'get_raw_buffer', 'c_size_t')
+              140  IMPORT_NAME_ATTR         Crypto.Util._raw_api
+              142  IMPORT_FROM              load_pycryptodome_raw_lib
+              144  STORE_NAME               load_pycryptodome_raw_lib
+              146  IMPORT_FROM              create_string_buffer
+              148  STORE_NAME               create_string_buffer
+              150  IMPORT_FROM              get_raw_buffer
+              152  STORE_NAME               get_raw_buffer
+              154  IMPORT_FROM              c_size_t
+              156  STORE_NAME               c_size_t
+              158  POP_TOP          
+
+ L.  41       160  LOAD_NAME                load_pycryptodome_raw_lib
+              162  LOAD_STR                 'Crypto.Cipher._Salsa20'
+
+ L.  42       164  LOAD_STR                 '\n                    int Salsa20_8_core(const uint8_t *x, const uint8_t *y,\n                                       uint8_t *out);\n                    '
+
+ L.  41       166  CALL_FUNCTION_2       2  ''
+              168  STORE_NAME               _raw_salsa20_lib
+
+ L.  47       170  LOAD_NAME                load_pycryptodome_raw_lib
+              172  LOAD_STR                 'Crypto.Protocol._scrypt'
+
+ L.  48       174  LOAD_STR                 '\n                    typedef int (core_t)(const uint8_t [64], const uint8_t [64], uint8_t [64]);\n                    int scryptROMix(const uint8_t *data_in, uint8_t *data_out,\n                           size_t data_len, unsigned N, core_t *core);\n                    '
+
+ L.  47       176  CALL_FUNCTION_2       2  ''
+              178  STORE_NAME               _raw_scrypt_lib
+
+ L.  55       180  LOAD_CONST               (1000, None)
+              182  LOAD_CODE                <code_object PBKDF1>
+              184  LOAD_STR                 'PBKDF1'
+              186  MAKE_FUNCTION_1          'default'
+              188  STORE_NAME               PBKDF1
+
+ L.  98       190  LOAD_CONST               (16, 1000, None, None)
+              192  LOAD_CODE                <code_object PBKDF2>
+              194  LOAD_STR                 'PBKDF2'
+              196  MAKE_FUNCTION_1          'default'
+              198  STORE_NAME               PBKDF2
+
+ L. 179       200  LOAD_BUILD_CLASS 
+              202  LOAD_CODE                <code_object _S2V>
+              204  LOAD_STR                 '_S2V'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  LOAD_STR                 '_S2V'
+              210  LOAD_NAME                object
+              212  CALL_FUNCTION_3       3  ''
+              214  STORE_NAME               _S2V
+
+ L. 275       216  LOAD_CONST               (1, None)
+              218  LOAD_CODE                <code_object HKDF>
+              220  LOAD_STR                 'HKDF'
+              222  MAKE_FUNCTION_1          'default'
+              224  STORE_NAME               HKDF
+
+ L. 337       226  LOAD_CONST               (1,)
+              228  LOAD_CODE                <code_object scrypt>
+              230  LOAD_STR                 'scrypt'
+              232  MAKE_FUNCTION_1          'default'
+              234  STORE_NAME               scrypt
+
+ L. 417       236  LOAD_CODE                <code_object _bcrypt_encode>
+              238  LOAD_STR                 '_bcrypt_encode'
+              240  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              242  STORE_NAME               _bcrypt_encode
+
+ L. 441       244  LOAD_CODE                <code_object _bcrypt_decode>
+              246  LOAD_STR                 '_bcrypt_decode'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  STORE_NAME               _bcrypt_decode
+
+ L. 469       252  LOAD_CODE                <code_object _bcrypt_hash>
+              254  LOAD_STR                 '_bcrypt_hash'
+              256  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              258  STORE_NAME               _bcrypt_hash
+
+ L. 485       260  LOAD_CONST               (None,)
+              262  LOAD_CODE                <code_object bcrypt>
+              264  LOAD_STR                 'bcrypt'
+              266  MAKE_FUNCTION_1          'default'
+              268  STORE_NAME               bcrypt
+
+ L. 532       270  LOAD_CODE                <code_object bcrypt_check>
+              272  LOAD_STR                 'bcrypt_check'
+              274  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              276  STORE_NAME               bcrypt_check
+
+Parse error at or near `LOAD_CONST' instruction at offset 136
+
+Instruction context:
+-> 
+ L.  37       136  LOAD_CONST               0
+                 138  LOAD_CONST               ('load_pycryptodome_raw_lib', 'create_string_buffer', 'get_raw_buffer', 'c_size_t')
+                 140  IMPORT_NAME_ATTR         Crypto.Util._raw_api
+                 142  IMPORT_FROM              load_pycryptodome_raw_lib
+                 144  STORE_NAME               load_pycryptodome_raw_lib
+                 146  IMPORT_FROM              create_string_buffer
+                 148  STORE_NAME               create_string_buffer
+                 150  IMPORT_FROM              get_raw_buffer
+                 152  STORE_NAME               get_raw_buffer
+                 154  IMPORT_FROM              c_size_t
+                 156  STORE_NAME               c_size_t
+                 158  POP_TOP          
+
+test/101179.pyc -- 
+# decompile failed

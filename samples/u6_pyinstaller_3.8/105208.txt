@@ -1,0 +1,32 @@
+Instruction context:
+   
+ L.  74        26  LOAD_FAST                'qp'
+                  28  LOAD_ATTR                root_x
+                  30  LOAD_FAST                'qp'
+                  32  LOAD_ATTR                root_y
+                  34  BUILD_TUPLE_2         2 
+                  36  POP_BLOCK        
+->                38  ROT_TWO          
+                  40  BEGIN_FINALLY    
+                  42  WITH_CLEANUP_START
+                  44  WITH_CLEANUP_FINISH
+                  46  POP_FINALLY           0  ''
+                  48  RETURN_VALUE     
+                50_0  COME_FROM_WITH        8  '8'
+                  50  WITH_CLEANUP_START
+                  52  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 172        12  DUP_TOP          
+                  14  LOAD_GLOBAL              ValueError
+                  16  COMPARE_OP               exception-match
+                  18  POP_JUMP_IF_FALSE    36  'to 36'
+                  20  POP_TOP          
+->                22  POP_TOP          
+                  24  POP_TOP          
+
+../test/105208.pyc -- 
+# decompile failed
+
+# file ../test/105208.pyc
+# Deparsing stopped due to parse error

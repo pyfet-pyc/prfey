@@ -1,0 +1,468 @@
+
+# file test/101703.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "HTTP cookie handling for web clients.\n\nThis module has (now fairly distant) origins in Gisle Aas' Perl module\nHTTP::Cookies, from the libwww-perl library.\n\nDocstrings, comments and debug strings in this code refer to the\nattributes of the HTTP cookie system as cookie-attributes, to distinguish\nthem clearly from Python attributes.\n\nClass diagram (note that BSDDBCookieJar and the MSIE* classes are not\ndistributed with the Python standard library, but are available from\nhttp://wwwsearch.sf.net/):\n\n                        CookieJar____\n                        /     \\      \\\n            FileCookieJar      \\      \\\n             /    |   \\         \\      \\\n MozillaCookieJar | LWPCookieJar \\      \\\n                  |               |      \\\n                  |   ---MSIEBase |       \\\n                  |  /      |     |        \\\n                  | /   MSIEDBCookieJar BSDDBCookieJar\n                  |/\n               MSIECookieJar\n\n"
+                2  STORE_NAME               __doc__
+
+ L.  28         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('Cookie', 'CookieJar', 'CookiePolicy', 'DefaultCookiePolicy', 'FileCookieJar', 'LWPCookieJar', 'LoadError', 'MozillaCookieJar')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  31        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              os
+               18  STORE_NAME               os
+
+ L.  32        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              copy
+               26  STORE_NAME               copy
+
+ L.  33        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              datetime
+               34  STORE_NAME               datetime
+
+ L.  34        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              re
+               42  STORE_NAME               re
+
+ L.  35        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              time
+               50  STORE_NAME               time
+
+ L.  36        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME_ATTR         urllib.parse
+               58  STORE_NAME               urllib
+               60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME_ATTR         urllib.request
+               66  STORE_NAME               urllib
+
+ L.  37        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              threading
+               74  STORE_NAME               _threading
+
+ L.  38        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME_ATTR         http.client
+               82  STORE_NAME               http
+
+ L.  39        84  LOAD_CONST               0
+               86  LOAD_CONST               ('timegm',)
+               88  IMPORT_NAME              calendar
+               90  IMPORT_FROM              timegm
+               92  STORE_NAME               timegm
+               94  POP_TOP          
+
+ L.  41        96  LOAD_CONST               False
+               98  STORE_NAME               debug
+
+ L.  42       100  LOAD_CONST               None
+              102  STORE_GLOBAL             logger
+
+ L.  44       104  LOAD_CODE                <code_object _debug>
+              106  LOAD_STR                 '_debug'
+              108  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              110  STORE_NAME               _debug
+
+ L.  54       112  LOAD_NAME                str
+              114  LOAD_NAME                http
+              116  LOAD_ATTR                client
+              118  LOAD_ATTR                HTTP_PORT
+              120  CALL_FUNCTION_1       1  ''
+              122  STORE_NAME               DEFAULT_HTTP_PORT
+
+ L.  55       124  LOAD_STR                 'a filename was not supplied (nor was the CookieJar instance initialised with one)'
+              126  STORE_NAME               MISSING_FILENAME_TEXT
+
+ L.  58       128  LOAD_CODE                <code_object _warn_unhandled_exception>
+              130  LOAD_STR                 '_warn_unhandled_exception'
+              132  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              134  STORE_NAME               _warn_unhandled_exception
+
+ L.  72       136  LOAD_CONST               1970
+              138  STORE_NAME               EPOCH_YEAR
+
+ L.  73       140  LOAD_CODE                <code_object _timegm>
+              142  LOAD_STR                 '_timegm'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  STORE_NAME               _timegm
+
+ L.  81       148  BUILD_LIST_0          0 
+              150  LOAD_CONST               ('Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun')
+              152  CALL_FINALLY        155  'to 155'
+              154  STORE_NAME               DAYS
+
+ L.  82       156  BUILD_LIST_0          0 
+              158  LOAD_CONST               ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+              160  CALL_FINALLY        163  'to 163'
+              162  STORE_NAME               MONTHS
+
+ L.  84       164  BUILD_LIST_0          0 
+              166  STORE_NAME               MONTHS_LOWER
+
+ L.  85       168  LOAD_NAME                MONTHS
+              170  GET_ITER         
+            172_0  COME_FROM           190  '190'
+              172  FOR_ITER            192  'to 192'
+              174  STORE_NAME               month
+              176  LOAD_NAME                MONTHS_LOWER
+              178  LOAD_METHOD              append
+              180  LOAD_NAME                month
+              182  LOAD_METHOD              lower
+              184  CALL_METHOD_0         0  ''
+              186  CALL_METHOD_1         1  ''
+              188  POP_TOP          
+              190  JUMP_BACK           172  'to 172'
+            192_0  COME_FROM           172  '172'
+
+ L.  87       192  LOAD_CONST               (None,)
+              194  LOAD_CODE                <code_object time2isoz>
+              196  LOAD_STR                 'time2isoz'
+              198  MAKE_FUNCTION_1          'default'
+              200  STORE_NAME               time2isoz
+
+ L. 106       202  LOAD_CONST               (None,)
+              204  LOAD_CODE                <code_object time2netscape>
+              206  LOAD_STR                 'time2netscape'
+              208  MAKE_FUNCTION_1          'default'
+              210  STORE_NAME               time2netscape
+
+ L. 126       212  LOAD_CONST               None
+              214  LOAD_CONST               None
+              216  LOAD_CONST               None
+              218  LOAD_CONST               None
+              220  LOAD_CONST               ('GMT', 'UTC', 'UT', 'Z')
+              222  BUILD_CONST_KEY_MAP_4     4 
+              224  STORE_NAME               UTC_ZONES
+
+ L. 128       226  LOAD_NAME                re
+              228  LOAD_METHOD              compile
+              230  LOAD_STR                 '^([-+])?(\\d\\d?):?(\\d\\d)?$'
+              232  LOAD_NAME                re
+              234  LOAD_ATTR                ASCII
+              236  CALL_METHOD_2         2  ''
+              238  STORE_NAME               TIMEZONE_RE
+
+ L. 129       240  LOAD_CODE                <code_object offset_from_tz_string>
+              242  LOAD_STR                 'offset_from_tz_string'
+              244  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              246  STORE_NAME               offset_from_tz_string
+
+ L. 143       248  LOAD_CODE                <code_object _str2time>
+              250  LOAD_STR                 '_str2time'
+              252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              254  STORE_NAME               _str2time
+
+ L. 199       256  LOAD_NAME                re
+              258  LOAD_METHOD              compile
+
+ L. 200       260  LOAD_STR                 '^[SMTWF][a-z][a-z], (\\d\\d) ([JFMASOND][a-z][a-z]) (\\d\\d\\d\\d) (\\d\\d):(\\d\\d):(\\d\\d) GMT$'
+
+ L. 201       262  LOAD_NAME                re
+              264  LOAD_ATTR                ASCII
+
+ L. 199       266  CALL_METHOD_2         2  ''
+              268  STORE_NAME               STRICT_DATE_RE
+
+ L. 202       270  LOAD_NAME                re
+              272  LOAD_METHOD              compile
+
+ L. 203       274  LOAD_STR                 '^(?:Sun|Mon|Tue|Wed|Thu|Fri|Sat)[a-z]*,?\\s*'
+              276  LOAD_NAME                re
+              278  LOAD_ATTR                I
+              280  LOAD_NAME                re
+              282  LOAD_ATTR                ASCII
+              284  BINARY_OR        
+
+ L. 202       286  CALL_METHOD_2         2  ''
+              288  STORE_NAME               WEEKDAY_RE
+
+ L. 204       290  LOAD_NAME                re
+              292  LOAD_METHOD              compile
+
+ L. 205       294  LOAD_STR                 '^\n    (\\d\\d?)            # day\n       (?:\\s+|[-\\/])\n    (\\w+)              # month\n        (?:\\s+|[-\\/])\n    (\\d+)              # year\n    (?:\n          (?:\\s+|:)    # separator before clock\n       (\\d\\d?):(\\d\\d)  # hour:min\n       (?::(\\d\\d))?    # optional seconds\n    )?                 # optional clock\n       \\s*\n    (?:\n       ([-+]?\\d{2,4}|(?![APap][Mm]\\b)[A-Za-z]+) # timezone\n       \\s*\n    )?\n    (?:\n       \\(\\w+\\)         # ASCII representation of timezone in parens.\n       \\s*\n    )?$'
+
+ L. 224       296  LOAD_NAME                re
+              298  LOAD_ATTR                X
+              300  LOAD_NAME                re
+              302  LOAD_ATTR                ASCII
+              304  BINARY_OR        
+
+ L. 204       306  CALL_METHOD_2         2  ''
+              308  STORE_NAME               LOOSE_HTTP_DATE_RE
+
+ L. 225       310  LOAD_CODE                <code_object http2time>
+              312  LOAD_STR                 'http2time'
+              314  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              316  STORE_NAME               http2time
+
+ L. 281       318  LOAD_NAME                re
+              320  LOAD_METHOD              compile
+
+ L. 282       322  LOAD_STR                 '^\n    (\\d{4})              # year\n       [-\\/]?\n    (\\d\\d?)              # numerical month\n       [-\\/]?\n    (\\d\\d?)              # day\n   (?:\n         (?:\\s+|[-:Tt])  # separator before clock\n      (\\d\\d?):?(\\d\\d)    # hour:min\n      (?::?(\\d\\d(?:\\.\\d*)?))?  # optional seconds (and fractional)\n   )?                    # optional clock\n      \\s*\n   (?:\n      ([-+]?\\d\\d?:?(:?\\d\\d)?\n       |Z|z)             # timezone  (Z is "zero meridian", i.e. GMT)\n      \\s*\n   )?$'
+
+ L. 298       324  LOAD_NAME                re
+              326  LOAD_ATTR                X
+              328  LOAD_NAME                re
+              330  LOAD_ATTR                ASCII
+              332  BINARY_OR        
+
+ L. 281       334  CALL_METHOD_2         2  ''
+              336  STORE_NAME               ISO_DATE_RE
+
+ L. 299       338  LOAD_CODE                <code_object iso2time>
+              340  LOAD_STR                 'iso2time'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  STORE_NAME               iso2time
+
+ L. 332       346  LOAD_CODE                <code_object unmatched>
+              348  LOAD_STR                 'unmatched'
+              350  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              352  STORE_NAME               unmatched
+
+ L. 337       354  LOAD_NAME                re
+              356  LOAD_METHOD              compile
+              358  LOAD_STR                 '^\\s*([^=\\s;,]+)'
+              360  CALL_METHOD_1         1  ''
+              362  STORE_NAME               HEADER_TOKEN_RE
+
+ L. 338       364  LOAD_NAME                re
+              366  LOAD_METHOD              compile
+              368  LOAD_STR                 '^\\s*=\\s*\\"([^\\"\\\\]*(?:\\\\.[^\\"\\\\]*)*)\\"'
+              370  CALL_METHOD_1         1  ''
+              372  STORE_NAME               HEADER_QUOTED_VALUE_RE
+
+ L. 339       374  LOAD_NAME                re
+              376  LOAD_METHOD              compile
+              378  LOAD_STR                 '^\\s*=\\s*([^\\s;,]*)'
+              380  CALL_METHOD_1         1  ''
+              382  STORE_NAME               HEADER_VALUE_RE
+
+ L. 340       384  LOAD_NAME                re
+              386  LOAD_METHOD              compile
+              388  LOAD_STR                 '\\\\(.)'
+              390  CALL_METHOD_1         1  ''
+              392  STORE_NAME               HEADER_ESCAPE_RE
+
+ L. 341       394  LOAD_CODE                <code_object split_header_words>
+              396  LOAD_STR                 'split_header_words'
+              398  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              400  STORE_NAME               split_header_words
+
+ L. 426       402  LOAD_NAME                re
+              404  LOAD_METHOD              compile
+              406  LOAD_STR                 '([\\"\\\\])'
+              408  CALL_METHOD_1         1  ''
+              410  STORE_NAME               HEADER_JOIN_ESCAPE_RE
+
+ L. 427       412  LOAD_CODE                <code_object join_header_words>
+              414  LOAD_STR                 'join_header_words'
+              416  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              418  STORE_NAME               join_header_words
+
+ L. 452       420  LOAD_CODE                <code_object strip_quotes>
+              422  LOAD_STR                 'strip_quotes'
+              424  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              426  STORE_NAME               strip_quotes
+
+ L. 459       428  LOAD_CODE                <code_object parse_ns_headers>
+              430  LOAD_STR                 'parse_ns_headers'
+              432  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              434  STORE_NAME               parse_ns_headers
+
+ L. 527       436  LOAD_NAME                re
+              438  LOAD_METHOD              compile
+              440  LOAD_STR                 '\\.\\d+$'
+              442  LOAD_NAME                re
+              444  LOAD_ATTR                ASCII
+              446  CALL_METHOD_2         2  ''
+              448  STORE_NAME               IPV4_RE
+
+ L. 528       450  LOAD_CODE                <code_object is_HDN>
+              452  LOAD_STR                 'is_HDN'
+              454  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              456  STORE_NAME               is_HDN
+
+ L. 543       458  LOAD_CODE                <code_object domain_match>
+              460  LOAD_STR                 'domain_match'
+              462  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              464  STORE_NAME               domain_match
+
+ L. 582       466  LOAD_CODE                <code_object liberal_is_HDN>
+              468  LOAD_STR                 'liberal_is_HDN'
+              470  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              472  STORE_NAME               liberal_is_HDN
+
+ L. 592       474  LOAD_CODE                <code_object user_domain_match>
+              476  LOAD_STR                 'user_domain_match'
+              478  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              480  STORE_NAME               user_domain_match
+
+ L. 612       482  LOAD_NAME                re
+              484  LOAD_METHOD              compile
+              486  LOAD_STR                 ':\\d+$'
+              488  LOAD_NAME                re
+              490  LOAD_ATTR                ASCII
+              492  CALL_METHOD_2         2  ''
+              494  STORE_NAME               cut_port_re
+
+ L. 613       496  LOAD_CODE                <code_object request_host>
+              498  LOAD_STR                 'request_host'
+              500  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              502  STORE_NAME               request_host
+
+ L. 629       504  LOAD_CODE                <code_object eff_request_host>
+              506  LOAD_STR                 'eff_request_host'
+              508  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              510  STORE_NAME               eff_request_host
+
+ L. 640       512  LOAD_CODE                <code_object request_path>
+              514  LOAD_STR                 'request_path'
+              516  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              518  STORE_NAME               request_path
+
+ L. 650       520  LOAD_CODE                <code_object request_port>
+              522  LOAD_STR                 'request_port'
+              524  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              526  STORE_NAME               request_port
+
+ L. 666       528  LOAD_STR                 "%/;:@&=+$,!~*'()"
+              530  STORE_NAME               HTTP_PATH_SAFE
+
+ L. 667       532  LOAD_NAME                re
+              534  LOAD_METHOD              compile
+              536  LOAD_STR                 '%([0-9a-fA-F][0-9a-fA-F])'
+              538  CALL_METHOD_1         1  ''
+              540  STORE_NAME               ESCAPED_CHAR_RE
+
+ L. 668       542  LOAD_CODE                <code_object uppercase_escaped_char>
+              544  LOAD_STR                 'uppercase_escaped_char'
+              546  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              548  STORE_NAME               uppercase_escaped_char
+
+ L. 670       550  LOAD_CODE                <code_object escape_path>
+              552  LOAD_STR                 'escape_path'
+              554  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              556  STORE_NAME               escape_path
+
+ L. 684       558  LOAD_CODE                <code_object reach>
+              560  LOAD_STR                 'reach'
+              562  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              564  STORE_NAME               reach
+
+ L. 719       566  LOAD_CODE                <code_object is_third_party>
+              568  LOAD_STR                 'is_third_party'
+              570  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              572  STORE_NAME               is_third_party
+
+ L. 736       574  LOAD_BUILD_CLASS 
+              576  LOAD_CODE                <code_object Cookie>
+              578  LOAD_STR                 'Cookie'
+              580  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              582  LOAD_STR                 'Cookie'
+              584  CALL_FUNCTION_2       2  ''
+              586  STORE_NAME               Cookie
+
+ L. 834       588  LOAD_BUILD_CLASS 
+              590  LOAD_CODE                <code_object CookiePolicy>
+              592  LOAD_STR                 'CookiePolicy'
+              594  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              596  LOAD_STR                 'CookiePolicy'
+              598  CALL_FUNCTION_2       2  ''
+              600  STORE_NAME               CookiePolicy
+
+ L. 867       602  LOAD_BUILD_CLASS 
+              604  LOAD_CODE                <code_object DefaultCookiePolicy>
+              606  LOAD_STR                 'DefaultCookiePolicy'
+              608  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              610  LOAD_STR                 'DefaultCookiePolicy'
+              612  LOAD_NAME                CookiePolicy
+              614  CALL_FUNCTION_3       3  ''
+              616  STORE_NAME               DefaultCookiePolicy
+
+ L.1219       618  LOAD_CODE                <code_object vals_sorted_by_key>
+              620  LOAD_STR                 'vals_sorted_by_key'
+              622  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              624  STORE_NAME               vals_sorted_by_key
+
+ L.1223       626  LOAD_CODE                <code_object deepvalues>
+              628  LOAD_STR                 'deepvalues'
+              630  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              632  STORE_NAME               deepvalues
+
+ L.1241       634  LOAD_BUILD_CLASS 
+              636  LOAD_CODE                <code_object Absent>
+              638  LOAD_STR                 'Absent'
+              640  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              642  LOAD_STR                 'Absent'
+              644  CALL_FUNCTION_2       2  ''
+              646  STORE_NAME               Absent
+
+ L.1243       648  LOAD_BUILD_CLASS 
+              650  LOAD_CODE                <code_object CookieJar>
+              652  LOAD_STR                 'CookieJar'
+              654  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              656  LOAD_STR                 'CookieJar'
+              658  CALL_FUNCTION_2       2  ''
+              660  STORE_NAME               CookieJar
+
+ L.1771       662  LOAD_BUILD_CLASS 
+              664  LOAD_CODE                <code_object LoadError>
+              666  LOAD_STR                 'LoadError'
+              668  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              670  LOAD_STR                 'LoadError'
+              672  LOAD_NAME                OSError
+              674  CALL_FUNCTION_3       3  ''
+              676  STORE_NAME               LoadError
+
+ L.1773       678  LOAD_BUILD_CLASS 
+              680  LOAD_CODE                <code_object FileCookieJar>
+              682  LOAD_STR                 'FileCookieJar'
+              684  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              686  LOAD_STR                 'FileCookieJar'
+              688  LOAD_NAME                CookieJar
+              690  CALL_FUNCTION_3       3  ''
+              692  STORE_NAME               FileCookieJar
+
+ L.1828       694  LOAD_CODE                <code_object lwp_cookie_str>
+              696  LOAD_STR                 'lwp_cookie_str'
+              698  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              700  STORE_NAME               lwp_cookie_str
+
+ L.1856       702  LOAD_BUILD_CLASS 
+              704  LOAD_CODE                <code_object LWPCookieJar>
+              706  LOAD_STR                 'LWPCookieJar'
+              708  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              710  LOAD_STR                 'LWPCookieJar'
+              712  LOAD_NAME                FileCookieJar
+              714  CALL_FUNCTION_3       3  ''
+              716  STORE_NAME               LWPCookieJar
+
+ L.1976       718  LOAD_BUILD_CLASS 
+              720  LOAD_CODE                <code_object MozillaCookieJar>
+              722  LOAD_STR                 'MozillaCookieJar'
+              724  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              726  LOAD_STR                 'MozillaCookieJar'
+              728  LOAD_NAME                FileCookieJar
+              730  CALL_FUNCTION_3       3  ''
+              732  STORE_NAME               MozillaCookieJar
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L.  28         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('Cookie', 'CookieJar', 'CookiePolicy', 'DefaultCookiePolicy', 'FileCookieJar', 'LWPCookieJar', 'LoadError', 'MozillaCookieJar')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101703.pyc -- 
+# decompile failed

@@ -1,0 +1,35 @@
+Instruction context:
+   
+ L. 174        56  POP_BLOCK        
+->                58  POP_EXCEPT       
+                  60  CALL_FINALLY         72  'to 72'
+                  62  LOAD_CONST               b''
+                  64  RETURN_VALUE     
+                66_0  COME_FROM            54  '54'
+                66_1  COME_FROM            44  '44'
+Instruction context:
+   
+ L. 204        76  POP_EXCEPT       
+->                78  JUMP_BACK             0  'to 0'
+                  80  POP_EXCEPT       
+                  82  JUMP_BACK             0  'to 0'
+                84_0  COME_FROM            26  '26'
+                  84  END_FINALLY      
+Instruction context:
+-> 
+ L. 289       304  DUP_TOP          
+                 306  LOAD_GLOBAL              OpenSSL
+                 308  LOAD_ATTR                SSL
+                 310  LOAD_ATTR                Error
+                 312  COMPARE_OP               exception-match
+             314_316  POP_JUMP_IF_FALSE   354  'to 354'
+                 318  POP_TOP          
+                 320  STORE_FAST               'e'
+                 322  POP_TOP          
+                 324  SETUP_FINALLY       342  'to 342'
+
+../test/144284.pyc -- 
+# decompile failed
+
+# file ../test/144284.pyc
+# Deparsing stopped due to parse error

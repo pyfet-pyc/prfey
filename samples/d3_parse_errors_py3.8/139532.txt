@@ -1,0 +1,56 @@
+Instruction context:
+   
+ L. 376        56  POP_EXCEPT       
+                  58  JUMP_BACK            14  'to 14'
+                  60  POP_EXCEPT       
+->                62  JUMP_BACK            14  'to 14'
+                64_0  COME_FROM            48  '48'
+                  64  END_FINALLY      
+                66_0  COME_FROM            36  '36'
+Instruction context:
+   
+ L. 454        56  POP_EXCEPT       
+                  58  JUMP_BACK            18  'to 18'
+                  60  POP_EXCEPT       
+                  62  JUMP_FORWARD         66  'to 66'
+->              64_0  COME_FROM            48  '48'
+                  64  END_FINALLY      
+                66_0  COME_FROM            62  '62'
+                66_1  COME_FROM            40  '40'
+Instruction context:
+   
+ L. 540        46  POP_EXCEPT       
+->                48  LOAD_CONST               False
+                  50  RETURN_VALUE     
+                52_0  COME_FROM            38  '38'
+Instruction context:
+-> 
+ L. 556        82  DUP_TOP          
+                  84  LOAD_GLOBAL              PermissionError
+                  86  COMPARE_OP               exception-match
+                  88  POP_JUMP_IF_FALSE   114  'to 114'
+                  90  POP_TOP          
+                  92  POP_TOP          
+                  94  POP_TOP          
+Instruction context:
+   
+ L. 664       126  BUILD_LIST_0          0 
+                 128  ROT_FOUR         
+->               130  POP_BLOCK        
+                 132  POP_EXCEPT       
+                 134  CALL_FINALLY        146  'to 146'
+                 136  RETURN_VALUE     
+                 138  JUMP_FORWARD        142  'to 142'
+               140_0  COME_FROM            64  '64'
+Instruction context:
+   
+ L. 681        50  POP_EXCEPT       
+->                52  LOAD_CONST               None
+                  54  RETURN_VALUE     
+                56_0  COME_FROM            42  '42'
+
+../test/139532.pyc -- 
+# decompile failed
+
+# file ../test/139532.pyc
+# Deparsing stopped due to parse error

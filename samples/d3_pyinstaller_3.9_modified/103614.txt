@@ -1,0 +1,622 @@
+
+# file test/103614.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Wrapper functions for Tcl/Tk.\n\nTkinter provides classes which allow the display, positioning and\ncontrol of widgets. Toplevel widgets are Tk and Toplevel. Other\nwidgets are Frame, Label, Entry, Text, Canvas, Button, Radiobutton,\nCheckbutton, Scale, Listbox, Scrollbar, OptionMenu, Spinbox\nLabelFrame and PanedWindow.\n\nProperties of the widgets are specified with keyword arguments.\nKeyword arguments have the same name as the corresponding resource\nunder Tk.\n\nWidgets are positioned with one of the geometry managers Place, Pack\nor Grid. These managers can be called with methods place, pack, grid\navailable in every Widget.\n\nActions are bound to events by resources (e.g. keyword argument\ncommand) or with the method bind.\n\nExample (Hello, World):\nimport tkinter\nfrom tkinter.constants import *\ntk = tkinter.Tk()\nframe = tkinter.Frame(tk, relief=RIDGE, borderwidth=2)\nframe.pack(fill=BOTH,expand=1)\nlabel = tkinter.Label(frame, text="Hello, World")\nlabel.pack(fill=X, expand=1)\nbutton = tkinter.Button(frame,text="Exit",command=tk.destroy)\nbutton.pack(side=BOTTOM)\ntk.mainloop()\n'
+                2  STORE_NAME               __doc__
+
+ L.  33         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              enum
+               10  STORE_NAME               enum
+
+ L.  34        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L.  35        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              types
+               26  STORE_NAME               types
+
+ L.  37        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              _tkinter
+               34  STORE_NAME               _tkinter
+
+ L.  38        36  LOAD_NAME                _tkinter
+               38  LOAD_ATTR                TclError
+               40  STORE_NAME               TclError
+
+ L.  39        42  LOAD_CONST               0
+               44  LOAD_CONST               ('*',)
+               46  IMPORT_NAME_ATTR         tkinter.constants
+               48  IMPORT_STAR      
+
+ L.  40        50  LOAD_CONST               0
+               52  LOAD_CONST               None
+               54  IMPORT_NAME              re
+               56  STORE_NAME               re
+
+ L.  42        58  LOAD_CONST               1
+               60  STORE_NAME               wantobjects
+
+ L.  44        62  LOAD_NAME                float
+               64  LOAD_NAME                _tkinter
+               66  LOAD_ATTR                TK_VERSION
+               68  CALL_FUNCTION_1       1  ''
+               70  STORE_NAME               TkVersion
+
+ L.  45        72  LOAD_NAME                float
+               74  LOAD_NAME                _tkinter
+               76  LOAD_ATTR                TCL_VERSION
+               78  CALL_FUNCTION_1       1  ''
+               80  STORE_NAME               TclVersion
+
+ L.  47        82  LOAD_NAME                _tkinter
+               84  LOAD_ATTR                READABLE
+               86  STORE_NAME               READABLE
+
+ L.  48        88  LOAD_NAME                _tkinter
+               90  LOAD_ATTR                WRITABLE
+               92  STORE_NAME               WRITABLE
+
+ L.  49        94  LOAD_NAME                _tkinter
+               96  LOAD_ATTR                EXCEPTION
+               98  STORE_NAME               EXCEPTION
+
+ L.  52       100  LOAD_NAME                re
+              102  LOAD_METHOD              compile
+              104  LOAD_STR                 '([\\\\{}])'
+              106  CALL_METHOD_1         1  ''
+              108  STORE_NAME               _magic_re
+
+ L.  53       110  LOAD_NAME                re
+              112  LOAD_METHOD              compile
+              114  LOAD_STR                 '([\\s])'
+              116  LOAD_NAME                re
+              118  LOAD_ATTR                ASCII
+              120  CALL_METHOD_2         2  ''
+              122  STORE_NAME               _space_re
+
+ L.  56       124  LOAD_CODE                <code_object _join>
+              126  LOAD_STR                 '_join'
+              128  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              130  STORE_NAME               _join
+
+ L.  61       132  LOAD_CODE                <code_object _stringify>
+              134  LOAD_STR                 '_stringify'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  STORE_NAME               _stringify
+
+ L.  86       140  LOAD_CODE                <code_object _flatten>
+              142  LOAD_STR                 '_flatten'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  STORE_NAME               _flatten
+
+ L.  97       148  SETUP_FINALLY       160  'to 160'
+              150  LOAD_NAME                _tkinter
+              152  LOAD_ATTR                _flatten
+              154  STORE_NAME               _flatten
+              156  POP_BLOCK        
+              158  JUMP_FORWARD        178  'to 178'
+            160_0  COME_FROM_FINALLY   148  '148'
+
+ L.  98       160  DUP_TOP          
+              162  LOAD_NAME                AttributeError
+              164  <121>               176  ''
+              166  POP_TOP          
+              168  POP_TOP          
+              170  POP_TOP          
+              172  POP_EXCEPT       
+              174  JUMP_FORWARD        178  'to 178'
+              176  <48>             
+            178_0  COME_FROM           174  '174'
+            178_1  COME_FROM           158  '158'
+
+ L. 101       178  LOAD_CODE                <code_object _cnfmerge>
+              180  LOAD_STR                 '_cnfmerge'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  STORE_NAME               _cnfmerge
+
+ L. 119       186  SETUP_FINALLY       198  'to 198'
+              188  LOAD_NAME                _tkinter
+              190  LOAD_ATTR                _cnfmerge
+              192  STORE_NAME               _cnfmerge
+              194  POP_BLOCK        
+              196  JUMP_FORWARD        216  'to 216'
+            198_0  COME_FROM_FINALLY   186  '186'
+
+ L. 120       198  DUP_TOP          
+              200  LOAD_NAME                AttributeError
+              202  <121>               214  ''
+              204  POP_TOP          
+              206  POP_TOP          
+              208  POP_TOP          
+              210  POP_EXCEPT       
+              212  JUMP_FORWARD        216  'to 216'
+              214  <48>             
+            216_0  COME_FROM           212  '212'
+            216_1  COME_FROM           196  '196'
+
+ L. 123       216  LOAD_CONST               (True, None)
+              218  LOAD_CODE                <code_object _splitdict>
+              220  LOAD_STR                 '_splitdict'
+              222  MAKE_FUNCTION_1          'default'
+              224  STORE_NAME               _splitdict
+
+ L. 147       226  LOAD_BUILD_CLASS 
+              228  LOAD_CODE                <code_object EventType>
+              230  LOAD_STR                 'EventType'
+              232  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              234  LOAD_STR                 'EventType'
+              236  LOAD_NAME                str
+              238  LOAD_NAME                enum
+              240  LOAD_ATTR                Enum
+              242  CALL_FUNCTION_4       4  ''
+              244  STORE_NAME               EventType
+
+ L. 192       246  LOAD_BUILD_CLASS 
+              248  LOAD_CODE                <code_object Event>
+              250  LOAD_STR                 'Event'
+              252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              254  LOAD_STR                 'Event'
+              256  CALL_FUNCTION_2       2  ''
+              258  STORE_NAME               Event
+
+ L. 274       260  LOAD_CONST               1
+              262  STORE_GLOBAL             _support_default_root
+
+ L. 275       264  LOAD_CONST               None
+              266  STORE_GLOBAL             _default_root
+
+ L. 278       268  LOAD_CODE                <code_object NoDefaultRoot>
+              270  LOAD_STR                 'NoDefaultRoot'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  STORE_NAME               NoDefaultRoot
+
+ L. 291       276  LOAD_CODE                <code_object _tkerror>
+              278  LOAD_STR                 '_tkerror'
+              280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              282  STORE_NAME               _tkerror
+
+ L. 296       284  LOAD_CONST               (0,)
+              286  LOAD_CODE                <code_object _exit>
+              288  LOAD_STR                 '_exit'
+              290  MAKE_FUNCTION_1          'default'
+              292  STORE_NAME               _exit
+
+ L. 305       294  LOAD_CONST               0
+              296  STORE_GLOBAL             _varnum
+
+ L. 308       298  LOAD_BUILD_CLASS 
+              300  LOAD_CODE                <code_object Variable>
+              302  LOAD_STR                 'Variable'
+              304  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              306  LOAD_STR                 'Variable'
+              308  CALL_FUNCTION_2       2  ''
+              310  STORE_NAME               Variable
+
+ L. 493       312  LOAD_BUILD_CLASS 
+              314  LOAD_CODE                <code_object StringVar>
+              316  LOAD_STR                 'StringVar'
+              318  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              320  LOAD_STR                 'StringVar'
+              322  LOAD_NAME                Variable
+              324  CALL_FUNCTION_3       3  ''
+              326  STORE_NAME               StringVar
+
+ L. 517       328  LOAD_BUILD_CLASS 
+              330  LOAD_CODE                <code_object IntVar>
+              332  LOAD_STR                 'IntVar'
+              334  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              336  LOAD_STR                 'IntVar'
+              338  LOAD_NAME                Variable
+              340  CALL_FUNCTION_3       3  ''
+              342  STORE_NAME               IntVar
+
+ L. 542       344  LOAD_BUILD_CLASS 
+              346  LOAD_CODE                <code_object DoubleVar>
+              348  LOAD_STR                 'DoubleVar'
+              350  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              352  LOAD_STR                 'DoubleVar'
+              354  LOAD_NAME                Variable
+              356  CALL_FUNCTION_3       3  ''
+              358  STORE_NAME               DoubleVar
+
+ L. 563       360  LOAD_BUILD_CLASS 
+              362  LOAD_CODE                <code_object BooleanVar>
+              364  LOAD_STR                 'BooleanVar'
+              366  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              368  LOAD_STR                 'BooleanVar'
+              370  LOAD_NAME                Variable
+              372  CALL_FUNCTION_3       3  ''
+              374  STORE_NAME               BooleanVar
+
+ L. 593       376  LOAD_CONST               (0,)
+              378  LOAD_CODE                <code_object mainloop>
+              380  LOAD_STR                 'mainloop'
+              382  MAKE_FUNCTION_1          'default'
+              384  STORE_NAME               mainloop
+
+ L. 598       386  LOAD_NAME                int
+              388  STORE_NAME               getint
+
+ L. 600       390  LOAD_NAME                float
+              392  STORE_NAME               getdouble
+
+ L. 603       394  LOAD_CODE                <code_object getboolean>
+              396  LOAD_STR                 'getboolean'
+              398  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              400  STORE_NAME               getboolean
+
+ L. 613       402  LOAD_BUILD_CLASS 
+              404  LOAD_CODE                <code_object Misc>
+              406  LOAD_STR                 'Misc'
+              408  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              410  LOAD_STR                 'Misc'
+              412  CALL_FUNCTION_2       2  ''
+              414  STORE_NAME               Misc
+
+ L.1870       416  LOAD_BUILD_CLASS 
+              418  LOAD_CODE                <code_object CallWrapper>
+              420  LOAD_STR                 'CallWrapper'
+              422  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              424  LOAD_STR                 'CallWrapper'
+              426  CALL_FUNCTION_2       2  ''
+              428  STORE_NAME               CallWrapper
+
+ L.1892       430  LOAD_BUILD_CLASS 
+              432  LOAD_CODE                <code_object XView>
+              434  LOAD_STR                 'XView'
+              436  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              438  LOAD_STR                 'XView'
+              440  CALL_FUNCTION_2       2  ''
+              442  STORE_NAME               XView
+
+ L.1913       444  LOAD_BUILD_CLASS 
+              446  LOAD_CODE                <code_object YView>
+              448  LOAD_STR                 'YView'
+              450  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              452  LOAD_STR                 'YView'
+              454  CALL_FUNCTION_2       2  ''
+              456  STORE_NAME               YView
+
+ L.1934       458  LOAD_BUILD_CLASS 
+              460  LOAD_CODE                <code_object Wm>
+              462  LOAD_STR                 'Wm'
+              464  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              466  LOAD_STR                 'Wm'
+              468  CALL_FUNCTION_2       2  ''
+              470  STORE_NAME               Wm
+
+ L.2238       472  LOAD_BUILD_CLASS 
+              474  LOAD_CODE                <code_object Tk>
+              476  LOAD_STR                 'Tk'
+              478  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              480  LOAD_STR                 'Tk'
+              482  LOAD_NAME                Misc
+              484  LOAD_NAME                Wm
+              486  CALL_FUNCTION_4       4  ''
+              488  STORE_NAME               Tk
+
+ L.2364       490  LOAD_CONST               (None, None, 'Tk', False)
+              492  LOAD_CODE                <code_object Tcl>
+              494  LOAD_STR                 'Tcl'
+              496  MAKE_FUNCTION_1          'default'
+              498  STORE_NAME               Tcl
+
+ L.2368       500  LOAD_BUILD_CLASS 
+              502  LOAD_CODE                <code_object Pack>
+              504  LOAD_STR                 'Pack'
+              506  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              508  LOAD_STR                 'Pack'
+              510  CALL_FUNCTION_2       2  ''
+              512  STORE_NAME               Pack
+
+ L.2414       514  LOAD_BUILD_CLASS 
+              516  LOAD_CODE                <code_object Place>
+              518  LOAD_STR                 'Place'
+              520  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              522  LOAD_STR                 'Place'
+              524  CALL_FUNCTION_2       2  ''
+              526  STORE_NAME               Place
+
+ L.2465       528  LOAD_BUILD_CLASS 
+              530  LOAD_CODE                <code_object Grid>
+              532  LOAD_STR                 'Grid'
+              534  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              536  LOAD_STR                 'Grid'
+              538  CALL_FUNCTION_2       2  ''
+              540  STORE_NAME               Grid
+
+ L.2520       542  LOAD_BUILD_CLASS 
+              544  LOAD_CODE                <code_object BaseWidget>
+              546  LOAD_STR                 'BaseWidget'
+              548  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              550  LOAD_STR                 'BaseWidget'
+              552  LOAD_NAME                Misc
+              554  CALL_FUNCTION_3       3  ''
+              556  STORE_NAME               BaseWidget
+
+ L.2587       558  LOAD_BUILD_CLASS 
+              560  LOAD_CODE                <code_object Widget>
+              562  LOAD_STR                 'Widget'
+              564  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              566  LOAD_STR                 'Widget'
+              568  LOAD_NAME                BaseWidget
+              570  LOAD_NAME                Pack
+              572  LOAD_NAME                Place
+              574  LOAD_NAME                Grid
+              576  CALL_FUNCTION_6       6  ''
+              578  STORE_NAME               Widget
+
+ L.2595       580  LOAD_BUILD_CLASS 
+              582  LOAD_CODE                <code_object Toplevel>
+              584  LOAD_STR                 'Toplevel'
+              586  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              588  LOAD_STR                 'Toplevel'
+              590  LOAD_NAME                BaseWidget
+              592  LOAD_NAME                Wm
+              594  CALL_FUNCTION_4       4  ''
+              596  STORE_NAME               Toplevel
+
+ L.2625       598  LOAD_BUILD_CLASS 
+              600  LOAD_CODE                <code_object Button>
+              602  LOAD_STR                 'Button'
+              604  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              606  LOAD_STR                 'Button'
+              608  LOAD_NAME                Widget
+              610  CALL_FUNCTION_3       3  ''
+              612  STORE_NAME               Button
+
+ L.2672       614  LOAD_BUILD_CLASS 
+              616  LOAD_CODE                <code_object Canvas>
+              618  LOAD_STR                 'Canvas'
+              620  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              622  LOAD_STR                 'Canvas'
+              624  LOAD_NAME                Widget
+              626  LOAD_NAME                XView
+              628  LOAD_NAME                YView
+              630  CALL_FUNCTION_5       5  ''
+              632  STORE_NAME               Canvas
+
+ L.2982       634  LOAD_BUILD_CLASS 
+              636  LOAD_CODE                <code_object Checkbutton>
+              638  LOAD_STR                 'Checkbutton'
+              640  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              642  LOAD_STR                 'Checkbutton'
+              644  LOAD_NAME                Widget
+              646  CALL_FUNCTION_3       3  ''
+              648  STORE_NAME               Checkbutton
+
+ L.3018       650  LOAD_BUILD_CLASS 
+              652  LOAD_CODE                <code_object Entry>
+              654  LOAD_STR                 'Entry'
+              656  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              658  LOAD_STR                 'Entry'
+              660  LOAD_NAME                Widget
+              662  LOAD_NAME                XView
+              664  CALL_FUNCTION_4       4  ''
+              666  STORE_NAME               Entry
+
+ L.3104       668  LOAD_BUILD_CLASS 
+              670  LOAD_CODE                <code_object Frame>
+              672  LOAD_STR                 'Frame'
+              674  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              676  LOAD_STR                 'Frame'
+              678  LOAD_NAME                Widget
+              680  CALL_FUNCTION_3       3  ''
+              682  STORE_NAME               Frame
+
+ L.3124       684  LOAD_BUILD_CLASS 
+              686  LOAD_CODE                <code_object Label>
+              688  LOAD_STR                 'Label'
+              690  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              692  LOAD_STR                 'Label'
+              694  LOAD_NAME                Widget
+              696  CALL_FUNCTION_3       3  ''
+              698  STORE_NAME               Label
+
+ L.3148       700  LOAD_BUILD_CLASS 
+              702  LOAD_CODE                <code_object Listbox>
+              704  LOAD_STR                 'Listbox'
+              706  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              708  LOAD_STR                 'Listbox'
+              710  LOAD_NAME                Widget
+              712  LOAD_NAME                XView
+              714  LOAD_NAME                YView
+              716  CALL_FUNCTION_5       5  ''
+              718  STORE_NAME               Listbox
+
+ L.3264       720  LOAD_BUILD_CLASS 
+              722  LOAD_CODE                <code_object Menu>
+              724  LOAD_STR                 'Menu'
+              726  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              728  LOAD_STR                 'Menu'
+              730  LOAD_NAME                Widget
+              732  CALL_FUNCTION_3       3  ''
+              734  STORE_NAME               Menu
+
+ L.3394       736  LOAD_BUILD_CLASS 
+              738  LOAD_CODE                <code_object Menubutton>
+              740  LOAD_STR                 'Menubutton'
+              742  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              744  LOAD_STR                 'Menubutton'
+              746  LOAD_NAME                Widget
+              748  CALL_FUNCTION_3       3  ''
+              750  STORE_NAME               Menubutton
+
+ L.3401       752  LOAD_BUILD_CLASS 
+              754  LOAD_CODE                <code_object Message>
+              756  LOAD_STR                 'Message'
+              758  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              760  LOAD_STR                 'Message'
+              762  LOAD_NAME                Widget
+              764  CALL_FUNCTION_3       3  ''
+              766  STORE_NAME               Message
+
+ L.3408       768  LOAD_BUILD_CLASS 
+              770  LOAD_CODE                <code_object Radiobutton>
+              772  LOAD_STR                 'Radiobutton'
+              774  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              776  LOAD_STR                 'Radiobutton'
+              778  LOAD_NAME                Widget
+              780  CALL_FUNCTION_3       3  ''
+              782  STORE_NAME               Radiobutton
+
+ L.3441       784  LOAD_BUILD_CLASS 
+              786  LOAD_CODE                <code_object Scale>
+              788  LOAD_STR                 'Scale'
+              790  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              792  LOAD_STR                 'Scale'
+              794  LOAD_NAME                Widget
+              796  CALL_FUNCTION_3       3  ''
+              798  STORE_NAME               Scale
+
+ L.3480       800  LOAD_BUILD_CLASS 
+              802  LOAD_CODE                <code_object Scrollbar>
+              804  LOAD_STR                 'Scrollbar'
+              806  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              808  LOAD_STR                 'Scrollbar'
+              810  LOAD_NAME                Widget
+              812  CALL_FUNCTION_3       3  ''
+              814  STORE_NAME               Scrollbar
+
+ L.3530       816  LOAD_BUILD_CLASS 
+              818  LOAD_CODE                <code_object Text>
+              820  LOAD_STR                 'Text'
+              822  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              824  LOAD_STR                 'Text'
+              826  LOAD_NAME                Widget
+              828  LOAD_NAME                XView
+              830  LOAD_NAME                YView
+              832  CALL_FUNCTION_5       5  ''
+              834  STORE_NAME               Text
+
+ L.3934       836  LOAD_BUILD_CLASS 
+              838  LOAD_CODE                <code_object _setit>
+              840  LOAD_STR                 '_setit'
+              842  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              844  LOAD_STR                 '_setit'
+              846  CALL_FUNCTION_2       2  ''
+              848  STORE_NAME               _setit
+
+ L.3948       850  LOAD_BUILD_CLASS 
+              852  LOAD_CODE                <code_object OptionMenu>
+              854  LOAD_STR                 'OptionMenu'
+              856  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              858  LOAD_STR                 'OptionMenu'
+              860  LOAD_NAME                Menubutton
+              862  CALL_FUNCTION_3       3  ''
+              864  STORE_NAME               OptionMenu
+
+ L.3987       866  LOAD_BUILD_CLASS 
+              868  LOAD_CODE                <code_object Image>
+              870  LOAD_STR                 'Image'
+              872  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              874  LOAD_STR                 'Image'
+              876  CALL_FUNCTION_2       2  ''
+              878  STORE_NAME               Image
+
+ L.4055       880  LOAD_BUILD_CLASS 
+              882  LOAD_CODE                <code_object PhotoImage>
+              884  LOAD_STR                 'PhotoImage'
+              886  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              888  LOAD_STR                 'PhotoImage'
+              890  LOAD_NAME                Image
+              892  CALL_FUNCTION_3       3  ''
+              894  STORE_NAME               PhotoImage
+
+ L.4139       896  LOAD_BUILD_CLASS 
+              898  LOAD_CODE                <code_object BitmapImage>
+              900  LOAD_STR                 'BitmapImage'
+              902  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              904  LOAD_STR                 'BitmapImage'
+              906  LOAD_NAME                Image
+              908  CALL_FUNCTION_3       3  ''
+              910  STORE_NAME               BitmapImage
+
+ L.4149       912  LOAD_CODE                <code_object image_names>
+              914  LOAD_STR                 'image_names'
+              916  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              918  STORE_NAME               image_names
+
+ L.4153       920  LOAD_CODE                <code_object image_types>
+              922  LOAD_STR                 'image_types'
+              924  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              926  STORE_NAME               image_types
+
+ L.4157       928  LOAD_BUILD_CLASS 
+              930  LOAD_CODE                <code_object Spinbox>
+              932  LOAD_STR                 'Spinbox'
+              934  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              936  LOAD_STR                 'Spinbox'
+              938  LOAD_NAME                Widget
+              940  LOAD_NAME                XView
+              942  CALL_FUNCTION_4       4  ''
+              944  STORE_NAME               Spinbox
+
+ L.4335       946  LOAD_BUILD_CLASS 
+              948  LOAD_CODE                <code_object LabelFrame>
+              950  LOAD_STR                 'LabelFrame'
+              952  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              954  LOAD_STR                 'LabelFrame'
+              956  LOAD_NAME                Widget
+              958  CALL_FUNCTION_3       3  ''
+              960  STORE_NAME               LabelFrame
+
+ L.4359       962  LOAD_BUILD_CLASS 
+              964  LOAD_CODE                <code_object PanedWindow>
+              966  LOAD_STR                 'PanedWindow'
+              968  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              970  LOAD_STR                 'PanedWindow'
+              972  LOAD_NAME                Widget
+              974  CALL_FUNCTION_3       3  ''
+              976  STORE_NAME               PanedWindow
+
+ L.4553       978  LOAD_CODE                <code_object _test>
+              980  LOAD_STR                 '_test'
+              982  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              984  STORE_NAME               _test
+
+ L.4574       986  LOAD_LISTCOMP            '<code_object <listcomp>>'
+              988  LOAD_STR                 '<listcomp>'
+              990  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              992  LOAD_NAME                globals
+              994  CALL_FUNCTION_0       0  ''
+              996  LOAD_METHOD              items
+              998  CALL_METHOD_0         0  ''
+             1000  GET_ITER         
+             1002  CALL_FUNCTION_1       1  ''
+             1004  STORE_NAME               __all__
+
+ L.4578      1006  LOAD_NAME                __name__
+             1008  LOAD_STR                 '__main__'
+             1010  COMPARE_OP               ==
+         1012_1014  POP_JUMP_IF_FALSE  1022  'to 1022'
+
+ L.4579      1016  LOAD_NAME                _test
+             1018  CALL_FUNCTION_0       0  ''
+             1020  POP_TOP          
+           1022_0  COME_FROM          1012  '1012'
+
+Parse error at or near `<121>' instruction at offset 164
+
+Instruction context:
+   
+ L.  98       160  DUP_TOP          
+                 162  LOAD_NAME                AttributeError
+->               164  <121>               176  ''
+                 166  POP_TOP          
+                 168  POP_TOP          
+                 170  POP_TOP          
+                 172  POP_EXCEPT       
+                 174  JUMP_FORWARD        178  'to 178'
+                 176  <48>             
+               178_0  COME_FROM           174  '174'
+               178_1  COME_FROM           158  '158'
+
+test/103614.pyc -- 
+# decompile failed

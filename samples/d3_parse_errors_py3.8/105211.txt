@@ -1,0 +1,22 @@
+Instruction context:
+   
+ L. 357       132  CALL_METHOD_3         3  ''
+                 134  POP_TOP          
+                 136  JUMP_BACK            60  'to 60'
+               138_0  COME_FROM            72  '72'
+               138_1  COME_FROM            60  '60'
+                 138  POP_BLOCK        
+->               140  BEGIN_FINALLY    
+               142_0  COME_FROM_WITH       50  '50'
+                 142  WITH_CLEANUP_START
+                 144  WITH_CLEANUP_FINISH
+                 146  END_FINALLY      
+                 148  POP_BLOCK        
+                 150  JUMP_FORWARD        164  'to 164'
+               152_0  COME_FROM_FINALLY    36  '36'
+
+../test/105211.pyc -- 
+# decompile failed
+
+# file ../test/105211.pyc
+# Deparsing stopped due to parse error

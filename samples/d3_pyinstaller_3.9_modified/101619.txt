@@ -1,0 +1,78 @@
+Instruction context:
+   
+ L.  34        66  LOAD_NAME                Organization
+                  68  CALL_FUNCTION_0       0  ''
+                  70  LOAD_CONST               True
+->                72  <117>                 0  ''
+                  74  POP_JUMP_IF_FALSE    84  'to 84'
+
+test/101619.pyc -- 
+# decompile failed
+
+# file test/101619.pyc
+# --- This code section failed: ---
+
+ L.   3         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              os
+                6  STORE_NAME               os
+
+ L.   4         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              sys
+               14  STORE_NAME               sys
+
+ L.  10        16  LOAD_STR                 'C:\\Users\\'
+               18  LOAD_NAME                os
+               20  LOAD_METHOD              getlogin
+               22  CALL_METHOD_0         0  ''
+               24  BINARY_ADD       
+               26  LOAD_STR                 '\\Desktop\\Financial_Report.xls'
+               28  BINARY_ADD       
+
+ L.  11        30  LOAD_STR                 'C:\\Users\\Peter Wilson\\Desktop\\Microsoft Word 2010.lnk'
+
+ L.  12        32  LOAD_STR                 'C:\\Users\\Administrator\\Desktop\\Callaghan_1966.rtf'
+
+ L.  13        34  LOAD_STR                 'C:\\Users\\admin\\Desktop\\my school calendar.xlsx'
+
+ L.  14        36  LOAD_STR                 'C:\\Users\\raustin\\Desktop\\zaqrnsnoefaa.xlsx'
+
+ L.  15        38  LOAD_STR                 'C:\\Users\\Administrator\\Desktop\\decoy.cpp'
+
+ L.  16        40  LOAD_STR                 'C:\\Users\\John\\Desktop\\foobar.txt'
+
+ L.  17        42  LOAD_STR                 'C:\\Bank-statement-08-2013.docx'
+
+ L.  18        44  LOAD_STR                 'C:\\Users\\STRAZNICA.GRUBUTT'
+
+ L.  19        46  LOAD_STR                 'C:\\Users\\Jason\\Desktop'
+
+ L.  20        48  LOAD_STR                 'C:\\Users\\Lisa\\Desktop'
+
+ L.  21        50  LOAD_STR                 'C:\\TEMP\\Sample.exe'
+
+ L.  22        52  LOAD_STR                 'C:\\Users\\Joe Cage'
+
+ L.   9        54  BUILD_TUPLE_13       13 
+               56  STORE_NAME               OrganizationsPaths
+
+ L.  28        58  LOAD_CODE                <code_object Organization>
+               60  LOAD_STR                 'Organization'
+               62  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               64  STORE_NAME               Organization
+
+ L.  34        66  LOAD_NAME                Organization
+               68  CALL_FUNCTION_0       0  ''
+               70  LOAD_CONST               True
+               72  <117>                 0  ''
+               74  POP_JUMP_IF_FALSE    84  'to 84'
+
+ L.  35        76  LOAD_NAME                sys
+               78  LOAD_METHOD              exit
+               80  CALL_METHOD_0         0  ''
+               82  POP_TOP          
+             84_0  COME_FROM            74  '74'
+
+Parse error at or near `<117>' instruction at offset 72
+

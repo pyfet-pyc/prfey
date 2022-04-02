@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L. 100        20  LOAD_GLOBAL              len
+                  22  LOAD_FAST                'key'
+                  24  CALL_FUNCTION_1       1  ''
+                  26  LOAD_CONST               (32, 48, 64)
+->                28  <118>                 1  ''
+                  30  POP_JUMP_IF_FALSE    48  'to 48'
+Instruction context:
+-> 
+ L. 134        46  <164>                 1  ''
+                  48  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  50  RETURN_VALUE     
+Instruction context:
+   
+ L. 387        16  DUP_TOP          
+                  18  LOAD_GLOBAL              KeyError
+->                20  <121>                66  ''
+                  22  POP_TOP          
+                  24  STORE_FAST               'e'
+                  26  POP_TOP          
+                  28  SETUP_FINALLY        58  'to 58'
+
+test/17778.pyc -- 
+# decompile failed
+
+# file test/17778.pyc
+# Deparsing stopped due to parse error

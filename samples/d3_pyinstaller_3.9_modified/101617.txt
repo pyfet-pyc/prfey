@@ -1,0 +1,27 @@
+Instruction context:
+   
+ L.  24        50  LOAD_STR                 '.exe'
+                  52  LOAD_FAST                'ProcessName'
+->                54  <118>                 0  ''
+                  56  POP_JUMP_IF_FALSE_BACK    46  'to 46'
+Instruction context:
+   
+ L.  38        14  LOAD_FAST                'Process'
+                  16  LOAD_METHOD              lower
+                  18  CALL_METHOD_0         0  ''
+                  20  LOAD_FAST                'Blacklist'
+->                22  <118>                 0  ''
+                  24  POP_JUMP_IF_FALSE_BACK    10  'to 10'
+Instruction context:
+   
+ L.  48         0  LOAD_GLOBAL              BlacklistedProcesses
+                   2  CALL_FUNCTION_0       0  ''
+                   4  LOAD_CONST               True
+->                 6  <117>                 0  ''
+                   8  POP_JUMP_IF_FALSE    16  'to 16'
+
+test/101617.pyc -- 
+# decompile failed
+
+# file test/101617.pyc
+# Deparsing stopped due to parse error

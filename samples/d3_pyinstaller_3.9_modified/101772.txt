@@ -1,0 +1,26 @@
+Instruction context:
+   
+ L.  48        20  LOAD_FAST                'cb'
+                  22  BUILD_TUPLE_0         0 
+                  24  BUILD_MAP_0           0 
+                  26  LOAD_FAST                'kwargs'
+->                28  <164>                 1  ''
+                  30  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  32  POP_TOP          
+                  34  POP_BLOCK        
+                  36  JUMP_BACK            14  'to 14'
+                38_0  COME_FROM_FINALLY    18  '18'
+Instruction context:
+   
+ L.  84        24  DUP_TOP          
+                  26  LOAD_GLOBAL              KeyError
+->                28  <121>                42  ''
+                  30  POP_TOP          
+                  32  POP_TOP          
+                  34  POP_TOP          
+
+test/101772.pyc -- 
+# decompile failed
+
+# file test/101772.pyc
+# Deparsing stopped due to parse error

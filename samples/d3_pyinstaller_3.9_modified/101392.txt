@@ -1,0 +1,72 @@
+Instruction context:
+   
+ L. 112        72  DUP_TOP          
+                  74  LOAD_GLOBAL              ImportError
+->                76  <121>                88  ''
+                  78  POP_TOP          
+                  80  POP_TOP          
+                  82  POP_TOP          
+Instruction context:
+   
+ L. 188       116  LOAD_FAST                'i'
+                 118  LOAD_FAST                'n'
+                 120  COMPARE_OP               <
+                 122  POP_JUMP_IF_FALSE   148  'to 148'
+                 124  LOAD_FAST                'line'
+                 126  LOAD_FAST                'i'
+                 128  BINARY_SUBSCR    
+                 130  LOAD_FAST                'self'
+                 132  LOAD_ATTR                identchars
+->               134  <118>                 0  ''
+                 136  POP_JUMP_IF_FALSE   148  'to 148'
+                 138  LOAD_FAST                'i'
+                 140  LOAD_CONST               1
+                 142  BINARY_ADD       
+                 144  STORE_FAST               'i'
+                 146  JUMP_BACK           116  'to 116'
+               148_0  COME_FROM           136  '136'
+               148_1  COME_FROM           122  '122'
+Instruction context:
+   
+ L. 205        28  LOAD_FAST                'cmd'
+                  30  LOAD_CONST               None
+->                32  <117>                 0  ''
+                  34  POP_JUMP_IF_FALSE    46  'to 46'
+Instruction context:
+   
+ L. 271       132  DUP_TOP          
+                 134  LOAD_GLOBAL              AttributeError
+->               136  <121>               154  ''
+                 138  POP_TOP          
+                 140  POP_TOP          
+                 142  POP_TOP          
+Instruction context:
+   
+ L. 298        24  DUP_TOP          
+                  26  LOAD_GLOBAL              AttributeError
+->                28  <121>               142  ''
+                  30  POP_TOP          
+                  32  POP_TOP          
+                  34  POP_TOP          
+Instruction context:
+   
+ L. 401       454  LOAD_FAST                'self'
+                 456  LOAD_ATTR                stdout
+                 458  LOAD_METHOD              write
+                 460  LOAD_STR                 '%s\n'
+                 462  LOAD_GLOBAL              str
+                 464  LOAD_STR                 '  '
+                 466  LOAD_METHOD              join
+                 468  LOAD_FAST                'texts'
+                 470  CALL_METHOD_1         1  ''
+                 472  CALL_FUNCTION_1       1  ''
+                 474  BINARY_MODULO    
+                 476  CALL_METHOD_1         1  ''
+                 478  POP_TOP          
+->           480_482  JUMP_BACK           316  'to 316'
+
+test/101392.pyc -- 
+# decompile failed
+
+# file test/101392.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,161 @@
+Instruction context:
+   
+ L.   9        50  DUP_TOP          
+                  52  LOAD_NAME                ImportError
+->                54  <121>                70  ''
+                  56  POP_TOP          
+                  58  POP_TOP          
+                  60  POP_TOP          
+
+test/130218.pyc -- 
+# decompile failed
+
+# file test/130218.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('BytesIO',)
+                4  IMPORT_NAME              io
+                6  IMPORT_FROM              BytesIO
+                8  STORE_NAME               BytesIO
+               10  POP_TOP          
+
+ L.   3        12  LOAD_CONST               1
+               14  LOAD_CONST               ('Image', 'ImageFile')
+               16  IMPORT_NAME              
+               18  IMPORT_FROM              Image
+               20  STORE_NAME               Image
+               22  IMPORT_FROM              ImageFile
+               24  STORE_NAME               ImageFile
+               26  POP_TOP          
+
+ L.   5        28  SETUP_FINALLY        50  'to 50'
+
+ L.   6        30  LOAD_CONST               1
+               32  LOAD_CONST               ('_webp',)
+               34  IMPORT_NAME              
+               36  IMPORT_FROM              _webp
+               38  STORE_NAME               _webp
+               40  POP_TOP          
+
+ L.   8        42  LOAD_CONST               True
+               44  STORE_NAME               SUPPORTED
+               46  POP_BLOCK        
+               48  JUMP_FORWARD         72  'to 72'
+             50_0  COME_FROM_FINALLY    28  '28'
+
+ L.   9        50  DUP_TOP          
+               52  LOAD_NAME                ImportError
+               54  <121>                70  ''
+               56  POP_TOP          
+               58  POP_TOP          
+               60  POP_TOP          
+
+ L.  10        62  LOAD_CONST               False
+               64  STORE_NAME               SUPPORTED
+               66  POP_EXCEPT       
+               68  JUMP_FORWARD         72  'to 72'
+               70  <48>             
+             72_0  COME_FROM            68  '68'
+             72_1  COME_FROM            48  '48'
+
+ L.  13        72  LOAD_CONST               True
+               74  LOAD_CONST               True
+               76  LOAD_CONST               True
+               78  LOAD_CONST               ('RGBX', 'RGBA', 'RGB')
+               80  BUILD_CONST_KEY_MAP_3     3 
+               82  STORE_NAME               _VALID_WEBP_MODES
+
+ L.  15        84  LOAD_CONST               True
+               86  LOAD_CONST               True
+               88  LOAD_CONST               ('RGB', 'RGBA')
+               90  BUILD_CONST_KEY_MAP_2     2 
+               92  STORE_NAME               _VALID_WEBP_LEGACY_MODES
+
+ L.  18        94  LOAD_STR                 'RGB'
+
+ L.  19        96  LOAD_STR                 'RGBA'
+
+ L.  20        98  LOAD_STR                 'RGBA'
+
+ L.  17       100  LOAD_CONST               (b'VP8 ', b'VP8X', b'VP8L')
+              102  BUILD_CONST_KEY_MAP_3     3 
+              104  STORE_NAME               _VP8_MODES_BY_IDENTIFIER
+
+ L.  24       106  LOAD_CODE                <code_object _accept>
+              108  LOAD_STR                 '_accept'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  STORE_NAME               _accept
+
+ L.  37       114  LOAD_BUILD_CLASS 
+              116  LOAD_CODE                <code_object WebPImageFile>
+              118  LOAD_STR                 'WebPImageFile'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  LOAD_STR                 'WebPImageFile'
+              124  LOAD_NAME                ImageFile
+              126  LOAD_ATTR                ImageFile
+              128  CALL_FUNCTION_3       3  ''
+              130  STORE_NAME               WebPImageFile
+
+ L. 169       132  LOAD_CODE                <code_object _save_all>
+              134  LOAD_STR                 '_save_all'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  STORE_NAME               _save_all
+
+ L. 309       140  LOAD_CODE                <code_object _save>
+              142  LOAD_STR                 '_save'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  STORE_NAME               _save
+
+ L. 345       148  LOAD_NAME                Image
+              150  LOAD_METHOD              register_open
+              152  LOAD_NAME                WebPImageFile
+              154  LOAD_ATTR                format
+              156  LOAD_NAME                WebPImageFile
+              158  LOAD_NAME                _accept
+              160  CALL_METHOD_3         3  ''
+              162  POP_TOP          
+
+ L. 346       164  LOAD_NAME                SUPPORTED
+              166  POP_JUMP_IF_FALSE   230  'to 230'
+
+ L. 347       168  LOAD_NAME                Image
+              170  LOAD_METHOD              register_save
+              172  LOAD_NAME                WebPImageFile
+              174  LOAD_ATTR                format
+              176  LOAD_NAME                _save
+              178  CALL_METHOD_2         2  ''
+              180  POP_TOP          
+
+ L. 348       182  LOAD_NAME                _webp
+              184  LOAD_ATTR                HAVE_WEBPANIM
+              186  POP_JUMP_IF_FALSE   202  'to 202'
+
+ L. 349       188  LOAD_NAME                Image
+              190  LOAD_METHOD              register_save_all
+              192  LOAD_NAME                WebPImageFile
+              194  LOAD_ATTR                format
+              196  LOAD_NAME                _save_all
+              198  CALL_METHOD_2         2  ''
+              200  POP_TOP          
+            202_0  COME_FROM           186  '186'
+
+ L. 350       202  LOAD_NAME                Image
+              204  LOAD_METHOD              register_extension
+              206  LOAD_NAME                WebPImageFile
+              208  LOAD_ATTR                format
+              210  LOAD_STR                 '.webp'
+              212  CALL_METHOD_2         2  ''
+              214  POP_TOP          
+
+ L. 351       216  LOAD_NAME                Image
+              218  LOAD_METHOD              register_mime
+              220  LOAD_NAME                WebPImageFile
+              222  LOAD_ATTR                format
+              224  LOAD_STR                 'image/webp'
+              226  CALL_METHOD_2         2  ''
+              228  POP_TOP          
+            230_0  COME_FROM           166  '166'
+
+Parse error at or near `<121>' instruction at offset 54
+

@@ -1,0 +1,59 @@
+Instruction context:
+   
+ L.  90        12  LOAD_GLOBAL              pickle
+                  14  LOAD_METHOD              dump
+                  16  LOAD_FAST                'self'
+                  18  LOAD_ATTR                __dict__
+                  20  LOAD_FAST                'f'
+                  22  LOAD_GLOBAL              pickle
+                  24  LOAD_ATTR                HIGHEST_PROTOCOL
+                  26  CALL_METHOD_3         3  ''
+                  28  POP_TOP          
+                  30  POP_BLOCK        
+                  32  LOAD_CONST               None
+->                34  DUP_TOP          
+                  36  DUP_TOP          
+                  38  CALL_FUNCTION_3       3  ''
+                  40  POP_TOP          
+                  42  JUMP_FORWARD         60  'to 60'
+                44_0  COME_FROM_WITH        8  '8'
+                  44  <49>             
+                  46  POP_JUMP_IF_TRUE     50  'to 50'
+                  48  <48>             
+                50_0  COME_FROM            46  '46'
+                  50  POP_TOP          
+                  52  POP_TOP          
+                  54  POP_TOP          
+                  56  POP_EXCEPT       
+                  58  POP_TOP          
+Instruction context:
+   
+ L.  95        12  LOAD_GLOBAL              pickle
+                  14  LOAD_METHOD              load
+                  16  LOAD_FAST                'f'
+                  18  CALL_METHOD_1         1  ''
+                  20  STORE_FAST               'd'
+                  22  POP_BLOCK        
+                  24  LOAD_CONST               None
+->                26  DUP_TOP          
+                  28  DUP_TOP          
+                  30  CALL_FUNCTION_3       3  ''
+                  32  POP_TOP          
+                  34  JUMP_FORWARD         52  'to 52'
+                36_0  COME_FROM_WITH        8  '8'
+                  36  <49>             
+                  38  POP_JUMP_IF_TRUE     42  'to 42'
+                  40  <48>             
+                42_0  COME_FROM            38  '38'
+                  42  POP_TOP          
+                  44  POP_TOP          
+                  46  POP_TOP          
+                  48  POP_EXCEPT       
+                  50  POP_TOP          
+                52_0  COME_FROM            34  '34'
+
+test/103577.pyc -- 
+# decompile failed
+
+# file test/103577.pyc
+# Deparsing stopped due to parse error

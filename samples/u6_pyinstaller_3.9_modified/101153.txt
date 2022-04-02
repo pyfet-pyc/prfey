@@ -1,0 +1,193 @@
+Instruction context:
+   
+ L. 173        76  LOAD_FAST                'self'
+                  78  LOAD_ATTR                thread_wakeup
+                  80  LOAD_METHOD              wakeup
+                  82  CALL_METHOD_0         0  ''
+                  84  POP_TOP          
+                  86  POP_BLOCK        
+                  88  LOAD_CONST               None
+->                90  DUP_TOP          
+                  92  DUP_TOP          
+                  94  CALL_FUNCTION_3       3  ''
+                  96  POP_TOP          
+                  98  JUMP_FORWARD        116  'to 116'
+               100_0  COME_FROM_WITH       72  '72'
+                 100  <49>             
+                 102  POP_JUMP_IF_TRUE    106  'to 106'
+                 104  <48>             
+               106_0  COME_FROM           102  '102'
+                 106  POP_TOP          
+                 108  POP_TOP          
+                 110  POP_TOP          
+                 112  POP_EXCEPT       
+                 114  POP_TOP          
+               116_0  COME_FROM            98  '98'
+Instruction context:
+   
+ L. 210        26  DUP_TOP          
+                  28  LOAD_GLOBAL              BaseException
+->                30  <121>                90  ''
+                  32  POP_TOP          
+                  34  STORE_FAST               'e'
+                  36  POP_TOP          
+                  38  SETUP_FINALLY        82  'to 82'
+Instruction context:
+   
+ L. 288        18  LOAD_FAST                'thread_wakeup'
+                  20  LOAD_METHOD              wakeup
+                  22  CALL_METHOD_0         0  ''
+                  24  POP_TOP          
+                  26  POP_BLOCK        
+                  28  LOAD_CONST               None
+->                30  DUP_TOP          
+                  32  DUP_TOP          
+                  34  CALL_FUNCTION_3       3  ''
+                  36  POP_TOP          
+                  38  JUMP_FORWARD         56  'to 56'
+                40_0  COME_FROM_WITH       14  '14'
+                  40  <49>             
+                  42  POP_JUMP_IF_TRUE     46  'to 46'
+                  44  <48>             
+                46_0  COME_FROM            42  '42'
+                  46  POP_TOP          
+                  48  POP_TOP          
+                  50  POP_TOP          
+                  52  POP_EXCEPT       
+                  54  POP_TOP          
+Instruction context:
+   
+ L. 322        40  LOAD_FAST                'result_item'
+                  42  LOAD_CONST               None
+->                44  <117>                 1  ''
+                  46  POP_JUMP_IF_FALSE    88  'to 88'
+Instruction context:
+   
+ L. 351        34  DUP_TOP          
+                  36  LOAD_GLOBAL              queue
+                  38  LOAD_ATTR                Empty
+->                40  <121>                54  ''
+                  42  POP_TOP          
+                  44  POP_TOP          
+                  46  POP_TOP          
+Instruction context:
+   
+ L. 373         8  LOAD_FAST                'self'
+                  10  LOAD_ATTR                thread_wakeup
+                  12  LOAD_ATTR                _closed
+                  14  POP_JUMP_IF_FALSE    20  'to 20'
+->                16  <74>             
+                  18  RAISE_VARARGS_1       1  'exception instance'
+                20_0  COME_FROM            14  '14'
+Instruction context:
+   
+ L. 404        10  LOAD_FAST                'self'
+                  12  LOAD_METHOD              is_shutting_down
+                  14  CALL_METHOD_0         0  ''
+                  16  POP_JUMP_IF_TRUE     22  'to 22'
+->                18  <74>             
+                  20  RAISE_VARARGS_1       1  'exception instance'
+                22_0  COME_FROM            16  '16'
+Instruction context:
+   
+ L. 427         8  LOAD_GLOBAL              _global_shutdown
+                  10  JUMP_IF_TRUE_OR_POP    24  'to 24'
+                  12  LOAD_FAST                'executor'
+                  14  LOAD_CONST               None
+->                16  <117>                 0  ''
+                  18  JUMP_IF_TRUE_OR_POP    24  'to 24'
+Instruction context:
+   
+ L. 437         8  LOAD_FAST                'executor'
+                  10  LOAD_CONST               None
+->                12  <117>                 1  ''
+                  14  POP_JUMP_IF_FALSE    32  'to 32'
+Instruction context:
+   
+ L. 472         8  LOAD_FAST                'executor'
+                  10  LOAD_CONST               None
+->                12  <117>                 1  ''
+                  14  POP_JUMP_IF_FALSE   124  'to 124'
+Instruction context:
+   
+ L. 505        74  DUP_TOP          
+                  76  LOAD_GLOBAL              queue
+                  78  LOAD_ATTR                Full
+->                80  <121>                98  ''
+                  82  POP_TOP          
+                  84  POP_TOP          
+                  86  POP_TOP          
+Instruction context:
+   
+ L. 514        36  LOAD_FAST                'self'
+                  38  LOAD_ATTR                thread_wakeup
+                  40  LOAD_METHOD              close
+                  42  CALL_METHOD_0         0  ''
+                  44  POP_TOP          
+                  46  POP_BLOCK        
+                  48  LOAD_CONST               None
+->                50  DUP_TOP          
+                  52  DUP_TOP          
+                  54  CALL_FUNCTION_3       3  ''
+                  56  POP_TOP          
+                  58  JUMP_FORWARD         76  'to 76'
+                60_0  COME_FROM_WITH       32  '32'
+                  60  <49>             
+                  62  POP_JUMP_IF_TRUE     66  'to 66'
+                  64  <48>             
+                66_0  COME_FROM            62  '62'
+                  66  POP_TOP          
+                  68  POP_TOP          
+                  70  POP_TOP          
+                  72  POP_EXCEPT       
+                  74  POP_TOP          
+                76_0  COME_FROM            58  '58'
+Instruction context:
+   
+ L. 537        36  DUP_TOP          
+                  38  LOAD_GLOBAL              AttributeError
+                  40  LOAD_GLOBAL              ValueError
+                  42  BUILD_TUPLE_2         2 
+->                44  <121>                58  ''
+                  46  POP_TOP          
+                  48  POP_TOP          
+                  50  POP_TOP          
+Instruction context:
+   
+ L. 588         6  LOAD_FAST                'max_workers'
+                   8  LOAD_CONST               None
+->                10  <117>                 0  ''
+                  12  POP_JUMP_IF_FALSE    54  'to 54'
+Instruction context:
+   
+ L. 699       138  LOAD_FAST                'f'
+                 140  POP_BLOCK        
+->               142  ROT_TWO          
+                 144  LOAD_CONST               None
+                 146  DUP_TOP          
+                 148  DUP_TOP          
+                 150  CALL_FUNCTION_3       3  ''
+                 152  POP_TOP          
+                 154  RETURN_VALUE     
+               156_0  COME_FROM_WITH        4  '4'
+                 156  <49>             
+                 158  POP_JUMP_IF_TRUE    162  'to 162'
+                 160  <48>             
+               162_0  COME_FROM           158  '158'
+                 162  POP_TOP          
+                 164  POP_TOP          
+                 166  POP_TOP          
+                 168  POP_EXCEPT       
+Instruction context:
+   
+ L. 735        20  LOAD_FAST                'self'
+                  22  LOAD_ATTR                _executor_manager_thread_wakeup
+                  24  LOAD_CONST               None
+->                26  <117>                 1  ''
+                  28  POP_JUMP_IF_FALSE    40  'to 40'
+
+test/101153.pyc -- 
+# decompile failed
+
+# file test/101153.pyc
+# Deparsing stopped due to parse error

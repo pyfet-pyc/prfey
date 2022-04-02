@@ -1,0 +1,86 @@
+Instruction context:
+   
+ L. 124        18  LOAD_FAST                'stream'
+                  20  LOAD_METHOD              read
+                  22  CALL_METHOD_0         0  ''
+                  24  POP_BLOCK        
+->                26  ROT_TWO          
+                  28  BEGIN_FINALLY    
+                  30  WITH_CLEANUP_START
+                  32  WITH_CLEANUP_FINISH
+                  34  POP_FINALLY           0  ''
+                  36  RETURN_VALUE     
+                38_0  COME_FROM_WITH       14  '14'
+                  38  WITH_CLEANUP_START
+                  40  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 128        16  LOAD_FAST                'stream'
+                  18  LOAD_METHOD              read
+                  20  CALL_METHOD_0         0  ''
+                  22  POP_BLOCK        
+->                24  ROT_TWO          
+                  26  BEGIN_FINALLY    
+                  28  WITH_CLEANUP_START
+                  30  WITH_CLEANUP_FINISH
+                  32  POP_FINALLY           0  ''
+                  34  RETURN_VALUE     
+                36_0  COME_FROM_WITH       12  '12'
+                  36  WITH_CLEANUP_START
+                  38  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 401        10  LOAD_GLOBAL              os
+                  12  LOAD_METHOD              listdir
+                  14  LOAD_FAST                'self'
+                  16  LOAD_ATTR                root
+                  18  JUMP_IF_TRUE_OR_POP    22  'to 22'
+                  20  LOAD_STR                 ''
+                22_0  COME_FROM            18  '18'
+                  22  CALL_METHOD_1         1  ''
+                  24  POP_BLOCK        
+->                26  ROT_TWO          
+                  28  BEGIN_FINALLY    
+                  30  WITH_CLEANUP_START
+                  32  WITH_CLEANUP_FINISH
+                  34  POP_FINALLY           0  ''
+                  36  RETURN_VALUE     
+                38_0  COME_FROM_WITH        6  '6'
+                  38  WITH_CLEANUP_START
+                  40  WITH_CLEANUP_FINISH
+                  42  END_FINALLY      
+Instruction context:
+   
+ L. 431        72  LOAD_FAST                'self'
+                  74  LOAD_METHOD              joinpath
+                  76  LOAD_FAST                'child'
+                  78  CALL_METHOD_1         1  ''
+                  80  YIELD_VALUE      
+->                82  POP_TOP          
+Instruction context:
+   
+ L. 491        18  LOAD_FAST                'self'
+                  20  LOAD_ATTR                _path
+                  22  LOAD_METHOD              joinpath
+                  24  LOAD_FAST                'filename'
+                  26  CALL_METHOD_1         1  ''
+                  28  LOAD_ATTR                read_text
+                  30  LOAD_STR                 'utf-8'
+                  32  LOAD_CONST               ('encoding',)
+                  34  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+                  36  POP_BLOCK        
+->                38  ROT_TWO          
+                  40  BEGIN_FINALLY    
+                  42  WITH_CLEANUP_START
+                  44  WITH_CLEANUP_FINISH
+                  46  POP_FINALLY           0  ''
+                  48  RETURN_VALUE     
+                50_0  COME_FROM_WITH       14  '14'
+                  50  WITH_CLEANUP_START
+                  52  WITH_CLEANUP_FINISH
+
+../test/10481.pyc -- 
+# decompile failed
+
+# file ../test/10481.pyc
+# Deparsing stopped due to parse error

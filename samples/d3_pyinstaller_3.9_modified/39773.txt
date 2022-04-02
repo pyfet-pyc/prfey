@@ -1,0 +1,108 @@
+Instruction context:
+   
+ L.  13        56  LOAD_NAME                frozenset
+                  58  BUILD_LIST_0          0 
+                  60  LOAD_CONST               ('accept-encoding', 'host', 'user-agent')
+->                62  CALL_FINALLY         65  'to 65'
+                  64  CALL_FUNCTION_1       1  ''
+                  66  STORE_NAME               SKIPPABLE_HEADERS
+
+test/39773.pyc -- 
+# decompile failed
+
+# file test/39773.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.   3        12  LOAD_CONST               0
+               14  LOAD_CONST               ('b64encode',)
+               16  IMPORT_NAME              base64
+               18  IMPORT_FROM              b64encode
+               20  STORE_NAME               b64encode
+               22  POP_TOP          
+
+ L.   5        24  LOAD_CONST               2
+               26  LOAD_CONST               ('UnrewindableBodyError',)
+               28  IMPORT_NAME              exceptions
+               30  IMPORT_FROM              UnrewindableBodyError
+               32  STORE_NAME               UnrewindableBodyError
+               34  POP_TOP          
+
+ L.   6        36  LOAD_CONST               2
+               38  LOAD_CONST               ('b', 'integer_types')
+               40  IMPORT_NAME_ATTR         packages.six
+               42  IMPORT_FROM              b
+               44  STORE_NAME               b
+               46  IMPORT_FROM              integer_types
+               48  STORE_NAME               integer_types
+               50  POP_TOP          
+
+ L.  12        52  LOAD_STR                 '@@@SKIP_HEADER@@@'
+               54  STORE_NAME               SKIP_HEADER
+
+ L.  13        56  LOAD_NAME                frozenset
+               58  BUILD_LIST_0          0 
+               60  LOAD_CONST               ('accept-encoding', 'host', 'user-agent')
+               62  CALL_FINALLY         65  'to 65'
+               64  CALL_FUNCTION_1       1  ''
+               66  STORE_NAME               SKIPPABLE_HEADERS
+
+ L.  15        68  LOAD_STR                 'gzip,deflate'
+               70  STORE_NAME               ACCEPT_ENCODING
+
+ L.  16        72  SETUP_FINALLY        86  'to 86'
+
+ L.  17        74  LOAD_CONST               0
+               76  LOAD_CONST               None
+               78  IMPORT_NAME              brotli
+               80  STORE_NAME               _unused_module_brotli
+               82  POP_BLOCK        
+               84  JUMP_FORWARD        104  'to 104'
+             86_0  COME_FROM_FINALLY    72  '72'
+
+ L.  18        86  DUP_TOP          
+               88  LOAD_NAME                ImportError
+               90  <121>               102  ''
+               92  POP_TOP          
+               94  POP_TOP          
+               96  POP_TOP          
+
+ L.  19        98  POP_EXCEPT       
+              100  JUMP_FORWARD        112  'to 112'
+              102  <48>             
+            104_0  COME_FROM            84  '84'
+
+ L.  21       104  LOAD_NAME                ACCEPT_ENCODING
+              106  LOAD_STR                 ',br'
+              108  INPLACE_ADD      
+              110  STORE_NAME               ACCEPT_ENCODING
+            112_0  COME_FROM           100  '100'
+
+ L.  23       112  LOAD_NAME                object
+              114  CALL_FUNCTION_0       0  ''
+              116  STORE_NAME               _FAILEDTELL
+
+ L.  26       118  LOAD_CONST               (None, None, None, None, None, None)
+              120  LOAD_CODE                <code_object make_headers>
+              122  LOAD_STR                 'make_headers'
+              124  MAKE_FUNCTION_1          'default'
+              126  STORE_NAME               make_headers
+
+ L.  98       128  LOAD_CODE                <code_object set_file_position>
+              130  LOAD_STR                 'set_file_position'
+              132  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              134  STORE_NAME               set_file_position
+
+ L. 116       136  LOAD_CODE                <code_object rewind_body>
+              138  LOAD_STR                 'rewind_body'
+              140  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              142  STORE_NAME               rewind_body
+
+Parse error at or near `CALL_FINALLY' instruction at offset 62
+

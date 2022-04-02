@@ -1,0 +1,24 @@
+Instruction context:
+   
+ L. 119        14  LOAD_FAST                'handler'
+                  16  LOAD_FAST                'request'
+                  18  CALL_FUNCTION_1       1  ''
+                  20  GET_AWAITABLE    
+                  22  LOAD_CONST               None
+                  24  YIELD_FROM       
+                  26  POP_BLOCK        
+->                28  ROT_TWO          
+                  30  BEGIN_FINALLY    
+                  32  WITH_CLEANUP_START
+                  34  WITH_CLEANUP_FINISH
+                  36  POP_FINALLY           0  ''
+                  38  RETURN_VALUE     
+                40_0  COME_FROM_WITH       10  '10'
+                  40  WITH_CLEANUP_START
+                  42  WITH_CLEANUP_FINISH
+
+../test/117822.pyc -- 
+# decompile failed
+
+# file ../test/117822.pyc
+# Deparsing stopped due to parse error

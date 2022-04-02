@@ -1,0 +1,77 @@
+Instruction context:
+   
+ L.  77        14  LOAD_FAST                'rawdata'
+                  16  LOAD_FAST                'i'
+                  18  LOAD_FAST                'j'
+                  20  BUILD_SLICE_2         2 
+                  22  BINARY_SUBSCR    
+                  24  LOAD_STR                 '<!'
+                  26  COMPARE_OP               ==
+                  28  POP_JUMP_IF_TRUE     38  'to 38'
+->                30  <74>             
+                  32  LOAD_STR                 'unexpected call to parse_declaration'
+                  34  CALL_FUNCTION_1       1  ''
+                  36  RAISE_VARARGS_1       1  'exception instance'
+                38_0  COME_FROM            28  '28'
+Instruction context:
+   
+ L. 148         6  LOAD_FAST                'rawdata'
+                   8  LOAD_FAST                'i'
+                  10  LOAD_FAST                'i'
+                  12  LOAD_CONST               3
+                  14  BINARY_ADD       
+                  16  BUILD_SLICE_2         2 
+                  18  BINARY_SUBSCR    
+                  20  LOAD_STR                 '<!['
+                  22  COMPARE_OP               ==
+                  24  POP_JUMP_IF_TRUE     34  'to 34'
+->                26  <74>             
+                  28  LOAD_STR                 'unexpected call to parse_marked_section()'
+                  30  CALL_FUNCTION_1       1  ''
+                  32  RAISE_VARARGS_1       1  'exception instance'
+                34_0  COME_FROM            24  '24'
+Instruction context:
+   
+ L. 210       224  LOAD_FAST                'name'
+                 226  LOAD_CONST               frozenset({'attlist', 'element', 'entity', 'notation'})
+->               228  <118>                 1  ''
+             230_232  POP_JUMP_IF_FALSE   264  'to 264'
+Instruction context:
+   
+ L. 255        34  LOAD_STR                 '>'
+                  36  LOAD_FAST                'rawdata'
+                  38  LOAD_FAST                'j'
+                  40  LOAD_CONST               None
+                  42  BUILD_SLICE_2         2 
+                  44  BINARY_SUBSCR    
+->                46  <118>                 0  ''
+                  48  POP_JUMP_IF_FALSE    66  'to 66'
+Instruction context:
+   
+ L. 279       130  LOAD_STR                 ')'
+                 132  LOAD_FAST                'rawdata'
+                 134  LOAD_FAST                'j'
+                 136  LOAD_CONST               None
+                 138  BUILD_SLICE_2         2 
+                 140  BINARY_SUBSCR    
+->               142  <118>                 0  ''
+                 144  POP_JUMP_IF_FALSE   164  'to 164'
+Instruction context:
+   
+ L. 329        74  LOAD_FAST                'c'
+                  76  LOAD_STR                 '\'"'
+->                78  <118>                 0  ''
+                  80  POP_JUMP_IF_FALSE   110  'to 110'
+Instruction context:
+   
+ L. 351        76  BREAK_LOOP           86  'to 86'
+                  78  JUMP_BACK            34  'to 34'
+                80_0  COME_FROM            64  '64'
+                  80  JUMP_FORWARD         86  'to 86'
+->              82_0  COME_FROM            24  '24'
+
+test/129243.pyc -- 
+# decompile failed
+
+# file test/129243.pyc
+# Deparsing stopped due to parse error

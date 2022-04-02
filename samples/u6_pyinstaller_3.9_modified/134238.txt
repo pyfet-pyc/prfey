@@ -1,0 +1,167 @@
+Instruction context:
+   
+ L.  14        68  BUILD_LIST_0          0 
+                  70  LOAD_CONST               ('BadGzipFile', 'GzipFile', 'open', 'compress', 'decompress')
+->                72  CALL_FINALLY         75  'to 75'
+                  74  STORE_NAME               __all__
+
+test/134238.pyc -- 
+# decompile failed
+
+# file test/134238.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "Functions that read and write gzipped files.\n\nThe user of the file doesn't have to worry about the compression,\nbut random access is not allowed."
+                2  STORE_NAME               __doc__
+
+ L.   8         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              struct
+               10  STORE_NAME               struct
+               12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+               20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              time
+               26  STORE_NAME               time
+               28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              os
+               34  STORE_NAME               os
+
+ L.   9        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              zlib
+               42  STORE_NAME               zlib
+
+ L.  10        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              builtins
+               50  STORE_NAME               builtins
+
+ L.  11        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              io
+               58  STORE_NAME               io
+
+ L.  12        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              _compression
+               66  STORE_NAME               _compression
+
+ L.  14        68  BUILD_LIST_0          0 
+               70  LOAD_CONST               ('BadGzipFile', 'GzipFile', 'open', 'compress', 'decompress')
+               72  CALL_FINALLY         75  'to 75'
+               74  STORE_NAME               __all__
+
+ L.  16        76  LOAD_CONST               (1, 2, 4, 8, 16)
+               78  UNPACK_SEQUENCE_5     5 
+               80  STORE_NAME               FTEXT
+               82  STORE_NAME               FHCRC
+               84  STORE_NAME               FEXTRA
+               86  STORE_NAME               FNAME
+               88  STORE_NAME               FCOMMENT
+
+ L.  18        90  LOAD_CONST               (1, 2)
+               92  UNPACK_SEQUENCE_2     2 
+               94  STORE_NAME               READ
+               96  STORE_NAME               WRITE
+
+ L.  20        98  LOAD_CONST               1
+              100  STORE_NAME               _COMPRESS_LEVEL_FAST
+
+ L.  21       102  LOAD_CONST               6
+              104  STORE_NAME               _COMPRESS_LEVEL_TRADEOFF
+
+ L.  22       106  LOAD_CONST               9
+              108  STORE_NAME               _COMPRESS_LEVEL_BEST
+
+ L.  25       110  LOAD_STR                 'rb'
+              112  LOAD_NAME                _COMPRESS_LEVEL_BEST
+
+ L.  26       114  LOAD_CONST               None
+              116  LOAD_CONST               None
+              118  LOAD_CONST               None
+
+ L.  25       120  BUILD_TUPLE_5         5 
+              122  LOAD_CODE                <code_object open>
+              124  LOAD_STR                 'open'
+              126  MAKE_FUNCTION_1          'default'
+              128  STORE_NAME               open
+
+ L.  69       130  LOAD_CODE                <code_object write32u>
+              132  LOAD_STR                 'write32u'
+              134  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              136  STORE_NAME               write32u
+
+ L.  74       138  LOAD_BUILD_CLASS 
+              140  LOAD_CODE                <code_object _PaddedFile>
+              142  LOAD_STR                 '_PaddedFile'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  LOAD_STR                 '_PaddedFile'
+              148  CALL_FUNCTION_2       2  ''
+              150  STORE_NAME               _PaddedFile
+
+ L. 116       152  LOAD_BUILD_CLASS 
+              154  LOAD_CODE                <code_object BadGzipFile>
+              156  LOAD_STR                 'BadGzipFile'
+              158  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              160  LOAD_STR                 'BadGzipFile'
+              162  LOAD_NAME                OSError
+              164  CALL_FUNCTION_3       3  ''
+              166  STORE_NAME               BadGzipFile
+
+ L. 120       168  LOAD_BUILD_CLASS 
+              170  LOAD_CODE                <code_object GzipFile>
+              172  LOAD_STR                 'GzipFile'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  LOAD_STR                 'GzipFile'
+              178  LOAD_NAME                _compression
+              180  LOAD_ATTR                BaseStream
+              182  CALL_FUNCTION_3       3  ''
+              184  STORE_NAME               GzipFile
+
+ L. 401       186  LOAD_BUILD_CLASS 
+              188  LOAD_CODE                <code_object _GzipReader>
+              190  LOAD_STR                 '_GzipReader'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  LOAD_STR                 '_GzipReader'
+              196  LOAD_NAME                _compression
+              198  LOAD_ATTR                DecompressReader
+              200  CALL_FUNCTION_3       3  ''
+              202  STORE_NAME               _GzipReader
+
+ L. 542       204  LOAD_NAME                _COMPRESS_LEVEL_BEST
+              206  BUILD_TUPLE_1         1 
+              208  LOAD_CONST               None
+              210  LOAD_CONST               ('mtime',)
+              212  BUILD_CONST_KEY_MAP_1     1 
+              214  LOAD_CODE                <code_object compress>
+              216  LOAD_STR                 'compress'
+              218  MAKE_FUNCTION_3          'default, keyword-only'
+              220  STORE_NAME               compress
+
+ L. 551       222  LOAD_CODE                <code_object decompress>
+              224  LOAD_STR                 'decompress'
+              226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              228  STORE_NAME               decompress
+
+ L. 559       230  LOAD_CODE                <code_object main>
+              232  LOAD_STR                 'main'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  STORE_NAME               main
+
+ L. 608       238  LOAD_NAME                __name__
+              240  LOAD_STR                 '__main__'
+              242  COMPARE_OP               ==
+              244  POP_JUMP_IF_FALSE   252  'to 252'
+
+ L. 609       246  LOAD_NAME                main
+              248  CALL_FUNCTION_0       0  ''
+              250  POP_TOP          
+            252_0  COME_FROM           244  '244'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 72
+

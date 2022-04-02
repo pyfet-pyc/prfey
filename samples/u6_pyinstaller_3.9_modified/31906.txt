@@ -1,0 +1,545 @@
+
+# file test/31906.pyc
+# --- This code section failed: ---
+
+ L.  89         0  LOAD_STR                 '\nAn XML-RPC client interface for Python.\n\nThe marshalling and response parser code can also be used to\nimplement XML-RPC servers.\n\nExported exceptions:\n\n  Error          Base class for client errors\n  ProtocolError  Indicates an HTTP protocol error\n  ResponseError  Indicates a broken response package\n  Fault          Indicates an XML-RPC fault package\n\nExported classes:\n\n  ServerProxy    Represents a logical connection to an XML-RPC server\n\n  MultiCall      Executor of boxcared xmlrpc requests\n  DateTime       dateTime wrapper for an ISO 8601 string or time tuple or\n                 localtime integer value to generate a "dateTime.iso8601"\n                 XML-RPC value\n  Binary         binary data wrapper\n\n  Marshaller     Generate an XML-RPC params chunk from a Python data structure\n  Unmarshaller   Unmarshal an XML-RPC response from incoming XML event message\n  Transport      Handles an HTTP transaction to an XML-RPC server\n  SafeTransport  Handles an HTTPS transaction to an XML-RPC server\n\nExported constants:\n\n  (none)\n\nExported functions:\n\n  getparser      Create instance of the fastest available parser & attach\n                 to an unmarshalling object\n  dumps          Convert an argument tuple or a Fault instance to an XML-RPC\n                 request (or response, if the methodresponse option is used).\n  loads          Convert an XML-RPC packet to unmarshalled data plus a method\n                 name (None if not present).\n'
+                2  STORE_NAME               __doc__
+
+ L. 131         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              base64
+               10  STORE_NAME               base64
+
+ L. 132        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L. 133        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              time
+               26  STORE_NAME               time
+
+ L. 134        28  LOAD_CONST               0
+               30  LOAD_CONST               ('datetime',)
+               32  IMPORT_NAME              datetime
+               34  IMPORT_FROM              datetime
+               36  STORE_NAME               datetime
+               38  POP_TOP          
+
+ L. 135        40  LOAD_CONST               0
+               42  LOAD_CONST               ('Decimal',)
+               44  IMPORT_NAME              decimal
+               46  IMPORT_FROM              Decimal
+               48  STORE_NAME               Decimal
+               50  POP_TOP          
+
+ L. 136        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME_ATTR         http.client
+               58  STORE_NAME               http
+
+ L. 137        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME_ATTR         urllib.parse
+               66  STORE_NAME               urllib
+
+ L. 138        68  LOAD_CONST               0
+               70  LOAD_CONST               ('expat',)
+               72  IMPORT_NAME_ATTR         xml.parsers
+               74  IMPORT_FROM              expat
+               76  STORE_NAME               expat
+               78  POP_TOP          
+
+ L. 139        80  LOAD_CONST               0
+               82  LOAD_CONST               None
+               84  IMPORT_NAME              errno
+               86  STORE_NAME               errno
+
+ L. 140        88  LOAD_CONST               0
+               90  LOAD_CONST               ('BytesIO',)
+               92  IMPORT_NAME              io
+               94  IMPORT_FROM              BytesIO
+               96  STORE_NAME               BytesIO
+               98  POP_TOP          
+
+ L. 141       100  SETUP_FINALLY       114  'to 114'
+
+ L. 142       102  LOAD_CONST               0
+              104  LOAD_CONST               None
+              106  IMPORT_NAME              gzip
+              108  STORE_NAME               gzip
+              110  POP_BLOCK        
+              112  JUMP_FORWARD        136  'to 136'
+            114_0  COME_FROM_FINALLY   100  '100'
+
+ L. 143       114  DUP_TOP          
+              116  LOAD_NAME                ImportError
+              118  <121>               134  ''
+              120  POP_TOP          
+              122  POP_TOP          
+              124  POP_TOP          
+
+ L. 144       126  LOAD_CONST               None
+              128  STORE_NAME               gzip
+              130  POP_EXCEPT       
+              132  JUMP_FORWARD        136  'to 136'
+              134  <48>             
+            136_0  COME_FROM           132  '132'
+            136_1  COME_FROM           112  '112'
+
+ L. 149       136  LOAD_CODE                <code_object escape>
+              138  LOAD_STR                 'escape'
+              140  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              142  STORE_NAME               escape
+
+ L. 155       144  LOAD_STR                 '%d.%d'
+              146  LOAD_NAME                sys
+              148  LOAD_ATTR                version_info
+              150  LOAD_CONST               None
+              152  LOAD_CONST               2
+              154  BUILD_SLICE_2         2 
+              156  BINARY_SUBSCR    
+              158  BINARY_MODULO    
+              160  STORE_NAME               __version__
+
+ L. 158       162  LOAD_CONST               2147483647
+              164  STORE_NAME               MAXINT
+
+ L. 159       166  LOAD_CONST               -2147483648
+              168  STORE_NAME               MININT
+
+ L. 166       170  LOAD_CONST               -32700
+              172  STORE_NAME               PARSE_ERROR
+
+ L. 167       174  LOAD_CONST               -32600
+              176  STORE_NAME               SERVER_ERROR
+
+ L. 168       178  LOAD_CONST               -32500
+              180  STORE_NAME               APPLICATION_ERROR
+
+ L. 169       182  LOAD_CONST               -32400
+              184  STORE_NAME               SYSTEM_ERROR
+
+ L. 170       186  LOAD_CONST               -32300
+              188  STORE_NAME               TRANSPORT_ERROR
+
+ L. 173       190  LOAD_CONST               -32700
+              192  STORE_NAME               NOT_WELLFORMED_ERROR
+
+ L. 174       194  LOAD_CONST               -32701
+              196  STORE_NAME               UNSUPPORTED_ENCODING
+
+ L. 175       198  LOAD_CONST               -32702
+              200  STORE_NAME               INVALID_ENCODING_CHAR
+
+ L. 176       202  LOAD_CONST               -32600
+              204  STORE_NAME               INVALID_XMLRPC
+
+ L. 177       206  LOAD_CONST               -32601
+              208  STORE_NAME               METHOD_NOT_FOUND
+
+ L. 178       210  LOAD_CONST               -32602
+              212  STORE_NAME               INVALID_METHOD_PARAMS
+
+ L. 179       214  LOAD_CONST               -32603
+              216  STORE_NAME               INTERNAL_ERROR
+
+ L. 187       218  LOAD_BUILD_CLASS 
+              220  LOAD_CODE                <code_object Error>
+              222  LOAD_STR                 'Error'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  LOAD_STR                 'Error'
+              228  LOAD_NAME                Exception
+              230  CALL_FUNCTION_3       3  ''
+              232  STORE_NAME               Error
+
+ L. 201       234  LOAD_BUILD_CLASS 
+              236  LOAD_CODE                <code_object ProtocolError>
+              238  LOAD_STR                 'ProtocolError'
+              240  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              242  LOAD_STR                 'ProtocolError'
+              244  LOAD_NAME                Error
+              246  CALL_FUNCTION_3       3  ''
+              248  STORE_NAME               ProtocolError
+
+ L. 220       250  LOAD_BUILD_CLASS 
+              252  LOAD_CODE                <code_object ResponseError>
+              254  LOAD_STR                 'ResponseError'
+              256  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              258  LOAD_STR                 'ResponseError'
+              260  LOAD_NAME                Error
+              262  CALL_FUNCTION_3       3  ''
+              264  STORE_NAME               ResponseError
+
+ L. 233       266  LOAD_BUILD_CLASS 
+              268  LOAD_CODE                <code_object Fault>
+              270  LOAD_STR                 'Fault'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  LOAD_STR                 'Fault'
+              276  LOAD_NAME                Error
+              278  CALL_FUNCTION_3       3  ''
+              280  STORE_NAME               Fault
+
+ L. 249       282  LOAD_NAME                bool
+              284  DUP_TOP          
+              286  STORE_NAME               boolean
+              288  STORE_NAME               Boolean
+
+ L. 266       290  LOAD_NAME                datetime
+              292  LOAD_CONST               1
+              294  LOAD_CONST               1
+              296  LOAD_CONST               1
+              298  CALL_FUNCTION_3       3  ''
+              300  STORE_NAME               _day0
+
+ L. 267       302  LOAD_NAME                _day0
+              304  LOAD_METHOD              strftime
+              306  LOAD_STR                 '%Y'
+              308  CALL_METHOD_1         1  ''
+              310  LOAD_STR                 '0001'
+              312  COMPARE_OP               ==
+          314_316  POP_JUMP_IF_FALSE   328  'to 328'
+
+ L. 268       318  LOAD_CODE                <code_object _iso8601_format>
+              320  LOAD_STR                 '_iso8601_format'
+              322  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              324  STORE_NAME               _iso8601_format
+              326  JUMP_FORWARD        362  'to 362'
+            328_0  COME_FROM           314  '314'
+
+ L. 270       328  LOAD_NAME                _day0
+              330  LOAD_METHOD              strftime
+              332  LOAD_STR                 '%4Y'
+              334  CALL_METHOD_1         1  ''
+              336  LOAD_STR                 '0001'
+              338  COMPARE_OP               ==
+          340_342  POP_JUMP_IF_FALSE   354  'to 354'
+
+ L. 271       344  LOAD_CODE                <code_object _iso8601_format>
+              346  LOAD_STR                 '_iso8601_format'
+              348  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              350  STORE_NAME               _iso8601_format
+              352  JUMP_FORWARD        362  'to 362'
+            354_0  COME_FROM           340  '340'
+
+ L. 274       354  LOAD_CODE                <code_object _iso8601_format>
+              356  LOAD_STR                 '_iso8601_format'
+              358  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              360  STORE_NAME               _iso8601_format
+            362_0  COME_FROM           352  '352'
+            362_1  COME_FROM           326  '326'
+
+ L. 276       362  DELETE_NAME              _day0
+
+ L. 279       364  LOAD_CODE                <code_object _strftime>
+              366  LOAD_STR                 '_strftime'
+              368  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              370  STORE_NAME               _strftime
+
+ L. 290       372  LOAD_BUILD_CLASS 
+              374  LOAD_CODE                <code_object DateTime>
+              376  LOAD_STR                 'DateTime'
+              378  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              380  LOAD_STR                 'DateTime'
+              382  CALL_FUNCTION_2       2  ''
+              384  STORE_NAME               DateTime
+
+ L. 372       386  LOAD_CODE                <code_object _datetime>
+              388  LOAD_STR                 '_datetime'
+              390  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              392  STORE_NAME               _datetime
+
+ L. 378       394  LOAD_CODE                <code_object _datetime_type>
+              396  LOAD_STR                 '_datetime_type'
+              398  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              400  STORE_NAME               _datetime_type
+
+ L. 387       402  LOAD_BUILD_CLASS 
+              404  LOAD_CODE                <code_object Binary>
+              406  LOAD_STR                 'Binary'
+              408  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              410  LOAD_STR                 'Binary'
+              412  CALL_FUNCTION_2       2  ''
+              414  STORE_NAME               Binary
+
+ L. 422       416  LOAD_CODE                <code_object _binary>
+              418  LOAD_STR                 '_binary'
+              420  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              422  STORE_NAME               _binary
+
+ L. 428       424  LOAD_NAME                DateTime
+              426  LOAD_NAME                Binary
+              428  BUILD_TUPLE_2         2 
+              430  STORE_NAME               WRAPPERS
+
+ L. 433       432  LOAD_BUILD_CLASS 
+              434  LOAD_CODE                <code_object ExpatParser>
+              436  LOAD_STR                 'ExpatParser'
+              438  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              440  LOAD_STR                 'ExpatParser'
+              442  CALL_FUNCTION_2       2  ''
+              444  STORE_NAME               ExpatParser
+
+ L. 466       446  LOAD_BUILD_CLASS 
+              448  LOAD_CODE                <code_object Marshaller>
+              450  LOAD_STR                 'Marshaller'
+              452  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              454  LOAD_STR                 'Marshaller'
+              456  CALL_FUNCTION_2       2  ''
+              458  STORE_NAME               Marshaller
+
+ L. 633       460  LOAD_BUILD_CLASS 
+              462  LOAD_CODE                <code_object Unmarshaller>
+              464  LOAD_STR                 'Unmarshaller'
+              466  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              468  LOAD_STR                 'Unmarshaller'
+              470  CALL_FUNCTION_2       2  ''
+              472  STORE_NAME               Unmarshaller
+
+ L. 827       474  LOAD_BUILD_CLASS 
+              476  LOAD_CODE                <code_object _MultiCallMethod>
+              478  LOAD_STR                 '_MultiCallMethod'
+              480  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              482  LOAD_STR                 '_MultiCallMethod'
+              484  CALL_FUNCTION_2       2  ''
+              486  STORE_NAME               _MultiCallMethod
+
+ L. 838       488  LOAD_BUILD_CLASS 
+              490  LOAD_CODE                <code_object MultiCallIterator>
+              492  LOAD_STR                 'MultiCallIterator'
+              494  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              496  LOAD_STR                 'MultiCallIterator'
+              498  CALL_FUNCTION_2       2  ''
+              500  STORE_NAME               MultiCallIterator
+
+ L. 854       502  LOAD_BUILD_CLASS 
+              504  LOAD_CODE                <code_object MultiCall>
+              506  LOAD_STR                 'MultiCall'
+              508  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              510  LOAD_STR                 'MultiCall'
+              512  CALL_FUNCTION_2       2  ''
+              514  STORE_NAME               MultiCall
+
+ L. 891       516  LOAD_CONST               None
+              518  DUP_TOP          
+              520  STORE_NAME               FastMarshaller
+              522  DUP_TOP          
+              524  STORE_NAME               FastParser
+              526  STORE_NAME               FastUnmarshaller
+
+ L. 899       528  LOAD_CONST               (False, False)
+              530  LOAD_CODE                <code_object getparser>
+              532  LOAD_STR                 'getparser'
+              534  MAKE_FUNCTION_1          'default'
+              536  STORE_NAME               getparser
+
+ L. 938       538  LOAD_CONST               (None, None, None, False)
+              540  LOAD_CODE                <code_object dumps>
+              542  LOAD_STR                 'dumps'
+              544  MAKE_FUNCTION_1          'default'
+              546  STORE_NAME               dumps
+
+ L.1013       548  LOAD_CONST               (False, False)
+              550  LOAD_CODE                <code_object loads>
+              552  LOAD_STR                 'loads'
+              554  MAKE_FUNCTION_1          'default'
+              556  STORE_NAME               loads
+
+ L.1035       558  LOAD_CODE                <code_object gzip_encode>
+              560  LOAD_STR                 'gzip_encode'
+              562  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              564  STORE_NAME               gzip_encode
+
+ L.1059       566  LOAD_CONST               (20971520,)
+              568  LOAD_CODE                <code_object gzip_decode>
+              570  LOAD_STR                 'gzip_decode'
+              572  MAKE_FUNCTION_1          'default'
+              574  STORE_NAME               gzip_decode
+
+ L.1085       576  LOAD_BUILD_CLASS 
+              578  LOAD_CODE                <code_object GzipDecodedResponse>
+              580  LOAD_STR                 'GzipDecodedResponse'
+              582  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              584  LOAD_STR                 'GzipDecodedResponse'
+              586  LOAD_NAME                gzip
+          588_590  POP_JUMP_IF_FALSE   598  'to 598'
+              592  LOAD_NAME                gzip
+              594  LOAD_ATTR                GzipFile
+              596  JUMP_FORWARD        600  'to 600'
+            598_0  COME_FROM           588  '588'
+              598  LOAD_NAME                object
+            600_0  COME_FROM           596  '596'
+              600  CALL_FUNCTION_3       3  ''
+              602  STORE_NAME               GzipDecodedResponse
+
+ L.1107       604  LOAD_BUILD_CLASS 
+              606  LOAD_CODE                <code_object _Method>
+              608  LOAD_STR                 '_Method'
+              610  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              612  LOAD_STR                 '_Method'
+              614  CALL_FUNCTION_2       2  ''
+              616  STORE_NAME               _Method
+
+ L.1124       618  LOAD_BUILD_CLASS 
+              620  LOAD_CODE                <code_object Transport>
+              622  LOAD_STR                 'Transport'
+              624  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              626  LOAD_STR                 'Transport'
+              628  CALL_FUNCTION_2       2  ''
+              630  STORE_NAME               Transport
+
+ L.1353       632  LOAD_BUILD_CLASS 
+              634  LOAD_CODE                <code_object SafeTransport>
+              636  LOAD_STR                 'SafeTransport'
+              638  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              640  LOAD_STR                 'SafeTransport'
+              642  LOAD_NAME                Transport
+              644  CALL_FUNCTION_3       3  ''
+              646  STORE_NAME               SafeTransport
+
+ L.1396       648  LOAD_BUILD_CLASS 
+              650  LOAD_CODE                <code_object ServerProxy>
+              652  LOAD_STR                 'ServerProxy'
+              654  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              656  LOAD_STR                 'ServerProxy'
+              658  CALL_FUNCTION_2       2  ''
+              660  STORE_NAME               ServerProxy
+
+ L.1499       662  LOAD_NAME                ServerProxy
+              664  STORE_NAME               Server
+
+ L.1504       666  LOAD_NAME                __name__
+              668  LOAD_STR                 '__main__'
+              670  COMPARE_OP               ==
+          672_674  POP_JUMP_IF_FALSE   868  'to 868'
+
+ L.1509       676  LOAD_NAME                ServerProxy
+              678  LOAD_STR                 'http://localhost:8000'
+              680  CALL_FUNCTION_1       1  ''
+              682  STORE_NAME               server
+
+ L.1511       684  SETUP_FINALLY       704  'to 704'
+
+ L.1512       686  LOAD_NAME                print
+              688  LOAD_NAME                server
+              690  LOAD_ATTR                currentTime
+              692  LOAD_METHOD              getCurrentTime
+              694  CALL_METHOD_0         0  ''
+              696  CALL_FUNCTION_1       1  ''
+              698  POP_TOP          
+              700  POP_BLOCK        
+              702  JUMP_FORWARD        752  'to 752'
+            704_0  COME_FROM_FINALLY   684  '684'
+
+ L.1513       704  DUP_TOP          
+              706  LOAD_NAME                Error
+          708_710  <121>               750  ''
+              712  POP_TOP          
+              714  STORE_NAME               v
+              716  POP_TOP          
+              718  SETUP_FINALLY       742  'to 742'
+
+ L.1514       720  LOAD_NAME                print
+              722  LOAD_STR                 'ERROR'
+              724  LOAD_NAME                v
+              726  CALL_FUNCTION_2       2  ''
+              728  POP_TOP          
+              730  POP_BLOCK        
+              732  POP_EXCEPT       
+              734  LOAD_CONST               None
+              736  STORE_NAME               v
+              738  DELETE_NAME              v
+              740  JUMP_FORWARD        752  'to 752'
+            742_0  COME_FROM_FINALLY   718  '718'
+              742  LOAD_CONST               None
+              744  STORE_NAME               v
+              746  DELETE_NAME              v
+              748  <48>             
+              750  <48>             
+            752_0  COME_FROM           740  '740'
+            752_1  COME_FROM           702  '702'
+
+ L.1516       752  LOAD_NAME                MultiCall
+              754  LOAD_NAME                server
+              756  CALL_FUNCTION_1       1  ''
+              758  STORE_NAME               multi
+
+ L.1517       760  LOAD_NAME                multi
+              762  LOAD_METHOD              getData
+              764  CALL_METHOD_0         0  ''
+              766  POP_TOP          
+
+ L.1518       768  LOAD_NAME                multi
+              770  LOAD_METHOD              pow
+              772  LOAD_CONST               2
+              774  LOAD_CONST               9
+              776  CALL_METHOD_2         2  ''
+              778  POP_TOP          
+
+ L.1519       780  LOAD_NAME                multi
+              782  LOAD_METHOD              add
+              784  LOAD_CONST               1
+              786  LOAD_CONST               2
+              788  CALL_METHOD_2         2  ''
+              790  POP_TOP          
+
+ L.1520       792  SETUP_FINALLY       820  'to 820'
+
+ L.1521       794  LOAD_NAME                multi
+              796  CALL_FUNCTION_0       0  ''
+              798  GET_ITER         
+              800  FOR_ITER            816  'to 816'
+              802  STORE_NAME               response
+
+ L.1522       804  LOAD_NAME                print
+              806  LOAD_NAME                response
+              808  CALL_FUNCTION_1       1  ''
+              810  POP_TOP          
+          812_814  JUMP_BACK           800  'to 800'
+              816  POP_BLOCK        
+              818  JUMP_FORWARD        868  'to 868'
+            820_0  COME_FROM_FINALLY   792  '792'
+
+ L.1523       820  DUP_TOP          
+              822  LOAD_NAME                Error
+          824_826  <121>               866  ''
+              828  POP_TOP          
+              830  STORE_NAME               v
+              832  POP_TOP          
+              834  SETUP_FINALLY       858  'to 858'
+
+ L.1524       836  LOAD_NAME                print
+              838  LOAD_STR                 'ERROR'
+              840  LOAD_NAME                v
+              842  CALL_FUNCTION_2       2  ''
+              844  POP_TOP          
+              846  POP_BLOCK        
+              848  POP_EXCEPT       
+              850  LOAD_CONST               None
+              852  STORE_NAME               v
+              854  DELETE_NAME              v
+              856  JUMP_FORWARD        868  'to 868'
+            858_0  COME_FROM_FINALLY   834  '834'
+              858  LOAD_CONST               None
+              860  STORE_NAME               v
+              862  DELETE_NAME              v
+              864  <48>             
+              866  <48>             
+            868_0  COME_FROM           856  '856'
+            868_1  COME_FROM           818  '818'
+            868_2  COME_FROM           672  '672'
+
+Parse error at or near `<121>' instruction at offset 118
+
+Instruction context:
+   
+ L. 143       114  DUP_TOP          
+                 116  LOAD_NAME                ImportError
+->               118  <121>               134  ''
+                 120  POP_TOP          
+                 122  POP_TOP          
+                 124  POP_TOP          
+
+test/31906.pyc -- 
+# decompile failed

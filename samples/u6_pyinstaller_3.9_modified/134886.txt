@@ -1,0 +1,421 @@
+
+# file test/134886.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.   3        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              hmac
+               18  STORE_NAME               hmac
+
+ L.   4        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              os
+               26  STORE_NAME               os
+
+ L.   5        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              sys
+               34  STORE_NAME               sys
+
+ L.   6        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              warnings
+               42  STORE_NAME               warnings
+
+ L.   7        44  LOAD_CONST               0
+               46  LOAD_CONST               ('hexlify', 'unhexlify')
+               48  IMPORT_NAME              binascii
+               50  IMPORT_FROM              hexlify
+               52  STORE_NAME               hexlify
+               54  IMPORT_FROM              unhexlify
+               56  STORE_NAME               unhexlify
+               58  POP_TOP          
+
+ L.   8        60  LOAD_CONST               0
+               62  LOAD_CONST               ('md5', 'sha1', 'sha256')
+               64  IMPORT_NAME              hashlib
+               66  IMPORT_FROM              md5
+               68  STORE_NAME               md5
+               70  IMPORT_FROM              sha1
+               72  STORE_NAME               sha1
+               74  IMPORT_FROM              sha256
+               76  STORE_NAME               sha256
+               78  POP_TOP          
+
+ L.  10        80  LOAD_CONST               2
+               82  LOAD_CONST               ('InsecurePlatformWarning', 'ProxySchemeUnsupported', 'SNIMissingWarning', 'SSLError')
+               84  IMPORT_NAME              exceptions
+               86  IMPORT_FROM              InsecurePlatformWarning
+               88  STORE_NAME               InsecurePlatformWarning
+               90  IMPORT_FROM              ProxySchemeUnsupported
+               92  STORE_NAME               ProxySchemeUnsupported
+               94  IMPORT_FROM              SNIMissingWarning
+               96  STORE_NAME               SNIMissingWarning
+               98  IMPORT_FROM              SSLError
+              100  STORE_NAME               SSLError
+              102  POP_TOP          
+
+ L.  16       104  LOAD_CONST               2
+              106  LOAD_CONST               ('six',)
+              108  IMPORT_NAME              packages
+              110  IMPORT_FROM              six
+              112  STORE_NAME               six
+              114  POP_TOP          
+
+ L.  17       116  LOAD_CONST               1
+              118  LOAD_CONST               ('BRACELESS_IPV6_ADDRZ_RE', 'IPV4_RE')
+              120  IMPORT_NAME              url
+              122  IMPORT_FROM              BRACELESS_IPV6_ADDRZ_RE
+              124  STORE_NAME               BRACELESS_IPV6_ADDRZ_RE
+              126  IMPORT_FROM              IPV4_RE
+              128  STORE_NAME               IPV4_RE
+              130  POP_TOP          
+
+ L.  19       132  LOAD_CONST               None
+              134  STORE_NAME               SSLContext
+
+ L.  20       136  LOAD_CONST               None
+              138  STORE_NAME               SSLTransport
+
+ L.  21       140  LOAD_CONST               False
+              142  STORE_NAME               HAS_SNI
+
+ L.  22       144  LOAD_CONST               False
+              146  STORE_NAME               IS_PYOPENSSL
+
+ L.  23       148  LOAD_CONST               False
+              150  STORE_NAME               IS_SECURETRANSPORT
+
+ L.  24       152  LOAD_STR                 'http/1.1'
+              154  BUILD_LIST_1          1 
+              156  STORE_NAME               ALPN_PROTOCOLS
+
+ L.  27       158  LOAD_NAME                md5
+              160  LOAD_NAME                sha1
+              162  LOAD_NAME                sha256
+              164  LOAD_CONST               (32, 40, 64)
+              166  BUILD_CONST_KEY_MAP_3     3 
+              168  STORE_NAME               HASHFUNC_MAP
+
+ L.  30       170  LOAD_CODE                <code_object _const_compare_digest_backport>
+              172  LOAD_STR                 '_const_compare_digest_backport'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  STORE_NAME               _const_compare_digest_backport
+
+ L.  43       178  LOAD_NAME                getattr
+              180  LOAD_NAME                hmac
+              182  LOAD_STR                 'compare_digest'
+              184  LOAD_NAME                _const_compare_digest_backport
+              186  CALL_FUNCTION_3       3  ''
+              188  STORE_NAME               _const_compare_digest
+
+ L.  45       190  SETUP_FINALLY       220  'to 220'
+
+ L.  46       192  LOAD_CONST               0
+              194  LOAD_CONST               None
+              196  IMPORT_NAME              ssl
+              198  STORE_NAME               ssl
+
+ L.  47       200  LOAD_CONST               0
+              202  LOAD_CONST               ('CERT_REQUIRED', 'wrap_socket')
+              204  IMPORT_NAME              ssl
+              206  IMPORT_FROM              CERT_REQUIRED
+              208  STORE_NAME               CERT_REQUIRED
+              210  IMPORT_FROM              wrap_socket
+              212  STORE_NAME               wrap_socket
+              214  POP_TOP          
+              216  POP_BLOCK        
+              218  JUMP_FORWARD        238  'to 238'
+            220_0  COME_FROM_FINALLY   190  '190'
+
+ L.  48       220  DUP_TOP          
+              222  LOAD_NAME                ImportError
+              224  <121>               236  ''
+              226  POP_TOP          
+              228  POP_TOP          
+              230  POP_TOP          
+
+ L.  49       232  POP_EXCEPT       
+              234  JUMP_FORWARD        238  'to 238'
+              236  <48>             
+            238_0  COME_FROM           234  '234'
+            238_1  COME_FROM           218  '218'
+
+ L.  51       238  SETUP_FINALLY       256  'to 256'
+
+ L.  52       240  LOAD_CONST               0
+              242  LOAD_CONST               ('HAS_SNI',)
+              244  IMPORT_NAME              ssl
+              246  IMPORT_FROM              HAS_SNI
+              248  STORE_NAME               HAS_SNI
+              250  POP_TOP          
+              252  POP_BLOCK        
+              254  JUMP_FORWARD        276  'to 276'
+            256_0  COME_FROM_FINALLY   238  '238'
+
+ L.  53       256  DUP_TOP          
+              258  LOAD_NAME                ImportError
+          260_262  <121>               274  ''
+              264  POP_TOP          
+              266  POP_TOP          
+              268  POP_TOP          
+
+ L.  54       270  POP_EXCEPT       
+              272  JUMP_FORWARD        276  'to 276'
+              274  <48>             
+            276_0  COME_FROM           272  '272'
+            276_1  COME_FROM           254  '254'
+
+ L.  56       276  SETUP_FINALLY       294  'to 294'
+
+ L.  57       278  LOAD_CONST               1
+              280  LOAD_CONST               ('SSLTransport',)
+              282  IMPORT_NAME              ssltransport
+              284  IMPORT_FROM              SSLTransport
+              286  STORE_NAME               SSLTransport
+              288  POP_TOP          
+              290  POP_BLOCK        
+              292  JUMP_FORWARD        314  'to 314'
+            294_0  COME_FROM_FINALLY   276  '276'
+
+ L.  58       294  DUP_TOP          
+              296  LOAD_NAME                ImportError
+          298_300  <121>               312  ''
+              302  POP_TOP          
+              304  POP_TOP          
+              306  POP_TOP          
+
+ L.  59       308  POP_EXCEPT       
+              310  JUMP_FORWARD        314  'to 314'
+              312  <48>             
+            314_0  COME_FROM           310  '310'
+            314_1  COME_FROM           292  '292'
+
+ L.  62       314  SETUP_FINALLY       336  'to 336'
+
+ L.  63       316  LOAD_CONST               0
+              318  LOAD_CONST               ('PROTOCOL_TLS',)
+              320  IMPORT_NAME              ssl
+              322  IMPORT_FROM              PROTOCOL_TLS
+              324  STORE_NAME               PROTOCOL_TLS
+              326  POP_TOP          
+
+ L.  65       328  LOAD_NAME                PROTOCOL_TLS
+              330  STORE_NAME               PROTOCOL_SSLv23
+              332  POP_BLOCK        
+              334  JUMP_FORWARD        406  'to 406'
+            336_0  COME_FROM_FINALLY   314  '314'
+
+ L.  66       336  DUP_TOP          
+              338  LOAD_NAME                ImportError
+          340_342  <121>               404  ''
+              344  POP_TOP          
+              346  POP_TOP          
+              348  POP_TOP          
+
+ L.  67       350  SETUP_FINALLY       372  'to 372'
+
+ L.  68       352  LOAD_CONST               0
+              354  LOAD_CONST               ('PROTOCOL_SSLv23',)
+              356  IMPORT_NAME              ssl
+              358  IMPORT_FROM              PROTOCOL_SSLv23
+              360  STORE_NAME               PROTOCOL_TLS
+              362  POP_TOP          
+
+ L.  70       364  LOAD_NAME                PROTOCOL_TLS
+              366  STORE_NAME               PROTOCOL_SSLv23
+              368  POP_BLOCK        
+              370  JUMP_FORWARD        400  'to 400'
+            372_0  COME_FROM_FINALLY   350  '350'
+
+ L.  71       372  DUP_TOP          
+              374  LOAD_NAME                ImportError
+          376_378  <121>               398  ''
+              380  POP_TOP          
+              382  POP_TOP          
+              384  POP_TOP          
+
+ L.  72       386  LOAD_CONST               2
+              388  DUP_TOP          
+              390  STORE_NAME               PROTOCOL_SSLv23
+              392  STORE_NAME               PROTOCOL_TLS
+              394  POP_EXCEPT       
+              396  JUMP_FORWARD        400  'to 400'
+              398  <48>             
+            400_0  COME_FROM           396  '396'
+            400_1  COME_FROM           370  '370'
+              400  POP_EXCEPT       
+              402  JUMP_FORWARD        406  'to 406'
+              404  <48>             
+            406_0  COME_FROM           402  '402'
+            406_1  COME_FROM           334  '334'
+
+ L.  75       406  SETUP_FINALLY       432  'to 432'
+
+ L.  76       408  LOAD_CONST               0
+              410  LOAD_CONST               ('OP_NO_COMPRESSION', 'OP_NO_SSLv2', 'OP_NO_SSLv3')
+              412  IMPORT_NAME              ssl
+              414  IMPORT_FROM              OP_NO_COMPRESSION
+              416  STORE_NAME               OP_NO_COMPRESSION
+              418  IMPORT_FROM              OP_NO_SSLv2
+              420  STORE_NAME               OP_NO_SSLv2
+              422  IMPORT_FROM              OP_NO_SSLv3
+              424  STORE_NAME               OP_NO_SSLv3
+              426  POP_TOP          
+              428  POP_BLOCK        
+              430  JUMP_FORWARD        464  'to 464'
+            432_0  COME_FROM_FINALLY   406  '406'
+
+ L.  77       432  DUP_TOP          
+              434  LOAD_NAME                ImportError
+          436_438  <121>               462  ''
+              440  POP_TOP          
+              442  POP_TOP          
+              444  POP_TOP          
+
+ L.  78       446  LOAD_CONST               (16777216, 33554432)
+              448  UNPACK_SEQUENCE_2     2 
+              450  STORE_NAME               OP_NO_SSLv2
+              452  STORE_NAME               OP_NO_SSLv3
+
+ L.  79       454  LOAD_CONST               131072
+              456  STORE_NAME               OP_NO_COMPRESSION
+              458  POP_EXCEPT       
+              460  JUMP_FORWARD        464  'to 464'
+              462  <48>             
+            464_0  COME_FROM           460  '460'
+            464_1  COME_FROM           430  '430'
+
+ L.  82       464  SETUP_FINALLY       482  'to 482'
+
+ L.  83       466  LOAD_CONST               0
+              468  LOAD_CONST               ('OP_NO_TICKET',)
+              470  IMPORT_NAME              ssl
+              472  IMPORT_FROM              OP_NO_TICKET
+              474  STORE_NAME               OP_NO_TICKET
+              476  POP_TOP          
+              478  POP_BLOCK        
+              480  JUMP_FORWARD        506  'to 506'
+            482_0  COME_FROM_FINALLY   464  '464'
+
+ L.  84       482  DUP_TOP          
+              484  LOAD_NAME                ImportError
+          486_488  <121>               504  ''
+              490  POP_TOP          
+              492  POP_TOP          
+              494  POP_TOP          
+
+ L.  85       496  LOAD_CONST               16384
+              498  STORE_NAME               OP_NO_TICKET
+              500  POP_EXCEPT       
+              502  JUMP_FORWARD        506  'to 506'
+              504  <48>             
+            506_0  COME_FROM           502  '502'
+            506_1  COME_FROM           480  '480'
+
+ L. 105       506  LOAD_STR                 ':'
+              508  LOAD_METHOD              join
+
+ L. 106       510  BUILD_LIST_0          0 
+              512  LOAD_CONST               ('ECDHE+AESGCM', 'ECDHE+CHACHA20', 'DHE+AESGCM', 'DHE+CHACHA20', 'ECDH+AESGCM', 'DH+AESGCM', 'ECDH+AES', 'DH+AES', 'RSA+AESGCM', 'RSA+AES', '!aNULL', '!eNULL', '!MD5', '!DSS')
+              514  CALL_FINALLY        517  'to 517'
+
+ L. 105       516  CALL_METHOD_1         1  ''
+              518  STORE_NAME               DEFAULT_CIPHERS
+
+ L. 124       520  SETUP_FINALLY       538  'to 538'
+
+ L. 125       522  LOAD_CONST               0
+              524  LOAD_CONST               ('SSLContext',)
+              526  IMPORT_NAME              ssl
+              528  IMPORT_FROM              SSLContext
+              530  STORE_NAME               SSLContext
+              532  POP_TOP          
+              534  POP_BLOCK        
+              536  JUMP_FORWARD        574  'to 574'
+            538_0  COME_FROM_FINALLY   520  '520'
+
+ L. 126       538  DUP_TOP          
+              540  LOAD_NAME                ImportError
+          542_544  <121>               572  ''
+              546  POP_TOP          
+              548  POP_TOP          
+              550  POP_TOP          
+
+ L. 128       552  LOAD_BUILD_CLASS 
+              554  LOAD_CODE                <code_object SSLContext>
+              556  LOAD_STR                 'SSLContext'
+              558  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              560  LOAD_STR                 'SSLContext'
+              562  LOAD_NAME                object
+              564  CALL_FUNCTION_3       3  ''
+              566  STORE_NAME               SSLContext
+              568  POP_EXCEPT       
+              570  JUMP_FORWARD        574  'to 574'
+              572  <48>             
+            574_0  COME_FROM           570  '570'
+            574_1  COME_FROM           536  '536'
+
+ L. 177       574  LOAD_CODE                <code_object assert_fingerprint>
+              576  LOAD_STR                 'assert_fingerprint'
+              578  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              580  STORE_NAME               assert_fingerprint
+
+ L. 206       582  LOAD_CODE                <code_object resolve_cert_reqs>
+              584  LOAD_STR                 'resolve_cert_reqs'
+              586  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              588  STORE_NAME               resolve_cert_reqs
+
+ L. 229       590  LOAD_CODE                <code_object resolve_ssl_version>
+              592  LOAD_STR                 'resolve_ssl_version'
+              594  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              596  STORE_NAME               resolve_ssl_version
+
+ L. 245       598  LOAD_CONST               (None, None, None, None)
+              600  LOAD_CODE                <code_object create_urllib3_context>
+              602  LOAD_STR                 'create_urllib3_context'
+              604  MAKE_FUNCTION_1          'default'
+              606  STORE_NAME               create_urllib3_context
+
+ L. 334       608  LOAD_CONST               (None, None, None, None, None, None, None, None, None, None, None, False)
+              610  LOAD_CODE                <code_object ssl_wrap_socket>
+              612  LOAD_STR                 'ssl_wrap_socket'
+              614  MAKE_FUNCTION_1          'default'
+              616  STORE_NAME               ssl_wrap_socket
+
+ L. 436       618  LOAD_CODE                <code_object is_ipaddress>
+              620  LOAD_STR                 'is_ipaddress'
+              622  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              624  STORE_NAME               is_ipaddress
+
+ L. 449       626  LOAD_CODE                <code_object _is_key_file_encrypted>
+              628  LOAD_STR                 '_is_key_file_encrypted'
+              630  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              632  STORE_NAME               _is_key_file_encrypted
+
+ L. 460       634  LOAD_CONST               (None,)
+              636  LOAD_CODE                <code_object _ssl_wrap_socket_impl>
+              638  LOAD_STR                 '_ssl_wrap_socket_impl'
+              640  MAKE_FUNCTION_1          'default'
+              642  STORE_NAME               _ssl_wrap_socket_impl
+
+Parse error at or near `<121>' instruction at offset 224
+
+Instruction context:
+   
+ L.  48       220  DUP_TOP          
+                 222  LOAD_NAME                ImportError
+->               224  <121>               236  ''
+                 226  POP_TOP          
+                 228  POP_TOP          
+                 230  POP_TOP          
+
+test/134886.pyc -- 
+# decompile failed

@@ -1,0 +1,77 @@
+Instruction context:
+   
+ L. 579        38  LOAD_FAST                'name'
+                  40  LOAD_CONST               None
+                  42  LOAD_FAST                'width'
+                  44  BUILD_SLICE_2         2 
+                  46  BINARY_SUBSCR    
+                  48  LOAD_METHOD              center
+                  50  LOAD_FAST                'width'
+                  52  CALL_METHOD_1         1  ''
+                  54  POP_BLOCK        
+->                56  ROT_TWO          
+                  58  BEGIN_FINALLY    
+                  60  WITH_CLEANUP_START
+                  62  WITH_CLEANUP_FINISH
+                  64  POP_FINALLY           0  ''
+                  66  RETURN_VALUE     
+                68_0  COME_FROM_WITH        8  '8'
+                  68  WITH_CLEANUP_START
+                  70  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 586        36  LOAD_FAST                's'
+                  38  LOAD_METHOD              center
+                  40  LOAD_FAST                'width'
+                  42  CALL_METHOD_1         1  ''
+                  44  POP_BLOCK        
+->                46  ROT_TWO          
+                  48  BEGIN_FINALLY    
+                  50  WITH_CLEANUP_START
+                  52  WITH_CLEANUP_FINISH
+                  54  POP_FINALLY           0  ''
+                  56  RETURN_VALUE     
+                58_0  COME_FROM_WITH        8  '8'
+                  58  WITH_CLEANUP_START
+                  60  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 605        20  LOAD_STR                 '<th class="%s">%s</th>'
+                  22  LOAD_FAST                'self'
+                  24  LOAD_ATTR                cssclasses
+                  26  LOAD_FAST                'day'
+                  28  BINARY_SUBSCR    
+                  30  LOAD_FAST                's'
+                  32  BUILD_TUPLE_2         2 
+                  34  BINARY_MODULO    
+                  36  POP_BLOCK        
+->                38  ROT_TWO          
+                  40  BEGIN_FINALLY    
+                  42  WITH_CLEANUP_START
+                  44  WITH_CLEANUP_FINISH
+                  46  POP_FINALLY           0  ''
+                  48  RETURN_VALUE     
+                50_0  COME_FROM_WITH        8  '8'
+                  50  WITH_CLEANUP_START
+                  52  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 612        36  LOAD_STR                 '<tr><th colspan="7" class="month">%s</th></tr>'
+                  38  LOAD_FAST                's'
+                  40  BINARY_MODULO    
+                  42  POP_BLOCK        
+->                44  ROT_TWO          
+                  46  BEGIN_FINALLY    
+                  48  WITH_CLEANUP_START
+                  50  WITH_CLEANUP_FINISH
+                  52  POP_FINALLY           0  ''
+                  54  RETURN_VALUE     
+                56_0  COME_FROM_WITH        8  '8'
+                  56  WITH_CLEANUP_START
+                  58  WITH_CLEANUP_FINISH
+
+test/415.pyc -- 
+# decompile failed
+
+# file test/415.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,362 @@
+
+# file test/102765.pyc
+# --- This code section failed: ---
+
+ L.  25         0  LOAD_STR                 '\nPyAudio provides Python bindings for PortAudio, the cross-platform\naudio I/O library. With PyAudio, you can easily use Python to play and\nrecord audio on a variety of platforms.  PyAudio is inspired by:\n\n* pyPortAudio/fastaudio: Python bindings for PortAudio v18 API.\n* tkSnack: cross-platform sound toolkit for Tcl/Tk and Python.\n\n.. include:: ../sphinx/examples.rst\n\nOverview\n--------\n\n**Classes**\n  :py:class:`PyAudio`, :py:class:`Stream`\n\n.. only:: pamac\n\n   **Host Specific Classes**\n     :py:class:`PaMacCoreStreamInfo`\n\n**Stream Conversion Convenience Functions**\n  :py:func:`get_sample_size`, :py:func:`get_format_from_width`\n\n**PortAudio version**\n  :py:func:`get_portaudio_version`, :py:func:`get_portaudio_version_text`\n\n.. |PaSampleFormat| replace:: :ref:`PortAudio Sample Format <PaSampleFormat>`\n.. _PaSampleFormat:\n\n**Portaudio Sample Formats**\n  :py:data:`paFloat32`, :py:data:`paInt32`, :py:data:`paInt24`,\n  :py:data:`paInt16`, :py:data:`paInt8`, :py:data:`paUInt8`,\n  :py:data:`paCustomFormat`\n\n.. |PaHostAPI| replace:: :ref:`PortAudio Host API <PaHostAPI>`\n.. _PaHostAPI:\n\n**PortAudio Host APIs**\n  :py:data:`paInDevelopment`, :py:data:`paDirectSound`, :py:data:`paMME`,\n  :py:data:`paASIO`, :py:data:`paSoundManager`, :py:data:`paCoreAudio`,\n  :py:data:`paOSS`, :py:data:`paALSA`, :py:data:`paAL`, :py:data:`paBeOS`,\n  :py:data:`paWDMKS`, :py:data:`paJACK`, :py:data:`paWASAPI`,\n  :py:data:`paNoDevice`\n\n.. |PaErrorCode| replace:: :ref:`PortAudio Error Code <PaErrorCode>`\n.. _PaErrorCode:\n\n**PortAudio Error Codes**\n  :py:data:`paNoError`, :py:data:`paNotInitialized`,\n  :py:data:`paUnanticipatedHostError`, :py:data:`paInvalidChannelCount`,\n  :py:data:`paInvalidSampleRate`, :py:data:`paInvalidDevice`,\n  :py:data:`paInvalidFlag`, :py:data:`paSampleFormatNotSupported`,\n  :py:data:`paBadIODeviceCombination`, :py:data:`paInsufficientMemory`,\n  :py:data:`paBufferTooBig`, :py:data:`paBufferTooSmall`,\n  :py:data:`paNullCallback`, :py:data:`paBadStreamPtr`,\n  :py:data:`paTimedOut`, :py:data:`paInternalError`,\n  :py:data:`paDeviceUnavailable`,\n  :py:data:`paIncompatibleHostApiSpecificStreamInfo`,\n  :py:data:`paStreamIsStopped`, :py:data:`paStreamIsNotStopped`,\n  :py:data:`paInputOverflowed`, :py:data:`paOutputUnderflowed`,\n  :py:data:`paHostApiNotFound`, :py:data:`paInvalidHostApi`,\n  :py:data:`paCanNotReadFromACallbackStream`,\n  :py:data:`paCanNotWriteToACallbackStream`,\n  :py:data:`paCanNotReadFromAnOutputOnlyStream`,\n  :py:data:`paCanNotWriteToAnInputOnlyStream`,\n  :py:data:`paIncompatibleStreamHostApi`\n\n.. |PaCallbackReturnCodes| replace:: :ref:`PortAudio Callback Return Code <PaCallbackReturnCodes>`\n.. _PaCallbackReturnCodes:\n\n**PortAudio Callback Return Codes**\n  :py:data:`paContinue`, :py:data:`paComplete`, :py:data:`paAbort`\n\n.. |PaCallbackFlags| replace:: :ref:`PortAutio Callback Flag <PaCallbackFlags>`\n.. _PaCallbackFlags:\n\n**PortAudio Callback Flags**\n  :py:data:`paInputUnderflow`, :py:data:`paInputOverflow`,\n  :py:data:`paOutputUnderflow`, :py:data:`paOutputOverflow`,\n  :py:data:`paPrimingOutput`\n'
+                2  STORE_NAME               __doc__
+
+ L. 108         4  LOAD_STR                 'Hubert Pham'
+                6  STORE_NAME               __author__
+
+ L. 109         8  LOAD_STR                 '0.2.11'
+               10  STORE_NAME               __version__
+
+ L. 110        12  LOAD_STR                 'restructuredtext en'
+               14  STORE_NAME               __docformat__
+
+ L. 112        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              sys
+               22  STORE_NAME               sys
+
+ L. 115        24  SETUP_FINALLY        38  'to 38'
+
+ L. 116        26  LOAD_CONST               0
+               28  LOAD_CONST               None
+               30  IMPORT_NAME              _portaudio
+               32  STORE_NAME               pa
+               34  POP_BLOCK        
+               36  JUMP_FORWARD         66  'to 66'
+             38_0  COME_FROM_FINALLY    24  '24'
+
+ L. 117        38  DUP_TOP          
+               40  LOAD_NAME                ImportError
+               42  <121>                64  ''
+               44  POP_TOP          
+               46  POP_TOP          
+               48  POP_TOP          
+
+ L. 118        50  LOAD_NAME                print
+               52  LOAD_STR                 "Could not import the PyAudio C module '_portaudio'."
+               54  CALL_FUNCTION_1       1  ''
+               56  POP_TOP          
+
+ L. 119        58  RAISE_VARARGS_0       0  'reraise'
+               60  POP_EXCEPT       
+               62  JUMP_FORWARD         66  'to 66'
+               64  <48>             
+             66_0  COME_FROM            62  '62'
+             66_1  COME_FROM            36  '36'
+
+ L. 127        66  LOAD_NAME                pa
+               68  LOAD_ATTR                paFloat32
+               70  STORE_NAME               paFloat32
+
+ L. 128        72  LOAD_NAME                pa
+               74  LOAD_ATTR                paInt32
+               76  STORE_NAME               paInt32
+
+ L. 129        78  LOAD_NAME                pa
+               80  LOAD_ATTR                paInt24
+               82  STORE_NAME               paInt24
+
+ L. 130        84  LOAD_NAME                pa
+               86  LOAD_ATTR                paInt16
+               88  STORE_NAME               paInt16
+
+ L. 131        90  LOAD_NAME                pa
+               92  LOAD_ATTR                paInt8
+               94  STORE_NAME               paInt8
+
+ L. 132        96  LOAD_NAME                pa
+               98  LOAD_ATTR                paUInt8
+              100  STORE_NAME               paUInt8
+
+ L. 133       102  LOAD_NAME                pa
+              104  LOAD_ATTR                paCustomFormat
+              106  STORE_NAME               paCustomFormat
+
+ L. 137       108  LOAD_NAME                pa
+              110  LOAD_ATTR                paInDevelopment
+              112  STORE_NAME               paInDevelopment
+
+ L. 138       114  LOAD_NAME                pa
+              116  LOAD_ATTR                paDirectSound
+              118  STORE_NAME               paDirectSound
+
+ L. 139       120  LOAD_NAME                pa
+              122  LOAD_ATTR                paMME
+              124  STORE_NAME               paMME
+
+ L. 140       126  LOAD_NAME                pa
+              128  LOAD_ATTR                paASIO
+              130  STORE_NAME               paASIO
+
+ L. 141       132  LOAD_NAME                pa
+              134  LOAD_ATTR                paSoundManager
+              136  STORE_NAME               paSoundManager
+
+ L. 142       138  LOAD_NAME                pa
+              140  LOAD_ATTR                paCoreAudio
+              142  STORE_NAME               paCoreAudio
+
+ L. 143       144  LOAD_NAME                pa
+              146  LOAD_ATTR                paOSS
+              148  STORE_NAME               paOSS
+
+ L. 144       150  LOAD_NAME                pa
+              152  LOAD_ATTR                paALSA
+              154  STORE_NAME               paALSA
+
+ L. 145       156  LOAD_NAME                pa
+              158  LOAD_ATTR                paAL
+              160  STORE_NAME               paAL
+
+ L. 146       162  LOAD_NAME                pa
+              164  LOAD_ATTR                paBeOS
+              166  STORE_NAME               paBeOS
+
+ L. 147       168  LOAD_NAME                pa
+              170  LOAD_ATTR                paWDMKS
+              172  STORE_NAME               paWDMKS
+
+ L. 148       174  LOAD_NAME                pa
+              176  LOAD_ATTR                paJACK
+              178  STORE_NAME               paJACK
+
+ L. 149       180  LOAD_NAME                pa
+              182  LOAD_ATTR                paWASAPI
+              184  STORE_NAME               paWASAPI
+
+ L. 150       186  LOAD_NAME                pa
+              188  LOAD_ATTR                paNoDevice
+              190  STORE_NAME               paNoDevice
+
+ L. 154       192  LOAD_NAME                pa
+              194  LOAD_ATTR                paNoError
+              196  STORE_NAME               paNoError
+
+ L. 155       198  LOAD_NAME                pa
+              200  LOAD_ATTR                paNotInitialized
+              202  STORE_NAME               paNotInitialized
+
+ L. 156       204  LOAD_NAME                pa
+              206  LOAD_ATTR                paUnanticipatedHostError
+              208  STORE_NAME               paUnanticipatedHostError
+
+ L. 157       210  LOAD_NAME                pa
+              212  LOAD_ATTR                paInvalidChannelCount
+              214  STORE_NAME               paInvalidChannelCount
+
+ L. 158       216  LOAD_NAME                pa
+              218  LOAD_ATTR                paInvalidSampleRate
+              220  STORE_NAME               paInvalidSampleRate
+
+ L. 159       222  LOAD_NAME                pa
+              224  LOAD_ATTR                paInvalidDevice
+              226  STORE_NAME               paInvalidDevice
+
+ L. 160       228  LOAD_NAME                pa
+              230  LOAD_ATTR                paInvalidFlag
+              232  STORE_NAME               paInvalidFlag
+
+ L. 161       234  LOAD_NAME                pa
+              236  LOAD_ATTR                paSampleFormatNotSupported
+              238  STORE_NAME               paSampleFormatNotSupported
+
+ L. 162       240  LOAD_NAME                pa
+              242  LOAD_ATTR                paBadIODeviceCombination
+              244  STORE_NAME               paBadIODeviceCombination
+
+ L. 163       246  LOAD_NAME                pa
+              248  LOAD_ATTR                paInsufficientMemory
+              250  STORE_NAME               paInsufficientMemory
+
+ L. 164       252  LOAD_NAME                pa
+              254  LOAD_ATTR                paBufferTooBig
+              256  STORE_NAME               paBufferTooBig
+
+ L. 165       258  LOAD_NAME                pa
+              260  LOAD_ATTR                paBufferTooSmall
+              262  STORE_NAME               paBufferTooSmall
+
+ L. 166       264  LOAD_NAME                pa
+              266  LOAD_ATTR                paNullCallback
+              268  STORE_NAME               paNullCallback
+
+ L. 167       270  LOAD_NAME                pa
+              272  LOAD_ATTR                paBadStreamPtr
+              274  STORE_NAME               paBadStreamPtr
+
+ L. 168       276  LOAD_NAME                pa
+              278  LOAD_ATTR                paTimedOut
+              280  STORE_NAME               paTimedOut
+
+ L. 169       282  LOAD_NAME                pa
+              284  LOAD_ATTR                paInternalError
+              286  STORE_NAME               paInternalError
+
+ L. 170       288  LOAD_NAME                pa
+              290  LOAD_ATTR                paDeviceUnavailable
+              292  STORE_NAME               paDeviceUnavailable
+
+ L. 171       294  LOAD_NAME                pa
+              296  LOAD_ATTR                paIncompatibleHostApiSpecificStreamInfo
+              298  STORE_NAME               paIncompatibleHostApiSpecificStreamInfo
+
+ L. 172       300  LOAD_NAME                pa
+              302  LOAD_ATTR                paStreamIsStopped
+              304  STORE_NAME               paStreamIsStopped
+
+ L. 173       306  LOAD_NAME                pa
+              308  LOAD_ATTR                paStreamIsNotStopped
+              310  STORE_NAME               paStreamIsNotStopped
+
+ L. 174       312  LOAD_NAME                pa
+              314  LOAD_ATTR                paInputOverflowed
+              316  STORE_NAME               paInputOverflowed
+
+ L. 175       318  LOAD_NAME                pa
+              320  LOAD_ATTR                paOutputUnderflowed
+              322  STORE_NAME               paOutputUnderflowed
+
+ L. 176       324  LOAD_NAME                pa
+              326  LOAD_ATTR                paHostApiNotFound
+              328  STORE_NAME               paHostApiNotFound
+
+ L. 177       330  LOAD_NAME                pa
+              332  LOAD_ATTR                paInvalidHostApi
+              334  STORE_NAME               paInvalidHostApi
+
+ L. 178       336  LOAD_NAME                pa
+              338  LOAD_ATTR                paCanNotReadFromACallbackStream
+              340  STORE_NAME               paCanNotReadFromACallbackStream
+
+ L. 179       342  LOAD_NAME                pa
+              344  LOAD_ATTR                paCanNotWriteToACallbackStream
+              346  STORE_NAME               paCanNotWriteToACallbackStream
+
+ L. 180       348  LOAD_NAME                pa
+              350  LOAD_ATTR                paCanNotReadFromAnOutputOnlyStream
+              352  STORE_NAME               paCanNotReadFromAnOutputOnlyStream
+
+ L. 181       354  LOAD_NAME                pa
+              356  LOAD_ATTR                paCanNotWriteToAnInputOnlyStream
+              358  STORE_NAME               paCanNotWriteToAnInputOnlyStream
+
+ L. 182       360  LOAD_NAME                pa
+              362  LOAD_ATTR                paIncompatibleStreamHostApi
+              364  STORE_NAME               paIncompatibleStreamHostApi
+
+ L. 186       366  LOAD_NAME                pa
+              368  LOAD_ATTR                paContinue
+              370  STORE_NAME               paContinue
+
+ L. 187       372  LOAD_NAME                pa
+              374  LOAD_ATTR                paComplete
+              376  STORE_NAME               paComplete
+
+ L. 188       378  LOAD_NAME                pa
+              380  LOAD_ATTR                paAbort
+              382  STORE_NAME               paAbort
+
+ L. 192       384  LOAD_NAME                pa
+              386  LOAD_ATTR                paInputUnderflow
+              388  STORE_NAME               paInputUnderflow
+
+ L. 193       390  LOAD_NAME                pa
+              392  LOAD_ATTR                paInputOverflow
+              394  STORE_NAME               paInputOverflow
+
+ L. 194       396  LOAD_NAME                pa
+              398  LOAD_ATTR                paOutputUnderflow
+              400  STORE_NAME               paOutputUnderflow
+
+ L. 195       402  LOAD_NAME                pa
+              404  LOAD_ATTR                paOutputOverflow
+              406  STORE_NAME               paOutputOverflow
+
+ L. 196       408  LOAD_NAME                pa
+              410  LOAD_ATTR                paPrimingOutput
+              412  STORE_NAME               paPrimingOutput
+
+ L. 202       414  LOAD_CODE                <code_object get_sample_size>
+              416  LOAD_STR                 'get_sample_size'
+              418  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              420  STORE_NAME               get_sample_size
+
+ L. 214       422  LOAD_CONST               (True,)
+              424  LOAD_CODE                <code_object get_format_from_width>
+              426  LOAD_STR                 'get_format_from_width'
+              428  MAKE_FUNCTION_1          'default'
+              430  STORE_NAME               get_format_from_width
+
+ L. 244       432  LOAD_CODE                <code_object get_portaudio_version>
+              434  LOAD_STR                 'get_portaudio_version'
+              436  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              438  STORE_NAME               get_portaudio_version
+
+ L. 253       440  LOAD_CODE                <code_object get_portaudio_version_text>
+              442  LOAD_STR                 'get_portaudio_version_text'
+              444  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              446  STORE_NAME               get_portaudio_version_text
+
+ L. 268       448  LOAD_BUILD_CLASS 
+              450  LOAD_CODE                <code_object Stream>
+              452  LOAD_STR                 'Stream'
+              454  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              456  LOAD_STR                 'Stream'
+              458  CALL_FUNCTION_2       2  ''
+              460  STORE_NAME               Stream
+
+ L. 637       462  LOAD_BUILD_CLASS 
+              464  LOAD_CODE                <code_object PyAudio>
+              466  LOAD_STR                 'PyAudio'
+              468  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              470  LOAD_STR                 'PyAudio'
+              472  CALL_FUNCTION_2       2  ''
+              474  STORE_NAME               PyAudio
+
+ L.1026       476  SETUP_FINALLY       488  'to 488'
+
+ L.1027       478  LOAD_NAME                pa
+              480  LOAD_ATTR                paMacCoreStreamInfo
+              482  STORE_NAME               paMacCoreStreamInfo
+              484  POP_BLOCK        
+              486  JUMP_FORWARD        508  'to 508'
+            488_0  COME_FROM_FINALLY   476  '476'
+
+ L.1028       488  DUP_TOP          
+              490  LOAD_NAME                AttributeError
+          492_494  <121>               506  ''
+              496  POP_TOP          
+              498  POP_TOP          
+              500  POP_TOP          
+
+ L.1029       502  POP_EXCEPT       
+              504  JUMP_FORWARD        522  'to 522'
+              506  <48>             
+            508_0  COME_FROM           486  '486'
+
+ L.1031       508  LOAD_BUILD_CLASS 
+              510  LOAD_CODE                <code_object PaMacCoreStreamInfo>
+              512  LOAD_STR                 'PaMacCoreStreamInfo'
+              514  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              516  LOAD_STR                 'PaMacCoreStreamInfo'
+              518  CALL_FUNCTION_2       2  ''
+              520  STORE_NAME               PaMacCoreStreamInfo
+            522_0  COME_FROM           504  '504'
+
+Parse error at or near `<121>' instruction at offset 42
+
+Instruction context:
+   
+ L. 117        38  DUP_TOP          
+                  40  LOAD_NAME                ImportError
+->                42  <121>                64  ''
+                  44  POP_TOP          
+                  46  POP_TOP          
+                  48  POP_TOP          
+
+test/102765.pyc -- 
+# decompile failed

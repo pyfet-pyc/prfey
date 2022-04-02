@@ -1,0 +1,84 @@
+Instruction context:
+   
+ L. 802        18  POP_BLOCK        
+->                20  BEGIN_FINALLY    
+                  22  WITH_CLEANUP_START
+                  24  WITH_CLEANUP_FINISH
+                  26  POP_FINALLY           0  ''
+                  28  LOAD_CONST               None
+                  30  RETURN_VALUE     
+                32_0  COME_FROM            16  '16'
+Instruction context:
+   
+ L.1127        44  POP_EXCEPT       
+->                46  LOAD_CONST               False
+                  48  RETURN_VALUE     
+                50_0  COME_FROM            36  '36'
+Instruction context:
+   
+ L.1138        28  POP_BLOCK        
+->                30  BEGIN_FINALLY    
+                  32  WITH_CLEANUP_START
+                  34  WITH_CLEANUP_FINISH
+                  36  POP_FINALLY           0  ''
+                  38  POP_BLOCK        
+                  40  LOAD_CONST               None
+                  42  RETURN_VALUE     
+                44_0  COME_FROM            26  '26'
+Instruction context:
+   
+ L.1384       132  LOAD_FAST                'func'
+                 134  LOAD_FAST                'session'
+                 136  LOAD_FAST                'sock_info'
+                 138  LOAD_FAST                'retryable'
+                 140  CALL_FUNCTION_3       3  ''
+                 142  POP_BLOCK        
+                 144  ROT_TWO          
+                 146  BEGIN_FINALLY    
+                 148  WITH_CLEANUP_START
+                 150  WITH_CLEANUP_FINISH
+                 152  POP_FINALLY           0  ''
+->               154  POP_BLOCK        
+                 156  RETURN_VALUE     
+               158_0  COME_FROM_WITH      106  '106'
+                 158  WITH_CLEANUP_START
+                 160  WITH_CLEANUP_FINISH
+                 162  END_FINALLY      
+                 164  POP_BLOCK        
+                 166  JUMP_BACK            66  'to 66'
+               168_0  COME_FROM_FINALLY    66  '66'
+Instruction context:
+   
+ L.1464        96  LOAD_FAST                'func'
+                  98  LOAD_FAST                'session'
+                 100  LOAD_FAST                'server'
+                 102  LOAD_FAST                'sock_info'
+                 104  LOAD_FAST                'slave_ok'
+                 106  CALL_FUNCTION_4       4  ''
+                 108  POP_BLOCK        
+                 110  ROT_TWO          
+                 112  BEGIN_FINALLY    
+                 114  WITH_CLEANUP_START
+                 116  WITH_CLEANUP_FINISH
+                 118  POP_FINALLY           0  ''
+->               120  POP_BLOCK        
+                 122  RETURN_VALUE     
+               124_0  COME_FROM_WITH       76  '76'
+                 124  WITH_CLEANUP_START
+                 126  WITH_CLEANUP_FINISH
+                 128  END_FINALLY      
+                 130  POP_BLOCK        
+                 132  JUMP_BACK            30  'to 30'
+               134_0  COME_FROM_FINALLY    30  '30'
+Instruction context:
+   
+ L.1813        44  POP_EXCEPT       
+->                46  LOAD_CONST               None
+                  48  RETURN_VALUE     
+                50_0  COME_FROM            36  '36'
+
+../test/118279.pyc -- 
+# decompile failed
+
+# file ../test/118279.pyc
+# Deparsing stopped due to parse error

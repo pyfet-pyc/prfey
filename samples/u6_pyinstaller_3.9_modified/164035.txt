@@ -1,0 +1,228 @@
+
+# file test/164035.pyc
+# --- This code section failed: ---
+
+ L.  16         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.  17         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              pyimod03_importers
+               14  STORE_NAME               pyimod03_importers
+
+ L.  20        16  LOAD_NAME                pyimod03_importers
+               18  LOAD_METHOD              install
+               20  CALL_METHOD_0         0  ''
+               22  POP_TOP          
+
+ L.  27        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              os
+               30  STORE_NAME               os
+
+ L.  31        32  LOAD_NAME                hasattr
+               34  LOAD_NAME                sys
+               36  LOAD_STR                 'frozen'
+               38  CALL_FUNCTION_2       2  ''
+               40  POP_JUMP_IF_TRUE     48  'to 48'
+
+ L.  32        42  LOAD_CONST               True
+               44  LOAD_NAME                sys
+               46  STORE_ATTR               frozen
+             48_0  COME_FROM            40  '40'
+
+ L.  39        48  LOAD_NAME                sys
+               50  LOAD_ATTR                _MEIPASS
+               52  LOAD_NAME                sys
+               54  STORE_ATTR               prefix
+
+ L.  40        56  LOAD_NAME                sys
+               58  LOAD_ATTR                prefix
+               60  LOAD_NAME                sys
+               62  STORE_ATTR               exec_prefix
+
+ L.  44        64  LOAD_NAME                sys
+               66  LOAD_ATTR                prefix
+               68  LOAD_NAME                sys
+               70  STORE_ATTR               base_prefix
+
+ L.  45        72  LOAD_NAME                sys
+               74  LOAD_ATTR                exec_prefix
+               76  LOAD_NAME                sys
+               78  STORE_ATTR               base_exec_prefix
+
+ L.  51        80  LOAD_STR                 'VIRTUAL_ENV'
+               82  STORE_NAME               VIRTENV
+
+ L.  52        84  LOAD_NAME                VIRTENV
+               86  LOAD_NAME                os
+               88  LOAD_ATTR                environ
+               90  <118>                 0  ''
+               92  POP_JUMP_IF_FALSE   112  'to 112'
+
+ L.  55        94  LOAD_STR                 ''
+               96  LOAD_NAME                os
+               98  LOAD_ATTR                environ
+              100  LOAD_NAME                VIRTENV
+              102  STORE_SUBSCR     
+
+ L.  56       104  LOAD_NAME                os
+              106  LOAD_ATTR                environ
+              108  LOAD_NAME                VIRTENV
+              110  DELETE_SUBSCR    
+            112_0  COME_FROM            92  '92'
+
+ L.  62       112  BUILD_LIST_0          0 
+              114  STORE_NAME               python_path
+
+ L.  63       116  LOAD_NAME                sys
+              118  LOAD_ATTR                path
+              120  GET_ITER         
+              122  FOR_ITER            152  'to 152'
+              124  STORE_NAME               pth
+
+ L.  64       126  LOAD_NAME                python_path
+              128  LOAD_METHOD              append
+              130  LOAD_NAME                os
+              132  LOAD_ATTR                path
+              134  LOAD_METHOD              abspath
+              136  LOAD_NAME                pth
+              138  CALL_METHOD_1         1  ''
+              140  CALL_METHOD_1         1  ''
+              142  POP_TOP          
+
+ L.  65       144  LOAD_NAME                python_path
+              146  LOAD_NAME                sys
+              148  STORE_ATTR               path
+              150  JUMP_BACK           122  'to 122'
+
+ L.  76       152  LOAD_BUILD_CLASS 
+              154  LOAD_CODE                <code_object NullWriter>
+              156  LOAD_STR                 'NullWriter'
+              158  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              160  LOAD_STR                 'NullWriter'
+              162  CALL_FUNCTION_2       2  ''
+              164  STORE_NAME               NullWriter
+
+ L.  93       166  LOAD_NAME                sys
+              168  LOAD_ATTR                stdout
+              170  LOAD_CONST               None
+              172  <117>                 0  ''
+              174  POP_JUMP_IF_FALSE   184  'to 184'
+
+ L.  94       176  LOAD_NAME                NullWriter
+              178  CALL_FUNCTION_0       0  ''
+              180  LOAD_NAME                sys
+              182  STORE_ATTR               stdout
+            184_0  COME_FROM           174  '174'
+
+ L.  95       184  LOAD_NAME                sys
+              186  LOAD_ATTR                stderr
+              188  LOAD_CONST               None
+              190  <117>                 0  ''
+              192  POP_JUMP_IF_FALSE   202  'to 202'
+
+ L.  96       194  LOAD_NAME                NullWriter
+              196  CALL_FUNCTION_0       0  ''
+              198  LOAD_NAME                sys
+              200  STORE_ATTR               stderr
+            202_0  COME_FROM           192  '192'
+
+ L. 110       202  SETUP_FINALLY       216  'to 216'
+
+ L. 111       204  LOAD_CONST               0
+              206  LOAD_CONST               None
+              208  IMPORT_NAME              encodings
+              210  STORE_NAME               encodings
+              212  POP_BLOCK        
+              214  JUMP_FORWARD        234  'to 234'
+            216_0  COME_FROM_FINALLY   202  '202'
+
+ L. 112       216  DUP_TOP          
+              218  LOAD_NAME                ImportError
+              220  <121>               232  ''
+              222  POP_TOP          
+              224  POP_TOP          
+              226  POP_TOP          
+
+ L. 113       228  POP_EXCEPT       
+              230  JUMP_FORWARD        234  'to 234'
+              232  <48>             
+            234_0  COME_FROM           230  '230'
+            234_1  COME_FROM           214  '214'
+
+ L. 118       234  LOAD_NAME                sys
+              236  LOAD_ATTR                warnoptions
+              238  POP_JUMP_IF_FALSE   248  'to 248'
+
+ L. 119       240  LOAD_CONST               0
+              242  LOAD_CONST               None
+              244  IMPORT_NAME              warnings
+              246  STORE_NAME               warnings
+            248_0  COME_FROM           238  '238'
+
+ L. 122       248  LOAD_CONST               0
+              250  LOAD_CONST               None
+              252  IMPORT_NAME              pyimod04_ctypes
+              254  STORE_NAME               pyimod04_ctypes
+
+ L. 123       256  LOAD_NAME                pyimod04_ctypes
+              258  LOAD_METHOD              install
+              260  CALL_METHOD_0         0  ''
+              262  POP_TOP          
+
+ L. 126       264  LOAD_STR                 'eggs'
+              266  STORE_NAME               d
+
+ L. 127       268  LOAD_NAME                os
+              270  LOAD_ATTR                path
+              272  LOAD_METHOD              join
+              274  LOAD_NAME                sys
+              276  LOAD_ATTR                _MEIPASS
+              278  LOAD_NAME                d
+              280  CALL_METHOD_2         2  ''
+              282  STORE_NAME               d
+
+ L. 132       284  LOAD_NAME                os
+              286  LOAD_ATTR                path
+              288  LOAD_METHOD              isdir
+              290  LOAD_NAME                d
+              292  CALL_METHOD_1         1  ''
+          294_296  POP_JUMP_IF_FALSE   338  'to 338'
+
+ L. 133       298  LOAD_NAME                os
+              300  LOAD_METHOD              listdir
+              302  LOAD_NAME                d
+              304  CALL_METHOD_1         1  ''
+              306  GET_ITER         
+              308  FOR_ITER            338  'to 338'
+              310  STORE_NAME               fn
+
+ L. 134       312  LOAD_NAME                sys
+              314  LOAD_ATTR                path
+              316  LOAD_METHOD              append
+              318  LOAD_NAME                os
+              320  LOAD_ATTR                path
+              322  LOAD_METHOD              join
+              324  LOAD_NAME                d
+              326  LOAD_NAME                fn
+              328  CALL_METHOD_2         2  ''
+              330  CALL_METHOD_1         1  ''
+              332  POP_TOP          
+          334_336  JUMP_BACK           308  'to 308'
+            338_0  COME_FROM           294  '294'
+
+Parse error at or near `<118>' instruction at offset 90
+
+Instruction context:
+   
+ L.  52        84  LOAD_NAME                VIRTENV
+                  86  LOAD_NAME                os
+                  88  LOAD_ATTR                environ
+->                90  <118>                 0  ''
+                  92  POP_JUMP_IF_FALSE   112  'to 112'
+
+test/164035.pyc -- 
+# decompile failed

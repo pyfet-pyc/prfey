@@ -1,0 +1,722 @@
+
+# file test/102759.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Create portable serialized representations of Python objects.\n\nSee module copyreg for a mechanism for registering custom picklers.\nSee module pickletools source for extensive comments.\n\nClasses:\n\n    Pickler\n    Unpickler\n\nFunctions:\n\n    dump(object, file)\n    dumps(object) -> string\n    load(file) -> object\n    loads(bytes) -> object\n\nMisc variables:\n\n    __version__\n    format_version\n    compatible_formats\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  26         4  LOAD_CONST               0
+                6  LOAD_CONST               ('FunctionType',)
+                8  IMPORT_NAME              types
+               10  IMPORT_FROM              FunctionType
+               12  STORE_NAME               FunctionType
+               14  POP_TOP          
+
+ L.  27        16  LOAD_CONST               0
+               18  LOAD_CONST               ('dispatch_table',)
+               20  IMPORT_NAME              copyreg
+               22  IMPORT_FROM              dispatch_table
+               24  STORE_NAME               dispatch_table
+               26  POP_TOP          
+
+ L.  28        28  LOAD_CONST               0
+               30  LOAD_CONST               ('_extension_registry', '_inverted_registry', '_extension_cache')
+               32  IMPORT_NAME              copyreg
+               34  IMPORT_FROM              _extension_registry
+               36  STORE_NAME               _extension_registry
+               38  IMPORT_FROM              _inverted_registry
+               40  STORE_NAME               _inverted_registry
+               42  IMPORT_FROM              _extension_cache
+               44  STORE_NAME               _extension_cache
+               46  POP_TOP          
+
+ L.  29        48  LOAD_CONST               0
+               50  LOAD_CONST               ('islice',)
+               52  IMPORT_NAME              itertools
+               54  IMPORT_FROM              islice
+               56  STORE_NAME               islice
+               58  POP_TOP          
+
+ L.  30        60  LOAD_CONST               0
+               62  LOAD_CONST               ('partial',)
+               64  IMPORT_NAME              functools
+               66  IMPORT_FROM              partial
+               68  STORE_NAME               partial
+               70  POP_TOP          
+
+ L.  31        72  LOAD_CONST               0
+               74  LOAD_CONST               None
+               76  IMPORT_NAME              sys
+               78  STORE_NAME               sys
+
+ L.  32        80  LOAD_CONST               0
+               82  LOAD_CONST               ('maxsize',)
+               84  IMPORT_NAME              sys
+               86  IMPORT_FROM              maxsize
+               88  STORE_NAME               maxsize
+               90  POP_TOP          
+
+ L.  33        92  LOAD_CONST               0
+               94  LOAD_CONST               ('pack', 'unpack')
+               96  IMPORT_NAME              struct
+               98  IMPORT_FROM              pack
+              100  STORE_NAME               pack
+              102  IMPORT_FROM              unpack
+              104  STORE_NAME               unpack
+              106  POP_TOP          
+
+ L.  34       108  LOAD_CONST               0
+              110  LOAD_CONST               None
+              112  IMPORT_NAME              re
+              114  STORE_NAME               re
+
+ L.  35       116  LOAD_CONST               0
+              118  LOAD_CONST               None
+              120  IMPORT_NAME              io
+              122  STORE_NAME               io
+
+ L.  36       124  LOAD_CONST               0
+              126  LOAD_CONST               None
+              128  IMPORT_NAME              codecs
+              130  STORE_NAME               codecs
+
+ L.  37       132  LOAD_CONST               0
+              134  LOAD_CONST               None
+              136  IMPORT_NAME              _compat_pickle
+              138  STORE_NAME               _compat_pickle
+
+ L.  39       140  BUILD_LIST_0          0 
+              142  LOAD_CONST               ('PickleError', 'PicklingError', 'UnpicklingError', 'Pickler', 'Unpickler', 'dump', 'dumps', 'load', 'loads')
+              144  CALL_FINALLY        147  'to 147'
+              146  STORE_NAME               __all__
+
+ L.  42       148  SETUP_FINALLY       180  'to 180'
+
+ L.  43       150  LOAD_CONST               0
+              152  LOAD_CONST               ('PickleBuffer',)
+              154  IMPORT_NAME              _pickle
+              156  IMPORT_FROM              PickleBuffer
+              158  STORE_NAME               PickleBuffer
+              160  POP_TOP          
+
+ L.  44       162  LOAD_NAME                __all__
+              164  LOAD_METHOD              append
+              166  LOAD_STR                 'PickleBuffer'
+              168  CALL_METHOD_1         1  ''
+              170  POP_TOP          
+
+ L.  45       172  LOAD_CONST               True
+              174  STORE_NAME               _HAVE_PICKLE_BUFFER
+              176  POP_BLOCK        
+              178  JUMP_FORWARD        202  'to 202'
+            180_0  COME_FROM_FINALLY   148  '148'
+
+ L.  46       180  DUP_TOP          
+              182  LOAD_NAME                ImportError
+              184  <121>               200  ''
+              186  POP_TOP          
+              188  POP_TOP          
+              190  POP_TOP          
+
+ L.  47       192  LOAD_CONST               False
+              194  STORE_NAME               _HAVE_PICKLE_BUFFER
+              196  POP_EXCEPT       
+              198  JUMP_FORWARD        202  'to 202'
+              200  <48>             
+            202_0  COME_FROM           198  '198'
+            202_1  COME_FROM           178  '178'
+
+ L.  51       202  LOAD_NAME                bytes
+              204  LOAD_NAME                bytearray
+              206  BUILD_TUPLE_2         2 
+              208  STORE_NAME               bytes_types
+
+ L.  54       210  LOAD_STR                 '4.0'
+              212  STORE_NAME               format_version
+
+ L.  55       214  BUILD_LIST_0          0 
+              216  LOAD_CONST               ('1.0', '1.1', '1.2', '1.3', '2.0', '3.0', '4.0', '5.0')
+              218  CALL_FINALLY        221  'to 221'
+              220  STORE_NAME               compatible_formats
+
+ L.  66       222  LOAD_CONST               5
+              224  STORE_NAME               HIGHEST_PROTOCOL
+
+ L.  71       226  LOAD_CONST               4
+              228  STORE_NAME               DEFAULT_PROTOCOL
+
+ L.  73       230  LOAD_BUILD_CLASS 
+              232  LOAD_CODE                <code_object PickleError>
+              234  LOAD_STR                 'PickleError'
+              236  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              238  LOAD_STR                 'PickleError'
+              240  LOAD_NAME                Exception
+              242  CALL_FUNCTION_3       3  ''
+              244  STORE_NAME               PickleError
+
+ L.  77       246  LOAD_BUILD_CLASS 
+              248  LOAD_CODE                <code_object PicklingError>
+              250  LOAD_STR                 'PicklingError'
+              252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              254  LOAD_STR                 'PicklingError'
+              256  LOAD_NAME                PickleError
+              258  CALL_FUNCTION_3       3  ''
+              260  STORE_NAME               PicklingError
+
+ L.  84       262  LOAD_BUILD_CLASS 
+              264  LOAD_CODE                <code_object UnpicklingError>
+              266  LOAD_STR                 'UnpicklingError'
+              268  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              270  LOAD_STR                 'UnpicklingError'
+              272  LOAD_NAME                PickleError
+              274  CALL_FUNCTION_3       3  ''
+              276  STORE_NAME               UnpicklingError
+
+ L.  97       278  LOAD_BUILD_CLASS 
+              280  LOAD_CODE                <code_object _Stop>
+              282  LOAD_STR                 '_Stop'
+              284  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              286  LOAD_STR                 '_Stop'
+              288  LOAD_NAME                Exception
+              290  CALL_FUNCTION_3       3  ''
+              292  STORE_NAME               _Stop
+
+ L. 102       294  SETUP_FINALLY       312  'to 312'
+
+ L. 103       296  LOAD_CONST               0
+              298  LOAD_CONST               ('PyStringMap',)
+              300  IMPORT_NAME_ATTR         org.python.core
+              302  IMPORT_FROM              PyStringMap
+              304  STORE_NAME               PyStringMap
+              306  POP_TOP          
+              308  POP_BLOCK        
+              310  JUMP_FORWARD        336  'to 336'
+            312_0  COME_FROM_FINALLY   294  '294'
+
+ L. 104       312  DUP_TOP          
+              314  LOAD_NAME                ImportError
+          316_318  <121>               334  ''
+              320  POP_TOP          
+              322  POP_TOP          
+              324  POP_TOP          
+
+ L. 105       326  LOAD_CONST               None
+              328  STORE_NAME               PyStringMap
+              330  POP_EXCEPT       
+              332  JUMP_FORWARD        336  'to 336'
+              334  <48>             
+            336_0  COME_FROM           332  '332'
+            336_1  COME_FROM           310  '310'
+
+ L. 111       336  LOAD_CONST               b'('
+              338  STORE_NAME               MARK
+
+ L. 112       340  LOAD_CONST               b'.'
+              342  STORE_NAME               STOP
+
+ L. 113       344  LOAD_CONST               b'0'
+              346  STORE_NAME               POP
+
+ L. 114       348  LOAD_CONST               b'1'
+              350  STORE_NAME               POP_MARK
+
+ L. 115       352  LOAD_CONST               b'2'
+              354  STORE_NAME               DUP
+
+ L. 116       356  LOAD_CONST               b'F'
+              358  STORE_NAME               FLOAT
+
+ L. 117       360  LOAD_CONST               b'I'
+              362  STORE_NAME               INT
+
+ L. 118       364  LOAD_CONST               b'J'
+              366  STORE_NAME               BININT
+
+ L. 119       368  LOAD_CONST               b'K'
+              370  STORE_NAME               BININT1
+
+ L. 120       372  LOAD_CONST               b'L'
+              374  STORE_NAME               LONG
+
+ L. 121       376  LOAD_CONST               b'M'
+              378  STORE_NAME               BININT2
+
+ L. 122       380  LOAD_CONST               b'N'
+              382  STORE_NAME               NONE
+
+ L. 123       384  LOAD_CONST               b'P'
+              386  STORE_NAME               PERSID
+
+ L. 124       388  LOAD_CONST               b'Q'
+              390  STORE_NAME               BINPERSID
+
+ L. 125       392  LOAD_CONST               b'R'
+              394  STORE_NAME               REDUCE
+
+ L. 126       396  LOAD_CONST               b'S'
+              398  STORE_NAME               STRING
+
+ L. 127       400  LOAD_CONST               b'T'
+              402  STORE_NAME               BINSTRING
+
+ L. 128       404  LOAD_CONST               b'U'
+              406  STORE_NAME               SHORT_BINSTRING
+
+ L. 129       408  LOAD_CONST               b'V'
+              410  STORE_NAME               UNICODE
+
+ L. 130       412  LOAD_CONST               b'X'
+              414  STORE_NAME               BINUNICODE
+
+ L. 131       416  LOAD_CONST               b'a'
+              418  STORE_NAME               APPEND
+
+ L. 132       420  LOAD_CONST               b'b'
+              422  STORE_NAME               BUILD
+
+ L. 133       424  LOAD_CONST               b'c'
+              426  STORE_NAME               GLOBAL
+
+ L. 134       428  LOAD_CONST               b'd'
+              430  STORE_NAME               DICT
+
+ L. 135       432  LOAD_CONST               b'}'
+              434  STORE_NAME               EMPTY_DICT
+
+ L. 136       436  LOAD_CONST               b'e'
+              438  STORE_NAME               APPENDS
+
+ L. 137       440  LOAD_CONST               b'g'
+              442  STORE_NAME               GET
+
+ L. 138       444  LOAD_CONST               b'h'
+              446  STORE_NAME               BINGET
+
+ L. 139       448  LOAD_CONST               b'i'
+              450  STORE_NAME               INST
+
+ L. 140       452  LOAD_CONST               b'j'
+              454  STORE_NAME               LONG_BINGET
+
+ L. 141       456  LOAD_CONST               b'l'
+              458  STORE_NAME               LIST
+
+ L. 142       460  LOAD_CONST               b']'
+              462  STORE_NAME               EMPTY_LIST
+
+ L. 143       464  LOAD_CONST               b'o'
+              466  STORE_NAME               OBJ
+
+ L. 144       468  LOAD_CONST               b'p'
+              470  STORE_NAME               PUT
+
+ L. 145       472  LOAD_CONST               b'q'
+              474  STORE_NAME               BINPUT
+
+ L. 146       476  LOAD_CONST               b'r'
+              478  STORE_NAME               LONG_BINPUT
+
+ L. 147       480  LOAD_CONST               b's'
+              482  STORE_NAME               SETITEM
+
+ L. 148       484  LOAD_CONST               b't'
+              486  STORE_NAME               TUPLE
+
+ L. 149       488  LOAD_CONST               b')'
+              490  STORE_NAME               EMPTY_TUPLE
+
+ L. 150       492  LOAD_CONST               b'u'
+              494  STORE_NAME               SETITEMS
+
+ L. 151       496  LOAD_CONST               b'G'
+              498  STORE_NAME               BINFLOAT
+
+ L. 153       500  LOAD_CONST               b'I01\n'
+              502  STORE_NAME               TRUE
+
+ L. 154       504  LOAD_CONST               b'I00\n'
+              506  STORE_NAME               FALSE
+
+ L. 158       508  LOAD_CONST               b'\x80'
+              510  STORE_NAME               PROTO
+
+ L. 159       512  LOAD_CONST               b'\x81'
+              514  STORE_NAME               NEWOBJ
+
+ L. 160       516  LOAD_CONST               b'\x82'
+              518  STORE_NAME               EXT1
+
+ L. 161       520  LOAD_CONST               b'\x83'
+              522  STORE_NAME               EXT2
+
+ L. 162       524  LOAD_CONST               b'\x84'
+              526  STORE_NAME               EXT4
+
+ L. 163       528  LOAD_CONST               b'\x85'
+              530  STORE_NAME               TUPLE1
+
+ L. 164       532  LOAD_CONST               b'\x86'
+              534  STORE_NAME               TUPLE2
+
+ L. 165       536  LOAD_CONST               b'\x87'
+              538  STORE_NAME               TUPLE3
+
+ L. 166       540  LOAD_CONST               b'\x88'
+              542  STORE_NAME               NEWTRUE
+
+ L. 167       544  LOAD_CONST               b'\x89'
+              546  STORE_NAME               NEWFALSE
+
+ L. 168       548  LOAD_CONST               b'\x8a'
+              550  STORE_NAME               LONG1
+
+ L. 169       552  LOAD_CONST               b'\x8b'
+              554  STORE_NAME               LONG4
+
+ L. 171       556  LOAD_NAME                EMPTY_TUPLE
+              558  LOAD_NAME                TUPLE1
+              560  LOAD_NAME                TUPLE2
+              562  LOAD_NAME                TUPLE3
+              564  BUILD_LIST_4          4 
+              566  STORE_NAME               _tuplesize2code
+
+ L. 175       568  LOAD_CONST               b'B'
+              570  STORE_NAME               BINBYTES
+
+ L. 176       572  LOAD_CONST               b'C'
+              574  STORE_NAME               SHORT_BINBYTES
+
+ L. 180       576  LOAD_CONST               b'\x8c'
+              578  STORE_NAME               SHORT_BINUNICODE
+
+ L. 181       580  LOAD_CONST               b'\x8d'
+              582  STORE_NAME               BINUNICODE8
+
+ L. 182       584  LOAD_CONST               b'\x8e'
+              586  STORE_NAME               BINBYTES8
+
+ L. 183       588  LOAD_CONST               b'\x8f'
+              590  STORE_NAME               EMPTY_SET
+
+ L. 184       592  LOAD_CONST               b'\x90'
+              594  STORE_NAME               ADDITEMS
+
+ L. 185       596  LOAD_CONST               b'\x91'
+              598  STORE_NAME               FROZENSET
+
+ L. 186       600  LOAD_CONST               b'\x92'
+              602  STORE_NAME               NEWOBJ_EX
+
+ L. 187       604  LOAD_CONST               b'\x93'
+              606  STORE_NAME               STACK_GLOBAL
+
+ L. 188       608  LOAD_CONST               b'\x94'
+              610  STORE_NAME               MEMOIZE
+
+ L. 189       612  LOAD_CONST               b'\x95'
+              614  STORE_NAME               FRAME
+
+ L. 193       616  LOAD_CONST               b'\x96'
+              618  STORE_NAME               BYTEARRAY8
+
+ L. 194       620  LOAD_CONST               b'\x97'
+              622  STORE_NAME               NEXT_BUFFER
+
+ L. 195       624  LOAD_CONST               b'\x98'
+              626  STORE_NAME               READONLY_BUFFER
+
+ L. 197       628  LOAD_NAME                __all__
+              630  LOAD_METHOD              extend
+              632  LOAD_LISTCOMP            '<code_object <listcomp>>'
+              634  LOAD_STR                 '<listcomp>'
+              636  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              638  LOAD_NAME                dir
+              640  CALL_FUNCTION_0       0  ''
+              642  GET_ITER         
+              644  CALL_FUNCTION_1       1  ''
+              646  CALL_METHOD_1         1  ''
+              648  POP_TOP          
+
+ L. 200       650  LOAD_BUILD_CLASS 
+              652  LOAD_CODE                <code_object _Framer>
+              654  LOAD_STR                 '_Framer'
+              656  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              658  LOAD_STR                 '_Framer'
+              660  CALL_FUNCTION_2       2  ''
+              662  STORE_NAME               _Framer
+
+ L. 263       664  LOAD_BUILD_CLASS 
+              666  LOAD_CODE                <code_object _Unframer>
+              668  LOAD_STR                 '_Unframer'
+              670  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              672  LOAD_STR                 '_Unframer'
+              674  CALL_FUNCTION_2       2  ''
+              676  STORE_NAME               _Unframer
+
+ L. 322       678  LOAD_CODE                <code_object _getattribute>
+              680  LOAD_STR                 '_getattribute'
+              682  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              684  STORE_NAME               _getattribute
+
+ L. 335       686  LOAD_CODE                <code_object whichmodule>
+              688  LOAD_STR                 'whichmodule'
+              690  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              692  STORE_NAME               whichmodule
+
+ L. 352       694  LOAD_CODE                <code_object encode_long>
+              696  LOAD_STR                 'encode_long'
+              698  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              700  STORE_NAME               encode_long
+
+ L. 382       702  LOAD_CODE                <code_object decode_long>
+              704  LOAD_STR                 'decode_long'
+              706  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              708  STORE_NAME               decode_long
+
+ L. 405       710  LOAD_BUILD_CLASS 
+              712  LOAD_CODE                <code_object _Pickler>
+              714  LOAD_STR                 '_Pickler'
+              716  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              718  LOAD_STR                 '_Pickler'
+              720  CALL_FUNCTION_2       2  ''
+              722  STORE_NAME               _Pickler
+
+ L.1134       724  LOAD_BUILD_CLASS 
+              726  LOAD_CODE                <code_object _Unpickler>
+              728  LOAD_STR                 '_Unpickler'
+              730  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              732  LOAD_STR                 '_Unpickler'
+              734  CALL_FUNCTION_2       2  ''
+              736  STORE_NAME               _Unpickler
+
+ L.1747       738  LOAD_CONST               (None,)
+              740  LOAD_CONST               True
+              742  LOAD_CONST               None
+              744  LOAD_CONST               ('fix_imports', 'buffer_callback')
+              746  BUILD_CONST_KEY_MAP_2     2 
+              748  LOAD_CODE                <code_object _dump>
+              750  LOAD_STR                 '_dump'
+              752  MAKE_FUNCTION_3          'default, keyword-only'
+              754  STORE_NAME               _dump
+
+ L.1751       756  LOAD_CONST               (None,)
+              758  LOAD_CONST               True
+              760  LOAD_CONST               None
+              762  LOAD_CONST               ('fix_imports', 'buffer_callback')
+              764  BUILD_CONST_KEY_MAP_2     2 
+              766  LOAD_CODE                <code_object _dumps>
+              768  LOAD_STR                 '_dumps'
+              770  MAKE_FUNCTION_3          'default, keyword-only'
+              772  STORE_NAME               _dumps
+
+ L.1759       774  LOAD_CONST               True
+              776  LOAD_STR                 'ASCII'
+              778  LOAD_STR                 'strict'
+
+ L.1760       780  LOAD_CONST               None
+
+ L.1759       782  LOAD_CONST               ('fix_imports', 'encoding', 'errors', 'buffers')
+              784  BUILD_CONST_KEY_MAP_4     4 
+              786  LOAD_CODE                <code_object _load>
+              788  LOAD_STR                 '_load'
+              790  MAKE_FUNCTION_2          'keyword-only'
+              792  STORE_NAME               _load
+
+ L.1764       794  LOAD_CONST               True
+              796  LOAD_STR                 'ASCII'
+              798  LOAD_STR                 'strict'
+
+ L.1765       800  LOAD_CONST               None
+
+ L.1764       802  LOAD_CONST               ('fix_imports', 'encoding', 'errors', 'buffers')
+              804  BUILD_CONST_KEY_MAP_4     4 
+              806  LOAD_CODE                <code_object _loads>
+              808  LOAD_STR                 '_loads'
+              810  MAKE_FUNCTION_2          'keyword-only'
+              812  STORE_NAME               _loads
+
+ L.1773       814  SETUP_FINALLY       864  'to 864'
+
+ L.1774       816  LOAD_CONST               0
+              818  LOAD_CONST               ('PickleError', 'PicklingError', 'UnpicklingError', 'Pickler', 'Unpickler', 'dump', 'dumps', 'load', 'loads')
+              820  IMPORT_NAME              _pickle
+              822  IMPORT_FROM              PickleError
+              824  STORE_NAME               PickleError
+              826  IMPORT_FROM              PicklingError
+              828  STORE_NAME               PicklingError
+              830  IMPORT_FROM              UnpicklingError
+              832  STORE_NAME               UnpicklingError
+              834  IMPORT_FROM              Pickler
+              836  STORE_NAME               Pickler
+              838  IMPORT_FROM              Unpickler
+              840  STORE_NAME               Unpickler
+              842  IMPORT_FROM              dump
+              844  STORE_NAME               dump
+              846  IMPORT_FROM              dumps
+              848  STORE_NAME               dumps
+              850  IMPORT_FROM              load
+              852  STORE_NAME               load
+              854  IMPORT_FROM              loads
+              856  STORE_NAME               loads
+              858  POP_TOP          
+              860  POP_BLOCK        
+              862  JUMP_FORWARD        914  'to 914'
+            864_0  COME_FROM_FINALLY   814  '814'
+
+ L.1785       864  DUP_TOP          
+              866  LOAD_NAME                ImportError
+          868_870  <121>               912  ''
+              872  POP_TOP          
+              874  POP_TOP          
+              876  POP_TOP          
+
+ L.1786       878  LOAD_NAME                _Pickler
+              880  LOAD_NAME                _Unpickler
+              882  ROT_TWO          
+              884  STORE_NAME               Pickler
+              886  STORE_NAME               Unpickler
+
+ L.1787       888  LOAD_NAME                _dump
+              890  LOAD_NAME                _dumps
+              892  LOAD_NAME                _load
+              894  LOAD_NAME                _loads
+              896  BUILD_TUPLE_4         4 
+              898  UNPACK_SEQUENCE_4     4 
+              900  STORE_NAME               dump
+              902  STORE_NAME               dumps
+              904  STORE_NAME               load
+              906  STORE_NAME               loads
+              908  POP_EXCEPT       
+              910  JUMP_FORWARD        914  'to 914'
+              912  <48>             
+            914_0  COME_FROM           910  '910'
+            914_1  COME_FROM           862  '862'
+
+ L.1790       914  LOAD_CODE                <code_object _test>
+              916  LOAD_STR                 '_test'
+              918  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              920  STORE_NAME               _test
+
+ L.1794       922  LOAD_NAME                __name__
+              924  LOAD_STR                 '__main__'
+              926  COMPARE_OP               ==
+          928_930  POP_JUMP_IF_FALSE  1092  'to 1092'
+
+ L.1795       932  LOAD_CONST               0
+              934  LOAD_CONST               None
+              936  IMPORT_NAME              argparse
+              938  STORE_NAME               argparse
+
+ L.1796       940  LOAD_NAME                argparse
+              942  LOAD_ATTR                ArgumentParser
+
+ L.1797       944  LOAD_STR                 'display contents of the pickle files'
+
+ L.1796       946  LOAD_CONST               ('description',)
+              948  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+              950  STORE_NAME               parser
+
+ L.1798       952  LOAD_NAME                parser
+              954  LOAD_ATTR                add_argument
+
+ L.1799       956  LOAD_STR                 'pickle_file'
+              958  LOAD_NAME                argparse
+              960  LOAD_METHOD              FileType
+              962  LOAD_STR                 'br'
+              964  CALL_METHOD_1         1  ''
+
+ L.1800       966  LOAD_STR                 '*'
+              968  LOAD_STR                 'the pickle file'
+
+ L.1798       970  LOAD_CONST               ('type', 'nargs', 'help')
+              972  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              974  POP_TOP          
+
+ L.1801       976  LOAD_NAME                parser
+              978  LOAD_ATTR                add_argument
+
+ L.1802       980  LOAD_STR                 '-t'
+              982  LOAD_STR                 '--test'
+              984  LOAD_STR                 'store_true'
+
+ L.1803       986  LOAD_STR                 'run self-test suite'
+
+ L.1801       988  LOAD_CONST               ('action', 'help')
+              990  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              992  POP_TOP          
+
+ L.1804       994  LOAD_NAME                parser
+              996  LOAD_ATTR                add_argument
+
+ L.1805       998  LOAD_STR                 '-v'
+             1000  LOAD_STR                 'store_true'
+
+ L.1806      1002  LOAD_STR                 'run verbosely; only affects self-test run'
+
+ L.1804      1004  LOAD_CONST               ('action', 'help')
+             1006  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+             1008  POP_TOP          
+
+ L.1807      1010  LOAD_NAME                parser
+             1012  LOAD_METHOD              parse_args
+             1014  CALL_METHOD_0         0  ''
+             1016  STORE_NAME               args
+
+ L.1808      1018  LOAD_NAME                args
+             1020  LOAD_ATTR                test
+         1022_1024  POP_JUMP_IF_FALSE  1034  'to 1034'
+
+ L.1809      1026  LOAD_NAME                _test
+             1028  CALL_FUNCTION_0       0  ''
+             1030  POP_TOP          
+             1032  JUMP_FORWARD       1092  'to 1092'
+           1034_0  COME_FROM          1022  '1022'
+
+ L.1811      1034  LOAD_NAME                args
+             1036  LOAD_ATTR                pickle_file
+         1038_1040  POP_JUMP_IF_TRUE   1052  'to 1052'
+
+ L.1812      1042  LOAD_NAME                parser
+             1044  LOAD_METHOD              print_help
+             1046  CALL_METHOD_0         0  ''
+             1048  POP_TOP          
+             1050  JUMP_FORWARD       1092  'to 1092'
+           1052_0  COME_FROM          1038  '1038'
+
+ L.1814      1052  LOAD_CONST               0
+             1054  LOAD_CONST               None
+             1056  IMPORT_NAME              pprint
+             1058  STORE_NAME               pprint
+
+ L.1815      1060  LOAD_NAME                args
+             1062  LOAD_ATTR                pickle_file
+             1064  GET_ITER         
+             1066  FOR_ITER           1092  'to 1092'
+             1068  STORE_NAME               f
+
+ L.1816      1070  LOAD_NAME                load
+             1072  LOAD_NAME                f
+             1074  CALL_FUNCTION_1       1  ''
+             1076  STORE_NAME               obj
+
+ L.1817      1078  LOAD_NAME                pprint
+             1080  LOAD_METHOD              pprint
+             1082  LOAD_NAME                obj
+             1084  CALL_METHOD_1         1  ''
+             1086  POP_TOP          
+         1088_1090  JUMP_BACK          1066  'to 1066'
+           1092_0  COME_FROM          1050  '1050'
+           1092_1  COME_FROM          1032  '1032'
+           1092_2  COME_FROM           928  '928'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 144
+
+Instruction context:
+   
+ L.  39       140  BUILD_LIST_0          0 
+                 142  LOAD_CONST               ('PickleError', 'PicklingError', 'UnpicklingError', 'Pickler', 'Unpickler', 'dump', 'dumps', 'load', 'loads')
+->               144  CALL_FINALLY        147  'to 147'
+                 146  STORE_NAME               __all__
+
+test/102759.pyc -- 
+# decompile failed

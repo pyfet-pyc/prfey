@@ -1,0 +1,20 @@
+Instruction context:
+   
+ L.  51       160  LOAD_FAST                'uri'
+                 162  LOAD_ATTR                port
+                 164  JUMP_IF_TRUE_OR_POP   176  'to 176'
+                 166  LOAD_FAST                'secure'
+                 168  POP_JUMP_IF_FALSE   174  'to 174'
+                 170  LOAD_CONST               443
+               172_0  COME_FROM           164  '164'
+->               172  JUMP_FORWARD        176  'to 176'
+                 174  ELSE                     '176'
+                 174  LOAD_CONST               80
+               176_0  COME_FROM           172  '172'
+                 176  STORE_FAST               'port'
+
+../test/46962.pyc -- 
+# decompile failed
+
+# file ../test/46962.pyc
+# Deparsing stopped due to parse error

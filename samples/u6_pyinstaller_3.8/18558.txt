@@ -1,0 +1,22 @@
+Instruction context:
+   
+ L. 689       180  LOAD_GLOBAL              ImageFile
+                 182  LOAD_METHOD              _safe_read
+                 184  LOAD_FAST                'self'
+                 186  LOAD_ATTR                fp
+                 188  LOAD_FAST                'length'
+                 190  CALL_METHOD_2         2  ''
+                 192  POP_TOP          
+                 194  POP_EXCEPT       
+                 196  JUMP_BACK             0  'to 0'
+               198_0  COME_FROM           156  '156'
+                 198  END_FINALLY      
+                 200  JUMP_BACK             0  'to 0'
+               202_0  COME_FROM_EXCEPT_CLAUSE   112  '112'
+->             202_1  COME_FROM_EXCEPT_CLAUSE    56  '56'
+
+../test/18558.pyc -- 
+# decompile failed
+
+# file ../test/18558.pyc
+# Deparsing stopped due to parse error

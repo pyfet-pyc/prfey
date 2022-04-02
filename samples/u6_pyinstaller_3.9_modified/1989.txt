@@ -1,0 +1,64 @@
+Instruction context:
+   
+ L.  79        42  DUP_TOP          
+                  44  LOAD_GLOBAL              TypeError
+->                46  <121>                60  ''
+                  48  POP_TOP          
+                  50  POP_TOP          
+                  52  POP_TOP          
+Instruction context:
+   
+ L. 153        46  LOAD_FAST                'dtype'
+                  48  LOAD_CONST               None
+->                50  <117>                 0  ''
+                  52  POP_JUMP_IF_FALSE   118  'to 118'
+Instruction context:
+   
+ L. 186        42  LOAD_FAST                'dtype'
+                  44  LOAD_CONST               None
+->                46  <117>                 0  ''
+                  48  POP_JUMP_IF_FALSE    82  'to 82'
+                  50  LOAD_GLOBAL              issubclass
+                  52  LOAD_FAST                'arr'
+                  54  LOAD_ATTR                dtype
+                  56  LOAD_ATTR                type
+                  58  LOAD_GLOBAL              nt
+                  60  LOAD_ATTR                integer
+                  62  LOAD_GLOBAL              nt
+                  64  LOAD_ATTR                bool_
+                  66  BUILD_TUPLE_2         2 
+                  68  CALL_FUNCTION_2       2  ''
+                  70  POP_JUMP_IF_FALSE    82  'to 82'
+Instruction context:
+   
+ L. 258        40  LOAD_GLOBAL              pickle
+                  42  LOAD_ATTR                dump
+                  44  LOAD_FAST                'self'
+                  46  LOAD_FAST                'f'
+                  48  LOAD_FAST                'protocol'
+                  50  LOAD_CONST               ('protocol',)
+                  52  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+                  54  POP_TOP          
+                  56  POP_BLOCK        
+                  58  LOAD_CONST               None
+->                60  DUP_TOP          
+                  62  DUP_TOP          
+                  64  CALL_FUNCTION_3       3  ''
+                  66  POP_TOP          
+                  68  JUMP_FORWARD         86  'to 86'
+                70_0  COME_FROM_WITH       36  '36'
+                  70  <49>             
+                  72  POP_JUMP_IF_TRUE     76  'to 76'
+                  74  <48>             
+                76_0  COME_FROM            72  '72'
+                  76  POP_TOP          
+                  78  POP_TOP          
+                  80  POP_TOP          
+                  82  POP_EXCEPT       
+                  84  POP_TOP          
+
+test/1989.pyc -- 
+# decompile failed
+
+# file test/1989.pyc
+# Deparsing stopped due to parse error

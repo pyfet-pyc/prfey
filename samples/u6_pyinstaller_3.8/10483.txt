@@ -1,0 +1,26 @@
+Instruction context:
+   
+ L. 214        84  LOAD_DEREF               'fxn'
+                  86  LOAD_FAST                'self'
+                  88  LOAD_FAST                'module'
+                  90  BUILD_TUPLE_2         2 
+                  92  LOAD_FAST                'args'
+                  94  BUILD_TUPLE_UNPACK_WITH_CALL_2     2 
+                  96  LOAD_FAST                'kwargs'
+                  98  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                 100  POP_BLOCK        
+->               102  ROT_TWO          
+                 104  BEGIN_FINALLY    
+                 106  WITH_CLEANUP_START
+                 108  WITH_CLEANUP_FINISH
+                 110  POP_FINALLY           0  ''
+                 112  RETURN_VALUE     
+               114_0  COME_FROM_WITH        6  '6'
+                 114  WITH_CLEANUP_START
+                 116  WITH_CLEANUP_FINISH
+
+../test/10483.pyc -- 
+# decompile failed
+
+# file ../test/10483.pyc
+# Deparsing stopped due to parse error

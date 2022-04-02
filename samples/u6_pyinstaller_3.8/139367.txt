@@ -1,0 +1,49 @@
+Instruction context:
+   
+ L. 902       106  LOAD_CONST               True
+                 108  LOAD_DEREF               'self'
+                 110  STORE_ATTR               exp_format
+               112_0  COME_FROM           104  '104'
+               112_1  COME_FROM            84  '84'
+                 112  POP_BLOCK        
+->               114  BEGIN_FINALLY    
+               116_0  COME_FROM_WITH       68  '68'
+                 116  WITH_CLEANUP_START
+                 118  WITH_CLEANUP_FINISH
+                 120  END_FINALLY      
+               122_0  COME_FROM            38  '38'
+Instruction context:
+   
+ L. 983       106  LOAD_STR                 ' '
+                 108  LOAD_FAST                'self'
+                 110  LOAD_ATTR                pad_left
+                 112  LOAD_FAST                'self'
+                 114  LOAD_ATTR                pad_right
+                 116  BINARY_ADD       
+                 118  LOAD_CONST               1
+                 120  BINARY_ADD       
+                 122  LOAD_GLOBAL              len
+                 124  LOAD_FAST                'ret'
+                 126  CALL_FUNCTION_1       1  ''
+                 128  BINARY_SUBTRACT  
+                 130  BINARY_MULTIPLY  
+                 132  LOAD_FAST                'ret'
+                 134  BINARY_ADD       
+                 136  POP_BLOCK        
+->               138  ROT_TWO          
+                 140  BEGIN_FINALLY    
+                 142  WITH_CLEANUP_START
+                 144  WITH_CLEANUP_FINISH
+                 146  POP_FINALLY           0  ''
+                 148  RETURN_VALUE     
+               150_0  COME_FROM_WITH       18  '18'
+                 150  WITH_CLEANUP_START
+                 152  WITH_CLEANUP_FINISH
+                 154  END_FINALLY      
+               156_0  COME_FROM             8  '8'
+
+../test/139367.pyc -- 
+# decompile failed
+
+# file ../test/139367.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,38 @@
+Instruction context:
+   
+ L.  17        36  BUILD_LIST_0          0 
+                  38  LOAD_CONST               ('Cipher', 'CipherAlgorithm', 'BlockCipherAlgorithm', 'CipherContext', 'AEADCipherContext', 'AEADDecryptionContext', 'AEADEncryptionContext')
+->                40  CALL_FINALLY         43  'to 43'
+
+test/129493.pyc -- 
+# decompile failed
+
+# file test/129493.pyc
+# --- This code section failed: ---
+
+ L.   6         0  LOAD_CONST               0
+                2  LOAD_CONST               ('AEADCipherContext', 'AEADDecryptionContext', 'AEADEncryptionContext', 'BlockCipherAlgorithm', 'Cipher', 'CipherAlgorithm', 'CipherContext')
+                4  IMPORT_NAME_ATTR         cryptography.hazmat.primitives.ciphers.base
+                6  IMPORT_FROM              AEADCipherContext
+                8  STORE_NAME               AEADCipherContext
+               10  IMPORT_FROM              AEADDecryptionContext
+               12  STORE_NAME               AEADDecryptionContext
+               14  IMPORT_FROM              AEADEncryptionContext
+               16  STORE_NAME               AEADEncryptionContext
+               18  IMPORT_FROM              BlockCipherAlgorithm
+               20  STORE_NAME               BlockCipherAlgorithm
+               22  IMPORT_FROM              Cipher
+               24  STORE_NAME               Cipher
+               26  IMPORT_FROM              CipherAlgorithm
+               28  STORE_NAME               CipherAlgorithm
+               30  IMPORT_FROM              CipherContext
+               32  STORE_NAME               CipherContext
+               34  POP_TOP          
+
+ L.  17        36  BUILD_LIST_0          0 
+               38  LOAD_CONST               ('Cipher', 'CipherAlgorithm', 'BlockCipherAlgorithm', 'CipherContext', 'AEADCipherContext', 'AEADDecryptionContext', 'AEADEncryptionContext')
+               40  CALL_FINALLY         43  'to 43'
+               42  STORE_NAME               __all__
+
+Parse error at or near `CALL_FINALLY' instruction at offset 40
+

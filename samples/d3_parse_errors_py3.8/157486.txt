@@ -1,0 +1,57 @@
+Instruction context:
+   
+ L. 186        76  POP_EXCEPT       
+->                78  LOAD_CONST               None
+                  80  RETURN_VALUE     
+                82_0  COME_FROM            68  '68'
+Instruction context:
+   
+ L. 341        96  POP_EXCEPT       
+                  98  JUMP_FORWARD        102  'to 102'
+->             100_0  COME_FROM            88  '88'
+                 100  END_FINALLY      
+               102_0  COME_FROM            98  '98'
+Instruction context:
+   
+ L. 497       934  POP_EXCEPT       
+                 936  JUMP_FORWARD        940  'to 940'
+->             938_0  COME_FROM           924  '924'
+                 938  END_FINALLY      
+               940_0  COME_FROM           936  '936'
+Instruction context:
+   
+ L. 591       222  POP_EXCEPT       
+                 224  JUMP_BACK            96  'to 96'
+                 226  POP_EXCEPT       
+                 228  JUMP_FORWARD        256  'to 256'
+->             230_0  COME_FROM           214  '214'
+Instruction context:
+   
+ L. 641       102  LOAD_GLOBAL              print
+                 104  LOAD_STR                 'Could not add module %s - %s: %s'
+                 106  LOAD_FAST                'info'
+                 108  LOAD_GLOBAL              sys
+                 110  LOAD_METHOD              exc_info
+                 112  CALL_METHOD_0         0  ''
+                 114  LOAD_CONST               0
+                 116  BINARY_SUBSCR    
+                 118  LOAD_GLOBAL              sys
+                 120  LOAD_METHOD              exc_info
+                 122  CALL_METHOD_0         0  ''
+                 124  LOAD_CONST               1
+                 126  BINARY_SUBSCR    
+                 128  BUILD_TUPLE_3         3 
+                 130  BINARY_MODULO    
+                 132  CALL_FUNCTION_1       1  ''
+                 134  POP_TOP          
+                 136  POP_EXCEPT       
+->               138  JUMP_BACK            38  'to 38'
+                 140  END_FINALLY      
+                 142  JUMP_BACK            38  'to 38'
+               144_0  COME_FROM            38  '38'
+
+../test/157486.pyc -- 
+# decompile failed
+
+# file ../test/157486.pyc
+# Deparsing stopped due to parse error

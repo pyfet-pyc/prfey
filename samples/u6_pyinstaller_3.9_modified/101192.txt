@@ -1,0 +1,1092 @@
+
+# file test/101192.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'create and manipulate C data types in Python'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               _os
+               12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               _sys
+
+ L.   4        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              types
+               26  STORE_NAME               _types
+
+ L.   6        28  LOAD_STR                 '1.1.0'
+               30  STORE_NAME               __version__
+
+ L.   8        32  LOAD_CONST               0
+               34  LOAD_CONST               ('Union', 'Structure', 'Array')
+               36  IMPORT_NAME              _ctypes
+               38  IMPORT_FROM              Union
+               40  STORE_NAME               Union
+               42  IMPORT_FROM              Structure
+               44  STORE_NAME               Structure
+               46  IMPORT_FROM              Array
+               48  STORE_NAME               Array
+               50  POP_TOP          
+
+ L.   9        52  LOAD_CONST               0
+               54  LOAD_CONST               ('_Pointer',)
+               56  IMPORT_NAME              _ctypes
+               58  IMPORT_FROM              _Pointer
+               60  STORE_NAME               _Pointer
+               62  POP_TOP          
+
+ L.  10        64  LOAD_CONST               0
+               66  LOAD_CONST               ('CFuncPtr',)
+               68  IMPORT_NAME              _ctypes
+               70  IMPORT_FROM              CFuncPtr
+               72  STORE_NAME               _CFuncPtr
+               74  POP_TOP          
+
+ L.  11        76  LOAD_CONST               0
+               78  LOAD_CONST               ('__version__',)
+               80  IMPORT_NAME              _ctypes
+               82  IMPORT_FROM              __version__
+               84  STORE_NAME               _ctypes_version
+               86  POP_TOP          
+
+ L.  12        88  LOAD_CONST               0
+               90  LOAD_CONST               ('RTLD_LOCAL', 'RTLD_GLOBAL')
+               92  IMPORT_NAME              _ctypes
+               94  IMPORT_FROM              RTLD_LOCAL
+               96  STORE_NAME               RTLD_LOCAL
+               98  IMPORT_FROM              RTLD_GLOBAL
+              100  STORE_NAME               RTLD_GLOBAL
+              102  POP_TOP          
+
+ L.  13       104  LOAD_CONST               0
+              106  LOAD_CONST               ('ArgumentError',)
+              108  IMPORT_NAME              _ctypes
+              110  IMPORT_FROM              ArgumentError
+              112  STORE_NAME               ArgumentError
+              114  POP_TOP          
+
+ L.  15       116  LOAD_CONST               0
+              118  LOAD_CONST               ('calcsize',)
+              120  IMPORT_NAME              struct
+              122  IMPORT_FROM              calcsize
+              124  STORE_NAME               _calcsize
+              126  POP_TOP          
+
+ L.  17       128  LOAD_NAME                __version__
+              130  LOAD_NAME                _ctypes_version
+              132  COMPARE_OP               !=
+              134  POP_JUMP_IF_FALSE   148  'to 148'
+
+ L.  18       136  LOAD_NAME                Exception
+              138  LOAD_STR                 'Version number mismatch'
+              140  LOAD_NAME                __version__
+              142  LOAD_NAME                _ctypes_version
+              144  CALL_FUNCTION_3       3  ''
+              146  RAISE_VARARGS_1       1  'exception instance'
+            148_0  COME_FROM           134  '134'
+
+ L.  20       148  LOAD_NAME                _os
+              150  LOAD_ATTR                name
+              152  LOAD_STR                 'nt'
+              154  COMPARE_OP               ==
+              156  POP_JUMP_IF_FALSE   170  'to 170'
+
+ L.  21       158  LOAD_CONST               0
+              160  LOAD_CONST               ('FormatError',)
+              162  IMPORT_NAME              _ctypes
+              164  IMPORT_FROM              FormatError
+              166  STORE_NAME               FormatError
+              168  POP_TOP          
+            170_0  COME_FROM           156  '156'
+
+ L.  23       170  LOAD_NAME                RTLD_LOCAL
+              172  STORE_NAME               DEFAULT_MODE
+
+ L.  24       174  LOAD_NAME                _os
+              176  LOAD_ATTR                name
+              178  LOAD_STR                 'posix'
+              180  COMPARE_OP               ==
+              182  POP_JUMP_IF_FALSE   226  'to 226'
+              184  LOAD_NAME                _sys
+              186  LOAD_ATTR                platform
+              188  LOAD_STR                 'darwin'
+              190  COMPARE_OP               ==
+              192  POP_JUMP_IF_FALSE   226  'to 226'
+
+ L.  30       194  LOAD_NAME                int
+              196  LOAD_NAME                _os
+              198  LOAD_METHOD              uname
+              200  CALL_METHOD_0         0  ''
+              202  LOAD_ATTR                release
+              204  LOAD_METHOD              split
+              206  LOAD_STR                 '.'
+              208  CALL_METHOD_1         1  ''
+              210  LOAD_CONST               0
+              212  BINARY_SUBSCR    
+              214  CALL_FUNCTION_1       1  ''
+              216  LOAD_CONST               8
+              218  COMPARE_OP               <
+              220  POP_JUMP_IF_FALSE   226  'to 226'
+
+ L.  31       222  LOAD_NAME                RTLD_GLOBAL
+              224  STORE_NAME               DEFAULT_MODE
+            226_0  COME_FROM           220  '220'
+            226_1  COME_FROM           192  '192'
+            226_2  COME_FROM           182  '182'
+
+ L.  33       226  LOAD_CONST               0
+              228  LOAD_CONST               ('FUNCFLAG_CDECL', 'FUNCFLAG_PYTHONAPI', 'FUNCFLAG_USE_ERRNO', 'FUNCFLAG_USE_LASTERROR')
+              230  IMPORT_NAME              _ctypes
+              232  IMPORT_FROM              FUNCFLAG_CDECL
+              234  STORE_NAME               _FUNCFLAG_CDECL
+              236  IMPORT_FROM              FUNCFLAG_PYTHONAPI
+              238  STORE_NAME               _FUNCFLAG_PYTHONAPI
+              240  IMPORT_FROM              FUNCFLAG_USE_ERRNO
+              242  STORE_NAME               _FUNCFLAG_USE_ERRNO
+              244  IMPORT_FROM              FUNCFLAG_USE_LASTERROR
+              246  STORE_NAME               _FUNCFLAG_USE_LASTERROR
+              248  POP_TOP          
+
+ L.  48       250  LOAD_CONST               (None,)
+              252  LOAD_CODE                <code_object create_string_buffer>
+              254  LOAD_STR                 'create_string_buffer'
+              256  MAKE_FUNCTION_1          'default'
+              258  STORE_NAME               create_string_buffer
+
+ L.  68       260  LOAD_CONST               (None,)
+              262  LOAD_CODE                <code_object c_buffer>
+              264  LOAD_STR                 'c_buffer'
+              266  MAKE_FUNCTION_1          'default'
+              268  STORE_NAME               c_buffer
+
+ L.  75       270  BUILD_MAP_0           0 
+              272  STORE_NAME               _c_functype_cache
+
+ L.  76       274  LOAD_CODE                <code_object CFUNCTYPE>
+              276  LOAD_STR                 'CFUNCTYPE'
+              278  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              280  STORE_NAME               CFUNCTYPE
+
+ L. 109       282  LOAD_NAME                _os
+              284  LOAD_ATTR                name
+              286  LOAD_STR                 'nt'
+              288  COMPARE_OP               ==
+          290_292  POP_JUMP_IF_FALSE   356  'to 356'
+
+ L. 110       294  LOAD_CONST               0
+              296  LOAD_CONST               ('LoadLibrary',)
+              298  IMPORT_NAME              _ctypes
+              300  IMPORT_FROM              LoadLibrary
+              302  STORE_NAME               _dlopen
+              304  POP_TOP          
+
+ L. 111       306  LOAD_CONST               0
+              308  LOAD_CONST               ('FUNCFLAG_STDCALL',)
+              310  IMPORT_NAME              _ctypes
+              312  IMPORT_FROM              FUNCFLAG_STDCALL
+              314  STORE_NAME               _FUNCFLAG_STDCALL
+              316  POP_TOP          
+
+ L. 113       318  BUILD_MAP_0           0 
+              320  STORE_NAME               _win_functype_cache
+
+ L. 114       322  LOAD_CODE                <code_object WINFUNCTYPE>
+              324  LOAD_STR                 'WINFUNCTYPE'
+              326  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              328  STORE_NAME               WINFUNCTYPE
+
+ L. 132       330  LOAD_NAME                WINFUNCTYPE
+              332  LOAD_ATTR                __doc__
+          334_336  POP_JUMP_IF_FALSE   380  'to 380'
+
+ L. 133       338  LOAD_NAME                CFUNCTYPE
+              340  LOAD_ATTR                __doc__
+              342  LOAD_METHOD              replace
+              344  LOAD_STR                 'CFUNCTYPE'
+              346  LOAD_STR                 'WINFUNCTYPE'
+              348  CALL_METHOD_2         2  ''
+              350  LOAD_NAME                WINFUNCTYPE
+              352  STORE_ATTR               __doc__
+              354  JUMP_FORWARD        380  'to 380'
+            356_0  COME_FROM           290  '290'
+
+ L. 135       356  LOAD_NAME                _os
+              358  LOAD_ATTR                name
+              360  LOAD_STR                 'posix'
+              362  COMPARE_OP               ==
+          364_366  POP_JUMP_IF_FALSE   380  'to 380'
+
+ L. 136       368  LOAD_CONST               0
+              370  LOAD_CONST               ('dlopen',)
+              372  IMPORT_NAME              _ctypes
+              374  IMPORT_FROM              dlopen
+              376  STORE_NAME               _dlopen
+              378  POP_TOP          
+            380_0  COME_FROM           364  '364'
+            380_1  COME_FROM           354  '354'
+            380_2  COME_FROM           334  '334'
+
+ L. 138       380  LOAD_CONST               0
+              382  LOAD_CONST               ('sizeof', 'byref', 'addressof', 'alignment', 'resize')
+              384  IMPORT_NAME              _ctypes
+              386  IMPORT_FROM              sizeof
+              388  STORE_NAME               sizeof
+              390  IMPORT_FROM              byref
+              392  STORE_NAME               byref
+              394  IMPORT_FROM              addressof
+              396  STORE_NAME               addressof
+              398  IMPORT_FROM              alignment
+              400  STORE_NAME               alignment
+              402  IMPORT_FROM              resize
+              404  STORE_NAME               resize
+              406  POP_TOP          
+
+ L. 139       408  LOAD_CONST               0
+              410  LOAD_CONST               ('get_errno', 'set_errno')
+              412  IMPORT_NAME              _ctypes
+              414  IMPORT_FROM              get_errno
+              416  STORE_NAME               get_errno
+              418  IMPORT_FROM              set_errno
+              420  STORE_NAME               set_errno
+              422  POP_TOP          
+
+ L. 140       424  LOAD_CONST               0
+              426  LOAD_CONST               ('_SimpleCData',)
+              428  IMPORT_NAME              _ctypes
+              430  IMPORT_FROM              _SimpleCData
+              432  STORE_NAME               _SimpleCData
+              434  POP_TOP          
+
+ L. 142       436  LOAD_CONST               (None,)
+              438  LOAD_CODE                <code_object _check_size>
+              440  LOAD_STR                 '_check_size'
+              442  MAKE_FUNCTION_1          'default'
+              444  STORE_NAME               _check_size
+
+ L. 154       446  LOAD_BUILD_CLASS 
+              448  LOAD_CODE                <code_object py_object>
+              450  LOAD_STR                 'py_object'
+              452  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              454  LOAD_STR                 'py_object'
+              456  LOAD_NAME                _SimpleCData
+              458  CALL_FUNCTION_3       3  ''
+              460  STORE_NAME               py_object
+
+ L. 161       462  LOAD_NAME                _check_size
+              464  LOAD_NAME                py_object
+              466  LOAD_STR                 'P'
+              468  CALL_FUNCTION_2       2  ''
+              470  POP_TOP          
+
+ L. 163       472  LOAD_BUILD_CLASS 
+              474  LOAD_CODE                <code_object c_short>
+              476  LOAD_STR                 'c_short'
+              478  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              480  LOAD_STR                 'c_short'
+              482  LOAD_NAME                _SimpleCData
+              484  CALL_FUNCTION_3       3  ''
+              486  STORE_NAME               c_short
+
+ L. 165       488  LOAD_NAME                _check_size
+              490  LOAD_NAME                c_short
+              492  CALL_FUNCTION_1       1  ''
+              494  POP_TOP          
+
+ L. 167       496  LOAD_BUILD_CLASS 
+              498  LOAD_CODE                <code_object c_ushort>
+              500  LOAD_STR                 'c_ushort'
+              502  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              504  LOAD_STR                 'c_ushort'
+              506  LOAD_NAME                _SimpleCData
+              508  CALL_FUNCTION_3       3  ''
+              510  STORE_NAME               c_ushort
+
+ L. 169       512  LOAD_NAME                _check_size
+              514  LOAD_NAME                c_ushort
+              516  CALL_FUNCTION_1       1  ''
+              518  POP_TOP          
+
+ L. 171       520  LOAD_BUILD_CLASS 
+              522  LOAD_CODE                <code_object c_long>
+              524  LOAD_STR                 'c_long'
+              526  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              528  LOAD_STR                 'c_long'
+              530  LOAD_NAME                _SimpleCData
+              532  CALL_FUNCTION_3       3  ''
+              534  STORE_NAME               c_long
+
+ L. 173       536  LOAD_NAME                _check_size
+              538  LOAD_NAME                c_long
+              540  CALL_FUNCTION_1       1  ''
+              542  POP_TOP          
+
+ L. 175       544  LOAD_BUILD_CLASS 
+              546  LOAD_CODE                <code_object c_ulong>
+              548  LOAD_STR                 'c_ulong'
+              550  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              552  LOAD_STR                 'c_ulong'
+              554  LOAD_NAME                _SimpleCData
+              556  CALL_FUNCTION_3       3  ''
+              558  STORE_NAME               c_ulong
+
+ L. 177       560  LOAD_NAME                _check_size
+              562  LOAD_NAME                c_ulong
+              564  CALL_FUNCTION_1       1  ''
+              566  POP_TOP          
+
+ L. 179       568  LOAD_NAME                _calcsize
+              570  LOAD_STR                 'i'
+              572  CALL_FUNCTION_1       1  ''
+              574  LOAD_NAME                _calcsize
+              576  LOAD_STR                 'l'
+              578  CALL_FUNCTION_1       1  ''
+              580  COMPARE_OP               ==
+          582_584  POP_JUMP_IF_FALSE   596  'to 596'
+
+ L. 181       586  LOAD_NAME                c_long
+              588  STORE_NAME               c_int
+
+ L. 182       590  LOAD_NAME                c_ulong
+              592  STORE_NAME               c_uint
+              594  JUMP_FORWARD        644  'to 644'
+            596_0  COME_FROM           582  '582'
+
+ L. 184       596  LOAD_BUILD_CLASS 
+              598  LOAD_CODE                <code_object c_int>
+              600  LOAD_STR                 'c_int'
+              602  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              604  LOAD_STR                 'c_int'
+              606  LOAD_NAME                _SimpleCData
+              608  CALL_FUNCTION_3       3  ''
+              610  STORE_NAME               c_int
+
+ L. 186       612  LOAD_NAME                _check_size
+              614  LOAD_NAME                c_int
+              616  CALL_FUNCTION_1       1  ''
+              618  POP_TOP          
+
+ L. 188       620  LOAD_BUILD_CLASS 
+              622  LOAD_CODE                <code_object c_uint>
+              624  LOAD_STR                 'c_uint'
+              626  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              628  LOAD_STR                 'c_uint'
+              630  LOAD_NAME                _SimpleCData
+              632  CALL_FUNCTION_3       3  ''
+              634  STORE_NAME               c_uint
+
+ L. 190       636  LOAD_NAME                _check_size
+              638  LOAD_NAME                c_uint
+              640  CALL_FUNCTION_1       1  ''
+              642  POP_TOP          
+            644_0  COME_FROM           594  '594'
+
+ L. 192       644  LOAD_BUILD_CLASS 
+              646  LOAD_CODE                <code_object c_float>
+              648  LOAD_STR                 'c_float'
+              650  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              652  LOAD_STR                 'c_float'
+              654  LOAD_NAME                _SimpleCData
+              656  CALL_FUNCTION_3       3  ''
+              658  STORE_NAME               c_float
+
+ L. 194       660  LOAD_NAME                _check_size
+              662  LOAD_NAME                c_float
+              664  CALL_FUNCTION_1       1  ''
+              666  POP_TOP          
+
+ L. 196       668  LOAD_BUILD_CLASS 
+              670  LOAD_CODE                <code_object c_double>
+              672  LOAD_STR                 'c_double'
+              674  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              676  LOAD_STR                 'c_double'
+              678  LOAD_NAME                _SimpleCData
+              680  CALL_FUNCTION_3       3  ''
+              682  STORE_NAME               c_double
+
+ L. 198       684  LOAD_NAME                _check_size
+              686  LOAD_NAME                c_double
+              688  CALL_FUNCTION_1       1  ''
+              690  POP_TOP          
+
+ L. 200       692  LOAD_BUILD_CLASS 
+              694  LOAD_CODE                <code_object c_longdouble>
+              696  LOAD_STR                 'c_longdouble'
+              698  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              700  LOAD_STR                 'c_longdouble'
+              702  LOAD_NAME                _SimpleCData
+              704  CALL_FUNCTION_3       3  ''
+              706  STORE_NAME               c_longdouble
+
+ L. 202       708  LOAD_NAME                sizeof
+              710  LOAD_NAME                c_longdouble
+              712  CALL_FUNCTION_1       1  ''
+              714  LOAD_NAME                sizeof
+              716  LOAD_NAME                c_double
+              718  CALL_FUNCTION_1       1  ''
+              720  COMPARE_OP               ==
+          722_724  POP_JUMP_IF_FALSE   730  'to 730'
+
+ L. 203       726  LOAD_NAME                c_double
+              728  STORE_NAME               c_longdouble
+            730_0  COME_FROM           722  '722'
+
+ L. 205       730  LOAD_NAME                _calcsize
+              732  LOAD_STR                 'l'
+              734  CALL_FUNCTION_1       1  ''
+              736  LOAD_NAME                _calcsize
+              738  LOAD_STR                 'q'
+              740  CALL_FUNCTION_1       1  ''
+              742  COMPARE_OP               ==
+          744_746  POP_JUMP_IF_FALSE   758  'to 758'
+
+ L. 207       748  LOAD_NAME                c_long
+              750  STORE_NAME               c_longlong
+
+ L. 208       752  LOAD_NAME                c_ulong
+              754  STORE_NAME               c_ulonglong
+              756  JUMP_FORWARD        806  'to 806'
+            758_0  COME_FROM           744  '744'
+
+ L. 210       758  LOAD_BUILD_CLASS 
+              760  LOAD_CODE                <code_object c_longlong>
+              762  LOAD_STR                 'c_longlong'
+              764  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              766  LOAD_STR                 'c_longlong'
+              768  LOAD_NAME                _SimpleCData
+              770  CALL_FUNCTION_3       3  ''
+              772  STORE_NAME               c_longlong
+
+ L. 212       774  LOAD_NAME                _check_size
+              776  LOAD_NAME                c_longlong
+              778  CALL_FUNCTION_1       1  ''
+              780  POP_TOP          
+
+ L. 214       782  LOAD_BUILD_CLASS 
+              784  LOAD_CODE                <code_object c_ulonglong>
+              786  LOAD_STR                 'c_ulonglong'
+              788  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              790  LOAD_STR                 'c_ulonglong'
+              792  LOAD_NAME                _SimpleCData
+              794  CALL_FUNCTION_3       3  ''
+              796  STORE_NAME               c_ulonglong
+
+ L. 219       798  LOAD_NAME                _check_size
+              800  LOAD_NAME                c_ulonglong
+              802  CALL_FUNCTION_1       1  ''
+              804  POP_TOP          
+            806_0  COME_FROM           756  '756'
+
+ L. 221       806  LOAD_BUILD_CLASS 
+              808  LOAD_CODE                <code_object c_ubyte>
+              810  LOAD_STR                 'c_ubyte'
+              812  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              814  LOAD_STR                 'c_ubyte'
+              816  LOAD_NAME                _SimpleCData
+              818  CALL_FUNCTION_3       3  ''
+              820  STORE_NAME               c_ubyte
+
+ L. 223       822  LOAD_NAME                c_ubyte
+              824  DUP_TOP          
+              826  LOAD_NAME                c_ubyte
+              828  STORE_ATTR               __ctype_le__
+              830  LOAD_NAME                c_ubyte
+              832  STORE_ATTR               __ctype_be__
+
+ L. 226       834  LOAD_NAME                _check_size
+              836  LOAD_NAME                c_ubyte
+              838  CALL_FUNCTION_1       1  ''
+              840  POP_TOP          
+
+ L. 228       842  LOAD_BUILD_CLASS 
+              844  LOAD_CODE                <code_object c_byte>
+              846  LOAD_STR                 'c_byte'
+              848  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              850  LOAD_STR                 'c_byte'
+              852  LOAD_NAME                _SimpleCData
+              854  CALL_FUNCTION_3       3  ''
+              856  STORE_NAME               c_byte
+
+ L. 230       858  LOAD_NAME                c_byte
+              860  DUP_TOP          
+              862  LOAD_NAME                c_byte
+              864  STORE_ATTR               __ctype_le__
+              866  LOAD_NAME                c_byte
+              868  STORE_ATTR               __ctype_be__
+
+ L. 231       870  LOAD_NAME                _check_size
+              872  LOAD_NAME                c_byte
+              874  CALL_FUNCTION_1       1  ''
+              876  POP_TOP          
+
+ L. 233       878  LOAD_BUILD_CLASS 
+              880  LOAD_CODE                <code_object c_char>
+              882  LOAD_STR                 'c_char'
+              884  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              886  LOAD_STR                 'c_char'
+              888  LOAD_NAME                _SimpleCData
+              890  CALL_FUNCTION_3       3  ''
+              892  STORE_NAME               c_char
+
+ L. 235       894  LOAD_NAME                c_char
+              896  DUP_TOP          
+              898  LOAD_NAME                c_char
+              900  STORE_ATTR               __ctype_le__
+              902  LOAD_NAME                c_char
+              904  STORE_ATTR               __ctype_be__
+
+ L. 236       906  LOAD_NAME                _check_size
+              908  LOAD_NAME                c_char
+              910  CALL_FUNCTION_1       1  ''
+              912  POP_TOP          
+
+ L. 238       914  LOAD_BUILD_CLASS 
+              916  LOAD_CODE                <code_object c_char_p>
+              918  LOAD_STR                 'c_char_p'
+              920  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              922  LOAD_STR                 'c_char_p'
+              924  LOAD_NAME                _SimpleCData
+              926  CALL_FUNCTION_3       3  ''
+              928  STORE_NAME               c_char_p
+
+ L. 242       930  LOAD_NAME                _check_size
+              932  LOAD_NAME                c_char_p
+              934  LOAD_STR                 'P'
+              936  CALL_FUNCTION_2       2  ''
+              938  POP_TOP          
+
+ L. 244       940  LOAD_BUILD_CLASS 
+              942  LOAD_CODE                <code_object c_void_p>
+              944  LOAD_STR                 'c_void_p'
+              946  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              948  LOAD_STR                 'c_void_p'
+              950  LOAD_NAME                _SimpleCData
+              952  CALL_FUNCTION_3       3  ''
+              954  STORE_NAME               c_void_p
+
+ L. 246       956  LOAD_NAME                c_void_p
+              958  STORE_NAME               c_voidp
+
+ L. 247       960  LOAD_NAME                _check_size
+              962  LOAD_NAME                c_void_p
+              964  CALL_FUNCTION_1       1  ''
+              966  POP_TOP          
+
+ L. 249       968  LOAD_BUILD_CLASS 
+              970  LOAD_CODE                <code_object c_bool>
+              972  LOAD_STR                 'c_bool'
+              974  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              976  LOAD_STR                 'c_bool'
+              978  LOAD_NAME                _SimpleCData
+              980  CALL_FUNCTION_3       3  ''
+              982  STORE_NAME               c_bool
+
+ L. 252       984  LOAD_CONST               0
+              986  LOAD_CONST               ('POINTER', 'pointer', '_pointer_type_cache')
+              988  IMPORT_NAME              _ctypes
+              990  IMPORT_FROM              POINTER
+              992  STORE_NAME               POINTER
+              994  IMPORT_FROM              pointer
+              996  STORE_NAME               pointer
+              998  IMPORT_FROM              _pointer_type_cache
+             1000  STORE_NAME               _pointer_type_cache
+             1002  POP_TOP          
+
+ L. 254      1004  LOAD_BUILD_CLASS 
+             1006  LOAD_CODE                <code_object c_wchar_p>
+             1008  LOAD_STR                 'c_wchar_p'
+             1010  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1012  LOAD_STR                 'c_wchar_p'
+             1014  LOAD_NAME                _SimpleCData
+             1016  CALL_FUNCTION_3       3  ''
+             1018  STORE_NAME               c_wchar_p
+
+ L. 259      1020  LOAD_BUILD_CLASS 
+             1022  LOAD_CODE                <code_object c_wchar>
+             1024  LOAD_STR                 'c_wchar'
+             1026  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1028  LOAD_STR                 'c_wchar'
+             1030  LOAD_NAME                _SimpleCData
+             1032  CALL_FUNCTION_3       3  ''
+             1034  STORE_NAME               c_wchar
+
+ L. 262      1036  LOAD_CODE                <code_object _reset_cache>
+             1038  LOAD_STR                 '_reset_cache'
+             1040  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1042  STORE_NAME               _reset_cache
+
+ L. 273      1044  LOAD_CONST               (None,)
+             1046  LOAD_CODE                <code_object create_unicode_buffer>
+             1048  LOAD_STR                 'create_unicode_buffer'
+             1050  MAKE_FUNCTION_1          'default'
+             1052  STORE_NAME               create_unicode_buffer
+
+ L. 303      1054  LOAD_CODE                <code_object SetPointerType>
+             1056  LOAD_STR                 'SetPointerType'
+             1058  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1060  STORE_NAME               SetPointerType
+
+ L. 313      1062  LOAD_CODE                <code_object ARRAY>
+             1064  LOAD_STR                 'ARRAY'
+             1066  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1068  STORE_NAME               ARRAY
+
+ L. 319      1070  LOAD_BUILD_CLASS 
+             1072  LOAD_CODE                <code_object CDLL>
+             1074  LOAD_STR                 'CDLL'
+             1076  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1078  LOAD_STR                 'CDLL'
+             1080  LOAD_NAME                object
+             1082  CALL_FUNCTION_3       3  ''
+             1084  STORE_NAME               CDLL
+
+ L. 397      1086  LOAD_BUILD_CLASS 
+             1088  LOAD_CODE                <code_object PyDLL>
+             1090  LOAD_STR                 'PyDLL'
+             1092  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1094  LOAD_STR                 'PyDLL'
+             1096  LOAD_NAME                CDLL
+             1098  CALL_FUNCTION_3       3  ''
+             1100  STORE_NAME               PyDLL
+
+ L. 404      1102  LOAD_NAME                _os
+             1104  LOAD_ATTR                name
+             1106  LOAD_STR                 'nt'
+             1108  COMPARE_OP               ==
+         1110_1112  POP_JUMP_IF_FALSE  1178  'to 1178'
+
+ L. 406      1114  LOAD_BUILD_CLASS 
+             1116  LOAD_CODE                <code_object WinDLL>
+             1118  LOAD_STR                 'WinDLL'
+             1120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1122  LOAD_STR                 'WinDLL'
+             1124  LOAD_NAME                CDLL
+             1126  CALL_FUNCTION_3       3  ''
+             1128  STORE_NAME               WinDLL
+
+ L. 414      1130  LOAD_CONST               0
+             1132  LOAD_CONST               ('_check_HRESULT', '_SimpleCData')
+             1134  IMPORT_NAME              _ctypes
+             1136  IMPORT_FROM              _check_HRESULT
+             1138  STORE_NAME               _check_HRESULT
+             1140  IMPORT_FROM              _SimpleCData
+             1142  STORE_NAME               _SimpleCData
+             1144  POP_TOP          
+
+ L. 415      1146  LOAD_BUILD_CLASS 
+             1148  LOAD_CODE                <code_object HRESULT>
+             1150  LOAD_STR                 'HRESULT'
+             1152  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1154  LOAD_STR                 'HRESULT'
+             1156  LOAD_NAME                _SimpleCData
+             1158  CALL_FUNCTION_3       3  ''
+             1160  STORE_NAME               HRESULT
+
+ L. 428      1162  LOAD_BUILD_CLASS 
+             1164  LOAD_CODE                <code_object OleDLL>
+             1166  LOAD_STR                 'OleDLL'
+             1168  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1170  LOAD_STR                 'OleDLL'
+             1172  LOAD_NAME                CDLL
+             1174  CALL_FUNCTION_3       3  ''
+             1176  STORE_NAME               OleDLL
+           1178_0  COME_FROM          1110  '1110'
+
+ L. 437      1178  LOAD_BUILD_CLASS 
+             1180  LOAD_CODE                <code_object LibraryLoader>
+             1182  LOAD_STR                 'LibraryLoader'
+             1184  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1186  LOAD_STR                 'LibraryLoader'
+             1188  LOAD_NAME                object
+             1190  CALL_FUNCTION_3       3  ''
+             1192  STORE_NAME               LibraryLoader
+
+ L. 456      1194  LOAD_NAME                LibraryLoader
+             1196  LOAD_NAME                CDLL
+             1198  CALL_FUNCTION_1       1  ''
+             1200  STORE_NAME               cdll
+
+ L. 457      1202  LOAD_NAME                LibraryLoader
+             1204  LOAD_NAME                PyDLL
+             1206  CALL_FUNCTION_1       1  ''
+             1208  STORE_NAME               pydll
+
+ L. 459      1210  LOAD_NAME                _os
+             1212  LOAD_ATTR                name
+             1214  LOAD_STR                 'nt'
+             1216  COMPARE_OP               ==
+         1218_1220  POP_JUMP_IF_FALSE  1238  'to 1238'
+
+ L. 460      1222  LOAD_NAME                PyDLL
+             1224  LOAD_STR                 'python dll'
+             1226  LOAD_CONST               None
+             1228  LOAD_NAME                _sys
+             1230  LOAD_ATTR                dllhandle
+             1232  CALL_FUNCTION_3       3  ''
+             1234  STORE_NAME               pythonapi
+             1236  JUMP_FORWARD       1282  'to 1282'
+           1238_0  COME_FROM          1218  '1218'
+
+ L. 461      1238  LOAD_NAME                _sys
+             1240  LOAD_ATTR                platform
+             1242  LOAD_STR                 'cygwin'
+             1244  COMPARE_OP               ==
+         1246_1248  POP_JUMP_IF_FALSE  1274  'to 1274'
+
+ L. 462      1250  LOAD_NAME                PyDLL
+             1252  LOAD_STR                 'libpython%d.%d.dll'
+             1254  LOAD_NAME                _sys
+             1256  LOAD_ATTR                version_info
+             1258  LOAD_CONST               None
+             1260  LOAD_CONST               2
+             1262  BUILD_SLICE_2         2 
+             1264  BINARY_SUBSCR    
+             1266  BINARY_MODULO    
+             1268  CALL_FUNCTION_1       1  ''
+             1270  STORE_NAME               pythonapi
+             1272  JUMP_FORWARD       1282  'to 1282'
+           1274_0  COME_FROM          1246  '1246'
+
+ L. 464      1274  LOAD_NAME                PyDLL
+             1276  LOAD_CONST               None
+             1278  CALL_FUNCTION_1       1  ''
+             1280  STORE_NAME               pythonapi
+           1282_0  COME_FROM          1272  '1272'
+           1282_1  COME_FROM          1236  '1236'
+
+ L. 467      1282  LOAD_NAME                _os
+             1284  LOAD_ATTR                name
+             1286  LOAD_STR                 'nt'
+             1288  COMPARE_OP               ==
+         1290_1292  POP_JUMP_IF_FALSE  1344  'to 1344'
+
+ L. 468      1294  LOAD_NAME                LibraryLoader
+             1296  LOAD_NAME                WinDLL
+             1298  CALL_FUNCTION_1       1  ''
+             1300  STORE_NAME               windll
+
+ L. 469      1302  LOAD_NAME                LibraryLoader
+             1304  LOAD_NAME                OleDLL
+             1306  CALL_FUNCTION_1       1  ''
+             1308  STORE_NAME               oledll
+
+ L. 471      1310  LOAD_NAME                windll
+             1312  LOAD_ATTR                kernel32
+             1314  LOAD_ATTR                GetLastError
+             1316  STORE_NAME               GetLastError
+
+ L. 472      1318  LOAD_CONST               0
+             1320  LOAD_CONST               ('get_last_error', 'set_last_error')
+             1322  IMPORT_NAME              _ctypes
+             1324  IMPORT_FROM              get_last_error
+             1326  STORE_NAME               get_last_error
+             1328  IMPORT_FROM              set_last_error
+             1330  STORE_NAME               set_last_error
+             1332  POP_TOP          
+
+ L. 474      1334  LOAD_CONST               (None, None)
+             1336  LOAD_CODE                <code_object WinError>
+             1338  LOAD_STR                 'WinError'
+             1340  MAKE_FUNCTION_1          'default'
+             1342  STORE_NAME               WinError
+           1344_0  COME_FROM          1290  '1290'
+
+ L. 481      1344  LOAD_NAME                sizeof
+             1346  LOAD_NAME                c_uint
+             1348  CALL_FUNCTION_1       1  ''
+             1350  LOAD_NAME                sizeof
+             1352  LOAD_NAME                c_void_p
+             1354  CALL_FUNCTION_1       1  ''
+             1356  COMPARE_OP               ==
+         1358_1360  POP_JUMP_IF_FALSE  1372  'to 1372'
+
+ L. 482      1362  LOAD_NAME                c_uint
+             1364  STORE_NAME               c_size_t
+
+ L. 483      1366  LOAD_NAME                c_int
+             1368  STORE_NAME               c_ssize_t
+             1370  JUMP_FORWARD       1426  'to 1426'
+           1372_0  COME_FROM          1358  '1358'
+
+ L. 484      1372  LOAD_NAME                sizeof
+             1374  LOAD_NAME                c_ulong
+             1376  CALL_FUNCTION_1       1  ''
+             1378  LOAD_NAME                sizeof
+             1380  LOAD_NAME                c_void_p
+             1382  CALL_FUNCTION_1       1  ''
+             1384  COMPARE_OP               ==
+         1386_1388  POP_JUMP_IF_FALSE  1400  'to 1400'
+
+ L. 485      1390  LOAD_NAME                c_ulong
+             1392  STORE_NAME               c_size_t
+
+ L. 486      1394  LOAD_NAME                c_long
+             1396  STORE_NAME               c_ssize_t
+             1398  JUMP_FORWARD       1426  'to 1426'
+           1400_0  COME_FROM          1386  '1386'
+
+ L. 487      1400  LOAD_NAME                sizeof
+             1402  LOAD_NAME                c_ulonglong
+             1404  CALL_FUNCTION_1       1  ''
+             1406  LOAD_NAME                sizeof
+             1408  LOAD_NAME                c_void_p
+             1410  CALL_FUNCTION_1       1  ''
+             1412  COMPARE_OP               ==
+         1414_1416  POP_JUMP_IF_FALSE  1426  'to 1426'
+
+ L. 488      1418  LOAD_NAME                c_ulonglong
+             1420  STORE_NAME               c_size_t
+
+ L. 489      1422  LOAD_NAME                c_longlong
+             1424  STORE_NAME               c_ssize_t
+           1426_0  COME_FROM          1414  '1414'
+           1426_1  COME_FROM          1398  '1398'
+           1426_2  COME_FROM          1370  '1370'
+
+ L. 493      1426  LOAD_CONST               0
+             1428  LOAD_CONST               ('_memmove_addr', '_memset_addr', '_string_at_addr', '_cast_addr')
+             1430  IMPORT_NAME              _ctypes
+             1432  IMPORT_FROM              _memmove_addr
+             1434  STORE_NAME               _memmove_addr
+             1436  IMPORT_FROM              _memset_addr
+             1438  STORE_NAME               _memset_addr
+             1440  IMPORT_FROM              _string_at_addr
+             1442  STORE_NAME               _string_at_addr
+             1444  IMPORT_FROM              _cast_addr
+             1446  STORE_NAME               _cast_addr
+             1448  POP_TOP          
+
+ L. 496      1450  LOAD_NAME                CFUNCTYPE
+             1452  LOAD_NAME                c_void_p
+             1454  LOAD_NAME                c_void_p
+             1456  LOAD_NAME                c_void_p
+             1458  LOAD_NAME                c_size_t
+             1460  CALL_FUNCTION_4       4  ''
+             1462  LOAD_NAME                _memmove_addr
+             1464  CALL_FUNCTION_1       1  ''
+             1466  STORE_NAME               memmove
+
+ L. 499      1468  LOAD_NAME                CFUNCTYPE
+             1470  LOAD_NAME                c_void_p
+             1472  LOAD_NAME                c_void_p
+             1474  LOAD_NAME                c_int
+             1476  LOAD_NAME                c_size_t
+             1478  CALL_FUNCTION_4       4  ''
+             1480  LOAD_NAME                _memset_addr
+             1482  CALL_FUNCTION_1       1  ''
+             1484  STORE_NAME               memset
+
+ L. 501      1486  LOAD_CODE                <code_object PYFUNCTYPE>
+             1488  LOAD_STR                 'PYFUNCTYPE'
+             1490  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1492  STORE_NAME               PYFUNCTYPE
+
+ L. 508      1494  LOAD_NAME                PYFUNCTYPE
+             1496  LOAD_NAME                py_object
+             1498  LOAD_NAME                c_void_p
+             1500  LOAD_NAME                py_object
+             1502  LOAD_NAME                py_object
+             1504  CALL_FUNCTION_4       4  ''
+             1506  LOAD_NAME                _cast_addr
+             1508  CALL_FUNCTION_1       1  ''
+             1510  STORE_NAME               _cast
+
+ L. 509      1512  LOAD_CODE                <code_object cast>
+             1514  LOAD_STR                 'cast'
+             1516  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1518  STORE_NAME               cast
+
+ L. 512      1520  LOAD_NAME                PYFUNCTYPE
+             1522  LOAD_NAME                py_object
+             1524  LOAD_NAME                c_void_p
+             1526  LOAD_NAME                c_int
+             1528  CALL_FUNCTION_3       3  ''
+             1530  LOAD_NAME                _string_at_addr
+             1532  CALL_FUNCTION_1       1  ''
+             1534  STORE_NAME               _string_at
+
+ L. 513      1536  LOAD_CONST               (-1,)
+             1538  LOAD_CODE                <code_object string_at>
+             1540  LOAD_STR                 'string_at'
+             1542  MAKE_FUNCTION_1          'default'
+             1544  STORE_NAME               string_at
+
+ L. 519      1546  SETUP_FINALLY      1564  'to 1564'
+
+ L. 520      1548  LOAD_CONST               0
+             1550  LOAD_CONST               ('_wstring_at_addr',)
+             1552  IMPORT_NAME              _ctypes
+             1554  IMPORT_FROM              _wstring_at_addr
+             1556  STORE_NAME               _wstring_at_addr
+             1558  POP_TOP          
+             1560  POP_BLOCK        
+             1562  JUMP_FORWARD       1584  'to 1584'
+           1564_0  COME_FROM_FINALLY  1546  '1546'
+
+ L. 521      1564  DUP_TOP          
+             1566  LOAD_NAME                ImportError
+         1568_1570  <121>              1582  ''
+             1572  POP_TOP          
+             1574  POP_TOP          
+             1576  POP_TOP          
+
+ L. 522      1578  POP_EXCEPT       
+             1580  JUMP_FORWARD       1610  'to 1610'
+             1582  <48>             
+           1584_0  COME_FROM          1562  '1562'
+
+ L. 524      1584  LOAD_NAME                PYFUNCTYPE
+             1586  LOAD_NAME                py_object
+             1588  LOAD_NAME                c_void_p
+             1590  LOAD_NAME                c_int
+             1592  CALL_FUNCTION_3       3  ''
+             1594  LOAD_NAME                _wstring_at_addr
+             1596  CALL_FUNCTION_1       1  ''
+             1598  STORE_NAME               _wstring_at
+
+ L. 525      1600  LOAD_CONST               (-1,)
+             1602  LOAD_CODE                <code_object wstring_at>
+             1604  LOAD_STR                 'wstring_at'
+             1606  MAKE_FUNCTION_1          'default'
+             1608  STORE_NAME               wstring_at
+           1610_0  COME_FROM          1580  '1580'
+
+ L. 532      1610  LOAD_NAME                _os
+             1612  LOAD_ATTR                name
+             1614  LOAD_STR                 'nt'
+             1616  COMPARE_OP               ==
+         1618_1620  POP_JUMP_IF_FALSE  1638  'to 1638'
+
+ L. 533      1622  LOAD_CODE                <code_object DllGetClassObject>
+             1624  LOAD_STR                 'DllGetClassObject'
+             1626  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1628  STORE_NAME               DllGetClassObject
+
+ L. 541      1630  LOAD_CODE                <code_object DllCanUnloadNow>
+             1632  LOAD_STR                 'DllCanUnloadNow'
+             1634  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1636  STORE_NAME               DllCanUnloadNow
+           1638_0  COME_FROM          1618  '1618'
+
+ L. 548      1638  LOAD_CONST               0
+             1640  LOAD_CONST               ('BigEndianStructure', 'LittleEndianStructure')
+             1642  IMPORT_NAME_ATTR         ctypes._endian
+             1644  IMPORT_FROM              BigEndianStructure
+             1646  STORE_NAME               BigEndianStructure
+             1648  IMPORT_FROM              LittleEndianStructure
+             1650  STORE_NAME               LittleEndianStructure
+             1652  POP_TOP          
+
+ L. 551      1654  LOAD_NAME                c_byte
+             1656  STORE_NAME               c_int8
+
+ L. 552      1658  LOAD_NAME                c_ubyte
+             1660  STORE_NAME               c_uint8
+
+ L. 553      1662  LOAD_NAME                c_short
+             1664  LOAD_NAME                c_int
+             1666  LOAD_NAME                c_long
+             1668  LOAD_NAME                c_longlong
+             1670  BUILD_TUPLE_4         4 
+             1672  GET_ITER         
+           1674_0  COME_FROM          1728  '1728'
+             1674  FOR_ITER           1740  'to 1740'
+             1676  STORE_NAME               kind
+
+ L. 554      1678  LOAD_NAME                sizeof
+             1680  LOAD_NAME                kind
+             1682  CALL_FUNCTION_1       1  ''
+             1684  LOAD_CONST               2
+             1686  COMPARE_OP               ==
+         1688_1690  POP_JUMP_IF_FALSE  1698  'to 1698'
+             1692  LOAD_NAME                kind
+             1694  STORE_NAME               c_int16
+             1696  JUMP_BACK          1674  'to 1674'
+           1698_0  COME_FROM          1688  '1688'
+
+ L. 555      1698  LOAD_NAME                sizeof
+             1700  LOAD_NAME                kind
+             1702  CALL_FUNCTION_1       1  ''
+             1704  LOAD_CONST               4
+             1706  COMPARE_OP               ==
+         1708_1710  POP_JUMP_IF_FALSE  1718  'to 1718'
+             1712  LOAD_NAME                kind
+             1714  STORE_NAME               c_int32
+             1716  JUMP_BACK          1674  'to 1674'
+           1718_0  COME_FROM          1708  '1708'
+
+ L. 556      1718  LOAD_NAME                sizeof
+             1720  LOAD_NAME                kind
+             1722  CALL_FUNCTION_1       1  ''
+             1724  LOAD_CONST               8
+             1726  COMPARE_OP               ==
+         1728_1730  POP_JUMP_IF_FALSE  1674  'to 1674'
+             1732  LOAD_NAME                kind
+             1734  STORE_NAME               c_int64
+         1736_1738  JUMP_BACK          1674  'to 1674'
+
+ L. 557      1740  LOAD_NAME                c_ushort
+             1742  LOAD_NAME                c_uint
+             1744  LOAD_NAME                c_ulong
+             1746  LOAD_NAME                c_ulonglong
+             1748  BUILD_TUPLE_4         4 
+             1750  GET_ITER         
+           1752_0  COME_FROM          1806  '1806'
+             1752  FOR_ITER           1818  'to 1818'
+             1754  STORE_NAME               kind
+
+ L. 558      1756  LOAD_NAME                sizeof
+             1758  LOAD_NAME                kind
+             1760  CALL_FUNCTION_1       1  ''
+             1762  LOAD_CONST               2
+             1764  COMPARE_OP               ==
+         1766_1768  POP_JUMP_IF_FALSE  1776  'to 1776'
+             1770  LOAD_NAME                kind
+             1772  STORE_NAME               c_uint16
+             1774  JUMP_BACK          1752  'to 1752'
+           1776_0  COME_FROM          1766  '1766'
+
+ L. 559      1776  LOAD_NAME                sizeof
+             1778  LOAD_NAME                kind
+             1780  CALL_FUNCTION_1       1  ''
+             1782  LOAD_CONST               4
+             1784  COMPARE_OP               ==
+         1786_1788  POP_JUMP_IF_FALSE  1796  'to 1796'
+             1790  LOAD_NAME                kind
+             1792  STORE_NAME               c_uint32
+             1794  JUMP_BACK          1752  'to 1752'
+           1796_0  COME_FROM          1786  '1786'
+
+ L. 560      1796  LOAD_NAME                sizeof
+             1798  LOAD_NAME                kind
+             1800  CALL_FUNCTION_1       1  ''
+             1802  LOAD_CONST               8
+             1804  COMPARE_OP               ==
+         1806_1808  POP_JUMP_IF_FALSE  1752  'to 1752'
+             1810  LOAD_NAME                kind
+             1812  STORE_NAME               c_uint64
+         1814_1816  JUMP_BACK          1752  'to 1752'
+
+ L. 561      1818  DELETE_NAME              kind
+
+ L. 563      1820  LOAD_NAME                _reset_cache
+             1822  CALL_FUNCTION_0       0  ''
+             1824  POP_TOP          
+
+Parse error at or near `<121>' instruction at offset 1568_1570
+
+Instruction context:
+   
+ L. 521      1564  DUP_TOP          
+                1566  LOAD_NAME                ImportError
+->          1568_1570  <121>              1582  ''
+                1572  POP_TOP          
+                1574  POP_TOP          
+                1576  POP_TOP          
+
+test/101192.pyc -- 
+# decompile failed

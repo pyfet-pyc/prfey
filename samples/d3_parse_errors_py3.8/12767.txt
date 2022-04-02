@@ -1,0 +1,54 @@
+Instruction context:
+   
+ L. 341       162  POP_BLOCK        
+->               164  LOAD_CONST               1
+                 166  RETURN_VALUE     
+               168_0  COME_FROM           160  '160'
+               168_1  COME_FROM            90  '90'
+               168_2  COME_FROM            76  '76'
+                 168  POP_BLOCK        
+                 170  JUMP_FORWARD        192  'to 192'
+               172_0  COME_FROM_FINALLY    46  '46'
+Instruction context:
+   
+ L. 822       544  POP_EXCEPT       
+                 546  POP_TOP          
+->           548_550  JUMP_FORWARD        614  'to 614'
+                 552  POP_EXCEPT       
+                 554  JUMP_FORWARD        558  'to 558'
+               556_0  COME_FROM           534  '534'
+                 556  END_FINALLY      
+               558_0  COME_FROM           554  '554'
+               558_1  COME_FROM           526  '526'
+Instruction context:
+-> 
+ L.1756       210  LOAD_FAST                'key'
+                 212  LOAD_FAST                'self'
+                 214  LOAD_ATTR                extra_keys
+                 216  COMPARE_OP               in
+                 218  POP_JUMP_IF_FALSE   252  'to 252'
+Instruction context:
+   
+ L.1912       240  POP_EXCEPT       
+                 242  JUMP_BACK           176  'to 176'
+                 244  POP_EXCEPT       
+                 246  JUMP_FORWARD        250  'to 250'
+->             248_0  COME_FROM           232  '232'
+                 248  END_FINALLY      
+               250_0  COME_FROM           246  '246'
+               250_1  COME_FROM           224  '224'
+Instruction context:
+-> 
+ L.2238        22  DUP_TOP          
+                  24  LOAD_GLOBAL              AttributeError
+                  26  COMPARE_OP               exception-match
+                  28  POP_JUMP_IF_FALSE    42  'to 42'
+                  30  POP_TOP          
+                  32  POP_TOP          
+                  34  POP_TOP          
+
+../test/12767.pyc -- 
+# decompile failed
+
+# file ../test/12767.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,46 @@
+Instruction context:
+   
+ L. 886       446  LOAD_GLOBAL              print
+                 448  LOAD_DEREF               'Fore'
+                 450  LOAD_ATTR                RED
+                 452  LOAD_STR                 '\n"{}" не является номером телефона.'
+                 454  LOAD_METHOD              format
+                 456  LOAD_GLOBAL              phone
+                 458  CALL_METHOD_1         1  ''
+                 460  BINARY_ADD       
+                 462  LOAD_DEREF               'Style'
+                 464  LOAD_ATTR                RESET_ALL
+                 466  BINARY_ADD       
+                 468  CALL_FUNCTION_1       1  ''
+                 470  POP_TOP          
+                 472  POP_EXCEPT       
+->               474  JUMP_BACK           246  'to 246'
+                 476  END_FINALLY      
+                 478  JUMP_BACK           246  'to 246'
+               480_0  COME_FROM           246  '246'
+Instruction context:
+   
+ L. 956       526  LOAD_GLOBAL              print
+                 528  LOAD_DEREF               'Fore'
+                 530  LOAD_ATTR                RED
+                 532  LOAD_STR                 '\n"{}" не является номером телефона.'
+                 534  LOAD_METHOD              format
+                 536  LOAD_GLOBAL              phone
+                 538  CALL_METHOD_1         1  ''
+                 540  BINARY_ADD       
+                 542  LOAD_DEREF               'Style'
+                 544  LOAD_ATTR                RESET_ALL
+                 546  BINARY_ADD       
+                 548  CALL_FUNCTION_1       1  ''
+                 550  POP_TOP          
+                 552  POP_EXCEPT       
+->               554  JUMP_BACK           326  'to 326'
+                 556  END_FINALLY      
+             558_560  JUMP_BACK           326  'to 326'
+               562_0  COME_FROM           326  '326'
+
+test/443.pyc -- 
+# decompile failed
+
+# file test/443.pyc
+# Deparsing stopped due to parse error

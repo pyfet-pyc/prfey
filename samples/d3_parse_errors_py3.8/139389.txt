@@ -1,0 +1,38 @@
+Instruction context:
+   
+ L.  98        56  POP_EXCEPT       
+->                58  LOAD_CONST               False
+                  60  RETURN_VALUE     
+                62_0  COME_FROM            48  '48'
+Instruction context:
+   
+ L. 122        96  LOAD_FAST                'ufunc'
+                  98  LOAD_FAST                'args'
+                 100  LOAD_FAST                'out'
+                 102  LOAD_STR                 'unsafe'
+                 104  LOAD_CONST               ('out', 'casting')
+                 106  BUILD_CONST_KEY_MAP_2     2 
+                 108  LOAD_FAST                'kwargs'
+                 110  BUILD_MAP_UNPACK_WITH_CALL_2     2 
+                 112  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                 114  ROT_FOUR         
+->               116  POP_BLOCK        
+                 118  POP_EXCEPT       
+                 120  CALL_FINALLY        124  'to 124'
+                 122  RETURN_VALUE     
+               124_0  COME_FROM           120  '120'
+               124_1  COME_FROM_FINALLY    66  '66'
+                 124  LOAD_CONST               None
+                 126  STORE_FAST               'e'
+                 128  DELETE_FAST              'e'
+                 130  END_FINALLY      
+                 132  POP_EXCEPT       
+                 134  JUMP_FORWARD        138  'to 138'
+               136_0  COME_FROM            58  '58'
+                 136  END_FINALLY      
+
+../test/139389.pyc -- 
+# decompile failed
+
+# file ../test/139389.pyc
+# Deparsing stopped due to parse error

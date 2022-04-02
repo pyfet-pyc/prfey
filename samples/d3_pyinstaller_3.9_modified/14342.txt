@@ -1,0 +1,75 @@
+Instruction context:
+   
+ L. 265        12  BUILD_SET_0           0 
+                  14  LOAD_CONST               frozenset({'drawable', 'xrandr', 'xlib', 'root'})
+->                16  POP_FINALLY           1  ''
+                  18  STORE_NAME               __slots__
+
+test/14342.pyc -- 
+# decompile failed
+
+# file test/14342.pyc
+# --- This code section failed: ---
+
+ L. 259         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'MSS'
+                6  STORE_NAME               __qualname__
+
+ L. 260         8  LOAD_STR                 '\n    Multiple ScreenShots implementation for GNU/Linux.\n    It uses intensively the Xlib and its Xrandr extension.\n    '
+               10  STORE_NAME               __doc__
+
+ L. 265        12  BUILD_SET_0           0 
+               14  LOAD_CONST               frozenset({'drawable', 'xrandr', 'xlib', 'root'})
+               16  POP_FINALLY           1  ''
+               18  STORE_NAME               __slots__
+
+ L. 268        20  BUILD_MAP_0           0 
+               22  STORE_NAME               _display_dict
+
+ L. 270        24  LOAD_CONST               (None,)
+               26  LOAD_CLOSURE             '__class__'
+               28  BUILD_TUPLE_1         1 
+               30  LOAD_CODE                <code_object __init__>
+               32  LOAD_STR                 'MSS.__init__'
+               34  MAKE_FUNCTION_9          'default, closure'
+               36  STORE_NAME               __init__
+
+ L. 314        38  LOAD_CODE                <code_object has_extension>
+               40  LOAD_STR                 'MSS.has_extension'
+               42  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               44  STORE_NAME               has_extension
+
+ L. 335        46  LOAD_CONST               (None,)
+               48  LOAD_CODE                <code_object _get_display>
+               50  LOAD_STR                 'MSS._get_display'
+               52  MAKE_FUNCTION_1          'default'
+               54  STORE_NAME               _get_display
+
+ L. 352        56  LOAD_CODE                <code_object _set_cfunctions>
+               58  LOAD_STR                 'MSS._set_cfunctions'
+               60  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               62  STORE_NAME               _set_cfunctions
+
+ L. 372        64  LOAD_CODE                <code_object get_error_details>
+               66  LOAD_STR                 'MSS.get_error_details'
+               68  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               70  STORE_NAME               get_error_details
+
+ L. 394        72  LOAD_CODE                <code_object _monitors_impl>
+               74  LOAD_STR                 'MSS._monitors_impl'
+               76  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               78  STORE_NAME               _monitors_impl
+
+ L. 442        80  LOAD_CODE                <code_object _grab_impl>
+               82  LOAD_STR                 'MSS._grab_impl'
+               84  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               86  STORE_NAME               _grab_impl
+               88  LOAD_CLOSURE             '__class__'
+               90  DUP_TOP          
+               92  STORE_NAME               __classcell__
+               94  RETURN_VALUE     
+               -1  RETURN_LAST      
+
+Parse error at or near `POP_FINALLY' instruction at offset 16
+

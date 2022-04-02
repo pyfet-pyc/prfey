@@ -1,0 +1,66 @@
+Instruction context:
+   
+ L. 147       112  POP_BLOCK        
+->               114  POP_EXCEPT       
+                 116  CALL_FINALLY        126  'to 126'
+                 118  LOAD_CONST               None
+                 120  RETURN_VALUE     
+               122_0  COME_FROM            70  '70'
+                 122  POP_BLOCK        
+                 124  BEGIN_FINALLY    
+               126_0  COME_FROM           116  '116'
+               126_1  COME_FROM_FINALLY    58  '58'
+                 126  LOAD_CONST               None
+                 128  STORE_FAST               'exc'
+                 130  DELETE_FAST              'exc'
+                 132  END_FINALLY      
+                 134  POP_EXCEPT       
+                 136  JUMP_FORWARD        140  'to 140'
+               138_0  COME_FROM            50  '50'
+                 138  END_FINALLY      
+               140_0  COME_FROM           136  '136'
+               140_1  COME_FROM            42  '42'
+Instruction context:
+   
+ L. 234       116  POP_BLOCK        
+->               118  POP_EXCEPT       
+                 120  CALL_FINALLY        130  'to 130'
+                 122  LOAD_CONST               None
+                 124  RETURN_VALUE     
+               126_0  COME_FROM            74  '74'
+                 126  POP_BLOCK        
+                 128  BEGIN_FINALLY    
+               130_0  COME_FROM           120  '120'
+               130_1  COME_FROM_FINALLY    62  '62'
+                 130  LOAD_CONST               None
+                 132  STORE_FAST               'exc'
+                 134  DELETE_FAST              'exc'
+                 136  END_FINALLY      
+                 138  POP_EXCEPT       
+                 140  JUMP_FORWARD        144  'to 144'
+               142_0  COME_FROM            54  '54'
+                 142  END_FINALLY      
+               144_0  COME_FROM           140  '140'
+               144_1  COME_FROM            46  '46'
+Instruction context:
+   
+ L. 349        46  POP_BLOCK        
+->                48  LOAD_CONST               None
+                  50  RETURN_VALUE     
+                52_0  COME_FROM            36  '36'
+Instruction context:
+   
+ L. 800       208  POP_EXCEPT       
+                 210  JUMP_BACK            62  'to 62'
+->               212  POP_EXCEPT       
+                 214  JUMP_FORWARD        218  'to 218'
+               216_0  COME_FROM           136  '136'
+                 216  END_FINALLY      
+               218_0  COME_FROM           214  '214'
+               218_1  COME_FROM           128  '128'
+
+../test/162010.pyc -- 
+# decompile failed
+
+# file ../test/162010.pyc
+# Deparsing stopped due to parse error

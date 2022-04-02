@@ -1,0 +1,727 @@
+
+# file test/111772.pyc
+# --- This code section failed: ---
+
+ L.  16         0  LOAD_STR                 '\nThis is an implementation of decimal floating point arithmetic based on\nthe General Decimal Arithmetic Specification:\n\n    http://speleotrove.com/decimal/decarith.html\n\nand IEEE standard 854-1987:\n\n    http://en.wikipedia.org/wiki/IEEE_854-1987\n\nDecimal floating point has finite precision with arbitrarily large bounds.\n\nThe purpose of this module is to support arithmetic using familiar\n"schoolhouse" rules and to avoid some of the tricky representation\nissues associated with binary floating point.  The package is especially\nuseful for financial applications or for contexts where users have\nexpectations that are at odds with binary floating point (for instance,\nin binary floating point, 1.00 % 0.1 gives 0.09999999999999995 instead\nof 0.0; Decimal(\'1.00\') % Decimal(\'0.1\') returns the expected\nDecimal(\'0.00\')).\n\nHere are some examples of using the decimal module:\n\n>>> from decimal import *\n>>> setcontext(ExtendedContext)\n>>> Decimal(0)\nDecimal(\'0\')\n>>> Decimal(\'1\')\nDecimal(\'1\')\n>>> Decimal(\'-.0123\')\nDecimal(\'-0.0123\')\n>>> Decimal(123456)\nDecimal(\'123456\')\n>>> Decimal(\'123.45e12345678\')\nDecimal(\'1.2345E+12345680\')\n>>> Decimal(\'1.33\') + Decimal(\'1.27\')\nDecimal(\'2.60\')\n>>> Decimal(\'12.34\') + Decimal(\'3.87\') - Decimal(\'18.41\')\nDecimal(\'-2.20\')\n>>> dig = Decimal(1)\n>>> print(dig / Decimal(3))\n0.333333333\n>>> getcontext().prec = 18\n>>> print(dig / Decimal(3))\n0.333333333333333333\n>>> print(dig.sqrt())\n1\n>>> print(Decimal(3).sqrt())\n1.73205080756887729\n>>> print(Decimal(3) ** 123)\n4.85192780976896427E+58\n>>> inf = Decimal(1) / Decimal(0)\n>>> print(inf)\nInfinity\n>>> neginf = Decimal(-1) / Decimal(0)\n>>> print(neginf)\n-Infinity\n>>> print(neginf + inf)\nNaN\n>>> print(neginf * inf)\n-Infinity\n>>> print(dig / 0)\nInfinity\n>>> getcontext().traps[DivisionByZero] = 1\n>>> print(dig / 0)\nTraceback (most recent call last):\n  ...\n  ...\n  ...\ndecimal.DivisionByZero: x / 0\n>>> c = Context()\n>>> c.traps[InvalidOperation] = 0\n>>> print(c.flags[InvalidOperation])\n0\n>>> c.divide(Decimal(0), Decimal(0))\nDecimal(\'NaN\')\n>>> c.traps[InvalidOperation] = 1\n>>> print(c.flags[InvalidOperation])\n1\n>>> c.flags[InvalidOperation] = 0\n>>> print(c.flags[InvalidOperation])\n0\n>>> print(c.divide(Decimal(0), Decimal(0)))\nTraceback (most recent call last):\n  ...\n  ...\n  ...\ndecimal.InvalidOperation: 0 / 0\n>>> print(c.flags[InvalidOperation])\n1\n>>> c.flags[InvalidOperation] = 0\n>>> c.traps[InvalidOperation] = 0\n>>> print(c.divide(Decimal(0), Decimal(0)))\nNaN\n>>> print(c.flags[InvalidOperation])\n1\n>>>\n'
+                2  STORE_NAME               __doc__
+
+ L. 115         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('Decimal', 'Context', 'DecimalTuple', 'DefaultContext', 'BasicContext', 'ExtendedContext', 'DecimalException', 'Clamped', 'InvalidOperation', 'DivisionByZero', 'Inexact', 'Rounded', 'Subnormal', 'Overflow', 'Underflow', 'FloatOperation', 'DivisionImpossible', 'InvalidContext', 'ConversionSyntax', 'DivisionUndefined', 'ROUND_DOWN', 'ROUND_HALF_UP', 'ROUND_HALF_EVEN', 'ROUND_CEILING', 'ROUND_FLOOR', 'ROUND_UP', 'ROUND_HALF_DOWN', 'ROUND_05UP', 'setcontext', 'getcontext', 'localcontext', 'MAX_PREC', 'MAX_EMAX', 'MIN_EMIN', 'MIN_ETINY', 'HAVE_THREADS', 'HAVE_CONTEXTVAR')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L. 150        12  LOAD_NAME                __name__
+               14  STORE_NAME               __xname__
+
+ L. 151        16  LOAD_STR                 'decimal'
+               18  STORE_NAME               __name__
+
+ L. 152        20  LOAD_STR                 '1.70'
+               22  STORE_NAME               __version__
+
+ L. 154        24  LOAD_STR                 '2.4.2'
+               26  STORE_NAME               __libmpdec_version__
+
+ L. 156        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              math
+               34  STORE_NAME               _math
+
+ L. 157        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              numbers
+               42  STORE_NAME               _numbers
+
+ L. 158        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              sys
+               50  STORE_NAME               sys
+
+ L. 160        52  SETUP_FINALLY        80  'to 80'
+
+ L. 161        54  LOAD_CONST               0
+               56  LOAD_CONST               ('namedtuple',)
+               58  IMPORT_NAME              collections
+               60  IMPORT_FROM              namedtuple
+               62  STORE_NAME               _namedtuple
+               64  POP_TOP          
+
+ L. 162        66  LOAD_NAME                _namedtuple
+               68  LOAD_STR                 'DecimalTuple'
+               70  LOAD_STR                 'sign digits exponent'
+               72  CALL_FUNCTION_2       2  ''
+               74  STORE_NAME               DecimalTuple
+               76  POP_BLOCK        
+               78  JUMP_FORWARD        106  'to 106'
+             80_0  COME_FROM_FINALLY    52  '52'
+
+ L. 163        80  DUP_TOP          
+               82  LOAD_NAME                ImportError
+               84  <121>               104  ''
+               86  POP_TOP          
+               88  POP_TOP          
+               90  POP_TOP          
+
+ L. 164        92  LOAD_LAMBDA              '<code_object <lambda>>'
+               94  LOAD_STR                 '<lambda>'
+               96  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               98  STORE_NAME               DecimalTuple
+              100  POP_EXCEPT       
+              102  JUMP_FORWARD        106  'to 106'
+              104  <48>             
+            106_0  COME_FROM           102  '102'
+            106_1  COME_FROM            78  '78'
+
+ L. 167       106  LOAD_STR                 'ROUND_DOWN'
+              108  STORE_NAME               ROUND_DOWN
+
+ L. 168       110  LOAD_STR                 'ROUND_HALF_UP'
+              112  STORE_NAME               ROUND_HALF_UP
+
+ L. 169       114  LOAD_STR                 'ROUND_HALF_EVEN'
+              116  STORE_NAME               ROUND_HALF_EVEN
+
+ L. 170       118  LOAD_STR                 'ROUND_CEILING'
+              120  STORE_NAME               ROUND_CEILING
+
+ L. 171       122  LOAD_STR                 'ROUND_FLOOR'
+              124  STORE_NAME               ROUND_FLOOR
+
+ L. 172       126  LOAD_STR                 'ROUND_UP'
+              128  STORE_NAME               ROUND_UP
+
+ L. 173       130  LOAD_STR                 'ROUND_HALF_DOWN'
+              132  STORE_NAME               ROUND_HALF_DOWN
+
+ L. 174       134  LOAD_STR                 'ROUND_05UP'
+              136  STORE_NAME               ROUND_05UP
+
+ L. 177       138  LOAD_CONST               True
+              140  STORE_NAME               HAVE_THREADS
+
+ L. 178       142  LOAD_CONST               True
+              144  STORE_NAME               HAVE_CONTEXTVAR
+
+ L. 179       146  LOAD_NAME                sys
+              148  LOAD_ATTR                maxsize
+              150  LOAD_CONST               9223372036854775807
+              152  COMPARE_OP               ==
+              154  POP_JUMP_IF_FALSE   170  'to 170'
+
+ L. 180       156  LOAD_CONST               999999999999999999
+              158  STORE_NAME               MAX_PREC
+
+ L. 181       160  LOAD_CONST               999999999999999999
+              162  STORE_NAME               MAX_EMAX
+
+ L. 182       164  LOAD_CONST               -999999999999999999
+              166  STORE_NAME               MIN_EMIN
+              168  JUMP_FORWARD        182  'to 182'
+            170_0  COME_FROM           154  '154'
+
+ L. 184       170  LOAD_CONST               425000000
+              172  STORE_NAME               MAX_PREC
+
+ L. 185       174  LOAD_CONST               425000000
+              176  STORE_NAME               MAX_EMAX
+
+ L. 186       178  LOAD_CONST               -425000000
+              180  STORE_NAME               MIN_EMIN
+            182_0  COME_FROM           168  '168'
+
+ L. 188       182  LOAD_NAME                MIN_EMIN
+              184  LOAD_NAME                MAX_PREC
+              186  LOAD_CONST               1
+              188  BINARY_SUBTRACT  
+              190  BINARY_SUBTRACT  
+              192  STORE_NAME               MIN_ETINY
+
+ L. 192       194  LOAD_BUILD_CLASS 
+              196  LOAD_CODE                <code_object DecimalException>
+              198  LOAD_STR                 'DecimalException'
+              200  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              202  LOAD_STR                 'DecimalException'
+              204  LOAD_NAME                ArithmeticError
+              206  CALL_FUNCTION_3       3  ''
+              208  STORE_NAME               DecimalException
+
+ L. 215       210  LOAD_BUILD_CLASS 
+              212  LOAD_CODE                <code_object Clamped>
+              214  LOAD_STR                 'Clamped'
+              216  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              218  LOAD_STR                 'Clamped'
+              220  LOAD_NAME                DecimalException
+              222  CALL_FUNCTION_3       3  ''
+              224  STORE_NAME               Clamped
+
+ L. 227       226  LOAD_BUILD_CLASS 
+              228  LOAD_CODE                <code_object InvalidOperation>
+              230  LOAD_STR                 'InvalidOperation'
+              232  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              234  LOAD_STR                 'InvalidOperation'
+              236  LOAD_NAME                DecimalException
+              238  CALL_FUNCTION_3       3  ''
+              240  STORE_NAME               InvalidOperation
+
+ L. 256       242  LOAD_BUILD_CLASS 
+              244  LOAD_CODE                <code_object ConversionSyntax>
+              246  LOAD_STR                 'ConversionSyntax'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  LOAD_STR                 'ConversionSyntax'
+              252  LOAD_NAME                InvalidOperation
+              254  CALL_FUNCTION_3       3  ''
+              256  STORE_NAME               ConversionSyntax
+
+ L. 266       258  LOAD_BUILD_CLASS 
+              260  LOAD_CODE                <code_object DivisionByZero>
+              262  LOAD_STR                 'DivisionByZero'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  LOAD_STR                 'DivisionByZero'
+              268  LOAD_NAME                DecimalException
+              270  LOAD_NAME                ZeroDivisionError
+              272  CALL_FUNCTION_4       4  ''
+              274  STORE_NAME               DivisionByZero
+
+ L. 282       276  LOAD_BUILD_CLASS 
+              278  LOAD_CODE                <code_object DivisionImpossible>
+              280  LOAD_STR                 'DivisionImpossible'
+              282  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              284  LOAD_STR                 'DivisionImpossible'
+              286  LOAD_NAME                InvalidOperation
+              288  CALL_FUNCTION_3       3  ''
+              290  STORE_NAME               DivisionImpossible
+
+ L. 293       292  LOAD_BUILD_CLASS 
+              294  LOAD_CODE                <code_object DivisionUndefined>
+              296  LOAD_STR                 'DivisionUndefined'
+              298  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              300  LOAD_STR                 'DivisionUndefined'
+              302  LOAD_NAME                InvalidOperation
+              304  LOAD_NAME                ZeroDivisionError
+              306  CALL_FUNCTION_4       4  ''
+              308  STORE_NAME               DivisionUndefined
+
+ L. 304       310  LOAD_BUILD_CLASS 
+              312  LOAD_CODE                <code_object Inexact>
+              314  LOAD_STR                 'Inexact'
+              316  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              318  LOAD_STR                 'Inexact'
+              320  LOAD_NAME                DecimalException
+              322  CALL_FUNCTION_3       3  ''
+              324  STORE_NAME               Inexact
+
+ L. 316       326  LOAD_BUILD_CLASS 
+              328  LOAD_CODE                <code_object InvalidContext>
+              330  LOAD_STR                 'InvalidContext'
+              332  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              334  LOAD_STR                 'InvalidContext'
+              336  LOAD_NAME                InvalidOperation
+              338  CALL_FUNCTION_3       3  ''
+              340  STORE_NAME               InvalidContext
+
+ L. 330       342  LOAD_BUILD_CLASS 
+              344  LOAD_CODE                <code_object Rounded>
+              346  LOAD_STR                 'Rounded'
+              348  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              350  LOAD_STR                 'Rounded'
+              352  LOAD_NAME                DecimalException
+              354  CALL_FUNCTION_3       3  ''
+              356  STORE_NAME               Rounded
+
+ L. 342       358  LOAD_BUILD_CLASS 
+              360  LOAD_CODE                <code_object Subnormal>
+              362  LOAD_STR                 'Subnormal'
+              364  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              366  LOAD_STR                 'Subnormal'
+              368  LOAD_NAME                DecimalException
+              370  CALL_FUNCTION_3       3  ''
+              372  STORE_NAME               Subnormal
+
+ L. 353       374  LOAD_BUILD_CLASS 
+              376  LOAD_CODE                <code_object Overflow>
+              378  LOAD_STR                 'Overflow'
+              380  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              382  LOAD_STR                 'Overflow'
+              384  LOAD_NAME                Inexact
+              386  LOAD_NAME                Rounded
+              388  CALL_FUNCTION_4       4  ''
+              390  STORE_NAME               Overflow
+
+ L. 391       392  LOAD_BUILD_CLASS 
+              394  LOAD_CODE                <code_object Underflow>
+              396  LOAD_STR                 'Underflow'
+              398  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              400  LOAD_STR                 'Underflow'
+              402  LOAD_NAME                Inexact
+              404  LOAD_NAME                Rounded
+              406  LOAD_NAME                Subnormal
+              408  CALL_FUNCTION_5       5  ''
+              410  STORE_NAME               Underflow
+
+ L. 406       412  LOAD_BUILD_CLASS 
+              414  LOAD_CODE                <code_object FloatOperation>
+              416  LOAD_STR                 'FloatOperation'
+              418  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              420  LOAD_STR                 'FloatOperation'
+              422  LOAD_NAME                DecimalException
+              424  LOAD_NAME                TypeError
+              426  CALL_FUNCTION_4       4  ''
+              428  STORE_NAME               FloatOperation
+
+ L. 422       430  LOAD_NAME                Clamped
+              432  LOAD_NAME                DivisionByZero
+              434  LOAD_NAME                Inexact
+              436  LOAD_NAME                Overflow
+              438  LOAD_NAME                Rounded
+
+ L. 423       440  LOAD_NAME                Underflow
+              442  LOAD_NAME                InvalidOperation
+              444  LOAD_NAME                Subnormal
+              446  LOAD_NAME                FloatOperation
+
+ L. 422       448  BUILD_LIST_9          9 
+              450  STORE_NAME               _signals
+
+ L. 426       452  LOAD_NAME                ConversionSyntax
+              454  LOAD_NAME                InvalidOperation
+
+ L. 427       456  LOAD_NAME                DivisionImpossible
+              458  LOAD_NAME                InvalidOperation
+
+ L. 428       460  LOAD_NAME                DivisionUndefined
+              462  LOAD_NAME                InvalidOperation
+
+ L. 429       464  LOAD_NAME                InvalidContext
+              466  LOAD_NAME                InvalidOperation
+
+ L. 426       468  BUILD_MAP_4           4 
+              470  STORE_NAME               _condition_map
+
+ L. 432       472  LOAD_NAME                ROUND_DOWN
+              474  LOAD_NAME                ROUND_HALF_UP
+              476  LOAD_NAME                ROUND_HALF_EVEN
+              478  LOAD_NAME                ROUND_CEILING
+
+ L. 433       480  LOAD_NAME                ROUND_FLOOR
+              482  LOAD_NAME                ROUND_UP
+              484  LOAD_NAME                ROUND_HALF_DOWN
+              486  LOAD_NAME                ROUND_05UP
+
+ L. 432       488  BUILD_TUPLE_8         8 
+              490  STORE_NAME               _rounding_modes
+
+ L. 440       492  LOAD_CONST               0
+              494  LOAD_CONST               None
+              496  IMPORT_NAME              contextvars
+              498  STORE_NAME               contextvars
+
+ L. 442       500  LOAD_NAME                contextvars
+              502  LOAD_METHOD              ContextVar
+              504  LOAD_STR                 'decimal_context'
+              506  CALL_METHOD_1         1  ''
+              508  STORE_NAME               _current_context_var
+
+ L. 444       510  LOAD_CODE                <code_object getcontext>
+              512  LOAD_STR                 'getcontext'
+              514  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              516  STORE_NAME               getcontext
+
+ L. 458       518  LOAD_CODE                <code_object setcontext>
+              520  LOAD_STR                 'setcontext'
+              522  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              524  STORE_NAME               setcontext
+
+ L. 465       526  DELETE_NAME              contextvars
+
+ L. 467       528  LOAD_CONST               (None,)
+              530  LOAD_CODE                <code_object localcontext>
+              532  LOAD_STR                 'localcontext'
+              534  MAKE_FUNCTION_1          'default'
+              536  STORE_NAME               localcontext
+
+ L. 513       538  LOAD_BUILD_CLASS 
+              540  LOAD_CODE                <code_object Decimal>
+              542  LOAD_STR                 'Decimal'
+              544  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              546  LOAD_STR                 'Decimal'
+              548  LOAD_NAME                object
+              550  CALL_FUNCTION_3       3  ''
+              552  STORE_NAME               Decimal
+
+ L.3830       554  LOAD_CONST               (False,)
+              556  LOAD_CODE                <code_object _dec_from_triple>
+              558  LOAD_STR                 '_dec_from_triple'
+              560  MAKE_FUNCTION_1          'default'
+              562  STORE_NAME               _dec_from_triple
+
+ L.3849       564  LOAD_NAME                _numbers
+              566  LOAD_ATTR                Number
+              568  LOAD_METHOD              register
+              570  LOAD_NAME                Decimal
+              572  CALL_METHOD_1         1  ''
+              574  POP_TOP          
+
+ L.3854       576  LOAD_BUILD_CLASS 
+              578  LOAD_CODE                <code_object _ContextManager>
+              580  LOAD_STR                 '_ContextManager'
+              582  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              584  LOAD_STR                 '_ContextManager'
+              586  LOAD_NAME                object
+              588  CALL_FUNCTION_3       3  ''
+              590  STORE_NAME               _ContextManager
+
+ L.3869       592  LOAD_BUILD_CLASS 
+              594  LOAD_CODE                <code_object Context>
+              596  LOAD_STR                 'Context'
+              598  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              600  LOAD_STR                 'Context'
+              602  LOAD_NAME                object
+              604  CALL_FUNCTION_3       3  ''
+              606  STORE_NAME               Context
+
+ L.5614       608  LOAD_BUILD_CLASS 
+              610  LOAD_CODE                <code_object _WorkRep>
+              612  LOAD_STR                 '_WorkRep'
+              614  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              616  LOAD_STR                 '_WorkRep'
+              618  LOAD_NAME                object
+              620  CALL_FUNCTION_3       3  ''
+              622  STORE_NAME               _WorkRep
+
+ L.5640       624  LOAD_CONST               (0,)
+              626  LOAD_CODE                <code_object _normalize>
+              628  LOAD_STR                 '_normalize'
+              630  MAKE_FUNCTION_1          'default'
+              632  STORE_NAME               _normalize
+
+ L.5670       634  LOAD_NAME                int
+              636  LOAD_ATTR                bit_length
+              638  STORE_NAME               _nbits
+
+ L.5672       640  LOAD_CODE                <code_object _decimal_lshift_exact>
+              642  LOAD_STR                 '_decimal_lshift_exact'
+              644  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              646  STORE_NAME               _decimal_lshift_exact
+
+ L.5693       648  LOAD_CODE                <code_object _sqrt_nearest>
+              650  LOAD_STR                 '_sqrt_nearest'
+              652  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              654  STORE_NAME               _sqrt_nearest
+
+ L.5708       656  LOAD_CODE                <code_object _rshift_nearest>
+              658  LOAD_STR                 '_rshift_nearest'
+              660  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              662  STORE_NAME               _rshift_nearest
+
+ L.5716       664  LOAD_CODE                <code_object _div_nearest>
+              666  LOAD_STR                 '_div_nearest'
+              668  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              670  STORE_NAME               _div_nearest
+
+ L.5724       672  LOAD_CONST               (8,)
+              674  LOAD_CODE                <code_object _ilog>
+              676  LOAD_STR                 '_ilog'
+              678  MAKE_FUNCTION_1          'default'
+              680  STORE_NAME               _ilog
+
+ L.5772       682  LOAD_CODE                <code_object _dlog10>
+              684  LOAD_STR                 '_dlog10'
+              686  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              688  STORE_NAME               _dlog10
+
+ L.5806       690  LOAD_CODE                <code_object _dlog>
+              692  LOAD_STR                 '_dlog'
+              694  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              696  STORE_NAME               _dlog
+
+ L.5850       698  LOAD_BUILD_CLASS 
+              700  LOAD_CODE                <code_object _Log10Memoize>
+              702  LOAD_STR                 '_Log10Memoize'
+              704  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              706  LOAD_STR                 '_Log10Memoize'
+              708  LOAD_NAME                object
+              710  CALL_FUNCTION_3       3  ''
+              712  STORE_NAME               _Log10Memoize
+
+ L.5885       714  LOAD_NAME                _Log10Memoize
+              716  CALL_FUNCTION_0       0  ''
+              718  LOAD_ATTR                getdigits
+              720  STORE_NAME               _log10_digits
+
+ L.5887       722  LOAD_CONST               (8,)
+              724  LOAD_CODE                <code_object _iexp>
+              726  LOAD_STR                 '_iexp'
+              728  MAKE_FUNCTION_1          'default'
+              730  STORE_NAME               _iexp
+
+ L.5924       732  LOAD_CODE                <code_object _dexp>
+              734  LOAD_STR                 '_dexp'
+              736  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              738  STORE_NAME               _dexp
+
+ L.5960       740  LOAD_CODE                <code_object _dpower>
+              742  LOAD_STR                 '_dpower'
+              744  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              746  STORE_NAME               _dpower
+
+ L.6003       748  LOAD_CONST               100
+              750  LOAD_CONST               70
+              752  LOAD_CONST               53
+              754  LOAD_CONST               40
+              756  LOAD_CONST               31
+
+ L.6004       758  LOAD_CONST               23
+              760  LOAD_CONST               16
+              762  LOAD_CONST               10
+              764  LOAD_CONST               5
+
+ L.6002       766  LOAD_CONST               ('1', '2', '3', '4', '5', '6', '7', '8', '9')
+              768  BUILD_CONST_KEY_MAP_9     9 
+              770  BUILD_TUPLE_1         1 
+              772  LOAD_CODE                <code_object _log10_lb>
+              774  LOAD_STR                 '_log10_lb'
+              776  MAKE_FUNCTION_1          'default'
+              778  STORE_NAME               _log10_lb
+
+ L.6013       780  LOAD_CONST               (False, False)
+              782  LOAD_CODE                <code_object _convert_other>
+              784  LOAD_STR                 '_convert_other'
+              786  MAKE_FUNCTION_1          'default'
+              788  STORE_NAME               _convert_other
+
+ L.6032       790  LOAD_CONST               (False,)
+              792  LOAD_CODE                <code_object _convert_for_comparison>
+              794  LOAD_STR                 '_convert_for_comparison'
+              796  MAKE_FUNCTION_1          'default'
+              798  STORE_NAME               _convert_for_comparison
+
+ L.6074       800  LOAD_NAME                Context
+
+ L.6075       802  LOAD_CONST               28
+              804  LOAD_NAME                ROUND_HALF_EVEN
+
+ L.6076       806  LOAD_NAME                DivisionByZero
+              808  LOAD_NAME                Overflow
+              810  LOAD_NAME                InvalidOperation
+              812  BUILD_LIST_3          3 
+
+ L.6077       814  BUILD_LIST_0          0 
+
+ L.6078       816  LOAD_CONST               999999
+
+ L.6079       818  LOAD_CONST               -999999
+
+ L.6080       820  LOAD_CONST               1
+
+ L.6081       822  LOAD_CONST               0
+
+ L.6074       824  LOAD_CONST               ('prec', 'rounding', 'traps', 'flags', 'Emax', 'Emin', 'capitals', 'clamp')
+              826  CALL_FUNCTION_KW_8     8  '8 total positional and keyword args'
+              828  STORE_NAME               DefaultContext
+
+ L.6089       830  LOAD_NAME                Context
+
+ L.6090       832  LOAD_CONST               9
+              834  LOAD_NAME                ROUND_HALF_UP
+
+ L.6091       836  LOAD_NAME                DivisionByZero
+              838  LOAD_NAME                Overflow
+              840  LOAD_NAME                InvalidOperation
+              842  LOAD_NAME                Clamped
+              844  LOAD_NAME                Underflow
+              846  BUILD_LIST_5          5 
+
+ L.6092       848  BUILD_LIST_0          0 
+
+ L.6089       850  LOAD_CONST               ('prec', 'rounding', 'traps', 'flags')
+              852  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              854  STORE_NAME               BasicContext
+
+ L.6095       856  LOAD_NAME                Context
+
+ L.6096       858  LOAD_CONST               9
+              860  LOAD_NAME                ROUND_HALF_EVEN
+
+ L.6097       862  BUILD_LIST_0          0 
+
+ L.6098       864  BUILD_LIST_0          0 
+
+ L.6095       866  LOAD_CONST               ('prec', 'rounding', 'traps', 'flags')
+              868  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              870  STORE_NAME               ExtendedContext
+
+ L.6116       872  LOAD_CONST               0
+              874  LOAD_CONST               None
+              876  IMPORT_NAME              re
+              878  STORE_NAME               re
+
+ L.6117       880  LOAD_NAME                re
+              882  LOAD_METHOD              compile
+              884  LOAD_STR                 '        # A numeric string consists of:\n#    \\s*\n    (?P<sign>[-+])?              # an optional sign, followed by either...\n    (\n        (?=\\d|\\.\\d)              # ...a number (with at least one digit)\n        (?P<int>\\d*)             # having a (possibly empty) integer part\n        (\\.(?P<frac>\\d*))?       # followed by an optional fractional part\n        (E(?P<exp>[-+]?\\d+))?    # followed by an optional exponent, or...\n    |\n        Inf(inity)?              # ...an infinity, or...\n    |\n        (?P<signal>s)?           # ...an (optionally signaling)\n        NaN                      # NaN\n        (?P<diag>\\d*)            # with (possibly empty) diagnostic info.\n    )\n#    \\s*\n    \\Z\n'
+
+ L.6134       886  LOAD_NAME                re
+              888  LOAD_ATTR                VERBOSE
+              890  LOAD_NAME                re
+              892  LOAD_ATTR                IGNORECASE
+              894  BINARY_OR        
+
+ L.6117       896  CALL_METHOD_2         2  ''
+              898  LOAD_ATTR                match
+              900  STORE_NAME               _parser
+
+ L.6136       902  LOAD_NAME                re
+              904  LOAD_METHOD              compile
+              906  LOAD_STR                 '0*$'
+              908  CALL_METHOD_1         1  ''
+              910  LOAD_ATTR                match
+              912  STORE_NAME               _all_zeros
+
+ L.6137       914  LOAD_NAME                re
+              916  LOAD_METHOD              compile
+              918  LOAD_STR                 '50*$'
+              920  CALL_METHOD_1         1  ''
+              922  LOAD_ATTR                match
+              924  STORE_NAME               _exact_half
+
+ L.6148       926  LOAD_NAME                re
+              928  LOAD_METHOD              compile
+              930  LOAD_STR                 '\\A\n(?:\n   (?P<fill>.)?\n   (?P<align>[<>=^])\n)?\n(?P<sign>[-+ ])?\n(?P<alt>\\#)?\n(?P<zeropad>0)?\n(?P<minimumwidth>(?!0)\\d+)?\n(?P<thousands_sep>,)?\n(?:\\.(?P<precision>0|(?!0)\\d+))?\n(?P<type>[eEfFgGn%])?\n\\Z\n'
+
+ L.6161       932  LOAD_NAME                re
+              934  LOAD_ATTR                VERBOSE
+              936  LOAD_NAME                re
+              938  LOAD_ATTR                DOTALL
+              940  BINARY_OR        
+
+ L.6148       942  CALL_METHOD_2         2  ''
+              944  STORE_NAME               _parse_format_specifier_regex
+
+ L.6163       946  DELETE_NAME              re
+
+ L.6168       948  SETUP_FINALLY       962  'to 962'
+
+ L.6169       950  LOAD_CONST               0
+              952  LOAD_CONST               None
+              954  IMPORT_NAME              locale
+              956  STORE_NAME               _locale
+              958  POP_BLOCK        
+              960  JUMP_FORWARD        982  'to 982'
+            962_0  COME_FROM_FINALLY   948  '948'
+
+ L.6170       962  DUP_TOP          
+              964  LOAD_NAME                ImportError
+          966_968  <121>               980  ''
+              970  POP_TOP          
+              972  POP_TOP          
+              974  POP_TOP          
+
+ L.6171       976  POP_EXCEPT       
+              978  JUMP_FORWARD        982  'to 982'
+              980  <48>             
+            982_0  COME_FROM           978  '978'
+            982_1  COME_FROM           960  '960'
+
+ L.6173       982  LOAD_CONST               (None,)
+              984  LOAD_CODE                <code_object _parse_format_specifier>
+              986  LOAD_STR                 '_parse_format_specifier'
+              988  MAKE_FUNCTION_1          'default'
+              990  STORE_NAME               _parse_format_specifier
+
+ L.6253       992  LOAD_CODE                <code_object _format_align>
+              994  LOAD_STR                 '_format_align'
+              996  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              998  STORE_NAME               _format_align
+
+ L.6280      1000  LOAD_CODE                <code_object _group_lengths>
+             1002  LOAD_STR                 '_group_lengths'
+             1004  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1006  STORE_NAME               _group_lengths
+
+ L.6303      1008  LOAD_CONST               (1,)
+             1010  LOAD_CODE                <code_object _insert_thousands_sep>
+             1012  LOAD_STR                 '_insert_thousands_sep'
+             1014  MAKE_FUNCTION_1          'default'
+             1016  STORE_NAME               _insert_thousands_sep
+
+ L.6340      1018  LOAD_CODE                <code_object _format_sign>
+             1020  LOAD_STR                 '_format_sign'
+             1022  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1024  STORE_NAME               _format_sign
+
+ L.6350      1026  LOAD_CODE                <code_object _format_number>
+             1028  LOAD_STR                 '_format_number'
+             1030  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1032  STORE_NAME               _format_number
+
+ L.6391      1034  LOAD_NAME                Decimal
+             1036  LOAD_STR                 'Inf'
+             1038  CALL_FUNCTION_1       1  ''
+             1040  STORE_NAME               _Infinity
+
+ L.6392      1042  LOAD_NAME                Decimal
+             1044  LOAD_STR                 '-Inf'
+             1046  CALL_FUNCTION_1       1  ''
+             1048  STORE_NAME               _NegativeInfinity
+
+ L.6393      1050  LOAD_NAME                Decimal
+             1052  LOAD_STR                 'NaN'
+             1054  CALL_FUNCTION_1       1  ''
+             1056  STORE_NAME               _NaN
+
+ L.6394      1058  LOAD_NAME                Decimal
+             1060  LOAD_CONST               0
+             1062  CALL_FUNCTION_1       1  ''
+             1064  STORE_NAME               _Zero
+
+ L.6395      1066  LOAD_NAME                Decimal
+             1068  LOAD_CONST               1
+             1070  CALL_FUNCTION_1       1  ''
+             1072  STORE_NAME               _One
+
+ L.6396      1074  LOAD_NAME                Decimal
+             1076  LOAD_CONST               -1
+             1078  CALL_FUNCTION_1       1  ''
+             1080  STORE_NAME               _NegativeOne
+
+ L.6399      1082  LOAD_NAME                _Infinity
+             1084  LOAD_NAME                _NegativeInfinity
+             1086  BUILD_TUPLE_2         2 
+             1088  STORE_NAME               _SignedInfinity
+
+ L.6403      1090  LOAD_NAME                sys
+             1092  LOAD_ATTR                hash_info
+             1094  LOAD_ATTR                modulus
+             1096  STORE_NAME               _PyHASH_MODULUS
+
+ L.6405      1098  LOAD_NAME                sys
+             1100  LOAD_ATTR                hash_info
+             1102  LOAD_ATTR                inf
+             1104  STORE_NAME               _PyHASH_INF
+
+ L.6406      1106  LOAD_NAME                sys
+             1108  LOAD_ATTR                hash_info
+             1110  LOAD_ATTR                nan
+             1112  STORE_NAME               _PyHASH_NAN
+
+ L.6409      1114  LOAD_NAME                pow
+             1116  LOAD_CONST               10
+             1118  LOAD_NAME                _PyHASH_MODULUS
+             1120  LOAD_CONST               2
+             1122  BINARY_SUBTRACT  
+             1124  LOAD_NAME                _PyHASH_MODULUS
+             1126  CALL_FUNCTION_3       3  ''
+             1128  STORE_NAME               _PyHASH_10INV
+
+ L.6410      1130  DELETE_NAME              sys
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L. 115         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('Decimal', 'Context', 'DecimalTuple', 'DefaultContext', 'BasicContext', 'ExtendedContext', 'DecimalException', 'Clamped', 'InvalidOperation', 'DivisionByZero', 'Inexact', 'Rounded', 'Subnormal', 'Overflow', 'Underflow', 'FloatOperation', 'DivisionImpossible', 'InvalidContext', 'ConversionSyntax', 'DivisionUndefined', 'ROUND_DOWN', 'ROUND_HALF_UP', 'ROUND_HALF_EVEN', 'ROUND_CEILING', 'ROUND_FLOOR', 'ROUND_UP', 'ROUND_HALF_DOWN', 'ROUND_05UP', 'setcontext', 'getcontext', 'localcontext', 'MAX_PREC', 'MAX_EMAX', 'MIN_EMIN', 'MIN_ETINY', 'HAVE_THREADS', 'HAVE_CONTEXTVAR')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/111772.pyc -- 
+# decompile failed

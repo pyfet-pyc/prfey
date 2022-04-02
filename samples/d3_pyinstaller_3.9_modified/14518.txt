@@ -1,0 +1,142 @@
+Instruction context:
+   
+ L.   7        54  DUP_TOP          
+                  56  LOAD_NAME                ImportError
+->                58  <121>                82  ''
+                  60  POP_TOP          
+                  62  POP_TOP          
+                  64  POP_TOP          
+
+test/14518.pyc -- 
+# decompile failed
+
+# file test/14518.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              errno
+                6  STORE_NAME               errno
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               ('partial',)
+               12  IMPORT_NAME              functools
+               14  IMPORT_FROM              partial
+               16  STORE_NAME               partial
+               18  POP_TOP          
+
+ L.   3        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              select
+               26  STORE_NAME               select
+
+ L.   4        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              sys
+               34  STORE_NAME               sys
+
+ L.   5        36  SETUP_FINALLY        54  'to 54'
+
+ L.   6        38  LOAD_CONST               0
+               40  LOAD_CONST               ('monotonic',)
+               42  IMPORT_NAME              time
+               44  IMPORT_FROM              monotonic
+               46  STORE_NAME               monotonic
+               48  POP_TOP          
+               50  POP_BLOCK        
+               52  JUMP_FORWARD         84  'to 84'
+             54_0  COME_FROM_FINALLY    36  '36'
+
+ L.   7        54  DUP_TOP          
+               56  LOAD_NAME                ImportError
+               58  <121>                82  ''
+               60  POP_TOP          
+               62  POP_TOP          
+               64  POP_TOP          
+
+ L.   8        66  LOAD_CONST               0
+               68  LOAD_CONST               ('time',)
+               70  IMPORT_NAME              time
+               72  IMPORT_FROM              time
+               74  STORE_NAME               monotonic
+               76  POP_TOP          
+               78  POP_EXCEPT       
+               80  JUMP_FORWARD         84  'to 84'
+               82  <48>             
+             84_0  COME_FROM            80  '80'
+             84_1  COME_FROM            52  '52'
+
+ L.  10        84  BUILD_LIST_0          0 
+               86  LOAD_CONST               ('NoWayToWaitForSocketError', 'wait_for_read', 'wait_for_write')
+               88  CALL_FINALLY         91  'to 91'
+               90  STORE_NAME               __all__
+
+ L.  13        92  LOAD_BUILD_CLASS 
+               94  LOAD_CODE                <code_object NoWayToWaitForSocketError>
+               96  LOAD_STR                 'NoWayToWaitForSocketError'
+               98  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              100  LOAD_STR                 'NoWayToWaitForSocketError'
+              102  LOAD_NAME                Exception
+              104  CALL_FUNCTION_3       3  ''
+              106  STORE_NAME               NoWayToWaitForSocketError
+
+ L.  39       108  LOAD_NAME                sys
+              110  LOAD_ATTR                version_info
+              112  LOAD_CONST               (3, 5)
+              114  COMPARE_OP               >=
+              116  POP_JUMP_IF_FALSE   128  'to 128'
+
+ L.  41       118  LOAD_CODE                <code_object _retry_on_intr>
+              120  LOAD_STR                 '_retry_on_intr'
+              122  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              124  STORE_NAME               _retry_on_intr
+              126  JUMP_FORWARD        136  'to 136'
+            128_0  COME_FROM           116  '116'
+
+ L.  45       128  LOAD_CODE                <code_object _retry_on_intr>
+              130  LOAD_STR                 '_retry_on_intr'
+              132  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              134  STORE_NAME               _retry_on_intr
+            136_0  COME_FROM           126  '126'
+
+ L.  68       136  LOAD_CONST               (False, False, None)
+              138  LOAD_CODE                <code_object select_wait_for_socket>
+              140  LOAD_STR                 'select_wait_for_socket'
+              142  MAKE_FUNCTION_1          'default'
+              144  STORE_NAME               select_wait_for_socket
+
+ L.  87       146  LOAD_CONST               (False, False, None)
+              148  LOAD_CODE                <code_object poll_wait_for_socket>
+              150  LOAD_STR                 'poll_wait_for_socket'
+              152  MAKE_FUNCTION_1          'default'
+              154  STORE_NAME               poll_wait_for_socket
+
+ L. 107       156  LOAD_CODE                <code_object null_wait_for_socket>
+              158  LOAD_STR                 'null_wait_for_socket'
+              160  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              162  STORE_NAME               null_wait_for_socket
+
+ L. 111       164  LOAD_CODE                <code_object _have_working_poll>
+              166  LOAD_STR                 '_have_working_poll'
+              168  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              170  STORE_NAME               _have_working_poll
+
+ L. 124       172  LOAD_CODE                <code_object wait_for_socket>
+              174  LOAD_STR                 'wait_for_socket'
+              176  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              178  STORE_GLOBAL             wait_for_socket
+
+ L. 139       180  LOAD_CONST               (None,)
+              182  LOAD_CODE                <code_object wait_for_read>
+              184  LOAD_STR                 'wait_for_read'
+              186  MAKE_FUNCTION_1          'default'
+              188  STORE_NAME               wait_for_read
+
+ L. 146       190  LOAD_CONST               (None,)
+              192  LOAD_CODE                <code_object wait_for_write>
+              194  LOAD_STR                 'wait_for_write'
+              196  MAKE_FUNCTION_1          'default'
+              198  STORE_NAME               wait_for_write
+
+Parse error at or near `<121>' instruction at offset 58
+

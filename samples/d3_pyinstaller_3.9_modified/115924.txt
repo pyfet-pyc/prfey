@@ -1,0 +1,83 @@
+Instruction context:
+   
+ L.  15        44  LOAD_STR                 '__pypy__'
+                  46  LOAD_NAME                sys
+                  48  LOAD_ATTR                builtin_module_names
+->                50  <118>                 0  ''
+                  52  STORE_NAME               is_pypy
+
+test/115924.pyc -- 
+# decompile failed
+
+# file test/115924.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nEnsure that the local copy of distutils is preferred over stdlib.\n\nSee https://github.com/pypa/setuptools/issues/417#issuecomment-392298401\nfor more motivation.\n'
+                2  STORE_NAME               __doc__
+
+ L.   8         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.   9        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              re
+               18  STORE_NAME               re
+
+ L.  10        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              os
+               26  STORE_NAME               os
+
+ L.  11        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              importlib
+               34  STORE_NAME               importlib
+
+ L.  12        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              warnings
+               42  STORE_NAME               warnings
+
+ L.  15        44  LOAD_STR                 '__pypy__'
+               46  LOAD_NAME                sys
+               48  LOAD_ATTR                builtin_module_names
+               50  <118>                 0  ''
+               52  STORE_NAME               is_pypy
+
+ L.  18        54  LOAD_CODE                <code_object warn_distutils_present>
+               56  LOAD_STR                 'warn_distutils_present'
+               58  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               60  STORE_NAME               warn_distutils_present
+
+ L.  31        62  LOAD_CODE                <code_object clear_distutils>
+               64  LOAD_STR                 'clear_distutils'
+               66  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               68  STORE_NAME               clear_distutils
+
+ L.  40        70  LOAD_CODE                <code_object enabled>
+               72  LOAD_STR                 'enabled'
+               74  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               76  STORE_NAME               enabled
+
+ L.  48        78  LOAD_CODE                <code_object ensure_local_distutils>
+               80  LOAD_STR                 'ensure_local_distutils'
+               82  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               84  STORE_NAME               ensure_local_distutils
+
+ L.  59        86  LOAD_NAME                warn_distutils_present
+               88  CALL_FUNCTION_0       0  ''
+               90  POP_TOP          
+
+ L.  60        92  LOAD_NAME                enabled
+               94  CALL_FUNCTION_0       0  ''
+               96  POP_JUMP_IF_FALSE   104  'to 104'
+
+ L.  61        98  LOAD_NAME                ensure_local_distutils
+              100  CALL_FUNCTION_0       0  ''
+              102  POP_TOP          
+            104_0  COME_FROM            96  '96'
+
+Parse error at or near `<118>' instruction at offset 50
+

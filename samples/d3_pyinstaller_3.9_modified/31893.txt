@@ -1,0 +1,67 @@
+Instruction context:
+   
+ L.  56        12  BUILD_LIST_0          0 
+                  14  LOAD_CONST               ('Next', 'Skip', 'Reset', 'Clone')
+->                16  CALL_FINALLY         19  'to 19'
+                  18  STORE_NAME               _public_methods_
+
+test/31893.pyc -- 
+# decompile failed
+
+# file test/31893.pyc
+# --- This code section failed: ---
+
+ L.  46         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'ListEnumerator'
+                6  STORE_NAME               __qualname__
+
+ L.  47         8  LOAD_STR                 'A class to expose a Python sequence as an EnumVARIANT.\n\n     Create an instance of this class passing a sequence (list, tuple, or\n     any sequence protocol supporting object) and it will automatically\n     support the EnumVARIANT interface for the object.\n\n     See also the @NewEnum@ function, which can be used to turn the\n     instance into an actual COM server.\n  '
+               10  STORE_NAME               __doc__
+
+ L.  56        12  BUILD_LIST_0          0 
+               14  LOAD_CONST               ('Next', 'Skip', 'Reset', 'Clone')
+               16  CALL_FINALLY         19  'to 19'
+               18  STORE_NAME               _public_methods_
+
+ L.  58        20  LOAD_CONST               0
+               22  LOAD_NAME                pythoncom
+               24  LOAD_ATTR                IID_IEnumVARIANT
+               26  BUILD_TUPLE_2         2 
+               28  LOAD_CODE                <code_object __init__>
+               30  LOAD_STR                 'ListEnumerator.__init__'
+               32  MAKE_FUNCTION_1          'default'
+               34  STORE_NAME               __init__
+
+ L.  63        36  LOAD_CODE                <code_object _query_interface_>
+               38  LOAD_STR                 'ListEnumerator._query_interface_'
+               40  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               42  STORE_NAME               _query_interface_
+
+ L.  66        44  LOAD_CODE                <code_object Next>
+               46  LOAD_STR                 'ListEnumerator.Next'
+               48  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               50  STORE_NAME               Next
+
+ L.  71        52  LOAD_CODE                <code_object Skip>
+               54  LOAD_STR                 'ListEnumerator.Skip'
+               56  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               58  STORE_NAME               Skip
+
+ L.  77        60  LOAD_CODE                <code_object Reset>
+               62  LOAD_STR                 'ListEnumerator.Reset'
+               64  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               66  STORE_NAME               Reset
+
+ L.  80        68  LOAD_CODE                <code_object Clone>
+               70  LOAD_STR                 'ListEnumerator.Clone'
+               72  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               74  STORE_NAME               Clone
+
+ L.  83        76  LOAD_CODE                <code_object _wrap>
+               78  LOAD_STR                 'ListEnumerator._wrap'
+               80  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               82  STORE_NAME               _wrap
+
+Parse error at or near `CALL_FINALLY' instruction at offset 16
+

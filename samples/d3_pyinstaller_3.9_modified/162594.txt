@@ -1,0 +1,233 @@
+
+# file test/162594.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\n============================\n``ctypes`` Utility Functions\n============================\n\nSee Also\n--------\nload_library : Load a C library.\nndpointer : Array restype/argtype with verification.\nas_ctypes : Create a ctypes array from an ndarray.\nas_array : Create an ndarray from a ctypes array.\n\nReferences\n----------\n.. [1] "SciPy Cookbook: ctypes", https://scipy-cookbook.readthedocs.io/items/Ctypes.html\n\nExamples\n--------\nLoad the C library:\n\n>>> _lib = np.ctypeslib.load_library(\'libmystuff\', \'.\')     #doctest: +SKIP\n\nOur result type, an ndarray that must be of type double, be 1-dimensional\nand is C-contiguous in memory:\n\n>>> array_1d_double = np.ctypeslib.ndpointer(\n...                          dtype=np.double,\n...                          ndim=1, flags=\'CONTIGUOUS\')    #doctest: +SKIP\n\nOur C-function typically takes an array and updates its values\nin-place.  For example::\n\n    void foo_func(double* x, int length)\n    {\n        int i;\n        for (i = 0; i < length; i++) {\n            x[i] = i*i;\n        }\n    }\n\nWe wrap it using:\n\n>>> _lib.foo_func.restype = None                      #doctest: +SKIP\n>>> _lib.foo_func.argtypes = [array_1d_double, c_int] #doctest: +SKIP\n\nThen, we\'re ready to call ``foo_func``:\n\n>>> out = np.empty(15, dtype=np.double)\n>>> _lib.foo_func(out, len(out))                #doctest: +SKIP\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  52         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('load_library', 'ndpointer', 'c_intp', 'as_ctypes', 'as_array', 'as_ctypes_type')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  55        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              os
+               18  STORE_NAME               os
+
+ L.  56        20  LOAD_CONST               0
+               22  LOAD_CONST               ('integer', 'ndarray', 'dtype', 'asarray', 'frombuffer')
+               24  IMPORT_NAME              numpy
+               26  IMPORT_FROM              integer
+               28  STORE_NAME               integer
+               30  IMPORT_FROM              ndarray
+               32  STORE_NAME               ndarray
+               34  IMPORT_FROM              dtype
+               36  STORE_NAME               _dtype
+               38  IMPORT_FROM              asarray
+               40  STORE_NAME               asarray
+               42  IMPORT_FROM              frombuffer
+               44  STORE_NAME               frombuffer
+               46  POP_TOP          
+
+ L.  59        48  LOAD_CONST               0
+               50  LOAD_CONST               ('_flagdict', 'flagsobj')
+               52  IMPORT_NAME_ATTR         numpy.core.multiarray
+               54  IMPORT_FROM              _flagdict
+               56  STORE_NAME               _flagdict
+               58  IMPORT_FROM              flagsobj
+               60  STORE_NAME               flagsobj
+               62  POP_TOP          
+
+ L.  61        64  SETUP_FINALLY        78  'to 78'
+
+ L.  62        66  LOAD_CONST               0
+               68  LOAD_CONST               None
+               70  IMPORT_NAME              ctypes
+               72  STORE_NAME               ctypes
+               74  POP_BLOCK        
+               76  JUMP_FORWARD        100  'to 100'
+             78_0  COME_FROM_FINALLY    64  '64'
+
+ L.  63        78  DUP_TOP          
+               80  LOAD_NAME                ImportError
+               82  <121>                98  ''
+               84  POP_TOP          
+               86  POP_TOP          
+               88  POP_TOP          
+
+ L.  64        90  LOAD_CONST               None
+               92  STORE_NAME               ctypes
+               94  POP_EXCEPT       
+               96  JUMP_FORWARD        100  'to 100'
+               98  <48>             
+            100_0  COME_FROM            96  '96'
+            100_1  COME_FROM            76  '76'
+
+ L.  66       100  LOAD_NAME                ctypes
+              102  LOAD_CONST               None
+              104  <117>                 0  ''
+              106  POP_JUMP_IF_FALSE   146  'to 146'
+
+ L.  67       108  LOAD_CODE                <code_object _dummy>
+              110  LOAD_STR                 '_dummy'
+              112  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              114  STORE_NAME               _dummy
+
+ L.  78       116  LOAD_NAME                _dummy
+              118  STORE_NAME               load_library
+
+ L.  79       120  LOAD_NAME                _dummy
+              122  STORE_NAME               as_ctypes
+
+ L.  80       124  LOAD_NAME                _dummy
+              126  STORE_NAME               as_array
+
+ L.  81       128  LOAD_CONST               0
+              130  LOAD_CONST               ('intp',)
+              132  IMPORT_NAME              numpy
+              134  IMPORT_FROM              intp
+              136  STORE_NAME               c_intp
+              138  POP_TOP          
+
+ L.  82       140  LOAD_NAME                object
+              142  STORE_NAME               _ndptr_base
+              144  JUMP_FORWARD        188  'to 188'
+            146_0  COME_FROM           106  '106'
+
+ L.  84       146  LOAD_CONST               0
+              148  LOAD_CONST               None
+              150  IMPORT_NAME_ATTR         numpy.core._internal
+              152  IMPORT_FROM              core
+              154  ROT_TWO          
+              156  POP_TOP          
+              158  IMPORT_FROM              _internal
+              160  STORE_NAME               nic
+              162  POP_TOP          
+
+ L.  85       164  LOAD_NAME                nic
+              166  LOAD_METHOD              _getintp_ctype
+              168  CALL_METHOD_0         0  ''
+              170  STORE_NAME               c_intp
+
+ L.  86       172  DELETE_NAME              nic
+
+ L.  87       174  LOAD_NAME                ctypes
+              176  LOAD_ATTR                c_void_p
+              178  STORE_NAME               _ndptr_base
+
+ L.  90       180  LOAD_CODE                <code_object load_library>
+              182  LOAD_STR                 'load_library'
+              184  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              186  STORE_NAME               load_library
+            188_0  COME_FROM           144  '144'
+
+ L. 157       188  LOAD_CODE                <code_object _num_fromflags>
+              190  LOAD_STR                 '_num_fromflags'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  STORE_NAME               _num_fromflags
+
+ L. 163       196  BUILD_LIST_0          0 
+              198  LOAD_CONST               ('C_CONTIGUOUS', 'F_CONTIGUOUS', 'ALIGNED', 'WRITEABLE', 'OWNDATA', 'UPDATEIFCOPY', 'WRITEBACKIFCOPY')
+              200  CALL_FINALLY        203  'to 203'
+              202  STORE_NAME               _flagnames
+
+ L. 165       204  LOAD_CODE                <code_object _flags_fromnum>
+              206  LOAD_STR                 '_flags_fromnum'
+              208  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              210  STORE_NAME               _flags_fromnum
+
+ L. 174       212  LOAD_BUILD_CLASS 
+              214  LOAD_CODE                <code_object _ndptr>
+              216  LOAD_STR                 '_ndptr'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  LOAD_STR                 '_ndptr'
+              222  LOAD_NAME                _ndptr_base
+              224  CALL_FUNCTION_3       3  ''
+              226  STORE_NAME               _ndptr
+
+ L. 195       228  LOAD_BUILD_CLASS 
+              230  LOAD_CODE                <code_object _concrete_ndptr>
+              232  LOAD_STR                 '_concrete_ndptr'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  LOAD_STR                 '_concrete_ndptr'
+              238  LOAD_NAME                _ndptr
+              240  CALL_FUNCTION_3       3  ''
+              242  STORE_NAME               _concrete_ndptr
+
+ L. 225       244  BUILD_MAP_0           0 
+              246  STORE_NAME               _pointer_type_cache
+
+ L. 226       248  LOAD_CONST               (None, None, None, None)
+              250  LOAD_CODE                <code_object ndpointer>
+              252  LOAD_STR                 'ndpointer'
+              254  MAKE_FUNCTION_1          'default'
+              256  STORE_NAME               ndpointer
+
+ L. 344       258  LOAD_NAME                ctypes
+              260  LOAD_CONST               None
+              262  <117>                 1  ''
+          264_266  POP_JUMP_IF_FALSE   348  'to 348'
+
+ L. 345       268  LOAD_CODE                <code_object _ctype_ndarray>
+              270  LOAD_STR                 '_ctype_ndarray'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  STORE_NAME               _ctype_ndarray
+
+ L. 354       276  LOAD_CODE                <code_object _get_scalar_type_map>
+              278  LOAD_STR                 '_get_scalar_type_map'
+              280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              282  STORE_NAME               _get_scalar_type_map
+
+ L. 368       284  LOAD_NAME                _get_scalar_type_map
+              286  CALL_FUNCTION_0       0  ''
+              288  STORE_NAME               _scalar_type_map
+
+ L. 371       290  LOAD_CODE                <code_object _ctype_from_dtype_scalar>
+              292  LOAD_STR                 '_ctype_from_dtype_scalar'
+              294  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              296  STORE_NAME               _ctype_from_dtype_scalar
+
+ L. 390       298  LOAD_CODE                <code_object _ctype_from_dtype_subarray>
+              300  LOAD_STR                 '_ctype_from_dtype_subarray'
+              302  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              304  STORE_NAME               _ctype_from_dtype_subarray
+
+ L. 396       306  LOAD_CODE                <code_object _ctype_from_dtype_structured>
+              308  LOAD_STR                 '_ctype_from_dtype_structured'
+              310  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              312  STORE_NAME               _ctype_from_dtype_structured
+
+ L. 450       314  LOAD_CODE                <code_object _ctype_from_dtype>
+              316  LOAD_STR                 '_ctype_from_dtype'
+              318  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              320  STORE_NAME               _ctype_from_dtype
+
+ L. 459       322  LOAD_CODE                <code_object as_ctypes_type>
+              324  LOAD_STR                 'as_ctypes_type'
+              326  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              328  STORE_NAME               as_ctypes_type
+
+ L. 500       330  LOAD_CONST               (None,)
+              332  LOAD_CODE                <code_object as_array>
+              334  LOAD_STR                 'as_array'
+              336  MAKE_FUNCTION_1          'default'
+              338  STORE_NAME               as_array
+
+ L. 521       340  LOAD_CODE                <code_object as_ctypes>
+              342  LOAD_STR                 'as_ctypes'
+              344  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              346  STORE_NAME               as_ctypes
+            348_0  COME_FROM           264  '264'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L.  52         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('load_library', 'ndpointer', 'c_intp', 'as_ctypes', 'as_array', 'as_ctypes_type')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/162594.pyc -- 
+# decompile failed

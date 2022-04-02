@@ -1,0 +1,149 @@
+Instruction context:
+   
+ L.  37         6  LOAD_FAST                'version'
+                   8  LOAD_CONST               None
+->                10  <117>                 0  ''
+                  12  POP_JUMP_IF_FALSE    18  'to 18'
+Instruction context:
+   
+ L.  78        36  LOAD_GLOBAL              _dyld_find
+                  38  LOAD_FAST                'name'
+                  40  CALL_FUNCTION_1       1  ''
+                  42  POP_BLOCK        
+->                44  ROT_TWO          
+                  46  POP_TOP          
+                  48  RETURN_VALUE     
+                50_0  COME_FROM_FINALLY    34  '34'
+Instruction context:
+   
+ L. 100        16  LOAD_FAST                'thefile'
+                  18  LOAD_METHOD              read
+                  20  LOAD_CONST               4
+                  22  CALL_METHOD_1         1  ''
+                  24  LOAD_FAST                'elf_header'
+                  26  COMPARE_OP               ==
+                  28  POP_BLOCK        
+                  30  ROT_TWO          
+->                32  LOAD_CONST               None
+                  34  DUP_TOP          
+                  36  DUP_TOP          
+                  38  CALL_FUNCTION_3       3  ''
+                  40  POP_TOP          
+                  42  RETURN_VALUE     
+                44_0  COME_FROM_WITH       12  '12'
+                  44  <49>             
+                  46  POP_JUMP_IF_TRUE     50  'to 50'
+                  48  <48>             
+                50_0  COME_FROM            46  '46'
+                  50  POP_TOP          
+                  52  POP_TOP          
+                  54  POP_TOP          
+                  56  POP_EXCEPT       
+Instruction context:
+   
+ L. 128       136  DUP_TOP          
+                 138  LOAD_GLOBAL              OSError
+->               140  <121>               188  ''
+                 142  POP_TOP          
+                 144  POP_TOP          
+                 146  POP_TOP          
+Instruction context:
+   
+ L. 162        40  DUP_TOP          
+                  42  LOAD_GLOBAL              OSError
+->                44  <121>                58  ''
+                  46  POP_TOP          
+                  48  POP_TOP          
+                  50  POP_TOP          
+Instruction context:
+   
+ L. 184        62  DUP_TOP          
+                  64  LOAD_GLOBAL              OSError
+->                66  <121>                80  ''
+                  68  POP_TOP          
+                  70  POP_TOP          
+                  72  POP_TOP          
+Instruction context:
+   
+ L. 202        46  DUP_TOP          
+                  48  LOAD_GLOBAL              ValueError
+->                50  <121>                62  ''
+                  52  POP_TOP          
+                  54  POP_TOP          
+                  56  POP_TOP          
+Instruction context:
+   
+ L. 215        58  DUP_TOP          
+                  60  LOAD_GLOBAL              OSError
+->                62  <121>                78  ''
+                  64  POP_TOP          
+                  66  POP_TOP          
+                  68  POP_TOP          
+Instruction context:
+   
+ L. 247        80  DUP_TOP          
+                  82  LOAD_GLOBAL              OSError
+->                84  <121>                98  ''
+                  86  POP_TOP          
+                  88  POP_TOP          
+                  90  POP_TOP          
+Instruction context:
+   
+ L. 296       170  LOAD_GLOBAL              os
+                 172  LOAD_METHOD              fsdecode
+                 174  LOAD_FAST                'res'
+                 176  LOAD_METHOD              group
+                 178  LOAD_CONST               1
+                 180  CALL_METHOD_1         1  ''
+                 182  CALL_METHOD_1         1  ''
+                 184  POP_BLOCK        
+                 186  ROT_TWO          
+->               188  LOAD_CONST               None
+                 190  DUP_TOP          
+                 192  DUP_TOP          
+                 194  CALL_FUNCTION_3       3  ''
+                 196  POP_TOP          
+                 198  POP_BLOCK        
+                 200  RETURN_VALUE     
+               202_0  COME_FROM           168  '168'
+                 202  POP_BLOCK        
+                 204  LOAD_CONST               None
+                 206  DUP_TOP          
+                 208  DUP_TOP          
+                 210  CALL_FUNCTION_3       3  ''
+                 212  POP_TOP          
+                 214  JUMP_FORWARD        232  'to 232'
+               216_0  COME_FROM_WITH      144  '144'
+                 216  <49>             
+                 218  POP_JUMP_IF_TRUE    222  'to 222'
+                 220  <48>             
+               222_0  COME_FROM           218  '218'
+                 222  POP_TOP          
+                 224  POP_TOP          
+                 226  POP_TOP          
+                 228  POP_EXCEPT       
+                 230  POP_TOP          
+               232_0  COME_FROM           214  '214'
+                 232  POP_BLOCK        
+                 234  JUMP_FORWARD        254  'to 254'
+               236_0  COME_FROM_FINALLY   108  '108'
+Instruction context:
+   
+ L. 322       166  LOAD_GLOBAL              os
+                 168  LOAD_METHOD              fsdecode
+                 170  LOAD_FAST                'file'
+                 172  CALL_METHOD_1         1  ''
+                 174  ROT_TWO          
+                 176  POP_TOP          
+->               178  POP_BLOCK        
+                 180  RETURN_VALUE     
+               182_0  COME_FROM           152  '152'
+                 182  POP_BLOCK        
+                 184  JUMP_FORWARD        204  'to 204'
+               186_0  COME_FROM_FINALLY    94  '94'
+
+test/130079.pyc -- 
+# decompile failed
+
+# file test/130079.pyc
+# Deparsing stopped due to parse error

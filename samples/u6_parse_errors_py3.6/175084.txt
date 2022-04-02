@@ -1,0 +1,27 @@
+Instruction context:
+   
+ L. 358        46  LOAD_FAST                'session'
+                  48  LOAD_ATTR                transport
+                  50  LOAD_ATTR                _ssl_protocol
+                  52  LOAD_ATTR                _sslpipe
+                  54  LOAD_ATTR                _sslobj
+                  56  LOAD_ATTR                getpeercert
+                  58  LOAD_CONST               True
+                  60  CALL_FUNCTION_1       1  '1 positional argument'
+                  62  RETURN_VALUE     
+->              64_0  COME_FROM_ASYNC_WITH    42  '42'
+                  64  WITH_CLEANUP_START
+                  66  GET_AWAITABLE    
+                  68  LOAD_CONST               None
+                  70  YIELD_FROM       
+                  72  WITH_CLEANUP_FINISH
+                  74  END_FINALLY      
+                  76  POP_BLOCK        
+                  78  JUMP_FORWARD        100  'to 100'
+                80_0  COME_FROM_EXCEPT      8  '8'
+
+../test/175084.pyc -- 
+# decompile failed
+
+# file ../test/175084.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,40 @@
+Instruction context:
+-> 
+ L. 208       114  LOAD_FAST                'retlist'
+                 116  RETURN_VALUE     
+Instruction context:
+   
+ L. 251        48  POP_EXCEPT       
+                  50  JUMP_BACK            10  'to 10'
+                  52  POP_EXCEPT       
+->                54  JUMP_BACK            10  'to 10'
+                56_0  COME_FROM            40  '40'
+                  56  END_FINALLY      
+                58_0  COME_FROM            32  '32'
+Instruction context:
+   
+ L. 334        46  POP_EXCEPT       
+->                48  LOAD_CONST               False
+                  50  RETURN_VALUE     
+                52_0  COME_FROM            38  '38'
+Instruction context:
+-> 
+ L. 350        82  DUP_TOP          
+                  84  LOAD_GLOBAL              PermissionError
+                  86  COMPARE_OP               exception-match
+                  88  POP_JUMP_IF_FALSE   114  'to 114'
+                  90  POP_TOP          
+                  92  POP_TOP          
+                  94  POP_TOP          
+Instruction context:
+   
+ L. 471        50  POP_EXCEPT       
+->                52  LOAD_CONST               None
+                  54  RETURN_VALUE     
+                56_0  COME_FROM            42  '42'
+
+../test/139534.pyc -- 
+# decompile failed
+
+# file ../test/139534.pyc
+# Deparsing stopped due to parse error

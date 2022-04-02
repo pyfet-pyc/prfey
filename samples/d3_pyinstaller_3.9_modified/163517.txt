@@ -1,0 +1,640 @@
+
+# file test/163517.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Parse (absolute and relative) URLs.\n\nurlparse module is based upon the following RFC specifications.\n\nRFC 3986 (STD66): "Uniform Resource Identifiers" by T. Berners-Lee, R. Fielding\nand L.  Masinter, January 2005.\n\nRFC 2732 : "Format for Literal IPv6 Addresses in URL\'s by R.Hinden, B.Carpenter\nand L.Masinter, December 1999.\n\nRFC 2396:  "Uniform Resource Identifiers (URI)": Generic Syntax by T.\nBerners-Lee, R. Fielding, and L. Masinter, August 1998.\n\nRFC 2368: "The mailto URL scheme", by P.Hoffman , L Masinter, J. Zawinski, July 1998.\n\nRFC 1808: "Relative Uniform Resource Locators", by R. Fielding, UC Irvine, June\n1995.\n\nRFC 1738: "Uniform Resource Locators (URL)" by T. Berners-Lee, L. Masinter, M.\nMcCahill, December 1994\n\nRFC 3986 is considered the current standard and any future changes to\nurlparse module should conform with it.  The urlparse module is\ncurrently not entirely compliant with this RFC due to defacto\nscenarios for parsing, and for backward compatibility purposes, some\nparsing quirks from older RFCs are retained. The testcases in\ntest_urlparse.py provides a good indicator of parsing behavior.\n'
+                2  STORE_NAME               __doc__
+
+ L.  30         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              re
+               10  STORE_NAME               re
+
+ L.  31        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L.  32        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              types
+               26  STORE_NAME               types
+
+ L.  33        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              collections
+               34  STORE_NAME               collections
+
+ L.  34        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              warnings
+               42  STORE_NAME               warnings
+
+ L.  36        44  BUILD_LIST_0          0 
+               46  LOAD_CONST               ('urlparse', 'urlunparse', 'urljoin', 'urldefrag', 'urlsplit', 'urlunsplit', 'urlencode', 'parse_qs', 'parse_qsl', 'quote', 'quote_plus', 'quote_from_bytes', 'unquote', 'unquote_plus', 'unquote_to_bytes', 'DefragResult', 'ParseResult', 'SplitResult', 'DefragResultBytes', 'ParseResultBytes', 'SplitResultBytes')
+               48  CALL_FINALLY         51  'to 51'
+               50  STORE_NAME               __all__
+
+ L.  47        52  BUILD_LIST_0          0 
+               54  LOAD_CONST               ('', 'ftp', 'http', 'gopher', 'nntp', 'imap', 'wais', 'file', 'https', 'shttp', 'mms', 'prospero', 'rtsp', 'rtspu', 'sftp', 'svn', 'svn+ssh', 'ws', 'wss')
+               56  CALL_FINALLY         59  'to 59'
+               58  STORE_NAME               uses_relative
+
+ L.  52        60  BUILD_LIST_0          0 
+               62  LOAD_CONST               ('', 'ftp', 'http', 'gopher', 'nntp', 'telnet', 'imap', 'wais', 'file', 'mms', 'https', 'shttp', 'snews', 'prospero', 'rtsp', 'rtspu', 'rsync', 'svn', 'svn+ssh', 'sftp', 'nfs', 'git', 'git+ssh', 'ws', 'wss')
+               64  CALL_FINALLY         67  'to 67'
+               66  STORE_NAME               uses_netloc
+
+ L.  58        68  BUILD_LIST_0          0 
+               70  LOAD_CONST               ('', 'ftp', 'hdl', 'prospero', 'http', 'imap', 'https', 'shttp', 'rtsp', 'rtspu', 'sip', 'sips', 'mms', 'sftp', 'tel')
+               72  CALL_FINALLY         75  'to 75'
+               74  STORE_NAME               uses_params
+
+ L.  65        76  BUILD_LIST_0          0 
+               78  LOAD_CONST               ('gopher', 'hdl', 'mailto', 'news', 'telnet', 'wais', 'imap', 'snews', 'sip', 'sips')
+               80  CALL_FINALLY         83  'to 83'
+               82  STORE_NAME               non_hierarchical
+
+ L.  68        84  BUILD_LIST_0          0 
+               86  LOAD_CONST               ('', 'http', 'wais', 'imap', 'https', 'shttp', 'mms', 'gopher', 'rtsp', 'rtspu', 'sip', 'sips')
+               88  CALL_FINALLY         91  'to 91'
+               90  STORE_NAME               uses_query
+
+ L.  71        92  BUILD_LIST_0          0 
+               94  LOAD_CONST               ('', 'ftp', 'hdl', 'http', 'gopher', 'news', 'nntp', 'wais', 'https', 'shttp', 'snews', 'file', 'prospero')
+               96  CALL_FINALLY         99  'to 99'
+               98  STORE_NAME               uses_fragment
+
+ L.  76       100  LOAD_STR                 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+-.'
+              102  STORE_NAME               scheme_chars
+
+ L.  82       104  BUILD_LIST_0          0 
+              106  LOAD_CONST               ('\t', '\r', '\n')
+              108  CALL_FINALLY        111  'to 111'
+              110  STORE_NAME               _UNSAFE_URL_BYTES_TO_REMOVE
+
+ L.  85       112  LOAD_CONST               20
+              114  STORE_NAME               MAX_CACHE_SIZE
+
+ L.  86       116  BUILD_MAP_0           0 
+              118  STORE_NAME               _parse_cache
+
+ L.  88       120  LOAD_CODE                <code_object clear_cache>
+              122  LOAD_STR                 'clear_cache'
+              124  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              126  STORE_NAME               clear_cache
+
+ L. 100       128  LOAD_STR                 'ascii'
+              130  STORE_NAME               _implicit_encoding
+
+ L. 101       132  LOAD_STR                 'strict'
+              134  STORE_NAME               _implicit_errors
+
+ L. 103       136  LOAD_CODE                <code_object _noop>
+              138  LOAD_STR                 '_noop'
+              140  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              142  STORE_NAME               _noop
+
+ L. 106       144  LOAD_NAME                _implicit_encoding
+
+ L. 107       146  LOAD_NAME                _implicit_errors
+
+ L. 106       148  BUILD_TUPLE_2         2 
+              150  LOAD_CODE                <code_object _encode_result>
+              152  LOAD_STR                 '_encode_result'
+              154  MAKE_FUNCTION_1          'default'
+              156  STORE_NAME               _encode_result
+
+ L. 110       158  LOAD_NAME                _implicit_encoding
+
+ L. 111       160  LOAD_NAME                _implicit_errors
+
+ L. 110       162  BUILD_TUPLE_2         2 
+              164  LOAD_CODE                <code_object _decode_args>
+              166  LOAD_STR                 '_decode_args'
+              168  MAKE_FUNCTION_1          'default'
+              170  STORE_NAME               _decode_args
+
+ L. 114       172  LOAD_CODE                <code_object _coerce_args>
+              174  LOAD_STR                 '_coerce_args'
+              176  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              178  STORE_NAME               _coerce_args
+
+ L. 131       180  LOAD_BUILD_CLASS 
+              182  LOAD_CODE                <code_object _ResultMixinStr>
+              184  LOAD_STR                 '_ResultMixinStr'
+              186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              188  LOAD_STR                 '_ResultMixinStr'
+              190  LOAD_NAME                object
+              192  CALL_FUNCTION_3       3  ''
+              194  STORE_NAME               _ResultMixinStr
+
+ L. 139       196  LOAD_BUILD_CLASS 
+              198  LOAD_CODE                <code_object _ResultMixinBytes>
+              200  LOAD_STR                 '_ResultMixinBytes'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  LOAD_STR                 '_ResultMixinBytes'
+              206  LOAD_NAME                object
+              208  CALL_FUNCTION_3       3  ''
+              210  STORE_NAME               _ResultMixinBytes
+
+ L. 147       212  LOAD_BUILD_CLASS 
+              214  LOAD_CODE                <code_object _NetlocResultMixinBase>
+              216  LOAD_STR                 '_NetlocResultMixinBase'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  LOAD_STR                 '_NetlocResultMixinBase'
+              222  LOAD_NAME                object
+              224  CALL_FUNCTION_3       3  ''
+              226  STORE_NAME               _NetlocResultMixinBase
+
+ L. 186       228  LOAD_BUILD_CLASS 
+              230  LOAD_CODE                <code_object _NetlocResultMixinStr>
+              232  LOAD_STR                 '_NetlocResultMixinStr'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  LOAD_STR                 '_NetlocResultMixinStr'
+              238  LOAD_NAME                _NetlocResultMixinBase
+              240  LOAD_NAME                _ResultMixinStr
+              242  CALL_FUNCTION_4       4  ''
+              244  STORE_NAME               _NetlocResultMixinStr
+
+ L. 216       246  LOAD_BUILD_CLASS 
+              248  LOAD_CODE                <code_object _NetlocResultMixinBytes>
+              250  LOAD_STR                 '_NetlocResultMixinBytes'
+              252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              254  LOAD_STR                 '_NetlocResultMixinBytes'
+              256  LOAD_NAME                _NetlocResultMixinBase
+              258  LOAD_NAME                _ResultMixinBytes
+              260  CALL_FUNCTION_4       4  ''
+              262  STORE_NAME               _NetlocResultMixinBytes
+
+ L. 246       264  LOAD_CONST               0
+              266  LOAD_CONST               ('namedtuple',)
+              268  IMPORT_NAME              collections
+              270  IMPORT_FROM              namedtuple
+              272  STORE_NAME               namedtuple
+              274  POP_TOP          
+
+ L. 248       276  LOAD_NAME                namedtuple
+              278  LOAD_STR                 'DefragResult'
+              280  LOAD_STR                 'url fragment'
+              282  CALL_FUNCTION_2       2  ''
+              284  STORE_NAME               _DefragResultBase
+
+ L. 249       286  LOAD_NAME                namedtuple
+
+ L. 250       288  LOAD_STR                 'SplitResult'
+              290  LOAD_STR                 'scheme netloc path query fragment'
+
+ L. 249       292  CALL_FUNCTION_2       2  ''
+              294  STORE_NAME               _SplitResultBase
+
+ L. 251       296  LOAD_NAME                namedtuple
+
+ L. 252       298  LOAD_STR                 'ParseResult'
+              300  LOAD_STR                 'scheme netloc path params query fragment'
+
+ L. 251       302  CALL_FUNCTION_2       2  ''
+              304  STORE_NAME               _ParseResultBase
+
+ L. 254       306  LOAD_STR                 '\nDefragResult(url, fragment)\n\nA 2-tuple that contains the url without fragment identifier and the fragment\nidentifier as a separate argument.\n'
+              308  LOAD_NAME                _DefragResultBase
+              310  STORE_ATTR               __doc__
+
+ L. 261       312  LOAD_STR                 'The URL with no fragment identifier.'
+              314  LOAD_NAME                _DefragResultBase
+              316  LOAD_ATTR                url
+              318  STORE_ATTR               __doc__
+
+ L. 263       320  LOAD_STR                 '\nFragment identifier separated from URL, that allows indirect identification of a\nsecondary resource by reference to a primary resource and additional identifying\ninformation.\n'
+              322  LOAD_NAME                _DefragResultBase
+              324  LOAD_ATTR                fragment
+              326  STORE_ATTR               __doc__
+
+ L. 269       328  LOAD_STR                 '\nSplitResult(scheme, netloc, path, query, fragment)\n\nA 5-tuple that contains the different components of a URL. Similar to\nParseResult, but does not split params.\n'
+              330  LOAD_NAME                _SplitResultBase
+              332  STORE_ATTR               __doc__
+
+ L. 276       334  LOAD_STR                 'Specifies URL scheme for the request.'
+              336  LOAD_NAME                _SplitResultBase
+              338  LOAD_ATTR                scheme
+              340  STORE_ATTR               __doc__
+
+ L. 278       342  LOAD_STR                 '\nNetwork location where the request is made to.\n'
+              344  LOAD_NAME                _SplitResultBase
+              346  LOAD_ATTR                netloc
+              348  STORE_ATTR               __doc__
+
+ L. 282       350  LOAD_STR                 '\nThe hierarchical path, such as the path to a file to download.\n'
+              352  LOAD_NAME                _SplitResultBase
+              354  LOAD_ATTR                path
+              356  STORE_ATTR               __doc__
+
+ L. 286       358  LOAD_STR                 "\nThe query component, that contains non-hierarchical data, that along with data\nin path component, identifies a resource in the scope of URI's scheme and\nnetwork location.\n"
+              360  LOAD_NAME                _SplitResultBase
+              362  LOAD_ATTR                query
+              364  STORE_ATTR               __doc__
+
+ L. 292       366  LOAD_STR                 '\nFragment identifier, that allows indirect identification of a secondary resource\nby reference to a primary resource and additional identifying information.\n'
+              368  LOAD_NAME                _SplitResultBase
+              370  LOAD_ATTR                fragment
+              372  STORE_ATTR               __doc__
+
+ L. 297       374  LOAD_STR                 '\nParseResult(scheme, netloc, path, params, query, fragment)\n\nA 6-tuple that contains components of a parsed URL.\n'
+              376  LOAD_NAME                _ParseResultBase
+              378  STORE_ATTR               __doc__
+
+ L. 303       380  LOAD_NAME                _SplitResultBase
+              382  LOAD_ATTR                scheme
+              384  LOAD_ATTR                __doc__
+              386  LOAD_NAME                _ParseResultBase
+              388  LOAD_ATTR                scheme
+              390  STORE_ATTR               __doc__
+
+ L. 304       392  LOAD_NAME                _SplitResultBase
+              394  LOAD_ATTR                netloc
+              396  LOAD_ATTR                __doc__
+              398  LOAD_NAME                _ParseResultBase
+              400  LOAD_ATTR                netloc
+              402  STORE_ATTR               __doc__
+
+ L. 305       404  LOAD_NAME                _SplitResultBase
+              406  LOAD_ATTR                path
+              408  LOAD_ATTR                __doc__
+              410  LOAD_NAME                _ParseResultBase
+              412  LOAD_ATTR                path
+              414  STORE_ATTR               __doc__
+
+ L. 306       416  LOAD_STR                 '\nParameters for last path element used to dereference the URI in order to provide\naccess to perform some operation on the resource.\n'
+              418  LOAD_NAME                _ParseResultBase
+              420  LOAD_ATTR                params
+              422  STORE_ATTR               __doc__
+
+ L. 311       424  LOAD_NAME                _SplitResultBase
+              426  LOAD_ATTR                query
+              428  LOAD_ATTR                __doc__
+              430  LOAD_NAME                _ParseResultBase
+              432  LOAD_ATTR                query
+              434  STORE_ATTR               __doc__
+
+ L. 312       436  LOAD_NAME                _SplitResultBase
+              438  LOAD_ATTR                fragment
+              440  LOAD_ATTR                __doc__
+              442  LOAD_NAME                _ParseResultBase
+              444  LOAD_ATTR                fragment
+              446  STORE_ATTR               __doc__
+
+ L. 318       448  LOAD_NAME                _NetlocResultMixinStr
+              450  STORE_NAME               ResultBase
+
+ L. 321       452  LOAD_BUILD_CLASS 
+              454  LOAD_CODE                <code_object DefragResult>
+              456  LOAD_STR                 'DefragResult'
+              458  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              460  LOAD_STR                 'DefragResult'
+              462  LOAD_NAME                _DefragResultBase
+              464  LOAD_NAME                _ResultMixinStr
+              466  CALL_FUNCTION_4       4  ''
+              468  STORE_NAME               DefragResult
+
+ L. 329       470  LOAD_BUILD_CLASS 
+              472  LOAD_CODE                <code_object SplitResult>
+              474  LOAD_STR                 'SplitResult'
+              476  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              478  LOAD_STR                 'SplitResult'
+              480  LOAD_NAME                _SplitResultBase
+              482  LOAD_NAME                _NetlocResultMixinStr
+              484  CALL_FUNCTION_4       4  ''
+              486  STORE_NAME               SplitResult
+
+ L. 334       488  LOAD_BUILD_CLASS 
+              490  LOAD_CODE                <code_object ParseResult>
+              492  LOAD_STR                 'ParseResult'
+              494  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              496  LOAD_STR                 'ParseResult'
+              498  LOAD_NAME                _ParseResultBase
+              500  LOAD_NAME                _NetlocResultMixinStr
+              502  CALL_FUNCTION_4       4  ''
+              504  STORE_NAME               ParseResult
+
+ L. 340       506  LOAD_BUILD_CLASS 
+              508  LOAD_CODE                <code_object DefragResultBytes>
+              510  LOAD_STR                 'DefragResultBytes'
+              512  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              514  LOAD_STR                 'DefragResultBytes'
+              516  LOAD_NAME                _DefragResultBase
+              518  LOAD_NAME                _ResultMixinBytes
+              520  CALL_FUNCTION_4       4  ''
+              522  STORE_NAME               DefragResultBytes
+
+ L. 348       524  LOAD_BUILD_CLASS 
+              526  LOAD_CODE                <code_object SplitResultBytes>
+              528  LOAD_STR                 'SplitResultBytes'
+              530  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              532  LOAD_STR                 'SplitResultBytes'
+              534  LOAD_NAME                _SplitResultBase
+              536  LOAD_NAME                _NetlocResultMixinBytes
+              538  CALL_FUNCTION_4       4  ''
+              540  STORE_NAME               SplitResultBytes
+
+ L. 353       542  LOAD_BUILD_CLASS 
+              544  LOAD_CODE                <code_object ParseResultBytes>
+              546  LOAD_STR                 'ParseResultBytes'
+              548  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              550  LOAD_STR                 'ParseResultBytes'
+              552  LOAD_NAME                _ParseResultBase
+              554  LOAD_NAME                _NetlocResultMixinBytes
+              556  CALL_FUNCTION_4       4  ''
+              558  STORE_NAME               ParseResultBytes
+
+ L. 359       560  LOAD_CODE                <code_object _fix_result_transcoding>
+              562  LOAD_STR                 '_fix_result_transcoding'
+              564  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              566  STORE_NAME               _fix_result_transcoding
+
+ L. 369       568  LOAD_NAME                _fix_result_transcoding
+              570  CALL_FUNCTION_0       0  ''
+              572  POP_TOP          
+
+ L. 370       574  DELETE_NAME              _fix_result_transcoding
+
+ L. 372       576  LOAD_CONST               ('', True)
+              578  LOAD_CODE                <code_object urlparse>
+              580  LOAD_STR                 'urlparse'
+              582  MAKE_FUNCTION_1          'default'
+              584  STORE_NAME               urlparse
+
+ L. 402       586  LOAD_CODE                <code_object _splitparams>
+              588  LOAD_STR                 '_splitparams'
+              590  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              592  STORE_NAME               _splitparams
+
+ L. 411       594  LOAD_CONST               (0,)
+              596  LOAD_CODE                <code_object _splitnetloc>
+              598  LOAD_STR                 '_splitnetloc'
+              600  MAKE_FUNCTION_1          'default'
+              602  STORE_NAME               _splitnetloc
+
+ L. 419       604  LOAD_CODE                <code_object _checknetloc>
+              606  LOAD_STR                 '_checknetloc'
+              608  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              610  STORE_NAME               _checknetloc
+
+ L. 437       612  LOAD_CONST               ('', True)
+              614  LOAD_CODE                <code_object urlsplit>
+              616  LOAD_STR                 'urlsplit'
+              618  MAKE_FUNCTION_1          'default'
+              620  STORE_NAME               urlsplit
+
+ L. 492       622  LOAD_CODE                <code_object urlunparse>
+              624  LOAD_STR                 'urlunparse'
+              626  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              628  STORE_NAME               urlunparse
+
+ L. 503       630  LOAD_CODE                <code_object urlunsplit>
+              632  LOAD_STR                 'urlunsplit'
+              634  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              636  STORE_NAME               urlunsplit
+
+ L. 522       638  LOAD_CONST               (True,)
+              640  LOAD_CODE                <code_object urljoin>
+              642  LOAD_STR                 'urljoin'
+              644  MAKE_FUNCTION_1          'default'
+              646  STORE_NAME               urljoin
+
+ L. 591       648  LOAD_CODE                <code_object urldefrag>
+              650  LOAD_STR                 'urldefrag'
+              652  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              654  STORE_NAME               urldefrag
+
+ L. 607       656  LOAD_STR                 '0123456789ABCDEFabcdef'
+              658  STORE_NAME               _hexdig
+
+ L. 608       660  LOAD_CONST               None
+              662  STORE_GLOBAL             _hextobyte
+
+ L. 610       664  LOAD_CODE                <code_object unquote_to_bytes>
+              666  LOAD_STR                 'unquote_to_bytes'
+              668  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              670  STORE_NAME               unquote_to_bytes
+
+ L. 640       672  LOAD_NAME                re
+              674  LOAD_METHOD              compile
+              676  LOAD_STR                 '([\x00-\x7f]+)'
+              678  CALL_METHOD_1         1  ''
+              680  STORE_NAME               _asciire
+
+ L. 642       682  LOAD_CONST               ('utf-8', 'replace')
+              684  LOAD_CODE                <code_object unquote>
+              686  LOAD_STR                 'unquote'
+              688  MAKE_FUNCTION_1          'default'
+              690  STORE_NAME               unquote
+
+ L. 670       692  LOAD_CONST               (False, False, 'utf-8', 'replace', None, '&')
+              694  LOAD_CODE                <code_object parse_qs>
+              696  LOAD_STR                 'parse_qs'
+              698  MAKE_FUNCTION_1          'default'
+              700  STORE_NAME               parse_qs
+
+ L. 712       702  LOAD_CONST               (False, False, 'utf-8', 'replace', None, '&')
+              704  LOAD_CODE                <code_object parse_qsl>
+              706  LOAD_STR                 'parse_qsl'
+              708  MAKE_FUNCTION_1          'default'
+              710  STORE_NAME               parse_qsl
+
+ L. 779       712  LOAD_CONST               ('utf-8', 'replace')
+              714  LOAD_CODE                <code_object unquote_plus>
+              716  LOAD_STR                 'unquote_plus'
+              718  MAKE_FUNCTION_1          'default'
+              720  STORE_NAME               unquote_plus
+
+ L. 788       722  LOAD_NAME                frozenset
+              724  LOAD_CONST               b'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_.-~'
+              726  CALL_FUNCTION_1       1  ''
+              728  STORE_NAME               _ALWAYS_SAFE
+
+ L. 792       730  LOAD_NAME                bytes
+              732  LOAD_NAME                _ALWAYS_SAFE
+              734  CALL_FUNCTION_1       1  ''
+              736  STORE_NAME               _ALWAYS_SAFE_BYTES
+
+ L. 793       738  BUILD_MAP_0           0 
+              740  STORE_NAME               _safe_quoters
+
+ L. 795       742  LOAD_BUILD_CLASS 
+              744  LOAD_CODE                <code_object Quoter>
+              746  LOAD_STR                 'Quoter'
+              748  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              750  LOAD_STR                 'Quoter'
+              752  LOAD_NAME                collections
+              754  LOAD_ATTR                defaultdict
+              756  CALL_FUNCTION_3       3  ''
+              758  STORE_NAME               Quoter
+
+ L. 817       760  LOAD_CONST               ('/', None, None)
+              762  LOAD_CODE                <code_object quote>
+              764  LOAD_STR                 'quote'
+              766  MAKE_FUNCTION_1          'default'
+              768  STORE_NAME               quote
+
+ L. 871       770  LOAD_CONST               ('', None, None)
+              772  LOAD_CODE                <code_object quote_plus>
+              774  LOAD_STR                 'quote_plus'
+              776  MAKE_FUNCTION_1          'default'
+              778  STORE_NAME               quote_plus
+
+ L. 888       780  LOAD_CONST               ('/',)
+              782  LOAD_CODE                <code_object quote_from_bytes>
+              784  LOAD_STR                 'quote_from_bytes'
+              786  MAKE_FUNCTION_1          'default'
+              788  STORE_NAME               quote_from_bytes
+
+ L. 910       790  LOAD_CONST               False
+              792  LOAD_STR                 ''
+              794  LOAD_CONST               None
+              796  LOAD_CONST               None
+
+ L. 911       798  LOAD_NAME                quote_plus
+
+ L. 910       800  BUILD_TUPLE_5         5 
+              802  LOAD_CODE                <code_object urlencode>
+              804  LOAD_STR                 'urlencode'
+              806  MAKE_FUNCTION_1          'default'
+              808  STORE_NAME               urlencode
+
+ L. 991       810  LOAD_CODE                <code_object to_bytes>
+              812  LOAD_STR                 'to_bytes'
+              814  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              816  STORE_NAME               to_bytes
+
+ L. 997       818  LOAD_CODE                <code_object _to_bytes>
+              820  LOAD_STR                 '_to_bytes'
+              822  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              824  STORE_NAME               _to_bytes
+
+ L.1011       826  LOAD_CODE                <code_object unwrap>
+              828  LOAD_STR                 'unwrap'
+              830  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              832  STORE_NAME               unwrap
+
+ L.1024       834  LOAD_CODE                <code_object splittype>
+              836  LOAD_STR                 'splittype'
+              838  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              840  STORE_NAME               splittype
+
+ L.1031       842  LOAD_CONST               None
+              844  STORE_GLOBAL             _typeprog
+
+ L.1032       846  LOAD_CODE                <code_object _splittype>
+              848  LOAD_STR                 '_splittype'
+              850  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              852  STORE_NAME               _splittype
+
+ L.1045       854  LOAD_CODE                <code_object splithost>
+              856  LOAD_STR                 'splithost'
+              858  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              860  STORE_NAME               splithost
+
+ L.1052       862  LOAD_CONST               None
+              864  STORE_GLOBAL             _hostprog
+
+ L.1053       866  LOAD_CODE                <code_object _splithost>
+              868  LOAD_STR                 '_splithost'
+              870  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              872  STORE_NAME               _splithost
+
+ L.1068       874  LOAD_CODE                <code_object splituser>
+              876  LOAD_STR                 'splituser'
+              878  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              880  STORE_NAME               splituser
+
+ L.1075       882  LOAD_CODE                <code_object _splituser>
+              884  LOAD_STR                 '_splituser'
+              886  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              888  STORE_NAME               _splituser
+
+ L.1081       890  LOAD_CODE                <code_object splitpasswd>
+              892  LOAD_STR                 'splitpasswd'
+              894  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              896  STORE_NAME               splitpasswd
+
+ L.1088       898  LOAD_CODE                <code_object _splitpasswd>
+              900  LOAD_STR                 '_splitpasswd'
+              902  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              904  STORE_NAME               _splitpasswd
+
+ L.1094       906  LOAD_CODE                <code_object splitport>
+              908  LOAD_STR                 'splitport'
+              910  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              912  STORE_NAME               splitport
+
+ L.1102       914  LOAD_CONST               None
+              916  STORE_GLOBAL             _portprog
+
+ L.1103       918  LOAD_CODE                <code_object _splitport>
+              920  LOAD_STR                 '_splitport'
+              922  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              924  STORE_NAME               _splitport
+
+ L.1117       926  LOAD_CONST               (-1,)
+              928  LOAD_CODE                <code_object splitnport>
+              930  LOAD_STR                 'splitnport'
+              932  MAKE_FUNCTION_1          'default'
+              934  STORE_NAME               splitnport
+
+ L.1124       936  LOAD_CONST               (-1,)
+              938  LOAD_CODE                <code_object _splitnport>
+              940  LOAD_STR                 '_splitnport'
+              942  MAKE_FUNCTION_1          'default'
+              944  STORE_NAME               _splitnport
+
+ L.1141       946  LOAD_CODE                <code_object splitquery>
+              948  LOAD_STR                 'splitquery'
+              950  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              952  STORE_NAME               splitquery
+
+ L.1148       954  LOAD_CODE                <code_object _splitquery>
+              956  LOAD_STR                 '_splitquery'
+              958  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              960  STORE_NAME               _splitquery
+
+ L.1156       962  LOAD_CODE                <code_object splittag>
+              964  LOAD_STR                 'splittag'
+              966  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              968  STORE_NAME               splittag
+
+ L.1163       970  LOAD_CODE                <code_object _splittag>
+              972  LOAD_STR                 '_splittag'
+              974  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              976  STORE_NAME               _splittag
+
+ L.1171       978  LOAD_CODE                <code_object splitattr>
+              980  LOAD_STR                 'splitattr'
+              982  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              984  STORE_NAME               splitattr
+
+ L.1178       986  LOAD_CODE                <code_object _splitattr>
+              988  LOAD_STR                 '_splitattr'
+              990  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              992  STORE_NAME               _splitattr
+
+ L.1185       994  LOAD_CODE                <code_object splitvalue>
+              996  LOAD_STR                 'splitvalue'
+              998  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1000  STORE_NAME               splitvalue
+
+ L.1192      1002  LOAD_CODE                <code_object _splitvalue>
+             1004  LOAD_STR                 '_splitvalue'
+             1006  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1008  STORE_NAME               _splitvalue
+
+Parse error at or near `CALL_FINALLY' instruction at offset 48
+
+Instruction context:
+   
+ L.  36        44  BUILD_LIST_0          0 
+                  46  LOAD_CONST               ('urlparse', 'urlunparse', 'urljoin', 'urldefrag', 'urlsplit', 'urlunsplit', 'urlencode', 'parse_qs', 'parse_qsl', 'quote', 'quote_plus', 'quote_from_bytes', 'unquote', 'unquote_plus', 'unquote_to_bytes', 'DefragResult', 'ParseResult', 'SplitResult', 'DefragResultBytes', 'ParseResultBytes', 'SplitResultBytes')
+->                48  CALL_FINALLY         51  'to 51'
+                  50  STORE_NAME               __all__
+
+test/163517.pyc -- 
+# decompile failed

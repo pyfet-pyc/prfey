@@ -1,0 +1,56 @@
+Instruction context:
+   
+ L.  45        60  LOAD_FAST                'response'
+                  62  LOAD_ATTR                text
+                  64  CALL_FUNCTION_0       0  '0 positional arguments'
+                  66  GET_AWAITABLE    
+                  68  LOAD_CONST               None
+                  70  YIELD_FROM       
+                  72  RETURN_VALUE     
+->              74_0  COME_FROM_ASYNC_WITH    56  '56'
+                  74  WITH_CLEANUP_START
+                  76  GET_AWAITABLE    
+                  78  LOAD_CONST               None
+                  80  YIELD_FROM       
+                  82  WITH_CLEANUP_FINISH
+                  84  END_FINALLY      
+                  86  POP_BLOCK        
+                  88  LOAD_CONST               None
+                90_0  COME_FROM_ASYNC_WITH    36  '36'
+                  90  WITH_CLEANUP_START
+                  92  GET_AWAITABLE    
+                  94  LOAD_CONST               None
+                  96  YIELD_FROM       
+                  98  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L.  53        60  LOAD_FAST                'response'
+                  62  LOAD_ATTR                json
+                  64  LOAD_CONST               None
+                  66  LOAD_CONST               ('content_type',)
+                  68  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+                  70  GET_AWAITABLE    
+                  72  LOAD_CONST               None
+                  74  YIELD_FROM       
+                  76  RETURN_VALUE     
+->              78_0  COME_FROM_ASYNC_WITH    56  '56'
+                  78  WITH_CLEANUP_START
+                  80  GET_AWAITABLE    
+                  82  LOAD_CONST               None
+                  84  YIELD_FROM       
+                  86  WITH_CLEANUP_FINISH
+                  88  END_FINALLY      
+                  90  POP_BLOCK        
+                  92  LOAD_CONST               None
+                94_0  COME_FROM_ASYNC_WITH    36  '36'
+                  94  WITH_CLEANUP_START
+                  96  GET_AWAITABLE    
+                  98  LOAD_CONST               None
+                 100  YIELD_FROM       
+                 102  WITH_CLEANUP_FINISH
+
+../test/175082.pyc -- 
+# decompile failed
+
+# file ../test/175082.pyc
+# Deparsing stopped due to parse error

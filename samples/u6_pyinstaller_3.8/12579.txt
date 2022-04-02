@@ -1,0 +1,84 @@
+Instruction context:
+   
+ L.  78        36  LOAD_GLOBAL              _dyld_find
+                  38  LOAD_FAST                'name'
+                  40  CALL_FUNCTION_1       1  ''
+                  42  POP_BLOCK        
+->                44  ROT_TWO          
+                  46  POP_TOP          
+                  48  RETURN_VALUE     
+                50_0  COME_FROM_FINALLY    34  '34'
+Instruction context:
+   
+ L. 100        16  LOAD_FAST                'thefile'
+                  18  LOAD_METHOD              read
+                  20  LOAD_CONST               4
+                  22  CALL_METHOD_1         1  ''
+                  24  LOAD_FAST                'elf_header'
+                  26  COMPARE_OP               ==
+                  28  POP_BLOCK        
+->                30  ROT_TWO          
+                  32  BEGIN_FINALLY    
+                  34  WITH_CLEANUP_START
+                  36  WITH_CLEANUP_FINISH
+                  38  POP_FINALLY           0  ''
+                  40  RETURN_VALUE     
+                42_0  COME_FROM_WITH       12  '12'
+                  42  WITH_CLEANUP_START
+                  44  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 129       150  POP_EXCEPT       
+                 152  POP_BLOCK        
+->               154  CALL_FINALLY        192  'to 192'
+                 156  LOAD_CONST               None
+                 158  RETURN_VALUE     
+               160_0  COME_FROM           142  '142'
+                 160  END_FINALLY      
+               162_0  COME_FROM           134  '134'
+Instruction context:
+   
+ L. 296       170  LOAD_GLOBAL              os
+                 172  LOAD_METHOD              fsdecode
+                 174  LOAD_FAST                'res'
+                 176  LOAD_METHOD              group
+                 178  LOAD_CONST               1
+                 180  CALL_METHOD_1         1  ''
+                 182  CALL_METHOD_1         1  ''
+                 184  POP_BLOCK        
+->               186  ROT_TWO          
+                 188  BEGIN_FINALLY    
+                 190  WITH_CLEANUP_START
+                 192  WITH_CLEANUP_FINISH
+                 194  POP_FINALLY           0  ''
+                 196  POP_BLOCK        
+                 198  RETURN_VALUE     
+               200_0  COME_FROM           168  '168'
+                 200  POP_BLOCK        
+                 202  BEGIN_FINALLY    
+               204_0  COME_FROM_WITH      144  '144'
+                 204  WITH_CLEANUP_START
+                 206  WITH_CLEANUP_FINISH
+                 208  END_FINALLY      
+                 210  POP_BLOCK        
+                 212  JUMP_FORWARD        234  'to 234'
+               214_0  COME_FROM_FINALLY   108  '108'
+Instruction context:
+   
+ L. 322       166  LOAD_GLOBAL              os
+                 168  LOAD_METHOD              fsdecode
+                 170  LOAD_FAST                'file'
+                 172  CALL_METHOD_1         1  ''
+                 174  ROT_TWO          
+                 176  POP_TOP          
+->               178  POP_BLOCK        
+                 180  RETURN_VALUE     
+                 182  POP_BLOCK        
+                 184  JUMP_FORWARD        206  'to 206'
+               186_0  COME_FROM_FINALLY    94  '94'
+
+../test/12579.pyc -- 
+# decompile failed
+
+# file ../test/12579.pyc
+# Deparsing stopped due to parse error

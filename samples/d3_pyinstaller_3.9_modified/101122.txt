@@ -1,0 +1,167 @@
+Instruction context:
+   
+ L.  50         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('nested_scopes', 'generators', 'division', 'absolute_import', 'with_statement', 'print_function', 'unicode_literals', 'barry_as_FLUFL', 'generator_stop', 'annotations')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               all_feature_names
+
+test/101122.pyc -- 
+# decompile failed
+
+# file test/101122.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Record of phased-in incompatible language changes.\n\nEach line is of the form:\n\n    FeatureName = "_Feature(" OptionalRelease "," MandatoryRelease ","\n                              CompilerFlag ")"\n\nwhere, normally, OptionalRelease < MandatoryRelease, and both are 5-tuples\nof the same form as sys.version_info:\n\n    (PY_MAJOR_VERSION, # the 2 in 2.1.0a3; an int\n     PY_MINOR_VERSION, # the 1; an int\n     PY_MICRO_VERSION, # the 0; an int\n     PY_RELEASE_LEVEL, # "alpha", "beta", "candidate" or "final"; string\n     PY_RELEASE_SERIAL # the 3; an int\n    )\n\nOptionalRelease records the first release in which\n\n    from __future__ import FeatureName\n\nwas accepted.\n\nIn the case of MandatoryReleases that have not yet occurred,\nMandatoryRelease predicts the release in which the feature will become part\nof the language.\n\nElse MandatoryRelease records when the feature became part of the language;\nin releases at or after that, modules no longer need\n\n    from __future__ import FeatureName\n\nto use the feature in question, but may continue to use such imports.\n\nMandatoryRelease may also be None, meaning that a planned feature got\ndropped.\n\nInstances of class _Feature have two corresponding methods,\n.getOptionalRelease() and .getMandatoryRelease().\n\nCompilerFlag is the (bitfield) flag that should be passed in the fourth\nargument to the builtin function compile() to enable the feature in\ndynamically compiled code.  This flag is stored in the .compiler_flag\nattribute on _Future instances.  These values must match the appropriate\n#defines of CO_xxx flags in Include/compile.h.\n\nNo feature line is ever to be deleted from this file.\n'
+                2  STORE_NAME               __doc__
+
+ L.  50         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('nested_scopes', 'generators', 'division', 'absolute_import', 'with_statement', 'print_function', 'unicode_literals', 'barry_as_FLUFL', 'generator_stop', 'annotations')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               all_feature_names
+
+ L.  63        12  LOAD_STR                 'all_feature_names'
+               14  BUILD_LIST_1          1 
+               16  LOAD_NAME                all_feature_names
+               18  BINARY_ADD       
+               20  STORE_NAME               __all__
+
+ L.  69        22  LOAD_CONST               16
+               24  STORE_NAME               CO_NESTED
+
+ L.  70        26  LOAD_CONST               0
+               28  STORE_NAME               CO_GENERATOR_ALLOWED
+
+ L.  71        30  LOAD_CONST               131072
+               32  STORE_NAME               CO_FUTURE_DIVISION
+
+ L.  72        34  LOAD_CONST               262144
+               36  STORE_NAME               CO_FUTURE_ABSOLUTE_IMPORT
+
+ L.  73        38  LOAD_CONST               524288
+               40  STORE_NAME               CO_FUTURE_WITH_STATEMENT
+
+ L.  74        42  LOAD_CONST               1048576
+               44  STORE_NAME               CO_FUTURE_PRINT_FUNCTION
+
+ L.  75        46  LOAD_CONST               2097152
+               48  STORE_NAME               CO_FUTURE_UNICODE_LITERALS
+
+ L.  76        50  LOAD_CONST               4194304
+               52  STORE_NAME               CO_FUTURE_BARRY_AS_BDFL
+
+ L.  77        54  LOAD_CONST               8388608
+               56  STORE_NAME               CO_FUTURE_GENERATOR_STOP
+
+ L.  78        58  LOAD_CONST               16777216
+               60  STORE_NAME               CO_FUTURE_ANNOTATIONS
+
+ L.  81        62  LOAD_BUILD_CLASS 
+               64  LOAD_CODE                <code_object _Feature>
+               66  LOAD_STR                 '_Feature'
+               68  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               70  LOAD_STR                 '_Feature'
+               72  CALL_FUNCTION_2       2  ''
+               74  STORE_NAME               _Feature
+
+ L. 109        76  LOAD_NAME                _Feature
+               78  LOAD_CONST               (2, 1, 0, 'beta', 1)
+
+ L. 110        80  LOAD_CONST               (2, 2, 0, 'alpha', 0)
+
+ L. 111        82  LOAD_NAME                CO_NESTED
+
+ L. 109        84  CALL_FUNCTION_3       3  ''
+               86  STORE_NAME               nested_scopes
+
+ L. 113        88  LOAD_NAME                _Feature
+               90  LOAD_CONST               (2, 2, 0, 'alpha', 1)
+
+ L. 114        92  LOAD_CONST               (2, 3, 0, 'final', 0)
+
+ L. 115        94  LOAD_NAME                CO_GENERATOR_ALLOWED
+
+ L. 113        96  CALL_FUNCTION_3       3  ''
+               98  STORE_NAME               generators
+
+ L. 117       100  LOAD_NAME                _Feature
+              102  LOAD_CONST               (2, 2, 0, 'alpha', 2)
+
+ L. 118       104  LOAD_CONST               (3, 0, 0, 'alpha', 0)
+
+ L. 119       106  LOAD_NAME                CO_FUTURE_DIVISION
+
+ L. 117       108  CALL_FUNCTION_3       3  ''
+              110  STORE_NAME               division
+
+ L. 121       112  LOAD_NAME                _Feature
+              114  LOAD_CONST               (2, 5, 0, 'alpha', 1)
+
+ L. 122       116  LOAD_CONST               (3, 0, 0, 'alpha', 0)
+
+ L. 123       118  LOAD_NAME                CO_FUTURE_ABSOLUTE_IMPORT
+
+ L. 121       120  CALL_FUNCTION_3       3  ''
+              122  STORE_NAME               absolute_import
+
+ L. 125       124  LOAD_NAME                _Feature
+              126  LOAD_CONST               (2, 5, 0, 'alpha', 1)
+
+ L. 126       128  LOAD_CONST               (2, 6, 0, 'alpha', 0)
+
+ L. 127       130  LOAD_NAME                CO_FUTURE_WITH_STATEMENT
+
+ L. 125       132  CALL_FUNCTION_3       3  ''
+              134  STORE_NAME               with_statement
+
+ L. 129       136  LOAD_NAME                _Feature
+              138  LOAD_CONST               (2, 6, 0, 'alpha', 2)
+
+ L. 130       140  LOAD_CONST               (3, 0, 0, 'alpha', 0)
+
+ L. 131       142  LOAD_NAME                CO_FUTURE_PRINT_FUNCTION
+
+ L. 129       144  CALL_FUNCTION_3       3  ''
+              146  STORE_NAME               print_function
+
+ L. 133       148  LOAD_NAME                _Feature
+              150  LOAD_CONST               (2, 6, 0, 'alpha', 2)
+
+ L. 134       152  LOAD_CONST               (3, 0, 0, 'alpha', 0)
+
+ L. 135       154  LOAD_NAME                CO_FUTURE_UNICODE_LITERALS
+
+ L. 133       156  CALL_FUNCTION_3       3  ''
+              158  STORE_NAME               unicode_literals
+
+ L. 137       160  LOAD_NAME                _Feature
+              162  LOAD_CONST               (3, 1, 0, 'alpha', 2)
+
+ L. 138       164  LOAD_CONST               (4, 0, 0, 'alpha', 0)
+
+ L. 139       166  LOAD_NAME                CO_FUTURE_BARRY_AS_BDFL
+
+ L. 137       168  CALL_FUNCTION_3       3  ''
+              170  STORE_NAME               barry_as_FLUFL
+
+ L. 141       172  LOAD_NAME                _Feature
+              174  LOAD_CONST               (3, 5, 0, 'beta', 1)
+
+ L. 142       176  LOAD_CONST               (3, 7, 0, 'alpha', 0)
+
+ L. 143       178  LOAD_NAME                CO_FUTURE_GENERATOR_STOP
+
+ L. 141       180  CALL_FUNCTION_3       3  ''
+              182  STORE_NAME               generator_stop
+
+ L. 145       184  LOAD_NAME                _Feature
+              186  LOAD_CONST               (3, 7, 0, 'beta', 1)
+
+ L. 146       188  LOAD_CONST               (3, 10, 0, 'alpha', 0)
+
+ L. 147       190  LOAD_NAME                CO_FUTURE_ANNOTATIONS
+
+ L. 145       192  CALL_FUNCTION_3       3  ''
+              194  STORE_NAME               annotations
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

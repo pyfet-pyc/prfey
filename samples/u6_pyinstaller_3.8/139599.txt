@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L. 142       134  LOAD_FAST                'dnsnames'
+                 136  LOAD_METHOD              append
+                 138  LOAD_FAST                'value'
+                 140  CALL_METHOD_1         1  ''
+                 142  POP_TOP          
+                 144  JUMP_BACK           100  'to 100'
+->               146  JUMP_BACK            92  'to 92'
+               148_0  COME_FROM            78  '78'
+Instruction context:
+   
+ L. 265        16  DUP_TOP          
+                  18  LOAD_GLOBAL              ImportError
+                  20  LOAD_GLOBAL              ResolutionError
+                  22  LOAD_GLOBAL              ExtractionError
+                  24  BUILD_TUPLE_3         3 
+                  26  COMPARE_OP               exception-match
+                  28  POP_JUMP_IF_FALSE    40  'to 40'
+                  30  POP_TOP          
+->                32  POP_TOP          
+                  34  POP_TOP          
+
+../test/139599.pyc -- 
+# decompile failed
+
+# file ../test/139599.pyc
+# Deparsing stopped due to parse error

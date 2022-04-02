@@ -1,0 +1,252 @@
+
+# file test/134254.pyc
+# --- This code section failed: ---
+
+ L.  52         0  LOAD_STR                 '1.3'
+                2  STORE_NAME               __version__
+
+ L.  53         4  LOAD_STR                 'PBKDF2'
+                6  LOAD_STR                 'crypt'
+                8  BUILD_LIST_2          2 
+               10  STORE_NAME               __all__
+
+ L.  55        12  LOAD_CONST               0
+               14  LOAD_CONST               ('pack',)
+               16  IMPORT_NAME              struct
+               18  IMPORT_FROM              pack
+               20  STORE_NAME               pack
+               22  POP_TOP          
+
+ L.  56        24  LOAD_CONST               0
+               26  LOAD_CONST               ('randint',)
+               28  IMPORT_NAME              random
+               30  IMPORT_FROM              randint
+               32  STORE_NAME               randint
+               34  POP_TOP          
+
+ L.  57        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              string
+               42  STORE_NAME               string
+
+ L.  58        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              sys
+               50  STORE_NAME               sys
+
+ L.  60        52  SETUP_FINALLY        74  'to 74'
+
+ L.  62        54  LOAD_CONST               0
+               56  LOAD_CONST               ('HMAC', 'SHA')
+               58  IMPORT_NAME_ATTR         Crypto.Hash
+               60  IMPORT_FROM              HMAC
+               62  STORE_NAME               HMAC
+               64  IMPORT_FROM              SHA
+               66  STORE_NAME               SHA1
+               68  POP_TOP          
+               70  POP_BLOCK        
+               72  JUMP_FORWARD        144  'to 144'
+             74_0  COME_FROM_FINALLY    52  '52'
+
+ L.  63        74  DUP_TOP          
+               76  LOAD_NAME                ImportError
+               78  <121>               142  ''
+               80  POP_TOP          
+               82  POP_TOP          
+               84  POP_TOP          
+
+ L.  65        86  LOAD_CONST               0
+               88  LOAD_CONST               None
+               90  IMPORT_NAME              hmac
+               92  STORE_NAME               HMAC
+
+ L.  66        94  SETUP_FINALLY       112  'to 112'
+
+ L.  67        96  LOAD_CONST               0
+               98  LOAD_CONST               ('sha1',)
+              100  IMPORT_NAME              hashlib
+              102  IMPORT_FROM              sha1
+              104  STORE_NAME               SHA1
+              106  POP_TOP          
+              108  POP_BLOCK        
+              110  JUMP_FORWARD        138  'to 138'
+            112_0  COME_FROM_FINALLY    94  '94'
+
+ L.  68       112  DUP_TOP          
+              114  LOAD_NAME                ImportError
+              116  <121>               136  ''
+              118  POP_TOP          
+              120  POP_TOP          
+              122  POP_TOP          
+
+ L.  70       124  LOAD_CONST               0
+              126  LOAD_CONST               None
+              128  IMPORT_NAME              sha
+              130  STORE_NAME               SHA1
+              132  POP_EXCEPT       
+              134  JUMP_FORWARD        138  'to 138'
+              136  <48>             
+            138_0  COME_FROM           134  '134'
+            138_1  COME_FROM           110  '110'
+              138  POP_EXCEPT       
+              140  JUMP_FORWARD        144  'to 144'
+              142  <48>             
+            144_0  COME_FROM           140  '140'
+            144_1  COME_FROM            72  '72'
+
+ L.  76       144  LOAD_NAME                sys
+              146  LOAD_ATTR                version_info
+              148  LOAD_CONST               0
+              150  BINARY_SUBSCR    
+              152  LOAD_CONST               2
+              154  COMPARE_OP               ==
+              156  POP_JUMP_IF_FALSE   234  'to 234'
+
+ L.  77       158  LOAD_NAME                long
+              160  LOAD_CONST               1
+              162  CALL_FUNCTION_1       1  ''
+              164  LOAD_CONST               32
+              166  BINARY_LSHIFT    
+              168  STORE_NAME               _0xffffffffL
+
+ L.  78       170  LOAD_CODE                <code_object isunicode>
+              172  LOAD_STR                 'isunicode'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  STORE_NAME               isunicode
+
+ L.  80       178  LOAD_CODE                <code_object isbytes>
+              180  LOAD_STR                 'isbytes'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  STORE_NAME               isbytes
+
+ L.  82       186  LOAD_CODE                <code_object isinteger>
+              188  LOAD_STR                 'isinteger'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  STORE_NAME               isinteger
+
+ L.  84       194  LOAD_CODE                <code_object b>
+              196  LOAD_STR                 'b'
+              198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              200  STORE_NAME               b
+
+ L.  86       202  LOAD_CODE                <code_object binxor>
+              204  LOAD_STR                 'binxor'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  STORE_NAME               binxor
+
+ L.  88       210  LOAD_CONST               ('+/',)
+              212  LOAD_CODE                <code_object b64encode>
+              214  LOAD_STR                 'b64encode'
+              216  MAKE_FUNCTION_1          'default'
+              218  STORE_NAME               b64encode
+
+ L.  91       220  LOAD_CONST               0
+              222  LOAD_CONST               ('b2a_hex',)
+              224  IMPORT_NAME              binascii
+              226  IMPORT_FROM              b2a_hex
+              228  STORE_NAME               b2a_hex
+              230  POP_TOP          
+              232  JUMP_FORWARD        332  'to 332'
+            234_0  COME_FROM           156  '156'
+
+ L.  93       234  LOAD_CONST               4294967295
+              236  STORE_NAME               _0xffffffffL
+
+ L.  94       238  LOAD_CODE                <code_object isunicode>
+              240  LOAD_STR                 'isunicode'
+              242  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              244  STORE_NAME               isunicode
+
+ L.  96       246  LOAD_CODE                <code_object isbytes>
+              248  LOAD_STR                 'isbytes'
+              250  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              252  STORE_NAME               isbytes
+
+ L.  98       254  LOAD_CODE                <code_object isinteger>
+              256  LOAD_STR                 'isinteger'
+              258  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              260  STORE_NAME               isinteger
+
+ L. 100       262  LOAD_CODE                <code_object callable>
+              264  LOAD_STR                 'callable'
+              266  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              268  STORE_NAME               callable
+
+ L. 102       270  LOAD_CODE                <code_object b>
+              272  LOAD_STR                 'b'
+              274  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              276  STORE_NAME               b
+
+ L. 104       278  LOAD_CODE                <code_object binxor>
+              280  LOAD_STR                 'binxor'
+              282  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              284  STORE_NAME               binxor
+
+ L. 106       286  LOAD_CONST               0
+              288  LOAD_CONST               ('b64encode',)
+              290  IMPORT_NAME              base64
+              292  IMPORT_FROM              b64encode
+              294  STORE_NAME               _b64encode
+              296  POP_TOP          
+
+ L. 107       298  LOAD_CONST               ('+/',)
+              300  LOAD_CODE                <code_object b64encode>
+              302  LOAD_STR                 'b64encode'
+              304  MAKE_FUNCTION_1          'default'
+              306  STORE_NAME               b64encode
+
+ L. 112       308  LOAD_CONST               0
+              310  LOAD_CONST               ('b2a_hex',)
+              312  IMPORT_NAME              binascii
+              314  IMPORT_FROM              b2a_hex
+              316  STORE_NAME               _b2a_hex
+              318  POP_TOP          
+
+ L. 113       320  LOAD_CODE                <code_object b2a_hex>
+              322  LOAD_STR                 'b2a_hex'
+              324  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              326  STORE_NAME               b2a_hex
+
+ L. 115       328  LOAD_NAME                range
+              330  STORE_NAME               xrange
+            332_0  COME_FROM           232  '232'
+
+ L. 117       332  LOAD_BUILD_CLASS 
+              334  LOAD_CODE                <code_object PBKDF2>
+              336  LOAD_STR                 'PBKDF2'
+              338  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              340  LOAD_STR                 'PBKDF2'
+              342  LOAD_NAME                object
+              344  CALL_FUNCTION_3       3  ''
+              346  STORE_NAME               PBKDF2
+
+ L. 230       348  LOAD_CONST               (None, None)
+              350  LOAD_CODE                <code_object crypt>
+              352  LOAD_STR                 'crypt'
+              354  MAKE_FUNCTION_1          'default'
+              356  STORE_NAME               crypt
+
+ L. 287       358  LOAD_NAME                staticmethod
+              360  LOAD_NAME                crypt
+              362  CALL_FUNCTION_1       1  ''
+              364  LOAD_NAME                PBKDF2
+              366  STORE_ATTR               crypt
+
+ L. 289       368  LOAD_CODE                <code_object _makesalt>
+              370  LOAD_STR                 '_makesalt'
+              372  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              374  STORE_NAME               _makesalt
+
+Parse error at or near `<121>' instruction at offset 78
+
+Instruction context:
+   
+ L.  63        74  DUP_TOP          
+                  76  LOAD_NAME                ImportError
+->                78  <121>               142  ''
+                  80  POP_TOP          
+                  82  POP_TOP          
+                  84  POP_TOP          
+
+test/134254.pyc -- 
+# decompile failed

@@ -1,0 +1,467 @@
+
+# file test/112371.pyc
+# --- This code section failed: ---
+
+ L.   3         0  LOAD_STR                 ' This module tries to retrieve as much platform-identifying data as\n    possible. It makes this information available via function APIs.\n\n    If called from the command line, it prints the platform\n    information concatenated as single string to stdout. The output\n    format is useable as part of a filename.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  92         4  LOAD_STR                 '\n    Copyright (c) 1999-2000, Marc-Andre Lemburg; mailto:mal@lemburg.com\n    Copyright (c) 2000-2010, eGenix.com Software GmbH; mailto:info@egenix.com\n\n    Permission to use, copy, modify, and distribute this software and its\n    documentation for any purpose and without fee or royalty is hereby granted,\n    provided that the above copyright notice appear in all copies and that\n    both that copyright notice and this permission notice appear in\n    supporting documentation or portions thereof, including modifications,\n    that you make.\n\n    EGENIX.COM SOFTWARE GMBH DISCLAIMS ALL WARRANTIES WITH REGARD TO\n    THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\n    FITNESS, IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL,\n    INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING\n    FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,\n    NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION\n    WITH THE USE OR PERFORMANCE OF THIS SOFTWARE !\n\n'
+                6  STORE_NAME               __copyright__
+
+ L. 113         8  LOAD_STR                 '1.0.8'
+               10  STORE_NAME               __version__
+
+ L. 115        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              collections
+               18  STORE_NAME               collections
+
+ L. 116        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              os
+               26  STORE_NAME               os
+
+ L. 117        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              re
+               34  STORE_NAME               re
+
+ L. 118        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              sys
+               42  STORE_NAME               sys
+
+ L. 119        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              subprocess
+               50  STORE_NAME               subprocess
+
+ L. 120        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              functools
+               58  STORE_NAME               functools
+
+ L. 121        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              itertools
+               66  STORE_NAME               itertools
+
+ L. 131        68  LOAD_CONST               10
+
+ L. 132        70  LOAD_CONST               20
+               72  LOAD_CONST               20
+
+ L. 133        74  LOAD_CONST               30
+               76  LOAD_CONST               30
+
+ L. 134        78  LOAD_CONST               40
+
+ L. 135        80  LOAD_CONST               50
+               82  LOAD_CONST               50
+
+ L. 137        84  LOAD_CONST               200
+               86  LOAD_CONST               200
+
+ L. 129        88  LOAD_CONST               ('dev', 'alpha', 'a', 'beta', 'b', 'c', 'RC', 'rc', 'pl', 'p')
+               90  BUILD_CONST_KEY_MAP_10    10 
+               92  STORE_NAME               _ver_stages
+
+ L. 140        94  LOAD_NAME                re
+               96  LOAD_METHOD              compile
+               98  LOAD_STR                 '([0-9]+|[._+-])'
+              100  CALL_METHOD_1         1  ''
+              102  STORE_NAME               _component_re
+
+ L. 142       104  LOAD_CODE                <code_object _comparable_version>
+              106  LOAD_STR                 '_comparable_version'
+              108  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              110  STORE_NAME               _comparable_version
+
+ L. 156       112  LOAD_NAME                re
+              114  LOAD_METHOD              compile
+              116  LOAD_CONST               b'(__libc_init)|(GLIBC_([0-9.]+))|(libc(_\\w+)?\\.so(?:\\.(\\d[0-9.]*))?)'
+
+ L. 160       118  LOAD_NAME                re
+              120  LOAD_ATTR                ASCII
+
+ L. 156       122  CALL_METHOD_2         2  ''
+              124  STORE_NAME               _libc_search
+
+ L. 162       126  LOAD_CONST               (None, '', '', 16384)
+              128  LOAD_CODE                <code_object libc_ver>
+              130  LOAD_STR                 'libc_ver'
+              132  MAKE_FUNCTION_1          'default'
+              134  STORE_NAME               libc_ver
+
+ L. 233       136  LOAD_CONST               ('',)
+              138  LOAD_CODE                <code_object _norm_version>
+              140  LOAD_STR                 '_norm_version'
+              142  MAKE_FUNCTION_1          'default'
+              144  STORE_NAME               _norm_version
+
+ L. 250       146  LOAD_NAME                re
+              148  LOAD_METHOD              compile
+              150  LOAD_STR                 '(?:([\\w ]+) ([\\w.]+) .*\\[.* ([\\d.]+)\\])'
+              152  CALL_METHOD_1         1  ''
+              154  STORE_NAME               _ver_output
+
+ L. 263       156  LOAD_CONST               ('', '', '', ('win32', 'win16', 'dos'))
+              158  LOAD_CODE                <code_object _syscmd_ver>
+              160  LOAD_STR                 '_syscmd_ver'
+              162  MAKE_FUNCTION_1          'default'
+              164  STORE_NAME               _syscmd_ver
+
+ L. 312       166  LOAD_STR                 '2000'
+
+ L. 313       168  LOAD_STR                 'XP'
+
+ L. 316       170  LOAD_STR                 '2003Server'
+
+ L. 317       172  LOAD_STR                 'post2003'
+
+ L. 319       174  LOAD_STR                 'Vista'
+
+ L. 320       176  LOAD_STR                 '7'
+
+ L. 321       178  LOAD_STR                 '8'
+
+ L. 322       180  LOAD_STR                 '8.1'
+
+ L. 323       182  LOAD_STR                 'post8.1'
+
+ L. 325       184  LOAD_STR                 '10'
+
+ L. 326       186  LOAD_STR                 'post10'
+
+ L. 311       188  LOAD_CONST               ((5, 0), (5, 1), (5, 2), (5, None), (6, 0), (6, 1), (6, 2), (6, 3), (6, None), (10, 0), (10, None))
+              190  BUILD_CONST_KEY_MAP_11    11 
+              192  STORE_NAME               _WIN32_CLIENT_RELEASES
+
+ L. 331       194  LOAD_STR                 '2003Server'
+
+ L. 333       196  LOAD_STR                 '2008Server'
+
+ L. 334       198  LOAD_STR                 '2008ServerR2'
+
+ L. 335       200  LOAD_STR                 '2012Server'
+
+ L. 336       202  LOAD_STR                 '2012ServerR2'
+
+ L. 337       204  LOAD_STR                 'post2012ServerR2'
+
+ L. 330       206  LOAD_CONST               ((5, 2), (6, 0), (6, 1), (6, 2), (6, 3), (6, None))
+              208  BUILD_CONST_KEY_MAP_6     6 
+              210  STORE_NAME               _WIN32_SERVER_RELEASES
+
+ L. 340       212  LOAD_CODE                <code_object win32_is_iot>
+              214  LOAD_STR                 'win32_is_iot'
+              216  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              218  STORE_NAME               win32_is_iot
+
+ L. 343       220  LOAD_CODE                <code_object win32_edition>
+              222  LOAD_STR                 'win32_edition'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  STORE_NAME               win32_edition
+
+ L. 361       228  LOAD_CONST               ('', '', '', '')
+              230  LOAD_CODE                <code_object win32_ver>
+              232  LOAD_STR                 'win32_ver'
+              234  MAKE_FUNCTION_1          'default'
+              236  STORE_NAME               win32_ver
+
+ L. 409       238  LOAD_CODE                <code_object _mac_ver_xml>
+              240  LOAD_STR                 '_mac_ver_xml'
+              242  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              244  STORE_NAME               _mac_ver_xml
+
+ L. 431       246  LOAD_CONST               ('', ('', '', ''), '')
+              248  LOAD_CODE                <code_object mac_ver>
+              250  LOAD_STR                 'mac_ver'
+              252  MAKE_FUNCTION_1          'default'
+              254  STORE_NAME               mac_ver
+
+ L. 450       256  LOAD_CODE                <code_object _java_getprop>
+              258  LOAD_STR                 '_java_getprop'
+              260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              262  STORE_NAME               _java_getprop
+
+ L. 461       264  LOAD_CONST               ('', '', ('', '', ''), ('', '', ''))
+              266  LOAD_CODE                <code_object java_ver>
+              268  LOAD_STR                 'java_ver'
+              270  MAKE_FUNCTION_1          'default'
+              272  STORE_NAME               java_ver
+
+ L. 496       274  LOAD_CODE                <code_object system_alias>
+              276  LOAD_STR                 'system_alias'
+              278  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              280  STORE_NAME               system_alias
+
+ L. 548       282  LOAD_CODE                <code_object _platform>
+              284  LOAD_STR                 '_platform'
+              286  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              288  STORE_NAME               _platform
+
+ L. 580       290  LOAD_CONST               ('',)
+              292  LOAD_CODE                <code_object _node>
+              294  LOAD_STR                 '_node'
+              296  MAKE_FUNCTION_1          'default'
+              298  STORE_NAME               _node
+
+ L. 595       300  LOAD_CODE                <code_object _follow_symlinks>
+              302  LOAD_STR                 '_follow_symlinks'
+              304  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              306  STORE_NAME               _follow_symlinks
+
+ L. 607       308  LOAD_CONST               ('',)
+              310  LOAD_CODE                <code_object _syscmd_file>
+              312  LOAD_STR                 '_syscmd_file'
+              314  MAKE_FUNCTION_1          'default'
+              316  STORE_NAME               _syscmd_file
+
+ L. 643       318  LOAD_CONST               ('', 'WindowsPE')
+
+ L. 644       320  LOAD_CONST               ('', 'Windows')
+
+ L. 645       322  LOAD_CONST               ('', 'MSDOS')
+
+ L. 642       324  LOAD_CONST               ('win32', 'win16', 'dos')
+              326  BUILD_CONST_KEY_MAP_3     3 
+              328  STORE_NAME               _default_architecture
+
+ L. 648       330  LOAD_NAME                sys
+              332  LOAD_ATTR                executable
+              334  LOAD_STR                 ''
+              336  LOAD_STR                 ''
+              338  BUILD_TUPLE_3         3 
+              340  LOAD_CODE                <code_object architecture>
+              342  LOAD_STR                 'architecture'
+              344  MAKE_FUNCTION_1          'default'
+              346  STORE_NAME               architecture
+
+ L. 727       348  LOAD_CODE                <code_object _get_machine_win32>
+              350  LOAD_STR                 '_get_machine_win32'
+              352  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              354  STORE_NAME               _get_machine_win32
+
+ L. 740       356  LOAD_BUILD_CLASS 
+              358  LOAD_CODE                <code_object _Processor>
+              360  LOAD_STR                 '_Processor'
+              362  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              364  LOAD_STR                 '_Processor'
+              366  CALL_FUNCTION_2       2  ''
+              368  STORE_NAME               _Processor
+
+ L. 772       370  LOAD_CODE                <code_object _unknown_as_blank>
+              372  LOAD_STR                 '_unknown_as_blank'
+              374  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              376  STORE_NAME               _unknown_as_blank
+
+ L. 778       378  LOAD_BUILD_CLASS 
+              380  LOAD_CODE                <code_object uname_result>
+              382  LOAD_STR                 'uname_result'
+              384  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              386  LOAD_STR                 'uname_result'
+
+ L. 779       388  LOAD_NAME                collections
+              390  LOAD_METHOD              namedtuple
+
+ L. 780       392  LOAD_STR                 'uname_result_base'
+
+ L. 781       394  LOAD_STR                 'system node release version machine'
+
+ L. 779       396  CALL_METHOD_2         2  ''
+
+ L. 778       398  CALL_FUNCTION_3       3  ''
+              400  STORE_NAME               uname_result
+
+ L. 820       402  LOAD_CONST               None
+              404  STORE_GLOBAL             _uname_cache
+
+ L. 823       406  LOAD_CODE                <code_object uname>
+              408  LOAD_STR                 'uname'
+              410  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              412  STORE_NAME               uname
+
+ L. 912       414  LOAD_CODE                <code_object system>
+              416  LOAD_STR                 'system'
+              418  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              420  STORE_NAME               system
+
+ L. 921       422  LOAD_CODE                <code_object node>
+              424  LOAD_STR                 'node'
+              426  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              428  STORE_NAME               node
+
+ L. 931       430  LOAD_CODE                <code_object release>
+              432  LOAD_STR                 'release'
+              434  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              436  STORE_NAME               release
+
+ L. 940       438  LOAD_CODE                <code_object version>
+              440  LOAD_STR                 'version'
+              442  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              444  STORE_NAME               version
+
+ L. 949       446  LOAD_CODE                <code_object machine>
+              448  LOAD_STR                 'machine'
+              450  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              452  STORE_NAME               machine
+
+ L. 958       454  LOAD_CODE                <code_object processor>
+              456  LOAD_STR                 'processor'
+              458  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              460  STORE_NAME               processor
+
+ L. 972       462  LOAD_NAME                re
+              464  LOAD_METHOD              compile
+
+ L. 973       466  LOAD_STR                 '([\\w.+]+)\\s*\\(#?([^,]+)(?:,\\s*([\\w ]*)(?:,\\s*([\\w :]*))?)?\\)\\s*\\[([^\\]]+)\\]?'
+
+ L. 977       468  LOAD_NAME                re
+              470  LOAD_ATTR                ASCII
+
+ L. 972       472  CALL_METHOD_2         2  ''
+              474  STORE_NAME               _sys_version_parser
+
+ L. 979       476  LOAD_NAME                re
+              478  LOAD_METHOD              compile
+
+ L. 980       480  LOAD_STR                 'IronPython\\s*([\\d\\.]+)(?: \\(([\\d\\.]+)\\))? on (.NET [\\d\\.]+)'
+
+ L. 983       482  LOAD_NAME                re
+              484  LOAD_ATTR                ASCII
+
+ L. 979       486  CALL_METHOD_2         2  ''
+              488  STORE_NAME               _ironpython_sys_version_parser
+
+ L. 986       490  LOAD_NAME                re
+              492  LOAD_METHOD              compile
+
+ L. 987       494  LOAD_STR                 '([\\d.]+)\\s*\\(IronPython\\s*[\\d.]+\\s*\\(([\\d.]+)\\) on ([\\w.]+ [\\d.]+(?: \\(\\d+-bit\\))?)\\)'
+
+ L. 986       496  CALL_METHOD_1         1  ''
+              498  STORE_NAME               _ironpython26_sys_version_parser
+
+ L. 993       500  LOAD_NAME                re
+              502  LOAD_METHOD              compile
+
+ L. 994       504  LOAD_STR                 '([\\w.+]+)\\s*\\(#?([^,]+),\\s*([\\w ]+),\\s*([\\w :]+)\\)\\s*\\[PyPy [^\\]]+\\]?'
+
+ L. 993       506  CALL_METHOD_1         1  ''
+              508  STORE_NAME               _pypy_sys_version_parser
+
+ L. 998       510  BUILD_MAP_0           0 
+              512  STORE_NAME               _sys_version_cache
+
+ L.1000       514  LOAD_CONST               (None,)
+              516  LOAD_CODE                <code_object _sys_version>
+              518  LOAD_STR                 '_sys_version'
+              520  MAKE_FUNCTION_1          'default'
+              522  STORE_NAME               _sys_version
+
+ L.1104       524  LOAD_CODE                <code_object python_implementation>
+              526  LOAD_STR                 'python_implementation'
+              528  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              530  STORE_NAME               python_implementation
+
+ L.1117       532  LOAD_CODE                <code_object python_version>
+              534  LOAD_STR                 'python_version'
+              536  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              538  STORE_NAME               python_version
+
+ L.1127       540  LOAD_CODE                <code_object python_version_tuple>
+              542  LOAD_STR                 'python_version_tuple'
+              544  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              546  STORE_NAME               python_version_tuple
+
+ L.1138       548  LOAD_CODE                <code_object python_branch>
+              550  LOAD_STR                 'python_branch'
+              552  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              554  STORE_NAME               python_branch
+
+ L.1152       556  LOAD_CODE                <code_object python_revision>
+              558  LOAD_STR                 'python_revision'
+              560  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              562  STORE_NAME               python_revision
+
+ L.1165       564  LOAD_CODE                <code_object python_build>
+              566  LOAD_STR                 'python_build'
+              568  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              570  STORE_NAME               python_build
+
+ L.1173       572  LOAD_CODE                <code_object python_compiler>
+              574  LOAD_STR                 'python_compiler'
+              576  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              578  STORE_NAME               python_compiler
+
+ L.1183       580  BUILD_MAP_0           0 
+              582  STORE_NAME               _platform_cache
+
+ L.1185       584  LOAD_CONST               (0, 0)
+              586  LOAD_CODE                <code_object platform>
+              588  LOAD_STR                 'platform'
+              590  MAKE_FUNCTION_1          'default'
+              592  STORE_NAME               platform
+
+ L.1261       594  LOAD_NAME                __name__
+              596  LOAD_STR                 '__main__'
+              598  COMPARE_OP               ==
+          600_602  POP_JUMP_IF_FALSE   672  'to 672'
+
+ L.1263       604  LOAD_STR                 'terse'
+              606  LOAD_NAME                sys
+              608  LOAD_ATTR                argv
+              610  <118>                 0  ''
+          612_614  JUMP_IF_TRUE_OR_POP   624  'to 624'
+              616  LOAD_STR                 '--terse'
+              618  LOAD_NAME                sys
+              620  LOAD_ATTR                argv
+              622  <118>                 0  ''
+            624_0  COME_FROM           612  '612'
+              624  STORE_NAME               terse
+
+ L.1264       626  LOAD_STR                 'nonaliased'
+              628  LOAD_NAME                sys
+              630  LOAD_ATTR                argv
+              632  <118>                 1  ''
+          634_636  JUMP_IF_FALSE_OR_POP   646  'to 646'
+              638  LOAD_STR                 '--nonaliased'
+              640  LOAD_NAME                sys
+              642  LOAD_ATTR                argv
+              644  <118>                 1  ''
+            646_0  COME_FROM           634  '634'
+              646  STORE_NAME               aliased
+
+ L.1265       648  LOAD_NAME                print
+              650  LOAD_NAME                platform
+              652  LOAD_NAME                aliased
+              654  LOAD_NAME                terse
+              656  CALL_FUNCTION_2       2  ''
+              658  CALL_FUNCTION_1       1  ''
+              660  POP_TOP          
+
+ L.1266       662  LOAD_NAME                sys
+              664  LOAD_METHOD              exit
+              666  LOAD_CONST               0
+              668  CALL_METHOD_1         1  ''
+              670  POP_TOP          
+            672_0  COME_FROM           600  '600'
+
+Parse error at or near `<118>' instruction at offset 610
+
+Instruction context:
+   
+ L.1263       604  LOAD_STR                 'terse'
+                 606  LOAD_NAME                sys
+                 608  LOAD_ATTR                argv
+->               610  <118>                 0  ''
+             612_614  JUMP_IF_TRUE_OR_POP   624  'to 624'
+                 616  LOAD_STR                 '--terse'
+                 618  LOAD_NAME                sys
+                 620  LOAD_ATTR                argv
+                 622  <118>                 0  ''
+               624_0  COME_FROM           612  '612'
+                 624  STORE_NAME               terse
+
+test/112371.pyc -- 
+# decompile failed

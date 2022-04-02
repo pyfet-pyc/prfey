@@ -1,0 +1,64 @@
+Instruction context:
+   
+ L. 206       170  LOAD_FAST                'dir'
+                 172  POP_BLOCK        
+->               174  ROT_TWO          
+                 176  POP_TOP          
+                 178  ROT_TWO          
+                 180  POP_TOP          
+                 182  RETURN_VALUE     
+               184_0  COME_FROM_FINALLY    80  '80'
+Instruction context:
+   
+ L. 252       114  POP_EXCEPT       
+                 116  JUMP_BACK            34  'to 34'
+->               118  POP_EXCEPT       
+                 120  JUMP_FORWARD        186  'to 186'
+               122_0  COME_FROM           106  '106'
+Instruction context:
+   
+ L. 361       132  POP_EXCEPT       
+                 134  JUMP_BACK            54  'to 54'
+->               136  POP_EXCEPT       
+                 138  JUMP_FORWARD        204  'to 204'
+               140_0  COME_FROM           124  '124'
+Instruction context:
+   
+ L. 547       106  DUP_TOP          
+                 108  LOAD_GLOBAL              BaseException
+                 110  COMPARE_OP               exception-match
+                 112  POP_JUMP_IF_FALSE   146  'to 146'
+                 114  POP_TOP          
+->               116  POP_TOP          
+                 118  POP_TOP          
+Instruction context:
+   
+ L. 610       140  LOAD_GLOBAL              _os
+                 142  LOAD_METHOD              close
+                 144  LOAD_FAST                'fd'
+                 146  CALL_METHOD_1         1  ''
+->               148  POP_TOP          
+Instruction context:
+   
+ L. 714        12  DUP_TOP          
+                  14  LOAD_GLOBAL              AttributeError
+                  16  COMPARE_OP               exception-match
+                  18  POP_JUMP_IF_FALSE    40  'to 40'
+                  20  POP_TOP          
+->                22  POP_TOP          
+                  24  POP_TOP          
+Instruction context:
+   
+ L. 721        12  DUP_TOP          
+                  14  LOAD_GLOBAL              AttributeError
+                  16  COMPARE_OP               exception-match
+                  18  POP_JUMP_IF_FALSE    32  'to 32'
+                  20  POP_TOP          
+->                22  POP_TOP          
+                  24  POP_TOP          
+
+test/346.pyc -- 
+# decompile failed
+
+# file test/346.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,57 @@
+Instruction context:
+   
+ L.  89        72  POP_EXCEPT       
+->                74  POP_BLOCK        
+                  76  CALL_FINALLY        136  'to 136'
+                  78  LOAD_CONST               None
+                  80  RETURN_VALUE     
+                82_0  COME_FROM            58  '58'
+Instruction context:
+-> 
+ L. 444       346  DUP_TOP          
+                 348  LOAD_GLOBAL              Exception
+                 350  COMPARE_OP               exception-match
+             352_354  POP_JUMP_IF_FALSE   442  'to 442'
+                 356  POP_TOP          
+                 358  STORE_FAST               'exc'
+                 360  POP_TOP          
+                 362  SETUP_FINALLY       430  'to 430'
+Instruction context:
+   
+ L. 687       404  POP_EXCEPT       
+                 406  JUMP_BACK           188  'to 188'
+                 408  POP_EXCEPT       
+->               410  JUMP_BACK           348  'to 348'
+               412_0  COME_FROM           394  '394'
+                 412  END_FINALLY      
+             414_416  JUMP_BACK           348  'to 348'
+                 418  JUMP_BACK           188  'to 188'
+               420_0  COME_FROM           330  '330'
+               420_1  COME_FROM           188  '188'
+Instruction context:
+   
+ L. 948       150  LOAD_FAST                'result'
+                 152  LOAD_METHOD              append
+                 154  LOAD_STR                 '[%s]'
+                 156  LOAD_FAST                'name'
+                 158  BINARY_MODULO    
+                 160  CALL_METHOD_1         1  ''
+                 162  POP_TOP          
+               164_0  COME_FROM           148  '148'
+                 164  JUMP_BACK            42  'to 42'
+->             166_0  COME_FROM            74  '74'
+Instruction context:
+   
+ L.1004       124  POP_BLOCK        
+->               126  CALL_FINALLY        186  'to 186'
+                 128  LOAD_CONST               False
+                 130  RETURN_VALUE     
+               132_0  COME_FROM           122  '122'
+               132_1  COME_FROM            98  '98'
+               132_2  COME_FROM            78  '78'
+
+../test/118001.pyc -- 
+# decompile failed
+
+# file ../test/118001.pyc
+# Deparsing stopped due to parse error

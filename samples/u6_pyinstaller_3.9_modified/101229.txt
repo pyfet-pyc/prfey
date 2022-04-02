@@ -1,0 +1,117 @@
+Instruction context:
+   
+ L.   9         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('mktime_tz', 'parsedate', 'parsedate_tz', 'quote')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101229.pyc -- 
+# decompile failed
+
+# file test/101229.pyc
+# --- This code section failed: ---
+
+ L.   4         0  LOAD_STR                 'Email address parsing code.\n\nLifted directly from rfc822.py.  This should eventually be rewritten.\n'
+                2  STORE_NAME               __doc__
+
+ L.   9         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('mktime_tz', 'parsedate', 'parsedate_tz', 'quote')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  16        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              time
+               18  STORE_NAME               time
+               20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              calendar
+               26  STORE_NAME               calendar
+
+ L.  18        28  LOAD_STR                 ' '
+               30  STORE_NAME               SPACE
+
+ L.  19        32  LOAD_STR                 ''
+               34  STORE_NAME               EMPTYSTRING
+
+ L.  20        36  LOAD_STR                 ', '
+               38  STORE_NAME               COMMASPACE
+
+ L.  23        40  BUILD_LIST_0          0 
+               42  LOAD_CONST               ('jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec', 'january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december')
+               44  CALL_FINALLY         47  'to 47'
+               46  STORE_NAME               _monthnames
+
+ L.  28        48  BUILD_LIST_0          0 
+               50  LOAD_CONST               ('mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun')
+               52  CALL_FINALLY         55  'to 55'
+               54  STORE_NAME               _daynames
+
+ L.  36        56  LOAD_CONST               0
+               58  LOAD_CONST               0
+               60  LOAD_CONST               0
+               62  LOAD_CONST               0
+
+ L.  37        64  LOAD_CONST               -400
+               66  LOAD_CONST               -300
+
+ L.  38        68  LOAD_CONST               -500
+               70  LOAD_CONST               -400
+
+ L.  39        72  LOAD_CONST               -600
+               74  LOAD_CONST               -500
+
+ L.  40        76  LOAD_CONST               -700
+               78  LOAD_CONST               -600
+
+ L.  41        80  LOAD_CONST               -800
+               82  LOAD_CONST               -700
+
+ L.  36        84  LOAD_CONST               ('UT', 'UTC', 'GMT', 'Z', 'AST', 'ADT', 'EST', 'EDT', 'CST', 'CDT', 'MST', 'MDT', 'PST', 'PDT')
+               86  BUILD_CONST_KEY_MAP_14    14 
+               88  STORE_NAME               _timezones
+
+ L.  45        90  LOAD_CODE                <code_object parsedate_tz>
+               92  LOAD_STR                 'parsedate_tz'
+               94  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               96  STORE_NAME               parsedate_tz
+
+ L.  57        98  LOAD_CODE                <code_object _parsedate_tz>
+              100  LOAD_STR                 '_parsedate_tz'
+              102  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              104  STORE_NAME               _parsedate_tz
+
+ L. 174       106  LOAD_CODE                <code_object parsedate>
+              108  LOAD_STR                 'parsedate'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  STORE_NAME               parsedate
+
+ L. 183       114  LOAD_CODE                <code_object mktime_tz>
+              116  LOAD_STR                 'mktime_tz'
+              118  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              120  STORE_NAME               mktime_tz
+
+ L. 193       122  LOAD_CODE                <code_object quote>
+              124  LOAD_STR                 'quote'
+              126  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              128  STORE_NAME               quote
+
+ L. 203       130  LOAD_BUILD_CLASS 
+              132  LOAD_CODE                <code_object AddrlistClass>
+              134  LOAD_STR                 'AddrlistClass'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  LOAD_STR                 'AddrlistClass'
+              140  CALL_FUNCTION_2       2  ''
+              142  STORE_NAME               AddrlistClass
+
+ L. 504       144  LOAD_BUILD_CLASS 
+              146  LOAD_CODE                <code_object AddressList>
+              148  LOAD_STR                 'AddressList'
+              150  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              152  LOAD_STR                 'AddressList'
+              154  LOAD_NAME                AddrlistClass
+              156  CALL_FUNCTION_3       3  ''
+              158  STORE_NAME               AddressList
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

@@ -1,0 +1,40 @@
+Instruction context:
+   
+ L.3715        20  LOAD_FAST                'expected_real_ext'
+                  22  POP_JUMP_IF_FALSE    40  'to 40'
+                  24  LOAD_FAST                'real_ext'
+                  26  LOAD_CONST               1
+                  28  LOAD_CONST               None
+                  30  BUILD_SLICE_2         2 
+                  32  BINARY_SUBSCR    
+                  34  LOAD_FAST                'expected_real_ext'
+                  36  COMPARE_OP               ==
+                  38  POP_JUMP_IF_FALSE    44  'to 44'
+                40_0  COME_FROM            22  '22'
+                  40  LOAD_FAST                'name'
+                  42  JUMP_FORWARD         46  'to 46'
+->              44_0  COME_FROM            38  '38'
+                  44  LOAD_FAST                'filename'
+                46_0  COME_FROM            42  '42'
+Instruction context:
+   
+ L.4016        86  LOAD_FAST                'v'
+                  88  LOAD_FAST                'merged'
+                  90  LOAD_FAST                'k'
+                  92  STORE_SUBSCR     
+                  94  JUMP_BACK            24  'to 24'
+->                96  POP_BLOCK        
+                98_0  COME_FROM_LOOP       14  '14'
+                  98  JUMP_BACK            10  'to 10'
+                 100  POP_BLOCK        
+               102_0  COME_FROM_LOOP        4  '4'
+Instruction context:
+-> 
+ L.4234       194  BUILD_MAP_0           0 
+                 196  RETURN_VALUE     
+
+../test/15914.pyc -- 
+# decompile failed
+
+# file ../test/15914.pyc
+# Deparsing stopped due to parse error

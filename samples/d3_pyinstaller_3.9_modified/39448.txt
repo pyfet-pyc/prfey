@@ -1,0 +1,516 @@
+
+# file test/39448.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "Thread module emulating a subset of Java's threading model."
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               _os
+
+ L.   4        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               _sys
+
+ L.   5        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              _thread
+               26  STORE_NAME               _thread
+
+ L.   6        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              functools
+               34  STORE_NAME               functools
+
+ L.   8        36  LOAD_CONST               0
+               38  LOAD_CONST               ('monotonic',)
+               40  IMPORT_NAME              time
+               42  IMPORT_FROM              monotonic
+               44  STORE_NAME               _time
+               46  POP_TOP          
+
+ L.   9        48  LOAD_CONST               0
+               50  LOAD_CONST               ('WeakSet',)
+               52  IMPORT_NAME              _weakrefset
+               54  IMPORT_FROM              WeakSet
+               56  STORE_NAME               WeakSet
+               58  POP_TOP          
+
+ L.  10        60  LOAD_CONST               0
+               62  LOAD_CONST               ('islice', 'count')
+               64  IMPORT_NAME              itertools
+               66  IMPORT_FROM              islice
+               68  STORE_NAME               _islice
+               70  IMPORT_FROM              count
+               72  STORE_NAME               _count
+               74  POP_TOP          
+
+ L.  11        76  SETUP_FINALLY        94  'to 94'
+
+ L.  12        78  LOAD_CONST               0
+               80  LOAD_CONST               ('deque',)
+               82  IMPORT_NAME              _collections
+               84  IMPORT_FROM              deque
+               86  STORE_NAME               _deque
+               88  POP_TOP          
+               90  POP_BLOCK        
+               92  JUMP_FORWARD        124  'to 124'
+             94_0  COME_FROM_FINALLY    76  '76'
+
+ L.  13        94  DUP_TOP          
+               96  LOAD_NAME                ImportError
+               98  <121>               122  ''
+              100  POP_TOP          
+              102  POP_TOP          
+              104  POP_TOP          
+
+ L.  14       106  LOAD_CONST               0
+              108  LOAD_CONST               ('deque',)
+              110  IMPORT_NAME              collections
+              112  IMPORT_FROM              deque
+              114  STORE_NAME               _deque
+              116  POP_TOP          
+              118  POP_EXCEPT       
+              120  JUMP_FORWARD        124  'to 124'
+              122  <48>             
+            124_0  COME_FROM           120  '120'
+            124_1  COME_FROM            92  '92'
+
+ L.  26       124  BUILD_LIST_0          0 
+              126  LOAD_CONST               ('get_ident', 'active_count', 'Condition', 'current_thread', 'enumerate', 'main_thread', 'TIMEOUT_MAX', 'Event', 'Lock', 'RLock', 'Semaphore', 'BoundedSemaphore', 'Thread', 'Barrier', 'BrokenBarrierError', 'Timer', 'ThreadError', 'setprofile', 'settrace', 'local', 'stack_size', 'excepthook', 'ExceptHookArgs')
+              128  CALL_FINALLY        131  'to 131'
+              130  STORE_NAME               __all__
+
+ L.  34       132  LOAD_NAME                _thread
+              134  LOAD_ATTR                start_new_thread
+              136  STORE_NAME               _start_new_thread
+
+ L.  35       138  LOAD_NAME                _thread
+              140  LOAD_ATTR                allocate_lock
+              142  STORE_NAME               _allocate_lock
+
+ L.  36       144  LOAD_NAME                _thread
+              146  LOAD_ATTR                _set_sentinel
+              148  STORE_NAME               _set_sentinel
+
+ L.  37       150  LOAD_NAME                _thread
+              152  LOAD_ATTR                get_ident
+              154  STORE_NAME               get_ident
+
+ L.  38       156  SETUP_FINALLY       182  'to 182'
+
+ L.  39       158  LOAD_NAME                _thread
+              160  LOAD_ATTR                get_native_id
+              162  STORE_NAME               get_native_id
+
+ L.  40       164  LOAD_CONST               True
+              166  STORE_NAME               _HAVE_THREAD_NATIVE_ID
+
+ L.  41       168  LOAD_NAME                __all__
+              170  LOAD_METHOD              append
+              172  LOAD_STR                 'get_native_id'
+              174  CALL_METHOD_1         1  ''
+              176  POP_TOP          
+              178  POP_BLOCK        
+              180  JUMP_FORWARD        204  'to 204'
+            182_0  COME_FROM_FINALLY   156  '156'
+
+ L.  42       182  DUP_TOP          
+              184  LOAD_NAME                AttributeError
+              186  <121>               202  ''
+              188  POP_TOP          
+              190  POP_TOP          
+              192  POP_TOP          
+
+ L.  43       194  LOAD_CONST               False
+              196  STORE_NAME               _HAVE_THREAD_NATIVE_ID
+              198  POP_EXCEPT       
+              200  JUMP_FORWARD        204  'to 204'
+              202  <48>             
+            204_0  COME_FROM           200  '200'
+            204_1  COME_FROM           180  '180'
+
+ L.  44       204  LOAD_NAME                _thread
+              206  LOAD_ATTR                error
+              208  STORE_NAME               ThreadError
+
+ L.  45       210  SETUP_FINALLY       222  'to 222'
+
+ L.  46       212  LOAD_NAME                _thread
+              214  LOAD_ATTR                RLock
+              216  STORE_NAME               _CRLock
+              218  POP_BLOCK        
+              220  JUMP_FORWARD        244  'to 244'
+            222_0  COME_FROM_FINALLY   210  '210'
+
+ L.  47       222  DUP_TOP          
+              224  LOAD_NAME                AttributeError
+              226  <121>               242  ''
+              228  POP_TOP          
+              230  POP_TOP          
+              232  POP_TOP          
+
+ L.  48       234  LOAD_CONST               None
+              236  STORE_NAME               _CRLock
+              238  POP_EXCEPT       
+              240  JUMP_FORWARD        244  'to 244'
+              242  <48>             
+            244_0  COME_FROM           240  '240'
+            244_1  COME_FROM           220  '220'
+
+ L.  49       244  LOAD_NAME                _thread
+              246  LOAD_ATTR                TIMEOUT_MAX
+              248  STORE_NAME               TIMEOUT_MAX
+
+ L.  50       250  DELETE_NAME              _thread
+
+ L.  55       252  LOAD_CONST               None
+              254  STORE_GLOBAL             _profile_hook
+
+ L.  56       256  LOAD_CONST               None
+              258  STORE_GLOBAL             _trace_hook
+
+ L.  58       260  LOAD_CODE                <code_object setprofile>
+              262  LOAD_STR                 'setprofile'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  STORE_NAME               setprofile
+
+ L.  68       268  LOAD_CODE                <code_object settrace>
+              270  LOAD_STR                 'settrace'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  STORE_NAME               settrace
+
+ L.  80       276  LOAD_NAME                _allocate_lock
+              278  STORE_NAME               Lock
+
+ L.  82       280  LOAD_CODE                <code_object RLock>
+              282  LOAD_STR                 'RLock'
+              284  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              286  STORE_NAME               RLock
+
+ L.  95       288  LOAD_BUILD_CLASS 
+              290  LOAD_CODE                <code_object _RLock>
+              292  LOAD_STR                 '_RLock'
+              294  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              296  LOAD_STR                 '_RLock'
+              298  CALL_FUNCTION_2       2  ''
+              300  STORE_NAME               _RLock
+
+ L. 213       302  LOAD_NAME                _RLock
+              304  STORE_NAME               _PyRLock
+
+ L. 216       306  LOAD_BUILD_CLASS 
+              308  LOAD_CODE                <code_object Condition>
+              310  LOAD_STR                 'Condition'
+              312  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              314  LOAD_STR                 'Condition'
+              316  CALL_FUNCTION_2       2  ''
+              318  STORE_NAME               Condition
+
+ L. 386       320  LOAD_BUILD_CLASS 
+              322  LOAD_CODE                <code_object Semaphore>
+              324  LOAD_STR                 'Semaphore'
+              326  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              328  LOAD_STR                 'Semaphore'
+              330  CALL_FUNCTION_2       2  ''
+              332  STORE_NAME               Semaphore
+
+ L. 469       334  LOAD_BUILD_CLASS 
+              336  LOAD_CODE                <code_object BoundedSemaphore>
+              338  LOAD_STR                 'BoundedSemaphore'
+              340  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              342  LOAD_STR                 'BoundedSemaphore'
+              344  LOAD_NAME                Semaphore
+              346  CALL_FUNCTION_3       3  ''
+              348  STORE_NAME               BoundedSemaphore
+
+ L. 510       350  LOAD_BUILD_CLASS 
+              352  LOAD_CODE                <code_object Event>
+              354  LOAD_STR                 'Event'
+              356  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              358  LOAD_STR                 'Event'
+              360  CALL_FUNCTION_2       2  ''
+              362  STORE_NAME               Event
+
+ L. 589       364  LOAD_BUILD_CLASS 
+              366  LOAD_CODE                <code_object Barrier>
+              368  LOAD_STR                 'Barrier'
+              370  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              372  LOAD_STR                 'Barrier'
+              374  CALL_FUNCTION_2       2  ''
+              376  STORE_NAME               Barrier
+
+ L. 743       378  LOAD_BUILD_CLASS 
+              380  LOAD_CODE                <code_object BrokenBarrierError>
+              382  LOAD_STR                 'BrokenBarrierError'
+              384  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              386  LOAD_STR                 'BrokenBarrierError'
+              388  LOAD_NAME                RuntimeError
+              390  CALL_FUNCTION_3       3  ''
+              392  STORE_NAME               BrokenBarrierError
+
+ L. 748       394  LOAD_NAME                _count
+              396  CALL_FUNCTION_0       0  ''
+              398  LOAD_ATTR                __next__
+              400  STORE_NAME               _counter
+
+ L. 749       402  LOAD_NAME                _counter
+              404  CALL_FUNCTION_0       0  ''
+              406  POP_TOP          
+
+ L. 750       408  LOAD_CONST               ('Thread-%d',)
+              410  LOAD_CODE                <code_object _newname>
+              412  LOAD_STR                 '_newname'
+              414  MAKE_FUNCTION_1          'default'
+              416  STORE_NAME               _newname
+
+ L. 757       418  LOAD_NAME                RLock
+              420  CALL_FUNCTION_0       0  ''
+              422  STORE_GLOBAL             _active_limbo_lock
+
+ L. 758       424  BUILD_MAP_0           0 
+              426  STORE_NAME               _active
+
+ L. 759       428  BUILD_MAP_0           0 
+              430  STORE_NAME               _limbo
+
+ L. 760       432  LOAD_NAME                WeakSet
+              434  CALL_FUNCTION_0       0  ''
+              436  STORE_NAME               _dangling
+
+ L. 765       438  LOAD_NAME                _allocate_lock
+              440  CALL_FUNCTION_0       0  ''
+              442  STORE_GLOBAL             _shutdown_locks_lock
+
+ L. 766       444  LOAD_NAME                set
+              446  CALL_FUNCTION_0       0  ''
+              448  STORE_GLOBAL             _shutdown_locks
+
+ L. 768       450  LOAD_CODE                <code_object _maintain_shutdown_locks>
+              452  LOAD_STR                 '_maintain_shutdown_locks'
+              454  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              456  STORE_NAME               _maintain_shutdown_locks
+
+ L. 784       458  LOAD_BUILD_CLASS 
+              460  LOAD_CODE                <code_object Thread>
+              462  LOAD_STR                 'Thread'
+              464  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              466  LOAD_STR                 'Thread'
+              468  CALL_FUNCTION_2       2  ''
+              470  STORE_NAME               Thread
+
+ L.1163       472  SETUP_FINALLY       494  'to 494'
+
+ L.1164       474  LOAD_CONST               0
+              476  LOAD_CONST               ('_excepthook', '_ExceptHookArgs')
+              478  IMPORT_NAME              _thread
+              480  IMPORT_FROM              _excepthook
+              482  STORE_GLOBAL             excepthook
+              484  IMPORT_FROM              _ExceptHookArgs
+              486  STORE_NAME               ExceptHookArgs
+              488  POP_TOP          
+              490  POP_BLOCK        
+              492  JUMP_FORWARD        564  'to 564'
+            494_0  COME_FROM_FINALLY   472  '472'
+
+ L.1166       494  DUP_TOP          
+              496  LOAD_NAME                ImportError
+          498_500  <121>               562  ''
+              502  POP_TOP          
+              504  POP_TOP          
+              506  POP_TOP          
+
+ L.1168       508  LOAD_CONST               0
+              510  LOAD_CONST               ('print_exception',)
+              512  IMPORT_NAME              traceback
+              514  IMPORT_FROM              print_exception
+              516  STORE_NAME               _print_exception
+              518  POP_TOP          
+
+ L.1169       520  LOAD_CONST               0
+              522  LOAD_CONST               ('namedtuple',)
+              524  IMPORT_NAME              collections
+              526  IMPORT_FROM              namedtuple
+              528  STORE_NAME               namedtuple
+              530  POP_TOP          
+
+ L.1171       532  LOAD_NAME                namedtuple
+
+ L.1172       534  LOAD_STR                 'ExceptHookArgs'
+
+ L.1173       536  LOAD_STR                 'exc_type exc_value exc_traceback thread'
+
+ L.1171       538  CALL_FUNCTION_2       2  ''
+              540  STORE_NAME               _ExceptHookArgs
+
+ L.1175       542  LOAD_CODE                <code_object ExceptHookArgs>
+              544  LOAD_STR                 'ExceptHookArgs'
+              546  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              548  STORE_NAME               ExceptHookArgs
+
+ L.1178       550  LOAD_CODE                <code_object excepthook>
+              552  LOAD_STR                 'excepthook'
+              554  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              556  STORE_GLOBAL             excepthook
+              558  POP_EXCEPT       
+              560  JUMP_FORWARD        564  'to 564'
+              562  <48>             
+            564_0  COME_FROM           560  '560'
+            564_1  COME_FROM           492  '492'
+
+ L.1209       564  LOAD_CODE                <code_object _make_invoke_excepthook>
+              566  LOAD_STR                 '_make_invoke_excepthook'
+              568  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              570  STORE_NAME               _make_invoke_excepthook
+
+ L.1262       572  LOAD_BUILD_CLASS 
+              574  LOAD_CODE                <code_object Timer>
+              576  LOAD_STR                 'Timer'
+              578  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              580  LOAD_STR                 'Timer'
+              582  LOAD_NAME                Thread
+              584  CALL_FUNCTION_3       3  ''
+              586  STORE_NAME               Timer
+
+ L.1292       588  LOAD_BUILD_CLASS 
+              590  LOAD_CODE                <code_object _MainThread>
+              592  LOAD_STR                 '_MainThread'
+              594  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              596  LOAD_STR                 '_MainThread'
+              598  LOAD_NAME                Thread
+              600  CALL_FUNCTION_3       3  ''
+              602  STORE_NAME               _MainThread
+
+ L.1313       604  LOAD_BUILD_CLASS 
+              606  LOAD_CODE                <code_object _DummyThread>
+              608  LOAD_STR                 '_DummyThread'
+              610  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              612  LOAD_STR                 '_DummyThread'
+              614  LOAD_NAME                Thread
+              616  CALL_FUNCTION_3       3  ''
+              618  STORE_NAME               _DummyThread
+
+ L.1338       620  LOAD_CODE                <code_object current_thread>
+              622  LOAD_STR                 'current_thread'
+              624  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              626  STORE_NAME               current_thread
+
+ L.1350       628  LOAD_NAME                current_thread
+              630  STORE_NAME               currentThread
+
+ L.1352       632  LOAD_CODE                <code_object active_count>
+              634  LOAD_STR                 'active_count'
+              636  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              638  STORE_NAME               active_count
+
+ L.1362       640  LOAD_NAME                active_count
+              642  STORE_NAME               activeCount
+
+ L.1364       644  LOAD_CODE                <code_object _enumerate>
+              646  LOAD_STR                 '_enumerate'
+              648  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              650  STORE_NAME               _enumerate
+
+ L.1368       652  LOAD_CODE                <code_object enumerate>
+              654  LOAD_STR                 'enumerate'
+              656  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              658  STORE_NAME               enumerate
+
+ L.1380       660  BUILD_LIST_0          0 
+              662  STORE_NAME               _threading_atexits
+
+ L.1381       664  LOAD_CONST               False
+              666  STORE_GLOBAL             _SHUTTING_DOWN
+
+ L.1383       668  LOAD_CODE                <code_object _register_atexit>
+              670  LOAD_STR                 '_register_atexit'
+              672  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              674  STORE_NAME               _register_atexit
+
+ L.1400       676  LOAD_CONST               0
+              678  LOAD_CONST               ('stack_size',)
+              680  IMPORT_NAME              _thread
+              682  IMPORT_FROM              stack_size
+              684  STORE_NAME               stack_size
+              686  POP_TOP          
+
+ L.1406       688  LOAD_NAME                _MainThread
+              690  CALL_FUNCTION_0       0  ''
+              692  STORE_GLOBAL             _main_thread
+
+ L.1408       694  LOAD_CODE                <code_object _shutdown>
+              696  LOAD_STR                 '_shutdown'
+              698  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              700  STORE_NAME               _shutdown
+
+ L.1455       702  LOAD_CODE                <code_object main_thread>
+              704  LOAD_STR                 'main_thread'
+              706  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              708  STORE_NAME               main_thread
+
+ L.1466       710  SETUP_FINALLY       728  'to 728'
+
+ L.1467       712  LOAD_CONST               0
+              714  LOAD_CONST               ('_local',)
+              716  IMPORT_NAME              _thread
+              718  IMPORT_FROM              _local
+              720  STORE_NAME               local
+              722  POP_TOP          
+              724  POP_BLOCK        
+              726  JUMP_FORWARD        760  'to 760'
+            728_0  COME_FROM_FINALLY   710  '710'
+
+ L.1468       728  DUP_TOP          
+              730  LOAD_NAME                ImportError
+          732_734  <121>               758  ''
+              736  POP_TOP          
+              738  POP_TOP          
+              740  POP_TOP          
+
+ L.1469       742  LOAD_CONST               0
+              744  LOAD_CONST               ('local',)
+              746  IMPORT_NAME              _threading_local
+              748  IMPORT_FROM              local
+              750  STORE_NAME               local
+              752  POP_TOP          
+              754  POP_EXCEPT       
+              756  JUMP_FORWARD        760  'to 760'
+              758  <48>             
+            760_0  COME_FROM           756  '756'
+            760_1  COME_FROM           726  '726'
+
+ L.1472       760  LOAD_CODE                <code_object _after_fork>
+              762  LOAD_STR                 '_after_fork'
+              764  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              766  STORE_NAME               _after_fork
+
+ L.1525       768  LOAD_NAME                hasattr
+              770  LOAD_NAME                _os
+              772  LOAD_STR                 'register_at_fork'
+              774  CALL_FUNCTION_2       2  ''
+          776_778  POP_JUMP_IF_FALSE   792  'to 792'
+
+ L.1526       780  LOAD_NAME                _os
+              782  LOAD_ATTR                register_at_fork
+              784  LOAD_NAME                _after_fork
+              786  LOAD_CONST               ('after_in_child',)
+              788  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+              790  POP_TOP          
+            792_0  COME_FROM           776  '776'
+
+Parse error at or near `<121>' instruction at offset 98
+
+Instruction context:
+   
+ L.  13        94  DUP_TOP          
+                  96  LOAD_NAME                ImportError
+->                98  <121>               122  ''
+                 100  POP_TOP          
+                 102  POP_TOP          
+                 104  POP_TOP          
+
+test/39448.pyc -- 
+# decompile failed

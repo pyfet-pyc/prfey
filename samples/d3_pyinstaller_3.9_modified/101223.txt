@@ -1,0 +1,82 @@
+Instruction context:
+   
+ L.   7         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('Parser', 'HeaderParser', 'BytesParser', 'BytesHeaderParser', 'FeedParser', 'BytesFeedParser')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101223.pyc -- 
+# decompile failed
+
+# file test/101223.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_STR                 'A parser of RFC 2822 and MIME email messages.'
+                2  STORE_NAME               __doc__
+
+ L.   7         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('Parser', 'HeaderParser', 'BytesParser', 'BytesHeaderParser', 'FeedParser', 'BytesFeedParser')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  10        12  LOAD_CONST               0
+               14  LOAD_CONST               ('StringIO', 'TextIOWrapper')
+               16  IMPORT_NAME              io
+               18  IMPORT_FROM              StringIO
+               20  STORE_NAME               StringIO
+               22  IMPORT_FROM              TextIOWrapper
+               24  STORE_NAME               TextIOWrapper
+               26  POP_TOP          
+
+ L.  12        28  LOAD_CONST               0
+               30  LOAD_CONST               ('FeedParser', 'BytesFeedParser')
+               32  IMPORT_NAME_ATTR         email.feedparser
+               34  IMPORT_FROM              FeedParser
+               36  STORE_NAME               FeedParser
+               38  IMPORT_FROM              BytesFeedParser
+               40  STORE_NAME               BytesFeedParser
+               42  POP_TOP          
+
+ L.  13        44  LOAD_CONST               0
+               46  LOAD_CONST               ('compat32',)
+               48  IMPORT_NAME_ATTR         email._policybase
+               50  IMPORT_FROM              compat32
+               52  STORE_NAME               compat32
+               54  POP_TOP          
+
+ L.  16        56  LOAD_BUILD_CLASS 
+               58  LOAD_CODE                <code_object Parser>
+               60  LOAD_STR                 'Parser'
+               62  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               64  LOAD_STR                 'Parser'
+               66  CALL_FUNCTION_2       2  ''
+               68  STORE_NAME               Parser
+
+ L.  71        70  LOAD_BUILD_CLASS 
+               72  LOAD_CODE                <code_object HeaderParser>
+               74  LOAD_STR                 'HeaderParser'
+               76  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               78  LOAD_STR                 'HeaderParser'
+               80  LOAD_NAME                Parser
+               82  CALL_FUNCTION_3       3  ''
+               84  STORE_NAME               HeaderParser
+
+ L.  79        86  LOAD_BUILD_CLASS 
+               88  LOAD_CODE                <code_object BytesParser>
+               90  LOAD_STR                 'BytesParser'
+               92  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               94  LOAD_STR                 'BytesParser'
+               96  CALL_FUNCTION_2       2  ''
+               98  STORE_NAME               BytesParser
+
+ L. 126       100  LOAD_BUILD_CLASS 
+              102  LOAD_CODE                <code_object BytesHeaderParser>
+              104  LOAD_STR                 'BytesHeaderParser'
+              106  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              108  LOAD_STR                 'BytesHeaderParser'
+              110  LOAD_NAME                BytesParser
+              112  CALL_FUNCTION_3       3  ''
+              114  STORE_NAME               BytesHeaderParser
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

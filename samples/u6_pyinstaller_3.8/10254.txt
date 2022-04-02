@@ -1,0 +1,25 @@
+Instruction context:
+   
+ L. 278       196  DUP_TOP          
+                 198  LOAD_GLOBAL              IndexError
+                 200  COMPARE_OP               exception-match
+                 202  POP_JUMP_IF_FALSE   216  'to 216'
+                 204  POP_TOP          
+->               206  POP_TOP          
+                 208  POP_TOP          
+Instruction context:
+   
+ L. 303        80  POP_BLOCK        
+->                82  POP_EXCEPT       
+                  84  LOAD_CONST               None
+                  86  RETURN_VALUE     
+                88_0  COME_FROM            58  '58'
+                  88  POP_BLOCK        
+                  90  JUMP_FORWARD        112  'to 112'
+                92_0  COME_FROM_FINALLY    38  '38'
+
+../test/10254.pyc -- 
+# decompile failed
+
+# file ../test/10254.pyc
+# Deparsing stopped due to parse error

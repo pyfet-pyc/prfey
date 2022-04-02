@@ -1,0 +1,242 @@
+
+# file test/103657.pyc
+# --- This code section failed: ---
+
+ L.   3         0  LOAD_STR                 'Base16, Base32, Base64 (RFC 3548), Base85 and Ascii85 data encodings'
+                2  STORE_NAME               __doc__
+
+ L.   9         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              re
+               10  STORE_NAME               re
+
+ L.  10        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              struct
+               18  STORE_NAME               struct
+
+ L.  11        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              binascii
+               26  STORE_NAME               binascii
+
+ L.  14        28  BUILD_LIST_0          0 
+               30  LOAD_CONST               ('encode', 'decode', 'encodebytes', 'decodebytes', 'b64encode', 'b64decode', 'b32encode', 'b32decode', 'b16encode', 'b16decode', 'b85encode', 'b85decode', 'a85encode', 'a85decode', 'standard_b64encode', 'standard_b64decode', 'urlsafe_b64encode', 'urlsafe_b64decode')
+               32  CALL_FINALLY         35  'to 35'
+               34  STORE_NAME               __all__
+
+ L.  32        36  LOAD_NAME                bytes
+               38  LOAD_NAME                bytearray
+               40  BUILD_TUPLE_2         2 
+               42  STORE_NAME               bytes_types
+
+ L.  34        44  LOAD_CODE                <code_object _bytes_from_decode_data>
+               46  LOAD_STR                 '_bytes_from_decode_data'
+               48  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               50  STORE_NAME               _bytes_from_decode_data
+
+ L.  51        52  LOAD_CONST               (None,)
+               54  LOAD_CODE                <code_object b64encode>
+               56  LOAD_STR                 'b64encode'
+               58  MAKE_FUNCTION_1          'default'
+               60  STORE_NAME               b64encode
+
+ L.  65        62  LOAD_CONST               (None, False)
+               64  LOAD_CODE                <code_object b64decode>
+               66  LOAD_STR                 'b64decode'
+               68  MAKE_FUNCTION_1          'default'
+               70  STORE_NAME               b64decode
+
+ L.  90        72  LOAD_CODE                <code_object standard_b64encode>
+               74  LOAD_STR                 'standard_b64encode'
+               76  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               78  STORE_NAME               standard_b64encode
+
+ L.  97        80  LOAD_CODE                <code_object standard_b64decode>
+               82  LOAD_STR                 'standard_b64decode'
+               84  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               86  STORE_NAME               standard_b64decode
+
+ L. 108        88  LOAD_NAME                bytes
+               90  LOAD_METHOD              maketrans
+               92  LOAD_CONST               b'+/'
+               94  LOAD_CONST               b'-_'
+               96  CALL_METHOD_2         2  ''
+               98  STORE_NAME               _urlsafe_encode_translation
+
+ L. 109       100  LOAD_NAME                bytes
+              102  LOAD_METHOD              maketrans
+              104  LOAD_CONST               b'-_'
+              106  LOAD_CONST               b'+/'
+              108  CALL_METHOD_2         2  ''
+              110  STORE_NAME               _urlsafe_decode_translation
+
+ L. 111       112  LOAD_CODE                <code_object urlsafe_b64encode>
+              114  LOAD_STR                 'urlsafe_b64encode'
+              116  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              118  STORE_NAME               urlsafe_b64encode
+
+ L. 120       120  LOAD_CODE                <code_object urlsafe_b64decode>
+              122  LOAD_STR                 'urlsafe_b64decode'
+              124  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              126  STORE_NAME               urlsafe_b64decode
+
+ L. 138       128  LOAD_CONST               b'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567'
+              130  STORE_NAME               _b32alphabet
+
+ L. 139       132  LOAD_CONST               None
+              134  STORE_GLOBAL             _b32tab2
+
+ L. 140       136  LOAD_CONST               None
+              138  STORE_GLOBAL             _b32rev
+
+ L. 142       140  LOAD_CODE                <code_object b32encode>
+              142  LOAD_STR                 'b32encode'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  STORE_NAME               b32encode
+
+ L. 180       148  LOAD_CONST               (False, None)
+              150  LOAD_CODE                <code_object b32decode>
+              152  LOAD_STR                 'b32decode'
+              154  MAKE_FUNCTION_1          'default'
+              156  STORE_NAME               b32decode
+
+ L. 247       158  LOAD_CODE                <code_object b16encode>
+              160  LOAD_STR                 'b16encode'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  STORE_NAME               b16encode
+
+ L. 253       166  LOAD_CONST               (False,)
+              168  LOAD_CODE                <code_object b16decode>
+              170  LOAD_STR                 'b16decode'
+              172  MAKE_FUNCTION_1          'default'
+              174  STORE_NAME               b16decode
+
+ L. 274       176  LOAD_CONST               None
+              178  STORE_GLOBAL             _a85chars
+
+ L. 275       180  LOAD_CONST               None
+              182  STORE_GLOBAL             _a85chars2
+
+ L. 276       184  LOAD_CONST               b'<~'
+              186  STORE_NAME               _A85START
+
+ L. 277       188  LOAD_CONST               b'~>'
+              190  STORE_NAME               _A85END
+
+ L. 279       192  LOAD_CONST               (False, False, False)
+              194  LOAD_CODE                <code_object _85encode>
+              196  LOAD_STR                 '_85encode'
+              198  MAKE_FUNCTION_1          'default'
+              200  STORE_NAME               _85encode
+
+ L. 303       202  LOAD_CONST               False
+              204  LOAD_CONST               0
+              206  LOAD_CONST               False
+              208  LOAD_CONST               False
+              210  LOAD_CONST               ('foldspaces', 'wrapcol', 'pad', 'adobe')
+              212  BUILD_CONST_KEY_MAP_4     4 
+              214  LOAD_CODE                <code_object a85encode>
+              216  LOAD_STR                 'a85encode'
+              218  MAKE_FUNCTION_2          'keyword-only'
+              220  STORE_NAME               a85encode
+
+ L. 344       222  LOAD_CONST               False
+              224  LOAD_CONST               False
+              226  LOAD_CONST               b' \t\n\r\x0b'
+              228  LOAD_CONST               ('foldspaces', 'adobe', 'ignorechars')
+              230  BUILD_CONST_KEY_MAP_3     3 
+              232  LOAD_CODE                <code_object a85decode>
+              234  LOAD_STR                 'a85decode'
+              236  MAKE_FUNCTION_2          'keyword-only'
+              238  STORE_NAME               a85decode
+
+ L. 416       240  LOAD_CONST               b'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_`{|}~'
+              242  STORE_NAME               _b85alphabet
+
+ L. 418       244  LOAD_CONST               None
+              246  STORE_GLOBAL             _b85chars
+
+ L. 419       248  LOAD_CONST               None
+              250  STORE_GLOBAL             _b85chars2
+
+ L. 420       252  LOAD_CONST               None
+              254  STORE_GLOBAL             _b85dec
+
+ L. 422       256  LOAD_CONST               (False,)
+              258  LOAD_CODE                <code_object b85encode>
+              260  LOAD_STR                 'b85encode'
+              262  MAKE_FUNCTION_1          'default'
+              264  STORE_NAME               b85encode
+
+ L. 436       266  LOAD_CODE                <code_object b85decode>
+              268  LOAD_STR                 'b85decode'
+              270  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              272  STORE_NAME               b85decode
+
+ L. 481       274  LOAD_CONST               76
+              276  STORE_NAME               MAXLINESIZE
+
+ L. 482       278  LOAD_NAME                MAXLINESIZE
+              280  LOAD_CONST               4
+              282  BINARY_FLOOR_DIVIDE
+              284  LOAD_CONST               3
+              286  BINARY_MULTIPLY  
+              288  STORE_NAME               MAXBINSIZE
+
+ L. 484       290  LOAD_CODE                <code_object encode>
+              292  LOAD_STR                 'encode'
+              294  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              296  STORE_NAME               encode
+
+ L. 499       298  LOAD_CODE                <code_object decode>
+              300  LOAD_STR                 'decode'
+              302  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              304  STORE_NAME               decode
+
+ L. 508       306  LOAD_CODE                <code_object _input_type_check>
+              308  LOAD_STR                 '_input_type_check'
+              310  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              312  STORE_NAME               _input_type_check
+
+ L. 524       314  LOAD_CODE                <code_object encodebytes>
+              316  LOAD_STR                 'encodebytes'
+              318  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              320  STORE_NAME               encodebytes
+
+ L. 535       322  LOAD_CODE                <code_object decodebytes>
+              324  LOAD_STR                 'decodebytes'
+              326  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              328  STORE_NAME               decodebytes
+
+ L. 542       330  LOAD_CODE                <code_object main>
+              332  LOAD_STR                 'main'
+              334  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              336  STORE_NAME               main
+
+ L. 568       338  LOAD_CODE                <code_object test>
+              340  LOAD_STR                 'test'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  STORE_NAME               test
+
+ L. 578       346  LOAD_NAME                __name__
+              348  LOAD_STR                 '__main__'
+              350  COMPARE_OP               ==
+          352_354  POP_JUMP_IF_FALSE   362  'to 362'
+
+ L. 579       356  LOAD_NAME                main
+              358  CALL_FUNCTION_0       0  ''
+              360  POP_TOP          
+            362_0  COME_FROM           352  '352'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 32
+
+Instruction context:
+   
+ L.  14        28  BUILD_LIST_0          0 
+                  30  LOAD_CONST               ('encode', 'decode', 'encodebytes', 'decodebytes', 'b64encode', 'b64decode', 'b32encode', 'b32decode', 'b16encode', 'b16decode', 'b85encode', 'b85decode', 'a85encode', 'a85decode', 'standard_b64encode', 'standard_b64decode', 'urlsafe_b64encode', 'urlsafe_b64decode')
+->                32  CALL_FINALLY         35  'to 35'
+                  34  STORE_NAME               __all__
+
+test/103657.pyc -- 
+# decompile failed

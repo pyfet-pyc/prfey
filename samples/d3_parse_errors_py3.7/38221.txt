@@ -1,0 +1,23 @@
+Instruction context:
+   
+ L. 177       554  LOAD_FAST                'key_data'
+                 556  LOAD_CONST               32
+                 558  LOAD_CONST               None
+                 560  BUILD_SLICE_2         2 
+                 562  BINARY_SUBSCR    
+                 564  COMPARE_OP               ==
+             566_568  POP_JUMP_IF_TRUE    578  'to 578'
+                 570  JUMP_FORWARD        574  'to 574'
+               572_0  COME_FROM           550  '550'
+               572_1  COME_FROM           534  '534'
+->               572  POP_TOP          
+               574_0  COME_FROM           570  '570'
+                 574  LOAD_GLOBAL              AssertionError
+                 576  RAISE_VARARGS_1       1  'exception instance'
+               578_0  COME_FROM           566  '566'
+
+../test/38221.pyc -- 
+# decompile failed
+
+# file ../test/38221.pyc
+# Deparsing stopped due to parse error

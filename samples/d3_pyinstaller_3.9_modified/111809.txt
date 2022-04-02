@@ -1,0 +1,303 @@
+
+# file test/111809.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               1
+                2  LOAD_CONST               ('model',)
+                4  IMPORT_NAME              
+                6  IMPORT_FROM              model
+                8  STORE_NAME               model
+               10  POP_TOP          
+
+ L.   2        12  LOAD_CONST               1
+               14  LOAD_CONST               ('COMMON_TYPES', 'resolve_common_type')
+               16  IMPORT_NAME              commontypes
+               18  IMPORT_FROM              COMMON_TYPES
+               20  STORE_NAME               COMMON_TYPES
+               22  IMPORT_FROM              resolve_common_type
+               24  STORE_NAME               resolve_common_type
+               26  POP_TOP          
+
+ L.   3        28  LOAD_CONST               1
+               30  LOAD_CONST               ('FFIError', 'CDefError')
+               32  IMPORT_NAME              error
+               34  IMPORT_FROM              FFIError
+               36  STORE_NAME               FFIError
+               38  IMPORT_FROM              CDefError
+               40  STORE_NAME               CDefError
+               42  POP_TOP          
+
+ L.   4        44  SETUP_FINALLY        62  'to 62'
+
+ L.   5        46  LOAD_CONST               1
+               48  LOAD_CONST               ('_pycparser',)
+               50  IMPORT_NAME              
+               52  IMPORT_FROM              _pycparser
+               54  STORE_NAME               pycparser
+               56  POP_TOP          
+               58  POP_BLOCK        
+               60  JUMP_FORWARD         88  'to 88'
+             62_0  COME_FROM_FINALLY    44  '44'
+
+ L.   6        62  DUP_TOP          
+               64  LOAD_NAME                ImportError
+               66  <121>                86  ''
+               68  POP_TOP          
+               70  POP_TOP          
+               72  POP_TOP          
+
+ L.   7        74  LOAD_CONST               0
+               76  LOAD_CONST               None
+               78  IMPORT_NAME              pycparser
+               80  STORE_NAME               pycparser
+               82  POP_EXCEPT       
+               84  JUMP_FORWARD         88  'to 88'
+               86  <48>             
+             88_0  COME_FROM            84  '84'
+             88_1  COME_FROM            60  '60'
+
+ L.   8        88  LOAD_CONST               0
+               90  LOAD_CONST               None
+               92  IMPORT_NAME              weakref
+               94  STORE_NAME               weakref
+               96  LOAD_CONST               0
+               98  LOAD_CONST               None
+              100  IMPORT_NAME              re
+              102  STORE_NAME               re
+              104  LOAD_CONST               0
+              106  LOAD_CONST               None
+              108  IMPORT_NAME              sys
+              110  STORE_NAME               sys
+
+ L.  10       112  SETUP_FINALLY       154  'to 154'
+
+ L.  11       114  LOAD_NAME                sys
+              116  LOAD_ATTR                version_info
+              118  LOAD_CONST               (3,)
+              120  COMPARE_OP               <
+              122  POP_JUMP_IF_FALSE   134  'to 134'
+
+ L.  12       124  LOAD_CONST               0
+              126  LOAD_CONST               None
+              128  IMPORT_NAME              thread
+              130  STORE_NAME               _thread
+              132  JUMP_FORWARD        142  'to 142'
+            134_0  COME_FROM           122  '122'
+
+ L.  14       134  LOAD_CONST               0
+              136  LOAD_CONST               None
+              138  IMPORT_NAME              _thread
+              140  STORE_NAME               _thread
+            142_0  COME_FROM           132  '132'
+
+ L.  15       142  LOAD_NAME                _thread
+              144  LOAD_METHOD              allocate_lock
+              146  CALL_METHOD_0         0  ''
+              148  STORE_NAME               lock
+              150  POP_BLOCK        
+              152  JUMP_FORWARD        176  'to 176'
+            154_0  COME_FROM_FINALLY   112  '112'
+
+ L.  16       154  DUP_TOP          
+              156  LOAD_NAME                ImportError
+              158  <121>               174  ''
+              160  POP_TOP          
+              162  POP_TOP          
+              164  POP_TOP          
+
+ L.  17       166  LOAD_CONST               None
+              168  STORE_NAME               lock
+              170  POP_EXCEPT       
+              172  JUMP_FORWARD        176  'to 176'
+              174  <48>             
+            176_0  COME_FROM           172  '172'
+            176_1  COME_FROM           152  '152'
+
+ L.  19       176  LOAD_CODE                <code_object _workaround_for_static_import_finders>
+              178  LOAD_STR                 '_workaround_for_static_import_finders'
+              180  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              182  STORE_NAME               _workaround_for_static_import_finders
+
+ L.  26       184  LOAD_STR                 '<cdef source string>'
+              186  STORE_NAME               CDEF_SOURCE_STRING
+
+ L.  27       188  LOAD_NAME                re
+              190  LOAD_METHOD              compile
+              192  LOAD_STR                 '/\\*.*?\\*/|//([^\\n\\\\]|\\\\.)*?$'
+
+ L.  28       194  LOAD_NAME                re
+              196  LOAD_ATTR                DOTALL
+              198  LOAD_NAME                re
+              200  LOAD_ATTR                MULTILINE
+              202  BINARY_OR        
+
+ L.  27       204  CALL_METHOD_2         2  ''
+              206  STORE_NAME               _r_comment
+
+ L.  29       208  LOAD_NAME                re
+              210  LOAD_METHOD              compile
+              212  LOAD_STR                 '^\\s*#\\s*define\\s+([A-Za-z_][A-Za-z_0-9]*)\\b((?:[^\\n\\\\]|\\\\.)*?)$'
+
+ L.  31       214  LOAD_NAME                re
+              216  LOAD_ATTR                DOTALL
+              218  LOAD_NAME                re
+              220  LOAD_ATTR                MULTILINE
+              222  BINARY_OR        
+
+ L.  29       224  CALL_METHOD_2         2  ''
+              226  STORE_NAME               _r_define
+
+ L.  32       228  LOAD_NAME                re
+              230  LOAD_METHOD              compile
+              232  LOAD_STR                 '^[ \\t]*#[ \\t]*(?:line|\\d+)\\b.*$'
+              234  LOAD_NAME                re
+              236  LOAD_ATTR                MULTILINE
+              238  CALL_METHOD_2         2  ''
+              240  STORE_NAME               _r_line_directive
+
+ L.  33       242  LOAD_NAME                re
+              244  LOAD_METHOD              compile
+              246  LOAD_STR                 '=\\s*\\.\\.\\.\\s*[,}]|\\.\\.\\.\\s*\\}'
+              248  CALL_METHOD_1         1  ''
+              250  STORE_NAME               _r_partial_enum
+
+ L.  34       252  LOAD_NAME                re
+              254  LOAD_METHOD              compile
+              256  LOAD_STR                 '__dotdotdot\\d+__$'
+              258  CALL_METHOD_1         1  ''
+              260  STORE_NAME               _r_enum_dotdotdot
+
+ L.  35       262  LOAD_NAME                re
+              264  LOAD_METHOD              compile
+              266  LOAD_STR                 '\\[\\s*\\.\\.\\.\\s*\\]'
+              268  CALL_METHOD_1         1  ''
+              270  STORE_NAME               _r_partial_array
+
+ L.  36       272  LOAD_NAME                re
+              274  LOAD_METHOD              compile
+              276  LOAD_STR                 '\\w+|\\S'
+              278  CALL_METHOD_1         1  ''
+              280  STORE_NAME               _r_words
+
+ L.  37       282  LOAD_CONST               None
+              284  STORE_GLOBAL             _parser_cache
+
+ L.  38       286  LOAD_NAME                re
+              288  LOAD_METHOD              compile
+              290  LOAD_STR                 '-?0?x?[0-9a-f]+[lu]*$'
+              292  LOAD_NAME                re
+              294  LOAD_ATTR                IGNORECASE
+              296  CALL_METHOD_2         2  ''
+              298  STORE_NAME               _r_int_literal
+
+ L.  39       300  LOAD_NAME                re
+              302  LOAD_METHOD              compile
+              304  LOAD_STR                 '\\b(__stdcall|WINAPI)\\b'
+              306  CALL_METHOD_1         1  ''
+              308  STORE_NAME               _r_stdcall1
+
+ L.  40       310  LOAD_NAME                re
+              312  LOAD_METHOD              compile
+              314  LOAD_STR                 '[(]\\s*(__stdcall|WINAPI)\\b'
+              316  CALL_METHOD_1         1  ''
+              318  STORE_NAME               _r_stdcall2
+
+ L.  41       320  LOAD_NAME                re
+              322  LOAD_METHOD              compile
+              324  LOAD_STR                 '\\b__cdecl\\b'
+              326  CALL_METHOD_1         1  ''
+              328  STORE_NAME               _r_cdecl
+
+ L.  42       330  LOAD_NAME                re
+              332  LOAD_METHOD              compile
+              334  LOAD_STR                 '\\bextern\\s*"(Python|Python\\s*\\+\\s*C|C\\s*\\+\\s*Python)"\\s*.'
+              336  CALL_METHOD_1         1  ''
+              338  STORE_NAME               _r_extern_python
+
+ L.  44       340  LOAD_NAME                re
+              342  LOAD_METHOD              compile
+
+ L.  45       344  LOAD_STR                 '[*]\\s*((const|volatile|restrict)\\b\\s*)+'
+
+ L.  44       346  CALL_METHOD_1         1  ''
+              348  STORE_NAME               _r_star_const_space
+
+ L.  46       350  LOAD_NAME                re
+              352  LOAD_METHOD              compile
+              354  LOAD_STR                 '(\\b(int|long|short|signed|unsigned|char)\\s*)+\\.\\.\\.'
+              356  CALL_METHOD_1         1  ''
+              358  STORE_NAME               _r_int_dotdotdot
+
+ L.  48       360  LOAD_NAME                re
+              362  LOAD_METHOD              compile
+              364  LOAD_STR                 '\\b(double|float)\\s*\\.\\.\\.'
+              366  CALL_METHOD_1         1  ''
+              368  STORE_NAME               _r_float_dotdotdot
+
+ L.  50       370  LOAD_CODE                <code_object _get_parser>
+              372  LOAD_STR                 '_get_parser'
+              374  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              376  STORE_NAME               _get_parser
+
+ L.  56       378  LOAD_CODE                <code_object _workaround_for_old_pycparser>
+              380  LOAD_STR                 '_workaround_for_old_pycparser'
+              382  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              384  STORE_NAME               _workaround_for_old_pycparser
+
+ L.  98       386  LOAD_CODE                <code_object _preprocess_extern_python>
+              388  LOAD_STR                 '_preprocess_extern_python'
+              390  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              392  STORE_NAME               _preprocess_extern_python
+
+ L. 148       394  LOAD_CODE                <code_object _warn_for_string_literal>
+              396  LOAD_STR                 '_warn_for_string_literal'
+              398  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              400  STORE_NAME               _warn_for_string_literal
+
+ L. 160       402  LOAD_CODE                <code_object _warn_for_non_extern_non_static_global_variable>
+              404  LOAD_STR                 '_warn_for_non_extern_non_static_global_variable'
+              406  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              408  STORE_NAME               _warn_for_non_extern_non_static_global_variable
+
+ L. 167       410  LOAD_CODE                <code_object _remove_line_directives>
+              412  LOAD_STR                 '_remove_line_directives'
+              414  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              416  STORE_NAME               _remove_line_directives
+
+ L. 180       418  LOAD_CODE                <code_object _put_back_line_directives>
+              420  LOAD_STR                 '_put_back_line_directives'
+              422  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              424  STORE_NAME               _put_back_line_directives
+
+ L. 189       426  LOAD_CODE                <code_object _preprocess>
+              428  LOAD_STR                 '_preprocess'
+              430  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              432  STORE_NAME               _preprocess
+
+ L. 255       434  LOAD_CODE                <code_object _common_type_names>
+              436  LOAD_STR                 '_common_type_names'
+              438  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              440  STORE_NAME               _common_type_names
+
+ L. 295       442  LOAD_BUILD_CLASS 
+              444  LOAD_CODE                <code_object Parser>
+              446  LOAD_STR                 'Parser'
+              448  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              450  LOAD_STR                 'Parser'
+              452  LOAD_NAME                object
+              454  CALL_FUNCTION_3       3  ''
+              456  STORE_NAME               Parser
+
+Parse error at or near `<121>' instruction at offset 66
+
+Instruction context:
+   
+ L.   6        62  DUP_TOP          
+                  64  LOAD_NAME                ImportError
+->                66  <121>                86  ''
+                  68  POP_TOP          
+                  70  POP_TOP          
+                  72  POP_TOP          
+
+test/111809.pyc -- 
+# decompile failed

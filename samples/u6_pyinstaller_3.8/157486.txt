@@ -1,0 +1,40 @@
+Instruction context:
+   
+ L. 185        62  DUP_TOP          
+                  64  LOAD_GLOBAL              KeyError
+                  66  COMPARE_OP               exception-match
+                  68  POP_JUMP_IF_FALSE    82  'to 82'
+                  70  POP_TOP          
+->                72  POP_TOP          
+                  74  POP_TOP          
+Instruction context:
+   
+ L. 340        82  DUP_TOP          
+                  84  LOAD_GLOBAL              ImportError
+                  86  COMPARE_OP               exception-match
+                  88  POP_JUMP_IF_FALSE   100  'to 100'
+                  90  POP_TOP          
+->                92  POP_TOP          
+                  94  POP_TOP          
+Instruction context:
+   
+ L. 496       918  DUP_TOP          
+                 920  LOAD_GLOBAL              KeyError
+                 922  COMPARE_OP               exception-match
+             924_926  POP_JUMP_IF_FALSE   938  'to 938'
+                 928  POP_TOP          
+->               930  POP_TOP          
+                 932  POP_TOP          
+Instruction context:
+   
+ L. 591       222  POP_EXCEPT       
+                 224  JUMP_BACK            96  'to 96'
+->               226  POP_EXCEPT       
+                 228  JUMP_FORWARD        256  'to 256'
+               230_0  COME_FROM           214  '214'
+
+../test/157486.pyc -- 
+# decompile failed
+
+# file ../test/157486.pyc
+# Deparsing stopped due to parse error

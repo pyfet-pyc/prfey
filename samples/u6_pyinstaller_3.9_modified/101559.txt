@@ -1,0 +1,172 @@
+Instruction context:
+   
+ L.   6        26  DUP_TOP          
+                  28  LOAD_NAME                ImportError
+->                30  <121>                46  ''
+                  32  POP_TOP          
+                  34  POP_TOP          
+                  36  POP_TOP          
+
+test/101559.pyc -- 
+# decompile failed
+
+# file test/101559.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 ' Consolidation of numpy support utilities. '
+                2  STORE_NAME               __doc__
+
+ L.   2         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.   4        12  SETUP_FINALLY        26  'to 26'
+
+ L.   5        14  LOAD_CONST               0
+               16  LOAD_CONST               None
+               18  IMPORT_NAME              numpy
+               20  STORE_NAME               numpy
+               22  POP_BLOCK        
+               24  JUMP_FORWARD         48  'to 48'
+             26_0  COME_FROM_FINALLY    12  '12'
+
+ L.   6        26  DUP_TOP          
+               28  LOAD_NAME                ImportError
+               30  <121>                46  ''
+               32  POP_TOP          
+               34  POP_TOP          
+               36  POP_TOP          
+
+ L.   7        38  LOAD_CONST               None
+               40  STORE_NAME               numpy
+               42  POP_EXCEPT       
+               44  JUMP_FORWARD         48  'to 48'
+               46  <48>             
+             48_0  COME_FROM            44  '44'
+             48_1  COME_FROM            24  '24'
+
+ L.  10        48  LOAD_NAME                numpy
+               50  LOAD_CONST               None
+               52  <117>                 1  ''
+               54  STORE_NAME               HAVE_NUMPY
+
+ L.  12        56  LOAD_NAME                sys
+               58  LOAD_ATTR                maxsize
+               60  LOAD_CONST               4294967296
+               62  COMPARE_OP               >
+               64  STORE_NAME               is_64bits
+
+ L.  15        66  LOAD_CODE                <code_object _make_variant_dtype>
+               68  LOAD_STR                 '_make_variant_dtype'
+               70  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               72  STORE_NAME               _make_variant_dtype
+
+ L.  59        74  LOAD_CODE                <code_object isndarray>
+               76  LOAD_STR                 'isndarray'
+               78  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               80  STORE_NAME               isndarray
+
+ L.  70        82  LOAD_CODE                <code_object isdatetime64>
+               84  LOAD_STR                 'isdatetime64'
+               86  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               88  STORE_NAME               isdatetime64
+
+ L.  81        90  LOAD_CODE                <code_object _check_ctypeslib_typecodes>
+               92  LOAD_STR                 '_check_ctypeslib_typecodes'
+               94  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               96  STORE_NAME               _check_ctypeslib_typecodes
+
+ L. 101        98  LOAD_CONST               None
+              100  STORE_NAME               com_null_date64
+
+ L. 102       102  LOAD_CONST               None
+              104  STORE_NAME               datetime64
+
+ L. 103       106  LOAD_CONST               None
+              108  STORE_NAME               VARIANT_dtype
+
+ L. 104       110  BUILD_MAP_0           0 
+              112  STORE_NAME               typecodes
+
+ L. 106       114  LOAD_NAME                HAVE_NUMPY
+              116  POP_JUMP_IF_FALSE   224  'to 224'
+
+ L. 107       118  LOAD_NAME                _check_ctypeslib_typecodes
+              120  CALL_FUNCTION_0       0  ''
+              122  STORE_NAME               typecodes
+
+ L. 110       124  SETUP_FINALLY       136  'to 136'
+
+ L. 111       126  LOAD_NAME                _make_variant_dtype
+              128  CALL_FUNCTION_0       0  ''
+              130  STORE_NAME               VARIANT_dtype
+              132  POP_BLOCK        
+              134  JUMP_FORWARD        154  'to 154'
+            136_0  COME_FROM_FINALLY   124  '124'
+
+ L. 112       136  DUP_TOP          
+              138  LOAD_NAME                ValueError
+              140  <121>               152  ''
+              142  POP_TOP          
+              144  POP_TOP          
+              146  POP_TOP          
+
+ L. 113       148  POP_EXCEPT       
+              150  JUMP_FORWARD        154  'to 154'
+              152  <48>             
+            154_0  COME_FROM           150  '150'
+            154_1  COME_FROM           134  '134'
+
+ L. 116       154  SETUP_FINALLY       172  'to 172'
+
+ L. 117       156  LOAD_CONST               0
+              158  LOAD_CONST               ('datetime64',)
+              160  IMPORT_NAME              numpy
+              162  IMPORT_FROM              datetime64
+              164  STORE_NAME               datetime64
+              166  POP_TOP          
+              168  POP_BLOCK        
+              170  JUMP_FORWARD        190  'to 190'
+            172_0  COME_FROM_FINALLY   154  '154'
+
+ L. 118       172  DUP_TOP          
+              174  LOAD_NAME                ImportError
+              176  <121>               188  ''
+              178  POP_TOP          
+              180  POP_TOP          
+              182  POP_TOP          
+
+ L. 119       184  POP_EXCEPT       
+              186  JUMP_FORWARD        224  'to 224'
+              188  <48>             
+            190_0  COME_FROM           170  '170'
+
+ L. 121       190  SETUP_FINALLY       206  'to 206'
+
+ L. 123       192  LOAD_NAME                datetime64
+              194  LOAD_STR                 '1899-12-30T00:00:00'
+              196  LOAD_STR                 'ns'
+              198  CALL_FUNCTION_2       2  ''
+              200  STORE_NAME               com_null_date64
+              202  POP_BLOCK        
+              204  JUMP_FORWARD        224  'to 224'
+            206_0  COME_FROM_FINALLY   190  '190'
+
+ L. 124       206  DUP_TOP          
+              208  LOAD_NAME                TypeError
+              210  <121>               222  ''
+              212  POP_TOP          
+              214  POP_TOP          
+              216  POP_TOP          
+
+ L. 125       218  POP_EXCEPT       
+              220  JUMP_FORWARD        224  'to 224'
+              222  <48>             
+            224_0  COME_FROM           220  '220'
+            224_1  COME_FROM           204  '204'
+            224_2  COME_FROM           186  '186'
+            224_3  COME_FROM           116  '116'
+
+Parse error at or near `<121>' instruction at offset 30
+

@@ -1,0 +1,35 @@
+Instruction context:
+   
+ L. 112       172  LOAD_FAST                'index'
+                 174  ROT_FOUR         
+->               176  POP_BLOCK        
+                 178  POP_EXCEPT       
+                 180  CALL_FINALLY        184  'to 184'
+                 182  RETURN_VALUE     
+               184_0  COME_FROM           180  '180'
+               184_1  COME_FROM_FINALLY    52  '52'
+                 184  LOAD_CONST               None
+                 186  STORE_FAST               'e'
+                 188  DELETE_FAST              'e'
+                 190  END_FINALLY      
+                 192  POP_EXCEPT       
+                 194  JUMP_ABSOLUTE       212  'to 212'
+               196_0  COME_FROM            44  '44'
+                 196  END_FINALLY      
+                 198  JUMP_FORWARD        212  'to 212'
+               200_0  COME_FROM            22  '22'
+Instruction context:
+   
+ L. 213        60  POP_BLOCK        
+                  62  POP_TOP          
+->                64  JUMP_ABSOLUTE       104  'to 104'
+                66_0  COME_FROM            58  '58'
+                  66  POP_BLOCK        
+                  68  JUMP_BACK            28  'to 28'
+                70_0  COME_FROM_FINALLY    32  '32'
+
+../test/154293.pyc -- 
+# decompile failed
+
+# file ../test/154293.pyc
+# Deparsing stopped due to parse error

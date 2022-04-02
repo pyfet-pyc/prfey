@@ -1,0 +1,24 @@
+Instruction context:
+   
+ L. 244       130  LOAD_GLOBAL              EMPTYSTRING
+                 132  LOAD_METHOD              join
+                 134  LOAD_FAST                'wslist'
+                 136  CALL_METHOD_1         1  ''
+->               138  RETURN_VALUE     
+Instruction context:
+   
+ L. 445       200  LOAD_FAST                'self'
+                 202  DUP_TOP          
+                 204  LOAD_ATTR                pos
+                 206  LOAD_CONST               1
+                 208  INPLACE_ADD      
+                 210  ROT_TWO          
+                 212  STORE_ATTR               pos
+                 214  JUMP_BACK            44  'to 44'
+->             216_0  COME_FROM            58  '58'
+
+test/253.pyc -- 
+# decompile failed
+
+# file test/253.pyc
+# Deparsing stopped due to parse error

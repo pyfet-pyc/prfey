@@ -1,0 +1,40 @@
+Instruction context:
+   
+ L.  90        20  LOAD_GLOBAL              ElementTree
+                  22  LOAD_METHOD              parse
+                  24  LOAD_FAST                'file'
+                  26  CALL_METHOD_1         1  ''
+                  28  LOAD_METHOD              getroot
+                  30  CALL_METHOD_0         0  ''
+                  32  STORE_FAST               'data'
+                  34  POP_BLOCK        
+                  36  LOAD_CONST               None
+->                38  DUP_TOP          
+                  40  DUP_TOP          
+                  42  CALL_FUNCTION_3       3  ''
+                  44  POP_TOP          
+                  46  JUMP_FORWARD        128  'to 128'
+                48_0  COME_FROM_WITH       16  '16'
+                  48  <49>             
+                  50  POP_JUMP_IF_TRUE     54  'to 54'
+                  52  <48>             
+                54_0  COME_FROM            50  '50'
+                  54  POP_TOP          
+                  56  POP_TOP          
+                  58  POP_TOP          
+                  60  POP_EXCEPT       
+                  62  POP_TOP          
+                  64  JUMP_FORWARD        128  'to 128'
+                66_0  COME_FROM             6  '6'
+Instruction context:
+   
+ L. 143        82  LOAD_FAST                'href'
+                  84  LOAD_FAST                '_parent_hrefs'
+->                86  <118>                 0  ''
+                  88  POP_JUMP_IF_FALSE   102  'to 102'
+
+test/101360.pyc -- 
+# decompile failed
+
+# file test/101360.pyc
+# Deparsing stopped due to parse error

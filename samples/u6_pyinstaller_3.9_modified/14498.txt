@@ -1,0 +1,143 @@
+Instruction context:
+   
+ L.   4        34  DUP_TOP          
+                  36  LOAD_NAME                ImportError
+->                38  <121>                66  ''
+                  40  POP_TOP          
+                  42  POP_TOP          
+                  44  POP_TOP          
+
+test/14498.pyc -- 
+# decompile failed
+
+# file test/14498.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.   2        12  SETUP_FINALLY        34  'to 34'
+
+ L.   3        14  LOAD_CONST               0
+               16  LOAD_CONST               ('Mapping', 'MutableMapping')
+               18  IMPORT_NAME_ATTR         collections.abc
+               20  IMPORT_FROM              Mapping
+               22  STORE_NAME               Mapping
+               24  IMPORT_FROM              MutableMapping
+               26  STORE_NAME               MutableMapping
+               28  POP_TOP          
+               30  POP_BLOCK        
+               32  JUMP_FORWARD         68  'to 68'
+             34_0  COME_FROM_FINALLY    12  '12'
+
+ L.   4        34  DUP_TOP          
+               36  LOAD_NAME                ImportError
+               38  <121>                66  ''
+               40  POP_TOP          
+               42  POP_TOP          
+               44  POP_TOP          
+
+ L.   5        46  LOAD_CONST               0
+               48  LOAD_CONST               ('Mapping', 'MutableMapping')
+               50  IMPORT_NAME              collections
+               52  IMPORT_FROM              Mapping
+               54  STORE_NAME               Mapping
+               56  IMPORT_FROM              MutableMapping
+               58  STORE_NAME               MutableMapping
+               60  POP_TOP          
+               62  POP_EXCEPT       
+               64  JUMP_FORWARD         68  'to 68'
+               66  <48>             
+             68_0  COME_FROM            64  '64'
+             68_1  COME_FROM            32  '32'
+
+ L.   6        68  SETUP_FINALLY        86  'to 86'
+
+ L.   7        70  LOAD_CONST               0
+               72  LOAD_CONST               ('RLock',)
+               74  IMPORT_NAME              threading
+               76  IMPORT_FROM              RLock
+               78  STORE_NAME               RLock
+               80  POP_TOP          
+               82  POP_BLOCK        
+               84  JUMP_FORWARD        118  'to 118'
+             86_0  COME_FROM_FINALLY    68  '68'
+
+ L.   8        86  DUP_TOP          
+               88  LOAD_NAME                ImportError
+               90  <121>               116  ''
+               92  POP_TOP          
+               94  POP_TOP          
+               96  POP_TOP          
+
+ L.   9        98  LOAD_BUILD_CLASS 
+              100  LOAD_CODE                <code_object RLock>
+              102  LOAD_STR                 'RLock'
+              104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              106  LOAD_STR                 'RLock'
+              108  CALL_FUNCTION_2       2  ''
+              110  STORE_NAME               RLock
+              112  POP_EXCEPT       
+              114  JUMP_FORWARD        118  'to 118'
+              116  <48>             
+            118_0  COME_FROM           114  '114'
+            118_1  COME_FROM            84  '84'
+
+ L.  17       118  LOAD_CONST               0
+              120  LOAD_CONST               ('OrderedDict',)
+              122  IMPORT_NAME              collections
+              124  IMPORT_FROM              OrderedDict
+              126  STORE_NAME               OrderedDict
+              128  POP_TOP          
+
+ L.  18       130  LOAD_CONST               1
+              132  LOAD_CONST               ('InvalidHeader',)
+              134  IMPORT_NAME              exceptions
+              136  IMPORT_FROM              InvalidHeader
+              138  STORE_NAME               InvalidHeader
+              140  POP_TOP          
+
+ L.  19       142  LOAD_CONST               1
+              144  LOAD_CONST               ('iterkeys', 'itervalues', 'PY3')
+              146  IMPORT_NAME_ATTR         packages.six
+              148  IMPORT_FROM              iterkeys
+              150  STORE_NAME               iterkeys
+              152  IMPORT_FROM              itervalues
+              154  STORE_NAME               itervalues
+              156  IMPORT_FROM              PY3
+              158  STORE_NAME               PY3
+              160  POP_TOP          
+
+ L.  22       162  LOAD_STR                 'RecentlyUsedContainer'
+              164  LOAD_STR                 'HTTPHeaderDict'
+              166  BUILD_LIST_2          2 
+              168  STORE_NAME               __all__
+
+ L.  25       170  LOAD_NAME                object
+              172  CALL_FUNCTION_0       0  ''
+              174  STORE_NAME               _Null
+
+ L.  28       176  LOAD_BUILD_CLASS 
+              178  LOAD_CODE                <code_object RecentlyUsedContainer>
+              180  LOAD_STR                 'RecentlyUsedContainer'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  LOAD_STR                 'RecentlyUsedContainer'
+              186  LOAD_NAME                MutableMapping
+              188  CALL_FUNCTION_3       3  ''
+              190  STORE_NAME               RecentlyUsedContainer
+
+ L. 102       192  LOAD_BUILD_CLASS 
+              194  LOAD_CODE                <code_object HTTPHeaderDict>
+              196  LOAD_STR                 'HTTPHeaderDict'
+              198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              200  LOAD_STR                 'HTTPHeaderDict'
+              202  LOAD_NAME                MutableMapping
+              204  CALL_FUNCTION_3       3  ''
+              206  STORE_NAME               HTTPHeaderDict
+
+Parse error at or near `<121>' instruction at offset 38
+

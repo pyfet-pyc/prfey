@@ -1,0 +1,17 @@
+Instruction context:
+   
+ L.  80        22  LOAD_GLOBAL           0  'callable'
+                  25  LOAD_DEREF            1  'default'
+                  28  CALL_FUNCTION_1       1  None
+                  31  POP_JUMP_IF_FALSE    44  'to 44'
+                  34  LOAD_DEREF            1  'default'
+                  37  LOAD_FAST             0  'v'
+                  40  CALL_FUNCTION_1       1  None
+->                43  RETURN_END_IF_LAMBDA
+                44_0  COME_FROM            31  '31'
+
+../test/53518.pyc -- 
+# decompile failed
+
+# file ../test/53518.pyc
+# Deparsing stopped due to parse error

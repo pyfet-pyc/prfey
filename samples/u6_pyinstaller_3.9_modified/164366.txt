@@ -1,0 +1,64 @@
+Instruction context:
+   
+ L.  80        16  DUP_TOP          
+                  18  LOAD_GLOBAL              KeyError
+->                20  <121>                50  ''
+                  22  POP_TOP          
+                  24  POP_TOP          
+                  26  POP_TOP          
+Instruction context:
+   
+ L. 175        24  LOAD_GLOBAL              isinstance
+                  26  LOAD_FAST                'signature_algorithm'
+                  28  LOAD_ATTR                algorithm
+                  30  LOAD_GLOBAL              hashes
+                  32  LOAD_ATTR                HashAlgorithm
+                  34  CALL_FUNCTION_2       2  ''
+                  36  POP_JUMP_IF_TRUE     42  'to 42'
+->                38  <74>             
+                  40  RAISE_VARARGS_1       1  'exception instance'
+                42_0  COME_FROM            36  '36'
+Instruction context:
+   
+ L. 293        36  LOAD_GLOBAL              isinstance
+                  38  LOAD_FAST                'signature_algorithm'
+                  40  LOAD_ATTR                algorithm
+                  42  LOAD_GLOBAL              hashes
+                  44  LOAD_ATTR                HashAlgorithm
+                  46  CALL_FUNCTION_2       2  ''
+                  48  POP_JUMP_IF_TRUE     54  'to 54'
+->                50  <74>             
+                  52  RAISE_VARARGS_1       1  'exception instance'
+                54_0  COME_FROM            48  '48'
+Instruction context:
+   
+ L. 313       140  LOAD_FAST                'self'
+                 142  LOAD_ATTR                _backend
+                 144  LOAD_METHOD              _bn_to_int
+                 146  LOAD_FAST                'bn_y'
+                 148  CALL_METHOD_1         1  ''
+                 150  STORE_FAST               'y'
+                 152  POP_BLOCK        
+                 154  LOAD_CONST               None
+->               156  DUP_TOP          
+                 158  DUP_TOP          
+                 160  CALL_FUNCTION_3       3  ''
+                 162  POP_TOP          
+                 164  JUMP_FORWARD        182  'to 182'
+               166_0  COME_FROM_WITH       64  '64'
+                 166  <49>             
+                 168  POP_JUMP_IF_TRUE    172  'to 172'
+                 170  <48>             
+               172_0  COME_FROM           168  '168'
+                 172  POP_TOP          
+                 174  POP_TOP          
+                 176  POP_TOP          
+                 178  POP_EXCEPT       
+                 180  POP_TOP          
+               182_0  COME_FROM           164  '164'
+
+test/164366.pyc -- 
+# decompile failed
+
+# file test/164366.pyc
+# Deparsing stopped due to parse error

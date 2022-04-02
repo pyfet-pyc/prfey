@@ -1,0 +1,67 @@
+Instruction context:
+   
+ L. 428        26  DUP_TOP          
+                  28  LOAD_GLOBAL              NotImplementedError
+                  30  COMPARE_OP               exception-match
+                  32  POP_JUMP_IF_FALSE    44  'to 44'
+                  34  POP_TOP          
+->                36  POP_TOP          
+                  38  POP_TOP          
+Instruction context:
+   
+ L. 713        18  DUP_TOP          
+                  20  LOAD_GLOBAL              OSError
+                  22  COMPARE_OP               exception-match
+                  24  POP_JUMP_IF_FALSE    50  'to 50'
+                  26  POP_TOP          
+->                28  POP_TOP          
+                  30  POP_TOP          
+Instruction context:
+   
+ L. 973        30  LOAD_FAST                'file'
+                  32  LOAD_METHOD              read
+                  34  CALL_METHOD_0         0  ''
+                  36  POP_BLOCK        
+->                38  ROT_TWO          
+                  40  BEGIN_FINALLY    
+                  42  WITH_CLEANUP_START
+                  44  WITH_CLEANUP_FINISH
+                  46  POP_FINALLY           0  ''
+                  48  RETURN_VALUE     
+                50_0  COME_FROM_WITH       26  '26'
+                  50  WITH_CLEANUP_START
+                  52  WITH_CLEANUP_FINISH
+                  54  END_FINALLY      
+                  56  JUMP_FORWARD         98  'to 98'
+                58_0  COME_FROM            12  '12'
+Instruction context:
+   
+ L.1035       104  POP_EXCEPT       
+                 106  JUMP_BACK            60  'to 60'
+->               108  POP_EXCEPT       
+                 110  JUMP_BACK            60  'to 60'
+               112_0  COME_FROM            96  '96'
+Instruction context:
+   
+ L.1259        40  LOAD_FAST                'hook'
+                  42  LOAD_FAST                'path'
+                  44  CALL_FUNCTION_1       1  ''
+                  46  POP_BLOCK        
+->                48  ROT_TWO          
+                  50  POP_TOP          
+                  52  RETURN_VALUE     
+                54_0  COME_FROM_FINALLY    38  '38'
+Instruction context:
+   
+ L.1601       182  POP_BLOCK        
+                 184  POP_TOP          
+->               186  JUMP_ABSOLUTE       226  'to 226'
+                 188  POP_BLOCK        
+                 190  JUMP_BACK           106  'to 106'
+               192_0  COME_FROM_FINALLY   170  '170'
+
+test/389.pyc -- 
+# decompile failed
+
+# file test/389.pyc
+# Deparsing stopped due to parse error

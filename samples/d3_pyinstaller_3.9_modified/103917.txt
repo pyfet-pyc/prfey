@@ -1,0 +1,106 @@
+Instruction context:
+   
+ L.  36        24  LOAD_STR                 '\r'
+                  26  LOAD_FAST                'inputs'
+->                28  <118>                 0  ''
+                  30  POP_JUMP_IF_TRUE     40  'to 40'
+                  32  LOAD_STR                 '\n'
+                  34  LOAD_FAST                'inputs'
+                  36  <118>                 0  ''
+                  38  POP_JUMP_IF_FALSE    48  'to 48'
+                40_0  COME_FROM            30  '30'
+Instruction context:
+   
+ L. 201        74  LOAD_FAST                'self'
+                  76  LOAD_ATTR                init
+                  78  LOAD_FAST                'name'
+                  80  BUILD_TUPLE_1         1 
+                  82  BUILD_MAP_0           0 
+                  84  LOAD_FAST                'kwds'
+->                86  <164>                 1  ''
+                  88  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  90  POP_TOP          
+Instruction context:
+   
+ L. 312        12  LOAD_GLOBAL              super
+                  14  CALL_FUNCTION_0       0  ''
+                  16  LOAD_ATTR                init
+                  18  LOAD_FAST                'args'
+                  20  BUILD_MAP_0           0 
+                  22  LOAD_FAST                'kw'
+->                24  <164>                 1  ''
+                  26  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+Instruction context:
+   
+ L. 331        14  LOAD_FAST                'value'
+                  16  POP_JUMP_IF_FALSE    26  'to 26'
+->                18  <74>             
+                  20  LOAD_STR                 'this should not happen'
+                  22  CALL_FUNCTION_1       1  ''
+                  24  RAISE_VARARGS_1       1  'exception instance'
+                26_0  COME_FROM            16  '16'
+Instruction context:
+   
+ L. 359       160  LOAD_STR                 'parse_tree'
+                 162  LOAD_FAST                'kwds'
+->               164  <118>                 1  ''
+                 166  POP_JUMP_IF_FALSE   186  'to 186'
+Instruction context:
+   
+ L. 365        22  LOAD_GLOBAL              super
+                  24  CALL_FUNCTION_0       0  ''
+                  26  LOAD_ATTR                init
+                  28  LOAD_FAST                'args'
+                  30  BUILD_MAP_0           0 
+                  32  LOAD_FAST                'kw'
+->                34  <164>                 1  ''
+                  36  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+Instruction context:
+   
+ L. 410        46  LOAD_FAST                'parse_tree'
+                  48  LOAD_ATTR                minor
+                  50  LOAD_CONST               None
+->                52  <117>                 0  ''
+                  54  POP_JUMP_IF_FALSE    60  'to 60'
+                  56  LOAD_CONST               None
+                  58  JUMP_FORWARD         64  'to 64'
+                60_0  COME_FROM            54  '54'
+                  60  LOAD_FAST                'parse_tree'
+                  62  LOAD_ATTR                major
+                64_0  COME_FROM            58  '58'
+                  64  LOAD_FAST                'kwds'
+                  66  LOAD_STR                 'major'
+                  68  STORE_SUBSCR     
+Instruction context:
+   
+ L. 421        36  LOAD_GLOBAL              super
+                  38  CALL_FUNCTION_0       0  ''
+                  40  LOAD_ATTR                init
+                  42  LOAD_FAST                'args'
+                  44  BUILD_MAP_0           0 
+                  46  LOAD_FAST                'kw'
+->                48  <164>                 1  ''
+                  50  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+Instruction context:
+   
+ L. 448        46  LOAD_FAST                'parse_tree'
+                  48  LOAD_ATTR                params
+                  50  LOAD_CONST               None
+->                52  <117>                 0  ''
+                  54  POP_JUMP_IF_FALSE    66  'to 66'
+Instruction context:
+   
+ L. 458        12  LOAD_GLOBAL              super
+                  14  CALL_FUNCTION_0       0  ''
+                  16  LOAD_ATTR                init
+                  18  LOAD_FAST                'args'
+                  20  BUILD_MAP_0           0 
+                  22  LOAD_FAST                'kw'
+->                24  <164>                 1  ''
+                  26  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+
+test/103917.pyc -- 
+# decompile failed
+
+# file test/103917.pyc
+# Deparsing stopped due to parse error

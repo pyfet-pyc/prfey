@@ -1,0 +1,47 @@
+Instruction context:
+-> 
+ L. 214       232  LOAD_FAST                'compress'
+                 234  LOAD_FAST                'notakeover'
+                 236  BUILD_TUPLE_2         2 
+                 238  RETURN_VALUE     
+Instruction context:
+   
+ L. 281        62  POP_BLOCK        
+->                64  POP_EXCEPT       
+                  66  CALL_FINALLY         72  'to 72'
+                  68  LOAD_CONST               (True, b'')
+                  70  RETURN_VALUE     
+                72_0  COME_FROM            66  '66'
+                72_1  COME_FROM_FINALLY    42  '42'
+                  72  LOAD_CONST               None
+                  74  STORE_FAST               'exc'
+                  76  DELETE_FAST              'exc'
+                  78  END_FINALLY      
+                  80  POP_EXCEPT       
+                  82  JUMP_FORWARD         86  'to 86'
+                84_0  COME_FROM            34  '34'
+                  84  END_FINALLY      
+Instruction context:
+   
+ L. 396       892  LOAD_CONST               (False, b'')
+->               894  RETURN_VALUE     
+Instruction context:
+-> 
+ L. 543   878_880  JUMP_FORWARD        884  'to 884'
+                 882  JUMP_BACK            40  'to 40'
+               884_0  COME_FROM           878  '878'
+               884_1  COME_FROM           796  '796'
+               884_2  COME_FROM           672  '672'
+               884_3  COME_FROM           632  '632'
+               884_4  COME_FROM           574  '574'
+               884_5  COME_FROM           504  '504'
+               884_6  COME_FROM           478  '478'
+               884_7  COME_FROM           408  '408'
+               884_8  COME_FROM           364  '364'
+               884_9  COME_FROM            64  '64'
+
+../test/117804.pyc -- 
+# decompile failed
+
+# file ../test/117804.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,21 @@
+Instruction context:
+   
+ L. 607        58  LOAD_GLOBAL              eval
+                  60  LOAD_FAST                'expr'
+                  62  LOAD_FAST                'globals'
+                  64  LOAD_FAST                'locals'
+                  66  CALL_FUNCTION_3       3  ''
+                  68  POP_BLOCK        
+->                70  POP_BLOCK        
+                  72  CALL_FINALLY        100  'to 100'
+                  74  RETURN_VALUE     
+                76_0  COME_FROM_FINALLY    56  '56'
+Instruction context:
+-> 
+ L. 838       104  SETUP_FINALLY       172  'to 172'
+
+../test/183243.pyc -- 
+# decompile failed
+
+# file ../test/183243.pyc
+# Deparsing stopped due to parse error

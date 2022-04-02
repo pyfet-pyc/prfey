@@ -1,0 +1,294 @@
+
+# file test/101321.pyc
+# --- This code section failed: ---
+
+ L.  23         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              logging
+                6  STORE_NAME               logging
+
+ L.  24         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              sys
+               14  STORE_NAME               sys
+
+ L.  26        16  SETUP_FINALLY        54  'to 54'
+
+ L.  27        18  LOAD_CONST               0
+               20  LOAD_CONST               ('FFI',)
+               22  IMPORT_NAME              cffi
+               24  IMPORT_FROM              FFI
+               26  STORE_NAME               FFI
+               28  POP_TOP          
+
+ L.  29        30  LOAD_STR                 '\n    struct Pixel_RGBA {\n        unsigned char r,g,b,a;\n    };\n    struct Pixel_I16 {\n        unsigned char l,r;\n    };\n    '
+               32  STORE_NAME               defs
+
+ L.  37        34  LOAD_NAME                FFI
+               36  CALL_FUNCTION_0       0  ''
+               38  STORE_NAME               ffi
+
+ L.  38        40  LOAD_NAME                ffi
+               42  LOAD_METHOD              cdef
+               44  LOAD_NAME                defs
+               46  CALL_METHOD_1         1  ''
+               48  POP_TOP          
+               50  POP_BLOCK        
+               52  JUMP_FORWARD        114  'to 114'
+             54_0  COME_FROM_FINALLY    16  '16'
+
+ L.  39        54  DUP_TOP          
+               56  LOAD_NAME                ImportError
+               58  <121>               112  ''
+               60  POP_TOP          
+               62  STORE_NAME               ex
+               64  POP_TOP          
+               66  SETUP_FINALLY       104  'to 104'
+
+ L.  42        68  LOAD_CONST               1
+               70  LOAD_CONST               ('deferred_error',)
+               72  IMPORT_NAME              _util
+               74  IMPORT_FROM              deferred_error
+               76  STORE_NAME               deferred_error
+               78  POP_TOP          
+
+ L.  44        80  LOAD_NAME                deferred_error
+               82  LOAD_NAME                ex
+               84  CALL_FUNCTION_1       1  ''
+               86  DUP_TOP          
+               88  STORE_NAME               FFI
+               90  STORE_NAME               ffi
+               92  POP_BLOCK        
+               94  POP_EXCEPT       
+               96  LOAD_CONST               None
+               98  STORE_NAME               ex
+              100  DELETE_NAME              ex
+              102  JUMP_FORWARD        114  'to 114'
+            104_0  COME_FROM_FINALLY    66  '66'
+              104  LOAD_CONST               None
+              106  STORE_NAME               ex
+              108  DELETE_NAME              ex
+              110  <48>             
+              112  <48>             
+            114_0  COME_FROM           102  '102'
+            114_1  COME_FROM            52  '52'
+
+ L.  46       114  LOAD_NAME                logging
+              116  LOAD_METHOD              getLogger
+              118  LOAD_NAME                __name__
+              120  CALL_METHOD_1         1  ''
+              122  STORE_NAME               logger
+
+ L.  49       124  LOAD_BUILD_CLASS 
+              126  LOAD_CODE                <code_object PyAccess>
+              128  LOAD_STR                 'PyAccess'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  LOAD_STR                 'PyAccess'
+              134  CALL_FUNCTION_2       2  ''
+              136  STORE_NAME               PyAccess
+
+ L. 129       138  LOAD_BUILD_CLASS 
+              140  LOAD_CODE                <code_object _PyAccess32_2>
+              142  LOAD_STR                 '_PyAccess32_2'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  LOAD_STR                 '_PyAccess32_2'
+              148  LOAD_NAME                PyAccess
+              150  CALL_FUNCTION_3       3  ''
+              152  STORE_NAME               _PyAccess32_2
+
+ L. 146       154  LOAD_BUILD_CLASS 
+              156  LOAD_CODE                <code_object _PyAccess32_3>
+              158  LOAD_STR                 '_PyAccess32_3'
+              160  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              162  LOAD_STR                 '_PyAccess32_3'
+              164  LOAD_NAME                PyAccess
+              166  CALL_FUNCTION_3       3  ''
+              168  STORE_NAME               _PyAccess32_3
+
+ L. 165       170  LOAD_BUILD_CLASS 
+              172  LOAD_CODE                <code_object _PyAccess32_4>
+              174  LOAD_STR                 '_PyAccess32_4'
+              176  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              178  LOAD_STR                 '_PyAccess32_4'
+              180  LOAD_NAME                PyAccess
+              182  CALL_FUNCTION_3       3  ''
+              184  STORE_NAME               _PyAccess32_4
+
+ L. 184       186  LOAD_BUILD_CLASS 
+              188  LOAD_CODE                <code_object _PyAccess8>
+              190  LOAD_STR                 '_PyAccess8'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  LOAD_STR                 '_PyAccess8'
+              196  LOAD_NAME                PyAccess
+              198  CALL_FUNCTION_3       3  ''
+              200  STORE_NAME               _PyAccess8
+
+ L. 202       202  LOAD_BUILD_CLASS 
+              204  LOAD_CODE                <code_object _PyAccessI16_N>
+              206  LOAD_STR                 '_PyAccessI16_N'
+              208  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              210  LOAD_STR                 '_PyAccessI16_N'
+              212  LOAD_NAME                PyAccess
+              214  CALL_FUNCTION_3       3  ''
+              216  STORE_NAME               _PyAccessI16_N
+
+ L. 220       218  LOAD_BUILD_CLASS 
+              220  LOAD_CODE                <code_object _PyAccessI16_L>
+              222  LOAD_STR                 '_PyAccessI16_L'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  LOAD_STR                 '_PyAccessI16_L'
+              228  LOAD_NAME                PyAccess
+              230  CALL_FUNCTION_3       3  ''
+              232  STORE_NAME               _PyAccessI16_L
+
+ L. 241       234  LOAD_BUILD_CLASS 
+              236  LOAD_CODE                <code_object _PyAccessI16_B>
+              238  LOAD_STR                 '_PyAccessI16_B'
+              240  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              242  LOAD_STR                 '_PyAccessI16_B'
+              244  LOAD_NAME                PyAccess
+              246  CALL_FUNCTION_3       3  ''
+              248  STORE_NAME               _PyAccessI16_B
+
+ L. 262       250  LOAD_BUILD_CLASS 
+              252  LOAD_CODE                <code_object _PyAccessI32_N>
+              254  LOAD_STR                 '_PyAccessI32_N'
+              256  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              258  LOAD_STR                 '_PyAccessI32_N'
+              260  LOAD_NAME                PyAccess
+              262  CALL_FUNCTION_3       3  ''
+              264  STORE_NAME               _PyAccessI32_N
+
+ L. 275       266  LOAD_BUILD_CLASS 
+              268  LOAD_CODE                <code_object _PyAccessI32_Swap>
+              270  LOAD_STR                 '_PyAccessI32_Swap'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  LOAD_STR                 '_PyAccessI32_Swap'
+              276  LOAD_NAME                PyAccess
+              278  CALL_FUNCTION_3       3  ''
+              280  STORE_NAME               _PyAccessI32_Swap
+
+ L. 294       282  LOAD_BUILD_CLASS 
+              284  LOAD_CODE                <code_object _PyAccessF>
+              286  LOAD_STR                 '_PyAccessF'
+              288  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              290  LOAD_STR                 '_PyAccessF'
+              292  LOAD_NAME                PyAccess
+              294  CALL_FUNCTION_3       3  ''
+              296  STORE_NAME               _PyAccessF
+
+ L. 313       298  LOAD_NAME                _PyAccess8
+
+ L. 314       300  LOAD_NAME                _PyAccess8
+
+ L. 315       302  LOAD_NAME                _PyAccess8
+
+ L. 316       304  LOAD_NAME                _PyAccess32_2
+
+ L. 317       306  LOAD_NAME                _PyAccess32_2
+
+ L. 318       308  LOAD_NAME                _PyAccess32_2
+
+ L. 319       310  LOAD_NAME                _PyAccess32_3
+
+ L. 320       312  LOAD_NAME                _PyAccess32_3
+
+ L. 321       314  LOAD_NAME                _PyAccess32_3
+
+ L. 322       316  LOAD_NAME                _PyAccess32_3
+
+ L. 323       318  LOAD_NAME                _PyAccess32_4
+
+ L. 324       320  LOAD_NAME                _PyAccess32_4
+
+ L. 325       322  LOAD_NAME                _PyAccess32_4
+
+ L. 326       324  LOAD_NAME                _PyAccess32_4
+
+ L. 327       326  LOAD_NAME                _PyAccessF
+
+ L. 328       328  LOAD_NAME                _PyAccessI32_N
+
+ L. 312       330  LOAD_CONST               ('1', 'L', 'P', 'LA', 'La', 'PA', 'RGB', 'LAB', 'HSV', 'YCbCr', 'RGBA', 'RGBa', 'RGBX', 'CMYK', 'F', 'I')
+              332  BUILD_CONST_KEY_MAP_16    16 
+              334  STORE_NAME               mode_map
+
+ L. 331       336  LOAD_NAME                sys
+              338  LOAD_ATTR                byteorder
+              340  LOAD_STR                 'little'
+              342  COMPARE_OP               ==
+          344_346  POP_JUMP_IF_FALSE   390  'to 390'
+
+ L. 332       348  LOAD_NAME                _PyAccessI16_N
+              350  LOAD_NAME                mode_map
+              352  LOAD_STR                 'I;16'
+              354  STORE_SUBSCR     
+
+ L. 333       356  LOAD_NAME                _PyAccessI16_N
+              358  LOAD_NAME                mode_map
+              360  LOAD_STR                 'I;16L'
+              362  STORE_SUBSCR     
+
+ L. 334       364  LOAD_NAME                _PyAccessI16_B
+              366  LOAD_NAME                mode_map
+              368  LOAD_STR                 'I;16B'
+              370  STORE_SUBSCR     
+
+ L. 336       372  LOAD_NAME                _PyAccessI32_N
+              374  LOAD_NAME                mode_map
+              376  LOAD_STR                 'I;32L'
+              378  STORE_SUBSCR     
+
+ L. 337       380  LOAD_NAME                _PyAccessI32_Swap
+              382  LOAD_NAME                mode_map
+              384  LOAD_STR                 'I;32B'
+              386  STORE_SUBSCR     
+              388  JUMP_FORWARD        430  'to 430'
+            390_0  COME_FROM           344  '344'
+
+ L. 339       390  LOAD_NAME                _PyAccessI16_L
+              392  LOAD_NAME                mode_map
+              394  LOAD_STR                 'I;16'
+              396  STORE_SUBSCR     
+
+ L. 340       398  LOAD_NAME                _PyAccessI16_L
+              400  LOAD_NAME                mode_map
+              402  LOAD_STR                 'I;16L'
+              404  STORE_SUBSCR     
+
+ L. 341       406  LOAD_NAME                _PyAccessI16_N
+              408  LOAD_NAME                mode_map
+              410  LOAD_STR                 'I;16B'
+              412  STORE_SUBSCR     
+
+ L. 343       414  LOAD_NAME                _PyAccessI32_Swap
+              416  LOAD_NAME                mode_map
+              418  LOAD_STR                 'I;32L'
+              420  STORE_SUBSCR     
+
+ L. 344       422  LOAD_NAME                _PyAccessI32_N
+              424  LOAD_NAME                mode_map
+              426  LOAD_STR                 'I;32B'
+              428  STORE_SUBSCR     
+            430_0  COME_FROM           388  '388'
+
+ L. 347       430  LOAD_CONST               (False,)
+              432  LOAD_CODE                <code_object new>
+              434  LOAD_STR                 'new'
+              436  MAKE_FUNCTION_1          'default'
+              438  STORE_NAME               new
+
+Parse error at or near `<121>' instruction at offset 58
+
+Instruction context:
+   
+ L.  39        54  DUP_TOP          
+                  56  LOAD_NAME                ImportError
+->                58  <121>               112  ''
+                  60  POP_TOP          
+                  62  STORE_NAME               ex
+                  64  POP_TOP          
+                  66  SETUP_FINALLY       104  'to 104'
+
+test/101321.pyc -- 
+# decompile failed

@@ -1,0 +1,26 @@
+Instruction context:
+   
+ L.  20        20  LOAD_CLOSURE             'new_func'
+                  22  BUILD_TUPLE_1         1 
+->                24  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+                  26  LOAD_STR                 'alias.<locals>.decorator.<locals>.<dictcomp>'
+                  28  MAKE_FUNCTION_8          'closure'
+                  30  LOAD_DEREF               'aliases'
+                  32  GET_ITER         
+                  34  CALL_FUNCTION_1       1  ''
+                  36  LOAD_FAST                'func'
+                  38  STORE_ATTR               _aliases
+Instruction context:
+   
+ L.  30        50  LOAD_FAST                'name'
+                  52  LOAD_FAST                'original_methods'
+                  54  LOAD_METHOD              keys
+                  56  CALL_METHOD_0         0  ''
+->                58  <118>                 0  ''
+                  60  POP_JUMP_IF_FALSE    80  'to 80'
+
+test/134579.pyc -- 
+# decompile failed
+
+# file test/134579.pyc
+# Deparsing stopped due to parse error

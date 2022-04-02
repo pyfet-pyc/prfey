@@ -1,0 +1,24 @@
+Instruction context:
+   
+ L.  69        18  LOAD_FAST                'name'
+                  20  LOAD_CONST               0
+                  22  BINARY_SUBSCR    
+                  24  LOAD_STR                 '_'
+                  26  COMPARE_OP               ==
+                  28  POP_JUMP_IF_TRUE_BACK    10  'to 10'
+                  30  LOAD_GLOBAL              type
+                  32  LOAD_FAST                'info_dict'
+                  34  CALL_FUNCTION_1       1  ''
+                  36  LOAD_GLOBAL              type
+                  38  BUILD_MAP_0           0 
+                  40  CALL_FUNCTION_1       1  ''
+->                42  <117>                 1  ''
+                  44  POP_JUMP_IF_FALSE    48  'to 48'
+                  46  JUMP_BACK            10  'to 10'
+                48_0  COME_FROM            44  '44'
+
+test/1963.pyc -- 
+# decompile failed
+
+# file test/1963.pyc
+# Deparsing stopped due to parse error

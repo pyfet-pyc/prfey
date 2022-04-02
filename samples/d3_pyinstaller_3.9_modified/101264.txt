@@ -1,0 +1,178 @@
+
+# file test/101264.pyc
+# --- This code section failed: ---
+
+ L.  10         0  BUILD_LIST_0          0 
+                2  LOAD_CONST               ('Lock', 'RLock', 'Semaphore', 'BoundedSemaphore', 'Condition', 'Event')
+                4  CALL_FINALLY          7  'to 7'
+                6  STORE_NAME               __all__
+
+ L.  14         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              threading
+               14  STORE_NAME               threading
+
+ L.  15        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              sys
+               22  STORE_NAME               sys
+
+ L.  16        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              tempfile
+               30  STORE_NAME               tempfile
+
+ L.  17        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              _multiprocessing
+               38  STORE_NAME               _multiprocessing
+
+ L.  18        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              time
+               46  STORE_NAME               time
+
+ L.  20        48  LOAD_CONST               1
+               50  LOAD_CONST               ('context',)
+               52  IMPORT_NAME              
+               54  IMPORT_FROM              context
+               56  STORE_NAME               context
+               58  POP_TOP          
+
+ L.  21        60  LOAD_CONST               1
+               62  LOAD_CONST               ('process',)
+               64  IMPORT_NAME              
+               66  IMPORT_FROM              process
+               68  STORE_NAME               process
+               70  POP_TOP          
+
+ L.  22        72  LOAD_CONST               1
+               74  LOAD_CONST               ('util',)
+               76  IMPORT_NAME              
+               78  IMPORT_FROM              util
+               80  STORE_NAME               util
+               82  POP_TOP          
+
+ L.  27        84  SETUP_FINALLY       106  'to 106'
+
+ L.  28        86  LOAD_CONST               0
+               88  LOAD_CONST               ('SemLock', 'sem_unlink')
+               90  IMPORT_NAME              _multiprocessing
+               92  IMPORT_FROM              SemLock
+               94  STORE_NAME               SemLock
+               96  IMPORT_FROM              sem_unlink
+               98  STORE_NAME               sem_unlink
+              100  POP_TOP          
+              102  POP_BLOCK        
+              104  JUMP_FORWARD        132  'to 132'
+            106_0  COME_FROM_FINALLY    84  '84'
+
+ L.  29       106  DUP_TOP          
+              108  LOAD_NAME                ImportError
+              110  <121>               130  ''
+              112  POP_TOP          
+              114  POP_TOP          
+              116  POP_TOP          
+
+ L.  30       118  LOAD_NAME                ImportError
+              120  LOAD_STR                 'This platform lacks a functioning sem_open implementation, therefore, the required synchronization primitives needed will not function, see issue 3770.'
+              122  CALL_FUNCTION_1       1  ''
+              124  RAISE_VARARGS_1       1  'exception instance'
+              126  POP_EXCEPT       
+              128  JUMP_FORWARD        132  'to 132'
+              130  <48>             
+            132_0  COME_FROM           128  '128'
+            132_1  COME_FROM           104  '104'
+
+ L.  39       132  LOAD_NAME                list
+              134  LOAD_NAME                range
+              136  LOAD_CONST               2
+              138  CALL_FUNCTION_1       1  ''
+              140  CALL_FUNCTION_1       1  ''
+              142  UNPACK_SEQUENCE_2     2 
+              144  STORE_NAME               RECURSIVE_MUTEX
+              146  STORE_NAME               SEMAPHORE
+
+ L.  40       148  LOAD_NAME                _multiprocessing
+              150  LOAD_ATTR                SemLock
+              152  LOAD_ATTR                SEM_VALUE_MAX
+              154  STORE_NAME               SEM_VALUE_MAX
+
+ L.  46       156  LOAD_BUILD_CLASS 
+              158  LOAD_CODE                <code_object SemLock>
+              160  LOAD_STR                 'SemLock'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  LOAD_STR                 'SemLock'
+              166  LOAD_NAME                object
+              168  CALL_FUNCTION_3       3  ''
+              170  STORE_NAME               SemLock
+
+ L. 123       172  LOAD_BUILD_CLASS 
+              174  LOAD_CODE                <code_object Semaphore>
+              176  LOAD_STR                 'Semaphore'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  LOAD_STR                 'Semaphore'
+              182  LOAD_NAME                SemLock
+              184  CALL_FUNCTION_3       3  ''
+              186  STORE_NAME               Semaphore
+
+ L. 142       188  LOAD_BUILD_CLASS 
+              190  LOAD_CODE                <code_object BoundedSemaphore>
+              192  LOAD_STR                 'BoundedSemaphore'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  LOAD_STR                 'BoundedSemaphore'
+              198  LOAD_NAME                Semaphore
+              200  CALL_FUNCTION_3       3  ''
+              202  STORE_NAME               BoundedSemaphore
+
+ L. 159       204  LOAD_BUILD_CLASS 
+              206  LOAD_CODE                <code_object Lock>
+              208  LOAD_STR                 'Lock'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  LOAD_STR                 'Lock'
+              214  LOAD_NAME                SemLock
+              216  CALL_FUNCTION_3       3  ''
+              218  STORE_NAME               Lock
+
+ L. 184       220  LOAD_BUILD_CLASS 
+              222  LOAD_CODE                <code_object RLock>
+              224  LOAD_STR                 'RLock'
+              226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              228  LOAD_STR                 'RLock'
+              230  LOAD_NAME                SemLock
+              232  CALL_FUNCTION_3       3  ''
+              234  STORE_NAME               RLock
+
+ L. 210       236  LOAD_BUILD_CLASS 
+              238  LOAD_CODE                <code_object Condition>
+              240  LOAD_STR                 'Condition'
+              242  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              244  LOAD_STR                 'Condition'
+              246  LOAD_NAME                object
+              248  CALL_FUNCTION_3       3  ''
+              250  STORE_NAME               Condition
+
+ L. 321       252  LOAD_BUILD_CLASS 
+              254  LOAD_CODE                <code_object Event>
+              256  LOAD_STR                 'Event'
+              258  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              260  LOAD_STR                 'Event'
+              262  LOAD_NAME                object
+              264  CALL_FUNCTION_3       3  ''
+              266  STORE_NAME               Event
+
+ L. 360       268  LOAD_BUILD_CLASS 
+              270  LOAD_CODE                <code_object Barrier>
+              272  LOAD_STR                 'Barrier'
+              274  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              276  LOAD_STR                 'Barrier'
+              278  LOAD_NAME                threading
+              280  LOAD_ATTR                Barrier
+              282  CALL_FUNCTION_3       3  ''
+              284  STORE_NAME               Barrier
+
+Parse error at or near `None' instruction at offset -1
+
+
+test/101264.pyc -- 
+# decompile failed

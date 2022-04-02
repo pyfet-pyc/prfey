@@ -1,0 +1,553 @@
+
+# file test/27817.pyc
+# --- This code section failed: ---
+
+ L.  29         0  LOAD_STR                 'Read from and write to tar format archives.\n'
+                2  STORE_NAME               __doc__
+
+ L.  32         4  LOAD_STR                 '0.9.0'
+                6  STORE_NAME               version
+
+ L.  33         8  LOAD_STR                 'Lars Gustäbel (lars@gustaebel.de)'
+               10  STORE_NAME               __author__
+
+ L.  34        12  LOAD_STR                 'Gustavo Niemeyer, Niels Gustäbel, Richard Townsend.'
+               14  STORE_NAME               __credits__
+
+ L.  39        16  LOAD_CONST               0
+               18  LOAD_CONST               ('open',)
+               20  IMPORT_NAME              builtins
+               22  IMPORT_FROM              open
+               24  STORE_NAME               bltn_open
+               26  POP_TOP          
+
+ L.  40        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              sys
+               34  STORE_NAME               sys
+
+ L.  41        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              os
+               42  STORE_NAME               os
+
+ L.  42        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              io
+               50  STORE_NAME               io
+
+ L.  43        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              shutil
+               58  STORE_NAME               shutil
+
+ L.  44        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              stat
+               66  STORE_NAME               stat
+
+ L.  45        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              time
+               74  STORE_NAME               time
+
+ L.  46        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME              struct
+               82  STORE_NAME               struct
+
+ L.  47        84  LOAD_CONST               0
+               86  LOAD_CONST               None
+               88  IMPORT_NAME              copy
+               90  STORE_NAME               copy
+
+ L.  48        92  LOAD_CONST               0
+               94  LOAD_CONST               None
+               96  IMPORT_NAME              re
+               98  STORE_NAME               re
+
+ L.  50       100  SETUP_FINALLY       114  'to 114'
+
+ L.  51       102  LOAD_CONST               0
+              104  LOAD_CONST               None
+              106  IMPORT_NAME              pwd
+              108  STORE_NAME               pwd
+              110  POP_BLOCK        
+              112  JUMP_FORWARD        136  'to 136'
+            114_0  COME_FROM_FINALLY   100  '100'
+
+ L.  52       114  DUP_TOP          
+              116  LOAD_NAME                ImportError
+              118  <121>               134  ''
+              120  POP_TOP          
+              122  POP_TOP          
+              124  POP_TOP          
+
+ L.  53       126  LOAD_CONST               None
+              128  STORE_NAME               pwd
+              130  POP_EXCEPT       
+              132  JUMP_FORWARD        136  'to 136'
+              134  <48>             
+            136_0  COME_FROM           132  '132'
+            136_1  COME_FROM           112  '112'
+
+ L.  54       136  SETUP_FINALLY       150  'to 150'
+
+ L.  55       138  LOAD_CONST               0
+              140  LOAD_CONST               None
+              142  IMPORT_NAME              grp
+              144  STORE_NAME               grp
+              146  POP_BLOCK        
+              148  JUMP_FORWARD        172  'to 172'
+            150_0  COME_FROM_FINALLY   136  '136'
+
+ L.  56       150  DUP_TOP          
+              152  LOAD_NAME                ImportError
+              154  <121>               170  ''
+              156  POP_TOP          
+              158  POP_TOP          
+              160  POP_TOP          
+
+ L.  57       162  LOAD_CONST               None
+              164  STORE_NAME               grp
+              166  POP_EXCEPT       
+              168  JUMP_FORWARD        172  'to 172'
+              170  <48>             
+            172_0  COME_FROM           168  '168'
+            172_1  COME_FROM           148  '148'
+
+ L.  60       172  LOAD_NAME                AttributeError
+              174  LOAD_NAME                NotImplementedError
+              176  BUILD_TUPLE_2         2 
+              178  STORE_NAME               symlink_exception
+
+ L.  61       180  SETUP_FINALLY       196  'to 196'
+
+ L.  64       182  LOAD_NAME                symlink_exception
+              184  LOAD_NAME                OSError
+              186  BUILD_TUPLE_1         1 
+              188  INPLACE_ADD      
+              190  STORE_NAME               symlink_exception
+              192  POP_BLOCK        
+              194  JUMP_FORWARD        214  'to 214'
+            196_0  COME_FROM_FINALLY   180  '180'
+
+ L.  65       196  DUP_TOP          
+              198  LOAD_NAME                NameError
+              200  <121>               212  ''
+              202  POP_TOP          
+              204  POP_TOP          
+              206  POP_TOP          
+
+ L.  66       208  POP_EXCEPT       
+              210  JUMP_FORWARD        214  'to 214'
+              212  <48>             
+            214_0  COME_FROM           210  '210'
+            214_1  COME_FROM           194  '194'
+
+ L.  69       214  BUILD_LIST_0          0 
+              216  LOAD_CONST               ('TarFile', 'TarInfo', 'is_tarfile', 'TarError', 'ReadError', 'CompressionError', 'StreamError', 'ExtractError', 'HeaderError', 'ENCODING', 'USTAR_FORMAT', 'GNU_FORMAT', 'PAX_FORMAT', 'DEFAULT_FORMAT', 'open')
+              218  CALL_FINALLY        221  'to 221'
+              220  STORE_NAME               __all__
+
+ L.  77       222  LOAD_CONST               b'\x00'
+              224  STORE_NAME               NUL
+
+ L.  78       226  LOAD_CONST               512
+              228  STORE_NAME               BLOCKSIZE
+
+ L.  79       230  LOAD_NAME                BLOCKSIZE
+              232  LOAD_CONST               20
+              234  BINARY_MULTIPLY  
+              236  STORE_NAME               RECORDSIZE
+
+ L.  80       238  LOAD_CONST               b'ustar  \x00'
+              240  STORE_NAME               GNU_MAGIC
+
+ L.  81       242  LOAD_CONST               b'ustar\x0000'
+              244  STORE_NAME               POSIX_MAGIC
+
+ L.  83       246  LOAD_CONST               100
+              248  STORE_NAME               LENGTH_NAME
+
+ L.  84       250  LOAD_CONST               100
+              252  STORE_NAME               LENGTH_LINK
+
+ L.  85       254  LOAD_CONST               155
+              256  STORE_NAME               LENGTH_PREFIX
+
+ L.  87       258  LOAD_CONST               b'0'
+              260  STORE_NAME               REGTYPE
+
+ L.  88       262  LOAD_CONST               b'\x00'
+              264  STORE_NAME               AREGTYPE
+
+ L.  89       266  LOAD_CONST               b'1'
+              268  STORE_NAME               LNKTYPE
+
+ L.  90       270  LOAD_CONST               b'2'
+              272  STORE_NAME               SYMTYPE
+
+ L.  91       274  LOAD_CONST               b'3'
+              276  STORE_NAME               CHRTYPE
+
+ L.  92       278  LOAD_CONST               b'4'
+              280  STORE_NAME               BLKTYPE
+
+ L.  93       282  LOAD_CONST               b'5'
+              284  STORE_NAME               DIRTYPE
+
+ L.  94       286  LOAD_CONST               b'6'
+              288  STORE_NAME               FIFOTYPE
+
+ L.  95       290  LOAD_CONST               b'7'
+              292  STORE_NAME               CONTTYPE
+
+ L.  97       294  LOAD_CONST               b'L'
+              296  STORE_NAME               GNUTYPE_LONGNAME
+
+ L.  98       298  LOAD_CONST               b'K'
+              300  STORE_NAME               GNUTYPE_LONGLINK
+
+ L.  99       302  LOAD_CONST               b'S'
+              304  STORE_NAME               GNUTYPE_SPARSE
+
+ L. 101       306  LOAD_CONST               b'x'
+              308  STORE_NAME               XHDTYPE
+
+ L. 102       310  LOAD_CONST               b'g'
+              312  STORE_NAME               XGLTYPE
+
+ L. 103       314  LOAD_CONST               b'X'
+              316  STORE_NAME               SOLARIS_XHDTYPE
+
+ L. 105       318  LOAD_CONST               0
+              320  STORE_NAME               USTAR_FORMAT
+
+ L. 106       322  LOAD_CONST               1
+              324  STORE_NAME               GNU_FORMAT
+
+ L. 107       326  LOAD_CONST               2
+              328  STORE_NAME               PAX_FORMAT
+
+ L. 108       330  LOAD_NAME                PAX_FORMAT
+              332  STORE_NAME               DEFAULT_FORMAT
+
+ L. 114       334  LOAD_NAME                REGTYPE
+              336  LOAD_NAME                AREGTYPE
+              338  LOAD_NAME                LNKTYPE
+
+ L. 115       340  LOAD_NAME                SYMTYPE
+              342  LOAD_NAME                DIRTYPE
+              344  LOAD_NAME                FIFOTYPE
+
+ L. 116       346  LOAD_NAME                CONTTYPE
+              348  LOAD_NAME                CHRTYPE
+              350  LOAD_NAME                BLKTYPE
+
+ L. 117       352  LOAD_NAME                GNUTYPE_LONGNAME
+              354  LOAD_NAME                GNUTYPE_LONGLINK
+
+ L. 118       356  LOAD_NAME                GNUTYPE_SPARSE
+
+ L. 114       358  BUILD_TUPLE_12       12 
+              360  STORE_NAME               SUPPORTED_TYPES
+
+ L. 121       362  LOAD_NAME                REGTYPE
+              364  LOAD_NAME                AREGTYPE
+
+ L. 122       366  LOAD_NAME                CONTTYPE
+              368  LOAD_NAME                GNUTYPE_SPARSE
+
+ L. 121       370  BUILD_TUPLE_4         4 
+              372  STORE_NAME               REGULAR_TYPES
+
+ L. 125       374  LOAD_NAME                GNUTYPE_LONGNAME
+              376  LOAD_NAME                GNUTYPE_LONGLINK
+
+ L. 126       378  LOAD_NAME                GNUTYPE_SPARSE
+
+ L. 125       380  BUILD_TUPLE_3         3 
+              382  STORE_NAME               GNU_TYPES
+
+ L. 129       384  LOAD_CONST               ('path', 'linkpath', 'size', 'mtime', 'uid', 'gid', 'uname', 'gname')
+              386  STORE_NAME               PAX_FIELDS
+
+ L. 133       388  BUILD_SET_0           0 
+              390  LOAD_CONST               frozenset({'linkpath', 'path', 'gname', 'uname'})
+              392  POP_FINALLY           1  ''
+              394  STORE_NAME               PAX_NAME_FIELDS
+
+ L. 138       396  LOAD_NAME                float
+
+ L. 139       398  LOAD_NAME                float
+
+ L. 140       400  LOAD_NAME                float
+
+ L. 141       402  LOAD_NAME                int
+
+ L. 142       404  LOAD_NAME                int
+
+ L. 143       406  LOAD_NAME                int
+
+ L. 137       408  LOAD_CONST               ('atime', 'ctime', 'mtime', 'uid', 'gid', 'size')
+              410  BUILD_CONST_KEY_MAP_6     6 
+              412  STORE_NAME               PAX_NUMBER_FIELDS
+
+ L. 149       414  LOAD_NAME                os
+              416  LOAD_ATTR                name
+              418  LOAD_STR                 'nt'
+              420  COMPARE_OP               ==
+          422_424  POP_JUMP_IF_FALSE   432  'to 432'
+
+ L. 150       426  LOAD_STR                 'utf-8'
+              428  STORE_NAME               ENCODING
+              430  JUMP_FORWARD        440  'to 440'
+            432_0  COME_FROM           422  '422'
+
+ L. 152       432  LOAD_NAME                sys
+              434  LOAD_METHOD              getfilesystemencoding
+              436  CALL_METHOD_0         0  ''
+              438  STORE_NAME               ENCODING
+            440_0  COME_FROM           430  '430'
+
+ L. 158       440  LOAD_CODE                <code_object stn>
+              442  LOAD_STR                 'stn'
+              444  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              446  STORE_NAME               stn
+
+ L. 164       448  LOAD_CODE                <code_object nts>
+              450  LOAD_STR                 'nts'
+              452  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              454  STORE_NAME               nts
+
+ L. 172       456  LOAD_CODE                <code_object nti>
+              458  LOAD_STR                 'nti'
+              460  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              462  STORE_NAME               nti
+
+ L. 192       464  LOAD_CONST               8
+              466  LOAD_NAME                DEFAULT_FORMAT
+              468  BUILD_TUPLE_2         2 
+              470  LOAD_CODE                <code_object itn>
+              472  LOAD_STR                 'itn'
+              474  MAKE_FUNCTION_1          'default'
+              476  STORE_NAME               itn
+
+ L. 221       478  LOAD_CODE                <code_object calc_chksums>
+              480  LOAD_STR                 'calc_chksums'
+              482  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              484  STORE_NAME               calc_chksums
+
+ L. 234       486  LOAD_CONST               None
+              488  LOAD_NAME                OSError
+              490  LOAD_CONST               None
+              492  BUILD_TUPLE_3         3 
+              494  LOAD_CODE                <code_object copyfileobj>
+              496  LOAD_STR                 'copyfileobj'
+              498  MAKE_FUNCTION_1          'default'
+              500  STORE_NAME               copyfileobj
+
+ L. 259       502  LOAD_CODE                <code_object _safe_print>
+              504  LOAD_STR                 '_safe_print'
+              506  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              508  STORE_NAME               _safe_print
+
+ L. 266       510  LOAD_BUILD_CLASS 
+              512  LOAD_CODE                <code_object TarError>
+              514  LOAD_STR                 'TarError'
+              516  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              518  LOAD_STR                 'TarError'
+              520  LOAD_NAME                Exception
+              522  CALL_FUNCTION_3       3  ''
+              524  STORE_NAME               TarError
+
+ L. 269       526  LOAD_BUILD_CLASS 
+              528  LOAD_CODE                <code_object ExtractError>
+              530  LOAD_STR                 'ExtractError'
+              532  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              534  LOAD_STR                 'ExtractError'
+              536  LOAD_NAME                TarError
+              538  CALL_FUNCTION_3       3  ''
+              540  STORE_NAME               ExtractError
+
+ L. 272       542  LOAD_BUILD_CLASS 
+              544  LOAD_CODE                <code_object ReadError>
+              546  LOAD_STR                 'ReadError'
+              548  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              550  LOAD_STR                 'ReadError'
+              552  LOAD_NAME                TarError
+              554  CALL_FUNCTION_3       3  ''
+              556  STORE_NAME               ReadError
+
+ L. 275       558  LOAD_BUILD_CLASS 
+              560  LOAD_CODE                <code_object CompressionError>
+              562  LOAD_STR                 'CompressionError'
+              564  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              566  LOAD_STR                 'CompressionError'
+              568  LOAD_NAME                TarError
+              570  CALL_FUNCTION_3       3  ''
+              572  STORE_NAME               CompressionError
+
+ L. 278       574  LOAD_BUILD_CLASS 
+              576  LOAD_CODE                <code_object StreamError>
+              578  LOAD_STR                 'StreamError'
+              580  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              582  LOAD_STR                 'StreamError'
+              584  LOAD_NAME                TarError
+              586  CALL_FUNCTION_3       3  ''
+              588  STORE_NAME               StreamError
+
+ L. 281       590  LOAD_BUILD_CLASS 
+              592  LOAD_CODE                <code_object HeaderError>
+              594  LOAD_STR                 'HeaderError'
+              596  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              598  LOAD_STR                 'HeaderError'
+              600  LOAD_NAME                TarError
+              602  CALL_FUNCTION_3       3  ''
+              604  STORE_NAME               HeaderError
+
+ L. 284       606  LOAD_BUILD_CLASS 
+              608  LOAD_CODE                <code_object EmptyHeaderError>
+              610  LOAD_STR                 'EmptyHeaderError'
+              612  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              614  LOAD_STR                 'EmptyHeaderError'
+              616  LOAD_NAME                HeaderError
+              618  CALL_FUNCTION_3       3  ''
+              620  STORE_NAME               EmptyHeaderError
+
+ L. 287       622  LOAD_BUILD_CLASS 
+              624  LOAD_CODE                <code_object TruncatedHeaderError>
+              626  LOAD_STR                 'TruncatedHeaderError'
+              628  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              630  LOAD_STR                 'TruncatedHeaderError'
+              632  LOAD_NAME                HeaderError
+              634  CALL_FUNCTION_3       3  ''
+              636  STORE_NAME               TruncatedHeaderError
+
+ L. 290       638  LOAD_BUILD_CLASS 
+              640  LOAD_CODE                <code_object EOFHeaderError>
+              642  LOAD_STR                 'EOFHeaderError'
+              644  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              646  LOAD_STR                 'EOFHeaderError'
+              648  LOAD_NAME                HeaderError
+              650  CALL_FUNCTION_3       3  ''
+              652  STORE_NAME               EOFHeaderError
+
+ L. 293       654  LOAD_BUILD_CLASS 
+              656  LOAD_CODE                <code_object InvalidHeaderError>
+              658  LOAD_STR                 'InvalidHeaderError'
+              660  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              662  LOAD_STR                 'InvalidHeaderError'
+              664  LOAD_NAME                HeaderError
+              666  CALL_FUNCTION_3       3  ''
+              668  STORE_NAME               InvalidHeaderError
+
+ L. 296       670  LOAD_BUILD_CLASS 
+              672  LOAD_CODE                <code_object SubsequentHeaderError>
+              674  LOAD_STR                 'SubsequentHeaderError'
+              676  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              678  LOAD_STR                 'SubsequentHeaderError'
+              680  LOAD_NAME                HeaderError
+              682  CALL_FUNCTION_3       3  ''
+              684  STORE_NAME               SubsequentHeaderError
+
+ L. 303       686  LOAD_BUILD_CLASS 
+              688  LOAD_CODE                <code_object _LowLevelFile>
+              690  LOAD_STR                 '_LowLevelFile'
+              692  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              694  LOAD_STR                 '_LowLevelFile'
+              696  CALL_FUNCTION_2       2  ''
+              698  STORE_NAME               _LowLevelFile
+
+ L. 327       700  LOAD_BUILD_CLASS 
+              702  LOAD_CODE                <code_object _Stream>
+              704  LOAD_STR                 '_Stream'
+              706  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              708  LOAD_STR                 '_Stream'
+              710  CALL_FUNCTION_2       2  ''
+              712  STORE_NAME               _Stream
+
+ L. 569       714  LOAD_BUILD_CLASS 
+              716  LOAD_CODE                <code_object _StreamProxy>
+              718  LOAD_STR                 '_StreamProxy'
+              720  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              722  LOAD_STR                 '_StreamProxy'
+              724  LOAD_NAME                object
+              726  CALL_FUNCTION_3       3  ''
+              728  STORE_NAME               _StreamProxy
+
+ L. 599       730  LOAD_BUILD_CLASS 
+              732  LOAD_CODE                <code_object _FileInFile>
+              734  LOAD_STR                 '_FileInFile'
+              736  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              738  LOAD_STR                 '_FileInFile'
+              740  LOAD_NAME                object
+              742  CALL_FUNCTION_3       3  ''
+              744  STORE_NAME               _FileInFile
+
+ L. 703       746  LOAD_BUILD_CLASS 
+              748  LOAD_CODE                <code_object ExFileObject>
+              750  LOAD_STR                 'ExFileObject'
+              752  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              754  LOAD_STR                 'ExFileObject'
+              756  LOAD_NAME                io
+              758  LOAD_ATTR                BufferedReader
+              760  CALL_FUNCTION_3       3  ''
+              762  STORE_NAME               ExFileObject
+
+ L. 714       764  LOAD_BUILD_CLASS 
+              766  LOAD_CODE                <code_object TarInfo>
+              768  LOAD_STR                 'TarInfo'
+              770  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              772  LOAD_STR                 'TarInfo'
+              774  LOAD_NAME                object
+              776  CALL_FUNCTION_3       3  ''
+              778  STORE_NAME               TarInfo
+
+ L.1425       780  LOAD_BUILD_CLASS 
+              782  LOAD_CODE                <code_object TarFile>
+              784  LOAD_STR                 'TarFile'
+              786  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              788  LOAD_STR                 'TarFile'
+              790  LOAD_NAME                object
+              792  CALL_FUNCTION_3       3  ''
+              794  STORE_NAME               TarFile
+
+ L.2475       796  LOAD_CODE                <code_object is_tarfile>
+              798  LOAD_STR                 'is_tarfile'
+              800  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              802  STORE_NAME               is_tarfile
+
+ L.2491       804  LOAD_NAME                TarFile
+              806  LOAD_ATTR                open
+              808  STORE_NAME               open
+
+ L.2494       810  LOAD_CODE                <code_object main>
+              812  LOAD_STR                 'main'
+              814  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              816  STORE_NAME               main
+
+ L.2581       818  LOAD_NAME                __name__
+              820  LOAD_STR                 '__main__'
+              822  COMPARE_OP               ==
+          824_826  POP_JUMP_IF_FALSE   834  'to 834'
+
+ L.2582       828  LOAD_NAME                main
+              830  CALL_FUNCTION_0       0  ''
+              832  POP_TOP          
+            834_0  COME_FROM           824  '824'
+
+Parse error at or near `<121>' instruction at offset 118
+
+Instruction context:
+   
+ L.  52       114  DUP_TOP          
+                 116  LOAD_NAME                ImportError
+->               118  <121>               134  ''
+                 120  POP_TOP          
+                 122  POP_TOP          
+                 124  POP_TOP          
+
+test/27817.pyc -- 
+# decompile failed

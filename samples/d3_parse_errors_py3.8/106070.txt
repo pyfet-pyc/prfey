@@ -1,0 +1,32 @@
+Instruction context:
+   
+ L. 269       654  LOAD_FAST                'self'
+                 656  LOAD_METHOD              send_infoz
+                 658  LOAD_FAST                'texto'
+                 660  CALL_METHOD_1         1  ''
+                 662  POP_TOP          
+                 664  POP_BLOCK        
+                 666  BEGIN_FINALLY    
+               668_0  COME_FROM_FINALLY   644  '644'
+                 668  LOAD_CONST               None
+                 670  STORE_FAST               'e'
+                 672  DELETE_FAST              'e'
+                 674  END_FINALLY      
+                 676  POP_EXCEPT       
+                 678  JUMP_FORWARD        946  'to 946'
+               680_0  COME_FROM           634  '634'
+                 680  END_FINALLY      
+->           682_684  JUMP_FORWARD        946  'to 946'
+               686_0  COME_FROM           590  '590'
+Instruction context:
+-> 
+ L. 313        94  JUMP_FORWARD         98  'to 98'
+                  96  JUMP_BACK            30  'to 30'
+                98_0  COME_FROM            94  '94'
+                98_1  COME_FROM            50  '50'
+
+../test/106070.pyc -- 
+# decompile failed
+
+# file ../test/106070.pyc
+# Deparsing stopped due to parse error

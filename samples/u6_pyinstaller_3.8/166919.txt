@@ -1,0 +1,36 @@
+Instruction context:
+   
+ L.  94        96  POP_EXCEPT       
+                  98  POP_EXCEPT       
+->               100  LOAD_CONST               None
+                 102  RETURN_VALUE     
+               104_0  COME_FROM            88  '88'
+                 104  END_FINALLY      
+               106_0  COME_FROM            80  '80'
+Instruction context:
+   
+ L. 112        28  LOAD_GLOBAL              traceback
+                  30  LOAD_METHOD              print_exc
+                  32  CALL_METHOD_0         0  ''
+->                34  POP_TOP          
+Instruction context:
+   
+ L. 119        20  LOAD_GLOBAL              traceback
+                  22  LOAD_METHOD              print_exc
+                  24  CALL_METHOD_0         0  ''
+->                26  POP_TOP          
+Instruction context:
+   
+ L. 154        22  DUP_TOP          
+                  24  LOAD_GLOBAL              AttributeError
+                  26  COMPARE_OP               exception-match
+                  28  POP_JUMP_IF_FALSE    96  'to 96'
+                  30  POP_TOP          
+->                32  POP_TOP          
+                  34  POP_TOP          
+
+../test/166919.pyc -- 
+# decompile failed
+
+# file ../test/166919.pyc
+# Deparsing stopped due to parse error

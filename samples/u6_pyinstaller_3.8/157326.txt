@@ -1,0 +1,87 @@
+Instruction context:
+   
+ L. 188        14  DUP_TOP          
+                  16  LOAD_GLOBAL              ValueError
+                  18  COMPARE_OP               exception-match
+                  20  POP_JUMP_IF_FALSE    34  'to 34'
+                  22  POP_TOP          
+->                24  POP_TOP          
+                  26  POP_TOP          
+Instruction context:
+   
+ L. 231        60  POP_BLOCK        
+->                62  JUMP_BACK            16  'to 16'
+                64_0  COME_FROM            58  '58'
+                  64  POP_BLOCK        
+                  66  JUMP_FORWARD        126  'to 126'
+                68_0  COME_FROM_FINALLY    48  '48'
+Instruction context:
+   
+ L. 352        20  DUP_TOP          
+                  22  LOAD_GLOBAL              FileNotFoundError
+                  24  LOAD_GLOBAL              ProcessLookupError
+                  26  BUILD_TUPLE_2         2 
+                  28  COMPARE_OP               exception-match
+                  30  POP_JUMP_IF_FALSE    86  'to 86'
+                  32  POP_TOP          
+->                34  POP_TOP          
+                  36  POP_TOP          
+Instruction context:
+   
+ L. 429        26  DUP_TOP          
+                  28  LOAD_GLOBAL              OSError
+                  30  COMPARE_OP               exception-match
+                  32  POP_JUMP_IF_FALSE    44  'to 44'
+                  34  POP_TOP          
+->                36  POP_TOP          
+                  38  POP_TOP          
+Instruction context:
+   
+ L. 526        68  CALL_METHOD_1         1  ''
+                  70  POP_BLOCK        
+->                72  ROT_TWO          
+                  74  POP_TOP          
+                  76  RETURN_VALUE     
+                78_0  COME_FROM_FINALLY    48  '48'
+Instruction context:
+   
+ L. 543        30  DUP_TOP          
+                  32  LOAD_GLOBAL              FileNotFoundError
+                  34  COMPARE_OP               exception-match
+                  36  POP_JUMP_IF_FALSE    70  'to 70'
+                  38  POP_TOP          
+->                40  POP_TOP          
+                  42  POP_TOP          
+Instruction context:
+   
+ L. 582       108  POP_BLOCK        
+->               110  POP_EXCEPT       
+                 112  CALL_FINALLY        146  'to 146'
+                 114  JUMP_BACK            38  'to 38'
+               116_0  COME_FROM           106  '106'
+               116_1  COME_FROM           102  '102'
+Instruction context:
+   
+ L. 608       112  POP_EXCEPT       
+                 114  JUMP_BACK            48  'to 48'
+->               116  POP_EXCEPT       
+                 118  JUMP_BACK            48  'to 48'
+               120_0  COME_FROM           100  '100'
+                 120  END_FINALLY      
+               122_0  COME_FROM            92  '92'
+Instruction context:
+   
+ L. 688        70  BUILD_LIST_0          0 
+                  72  ROT_FOUR         
+->                74  POP_BLOCK        
+                  76  POP_EXCEPT       
+                  78  CALL_FINALLY         88  'to 88'
+                  80  RETURN_VALUE     
+                82_0  COME_FROM            68  '68'
+                82_1  COME_FROM            64  '64'
+
+../test/157326.pyc -- 
+# decompile failed
+
+# file ../test/157326.pyc
+# Deparsing stopped due to parse error

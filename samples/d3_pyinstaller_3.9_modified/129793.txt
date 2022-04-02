@@ -1,0 +1,191 @@
+
+# file test/129793.pyc
+# --- This code section failed: ---
+
+ L.  24         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'sdist'
+                6  STORE_NAME               __qualname__
+
+ L.  25         8  LOAD_STR                 'Smart sdist that finds anything supported by revision control'
+               10  STORE_NAME               __doc__
+
+ L.  27        12  BUILD_LIST_0          0 
+               14  LOAD_CONST               (('formats=', None, 'formats for source distribution (comma-separated list)'), ('keep-temp', 'k', 'keep the distribution tree around after creating archive file(s)'), ('dist-dir=', 'd', 'directory to put the source distribution archive(s) in [default: dist]'))
+               16  CALL_FINALLY         19  'to 19'
+               18  STORE_NAME               user_options
+
+ L.  38        20  BUILD_MAP_0           0 
+               22  STORE_NAME               negative_opt
+
+ L.  40        24  BUILD_LIST_0          0 
+               26  LOAD_CONST               ('', '.rst', '.txt', '.md')
+               28  CALL_FINALLY         31  'to 31'
+               30  STORE_NAME               README_EXTENSIONS
+
+ L.  41        32  LOAD_NAME                tuple
+               34  LOAD_GENEXPR             '<code_object <genexpr>>'
+               36  LOAD_STR                 'sdist.<genexpr>'
+               38  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               40  LOAD_NAME                README_EXTENSIONS
+               42  GET_ITER         
+               44  CALL_FUNCTION_1       1  ''
+               46  CALL_FUNCTION_1       1  ''
+               48  STORE_NAME               READMES
+
+ L.  43        50  LOAD_CODE                <code_object run>
+               52  LOAD_STR                 'sdist.run'
+               54  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               56  STORE_NAME               run
+
+ L.  62        58  LOAD_CODE                <code_object initialize_options>
+               60  LOAD_STR                 'sdist.initialize_options'
+               62  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               64  STORE_NAME               initialize_options
+
+ L.  67        66  LOAD_CODE                <code_object _default_to_gztar>
+               68  LOAD_STR                 'sdist._default_to_gztar'
+               70  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               72  STORE_NAME               _default_to_gztar
+
+ L.  73        74  LOAD_CODE                <code_object make_distribution>
+               76  LOAD_STR                 'sdist.make_distribution'
+               78  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               80  STORE_NAME               make_distribution
+
+ L.  80        82  LOAD_NAME                staticmethod
+
+ L.  81        84  LOAD_NAME                contextlib
+               86  LOAD_ATTR                contextmanager
+
+ L.  82        88  LOAD_CODE                <code_object _remove_os_link>
+               90  LOAD_STR                 'sdist._remove_os_link'
+               92  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               94  CALL_FUNCTION_1       1  ''
+               96  CALL_FUNCTION_1       1  ''
+               98  STORE_NAME               _remove_os_link
+
+ L. 101       100  LOAD_CODE                <code_object __read_template_hack>
+              102  LOAD_STR                 'sdist.__read_template_hack'
+              104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              106  STORE_NAME               _sdist__read_template_hack
+
+ L. 117       108  LOAD_NAME                sys
+              110  LOAD_ATTR                version_info
+              112  LOAD_CONST               (2, 7, 2)
+              114  COMPARE_OP               <
+              116  JUMP_IF_TRUE_OR_POP   168  'to 168'
+
+ L. 118       118  LOAD_CONST               (3, 0)
+              120  LOAD_NAME                sys
+              122  LOAD_ATTR                version_info
+              124  DUP_TOP          
+              126  ROT_THREE        
+              128  COMPARE_OP               <=
+              130  JUMP_IF_FALSE_OR_POP   138  'to 138'
+              132  LOAD_CONST               (3, 1, 4)
+              134  COMPARE_OP               <
+              136  JUMP_FORWARD        142  'to 142'
+            138_0  COME_FROM           130  '130'
+              138  ROT_TWO          
+              140  POP_TOP          
+            142_0  COME_FROM           136  '136'
+
+ L. 117       142  JUMP_IF_TRUE_OR_POP   168  'to 168'
+
+ L. 119       144  LOAD_CONST               (3, 2)
+              146  LOAD_NAME                sys
+              148  LOAD_ATTR                version_info
+              150  DUP_TOP          
+              152  ROT_THREE        
+              154  COMPARE_OP               <=
+              156  JUMP_IF_FALSE_OR_POP   164  'to 164'
+              158  LOAD_CONST               (3, 2, 1)
+              160  COMPARE_OP               <
+              162  JUMP_FORWARD        168  'to 168'
+            164_0  COME_FROM           156  '156'
+              164  ROT_TWO          
+              166  POP_TOP          
+            168_0  COME_FROM           162  '162'
+            168_1  COME_FROM           142  '142'
+            168_2  COME_FROM           116  '116'
+
+ L. 116       168  STORE_NAME               has_leaky_handle
+
+ L. 121       170  LOAD_NAME                has_leaky_handle
+              172  POP_JUMP_IF_FALSE   178  'to 178'
+
+ L. 122       174  LOAD_NAME                _sdist__read_template_hack
+              176  STORE_NAME               read_template
+            178_0  COME_FROM           172  '172'
+
+ L. 124       178  LOAD_CLOSURE             '__class__'
+              180  BUILD_TUPLE_1         1 
+              182  LOAD_CODE                <code_object _add_defaults_optional>
+              184  LOAD_STR                 'sdist._add_defaults_optional'
+              186  MAKE_FUNCTION_8          'closure'
+              188  STORE_NAME               _add_defaults_optional
+
+ L. 132       190  LOAD_CODE                <code_object _add_defaults_python>
+              192  LOAD_STR                 'sdist._add_defaults_python'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  STORE_NAME               _add_defaults_python
+
+ L. 139       198  LOAD_CODE                <code_object _safe_data_files>
+              200  LOAD_STR                 'sdist._safe_data_files'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  STORE_NAME               _safe_data_files
+
+ L. 149       206  LOAD_CODE                <code_object _add_data_files>
+              208  LOAD_STR                 'sdist._add_data_files'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               _add_data_files
+
+ L. 159       214  LOAD_CLOSURE             '__class__'
+              216  BUILD_TUPLE_1         1 
+              218  LOAD_CODE                <code_object _add_defaults_data_files>
+              220  LOAD_STR                 'sdist._add_defaults_data_files'
+              222  MAKE_FUNCTION_8          'closure'
+              224  STORE_NAME               _add_defaults_data_files
+
+ L. 168       226  LOAD_CODE                <code_object check_readme>
+              228  LOAD_STR                 'sdist.check_readme'
+              230  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              232  STORE_NAME               check_readme
+
+ L. 178       234  LOAD_CODE                <code_object make_release_tree>
+              236  LOAD_STR                 'sdist.make_release_tree'
+              238  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              240  STORE_NAME               make_release_tree
+
+ L. 191       242  LOAD_CODE                <code_object _manifest_is_not_generated>
+              244  LOAD_STR                 'sdist._manifest_is_not_generated'
+              246  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              248  STORE_NAME               _manifest_is_not_generated
+
+ L. 201       250  LOAD_CODE                <code_object read_manifest>
+              252  LOAD_STR                 'sdist.read_manifest'
+              254  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              256  STORE_NAME               read_manifest
+
+ L. 223       258  LOAD_CODE                <code_object check_license>
+              260  LOAD_STR                 'sdist.check_license'
+              262  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              264  STORE_NAME               check_license
+              266  LOAD_CLOSURE             '__class__'
+              268  DUP_TOP          
+              270  STORE_NAME               __classcell__
+              272  RETURN_VALUE     
+               -1  RETURN_LAST      
+
+Parse error at or near `CALL_FINALLY' instruction at offset 16
+
+Instruction context:
+   
+ L.  27        12  BUILD_LIST_0          0 
+                  14  LOAD_CONST               (('formats=', None, 'formats for source distribution (comma-separated list)'), ('keep-temp', 'k', 'keep the distribution tree around after creating archive file(s)'), ('dist-dir=', 'd', 'directory to put the source distribution archive(s) in [default: dist]'))
+->                16  CALL_FINALLY         19  'to 19'
+                  18  STORE_NAME               user_options
+
+test/129793.pyc -- 
+# decompile failed

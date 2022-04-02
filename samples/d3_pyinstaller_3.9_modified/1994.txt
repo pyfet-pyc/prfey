@@ -1,0 +1,114 @@
+Instruction context:
+   
+ L.  11        60  BUILD_LIST_0          0 
+                  62  LOAD_CONST               ('fftshift', 'ifftshift', 'fftfreq', 'rfftfreq')
+->                64  CALL_FINALLY         67  'to 67'
+                  66  STORE_NAME               __all__
+
+test/1994.pyc -- 
+# decompile failed
+
+# file test/1994.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nDiscrete Fourier Transforms - helper.py\n\n'
+                2  STORE_NAME               __doc__
+
+ L.   5         4  LOAD_CONST               0
+                6  LOAD_CONST               ('integer_types',)
+                8  IMPORT_NAME_ATTR         numpy.compat
+               10  IMPORT_FROM              integer_types
+               12  STORE_NAME               integer_types
+               14  POP_TOP          
+
+ L.   6        16  LOAD_CONST               0
+               18  LOAD_CONST               ('integer', 'empty', 'arange', 'asarray', 'roll')
+               20  IMPORT_NAME_ATTR         numpy.core
+               22  IMPORT_FROM              integer
+               24  STORE_NAME               integer
+               26  IMPORT_FROM              empty
+               28  STORE_NAME               empty
+               30  IMPORT_FROM              arange
+               32  STORE_NAME               arange
+               34  IMPORT_FROM              asarray
+               36  STORE_NAME               asarray
+               38  IMPORT_FROM              roll
+               40  STORE_NAME               roll
+               42  POP_TOP          
+
+ L.   7        44  LOAD_CONST               0
+               46  LOAD_CONST               ('array_function_dispatch', 'set_module')
+               48  IMPORT_NAME_ATTR         numpy.core.overrides
+               50  IMPORT_FROM              array_function_dispatch
+               52  STORE_NAME               array_function_dispatch
+               54  IMPORT_FROM              set_module
+               56  STORE_NAME               set_module
+               58  POP_TOP          
+
+ L.  11        60  BUILD_LIST_0          0 
+               62  LOAD_CONST               ('fftshift', 'ifftshift', 'fftfreq', 'rfftfreq')
+               64  CALL_FINALLY         67  'to 67'
+               66  STORE_NAME               __all__
+
+ L.  13        68  LOAD_NAME                integer_types
+               70  LOAD_NAME                integer
+               72  BUILD_TUPLE_1         1 
+               74  BINARY_ADD       
+               76  STORE_NAME               integer_types
+
+ L.  16        78  LOAD_CONST               (None,)
+               80  LOAD_CODE                <code_object _fftshift_dispatcher>
+               82  LOAD_STR                 '_fftshift_dispatcher'
+               84  MAKE_FUNCTION_1          'default'
+               86  STORE_NAME               _fftshift_dispatcher
+
+ L.  20        88  LOAD_NAME                array_function_dispatch
+               90  LOAD_NAME                _fftshift_dispatcher
+               92  LOAD_STR                 'numpy.fft'
+               94  LOAD_CONST               ('module',)
+               96  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+
+ L.  21        98  LOAD_CONST               (None,)
+              100  LOAD_CODE                <code_object fftshift>
+              102  LOAD_STR                 'fftshift'
+              104  MAKE_FUNCTION_1          'default'
+              106  CALL_FUNCTION_1       1  ''
+              108  STORE_NAME               fftshift
+
+ L.  77       110  LOAD_NAME                array_function_dispatch
+              112  LOAD_NAME                _fftshift_dispatcher
+              114  LOAD_STR                 'numpy.fft'
+              116  LOAD_CONST               ('module',)
+              118  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+
+ L.  78       120  LOAD_CONST               (None,)
+              122  LOAD_CODE                <code_object ifftshift>
+              124  LOAD_STR                 'ifftshift'
+              126  MAKE_FUNCTION_1          'default'
+              128  CALL_FUNCTION_1       1  ''
+              130  STORE_NAME               ifftshift
+
+ L. 124       132  LOAD_NAME                set_module
+              134  LOAD_STR                 'numpy.fft'
+              136  CALL_FUNCTION_1       1  ''
+
+ L. 125       138  LOAD_CONST               (1.0,)
+              140  LOAD_CODE                <code_object fftfreq>
+              142  LOAD_STR                 'fftfreq'
+              144  MAKE_FUNCTION_1          'default'
+              146  CALL_FUNCTION_1       1  ''
+              148  STORE_NAME               fftfreq
+
+ L. 173       150  LOAD_NAME                set_module
+              152  LOAD_STR                 'numpy.fft'
+              154  CALL_FUNCTION_1       1  ''
+
+ L. 174       156  LOAD_CONST               (1.0,)
+              158  LOAD_CODE                <code_object rfftfreq>
+              160  LOAD_STR                 'rfftfreq'
+              162  MAKE_FUNCTION_1          'default'
+              164  CALL_FUNCTION_1       1  ''
+              166  STORE_NAME               rfftfreq
+
+Parse error at or near `CALL_FINALLY' instruction at offset 64
+

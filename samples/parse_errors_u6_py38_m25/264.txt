@@ -1,0 +1,33 @@
+Instruction context:
+   
+ L. 355       174  LOAD_FAST                'context'
+                 176  LOAD_METHOD              load_default_certs
+                 178  CALL_METHOD_0         0  ''
+                 180  POP_TOP          
+->             182_0  COME_FROM_EXCEPT_CLAUSE   172  '172'
+               182_1  COME_FROM_EXCEPT_CLAUSE   162  '162'
+               182_2  COME_FROM_EXCEPT_CLAUSE   154  '154'
+               182_3  COME_FROM_EXCEPT_CLAUSE    96  '96'
+Instruction context:
+   
+ L. 412        28  POP_TOP          
+                  30  POP_BLOCK        
+                  32  BEGIN_FINALLY    
+->                34  WITH_CLEANUP_START
+                  36  WITH_CLEANUP_FINISH
+                  38  POP_FINALLY           0  ''
+                  40  LOAD_CONST               True
+                  42  RETURN_VALUE     
+                  44  JUMP_BACK            16  'to 16'
+                  46  POP_BLOCK        
+                  48  BEGIN_FINALLY    
+                50_0  COME_FROM_WITH        8  '8'
+                  50  WITH_CLEANUP_START
+                  52  WITH_CLEANUP_FINISH
+                  54  END_FINALLY      
+
+test/264.pyc -- 
+# decompile failed
+
+# file test/264.pyc
+# Deparsing stopped due to parse error

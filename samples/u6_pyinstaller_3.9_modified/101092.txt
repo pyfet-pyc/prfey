@@ -1,0 +1,288 @@
+
+# file test/101092.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Generic socket server classes.\n\nThis module tries to capture the various aspects of defining a server:\n\nFor socket-based servers:\n\n- address family:\n        - AF_INET{,6}: IP (Internet Protocol) sockets (default)\n        - AF_UNIX: Unix domain sockets\n        - others, e.g. AF_DECNET are conceivable (see <socket.h>\n- socket type:\n        - SOCK_STREAM (reliable stream, e.g. TCP)\n        - SOCK_DGRAM (datagrams, e.g. UDP)\n\nFor request-based servers (including socket-based):\n\n- client address verification before further looking at the request\n        (This is actually a hook for any processing that needs to look\n         at the request before anything else, e.g. logging)\n- how to handle multiple requests:\n        - synchronous (one request is handled at a time)\n        - forking (each request is handled by a new process)\n        - threading (each request is handled by a new thread)\n\nThe classes in this module favor the server type that is simplest to\nwrite: a synchronous TCP/IP server.  This is bad class design, but\nsaves some typing.  (There\'s also the issue that a deep class hierarchy\nslows down method lookups.)\n\nThere are five classes in an inheritance diagram, four of which represent\nsynchronous servers of four types:\n\n        +------------+\n        | BaseServer |\n        +------------+\n              |\n              v\n        +-----------+        +------------------+\n        | TCPServer |------->| UnixStreamServer |\n        +-----------+        +------------------+\n              |\n              v\n        +-----------+        +--------------------+\n        | UDPServer |------->| UnixDatagramServer |\n        +-----------+        +--------------------+\n\nNote that UnixDatagramServer derives from UDPServer, not from\nUnixStreamServer -- the only difference between an IP and a Unix\nstream server is the address family, which is simply repeated in both\nunix server classes.\n\nForking and threading versions of each type of server can be created\nusing the ForkingMixIn and ThreadingMixIn mix-in classes.  For\ninstance, a threading UDP server class is created as follows:\n\n        class ThreadingUDPServer(ThreadingMixIn, UDPServer): pass\n\nThe Mix-in class must come first, since it overrides a method defined\nin UDPServer! Setting the various member variables also changes\nthe behavior of the underlying server mechanism.\n\nTo implement a service, you must derive a class from\nBaseRequestHandler and redefine its handle() method.  You can then run\nvarious versions of the service by combining one of the server classes\nwith your request handler class.\n\nThe request handler class must be different for datagram or stream\nservices.  This can be hidden by using the request handler\nsubclasses StreamRequestHandler or DatagramRequestHandler.\n\nOf course, you still have to use your head!\n\nFor instance, it makes no sense to use a forking server if the service\ncontains state in memory that can be modified by requests (since the\nmodifications in the child process would never reach the initial state\nkept in the parent process and passed to each child).  In this case,\nyou can use a threading server, but you will probably have to use\nlocks to avoid two requests that come in nearly simultaneous to apply\nconflicting changes to the server state.\n\nOn the other hand, if you are building e.g. an HTTP server, where all\ndata is stored externally (e.g. in the file system), a synchronous\nclass will essentially render the service "deaf" while one request is\nbeing handled -- which may be for a very long time if a client is slow\nto read all the data it has requested.  Here a threading or forking\nserver is appropriate.\n\nIn some cases, it may be appropriate to process part of a request\nsynchronously, but to finish processing in a forked child depending on\nthe request data.  This can be implemented by using a synchronous\nserver and doing an explicit fork in the request handler class\nhandle() method.\n\nAnother approach to handling multiple simultaneous requests in an\nenvironment that supports neither threads nor fork (or where these are\ntoo expensive or inappropriate for the service) is to maintain an\nexplicit table of partially finished requests and to use a selector to\ndecide which request to work on next (or whether to handle a new\nincoming request).  This is particularly important for stream services\nwhere each client can potentially be connected for a long time (if\nthreads or subprocesses cannot be used).\n\nFuture work:\n- Standard classes for Sun RPC (which uses either UDP or TCP)\n- Standard mix-in classes to implement various authentication\n  and encryption schemes\n\nXXX Open problems:\n- What to do with out-of-band data?\n\nBaseServer:\n- split generic "request" functionality out into BaseServer class.\n  Copyright (C) 2000  Luke Kenneth Casson Leighton <lkcl@samba.org>\n\n  example: read entries from a SQL database (requires overriding\n  get_request() to return a table entry from the database).\n  entry is processed by a RequestHandlerClass.\n\n'
+                2  STORE_NAME               __doc__
+
+ L. 123         4  LOAD_STR                 '0.4'
+                6  STORE_NAME               __version__
+
+ L. 126         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              socket
+               14  STORE_NAME               socket
+
+ L. 127        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              selectors
+               22  STORE_NAME               selectors
+
+ L. 128        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              os
+               30  STORE_NAME               os
+
+ L. 129        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              sys
+               38  STORE_NAME               sys
+
+ L. 130        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              threading
+               46  STORE_NAME               threading
+
+ L. 131        48  LOAD_CONST               0
+               50  LOAD_CONST               ('BufferedIOBase',)
+               52  IMPORT_NAME              io
+               54  IMPORT_FROM              BufferedIOBase
+               56  STORE_NAME               BufferedIOBase
+               58  POP_TOP          
+
+ L. 132        60  LOAD_CONST               0
+               62  LOAD_CONST               ('monotonic',)
+               64  IMPORT_NAME              time
+               66  IMPORT_FROM              monotonic
+               68  STORE_NAME               time
+               70  POP_TOP          
+
+ L. 134        72  BUILD_LIST_0          0 
+               74  LOAD_CONST               ('BaseServer', 'TCPServer', 'UDPServer', 'ThreadingUDPServer', 'ThreadingTCPServer', 'BaseRequestHandler', 'StreamRequestHandler', 'DatagramRequestHandler', 'ThreadingMixIn')
+               76  CALL_FINALLY         79  'to 79'
+               78  STORE_NAME               __all__
+
+ L. 138        80  LOAD_NAME                hasattr
+               82  LOAD_NAME                os
+               84  LOAD_STR                 'fork'
+               86  CALL_FUNCTION_2       2  ''
+               88  POP_JUMP_IF_FALSE   104  'to 104'
+
+ L. 139        90  LOAD_NAME                __all__
+               92  LOAD_METHOD              extend
+               94  BUILD_LIST_0          0 
+               96  LOAD_CONST               ('ForkingUDPServer', 'ForkingTCPServer', 'ForkingMixIn')
+               98  CALL_FINALLY        101  'to 101'
+              100  CALL_METHOD_1         1  ''
+              102  POP_TOP          
+            104_0  COME_FROM            88  '88'
+
+ L. 140       104  LOAD_NAME                hasattr
+              106  LOAD_NAME                socket
+              108  LOAD_STR                 'AF_UNIX'
+              110  CALL_FUNCTION_2       2  ''
+              112  POP_JUMP_IF_FALSE   128  'to 128'
+
+ L. 141       114  LOAD_NAME                __all__
+              116  LOAD_METHOD              extend
+              118  BUILD_LIST_0          0 
+              120  LOAD_CONST               ('UnixStreamServer', 'UnixDatagramServer', 'ThreadingUnixStreamServer', 'ThreadingUnixDatagramServer')
+              122  CALL_FINALLY        125  'to 125'
+              124  CALL_METHOD_1         1  ''
+              126  POP_TOP          
+            128_0  COME_FROM           112  '112'
+
+ L. 147       128  LOAD_NAME                hasattr
+              130  LOAD_NAME                selectors
+              132  LOAD_STR                 'PollSelector'
+              134  CALL_FUNCTION_2       2  ''
+              136  POP_JUMP_IF_FALSE   146  'to 146'
+
+ L. 148       138  LOAD_NAME                selectors
+              140  LOAD_ATTR                PollSelector
+              142  STORE_NAME               _ServerSelector
+              144  JUMP_FORWARD        152  'to 152'
+            146_0  COME_FROM           136  '136'
+
+ L. 150       146  LOAD_NAME                selectors
+              148  LOAD_ATTR                SelectSelector
+              150  STORE_NAME               _ServerSelector
+            152_0  COME_FROM           144  '144'
+
+ L. 153       152  LOAD_BUILD_CLASS 
+              154  LOAD_CODE                <code_object BaseServer>
+              156  LOAD_STR                 'BaseServer'
+              158  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              160  LOAD_STR                 'BaseServer'
+              162  CALL_FUNCTION_2       2  ''
+              164  STORE_NAME               BaseServer
+
+ L. 390       166  LOAD_BUILD_CLASS 
+              168  LOAD_CODE                <code_object TCPServer>
+              170  LOAD_STR                 'TCPServer'
+              172  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              174  LOAD_STR                 'TCPServer'
+              176  LOAD_NAME                BaseServer
+              178  CALL_FUNCTION_3       3  ''
+              180  STORE_NAME               TCPServer
+
+ L. 516       182  LOAD_BUILD_CLASS 
+              184  LOAD_CODE                <code_object UDPServer>
+              186  LOAD_STR                 'UDPServer'
+              188  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              190  LOAD_STR                 'UDPServer'
+              192  LOAD_NAME                TCPServer
+              194  CALL_FUNCTION_3       3  ''
+              196  STORE_NAME               UDPServer
+
+ L. 542       198  LOAD_NAME                hasattr
+              200  LOAD_NAME                os
+              202  LOAD_STR                 'fork'
+              204  CALL_FUNCTION_2       2  ''
+              206  POP_JUMP_IF_FALSE   222  'to 222'
+
+ L. 543       208  LOAD_BUILD_CLASS 
+              210  LOAD_CODE                <code_object ForkingMixIn>
+              212  LOAD_STR                 'ForkingMixIn'
+              214  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              216  LOAD_STR                 'ForkingMixIn'
+              218  CALL_FUNCTION_2       2  ''
+              220  STORE_NAME               ForkingMixIn
+            222_0  COME_FROM           206  '206'
+
+ L. 631       222  LOAD_BUILD_CLASS 
+              224  LOAD_CODE                <code_object ThreadingMixIn>
+              226  LOAD_STR                 'ThreadingMixIn'
+              228  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              230  LOAD_STR                 'ThreadingMixIn'
+              232  CALL_FUNCTION_2       2  ''
+              234  STORE_NAME               ThreadingMixIn
+
+ L. 677       236  LOAD_NAME                hasattr
+              238  LOAD_NAME                os
+              240  LOAD_STR                 'fork'
+              242  CALL_FUNCTION_2       2  ''
+          244_246  POP_JUMP_IF_FALSE   284  'to 284'
+
+ L. 678       248  LOAD_BUILD_CLASS 
+              250  LOAD_CODE                <code_object ForkingUDPServer>
+              252  LOAD_STR                 'ForkingUDPServer'
+              254  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              256  LOAD_STR                 'ForkingUDPServer'
+              258  LOAD_NAME                ForkingMixIn
+              260  LOAD_NAME                UDPServer
+              262  CALL_FUNCTION_4       4  ''
+              264  STORE_NAME               ForkingUDPServer
+
+ L. 679       266  LOAD_BUILD_CLASS 
+              268  LOAD_CODE                <code_object ForkingTCPServer>
+              270  LOAD_STR                 'ForkingTCPServer'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  LOAD_STR                 'ForkingTCPServer'
+              276  LOAD_NAME                ForkingMixIn
+              278  LOAD_NAME                TCPServer
+              280  CALL_FUNCTION_4       4  ''
+              282  STORE_NAME               ForkingTCPServer
+            284_0  COME_FROM           244  '244'
+
+ L. 681       284  LOAD_BUILD_CLASS 
+              286  LOAD_CODE                <code_object ThreadingUDPServer>
+              288  LOAD_STR                 'ThreadingUDPServer'
+              290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              292  LOAD_STR                 'ThreadingUDPServer'
+              294  LOAD_NAME                ThreadingMixIn
+              296  LOAD_NAME                UDPServer
+              298  CALL_FUNCTION_4       4  ''
+              300  STORE_NAME               ThreadingUDPServer
+
+ L. 682       302  LOAD_BUILD_CLASS 
+              304  LOAD_CODE                <code_object ThreadingTCPServer>
+              306  LOAD_STR                 'ThreadingTCPServer'
+              308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              310  LOAD_STR                 'ThreadingTCPServer'
+              312  LOAD_NAME                ThreadingMixIn
+              314  LOAD_NAME                TCPServer
+              316  CALL_FUNCTION_4       4  ''
+              318  STORE_NAME               ThreadingTCPServer
+
+ L. 684       320  LOAD_NAME                hasattr
+              322  LOAD_NAME                socket
+              324  LOAD_STR                 'AF_UNIX'
+              326  CALL_FUNCTION_2       2  ''
+          328_330  POP_JUMP_IF_FALSE   400  'to 400'
+
+ L. 686       332  LOAD_BUILD_CLASS 
+              334  LOAD_CODE                <code_object UnixStreamServer>
+              336  LOAD_STR                 'UnixStreamServer'
+              338  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              340  LOAD_STR                 'UnixStreamServer'
+              342  LOAD_NAME                TCPServer
+              344  CALL_FUNCTION_3       3  ''
+              346  STORE_NAME               UnixStreamServer
+
+ L. 689       348  LOAD_BUILD_CLASS 
+              350  LOAD_CODE                <code_object UnixDatagramServer>
+              352  LOAD_STR                 'UnixDatagramServer'
+              354  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              356  LOAD_STR                 'UnixDatagramServer'
+              358  LOAD_NAME                UDPServer
+              360  CALL_FUNCTION_3       3  ''
+              362  STORE_NAME               UnixDatagramServer
+
+ L. 692       364  LOAD_BUILD_CLASS 
+              366  LOAD_CODE                <code_object ThreadingUnixStreamServer>
+              368  LOAD_STR                 'ThreadingUnixStreamServer'
+              370  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              372  LOAD_STR                 'ThreadingUnixStreamServer'
+              374  LOAD_NAME                ThreadingMixIn
+              376  LOAD_NAME                UnixStreamServer
+              378  CALL_FUNCTION_4       4  ''
+              380  STORE_NAME               ThreadingUnixStreamServer
+
+ L. 694       382  LOAD_BUILD_CLASS 
+              384  LOAD_CODE                <code_object ThreadingUnixDatagramServer>
+              386  LOAD_STR                 'ThreadingUnixDatagramServer'
+              388  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              390  LOAD_STR                 'ThreadingUnixDatagramServer'
+              392  LOAD_NAME                ThreadingMixIn
+              394  LOAD_NAME                UnixDatagramServer
+              396  CALL_FUNCTION_4       4  ''
+              398  STORE_NAME               ThreadingUnixDatagramServer
+            400_0  COME_FROM           328  '328'
+
+ L. 696       400  LOAD_BUILD_CLASS 
+              402  LOAD_CODE                <code_object BaseRequestHandler>
+              404  LOAD_STR                 'BaseRequestHandler'
+              406  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              408  LOAD_STR                 'BaseRequestHandler'
+              410  CALL_FUNCTION_2       2  ''
+              412  STORE_NAME               BaseRequestHandler
+
+ L. 742       414  LOAD_BUILD_CLASS 
+              416  LOAD_CODE                <code_object StreamRequestHandler>
+              418  LOAD_STR                 'StreamRequestHandler'
+              420  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              422  LOAD_STR                 'StreamRequestHandler'
+              424  LOAD_NAME                BaseRequestHandler
+              426  CALL_FUNCTION_3       3  ''
+              428  STORE_NAME               StreamRequestHandler
+
+ L. 787       430  LOAD_BUILD_CLASS 
+              432  LOAD_CODE                <code_object _SocketWriter>
+              434  LOAD_STR                 '_SocketWriter'
+              436  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              438  LOAD_STR                 '_SocketWriter'
+              440  LOAD_NAME                BufferedIOBase
+              442  CALL_FUNCTION_3       3  ''
+              444  STORE_NAME               _SocketWriter
+
+ L. 806       446  LOAD_BUILD_CLASS 
+              448  LOAD_CODE                <code_object DatagramRequestHandler>
+              450  LOAD_STR                 'DatagramRequestHandler'
+              452  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              454  LOAD_STR                 'DatagramRequestHandler'
+              456  LOAD_NAME                BaseRequestHandler
+              458  CALL_FUNCTION_3       3  ''
+              460  STORE_NAME               DatagramRequestHandler
+
+Parse error at or near `CALL_FINALLY' instruction at offset 76
+
+Instruction context:
+   
+ L. 134        72  BUILD_LIST_0          0 
+                  74  LOAD_CONST               ('BaseServer', 'TCPServer', 'UDPServer', 'ThreadingUDPServer', 'ThreadingTCPServer', 'BaseRequestHandler', 'StreamRequestHandler', 'DatagramRequestHandler', 'ThreadingMixIn')
+->                76  CALL_FINALLY         79  'to 79'
+                  78  STORE_NAME               __all__
+
+test/101092.pyc -- 
+# decompile failed

@@ -1,0 +1,77 @@
+Instruction context:
+   
+ L. 187       100  BUILD_LIST_0          0 
+                 102  ROT_FOUR         
+->               104  POP_BLOCK        
+                 106  POP_EXCEPT       
+                 108  CALL_FINALLY        112  'to 112'
+                 110  RETURN_VALUE     
+               112_0  COME_FROM           108  '108'
+               112_1  COME_FROM_FINALLY    86  '86'
+                 112  LOAD_CONST               None
+                 114  STORE_FAST               'e'
+                 116  DELETE_FAST              'e'
+                 118  END_FINALLY      
+                 120  POP_EXCEPT       
+                 122  JUMP_FORWARD        126  'to 126'
+               124_0  COME_FROM            78  '78'
+                 124  END_FINALLY      
+               126_0  COME_FROM           122  '122'
+               126_1  COME_FROM            32  '32'
+Instruction context:
+   
+ L. 236        56  POP_BLOCK        
+->                58  POP_EXCEPT       
+                  60  CALL_FINALLY         82  'to 82'
+                  62  LOAD_CONST               b''
+                  64  RETURN_VALUE     
+                66_0  COME_FROM            54  '54'
+                66_1  COME_FROM            44  '44'
+Instruction context:
+   
+ L. 259        54  POP_BLOCK        
+->                56  POP_EXCEPT       
+                  58  CALL_FINALLY         80  'to 80'
+                  60  LOAD_CONST               0
+                  62  RETURN_VALUE     
+                64_0  COME_FROM            52  '52'
+                64_1  COME_FROM            42  '42'
+Instruction context:
+   
+ L. 282        16  DUP_TOP          
+                  18  LOAD_GLOBAL              OpenSSL
+                  20  LOAD_ATTR                SSL
+                  22  LOAD_ATTR                WantWriteError
+                  24  COMPARE_OP               exception-match
+                  26  POP_JUMP_IF_FALSE    84  'to 84'
+                  28  POP_TOP          
+->                30  POP_TOP          
+                  32  POP_TOP          
+Instruction context:
+   
+ L. 304        30  DUP_TOP          
+                  32  LOAD_GLOBAL              OpenSSL
+                  34  LOAD_ATTR                SSL
+                  36  LOAD_ATTR                Error
+                  38  COMPARE_OP               exception-match
+                  40  POP_JUMP_IF_FALSE    54  'to 54'
+                  42  POP_TOP          
+->                44  POP_TOP          
+                  46  POP_TOP          
+Instruction context:
+   
+ L. 418        78  DUP_TOP          
+                  80  LOAD_GLOBAL              OpenSSL
+                  82  LOAD_ATTR                SSL
+                  84  LOAD_ATTR                WantReadError
+                  86  COMPARE_OP               exception-match
+                  88  POP_JUMP_IF_FALSE   144  'to 144'
+                  90  POP_TOP          
+->                92  POP_TOP          
+                  94  POP_TOP          
+
+../test/133150.pyc -- 
+# decompile failed
+
+# file ../test/133150.pyc
+# Deparsing stopped due to parse error

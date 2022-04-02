@@ -1,0 +1,84 @@
+
+# file test/162673.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nA sub-package for efficiently dealing with polynomials.\n\nWithin the documentation for this sub-package, a "finite power series,"\ni.e., a polynomial (also referred to simply as a "series") is represented\nby a 1-D numpy array of the polynomial\'s coefficients, ordered from lowest\norder term to highest.  For example, array([1,2,3]) represents\n``P_0 + 2*P_1 + 3*P_2``, where P_n is the n-th order basis polynomial\napplicable to the specific module in question, e.g., `polynomial` (which\n"wraps" the "standard" basis) or `chebyshev`.  For optimal performance,\nall operations on polynomials, including evaluation at an argument, are\nimplemented as operations on the coefficients.  Additional (module-specific)\ninformation can be found in the docstring for the module of interest.\n\nThis package provides *convenience classes* for each of six different kinds\nof polynomials:\n\n         ========================    ================\n         **Name**                    **Provides**\n         ========================    ================\n         `~polynomial.Polynomial`    Power series\n         `~chebyshev.Chebyshev`      Chebyshev series\n         `~legendre.Legendre`        Legendre series\n         `~laguerre.Laguerre`        Laguerre series\n         `~hermite.Hermite`          Hermite series\n         `~hermite_e.HermiteE`       HermiteE series\n         ========================    ================\n\nThese *convenience classes* provide a consistent interface for creating,\nmanipulating, and fitting data with polynomials of different bases.\nThe convenience classes are the preferred interface for the `~numpy.polynomial`\npackage, and are available from the ``numpy.polynomial`` namespace.\nThis eliminates the need to navigate to the corresponding submodules, e.g.\n``np.polynomial.Polynomial`` or ``np.polynomial.Chebyshev`` instead of\n``np.polynomial.polynomial.Polynomial`` or\n``np.polynomial.chebyshev.Chebyshev``, respectively.\nThe classes provide a more consistent and concise interface than the\ntype-specific functions defined in the submodules for each type of polynomial.\nFor example, to fit a Chebyshev polynomial with degree ``1`` to data given\nby arrays ``xdata`` and ``ydata``, the\n`~chebyshev.Chebyshev.fit` class method::\n\n    >>> from numpy.polynomial import Chebyshev\n    >>> c = Chebyshev.fit(xdata, ydata, deg=1)\n\nis preferred over the `chebyshev.chebfit` function from the\n``np.polynomial.chebyshev`` module::\n\n    >>> from numpy.polynomial.chebyshev import chebfit\n    >>> c = chebfit(xdata, ydata, deg=1)\n\nSee :doc:`routines.polynomials.classes` for more details.\n\nConvenience Classes\n===================\n\nThe following lists the various constants and methods common to all of\nthe classes representing the various kinds of polynomials. In the following,\nthe term ``Poly`` represents any one of the convenience classes (e.g.\n`~polynomial.Polynomial`, `~chebyshev.Chebyshev`, `~hermite.Hermite`, etc.)\nwhile the lowercase ``p`` represents an **instance** of a polynomial class.\n\nConstants\n---------\n\n- ``Poly.domain``     -- Default domain\n- ``Poly.window``     -- Default window\n- ``Poly.basis_name`` -- String used to represent the basis\n- ``Poly.maxpower``   -- Maximum value ``n`` such that ``p**n`` is allowed\n- ``Poly.nickname``   -- String used in printing\n\nCreation\n--------\n\nMethods for creating polynomial instances.\n\n- ``Poly.basis(degree)``    -- Basis polynomial of given degree\n- ``Poly.identity()``       -- ``p`` where ``p(x) = x`` for all ``x``\n- ``Poly.fit(x, y, deg)``   -- ``p`` of degree ``deg`` with coefficients\n  determined by the least-squares fit to the data ``x``, ``y``\n- ``Poly.fromroots(roots)`` -- ``p`` with specified roots\n- ``p.copy()``              -- Create a copy of ``p``\n\nConversion\n----------\n\nMethods for converting a polynomial instance of one kind to another.\n\n- ``p.cast(Poly)``    -- Convert ``p`` to instance of kind ``Poly``\n- ``p.convert(Poly)`` -- Convert ``p`` to instance of kind ``Poly`` or map\n  between ``domain`` and ``window``\n\nCalculus\n--------\n- ``p.deriv()`` -- Take the derivative of ``p``\n- ``p.integ()`` -- Integrate ``p``\n\nValidation\n----------\n- ``Poly.has_samecoef(p1, p2)``   -- Check if coefficients match\n- ``Poly.has_samedomain(p1, p2)`` -- Check if domains match\n- ``Poly.has_sametype(p1, p2)``   -- Check if types match\n- ``Poly.has_samewindow(p1, p2)`` -- Check if windows match\n\nMisc\n----\n- ``p.linspace()`` -- Return ``x, p(x)`` at equally-spaced points in ``domain``\n- ``p.mapparms()`` -- Return the parameters for the linear mapping between\n  ``domain`` and ``window``.\n- ``p.roots()``    -- Return the roots of `p`.\n- ``p.trim()``     -- Remove trailing coefficients.\n- ``p.cutdeg(degree)`` -- Truncate p to given degree\n- ``p.truncate(size)`` -- Truncate p to given size\n\n'
+                2  STORE_NAME               __doc__
+
+ L. 116         4  LOAD_CONST               1
+                6  LOAD_CONST               ('Polynomial',)
+                8  IMPORT_NAME              polynomial
+               10  IMPORT_FROM              Polynomial
+               12  STORE_NAME               Polynomial
+               14  POP_TOP          
+
+ L. 117        16  LOAD_CONST               1
+               18  LOAD_CONST               ('Chebyshev',)
+               20  IMPORT_NAME              chebyshev
+               22  IMPORT_FROM              Chebyshev
+               24  STORE_NAME               Chebyshev
+               26  POP_TOP          
+
+ L. 118        28  LOAD_CONST               1
+               30  LOAD_CONST               ('Legendre',)
+               32  IMPORT_NAME              legendre
+               34  IMPORT_FROM              Legendre
+               36  STORE_NAME               Legendre
+               38  POP_TOP          
+
+ L. 119        40  LOAD_CONST               1
+               42  LOAD_CONST               ('Hermite',)
+               44  IMPORT_NAME              hermite
+               46  IMPORT_FROM              Hermite
+               48  STORE_NAME               Hermite
+               50  POP_TOP          
+
+ L. 120        52  LOAD_CONST               1
+               54  LOAD_CONST               ('HermiteE',)
+               56  IMPORT_NAME              hermite_e
+               58  IMPORT_FROM              HermiteE
+               60  STORE_NAME               HermiteE
+               62  POP_TOP          
+
+ L. 121        64  LOAD_CONST               1
+               66  LOAD_CONST               ('Laguerre',)
+               68  IMPORT_NAME              laguerre
+               70  IMPORT_FROM              Laguerre
+               72  STORE_NAME               Laguerre
+               74  POP_TOP          
+
+ L. 123        76  BUILD_LIST_0          0 
+               78  LOAD_CONST               ('set_default_printstyle', 'polynomial', 'Polynomial', 'chebyshev', 'Chebyshev', 'legendre', 'Legendre', 'hermite', 'Hermite', 'hermite_e', 'HermiteE', 'laguerre', 'Laguerre')
+               80  CALL_FINALLY         83  'to 83'
+               82  STORE_NAME               __all__
+
+ L. 134        84  LOAD_CODE                <code_object set_default_printstyle>
+               86  LOAD_STR                 'set_default_printstyle'
+               88  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               90  STORE_NAME               set_default_printstyle
+
+ L. 183        92  LOAD_CONST               0
+               94  LOAD_CONST               ('PytestTester',)
+               96  IMPORT_NAME_ATTR         numpy._pytesttester
+               98  IMPORT_FROM              PytestTester
+              100  STORE_NAME               PytestTester
+              102  POP_TOP          
+
+ L. 184       104  LOAD_NAME                PytestTester
+              106  LOAD_NAME                __name__
+              108  CALL_FUNCTION_1       1  ''
+              110  STORE_NAME               test
+
+ L. 185       112  DELETE_NAME              PytestTester
+
+Parse error at or near `CALL_FINALLY' instruction at offset 80
+
+Instruction context:
+   
+ L. 123        76  BUILD_LIST_0          0 
+                  78  LOAD_CONST               ('set_default_printstyle', 'polynomial', 'Polynomial', 'chebyshev', 'Chebyshev', 'legendre', 'Legendre', 'hermite', 'Hermite', 'hermite_e', 'HermiteE', 'laguerre', 'Laguerre')
+->                80  CALL_FINALLY         83  'to 83'
+                  82  STORE_NAME               __all__
+
+test/162673.pyc -- 
+# decompile failed

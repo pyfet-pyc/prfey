@@ -1,0 +1,166 @@
+Instruction context:
+   
+ L.  43        48  BUILD_LIST_0          0 
+                  50  LOAD_CONST               ('pprint', 'pformat', 'isreadable', 'isrecursive', 'saferepr', 'PrettyPrinter', 'pp')
+->                52  CALL_FINALLY         55  'to 55'
+                  54  STORE_NAME               __all__
+
+test/101079.pyc -- 
+# decompile failed
+
+# file test/101079.pyc
+# --- This code section failed: ---
+
+ L.  11         0  LOAD_STR                 "Support to pretty-print lists, tuples, & dictionaries recursively.\n\nVery simple, but useful, especially in debugging data structures.\n\nClasses\n-------\n\nPrettyPrinter()\n    Handle pretty-printing operations onto a stream using a configured\n    set of formatting parameters.\n\nFunctions\n---------\n\npformat()\n    Format a Python object into a pretty-printed representation.\n\npprint()\n    Pretty-print a Python object to a stream [default is sys.stdout].\n\nsaferepr()\n    Generate a 'standard' repr()-like value, but protect against recursive\n    data structures.\n\n"
+                2  STORE_NAME               __doc__
+
+ L.  37         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              collections
+               10  STORE_NAME               _collections
+
+ L.  38        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              re
+               18  STORE_NAME               re
+
+ L.  39        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              sys
+               26  STORE_NAME               _sys
+
+ L.  40        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              types
+               34  STORE_NAME               _types
+
+ L.  41        36  LOAD_CONST               0
+               38  LOAD_CONST               ('StringIO',)
+               40  IMPORT_NAME              io
+               42  IMPORT_FROM              StringIO
+               44  STORE_NAME               _StringIO
+               46  POP_TOP          
+
+ L.  43        48  BUILD_LIST_0          0 
+               50  LOAD_CONST               ('pprint', 'pformat', 'isreadable', 'isrecursive', 'saferepr', 'PrettyPrinter', 'pp')
+               52  CALL_FINALLY         55  'to 55'
+               54  STORE_NAME               __all__
+
+ L.  47        56  LOAD_CONST               (None, 1, 80, None)
+
+ L.  48        58  LOAD_CONST               False
+               60  LOAD_CONST               True
+
+ L.  47        62  LOAD_CONST               ('compact', 'sort_dicts')
+               64  BUILD_CONST_KEY_MAP_2     2 
+               66  LOAD_CODE                <code_object pprint>
+               68  LOAD_STR                 'pprint'
+               70  MAKE_FUNCTION_3          'default, keyword-only'
+               72  STORE_NAME               pprint
+
+ L.  55        74  LOAD_CONST               (1, 80, None)
+
+ L.  56        76  LOAD_CONST               False
+               78  LOAD_CONST               True
+
+ L.  55        80  LOAD_CONST               ('compact', 'sort_dicts')
+               82  BUILD_CONST_KEY_MAP_2     2 
+               84  LOAD_CODE                <code_object pformat>
+               86  LOAD_STR                 'pformat'
+               88  MAKE_FUNCTION_3          'default, keyword-only'
+               90  STORE_NAME               pformat
+
+ L.  61        92  LOAD_CONST               False
+               94  LOAD_CONST               ('sort_dicts',)
+               96  BUILD_CONST_KEY_MAP_1     1 
+               98  LOAD_CODE                <code_object pp>
+              100  LOAD_STR                 'pp'
+              102  MAKE_FUNCTION_2          'keyword-only'
+              104  STORE_NAME               pp
+
+ L.  65       106  LOAD_CODE                <code_object saferepr>
+              108  LOAD_STR                 'saferepr'
+              110  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              112  STORE_NAME               saferepr
+
+ L.  69       114  LOAD_CODE                <code_object isreadable>
+              116  LOAD_STR                 'isreadable'
+              118  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              120  STORE_NAME               isreadable
+
+ L.  73       122  LOAD_CODE                <code_object isrecursive>
+              124  LOAD_STR                 'isrecursive'
+              126  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              128  STORE_NAME               isrecursive
+
+ L.  77       130  LOAD_BUILD_CLASS 
+              132  LOAD_CODE                <code_object _safe_key>
+              134  LOAD_STR                 '_safe_key'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  LOAD_STR                 '_safe_key'
+              140  CALL_FUNCTION_2       2  ''
+              142  STORE_NAME               _safe_key
+
+ L.  99       144  LOAD_CODE                <code_object _safe_tuple>
+              146  LOAD_STR                 '_safe_tuple'
+              148  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              150  STORE_NAME               _safe_tuple
+
+ L. 103       152  LOAD_BUILD_CLASS 
+              154  LOAD_CODE                <code_object PrettyPrinter>
+              156  LOAD_STR                 'PrettyPrinter'
+              158  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              160  LOAD_STR                 'PrettyPrinter'
+              162  CALL_FUNCTION_2       2  ''
+              164  STORE_NAME               PrettyPrinter
+
+ L. 529       166  LOAD_CODE                <code_object _safe_repr>
+              168  LOAD_STR                 '_safe_repr'
+              170  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              172  STORE_NAME               _safe_repr
+
+ L. 599       174  LOAD_NAME                frozenset
+              176  LOAD_NAME                str
+              178  LOAD_NAME                bytes
+              180  LOAD_NAME                bytearray
+              182  LOAD_NAME                int
+              184  LOAD_NAME                float
+              186  LOAD_NAME                complex
+
+ L. 600       188  LOAD_NAME                bool
+              190  LOAD_NAME                type
+              192  LOAD_CONST               None
+              194  CALL_FUNCTION_1       1  ''
+
+ L. 599       196  BUILD_SET_8           8 
+              198  CALL_FUNCTION_1       1  ''
+              200  STORE_NAME               _builtin_scalars
+
+ L. 602       202  LOAD_CODE                <code_object _recursion>
+              204  LOAD_STR                 '_recursion'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  STORE_NAME               _recursion
+
+ L. 607       210  LOAD_CONST               (None,)
+              212  LOAD_CODE                <code_object _perfcheck>
+              214  LOAD_STR                 '_perfcheck'
+              216  MAKE_FUNCTION_1          'default'
+              218  STORE_NAME               _perfcheck
+
+ L. 620       220  LOAD_CODE                <code_object _wrap_bytes_repr>
+              222  LOAD_STR                 '_wrap_bytes_repr'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  STORE_NAME               _wrap_bytes_repr
+
+ L. 637       228  LOAD_NAME                __name__
+              230  LOAD_STR                 '__main__'
+              232  COMPARE_OP               ==
+          234_236  POP_JUMP_IF_FALSE   244  'to 244'
+
+ L. 638       238  LOAD_NAME                _perfcheck
+              240  CALL_FUNCTION_0       0  ''
+              242  POP_TOP          
+            244_0  COME_FROM           234  '234'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 52
+

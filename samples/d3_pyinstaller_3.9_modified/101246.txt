@@ -1,0 +1,481 @@
+
+# file test/101246.pyc
+# --- This code section failed: ---
+
+ L.  10         0  BUILD_LIST_0          0 
+                2  LOAD_CONST               ('Client', 'Listener', 'Pipe', 'wait')
+                4  CALL_FINALLY          7  'to 7'
+                6  STORE_NAME               __all__
+
+ L.  12         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              io
+               14  STORE_NAME               io
+
+ L.  13        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              os
+               22  STORE_NAME               os
+
+ L.  14        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              sys
+               30  STORE_NAME               sys
+
+ L.  15        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              socket
+               38  STORE_NAME               socket
+
+ L.  16        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              struct
+               46  STORE_NAME               struct
+
+ L.  17        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              time
+               54  STORE_NAME               time
+
+ L.  18        56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              tempfile
+               62  STORE_NAME               tempfile
+
+ L.  19        64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              itertools
+               70  STORE_NAME               itertools
+
+ L.  21        72  LOAD_CONST               0
+               74  LOAD_CONST               None
+               76  IMPORT_NAME              _multiprocessing
+               78  STORE_NAME               _multiprocessing
+
+ L.  23        80  LOAD_CONST               1
+               82  LOAD_CONST               ('util',)
+               84  IMPORT_NAME              
+               86  IMPORT_FROM              util
+               88  STORE_NAME               util
+               90  POP_TOP          
+
+ L.  25        92  LOAD_CONST               1
+               94  LOAD_CONST               ('AuthenticationError', 'BufferTooShort')
+               96  IMPORT_NAME              
+               98  IMPORT_FROM              AuthenticationError
+              100  STORE_NAME               AuthenticationError
+              102  IMPORT_FROM              BufferTooShort
+              104  STORE_NAME               BufferTooShort
+              106  POP_TOP          
+
+ L.  26       108  LOAD_CONST               1
+              110  LOAD_CONST               ('reduction',)
+              112  IMPORT_NAME              context
+              114  IMPORT_FROM              reduction
+              116  STORE_NAME               reduction
+              118  POP_TOP          
+
+ L.  27       120  LOAD_NAME                reduction
+              122  LOAD_ATTR                ForkingPickler
+              124  STORE_NAME               _ForkingPickler
+
+ L.  29       126  SETUP_FINALLY       164  'to 164'
+
+ L.  30       128  LOAD_CONST               0
+              130  LOAD_CONST               None
+              132  IMPORT_NAME              _winapi
+              134  STORE_NAME               _winapi
+
+ L.  31       136  LOAD_CONST               0
+              138  LOAD_CONST               ('WAIT_OBJECT_0', 'WAIT_ABANDONED_0', 'WAIT_TIMEOUT', 'INFINITE')
+              140  IMPORT_NAME              _winapi
+              142  IMPORT_FROM              WAIT_OBJECT_0
+              144  STORE_NAME               WAIT_OBJECT_0
+              146  IMPORT_FROM              WAIT_ABANDONED_0
+              148  STORE_NAME               WAIT_ABANDONED_0
+              150  IMPORT_FROM              WAIT_TIMEOUT
+              152  STORE_NAME               WAIT_TIMEOUT
+              154  IMPORT_FROM              INFINITE
+              156  STORE_NAME               INFINITE
+              158  POP_TOP          
+              160  POP_BLOCK        
+              162  JUMP_FORWARD        198  'to 198'
+            164_0  COME_FROM_FINALLY   126  '126'
+
+ L.  32       164  DUP_TOP          
+              166  LOAD_NAME                ImportError
+              168  <121>               196  ''
+              170  POP_TOP          
+              172  POP_TOP          
+              174  POP_TOP          
+
+ L.  33       176  LOAD_NAME                sys
+              178  LOAD_ATTR                platform
+              180  LOAD_STR                 'win32'
+              182  COMPARE_OP               ==
+              184  POP_JUMP_IF_FALSE   188  'to 188'
+
+ L.  34       186  RAISE_VARARGS_0       0  'reraise'
+            188_0  COME_FROM           184  '184'
+
+ L.  35       188  LOAD_CONST               None
+              190  STORE_NAME               _winapi
+              192  POP_EXCEPT       
+              194  JUMP_FORWARD        198  'to 198'
+              196  <48>             
+            198_0  COME_FROM           194  '194'
+            198_1  COME_FROM           162  '162'
+
+ L.  41       198  LOAD_CONST               8192
+              200  STORE_NAME               BUFSIZE
+
+ L.  43       202  LOAD_CONST               20.0
+              204  STORE_NAME               CONNECTION_TIMEOUT
+
+ L.  45       206  LOAD_NAME                itertools
+              208  LOAD_METHOD              count
+              210  CALL_METHOD_0         0  ''
+              212  STORE_NAME               _mmap_counter
+
+ L.  47       214  LOAD_STR                 'AF_INET'
+              216  STORE_NAME               default_family
+
+ L.  48       218  LOAD_STR                 'AF_INET'
+              220  BUILD_LIST_1          1 
+              222  STORE_NAME               families
+
+ L.  50       224  LOAD_NAME                hasattr
+              226  LOAD_NAME                socket
+              228  LOAD_STR                 'AF_UNIX'
+              230  CALL_FUNCTION_2       2  ''
+              232  POP_JUMP_IF_FALSE   248  'to 248'
+
+ L.  51       234  LOAD_STR                 'AF_UNIX'
+              236  STORE_NAME               default_family
+
+ L.  52       238  LOAD_NAME                families
+              240  LOAD_STR                 'AF_UNIX'
+              242  BUILD_LIST_1          1 
+              244  INPLACE_ADD      
+              246  STORE_NAME               families
+            248_0  COME_FROM           232  '232'
+
+ L.  54       248  LOAD_NAME                sys
+              250  LOAD_ATTR                platform
+              252  LOAD_STR                 'win32'
+              254  COMPARE_OP               ==
+          256_258  POP_JUMP_IF_FALSE   274  'to 274'
+
+ L.  55       260  LOAD_STR                 'AF_PIPE'
+              262  STORE_NAME               default_family
+
+ L.  56       264  LOAD_NAME                families
+              266  LOAD_STR                 'AF_PIPE'
+              268  BUILD_LIST_1          1 
+              270  INPLACE_ADD      
+              272  STORE_NAME               families
+            274_0  COME_FROM           256  '256'
+
+ L.  59       274  LOAD_NAME                CONNECTION_TIMEOUT
+              276  BUILD_TUPLE_1         1 
+              278  LOAD_CODE                <code_object _init_timeout>
+              280  LOAD_STR                 '_init_timeout'
+              282  MAKE_FUNCTION_1          'default'
+              284  STORE_NAME               _init_timeout
+
+ L.  62       286  LOAD_CODE                <code_object _check_timeout>
+              288  LOAD_STR                 '_check_timeout'
+              290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              292  STORE_NAME               _check_timeout
+
+ L.  69       294  LOAD_CODE                <code_object arbitrary_address>
+              296  LOAD_STR                 'arbitrary_address'
+              298  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              300  STORE_NAME               arbitrary_address
+
+ L.  88       302  LOAD_CODE                <code_object _validate_family>
+              304  LOAD_STR                 '_validate_family'
+              306  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              308  STORE_NAME               _validate_family
+
+ L. 100       310  LOAD_CODE                <code_object address_type>
+              312  LOAD_STR                 'address_type'
+              314  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              316  STORE_NAME               address_type
+
+ L. 119       318  LOAD_BUILD_CLASS 
+              320  LOAD_CODE                <code_object _ConnectionBase>
+              322  LOAD_STR                 '_ConnectionBase'
+              324  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              326  LOAD_STR                 '_ConnectionBase'
+              328  CALL_FUNCTION_2       2  ''
+              330  STORE_NAME               _ConnectionBase
+
+ L. 271       332  LOAD_NAME                _winapi
+          334_336  POP_JUMP_IF_FALSE   354  'to 354'
+
+ L. 273       338  LOAD_BUILD_CLASS 
+              340  LOAD_CODE                <code_object PipeConnection>
+              342  LOAD_STR                 'PipeConnection'
+              344  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              346  LOAD_STR                 'PipeConnection'
+              348  LOAD_NAME                _ConnectionBase
+              350  CALL_FUNCTION_3       3  ''
+              352  STORE_NAME               PipeConnection
+            354_0  COME_FROM           334  '334'
+
+ L. 353       354  LOAD_BUILD_CLASS 
+              356  LOAD_CODE                <code_object Connection>
+              358  LOAD_STR                 'Connection'
+              360  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              362  LOAD_STR                 'Connection'
+              364  LOAD_NAME                _ConnectionBase
+              366  CALL_FUNCTION_3       3  ''
+              368  STORE_NAME               Connection
+
+ L. 437       370  LOAD_BUILD_CLASS 
+              372  LOAD_CODE                <code_object Listener>
+              374  LOAD_STR                 'Listener'
+              376  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              378  LOAD_STR                 'Listener'
+              380  LOAD_NAME                object
+              382  CALL_FUNCTION_3       3  ''
+              384  STORE_NAME               Listener
+
+ L. 498       386  LOAD_CONST               (None, None)
+              388  LOAD_CODE                <code_object Client>
+              390  LOAD_STR                 'Client'
+              392  MAKE_FUNCTION_1          'default'
+              394  STORE_NAME               Client
+
+ L. 519       396  LOAD_NAME                sys
+              398  LOAD_ATTR                platform
+              400  LOAD_STR                 'win32'
+              402  COMPARE_OP               !=
+          404_406  POP_JUMP_IF_FALSE   420  'to 420'
+
+ L. 521       408  LOAD_CONST               (True,)
+              410  LOAD_CODE                <code_object Pipe>
+              412  LOAD_STR                 'Pipe'
+              414  MAKE_FUNCTION_1          'default'
+              416  STORE_NAME               Pipe
+              418  JUMP_FORWARD        430  'to 430'
+            420_0  COME_FROM           404  '404'
+
+ L. 540       420  LOAD_CONST               (True,)
+              422  LOAD_CODE                <code_object Pipe>
+              424  LOAD_STR                 'Pipe'
+              426  MAKE_FUNCTION_1          'default'
+              428  STORE_NAME               Pipe
+            430_0  COME_FROM           418  '418'
+
+ L. 584       430  LOAD_BUILD_CLASS 
+              432  LOAD_CODE                <code_object SocketListener>
+              434  LOAD_STR                 'SocketListener'
+              436  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              438  LOAD_STR                 'SocketListener'
+              440  LOAD_NAME                object
+              442  CALL_FUNCTION_3       3  ''
+              444  STORE_NAME               SocketListener
+
+ L. 628       446  LOAD_CODE                <code_object SocketClient>
+              448  LOAD_STR                 'SocketClient'
+              450  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              452  STORE_NAME               SocketClient
+
+ L. 642       454  LOAD_NAME                sys
+              456  LOAD_ATTR                platform
+              458  LOAD_STR                 'win32'
+              460  COMPARE_OP               ==
+          462_464  POP_JUMP_IF_FALSE   490  'to 490'
+
+ L. 644       466  LOAD_BUILD_CLASS 
+              468  LOAD_CODE                <code_object PipeListener>
+              470  LOAD_STR                 'PipeListener'
+              472  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              474  LOAD_STR                 'PipeListener'
+              476  LOAD_NAME                object
+              478  CALL_FUNCTION_3       3  ''
+              480  STORE_NAME               PipeListener
+
+ L. 700       482  LOAD_CODE                <code_object PipeClient>
+              484  LOAD_STR                 'PipeClient'
+              486  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              488  STORE_NAME               PipeClient
+            490_0  COME_FROM           462  '462'
+
+ L. 731       490  LOAD_CONST               20
+              492  STORE_NAME               MESSAGE_LENGTH
+
+ L. 733       494  LOAD_CONST               b'#CHALLENGE#'
+              496  STORE_NAME               CHALLENGE
+
+ L. 734       498  LOAD_CONST               b'#WELCOME#'
+              500  STORE_NAME               WELCOME
+
+ L. 735       502  LOAD_CONST               b'#FAILURE#'
+              504  STORE_NAME               FAILURE
+
+ L. 737       506  LOAD_CODE                <code_object deliver_challenge>
+              508  LOAD_STR                 'deliver_challenge'
+              510  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              512  STORE_NAME               deliver_challenge
+
+ L. 752       514  LOAD_CODE                <code_object answer_challenge>
+              516  LOAD_STR                 'answer_challenge'
+              518  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              520  STORE_NAME               answer_challenge
+
+ L. 770       522  LOAD_BUILD_CLASS 
+              524  LOAD_CODE                <code_object ConnectionWrapper>
+              526  LOAD_STR                 'ConnectionWrapper'
+              528  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              530  LOAD_STR                 'ConnectionWrapper'
+              532  LOAD_NAME                object
+              534  CALL_FUNCTION_3       3  ''
+              536  STORE_NAME               ConnectionWrapper
+
+ L. 785       538  LOAD_CODE                <code_object _xml_dumps>
+              540  LOAD_STR                 '_xml_dumps'
+              542  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              544  STORE_NAME               _xml_dumps
+
+ L. 788       546  LOAD_CODE                <code_object _xml_loads>
+              548  LOAD_STR                 '_xml_loads'
+              550  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              552  STORE_NAME               _xml_loads
+
+ L. 792       554  LOAD_BUILD_CLASS 
+              556  LOAD_CODE                <code_object XmlListener>
+              558  LOAD_STR                 'XmlListener'
+              560  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              562  LOAD_STR                 'XmlListener'
+              564  LOAD_NAME                Listener
+              566  CALL_FUNCTION_3       3  ''
+              568  STORE_NAME               XmlListener
+
+ L. 799       570  LOAD_CODE                <code_object XmlClient>
+              572  LOAD_STR                 'XmlClient'
+              574  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              576  STORE_NAME               XmlClient
+
+ L. 808       578  LOAD_NAME                sys
+              580  LOAD_ATTR                platform
+              582  LOAD_STR                 'win32'
+              584  COMPARE_OP               ==
+          586_588  POP_JUMP_IF_FALSE   622  'to 622'
+
+ L. 810       590  LOAD_CODE                <code_object _exhaustive_wait>
+              592  LOAD_STR                 '_exhaustive_wait'
+              594  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              596  STORE_NAME               _exhaustive_wait
+
+ L. 830       598  LOAD_NAME                _winapi
+              600  LOAD_ATTR                ERROR_BROKEN_PIPE
+              602  LOAD_NAME                _winapi
+              604  LOAD_ATTR                ERROR_NETNAME_DELETED
+              606  BUILD_SET_2           2 
+              608  STORE_NAME               _ready_errors
+
+ L. 832       610  LOAD_CONST               (None,)
+              612  LOAD_CODE                <code_object wait>
+              614  LOAD_STR                 'wait'
+              616  MAKE_FUNCTION_1          'default'
+              618  STORE_NAME               wait
+              620  JUMP_FORWARD        666  'to 666'
+            622_0  COME_FROM           586  '586'
+
+ L. 912       622  LOAD_CONST               0
+              624  LOAD_CONST               None
+              626  IMPORT_NAME              selectors
+              628  STORE_NAME               selectors
+
+ L. 917       630  LOAD_NAME                hasattr
+              632  LOAD_NAME                selectors
+              634  LOAD_STR                 'PollSelector'
+              636  CALL_FUNCTION_2       2  ''
+          638_640  POP_JUMP_IF_FALSE   650  'to 650'
+
+ L. 918       642  LOAD_NAME                selectors
+              644  LOAD_ATTR                PollSelector
+              646  STORE_NAME               _WaitSelector
+              648  JUMP_FORWARD        656  'to 656'
+            650_0  COME_FROM           638  '638'
+
+ L. 920       650  LOAD_NAME                selectors
+              652  LOAD_ATTR                SelectSelector
+              654  STORE_NAME               _WaitSelector
+            656_0  COME_FROM           648  '648'
+
+ L. 922       656  LOAD_CONST               (None,)
+              658  LOAD_CODE                <code_object wait>
+              660  LOAD_STR                 'wait'
+              662  MAKE_FUNCTION_1          'default'
+              664  STORE_NAME               wait
+            666_0  COME_FROM           620  '620'
+
+ L. 949       666  LOAD_NAME                sys
+              668  LOAD_ATTR                platform
+              670  LOAD_STR                 'win32'
+              672  COMPARE_OP               ==
+          674_676  POP_JUMP_IF_FALSE   736  'to 736'
+
+ L. 950       678  LOAD_CODE                <code_object reduce_connection>
+              680  LOAD_STR                 'reduce_connection'
+              682  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              684  STORE_NAME               reduce_connection
+
+ L. 956       686  LOAD_CODE                <code_object rebuild_connection>
+              688  LOAD_STR                 'rebuild_connection'
+              690  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              692  STORE_NAME               rebuild_connection
+
+ L. 959       694  LOAD_NAME                reduction
+              696  LOAD_METHOD              register
+              698  LOAD_NAME                Connection
+              700  LOAD_NAME                reduce_connection
+              702  CALL_METHOD_2         2  ''
+              704  POP_TOP          
+
+ L. 961       706  LOAD_CODE                <code_object reduce_pipe_connection>
+              708  LOAD_STR                 'reduce_pipe_connection'
+              710  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              712  STORE_NAME               reduce_pipe_connection
+
+ L. 966       714  LOAD_CODE                <code_object rebuild_pipe_connection>
+              716  LOAD_STR                 'rebuild_pipe_connection'
+              718  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              720  STORE_NAME               rebuild_pipe_connection
+
+ L. 969       722  LOAD_NAME                reduction
+              724  LOAD_METHOD              register
+              726  LOAD_NAME                PipeConnection
+              728  LOAD_NAME                reduce_pipe_connection
+              730  CALL_METHOD_2         2  ''
+              732  POP_TOP          
+              734  JUMP_FORWARD        764  'to 764'
+            736_0  COME_FROM           674  '674'
+
+ L. 972       736  LOAD_CODE                <code_object reduce_connection>
+              738  LOAD_STR                 'reduce_connection'
+              740  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              742  STORE_NAME               reduce_connection
+
+ L. 975       744  LOAD_CODE                <code_object rebuild_connection>
+              746  LOAD_STR                 'rebuild_connection'
+              748  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              750  STORE_NAME               rebuild_connection
+
+ L. 978       752  LOAD_NAME                reduction
+              754  LOAD_METHOD              register
+              756  LOAD_NAME                Connection
+              758  LOAD_NAME                reduce_connection
+              760  CALL_METHOD_2         2  ''
+              762  POP_TOP          
+            764_0  COME_FROM           734  '734'
+
+Parse error at or near `None' instruction at offset -1
+
+
+test/101246.pyc -- 
+# decompile failed

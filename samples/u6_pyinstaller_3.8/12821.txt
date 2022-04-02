@@ -1,0 +1,24 @@
+Instruction context:
+   
+ L. 212        36  LOAD_GLOBAL              np
+                  38  LOAD_ATTR                divide
+                  40  LOAD_FAST                'a'
+                  42  LOAD_FAST                'b'
+                  44  LOAD_FAST                'a'
+                  46  LOAD_STR                 'unsafe'
+                  48  LOAD_CONST               ('out', 'casting')
+                  50  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+                  52  POP_BLOCK        
+->                54  ROT_TWO          
+                  56  BEGIN_FINALLY    
+                  58  WITH_CLEANUP_START
+                  60  WITH_CLEANUP_FINISH
+                  62  POP_FINALLY           0  ''
+                  64  RETURN_VALUE     
+                66_0  COME_FROM            34  '34'
+
+../test/12821.pyc -- 
+# decompile failed
+
+# file ../test/12821.pyc
+# Deparsing stopped due to parse error

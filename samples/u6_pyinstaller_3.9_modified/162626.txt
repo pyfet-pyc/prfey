@@ -1,0 +1,399 @@
+
+# file test/162626.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nA place for internal code\n\nSome things are more easily handled Python.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.   7         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              ast
+               10  STORE_NAME               ast
+
+ L.   8        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              re
+               18  STORE_NAME               re
+
+ L.   9        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              sys
+               26  STORE_NAME               sys
+
+ L.  10        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              platform
+               34  STORE_NAME               platform
+
+ L.  11        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              warnings
+               42  STORE_NAME               warnings
+
+ L.  13        44  LOAD_CONST               1
+               46  LOAD_CONST               ('dtype', 'array', 'ndarray')
+               48  IMPORT_NAME              multiarray
+               50  IMPORT_FROM              dtype
+               52  STORE_NAME               dtype
+               54  IMPORT_FROM              array
+               56  STORE_NAME               array
+               58  IMPORT_FROM              ndarray
+               60  STORE_NAME               ndarray
+               62  POP_TOP          
+
+ L.  14        64  SETUP_FINALLY        78  'to 78'
+
+ L.  15        66  LOAD_CONST               0
+               68  LOAD_CONST               None
+               70  IMPORT_NAME              ctypes
+               72  STORE_NAME               ctypes
+               74  POP_BLOCK        
+               76  JUMP_FORWARD        100  'to 100'
+             78_0  COME_FROM_FINALLY    64  '64'
+
+ L.  16        78  DUP_TOP          
+               80  LOAD_NAME                ImportError
+               82  <121>                98  ''
+               84  POP_TOP          
+               86  POP_TOP          
+               88  POP_TOP          
+
+ L.  17        90  LOAD_CONST               None
+               92  STORE_NAME               ctypes
+               94  POP_EXCEPT       
+               96  JUMP_FORWARD        100  'to 100'
+               98  <48>             
+            100_0  COME_FROM            96  '96'
+            100_1  COME_FROM            76  '76'
+
+ L.  19       100  LOAD_NAME                platform
+              102  LOAD_METHOD              python_implementation
+              104  CALL_METHOD_0         0  ''
+              106  LOAD_STR                 'PyPy'
+              108  COMPARE_OP               ==
+              110  STORE_NAME               IS_PYPY
+
+ L.  21       112  LOAD_NAME                sys
+              114  LOAD_ATTR                byteorder
+              116  LOAD_STR                 'little'
+              118  COMPARE_OP               ==
+              120  POP_JUMP_IF_FALSE   128  'to 128'
+
+ L.  22       122  LOAD_STR                 '<'
+              124  STORE_NAME               _nbo
+              126  JUMP_FORWARD        132  'to 132'
+            128_0  COME_FROM           120  '120'
+
+ L.  24       128  LOAD_STR                 '>'
+              130  STORE_NAME               _nbo
+            132_0  COME_FROM           126  '126'
+
+ L.  26       132  LOAD_CODE                <code_object _makenames_list>
+              134  LOAD_STR                 '_makenames_list'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  STORE_NAME               _makenames_list
+
+ L.  56       140  LOAD_CODE                <code_object _usefields>
+              142  LOAD_STR                 '_usefields'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  STORE_NAME               _usefields
+
+ L.  88       148  LOAD_CODE                <code_object _array_descr>
+              150  LOAD_STR                 '_array_descr'
+              152  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              154  STORE_NAME               _array_descr
+
+ L. 140       156  LOAD_CODE                <code_object _reconstruct>
+              158  LOAD_STR                 '_reconstruct'
+              160  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              162  STORE_NAME               _reconstruct
+
+ L. 146       164  LOAD_NAME                re
+              166  LOAD_METHOD              compile
+              168  LOAD_STR                 '(?P<order1>[<>|=]?)(?P<repeats> *[(]?[ ,0-9]*[)]? *)(?P<order2>[<>|=]?)(?P<dtype>[A-Za-z0-9.?]*(?:\\[[a-zA-Z0-9,.]+\\])?)'
+              170  CALL_METHOD_1         1  ''
+              172  STORE_NAME               format_re
+
+ L. 150       174  LOAD_NAME                re
+              176  LOAD_METHOD              compile
+              178  LOAD_STR                 '\\s*,\\s*'
+              180  CALL_METHOD_1         1  ''
+              182  STORE_NAME               sep_re
+
+ L. 151       184  LOAD_NAME                re
+              186  LOAD_METHOD              compile
+              188  LOAD_STR                 '\\s+$'
+              190  CALL_METHOD_1         1  ''
+              192  STORE_NAME               space_re
+
+ L. 155       194  LOAD_STR                 '='
+              196  LOAD_NAME                _nbo
+              198  BUILD_MAP_1           1 
+              200  STORE_NAME               _convorder
+
+ L. 157       202  LOAD_CODE                <code_object _commastring>
+              204  LOAD_STR                 '_commastring'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  STORE_NAME               _commastring
+
+ L. 205       210  LOAD_BUILD_CLASS 
+              212  LOAD_CODE                <code_object dummy_ctype>
+              214  LOAD_STR                 'dummy_ctype'
+              216  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              218  LOAD_STR                 'dummy_ctype'
+              220  CALL_FUNCTION_2       2  ''
+              222  STORE_NAME               dummy_ctype
+
+ L. 217       224  LOAD_CODE                <code_object _getintp_ctype>
+              226  LOAD_STR                 '_getintp_ctype'
+              228  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              230  STORE_NAME               _getintp_ctype
+
+ L. 236       232  LOAD_CONST               None
+              234  LOAD_NAME                _getintp_ctype
+              236  STORE_ATTR               cache
+
+ L. 240       238  LOAD_BUILD_CLASS 
+              240  LOAD_CODE                <code_object _missing_ctypes>
+              242  LOAD_STR                 '_missing_ctypes'
+              244  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              246  LOAD_STR                 '_missing_ctypes'
+              248  CALL_FUNCTION_2       2  ''
+              250  STORE_NAME               _missing_ctypes
+
+ L. 249       252  LOAD_BUILD_CLASS 
+              254  LOAD_CODE                <code_object _ctypes>
+              256  LOAD_STR                 '_ctypes'
+              258  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              260  LOAD_STR                 '_ctypes'
+              262  CALL_FUNCTION_2       2  ''
+              264  STORE_NAME               _ctypes
+
+ L. 395       266  LOAD_CODE                <code_object _newnames>
+              268  LOAD_STR                 '_newnames'
+              270  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              272  STORE_NAME               _newnames
+
+ L. 418       274  LOAD_CODE                <code_object _copy_fields>
+              276  LOAD_STR                 '_copy_fields'
+              278  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              280  STORE_NAME               _copy_fields
+
+ L. 436       282  LOAD_CODE                <code_object _getfield_is_safe>
+              284  LOAD_STR                 '_getfield_is_safe'
+              286  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              288  STORE_NAME               _getfield_is_safe
+
+ L. 468       290  LOAD_CODE                <code_object _view_is_safe>
+              292  LOAD_STR                 '_view_is_safe'
+              294  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              296  STORE_NAME               _view_is_safe
+
+ L. 501       298  LOAD_STR                 '?'
+
+ L. 502       300  LOAD_STR                 'S1'
+
+ L. 503       302  LOAD_STR                 'b'
+
+ L. 504       304  LOAD_STR                 'B'
+
+ L. 505       306  LOAD_STR                 'h'
+
+ L. 506       308  LOAD_STR                 'H'
+
+ L. 507       310  LOAD_STR                 'i'
+
+ L. 508       312  LOAD_STR                 'I'
+
+ L. 509       314  LOAD_STR                 'l'
+
+ L. 510       316  LOAD_STR                 'L'
+
+ L. 511       318  LOAD_STR                 'q'
+
+ L. 512       320  LOAD_STR                 'Q'
+
+ L. 513       322  LOAD_STR                 'e'
+
+ L. 514       324  LOAD_STR                 'f'
+
+ L. 515       326  LOAD_STR                 'd'
+
+ L. 516       328  LOAD_STR                 'g'
+
+ L. 517       330  LOAD_STR                 'F'
+
+ L. 518       332  LOAD_STR                 'D'
+
+ L. 519       334  LOAD_STR                 'G'
+
+ L. 520       336  LOAD_STR                 'S'
+
+ L. 521       338  LOAD_STR                 'U'
+
+ L. 522       340  LOAD_STR                 'O'
+
+ L. 523       342  LOAD_STR                 'V'
+
+ L. 500       344  LOAD_CONST               ('?', 'c', 'b', 'B', 'h', 'H', 'i', 'I', 'l', 'L', 'q', 'Q', 'e', 'f', 'd', 'g', 'Zf', 'Zd', 'Zg', 's', 'w', 'O', 'x')
+              346  BUILD_CONST_KEY_MAP_23    23 
+              348  STORE_NAME               _pep3118_native_map
+
+ L. 525       350  LOAD_STR                 ''
+              352  LOAD_METHOD              join
+              354  LOAD_NAME                _pep3118_native_map
+              356  LOAD_METHOD              keys
+              358  CALL_METHOD_0         0  ''
+              360  CALL_METHOD_1         1  ''
+              362  STORE_NAME               _pep3118_native_typechars
+
+ L. 528       364  LOAD_STR                 '?'
+
+ L. 529       366  LOAD_STR                 'S1'
+
+ L. 530       368  LOAD_STR                 'b'
+
+ L. 531       370  LOAD_STR                 'B'
+
+ L. 532       372  LOAD_STR                 'i2'
+
+ L. 533       374  LOAD_STR                 'u2'
+
+ L. 534       376  LOAD_STR                 'i4'
+
+ L. 535       378  LOAD_STR                 'u4'
+
+ L. 536       380  LOAD_STR                 'i4'
+
+ L. 537       382  LOAD_STR                 'u4'
+
+ L. 538       384  LOAD_STR                 'i8'
+
+ L. 539       386  LOAD_STR                 'u8'
+
+ L. 540       388  LOAD_STR                 'f2'
+
+ L. 541       390  LOAD_STR                 'f'
+
+ L. 542       392  LOAD_STR                 'd'
+
+ L. 543       394  LOAD_STR                 'F'
+
+ L. 544       396  LOAD_STR                 'D'
+
+ L. 545       398  LOAD_STR                 'S'
+
+ L. 546       400  LOAD_STR                 'U'
+
+ L. 547       402  LOAD_STR                 'O'
+
+ L. 548       404  LOAD_STR                 'V'
+
+ L. 527       406  LOAD_CONST               ('?', 'c', 'b', 'B', 'h', 'H', 'i', 'I', 'l', 'L', 'q', 'Q', 'e', 'f', 'd', 'Zf', 'Zd', 's', 'w', 'O', 'x')
+              408  BUILD_CONST_KEY_MAP_21    21 
+              410  STORE_NAME               _pep3118_standard_map
+
+ L. 550       412  LOAD_STR                 ''
+              414  LOAD_METHOD              join
+              416  LOAD_NAME                _pep3118_standard_map
+              418  LOAD_METHOD              keys
+              420  CALL_METHOD_0         0  ''
+              422  CALL_METHOD_1         1  ''
+              424  STORE_NAME               _pep3118_standard_typechars
+
+ L. 553       426  LOAD_STR                 'UCS-2 strings'
+
+ L. 554       428  LOAD_STR                 'pointers'
+
+ L. 555       430  LOAD_STR                 'bitfields'
+
+ L. 556       432  LOAD_STR                 'function pointers'
+
+ L. 552       434  LOAD_CONST               ('u', '&', 't', 'X')
+              436  BUILD_CONST_KEY_MAP_4     4 
+              438  STORE_NAME               _pep3118_unsupported_map
+
+ L. 559       440  LOAD_BUILD_CLASS 
+              442  LOAD_CODE                <code_object _Stream>
+              444  LOAD_STR                 '_Stream'
+              446  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              448  LOAD_STR                 '_Stream'
+              450  CALL_FUNCTION_2       2  ''
+              452  STORE_NAME               _Stream
+
+ L. 595       454  LOAD_CODE                <code_object _dtype_from_pep3118>
+              456  LOAD_STR                 '_dtype_from_pep3118'
+              458  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              460  STORE_NAME               _dtype_from_pep3118
+
+ L. 600       462  LOAD_CODE                <code_object __dtype_from_pep3118>
+              464  LOAD_STR                 '__dtype_from_pep3118'
+              466  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              468  STORE_NAME               __dtype_from_pep3118
+
+ L. 744       470  LOAD_CODE                <code_object _fix_names>
+              472  LOAD_STR                 '_fix_names'
+              474  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              476  STORE_NAME               _fix_names
+
+ L. 759       478  LOAD_CODE                <code_object _add_trailing_padding>
+              480  LOAD_STR                 '_add_trailing_padding'
+              482  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              484  STORE_NAME               _add_trailing_padding
+
+ L. 781       486  LOAD_CODE                <code_object _prod>
+              488  LOAD_STR                 '_prod'
+              490  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              492  STORE_NAME               _prod
+
+ L. 787       494  LOAD_CODE                <code_object _gcd>
+              496  LOAD_STR                 '_gcd'
+              498  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              500  STORE_NAME               _gcd
+
+ L. 793       502  LOAD_CODE                <code_object _lcm>
+              504  LOAD_STR                 '_lcm'
+              506  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              508  STORE_NAME               _lcm
+
+ L. 796       510  LOAD_CODE                <code_object array_ufunc_errmsg_formatter>
+              512  LOAD_STR                 'array_ufunc_errmsg_formatter'
+              514  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              516  STORE_NAME               array_ufunc_errmsg_formatter
+
+ L. 808       518  LOAD_CODE                <code_object array_function_errmsg_formatter>
+              520  LOAD_STR                 'array_function_errmsg_formatter'
+              522  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              524  STORE_NAME               array_function_errmsg_formatter
+
+ L. 815       526  LOAD_CODE                <code_object _ufunc_doc_signature_formatter>
+              528  LOAD_STR                 '_ufunc_doc_signature_formatter'
+              530  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              532  STORE_NAME               _ufunc_doc_signature_formatter
+
+ L. 863       534  LOAD_CODE                <code_object npy_ctypes_check>
+              536  LOAD_STR                 'npy_ctypes_check'
+              538  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              540  STORE_NAME               npy_ctypes_check
+
+ L. 881       542  LOAD_BUILD_CLASS 
+              544  LOAD_CODE                <code_object recursive>
+              546  LOAD_STR                 'recursive'
+              548  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              550  LOAD_STR                 'recursive'
+              552  CALL_FUNCTION_2       2  ''
+              554  STORE_NAME               recursive
+
+Parse error at or near `<121>' instruction at offset 82
+
+Instruction context:
+   
+ L.  16        78  DUP_TOP          
+                  80  LOAD_NAME                ImportError
+->                82  <121>                98  ''
+                  84  POP_TOP          
+                  86  POP_TOP          
+                  88  POP_TOP          
+
+test/162626.pyc -- 
+# decompile failed

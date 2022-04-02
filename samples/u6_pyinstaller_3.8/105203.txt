@@ -1,0 +1,50 @@
+Instruction context:
+   
+ L. 308        30  POP_EXCEPT       
+->                32  LOAD_CONST               None
+                  34  RETURN_VALUE     
+                  36  END_FINALLY      
+                38_0  COME_FROM            22  '22'
+Instruction context:
+   
+ L. 359        40  POP_BLOCK        
+->                42  BEGIN_FINALLY    
+                  44  WITH_CLEANUP_START
+                  46  WITH_CLEANUP_FINISH
+                  48  POP_FINALLY           0  ''
+                  50  LOAD_CONST               None
+                  52  RETURN_VALUE     
+                54_0  COME_FROM            38  '38'
+                  54  POP_BLOCK        
+                  56  BEGIN_FINALLY    
+                58_0  COME_FROM_WITH       26  '26'
+                  58  WITH_CLEANUP_START
+                  60  WITH_CLEANUP_FINISH
+                  62  END_FINALLY      
+Instruction context:
+   
+ L. 425       188  DUP_TOP          
+                 190  LOAD_GLOBAL              TypeError
+                 192  COMPARE_OP               exception-match
+                 194  POP_JUMP_IF_FALSE   208  'to 208'
+                 196  POP_TOP          
+->               198  POP_TOP          
+                 200  POP_TOP          
+Instruction context:
+-> 
+ L. 444        44  SETUP_FINALLY        64  'to 64'
+Instruction context:
+   
+ L. 624       100  DUP_TOP          
+                 102  LOAD_GLOBAL              KeyError
+                 104  COMPARE_OP               exception-match
+                 106  POP_JUMP_IF_FALSE   118  'to 118'
+                 108  POP_TOP          
+->               110  POP_TOP          
+                 112  POP_TOP          
+
+../test/105203.pyc -- 
+# decompile failed
+
+# file ../test/105203.pyc
+# Deparsing stopped due to parse error

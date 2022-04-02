@@ -1,0 +1,130 @@
+Instruction context:
+   
+ L.  34         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('GetoptError', 'error', 'getopt', 'gnu_getopt')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101054.pyc -- 
+# decompile failed
+
+# file test/101054.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "Parser for command line options.\n\nThis module helps scripts to parse the command line arguments in\nsys.argv.  It supports the same conventions as the Unix getopt()\nfunction (including the special meanings of arguments of the form `-'\nand `--').  Long options similar to those supported by GNU software\nmay be used as well via an optional third argument.  This module\nprovides two functions and an exception:\n\ngetopt() -- Parse command line options\ngnu_getopt() -- Like getopt(), but allow option and non-option arguments\nto be intermixed.\nGetoptError -- exception (class) raised with 'opt' attribute, which is the\noption involved with the exception.\n"
+                2  STORE_NAME               __doc__
+
+ L.  34         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('GetoptError', 'error', 'getopt', 'gnu_getopt')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  36        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              os
+               18  STORE_NAME               os
+
+ L.  37        20  SETUP_FINALLY        38  'to 38'
+
+ L.  38        22  LOAD_CONST               0
+               24  LOAD_CONST               ('gettext',)
+               26  IMPORT_NAME              gettext
+               28  IMPORT_FROM              gettext
+               30  STORE_NAME               _
+               32  POP_TOP          
+               34  POP_BLOCK        
+               36  JUMP_FORWARD         64  'to 64'
+             38_0  COME_FROM_FINALLY    20  '20'
+
+ L.  39        38  DUP_TOP          
+               40  LOAD_NAME                ImportError
+               42  <121>                62  ''
+               44  POP_TOP          
+               46  POP_TOP          
+               48  POP_TOP          
+
+ L.  41        50  LOAD_CODE                <code_object _>
+               52  LOAD_STR                 '_'
+               54  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               56  STORE_NAME               _
+               58  POP_EXCEPT       
+               60  JUMP_FORWARD         64  'to 64'
+               62  <48>             
+             64_0  COME_FROM            60  '60'
+             64_1  COME_FROM            36  '36'
+
+ L.  43        64  LOAD_BUILD_CLASS 
+               66  LOAD_CODE                <code_object GetoptError>
+               68  LOAD_STR                 'GetoptError'
+               70  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               72  LOAD_STR                 'GetoptError'
+               74  LOAD_NAME                Exception
+               76  CALL_FUNCTION_3       3  ''
+               78  STORE_NAME               GetoptError
+
+ L.  54        80  LOAD_NAME                GetoptError
+               82  STORE_NAME               error
+
+ L.  56        84  BUILD_LIST_0          0 
+               86  BUILD_TUPLE_1         1 
+               88  LOAD_CODE                <code_object getopt>
+               90  LOAD_STR                 'getopt'
+               92  MAKE_FUNCTION_1          'default'
+               94  STORE_NAME               getopt
+
+ L.  99        96  BUILD_LIST_0          0 
+               98  BUILD_TUPLE_1         1 
+              100  LOAD_CODE                <code_object gnu_getopt>
+              102  LOAD_STR                 'gnu_getopt'
+              104  MAKE_FUNCTION_1          'default'
+              106  STORE_NAME               gnu_getopt
+
+ L. 149       108  LOAD_CODE                <code_object do_longs>
+              110  LOAD_STR                 'do_longs'
+              112  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              114  STORE_NAME               do_longs
+
+ L. 171       116  LOAD_CODE                <code_object long_has_args>
+              118  LOAD_STR                 'long_has_args'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  STORE_NAME               long_has_args
+
+ L. 192       124  LOAD_CODE                <code_object do_shorts>
+              126  LOAD_STR                 'do_shorts'
+              128  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              130  STORE_NAME               do_shorts
+
+ L. 207       132  LOAD_CODE                <code_object short_has_arg>
+              134  LOAD_STR                 'short_has_arg'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  STORE_NAME               short_has_arg
+
+ L. 213       140  LOAD_NAME                __name__
+              142  LOAD_STR                 '__main__'
+              144  COMPARE_OP               ==
+              146  POP_JUMP_IF_FALSE   186  'to 186'
+
+ L. 214       148  LOAD_CONST               0
+              150  LOAD_CONST               None
+              152  IMPORT_NAME              sys
+              154  STORE_NAME               sys
+
+ L. 215       156  LOAD_NAME                print
+              158  LOAD_NAME                getopt
+              160  LOAD_NAME                sys
+              162  LOAD_ATTR                argv
+              164  LOAD_CONST               1
+              166  LOAD_CONST               None
+              168  BUILD_SLICE_2         2 
+              170  BINARY_SUBSCR    
+              172  LOAD_STR                 'a:b'
+              174  LOAD_STR                 'alpha='
+              176  LOAD_STR                 'beta'
+              178  BUILD_LIST_2          2 
+              180  CALL_FUNCTION_3       3  ''
+              182  CALL_FUNCTION_1       1  ''
+              184  POP_TOP          
+            186_0  COME_FROM           146  '146'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

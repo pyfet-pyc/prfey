@@ -1,0 +1,325 @@
+
+# file test/112382.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Random variable generators.\n\n    bytes\n    -----\n           uniform bytes (values between 0 and 255)\n\n    integers\n    --------\n           uniform within range\n\n    sequences\n    ---------\n           pick random element\n           pick random sample\n           pick weighted random sample\n           generate random permutation\n\n    distributions on the real line:\n    ------------------------------\n           uniform\n           triangular\n           normal (Gaussian)\n           lognormal\n           negative exponential\n           gamma\n           beta\n           pareto\n           Weibull\n\n    distributions on the circle (angles 0 to 2pi)\n    ---------------------------------------------\n           circular uniform\n           von Mises\n\nGeneral notes on the underlying Mersenne Twister core generator:\n\n* The period is 2**19937-1.\n* It is one of the most extensively tested generators in existence.\n* The random() method is implemented in C, executes in a single Python step,\n  and is, therefore, threadsafe.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  48         4  LOAD_CONST               0
+                6  LOAD_CONST               ('warn',)
+                8  IMPORT_NAME              warnings
+               10  IMPORT_FROM              warn
+               12  STORE_NAME               _warn
+               14  POP_TOP          
+
+ L.  49        16  LOAD_CONST               0
+               18  LOAD_CONST               ('log', 'exp', 'pi', 'e', 'ceil')
+               20  IMPORT_NAME              math
+               22  IMPORT_FROM              log
+               24  STORE_NAME               _log
+               26  IMPORT_FROM              exp
+               28  STORE_NAME               _exp
+               30  IMPORT_FROM              pi
+               32  STORE_NAME               _pi
+               34  IMPORT_FROM              e
+               36  STORE_NAME               _e
+               38  IMPORT_FROM              ceil
+               40  STORE_NAME               _ceil
+               42  POP_TOP          
+
+ L.  50        44  LOAD_CONST               0
+               46  LOAD_CONST               ('sqrt', 'acos', 'cos', 'sin')
+               48  IMPORT_NAME              math
+               50  IMPORT_FROM              sqrt
+               52  STORE_NAME               _sqrt
+               54  IMPORT_FROM              acos
+               56  STORE_NAME               _acos
+               58  IMPORT_FROM              cos
+               60  STORE_NAME               _cos
+               62  IMPORT_FROM              sin
+               64  STORE_NAME               _sin
+               66  POP_TOP          
+
+ L.  51        68  LOAD_CONST               0
+               70  LOAD_CONST               ('tau', 'floor')
+               72  IMPORT_NAME              math
+               74  IMPORT_FROM              tau
+               76  STORE_NAME               TWOPI
+               78  IMPORT_FROM              floor
+               80  STORE_NAME               _floor
+               82  POP_TOP          
+
+ L.  52        84  LOAD_CONST               0
+               86  LOAD_CONST               ('urandom',)
+               88  IMPORT_NAME              os
+               90  IMPORT_FROM              urandom
+               92  STORE_NAME               _urandom
+               94  POP_TOP          
+
+ L.  53        96  LOAD_CONST               0
+               98  LOAD_CONST               ('Set', 'Sequence')
+              100  IMPORT_NAME              _collections_abc
+              102  IMPORT_FROM              Set
+              104  STORE_NAME               _Set
+              106  IMPORT_FROM              Sequence
+              108  STORE_NAME               _Sequence
+              110  POP_TOP          
+
+ L.  54       112  LOAD_CONST               0
+              114  LOAD_CONST               ('accumulate', 'repeat')
+              116  IMPORT_NAME              itertools
+              118  IMPORT_FROM              accumulate
+              120  STORE_NAME               _accumulate
+              122  IMPORT_FROM              repeat
+              124  STORE_NAME               _repeat
+              126  POP_TOP          
+
+ L.  55       128  LOAD_CONST               0
+              130  LOAD_CONST               ('bisect',)
+              132  IMPORT_NAME              bisect
+              134  IMPORT_FROM              bisect
+              136  STORE_NAME               _bisect
+              138  POP_TOP          
+
+ L.  56       140  LOAD_CONST               0
+              142  LOAD_CONST               None
+              144  IMPORT_NAME              os
+              146  STORE_NAME               _os
+
+ L.  57       148  LOAD_CONST               0
+              150  LOAD_CONST               None
+              152  IMPORT_NAME              _random
+              154  STORE_NAME               _random
+
+ L.  59       156  SETUP_FINALLY       174  'to 174'
+
+ L.  61       158  LOAD_CONST               0
+              160  LOAD_CONST               ('sha512',)
+              162  IMPORT_NAME              _sha512
+              164  IMPORT_FROM              sha512
+              166  STORE_NAME               _sha512
+              168  POP_TOP          
+              170  POP_BLOCK        
+              172  JUMP_FORWARD        204  'to 204'
+            174_0  COME_FROM_FINALLY   156  '156'
+
+ L.  62       174  DUP_TOP          
+              176  LOAD_NAME                ImportError
+              178  <121>               202  ''
+              180  POP_TOP          
+              182  POP_TOP          
+              184  POP_TOP          
+
+ L.  64       186  LOAD_CONST               0
+              188  LOAD_CONST               ('sha512',)
+              190  IMPORT_NAME              hashlib
+              192  IMPORT_FROM              sha512
+              194  STORE_NAME               _sha512
+              196  POP_TOP          
+              198  POP_EXCEPT       
+              200  JUMP_FORWARD        204  'to 204'
+              202  <48>             
+            204_0  COME_FROM           200  '200'
+            204_1  COME_FROM           172  '172'
+
+ L.  66       204  BUILD_LIST_0          0 
+              206  LOAD_CONST               ('Random', 'SystemRandom', 'betavariate', 'choice', 'choices', 'expovariate', 'gammavariate', 'gauss', 'getrandbits', 'getstate', 'lognormvariate', 'normalvariate', 'paretovariate', 'randbytes', 'randint', 'random', 'randrange', 'sample', 'seed', 'setstate', 'shuffle', 'triangular', 'uniform', 'vonmisesvariate', 'weibullvariate')
+              208  CALL_FINALLY        211  'to 211'
+              210  STORE_NAME               __all__
+
+ L.  94       212  LOAD_CONST               4
+              214  LOAD_NAME                _exp
+              216  LOAD_CONST               -0.5
+              218  CALL_FUNCTION_1       1  ''
+              220  BINARY_MULTIPLY  
+              222  LOAD_NAME                _sqrt
+              224  LOAD_CONST               2.0
+              226  CALL_FUNCTION_1       1  ''
+              228  BINARY_TRUE_DIVIDE
+              230  STORE_NAME               NV_MAGICCONST
+
+ L.  95       232  LOAD_NAME                _log
+              234  LOAD_CONST               4.0
+              236  CALL_FUNCTION_1       1  ''
+              238  STORE_NAME               LOG4
+
+ L.  96       240  LOAD_CONST               1.0
+              242  LOAD_NAME                _log
+              244  LOAD_CONST               4.5
+              246  CALL_FUNCTION_1       1  ''
+              248  BINARY_ADD       
+              250  STORE_NAME               SG_MAGICCONST
+
+ L.  97       252  LOAD_CONST               53
+              254  STORE_NAME               BPF
+
+ L.  98       256  LOAD_CONST               2
+              258  LOAD_NAME                BPF
+              260  UNARY_NEGATIVE   
+              262  BINARY_POWER     
+              264  STORE_NAME               RECIP_BPF
+
+ L. 101       266  LOAD_BUILD_CLASS 
+              268  LOAD_CODE                <code_object Random>
+              270  LOAD_STR                 'Random'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  LOAD_STR                 'Random'
+              276  LOAD_NAME                _random
+              278  LOAD_ATTR                Random
+              280  CALL_FUNCTION_3       3  ''
+              282  STORE_NAME               Random
+
+ L. 771       284  LOAD_BUILD_CLASS 
+              286  LOAD_CODE                <code_object SystemRandom>
+              288  LOAD_STR                 'SystemRandom'
+              290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              292  LOAD_STR                 'SystemRandom'
+              294  LOAD_NAME                Random
+              296  CALL_FUNCTION_3       3  ''
+              298  STORE_NAME               SystemRandom
+
+ L. 815       300  LOAD_NAME                Random
+              302  CALL_FUNCTION_0       0  ''
+              304  STORE_NAME               _inst
+
+ L. 816       306  LOAD_NAME                _inst
+              308  LOAD_ATTR                seed
+              310  STORE_NAME               seed
+
+ L. 817       312  LOAD_NAME                _inst
+              314  LOAD_ATTR                random
+              316  STORE_NAME               random
+
+ L. 818       318  LOAD_NAME                _inst
+              320  LOAD_ATTR                uniform
+              322  STORE_NAME               uniform
+
+ L. 819       324  LOAD_NAME                _inst
+              326  LOAD_ATTR                triangular
+              328  STORE_NAME               triangular
+
+ L. 820       330  LOAD_NAME                _inst
+              332  LOAD_ATTR                randint
+              334  STORE_NAME               randint
+
+ L. 821       336  LOAD_NAME                _inst
+              338  LOAD_ATTR                choice
+              340  STORE_NAME               choice
+
+ L. 822       342  LOAD_NAME                _inst
+              344  LOAD_ATTR                randrange
+              346  STORE_NAME               randrange
+
+ L. 823       348  LOAD_NAME                _inst
+              350  LOAD_ATTR                sample
+              352  STORE_NAME               sample
+
+ L. 824       354  LOAD_NAME                _inst
+              356  LOAD_ATTR                shuffle
+              358  STORE_NAME               shuffle
+
+ L. 825       360  LOAD_NAME                _inst
+              362  LOAD_ATTR                choices
+              364  STORE_NAME               choices
+
+ L. 826       366  LOAD_NAME                _inst
+              368  LOAD_ATTR                normalvariate
+              370  STORE_NAME               normalvariate
+
+ L. 827       372  LOAD_NAME                _inst
+              374  LOAD_ATTR                lognormvariate
+              376  STORE_NAME               lognormvariate
+
+ L. 828       378  LOAD_NAME                _inst
+              380  LOAD_ATTR                expovariate
+              382  STORE_NAME               expovariate
+
+ L. 829       384  LOAD_NAME                _inst
+              386  LOAD_ATTR                vonmisesvariate
+              388  STORE_NAME               vonmisesvariate
+
+ L. 830       390  LOAD_NAME                _inst
+              392  LOAD_ATTR                gammavariate
+              394  STORE_NAME               gammavariate
+
+ L. 831       396  LOAD_NAME                _inst
+              398  LOAD_ATTR                gauss
+              400  STORE_NAME               gauss
+
+ L. 832       402  LOAD_NAME                _inst
+              404  LOAD_ATTR                betavariate
+              406  STORE_NAME               betavariate
+
+ L. 833       408  LOAD_NAME                _inst
+              410  LOAD_ATTR                paretovariate
+              412  STORE_NAME               paretovariate
+
+ L. 834       414  LOAD_NAME                _inst
+              416  LOAD_ATTR                weibullvariate
+              418  STORE_NAME               weibullvariate
+
+ L. 835       420  LOAD_NAME                _inst
+              422  LOAD_ATTR                getstate
+              424  STORE_NAME               getstate
+
+ L. 836       426  LOAD_NAME                _inst
+              428  LOAD_ATTR                setstate
+              430  STORE_NAME               setstate
+
+ L. 837       432  LOAD_NAME                _inst
+              434  LOAD_ATTR                getrandbits
+              436  STORE_NAME               getrandbits
+
+ L. 838       438  LOAD_NAME                _inst
+              440  LOAD_ATTR                randbytes
+              442  STORE_NAME               randbytes
+
+ L. 844       444  LOAD_CODE                <code_object _test_generator>
+              446  LOAD_STR                 '_test_generator'
+              448  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              450  STORE_NAME               _test_generator
+
+ L. 861       452  LOAD_CONST               (2000,)
+              454  LOAD_CODE                <code_object _test>
+              456  LOAD_STR                 '_test'
+              458  MAKE_FUNCTION_1          'default'
+              460  STORE_NAME               _test
+
+ L. 883       462  LOAD_NAME                hasattr
+              464  LOAD_NAME                _os
+              466  LOAD_STR                 'fork'
+              468  CALL_FUNCTION_2       2  ''
+          470_472  POP_JUMP_IF_FALSE   488  'to 488'
+
+ L. 884       474  LOAD_NAME                _os
+              476  LOAD_ATTR                register_at_fork
+              478  LOAD_NAME                _inst
+              480  LOAD_ATTR                seed
+              482  LOAD_CONST               ('after_in_child',)
+              484  CALL_FUNCTION_KW_1     1  '1 total positional and keyword args'
+              486  POP_TOP          
+            488_0  COME_FROM           470  '470'
+
+ L. 887       488  LOAD_NAME                __name__
+              490  LOAD_STR                 '__main__'
+              492  COMPARE_OP               ==
+          494_496  POP_JUMP_IF_FALSE   504  'to 504'
+
+ L. 888       498  LOAD_NAME                _test
+              500  CALL_FUNCTION_0       0  ''
+              502  POP_TOP          
+            504_0  COME_FROM           494  '494'
+
+Parse error at or near `<121>' instruction at offset 178
+
+Instruction context:
+   
+ L.  62       174  DUP_TOP          
+                 176  LOAD_NAME                ImportError
+->               178  <121>               202  ''
+                 180  POP_TOP          
+                 182  POP_TOP          
+                 184  POP_TOP          
+
+test/112382.pyc -- 
+# decompile failed

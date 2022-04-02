@@ -1,0 +1,33 @@
+Instruction context:
+   
+ L.1796        42  LOAD_FAST                'self'
+                  44  LOAD_METHOD              join
+                  46  LOAD_CONST               10
+                  48  CALL_METHOD_1         1  '1 positional argument'
+                  50  POP_TOP          
+                  52  JUMP_BACK            22  'to 22'
+                54_0  COME_FROM            40  '40'
+                54_1  COME_FROM            28  '28'
+                  54  POP_BLOCK        
+->                56  JUMP_FORWARD        110  'to 110'
+                58_0  COME_FROM            18  '18'
+Instruction context:
+   
+ L.2127       724  LOAD_FAST                'self'
+                 726  LOAD_ATTR                packetizer
+                 728  LOAD_METHOD              complete_handshake
+                 730  CALL_METHOD_0         0  '0 positional arguments'
+                 732  POP_TOP          
+->               734  JUMP_BACK           174  'to 174'
+               736_0  COME_FROM           178  '178'
+                 736  POP_BLOCK        
+               738_0  COME_FROM_LOOP      170  '170'
+                 738  POP_BLOCK        
+             740_742  JUMP_FORWARD       1086  'to 1086'
+               744_0  COME_FROM_EXCEPT     84  '84'
+
+../test/38249.pyc -- 
+# decompile failed
+
+# file ../test/38249.pyc
+# Deparsing stopped due to parse error

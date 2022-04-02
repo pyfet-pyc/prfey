@@ -1,0 +1,26 @@
+Instruction context:
+   
+ L.  70       116  LOAD_GLOBAL              importlib
+                 118  LOAD_METHOD              import_module
+                 120  LOAD_STR                 '._'
+                 122  LOAD_FAST                'module'
+                 124  BINARY_ADD       
+                 126  LOAD_FAST                'package'
+                 128  CALL_METHOD_2         2  ''
+                 130  POP_BLOCK        
+->               132  ROT_TWO          
+                 134  POP_TOP          
+                 136  RETURN_VALUE     
+               138_0  COME_FROM_FINALLY   114  '114'
+Instruction context:
+   
+ L. 331        52  POP_EXCEPT       
+->                54  LOAD_CONST               None
+                  56  RETURN_VALUE     
+                58_0  COME_FROM            44  '44'
+
+../test/24275.pyc -- 
+# decompile failed
+
+# file ../test/24275.pyc
+# Deparsing stopped due to parse error

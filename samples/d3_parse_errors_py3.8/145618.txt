@@ -1,0 +1,32 @@
+Instruction context:
+   
+ L. 116        28  POP_EXCEPT       
+                  30  JUMP_FORWARD         34  'to 34'
+->              32_0  COME_FROM            20  '20'
+                  32  END_FINALLY      
+                34_0  COME_FROM            30  '30'
+Instruction context:
+-> 
+ L. 223        30  LOAD_FAST                'tinfo'
+                  32  LOAD_METHOD              GetFuncDesc
+                  34  LOAD_FAST                'i'
+                  36  CALL_METHOD_1         1  ''
+                  38  STORE_FAST               'fd'
+Instruction context:
+   
+ L. 578        58  POP_EXCEPT       
+                  60  JUMP_FORWARD         64  'to 64'
+->              62_0  COME_FROM            50  '50'
+                  62  END_FINALLY      
+                64_0  COME_FROM            60  '60'
+Instruction context:
+   
+ L. 749        48  POP_EXCEPT       
+->                50  JUMP_BACK             8  'to 8'
+                52_0  COME_FROM            46  '46'
+
+../test/145618.pyc -- 
+# decompile failed
+
+# file ../test/145618.pyc
+# Deparsing stopped due to parse error

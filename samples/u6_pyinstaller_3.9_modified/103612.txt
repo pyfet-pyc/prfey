@@ -1,0 +1,1687 @@
+
+# file test/103612.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Supporting definitions for the Python regression tests.'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_NAME                __name__
+                6  LOAD_STR                 'test.support'
+                8  COMPARE_OP               !=
+               10  POP_JUMP_IF_FALSE    20  'to 20'
+
+ L.   4        12  LOAD_NAME                ImportError
+               14  LOAD_STR                 'support must be imported from the test package'
+               16  CALL_FUNCTION_1       1  ''
+               18  RAISE_VARARGS_1       1  'exception instance'
+             20_0  COME_FROM            10  '10'
+
+ L.   6        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME_ATTR         collections.abc
+               26  STORE_NAME               collections
+
+ L.   7        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              contextlib
+               34  STORE_NAME               contextlib
+
+ L.   8        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              errno
+               42  STORE_NAME               errno
+
+ L.   9        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              fnmatch
+               50  STORE_NAME               fnmatch
+
+ L.  10        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              functools
+               58  STORE_NAME               functools
+
+ L.  11        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              glob
+               66  STORE_NAME               glob
+
+ L.  12        68  LOAD_CONST               0
+               70  LOAD_CONST               None
+               72  IMPORT_NAME              importlib
+               74  STORE_NAME               importlib
+
+ L.  13        76  LOAD_CONST               0
+               78  LOAD_CONST               None
+               80  IMPORT_NAME_ATTR         importlib.util
+               82  STORE_NAME               importlib
+
+ L.  14        84  LOAD_CONST               0
+               86  LOAD_CONST               None
+               88  IMPORT_NAME              os
+               90  STORE_NAME               os
+
+ L.  15        92  LOAD_CONST               0
+               94  LOAD_CONST               None
+               96  IMPORT_NAME              platform
+               98  STORE_NAME               platform
+
+ L.  16       100  LOAD_CONST               0
+              102  LOAD_CONST               None
+              104  IMPORT_NAME              re
+              106  STORE_NAME               re
+
+ L.  17       108  LOAD_CONST               0
+              110  LOAD_CONST               None
+              112  IMPORT_NAME              stat
+              114  STORE_NAME               stat
+
+ L.  18       116  LOAD_CONST               0
+              118  LOAD_CONST               None
+              120  IMPORT_NAME              struct
+              122  STORE_NAME               struct
+
+ L.  19       124  LOAD_CONST               0
+              126  LOAD_CONST               None
+              128  IMPORT_NAME              subprocess
+              130  STORE_NAME               subprocess
+
+ L.  20       132  LOAD_CONST               0
+              134  LOAD_CONST               None
+              136  IMPORT_NAME              sys
+              138  STORE_NAME               sys
+
+ L.  21       140  LOAD_CONST               0
+              142  LOAD_CONST               None
+              144  IMPORT_NAME              sysconfig
+              146  STORE_NAME               sysconfig
+
+ L.  22       148  LOAD_CONST               0
+              150  LOAD_CONST               None
+              152  IMPORT_NAME              _thread
+              154  STORE_NAME               _thread
+
+ L.  23       156  LOAD_CONST               0
+              158  LOAD_CONST               None
+              160  IMPORT_NAME              threading
+              162  STORE_NAME               threading
+
+ L.  24       164  LOAD_CONST               0
+              166  LOAD_CONST               None
+              168  IMPORT_NAME              time
+              170  STORE_NAME               time
+
+ L.  25       172  LOAD_CONST               0
+              174  LOAD_CONST               None
+              176  IMPORT_NAME              types
+              178  STORE_NAME               types
+
+ L.  26       180  LOAD_CONST               0
+              182  LOAD_CONST               None
+              184  IMPORT_NAME              unittest
+              186  STORE_NAME               unittest
+
+ L.  27       188  LOAD_CONST               0
+              190  LOAD_CONST               None
+              192  IMPORT_NAME              warnings
+              194  STORE_NAME               warnings
+
+ L.  29       196  LOAD_CONST               1
+              198  LOAD_CONST               ('get_test_runner',)
+              200  IMPORT_NAME              testresult
+              202  IMPORT_FROM              get_test_runner
+              204  STORE_NAME               get_test_runner
+              206  POP_TOP          
+
+ L.  31       208  BUILD_LIST_0          0 
+              210  LOAD_CONST               ('PIPE_MAX_SIZE', 'verbose', 'max_memuse', 'use_resources', 'failfast', 'Error', 'TestFailed', 'TestDidNotRun', 'ResourceDenied', 'import_module', 'import_fresh_module', 'CleanImport', 'unload', 'forget', 'record_original_stdout', 'get_original_stdout', 'captured_stdout', 'captured_stdin', 'captured_stderr', 'TESTFN', 'SAVEDCWD', 'unlink', 'rmtree', 'temp_cwd', 'findfile', 'create_empty_file', 'can_symlink', 'fs_is_case_insensitive', 'is_resource_enabled', 'requires', 'requires_freebsd_version', 'requires_linux_version', 'requires_mac_ver', 'check_syntax_error', 'check_syntax_warning', 'TransientResource', 'time_out', 'socket_peer_reset', 'ioerror_peer_reset', 'BasicTestRunner', 'run_unittest', 'run_doctest', 'skip_unless_symlink', 'requires_gzip', 'requires_bz2', 'requires_lzma', 'bigmemtest', 'bigaddrspacetest', 'cpython_only', 'get_attribute', 'requires_IEEE_754', 'skip_unless_xattr', 'requires_zlib', 'anticipate_failure', 'load_package_tests', 'detect_api_mismatch', 'check__all__', 'skip_if_buggy_ucrt_strfptime', 'ignore_warnings', 'is_jython', 'is_android', 'check_impl_detail', 'unix_shell', 'setswitchinterval', 'open_urlresource', 'temp_umask', 'reap_children', 'threading_setup', 'threading_cleanup', 'reap_threads', 'start_threads', 'check_warnings', 'check_no_resource_warning', 'check_no_warnings', 'EnvironmentVarGuard', 'run_with_locale', 'swap_item', 'swap_attr', 'Matcher', 'set_memlimit', 'SuppressCrashReport', 'sortdict', 'run_with_tz', 'PGO', 'missing_compiler_executable', 'fd_count', 'ALWAYS_EQ', 'NEVER_EQ', 'LARGEST', 'SMALLEST', 'LOOPBACK_TIMEOUT', 'INTERNET_TIMEOUT', 'SHORT_TIMEOUT', 'LONG_TIMEOUT')
+              212  CALL_FINALLY        215  'to 215'
+              214  STORE_NAME               __all__
+
+ L.  87       216  LOAD_CONST               5.0
+              218  STORE_NAME               LOOPBACK_TIMEOUT
+
+ L.  88       220  LOAD_NAME                sys
+              222  LOAD_ATTR                platform
+              224  LOAD_STR                 'win32'
+              226  COMPARE_OP               ==
+              228  POP_JUMP_IF_FALSE   246  'to 246'
+              230  LOAD_NAME                platform
+              232  LOAD_METHOD              machine
+              234  CALL_METHOD_0         0  ''
+              236  LOAD_STR                 'ARM'
+              238  COMPARE_OP               ==
+              240  POP_JUMP_IF_FALSE   246  'to 246'
+
+ L.  91       242  LOAD_CONST               10
+              244  STORE_NAME               LOOPBACK_TIMEOUT
+            246_0  COME_FROM           240  '240'
+            246_1  COME_FROM           228  '228'
+
+ L.  99       246  LOAD_CONST               60.0
+              248  STORE_NAME               INTERNET_TIMEOUT
+
+ L. 107       250  LOAD_CONST               30.0
+              252  STORE_NAME               SHORT_TIMEOUT
+
+ L. 115       254  LOAD_CONST               300.0
+              256  STORE_NAME               LONG_TIMEOUT
+
+ L. 118       258  LOAD_BUILD_CLASS 
+              260  LOAD_CODE                <code_object Error>
+              262  LOAD_STR                 'Error'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  LOAD_STR                 'Error'
+              268  LOAD_NAME                Exception
+              270  CALL_FUNCTION_3       3  ''
+              272  STORE_NAME               Error
+
+ L. 121       274  LOAD_BUILD_CLASS 
+              276  LOAD_CODE                <code_object TestFailed>
+              278  LOAD_STR                 'TestFailed'
+              280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              282  LOAD_STR                 'TestFailed'
+              284  LOAD_NAME                Error
+              286  CALL_FUNCTION_3       3  ''
+              288  STORE_NAME               TestFailed
+
+ L. 124       290  LOAD_BUILD_CLASS 
+              292  LOAD_CODE                <code_object TestDidNotRun>
+              294  LOAD_STR                 'TestDidNotRun'
+              296  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              298  LOAD_STR                 'TestDidNotRun'
+              300  LOAD_NAME                Error
+              302  CALL_FUNCTION_3       3  ''
+              304  STORE_NAME               TestDidNotRun
+
+ L. 127       306  LOAD_BUILD_CLASS 
+              308  LOAD_CODE                <code_object ResourceDenied>
+              310  LOAD_STR                 'ResourceDenied'
+              312  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              314  LOAD_STR                 'ResourceDenied'
+              316  LOAD_NAME                unittest
+              318  LOAD_ATTR                SkipTest
+              320  CALL_FUNCTION_3       3  ''
+              322  STORE_NAME               ResourceDenied
+
+ L. 135       324  LOAD_NAME                contextlib
+              326  LOAD_ATTR                contextmanager
+
+ L. 136   328_330  LOAD_CONST               (True,)
+              332  LOAD_CODE                <code_object _ignore_deprecated_imports>
+              334  LOAD_STR                 '_ignore_deprecated_imports'
+              336  MAKE_FUNCTION_1          'default'
+              338  CALL_FUNCTION_1       1  ''
+              340  STORE_NAME               _ignore_deprecated_imports
+
+ L. 151       342  LOAD_CODE                <code_object ignore_warnings>
+              344  LOAD_STR                 'ignore_warnings'
+              346  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              348  STORE_NAME               ignore_warnings
+
+ L. 167   350_352  LOAD_CONST               (False,)
+              354  LOAD_CONST               ()
+              356  LOAD_CONST               ('required_on',)
+              358  BUILD_CONST_KEY_MAP_1     1 
+              360  LOAD_CODE                <code_object import_module>
+              362  LOAD_STR                 'import_module'
+              364  MAKE_FUNCTION_3          'default, keyword-only'
+              366  STORE_NAME               import_module
+
+ L. 185       368  LOAD_CODE                <code_object _save_and_remove_module>
+              370  LOAD_STR                 '_save_and_remove_module'
+              372  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              374  STORE_NAME               _save_and_remove_module
+
+ L. 199       376  LOAD_CODE                <code_object _save_and_block_module>
+              378  LOAD_STR                 '_save_and_block_module'
+              380  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              382  STORE_NAME               _save_and_block_module
+
+ L. 213       384  LOAD_CODE                <code_object anticipate_failure>
+              386  LOAD_STR                 'anticipate_failure'
+              388  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              390  STORE_NAME               anticipate_failure
+
+ L. 223       392  LOAD_CODE                <code_object load_package_tests>
+              394  LOAD_STR                 'load_package_tests'
+              396  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              398  STORE_NAME               load_package_tests
+
+ L. 243   400_402  LOAD_CONST               ((), (), False)
+              404  LOAD_CODE                <code_object import_fresh_module>
+              406  LOAD_STR                 'import_fresh_module'
+              408  MAKE_FUNCTION_1          'default'
+              410  STORE_NAME               import_fresh_module
+
+ L. 293       412  LOAD_CODE                <code_object get_attribute>
+              414  LOAD_STR                 'get_attribute'
+              416  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              418  STORE_NAME               get_attribute
+
+ L. 302       420  LOAD_CONST               1
+              422  STORE_NAME               verbose
+
+ L. 303       424  LOAD_CONST               None
+              426  STORE_NAME               use_resources
+
+ L. 304       428  LOAD_CONST               0
+              430  STORE_GLOBAL             max_memuse
+
+ L. 306       432  LOAD_CONST               0
+              434  STORE_GLOBAL             real_max_memuse
+
+ L. 307       436  LOAD_CONST               None
+              438  STORE_NAME               junit_xml_list
+
+ L. 308       440  LOAD_CONST               False
+              442  STORE_NAME               failfast
+
+ L. 313       444  LOAD_CONST               None
+              446  STORE_GLOBAL             _original_stdout
+
+ L. 314       448  LOAD_CODE                <code_object record_original_stdout>
+              450  LOAD_STR                 'record_original_stdout'
+              452  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              454  STORE_NAME               record_original_stdout
+
+ L. 318       456  LOAD_CODE                <code_object get_original_stdout>
+              458  LOAD_STR                 'get_original_stdout'
+              460  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              462  STORE_NAME               get_original_stdout
+
+ L. 321       464  LOAD_CODE                <code_object unload>
+              466  LOAD_STR                 'unload'
+              468  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              470  STORE_NAME               unload
+
+ L. 327       472  LOAD_CODE                <code_object _force_run>
+              474  LOAD_STR                 '_force_run'
+              476  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              478  STORE_NAME               _force_run
+
+ L. 337       480  LOAD_NAME                sys
+              482  LOAD_ATTR                platform
+              484  LOAD_METHOD              startswith
+              486  LOAD_STR                 'win'
+              488  CALL_METHOD_1         1  ''
+          490_492  POP_JUMP_IF_FALSE   540  'to 540'
+
+ L. 338   494_496  LOAD_CONST               (False,)
+              498  LOAD_CODE                <code_object _waitfor>
+              500  LOAD_STR                 '_waitfor'
+              502  MAKE_FUNCTION_1          'default'
+              504  STORE_NAME               _waitfor
+
+ L. 371       506  LOAD_CODE                <code_object _unlink>
+              508  LOAD_STR                 '_unlink'
+              510  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              512  STORE_NAME               _unlink
+
+ L. 374       514  LOAD_CODE                <code_object _rmdir>
+              516  LOAD_STR                 '_rmdir'
+              518  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              520  STORE_NAME               _rmdir
+
+ L. 377       522  LOAD_CODE                <code_object _rmtree>
+              524  LOAD_STR                 '_rmtree'
+              526  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              528  STORE_NAME               _rmtree
+
+ L. 395       530  LOAD_CODE                <code_object _longpath>
+              532  LOAD_STR                 '_longpath'
+              534  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              536  STORE_NAME               _longpath
+              538  JUMP_FORWARD        568  'to 568'
+            540_0  COME_FROM           490  '490'
+
+ L. 409       540  LOAD_NAME                os
+              542  LOAD_ATTR                unlink
+              544  STORE_NAME               _unlink
+
+ L. 410       546  LOAD_NAME                os
+              548  LOAD_ATTR                rmdir
+              550  STORE_NAME               _rmdir
+
+ L. 412       552  LOAD_CODE                <code_object _rmtree>
+              554  LOAD_STR                 '_rmtree'
+              556  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              558  STORE_NAME               _rmtree
+
+ L. 435       560  LOAD_CODE                <code_object _longpath>
+              562  LOAD_STR                 '_longpath'
+              564  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              566  STORE_NAME               _longpath
+            568_0  COME_FROM           538  '538'
+
+ L. 438       568  LOAD_CODE                <code_object unlink>
+              570  LOAD_STR                 'unlink'
+              572  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              574  STORE_NAME               unlink
+
+ L. 444       576  LOAD_CODE                <code_object rmdir>
+              578  LOAD_STR                 'rmdir'
+              580  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              582  STORE_NAME               rmdir
+
+ L. 450       584  LOAD_CODE                <code_object rmtree>
+              586  LOAD_STR                 'rmtree'
+              588  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              590  STORE_NAME               rmtree
+
+ L. 456       592  LOAD_CODE                <code_object make_legacy_pyc>
+              594  LOAD_STR                 'make_legacy_pyc'
+              596  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              598  STORE_NAME               make_legacy_pyc
+
+ L. 469       600  LOAD_CODE                <code_object forget>
+              602  LOAD_STR                 'forget'
+              604  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              606  STORE_NAME               forget
+
+ L. 485       608  LOAD_CODE                <code_object _is_gui_available>
+              610  LOAD_STR                 '_is_gui_available'
+              612  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              614  STORE_NAME               _is_gui_available
+
+ L. 561       616  LOAD_CODE                <code_object is_resource_enabled>
+              618  LOAD_STR                 'is_resource_enabled'
+              620  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              622  STORE_NAME               is_resource_enabled
+
+ L. 569   624_626  LOAD_CONST               (None,)
+              628  LOAD_CODE                <code_object requires>
+              630  LOAD_STR                 'requires'
+              632  MAKE_FUNCTION_1          'default'
+              634  STORE_NAME               requires
+
+ L. 578       636  LOAD_CODE                <code_object _requires_unix_version>
+              638  LOAD_STR                 '_requires_unix_version'
+              640  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              642  STORE_NAME               _requires_unix_version
+
+ L. 605       644  LOAD_CODE                <code_object requires_freebsd_version>
+              646  LOAD_STR                 'requires_freebsd_version'
+              648  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              650  STORE_NAME               requires_freebsd_version
+
+ L. 614       652  LOAD_CODE                <code_object requires_linux_version>
+              654  LOAD_STR                 'requires_linux_version'
+              656  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              658  STORE_NAME               requires_linux_version
+
+ L. 623       660  LOAD_CODE                <code_object requires_mac_ver>
+              662  LOAD_STR                 'requires_mac_ver'
+              664  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              666  STORE_NAME               requires_mac_ver
+
+ L. 651       668  LOAD_CODE                <code_object system_must_validate_cert>
+              670  LOAD_STR                 'system_must_validate_cert'
+              672  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              674  STORE_NAME               system_must_validate_cert
+
+ L. 669       676  LOAD_CONST               4194305
+              678  STORE_NAME               PIPE_MAX_SIZE
+
+ L. 676       680  LOAD_CONST               16777217
+              682  STORE_NAME               SOCK_MAX_SIZE
+
+ L. 679       684  LOAD_NAME                unittest
+              686  LOAD_METHOD              skipUnless
+
+ L. 680       688  LOAD_NAME                float
+              690  LOAD_METHOD              __getformat__
+              692  LOAD_STR                 'double'
+              694  CALL_METHOD_1         1  ''
+              696  LOAD_METHOD              startswith
+              698  LOAD_STR                 'IEEE'
+              700  CALL_METHOD_1         1  ''
+
+ L. 681       702  LOAD_STR                 'test requires IEEE 754 doubles'
+
+ L. 679       704  CALL_METHOD_2         2  ''
+              706  STORE_NAME               requires_IEEE_754
+
+ L. 683   708_710  LOAD_CONST               ('requires zlib',)
+              712  LOAD_CODE                <code_object requires_zlib>
+              714  LOAD_STR                 'requires_zlib'
+              716  MAKE_FUNCTION_1          'default'
+              718  STORE_NAME               requires_zlib
+
+ L. 690   720_722  LOAD_CONST               ('requires gzip',)
+              724  LOAD_CODE                <code_object requires_gzip>
+              726  LOAD_STR                 'requires_gzip'
+              728  MAKE_FUNCTION_1          'default'
+              730  STORE_NAME               requires_gzip
+
+ L. 697   732_734  LOAD_CONST               ('requires bz2',)
+              736  LOAD_CODE                <code_object requires_bz2>
+              738  LOAD_STR                 'requires_bz2'
+              740  MAKE_FUNCTION_1          'default'
+              742  STORE_NAME               requires_bz2
+
+ L. 704   744_746  LOAD_CONST               ('requires lzma',)
+              748  LOAD_CODE                <code_object requires_lzma>
+              750  LOAD_STR                 'requires_lzma'
+              752  MAKE_FUNCTION_1          'default'
+              754  STORE_NAME               requires_lzma
+
+ L. 711       756  LOAD_NAME                sys
+              758  LOAD_ATTR                platform
+              760  LOAD_METHOD              startswith
+              762  LOAD_STR                 'java'
+              764  CALL_METHOD_1         1  ''
+              766  STORE_NAME               is_jython
+
+ L. 713       768  LOAD_NAME                hasattr
+              770  LOAD_NAME                sys
+              772  LOAD_STR                 'getandroidapilevel'
+              774  CALL_FUNCTION_2       2  ''
+              776  STORE_NAME               is_android
+
+ L. 715       778  LOAD_NAME                sys
+              780  LOAD_ATTR                platform
+              782  LOAD_STR                 'win32'
+              784  COMPARE_OP               !=
+          786_788  POP_JUMP_IF_FALSE   806  'to 806'
+
+ L. 716       790  LOAD_NAME                is_android
+          792_794  POP_JUMP_IF_FALSE   800  'to 800'
+              796  LOAD_STR                 '/system/bin/sh'
+              798  JUMP_FORWARD        802  'to 802'
+            800_0  COME_FROM           792  '792'
+              800  LOAD_STR                 '/bin/sh'
+            802_0  COME_FROM           798  '798'
+              802  STORE_NAME               unix_shell
+              804  JUMP_FORWARD        810  'to 810'
+            806_0  COME_FROM           786  '786'
+
+ L. 718       806  LOAD_CONST               None
+              808  STORE_NAME               unix_shell
+            810_0  COME_FROM           804  '804'
+
+ L. 721       810  LOAD_NAME                os
+              812  LOAD_ATTR                name
+              814  LOAD_STR                 'java'
+              816  COMPARE_OP               ==
+          818_820  POP_JUMP_IF_FALSE   828  'to 828'
+
+ L. 723       822  LOAD_STR                 '$test'
+              824  STORE_NAME               TESTFN_ASCII
+              826  JUMP_FORWARD        832  'to 832'
+            828_0  COME_FROM           818  '818'
+
+ L. 725       828  LOAD_STR                 '@test'
+              830  STORE_NAME               TESTFN_ASCII
+            832_0  COME_FROM           826  '826'
+
+ L. 729       832  LOAD_STR                 '{}_{}_tmp'
+              834  LOAD_METHOD              format
+              836  LOAD_NAME                TESTFN_ASCII
+              838  LOAD_NAME                os
+              840  LOAD_METHOD              getpid
+              842  CALL_METHOD_0         0  ''
+              844  CALL_METHOD_2         2  ''
+              846  STORE_NAME               TESTFN_ASCII
+
+ L. 733       848  LOAD_STR                 'http://www.pythontest.net'
+              850  STORE_NAME               TEST_HTTP_URL
+
+ L. 737       852  LOAD_STR                 ''
+              854  STORE_NAME               FS_NONASCII
+
+ L. 738       856  LOAD_CONST               ('æ', 'İ', 'Ł', 'φ', 'К', 'א', '،', 'ت', 'ก', '\xa0', '€')
+              858  GET_ITER         
+              860  FOR_ITER            930  'to 930'
+              862  STORE_NAME               character
+
+ L. 771       864  SETUP_FINALLY       896  'to 896'
+
+ L. 775       866  LOAD_NAME                os
+              868  LOAD_METHOD              fsdecode
+              870  LOAD_NAME                os
+              872  LOAD_METHOD              fsencode
+              874  LOAD_NAME                character
+              876  CALL_METHOD_1         1  ''
+              878  CALL_METHOD_1         1  ''
+              880  LOAD_NAME                character
+              882  COMPARE_OP               !=
+          884_886  POP_JUMP_IF_FALSE   892  'to 892'
+
+ L. 776       888  LOAD_NAME                UnicodeError
+              890  RAISE_VARARGS_1       1  'exception instance'
+            892_0  COME_FROM           884  '884'
+              892  POP_BLOCK        
+              894  JUMP_FORWARD        916  'to 916'
+            896_0  COME_FROM_FINALLY   864  '864'
+
+ L. 777       896  DUP_TOP          
+              898  LOAD_NAME                UnicodeError
+          900_902  <121>               914  ''
+              904  POP_TOP          
+              906  POP_TOP          
+              908  POP_TOP          
+
+ L. 778       910  POP_EXCEPT       
+              912  JUMP_BACK           860  'to 860'
+              914  <48>             
+            916_0  COME_FROM           894  '894'
+
+ L. 780       916  LOAD_NAME                character
+              918  STORE_NAME               FS_NONASCII
+
+ L. 781       920  POP_TOP          
+          922_924  BREAK_LOOP          930  'to 930'
+          926_928  JUMP_BACK           860  'to 860'
+
+ L. 784       930  LOAD_NAME                TESTFN_ASCII
+              932  LOAD_STR                 '-àòɘŁğ'
+              934  BINARY_ADD       
+              936  STORE_NAME               TESTFN_UNICODE
+
+ L. 785       938  LOAD_NAME                sys
+              940  LOAD_ATTR                platform
+              942  LOAD_STR                 'darwin'
+              944  COMPARE_OP               ==
+          946_948  POP_JUMP_IF_FALSE   970  'to 970'
+
+ L. 789       950  LOAD_CONST               0
+              952  LOAD_CONST               None
+              954  IMPORT_NAME              unicodedata
+              956  STORE_NAME               unicodedata
+
+ L. 790       958  LOAD_NAME                unicodedata
+              960  LOAD_METHOD              normalize
+              962  LOAD_STR                 'NFD'
+              964  LOAD_NAME                TESTFN_UNICODE
+              966  CALL_METHOD_2         2  ''
+              968  STORE_NAME               TESTFN_UNICODE
+            970_0  COME_FROM           946  '946'
+
+ L. 791       970  LOAD_NAME                sys
+              972  LOAD_METHOD              getfilesystemencoding
+              974  CALL_METHOD_0         0  ''
+              976  STORE_NAME               TESTFN_ENCODING
+
+ L. 796       978  LOAD_CONST               None
+              980  STORE_NAME               TESTFN_UNENCODABLE
+
+ L. 797       982  LOAD_NAME                os
+              984  LOAD_ATTR                name
+              986  LOAD_STR                 'nt'
+              988  COMPARE_OP               ==
+          990_992  POP_JUMP_IF_FALSE  1076  'to 1076'
+
+ L. 799       994  LOAD_NAME                sys
+              996  LOAD_METHOD              getwindowsversion
+              998  CALL_METHOD_0         0  ''
+             1000  LOAD_ATTR                platform
+             1002  LOAD_CONST               2
+             1004  COMPARE_OP               >=
+         1006_1008  POP_JUMP_IF_FALSE  1140  'to 1140'
+
+ L. 802      1010  LOAD_NAME                TESTFN_ASCII
+             1012  LOAD_STR                 '-共Ł♡ͣ\udc80'
+             1014  BINARY_ADD       
+             1016  STORE_NAME               TESTFN_UNENCODABLE
+
+ L. 803      1018  SETUP_FINALLY      1034  'to 1034'
+
+ L. 804      1020  LOAD_NAME                TESTFN_UNENCODABLE
+             1022  LOAD_METHOD              encode
+             1024  LOAD_NAME                TESTFN_ENCODING
+             1026  CALL_METHOD_1         1  ''
+             1028  POP_TOP          
+             1030  POP_BLOCK        
+             1032  JUMP_FORWARD       1054  'to 1054'
+           1034_0  COME_FROM_FINALLY  1018  '1018'
+
+ L. 805      1034  DUP_TOP          
+             1036  LOAD_NAME                UnicodeEncodeError
+         1038_1040  <121>              1052  ''
+             1042  POP_TOP          
+             1044  POP_TOP          
+             1046  POP_TOP          
+
+ L. 806      1048  POP_EXCEPT       
+             1050  JUMP_FORWARD       1074  'to 1074'
+             1052  <48>             
+           1054_0  COME_FROM          1032  '1032'
+
+ L. 808      1054  LOAD_NAME                print
+             1056  LOAD_STR                 'WARNING: The filename %r CAN be encoded by the filesystem encoding (%s). Unicode filename tests may not be effective'
+
+ L. 810      1058  LOAD_NAME                TESTFN_UNENCODABLE
+             1060  LOAD_NAME                TESTFN_ENCODING
+             1062  BUILD_TUPLE_2         2 
+
+ L. 808      1064  BINARY_MODULO    
+             1066  CALL_FUNCTION_1       1  ''
+             1068  POP_TOP          
+
+ L. 811      1070  LOAD_CONST               None
+             1072  STORE_NAME               TESTFN_UNENCODABLE
+           1074_0  COME_FROM          1050  '1050'
+             1074  JUMP_FORWARD       1140  'to 1140'
+           1076_0  COME_FROM           990  '990'
+
+ L. 813      1076  LOAD_NAME                sys
+             1078  LOAD_ATTR                platform
+             1080  LOAD_STR                 'darwin'
+             1082  COMPARE_OP               !=
+         1084_1086  POP_JUMP_IF_FALSE  1140  'to 1140'
+
+ L. 814      1088  SETUP_FINALLY      1104  'to 1104'
+
+ L. 816      1090  LOAD_CONST               b'\xff'
+             1092  LOAD_METHOD              decode
+             1094  LOAD_NAME                TESTFN_ENCODING
+             1096  CALL_METHOD_1         1  ''
+             1098  POP_TOP          
+             1100  POP_BLOCK        
+             1102  JUMP_FORWARD       1140  'to 1140'
+           1104_0  COME_FROM_FINALLY  1088  '1088'
+
+ L. 817      1104  DUP_TOP          
+             1106  LOAD_NAME                UnicodeDecodeError
+         1108_1110  <121>              1138  ''
+             1112  POP_TOP          
+             1114  POP_TOP          
+             1116  POP_TOP          
+
+ L. 819      1118  LOAD_NAME                TESTFN_ASCII
+
+ L. 820      1120  LOAD_CONST               b'-\xff'
+             1122  LOAD_METHOD              decode
+             1124  LOAD_NAME                TESTFN_ENCODING
+             1126  LOAD_STR                 'surrogateescape'
+             1128  CALL_METHOD_2         2  ''
+
+ L. 819      1130  BINARY_ADD       
+             1132  STORE_NAME               TESTFN_UNENCODABLE
+             1134  POP_EXCEPT       
+             1136  JUMP_FORWARD       1140  'to 1140'
+             1138  <48>             
+           1140_0  COME_FROM          1136  '1136'
+           1140_1  COME_FROM          1102  '1102'
+           1140_2  COME_FROM          1084  '1084'
+           1140_3  COME_FROM          1074  '1074'
+           1140_4  COME_FROM          1006  '1006'
+
+ L. 832      1140  LOAD_CONST               None
+             1142  STORE_NAME               TESTFN_UNDECODABLE
+
+ L. 833      1144  LOAD_CONST               (b'\xe7w\xf0', b'\xff', b'\xae\xd5\xed\xb2\x80', b'\xed\xb4\x80', b'\x81\x98')
+             1146  GET_ITER         
+             1148  FOR_ITER           1214  'to 1214'
+             1150  STORE_NAME               name
+
+ L. 850      1152  SETUP_FINALLY      1168  'to 1168'
+
+ L. 851      1154  LOAD_NAME                name
+             1156  LOAD_METHOD              decode
+             1158  LOAD_NAME                TESTFN_ENCODING
+             1160  CALL_METHOD_1         1  ''
+             1162  POP_TOP          
+             1164  POP_BLOCK        
+             1166  JUMP_BACK          1148  'to 1148'
+           1168_0  COME_FROM_FINALLY  1152  '1152'
+
+ L. 852      1168  DUP_TOP          
+             1170  LOAD_NAME                UnicodeDecodeError
+         1172_1174  <121>              1208  ''
+             1176  POP_TOP          
+             1178  POP_TOP          
+             1180  POP_TOP          
+
+ L. 853      1182  LOAD_NAME                os
+             1184  LOAD_METHOD              fsencode
+             1186  LOAD_NAME                TESTFN_ASCII
+             1188  CALL_METHOD_1         1  ''
+             1190  LOAD_NAME                name
+             1192  BINARY_ADD       
+             1194  STORE_NAME               TESTFN_UNDECODABLE
+
+ L. 854      1196  POP_EXCEPT       
+             1198  POP_TOP          
+         1200_1202  BREAK_LOOP         1214  'to 1214'
+             1204  POP_EXCEPT       
+             1206  JUMP_BACK          1148  'to 1148'
+             1208  <48>             
+         1210_1212  JUMP_BACK          1148  'to 1148'
+
+ L. 856      1214  LOAD_NAME                FS_NONASCII
+         1216_1218  POP_JUMP_IF_FALSE  1230  'to 1230'
+
+ L. 857      1220  LOAD_NAME                TESTFN_ASCII
+             1222  LOAD_NAME                FS_NONASCII
+             1224  BINARY_ADD       
+             1226  STORE_NAME               TESTFN_NONASCII
+             1228  JUMP_FORWARD       1234  'to 1234'
+           1230_0  COME_FROM          1216  '1216'
+
+ L. 859      1230  LOAD_CONST               None
+             1232  STORE_NAME               TESTFN_NONASCII
+           1234_0  COME_FROM          1228  '1228'
+
+ L. 860      1234  LOAD_NAME                TESTFN_NONASCII
+         1236_1238  JUMP_IF_TRUE_OR_POP  1242  'to 1242'
+             1240  LOAD_NAME                TESTFN_ASCII
+           1242_0  COME_FROM          1236  '1236'
+             1242  STORE_NAME               TESTFN
+
+ L. 863      1244  LOAD_NAME                os
+             1246  LOAD_METHOD              getcwd
+             1248  CALL_METHOD_0         0  ''
+             1250  STORE_NAME               SAVEDCWD
+
+ L. 867      1252  LOAD_CONST               False
+             1254  STORE_NAME               PGO
+
+ L. 871      1256  LOAD_CONST               False
+             1258  STORE_NAME               PGO_EXTENDED
+
+ L. 873      1260  LOAD_NAME                contextlib
+             1262  LOAD_ATTR                contextmanager
+
+ L. 874  1264_1266  LOAD_CONST               (None, False)
+             1268  LOAD_CODE                <code_object temp_dir>
+             1270  LOAD_STR                 'temp_dir'
+             1272  MAKE_FUNCTION_1          'default'
+             1274  CALL_FUNCTION_1       1  ''
+             1276  STORE_NAME               temp_dir
+
+ L. 913      1278  LOAD_NAME                contextlib
+             1280  LOAD_ATTR                contextmanager
+
+ L. 914  1282_1284  LOAD_CONST               (False,)
+             1286  LOAD_CODE                <code_object change_cwd>
+             1288  LOAD_STR                 'change_cwd'
+             1290  MAKE_FUNCTION_1          'default'
+             1292  CALL_FUNCTION_1       1  ''
+             1294  STORE_NAME               change_cwd
+
+ L. 941      1296  LOAD_NAME                contextlib
+             1298  LOAD_ATTR                contextmanager
+
+ L. 942  1300_1302  LOAD_CONST               ('tempcwd', False)
+             1304  LOAD_CODE                <code_object temp_cwd>
+             1306  LOAD_STR                 'temp_cwd'
+             1308  MAKE_FUNCTION_1          'default'
+             1310  CALL_FUNCTION_1       1  ''
+             1312  STORE_NAME               temp_cwd
+
+ L. 960      1314  LOAD_NAME                hasattr
+             1316  LOAD_NAME                os
+             1318  LOAD_STR                 'umask'
+             1320  CALL_FUNCTION_2       2  ''
+         1322_1324  POP_JUMP_IF_FALSE  1340  'to 1340'
+
+ L. 961      1326  LOAD_NAME                contextlib
+             1328  LOAD_ATTR                contextmanager
+
+ L. 962      1330  LOAD_CODE                <code_object temp_umask>
+             1332  LOAD_STR                 'temp_umask'
+             1334  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1336  CALL_FUNCTION_1       1  ''
+             1338  STORE_NAME               temp_umask
+           1340_0  COME_FROM          1322  '1322'
+
+ L. 972      1340  LOAD_NAME                os
+             1342  LOAD_ATTR                path
+             1344  LOAD_METHOD              dirname
+             1346  LOAD_NAME                os
+             1348  LOAD_ATTR                path
+             1350  LOAD_METHOD              abspath
+             1352  LOAD_NAME                __file__
+             1354  CALL_METHOD_1         1  ''
+             1356  CALL_METHOD_1         1  ''
+             1358  STORE_NAME               TEST_SUPPORT_DIR
+
+ L. 973      1360  LOAD_NAME                os
+             1362  LOAD_ATTR                path
+             1364  LOAD_METHOD              dirname
+             1366  LOAD_NAME                TEST_SUPPORT_DIR
+             1368  CALL_METHOD_1         1  ''
+             1370  STORE_NAME               TEST_HOME_DIR
+
+ L. 976      1372  LOAD_NAME                os
+             1374  LOAD_ATTR                path
+             1376  LOAD_METHOD              join
+             1378  LOAD_NAME                TEST_HOME_DIR
+             1380  LOAD_STR                 'data'
+             1382  CALL_METHOD_2         2  ''
+             1384  STORE_NAME               TEST_DATA_DIR
+
+ L. 978  1386_1388  LOAD_CONST               (None,)
+             1390  LOAD_CODE                <code_object findfile>
+             1392  LOAD_STR                 'findfile'
+             1394  MAKE_FUNCTION_1          'default'
+             1396  STORE_NAME               findfile
+
+ L. 996      1398  LOAD_CODE                <code_object create_empty_file>
+             1400  LOAD_STR                 'create_empty_file'
+             1402  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1404  STORE_NAME               create_empty_file
+
+ L.1001      1406  LOAD_CODE                <code_object sortdict>
+             1408  LOAD_STR                 'sortdict'
+             1410  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1412  STORE_NAME               sortdict
+
+ L.1008      1414  LOAD_CODE                <code_object make_bad_fd>
+             1416  LOAD_STR                 'make_bad_fd'
+             1418  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1420  STORE_NAME               make_bad_fd
+
+ L.1021  1422_1424  LOAD_CONST               ('',)
+             1426  LOAD_CONST               None
+             1428  LOAD_CONST               None
+             1430  LOAD_CONST               ('lineno', 'offset')
+             1432  BUILD_CONST_KEY_MAP_2     2 
+             1434  LOAD_CODE                <code_object check_syntax_error>
+             1436  LOAD_STR                 'check_syntax_error'
+             1438  MAKE_FUNCTION_3          'default, keyword-only'
+             1440  STORE_NAME               check_syntax_error
+
+ L.1032  1442_1444  LOAD_CONST               ('',)
+             1446  LOAD_CONST               1
+             1448  LOAD_CONST               None
+             1450  LOAD_CONST               ('lineno', 'offset')
+             1452  BUILD_CONST_KEY_MAP_2     2 
+             1454  LOAD_CODE                <code_object check_syntax_warning>
+             1456  LOAD_STR                 'check_syntax_warning'
+             1458  MAKE_FUNCTION_3          'default, keyword-only'
+             1460  STORE_NAME               check_syntax_warning
+
+ L.1059      1462  LOAD_CODE                <code_object open_urlresource>
+             1464  LOAD_STR                 'open_urlresource'
+             1466  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1468  STORE_NAME               open_urlresource
+
+ L.1113      1470  LOAD_BUILD_CLASS 
+             1472  LOAD_CODE                <code_object WarningsRecorder>
+             1474  LOAD_STR                 'WarningsRecorder'
+             1476  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1478  LOAD_STR                 'WarningsRecorder'
+             1480  LOAD_NAME                object
+             1482  CALL_FUNCTION_3       3  ''
+             1484  STORE_NAME               WarningsRecorder
+
+ L.1136  1486_1488  LOAD_CONST               (False,)
+             1490  LOAD_CODE                <code_object _filterwarnings>
+             1492  LOAD_STR                 '_filterwarnings'
+             1494  MAKE_FUNCTION_1          'default'
+             1496  STORE_NAME               _filterwarnings
+
+ L.1175      1498  LOAD_NAME                contextlib
+             1500  LOAD_ATTR                contextmanager
+
+ L.1176      1502  LOAD_CODE                <code_object check_warnings>
+             1504  LOAD_STR                 'check_warnings'
+             1506  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1508  CALL_FUNCTION_1       1  ''
+             1510  STORE_NAME               check_warnings
+
+ L.1199      1512  LOAD_NAME                contextlib
+             1514  LOAD_ATTR                contextmanager
+
+ L.1200      1516  LOAD_STR                 ''
+             1518  LOAD_NAME                Warning
+             1520  LOAD_CONST               False
+             1522  BUILD_TUPLE_3         3 
+             1524  LOAD_CODE                <code_object check_no_warnings>
+             1526  LOAD_STR                 'check_no_warnings'
+             1528  MAKE_FUNCTION_1          'default'
+             1530  CALL_FUNCTION_1       1  ''
+             1532  STORE_NAME               check_no_warnings
+
+ L.1223      1534  LOAD_NAME                contextlib
+             1536  LOAD_ATTR                contextmanager
+
+ L.1224      1538  LOAD_CODE                <code_object check_no_resource_warning>
+             1540  LOAD_STR                 'check_no_resource_warning'
+             1542  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1544  CALL_FUNCTION_1       1  ''
+             1546  STORE_NAME               check_no_resource_warning
+
+ L.1241      1548  LOAD_BUILD_CLASS 
+             1550  LOAD_CODE                <code_object CleanImport>
+             1552  LOAD_STR                 'CleanImport'
+             1554  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1556  LOAD_STR                 'CleanImport'
+             1558  LOAD_NAME                object
+             1560  CALL_FUNCTION_3       3  ''
+             1562  STORE_NAME               CleanImport
+
+ L.1273      1564  LOAD_BUILD_CLASS 
+             1566  LOAD_CODE                <code_object EnvironmentVarGuard>
+             1568  LOAD_STR                 'EnvironmentVarGuard'
+             1570  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1572  LOAD_STR                 'EnvironmentVarGuard'
+             1574  LOAD_NAME                collections
+             1576  LOAD_ATTR                abc
+             1578  LOAD_ATTR                MutableMapping
+             1580  CALL_FUNCTION_3       3  ''
+             1582  STORE_NAME               EnvironmentVarGuard
+
+ L.1326      1584  LOAD_BUILD_CLASS 
+             1586  LOAD_CODE                <code_object DirsOnSysPath>
+             1588  LOAD_STR                 'DirsOnSysPath'
+             1590  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1592  LOAD_STR                 'DirsOnSysPath'
+             1594  LOAD_NAME                object
+             1596  CALL_FUNCTION_3       3  ''
+             1598  STORE_NAME               DirsOnSysPath
+
+ L.1351      1600  LOAD_BUILD_CLASS 
+             1602  LOAD_CODE                <code_object TransientResource>
+             1604  LOAD_STR                 'TransientResource'
+             1606  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1608  LOAD_STR                 'TransientResource'
+             1610  LOAD_NAME                object
+             1612  CALL_FUNCTION_3       3  ''
+             1614  STORE_NAME               TransientResource
+
+ L.1379      1616  LOAD_NAME                TransientResource
+             1618  LOAD_NAME                OSError
+             1620  LOAD_NAME                errno
+             1622  LOAD_ATTR                ETIMEDOUT
+             1624  LOAD_CONST               ('errno',)
+             1626  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+             1628  STORE_NAME               time_out
+
+ L.1380      1630  LOAD_NAME                TransientResource
+             1632  LOAD_NAME                OSError
+             1634  LOAD_NAME                errno
+             1636  LOAD_ATTR                ECONNRESET
+             1638  LOAD_CONST               ('errno',)
+             1640  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+             1642  STORE_NAME               socket_peer_reset
+
+ L.1381      1644  LOAD_NAME                TransientResource
+             1646  LOAD_NAME                OSError
+             1648  LOAD_NAME                errno
+             1650  LOAD_ATTR                ECONNRESET
+             1652  LOAD_CONST               ('errno',)
+             1654  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+             1656  STORE_NAME               ioerror_peer_reset
+
+ L.1384      1658  LOAD_NAME                contextlib
+             1660  LOAD_ATTR                contextmanager
+
+ L.1385      1662  LOAD_CODE                <code_object captured_output>
+             1664  LOAD_STR                 'captured_output'
+             1666  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1668  CALL_FUNCTION_1       1  ''
+             1670  STORE_NAME               captured_output
+
+ L.1396      1672  LOAD_CODE                <code_object captured_stdout>
+             1674  LOAD_STR                 'captured_stdout'
+             1676  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1678  STORE_NAME               captured_stdout
+
+ L.1405      1680  LOAD_CODE                <code_object captured_stderr>
+             1682  LOAD_STR                 'captured_stderr'
+             1684  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1686  STORE_NAME               captured_stderr
+
+ L.1414      1688  LOAD_CODE                <code_object captured_stdin>
+             1690  LOAD_STR                 'captured_stdin'
+             1692  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1694  STORE_NAME               captured_stdin
+
+ L.1427      1696  LOAD_CODE                <code_object gc_collect>
+             1698  LOAD_STR                 'gc_collect'
+             1700  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1702  STORE_NAME               gc_collect
+
+ L.1444      1704  LOAD_NAME                contextlib
+             1706  LOAD_ATTR                contextmanager
+
+ L.1445      1708  LOAD_CODE                <code_object disable_gc>
+             1710  LOAD_STR                 'disable_gc'
+             1712  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1714  CALL_FUNCTION_1       1  ''
+             1716  STORE_NAME               disable_gc
+
+ L.1456      1718  LOAD_CODE                <code_object python_is_optimized>
+             1720  LOAD_STR                 'python_is_optimized'
+             1722  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1724  STORE_NAME               python_is_optimized
+
+ L.1466      1726  LOAD_STR                 'nP'
+             1728  STORE_NAME               _header
+
+ L.1467      1730  LOAD_STR                 '0n'
+             1732  STORE_NAME               _align
+
+ L.1468      1734  LOAD_NAME                hasattr
+             1736  LOAD_NAME                sys
+             1738  LOAD_STR                 'getobjects'
+             1740  CALL_FUNCTION_2       2  ''
+         1742_1744  POP_JUMP_IF_FALSE  1758  'to 1758'
+
+ L.1469      1746  LOAD_STR                 '2P'
+             1748  LOAD_NAME                _header
+             1750  BINARY_ADD       
+             1752  STORE_NAME               _header
+
+ L.1470      1754  LOAD_STR                 '0P'
+             1756  STORE_NAME               _align
+           1758_0  COME_FROM          1742  '1742'
+
+ L.1471      1758  LOAD_NAME                _header
+             1760  LOAD_STR                 'n'
+             1762  BINARY_ADD       
+             1764  STORE_NAME               _vheader
+
+ L.1473      1766  LOAD_CODE                <code_object calcobjsize>
+             1768  LOAD_STR                 'calcobjsize'
+             1770  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1772  STORE_NAME               calcobjsize
+
+ L.1476      1774  LOAD_CODE                <code_object calcvobjsize>
+             1776  LOAD_STR                 'calcvobjsize'
+             1778  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1780  STORE_NAME               calcvobjsize
+
+ L.1480      1782  LOAD_CONST               16384
+             1784  STORE_NAME               _TPFLAGS_HAVE_GC
+
+ L.1481      1786  LOAD_CONST               512
+             1788  STORE_NAME               _TPFLAGS_HEAPTYPE
+
+ L.1483      1790  LOAD_CODE                <code_object check_sizeof>
+             1792  LOAD_STR                 'check_sizeof'
+             1794  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1796  STORE_NAME               check_sizeof
+
+ L.1498      1798  LOAD_CODE                <code_object run_with_locale>
+             1800  LOAD_STR                 'run_with_locale'
+             1802  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1804  STORE_NAME               run_with_locale
+
+ L.1534      1806  LOAD_CODE                <code_object run_with_tz>
+             1808  LOAD_STR                 'run_with_tz'
+             1810  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1812  STORE_NAME               run_with_tz
+
+ L.1569      1814  LOAD_CONST               1048576
+             1816  STORE_NAME               _1M
+
+ L.1570      1818  LOAD_CONST               1024
+             1820  LOAD_NAME                _1M
+             1822  BINARY_MULTIPLY  
+             1824  STORE_NAME               _1G
+
+ L.1571      1826  LOAD_CONST               2
+             1828  LOAD_NAME                _1G
+             1830  BINARY_MULTIPLY  
+             1832  STORE_NAME               _2G
+
+ L.1572      1834  LOAD_CONST               4
+             1836  LOAD_NAME                _1G
+             1838  BINARY_MULTIPLY  
+             1840  STORE_NAME               _4G
+
+ L.1574      1842  LOAD_NAME                sys
+             1844  LOAD_ATTR                maxsize
+             1846  STORE_NAME               MAX_Py_ssize_t
+
+ L.1576      1848  LOAD_CODE                <code_object set_memlimit>
+             1850  LOAD_STR                 'set_memlimit'
+             1852  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1854  STORE_NAME               set_memlimit
+
+ L.1597      1856  LOAD_BUILD_CLASS 
+             1858  LOAD_CODE                <code_object _MemoryWatchdog>
+             1860  LOAD_STR                 '_MemoryWatchdog'
+             1862  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1864  LOAD_STR                 '_MemoryWatchdog'
+             1866  CALL_FUNCTION_2       2  ''
+             1868  STORE_NAME               _MemoryWatchdog
+
+ L.1628  1870_1872  LOAD_CONST               (True,)
+             1874  LOAD_CODE                <code_object bigmemtest>
+             1876  LOAD_STR                 'bigmemtest'
+             1878  MAKE_FUNCTION_1          'default'
+             1880  STORE_NAME               bigmemtest
+
+ L.1676      1882  LOAD_CODE                <code_object bigaddrspacetest>
+             1884  LOAD_STR                 'bigaddrspacetest'
+             1886  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1888  STORE_NAME               bigaddrspacetest
+
+ L.1694      1890  LOAD_BUILD_CLASS 
+             1892  LOAD_CODE                <code_object BasicTestRunner>
+             1894  LOAD_STR                 'BasicTestRunner'
+             1896  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1898  LOAD_STR                 'BasicTestRunner'
+             1900  CALL_FUNCTION_2       2  ''
+             1902  STORE_NAME               BasicTestRunner
+
+ L.1700      1904  LOAD_CODE                <code_object _id>
+             1906  LOAD_STR                 '_id'
+             1908  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1910  STORE_NAME               _id
+
+ L.1703      1912  LOAD_CODE                <code_object requires_resource>
+             1914  LOAD_STR                 'requires_resource'
+             1916  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1918  STORE_NAME               requires_resource
+
+ L.1711      1920  LOAD_CODE                <code_object cpython_only>
+             1922  LOAD_STR                 'cpython_only'
+             1924  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1926  STORE_NAME               cpython_only
+
+ L.1717  1928_1930  LOAD_CONST               (None,)
+             1932  LOAD_CODE                <code_object impl_detail>
+             1934  LOAD_STR                 'impl_detail'
+             1936  MAKE_FUNCTION_1          'default'
+             1938  STORE_NAME               impl_detail
+
+ L.1730      1940  LOAD_CODE                <code_object _parse_guards>
+             1942  LOAD_STR                 '_parse_guards'
+             1944  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1946  STORE_NAME               _parse_guards
+
+ L.1740      1948  LOAD_CODE                <code_object check_impl_detail>
+             1950  LOAD_STR                 'check_impl_detail'
+             1952  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1954  STORE_NAME               check_impl_detail
+
+ L.1751      1956  LOAD_CODE                <code_object no_tracing>
+             1958  LOAD_STR                 'no_tracing'
+             1960  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1962  STORE_NAME               no_tracing
+
+ L.1767      1964  LOAD_CODE                <code_object refcount_test>
+             1966  LOAD_STR                 'refcount_test'
+             1968  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1970  STORE_NAME               refcount_test
+
+ L.1778      1972  LOAD_CODE                <code_object _filter_suite>
+             1974  LOAD_STR                 '_filter_suite'
+             1976  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1978  STORE_NAME               _filter_suite
+
+ L.1790      1980  LOAD_CODE                <code_object _run_suite>
+             1982  LOAD_STR                 '_run_suite'
+             1984  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1986  STORE_NAME               _run_suite
+
+ L.1815      1988  LOAD_CONST               None
+             1990  STORE_GLOBAL             _match_test_func
+
+ L.1817      1992  LOAD_CONST               None
+             1994  STORE_GLOBAL             _accept_test_patterns
+
+ L.1818      1996  LOAD_CONST               None
+             1998  STORE_GLOBAL             _ignore_test_patterns
+
+ L.1821      2000  LOAD_CODE                <code_object match_test>
+             2002  LOAD_STR                 'match_test'
+             2004  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2006  STORE_NAME               match_test
+
+ L.1829      2008  LOAD_CODE                <code_object _is_full_match_test>
+             2010  LOAD_STR                 '_is_full_match_test'
+             2012  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2014  STORE_NAME               _is_full_match_test
+
+ L.1839  2016_2018  LOAD_CONST               (None, None)
+             2020  LOAD_CODE                <code_object set_match_tests>
+             2022  LOAD_STR                 'set_match_tests'
+             2024  MAKE_FUNCTION_1          'default'
+             2026  STORE_NAME               set_match_tests
+
+ L.1872      2028  LOAD_CODE                <code_object _compile_match_function>
+             2030  LOAD_STR                 '_compile_match_function'
+             2032  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2034  STORE_NAME               _compile_match_function
+
+ L.1903      2036  LOAD_CODE                <code_object run_unittest>
+             2038  LOAD_STR                 'run_unittest'
+             2040  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2042  STORE_NAME               run_unittest
+
+ L.1926      2044  LOAD_CODE                <code_object _check_docstrings>
+             2046  LOAD_STR                 '_check_docstrings'
+             2048  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2050  STORE_NAME               _check_docstrings
+
+ L.1929      2052  LOAD_NAME                check_impl_detail
+             2054  CALL_FUNCTION_0       0  ''
+         2056_2058  JUMP_IF_FALSE_OR_POP  2082  'to 2082'
+
+ L.1930      2060  LOAD_NAME                sys
+             2062  LOAD_ATTR                platform
+             2064  LOAD_STR                 'win32'
+             2066  COMPARE_OP               !=
+
+ L.1929  2068_2070  JUMP_IF_FALSE_OR_POP  2082  'to 2082'
+
+ L.1931      2072  LOAD_NAME                sysconfig
+             2074  LOAD_METHOD              get_config_var
+             2076  LOAD_STR                 'WITH_DOC_STRINGS'
+             2078  CALL_METHOD_1         1  ''
+             2080  UNARY_NOT        
+           2082_0  COME_FROM          2068  '2068'
+           2082_1  COME_FROM          2056  '2056'
+
+ L.1929      2082  STORE_NAME               MISSING_C_DOCSTRINGS
+
+ L.1933      2084  LOAD_NAME                _check_docstrings
+             2086  LOAD_ATTR                __doc__
+             2088  LOAD_CONST               None
+             2090  <117>                 1  ''
+         2092_2094  JUMP_IF_FALSE_OR_POP  2100  'to 2100'
+
+ L.1934      2096  LOAD_NAME                MISSING_C_DOCSTRINGS
+             2098  UNARY_NOT        
+           2100_0  COME_FROM          2092  '2092'
+
+ L.1933      2100  STORE_NAME               HAVE_DOCSTRINGS
+
+ L.1936      2102  LOAD_NAME                unittest
+             2104  LOAD_METHOD              skipUnless
+             2106  LOAD_NAME                HAVE_DOCSTRINGS
+
+ L.1937      2108  LOAD_STR                 'test requires docstrings'
+
+ L.1936      2110  CALL_METHOD_2         2  ''
+             2112  STORE_NAME               requires_docstrings
+
+ L.1943  2114_2116  LOAD_CONST               (None, 0)
+             2118  LOAD_CODE                <code_object run_doctest>
+             2120  LOAD_STR                 'run_doctest'
+             2122  MAKE_FUNCTION_1          'default'
+             2124  STORE_NAME               run_doctest
+
+ L.1970  2126_2128  LOAD_CODE                <code_object print_warning>
+         2130_2132  LOAD_STR                 'print_warning'
+             2134  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2136  STORE_NAME               print_warning
+
+ L.1976  2138_2140  LOAD_CODE                <code_object modules_setup>
+         2142_2144  LOAD_STR                 'modules_setup'
+             2146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2148  STORE_NAME               modules_setup
+
+ L.1979  2150_2152  LOAD_CODE                <code_object modules_cleanup>
+         2154_2156  LOAD_STR                 'modules_cleanup'
+             2158  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2160  STORE_NAME               modules_cleanup
+
+ L.2004      2162  LOAD_CONST               False
+             2164  STORE_GLOBAL             environment_altered
+
+ L.2014  2166_2168  LOAD_CODE                <code_object threading_setup>
+         2170_2172  LOAD_STR                 'threading_setup'
+             2174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2176  STORE_NAME               threading_setup
+
+ L.2017  2178_2180  LOAD_CODE                <code_object threading_cleanup>
+         2182_2184  LOAD_STR                 'threading_cleanup'
+             2186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2188  STORE_NAME               threading_cleanup
+
+ L.2046  2190_2192  LOAD_CODE                <code_object reap_threads>
+         2194_2196  LOAD_STR                 'reap_threads'
+             2198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2200  STORE_NAME               reap_threads
+
+ L.2060      2202  LOAD_NAME                contextlib
+             2204  LOAD_ATTR                contextmanager
+
+ L.2061  2206_2208  LOAD_CONST               (None,)
+         2210_2212  LOAD_CODE                <code_object wait_threads_exit>
+         2214_2216  LOAD_STR                 'wait_threads_exit'
+             2218  MAKE_FUNCTION_1          'default'
+             2220  CALL_FUNCTION_1       1  ''
+             2222  STORE_NAME               wait_threads_exit
+
+ L.2097  2224_2226  LOAD_CONST               (None,)
+         2228_2230  LOAD_CODE                <code_object join_thread>
+         2232_2234  LOAD_STR                 'join_thread'
+             2236  MAKE_FUNCTION_1          'default'
+             2238  STORE_NAME               join_thread
+
+ L.2109  2240_2242  LOAD_CODE                <code_object reap_children>
+         2244_2246  LOAD_STR                 'reap_children'
+             2248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2250  STORE_NAME               reap_children
+
+ L.2137      2252  LOAD_NAME                contextlib
+             2254  LOAD_ATTR                contextmanager
+
+ L.2138  2256_2258  LOAD_CONST               (None,)
+         2260_2262  LOAD_CODE                <code_object start_threads>
+         2264_2266  LOAD_STR                 'start_threads'
+             2268  MAKE_FUNCTION_1          'default'
+             2270  CALL_FUNCTION_1       1  ''
+             2272  STORE_NAME               start_threads
+
+ L.2174      2274  LOAD_NAME                contextlib
+             2276  LOAD_ATTR                contextmanager
+
+ L.2175  2278_2280  LOAD_CODE                <code_object swap_attr>
+         2282_2284  LOAD_STR                 'swap_attr'
+             2286  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2288  CALL_FUNCTION_1       1  ''
+             2290  STORE_NAME               swap_attr
+
+ L.2205      2292  LOAD_NAME                contextlib
+             2294  LOAD_ATTR                contextmanager
+
+ L.2206  2296_2298  LOAD_CODE                <code_object swap_item>
+         2300_2302  LOAD_STR                 'swap_item'
+             2304  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2306  CALL_FUNCTION_1       1  ''
+             2308  STORE_NAME               swap_item
+
+ L.2236  2310_2312  LOAD_CODE                <code_object args_from_interpreter_flags>
+         2314_2316  LOAD_STR                 'args_from_interpreter_flags'
+             2318  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2320  STORE_NAME               args_from_interpreter_flags
+
+ L.2241  2322_2324  LOAD_CODE                <code_object optim_args_from_interpreter_flags>
+         2326_2328  LOAD_STR                 'optim_args_from_interpreter_flags'
+             2330  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2332  STORE_NAME               optim_args_from_interpreter_flags
+
+ L.2247      2334  LOAD_BUILD_CLASS 
+         2336_2338  LOAD_CODE                <code_object Matcher>
+         2340_2342  LOAD_STR                 'Matcher'
+             2344  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2346_2348  LOAD_STR                 'Matcher'
+             2350  LOAD_NAME                object
+             2352  CALL_FUNCTION_3       3  ''
+             2354  STORE_NAME               Matcher
+
+ L.2281      2356  LOAD_CONST               None
+             2358  STORE_GLOBAL             _can_symlink
+
+ L.2282  2360_2362  LOAD_CODE                <code_object can_symlink>
+         2364_2366  LOAD_STR                 'can_symlink'
+             2368  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2370  STORE_NAME               can_symlink
+
+ L.2297  2372_2374  LOAD_CODE                <code_object skip_unless_symlink>
+         2376_2378  LOAD_STR                 'skip_unless_symlink'
+             2380  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2382  STORE_NAME               skip_unless_symlink
+
+ L.2303      2384  LOAD_CONST               None
+             2386  STORE_GLOBAL             _buggy_ucrt
+
+ L.2304  2388_2390  LOAD_CODE                <code_object skip_if_buggy_ucrt_strfptime>
+         2392_2394  LOAD_STR                 'skip_if_buggy_ucrt_strfptime'
+             2396  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2398  STORE_NAME               skip_if_buggy_ucrt_strfptime
+
+ L.2325      2400  LOAD_BUILD_CLASS 
+         2402_2404  LOAD_CODE                <code_object PythonSymlink>
+         2406_2408  LOAD_STR                 'PythonSymlink'
+             2410  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2412_2414  LOAD_STR                 'PythonSymlink'
+             2416  CALL_FUNCTION_2       2  ''
+             2418  STORE_NAME               PythonSymlink
+
+ L.2403      2420  LOAD_CONST               None
+             2422  STORE_GLOBAL             _can_xattr
+
+ L.2404  2424_2426  LOAD_CODE                <code_object can_xattr>
+         2428_2430  LOAD_STR                 'can_xattr'
+             2432  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2434  STORE_NAME               can_xattr
+
+ L.2435  2436_2438  LOAD_CODE                <code_object skip_unless_xattr>
+         2440_2442  LOAD_STR                 'skip_unless_xattr'
+             2444  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2446  STORE_NAME               skip_unless_xattr
+
+ L.2441  2448_2450  LOAD_CODE                <code_object skip_if_pgo_task>
+         2452_2454  LOAD_STR                 'skip_if_pgo_task'
+             2456  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2458  STORE_NAME               skip_if_pgo_task
+
+ L.2448  2460_2462  LOAD_CODE                <code_object fs_is_case_insensitive>
+         2464_2466  LOAD_STR                 'fs_is_case_insensitive'
+             2468  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2470  STORE_NAME               fs_is_case_insensitive
+
+ L.2462      2472  LOAD_CONST               ()
+         2474_2476  LOAD_CONST               ('ignore',)
+             2478  BUILD_CONST_KEY_MAP_1     1 
+         2480_2482  LOAD_CODE                <code_object detect_api_mismatch>
+         2484_2486  LOAD_STR                 'detect_api_mismatch'
+             2488  MAKE_FUNCTION_2          'keyword-only'
+             2490  STORE_NAME               detect_api_mismatch
+
+ L.2478  2492_2494  LOAD_CONST               (None, (), ())
+         2496_2498  LOAD_CODE                <code_object check__all__>
+         2500_2502  LOAD_STR                 'check__all__'
+             2504  MAKE_FUNCTION_1          'default'
+             2506  STORE_NAME               check__all__
+
+ L.2536  2508_2510  LOAD_CONST               (False,)
+         2512_2514  LOAD_CODE                <code_object suppress_msvcrt_asserts>
+         2516_2518  LOAD_STR                 'suppress_msvcrt_asserts'
+             2520  MAKE_FUNCTION_1          'default'
+             2522  STORE_NAME               suppress_msvcrt_asserts
+
+ L.2557      2524  LOAD_BUILD_CLASS 
+         2526_2528  LOAD_CODE                <code_object SuppressCrashReport>
+         2530_2532  LOAD_STR                 'SuppressCrashReport'
+             2534  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2536_2538  LOAD_STR                 'SuppressCrashReport'
+             2540  CALL_FUNCTION_2       2  ''
+             2542  STORE_NAME               SuppressCrashReport
+
+ L.2654  2544_2546  LOAD_CODE                <code_object patch>
+         2548_2550  LOAD_STR                 'patch'
+             2552  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2554  STORE_NAME               patch
+
+ L.2688  2556_2558  LOAD_CODE                <code_object run_in_subinterp>
+         2560_2562  LOAD_STR                 'run_in_subinterp'
+             2564  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2566  STORE_NAME               run_in_subinterp
+
+ L.2708  2568_2570  LOAD_CONST               ((),)
+         2572_2574  LOAD_CODE                <code_object check_free_after_iterating>
+         2576_2578  LOAD_STR                 'check_free_after_iterating'
+             2580  MAKE_FUNCTION_1          'default'
+             2582  STORE_NAME               check_free_after_iterating
+
+ L.2727      2584  BUILD_LIST_0          0 
+             2586  BUILD_TUPLE_1         1 
+         2588_2590  LOAD_CODE                <code_object missing_compiler_executable>
+         2592_2594  LOAD_STR                 'missing_compiler_executable'
+             2596  MAKE_FUNCTION_1          'default'
+             2598  STORE_NAME               missing_compiler_executable
+
+ L.2758      2600  LOAD_CONST               None
+             2602  STORE_GLOBAL             _is_android_emulator
+
+ L.2759  2604_2606  LOAD_CODE                <code_object setswitchinterval>
+         2608_2610  LOAD_STR                 'setswitchinterval'
+             2612  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2614  STORE_NAME               setswitchinterval
+
+ L.2773      2616  LOAD_NAME                contextlib
+             2618  LOAD_ATTR                contextmanager
+
+ L.2774  2620_2622  LOAD_CODE                <code_object disable_faulthandler>
+         2624_2626  LOAD_STR                 'disable_faulthandler'
+             2628  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2630  CALL_FUNCTION_1       1  ''
+             2632  STORE_NAME               disable_faulthandler
+
+ L.2791  2634_2636  LOAD_CODE                <code_object fd_count>
+         2638_2640  LOAD_STR                 'fd_count'
+             2642  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2644  STORE_NAME               fd_count
+
+ L.2850      2646  LOAD_BUILD_CLASS 
+         2648_2650  LOAD_CODE                <code_object SaveSignals>
+         2652_2654  LOAD_STR                 'SaveSignals'
+             2656  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2658_2660  LOAD_STR                 'SaveSignals'
+             2662  CALL_FUNCTION_2       2  ''
+             2664  STORE_NAME               SaveSignals
+
+ L.2889  2666_2668  LOAD_CODE                <code_object with_pymalloc>
+         2670_2672  LOAD_STR                 'with_pymalloc'
+             2674  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             2676  STORE_NAME               with_pymalloc
+
+ L.2894      2678  LOAD_BUILD_CLASS 
+         2680_2682  LOAD_CODE                <code_object FakePath>
+         2684_2686  LOAD_STR                 'FakePath'
+             2688  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2690_2692  LOAD_STR                 'FakePath'
+             2694  CALL_FUNCTION_2       2  ''
+             2696  STORE_NAME               FakePath
+
+ L.2912      2698  LOAD_BUILD_CLASS 
+         2700_2702  LOAD_CODE                <code_object _ALWAYS_EQ>
+         2704_2706  LOAD_STR                 '_ALWAYS_EQ'
+             2708  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2710_2712  LOAD_STR                 '_ALWAYS_EQ'
+             2714  CALL_FUNCTION_2       2  ''
+             2716  STORE_NAME               _ALWAYS_EQ
+
+ L.2921      2718  LOAD_NAME                _ALWAYS_EQ
+             2720  CALL_FUNCTION_0       0  ''
+         2722_2724  STORE_NAME               ALWAYS_EQ
+
+ L.2923      2726  LOAD_BUILD_CLASS 
+         2728_2730  LOAD_CODE                <code_object _NEVER_EQ>
+         2732_2734  LOAD_STR                 '_NEVER_EQ'
+             2736  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2738_2740  LOAD_STR                 '_NEVER_EQ'
+             2742  CALL_FUNCTION_2       2  ''
+         2744_2746  STORE_NAME               _NEVER_EQ
+
+ L.2934  2748_2750  LOAD_NAME                _NEVER_EQ
+             2752  CALL_FUNCTION_0       0  ''
+         2754_2756  STORE_NAME               NEVER_EQ
+
+ L.2936      2758  LOAD_NAME                functools
+         2760_2762  LOAD_ATTR                total_ordering
+
+ L.2937      2764  LOAD_BUILD_CLASS 
+         2766_2768  LOAD_CODE                <code_object _LARGEST>
+         2770_2772  LOAD_STR                 '_LARGEST'
+             2774  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2776_2778  LOAD_STR                 '_LARGEST'
+             2780  CALL_FUNCTION_2       2  ''
+             2782  CALL_FUNCTION_1       1  ''
+         2784_2786  STORE_NAME               _LARGEST
+
+ L.2946  2788_2790  LOAD_NAME                _LARGEST
+             2792  CALL_FUNCTION_0       0  ''
+         2794_2796  STORE_NAME               LARGEST
+
+ L.2948      2798  LOAD_NAME                functools
+         2800_2802  LOAD_ATTR                total_ordering
+
+ L.2949      2804  LOAD_BUILD_CLASS 
+         2806_2808  LOAD_CODE                <code_object _SMALLEST>
+         2810_2812  LOAD_STR                 '_SMALLEST'
+             2814  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2816_2818  LOAD_STR                 '_SMALLEST'
+             2820  CALL_FUNCTION_2       2  ''
+             2822  CALL_FUNCTION_1       1  ''
+         2824_2826  STORE_NAME               _SMALLEST
+
+ L.2958  2828_2830  LOAD_NAME                _SMALLEST
+             2832  CALL_FUNCTION_0       0  ''
+         2834_2836  STORE_NAME               SMALLEST
+
+ L.2960  2838_2840  LOAD_CODE                <code_object maybe_get_event_loop_policy>
+         2842_2844  LOAD_STR                 'maybe_get_event_loop_policy'
+             2846  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2848_2850  STORE_NAME               maybe_get_event_loop_policy
+
+ L.2966      2852  LOAD_NAME                sys
+         2854_2856  LOAD_ATTR                hash_info
+         2858_2860  LOAD_ATTR                width
+         2862_2864  STORE_NAME               NHASHBITS
+
+ L.2967  2866_2868  LOAD_NAME                NHASHBITS
+         2870_2872  LOAD_CONST               (32, 64)
+             2874  <118>                 0  ''
+         2876_2878  POP_JUMP_IF_TRUE   2884  'to 2884'
+             2880  <74>             
+             2882  RAISE_VARARGS_1       1  'exception instance'
+           2884_0  COME_FROM          2876  '2876'
+
+ L.2973  2884_2886  LOAD_CODE                <code_object collision_stats>
+         2888_2890  LOAD_STR                 'collision_stats'
+             2892  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2894_2896  STORE_NAME               collision_stats
+
+ L.3007      2898  LOAD_BUILD_CLASS 
+         2900_2902  LOAD_CODE                <code_object catch_unraisable_exception>
+         2904_2906  LOAD_STR                 'catch_unraisable_exception'
+             2908  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2910_2912  LOAD_STR                 'catch_unraisable_exception'
+             2914  CALL_FUNCTION_2       2  ''
+         2916_2918  STORE_NAME               catch_unraisable_exception
+
+ L.3051      2920  LOAD_BUILD_CLASS 
+         2922_2924  LOAD_CODE                <code_object catch_threading_exception>
+         2926_2928  LOAD_STR                 'catch_threading_exception'
+             2930  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2932_2934  LOAD_STR                 'catch_threading_exception'
+             2936  CALL_FUNCTION_2       2  ''
+         2938_2940  STORE_NAME               catch_threading_exception
+
+ L.3108      2942  LOAD_CONST               None
+         2944_2946  LOAD_CONST               ('timeout',)
+             2948  BUILD_CONST_KEY_MAP_1     1 
+         2950_2952  LOAD_CODE                <code_object wait_process>
+         2954_2956  LOAD_STR                 'wait_process'
+             2958  MAKE_FUNCTION_2          'keyword-only'
+         2960_2962  STORE_NAME               wait_process
+
+ L.3161  2964_2966  LOAD_CODE                <code_object use_old_parser>
+         2968_2970  LOAD_STR                 'use_old_parser'
+             2972  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2974_2976  STORE_NAME               use_old_parser
+
+ L.3167  2978_2980  LOAD_CODE                <code_object skip_if_new_parser>
+         2982_2984  LOAD_STR                 'skip_if_new_parser'
+             2986  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         2988_2990  STORE_NAME               skip_if_new_parser
+
+ L.3171      2992  LOAD_NAME                contextlib
+             2994  LOAD_ATTR                contextmanager
+
+ L.3172  2996_2998  LOAD_CODE                <code_object save_restore_warnings_filters>
+         3000_3002  LOAD_STR                 'save_restore_warnings_filters'
+             3004  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             3006  CALL_FUNCTION_1       1  ''
+         3008_3010  STORE_NAME               save_restore_warnings_filters
+
+ L.3180  3012_3014  LOAD_CODE                <code_object skip_if_broken_multiprocessing_synchronize>
+         3016_3018  LOAD_STR                 'skip_if_broken_multiprocessing_synchronize'
+             3020  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+         3022_3024  STORE_NAME               skip_if_broken_multiprocessing_synchronize
+
+Parse error at or near `CALL_FINALLY' instruction at offset 212
+
+Instruction context:
+   
+ L.  31       208  BUILD_LIST_0          0 
+                 210  LOAD_CONST               ('PIPE_MAX_SIZE', 'verbose', 'max_memuse', 'use_resources', 'failfast', 'Error', 'TestFailed', 'TestDidNotRun', 'ResourceDenied', 'import_module', 'import_fresh_module', 'CleanImport', 'unload', 'forget', 'record_original_stdout', 'get_original_stdout', 'captured_stdout', 'captured_stdin', 'captured_stderr', 'TESTFN', 'SAVEDCWD', 'unlink', 'rmtree', 'temp_cwd', 'findfile', 'create_empty_file', 'can_symlink', 'fs_is_case_insensitive', 'is_resource_enabled', 'requires', 'requires_freebsd_version', 'requires_linux_version', 'requires_mac_ver', 'check_syntax_error', 'check_syntax_warning', 'TransientResource', 'time_out', 'socket_peer_reset', 'ioerror_peer_reset', 'BasicTestRunner', 'run_unittest', 'run_doctest', 'skip_unless_symlink', 'requires_gzip', 'requires_bz2', 'requires_lzma', 'bigmemtest', 'bigaddrspacetest', 'cpython_only', 'get_attribute', 'requires_IEEE_754', 'skip_unless_xattr', 'requires_zlib', 'anticipate_failure', 'load_package_tests', 'detect_api_mismatch', 'check__all__', 'skip_if_buggy_ucrt_strfptime', 'ignore_warnings', 'is_jython', 'is_android', 'check_impl_detail', 'unix_shell', 'setswitchinterval', 'open_urlresource', 'temp_umask', 'reap_children', 'threading_setup', 'threading_cleanup', 'reap_threads', 'start_threads', 'check_warnings', 'check_no_resource_warning', 'check_no_warnings', 'EnvironmentVarGuard', 'run_with_locale', 'swap_item', 'swap_attr', 'Matcher', 'set_memlimit', 'SuppressCrashReport', 'sortdict', 'run_with_tz', 'PGO', 'missing_compiler_executable', 'fd_count', 'ALWAYS_EQ', 'NEVER_EQ', 'LARGEST', 'SMALLEST', 'LOOPBACK_TIMEOUT', 'INTERNET_TIMEOUT', 'SHORT_TIMEOUT', 'LONG_TIMEOUT')
+->               212  CALL_FINALLY        215  'to 215'
+                 214  STORE_NAME               __all__
+
+test/103612.pyc -- 
+# decompile failed

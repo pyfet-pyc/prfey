@@ -1,0 +1,31 @@
+Instruction context:
+   
+ L.  48         6  LOAD_FAST                'salt'
+                   8  LOAD_GLOBAL              MGF1
+                  10  LOAD_ATTR                MAX_LENGTH
+->                12  <117>                 0  ''
+                  14  POP_JUMP_IF_TRUE     26  'to 26'
+                  16  LOAD_FAST                'salt'
+                  18  LOAD_GLOBAL              PSS
+                  20  LOAD_ATTR                MAX_LENGTH
+                  22  <117>                 0  ''
+                  24  POP_JUMP_IF_FALSE    36  'to 36'
+                26_0  COME_FROM            14  '14'
+Instruction context:
+   
+ L. 125       294  LOAD_FAST                'padding'
+                 296  LOAD_ATTR                _label
+                 298  LOAD_CONST               None
+->               300  <117>                 1  ''
+Instruction context:
+   
+ L. 205        92  LOAD_FAST                'algorithm'
+                  94  LOAD_CONST               None
+->                96  <117>                 1  ''
+                  98  POP_JUMP_IF_FALSE   160  'to 160'
+
+test/164374.pyc -- 
+# decompile failed
+
+# file test/164374.pyc
+# Deparsing stopped due to parse error

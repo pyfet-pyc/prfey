@@ -1,0 +1,400 @@
+
+# file test/103773.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Support for tasks, coroutines and the scheduler.'
+                2  STORE_NAME               __doc__
+
+ L.   3         4  LOAD_CONST               ('Task', 'create_task', 'FIRST_COMPLETED', 'FIRST_EXCEPTION', 'ALL_COMPLETED', 'wait', 'wait_for', 'as_completed', 'sleep', 'gather', 'shield', 'ensure_future', 'run_coroutine_threadsafe', 'current_task', 'all_tasks', '_register_task', '_unregister_task', '_enter_task', '_leave_task')
+                6  STORE_NAME               __all__
+
+ L.  12         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME_ATTR         concurrent.futures
+               14  STORE_NAME               concurrent
+
+ L.  13        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              contextvars
+               22  STORE_NAME               contextvars
+
+ L.  14        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              functools
+               30  STORE_NAME               functools
+
+ L.  15        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              inspect
+               38  STORE_NAME               inspect
+
+ L.  16        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              itertools
+               46  STORE_NAME               itertools
+
+ L.  17        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              types
+               54  STORE_NAME               types
+
+ L.  18        56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              warnings
+               62  STORE_NAME               warnings
+
+ L.  19        64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              weakref
+               70  STORE_NAME               weakref
+
+ L.  21        72  LOAD_CONST               1
+               74  LOAD_CONST               ('base_tasks',)
+               76  IMPORT_NAME              
+               78  IMPORT_FROM              base_tasks
+               80  STORE_NAME               base_tasks
+               82  POP_TOP          
+
+ L.  22        84  LOAD_CONST               1
+               86  LOAD_CONST               ('coroutines',)
+               88  IMPORT_NAME              
+               90  IMPORT_FROM              coroutines
+               92  STORE_NAME               coroutines
+               94  POP_TOP          
+
+ L.  23        96  LOAD_CONST               1
+               98  LOAD_CONST               ('events',)
+              100  IMPORT_NAME              
+              102  IMPORT_FROM              events
+              104  STORE_NAME               events
+              106  POP_TOP          
+
+ L.  24       108  LOAD_CONST               1
+              110  LOAD_CONST               ('exceptions',)
+              112  IMPORT_NAME              
+              114  IMPORT_FROM              exceptions
+              116  STORE_NAME               exceptions
+              118  POP_TOP          
+
+ L.  25       120  LOAD_CONST               1
+              122  LOAD_CONST               ('futures',)
+              124  IMPORT_NAME              
+              126  IMPORT_FROM              futures
+              128  STORE_NAME               futures
+              130  POP_TOP          
+
+ L.  26       132  LOAD_CONST               1
+              134  LOAD_CONST               ('_is_coroutine',)
+              136  IMPORT_NAME              coroutines
+              138  IMPORT_FROM              _is_coroutine
+              140  STORE_NAME               _is_coroutine
+              142  POP_TOP          
+
+ L.  31       144  LOAD_NAME                itertools
+              146  LOAD_METHOD              count
+              148  LOAD_CONST               1
+              150  CALL_METHOD_1         1  ''
+              152  LOAD_ATTR                __next__
+              154  STORE_NAME               _task_name_counter
+
+ L.  34       156  LOAD_CONST               (None,)
+              158  LOAD_CODE                <code_object current_task>
+              160  LOAD_STR                 'current_task'
+              162  MAKE_FUNCTION_1          'default'
+              164  STORE_NAME               current_task
+
+ L.  41       166  LOAD_CONST               (None,)
+              168  LOAD_CODE                <code_object all_tasks>
+              170  LOAD_STR                 'all_tasks'
+              172  MAKE_FUNCTION_1          'default'
+              174  STORE_NAME               all_tasks
+
+ L.  64       176  LOAD_CONST               (None,)
+              178  LOAD_CODE                <code_object _all_tasks_compat>
+              180  LOAD_STR                 '_all_tasks_compat'
+              182  MAKE_FUNCTION_1          'default'
+              184  STORE_NAME               _all_tasks_compat
+
+ L.  88       186  LOAD_CODE                <code_object _set_task_name>
+              188  LOAD_STR                 '_set_task_name'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  STORE_NAME               _set_task_name
+
+ L.  98       194  LOAD_BUILD_CLASS 
+              196  LOAD_CODE                <code_object Task>
+              198  LOAD_STR                 'Task'
+              200  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              202  LOAD_STR                 'Task'
+              204  LOAD_NAME                futures
+              206  LOAD_ATTR                _PyFuture
+              208  CALL_FUNCTION_3       3  ''
+              210  STORE_NAME               Task
+
+ L. 343       212  LOAD_NAME                Task
+              214  STORE_NAME               _PyTask
+
+ L. 346       216  SETUP_FINALLY       230  'to 230'
+
+ L. 347       218  LOAD_CONST               0
+              220  LOAD_CONST               None
+              222  IMPORT_NAME              _asyncio
+              224  STORE_NAME               _asyncio
+              226  POP_BLOCK        
+              228  JUMP_FORWARD        248  'to 248'
+            230_0  COME_FROM_FINALLY   216  '216'
+
+ L. 348       230  DUP_TOP          
+              232  LOAD_NAME                ImportError
+              234  <121>               246  ''
+              236  POP_TOP          
+              238  POP_TOP          
+              240  POP_TOP          
+
+ L. 349       242  POP_EXCEPT       
+              244  JUMP_FORWARD        258  'to 258'
+              246  <48>             
+            248_0  COME_FROM           228  '228'
+
+ L. 352       248  LOAD_NAME                _asyncio
+              250  LOAD_ATTR                Task
+              252  DUP_TOP          
+              254  STORE_NAME               Task
+              256  STORE_NAME               _CTask
+            258_0  COME_FROM           244  '244'
+
+ L. 355       258  LOAD_CONST               None
+              260  LOAD_CONST               ('name',)
+              262  BUILD_CONST_KEY_MAP_1     1 
+              264  LOAD_CODE                <code_object create_task>
+              266  LOAD_STR                 'create_task'
+              268  MAKE_FUNCTION_2          'keyword-only'
+              270  STORE_NAME               create_task
+
+ L. 368       272  LOAD_NAME                concurrent
+              274  LOAD_ATTR                futures
+              276  LOAD_ATTR                FIRST_COMPLETED
+              278  STORE_NAME               FIRST_COMPLETED
+
+ L. 369       280  LOAD_NAME                concurrent
+              282  LOAD_ATTR                futures
+              284  LOAD_ATTR                FIRST_EXCEPTION
+              286  STORE_NAME               FIRST_EXCEPTION
+
+ L. 370       288  LOAD_NAME                concurrent
+              290  LOAD_ATTR                futures
+              292  LOAD_ATTR                ALL_COMPLETED
+              294  STORE_NAME               ALL_COMPLETED
+
+ L. 373       296  LOAD_CONST               None
+              298  LOAD_CONST               None
+              300  LOAD_NAME                ALL_COMPLETED
+              302  LOAD_CONST               ('loop', 'timeout', 'return_when')
+              304  BUILD_CONST_KEY_MAP_3     3 
+              306  LOAD_CODE                <code_object wait>
+              308  LOAD_STR                 'wait'
+              310  MAKE_FUNCTION_2          'keyword-only'
+              312  STORE_NAME               wait
+
+ L. 416       314  LOAD_CODE                <code_object _release_waiter>
+              316  LOAD_STR                 '_release_waiter'
+              318  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              320  STORE_NAME               _release_waiter
+
+ L. 421       322  LOAD_CONST               None
+              324  LOAD_CONST               ('loop',)
+              326  BUILD_CONST_KEY_MAP_1     1 
+              328  LOAD_CODE                <code_object wait_for>
+              330  LOAD_STR                 'wait_for'
+              332  MAKE_FUNCTION_2          'keyword-only'
+              334  STORE_NAME               wait_for
+
+ L. 501       336  LOAD_CODE                <code_object _wait>
+              338  LOAD_STR                 '_wait'
+              340  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              342  STORE_NAME               _wait
+
+ L. 545       344  LOAD_CODE                <code_object _cancel_and_wait>
+              346  LOAD_STR                 '_cancel_and_wait'
+              348  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              350  STORE_NAME               _cancel_and_wait
+
+ L. 562       352  LOAD_CONST               None
+              354  LOAD_CONST               None
+              356  LOAD_CONST               ('loop', 'timeout')
+              358  BUILD_CONST_KEY_MAP_2     2 
+              360  LOAD_CODE                <code_object as_completed>
+              362  LOAD_STR                 'as_completed'
+              364  MAKE_FUNCTION_2          'keyword-only'
+              366  STORE_NAME               as_completed
+
+ L. 624       368  LOAD_NAME                types
+              370  LOAD_ATTR                coroutine
+
+ L. 625       372  LOAD_CODE                <code_object __sleep0>
+              374  LOAD_STR                 '__sleep0'
+              376  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              378  CALL_FUNCTION_1       1  ''
+              380  STORE_NAME               __sleep0
+
+ L. 636       382  LOAD_CONST               (None,)
+              384  LOAD_CONST               None
+              386  LOAD_CONST               ('loop',)
+              388  BUILD_CONST_KEY_MAP_1     1 
+              390  LOAD_CODE                <code_object sleep>
+              392  LOAD_STR                 'sleep'
+              394  MAKE_FUNCTION_3          'default, keyword-only'
+              396  STORE_NAME               sleep
+
+ L. 659       398  LOAD_CONST               None
+              400  LOAD_CONST               ('loop',)
+              402  BUILD_CONST_KEY_MAP_1     1 
+              404  LOAD_CODE                <code_object ensure_future>
+              406  LOAD_STR                 'ensure_future'
+              408  MAKE_FUNCTION_2          'keyword-only'
+              410  STORE_NAME               ensure_future
+
+ L. 683       412  LOAD_NAME                types
+              414  LOAD_ATTR                coroutine
+
+ L. 684       416  LOAD_CODE                <code_object _wrap_awaitable>
+              418  LOAD_STR                 '_wrap_awaitable'
+              420  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              422  CALL_FUNCTION_1       1  ''
+              424  STORE_NAME               _wrap_awaitable
+
+ L. 692       426  LOAD_NAME                _is_coroutine
+              428  LOAD_NAME                _wrap_awaitable
+              430  STORE_ATTR               _is_coroutine
+
+ L. 695       432  LOAD_BUILD_CLASS 
+              434  LOAD_CODE                <code_object _GatheringFuture>
+              436  LOAD_STR                 '_GatheringFuture'
+              438  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              440  LOAD_STR                 '_GatheringFuture'
+              442  LOAD_NAME                futures
+              444  LOAD_ATTR                Future
+              446  CALL_FUNCTION_3       3  ''
+              448  STORE_NAME               _GatheringFuture
+
+ L. 723       450  LOAD_CONST               None
+              452  LOAD_CONST               False
+              454  LOAD_CONST               ('loop', 'return_exceptions')
+              456  BUILD_CONST_KEY_MAP_2     2 
+              458  LOAD_CODE                <code_object gather>
+              460  LOAD_STR                 'gather'
+              462  MAKE_FUNCTION_2          'keyword-only'
+              464  STORE_NAME               gather
+
+ L. 849       466  LOAD_CONST               None
+              468  LOAD_CONST               ('loop',)
+              470  BUILD_CONST_KEY_MAP_1     1 
+              472  LOAD_CODE                <code_object shield>
+              474  LOAD_STR                 'shield'
+              476  MAKE_FUNCTION_2          'keyword-only'
+              478  STORE_NAME               shield
+
+ L. 912       480  LOAD_CODE                <code_object run_coroutine_threadsafe>
+              482  LOAD_STR                 'run_coroutine_threadsafe'
+              484  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              486  STORE_NAME               run_coroutine_threadsafe
+
+ L. 936       488  LOAD_NAME                weakref
+              490  LOAD_METHOD              WeakSet
+              492  CALL_METHOD_0         0  ''
+              494  STORE_NAME               _all_tasks
+
+ L. 940       496  BUILD_MAP_0           0 
+              498  STORE_NAME               _current_tasks
+
+ L. 943       500  LOAD_CODE                <code_object _register_task>
+              502  LOAD_STR                 '_register_task'
+              504  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              506  STORE_NAME               _register_task
+
+ L. 948       508  LOAD_CODE                <code_object _enter_task>
+              510  LOAD_STR                 '_enter_task'
+              512  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              514  STORE_NAME               _enter_task
+
+ L. 956       516  LOAD_CODE                <code_object _leave_task>
+              518  LOAD_STR                 '_leave_task'
+              520  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              522  STORE_NAME               _leave_task
+
+ L. 964       524  LOAD_CODE                <code_object _unregister_task>
+              526  LOAD_STR                 '_unregister_task'
+              528  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              530  STORE_NAME               _unregister_task
+
+ L. 969       532  LOAD_NAME                _register_task
+              534  STORE_NAME               _py_register_task
+
+ L. 970       536  LOAD_NAME                _unregister_task
+              538  STORE_NAME               _py_unregister_task
+
+ L. 971       540  LOAD_NAME                _enter_task
+              542  STORE_NAME               _py_enter_task
+
+ L. 972       544  LOAD_NAME                _leave_task
+              546  STORE_NAME               _py_leave_task
+
+ L. 975       548  SETUP_FINALLY       586  'to 586'
+
+ L. 976       550  LOAD_CONST               0
+              552  LOAD_CONST               ('_register_task', '_unregister_task', '_enter_task', '_leave_task', '_all_tasks', '_current_tasks')
+              554  IMPORT_NAME              _asyncio
+              556  IMPORT_FROM              _register_task
+              558  STORE_NAME               _register_task
+              560  IMPORT_FROM              _unregister_task
+              562  STORE_NAME               _unregister_task
+              564  IMPORT_FROM              _enter_task
+              566  STORE_NAME               _enter_task
+              568  IMPORT_FROM              _leave_task
+              570  STORE_NAME               _leave_task
+              572  IMPORT_FROM              _all_tasks
+              574  STORE_NAME               _all_tasks
+              576  IMPORT_FROM              _current_tasks
+              578  STORE_NAME               _current_tasks
+              580  POP_TOP          
+              582  POP_BLOCK        
+              584  JUMP_FORWARD        606  'to 606'
+            586_0  COME_FROM_FINALLY   548  '548'
+
+ L. 979       586  DUP_TOP          
+              588  LOAD_NAME                ImportError
+          590_592  <121>               604  ''
+              594  POP_TOP          
+              596  POP_TOP          
+              598  POP_TOP          
+
+ L. 980       600  POP_EXCEPT       
+              602  JUMP_FORWARD        622  'to 622'
+              604  <48>             
+            606_0  COME_FROM           584  '584'
+
+ L. 982       606  LOAD_NAME                _register_task
+              608  STORE_NAME               _c_register_task
+
+ L. 983       610  LOAD_NAME                _unregister_task
+              612  STORE_NAME               _c_unregister_task
+
+ L. 984       614  LOAD_NAME                _enter_task
+              616  STORE_NAME               _c_enter_task
+
+ L. 985       618  LOAD_NAME                _leave_task
+              620  STORE_NAME               _c_leave_task
+            622_0  COME_FROM           602  '602'
+
+Parse error at or near `<121>' instruction at offset 234
+
+Instruction context:
+   
+ L. 348       230  DUP_TOP          
+                 232  LOAD_NAME                ImportError
+->               234  <121>               246  ''
+                 236  POP_TOP          
+                 238  POP_TOP          
+                 240  POP_TOP          
+
+test/103773.pyc -- 
+# decompile failed

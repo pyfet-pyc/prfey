@@ -1,0 +1,955 @@
+
+# file test/162558.pyc
+# --- This code section failed: ---
+
+ L.   2         0  LOAD_STR                 "\nThis is the Windows backend for keyboard events, and is implemented by\ninvoking the Win32 API through the ctypes module. This is error prone\nand can introduce very unpythonic failure modes, such as segfaults and\nlow level memory leaks. But it is also dependency-free, very performant\nwell documented on Microsoft's website and scattered examples.\n\n# TODO:\n- Keypad numbers still print as numbers even when numlock is off.\n- No way to specify if user wants a keypad key or not in `map_char`.\n"
+                2  STORE_NAME               __doc__
+
+ L.  13         4  LOAD_CONST               0
+                6  LOAD_CONST               ('unicode_literals',)
+                8  IMPORT_NAME              __future__
+               10  IMPORT_FROM              unicode_literals
+               12  STORE_NAME               unicode_literals
+               14  POP_TOP          
+
+ L.  14        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              re
+               22  STORE_NAME               re
+
+ L.  15        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              atexit
+               30  STORE_NAME               atexit
+
+ L.  16        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              traceback
+               38  STORE_NAME               traceback
+
+ L.  17        40  LOAD_CONST               0
+               42  LOAD_CONST               ('Lock',)
+               44  IMPORT_NAME              threading
+               46  IMPORT_FROM              Lock
+               48  STORE_NAME               Lock
+               50  POP_TOP          
+
+ L.  18        52  LOAD_CONST               0
+               54  LOAD_CONST               ('defaultdict',)
+               56  IMPORT_NAME              collections
+               58  IMPORT_FROM              defaultdict
+               60  STORE_NAME               defaultdict
+               62  POP_TOP          
+
+ L.  20        64  LOAD_CONST               1
+               66  LOAD_CONST               ('KeyboardEvent', 'KEY_DOWN', 'KEY_UP')
+               68  IMPORT_NAME              _keyboard_event
+               70  IMPORT_FROM              KeyboardEvent
+               72  STORE_NAME               KeyboardEvent
+               74  IMPORT_FROM              KEY_DOWN
+               76  STORE_NAME               KEY_DOWN
+               78  IMPORT_FROM              KEY_UP
+               80  STORE_NAME               KEY_UP
+               82  POP_TOP          
+
+ L.  21        84  LOAD_CONST               1
+               86  LOAD_CONST               ('normalize_name',)
+               88  IMPORT_NAME              _canonical_names
+               90  IMPORT_FROM              normalize_name
+               92  STORE_NAME               normalize_name
+               94  POP_TOP          
+
+ L.  22        96  SETUP_FINALLY       106  'to 106'
+
+ L.  24        98  LOAD_NAME                unichr
+              100  STORE_NAME               chr
+              102  POP_BLOCK        
+              104  JUMP_FORWARD        124  'to 124'
+            106_0  COME_FROM_FINALLY    96  '96'
+
+ L.  25       106  DUP_TOP          
+              108  LOAD_NAME                NameError
+              110  <121>               122  ''
+              112  POP_TOP          
+              114  POP_TOP          
+              116  POP_TOP          
+
+ L.  26       118  POP_EXCEPT       
+              120  JUMP_FORWARD        124  'to 124'
+              122  <48>             
+            124_0  COME_FROM           120  '120'
+            124_1  COME_FROM           104  '104'
+
+ L.  31       124  LOAD_CONST               0
+              126  LOAD_CONST               None
+              128  IMPORT_NAME              ctypes
+              130  STORE_NAME               ctypes
+
+ L.  32       132  LOAD_CONST               0
+              134  LOAD_CONST               ('c_short', 'c_char', 'c_uint8', 'c_int32', 'c_int', 'c_uint', 'c_uint32', 'c_long', 'Structure', 'CFUNCTYPE', 'POINTER')
+              136  IMPORT_NAME              ctypes
+              138  IMPORT_FROM              c_short
+              140  STORE_NAME               c_short
+              142  IMPORT_FROM              c_char
+              144  STORE_NAME               c_char
+              146  IMPORT_FROM              c_uint8
+              148  STORE_NAME               c_uint8
+              150  IMPORT_FROM              c_int32
+              152  STORE_NAME               c_int32
+              154  IMPORT_FROM              c_int
+              156  STORE_NAME               c_int
+              158  IMPORT_FROM              c_uint
+              160  STORE_NAME               c_uint
+              162  IMPORT_FROM              c_uint32
+              164  STORE_NAME               c_uint32
+              166  IMPORT_FROM              c_long
+              168  STORE_NAME               c_long
+              170  IMPORT_FROM              Structure
+              172  STORE_NAME               Structure
+              174  IMPORT_FROM              CFUNCTYPE
+              176  STORE_NAME               CFUNCTYPE
+              178  IMPORT_FROM              POINTER
+              180  STORE_NAME               POINTER
+              182  POP_TOP          
+
+ L.  33       184  LOAD_CONST               0
+              186  LOAD_CONST               ('WORD', 'DWORD', 'BOOL', 'HHOOK', 'MSG', 'LPWSTR', 'WCHAR', 'WPARAM', 'LPARAM', 'LONG', 'HMODULE', 'LPCWSTR', 'HINSTANCE', 'HWND')
+              188  IMPORT_NAME_ATTR         ctypes.wintypes
+              190  IMPORT_FROM              WORD
+              192  STORE_NAME               WORD
+              194  IMPORT_FROM              DWORD
+              196  STORE_NAME               DWORD
+              198  IMPORT_FROM              BOOL
+              200  STORE_NAME               BOOL
+              202  IMPORT_FROM              HHOOK
+              204  STORE_NAME               HHOOK
+              206  IMPORT_FROM              MSG
+              208  STORE_NAME               MSG
+              210  IMPORT_FROM              LPWSTR
+              212  STORE_NAME               LPWSTR
+              214  IMPORT_FROM              WCHAR
+              216  STORE_NAME               WCHAR
+              218  IMPORT_FROM              WPARAM
+              220  STORE_NAME               WPARAM
+              222  IMPORT_FROM              LPARAM
+              224  STORE_NAME               LPARAM
+              226  IMPORT_FROM              LONG
+              228  STORE_NAME               LONG
+              230  IMPORT_FROM              HMODULE
+              232  STORE_NAME               HMODULE
+              234  IMPORT_FROM              LPCWSTR
+              236  STORE_NAME               LPCWSTR
+              238  IMPORT_FROM              HINSTANCE
+              240  STORE_NAME               HINSTANCE
+              242  IMPORT_FROM              HWND
+              244  STORE_NAME               HWND
+              246  POP_TOP          
+
+ L.  34       248  LOAD_NAME                POINTER
+              250  LOAD_NAME                MSG
+              252  CALL_FUNCTION_1       1  ''
+              254  STORE_NAME               LPMSG
+
+ L.  35       256  LOAD_NAME                POINTER
+              258  LOAD_NAME                DWORD
+              260  CALL_FUNCTION_1       1  ''
+              262  STORE_NAME               ULONG_PTR
+
+ L.  37       264  LOAD_NAME                ctypes
+              266  LOAD_ATTR                WinDLL
+              268  LOAD_STR                 'kernel32'
+              270  LOAD_CONST               True
+              272  LOAD_CONST               ('use_last_error',)
+              274  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              276  STORE_NAME               kernel32
+
+ L.  38       278  LOAD_NAME                kernel32
+              280  LOAD_ATTR                GetModuleHandleW
+              282  STORE_NAME               GetModuleHandleW
+
+ L.  39       284  LOAD_NAME                HMODULE
+              286  LOAD_NAME                GetModuleHandleW
+              288  STORE_ATTR               restype
+
+ L.  40       290  LOAD_NAME                LPCWSTR
+              292  BUILD_LIST_1          1 
+              294  LOAD_NAME                GetModuleHandleW
+              296  STORE_ATTR               argtypes
+
+ L.  44       298  LOAD_NAME                ctypes
+              300  LOAD_ATTR                WinDLL
+              302  LOAD_STR                 'user32'
+              304  LOAD_CONST               True
+              306  LOAD_CONST               ('use_last_error',)
+              308  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              310  STORE_NAME               user32
+
+ L.  46       312  LOAD_CONST               231
+              314  STORE_NAME               VK_PACKET
+
+ L.  48       316  LOAD_CONST               0
+              318  STORE_NAME               INPUT_MOUSE
+
+ L.  49       320  LOAD_CONST               1
+              322  STORE_NAME               INPUT_KEYBOARD
+
+ L.  50       324  LOAD_CONST               2
+              326  STORE_NAME               INPUT_HARDWARE
+
+ L.  52       328  LOAD_CONST               2
+              330  STORE_NAME               KEYEVENTF_KEYUP
+
+ L.  53       332  LOAD_CONST               4
+              334  STORE_NAME               KEYEVENTF_UNICODE
+
+ L.  55       336  LOAD_BUILD_CLASS 
+              338  LOAD_CODE                <code_object KBDLLHOOKSTRUCT>
+              340  LOAD_STR                 'KBDLLHOOKSTRUCT'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  LOAD_STR                 'KBDLLHOOKSTRUCT'
+              346  LOAD_NAME                Structure
+              348  CALL_FUNCTION_3       3  ''
+              350  STORE_NAME               KBDLLHOOKSTRUCT
+
+ L.  63       352  LOAD_BUILD_CLASS 
+              354  LOAD_CODE                <code_object MOUSEINPUT>
+              356  LOAD_STR                 'MOUSEINPUT'
+              358  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              360  LOAD_STR                 'MOUSEINPUT'
+              362  LOAD_NAME                ctypes
+              364  LOAD_ATTR                Structure
+              366  CALL_FUNCTION_3       3  ''
+              368  STORE_NAME               MOUSEINPUT
+
+ L.  71       370  LOAD_BUILD_CLASS 
+              372  LOAD_CODE                <code_object KEYBDINPUT>
+              374  LOAD_STR                 'KEYBDINPUT'
+              376  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              378  LOAD_STR                 'KEYBDINPUT'
+              380  LOAD_NAME                ctypes
+              382  LOAD_ATTR                Structure
+              384  CALL_FUNCTION_3       3  ''
+              386  STORE_NAME               KEYBDINPUT
+
+ L.  78       388  LOAD_BUILD_CLASS 
+              390  LOAD_CODE                <code_object HARDWAREINPUT>
+              392  LOAD_STR                 'HARDWAREINPUT'
+              394  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              396  LOAD_STR                 'HARDWAREINPUT'
+              398  LOAD_NAME                ctypes
+              400  LOAD_ATTR                Structure
+              402  CALL_FUNCTION_3       3  ''
+              404  STORE_NAME               HARDWAREINPUT
+
+ L.  83       406  LOAD_BUILD_CLASS 
+              408  LOAD_CODE                <code_object _INPUTunion>
+              410  LOAD_STR                 '_INPUTunion'
+              412  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              414  LOAD_STR                 '_INPUTunion'
+              416  LOAD_NAME                ctypes
+              418  LOAD_ATTR                Union
+              420  CALL_FUNCTION_3       3  ''
+              422  STORE_NAME               _INPUTunion
+
+ L.  88       424  LOAD_BUILD_CLASS 
+              426  LOAD_CODE                <code_object INPUT>
+              428  LOAD_STR                 'INPUT'
+              430  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              432  LOAD_STR                 'INPUT'
+              434  LOAD_NAME                ctypes
+              436  LOAD_ATTR                Structure
+              438  CALL_FUNCTION_3       3  ''
+              440  STORE_NAME               INPUT
+
+ L.  92       442  LOAD_NAME                CFUNCTYPE
+              444  LOAD_NAME                c_int
+              446  LOAD_NAME                WPARAM
+              448  LOAD_NAME                LPARAM
+              450  LOAD_NAME                POINTER
+              452  LOAD_NAME                KBDLLHOOKSTRUCT
+              454  CALL_FUNCTION_1       1  ''
+              456  CALL_FUNCTION_4       4  ''
+              458  STORE_NAME               LowLevelKeyboardProc
+
+ L.  94       460  LOAD_NAME                user32
+              462  LOAD_ATTR                SetWindowsHookExW
+              464  STORE_NAME               SetWindowsHookEx
+
+ L.  95       466  LOAD_NAME                c_int
+              468  LOAD_NAME                LowLevelKeyboardProc
+              470  LOAD_NAME                HINSTANCE
+              472  LOAD_NAME                DWORD
+              474  BUILD_LIST_4          4 
+              476  LOAD_NAME                SetWindowsHookEx
+              478  STORE_ATTR               argtypes
+
+ L.  96       480  LOAD_NAME                HHOOK
+              482  LOAD_NAME                SetWindowsHookEx
+              484  STORE_ATTR               restype
+
+ L.  98       486  LOAD_NAME                user32
+              488  LOAD_ATTR                CallNextHookEx
+              490  STORE_NAME               CallNextHookEx
+
+ L. 100       492  LOAD_NAME                c_int
+              494  LOAD_NAME                CallNextHookEx
+              496  STORE_ATTR               restype
+
+ L. 102       498  LOAD_NAME                user32
+              500  LOAD_ATTR                UnhookWindowsHookEx
+              502  STORE_NAME               UnhookWindowsHookEx
+
+ L. 103       504  LOAD_NAME                HHOOK
+              506  BUILD_LIST_1          1 
+              508  LOAD_NAME                UnhookWindowsHookEx
+              510  STORE_ATTR               argtypes
+
+ L. 104       512  LOAD_NAME                BOOL
+              514  LOAD_NAME                UnhookWindowsHookEx
+              516  STORE_ATTR               restype
+
+ L. 106       518  LOAD_NAME                user32
+              520  LOAD_ATTR                GetMessageW
+              522  STORE_NAME               GetMessage
+
+ L. 107       524  LOAD_NAME                LPMSG
+              526  LOAD_NAME                HWND
+              528  LOAD_NAME                c_uint
+              530  LOAD_NAME                c_uint
+              532  BUILD_LIST_4          4 
+              534  LOAD_NAME                GetMessage
+              536  STORE_ATTR               argtypes
+
+ L. 108       538  LOAD_NAME                BOOL
+              540  LOAD_NAME                GetMessage
+              542  STORE_ATTR               restype
+
+ L. 110       544  LOAD_NAME                user32
+              546  LOAD_ATTR                TranslateMessage
+              548  STORE_NAME               TranslateMessage
+
+ L. 111       550  LOAD_NAME                LPMSG
+              552  BUILD_LIST_1          1 
+              554  LOAD_NAME                TranslateMessage
+              556  STORE_ATTR               argtypes
+
+ L. 112       558  LOAD_NAME                BOOL
+              560  LOAD_NAME                TranslateMessage
+              562  STORE_ATTR               restype
+
+ L. 114       564  LOAD_NAME                user32
+              566  LOAD_ATTR                DispatchMessageA
+              568  STORE_NAME               DispatchMessage
+
+ L. 115       570  LOAD_NAME                LPMSG
+              572  BUILD_LIST_1          1 
+              574  LOAD_NAME                DispatchMessage
+              576  STORE_ATTR               argtypes
+
+ L. 118       578  LOAD_NAME                c_uint8
+              580  LOAD_CONST               256
+              582  BINARY_MULTIPLY  
+              584  STORE_NAME               keyboard_state_type
+
+ L. 120       586  LOAD_NAME                user32
+              588  LOAD_ATTR                GetKeyboardState
+              590  STORE_NAME               GetKeyboardState
+
+ L. 121       592  LOAD_NAME                keyboard_state_type
+              594  BUILD_LIST_1          1 
+              596  LOAD_NAME                GetKeyboardState
+              598  STORE_ATTR               argtypes
+
+ L. 122       600  LOAD_NAME                BOOL
+              602  LOAD_NAME                GetKeyboardState
+              604  STORE_ATTR               restype
+
+ L. 124       606  LOAD_NAME                user32
+              608  LOAD_ATTR                GetKeyNameTextW
+              610  STORE_NAME               GetKeyNameText
+
+ L. 125       612  LOAD_NAME                c_long
+              614  LOAD_NAME                LPWSTR
+              616  LOAD_NAME                c_int
+              618  BUILD_LIST_3          3 
+              620  LOAD_NAME                GetKeyNameText
+              622  STORE_ATTR               argtypes
+
+ L. 126       624  LOAD_NAME                c_int
+              626  LOAD_NAME                GetKeyNameText
+              628  STORE_ATTR               restype
+
+ L. 128       630  LOAD_NAME                user32
+              632  LOAD_ATTR                MapVirtualKeyW
+              634  STORE_NAME               MapVirtualKey
+
+ L. 129       636  LOAD_NAME                c_uint
+              638  LOAD_NAME                c_uint
+              640  BUILD_LIST_2          2 
+              642  LOAD_NAME                MapVirtualKey
+              644  STORE_ATTR               argtypes
+
+ L. 130       646  LOAD_NAME                c_uint
+              648  LOAD_NAME                MapVirtualKey
+              650  STORE_ATTR               restype
+
+ L. 132       652  LOAD_NAME                user32
+              654  LOAD_ATTR                ToUnicode
+              656  STORE_NAME               ToUnicode
+
+ L. 133       658  LOAD_NAME                c_uint
+              660  LOAD_NAME                c_uint
+              662  LOAD_NAME                keyboard_state_type
+              664  LOAD_NAME                LPWSTR
+              666  LOAD_NAME                c_int
+              668  LOAD_NAME                c_uint
+              670  BUILD_LIST_6          6 
+              672  LOAD_NAME                ToUnicode
+              674  STORE_ATTR               argtypes
+
+ L. 134       676  LOAD_NAME                c_int
+              678  LOAD_NAME                ToUnicode
+              680  STORE_ATTR               restype
+
+ L. 136       682  LOAD_NAME                user32
+              684  LOAD_ATTR                SendInput
+              686  STORE_NAME               SendInput
+
+ L. 137       688  LOAD_NAME                c_uint
+              690  LOAD_NAME                POINTER
+              692  LOAD_NAME                INPUT
+              694  CALL_FUNCTION_1       1  ''
+              696  LOAD_NAME                c_int
+              698  BUILD_LIST_3          3 
+              700  LOAD_NAME                SendInput
+              702  STORE_ATTR               argtypes
+
+ L. 138       704  LOAD_NAME                c_uint
+              706  LOAD_NAME                SendInput
+              708  STORE_ATTR               restype
+
+ L. 141       710  LOAD_CONST               2
+              712  STORE_NAME               MAPVK_VK_TO_CHAR
+
+ L. 142       714  LOAD_CONST               0
+              716  STORE_NAME               MAPVK_VK_TO_VSC
+
+ L. 143       718  LOAD_CONST               1
+              720  STORE_NAME               MAPVK_VSC_TO_VK
+
+ L. 144       722  LOAD_CONST               4
+              724  STORE_NAME               MAPVK_VK_TO_VSC_EX
+
+ L. 145       726  LOAD_CONST               3
+              728  STORE_NAME               MAPVK_VSC_TO_VK_EX
+
+ L. 147       730  LOAD_NAME                user32
+              732  LOAD_ATTR                VkKeyScanW
+              734  STORE_NAME               VkKeyScan
+
+ L. 148       736  LOAD_NAME                WCHAR
+              738  BUILD_LIST_1          1 
+              740  LOAD_NAME                VkKeyScan
+              742  STORE_ATTR               argtypes
+
+ L. 149       744  LOAD_NAME                c_short
+              746  LOAD_NAME                VkKeyScan
+              748  STORE_ATTR               restype
+
+ L. 151       750  LOAD_CONST               16
+              752  STORE_NAME               LLKHF_INJECTED
+
+ L. 153       754  LOAD_CONST               256
+              756  STORE_NAME               WM_KEYDOWN
+
+ L. 154       758  LOAD_CONST               257
+              760  STORE_NAME               WM_KEYUP
+
+ L. 155       762  LOAD_CONST               260
+              764  STORE_NAME               WM_SYSKEYDOWN
+
+ L. 156       766  LOAD_CONST               261
+              768  STORE_NAME               WM_SYSKEYUP
+
+ L. 162       770  LOAD_NAME                WM_KEYDOWN
+              772  LOAD_NAME                KEY_DOWN
+
+ L. 163       774  LOAD_NAME                WM_KEYUP
+              776  LOAD_NAME                KEY_UP
+
+ L. 164       778  LOAD_NAME                WM_SYSKEYDOWN
+              780  LOAD_NAME                KEY_DOWN
+
+ L. 165       782  LOAD_NAME                WM_SYSKEYUP
+              784  LOAD_NAME                KEY_UP
+
+ L. 161       786  BUILD_MAP_4           4 
+              788  STORE_NAME               keyboard_event_types
+
+ L. 171       790  LOAD_CONST               ('control-break processing', False)
+
+ L. 172       792  LOAD_CONST               ('backspace', False)
+
+ L. 173       794  LOAD_CONST               ('tab', False)
+
+ L. 174       796  LOAD_CONST               ('clear', False)
+
+ L. 175       798  LOAD_CONST               ('enter', False)
+
+ L. 176       800  LOAD_CONST               ('shift', False)
+
+ L. 177       802  LOAD_CONST               ('ctrl', False)
+
+ L. 178       804  LOAD_CONST               ('alt', False)
+
+ L. 179       806  LOAD_CONST               ('pause', False)
+
+ L. 180       808  LOAD_CONST               ('caps lock', False)
+
+ L. 181       810  LOAD_CONST               ('ime kana mode', False)
+
+ L. 182       812  LOAD_CONST               ('ime hanguel mode', False)
+
+ L. 183       814  LOAD_CONST               ('ime hangul mode', False)
+
+ L. 184       816  LOAD_CONST               ('ime junja mode', False)
+
+ L. 185       818  LOAD_CONST               ('ime final mode', False)
+
+ L. 186       820  LOAD_CONST               ('ime hanja mode', False)
+
+ L. 187       822  LOAD_CONST               ('ime kanji mode', False)
+
+ L. 188       824  LOAD_CONST               ('esc', False)
+
+ L. 189       826  LOAD_CONST               ('ime convert', False)
+
+ L. 190       828  LOAD_CONST               ('ime nonconvert', False)
+
+ L. 191       830  LOAD_CONST               ('ime accept', False)
+
+ L. 192       832  LOAD_CONST               ('ime mode change request', False)
+
+ L. 193       834  LOAD_CONST               ('spacebar', False)
+
+ L. 194       836  LOAD_CONST               ('page up', False)
+
+ L. 195       838  LOAD_CONST               ('page down', False)
+
+ L. 196       840  LOAD_CONST               ('end', False)
+
+ L. 197       842  LOAD_CONST               ('home', False)
+
+ L. 198       844  LOAD_CONST               ('left', False)
+
+ L. 199       846  LOAD_CONST               ('up', False)
+
+ L. 200       848  LOAD_CONST               ('right', False)
+
+ L. 201       850  LOAD_CONST               ('down', False)
+
+ L. 202       852  LOAD_CONST               ('select', False)
+
+ L. 203       854  LOAD_CONST               ('print', False)
+
+ L. 204       856  LOAD_CONST               ('execute', False)
+
+ L. 205       858  LOAD_CONST               ('print screen', False)
+
+ L. 206       860  LOAD_CONST               ('insert', False)
+
+ L. 207       862  LOAD_CONST               ('delete', False)
+
+ L. 208       864  LOAD_CONST               ('help', False)
+
+ L. 209       866  LOAD_CONST               ('0', False)
+
+ L. 210       868  LOAD_CONST               ('1', False)
+
+ L. 211       870  LOAD_CONST               ('2', False)
+
+ L. 212       872  LOAD_CONST               ('3', False)
+
+ L. 213       874  LOAD_CONST               ('4', False)
+
+ L. 214       876  LOAD_CONST               ('5', False)
+
+ L. 215       878  LOAD_CONST               ('6', False)
+
+ L. 216       880  LOAD_CONST               ('7', False)
+
+ L. 217       882  LOAD_CONST               ('8', False)
+
+ L. 218       884  LOAD_CONST               ('9', False)
+
+ L. 219       886  LOAD_CONST               ('a', False)
+
+ L. 220       888  LOAD_CONST               ('b', False)
+
+ L. 221       890  LOAD_CONST               ('c', False)
+
+ L. 222       892  LOAD_CONST               ('d', False)
+
+ L. 223       894  LOAD_CONST               ('e', False)
+
+ L. 224       896  LOAD_CONST               ('f', False)
+
+ L. 225       898  LOAD_CONST               ('g', False)
+
+ L. 226       900  LOAD_CONST               ('h', False)
+
+ L. 227       902  LOAD_CONST               ('i', False)
+
+ L. 228       904  LOAD_CONST               ('j', False)
+
+ L. 229       906  LOAD_CONST               ('k', False)
+
+ L. 230       908  LOAD_CONST               ('l', False)
+
+ L. 231       910  LOAD_CONST               ('m', False)
+
+ L. 232       912  LOAD_CONST               ('n', False)
+
+ L. 233       914  LOAD_CONST               ('o', False)
+
+ L. 234       916  LOAD_CONST               ('p', False)
+
+ L. 235       918  LOAD_CONST               ('q', False)
+
+ L. 236       920  LOAD_CONST               ('r', False)
+
+ L. 237       922  LOAD_CONST               ('s', False)
+
+ L. 238       924  LOAD_CONST               ('t', False)
+
+ L. 239       926  LOAD_CONST               ('u', False)
+
+ L. 240       928  LOAD_CONST               ('v', False)
+
+ L. 241       930  LOAD_CONST               ('w', False)
+
+ L. 242       932  LOAD_CONST               ('x', False)
+
+ L. 243       934  LOAD_CONST               ('y', False)
+
+ L. 244       936  LOAD_CONST               ('z', False)
+
+ L. 245       938  LOAD_CONST               ('left windows', False)
+
+ L. 246       940  LOAD_CONST               ('right windows', False)
+
+ L. 247       942  LOAD_CONST               ('applications', False)
+
+ L. 248       944  LOAD_CONST               ('sleep', False)
+
+ L. 249       946  LOAD_CONST               ('0', True)
+
+ L. 250       948  LOAD_CONST               ('1', True)
+
+ L. 251       950  LOAD_CONST               ('2', True)
+
+ L. 252       952  LOAD_CONST               ('3', True)
+
+ L. 253       954  LOAD_CONST               ('4', True)
+
+ L. 254       956  LOAD_CONST               ('5', True)
+
+ L. 255       958  LOAD_CONST               ('6', True)
+
+ L. 256       960  LOAD_CONST               ('7', True)
+
+ L. 257       962  LOAD_CONST               ('8', True)
+
+ L. 258       964  LOAD_CONST               ('9', True)
+
+ L. 259       966  LOAD_CONST               ('*', True)
+
+ L. 260       968  LOAD_CONST               ('+', True)
+
+ L. 261       970  LOAD_CONST               ('separator', True)
+
+ L. 262       972  LOAD_CONST               ('-', True)
+
+ L. 263       974  LOAD_CONST               ('decimal', True)
+
+ L. 264       976  LOAD_CONST               ('/', True)
+
+ L. 265       978  LOAD_CONST               ('f1', False)
+
+ L. 266       980  LOAD_CONST               ('f2', False)
+
+ L. 267       982  LOAD_CONST               ('f3', False)
+
+ L. 268       984  LOAD_CONST               ('f4', False)
+
+ L. 269       986  LOAD_CONST               ('f5', False)
+
+ L. 270       988  LOAD_CONST               ('f6', False)
+
+ L. 271       990  LOAD_CONST               ('f7', False)
+
+ L. 272       992  LOAD_CONST               ('f8', False)
+
+ L. 273       994  LOAD_CONST               ('f9', False)
+
+ L. 274       996  LOAD_CONST               ('f10', False)
+
+ L. 275       998  LOAD_CONST               ('f11', False)
+
+ L. 276      1000  LOAD_CONST               ('f12', False)
+
+ L. 277      1002  LOAD_CONST               ('f13', False)
+
+ L. 278      1004  LOAD_CONST               ('f14', False)
+
+ L. 279      1006  LOAD_CONST               ('f15', False)
+
+ L. 280      1008  LOAD_CONST               ('f16', False)
+
+ L. 281      1010  LOAD_CONST               ('f17', False)
+
+ L. 282      1012  LOAD_CONST               ('f18', False)
+
+ L. 283      1014  LOAD_CONST               ('f19', False)
+
+ L. 284      1016  LOAD_CONST               ('f20', False)
+
+ L. 285      1018  LOAD_CONST               ('f21', False)
+
+ L. 286      1020  LOAD_CONST               ('f22', False)
+
+ L. 287      1022  LOAD_CONST               ('f23', False)
+
+ L. 288      1024  LOAD_CONST               ('f24', False)
+
+ L. 289      1026  LOAD_CONST               ('num lock', False)
+
+ L. 290      1028  LOAD_CONST               ('scroll lock', False)
+
+ L. 291      1030  LOAD_CONST               ('left shift', False)
+
+ L. 292      1032  LOAD_CONST               ('right shift', False)
+
+ L. 293      1034  LOAD_CONST               ('left ctrl', False)
+
+ L. 294      1036  LOAD_CONST               ('right ctrl', False)
+
+ L. 295      1038  LOAD_CONST               ('left menu', False)
+
+ L. 296      1040  LOAD_CONST               ('right menu', False)
+
+ L. 297      1042  LOAD_CONST               ('browser back', False)
+
+ L. 298      1044  LOAD_CONST               ('browser forward', False)
+
+ L. 299      1046  LOAD_CONST               ('browser refresh', False)
+
+ L. 300      1048  LOAD_CONST               ('browser stop', False)
+
+ L. 301      1050  LOAD_CONST               ('browser search key', False)
+
+ L. 302      1052  LOAD_CONST               ('browser favorites', False)
+
+ L. 303      1054  LOAD_CONST               ('browser start and home', False)
+
+ L. 304      1056  LOAD_CONST               ('volume mute', False)
+
+ L. 305      1058  LOAD_CONST               ('volume down', False)
+
+ L. 306      1060  LOAD_CONST               ('volume up', False)
+
+ L. 307      1062  LOAD_CONST               ('next track', False)
+
+ L. 308      1064  LOAD_CONST               ('previous track', False)
+
+ L. 309      1066  LOAD_CONST               ('stop media', False)
+
+ L. 310      1068  LOAD_CONST               ('play/pause media', False)
+
+ L. 311      1070  LOAD_CONST               ('start mail', False)
+
+ L. 312      1072  LOAD_CONST               ('select media', False)
+
+ L. 313      1074  LOAD_CONST               ('start application 1', False)
+
+ L. 314      1076  LOAD_CONST               ('start application 2', False)
+
+ L. 315      1078  LOAD_CONST               ('+', False)
+
+ L. 316      1080  LOAD_CONST               (',', False)
+
+ L. 317      1082  LOAD_CONST               ('-', False)
+
+ L. 318      1084  LOAD_CONST               ('.', False)
+
+ L. 320      1086  LOAD_CONST               ('ime process', False)
+
+ L. 321      1088  LOAD_CONST               ('attn', False)
+
+ L. 322      1090  LOAD_CONST               ('crsel', False)
+
+ L. 323      1092  LOAD_CONST               ('exsel', False)
+
+ L. 324      1094  LOAD_CONST               ('erase eof', False)
+
+ L. 325      1096  LOAD_CONST               ('play', False)
+
+ L. 326      1098  LOAD_CONST               ('zoom', False)
+
+ L. 327      1100  LOAD_CONST               ('reserved ', False)
+
+ L. 328      1102  LOAD_CONST               ('pa1', False)
+
+ L. 329      1104  LOAD_CONST               ('clear', False)
+
+ L. 170      1106  LOAD_CONST               (3, 8, 9, 12, 13, 16, 17, 18, 19, 20, 21, 21, 21, 23, 24, 25, 25, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 144, 145, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 187, 188, 189, 190, 229, 246, 247, 248, 249, 250, 251, 252, 253, 254)
+             1108  BUILD_CONST_KEY_MAP_158   158 
+             1110  STORE_NAME               official_virtual_keys
+
+ L. 332      1112  LOAD_NAME                Lock
+             1114  CALL_FUNCTION_0       0  ''
+             1116  STORE_NAME               tables_lock
+
+ L. 333      1118  LOAD_NAME                defaultdict
+             1120  LOAD_NAME                list
+             1122  CALL_FUNCTION_1       1  ''
+             1124  STORE_NAME               to_name
+
+ L. 334      1126  LOAD_NAME                defaultdict
+             1128  LOAD_NAME                list
+             1130  CALL_FUNCTION_1       1  ''
+             1132  STORE_NAME               from_name
+
+ L. 335      1134  BUILD_MAP_0           0 
+             1136  STORE_NAME               scan_code_to_vk
+
+ L. 337      1138  BUILD_LIST_0          0 
+             1140  LOAD_CONST               ((), ('shift',), ('alt gr',), ('num lock',), ('shift', 'num lock'), ('caps lock',), ('shift', 'caps lock'), ('alt gr', 'num lock'))
+             1142  CALL_FINALLY       1145  'to 1145'
+             1144  STORE_NAME               distinct_modifiers
+
+ L. 348      1146  LOAD_NAME                ctypes
+             1148  LOAD_METHOD              create_unicode_buffer
+             1150  LOAD_CONST               32
+             1152  CALL_METHOD_1         1  ''
+             1154  STORE_NAME               name_buffer
+
+ L. 349      1156  LOAD_NAME                ctypes
+             1158  LOAD_METHOD              create_unicode_buffer
+             1160  LOAD_CONST               32
+             1162  CALL_METHOD_1         1  ''
+             1164  STORE_NAME               unicode_buffer
+
+ L. 350      1166  LOAD_NAME                keyboard_state_type
+             1168  CALL_FUNCTION_0       0  ''
+             1170  STORE_NAME               keyboard_state
+
+ L. 351      1172  LOAD_CODE                <code_object get_event_names>
+             1174  LOAD_STR                 'get_event_names'
+             1176  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1178  STORE_NAME               get_event_names
+
+ L. 383      1180  LOAD_CODE                <code_object _setup_name_tables>
+             1182  LOAD_STR                 '_setup_name_tables'
+             1184  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1186  STORE_NAME               _setup_name_tables
+
+ L. 439      1188  LOAD_NAME                _setup_name_tables
+             1190  STORE_NAME               init
+
+ L. 442      1192  BUILD_LIST_0          0 
+             1194  LOAD_CONST               ((126, 194, 0), (126, 194, 0), (28, 13, 1), (28, 13, 1), (53, 111, 1), (53, 111, 1), (55, 106, 0), (55, 106, 0), (69, 144, 1), (69, 144, 1), (71, 103, 0), (71, 36, 0), (72, 104, 0), (72, 38, 0), (73, 105, 0), (73, 33, 0), (74, 109, 0), (74, 109, 0), (75, 100, 0), (75, 37, 0), (76, 101, 0), (76, 12, 0), (77, 102, 0), (77, 39, 0), (78, 107, 0), (78, 107, 0), (79, 35, 0), (79, 97, 0), (80, 40, 0), (80, 98, 0), (81, 34, 0), (81, 99, 0), (82, 45, 0), (82, 96, 0), (83, 110, 0), (83, 46, 0))
+             1196  CALL_FINALLY       1199  'to 1199'
+             1198  STORE_NAME               keypad_keys
+
+ L. 482      1200  LOAD_CONST               False
+             1202  STORE_GLOBAL             shift_is_pressed
+
+ L. 483      1204  LOAD_CONST               False
+             1206  STORE_GLOBAL             altgr_is_pressed
+
+ L. 484      1208  LOAD_CONST               False
+             1210  STORE_GLOBAL             ignore_next_right_alt
+
+ L. 485      1212  LOAD_NAME                set
+             1214  BUILD_LIST_0          0 
+             1216  LOAD_CONST               (16, 160, 161)
+             1218  CALL_FINALLY       1221  'to 1221'
+             1220  CALL_FUNCTION_1       1  ''
+             1222  STORE_NAME               shift_vks
+
+ L. 486      1224  LOAD_CODE                <code_object prepare_intercept>
+             1226  LOAD_STR                 'prepare_intercept'
+             1228  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1230  STORE_NAME               prepare_intercept
+
+ L. 560      1232  LOAD_CODE                <code_object listen>
+             1234  LOAD_STR                 'listen'
+             1236  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1238  STORE_NAME               listen
+
+ L. 567      1240  LOAD_CODE                <code_object map_name>
+             1242  LOAD_STR                 'map_name'
+             1244  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1246  STORE_NAME               map_name
+
+ L. 577      1248  LOAD_CODE                <code_object _send_event>
+             1250  LOAD_STR                 '_send_event'
+             1252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1254  STORE_NAME               _send_event
+
+ L. 590      1256  LOAD_CODE                <code_object press>
+             1258  LOAD_STR                 'press'
+             1260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1262  STORE_NAME               press
+
+ L. 593      1264  LOAD_CODE                <code_object release>
+             1266  LOAD_STR                 'release'
+             1268  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1270  STORE_NAME               release
+
+ L. 596      1272  LOAD_CODE                <code_object type_unicode>
+             1274  LOAD_STR                 'type_unicode'
+             1276  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1278  STORE_NAME               type_unicode
+
+ L. 615      1280  LOAD_NAME                __name__
+             1282  LOAD_STR                 '__main__'
+             1284  COMPARE_OP               ==
+         1286_1288  POP_JUMP_IF_FALSE  1324  'to 1324'
+
+ L. 616      1290  LOAD_NAME                _setup_name_tables
+             1292  CALL_FUNCTION_0       0  ''
+             1294  POP_TOP          
+
+ L. 617      1296  LOAD_CONST               0
+             1298  LOAD_CONST               None
+             1300  IMPORT_NAME              pprint
+             1302  STORE_NAME               pprint
+
+ L. 618      1304  LOAD_NAME                pprint
+             1306  LOAD_METHOD              pprint
+             1308  LOAD_NAME                to_name
+             1310  CALL_METHOD_1         1  ''
+             1312  POP_TOP          
+
+ L. 619      1314  LOAD_NAME                pprint
+             1316  LOAD_METHOD              pprint
+             1318  LOAD_NAME                from_name
+             1320  CALL_METHOD_1         1  ''
+             1322  POP_TOP          
+           1324_0  COME_FROM          1286  '1286'
+
+Parse error at or near `<121>' instruction at offset 110
+
+Instruction context:
+   
+ L.  25       106  DUP_TOP          
+                 108  LOAD_NAME                NameError
+->               110  <121>               122  ''
+                 112  POP_TOP          
+                 114  POP_TOP          
+                 116  POP_TOP          
+
+test/162558.pyc -- 
+# decompile failed

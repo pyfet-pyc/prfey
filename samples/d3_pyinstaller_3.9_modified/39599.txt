@@ -1,0 +1,1520 @@
+
+# file test/39599.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('BOM_UTF8', 'BOM_UTF16_BE', 'BOM_UTF16_LE', 'BOM_UTF32_BE', 'BOM_UTF32_LE')
+                4  IMPORT_NAME              codecs
+                6  IMPORT_FROM              BOM_UTF8
+                8  STORE_NAME               BOM_UTF8
+               10  IMPORT_FROM              BOM_UTF16_BE
+               12  STORE_NAME               BOM_UTF16_BE
+               14  IMPORT_FROM              BOM_UTF16_LE
+               16  STORE_NAME               BOM_UTF16_LE
+               18  IMPORT_FROM              BOM_UTF32_BE
+               20  STORE_NAME               BOM_UTF32_BE
+               22  IMPORT_FROM              BOM_UTF32_LE
+               24  STORE_NAME               BOM_UTF32_LE
+               26  POP_TOP          
+
+ L.   2        28  LOAD_CONST               0
+               30  LOAD_CONST               ('Dict', 'List', 'Union')
+               32  IMPORT_NAME              typing
+               34  IMPORT_FROM              Dict
+               36  STORE_NAME               Dict
+               38  IMPORT_FROM              List
+               40  STORE_NAME               List
+               42  IMPORT_FROM              Union
+               44  STORE_NAME               Union
+               46  POP_TOP          
+
+ L.   3        48  LOAD_CONST               0
+               50  LOAD_CONST               ('aliases',)
+               52  IMPORT_NAME_ATTR         encodings.aliases
+               54  IMPORT_FROM              aliases
+               56  STORE_NAME               aliases
+               58  POP_TOP          
+
+ L.   4        60  LOAD_CONST               0
+               62  LOAD_CONST               ('compile', 'IGNORECASE')
+               64  IMPORT_NAME              re
+               66  IMPORT_FROM              compile
+               68  STORE_NAME               re_compile
+               70  IMPORT_FROM              IGNORECASE
+               72  STORE_NAME               IGNORECASE
+               74  POP_TOP          
+
+ L.   5        76  LOAD_CONST               0
+               78  LOAD_CONST               ('OrderedDict',)
+               80  IMPORT_NAME              collections
+               82  IMPORT_FROM              OrderedDict
+               84  STORE_NAME               OrderedDict
+               86  POP_TOP          
+
+ L.   8        88  LOAD_NAME                OrderedDict
+
+ L.   9        90  LOAD_STR                 'utf_8'
+               92  LOAD_NAME                BOM_UTF8
+               94  BUILD_TUPLE_2         2 
+
+ L.  10        96  LOAD_STR                 'utf_7'
+               98  BUILD_LIST_0          0 
+              100  LOAD_CONST               (b'+/v8', b'+/v9', b'+/v+', b'+/v/', b'+/v8-')
+              102  CALL_FINALLY        105  'to 105'
+              104  BUILD_TUPLE_2         2 
+
+ L.  17       106  LOAD_CONST               ('gb18030', b'\x841\x953')
+
+ L.  18       108  LOAD_STR                 'utf_32'
+
+ L.  19       110  LOAD_NAME                BOM_UTF32_BE
+
+ L.  20       112  LOAD_NAME                BOM_UTF32_LE
+
+ L.  18       114  BUILD_LIST_2          2 
+              116  BUILD_TUPLE_2         2 
+
+ L.  22       118  LOAD_STR                 'utf_16'
+
+ L.  23       120  LOAD_NAME                BOM_UTF16_BE
+
+ L.  24       122  LOAD_NAME                BOM_UTF16_LE
+
+ L.  22       124  BUILD_LIST_2          2 
+              126  BUILD_TUPLE_2         2 
+
+ L.   8       128  BUILD_LIST_5          5 
+              130  CALL_FUNCTION_1       1  ''
+              132  STORE_NAME               ENCODING_MARKS
+
+ L.  28       134  LOAD_CONST               32
+              136  STORE_NAME               TOO_SMALL_SEQUENCE
+
+ L.  29       138  LOAD_NAME                int
+              140  LOAD_CONST               10000000.0
+              142  CALL_FUNCTION_1       1  ''
+              144  STORE_NAME               TOO_BIG_SEQUENCE
+
+ L.  31       146  LOAD_CONST               1112064
+              148  STORE_NAME               UTF8_MAXIMAL_ALLOCATION
+
+ L.  33       150  LOAD_NAME                range
+              152  LOAD_CONST               0
+              154  LOAD_CONST               32
+              156  CALL_FUNCTION_2       2  ''
+              158  LOAD_NAME                range
+              160  LOAD_CONST               32
+              162  LOAD_CONST               128
+              164  CALL_FUNCTION_2       2  ''
+              166  LOAD_NAME                range
+              168  LOAD_CONST               128
+              170  LOAD_CONST               256
+              172  CALL_FUNCTION_2       2  ''
+              174  LOAD_NAME                range
+              176  LOAD_CONST               256
+              178  LOAD_CONST               384
+              180  CALL_FUNCTION_2       2  ''
+              182  LOAD_NAME                range
+              184  LOAD_CONST               384
+              186  LOAD_CONST               592
+              188  CALL_FUNCTION_2       2  ''
+              190  LOAD_NAME                range
+              192  LOAD_CONST               592
+              194  LOAD_CONST               688
+              196  CALL_FUNCTION_2       2  ''
+              198  LOAD_NAME                range
+              200  LOAD_CONST               688
+              202  LOAD_CONST               768
+              204  CALL_FUNCTION_2       2  ''
+              206  LOAD_NAME                range
+              208  LOAD_CONST               768
+              210  LOAD_CONST               880
+              212  CALL_FUNCTION_2       2  ''
+              214  LOAD_NAME                range
+              216  LOAD_CONST               880
+              218  LOAD_CONST               1024
+              220  CALL_FUNCTION_2       2  ''
+              222  LOAD_NAME                range
+              224  LOAD_CONST               1024
+              226  LOAD_CONST               1280
+              228  CALL_FUNCTION_2       2  ''
+              230  LOAD_NAME                range
+              232  LOAD_CONST               1280
+              234  LOAD_CONST               1328
+              236  CALL_FUNCTION_2       2  ''
+              238  LOAD_NAME                range
+              240  LOAD_CONST               1328
+              242  LOAD_CONST               1424
+              244  CALL_FUNCTION_2       2  ''
+              246  LOAD_NAME                range
+              248  LOAD_CONST               1424
+              250  LOAD_CONST               1536
+              252  CALL_FUNCTION_2       2  ''
+              254  LOAD_NAME                range
+              256  LOAD_CONST               1536
+              258  LOAD_CONST               1792
+              260  CALL_FUNCTION_2       2  ''
+              262  LOAD_NAME                range
+              264  LOAD_CONST               1792
+              266  LOAD_CONST               1872
+              268  CALL_FUNCTION_2       2  ''
+              270  LOAD_NAME                range
+              272  LOAD_CONST               1872
+              274  LOAD_CONST               1920
+              276  CALL_FUNCTION_2       2  ''
+              278  LOAD_NAME                range
+              280  LOAD_CONST               1920
+              282  LOAD_CONST               1984
+              284  CALL_FUNCTION_2       2  ''
+              286  LOAD_NAME                range
+              288  LOAD_CONST               1984
+              290  LOAD_CONST               2048
+              292  CALL_FUNCTION_2       2  ''
+              294  LOAD_NAME                range
+              296  LOAD_CONST               2048
+              298  LOAD_CONST               2112
+              300  CALL_FUNCTION_2       2  ''
+              302  LOAD_NAME                range
+              304  LOAD_CONST               2112
+              306  LOAD_CONST               2144
+              308  CALL_FUNCTION_2       2  ''
+              310  LOAD_NAME                range
+              312  LOAD_CONST               2144
+              314  LOAD_CONST               2160
+              316  CALL_FUNCTION_2       2  ''
+              318  LOAD_NAME                range
+              320  LOAD_CONST               2208
+              322  LOAD_CONST               2304
+              324  CALL_FUNCTION_2       2  ''
+              326  LOAD_NAME                range
+              328  LOAD_CONST               2304
+              330  LOAD_CONST               2432
+              332  CALL_FUNCTION_2       2  ''
+              334  LOAD_NAME                range
+              336  LOAD_CONST               2432
+              338  LOAD_CONST               2560
+              340  CALL_FUNCTION_2       2  ''
+              342  LOAD_NAME                range
+              344  LOAD_CONST               2560
+              346  LOAD_CONST               2688
+              348  CALL_FUNCTION_2       2  ''
+              350  LOAD_NAME                range
+              352  LOAD_CONST               2688
+              354  LOAD_CONST               2816
+              356  CALL_FUNCTION_2       2  ''
+              358  LOAD_NAME                range
+              360  LOAD_CONST               2816
+              362  LOAD_CONST               2944
+              364  CALL_FUNCTION_2       2  ''
+              366  LOAD_NAME                range
+              368  LOAD_CONST               2944
+              370  LOAD_CONST               3072
+              372  CALL_FUNCTION_2       2  ''
+              374  LOAD_NAME                range
+              376  LOAD_CONST               3072
+              378  LOAD_CONST               3200
+              380  CALL_FUNCTION_2       2  ''
+              382  LOAD_NAME                range
+              384  LOAD_CONST               3200
+              386  LOAD_CONST               3328
+              388  CALL_FUNCTION_2       2  ''
+              390  LOAD_NAME                range
+              392  LOAD_CONST               3328
+              394  LOAD_CONST               3456
+              396  CALL_FUNCTION_2       2  ''
+              398  LOAD_NAME                range
+              400  LOAD_CONST               3456
+              402  LOAD_CONST               3584
+              404  CALL_FUNCTION_2       2  ''
+              406  LOAD_NAME                range
+              408  LOAD_CONST               3584
+              410  LOAD_CONST               3712
+              412  CALL_FUNCTION_2       2  ''
+              414  LOAD_NAME                range
+              416  LOAD_CONST               3712
+              418  LOAD_CONST               3840
+              420  CALL_FUNCTION_2       2  ''
+              422  LOAD_NAME                range
+              424  LOAD_CONST               3840
+              426  LOAD_CONST               4096
+              428  CALL_FUNCTION_2       2  ''
+              430  LOAD_NAME                range
+              432  LOAD_CONST               4096
+              434  LOAD_CONST               4256
+              436  CALL_FUNCTION_2       2  ''
+              438  LOAD_NAME                range
+              440  LOAD_CONST               4256
+              442  LOAD_CONST               4352
+              444  CALL_FUNCTION_2       2  ''
+              446  LOAD_NAME                range
+              448  LOAD_CONST               4352
+              450  LOAD_CONST               4608
+              452  CALL_FUNCTION_2       2  ''
+              454  LOAD_NAME                range
+              456  LOAD_CONST               4608
+              458  LOAD_CONST               4992
+              460  CALL_FUNCTION_2       2  ''
+              462  LOAD_NAME                range
+              464  LOAD_CONST               4992
+              466  LOAD_CONST               5024
+              468  CALL_FUNCTION_2       2  ''
+              470  LOAD_NAME                range
+              472  LOAD_CONST               5024
+              474  LOAD_CONST               5120
+              476  CALL_FUNCTION_2       2  ''
+              478  LOAD_NAME                range
+              480  LOAD_CONST               5120
+              482  LOAD_CONST               5760
+              484  CALL_FUNCTION_2       2  ''
+              486  LOAD_NAME                range
+              488  LOAD_CONST               5760
+              490  LOAD_CONST               5792
+              492  CALL_FUNCTION_2       2  ''
+              494  LOAD_NAME                range
+              496  LOAD_CONST               5792
+              498  LOAD_CONST               5888
+              500  CALL_FUNCTION_2       2  ''
+              502  LOAD_NAME                range
+              504  LOAD_CONST               5888
+              506  LOAD_CONST               5920
+              508  CALL_FUNCTION_2       2  ''
+              510  LOAD_NAME                range
+              512  LOAD_CONST               5920
+              514  LOAD_CONST               5952
+              516  CALL_FUNCTION_2       2  ''
+              518  LOAD_NAME                range
+              520  LOAD_CONST               5952
+              522  LOAD_CONST               5984
+              524  CALL_FUNCTION_2       2  ''
+              526  LOAD_NAME                range
+              528  LOAD_CONST               5984
+              530  LOAD_CONST               6016
+              532  CALL_FUNCTION_2       2  ''
+              534  LOAD_NAME                range
+              536  LOAD_CONST               6016
+              538  LOAD_CONST               6144
+              540  CALL_FUNCTION_2       2  ''
+              542  LOAD_NAME                range
+              544  LOAD_CONST               6144
+              546  LOAD_CONST               6320
+              548  CALL_FUNCTION_2       2  ''
+              550  LOAD_NAME                range
+              552  LOAD_CONST               6320
+              554  LOAD_CONST               6400
+              556  CALL_FUNCTION_2       2  ''
+              558  LOAD_NAME                range
+              560  LOAD_CONST               6400
+              562  LOAD_CONST               6480
+              564  CALL_FUNCTION_2       2  ''
+              566  LOAD_NAME                range
+              568  LOAD_CONST               6480
+              570  LOAD_CONST               6528
+              572  CALL_FUNCTION_2       2  ''
+              574  LOAD_NAME                range
+              576  LOAD_CONST               6528
+              578  LOAD_CONST               6624
+              580  CALL_FUNCTION_2       2  ''
+              582  LOAD_NAME                range
+              584  LOAD_CONST               6624
+              586  LOAD_CONST               6656
+              588  CALL_FUNCTION_2       2  ''
+              590  LOAD_NAME                range
+              592  LOAD_CONST               6656
+              594  LOAD_CONST               6688
+              596  CALL_FUNCTION_2       2  ''
+              598  LOAD_NAME                range
+              600  LOAD_CONST               6688
+              602  LOAD_CONST               6832
+              604  CALL_FUNCTION_2       2  ''
+              606  LOAD_NAME                range
+              608  LOAD_CONST               6832
+              610  LOAD_CONST               6912
+              612  CALL_FUNCTION_2       2  ''
+              614  LOAD_NAME                range
+              616  LOAD_CONST               6912
+              618  LOAD_CONST               7040
+              620  CALL_FUNCTION_2       2  ''
+              622  LOAD_NAME                range
+              624  LOAD_CONST               7040
+              626  LOAD_CONST               7104
+              628  CALL_FUNCTION_2       2  ''
+              630  LOAD_NAME                range
+              632  LOAD_CONST               7104
+              634  LOAD_CONST               7168
+              636  CALL_FUNCTION_2       2  ''
+              638  LOAD_NAME                range
+              640  LOAD_CONST               7168
+              642  LOAD_CONST               7248
+              644  CALL_FUNCTION_2       2  ''
+              646  LOAD_NAME                range
+              648  LOAD_CONST               7248
+              650  LOAD_CONST               7296
+              652  CALL_FUNCTION_2       2  ''
+              654  LOAD_NAME                range
+              656  LOAD_CONST               7296
+              658  LOAD_CONST               7312
+              660  CALL_FUNCTION_2       2  ''
+              662  LOAD_NAME                range
+              664  LOAD_CONST               7360
+              666  LOAD_CONST               7376
+              668  CALL_FUNCTION_2       2  ''
+              670  LOAD_NAME                range
+              672  LOAD_CONST               7376
+              674  LOAD_CONST               7424
+              676  CALL_FUNCTION_2       2  ''
+              678  LOAD_NAME                range
+              680  LOAD_CONST               7424
+              682  LOAD_CONST               7552
+              684  CALL_FUNCTION_2       2  ''
+              686  LOAD_NAME                range
+              688  LOAD_CONST               7552
+              690  LOAD_CONST               7616
+              692  CALL_FUNCTION_2       2  ''
+              694  LOAD_NAME                range
+              696  LOAD_CONST               7616
+              698  LOAD_CONST               7680
+              700  CALL_FUNCTION_2       2  ''
+              702  LOAD_NAME                range
+              704  LOAD_CONST               7680
+              706  LOAD_CONST               7936
+              708  CALL_FUNCTION_2       2  ''
+              710  LOAD_NAME                range
+              712  LOAD_CONST               7936
+              714  LOAD_CONST               8192
+              716  CALL_FUNCTION_2       2  ''
+              718  LOAD_NAME                range
+              720  LOAD_CONST               8192
+              722  LOAD_CONST               8304
+              724  CALL_FUNCTION_2       2  ''
+              726  LOAD_NAME                range
+              728  LOAD_CONST               8304
+              730  LOAD_CONST               8352
+              732  CALL_FUNCTION_2       2  ''
+              734  LOAD_NAME                range
+              736  LOAD_CONST               8352
+              738  LOAD_CONST               8400
+              740  CALL_FUNCTION_2       2  ''
+              742  LOAD_NAME                range
+              744  LOAD_CONST               8400
+              746  LOAD_CONST               8448
+              748  CALL_FUNCTION_2       2  ''
+              750  LOAD_NAME                range
+              752  LOAD_CONST               8448
+              754  LOAD_CONST               8528
+              756  CALL_FUNCTION_2       2  ''
+              758  LOAD_NAME                range
+              760  LOAD_CONST               8528
+              762  LOAD_CONST               8592
+              764  CALL_FUNCTION_2       2  ''
+              766  LOAD_NAME                range
+              768  LOAD_CONST               8592
+              770  LOAD_CONST               8704
+              772  CALL_FUNCTION_2       2  ''
+              774  LOAD_NAME                range
+              776  LOAD_CONST               8704
+              778  LOAD_CONST               8960
+              780  CALL_FUNCTION_2       2  ''
+              782  LOAD_NAME                range
+              784  LOAD_CONST               8960
+              786  LOAD_CONST               9216
+              788  CALL_FUNCTION_2       2  ''
+              790  LOAD_NAME                range
+              792  LOAD_CONST               9216
+              794  LOAD_CONST               9280
+              796  CALL_FUNCTION_2       2  ''
+              798  LOAD_NAME                range
+              800  LOAD_CONST               9280
+              802  LOAD_CONST               9312
+              804  CALL_FUNCTION_2       2  ''
+              806  LOAD_NAME                range
+              808  LOAD_CONST               9312
+              810  LOAD_CONST               9472
+              812  CALL_FUNCTION_2       2  ''
+              814  LOAD_NAME                range
+              816  LOAD_CONST               9472
+              818  LOAD_CONST               9600
+              820  CALL_FUNCTION_2       2  ''
+              822  LOAD_NAME                range
+              824  LOAD_CONST               9600
+              826  LOAD_CONST               9632
+              828  CALL_FUNCTION_2       2  ''
+              830  LOAD_NAME                range
+              832  LOAD_CONST               9632
+              834  LOAD_CONST               9728
+              836  CALL_FUNCTION_2       2  ''
+              838  LOAD_NAME                range
+              840  LOAD_CONST               9728
+              842  LOAD_CONST               9984
+              844  CALL_FUNCTION_2       2  ''
+              846  LOAD_NAME                range
+              848  LOAD_CONST               9984
+              850  LOAD_CONST               10176
+              852  CALL_FUNCTION_2       2  ''
+              854  LOAD_NAME                range
+              856  LOAD_CONST               10176
+              858  LOAD_CONST               10224
+              860  CALL_FUNCTION_2       2  ''
+              862  LOAD_NAME                range
+              864  LOAD_CONST               10224
+              866  LOAD_CONST               10240
+              868  CALL_FUNCTION_2       2  ''
+              870  LOAD_NAME                range
+              872  LOAD_CONST               10240
+              874  LOAD_CONST               10496
+              876  CALL_FUNCTION_2       2  ''
+              878  LOAD_NAME                range
+              880  LOAD_CONST               10496
+              882  LOAD_CONST               10624
+              884  CALL_FUNCTION_2       2  ''
+              886  LOAD_NAME                range
+              888  LOAD_CONST               10624
+              890  LOAD_CONST               10752
+              892  CALL_FUNCTION_2       2  ''
+              894  LOAD_NAME                range
+              896  LOAD_CONST               10752
+              898  LOAD_CONST               11008
+              900  CALL_FUNCTION_2       2  ''
+              902  LOAD_NAME                range
+              904  LOAD_CONST               11008
+              906  LOAD_CONST               11264
+              908  CALL_FUNCTION_2       2  ''
+              910  LOAD_NAME                range
+              912  LOAD_CONST               11264
+              914  LOAD_CONST               11360
+              916  CALL_FUNCTION_2       2  ''
+              918  LOAD_NAME                range
+              920  LOAD_CONST               11360
+              922  LOAD_CONST               11392
+              924  CALL_FUNCTION_2       2  ''
+              926  LOAD_NAME                range
+              928  LOAD_CONST               11392
+              930  LOAD_CONST               11520
+              932  CALL_FUNCTION_2       2  ''
+              934  LOAD_NAME                range
+              936  LOAD_CONST               11520
+              938  LOAD_CONST               11568
+              940  CALL_FUNCTION_2       2  ''
+              942  LOAD_NAME                range
+              944  LOAD_CONST               11568
+              946  LOAD_CONST               11648
+              948  CALL_FUNCTION_2       2  ''
+              950  LOAD_NAME                range
+              952  LOAD_CONST               11648
+              954  LOAD_CONST               11744
+              956  CALL_FUNCTION_2       2  ''
+              958  LOAD_NAME                range
+              960  LOAD_CONST               11744
+              962  LOAD_CONST               11776
+              964  CALL_FUNCTION_2       2  ''
+              966  LOAD_NAME                range
+              968  LOAD_CONST               11776
+              970  LOAD_CONST               11904
+              972  CALL_FUNCTION_2       2  ''
+              974  LOAD_NAME                range
+              976  LOAD_CONST               11904
+              978  LOAD_CONST               12032
+              980  CALL_FUNCTION_2       2  ''
+              982  LOAD_NAME                range
+              984  LOAD_CONST               12032
+              986  LOAD_CONST               12256
+              988  CALL_FUNCTION_2       2  ''
+              990  LOAD_NAME                range
+              992  LOAD_CONST               12272
+              994  LOAD_CONST               12288
+              996  CALL_FUNCTION_2       2  ''
+              998  LOAD_NAME                range
+             1000  LOAD_CONST               12288
+             1002  LOAD_CONST               12352
+             1004  CALL_FUNCTION_2       2  ''
+             1006  LOAD_NAME                range
+             1008  LOAD_CONST               12352
+             1010  LOAD_CONST               12448
+             1012  CALL_FUNCTION_2       2  ''
+             1014  LOAD_NAME                range
+             1016  LOAD_CONST               12448
+             1018  LOAD_CONST               12544
+             1020  CALL_FUNCTION_2       2  ''
+             1022  LOAD_NAME                range
+             1024  LOAD_CONST               12544
+             1026  LOAD_CONST               12592
+             1028  CALL_FUNCTION_2       2  ''
+             1030  LOAD_NAME                range
+             1032  LOAD_CONST               12592
+             1034  LOAD_CONST               12688
+             1036  CALL_FUNCTION_2       2  ''
+             1038  LOAD_NAME                range
+             1040  LOAD_CONST               12688
+             1042  LOAD_CONST               12704
+             1044  CALL_FUNCTION_2       2  ''
+             1046  LOAD_NAME                range
+             1048  LOAD_CONST               12704
+             1050  LOAD_CONST               12736
+             1052  CALL_FUNCTION_2       2  ''
+             1054  LOAD_NAME                range
+             1056  LOAD_CONST               12736
+             1058  LOAD_CONST               12784
+             1060  CALL_FUNCTION_2       2  ''
+             1062  LOAD_NAME                range
+             1064  LOAD_CONST               12784
+             1066  LOAD_CONST               12800
+             1068  CALL_FUNCTION_2       2  ''
+             1070  LOAD_NAME                range
+             1072  LOAD_CONST               12800
+             1074  LOAD_CONST               13056
+             1076  CALL_FUNCTION_2       2  ''
+             1078  LOAD_NAME                range
+             1080  LOAD_CONST               13056
+             1082  LOAD_CONST               13312
+             1084  CALL_FUNCTION_2       2  ''
+             1086  LOAD_NAME                range
+             1088  LOAD_CONST               13312
+             1090  LOAD_CONST               19904
+             1092  CALL_FUNCTION_2       2  ''
+             1094  LOAD_NAME                range
+             1096  LOAD_CONST               19904
+             1098  LOAD_CONST               19968
+             1100  CALL_FUNCTION_2       2  ''
+             1102  LOAD_NAME                range
+             1104  LOAD_CONST               19968
+             1106  LOAD_CONST               40960
+             1108  CALL_FUNCTION_2       2  ''
+             1110  LOAD_NAME                range
+             1112  LOAD_CONST               40960
+             1114  LOAD_CONST               42128
+             1116  CALL_FUNCTION_2       2  ''
+             1118  LOAD_NAME                range
+             1120  LOAD_CONST               42128
+             1122  LOAD_CONST               42192
+             1124  CALL_FUNCTION_2       2  ''
+             1126  LOAD_NAME                range
+             1128  LOAD_CONST               42192
+             1130  LOAD_CONST               42240
+             1132  CALL_FUNCTION_2       2  ''
+             1134  LOAD_NAME                range
+             1136  LOAD_CONST               42240
+             1138  LOAD_CONST               42560
+             1140  CALL_FUNCTION_2       2  ''
+             1142  LOAD_NAME                range
+             1144  LOAD_CONST               42560
+             1146  LOAD_CONST               42656
+             1148  CALL_FUNCTION_2       2  ''
+             1150  LOAD_NAME                range
+             1152  LOAD_CONST               42656
+             1154  LOAD_CONST               42752
+             1156  CALL_FUNCTION_2       2  ''
+             1158  LOAD_NAME                range
+             1160  LOAD_CONST               42752
+             1162  LOAD_CONST               42784
+             1164  CALL_FUNCTION_2       2  ''
+             1166  LOAD_NAME                range
+             1168  LOAD_CONST               42784
+             1170  LOAD_CONST               43008
+             1172  CALL_FUNCTION_2       2  ''
+             1174  LOAD_NAME                range
+             1176  LOAD_CONST               43008
+             1178  LOAD_CONST               43056
+             1180  CALL_FUNCTION_2       2  ''
+             1182  LOAD_NAME                range
+             1184  LOAD_CONST               43056
+             1186  LOAD_CONST               43072
+             1188  CALL_FUNCTION_2       2  ''
+             1190  LOAD_NAME                range
+             1192  LOAD_CONST               43072
+             1194  LOAD_CONST               43136
+             1196  CALL_FUNCTION_2       2  ''
+             1198  LOAD_NAME                range
+             1200  LOAD_CONST               43136
+             1202  LOAD_CONST               43232
+             1204  CALL_FUNCTION_2       2  ''
+             1206  LOAD_NAME                range
+             1208  LOAD_CONST               43232
+             1210  LOAD_CONST               43264
+             1212  CALL_FUNCTION_2       2  ''
+             1214  LOAD_NAME                range
+             1216  LOAD_CONST               43264
+             1218  LOAD_CONST               43312
+             1220  CALL_FUNCTION_2       2  ''
+             1222  LOAD_NAME                range
+             1224  LOAD_CONST               43312
+             1226  LOAD_CONST               43360
+             1228  CALL_FUNCTION_2       2  ''
+             1230  LOAD_NAME                range
+             1232  LOAD_CONST               43360
+             1234  LOAD_CONST               43392
+             1236  CALL_FUNCTION_2       2  ''
+             1238  LOAD_NAME                range
+             1240  LOAD_CONST               43392
+             1242  LOAD_CONST               43488
+             1244  CALL_FUNCTION_2       2  ''
+             1246  LOAD_NAME                range
+             1248  LOAD_CONST               43488
+             1250  LOAD_CONST               43520
+             1252  CALL_FUNCTION_2       2  ''
+             1254  LOAD_NAME                range
+             1256  LOAD_CONST               43520
+             1258  LOAD_CONST               43616
+             1260  CALL_FUNCTION_2       2  ''
+             1262  LOAD_NAME                range
+             1264  LOAD_CONST               43616
+             1266  LOAD_CONST               43648
+             1268  CALL_FUNCTION_2       2  ''
+             1270  LOAD_NAME                range
+             1272  LOAD_CONST               43648
+             1274  LOAD_CONST               43744
+             1276  CALL_FUNCTION_2       2  ''
+             1278  LOAD_NAME                range
+             1280  LOAD_CONST               43744
+             1282  LOAD_CONST               43776
+             1284  CALL_FUNCTION_2       2  ''
+             1286  LOAD_NAME                range
+             1288  LOAD_CONST               43776
+             1290  LOAD_CONST               43824
+             1292  CALL_FUNCTION_2       2  ''
+             1294  LOAD_NAME                range
+             1296  LOAD_CONST               43824
+             1298  LOAD_CONST               43888
+             1300  CALL_FUNCTION_2       2  ''
+             1302  LOAD_NAME                range
+             1304  LOAD_CONST               43888
+             1306  LOAD_CONST               43968
+             1308  CALL_FUNCTION_2       2  ''
+             1310  LOAD_NAME                range
+             1312  LOAD_CONST               43968
+             1314  LOAD_CONST               44032
+             1316  CALL_FUNCTION_2       2  ''
+             1318  LOAD_NAME                range
+             1320  LOAD_CONST               44032
+             1322  LOAD_CONST               55216
+             1324  CALL_FUNCTION_2       2  ''
+             1326  LOAD_NAME                range
+             1328  LOAD_CONST               55216
+             1330  LOAD_CONST               55296
+             1332  CALL_FUNCTION_2       2  ''
+             1334  LOAD_NAME                range
+             1336  LOAD_CONST               55296
+             1338  LOAD_CONST               56192
+             1340  CALL_FUNCTION_2       2  ''
+             1342  LOAD_NAME                range
+             1344  LOAD_CONST               56192
+             1346  LOAD_CONST               56320
+             1348  CALL_FUNCTION_2       2  ''
+             1350  LOAD_NAME                range
+             1352  LOAD_CONST               56320
+             1354  LOAD_CONST               57344
+             1356  CALL_FUNCTION_2       2  ''
+             1358  LOAD_NAME                range
+             1360  LOAD_CONST               57344
+             1362  LOAD_CONST               63744
+             1364  CALL_FUNCTION_2       2  ''
+             1366  LOAD_NAME                range
+             1368  LOAD_CONST               63744
+             1370  LOAD_CONST               64256
+             1372  CALL_FUNCTION_2       2  ''
+             1374  LOAD_NAME                range
+             1376  LOAD_CONST               64256
+             1378  LOAD_CONST               64336
+             1380  CALL_FUNCTION_2       2  ''
+             1382  LOAD_NAME                range
+             1384  LOAD_CONST               64336
+             1386  LOAD_CONST               65024
+             1388  CALL_FUNCTION_2       2  ''
+             1390  LOAD_NAME                range
+             1392  LOAD_CONST               65024
+             1394  LOAD_CONST               65040
+             1396  CALL_FUNCTION_2       2  ''
+             1398  LOAD_NAME                range
+             1400  LOAD_CONST               65040
+             1402  LOAD_CONST               65056
+             1404  CALL_FUNCTION_2       2  ''
+             1406  LOAD_NAME                range
+             1408  LOAD_CONST               65056
+             1410  LOAD_CONST               65072
+             1412  CALL_FUNCTION_2       2  ''
+             1414  LOAD_NAME                range
+             1416  LOAD_CONST               65072
+             1418  LOAD_CONST               65104
+             1420  CALL_FUNCTION_2       2  ''
+             1422  LOAD_NAME                range
+             1424  LOAD_CONST               65104
+             1426  LOAD_CONST               65136
+             1428  CALL_FUNCTION_2       2  ''
+             1430  LOAD_NAME                range
+             1432  LOAD_CONST               65136
+             1434  LOAD_CONST               65280
+             1436  CALL_FUNCTION_2       2  ''
+             1438  LOAD_NAME                range
+             1440  LOAD_CONST               65280
+             1442  LOAD_CONST               65520
+             1444  CALL_FUNCTION_2       2  ''
+             1446  LOAD_NAME                range
+             1448  LOAD_CONST               65520
+             1450  LOAD_CONST               65536
+             1452  CALL_FUNCTION_2       2  ''
+             1454  LOAD_NAME                range
+             1456  LOAD_CONST               65536
+             1458  LOAD_CONST               65664
+             1460  CALL_FUNCTION_2       2  ''
+             1462  LOAD_NAME                range
+             1464  LOAD_CONST               65664
+             1466  LOAD_CONST               65792
+             1468  CALL_FUNCTION_2       2  ''
+             1470  LOAD_NAME                range
+             1472  LOAD_CONST               65792
+             1474  LOAD_CONST               65856
+             1476  CALL_FUNCTION_2       2  ''
+             1478  LOAD_NAME                range
+             1480  LOAD_CONST               65856
+             1482  LOAD_CONST               65936
+             1484  CALL_FUNCTION_2       2  ''
+             1486  LOAD_NAME                range
+             1488  LOAD_CONST               65936
+             1490  LOAD_CONST               66000
+             1492  CALL_FUNCTION_2       2  ''
+             1494  LOAD_NAME                range
+             1496  LOAD_CONST               66000
+             1498  LOAD_CONST               66048
+             1500  CALL_FUNCTION_2       2  ''
+             1502  LOAD_NAME                range
+             1504  LOAD_CONST               66176
+             1506  LOAD_CONST               66208
+             1508  CALL_FUNCTION_2       2  ''
+             1510  LOAD_NAME                range
+             1512  LOAD_CONST               66208
+             1514  LOAD_CONST               66272
+             1516  CALL_FUNCTION_2       2  ''
+             1518  LOAD_NAME                range
+             1520  LOAD_CONST               66272
+             1522  LOAD_CONST               66304
+             1524  CALL_FUNCTION_2       2  ''
+             1526  LOAD_NAME                range
+             1528  LOAD_CONST               66304
+             1530  LOAD_CONST               66352
+             1532  CALL_FUNCTION_2       2  ''
+             1534  LOAD_NAME                range
+             1536  LOAD_CONST               66352
+             1538  LOAD_CONST               66384
+             1540  CALL_FUNCTION_2       2  ''
+             1542  LOAD_NAME                range
+             1544  LOAD_CONST               66384
+             1546  LOAD_CONST               66432
+             1548  CALL_FUNCTION_2       2  ''
+             1550  LOAD_NAME                range
+             1552  LOAD_CONST               66432
+             1554  LOAD_CONST               66464
+             1556  CALL_FUNCTION_2       2  ''
+             1558  LOAD_NAME                range
+             1560  LOAD_CONST               66464
+             1562  LOAD_CONST               66528
+             1564  CALL_FUNCTION_2       2  ''
+             1566  LOAD_NAME                range
+             1568  LOAD_CONST               66560
+             1570  LOAD_CONST               66640
+             1572  CALL_FUNCTION_2       2  ''
+             1574  LOAD_NAME                range
+             1576  LOAD_CONST               66640
+             1578  LOAD_CONST               66688
+             1580  CALL_FUNCTION_2       2  ''
+             1582  LOAD_NAME                range
+             1584  LOAD_CONST               66688
+             1586  LOAD_CONST               66736
+             1588  CALL_FUNCTION_2       2  ''
+             1590  LOAD_NAME                range
+             1592  LOAD_CONST               66736
+             1594  LOAD_CONST               66816
+             1596  CALL_FUNCTION_2       2  ''
+             1598  LOAD_NAME                range
+             1600  LOAD_CONST               66816
+             1602  LOAD_CONST               66864
+             1604  CALL_FUNCTION_2       2  ''
+             1606  LOAD_NAME                range
+             1608  LOAD_CONST               66864
+             1610  LOAD_CONST               66928
+             1612  CALL_FUNCTION_2       2  ''
+             1614  LOAD_NAME                range
+             1616  LOAD_CONST               67072
+             1618  LOAD_CONST               67456
+             1620  CALL_FUNCTION_2       2  ''
+             1622  LOAD_NAME                range
+             1624  LOAD_CONST               67584
+             1626  LOAD_CONST               67648
+             1628  CALL_FUNCTION_2       2  ''
+             1630  LOAD_NAME                range
+             1632  LOAD_CONST               67648
+             1634  LOAD_CONST               67680
+             1636  CALL_FUNCTION_2       2  ''
+             1638  LOAD_NAME                range
+             1640  LOAD_CONST               67680
+             1642  LOAD_CONST               67712
+             1644  CALL_FUNCTION_2       2  ''
+             1646  LOAD_NAME                range
+             1648  LOAD_CONST               67712
+             1650  LOAD_CONST               67760
+             1652  CALL_FUNCTION_2       2  ''
+             1654  LOAD_NAME                range
+             1656  LOAD_CONST               67808
+             1658  LOAD_CONST               67840
+             1660  CALL_FUNCTION_2       2  ''
+             1662  LOAD_NAME                range
+             1664  LOAD_CONST               67840
+             1666  LOAD_CONST               67872
+             1668  CALL_FUNCTION_2       2  ''
+             1670  LOAD_NAME                range
+             1672  LOAD_CONST               67872
+             1674  LOAD_CONST               67904
+             1676  CALL_FUNCTION_2       2  ''
+             1678  LOAD_NAME                range
+             1680  LOAD_CONST               67968
+             1682  LOAD_CONST               68000
+             1684  CALL_FUNCTION_2       2  ''
+             1686  LOAD_NAME                range
+             1688  LOAD_CONST               68000
+             1690  LOAD_CONST               68096
+             1692  CALL_FUNCTION_2       2  ''
+             1694  LOAD_NAME                range
+             1696  LOAD_CONST               68096
+             1698  LOAD_CONST               68192
+             1700  CALL_FUNCTION_2       2  ''
+             1702  LOAD_NAME                range
+             1704  LOAD_CONST               68192
+             1706  LOAD_CONST               68224
+             1708  CALL_FUNCTION_2       2  ''
+             1710  LOAD_NAME                range
+             1712  LOAD_CONST               68224
+             1714  LOAD_CONST               68256
+             1716  CALL_FUNCTION_2       2  ''
+             1718  LOAD_NAME                range
+             1720  LOAD_CONST               68288
+             1722  LOAD_CONST               68352
+             1724  CALL_FUNCTION_2       2  ''
+             1726  LOAD_NAME                range
+             1728  LOAD_CONST               68352
+             1730  LOAD_CONST               68416
+             1732  CALL_FUNCTION_2       2  ''
+             1734  LOAD_NAME                range
+             1736  LOAD_CONST               68416
+             1738  LOAD_CONST               68448
+             1740  CALL_FUNCTION_2       2  ''
+             1742  LOAD_NAME                range
+             1744  LOAD_CONST               68448
+             1746  LOAD_CONST               68480
+             1748  CALL_FUNCTION_2       2  ''
+             1750  LOAD_NAME                range
+             1752  LOAD_CONST               68480
+             1754  LOAD_CONST               68528
+             1756  CALL_FUNCTION_2       2  ''
+             1758  LOAD_NAME                range
+             1760  LOAD_CONST               68608
+             1762  LOAD_CONST               68688
+             1764  CALL_FUNCTION_2       2  ''
+             1766  LOAD_NAME                range
+             1768  LOAD_CONST               68736
+             1770  LOAD_CONST               68864
+             1772  CALL_FUNCTION_2       2  ''
+             1774  LOAD_NAME                range
+             1776  LOAD_CONST               69216
+             1778  LOAD_CONST               69248
+             1780  CALL_FUNCTION_2       2  ''
+             1782  LOAD_NAME                range
+             1784  LOAD_CONST               69632
+             1786  LOAD_CONST               69760
+             1788  CALL_FUNCTION_2       2  ''
+             1790  LOAD_NAME                range
+             1792  LOAD_CONST               69760
+             1794  LOAD_CONST               69840
+             1796  CALL_FUNCTION_2       2  ''
+             1798  LOAD_NAME                range
+             1800  LOAD_CONST               69840
+             1802  LOAD_CONST               69888
+             1804  CALL_FUNCTION_2       2  ''
+             1806  LOAD_NAME                range
+             1808  LOAD_CONST               69888
+             1810  LOAD_CONST               69968
+             1812  CALL_FUNCTION_2       2  ''
+             1814  LOAD_NAME                range
+             1816  LOAD_CONST               69968
+             1818  LOAD_CONST               70016
+             1820  CALL_FUNCTION_2       2  ''
+             1822  LOAD_NAME                range
+             1824  LOAD_CONST               70016
+             1826  LOAD_CONST               70112
+             1828  CALL_FUNCTION_2       2  ''
+             1830  LOAD_NAME                range
+             1832  LOAD_CONST               70112
+             1834  LOAD_CONST               70144
+             1836  CALL_FUNCTION_2       2  ''
+             1838  LOAD_NAME                range
+             1840  LOAD_CONST               70144
+             1842  LOAD_CONST               70224
+             1844  CALL_FUNCTION_2       2  ''
+             1846  LOAD_NAME                range
+             1848  LOAD_CONST               70272
+             1850  LOAD_CONST               70320
+             1852  CALL_FUNCTION_2       2  ''
+             1854  LOAD_NAME                range
+             1856  LOAD_CONST               70320
+             1858  LOAD_CONST               70400
+             1860  CALL_FUNCTION_2       2  ''
+             1862  LOAD_NAME                range
+             1864  LOAD_CONST               70400
+             1866  LOAD_CONST               70528
+             1868  CALL_FUNCTION_2       2  ''
+             1870  LOAD_NAME                range
+             1872  LOAD_CONST               70656
+             1874  LOAD_CONST               70784
+             1876  CALL_FUNCTION_2       2  ''
+             1878  LOAD_NAME                range
+             1880  LOAD_CONST               70784
+             1882  LOAD_CONST               70880
+             1884  CALL_FUNCTION_2       2  ''
+             1886  LOAD_NAME                range
+             1888  LOAD_CONST               71040
+             1890  LOAD_CONST               71168
+             1892  CALL_FUNCTION_2       2  ''
+             1894  LOAD_NAME                range
+             1896  LOAD_CONST               71168
+             1898  LOAD_CONST               71264
+             1900  CALL_FUNCTION_2       2  ''
+             1902  LOAD_NAME                range
+             1904  LOAD_CONST               71264
+             1906  LOAD_CONST               71296
+             1908  CALL_FUNCTION_2       2  ''
+             1910  LOAD_NAME                range
+             1912  LOAD_CONST               71296
+             1914  LOAD_CONST               71376
+             1916  CALL_FUNCTION_2       2  ''
+             1918  LOAD_NAME                range
+             1920  LOAD_CONST               71424
+             1922  LOAD_CONST               71488
+             1924  CALL_FUNCTION_2       2  ''
+             1926  LOAD_NAME                range
+             1928  LOAD_CONST               71840
+             1930  LOAD_CONST               71936
+             1932  CALL_FUNCTION_2       2  ''
+             1934  LOAD_NAME                range
+         1936_1938  LOAD_CONST               72192
+         1940_1942  LOAD_CONST               72272
+             1944  CALL_FUNCTION_2       2  ''
+             1946  LOAD_NAME                range
+         1948_1950  LOAD_CONST               72272
+         1952_1954  LOAD_CONST               72368
+             1956  CALL_FUNCTION_2       2  ''
+             1958  LOAD_NAME                range
+         1960_1962  LOAD_CONST               72384
+         1964_1966  LOAD_CONST               72448
+             1968  CALL_FUNCTION_2       2  ''
+             1970  LOAD_NAME                range
+         1972_1974  LOAD_CONST               72704
+         1976_1978  LOAD_CONST               72816
+             1980  CALL_FUNCTION_2       2  ''
+             1982  LOAD_NAME                range
+         1984_1986  LOAD_CONST               72816
+         1988_1990  LOAD_CONST               72896
+             1992  CALL_FUNCTION_2       2  ''
+             1994  LOAD_NAME                range
+         1996_1998  LOAD_CONST               72960
+         2000_2002  LOAD_CONST               73056
+             2004  CALL_FUNCTION_2       2  ''
+             2006  LOAD_NAME                range
+         2008_2010  LOAD_CONST               73728
+         2012_2014  LOAD_CONST               74752
+             2016  CALL_FUNCTION_2       2  ''
+             2018  LOAD_NAME                range
+         2020_2022  LOAD_CONST               74752
+         2024_2026  LOAD_CONST               74880
+             2028  CALL_FUNCTION_2       2  ''
+             2030  LOAD_NAME                range
+         2032_2034  LOAD_CONST               74880
+         2036_2038  LOAD_CONST               75088
+             2040  CALL_FUNCTION_2       2  ''
+             2042  LOAD_NAME                range
+         2044_2046  LOAD_CONST               77824
+         2048_2050  LOAD_CONST               78896
+             2052  CALL_FUNCTION_2       2  ''
+             2054  LOAD_NAME                range
+         2056_2058  LOAD_CONST               82944
+         2060_2062  LOAD_CONST               83584
+             2064  CALL_FUNCTION_2       2  ''
+             2066  LOAD_NAME                range
+         2068_2070  LOAD_CONST               92160
+         2072_2074  LOAD_CONST               92736
+             2076  CALL_FUNCTION_2       2  ''
+             2078  LOAD_NAME                range
+         2080_2082  LOAD_CONST               92736
+         2084_2086  LOAD_CONST               92784
+             2088  CALL_FUNCTION_2       2  ''
+             2090  LOAD_NAME                range
+         2092_2094  LOAD_CONST               92880
+         2096_2098  LOAD_CONST               92928
+             2100  CALL_FUNCTION_2       2  ''
+             2102  LOAD_NAME                range
+         2104_2106  LOAD_CONST               92928
+         2108_2110  LOAD_CONST               93072
+             2112  CALL_FUNCTION_2       2  ''
+             2114  LOAD_NAME                range
+         2116_2118  LOAD_CONST               93952
+         2120_2122  LOAD_CONST               94112
+             2124  CALL_FUNCTION_2       2  ''
+             2126  LOAD_NAME                range
+         2128_2130  LOAD_CONST               94176
+         2132_2134  LOAD_CONST               94208
+             2136  CALL_FUNCTION_2       2  ''
+             2138  LOAD_NAME                range
+         2140_2142  LOAD_CONST               94208
+         2144_2146  LOAD_CONST               100352
+             2148  CALL_FUNCTION_2       2  ''
+             2150  LOAD_NAME                range
+         2152_2154  LOAD_CONST               100352
+         2156_2158  LOAD_CONST               101120
+             2160  CALL_FUNCTION_2       2  ''
+             2162  LOAD_NAME                range
+         2164_2166  LOAD_CONST               110592
+         2168_2170  LOAD_CONST               110848
+             2172  CALL_FUNCTION_2       2  ''
+             2174  LOAD_NAME                range
+         2176_2178  LOAD_CONST               110848
+         2180_2182  LOAD_CONST               110896
+             2184  CALL_FUNCTION_2       2  ''
+             2186  LOAD_NAME                range
+         2188_2190  LOAD_CONST               110960
+         2192_2194  LOAD_CONST               111360
+             2196  CALL_FUNCTION_2       2  ''
+             2198  LOAD_NAME                range
+         2200_2202  LOAD_CONST               113664
+         2204_2206  LOAD_CONST               113824
+             2208  CALL_FUNCTION_2       2  ''
+             2210  LOAD_NAME                range
+         2212_2214  LOAD_CONST               113824
+         2216_2218  LOAD_CONST               113840
+             2220  CALL_FUNCTION_2       2  ''
+             2222  LOAD_NAME                range
+         2224_2226  LOAD_CONST               118784
+         2228_2230  LOAD_CONST               119040
+             2232  CALL_FUNCTION_2       2  ''
+             2234  LOAD_NAME                range
+         2236_2238  LOAD_CONST               119040
+         2240_2242  LOAD_CONST               119296
+             2244  CALL_FUNCTION_2       2  ''
+             2246  LOAD_NAME                range
+         2248_2250  LOAD_CONST               119296
+         2252_2254  LOAD_CONST               119376
+             2256  CALL_FUNCTION_2       2  ''
+             2258  LOAD_NAME                range
+         2260_2262  LOAD_CONST               119552
+         2264_2266  LOAD_CONST               119648
+             2268  CALL_FUNCTION_2       2  ''
+             2270  LOAD_NAME                range
+         2272_2274  LOAD_CONST               119648
+         2276_2278  LOAD_CONST               119680
+             2280  CALL_FUNCTION_2       2  ''
+             2282  LOAD_NAME                range
+         2284_2286  LOAD_CONST               119808
+         2288_2290  LOAD_CONST               120832
+             2292  CALL_FUNCTION_2       2  ''
+             2294  LOAD_NAME                range
+         2296_2298  LOAD_CONST               120832
+         2300_2302  LOAD_CONST               121520
+             2304  CALL_FUNCTION_2       2  ''
+             2306  LOAD_NAME                range
+         2308_2310  LOAD_CONST               122880
+         2312_2314  LOAD_CONST               122928
+             2316  CALL_FUNCTION_2       2  ''
+             2318  LOAD_NAME                range
+         2320_2322  LOAD_CONST               124928
+         2324_2326  LOAD_CONST               125152
+             2328  CALL_FUNCTION_2       2  ''
+             2330  LOAD_NAME                range
+         2332_2334  LOAD_CONST               125184
+         2336_2338  LOAD_CONST               125280
+             2340  CALL_FUNCTION_2       2  ''
+             2342  LOAD_NAME                range
+         2344_2346  LOAD_CONST               126464
+         2348_2350  LOAD_CONST               126720
+             2352  CALL_FUNCTION_2       2  ''
+             2354  LOAD_NAME                range
+         2356_2358  LOAD_CONST               126976
+         2360_2362  LOAD_CONST               127024
+             2364  CALL_FUNCTION_2       2  ''
+             2366  LOAD_NAME                range
+         2368_2370  LOAD_CONST               127024
+         2372_2374  LOAD_CONST               127136
+             2376  CALL_FUNCTION_2       2  ''
+             2378  LOAD_NAME                range
+         2380_2382  LOAD_CONST               127136
+         2384_2386  LOAD_CONST               127232
+             2388  CALL_FUNCTION_2       2  ''
+             2390  LOAD_NAME                range
+         2392_2394  LOAD_CONST               127232
+         2396_2398  LOAD_CONST               127488
+             2400  CALL_FUNCTION_2       2  ''
+             2402  LOAD_NAME                range
+         2404_2406  LOAD_CONST               127488
+         2408_2410  LOAD_CONST               127744
+             2412  CALL_FUNCTION_2       2  ''
+             2414  LOAD_NAME                range
+         2416_2418  LOAD_CONST               127744
+         2420_2422  LOAD_CONST               128512
+             2424  CALL_FUNCTION_2       2  ''
+             2426  LOAD_NAME                range
+         2428_2430  LOAD_CONST               128512
+         2432_2434  LOAD_CONST               128592
+             2436  CALL_FUNCTION_2       2  ''
+             2438  LOAD_NAME                range
+         2440_2442  LOAD_CONST               128592
+         2444_2446  LOAD_CONST               128640
+             2448  CALL_FUNCTION_2       2  ''
+             2450  LOAD_NAME                range
+         2452_2454  LOAD_CONST               128640
+         2456_2458  LOAD_CONST               128768
+             2460  CALL_FUNCTION_2       2  ''
+             2462  LOAD_NAME                range
+         2464_2466  LOAD_CONST               128768
+         2468_2470  LOAD_CONST               128896
+             2472  CALL_FUNCTION_2       2  ''
+             2474  LOAD_NAME                range
+         2476_2478  LOAD_CONST               128896
+         2480_2482  LOAD_CONST               129024
+             2484  CALL_FUNCTION_2       2  ''
+             2486  LOAD_NAME                range
+         2488_2490  LOAD_CONST               129024
+         2492_2494  LOAD_CONST               129280
+             2496  CALL_FUNCTION_2       2  ''
+             2498  LOAD_NAME                range
+         2500_2502  LOAD_CONST               129280
+         2504_2506  LOAD_CONST               129536
+             2508  CALL_FUNCTION_2       2  ''
+             2510  LOAD_NAME                range
+         2512_2514  LOAD_CONST               131072
+         2516_2518  LOAD_CONST               173792
+             2520  CALL_FUNCTION_2       2  ''
+             2522  LOAD_NAME                range
+         2524_2526  LOAD_CONST               173824
+         2528_2530  LOAD_CONST               177984
+             2532  CALL_FUNCTION_2       2  ''
+             2534  LOAD_NAME                range
+         2536_2538  LOAD_CONST               177984
+         2540_2542  LOAD_CONST               178208
+             2544  CALL_FUNCTION_2       2  ''
+             2546  LOAD_NAME                range
+         2548_2550  LOAD_CONST               178208
+         2552_2554  LOAD_CONST               183984
+             2556  CALL_FUNCTION_2       2  ''
+             2558  LOAD_NAME                range
+         2560_2562  LOAD_CONST               183984
+         2564_2566  LOAD_CONST               191472
+             2568  CALL_FUNCTION_2       2  ''
+             2570  LOAD_NAME                range
+         2572_2574  LOAD_CONST               194560
+         2576_2578  LOAD_CONST               195104
+             2580  CALL_FUNCTION_2       2  ''
+             2582  LOAD_NAME                range
+         2584_2586  LOAD_CONST               917504
+         2588_2590  LOAD_CONST               917632
+             2592  CALL_FUNCTION_2       2  ''
+             2594  LOAD_NAME                range
+         2596_2598  LOAD_CONST               917760
+         2600_2602  LOAD_CONST               918000
+             2604  CALL_FUNCTION_2       2  ''
+         2606_2608  LOAD_CONST               ('Control character', 'Basic Latin', 'Latin-1 Supplement', 'Latin Extended-A', 'Latin Extended-B', 'IPA Extensions', 'Spacing Modifier Letters', 'Combining Diacritical Marks', 'Greek and Coptic', 'Cyrillic', 'Cyrillic Supplement', 'Armenian', 'Hebrew', 'Arabic', 'Syriac', 'Arabic Supplement', 'Thaana', 'NKo', 'Samaritan', 'Mandaic', 'Syriac Supplement', 'Arabic Extended-A', 'Devanagari', 'Bengali', 'Gurmukhi', 'Gujarati', 'Oriya', 'Tamil', 'Telugu', 'Kannada', 'Malayalam', 'Sinhala', 'Thai', 'Lao', 'Tibetan', 'Myanmar', 'Georgian', 'Hangul Jamo', 'Ethiopic', 'Ethiopic Supplement', 'Cherokee', 'Unified Canadian Aboriginal Syllabics', 'Ogham', 'Runic', 'Tagalog', 'Hanunoo', 'Buhid', 'Tagbanwa', 'Khmer', 'Mongolian', 'Unified Canadian Aboriginal Syllabics Extended', 'Limbu', 'Tai Le', 'New Tai Lue', 'Khmer Symbols', 'Buginese', 'Tai Tham', 'Combining Diacritical Marks Extended', 'Balinese', 'Sundanese', 'Batak', 'Lepcha', 'Ol Chiki', 'Cyrillic Extended C', 'Sundanese Supplement', 'Vedic Extensions', 'Phonetic Extensions', 'Phonetic Extensions Supplement', 'Combining Diacritical Marks Supplement', 'Latin Extended Additional', 'Greek Extended', 'General Punctuation', 'Superscripts and Subscripts', 'Currency Symbols', 'Combining Diacritical Marks for Symbols', 'Letterlike Symbols', 'Number Forms', 'Arrows', 'Mathematical Operators', 'Miscellaneous Technical', 'Control Pictures', 'Optical Character Recognition', 'Enclosed Alphanumerics', 'Box Drawing', 'Block Elements', 'Geometric Shapes', 'Miscellaneous Symbols', 'Dingbats', 'Miscellaneous Mathematical Symbols-A', 'Supplemental Arrows-A', 'Braille Patterns', 'Supplemental Arrows-B', 'Miscellaneous Mathematical Symbols-B', 'Supplemental Mathematical Operators', 'Miscellaneous Symbols and Arrows', 'Glagolitic', 'Latin Extended-C', 'Coptic', 'Georgian Supplement', 'Tifinagh', 'Ethiopic Extended', 'Cyrillic Extended-A', 'Supplemental Punctuation', 'CJK Radicals Supplement', 'Kangxi Radicals', 'Ideographic Description Characters', 'CJK Symbols and Punctuation', 'Hiragana', 'Katakana', 'Bopomofo', 'Hangul Compatibility Jamo', 'Kanbun', 'Bopomofo Extended', 'CJK Strokes', 'Katakana Phonetic Extensions', 'Enclosed CJK Letters and Months', 'CJK Compatibility', 'CJK Unified Ideographs Extension A', 'Yijing Hexagram Symbols', 'CJK Unified Ideographs', 'Yi Syllables', 'Yi Radicals', 'Lisu', 'Vai', 'Cyrillic Extended-B', 'Bamum', 'Modifier Tone Letters', 'Latin Extended-D', 'Syloti Nagri', 'Common Indic Number Forms', 'Phags-pa', 'Saurashtra', 'Devanagari Extended', 'Kayah Li', 'Rejang', 'Hangul Jamo Extended-A', 'Javanese', 'Myanmar Extended-B', 'Cham', 'Myanmar Extended-A', 'Tai Viet', 'Meetei Mayek Extensions', 'Ethiopic Extended-A', 'Latin Extended-E', 'Cherokee Supplement', 'Meetei Mayek', 'Hangul Syllables', 'Hangul Jamo Extended-B', 'High Surrogates', 'High Private Use Surrogates', 'Low Surrogates', 'Private Use Area', 'CJK Compatibility Ideographs', 'Alphabetic Presentation Forms', 'Arabic Presentation Forms-A', 'Variation Selectors', 'Vertical Forms', 'Combining Half Marks', 'CJK Compatibility Forms', 'Small Form Variants', 'Arabic Presentation Forms-B', 'Halfwidth and Fullwidth Forms', 'Specials', 'Linear B Syllabary', 'Linear B Ideograms', 'Aegean Numbers', 'Ancient Greek Numbers', 'Ancient Symbols', 'Phaistos Disc', 'Lycian', 'Carian', 'Coptic Epact Numbers', 'Old Italic', 'Gothic', 'Old Permic', 'Ugaritic', 'Old Persian', 'Deseret', 'Shavian', 'Osmanya', 'Osage', 'Elbasan', 'Caucasian Albanian', 'Linear A', 'Cypriot Syllabary', 'Imperial Aramaic', 'Palmyrene', 'Nabataean', 'Hatran', 'Phoenician', 'Lydian', 'Meroitic Hieroglyphs', 'Meroitic Cursive', 'Kharoshthi', 'Old South Arabian', 'Old North Arabian', 'Manichaean', 'Avestan', 'Inscriptional Parthian', 'Inscriptional Pahlavi', 'Psalter Pahlavi', 'Old Turkic', 'Old Hungarian', 'Rumi Numeral Symbols', 'Brahmi', 'Kaithi', 'Sora Sompeng', 'Chakma', 'Mahajani', 'Sharada', 'Sinhala Archaic Numbers', 'Khojki', 'Multani', 'Khudawadi', 'Grantha', 'Newa', 'Tirhuta', 'Siddham', 'Modi', 'Mongolian Supplement', 'Takri', 'Ahom', 'Warang Citi', 'Zanabazar Square', 'Soyombo', 'Pau Cin Hau', 'Bhaiksuki', 'Marchen', 'Masaram Gondi', 'Cuneiform', 'Cuneiform Numbers and Punctuation', 'Early Dynastic Cuneiform', 'Egyptian Hieroglyphs', 'Anatolian Hieroglyphs', 'Bamum Supplement', 'Mro', 'Bassa Vah', 'Pahawh Hmong', 'Miao', 'Ideographic Symbols and Punctuation', 'Tangut', 'Tangut Components', 'Kana Supplement', 'Kana Extended-A', 'Nushu', 'Duployan', 'Shorthand Format Controls', 'Byzantine Musical Symbols', 'Musical Symbols', 'Ancient Greek Musical Notation', 'Tai Xuan Jing Symbols', 'Counting Rod Numerals', 'Mathematical Alphanumeric Symbols', 'Sutton SignWriting', 'Glagolitic Supplement', 'Mende Kikakui', 'Adlam', 'Arabic Mathematical Alphabetic Symbols', 'Mahjong Tiles', 'Domino Tiles', 'Playing Cards', 'Enclosed Alphanumeric Supplement', 'Enclosed Ideographic Supplement', 'Miscellaneous Symbols and Pictographs', 'Emoticons range(Emoji)', 'Ornamental Dingbats', 'Transport and Map Symbols', 'Alchemical Symbols', 'Geometric Shapes Extended', 'Supplemental Arrows-C', 'Supplemental Symbols and Pictographs', 'CJK Unified Ideographs Extension B', 'CJK Unified Ideographs Extension C', 'CJK Unified Ideographs Extension D', 'CJK Unified Ideographs Extension E', 'CJK Unified Ideographs Extension F', 'CJK Compatibility Ideographs Supplement', 'Tags', 'Variation Selectors Supplement')
+         2610_2612  BUILD_CONST_KEY_MAP_279   279 
+             2614  STORE_NAME               UNICODE_RANGES_COMBINED
+
+ L.  35      2616  BUILD_LIST_0          0 
+         2618_2620  LOAD_CONST               ('Supplement', 'Extended', 'Extensions', 'Modifier', 'Marks', 'Punctuation', 'Symbols', 'Forms', 'Operators', 'Miscellaneous', 'Drawing', 'Block', 'Shapes', 'Supplemental', 'Tags')
+             2622  CALL_FINALLY       2625  'to 2625'
+             2624  STORE_NAME               UNICODE_SECONDARY_RANGE_KEYWORD
+
+ L.  53      2626  LOAD_NAME                re_compile
+
+ L.  54  2628_2630  LOAD_STR                 '(?:(?:encoding)|(?:charset)|(?:coding))(?:[\\:= ]{1,10})(?:[\\"\\\']?)([a-zA-Z0-9\\-_]+)(?:[\\"\\\']?)'
+
+ L.  55      2632  LOAD_NAME                IGNORECASE
+
+ L.  53      2634  CALL_FUNCTION_2       2  ''
+             2636  STORE_NAME               RE_POSSIBLE_ENCODING_INDICATION
+
+ L.  58      2638  LOAD_NAME                sorted
+
+ L.  59      2640  LOAD_NAME                filter
+
+ L.  60  2642_2644  LOAD_LAMBDA              '<code_object <lambda>>'
+         2646_2648  LOAD_STR                 '<lambda>'
+             2650  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+
+ L.  61      2652  LOAD_NAME                list
+             2654  LOAD_NAME                set
+             2656  LOAD_NAME                aliases
+             2658  LOAD_METHOD              values
+             2660  CALL_METHOD_0         0  ''
+             2662  CALL_FUNCTION_1       1  ''
+             2664  CALL_FUNCTION_1       1  ''
+
+ L.  59      2666  CALL_FUNCTION_2       2  ''
+
+ L.  58      2668  CALL_FUNCTION_1       1  ''
+             2670  STORE_NAME               IANA_SUPPORTED
+
+ L.  65      2672  LOAD_NAME                len
+             2674  LOAD_NAME                IANA_SUPPORTED
+             2676  CALL_FUNCTION_1       1  ''
+             2678  STORE_NAME               IANA_SUPPORTED_COUNT
+
+ L.  69      2680  BUILD_LIST_0          0 
+         2682_2684  LOAD_CONST               ('cp1026', 'cp1140', 'cp273', 'cp500')
+             2686  CALL_FINALLY       2689  'to 2689'
+
+ L.  75      2688  BUILD_LIST_0          0 
+         2690_2692  LOAD_CONST               ('cp037', 'cp1140', 'cp273', 'cp500')
+             2694  CALL_FINALLY       2697  'to 2697'
+
+ L.  82  2696_2698  LOAD_STR                 'cp866'
+
+ L.  81      2700  BUILD_LIST_1          1 
+
+ L.  84      2702  BUILD_LIST_0          0 
+         2704_2706  LOAD_CONST               ('cp037', 'cp1026', 'cp273', 'cp500')
+             2708  CALL_FINALLY       2711  'to 2711'
+
+ L.  91  2710_2712  LOAD_STR                 'iso8859_2'
+
+ L.  90      2714  BUILD_LIST_1          1 
+
+ L.  94  2716_2718  LOAD_STR                 'kz1048'
+
+ L.  95  2720_2722  LOAD_STR                 'ptcp154'
+
+ L.  93      2724  BUILD_LIST_2          2 
+
+ L.  97      2726  BUILD_LIST_0          0 
+         2728_2730  LOAD_CONST               ('cp1258', 'iso8859_15', 'iso8859_9', 'latin_1')
+             2732  CALL_FINALLY       2735  'to 2735'
+
+ L. 104  2734_2736  LOAD_STR                 'iso8859_7'
+
+ L. 103      2738  BUILD_LIST_1          1 
+
+ L. 106      2740  BUILD_LIST_0          0 
+         2742_2744  LOAD_CONST               ('cp1258', 'iso8859_15', 'iso8859_9', 'latin_1')
+             2746  CALL_FINALLY       2749  'to 2749'
+
+ L. 113  2748_2750  LOAD_STR                 'iso8859_13'
+
+ L. 112      2752  BUILD_LIST_1          1 
+
+ L. 115      2754  BUILD_LIST_0          0 
+         2756_2758  LOAD_CONST               ('cp1252', 'cp1254', 'iso8859_9', 'latin_1')
+             2760  CALL_FINALLY       2763  'to 2763'
+
+ L. 121      2762  BUILD_LIST_0          0 
+         2764_2766  LOAD_CONST               ('cp037', 'cp1026', 'cp1140', 'cp500')
+             2768  CALL_FINALLY       2771  'to 2771'
+
+ L. 127      2770  BUILD_LIST_0          0 
+         2772_2774  LOAD_CONST               ('cp850', 'cp858', 'cp860', 'cp861', 'cp862', 'cp863', 'cp865')
+             2776  CALL_FINALLY       2779  'to 2779'
+
+ L. 136      2778  BUILD_LIST_0          0 
+         2780_2782  LOAD_CONST               ('cp037', 'cp1026', 'cp1140', 'cp273')
+             2784  CALL_FINALLY       2787  'to 2787'
+
+ L. 142      2786  BUILD_LIST_0          0 
+         2788_2790  LOAD_CONST               ('cp437', 'cp857', 'cp858', 'cp865')
+             2792  CALL_FINALLY       2795  'to 2795'
+
+ L. 148      2794  BUILD_LIST_0          0 
+         2796_2798  LOAD_CONST               ('cp850', 'cp858', 'cp865')
+             2800  CALL_FINALLY       2803  'to 2803'
+
+ L. 153      2802  BUILD_LIST_0          0 
+         2804_2806  LOAD_CONST               ('cp437', 'cp850', 'cp857', 'cp865')
+             2808  CALL_FINALLY       2811  'to 2811'
+
+ L. 159      2810  BUILD_LIST_0          0 
+         2812_2814  LOAD_CONST               ('cp437', 'cp861', 'cp862', 'cp863', 'cp865')
+             2816  CALL_FINALLY       2819  'to 2819'
+
+ L. 166      2818  BUILD_LIST_0          0 
+         2820_2822  LOAD_CONST               ('cp437', 'cp860', 'cp862', 'cp863', 'cp865')
+             2824  CALL_FINALLY       2827  'to 2827'
+
+ L. 173      2826  BUILD_LIST_0          0 
+         2828_2830  LOAD_CONST               ('cp437', 'cp860', 'cp861', 'cp863', 'cp865')
+             2832  CALL_FINALLY       2835  'to 2835'
+
+ L. 180      2834  BUILD_LIST_0          0 
+         2836_2838  LOAD_CONST               ('cp437', 'cp860', 'cp861', 'cp862', 'cp865')
+             2840  CALL_FINALLY       2843  'to 2843'
+
+ L. 187      2842  BUILD_LIST_0          0 
+         2844_2846  LOAD_CONST               ('cp437', 'cp850', 'cp857', 'cp858', 'cp860', 'cp861', 'cp862', 'cp863')
+             2848  CALL_FINALLY       2851  'to 2851'
+
+ L. 198  2850_2852  LOAD_STR                 'cp1125'
+
+ L. 197      2854  BUILD_LIST_1          1 
+
+ L. 200      2856  BUILD_LIST_0          0 
+         2858_2860  LOAD_CONST               ('iso8859_14', 'iso8859_15', 'iso8859_4', 'iso8859_9', 'latin_1')
+             2862  CALL_FINALLY       2865  'to 2865'
+
+ L. 208  2864_2866  LOAD_STR                 'tis_620'
+
+ L. 207      2868  BUILD_LIST_1          1 
+
+ L. 211  2870_2872  LOAD_STR                 'cp1257'
+
+ L. 210      2874  BUILD_LIST_1          1 
+
+ L. 213      2876  BUILD_LIST_0          0 
+         2878_2880  LOAD_CONST               ('iso8859_10', 'iso8859_15', 'iso8859_16', 'iso8859_3', 'iso8859_9', 'latin_1')
+             2882  CALL_FINALLY       2885  'to 2885'
+
+ L. 221      2884  BUILD_LIST_0          0 
+         2886_2888  LOAD_CONST               ('cp1252', 'cp1254', 'iso8859_10', 'iso8859_14', 'iso8859_16', 'iso8859_3', 'iso8859_9', 'latin_1')
+             2890  CALL_FINALLY       2893  'to 2893'
+
+ L. 231      2892  BUILD_LIST_0          0 
+         2894_2896  LOAD_CONST               ('iso8859_14', 'iso8859_15', 'iso8859_2', 'iso8859_3', 'iso8859_9', 'latin_1')
+             2898  CALL_FINALLY       2901  'to 2901'
+
+ L. 239      2900  BUILD_LIST_0          0 
+         2902_2904  LOAD_CONST               ('cp1250', 'iso8859_16', 'iso8859_4')
+             2906  CALL_FINALLY       2909  'to 2909'
+
+ L. 244      2908  BUILD_LIST_0          0 
+         2910_2912  LOAD_CONST               ('iso8859_14', 'iso8859_15', 'iso8859_16', 'iso8859_9', 'latin_1')
+             2914  CALL_FINALLY       2917  'to 2917'
+
+ L. 251      2916  BUILD_LIST_0          0 
+         2918_2920  LOAD_CONST               ('iso8859_10', 'iso8859_2', 'iso8859_9', 'latin_1')
+             2922  CALL_FINALLY       2925  'to 2925'
+
+ L. 258  2924_2926  LOAD_STR                 'cp1253'
+
+ L. 257      2928  BUILD_LIST_1          1 
+
+ L. 260      2930  BUILD_LIST_0          0 
+         2932_2934  LOAD_CONST               ('cp1252', 'cp1254', 'cp1258', 'iso8859_10', 'iso8859_14', 'iso8859_15', 'iso8859_16', 'iso8859_3', 'iso8859_4', 'latin_1')
+             2936  CALL_FINALLY       2939  'to 2939'
+
+ L. 273  2938_2940  LOAD_STR                 'cp1251'
+
+ L. 274  2942_2944  LOAD_STR                 'ptcp154'
+
+ L. 272      2946  BUILD_LIST_2          2 
+
+ L. 276      2948  BUILD_LIST_0          0 
+         2950_2952  LOAD_CONST               ('cp1252', 'cp1254', 'cp1258', 'iso8859_10', 'iso8859_14', 'iso8859_15', 'iso8859_16', 'iso8859_3', 'iso8859_4', 'iso8859_9')
+             2954  CALL_FINALLY       2957  'to 2957'
+
+ L. 289  2956_2958  LOAD_STR                 'mac_roman'
+
+ L. 290  2960_2962  LOAD_STR                 'mac_turkish'
+
+ L. 288      2964  BUILD_LIST_2          2 
+
+ L. 293  2966_2968  LOAD_STR                 'mac_iceland'
+
+ L. 294  2970_2972  LOAD_STR                 'mac_turkish'
+
+ L. 292      2974  BUILD_LIST_2          2 
+
+ L. 297  2976_2978  LOAD_STR                 'mac_iceland'
+
+ L. 298  2980_2982  LOAD_STR                 'mac_roman'
+
+ L. 296      2984  BUILD_LIST_2          2 
+
+ L. 301  2986_2988  LOAD_STR                 'cp1251'
+
+ L. 302  2990_2992  LOAD_STR                 'kz1048'
+
+ L. 300      2994  BUILD_LIST_2          2 
+
+ L. 305  2996_2998  LOAD_STR                 'iso8859_11'
+
+ L. 304      3000  BUILD_LIST_1          1 
+
+ L.  68  3002_3004  LOAD_CONST               ('cp037', 'cp1026', 'cp1125', 'cp1140', 'cp1250', 'cp1251', 'cp1252', 'cp1253', 'cp1254', 'cp1257', 'cp1258', 'cp273', 'cp437', 'cp500', 'cp850', 'cp857', 'cp858', 'cp860', 'cp861', 'cp862', 'cp863', 'cp865', 'cp866', 'iso8859_10', 'iso8859_11', 'iso8859_13', 'iso8859_14', 'iso8859_15', 'iso8859_16', 'iso8859_2', 'iso8859_3', 'iso8859_4', 'iso8859_7', 'iso8859_9', 'kz1048', 'latin_1', 'mac_iceland', 'mac_roman', 'mac_turkish', 'ptcp154', 'tis_620')
+             3006  BUILD_CONST_KEY_MAP_41    41 
+             3008  STORE_NAME               IANA_SUPPORTED_SIMILAR
+
+ L. 311  3010_3012  LOAD_STR                 'ISO-2022-KR'
+
+ L. 312  3014_3016  LOAD_STR                 'ISO-2022-JP'
+
+ L. 313  3018_3020  LOAD_STR                 'EUC-KR'
+
+ L. 314  3022_3024  LOAD_STR                 'TIS-620'
+
+ L. 315  3026_3028  LOAD_STR                 'UTF-32'
+
+ L. 316  3030_3032  LOAD_STR                 'EUC-JP'
+
+ L. 317  3034_3036  LOAD_STR                 'KOI8-R'
+
+ L. 318  3038_3040  LOAD_STR                 'ISO-8859-1'
+
+ L. 319  3042_3044  LOAD_STR                 'ISO-8859-2'
+
+ L. 320  3046_3048  LOAD_STR                 'ISO-8859-5'
+
+ L. 321  3050_3052  LOAD_STR                 'ISO-8859-6'
+
+ L. 322  3054_3056  LOAD_STR                 'ISO-8859-7'
+
+ L. 323  3058_3060  LOAD_STR                 'ISO-8859-8'
+
+ L. 324  3062_3064  LOAD_STR                 'UTF-16'
+
+ L. 325  3066_3068  LOAD_STR                 'IBM855'
+
+ L. 326  3070_3072  LOAD_STR                 'MacCyrillic'
+
+ L. 327  3074_3076  LOAD_STR                 'GB2312'
+
+ L. 328  3078_3080  LOAD_STR                 'GB18030'
+
+ L. 329  3082_3084  LOAD_STR                 'CP932'
+
+ L. 330  3086_3088  LOAD_STR                 'IBM866'
+
+ L. 331  3090_3092  LOAD_STR                 'utf-8'
+
+ L. 332  3094_3096  LOAD_STR                 'UTF-8-SIG'
+
+ L. 333  3098_3100  LOAD_STR                 'SHIFT_JIS'
+
+ L. 334  3102_3104  LOAD_STR                 'Big5'
+
+ L. 335  3106_3108  LOAD_STR                 'windows-1250'
+
+ L. 336  3110_3112  LOAD_STR                 'windows-1251'
+
+ L. 337  3114_3116  LOAD_STR                 'Windows-1252'
+
+ L. 338  3118_3120  LOAD_STR                 'windows-1253'
+
+ L. 339  3122_3124  LOAD_STR                 'windows-1255'
+
+ L. 340  3126_3128  LOAD_STR                 'windows-1256'
+
+ L. 341  3130_3132  LOAD_STR                 'Windows-1254'
+
+ L. 342  3134_3136  LOAD_STR                 'CP949'
+
+ L. 310  3138_3140  LOAD_CONST               ('iso2022_kr', 'iso2022_jp', 'euc_kr', 'tis_620', 'utf_32', 'euc_jp', 'koi8_r', 'iso8859_1', 'iso8859_2', 'iso8859_5', 'iso8859_6', 'iso8859_7', 'iso8859_8', 'utf_16', 'cp855', 'mac_cyrillic', 'gb2312', 'gb18030', 'cp932', 'cp866', 'utf_8', 'utf_8_sig', 'shift_jis', 'big5', 'cp1250', 'cp1251', 'cp1252', 'cp1253', 'cp1255', 'cp1256', 'cp1254', 'cp949')
+             3142  BUILD_CONST_KEY_MAP_32    32 
+             3144  STORE_NAME               CHARDET_CORRESPONDENCE
+
+Parse error at or near `CALL_FINALLY' instruction at offset 102
+
+Instruction context:
+   
+ L.  10        96  LOAD_STR                 'utf_7'
+                  98  BUILD_LIST_0          0 
+                 100  LOAD_CONST               (b'+/v8', b'+/v9', b'+/v+', b'+/v/', b'+/v8-')
+->               102  CALL_FINALLY        105  'to 105'
+                 104  BUILD_TUPLE_2         2 
+
+test/39599.pyc -- 
+# decompile failed

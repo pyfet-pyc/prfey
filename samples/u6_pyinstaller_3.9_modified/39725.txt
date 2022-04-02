@@ -1,0 +1,153 @@
+Instruction context:
+   
+ L.   5        22  DUP_TOP          
+                  24  LOAD_NAME                ImportError
+->                26  <121>                70  ''
+                  28  POP_TOP          
+                  30  POP_TOP          
+                  32  POP_TOP          
+
+test/39725.pyc -- 
+# decompile failed
+
+# file test/39725.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   3         8  SETUP_FINALLY        22  'to 22'
+
+ L.   4        10  LOAD_CONST               0
+               12  LOAD_CONST               None
+               14  IMPORT_NAME              chardet
+               16  STORE_NAME               chardet
+               18  POP_BLOCK        
+               20  JUMP_FORWARD         72  'to 72'
+             22_0  COME_FROM_FINALLY     8  '8'
+
+ L.   5        22  DUP_TOP          
+               24  LOAD_NAME                ImportError
+               26  <121>                70  ''
+               28  POP_TOP          
+               30  POP_TOP          
+               32  POP_TOP          
+
+ L.   6        34  LOAD_CONST               0
+               36  LOAD_CONST               None
+               38  IMPORT_NAME              charset_normalizer
+               40  STORE_NAME               chardet
+
+ L.   7        42  LOAD_CONST               0
+               44  LOAD_CONST               None
+               46  IMPORT_NAME              warnings
+               48  STORE_NAME               warnings
+
+ L.   9        50  LOAD_NAME                warnings
+               52  LOAD_ATTR                filterwarnings
+               54  LOAD_STR                 'ignore'
+               56  LOAD_STR                 'Trying to detect'
+               58  LOAD_STR                 'charset_normalizer'
+               60  LOAD_CONST               ('module',)
+               62  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+               64  POP_TOP          
+               66  POP_EXCEPT       
+               68  JUMP_FORWARD         72  'to 72'
+               70  <48>             
+             72_0  COME_FROM            68  '68'
+             72_1  COME_FROM            20  '20'
+
+ L.  14        72  LOAD_CONST               ('urllib3', 'idna')
+               74  GET_ITER         
+               76  FOR_ITER            154  'to 154'
+               78  STORE_NAME               package
+
+ L.  15        80  LOAD_NAME                __import__
+               82  LOAD_NAME                package
+               84  CALL_FUNCTION_1       1  ''
+               86  LOAD_NAME                locals
+               88  CALL_FUNCTION_0       0  ''
+               90  LOAD_NAME                package
+               92  STORE_SUBSCR     
+
+ L.  18        94  LOAD_NAME                list
+               96  LOAD_NAME                sys
+               98  LOAD_ATTR                modules
+              100  CALL_FUNCTION_1       1  ''
+              102  GET_ITER         
+            104_0  COME_FROM           128  '128'
+              104  FOR_ITER            152  'to 152'
+              106  STORE_NAME               mod
+
+ L.  19       108  LOAD_NAME                mod
+              110  LOAD_NAME                package
+              112  COMPARE_OP               ==
+              114  POP_JUMP_IF_TRUE    130  'to 130'
+              116  LOAD_NAME                mod
+              118  LOAD_METHOD              startswith
+              120  LOAD_NAME                package
+              122  LOAD_STR                 '.'
+              124  BINARY_ADD       
+              126  CALL_METHOD_1         1  ''
+              128  POP_JUMP_IF_FALSE   104  'to 104'
+            130_0  COME_FROM           114  '114'
+
+ L.  20       130  LOAD_NAME                sys
+              132  LOAD_ATTR                modules
+              134  LOAD_NAME                mod
+              136  BINARY_SUBSCR    
+              138  LOAD_NAME                sys
+              140  LOAD_ATTR                modules
+              142  LOAD_STR                 'requests.packages.'
+              144  LOAD_NAME                mod
+              146  BINARY_ADD       
+              148  STORE_SUBSCR     
+              150  JUMP_BACK           104  'to 104'
+              152  JUMP_BACK            76  'to 76'
+
+ L.  22       154  LOAD_NAME                chardet
+              156  LOAD_ATTR                __name__
+              158  STORE_NAME               target
+
+ L.  23       160  LOAD_NAME                list
+              162  LOAD_NAME                sys
+              164  LOAD_ATTR                modules
+              166  CALL_FUNCTION_1       1  ''
+              168  GET_ITER         
+            170_0  COME_FROM           194  '194'
+              170  FOR_ITER            226  'to 226'
+              172  STORE_NAME               mod
+
+ L.  24       174  LOAD_NAME                mod
+              176  LOAD_NAME                target
+              178  COMPARE_OP               ==
+              180  POP_JUMP_IF_TRUE    196  'to 196'
+              182  LOAD_NAME                mod
+              184  LOAD_METHOD              startswith
+              186  LOAD_NAME                target
+              188  LOAD_STR                 '.'
+              190  BINARY_ADD       
+              192  CALL_METHOD_1         1  ''
+              194  POP_JUMP_IF_FALSE   170  'to 170'
+            196_0  COME_FROM           180  '180'
+
+ L.  25       196  LOAD_NAME                sys
+              198  LOAD_ATTR                modules
+              200  LOAD_NAME                mod
+              202  BINARY_SUBSCR    
+              204  LOAD_NAME                sys
+              206  LOAD_ATTR                modules
+              208  LOAD_STR                 'requests.packages.'
+              210  LOAD_NAME                target
+              212  LOAD_METHOD              replace
+              214  LOAD_NAME                target
+              216  LOAD_STR                 'chardet'
+              218  CALL_METHOD_2         2  ''
+              220  BINARY_ADD       
+              222  STORE_SUBSCR     
+              224  JUMP_BACK           170  'to 170'
+
+Parse error at or near `<121>' instruction at offset 26
+

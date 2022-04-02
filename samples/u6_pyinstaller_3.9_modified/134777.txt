@@ -1,0 +1,164 @@
+Instruction context:
+   
+ L.  21        82  DUP_TOP          
+                  84  LOAD_NAME                ImportError
+->                86  <121>               106  ''
+                  88  POP_TOP          
+                  90  POP_TOP          
+                  92  POP_TOP          
+
+test/134777.pyc -- 
+# decompile failed
+
+# file test/134777.pyc
+# --- This code section failed: ---
+
+ L.   3         0  LOAD_STR                 '\nrequests.cookies\n~~~~~~~~~~~~~~~~\n\nCompatibility code to be able to use `cookielib.CookieJar` with requests.\n\nrequests.utils imports from here, so be careful with imports.\n'
+                2  STORE_NAME               __doc__
+
+ L.  12         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              copy
+               10  STORE_NAME               copy
+
+ L.  13        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              time
+               18  STORE_NAME               time
+
+ L.  14        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              calendar
+               26  STORE_NAME               calendar
+
+ L.  16        28  LOAD_CONST               1
+               30  LOAD_CONST               ('to_native_string',)
+               32  IMPORT_NAME              _internal_utils
+               34  IMPORT_FROM              to_native_string
+               36  STORE_NAME               to_native_string
+               38  POP_TOP          
+
+ L.  17        40  LOAD_CONST               1
+               42  LOAD_CONST               ('cookielib', 'urlparse', 'urlunparse', 'Morsel', 'MutableMapping')
+               44  IMPORT_NAME              compat
+               46  IMPORT_FROM              cookielib
+               48  STORE_NAME               cookielib
+               50  IMPORT_FROM              urlparse
+               52  STORE_NAME               urlparse
+               54  IMPORT_FROM              urlunparse
+               56  STORE_NAME               urlunparse
+               58  IMPORT_FROM              Morsel
+               60  STORE_NAME               Morsel
+               62  IMPORT_FROM              MutableMapping
+               64  STORE_NAME               MutableMapping
+               66  POP_TOP          
+
+ L.  19        68  SETUP_FINALLY        82  'to 82'
+
+ L.  20        70  LOAD_CONST               0
+               72  LOAD_CONST               None
+               74  IMPORT_NAME              threading
+               76  STORE_NAME               threading
+               78  POP_BLOCK        
+               80  JUMP_FORWARD        108  'to 108'
+             82_0  COME_FROM_FINALLY    68  '68'
+
+ L.  21        82  DUP_TOP          
+               84  LOAD_NAME                ImportError
+               86  <121>               106  ''
+               88  POP_TOP          
+               90  POP_TOP          
+               92  POP_TOP          
+
+ L.  22        94  LOAD_CONST               0
+               96  LOAD_CONST               None
+               98  IMPORT_NAME              dummy_threading
+              100  STORE_NAME               threading
+              102  POP_EXCEPT       
+              104  JUMP_FORWARD        108  'to 108'
+              106  <48>             
+            108_0  COME_FROM           104  '104'
+            108_1  COME_FROM            80  '80'
+
+ L.  25       108  LOAD_BUILD_CLASS 
+              110  LOAD_CODE                <code_object MockRequest>
+              112  LOAD_STR                 'MockRequest'
+              114  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              116  LOAD_STR                 'MockRequest'
+              118  LOAD_NAME                object
+              120  CALL_FUNCTION_3       3  ''
+              122  STORE_NAME               MockRequest
+
+ L.  97       124  LOAD_BUILD_CLASS 
+              126  LOAD_CODE                <code_object MockResponse>
+              128  LOAD_STR                 'MockResponse'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  LOAD_STR                 'MockResponse'
+              134  LOAD_NAME                object
+              136  CALL_FUNCTION_3       3  ''
+              138  STORE_NAME               MockResponse
+
+ L. 118       140  LOAD_CODE                <code_object extract_cookies_to_jar>
+              142  LOAD_STR                 'extract_cookies_to_jar'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  STORE_NAME               extract_cookies_to_jar
+
+ L. 135       148  LOAD_CODE                <code_object get_cookie_header>
+              150  LOAD_STR                 'get_cookie_header'
+              152  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              154  STORE_NAME               get_cookie_header
+
+ L. 146       156  LOAD_CONST               (None, None)
+              158  LOAD_CODE                <code_object remove_cookie_by_name>
+              160  LOAD_STR                 'remove_cookie_by_name'
+              162  MAKE_FUNCTION_1          'default'
+              164  STORE_NAME               remove_cookie_by_name
+
+ L. 165       166  LOAD_BUILD_CLASS 
+              168  LOAD_CODE                <code_object CookieConflictError>
+              170  LOAD_STR                 'CookieConflictError'
+              172  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              174  LOAD_STR                 'CookieConflictError'
+              176  LOAD_NAME                RuntimeError
+              178  CALL_FUNCTION_3       3  ''
+              180  STORE_NAME               CookieConflictError
+
+ L. 171       182  LOAD_BUILD_CLASS 
+              184  LOAD_CODE                <code_object RequestsCookieJar>
+              186  LOAD_STR                 'RequestsCookieJar'
+              188  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              190  LOAD_STR                 'RequestsCookieJar'
+              192  LOAD_NAME                cookielib
+              194  LOAD_ATTR                CookieJar
+              196  LOAD_NAME                MutableMapping
+              198  CALL_FUNCTION_4       4  ''
+              200  STORE_NAME               RequestsCookieJar
+
+ L. 426       202  LOAD_CODE                <code_object _copy_cookie_jar>
+              204  LOAD_STR                 '_copy_cookie_jar'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  STORE_NAME               _copy_cookie_jar
+
+ L. 441       210  LOAD_CODE                <code_object create_cookie>
+              212  LOAD_STR                 'create_cookie'
+              214  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              216  STORE_NAME               create_cookie
+
+ L. 477       218  LOAD_CODE                <code_object morsel_to_cookie>
+              220  LOAD_STR                 'morsel_to_cookie'
+              222  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              224  STORE_NAME               morsel_to_cookie
+
+ L. 508       226  LOAD_CONST               (None, True)
+              228  LOAD_CODE                <code_object cookiejar_from_dict>
+              230  LOAD_STR                 'cookiejar_from_dict'
+              232  MAKE_FUNCTION_1          'default'
+              234  STORE_NAME               cookiejar_from_dict
+
+ L. 529       236  LOAD_CODE                <code_object merge_cookies>
+              238  LOAD_STR                 'merge_cookies'
+              240  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              242  STORE_NAME               merge_cookies
+
+Parse error at or near `<121>' instruction at offset 86
+

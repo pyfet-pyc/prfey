@@ -1,0 +1,167 @@
+Instruction context:
+   
+ L.  77       126  DUP_TOP          
+                 128  LOAD_NAME                OSError
+->               130  <121>               142  ''
+                 132  POP_TOP          
+                 134  POP_TOP          
+                 136  POP_TOP          
+
+test/101158.pyc -- 
+# decompile failed
+
+# file test/101158.pyc
+# --- This code section failed: ---
+
+ L.  22         0  LOAD_STR                 "\nModule's constants for the modes of operation supported with AES:\n\n:var MODE_ECB: :ref:`Electronic Code Book (ECB) <ecb_mode>`\n:var MODE_CBC: :ref:`Cipher-Block Chaining (CBC) <cbc_mode>`\n:var MODE_CFB: :ref:`Cipher FeedBack (CFB) <cfb_mode>`\n:var MODE_OFB: :ref:`Output FeedBack (OFB) <ofb_mode>`\n:var MODE_CTR: :ref:`CounTer Mode (CTR) <ctr_mode>`\n:var MODE_OPENPGP:  :ref:`OpenPGP Mode <openpgp_mode>`\n:var MODE_CCM: :ref:`Counter with CBC-MAC (CCM) Mode <ccm_mode>`\n:var MODE_EAX: :ref:`EAX Mode <eax_mode>`\n:var MODE_GCM: :ref:`Galois Counter Mode (GCM) <gcm_mode>`\n:var MODE_SIV: :ref:`Syntethic Initialization Vector (SIV) <siv_mode>`\n:var MODE_OCB: :ref:`Offset Code Book (OCB) <ocb_mode>`\n"
+                2  STORE_NAME               __doc__
+
+ L.  38         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.  40        12  LOAD_CONST               0
+               14  LOAD_CONST               ('_create_cipher',)
+               16  IMPORT_NAME_ATTR         Crypto.Cipher
+               18  IMPORT_FROM              _create_cipher
+               20  STORE_NAME               _create_cipher
+               22  POP_TOP          
+
+ L.  41        24  LOAD_CONST               0
+               26  LOAD_CONST               ('load_pycryptodome_raw_lib', 'VoidPointer', 'SmartPointer', 'c_size_t', 'c_uint8_ptr')
+               28  IMPORT_NAME_ATTR         Crypto.Util._raw_api
+               30  IMPORT_FROM              load_pycryptodome_raw_lib
+               32  STORE_NAME               load_pycryptodome_raw_lib
+               34  IMPORT_FROM              VoidPointer
+               36  STORE_NAME               VoidPointer
+               38  IMPORT_FROM              SmartPointer
+               40  STORE_NAME               SmartPointer
+               42  IMPORT_FROM              c_size_t
+               44  STORE_NAME               c_size_t
+               46  IMPORT_FROM              c_uint8_ptr
+               48  STORE_NAME               c_uint8_ptr
+               50  POP_TOP          
+
+ L.  45        52  LOAD_CONST               0
+               54  LOAD_CONST               ('_cpu_features',)
+               56  IMPORT_NAME_ATTR         Crypto.Util
+               58  IMPORT_FROM              _cpu_features
+               60  STORE_NAME               _cpu_features
+               62  POP_TOP          
+
+ L.  46        64  LOAD_CONST               0
+               66  LOAD_CONST               ('get_random_bytes',)
+               68  IMPORT_NAME_ATTR         Crypto.Random
+               70  IMPORT_FROM              get_random_bytes
+               72  STORE_NAME               get_random_bytes
+               74  POP_TOP          
+
+ L.  49        76  LOAD_STR                 '\n        int AES_start_operation(const uint8_t key[],\n                                size_t key_len,\n                                void **pResult);\n        int AES_encrypt(const void *state,\n                        const uint8_t *in,\n                        uint8_t *out,\n                        size_t data_len);\n        int AES_decrypt(const void *state,\n                        const uint8_t *in,\n                        uint8_t *out,\n                        size_t data_len);\n        int AES_stop_operation(void *state);\n        '
+               78  STORE_NAME               _cproto
+
+ L.  66        80  LOAD_NAME                load_pycryptodome_raw_lib
+               82  LOAD_STR                 'Crypto.Cipher._raw_aes'
+
+ L.  67        84  LOAD_NAME                _cproto
+
+ L.  66        86  CALL_FUNCTION_2       2  ''
+               88  STORE_NAME               _raw_aes_lib
+
+ L.  70        90  SETUP_FINALLY       126  'to 126'
+
+ L.  71        92  LOAD_CONST               None
+               94  STORE_NAME               _raw_aesni_lib
+
+ L.  72        96  LOAD_NAME                _cpu_features
+               98  LOAD_METHOD              have_aes_ni
+              100  CALL_METHOD_0         0  ''
+              102  POP_JUMP_IF_FALSE   122  'to 122'
+
+ L.  73       104  LOAD_NAME                load_pycryptodome_raw_lib
+              106  LOAD_STR                 'Crypto.Cipher._raw_aesni'
+
+ L.  74       108  LOAD_NAME                _cproto
+              110  LOAD_METHOD              replace
+              112  LOAD_STR                 'AES'
+
+ L.  75       114  LOAD_STR                 'AESNI'
+
+ L.  74       116  CALL_METHOD_2         2  ''
+
+ L.  73       118  CALL_FUNCTION_2       2  ''
+              120  STORE_NAME               _raw_aesni_lib
+            122_0  COME_FROM           102  '102'
+              122  POP_BLOCK        
+              124  JUMP_FORWARD        144  'to 144'
+            126_0  COME_FROM_FINALLY    90  '90'
+
+ L.  77       126  DUP_TOP          
+              128  LOAD_NAME                OSError
+              130  <121>               142  ''
+              132  POP_TOP          
+              134  POP_TOP          
+              136  POP_TOP          
+
+ L.  78       138  POP_EXCEPT       
+              140  JUMP_FORWARD        144  'to 144'
+              142  <48>             
+            144_0  COME_FROM           140  '140'
+            144_1  COME_FROM           124  '124'
+
+ L.  81       144  LOAD_CODE                <code_object _create_base_cipher>
+              146  LOAD_STR                 '_create_base_cipher'
+              148  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              150  STORE_NAME               _create_base_cipher
+
+ L. 112       152  LOAD_CODE                <code_object _derive_Poly1305_key_pair>
+              154  LOAD_STR                 '_derive_Poly1305_key_pair'
+              156  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              158  STORE_NAME               _derive_Poly1305_key_pair
+
+ L. 130       160  LOAD_CODE                <code_object new>
+              162  LOAD_STR                 'new'
+              164  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              166  STORE_NAME               new
+
+ L. 235       168  LOAD_CONST               1
+              170  STORE_NAME               MODE_ECB
+
+ L. 236       172  LOAD_CONST               2
+              174  STORE_NAME               MODE_CBC
+
+ L. 237       176  LOAD_CONST               3
+              178  STORE_NAME               MODE_CFB
+
+ L. 238       180  LOAD_CONST               5
+              182  STORE_NAME               MODE_OFB
+
+ L. 239       184  LOAD_CONST               6
+              186  STORE_NAME               MODE_CTR
+
+ L. 240       188  LOAD_CONST               7
+              190  STORE_NAME               MODE_OPENPGP
+
+ L. 241       192  LOAD_CONST               8
+              194  STORE_NAME               MODE_CCM
+
+ L. 242       196  LOAD_CONST               9
+              198  STORE_NAME               MODE_EAX
+
+ L. 243       200  LOAD_CONST               10
+              202  STORE_NAME               MODE_SIV
+
+ L. 244       204  LOAD_CONST               11
+              206  STORE_NAME               MODE_GCM
+
+ L. 245       208  LOAD_CONST               12
+              210  STORE_NAME               MODE_OCB
+
+ L. 248       212  LOAD_CONST               16
+              214  STORE_NAME               block_size
+
+ L. 250       216  LOAD_CONST               (16, 24, 32)
+              218  STORE_NAME               key_size
+
+Parse error at or near `<121>' instruction at offset 130
+

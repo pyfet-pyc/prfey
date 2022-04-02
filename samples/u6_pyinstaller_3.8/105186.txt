@@ -1,0 +1,24 @@
+Instruction context:
+   
+ L. 189        24  LOAD_GLOBAL              recvfds
+                  26  LOAD_FAST                's'
+                  28  LOAD_CONST               1
+                  30  CALL_FUNCTION_2       2  ''
+                  32  LOAD_CONST               0
+                  34  BINARY_SUBSCR    
+                  36  POP_BLOCK        
+->                38  ROT_TWO          
+                  40  BEGIN_FINALLY    
+                  42  WITH_CLEANUP_START
+                  44  WITH_CLEANUP_FINISH
+                  46  POP_FINALLY           0  ''
+                  48  RETURN_VALUE     
+                50_0  COME_FROM_WITH       20  '20'
+                  50  WITH_CLEANUP_START
+                  52  WITH_CLEANUP_FINISH
+
+../test/105186.pyc -- 
+# decompile failed
+
+# file ../test/105186.pyc
+# Deparsing stopped due to parse error

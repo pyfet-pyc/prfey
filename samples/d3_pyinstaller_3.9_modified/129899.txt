@@ -1,0 +1,423 @@
+
+# file test/129899.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "Lightweight XML support for Python.\n\n XML is an inherently hierarchical data format, and the most natural way to\n represent it is with a tree.  This module has two classes for this purpose:\n\n    1. ElementTree represents the whole XML document as a tree and\n\n    2. Element represents a single node in this tree.\n\n Interactions with the whole document (reading and writing to/from files) are\n usually done on the ElementTree level.  Interactions with a single XML element\n and its sub-elements are done on the Element level.\n\n Element is a flexible container object designed to store hierarchical data\n structures in memory. It can be described as a cross between a list and a\n dictionary.  Each Element has a number of properties associated with it:\n\n    'tag' - a string containing the element's name.\n\n    'attributes' - a Python dictionary storing the element's attributes.\n\n    'text' - a string containing the element's text content.\n\n    'tail' - an optional string containing text after the element's end tag.\n\n    And a number of child elements stored in a Python sequence.\n\n To create an element instance, use the Element constructor,\n or the SubElement factory function.\n\n You can also use the ElementTree class to wrap an element structure\n and convert it to and from XML.\n\n"
+                2  STORE_NAME               __doc__
+
+ L.  73         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('Comment', 'dump', 'Element', 'ElementTree', 'fromstring', 'fromstringlist', 'indent', 'iselement', 'iterparse', 'parse', 'ParseError', 'PI', 'ProcessingInstruction', 'QName', 'SubElement', 'tostring', 'tostringlist', 'TreeBuilder', 'VERSION', 'XML', 'XMLID', 'XMLParser', 'XMLPullParser', 'register_namespace', 'canonicalize', 'C14NWriterTarget')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  93        12  LOAD_STR                 '1.3.0'
+               14  STORE_NAME               VERSION
+
+ L.  95        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              sys
+               22  STORE_NAME               sys
+
+ L.  96        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              re
+               30  STORE_NAME               re
+
+ L.  97        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              warnings
+               38  STORE_NAME               warnings
+
+ L.  98        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              io
+               46  STORE_NAME               io
+
+ L.  99        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              collections
+               54  STORE_NAME               collections
+
+ L. 100        56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME_ATTR         collections.abc
+               62  STORE_NAME               collections
+
+ L. 101        64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              contextlib
+               70  STORE_NAME               contextlib
+
+ L. 103        72  LOAD_CONST               1
+               74  LOAD_CONST               ('ElementPath',)
+               76  IMPORT_NAME              
+               78  IMPORT_FROM              ElementPath
+               80  STORE_NAME               ElementPath
+               82  POP_TOP          
+
+ L. 106        84  LOAD_BUILD_CLASS 
+               86  LOAD_CODE                <code_object ParseError>
+               88  LOAD_STR                 'ParseError'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  LOAD_STR                 'ParseError'
+               94  LOAD_NAME                SyntaxError
+               96  CALL_FUNCTION_3       3  ''
+               98  STORE_NAME               ParseError
+
+ L. 120       100  LOAD_CODE                <code_object iselement>
+              102  LOAD_STR                 'iselement'
+              104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              106  STORE_NAME               iselement
+
+ L. 125       108  LOAD_BUILD_CLASS 
+              110  LOAD_CODE                <code_object Element>
+              112  LOAD_STR                 'Element'
+              114  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              116  LOAD_STR                 'Element'
+              118  CALL_FUNCTION_2       2  ''
+              120  STORE_NAME               Element
+
+ L. 426       122  BUILD_MAP_0           0 
+              124  BUILD_TUPLE_1         1 
+              126  LOAD_CODE                <code_object SubElement>
+              128  LOAD_STR                 'SubElement'
+              130  MAKE_FUNCTION_1          'default'
+              132  STORE_NAME               SubElement
+
+ L. 444       134  LOAD_CONST               (None,)
+              136  LOAD_CODE                <code_object Comment>
+              138  LOAD_STR                 'Comment'
+              140  MAKE_FUNCTION_1          'default'
+              142  STORE_NAME               Comment
+
+ L. 458       144  LOAD_CONST               (None,)
+              146  LOAD_CODE                <code_object ProcessingInstruction>
+              148  LOAD_STR                 'ProcessingInstruction'
+              150  MAKE_FUNCTION_1          'default'
+              152  STORE_NAME               ProcessingInstruction
+
+ L. 474       154  LOAD_NAME                ProcessingInstruction
+              156  STORE_NAME               PI
+
+ L. 477       158  LOAD_BUILD_CLASS 
+              160  LOAD_CODE                <code_object QName>
+              162  LOAD_STR                 'QName'
+              164  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              166  LOAD_STR                 'QName'
+              168  CALL_FUNCTION_2       2  ''
+              170  STORE_NAME               QName
+
+ L. 525       172  LOAD_BUILD_CLASS 
+              174  LOAD_CODE                <code_object ElementTree>
+              176  LOAD_STR                 'ElementTree'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  LOAD_STR                 'ElementTree'
+              182  CALL_FUNCTION_2       2  ''
+              184  STORE_NAME               ElementTree
+
+ L. 758       186  LOAD_NAME                contextlib
+              188  LOAD_ATTR                contextmanager
+
+ L. 759       190  LOAD_CODE                <code_object _get_writer>
+              192  LOAD_STR                 '_get_writer'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  CALL_FUNCTION_1       1  ''
+              198  STORE_NAME               _get_writer
+
+ L. 810       200  LOAD_CONST               (None,)
+              202  LOAD_CODE                <code_object _namespaces>
+              204  LOAD_STR                 '_namespaces'
+              206  MAKE_FUNCTION_1          'default'
+              208  STORE_NAME               _namespaces
+
+ L. 871       210  LOAD_CODE                <code_object _serialize_xml>
+              212  LOAD_STR                 '_serialize_xml'
+              214  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              216  STORE_NAME               _serialize_xml
+
+ L. 921       218  LOAD_CONST               ('area', 'base', 'basefont', 'br', 'col', 'frame', 'hr', 'img', 'input', 'isindex', 'link', 'meta', 'param')
+              220  STORE_NAME               HTML_EMPTY
+
+ L. 924       222  SETUP_FINALLY       236  'to 236'
+
+ L. 925       224  LOAD_NAME                set
+              226  LOAD_NAME                HTML_EMPTY
+              228  CALL_FUNCTION_1       1  ''
+              230  STORE_NAME               HTML_EMPTY
+              232  POP_BLOCK        
+              234  JUMP_FORWARD        256  'to 256'
+            236_0  COME_FROM_FINALLY   222  '222'
+
+ L. 926       236  DUP_TOP          
+              238  LOAD_NAME                NameError
+          240_242  <121>               254  ''
+              244  POP_TOP          
+              246  POP_TOP          
+              248  POP_TOP          
+
+ L. 927       250  POP_EXCEPT       
+              252  JUMP_FORWARD        256  'to 256'
+              254  <48>             
+            256_0  COME_FROM           252  '252'
+            256_1  COME_FROM           234  '234'
+
+ L. 929       256  LOAD_CODE                <code_object _serialize_html>
+              258  LOAD_STR                 '_serialize_html'
+              260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              262  STORE_NAME               _serialize_html
+
+ L. 979       264  LOAD_CODE                <code_object _serialize_text>
+              266  LOAD_STR                 '_serialize_text'
+              268  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              270  STORE_NAME               _serialize_text
+
+ L. 986       272  LOAD_NAME                _serialize_xml
+
+ L. 987       274  LOAD_NAME                _serialize_html
+
+ L. 988       276  LOAD_NAME                _serialize_text
+
+ L. 985       278  LOAD_CONST               ('xml', 'html', 'text')
+              280  BUILD_CONST_KEY_MAP_3     3 
+              282  STORE_NAME               _serialize
+
+ L. 994       284  LOAD_CODE                <code_object register_namespace>
+              286  LOAD_STR                 'register_namespace'
+              288  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              290  STORE_NAME               register_namespace
+
+ L.1015       292  LOAD_STR                 'xml'
+
+ L.1016       294  LOAD_STR                 'html'
+
+ L.1017       296  LOAD_STR                 'rdf'
+
+ L.1018       298  LOAD_STR                 'wsdl'
+
+ L.1020       300  LOAD_STR                 'xs'
+
+ L.1021       302  LOAD_STR                 'xsi'
+
+ L.1023       304  LOAD_STR                 'dc'
+
+ L.1013       306  LOAD_CONST               ('http://www.w3.org/XML/1998/namespace', 'http://www.w3.org/1999/xhtml', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#', 'http://schemas.xmlsoap.org/wsdl/', 'http://www.w3.org/2001/XMLSchema', 'http://www.w3.org/2001/XMLSchema-instance', 'http://purl.org/dc/elements/1.1/')
+              308  BUILD_CONST_KEY_MAP_7     7 
+              310  STORE_NAME               _namespace_map
+
+ L.1026       312  LOAD_NAME                _namespace_map
+              314  LOAD_NAME                register_namespace
+              316  STORE_ATTR               _namespace_map
+
+ L.1028       318  LOAD_CODE                <code_object _raise_serialization_error>
+              320  LOAD_STR                 '_raise_serialization_error'
+              322  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              324  STORE_NAME               _raise_serialization_error
+
+ L.1033       326  LOAD_CODE                <code_object _escape_cdata>
+              328  LOAD_STR                 '_escape_cdata'
+              330  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              332  STORE_NAME               _escape_cdata
+
+ L.1049       334  LOAD_CODE                <code_object _escape_attrib>
+              336  LOAD_STR                 '_escape_attrib'
+              338  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              340  STORE_NAME               _escape_attrib
+
+ L.1077       342  LOAD_CODE                <code_object _escape_attrib_html>
+              344  LOAD_STR                 '_escape_attrib_html'
+              346  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              348  STORE_NAME               _escape_attrib_html
+
+ L.1092       350  LOAD_CONST               (None, None)
+
+ L.1093       352  LOAD_CONST               None
+              354  LOAD_CONST               None
+
+ L.1094       356  LOAD_CONST               True
+
+ L.1092       358  LOAD_CONST               ('xml_declaration', 'default_namespace', 'short_empty_elements')
+              360  BUILD_CONST_KEY_MAP_3     3 
+              362  LOAD_CODE                <code_object tostring>
+              364  LOAD_STR                 'tostring'
+              366  MAKE_FUNCTION_3          'default, keyword-only'
+              368  STORE_NAME               tostring
+
+ L.1116       370  LOAD_BUILD_CLASS 
+              372  LOAD_CODE                <code_object _ListDataStream>
+              374  LOAD_STR                 '_ListDataStream'
+              376  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              378  LOAD_STR                 '_ListDataStream'
+              380  LOAD_NAME                io
+              382  LOAD_ATTR                BufferedIOBase
+              384  CALL_FUNCTION_3       3  ''
+              386  STORE_NAME               _ListDataStream
+
+ L.1133       388  LOAD_CONST               (None, None)
+
+ L.1134       390  LOAD_CONST               None
+              392  LOAD_CONST               None
+
+ L.1135       394  LOAD_CONST               True
+
+ L.1133       396  LOAD_CONST               ('xml_declaration', 'default_namespace', 'short_empty_elements')
+              398  BUILD_CONST_KEY_MAP_3     3 
+              400  LOAD_CODE                <code_object tostringlist>
+              402  LOAD_STR                 'tostringlist'
+              404  MAKE_FUNCTION_3          'default, keyword-only'
+              406  STORE_NAME               tostringlist
+
+ L.1146       408  LOAD_CODE                <code_object dump>
+              410  LOAD_STR                 'dump'
+              412  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              414  STORE_NAME               dump
+
+ L.1165       416  LOAD_CONST               ('  ', 0)
+              418  LOAD_CODE                <code_object indent>
+              420  LOAD_STR                 'indent'
+              422  MAKE_FUNCTION_1          'default'
+              424  STORE_NAME               indent
+
+ L.1219       426  LOAD_CONST               (None,)
+              428  LOAD_CODE                <code_object parse>
+              430  LOAD_STR                 'parse'
+              432  MAKE_FUNCTION_1          'default'
+              434  STORE_NAME               parse
+
+ L.1233       436  LOAD_CONST               (None, None)
+              438  LOAD_CODE                <code_object iterparse>
+              440  LOAD_STR                 'iterparse'
+              442  MAKE_FUNCTION_1          'default'
+              444  STORE_NAME               iterparse
+
+ L.1281       446  LOAD_BUILD_CLASS 
+              448  LOAD_CODE                <code_object XMLPullParser>
+              450  LOAD_STR                 'XMLPullParser'
+              452  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              454  LOAD_STR                 'XMLPullParser'
+              456  CALL_FUNCTION_2       2  ''
+              458  STORE_NAME               XMLPullParser
+
+ L.1334       460  LOAD_CONST               (None,)
+              462  LOAD_CODE                <code_object XML>
+              464  LOAD_STR                 'XML'
+              466  MAKE_FUNCTION_1          'default'
+              468  STORE_NAME               XML
+
+ L.1351       470  LOAD_CONST               (None,)
+              472  LOAD_CODE                <code_object XMLID>
+              474  LOAD_STR                 'XMLID'
+              476  MAKE_FUNCTION_1          'default'
+              478  STORE_NAME               XMLID
+
+ L.1373       480  LOAD_NAME                XML
+              482  STORE_NAME               fromstring
+
+ L.1375       484  LOAD_CONST               (None,)
+              486  LOAD_CODE                <code_object fromstringlist>
+              488  LOAD_STR                 'fromstringlist'
+              490  MAKE_FUNCTION_1          'default'
+              492  STORE_NAME               fromstringlist
+
+ L.1393       494  LOAD_BUILD_CLASS 
+              496  LOAD_CODE                <code_object TreeBuilder>
+              498  LOAD_STR                 'TreeBuilder'
+              500  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              502  LOAD_STR                 'TreeBuilder'
+              504  CALL_FUNCTION_2       2  ''
+              506  STORE_NAME               TreeBuilder
+
+ L.1515       508  LOAD_BUILD_CLASS 
+              510  LOAD_CODE                <code_object XMLParser>
+              512  LOAD_STR                 'XMLParser'
+              514  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              516  LOAD_STR                 'XMLParser'
+              518  CALL_FUNCTION_2       2  ''
+              520  STORE_NAME               XMLParser
+
+ L.1745       522  LOAD_CONST               (None,)
+              524  LOAD_CONST               None
+              526  LOAD_CONST               None
+              528  LOAD_CONST               ('out', 'from_file')
+              530  BUILD_CONST_KEY_MAP_2     2 
+              532  LOAD_CODE                <code_object canonicalize>
+              534  LOAD_STR                 'canonicalize'
+              536  MAKE_FUNCTION_3          'default, keyword-only'
+              538  STORE_NAME               canonicalize
+
+ L.1775       540  LOAD_NAME                re
+              542  LOAD_METHOD              compile
+              544  LOAD_STR                 '^\\w+:\\w+$'
+              546  LOAD_NAME                re
+              548  LOAD_ATTR                UNICODE
+              550  CALL_METHOD_2         2  ''
+              552  LOAD_ATTR                match
+              554  STORE_NAME               _looks_like_prefix_name
+
+ L.1778       556  LOAD_BUILD_CLASS 
+              558  LOAD_CODE                <code_object C14NWriterTarget>
+              560  LOAD_STR                 'C14NWriterTarget'
+              562  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              564  LOAD_STR                 'C14NWriterTarget'
+              566  CALL_FUNCTION_2       2  ''
+              568  STORE_NAME               C14NWriterTarget
+
+ L.2036       570  LOAD_CODE                <code_object _escape_cdata_c14n>
+              572  LOAD_STR                 '_escape_cdata_c14n'
+              574  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              576  STORE_NAME               _escape_cdata_c14n
+
+ L.2055       578  LOAD_CODE                <code_object _escape_attrib_c14n>
+              580  LOAD_STR                 '_escape_attrib_c14n'
+              582  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              584  STORE_NAME               _escape_attrib_c14n
+
+ L.2078       586  SETUP_FINALLY       616  'to 616'
+
+ L.2082       588  LOAD_NAME                Element
+              590  STORE_NAME               _Element_Py
+
+ L.2085       592  LOAD_CONST               0
+              594  LOAD_CONST               ('*',)
+              596  IMPORT_NAME              _elementtree
+              598  IMPORT_STAR      
+
+ L.2086       600  LOAD_CONST               0
+              602  LOAD_CONST               ('_set_factories',)
+              604  IMPORT_NAME              _elementtree
+              606  IMPORT_FROM              _set_factories
+              608  STORE_NAME               _set_factories
+              610  POP_TOP          
+              612  POP_BLOCK        
+              614  JUMP_FORWARD        636  'to 636'
+            616_0  COME_FROM_FINALLY   586  '586'
+
+ L.2087       616  DUP_TOP          
+              618  LOAD_NAME                ImportError
+          620_622  <121>               634  ''
+              624  POP_TOP          
+              626  POP_TOP          
+              628  POP_TOP          
+
+ L.2088       630  POP_EXCEPT       
+              632  JUMP_FORWARD        646  'to 646'
+              634  <48>             
+            636_0  COME_FROM           614  '614'
+
+ L.2090       636  LOAD_NAME                _set_factories
+              638  LOAD_NAME                Comment
+              640  LOAD_NAME                ProcessingInstruction
+              642  CALL_FUNCTION_2       2  ''
+              644  POP_TOP          
+            646_0  COME_FROM           632  '632'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L.  73         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('Comment', 'dump', 'Element', 'ElementTree', 'fromstring', 'fromstringlist', 'indent', 'iselement', 'iterparse', 'parse', 'ParseError', 'PI', 'ProcessingInstruction', 'QName', 'SubElement', 'tostring', 'tostringlist', 'TreeBuilder', 'VERSION', 'XML', 'XMLID', 'XMLParser', 'XMLPullParser', 'register_namespace', 'canonicalize', 'C14NWriterTarget')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/129899.pyc -- 
+# decompile failed

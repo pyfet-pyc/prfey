@@ -1,0 +1,81 @@
+Instruction context:
+   
+ L.  27         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('body_decode', 'body_encode', 'decode', 'decodestring', 'header_encode', 'header_length')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101212.pyc -- 
+# decompile failed
+
+# file test/101212.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_STR                 "Base64 content transfer encoding per RFCs 2045-2047.\n\nThis module handles the content transfer encoding method defined in RFC 2045\nto encode arbitrary 8-bit data using the three 8-bit bytes in four 7-bit\ncharacters encoding known as Base64.\n\nIt is used in the MIME standards for email to attach images, audio, and text\nusing some 8-bit character sets to messages.\n\nThis module provides an interface to encode and decode both headers and bodies\nwith Base64 encoding.\n\nRFC 2045 defines a method for including character set information in an\n`encoded-word' in a header.  This method is commonly used for 8-bit real names\nin To:, From:, Cc:, etc. fields, as well as Subject: lines.\n\nThis module does not do the line wrapping or end-of-line character conversion\nnecessary for proper internationalized headers; it only does dumb encoding and\ndecoding.  To deal with the various line wrapping issues, use the email.header\nmodule.\n"
+                2  STORE_NAME               __doc__
+
+ L.  27         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('body_decode', 'body_encode', 'decode', 'decodestring', 'header_encode', 'header_length')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  37        12  LOAD_CONST               0
+               14  LOAD_CONST               ('b64encode',)
+               16  IMPORT_NAME              base64
+               18  IMPORT_FROM              b64encode
+               20  STORE_NAME               b64encode
+               22  POP_TOP          
+
+ L.  38        24  LOAD_CONST               0
+               26  LOAD_CONST               ('b2a_base64', 'a2b_base64')
+               28  IMPORT_NAME              binascii
+               30  IMPORT_FROM              b2a_base64
+               32  STORE_NAME               b2a_base64
+               34  IMPORT_FROM              a2b_base64
+               36  STORE_NAME               a2b_base64
+               38  POP_TOP          
+
+ L.  40        40  LOAD_STR                 '\r\n'
+               42  STORE_NAME               CRLF
+
+ L.  41        44  LOAD_STR                 '\n'
+               46  STORE_NAME               NL
+
+ L.  42        48  LOAD_STR                 ''
+               50  STORE_NAME               EMPTYSTRING
+
+ L.  45        52  LOAD_CONST               7
+               54  STORE_NAME               MISC_LEN
+
+ L.  50        56  LOAD_CODE                <code_object header_length>
+               58  LOAD_STR                 'header_length'
+               60  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               62  STORE_NAME               header_length
+
+ L.  61        64  LOAD_CONST               ('iso-8859-1',)
+               66  LOAD_CODE                <code_object header_encode>
+               68  LOAD_STR                 'header_encode'
+               70  MAKE_FUNCTION_1          'default'
+               72  STORE_NAME               header_encode
+
+ L.  76        74  LOAD_CONST               76
+               76  LOAD_NAME                NL
+               78  BUILD_TUPLE_2         2 
+               80  LOAD_CODE                <code_object body_encode>
+               82  LOAD_STR                 'body_encode'
+               84  MAKE_FUNCTION_1          'default'
+               86  STORE_NAME               body_encode
+
+ L. 102        88  LOAD_CODE                <code_object decode>
+               90  LOAD_STR                 'decode'
+               92  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               94  STORE_NAME               decode
+
+ L. 118        96  LOAD_NAME                decode
+               98  STORE_NAME               body_decode
+
+ L. 119       100  LOAD_NAME                decode
+              102  STORE_NAME               decodestring
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

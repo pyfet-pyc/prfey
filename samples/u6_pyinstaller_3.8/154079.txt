@@ -1,0 +1,32 @@
+Instruction context:
+   
+ L. 262        70  POP_BLOCK        
+->                72  BEGIN_FINALLY    
+                  74  WITH_CLEANUP_START
+                  76  WITH_CLEANUP_FINISH
+                  78  POP_FINALLY           0  ''
+                  80  POP_BLOCK        
+                  82  JUMP_BACK            40  'to 40'
+                84_0  COME_FROM            68  '68'
+Instruction context:
+   
+ L. 381        64  LOAD_FAST                'db'
+                  66  LOAD_ATTR                types_map
+                  68  LOAD_CONST               True
+                  70  BINARY_SUBSCR    
+                  72  POP_BLOCK        
+->                74  ROT_TWO          
+                  76  BEGIN_FINALLY    
+                  78  WITH_CLEANUP_START
+                  80  WITH_CLEANUP_FINISH
+                  82  POP_FINALLY           0  ''
+                  84  RETURN_VALUE     
+                86_0  COME_FROM_WITH       42  '42'
+                  86  WITH_CLEANUP_START
+                  88  WITH_CLEANUP_FINISH
+
+../test/154079.pyc -- 
+# decompile failed
+
+# file ../test/154079.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,55 @@
+Instruction context:
+   
+ L.  47        38  LOAD_DEREF               'function'
+                  40  LOAD_FAST                'args'
+                  42  LOAD_FAST                'kwargs'
+                  44  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  46  POP_BLOCK        
+->                48  POP_BLOCK        
+                  50  CALL_FINALLY         94  'to 94'
+                  52  RETURN_VALUE     
+                54_0  COME_FROM_FINALLY    10  '10'
+Instruction context:
+   
+ L. 200       210  LOAD_FAST                'sock'
+                 212  POP_BLOCK        
+->               214  ROT_TWO          
+                 216  POP_TOP          
+                 218  RETURN_VALUE     
+               220_0  COME_FROM_FINALLY    96  '96'
+Instruction context:
+   
+ L. 539       486  LOAD_FAST                'resolved'
+                 488  LOAD_FAST                'bnd'
+                 490  BUILD_TUPLE_2         2 
+                 492  POP_BLOCK        
+->               494  CALL_FINALLY        498  'to 498'
+                 496  RETURN_VALUE     
+               498_0  COME_FROM           494  '494'
+               498_1  COME_FROM_FINALLY    40  '40'
+Instruction context:
+   
+ L. 562       120  LOAD_FAST                'host'
+                 122  LOAD_FAST                'port'
+                 124  BUILD_TUPLE_2         2 
+                 126  POP_BLOCK        
+->               128  ROT_TWO          
+                 130  POP_TOP          
+                 132  RETURN_VALUE     
+               134_0  COME_FROM_FINALLY    58  '58'
+Instruction context:
+-> 
+ L. 830        22  DUP_TOP          
+                  24  LOAD_GLOBAL              OSError
+                  26  COMPARE_OP               exception-match
+                  28  POP_JUMP_IF_FALSE    76  'to 76'
+                  30  POP_TOP          
+                  32  STORE_FAST               'e'
+                  34  POP_TOP          
+                  36  SETUP_FINALLY        64  'to 64'
+
+../test/10312.pyc -- 
+# decompile failed
+
+# file ../test/10312.pyc
+# Deparsing stopped due to parse error

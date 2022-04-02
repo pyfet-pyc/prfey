@@ -1,0 +1,166 @@
+Instruction context:
+   
+ L.  18       144  BUILD_LIST_0          0 
+                 146  LOAD_CONST               ('ensure_running', 'get_inherited_fds', 'connect_to_new_process', 'set_forkserver_preload')
+->               148  CALL_FINALLY        151  'to 151'
+                 150  STORE_NAME               __all__
+
+test/164530.pyc -- 
+# decompile failed
+
+# file test/164530.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              errno
+                6  STORE_NAME               errno
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              os
+               14  STORE_NAME               os
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              selectors
+               22  STORE_NAME               selectors
+
+ L.   4        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              signal
+               30  STORE_NAME               signal
+
+ L.   5        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              socket
+               38  STORE_NAME               socket
+
+ L.   6        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              struct
+               46  STORE_NAME               struct
+
+ L.   7        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              sys
+               54  STORE_NAME               sys
+
+ L.   8        56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              threading
+               62  STORE_NAME               threading
+
+ L.   9        64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              warnings
+               70  STORE_NAME               warnings
+
+ L.  11        72  LOAD_CONST               1
+               74  LOAD_CONST               ('connection',)
+               76  IMPORT_NAME              
+               78  IMPORT_FROM              connection
+               80  STORE_NAME               connection
+               82  POP_TOP          
+
+ L.  12        84  LOAD_CONST               1
+               86  LOAD_CONST               ('process',)
+               88  IMPORT_NAME              
+               90  IMPORT_FROM              process
+               92  STORE_NAME               process
+               94  POP_TOP          
+
+ L.  13        96  LOAD_CONST               1
+               98  LOAD_CONST               ('reduction',)
+              100  IMPORT_NAME              context
+              102  IMPORT_FROM              reduction
+              104  STORE_NAME               reduction
+              106  POP_TOP          
+
+ L.  14       108  LOAD_CONST               1
+              110  LOAD_CONST               ('resource_tracker',)
+              112  IMPORT_NAME              
+              114  IMPORT_FROM              resource_tracker
+              116  STORE_NAME               resource_tracker
+              118  POP_TOP          
+
+ L.  15       120  LOAD_CONST               1
+              122  LOAD_CONST               ('spawn',)
+              124  IMPORT_NAME              
+              126  IMPORT_FROM              spawn
+              128  STORE_NAME               spawn
+              130  POP_TOP          
+
+ L.  16       132  LOAD_CONST               1
+              134  LOAD_CONST               ('util',)
+              136  IMPORT_NAME              
+              138  IMPORT_FROM              util
+              140  STORE_NAME               util
+              142  POP_TOP          
+
+ L.  18       144  BUILD_LIST_0          0 
+              146  LOAD_CONST               ('ensure_running', 'get_inherited_fds', 'connect_to_new_process', 'set_forkserver_preload')
+              148  CALL_FINALLY        151  'to 151'
+              150  STORE_NAME               __all__
+
+ L.  25       152  LOAD_CONST               256
+              154  STORE_NAME               MAXFDS_TO_SEND
+
+ L.  26       156  LOAD_NAME                struct
+              158  LOAD_METHOD              Struct
+              160  LOAD_STR                 'q'
+              162  CALL_METHOD_1         1  ''
+              164  STORE_NAME               SIGNED_STRUCT
+
+ L.  32       166  LOAD_BUILD_CLASS 
+              168  LOAD_CODE                <code_object ForkServer>
+              170  LOAD_STR                 'ForkServer'
+              172  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              174  LOAD_STR                 'ForkServer'
+              176  LOAD_NAME                object
+              178  CALL_FUNCTION_3       3  ''
+              180  STORE_NAME               ForkServer
+
+ L. 167       182  LOAD_CONST               (None, None)
+              184  LOAD_CODE                <code_object main>
+              186  LOAD_STR                 'main'
+              188  MAKE_FUNCTION_1          'default'
+              190  STORE_NAME               main
+
+ L. 299       192  LOAD_CODE                <code_object _serve_one>
+              194  LOAD_STR                 '_serve_one'
+              196  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              198  STORE_NAME               _serve_one
+
+ L. 322       200  LOAD_CODE                <code_object read_signed>
+              202  LOAD_STR                 'read_signed'
+              204  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              206  STORE_NAME               read_signed
+
+ L. 332       208  LOAD_CODE                <code_object write_signed>
+              210  LOAD_STR                 'write_signed'
+              212  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              214  STORE_NAME               write_signed
+
+ L. 344       216  LOAD_NAME                ForkServer
+              218  CALL_FUNCTION_0       0  ''
+              220  STORE_NAME               _forkserver
+
+ L. 345       222  LOAD_NAME                _forkserver
+              224  LOAD_ATTR                ensure_running
+              226  STORE_NAME               ensure_running
+
+ L. 346       228  LOAD_NAME                _forkserver
+              230  LOAD_ATTR                get_inherited_fds
+              232  STORE_NAME               get_inherited_fds
+
+ L. 347       234  LOAD_NAME                _forkserver
+              236  LOAD_ATTR                connect_to_new_process
+              238  STORE_NAME               connect_to_new_process
+
+ L. 348       240  LOAD_NAME                _forkserver
+              242  LOAD_ATTR                set_forkserver_preload
+              244  STORE_NAME               set_forkserver_preload
+
+Parse error at or near `CALL_FINALLY' instruction at offset 148
+

@@ -1,0 +1,20 @@
+Instruction context:
+   
+ L. 105       128  LOAD_FAST                'func'
+                 130  LOAD_FAST                'stdscr'
+                 132  BUILD_TUPLE_1         1 
+                 134  LOAD_FAST                'args'
+                 136  BUILD_TUPLE_UNPACK_WITH_CALL_2     2 
+                 138  LOAD_FAST                'kwds'
+                 140  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                 142  POP_BLOCK        
+->               144  CALL_FINALLY        148  'to 148'
+                 146  RETURN_VALUE     
+               148_0  COME_FROM           144  '144'
+               148_1  COME_FROM_FINALLY    74  '74'
+
+../test/125117.pyc -- 
+# decompile failed
+
+# file ../test/125117.pyc
+# Deparsing stopped due to parse error

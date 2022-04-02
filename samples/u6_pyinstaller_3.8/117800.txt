@@ -1,0 +1,46 @@
+Instruction context:
+   
+ L. 206        72  POP_BLOCK        
+                  74  POP_EXCEPT       
+->                76  CALL_FINALLY         82  'to 82'
+                  78  LOAD_CONST               None
+                  80  RETURN_VALUE     
+                82_0  COME_FROM            76  '76'
+                82_1  COME_FROM_FINALLY    58  '58'
+                  82  LOAD_CONST               None
+                  84  STORE_FAST               'e'
+                  86  DELETE_FAST              'e'
+                  88  END_FINALLY      
+                  90  POP_EXCEPT       
+                  92  JUMP_FORWARD         96  'to 96'
+                94_0  COME_FROM            50  '50'
+                  94  END_FINALLY      
+                96_0  COME_FROM            92  '92'
+                96_1  COME_FROM            42  '42'
+Instruction context:
+   
+ L. 391         4  LOAD_FAST                'inst'
+                   6  LOAD_ATTR                _cache
+                   8  LOAD_FAST                'self'
+                  10  LOAD_ATTR                name
+                  12  BINARY_SUBSCR    
+                  14  POP_BLOCK        
+->                16  POP_BLOCK        
+                  18  RETURN_VALUE     
+                20_0  COME_FROM_FINALLY     2  '2'
+Instruction context:
+   
+ L. 688        12  LOAD_FAST                'mapping'
+                  14  LOAD_FAST                'key'
+                  16  BINARY_SUBSCR    
+                  18  POP_BLOCK        
+->                20  ROT_TWO          
+                  22  POP_TOP          
+                  24  RETURN_VALUE     
+                26_0  COME_FROM_FINALLY    10  '10'
+
+../test/117800.pyc -- 
+# decompile failed
+
+# file ../test/117800.pyc
+# Deparsing stopped due to parse error

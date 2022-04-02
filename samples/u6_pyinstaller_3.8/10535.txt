@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L.  60        10  LOAD_FAST                'session'
+                  12  LOAD_ATTR                request
+                  14  BUILD_TUPLE_0         0 
+                  16  LOAD_FAST                'method'
+                  18  LOAD_FAST                'url'
+                  20  LOAD_CONST               ('method', 'url')
+                  22  BUILD_CONST_KEY_MAP_2     2 
+                  24  LOAD_FAST                'kwargs'
+                  26  BUILD_MAP_UNPACK_WITH_CALL_2     2 
+                  28  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  30  POP_BLOCK        
+->                32  ROT_TWO          
+                  34  BEGIN_FINALLY    
+                  36  WITH_CLEANUP_START
+                  38  WITH_CLEANUP_FINISH
+                  40  POP_FINALLY           0  ''
+                  42  RETURN_VALUE     
+                44_0  COME_FROM_WITH        6  '6'
+                  44  WITH_CLEANUP_START
+                  46  WITH_CLEANUP_FINISH
+
+../test/10535.pyc -- 
+# decompile failed
+
+# file ../test/10535.pyc
+# Deparsing stopped due to parse error

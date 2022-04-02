@@ -1,0 +1,24 @@
+Instruction context:
+   
+ L. 412        44  LOAD_STR                 'hide'
+                  46  LOAD_FAST                'var'
+                  48  LOAD_STR                 'intent'
+                  50  BINARY_SUBSCR    
+                  52  COMPARE_OP               not-in
+                  54  JUMP_IF_FALSE_OR_POP    66  'to 66'
+                  56  LOAD_STR                 'inplace'
+                  58  LOAD_FAST                'var'
+                  60  LOAD_STR                 'intent'
+                  62  BINARY_SUBSCR    
+                  64  COMPARE_OP               not-in
+                66_0  COME_FROM            54  '54'
+                66_1  COME_FROM            42  '42'
+                66_2  COME_FROM            30  '30'
+->              66_3  COME_FROM             6  '6'
+                  66  RETURN_VALUE     
+
+../test/5497.pyc -- 
+# decompile failed
+
+# file ../test/5497.pyc
+# Deparsing stopped due to parse error

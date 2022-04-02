@@ -1,0 +1,351 @@
+
+# file test/103936.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'HTTP/1.1 client library\n\n<intro stuff goes here>\n<other stuff, too>\n\nHTTPConnection goes through a number of "states", which define when a client\nmay legally make another request or fetch the response for a particular\nrequest. This diagram details these state transitions:\n\n    (null)\n      |\n      | HTTPConnection()\n      v\n    Idle\n      |\n      | putrequest()\n      v\n    Request-started\n      |\n      | ( putheader() )*  endheaders()\n      v\n    Request-sent\n      |\\_____________________________\n      |                              | getresponse() raises\n      | response = getresponse()     | ConnectionError\n      v                              v\n    Unread-response                Idle\n    [Response-headers-read]\n      |\\____________________\n      |                     |\n      | response.read()     | putrequest()\n      v                     v\n    Idle                  Req-started-unread-response\n                     ______/|\n                   /        |\n   response.read() |        | ( putheader() )*  endheaders()\n                   v        v\n       Request-started    Req-sent-unread-response\n                            |\n                            | response.read()\n                            v\n                          Request-sent\n\nThis diagram presents the following rules:\n  -- a second request may not be started until {response-headers-read}\n  -- a response [object] cannot be retrieved until {request-sent}\n  -- there is no differentiation between an unread response body and a\n     partially read response body\n\nNote: this enforcement is applied by the HTTPConnection class. The\n      HTTPResponse class does not enforce this state machine, which\n      implies sophisticated clients may accelerate the request/response\n      pipeline. Caution should be taken, though: accelerating the states\n      beyond the above pattern may imply knowledge of the server\'s\n      connection-close behavior for certain requests. For example, it\n      is impossible to tell whether the server will close the connection\n      UNTIL the response headers have been read; this means that further\n      requests cannot be placed into the pipeline until it is known that\n      the server will NOT be closing the connection.\n\nLogical State                  __state            __response\n-------------                  -------            ----------\nIdle                           _CS_IDLE           None\nRequest-started                _CS_REQ_STARTED    None\nRequest-sent                   _CS_REQ_SENT       None\nUnread-response                _CS_IDLE           <response_class>\nReq-started-unread-response    _CS_REQ_STARTED    <response_class>\nReq-sent-unread-response       _CS_REQ_SENT       <response_class>\n'
+                2  STORE_NAME               __doc__
+
+ L.  71         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME_ATTR         email.parser
+               10  STORE_NAME               email
+
+ L.  72        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME_ATTR         email.message
+               18  STORE_NAME               email
+
+ L.  73        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              http
+               26  STORE_NAME               http
+
+ L.  74        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              io
+               34  STORE_NAME               io
+
+ L.  75        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              re
+               42  STORE_NAME               re
+
+ L.  76        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              socket
+               50  STORE_NAME               socket
+
+ L.  77        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME_ATTR         collections.abc
+               58  STORE_NAME               collections
+
+ L.  78        60  LOAD_CONST               0
+               62  LOAD_CONST               ('urlsplit',)
+               64  IMPORT_NAME_ATTR         urllib.parse
+               66  IMPORT_FROM              urlsplit
+               68  STORE_NAME               urlsplit
+               70  POP_TOP          
+
+ L.  82        72  BUILD_LIST_0          0 
+               74  LOAD_CONST               ('HTTPResponse', 'HTTPConnection', 'HTTPException', 'NotConnected', 'UnknownProtocol', 'UnknownTransferEncoding', 'UnimplementedFileMode', 'IncompleteRead', 'InvalidURL', 'ImproperConnectionState', 'CannotSendRequest', 'CannotSendHeader', 'ResponseNotReady', 'BadStatusLine', 'LineTooLong', 'RemoteDisconnected', 'error', 'responses')
+               76  CALL_FINALLY         79  'to 79'
+               78  STORE_NAME               __all__
+
+ L.  90        80  LOAD_CONST               80
+               82  STORE_NAME               HTTP_PORT
+
+ L.  91        84  LOAD_CONST               443
+               86  STORE_NAME               HTTPS_PORT
+
+ L.  93        88  LOAD_STR                 'UNKNOWN'
+               90  STORE_NAME               _UNKNOWN
+
+ L.  96        92  LOAD_STR                 'Idle'
+               94  STORE_NAME               _CS_IDLE
+
+ L.  97        96  LOAD_STR                 'Request-started'
+               98  STORE_NAME               _CS_REQ_STARTED
+
+ L.  98       100  LOAD_STR                 'Request-sent'
+              102  STORE_NAME               _CS_REQ_SENT
+
+ L. 102       104  LOAD_NAME                globals
+              106  CALL_FUNCTION_0       0  ''
+              108  LOAD_METHOD              update
+              110  LOAD_NAME                http
+              112  LOAD_ATTR                HTTPStatus
+              114  LOAD_ATTR                __members__
+              116  CALL_METHOD_1         1  ''
+              118  POP_TOP          
+
+ L. 106       120  LOAD_DICTCOMP            '<code_object <dictcomp>>'
+              122  LOAD_STR                 '<dictcomp>'
+              124  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              126  LOAD_NAME                http
+              128  LOAD_ATTR                HTTPStatus
+              130  LOAD_ATTR                __members__
+              132  LOAD_METHOD              values
+              134  CALL_METHOD_0         0  ''
+              136  GET_ITER         
+              138  CALL_FUNCTION_1       1  ''
+              140  STORE_NAME               responses
+
+ L. 109       142  LOAD_CONST               65536
+              144  STORE_NAME               _MAXLINE
+
+ L. 110       146  LOAD_CONST               100
+              148  STORE_NAME               _MAXHEADERS
+
+ L. 137       150  LOAD_NAME                re
+              152  LOAD_METHOD              compile
+              154  LOAD_CONST               b'[^:\\s][^:\\r\\n]*'
+              156  CALL_METHOD_1         1  ''
+              158  LOAD_ATTR                fullmatch
+              160  STORE_NAME               _is_legal_header_name
+
+ L. 138       162  LOAD_NAME                re
+              164  LOAD_METHOD              compile
+              166  LOAD_CONST               b'\\n(?![ \\t])|\\r(?![ \\t\\n])'
+              168  CALL_METHOD_1         1  ''
+              170  LOAD_ATTR                search
+              172  STORE_NAME               _is_illegal_header_value
+
+ L. 145       174  LOAD_NAME                re
+              176  LOAD_METHOD              compile
+              178  LOAD_STR                 '[\x00- \x7f]'
+              180  CALL_METHOD_1         1  ''
+              182  STORE_NAME               _contains_disallowed_url_pchar_re
+
+ L. 152       184  LOAD_NAME                re
+              186  LOAD_METHOD              compile
+              188  LOAD_STR                 '[\x00-\x1f]'
+              190  CALL_METHOD_1         1  ''
+              192  STORE_NAME               _contains_disallowed_method_pchar_re
+
+ L. 156       194  BUILD_SET_0           0 
+              196  LOAD_CONST               frozenset({'PUT', 'POST', 'PATCH'})
+              198  POP_FINALLY           1  ''
+              200  STORE_NAME               _METHODS_EXPECTING_BODY
+
+ L. 159       202  LOAD_CONST               ('data',)
+              204  LOAD_CODE                <code_object _encode>
+              206  LOAD_STR                 '_encode'
+              208  MAKE_FUNCTION_1          'default'
+              210  STORE_NAME               _encode
+
+ L. 174       212  LOAD_BUILD_CLASS 
+              214  LOAD_CODE                <code_object HTTPMessage>
+              216  LOAD_STR                 'HTTPMessage'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  LOAD_STR                 'HTTPMessage'
+              222  LOAD_NAME                email
+              224  LOAD_ATTR                message
+              226  LOAD_ATTR                Message
+              228  CALL_FUNCTION_3       3  ''
+              230  STORE_NAME               HTTPMessage
+
+ L. 204       232  LOAD_NAME                HTTPMessage
+              234  BUILD_TUPLE_1         1 
+              236  LOAD_CODE                <code_object parse_headers>
+              238  LOAD_STR                 'parse_headers'
+              240  MAKE_FUNCTION_1          'default'
+              242  STORE_NAME               parse_headers
+
+ L. 228       244  LOAD_BUILD_CLASS 
+              246  LOAD_CODE                <code_object HTTPResponse>
+              248  LOAD_STR                 'HTTPResponse'
+              250  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              252  LOAD_STR                 'HTTPResponse'
+              254  LOAD_NAME                io
+              256  LOAD_ATTR                BufferedIOBase
+              258  CALL_FUNCTION_3       3  ''
+              260  STORE_NAME               HTTPResponse
+
+ L. 768       262  LOAD_BUILD_CLASS 
+              264  LOAD_CODE                <code_object HTTPConnection>
+              266  LOAD_STR                 'HTTPConnection'
+              268  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              270  LOAD_STR                 'HTTPConnection'
+              272  CALL_FUNCTION_2       2  ''
+              274  STORE_NAME               HTTPConnection
+
+ L.1364       276  SETUP_FINALLY       290  'to 290'
+
+ L.1365       278  LOAD_CONST               0
+              280  LOAD_CONST               None
+              282  IMPORT_NAME              ssl
+              284  STORE_NAME               ssl
+              286  POP_BLOCK        
+              288  JUMP_FORWARD        310  'to 310'
+            290_0  COME_FROM_FINALLY   276  '276'
+
+ L.1366       290  DUP_TOP          
+              292  LOAD_NAME                ImportError
+          294_296  <121>               308  ''
+              298  POP_TOP          
+              300  POP_TOP          
+              302  POP_TOP          
+
+ L.1367       304  POP_EXCEPT       
+              306  JUMP_FORWARD        336  'to 336'
+              308  <48>             
+            310_0  COME_FROM           288  '288'
+
+ L.1369       310  LOAD_BUILD_CLASS 
+              312  LOAD_CODE                <code_object HTTPSConnection>
+              314  LOAD_STR                 'HTTPSConnection'
+              316  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              318  LOAD_STR                 'HTTPSConnection'
+              320  LOAD_NAME                HTTPConnection
+              322  CALL_FUNCTION_3       3  ''
+              324  STORE_NAME               HTTPSConnection
+
+ L.1425       326  LOAD_NAME                __all__
+              328  LOAD_METHOD              append
+              330  LOAD_STR                 'HTTPSConnection'
+              332  CALL_METHOD_1         1  ''
+              334  POP_TOP          
+            336_0  COME_FROM           306  '306'
+
+ L.1427       336  LOAD_BUILD_CLASS 
+              338  LOAD_CODE                <code_object HTTPException>
+              340  LOAD_STR                 'HTTPException'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  LOAD_STR                 'HTTPException'
+              346  LOAD_NAME                Exception
+              348  CALL_FUNCTION_3       3  ''
+              350  STORE_NAME               HTTPException
+
+ L.1432       352  LOAD_BUILD_CLASS 
+              354  LOAD_CODE                <code_object NotConnected>
+              356  LOAD_STR                 'NotConnected'
+              358  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              360  LOAD_STR                 'NotConnected'
+              362  LOAD_NAME                HTTPException
+              364  CALL_FUNCTION_3       3  ''
+              366  STORE_NAME               NotConnected
+
+ L.1435       368  LOAD_BUILD_CLASS 
+              370  LOAD_CODE                <code_object InvalidURL>
+              372  LOAD_STR                 'InvalidURL'
+              374  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              376  LOAD_STR                 'InvalidURL'
+              378  LOAD_NAME                HTTPException
+              380  CALL_FUNCTION_3       3  ''
+              382  STORE_NAME               InvalidURL
+
+ L.1438       384  LOAD_BUILD_CLASS 
+              386  LOAD_CODE                <code_object UnknownProtocol>
+              388  LOAD_STR                 'UnknownProtocol'
+              390  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              392  LOAD_STR                 'UnknownProtocol'
+              394  LOAD_NAME                HTTPException
+              396  CALL_FUNCTION_3       3  ''
+              398  STORE_NAME               UnknownProtocol
+
+ L.1443       400  LOAD_BUILD_CLASS 
+              402  LOAD_CODE                <code_object UnknownTransferEncoding>
+              404  LOAD_STR                 'UnknownTransferEncoding'
+              406  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              408  LOAD_STR                 'UnknownTransferEncoding'
+              410  LOAD_NAME                HTTPException
+              412  CALL_FUNCTION_3       3  ''
+              414  STORE_NAME               UnknownTransferEncoding
+
+ L.1446       416  LOAD_BUILD_CLASS 
+              418  LOAD_CODE                <code_object UnimplementedFileMode>
+              420  LOAD_STR                 'UnimplementedFileMode'
+              422  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              424  LOAD_STR                 'UnimplementedFileMode'
+              426  LOAD_NAME                HTTPException
+              428  CALL_FUNCTION_3       3  ''
+              430  STORE_NAME               UnimplementedFileMode
+
+ L.1449       432  LOAD_BUILD_CLASS 
+              434  LOAD_CODE                <code_object IncompleteRead>
+              436  LOAD_STR                 'IncompleteRead'
+              438  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              440  LOAD_STR                 'IncompleteRead'
+              442  LOAD_NAME                HTTPException
+              444  CALL_FUNCTION_3       3  ''
+              446  STORE_NAME               IncompleteRead
+
+ L.1463       448  LOAD_BUILD_CLASS 
+              450  LOAD_CODE                <code_object ImproperConnectionState>
+              452  LOAD_STR                 'ImproperConnectionState'
+              454  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              456  LOAD_STR                 'ImproperConnectionState'
+              458  LOAD_NAME                HTTPException
+              460  CALL_FUNCTION_3       3  ''
+              462  STORE_NAME               ImproperConnectionState
+
+ L.1466       464  LOAD_BUILD_CLASS 
+              466  LOAD_CODE                <code_object CannotSendRequest>
+              468  LOAD_STR                 'CannotSendRequest'
+              470  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              472  LOAD_STR                 'CannotSendRequest'
+              474  LOAD_NAME                ImproperConnectionState
+              476  CALL_FUNCTION_3       3  ''
+              478  STORE_NAME               CannotSendRequest
+
+ L.1469       480  LOAD_BUILD_CLASS 
+              482  LOAD_CODE                <code_object CannotSendHeader>
+              484  LOAD_STR                 'CannotSendHeader'
+              486  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              488  LOAD_STR                 'CannotSendHeader'
+              490  LOAD_NAME                ImproperConnectionState
+              492  CALL_FUNCTION_3       3  ''
+              494  STORE_NAME               CannotSendHeader
+
+ L.1472       496  LOAD_BUILD_CLASS 
+              498  LOAD_CODE                <code_object ResponseNotReady>
+              500  LOAD_STR                 'ResponseNotReady'
+              502  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              504  LOAD_STR                 'ResponseNotReady'
+              506  LOAD_NAME                ImproperConnectionState
+              508  CALL_FUNCTION_3       3  ''
+              510  STORE_NAME               ResponseNotReady
+
+ L.1475       512  LOAD_BUILD_CLASS 
+              514  LOAD_CODE                <code_object BadStatusLine>
+              516  LOAD_STR                 'BadStatusLine'
+              518  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              520  LOAD_STR                 'BadStatusLine'
+              522  LOAD_NAME                HTTPException
+              524  CALL_FUNCTION_3       3  ''
+              526  STORE_NAME               BadStatusLine
+
+ L.1482       528  LOAD_BUILD_CLASS 
+              530  LOAD_CODE                <code_object LineTooLong>
+              532  LOAD_STR                 'LineTooLong'
+              534  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              536  LOAD_STR                 'LineTooLong'
+              538  LOAD_NAME                HTTPException
+              540  CALL_FUNCTION_3       3  ''
+              542  STORE_NAME               LineTooLong
+
+ L.1487       544  LOAD_BUILD_CLASS 
+              546  LOAD_CODE                <code_object RemoteDisconnected>
+              548  LOAD_STR                 'RemoteDisconnected'
+              550  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              552  LOAD_STR                 'RemoteDisconnected'
+              554  LOAD_NAME                ConnectionResetError
+              556  LOAD_NAME                BadStatusLine
+              558  CALL_FUNCTION_4       4  ''
+              560  STORE_NAME               RemoteDisconnected
+
+ L.1493       562  LOAD_NAME                HTTPException
+              564  STORE_NAME               error
+
+Parse error at or near `CALL_FINALLY' instruction at offset 76
+
+Instruction context:
+   
+ L.  82        72  BUILD_LIST_0          0 
+                  74  LOAD_CONST               ('HTTPResponse', 'HTTPConnection', 'HTTPException', 'NotConnected', 'UnknownProtocol', 'UnknownTransferEncoding', 'UnimplementedFileMode', 'IncompleteRead', 'InvalidURL', 'ImproperConnectionState', 'CannotSendRequest', 'CannotSendHeader', 'ResponseNotReady', 'BadStatusLine', 'LineTooLong', 'RemoteDisconnected', 'error', 'responses')
+->                76  CALL_FINALLY         79  'to 79'
+                  78  STORE_NAME               __all__
+
+test/103936.pyc -- 
+# decompile failed

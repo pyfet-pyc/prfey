@@ -1,0 +1,171 @@
+
+# file test/164846.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'JSON (JavaScript Object Notation) <http://json.org> is a subset of\nJavaScript syntax (ECMA-262 3rd edition) used as a lightweight data\ninterchange format.\n\n:mod:`simplejson` exposes an API familiar to users of the standard library\n:mod:`marshal` and :mod:`pickle` modules. It is the externally maintained\nversion of the :mod:`json` library contained in Python 2.6, but maintains\ncompatibility back to Python 2.5 and (currently) has significant performance\nadvantages, even without using the optional C extension for speedups.\n\nEncoding basic Python object hierarchies::\n\n    >>> import simplejson as json\n    >>> json.dumps([\'foo\', {\'bar\': (\'baz\', None, 1.0, 2)}])\n    \'["foo", {"bar": ["baz", null, 1.0, 2]}]\'\n    >>> print(json.dumps("\\"foo\\bar"))\n    "\\"foo\\bar"\n    >>> print(json.dumps(u\'\\u1234\'))\n    "\\u1234"\n    >>> print(json.dumps(\'\\\\\'))\n    "\\\\"\n    >>> print(json.dumps({"c": 0, "b": 0, "a": 0}, sort_keys=True))\n    {"a": 0, "b": 0, "c": 0}\n    >>> from simplejson.compat import StringIO\n    >>> io = StringIO()\n    >>> json.dump([\'streaming API\'], io)\n    >>> io.getvalue()\n    \'["streaming API"]\'\n\nCompact encoding::\n\n    >>> import simplejson as json\n    >>> obj = [1,2,3,{\'4\': 5, \'6\': 7}]\n    >>> json.dumps(obj, separators=(\',\',\':\'), sort_keys=True)\n    \'[1,2,3,{"4":5,"6":7}]\'\n\nPretty printing::\n\n    >>> import simplejson as json\n    >>> print(json.dumps({\'4\': 5, \'6\': 7}, sort_keys=True, indent=\'    \'))\n    {\n        "4": 5,\n        "6": 7\n    }\n\nDecoding JSON::\n\n    >>> import simplejson as json\n    >>> obj = [u\'foo\', {u\'bar\': [u\'baz\', None, 1.0, 2]}]\n    >>> json.loads(\'["foo", {"bar":["baz", null, 1.0, 2]}]\') == obj\n    True\n    >>> json.loads(\'"\\\\"foo\\\\bar"\') == u\'"foo\\x08ar\'\n    True\n    >>> from simplejson.compat import StringIO\n    >>> io = StringIO(\'["streaming API"]\')\n    >>> json.load(io)[0] == \'streaming API\'\n    True\n\nSpecializing JSON object decoding::\n\n    >>> import simplejson as json\n    >>> def as_complex(dct):\n    ...     if \'__complex__\' in dct:\n    ...         return complex(dct[\'real\'], dct[\'imag\'])\n    ...     return dct\n    ...\n    >>> json.loads(\'{"__complex__": true, "real": 1, "imag": 2}\',\n    ...     object_hook=as_complex)\n    (1+2j)\n    >>> from decimal import Decimal\n    >>> json.loads(\'1.1\', parse_float=Decimal) == Decimal(\'1.1\')\n    True\n\nSpecializing JSON object encoding::\n\n    >>> import simplejson as json\n    >>> def encode_complex(obj):\n    ...     if isinstance(obj, complex):\n    ...         return [obj.real, obj.imag]\n    ...     raise TypeError(\'Object of type %s is not JSON serializable\' %\n    ...                     obj.__class__.__name__)\n    ...\n    >>> json.dumps(2 + 1j, default=encode_complex)\n    \'[2.0, 1.0]\'\n    >>> json.JSONEncoder(default=encode_complex).encode(2 + 1j)\n    \'[2.0, 1.0]\'\n    >>> \'\'.join(json.JSONEncoder(default=encode_complex).iterencode(2 + 1j))\n    \'[2.0, 1.0]\'\n\nUsing simplejson.tool from the shell to validate and pretty-print::\n\n    $ echo \'{"json":"obj"}\' | python -m simplejson.tool\n    {\n        "json": "obj"\n    }\n    $ echo \'{ 1.2:3.4}\' | python -m simplejson.tool\n    Expecting property name: line 1 column 3 (char 2)\n\nParsing multiple documents serialized as JSON lines (newline-delimited JSON)::\n\n    >>> import simplejson as json\n    >>> def loads_lines(docs):\n    ...     for doc in docs.splitlines():\n    ...         yield json.loads(doc)\n    ...\n    >>> sum(doc["count"] for doc in loads_lines(\'{"count":1}\\n{"count":2}\\n{"count":3}\\n\'))\n    6\n\nSerializing multiple objects to JSON lines (newline-delimited JSON)::\n\n    >>> import simplejson as json\n    >>> def dumps_lines(objs):\n    ...     for obj in objs:\n    ...         yield json.dumps(obj, separators=(\',\',\':\')) + \'\\n\'\n    ...\n    >>> \'\'.join(dumps_lines([{\'count\': 1}, {\'count\': 2}, {\'count\': 3}]))\n    \'{"count":1}\\n{"count":2}\\n{"count":3}\\n\'\n\n'
+                2  STORE_NAME               __doc__
+
+ L. 120         4  LOAD_CONST               0
+                6  LOAD_CONST               ('absolute_import',)
+                8  IMPORT_NAME              __future__
+               10  IMPORT_FROM              absolute_import
+               12  STORE_NAME               absolute_import
+               14  POP_TOP          
+
+ L. 121        16  LOAD_STR                 '3.17.2'
+               18  STORE_NAME               __version__
+
+ L. 122        20  BUILD_LIST_0          0 
+               22  LOAD_CONST               ('dump', 'dumps', 'load', 'loads', 'JSONDecoder', 'JSONDecodeError', 'JSONEncoder', 'OrderedDict', 'simple_first', 'RawJSON')
+               24  CALL_FINALLY         27  'to 27'
+               26  STORE_NAME               __all__
+
+ L. 128        28  LOAD_STR                 'Bob Ippolito <bob@redivi.com>'
+               30  STORE_NAME               __author__
+
+ L. 130        32  LOAD_CONST               0
+               34  LOAD_CONST               ('Decimal',)
+               36  IMPORT_NAME              decimal
+               38  IMPORT_FROM              Decimal
+               40  STORE_NAME               Decimal
+               42  POP_TOP          
+
+ L. 132        44  LOAD_CONST               1
+               46  LOAD_CONST               ('JSONDecodeError',)
+               48  IMPORT_NAME              errors
+               50  IMPORT_FROM              JSONDecodeError
+               52  STORE_NAME               JSONDecodeError
+               54  POP_TOP          
+
+ L. 133        56  LOAD_CONST               1
+               58  LOAD_CONST               ('RawJSON',)
+               60  IMPORT_NAME              raw_json
+               62  IMPORT_FROM              RawJSON
+               64  STORE_NAME               RawJSON
+               66  POP_TOP          
+
+ L. 134        68  LOAD_CONST               1
+               70  LOAD_CONST               ('JSONDecoder',)
+               72  IMPORT_NAME              decoder
+               74  IMPORT_FROM              JSONDecoder
+               76  STORE_NAME               JSONDecoder
+               78  POP_TOP          
+
+ L. 135        80  LOAD_CONST               1
+               82  LOAD_CONST               ('JSONEncoder', 'JSONEncoderForHTML')
+               84  IMPORT_NAME              encoder
+               86  IMPORT_FROM              JSONEncoder
+               88  STORE_NAME               JSONEncoder
+               90  IMPORT_FROM              JSONEncoderForHTML
+               92  STORE_NAME               JSONEncoderForHTML
+               94  POP_TOP          
+
+ L. 136        96  LOAD_CODE                <code_object _import_OrderedDict>
+               98  LOAD_STR                 '_import_OrderedDict'
+              100  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              102  STORE_NAME               _import_OrderedDict
+
+ L. 143       104  LOAD_NAME                _import_OrderedDict
+              106  CALL_FUNCTION_0       0  ''
+              108  STORE_NAME               OrderedDict
+
+ L. 145       110  LOAD_CODE                <code_object _import_c_make_encoder>
+              112  LOAD_STR                 '_import_c_make_encoder'
+              114  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              116  STORE_NAME               _import_c_make_encoder
+
+ L. 152       118  LOAD_NAME                JSONEncoder
+
+ L. 153       120  LOAD_CONST               False
+
+ L. 154       122  LOAD_CONST               True
+
+ L. 155       124  LOAD_CONST               True
+
+ L. 156       126  LOAD_CONST               True
+
+ L. 157       128  LOAD_CONST               None
+
+ L. 158       130  LOAD_CONST               None
+
+ L. 159       132  LOAD_STR                 'utf-8'
+
+ L. 160       134  LOAD_CONST               None
+
+ L. 161       136  LOAD_CONST               True
+
+ L. 162       138  LOAD_CONST               True
+
+ L. 163       140  LOAD_CONST               True
+
+ L. 164       142  LOAD_CONST               False
+
+ L. 165       144  LOAD_CONST               False
+
+ L. 166       146  LOAD_CONST               None
+
+ L. 167       148  LOAD_CONST               False
+
+ L. 168       150  LOAD_CONST               False
+
+ L. 169       152  LOAD_CONST               None
+
+ L. 152       154  LOAD_CONST               ('skipkeys', 'ensure_ascii', 'check_circular', 'allow_nan', 'indent', 'separators', 'encoding', 'default', 'use_decimal', 'namedtuple_as_object', 'tuple_as_array', 'iterable_as_array', 'bigint_as_string', 'item_sort_key', 'for_json', 'ignore_nan', 'int_as_string_bitcount')
+              156  CALL_FUNCTION_KW_17    17  '17 total positional and keyword args'
+              158  STORE_GLOBAL             _default_encoder
+
+ L. 172       160  LOAD_CONST               (False, True, True, True, None, None, None, 'utf-8', None, True, True, True, False, False, None, False, False, None, False)
+              162  LOAD_CODE                <code_object dump>
+              164  LOAD_STR                 'dump'
+              166  MAKE_FUNCTION_1          'default'
+              168  STORE_NAME               dump
+
+ L. 294       170  LOAD_CONST               (False, True, True, True, None, None, None, 'utf-8', None, True, True, True, False, False, None, False, False, None, False)
+              172  LOAD_CODE                <code_object dumps>
+              174  LOAD_STR                 'dumps'
+              176  MAKE_FUNCTION_1          'default'
+              178  STORE_NAME               dumps
+
+ L. 415       180  LOAD_NAME                JSONDecoder
+              182  LOAD_CONST               None
+              184  LOAD_CONST               None
+
+ L. 416       186  LOAD_CONST               None
+
+ L. 415       188  LOAD_CONST               ('encoding', 'object_hook', 'object_pairs_hook')
+              190  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              192  STORE_GLOBAL             _default_decoder
+
+ L. 419       194  LOAD_CONST               (None, None, None, None, None, None, None, False, True, True)
+              196  LOAD_CODE                <code_object load>
+              198  LOAD_STR                 'load'
+              200  MAKE_FUNCTION_1          'default'
+              202  STORE_NAME               load
+
+ L. 474       204  LOAD_CONST               (None, None, None, None, None, None, None, False)
+              206  LOAD_CODE                <code_object loads>
+              208  LOAD_STR                 'loads'
+              210  MAKE_FUNCTION_1          'default'
+              212  STORE_NAME               loads
+
+ L. 545       214  LOAD_CODE                <code_object _toggle_speedups>
+              216  LOAD_STR                 '_toggle_speedups'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  STORE_NAME               _toggle_speedups
+
+ L. 580       222  LOAD_CODE                <code_object simple_first>
+              224  LOAD_STR                 'simple_first'
+              226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              228  STORE_NAME               simple_first
+
+Parse error at or near `CALL_FINALLY' instruction at offset 24
+
+Instruction context:
+   
+ L. 122        20  BUILD_LIST_0          0 
+                  22  LOAD_CONST               ('dump', 'dumps', 'load', 'loads', 'JSONDecoder', 'JSONDecodeError', 'JSONEncoder', 'OrderedDict', 'simple_first', 'RawJSON')
+->                24  CALL_FINALLY         27  'to 27'
+                  26  STORE_NAME               __all__
+
+test/164846.pyc -- 
+# decompile failed

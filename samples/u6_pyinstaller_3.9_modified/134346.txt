@@ -1,0 +1,27 @@
+Instruction context:
+   
+ L.  86        18  LOAD_FAST                'writer'
+                  20  LOAD_CONST               None
+->                22  <117>                 1  ''
+                  24  POP_JUMP_IF_TRUE     30  'to 30'
+                  26  <74>             
+                  28  RAISE_VARARGS_1       1  'exception instance'
+                30_0  COME_FROM            24  '24'
+Instruction context:
+   
+ L. 107        10  LOAD_STR                 'gzip'
+                  12  LOAD_FAST                'request'
+                  14  LOAD_ATTR                headers
+                  16  LOAD_METHOD              get
+                  18  LOAD_GLOBAL              hdrs
+                  20  LOAD_ATTR                ACCEPT_ENCODING
+                  22  LOAD_STR                 ''
+                  24  CALL_METHOD_2         2  ''
+->                26  <118>                 0  ''
+                  28  POP_JUMP_IF_FALSE    62  'to 62'
+
+test/134346.pyc -- 
+# decompile failed
+
+# file test/134346.pyc
+# Deparsing stopped due to parse error

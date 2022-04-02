@@ -1,0 +1,32 @@
+Instruction context:
+   
+ L. 258        54  POP_EXCEPT       
+                  56  JUMP_FORWARD         60  'to 60'
+->              58_0  COME_FROM            46  '46'
+                  58  END_FINALLY      
+                60_0  COME_FROM            56  '56'
+Instruction context:
+   
+ L. 458        30  POP_EXCEPT       
+                  32  JUMP_FORWARD         36  'to 36'
+->              34_0  COME_FROM            22  '22'
+                  34  END_FINALLY      
+                36_0  COME_FROM            32  '32'
+Instruction context:
+   
+ L. 853        22  LOAD_FAST                'fd'
+                  24  LOAD_METHOD              tell
+                  26  CALL_METHOD_0         0  ''
+                  28  LOAD_FAST                'pos'
+                  30  BINARY_SUBTRACT  
+                  32  POP_BLOCK        
+->                34  CALL_FINALLY         38  'to 38'
+                  36  RETURN_VALUE     
+                38_0  COME_FROM            34  '34'
+                38_1  COME_FROM_FINALLY     8  '8'
+
+../test/12741.pyc -- 
+# decompile failed
+
+# file ../test/12741.pyc
+# Deparsing stopped due to parse error

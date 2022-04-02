@@ -1,0 +1,69 @@
+Instruction context:
+   
+ L. 131        30  DUP_TOP          
+                  32  LOAD_GLOBAL              distutils
+                  34  LOAD_ATTR                errors
+                  36  LOAD_ATTR                DistutilsPlatformError
+                  38  COMPARE_OP               exception-match
+                  40  POP_JUMP_IF_FALSE    52  'to 52'
+                  42  POP_TOP          
+->                44  POP_TOP          
+                  46  POP_TOP          
+Instruction context:
+   
+ L. 170       188  POP_EXCEPT       
+                 190  JUMP_BACK            76  'to 76'
+->               192  POP_EXCEPT       
+                 194  JUMP_FORWARD        198  'to 198'
+               196_0  COME_FROM           180  '180'
+                 196  END_FINALLY      
+               198_0  COME_FROM           194  '194'
+               198_1  COME_FROM           168  '168'
+Instruction context:
+   
+ L. 657       134  POP_EXCEPT       
+                 136  POP_EXCEPT       
+                 138  JUMP_BACK            30  'to 30'
+->               140  POP_EXCEPT       
+                 142  JUMP_ABSOLUTE       152  'to 152'
+               144_0  COME_FROM           126  '126'
+                 144  END_FINALLY      
+                 146  JUMP_FORWARD        152  'to 152'
+               148_0  COME_FROM            88  '88'
+Instruction context:
+   
+ L. 733       102  POP_EXCEPT       
+                 104  JUMP_BACK            52  'to 52'
+->               106  POP_EXCEPT       
+                 108  JUMP_FORWARD        112  'to 112'
+               110_0  COME_FROM            94  '94'
+                 110  END_FINALLY      
+               112_0  COME_FROM           108  '108'
+               112_1  COME_FROM            82  '82'
+Instruction context:
+   
+ L. 790       172  POP_EXCEPT       
+                 174  JUMP_BACK            54  'to 54'
+->               176  POP_EXCEPT       
+                 178  JUMP_BACK            54  'to 54'
+               180_0  COME_FROM           164  '164'
+                 180  END_FINALLY      
+                 182  JUMP_BACK            54  'to 54'
+Instruction context:
+   
+ L. 873       106  DUP_TOP          
+                 108  LOAD_GLOBAL              OSError
+                 110  LOAD_GLOBAL              IOError
+                 112  LOAD_GLOBAL              IndexError
+                 114  BUILD_TUPLE_3         3 
+                 116  COMPARE_OP               exception-match
+                 118  POP_JUMP_IF_FALSE   132  'to 132'
+                 120  POP_TOP          
+->               122  POP_TOP          
+                 124  POP_TOP          
+
+../test/125518.pyc -- 
+# decompile failed
+
+# file ../test/125518.pyc
+# Deparsing stopped due to parse error

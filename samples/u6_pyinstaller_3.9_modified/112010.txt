@@ -1,0 +1,72 @@
+Instruction context:
+   
+ L.   5        22  DUP_TOP          
+                  24  LOAD_NAME                ImportError
+->                26  <121>                38  ''
+                  28  POP_TOP          
+                  30  POP_TOP          
+                  32  POP_TOP          
+
+test/112010.pyc -- 
+# decompile failed
+
+# file test/112010.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              importlib
+                6  STORE_NAME               importlib
+
+ L.   3         8  SETUP_FINALLY        22  'to 22'
+
+ L.   4        10  LOAD_CONST               0
+               12  LOAD_CONST               None
+               14  IMPORT_NAME_ATTR         importlib.util
+               16  STORE_NAME               importlib
+               18  POP_BLOCK        
+               20  JUMP_FORWARD         40  'to 40'
+             22_0  COME_FROM_FINALLY     8  '8'
+
+ L.   5        22  DUP_TOP          
+               24  LOAD_NAME                ImportError
+               26  <121>                38  ''
+               28  POP_TOP          
+               30  POP_TOP          
+               32  POP_TOP          
+
+ L.   6        34  POP_EXCEPT       
+               36  JUMP_FORWARD         40  'to 40'
+               38  <48>             
+             40_0  COME_FROM            36  '36'
+             40_1  COME_FROM            20  '20'
+
+ L.   9        40  SETUP_FINALLY        54  'to 54'
+
+ L.  10        42  LOAD_NAME                importlib
+               44  LOAD_ATTR                util
+               46  LOAD_ATTR                module_from_spec
+               48  STORE_NAME               module_from_spec
+               50  POP_BLOCK        
+               52  JUMP_FORWARD         80  'to 80'
+             54_0  COME_FROM_FINALLY    40  '40'
+
+ L.  11        54  DUP_TOP          
+               56  LOAD_NAME                AttributeError
+               58  <121>                78  ''
+               60  POP_TOP          
+               62  POP_TOP          
+               64  POP_TOP          
+
+ L.  12        66  LOAD_CODE                <code_object module_from_spec>
+               68  LOAD_STR                 'module_from_spec'
+               70  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               72  STORE_NAME               module_from_spec
+               74  POP_EXCEPT       
+               76  JUMP_FORWARD         80  'to 80'
+               78  <48>             
+             80_0  COME_FROM            76  '76'
+             80_1  COME_FROM            52  '52'
+
+Parse error at or near `<121>' instruction at offset 26
+

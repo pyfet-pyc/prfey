@@ -1,0 +1,461 @@
+
+# file test/103883.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import', 'division', 'print_function')
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  IMPORT_FROM              division
+               12  STORE_NAME               division
+               14  IMPORT_FROM              print_function
+               16  STORE_NAME               print_function
+               18  POP_TOP          
+
+ L.   7        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              binascii
+               26  STORE_NAME               binascii
+
+ L.   8        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              os
+               34  STORE_NAME               os
+
+ L.   9        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              re
+               42  STORE_NAME               re
+
+ L.  10        44  LOAD_CONST               0
+               46  LOAD_CONST               None
+               48  IMPORT_NAME              struct
+               50  STORE_NAME               struct
+
+ L.  12        52  LOAD_CONST               0
+               54  LOAD_CONST               None
+               56  IMPORT_NAME              six
+               58  STORE_NAME               six
+
+ L.  14        60  LOAD_CONST               0
+               62  LOAD_CONST               ('utils',)
+               64  IMPORT_NAME              cryptography
+               66  IMPORT_FROM              utils
+               68  STORE_NAME               utils
+               70  POP_TOP          
+
+ L.  15        72  LOAD_CONST               0
+               74  LOAD_CONST               ('UnsupportedAlgorithm',)
+               76  IMPORT_NAME_ATTR         cryptography.exceptions
+               78  IMPORT_FROM              UnsupportedAlgorithm
+               80  STORE_NAME               UnsupportedAlgorithm
+               82  POP_TOP          
+
+ L.  16        84  LOAD_CONST               0
+               86  LOAD_CONST               ('_get_backend',)
+               88  IMPORT_NAME_ATTR         cryptography.hazmat.backends
+               90  IMPORT_FROM              _get_backend
+               92  STORE_NAME               _get_backend
+               94  POP_TOP          
+
+ L.  17        96  LOAD_CONST               0
+               98  LOAD_CONST               ('dsa', 'ec', 'ed25519', 'rsa')
+              100  IMPORT_NAME_ATTR         cryptography.hazmat.primitives.asymmetric
+              102  IMPORT_FROM              dsa
+              104  STORE_NAME               dsa
+              106  IMPORT_FROM              ec
+              108  STORE_NAME               ec
+              110  IMPORT_FROM              ed25519
+              112  STORE_NAME               ed25519
+              114  IMPORT_FROM              rsa
+              116  STORE_NAME               rsa
+              118  POP_TOP          
+
+ L.  18       120  LOAD_CONST               0
+              122  LOAD_CONST               ('Cipher', 'algorithms', 'modes')
+              124  IMPORT_NAME_ATTR         cryptography.hazmat.primitives.ciphers
+              126  IMPORT_FROM              Cipher
+              128  STORE_NAME               Cipher
+              130  IMPORT_FROM              algorithms
+              132  STORE_NAME               algorithms
+              134  IMPORT_FROM              modes
+              136  STORE_NAME               modes
+              138  POP_TOP          
+
+ L.  19       140  LOAD_CONST               0
+              142  LOAD_CONST               ('Encoding', 'NoEncryption', 'PrivateFormat', 'PublicFormat')
+              144  IMPORT_NAME_ATTR         cryptography.hazmat.primitives.serialization
+              146  IMPORT_FROM              Encoding
+              148  STORE_NAME               Encoding
+              150  IMPORT_FROM              NoEncryption
+              152  STORE_NAME               NoEncryption
+              154  IMPORT_FROM              PrivateFormat
+              156  STORE_NAME               PrivateFormat
+              158  IMPORT_FROM              PublicFormat
+              160  STORE_NAME               PublicFormat
+              162  POP_TOP          
+
+ L.  26       164  SETUP_FINALLY       186  'to 186'
+
+ L.  27       166  LOAD_CONST               0
+              168  LOAD_CONST               ('kdf',)
+              170  IMPORT_NAME              bcrypt
+              172  IMPORT_FROM              kdf
+              174  STORE_NAME               _bcrypt_kdf
+              176  POP_TOP          
+
+ L.  29       178  LOAD_CONST               True
+              180  STORE_NAME               _bcrypt_supported
+              182  POP_BLOCK        
+              184  JUMP_FORWARD        216  'to 216'
+            186_0  COME_FROM_FINALLY   164  '164'
+
+ L.  30       186  DUP_TOP          
+              188  LOAD_NAME                ImportError
+              190  <121>               214  ''
+              192  POP_TOP          
+              194  POP_TOP          
+              196  POP_TOP          
+
+ L.  31       198  LOAD_CONST               False
+              200  STORE_NAME               _bcrypt_supported
+
+ L.  33       202  LOAD_CODE                <code_object _bcrypt_kdf>
+              204  LOAD_STR                 '_bcrypt_kdf'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  STORE_NAME               _bcrypt_kdf
+              210  POP_EXCEPT       
+              212  JUMP_FORWARD        216  'to 216'
+              214  <48>             
+            216_0  COME_FROM           212  '212'
+            216_1  COME_FROM           184  '184'
+
+ L.  37       216  SETUP_FINALLY       234  'to 234'
+
+ L.  38       218  LOAD_CONST               0
+              220  LOAD_CONST               ('encodebytes',)
+              222  IMPORT_NAME              base64
+              224  IMPORT_FROM              encodebytes
+              226  STORE_NAME               _base64_encode
+              228  POP_TOP          
+              230  POP_BLOCK        
+              232  JUMP_FORWARD        266  'to 266'
+            234_0  COME_FROM_FINALLY   216  '216'
+
+ L.  39       234  DUP_TOP          
+              236  LOAD_NAME                ImportError
+          238_240  <121>               264  ''
+              242  POP_TOP          
+              244  POP_TOP          
+              246  POP_TOP          
+
+ L.  40       248  LOAD_CONST               0
+              250  LOAD_CONST               ('encodestring',)
+              252  IMPORT_NAME              base64
+              254  IMPORT_FROM              encodestring
+              256  STORE_NAME               _base64_encode
+              258  POP_TOP          
+              260  POP_EXCEPT       
+              262  JUMP_FORWARD        266  'to 266'
+              264  <48>             
+            266_0  COME_FROM           262  '262'
+            266_1  COME_FROM           232  '232'
+
+ L.  42       266  LOAD_CONST               b'ssh-ed25519'
+              268  STORE_NAME               _SSH_ED25519
+
+ L.  43       270  LOAD_CONST               b'ssh-rsa'
+              272  STORE_NAME               _SSH_RSA
+
+ L.  44       274  LOAD_CONST               b'ssh-dss'
+              276  STORE_NAME               _SSH_DSA
+
+ L.  45       278  LOAD_CONST               b'ecdsa-sha2-nistp256'
+              280  STORE_NAME               _ECDSA_NISTP256
+
+ L.  46       282  LOAD_CONST               b'ecdsa-sha2-nistp384'
+              284  STORE_NAME               _ECDSA_NISTP384
+
+ L.  47       286  LOAD_CONST               b'ecdsa-sha2-nistp521'
+              288  STORE_NAME               _ECDSA_NISTP521
+
+ L.  48       290  LOAD_CONST               b'-cert-v01@openssh.com'
+              292  STORE_NAME               _CERT_SUFFIX
+
+ L.  50       294  LOAD_NAME                re
+              296  LOAD_METHOD              compile
+              298  LOAD_CONST               b'\\A(\\S+)[ \\t]+(\\S+)'
+              300  CALL_METHOD_1         1  ''
+              302  STORE_NAME               _SSH_PUBKEY_RC
+
+ L.  51       304  LOAD_CONST               b'openssh-key-v1\x00'
+              306  STORE_NAME               _SK_MAGIC
+
+ L.  52       308  LOAD_CONST               b'-----BEGIN OPENSSH PRIVATE KEY-----'
+              310  STORE_NAME               _SK_START
+
+ L.  53       312  LOAD_CONST               b'-----END OPENSSH PRIVATE KEY-----'
+              314  STORE_NAME               _SK_END
+
+ L.  54       316  LOAD_CONST               b'bcrypt'
+              318  STORE_NAME               _BCRYPT
+
+ L.  55       320  LOAD_CONST               b'none'
+              322  STORE_NAME               _NONE
+
+ L.  56       324  LOAD_CONST               b'aes256-ctr'
+              326  STORE_NAME               _DEFAULT_CIPHER
+
+ L.  57       328  LOAD_CONST               16
+              330  STORE_NAME               _DEFAULT_ROUNDS
+
+ L.  58       332  LOAD_CONST               72
+              334  STORE_NAME               _MAX_PASSWORD
+
+ L.  61       336  LOAD_NAME                re
+              338  LOAD_METHOD              compile
+              340  LOAD_NAME                _SK_START
+              342  LOAD_CONST               b'(.*?)'
+              344  BINARY_ADD       
+              346  LOAD_NAME                _SK_END
+              348  BINARY_ADD       
+              350  LOAD_NAME                re
+              352  LOAD_ATTR                DOTALL
+              354  CALL_METHOD_2         2  ''
+              356  STORE_NAME               _PEM_RC
+
+ L.  64       358  LOAD_NAME                memoryview
+              360  LOAD_NAME                bytearray
+              362  LOAD_NAME                range
+              364  LOAD_CONST               1
+              366  LOAD_CONST               17
+              368  CALL_FUNCTION_2       2  ''
+              370  CALL_FUNCTION_1       1  ''
+              372  CALL_FUNCTION_1       1  ''
+              374  STORE_NAME               _PADDING
+
+ L.  68       376  LOAD_NAME                algorithms
+              378  LOAD_ATTR                AES
+              380  LOAD_CONST               32
+              382  LOAD_NAME                modes
+              384  LOAD_ATTR                CTR
+              386  LOAD_CONST               16
+              388  BUILD_TUPLE_4         4 
+
+ L.  69       390  LOAD_NAME                algorithms
+              392  LOAD_ATTR                AES
+              394  LOAD_CONST               32
+              396  LOAD_NAME                modes
+              398  LOAD_ATTR                CBC
+              400  LOAD_CONST               16
+              402  BUILD_TUPLE_4         4 
+
+ L.  67       404  LOAD_CONST               (b'aes256-ctr', b'aes256-cbc')
+              406  BUILD_CONST_KEY_MAP_2     2 
+              408  STORE_NAME               _SSH_CIPHERS
+
+ L.  74       410  LOAD_NAME                _ECDSA_NISTP256
+
+ L.  75       412  LOAD_NAME                _ECDSA_NISTP384
+
+ L.  76       414  LOAD_NAME                _ECDSA_NISTP521
+
+ L.  73       416  LOAD_CONST               ('secp256r1', 'secp384r1', 'secp521r1')
+              418  BUILD_CONST_KEY_MAP_3     3 
+              420  STORE_NAME               _ECDSA_KEY_TYPE
+
+ L.  79       422  LOAD_NAME                struct
+              424  LOAD_METHOD              Struct
+              426  LOAD_CONST               b'>I'
+              428  CALL_METHOD_1         1  ''
+              430  STORE_NAME               _U32
+
+ L.  80       432  LOAD_NAME                struct
+              434  LOAD_METHOD              Struct
+              436  LOAD_CONST               b'>Q'
+              438  CALL_METHOD_1         1  ''
+              440  STORE_NAME               _U64
+
+ L.  83       442  LOAD_CODE                <code_object _ecdsa_key_type>
+              444  LOAD_STR                 '_ecdsa_key_type'
+              446  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              448  STORE_NAME               _ecdsa_key_type
+
+ L.  93       450  LOAD_NAME                _SK_START
+              452  LOAD_CONST               b'\n'
+              454  BINARY_ADD       
+              456  LOAD_NAME                _SK_END
+              458  LOAD_CONST               b'\n'
+              460  BINARY_ADD       
+              462  BUILD_TUPLE_2         2 
+              464  LOAD_CODE                <code_object _ssh_pem_encode>
+              466  LOAD_STR                 '_ssh_pem_encode'
+              468  MAKE_FUNCTION_1          'default'
+              470  STORE_NAME               _ssh_pem_encode
+
+ L.  97       472  LOAD_CODE                <code_object _check_block_size>
+              474  LOAD_STR                 '_check_block_size'
+              476  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              478  STORE_NAME               _check_block_size
+
+ L. 103       480  LOAD_CODE                <code_object _check_empty>
+              482  LOAD_STR                 '_check_empty'
+              484  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              486  STORE_NAME               _check_empty
+
+ L. 109       488  LOAD_CODE                <code_object _init_cipher>
+              490  LOAD_STR                 '_init_cipher'
+              492  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              494  STORE_NAME               _init_cipher
+
+ L. 119       496  LOAD_CODE                <code_object _get_u32>
+              498  LOAD_STR                 '_get_u32'
+              500  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              502  STORE_NAME               _get_u32
+
+ L. 126       504  LOAD_CODE                <code_object _get_u64>
+              506  LOAD_STR                 '_get_u64'
+              508  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              510  STORE_NAME               _get_u64
+
+ L. 133       512  LOAD_CODE                <code_object _get_sshstr>
+              514  LOAD_STR                 '_get_sshstr'
+              516  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              518  STORE_NAME               _get_sshstr
+
+ L. 141       520  LOAD_CODE                <code_object _get_mpint>
+              522  LOAD_STR                 '_get_mpint'
+              524  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              526  STORE_NAME               _get_mpint
+
+ L. 149       528  LOAD_CODE                <code_object _to_mpint>
+              530  LOAD_STR                 '_to_mpint'
+              532  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              534  STORE_NAME               _to_mpint
+
+ L. 159       536  LOAD_BUILD_CLASS 
+              538  LOAD_CODE                <code_object _FragList>
+              540  LOAD_STR                 '_FragList'
+              542  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              544  LOAD_STR                 '_FragList'
+              546  LOAD_NAME                object
+              548  CALL_FUNCTION_3       3  ''
+              550  STORE_NAME               _FragList
+
+ L. 207       552  LOAD_BUILD_CLASS 
+              554  LOAD_CODE                <code_object _SSHFormatRSA>
+              556  LOAD_STR                 '_SSHFormatRSA'
+              558  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              560  LOAD_STR                 '_SSHFormatRSA'
+              562  LOAD_NAME                object
+              564  CALL_FUNCTION_3       3  ''
+              566  STORE_NAME               _SSHFormatRSA
+
+ L. 269       568  LOAD_BUILD_CLASS 
+              570  LOAD_CODE                <code_object _SSHFormatDSA>
+              572  LOAD_STR                 '_SSHFormatDSA'
+              574  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              576  LOAD_STR                 '_SSHFormatDSA'
+              578  LOAD_NAME                object
+              580  CALL_FUNCTION_3       3  ''
+              582  STORE_NAME               _SSHFormatDSA
+
+ L. 331       584  LOAD_BUILD_CLASS 
+              586  LOAD_CODE                <code_object _SSHFormatECDSA>
+              588  LOAD_STR                 '_SSHFormatECDSA'
+              590  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              592  LOAD_STR                 '_SSHFormatECDSA'
+              594  LOAD_NAME                object
+              596  CALL_FUNCTION_3       3  ''
+              598  STORE_NAME               _SSHFormatECDSA
+
+ L. 392       600  LOAD_BUILD_CLASS 
+              602  LOAD_CODE                <code_object _SSHFormatEd25519>
+              604  LOAD_STR                 '_SSHFormatEd25519'
+              606  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              608  LOAD_STR                 '_SSHFormatEd25519'
+              610  LOAD_NAME                object
+              612  CALL_FUNCTION_3       3  ''
+              614  STORE_NAME               _SSHFormatEd25519
+
+ L. 450       616  LOAD_NAME                _SSH_RSA
+              618  LOAD_NAME                _SSHFormatRSA
+              620  CALL_FUNCTION_0       0  ''
+
+ L. 451       622  LOAD_NAME                _SSH_DSA
+              624  LOAD_NAME                _SSHFormatDSA
+              626  CALL_FUNCTION_0       0  ''
+
+ L. 452       628  LOAD_NAME                _SSH_ED25519
+              630  LOAD_NAME                _SSHFormatEd25519
+              632  CALL_FUNCTION_0       0  ''
+
+ L. 453       634  LOAD_NAME                _ECDSA_NISTP256
+              636  LOAD_NAME                _SSHFormatECDSA
+              638  LOAD_CONST               b'nistp256'
+              640  LOAD_NAME                ec
+              642  LOAD_METHOD              SECP256R1
+              644  CALL_METHOD_0         0  ''
+              646  CALL_FUNCTION_2       2  ''
+
+ L. 454       648  LOAD_NAME                _ECDSA_NISTP384
+              650  LOAD_NAME                _SSHFormatECDSA
+              652  LOAD_CONST               b'nistp384'
+              654  LOAD_NAME                ec
+              656  LOAD_METHOD              SECP384R1
+              658  CALL_METHOD_0         0  ''
+              660  CALL_FUNCTION_2       2  ''
+
+ L. 455       662  LOAD_NAME                _ECDSA_NISTP521
+              664  LOAD_NAME                _SSHFormatECDSA
+              666  LOAD_CONST               b'nistp521'
+              668  LOAD_NAME                ec
+              670  LOAD_METHOD              SECP521R1
+              672  CALL_METHOD_0         0  ''
+              674  CALL_FUNCTION_2       2  ''
+
+ L. 449       676  BUILD_MAP_6           6 
+              678  STORE_NAME               _KEY_FORMATS
+
+ L. 459       680  LOAD_CODE                <code_object _lookup_kformat>
+              682  LOAD_STR                 '_lookup_kformat'
+              684  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              686  STORE_NAME               _lookup_kformat
+
+ L. 468       688  LOAD_CONST               (None,)
+              690  LOAD_CODE                <code_object load_ssh_private_key>
+              692  LOAD_STR                 'load_ssh_private_key'
+              694  MAKE_FUNCTION_1          'default'
+              696  STORE_NAME               load_ssh_private_key
+
+ L. 542       698  LOAD_CONST               (None,)
+              700  LOAD_CODE                <code_object serialize_ssh_private_key>
+              702  LOAD_STR                 'serialize_ssh_private_key'
+              704  MAKE_FUNCTION_1          'default'
+              706  STORE_NAME               serialize_ssh_private_key
+
+ L. 621       708  LOAD_CONST               (None,)
+              710  LOAD_CODE                <code_object load_ssh_public_key>
+              712  LOAD_STR                 'load_ssh_public_key'
+              714  MAKE_FUNCTION_1          'default'
+              716  STORE_NAME               load_ssh_public_key
+
+ L. 664       718  LOAD_CODE                <code_object serialize_ssh_public_key>
+              720  LOAD_STR                 'serialize_ssh_public_key'
+              722  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              724  STORE_NAME               serialize_ssh_public_key
+
+Parse error at or near `<121>' instruction at offset 190
+
+Instruction context:
+   
+ L.  30       186  DUP_TOP          
+                 188  LOAD_NAME                ImportError
+->               190  <121>               214  ''
+                 192  POP_TOP          
+                 194  POP_TOP          
+                 196  POP_TOP          
+
+test/103883.pyc -- 
+# decompile failed

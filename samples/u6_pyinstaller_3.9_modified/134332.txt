@@ -1,0 +1,75 @@
+Instruction context:
+   
+ L.   7        50  DUP_TOP          
+                  52  LOAD_NAME                ImportError
+->                54  <121>                78  ''
+                  56  POP_TOP          
+                  58  POP_TOP          
+                  60  POP_TOP          
+
+test/134332.pyc -- 
+# decompile failed
+
+# file test/134332.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              asyncio
+                6  STORE_NAME               asyncio
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              collections
+               14  STORE_NAME               collections
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               ('Any', 'Optional')
+               20  IMPORT_NAME              typing
+               22  IMPORT_FROM              Any
+               24  STORE_NAME               Any
+               26  IMPORT_FROM              Optional
+               28  STORE_NAME               Optional
+               30  POP_TOP          
+
+ L.   5        32  SETUP_FINALLY        50  'to 50'
+
+ L.   6        34  LOAD_CONST               0
+               36  LOAD_CONST               ('Deque',)
+               38  IMPORT_NAME              typing
+               40  IMPORT_FROM              Deque
+               42  STORE_NAME               Deque
+               44  POP_TOP          
+               46  POP_BLOCK        
+               48  JUMP_FORWARD         80  'to 80'
+             50_0  COME_FROM_FINALLY    32  '32'
+
+ L.   7        50  DUP_TOP          
+               52  LOAD_NAME                ImportError
+               54  <121>                78  ''
+               56  POP_TOP          
+               58  POP_TOP          
+               60  POP_TOP          
+
+ L.   8        62  LOAD_CONST               0
+               64  LOAD_CONST               ('Deque',)
+               66  IMPORT_NAME              typing_extensions
+               68  IMPORT_FROM              Deque
+               70  STORE_NAME               Deque
+               72  POP_TOP          
+               74  POP_EXCEPT       
+               76  JUMP_FORWARD         80  'to 80'
+               78  <48>             
+             80_0  COME_FROM            76  '76'
+             80_1  COME_FROM            48  '48'
+
+ L.  11        80  LOAD_BUILD_CLASS 
+               82  LOAD_CODE                <code_object EventResultOrError>
+               84  LOAD_STR                 'EventResultOrError'
+               86  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               88  LOAD_STR                 'EventResultOrError'
+               90  CALL_FUNCTION_2       2  ''
+               92  STORE_NAME               EventResultOrError
+
+Parse error at or near `<121>' instruction at offset 54
+

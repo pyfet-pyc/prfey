@@ -1,0 +1,37 @@
+Instruction context:
+   
+ L. 369       236  LOAD_FAST                'path'
+                 238  JUMP_IF_TRUE_OR_POP   242  'to 242'
+                 240  LOAD_FAST                'dot'
+               242_0  COME_FROM           238  '238'
+->               242  RETURN_VALUE     
+Instruction context:
+   
+ L. 480       198  DUP_TOP          
+                 200  LOAD_GLOBAL              TypeError
+                 202  LOAD_GLOBAL              AttributeError
+                 204  LOAD_GLOBAL              BytesWarning
+                 206  LOAD_GLOBAL              DeprecationWarning
+                 208  BUILD_TUPLE_4         4 
+                 210  COMPARE_OP               exception-match
+                 212  POP_JUMP_IF_FALSE   240  'to 240'
+                 214  POP_TOP          
+->               216  POP_TOP          
+                 218  POP_TOP          
+Instruction context:
+   
+ L. 523       260  DUP_TOP          
+                 262  LOAD_GLOBAL              TypeError
+                 264  LOAD_GLOBAL              AttributeError
+                 266  BUILD_TUPLE_2         2 
+                 268  COMPARE_OP               exception-match
+             270_272  POP_JUMP_IF_FALSE   300  'to 300'
+                 274  POP_TOP          
+->               276  POP_TOP          
+                 278  POP_TOP          
+
+../test/10296.pyc -- 
+# decompile failed
+
+# file ../test/10296.pyc
+# Deparsing stopped due to parse error

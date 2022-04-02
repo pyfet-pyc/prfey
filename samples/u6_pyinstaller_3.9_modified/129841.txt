@@ -1,0 +1,58 @@
+Instruction context:
+   
+ L.  38        12  BUILD_SET_0           0 
+                  14  LOAD_CONST               frozenset({'GET', 'HEAD', 'OPTIONS', 'DELETE'})
+->                16  POP_FINALLY           1  ''
+                  18  STORE_NAME               _encode_url_methods
+
+test/129841.pyc -- 
+# decompile failed
+
+# file test/129841.pyc
+# --- This code section failed: ---
+
+ L.   9         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'RequestMethods'
+                6  STORE_NAME               __qualname__
+
+ L.  10         8  LOAD_STR                 '\n    Convenience mixin for classes who implement a :meth:`urlopen` method, such\n    as :class:`urllib3.HTTPConnectionPool` and\n    :class:`urllib3.PoolManager`.\n\n    Provides behavior for making common types of HTTP request methods and\n    decides which type of request field encoding to use.\n\n    Specifically,\n\n    :meth:`.request_encode_url` is for sending requests whose fields are\n    encoded in the URL (such as GET, HEAD, DELETE).\n\n    :meth:`.request_encode_body` is for sending requests whose fields are\n    encoded in the *body* of the request using multipart or www-form-urlencoded\n    (such as for POST, PUT, PATCH).\n\n    :meth:`.request` is for making any kind of request, it will look up the\n    appropriate encoding format and use one of the above two methods to make\n    the request.\n\n    Initializer parameters:\n\n    :param headers:\n        Headers to include with all requests, unless other headers are given\n        explicitly.\n    '
+               10  STORE_NAME               __doc__
+
+ L.  38        12  BUILD_SET_0           0 
+               14  LOAD_CONST               frozenset({'GET', 'HEAD', 'OPTIONS', 'DELETE'})
+               16  POP_FINALLY           1  ''
+               18  STORE_NAME               _encode_url_methods
+
+ L.  40        20  LOAD_CONST               (None,)
+               22  LOAD_CODE                <code_object __init__>
+               24  LOAD_STR                 'RequestMethods.__init__'
+               26  MAKE_FUNCTION_1          'default'
+               28  STORE_NAME               __init__
+
+ L.  43        30  LOAD_CONST               (None, None, True, None)
+               32  LOAD_CODE                <code_object urlopen>
+               34  LOAD_STR                 'RequestMethods.urlopen'
+               36  MAKE_FUNCTION_1          'default'
+               38  STORE_NAME               urlopen
+
+ L.  58        40  LOAD_CONST               (None, None)
+               42  LOAD_CODE                <code_object request>
+               44  LOAD_STR                 'RequestMethods.request'
+               46  MAKE_FUNCTION_1          'default'
+               48  STORE_NAME               request
+
+ L.  82        50  LOAD_CONST               (None, None)
+               52  LOAD_CODE                <code_object request_encode_url>
+               54  LOAD_STR                 'RequestMethods.request_encode_url'
+               56  MAKE_FUNCTION_1          'default'
+               58  STORE_NAME               request_encode_url
+
+ L.  98        60  LOAD_CONST               (None, None, True, None)
+               62  LOAD_CODE                <code_object request_encode_body>
+               64  LOAD_STR                 'RequestMethods.request_encode_body'
+               66  MAKE_FUNCTION_1          'default'
+               68  STORE_NAME               request_encode_body
+
+Parse error at or near `POP_FINALLY' instruction at offset 16
+

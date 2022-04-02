@@ -1,0 +1,19 @@
+Instruction context:
+   
+ L. 159       304  LOAD_GLOBAL              ParseError
+                 306  LOAD_STR                 'bad input'
+                 308  LOAD_FAST                'type'
+                 310  LOAD_FAST                'value'
+                 312  LOAD_FAST                'context'
+                 314  CALL_FUNCTION_4       4  '4 positional arguments'
+                 316  RAISE_VARARGS_1       1  'exception instance'
+->             318_0  COME_FROM           284  '284'
+               318_1  COME_FROM_LOOP       50  '50'
+                 318  JUMP_BACK            18  'to 18'
+                 320  POP_BLOCK        
+
+../test/2843.pyc -- 
+# decompile failed
+
+# file ../test/2843.pyc
+# Deparsing stopped due to parse error

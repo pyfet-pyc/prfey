@@ -1,0 +1,32 @@
+Instruction context:
+   
+ L. 121        64  POP_TOP          
+                  66  BREAK_LOOP           70  'to 70'
+                  68  JUMP_BACK             6  'to 6'
+                70_0  COME_FROM            66  '66'
+                70_1  COME_FROM            44  '44'
+->              70_2  COME_FROM            22  '22'
+Instruction context:
+   
+ L. 463        64  JUMP_FORWARD         68  'to 68'
+->                66  JUMP_BACK             6  'to 6'
+                68_0  COME_FROM            64  '64'
+Instruction context:
+   
+ L. 533       124  JUMP_FORWARD        128  'to 128'
+->               126  JUMP_BACK            52  'to 52'
+               128_0  COME_FROM           124  '124'
+               128_1  COME_FROM           102  '102'
+Instruction context:
+   
+ L. 611   364_366  JUMP_FORWARD        370  'to 370'
+->             368_0  COME_FROM           340  '340'
+                 368  JUMP_BACK           242  'to 242'
+               370_0  COME_FROM           364  '364'
+               370_1  COME_FROM           344  '344'
+
+../test/10302.pyc -- 
+# decompile failed
+
+# file ../test/10302.pyc
+# Deparsing stopped due to parse error

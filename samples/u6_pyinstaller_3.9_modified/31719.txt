@@ -1,0 +1,140 @@
+Instruction context:
+   
+ L.  14        30  DUP_TOP          
+                  32  LOAD_NAME                ImportError
+                  34  LOAD_NAME                AttributeError
+                  36  BUILD_TUPLE_2         2 
+->                38  <121>                54  ''
+                  40  POP_TOP          
+                  42  POP_TOP          
+                  44  POP_TOP          
+
+test/31719.pyc -- 
+# decompile failed
+
+# file test/31719.pyc
+# --- This code section failed: ---
+
+ L.   7         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   9         8  SETUP_FINALLY        30  'to 30'
+
+ L.  10        10  LOAD_CONST               0
+               12  LOAD_CONST               None
+               14  IMPORT_NAME              platform
+               16  STORE_NAME               platform
+
+ L.  12        18  LOAD_NAME                platform
+               20  LOAD_METHOD              python_implementation
+               22  CALL_METHOD_0         0  ''
+               24  STORE_NAME               implementation
+               26  POP_BLOCK        
+               28  JUMP_FORWARD         56  'to 56'
+             30_0  COME_FROM_FINALLY     8  '8'
+
+ L.  14        30  DUP_TOP          
+               32  LOAD_NAME                ImportError
+               34  LOAD_NAME                AttributeError
+               36  BUILD_TUPLE_2         2 
+               38  <121>                54  ''
+               40  POP_TOP          
+               42  POP_TOP          
+               44  POP_TOP          
+
+ L.  15        46  LOAD_STR                 'CPython'
+               48  STORE_NAME               implementation
+               50  POP_EXCEPT       
+               52  JUMP_FORWARD         56  'to 56'
+               54  <48>             
+             56_0  COME_FROM            52  '52'
+             56_1  COME_FROM            28  '28'
+
+ L.  17        56  LOAD_CONST               0
+               58  LOAD_CONST               ('oct2int', 'null', 'ensureString')
+               60  IMPORT_NAME_ATTR         pyasn1.compat.octets
+               62  IMPORT_FROM              oct2int
+               64  STORE_NAME               oct2int
+               66  IMPORT_FROM              null
+               68  STORE_NAME               null
+               70  IMPORT_FROM              ensureString
+               72  STORE_NAME               ensureString
+               74  POP_TOP          
+
+ L.  19        76  LOAD_NAME                sys
+               78  LOAD_ATTR                version_info
+               80  LOAD_CONST               0
+               82  LOAD_CONST               2
+               84  BUILD_SLICE_2         2 
+               86  BINARY_SUBSCR    
+               88  LOAD_CONST               (3, 2)
+               90  COMPARE_OP               <
+               92  POP_JUMP_IF_TRUE    102  'to 102'
+               94  LOAD_NAME                implementation
+               96  LOAD_STR                 'CPython'
+               98  COMPARE_OP               !=
+              100  POP_JUMP_IF_FALSE   166  'to 166'
+            102_0  COME_FROM            92  '92'
+
+ L.  20       102  LOAD_CONST               0
+              104  LOAD_CONST               ('a2b_hex', 'b2a_hex')
+              106  IMPORT_NAME              binascii
+              108  IMPORT_FROM              a2b_hex
+              110  STORE_NAME               a2b_hex
+              112  IMPORT_FROM              b2a_hex
+              114  STORE_NAME               b2a_hex
+              116  POP_TOP          
+
+ L.  22       118  LOAD_NAME                sys
+              120  LOAD_ATTR                version_info
+              122  LOAD_CONST               0
+              124  BINARY_SUBSCR    
+              126  LOAD_CONST               2
+              128  COMPARE_OP               >
+              130  POP_JUMP_IF_FALSE   136  'to 136'
+
+ L.  23       132  LOAD_NAME                int
+              134  STORE_NAME               long
+            136_0  COME_FROM           130  '130'
+
+ L.  25       136  LOAD_CONST               (False,)
+              138  LOAD_CODE                <code_object from_bytes>
+              140  LOAD_STR                 'from_bytes'
+              142  MAKE_FUNCTION_1          'default'
+              144  STORE_NAME               from_bytes
+
+ L.  36       146  LOAD_CONST               (False, 0)
+              148  LOAD_CODE                <code_object to_bytes>
+              150  LOAD_STR                 'to_bytes'
+              152  MAKE_FUNCTION_1          'default'
+              154  STORE_NAME               to_bytes
+
+ L.  84       156  LOAD_CODE                <code_object bitLength>
+              158  LOAD_STR                 'bitLength'
+              160  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              162  STORE_NAME               bitLength
+              164  JUMP_FORWARD        194  'to 194'
+            166_0  COME_FROM           100  '100'
+
+ L.  98       166  LOAD_CONST               (False,)
+              168  LOAD_CODE                <code_object from_bytes>
+              170  LOAD_STR                 'from_bytes'
+              172  MAKE_FUNCTION_1          'default'
+              174  STORE_NAME               from_bytes
+
+ L. 101       176  LOAD_CONST               (False, 0)
+              178  LOAD_CODE                <code_object to_bytes>
+              180  LOAD_STR                 'to_bytes'
+              182  MAKE_FUNCTION_1          'default'
+              184  STORE_NAME               to_bytes
+
+ L. 109       186  LOAD_CODE                <code_object bitLength>
+              188  LOAD_STR                 'bitLength'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  STORE_NAME               bitLength
+            194_0  COME_FROM           164  '164'
+
+Parse error at or near `<121>' instruction at offset 38
+

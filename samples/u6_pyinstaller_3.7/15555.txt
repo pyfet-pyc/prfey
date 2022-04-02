@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L. 888       246  LOAD_CONST               0
+                 248  LOAD_FAST                'info'
+                 250  LOAD_FAST                'name'
+                 252  STORE_SUBSCR     
+                 254  JUMP_BACK           158  'to 158'
+->               256  POP_BLOCK        
+               258_0  COME_FROM_LOOP      152  '152'
+Instruction context:
+   
+ L.2536       708  LOAD_GLOBAL              print
+                 710  LOAD_STR                 '{!r} file created.'
+                 712  LOAD_METHOD              format
+                 714  LOAD_FAST                'tar_name'
+                 716  CALL_METHOD_1         1  '1 positional argument'
+                 718  CALL_FUNCTION_1       1  '1 positional argument'
+                 720  POP_TOP          
+               722_0  COME_FROM           704  '704'
+               722_1  COME_FROM           564  '564'
+               722_2  COME_FROM           554  '554'
+->             722_3  COME_FROM           344  '344'
+
+../test/15555.pyc -- 
+# decompile failed
+
+# file ../test/15555.pyc
+# Deparsing stopped due to parse error

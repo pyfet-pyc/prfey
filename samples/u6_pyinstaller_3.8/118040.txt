@@ -1,0 +1,81 @@
+Instruction context:
+   
+ L. 229       198  POP_BLOCK        
+                 200  POP_EXCEPT       
+->               202  JUMP_BACK            42  'to 42'
+                 204  POP_BLOCK        
+                 206  JUMP_FORWARD        242  'to 242'
+               208_0  COME_FROM_FINALLY   130  '130'
+Instruction context:
+   
+ L. 332        54  POP_BLOCK        
+->                56  CALL_FINALLY         70  'to 70'
+                  58  LOAD_CONST               None
+                  60  RETURN_VALUE     
+                62_0  COME_FROM            52  '52'
+Instruction context:
+   
+ L. 441        32  POP_BLOCK        
+->                34  CALL_FINALLY        104  'to 104'
+                  36  LOAD_CONST               None
+                  38  RETURN_VALUE     
+                40_0  COME_FROM            30  '30'
+Instruction context:
+   
+ L. 583        48  POP_EXCEPT       
+->                50  LOAD_CONST               None
+                  52  RETURN_VALUE     
+                54_0  COME_FROM            32  '32'
+                  54  END_FINALLY      
+                56_0  COME_FROM            24  '24'
+Instruction context:
+   
+ L. 718       172  POP_BLOCK        
+->               174  JUMP_BACK           124  'to 124'
+               176_0  COME_FROM           170  '170'
+Instruction context:
+   
+ L. 766        98  LOAD_FAST                'flags'
+                 100  LOAD_CONST               1
+                 102  BINARY_AND       
+                 104  UNARY_NOT        
+                 106  POP_BLOCK        
+->               108  CALL_FINALLY        118  'to 118'
+                 110  POP_BLOCK        
+                 112  CALL_FINALLY        132  'to 132'
+                 114  POP_BLOCK        
+                 116  RETURN_VALUE     
+               118_0  COME_FROM           108  '108'
+               118_1  COME_FROM_FINALLY    66  '66'
+Instruction context:
+   
+ L. 931       708  POP_BLOCK        
+                 710  POP_EXCEPT       
+->               712  CALL_FINALLY        722  'to 722'
+             714_716  JUMP_BACK           498  'to 498'
+                 718  POP_BLOCK        
+                 720  BEGIN_FINALLY    
+               722_0  COME_FROM           712  '712'
+               722_1  COME_FROM_FINALLY   682  '682'
+                 722  LOAD_CONST               None
+                 724  STORE_FAST               'ex'
+                 726  DELETE_FAST              'ex'
+                 728  END_FINALLY      
+                 730  POP_EXCEPT       
+                 732  JUMP_FORWARD        968  'to 968'
+               734_0  COME_FROM           672  '672'
+Instruction context:
+   
+ L.1307        46  DUP_TOP          
+                  48  LOAD_GLOBAL              Exception
+                  50  COMPARE_OP               exception-match
+                  52  POP_JUMP_IF_FALSE    68  'to 68'
+                  54  POP_TOP          
+->                56  POP_TOP          
+                  58  POP_TOP          
+
+../test/118040.pyc -- 
+# decompile failed
+
+# file ../test/118040.pyc
+# Deparsing stopped due to parse error

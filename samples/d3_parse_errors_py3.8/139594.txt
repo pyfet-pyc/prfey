@@ -1,0 +1,59 @@
+Instruction context:
+   
+ L. 132        48  POP_EXCEPT       
+                  50  JUMP_FORWARD         72  'to 72'
+->              52_0  COME_FROM            40  '40'
+Instruction context:
+   
+ L. 164       118  POP_EXCEPT       
+                 120  POP_TOP          
+->               122  JUMP_FORWARD        226  'to 226'
+                 124  POP_EXCEPT       
+                 126  JUMP_FORWARD        130  'to 130'
+               128_0  COME_FROM           110  '110'
+                 128  END_FINALLY      
+               130_0  COME_FROM           126  '126'
+               130_1  COME_FROM           102  '102'
+Instruction context:
+   
+ L. 657       134  POP_EXCEPT       
+                 136  POP_EXCEPT       
+                 138  JUMP_BACK            30  'to 30'
+                 140  POP_EXCEPT       
+                 142  JUMP_FORWARD        152  'to 152'
+               144_0  COME_FROM           126  '126'
+->               144  END_FINALLY      
+                 146  JUMP_FORWARD        152  'to 152'
+               148_0  COME_FROM            88  '88'
+Instruction context:
+   
+ L. 732       104  POP_EXCEPT       
+                 106  JUMP_BACK            50  'to 50'
+                 108  POP_EXCEPT       
+                 110  JUMP_FORWARD        114  'to 114'
+->             112_0  COME_FROM            96  '96'
+                 112  END_FINALLY      
+               114_0  COME_FROM           110  '110'
+               114_1  COME_FROM            84  '84'
+Instruction context:
+   
+ L. 785       172  POP_EXCEPT       
+                 174  JUMP_BACK            54  'to 54'
+                 176  POP_EXCEPT       
+->               178  JUMP_BACK            54  'to 54'
+               180_0  COME_FROM           164  '164'
+                 180  END_FINALLY      
+                 182  JUMP_BACK            54  'to 54'
+               184_0  COME_FROM            54  '54'
+Instruction context:
+   
+ L. 869       126  POP_EXCEPT       
+->               128  LOAD_STR                 ''
+                 130  RETURN_VALUE     
+               132_0  COME_FROM           118  '118'
+
+../test/139594.pyc -- 
+# decompile failed
+
+# file ../test/139594.pyc
+# Deparsing stopped due to parse error

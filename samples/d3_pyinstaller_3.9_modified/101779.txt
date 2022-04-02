@@ -1,0 +1,70 @@
+Instruction context:
+   
+ L.  61        10  LOAD_FAST                'session'
+                  12  LOAD_ATTR                request
+                  14  BUILD_TUPLE_0         0 
+                  16  LOAD_FAST                'method'
+                  18  LOAD_FAST                'url'
+                  20  LOAD_CONST               ('method', 'url')
+                  22  BUILD_CONST_KEY_MAP_2     2 
+                  24  LOAD_FAST                'kwargs'
+->                26  <164>                 1  ''
+                  28  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  30  POP_BLOCK        
+                  32  ROT_TWO          
+                  34  LOAD_CONST               None
+                  36  DUP_TOP          
+                  38  DUP_TOP          
+                  40  CALL_FUNCTION_3       3  ''
+                  42  POP_TOP          
+                  44  RETURN_VALUE     
+                46_0  COME_FROM_WITH        6  '6'
+                  46  <49>             
+                  48  POP_JUMP_IF_TRUE     52  'to 52'
+                  50  <48>             
+                52_0  COME_FROM            48  '48'
+                  52  POP_TOP          
+                  54  POP_TOP          
+                  56  POP_TOP          
+                  58  POP_EXCEPT       
+Instruction context:
+   
+ L.  76        12  LOAD_GLOBAL              request
+                  14  LOAD_STR                 'get'
+                  16  LOAD_FAST                'url'
+                  18  BUILD_TUPLE_2         2 
+                  20  LOAD_STR                 'params'
+                  22  LOAD_FAST                'params'
+                  24  BUILD_MAP_1           1 
+                  26  LOAD_FAST                'kwargs'
+->                28  <164>                 1  ''
+                  30  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  32  RETURN_VALUE     
+Instruction context:
+   
+ L.  89        12  LOAD_GLOBAL              request
+                  14  LOAD_STR                 'options'
+                  16  LOAD_FAST                'url'
+                  18  BUILD_TUPLE_2         2 
+                  20  BUILD_MAP_0           0 
+                  22  LOAD_FAST                'kwargs'
+->                24  <164>                 1  ''
+                  26  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  28  RETURN_VALUE     
+Instruction context:
+   
+ L. 104        12  LOAD_GLOBAL              request
+                  14  LOAD_STR                 'head'
+                  16  LOAD_FAST                'url'
+                  18  BUILD_TUPLE_2         2 
+                  20  BUILD_MAP_0           0 
+                  22  LOAD_FAST                'kwargs'
+->                24  <164>                 1  ''
+                  26  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                  28  RETURN_VALUE     
+
+test/101779.pyc -- 
+# decompile failed
+
+# file test/101779.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,131 @@
+Instruction context:
+   
+ L. 269       168  DUP_TOP          
+                 170  LOAD_NAME                ImportError
+->               172  <121>               188  ''
+                 174  POP_TOP          
+                 176  POP_TOP          
+                 178  POP_TOP          
+
+test/112074.pyc -- 
+# decompile failed
+
+# file test/112074.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Dispatcher\n\nPlease see policy.py for a discussion on dispatchers and policies\n'
+                2  STORE_NAME               __doc__
+
+ L.   5         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              pythoncom
+               10  STORE_NAME               pythoncom
+               12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              traceback
+               18  STORE_NAME               traceback
+               20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              win32api
+               26  STORE_NAME               win32api
+
+ L.   6        28  LOAD_CONST               0
+               30  LOAD_CONST               ('exc_info',)
+               32  IMPORT_NAME              sys
+               34  IMPORT_FROM              exc_info
+               36  STORE_NAME               exc_info
+               38  POP_TOP          
+
+ L.   9        40  LOAD_CONST               0
+               42  LOAD_CONST               ('IsCOMServerException',)
+               44  IMPORT_NAME_ATTR         win32com.server.exception
+               46  IMPORT_FROM              IsCOMServerException
+               48  STORE_NAME               IsCOMServerException
+               50  POP_TOP          
+
+ L.  10        52  LOAD_CONST               0
+               54  LOAD_CONST               ('IIDToInterfaceName',)
+               56  IMPORT_NAME_ATTR         win32com.util
+               58  IMPORT_FROM              IIDToInterfaceName
+               60  STORE_NAME               IIDToInterfaceName
+               62  POP_TOP          
+
+ L.  11        64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              win32com
+               70  STORE_NAME               win32com
+
+ L.  13        72  LOAD_BUILD_CLASS 
+               74  LOAD_CODE                <code_object DispatcherBase>
+               76  LOAD_STR                 'DispatcherBase'
+               78  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               80  LOAD_STR                 'DispatcherBase'
+               82  CALL_FUNCTION_2       2  ''
+               84  STORE_NAME               DispatcherBase
+
+ L. 140        86  LOAD_BUILD_CLASS 
+               88  LOAD_CODE                <code_object DispatcherTrace>
+               90  LOAD_STR                 'DispatcherTrace'
+               92  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               94  LOAD_STR                 'DispatcherTrace'
+               96  LOAD_NAME                DispatcherBase
+               98  CALL_FUNCTION_3       3  ''
+              100  STORE_NAME               DispatcherTrace
+
+ L. 198       102  LOAD_BUILD_CLASS 
+              104  LOAD_CODE                <code_object DispatcherWin32trace>
+              106  LOAD_STR                 'DispatcherWin32trace'
+              108  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              110  LOAD_STR                 'DispatcherWin32trace'
+              112  LOAD_NAME                DispatcherTrace
+              114  CALL_FUNCTION_3       3  ''
+              116  STORE_NAME               DispatcherWin32trace
+
+ L. 210       118  LOAD_BUILD_CLASS 
+              120  LOAD_CODE                <code_object DispatcherOutputDebugString>
+              122  LOAD_STR                 'DispatcherOutputDebugString'
+              124  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              126  LOAD_STR                 'DispatcherOutputDebugString'
+              128  LOAD_NAME                DispatcherTrace
+              130  CALL_FUNCTION_3       3  ''
+              132  STORE_NAME               DispatcherOutputDebugString
+
+ L. 220       134  LOAD_BUILD_CLASS 
+              136  LOAD_CODE                <code_object DispatcherWin32dbg>
+              138  LOAD_STR                 'DispatcherWin32dbg'
+              140  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              142  LOAD_STR                 'DispatcherWin32dbg'
+              144  LOAD_NAME                DispatcherBase
+              146  CALL_FUNCTION_3       3  ''
+              148  STORE_NAME               DispatcherWin32dbg
+
+ L. 266       150  SETUP_FINALLY       168  'to 168'
+
+ L. 267       152  LOAD_CONST               0
+              154  LOAD_CONST               None
+              156  IMPORT_NAME              win32trace
+              158  STORE_NAME               win32trace
+
+ L. 268       160  LOAD_NAME                DispatcherWin32trace
+              162  STORE_NAME               DefaultDebugDispatcher
+              164  POP_BLOCK        
+              166  JUMP_FORWARD        190  'to 190'
+            168_0  COME_FROM_FINALLY   150  '150'
+
+ L. 269       168  DUP_TOP          
+              170  LOAD_NAME                ImportError
+              172  <121>               188  ''
+              174  POP_TOP          
+              176  POP_TOP          
+              178  POP_TOP          
+
+ L. 270       180  LOAD_NAME                DispatcherTrace
+              182  STORE_NAME               DefaultDebugDispatcher
+              184  POP_EXCEPT       
+              186  JUMP_FORWARD        190  'to 190'
+              188  <48>             
+            190_0  COME_FROM           186  '186'
+            190_1  COME_FROM           166  '166'
+
+Parse error at or near `<121>' instruction at offset 172
+

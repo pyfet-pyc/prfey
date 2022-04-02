@@ -1,0 +1,67 @@
+Instruction context:
+-> 
+ L. 116        70  DUP_TOP          
+                  72  LOAD_GLOBAL              IOError
+                  74  COMPARE_OP               exception-match
+                  76  POP_JUMP_IF_FALSE    92  'to 92'
+                  78  POP_TOP          
+                  80  POP_TOP          
+                  82  POP_TOP          
+Instruction context:
+   
+ L. 132        54  RAISE_VARARGS_2       2  'exception instance with __cause__'
+                  56  POP_BLOCK        
+                  58  BEGIN_FINALLY    
+                60_0  COME_FROM_FINALLY    40  '40'
+                  60  LOAD_CONST               None
+                  62  STORE_FAST               'e'
+                  64  DELETE_FAST              'e'
+                  66  END_FINALLY      
+                  68  POP_EXCEPT       
+                  70  JUMP_FORWARD         88  'to 88'
+                72_0  COME_FROM            32  '32'
+                  72  END_FINALLY      
+->                74  JUMP_FORWARD         88  'to 88'
+                76_0  COME_FROM             8  '8'
+Instruction context:
+   
+ L. 301        54  RAISE_VARARGS_2       2  'exception instance with __cause__'
+                  56  POP_BLOCK        
+                  58  BEGIN_FINALLY    
+                60_0  COME_FROM_FINALLY    40  '40'
+                  60  LOAD_CONST               None
+                  62  STORE_FAST               'e'
+                  64  DELETE_FAST              'e'
+                  66  END_FINALLY      
+                  68  POP_EXCEPT       
+                  70  JUMP_FORWARD         88  'to 88'
+                72_0  COME_FROM            32  '32'
+                  72  END_FINALLY      
+->                74  JUMP_FORWARD         88  'to 88'
+                76_0  COME_FROM             8  '8'
+Instruction context:
+   
+ L. 337        50  LOAD_FAST                'fp'
+                  52  LOAD_METHOD              read
+                  54  CALL_METHOD_0         0  ''
+                  56  POP_BLOCK        
+                  58  ROT_TWO          
+                  60  BEGIN_FINALLY    
+                  62  WITH_CLEANUP_START
+                  64  WITH_CLEANUP_FINISH
+                  66  POP_FINALLY           0  ''
+->                68  POP_BLOCK        
+                  70  RETURN_VALUE     
+                72_0  COME_FROM_WITH       46  '46'
+                  72  WITH_CLEANUP_START
+                  74  WITH_CLEANUP_FINISH
+                  76  END_FINALLY      
+                  78  POP_BLOCK        
+                  80  JUMP_FORWARD        102  'to 102'
+                82_0  COME_FROM_FINALLY    36  '36'
+
+../test/120604.pyc -- 
+# decompile failed
+
+# file ../test/120604.pyc
+# Deparsing stopped due to parse error

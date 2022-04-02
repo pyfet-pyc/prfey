@@ -1,0 +1,45 @@
+Instruction context:
+   
+ L.  37         8  LOAD_FAST                'modifier'
+                  10  LOAD_GLOBAL              all_modifiers
+->                12  <118>                 0  ''
+                  14  POP_JUMP_IF_FALSE    20  'to 20'
+Instruction context:
+   
+ L.  87       200  LOAD_CONST               (125, ())
+                 202  LOAD_GLOBAL              to_name
+->               204  <118>                 1  ''
+                 206  POP_JUMP_IF_TRUE    220  'to 220'
+                 208  LOAD_GLOBAL              to_name
+                 210  LOAD_CONST               (125, ())
+                 212  BINARY_SUBSCR    
+                 214  LOAD_STR                 'alt'
+                 216  COMPARE_OP               ==
+                 218  POP_JUMP_IF_FALSE   230  'to 230'
+               220_0  COME_FROM           206  '206'
+Instruction context:
+   
+ L. 134       106  LOAD_FAST                'name'
+                 108  LOAD_GLOBAL              all_modifiers
+->               110  <118>                 0  ''
+                 112  POP_JUMP_IF_FALSE   144  'to 144'
+Instruction context:
+   
+ L. 153        38  LOAD_GLOBAL              len
+                  40  LOAD_FAST                'parts'
+                  42  CALL_FUNCTION_1       1  ''
+                  44  LOAD_CONST               1
+                  46  COMPARE_OP               >
+                  48  POP_JUMP_IF_FALSE    86  'to 86'
+                  50  LOAD_FAST                'parts'
+                  52  LOAD_CONST               0
+                  54  BINARY_SUBSCR    
+                  56  LOAD_CONST               ('left', 'right')
+->                58  <118>                 0  ''
+                  60  POP_JUMP_IF_FALSE    86  'to 86'
+
+test/101731.pyc -- 
+# decompile failed
+
+# file test/101731.pyc
+# Deparsing stopped due to parse error

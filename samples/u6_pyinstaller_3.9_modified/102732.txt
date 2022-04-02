@@ -1,0 +1,199 @@
+
+# file test/102732.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nModule difflib -- helpers for computing deltas between objects.\n\nFunction get_close_matches(word, possibilities, n=3, cutoff=0.6):\n    Use SequenceMatcher to return list of the best "good enough" matches.\n\nFunction context_diff(a, b):\n    For two lists of strings, return a delta in context diff format.\n\nFunction ndiff(a, b):\n    Return a delta: the difference between `a` and `b` (lists of strings).\n\nFunction restore(delta, which):\n    Return one of the two sequences that generated an ndiff delta.\n\nFunction unified_diff(a, b):\n    For two lists of strings, return a delta in unified diff format.\n\nClass SequenceMatcher:\n    A flexible class for comparing pairs of sequences of any type.\n\nClass Differ:\n    For producing human-readable deltas from sequences of lines of text.\n\nClass HtmlDiff:\n    For producing HTML side by side comparison with change highlights.\n'
+                2  STORE_NAME               __doc__
+
+ L.  29         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('get_close_matches', 'ndiff', 'restore', 'SequenceMatcher', 'Differ', 'IS_CHARACTER_JUNK', 'IS_LINE_JUNK', 'context_diff', 'unified_diff', 'diff_bytes', 'HtmlDiff', 'Match')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  33        12  LOAD_CONST               0
+               14  LOAD_CONST               ('nlargest',)
+               16  IMPORT_NAME              heapq
+               18  IMPORT_FROM              nlargest
+               20  STORE_NAME               _nlargest
+               22  POP_TOP          
+
+ L.  34        24  LOAD_CONST               0
+               26  LOAD_CONST               ('namedtuple',)
+               28  IMPORT_NAME              collections
+               30  IMPORT_FROM              namedtuple
+               32  STORE_NAME               _namedtuple
+               34  POP_TOP          
+
+ L.  35        36  LOAD_CONST               0
+               38  LOAD_CONST               ('GenericAlias',)
+               40  IMPORT_NAME              types
+               42  IMPORT_FROM              GenericAlias
+               44  STORE_NAME               GenericAlias
+               46  POP_TOP          
+
+ L.  37        48  LOAD_NAME                _namedtuple
+               50  LOAD_STR                 'Match'
+               52  LOAD_STR                 'a b size'
+               54  CALL_FUNCTION_2       2  ''
+               56  STORE_NAME               Match
+
+ L.  39        58  LOAD_CODE                <code_object _calculate_ratio>
+               60  LOAD_STR                 '_calculate_ratio'
+               62  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               64  STORE_NAME               _calculate_ratio
+
+ L.  44        66  LOAD_BUILD_CLASS 
+               68  LOAD_CODE                <code_object SequenceMatcher>
+               70  LOAD_STR                 'SequenceMatcher'
+               72  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               74  LOAD_STR                 'SequenceMatcher'
+               76  CALL_FUNCTION_2       2  ''
+               78  STORE_NAME               SequenceMatcher
+
+ L. 698        80  LOAD_CONST               (3, 0.6)
+               82  LOAD_CODE                <code_object get_close_matches>
+               84  LOAD_STR                 'get_close_matches'
+               86  MAKE_FUNCTION_1          'default'
+               88  STORE_NAME               get_close_matches
+
+ L. 747        90  LOAD_CODE                <code_object _keep_original_ws>
+               92  LOAD_STR                 '_keep_original_ws'
+               94  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               96  STORE_NAME               _keep_original_ws
+
+ L. 756        98  LOAD_BUILD_CLASS 
+              100  LOAD_CODE                <code_object Differ>
+              102  LOAD_STR                 'Differ'
+              104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              106  LOAD_STR                 'Differ'
+              108  CALL_FUNCTION_2       2  ''
+              110  STORE_NAME               Differ
+
+ L.1083       112  LOAD_CONST               0
+              114  LOAD_CONST               None
+              116  IMPORT_NAME              re
+              118  STORE_NAME               re
+
+ L.1085       120  LOAD_NAME                re
+              122  LOAD_METHOD              compile
+              124  LOAD_STR                 '\\s*(?:#\\s*)?$'
+              126  CALL_METHOD_1         1  ''
+              128  LOAD_ATTR                match
+              130  BUILD_TUPLE_1         1 
+              132  LOAD_CODE                <code_object IS_LINE_JUNK>
+              134  LOAD_STR                 'IS_LINE_JUNK'
+              136  MAKE_FUNCTION_1          'default'
+              138  STORE_NAME               IS_LINE_JUNK
+
+ L.1101       140  LOAD_CONST               (' \t',)
+              142  LOAD_CODE                <code_object IS_CHARACTER_JUNK>
+              144  LOAD_STR                 'IS_CHARACTER_JUNK'
+              146  MAKE_FUNCTION_1          'default'
+              148  STORE_NAME               IS_CHARACTER_JUNK
+
+ L.1124       150  LOAD_CODE                <code_object _format_range_unified>
+              152  LOAD_STR                 '_format_range_unified'
+              154  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              156  STORE_NAME               _format_range_unified
+
+ L.1135       158  LOAD_CONST               ('', '', '', '', 3, '\n')
+              160  LOAD_CODE                <code_object unified_diff>
+              162  LOAD_STR                 'unified_diff'
+              164  MAKE_FUNCTION_1          'default'
+              166  STORE_NAME               unified_diff
+
+ L.1208       168  LOAD_CODE                <code_object _format_range_context>
+              170  LOAD_STR                 '_format_range_context'
+              172  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              174  STORE_NAME               _format_range_context
+
+ L.1220       176  LOAD_CONST               ('', '', '', '', 3, '\n')
+              178  LOAD_CODE                <code_object context_diff>
+              180  LOAD_STR                 'context_diff'
+              182  MAKE_FUNCTION_1          'default'
+              184  STORE_NAME               context_diff
+
+ L.1296       186  LOAD_CODE                <code_object _check_types>
+              188  LOAD_STR                 '_check_types'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  STORE_NAME               _check_types
+
+ L.1313       194  LOAD_CONST               (b'', b'', b'', b'', 3, b'\n')
+              196  LOAD_CODE                <code_object diff_bytes>
+              198  LOAD_STR                 'diff_bytes'
+              200  MAKE_FUNCTION_1          'default'
+              202  STORE_NAME               diff_bytes
+
+ L.1343       204  LOAD_CONST               None
+              206  LOAD_NAME                IS_CHARACTER_JUNK
+              208  BUILD_TUPLE_2         2 
+              210  LOAD_CODE                <code_object ndiff>
+              212  LOAD_STR                 'ndiff'
+              214  MAKE_FUNCTION_1          'default'
+              216  STORE_NAME               ndiff
+
+ L.1380       218  LOAD_CONST               None
+              220  LOAD_CONST               None
+
+ L.1381       222  LOAD_NAME                IS_CHARACTER_JUNK
+
+ L.1380       224  BUILD_TUPLE_3         3 
+              226  LOAD_CODE                <code_object _mdiff>
+              228  LOAD_STR                 '_mdiff'
+              230  MAKE_FUNCTION_1          'default'
+              232  STORE_NAME               _mdiff
+
+ L.1650       234  LOAD_STR                 '\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n\n<html>\n\n<head>\n    <meta http-equiv="Content-Type"\n          content="text/html; charset=%(charset)s" />\n    <title></title>\n    <style type="text/css">%(styles)s\n    </style>\n</head>\n\n<body>\n    %(table)s%(legend)s\n</body>\n\n</html>'
+              236  STORE_NAME               _file_template
+
+ L.1670       238  LOAD_STR                 '\n        table.diff {font-family:Courier; border:medium;}\n        .diff_header {background-color:#e0e0e0}\n        td.diff_header {text-align:right}\n        .diff_next {background-color:#c0c0c0}\n        .diff_add {background-color:#aaffaa}\n        .diff_chg {background-color:#ffff77}\n        .diff_sub {background-color:#ffaaaa}'
+              240  STORE_NAME               _styles
+
+ L.1679       242  LOAD_STR                 '\n    <table class="diff" id="difflib_chg_%(prefix)s_top"\n           cellspacing="0" cellpadding="0" rules="groups" >\n        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>\n        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>\n        %(header_row)s\n        <tbody>\n%(data_rows)s        </tbody>\n    </table>'
+              244  STORE_NAME               _table_template
+
+ L.1689       246  LOAD_STR                 '\n    <table class="diff" summary="Legends">\n        <tr> <th colspan="2"> Legends </th> </tr>\n        <tr> <td> <table border="" summary="Colors">\n                      <tr><th> Colors </th> </tr>\n                      <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr>\n                      <tr><td class="diff_chg">Changed</td> </tr>\n                      <tr><td class="diff_sub">Deleted</td> </tr>\n                  </table></td>\n             <td> <table border="" summary="Links">\n                      <tr><th colspan="2"> Links </th> </tr>\n                      <tr><td>(f)irst change</td> </tr>\n                      <tr><td>(n)ext change</td> </tr>\n                      <tr><td>(t)op</td> </tr>\n                  </table></td> </tr>\n    </table>'
+              248  STORE_NAME               _legend
+
+ L.1706       250  LOAD_BUILD_CLASS 
+              252  LOAD_CODE                <code_object HtmlDiff>
+              254  LOAD_STR                 'HtmlDiff'
+              256  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              258  LOAD_STR                 'HtmlDiff'
+              260  LOAD_NAME                object
+              262  CALL_FUNCTION_3       3  ''
+              264  STORE_NAME               HtmlDiff
+
+ L.2057       266  DELETE_NAME              re
+
+ L.2059       268  LOAD_CODE                <code_object restore>
+              270  LOAD_STR                 'restore'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  STORE_NAME               restore
+
+ L.2091       276  LOAD_CODE                <code_object _test>
+              278  LOAD_STR                 '_test'
+              280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              282  STORE_NAME               _test
+
+ L.2095       284  LOAD_NAME                __name__
+              286  LOAD_STR                 '__main__'
+              288  COMPARE_OP               ==
+          290_292  POP_JUMP_IF_FALSE   300  'to 300'
+
+ L.2096       294  LOAD_NAME                _test
+              296  CALL_FUNCTION_0       0  ''
+              298  POP_TOP          
+            300_0  COME_FROM           290  '290'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L.  29         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('get_close_matches', 'ndiff', 'restore', 'SequenceMatcher', 'Differ', 'IS_CHARACTER_JUNK', 'IS_LINE_JUNK', 'context_diff', 'unified_diff', 'diff_bytes', 'HtmlDiff', 'Match')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/102732.pyc -- 
+# decompile failed

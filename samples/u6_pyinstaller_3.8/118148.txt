@@ -1,0 +1,30 @@
+Instruction context:
+   
+ L. 224       468  LOAD_DEREF               'rv'
+                 470  LOAD_METHOD              append
+                 472  LOAD_STR                 '|%s%s="%s"'
+                 474  LOAD_STR                 ' '
+->             476_0  COME_FROM           104  '104'
+                 476  LOAD_FAST                'indent'
+                 478  LOAD_CONST               2
+                 480  BINARY_ADD       
+                 482  BINARY_MULTIPLY  
+                 484  LOAD_FAST                'name'
+                 486  LOAD_FAST                'value'
+                 488  BUILD_TUPLE_3         3 
+                 490  BINARY_MODULO    
+                 492  CALL_METHOD_1         1  ''
+                 494  POP_TOP          
+             496_498  JUMP_BACK           460  'to 460'
+               500_0  COME_FROM           344  '344'
+               500_1  COME_FROM           260  '260'
+               500_2  COME_FROM           218  '218'
+               500_3  COME_FROM           178  '178'
+               500_4  COME_FROM           152  '152'
+               500_5  COME_FROM           126  '126'
+
+../test/118148.pyc -- 
+# decompile failed
+
+# file ../test/118148.pyc
+# Deparsing stopped due to parse error

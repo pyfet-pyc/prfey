@@ -1,0 +1,33 @@
+Instruction context:
+   
+ L.  20        20  LOAD_GLOBAL              isinstance
+                  22  LOAD_FAST                'find_links'
+                  24  LOAD_GLOBAL              tuple
+                  26  LOAD_GLOBAL              list
+                  28  BUILD_TUPLE_2         2 
+                  30  CALL_FUNCTION_2       2  ''
+                  32  POP_JUMP_IF_TRUE     38  'to 38'
+->                34  <74>             
+                  36  RAISE_VARARGS_1       1  'exception instance'
+                38_0  COME_FROM            32  '32'
+Instruction context:
+   
+ L.  42        84  LOAD_STR                 'find_links'
+                  86  LOAD_FAST                'opts'
+->                88  <118>                 0  ''
+                  90  POP_JUMP_IF_FALSE   112  'to 112'
+Instruction context:
+   
+ L.  63        16  DUP_TOP          
+                  18  LOAD_GLOBAL              pkg_resources
+                  20  LOAD_ATTR                DistributionNotFound
+->                22  <121>                58  ''
+                  24  POP_TOP          
+                  26  POP_TOP          
+                  28  POP_TOP          
+
+test/115927.pyc -- 
+# decompile failed
+
+# file test/115927.pyc
+# Deparsing stopped due to parse error

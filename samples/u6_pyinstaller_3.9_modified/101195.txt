@@ -1,0 +1,17 @@
+Instruction context:
+   
+ L.  53        10  LOAD_GLOBAL              framework_info
+                  12  LOAD_STR                 'completely/invalid'
+                  14  CALL_FUNCTION_1       1  ''
+                  16  LOAD_CONST               None
+->                18  <117>                 0  ''
+                  20  POP_JUMP_IF_TRUE     26  'to 26'
+                  22  <74>             
+                  24  RAISE_VARARGS_1       1  'exception instance'
+                26_0  COME_FROM            20  '20'
+
+test/101195.pyc -- 
+# decompile failed
+
+# file test/101195.pyc
+# Deparsing stopped due to parse error

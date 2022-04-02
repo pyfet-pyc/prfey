@@ -1,0 +1,24 @@
+Instruction context:
+   
+ L. 136       636  POP_EXCEPT       
+             638_640  JUMP_ABSOLUTE       816  'to 816'
+->               642  POP_EXCEPT       
+                 644  JUMP_BACK           414  'to 414'
+               646_0  COME_FROM           626  '626'
+                 646  END_FINALLY      
+             648_650  JUMP_BACK           414  'to 414'
+                 652  JUMP_FORWARD        816  'to 816'
+               654_0  COME_FROM           392  '392'
+               654_1  COME_FROM           374  '374'
+Instruction context:
+   
+ L. 391       304  LOAD_GLOBAL              SyntaxError
+                 306  LOAD_STR                 'no marker found'
+                 308  CALL_FUNCTION_1       1  ''
+->               310  RAISE_VARARGS_1       1  'exception instance'
+
+../test/12896.pyc -- 
+# decompile failed
+
+# file ../test/12896.pyc
+# Deparsing stopped due to parse error

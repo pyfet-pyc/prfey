@@ -1,0 +1,36 @@
+Instruction context:
+   
+ L.  28        12  DUP_TOP          
+                  14  LOAD_GLOBAL              ValueError
+                  16  LOAD_GLOBAL              OverflowError
+                  18  BUILD_TUPLE_2         2 
+                  20  COMPARE_OP               exception-match
+                  22  POP_JUMP_IF_FALSE    36  'to 36'
+                  24  POP_TOP          
+->                26  POP_TOP          
+                  28  POP_TOP          
+Instruction context:
+   
+ L.  51       168  DUP_TOP          
+                 170  LOAD_GLOBAL              UnicodeDecodeError
+                 172  COMPARE_OP               exception-match
+                 174  POP_JUMP_IF_FALSE   194  'to 194'
+                 176  POP_TOP          
+->               178  POP_TOP          
+                 180  POP_TOP          
+Instruction context:
+   
+ L. 196       190  POP_EXCEPT       
+->               192  POP_TOP          
+                 194  BREAK_LOOP          204  'to 204'
+                 196  POP_EXCEPT       
+                 198  JUMP_BACK           136  'to 136'
+               200_0  COME_FROM           178  '178'
+                 200  END_FINALLY      
+                 202  JUMP_BACK           136  'to 136'
+
+../test/118208.pyc -- 
+# decompile failed
+
+# file ../test/118208.pyc
+# Deparsing stopped due to parse error

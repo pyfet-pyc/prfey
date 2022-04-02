@@ -1,0 +1,45 @@
+Instruction context:
+   
+ L. 140        48  POP_EXCEPT       
+                  50  JUMP_FORWARD         72  'to 72'
+->              52_0  COME_FROM            40  '40'
+Instruction context:
+   
+ L. 181        34  POP_EXCEPT       
+                  36  JUMP_FORWARD         40  'to 40'
+->              38_0  COME_FROM            26  '26'
+                  38  END_FINALLY      
+                40_0  COME_FROM            36  '36'
+Instruction context:
+   
+ L. 455       124  POP_EXCEPT       
+                 126  POP_EXCEPT       
+                 128  JUMP_BACK            24  'to 24'
+                 130  POP_EXCEPT       
+                 132  JUMP_FORWARD        142  'to 142'
+               134_0  COME_FROM           116  '116'
+->               134  END_FINALLY      
+                 136  JUMP_FORWARD        142  'to 142'
+               138_0  COME_FROM            78  '78'
+Instruction context:
+   
+ L. 506       100  POP_EXCEPT       
+                 102  JUMP_BACK            50  'to 50'
+                 104  POP_EXCEPT       
+                 106  JUMP_FORWARD        110  'to 110'
+->             108_0  COME_FROM            92  '92'
+                 108  END_FINALLY      
+               110_0  COME_FROM           106  '106'
+               110_1  COME_FROM            80  '80'
+Instruction context:
+   
+ L. 573        86  POP_EXCEPT       
+                  88  JUMP_FORWARD         92  'to 92'
+->              90_0  COME_FROM            78  '78'
+                  90  END_FINALLY      
+
+../test/157384.pyc -- 
+# decompile failed
+
+# file ../test/157384.pyc
+# Deparsing stopped due to parse error

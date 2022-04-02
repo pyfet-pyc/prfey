@@ -1,0 +1,43 @@
+Instruction context:
+   
+ L. 986        82  POP_EXCEPT       
+                  84  BREAK_LOOP           88  'to 88'
+                86_0  COME_FROM            74  '74'
+->                86  END_FINALLY      
+                88_0  COME_FROM            84  '84'
+                88_1  COME_FROM            66  '66'
+Instruction context:
+   
+ L.1077       100  LOAD_FAST                'self'
+                 102  LOAD_METHOD              _drain
+                 104  CALL_METHOD_0         0  ''
+                 106  GET_AWAITABLE    
+                 108  LOAD_CONST               None
+                 110  YIELD_FROM       
+                 112  POP_TOP          
+                 114  POP_BLOCK        
+                 116  BEGIN_FINALLY    
+->             118_0  COME_FROM_ASYNC_WITH    96  '96'
+                 118  WITH_CLEANUP_START
+                 120  GET_AWAITABLE    
+                 122  LOAD_CONST               None
+                 124  YIELD_FROM       
+                 126  WITH_CLEANUP_FINISH
+                 128  END_FINALLY      
+                 130  POP_BLOCK        
+                 132  JUMP_FORWARD        176  'to 176'
+               134_0  COME_FROM_FINALLY    82  '82'
+Instruction context:
+   
+ L.1180       104  POP_BLOCK        
+->               106  CALL_FINALLY        204  'to 204'
+                 108  POP_TOP          
+                 110  LOAD_CONST               None
+                 112  RETURN_VALUE     
+               114_0  COME_FROM           102  '102'
+
+../test/118425.pyc -- 
+# decompile failed
+
+# file ../test/118425.pyc
+# Deparsing stopped due to parse error

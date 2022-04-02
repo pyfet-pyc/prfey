@@ -1,0 +1,24 @@
+Instruction context:
+   
+ L. 192       508  DUP_TOP          
+                 510  LOAD_GLOBAL              IndexError
+                 512  LOAD_GLOBAL              TypeError
+                 514  BUILD_TUPLE_2         2 
+                 516  COMPARE_OP               exception-match
+             518_520  POP_JUMP_IF_FALSE   686  'to 686'
+                 522  POP_TOP          
+->               524  POP_TOP          
+                 526  POP_TOP          
+Instruction context:
+   
+ L. 371       410  POP_BLOCK        
+                 412  JUMP_BACK           106  'to 106'
+->               414  POP_BLOCK        
+                 416  JUMP_FORWARD        470  'to 470'
+               418_0  COME_FROM_FINALLY   356  '356'
+
+../test/12819.pyc -- 
+# decompile failed
+
+# file ../test/12819.pyc
+# Deparsing stopped due to parse error

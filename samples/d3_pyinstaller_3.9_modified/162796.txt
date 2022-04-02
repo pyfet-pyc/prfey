@@ -1,0 +1,1049 @@
+
+# file test/162796.pyc
+# --- This code section failed: ---
+
+ L.   3         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              logging
+                6  STORE_NAME               logging
+
+ L.   4         8  LOAD_CONST               0
+               10  LOAD_CONST               ('Dict', 'List', 'Optional', 'Union')
+               12  IMPORT_NAME              typing
+               14  IMPORT_FROM              Dict
+               16  STORE_NAME               Dict
+               18  IMPORT_FROM              List
+               20  STORE_NAME               List
+               22  IMPORT_FROM              Optional
+               24  STORE_NAME               Optional
+               26  IMPORT_FROM              Union
+               28  STORE_NAME               Union
+               30  POP_TOP          
+
+ L.   5        32  LOAD_CONST               0
+               34  LOAD_CONST               ('ABC',)
+               36  IMPORT_NAME              abc
+               38  IMPORT_FROM              ABC
+               40  STORE_NAME               ABC
+               42  POP_TOP          
+
+ L.   7        44  SETUP_FINALLY        58  'to 58'
+
+ L.   8        46  LOAD_CONST               0
+               48  LOAD_CONST               None
+               50  IMPORT_NAME              ujson
+               52  STORE_NAME               json
+               54  POP_BLOCK        
+               56  JUMP_FORWARD         84  'to 84'
+             58_0  COME_FROM_FINALLY    44  '44'
+
+ L.   9        58  DUP_TOP          
+               60  LOAD_NAME                ImportError
+               62  <121>                82  ''
+               64  POP_TOP          
+               66  POP_TOP          
+               68  POP_TOP          
+
+ L.  10        70  LOAD_CONST               0
+               72  LOAD_CONST               None
+               74  IMPORT_NAME              json
+               76  STORE_NAME               json
+               78  POP_EXCEPT       
+               80  JUMP_FORWARD         84  'to 84'
+               82  <48>             
+             84_0  COME_FROM            80  '80'
+             84_1  COME_FROM            56  '56'
+
+ L.  12        84  LOAD_CONST               0
+               86  LOAD_CONST               ('util',)
+               88  IMPORT_NAME              telebot
+               90  IMPORT_FROM              util
+               92  STORE_NAME               util
+               94  POP_TOP          
+
+ L.  14        96  LOAD_CONST               False
+               98  STORE_NAME               DISABLE_KEYLEN_ERROR
+
+ L.  16       100  LOAD_NAME                logging
+              102  LOAD_METHOD              getLogger
+              104  LOAD_STR                 'TeleBot'
+              106  CALL_METHOD_1         1  ''
+              108  STORE_NAME               logger
+
+ L.  19       110  LOAD_BUILD_CLASS 
+              112  LOAD_CODE                <code_object JsonSerializable>
+              114  LOAD_STR                 'JsonSerializable'
+              116  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              118  LOAD_STR                 'JsonSerializable'
+              120  LOAD_NAME                object
+              122  CALL_FUNCTION_3       3  ''
+              124  STORE_NAME               JsonSerializable
+
+ L.  35       126  LOAD_BUILD_CLASS 
+              128  LOAD_CODE                <code_object Dictionaryable>
+              130  LOAD_STR                 'Dictionaryable'
+              132  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              134  LOAD_STR                 'Dictionaryable'
+              136  LOAD_NAME                object
+              138  CALL_FUNCTION_3       3  ''
+              140  STORE_NAME               Dictionaryable
+
+ L.  51       142  LOAD_BUILD_CLASS 
+              144  LOAD_CODE                <code_object JsonDeserializable>
+              146  LOAD_STR                 'JsonDeserializable'
+              148  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              150  LOAD_STR                 'JsonDeserializable'
+              152  LOAD_NAME                object
+              154  CALL_FUNCTION_3       3  ''
+              156  STORE_NAME               JsonDeserializable
+
+ L.  93       158  LOAD_BUILD_CLASS 
+              160  LOAD_CODE                <code_object Update>
+              162  LOAD_STR                 'Update'
+              164  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              166  LOAD_STR                 'Update'
+              168  LOAD_NAME                JsonDeserializable
+              170  CALL_FUNCTION_3       3  ''
+              172  STORE_NAME               Update
+
+ L. 132       174  LOAD_BUILD_CLASS 
+              176  LOAD_CODE                <code_object ChatMemberUpdated>
+              178  LOAD_STR                 'ChatMemberUpdated'
+              180  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              182  LOAD_STR                 'ChatMemberUpdated'
+              184  LOAD_NAME                JsonDeserializable
+              186  CALL_FUNCTION_3       3  ''
+              188  STORE_NAME               ChatMemberUpdated
+
+ L. 153       190  LOAD_BUILD_CLASS 
+              192  LOAD_CODE                <code_object WebhookInfo>
+              194  LOAD_STR                 'WebhookInfo'
+              196  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              198  LOAD_STR                 'WebhookInfo'
+              200  LOAD_NAME                JsonDeserializable
+              202  CALL_FUNCTION_3       3  ''
+              204  STORE_NAME               WebhookInfo
+
+ L. 173       206  LOAD_BUILD_CLASS 
+              208  LOAD_CODE                <code_object User>
+              210  LOAD_STR                 'User'
+              212  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              214  LOAD_STR                 'User'
+              216  LOAD_NAME                JsonDeserializable
+              218  LOAD_NAME                Dictionaryable
+              220  LOAD_NAME                JsonSerializable
+              222  CALL_FUNCTION_5       5  ''
+              224  STORE_NAME               User
+
+ L. 214       226  LOAD_BUILD_CLASS 
+              228  LOAD_CODE                <code_object GroupChat>
+              230  LOAD_STR                 'GroupChat'
+              232  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              234  LOAD_STR                 'GroupChat'
+              236  LOAD_NAME                JsonDeserializable
+              238  CALL_FUNCTION_3       3  ''
+              240  STORE_NAME               GroupChat
+
+ L. 226       242  LOAD_BUILD_CLASS 
+              244  LOAD_CODE                <code_object Chat>
+              246  LOAD_STR                 'Chat'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  LOAD_STR                 'Chat'
+              252  LOAD_NAME                JsonDeserializable
+              254  CALL_FUNCTION_3       3  ''
+              256  STORE_NAME               Chat
+
+ L. 266       258  LOAD_BUILD_CLASS 
+              260  LOAD_CODE                <code_object MessageID>
+              262  LOAD_STR                 'MessageID'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  LOAD_STR                 'MessageID'
+              268  LOAD_NAME                JsonDeserializable
+              270  CALL_FUNCTION_3       3  ''
+              272  STORE_NAME               MessageID
+
+ L. 278       274  LOAD_BUILD_CLASS 
+              276  LOAD_CODE                <code_object Message>
+              278  LOAD_STR                 'Message'
+              280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              282  LOAD_STR                 'Message'
+              284  LOAD_NAME                JsonDeserializable
+              286  CALL_FUNCTION_3       3  ''
+              288  STORE_NAME               Message
+
+ L. 590       290  LOAD_BUILD_CLASS 
+              292  LOAD_CODE                <code_object MessageEntity>
+              294  LOAD_STR                 'MessageEntity'
+              296  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              298  LOAD_STR                 'MessageEntity'
+              300  LOAD_NAME                Dictionaryable
+              302  LOAD_NAME                JsonSerializable
+              304  LOAD_NAME                JsonDeserializable
+              306  CALL_FUNCTION_5       5  ''
+              308  STORE_NAME               MessageEntity
+
+ L. 626       310  LOAD_BUILD_CLASS 
+              312  LOAD_CODE                <code_object Dice>
+              314  LOAD_STR                 'Dice'
+              316  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              318  LOAD_STR                 'Dice'
+              320  LOAD_NAME                JsonSerializable
+              322  LOAD_NAME                Dictionaryable
+              324  LOAD_NAME                JsonDeserializable
+              326  CALL_FUNCTION_5       5  ''
+              328  STORE_NAME               Dice
+
+ L. 645       330  LOAD_BUILD_CLASS 
+              332  LOAD_CODE                <code_object PhotoSize>
+              334  LOAD_STR                 'PhotoSize'
+              336  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              338  LOAD_STR                 'PhotoSize'
+              340  LOAD_NAME                JsonDeserializable
+              342  CALL_FUNCTION_3       3  ''
+              344  STORE_NAME               PhotoSize
+
+ L. 660       346  LOAD_BUILD_CLASS 
+              348  LOAD_CODE                <code_object Audio>
+              350  LOAD_STR                 'Audio'
+              352  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              354  LOAD_STR                 'Audio'
+              356  LOAD_NAME                JsonDeserializable
+              358  CALL_FUNCTION_3       3  ''
+              360  STORE_NAME               Audio
+
+ L. 684       362  LOAD_BUILD_CLASS 
+              364  LOAD_CODE                <code_object Voice>
+              366  LOAD_STR                 'Voice'
+              368  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              370  LOAD_STR                 'Voice'
+              372  LOAD_NAME                JsonDeserializable
+              374  CALL_FUNCTION_3       3  ''
+              376  STORE_NAME               Voice
+
+ L. 699       378  LOAD_BUILD_CLASS 
+              380  LOAD_CODE                <code_object Document>
+              382  LOAD_STR                 'Document'
+              384  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              386  LOAD_STR                 'Document'
+              388  LOAD_NAME                JsonDeserializable
+              390  CALL_FUNCTION_3       3  ''
+              392  STORE_NAME               Document
+
+ L. 719       394  LOAD_BUILD_CLASS 
+              396  LOAD_CODE                <code_object Video>
+              398  LOAD_STR                 'Video'
+              400  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              402  LOAD_STR                 'Video'
+              404  LOAD_NAME                JsonDeserializable
+              406  CALL_FUNCTION_3       3  ''
+              408  STORE_NAME               Video
+
+ L. 740       410  LOAD_BUILD_CLASS 
+              412  LOAD_CODE                <code_object VideoNote>
+              414  LOAD_STR                 'VideoNote'
+              416  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              418  LOAD_STR                 'VideoNote'
+              420  LOAD_NAME                JsonDeserializable
+              422  CALL_FUNCTION_3       3  ''
+              424  STORE_NAME               VideoNote
+
+ L. 758       426  LOAD_BUILD_CLASS 
+              428  LOAD_CODE                <code_object Contact>
+              430  LOAD_STR                 'Contact'
+              432  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              434  LOAD_STR                 'Contact'
+              436  LOAD_NAME                JsonDeserializable
+              438  CALL_FUNCTION_3       3  ''
+              440  STORE_NAME               Contact
+
+ L. 773       442  LOAD_BUILD_CLASS 
+              444  LOAD_CODE                <code_object Location>
+              446  LOAD_STR                 'Location'
+              448  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              450  LOAD_STR                 'Location'
+              452  LOAD_NAME                JsonDeserializable
+              454  LOAD_NAME                JsonSerializable
+              456  LOAD_NAME                Dictionaryable
+              458  CALL_FUNCTION_5       5  ''
+              460  STORE_NAME               Location
+
+ L. 803       462  LOAD_BUILD_CLASS 
+              464  LOAD_CODE                <code_object Venue>
+              466  LOAD_STR                 'Venue'
+              468  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              470  LOAD_STR                 'Venue'
+              472  LOAD_NAME                JsonDeserializable
+              474  CALL_FUNCTION_3       3  ''
+              476  STORE_NAME               Venue
+
+ L. 822       478  LOAD_BUILD_CLASS 
+              480  LOAD_CODE                <code_object UserProfilePhotos>
+              482  LOAD_STR                 'UserProfilePhotos'
+              484  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              486  LOAD_STR                 'UserProfilePhotos'
+              488  LOAD_NAME                JsonDeserializable
+              490  CALL_FUNCTION_3       3  ''
+              492  STORE_NAME               UserProfilePhotos
+
+ L. 837       494  LOAD_BUILD_CLASS 
+              496  LOAD_CODE                <code_object File>
+              498  LOAD_STR                 'File'
+              500  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              502  LOAD_STR                 'File'
+              504  LOAD_NAME                JsonDeserializable
+              506  CALL_FUNCTION_3       3  ''
+              508  STORE_NAME               File
+
+ L. 851       510  LOAD_BUILD_CLASS 
+              512  LOAD_CODE                <code_object ForceReply>
+              514  LOAD_STR                 'ForceReply'
+              516  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              518  LOAD_STR                 'ForceReply'
+              520  LOAD_NAME                JsonSerializable
+              522  CALL_FUNCTION_3       3  ''
+              524  STORE_NAME               ForceReply
+
+ L. 865       526  LOAD_BUILD_CLASS 
+              528  LOAD_CODE                <code_object ReplyKeyboardRemove>
+              530  LOAD_STR                 'ReplyKeyboardRemove'
+              532  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              534  LOAD_STR                 'ReplyKeyboardRemove'
+              536  LOAD_NAME                JsonSerializable
+              538  CALL_FUNCTION_3       3  ''
+              540  STORE_NAME               ReplyKeyboardRemove
+
+ L. 876       542  LOAD_BUILD_CLASS 
+              544  LOAD_CODE                <code_object ReplyKeyboardMarkup>
+              546  LOAD_STR                 'ReplyKeyboardMarkup'
+              548  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              550  LOAD_STR                 'ReplyKeyboardMarkup'
+              552  LOAD_NAME                JsonSerializable
+              554  CALL_FUNCTION_3       3  ''
+              556  STORE_NAME               ReplyKeyboardMarkup
+
+ L. 956       558  LOAD_BUILD_CLASS 
+              560  LOAD_CODE                <code_object KeyboardButton>
+              562  LOAD_STR                 'KeyboardButton'
+              564  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              566  LOAD_STR                 'KeyboardButton'
+              568  LOAD_NAME                Dictionaryable
+              570  LOAD_NAME                JsonSerializable
+              572  CALL_FUNCTION_4       4  ''
+              574  STORE_NAME               KeyboardButton
+
+ L. 977       576  LOAD_BUILD_CLASS 
+              578  LOAD_CODE                <code_object KeyboardButtonPollType>
+              580  LOAD_STR                 'KeyboardButtonPollType'
+              582  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              584  LOAD_STR                 'KeyboardButtonPollType'
+              586  LOAD_NAME                Dictionaryable
+              588  CALL_FUNCTION_3       3  ''
+              590  STORE_NAME               KeyboardButtonPollType
+
+ L. 985       592  LOAD_BUILD_CLASS 
+              594  LOAD_CODE                <code_object InlineKeyboardMarkup>
+              596  LOAD_STR                 'InlineKeyboardMarkup'
+              598  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              600  LOAD_STR                 'InlineKeyboardMarkup'
+              602  LOAD_NAME                Dictionaryable
+              604  LOAD_NAME                JsonSerializable
+              606  LOAD_NAME                JsonDeserializable
+              608  CALL_FUNCTION_5       5  ''
+              610  STORE_NAME               InlineKeyboardMarkup
+
+ L.1069       612  LOAD_BUILD_CLASS 
+              614  LOAD_CODE                <code_object InlineKeyboardButton>
+              616  LOAD_STR                 'InlineKeyboardButton'
+              618  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              620  LOAD_STR                 'InlineKeyboardButton'
+              622  LOAD_NAME                Dictionaryable
+              624  LOAD_NAME                JsonSerializable
+              626  LOAD_NAME                JsonDeserializable
+              628  CALL_FUNCTION_5       5  ''
+              630  STORE_NAME               InlineKeyboardButton
+
+ L.1111       632  LOAD_BUILD_CLASS 
+              634  LOAD_CODE                <code_object LoginUrl>
+              636  LOAD_STR                 'LoginUrl'
+              638  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              640  LOAD_STR                 'LoginUrl'
+              642  LOAD_NAME                Dictionaryable
+              644  LOAD_NAME                JsonSerializable
+              646  LOAD_NAME                JsonDeserializable
+              648  CALL_FUNCTION_5       5  ''
+              650  STORE_NAME               LoginUrl
+
+ L.1138       652  LOAD_BUILD_CLASS 
+              654  LOAD_CODE                <code_object CallbackQuery>
+              656  LOAD_STR                 'CallbackQuery'
+              658  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              660  LOAD_STR                 'CallbackQuery'
+              662  LOAD_NAME                JsonDeserializable
+              664  CALL_FUNCTION_3       3  ''
+              666  STORE_NAME               CallbackQuery
+
+ L.1158       668  LOAD_BUILD_CLASS 
+              670  LOAD_CODE                <code_object ChatPhoto>
+              672  LOAD_STR                 'ChatPhoto'
+              674  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              676  LOAD_STR                 'ChatPhoto'
+              678  LOAD_NAME                JsonDeserializable
+              680  CALL_FUNCTION_3       3  ''
+              682  STORE_NAME               ChatPhoto
+
+ L.1172       684  LOAD_BUILD_CLASS 
+              686  LOAD_CODE                <code_object ChatMember>
+              688  LOAD_STR                 'ChatMember'
+              690  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              692  LOAD_STR                 'ChatMember'
+              694  LOAD_NAME                JsonDeserializable
+              696  CALL_FUNCTION_3       3  ''
+              698  STORE_NAME               ChatMember
+
+ L.1212       700  LOAD_BUILD_CLASS 
+              702  LOAD_CODE                <code_object ChatPermissions>
+              704  LOAD_STR                 'ChatPermissions'
+              706  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              708  LOAD_STR                 'ChatPermissions'
+              710  LOAD_NAME                JsonDeserializable
+              712  LOAD_NAME                JsonSerializable
+              714  LOAD_NAME                Dictionaryable
+              716  CALL_FUNCTION_5       5  ''
+              718  STORE_NAME               ChatPermissions
+
+ L.1256       720  LOAD_BUILD_CLASS 
+              722  LOAD_CODE                <code_object BotCommand>
+              724  LOAD_STR                 'BotCommand'
+              726  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              728  LOAD_STR                 'BotCommand'
+              730  LOAD_NAME                JsonSerializable
+              732  LOAD_NAME                JsonDeserializable
+              734  CALL_FUNCTION_4       4  ''
+              736  STORE_NAME               BotCommand
+
+ L.1283       738  LOAD_BUILD_CLASS 
+              740  LOAD_CODE                <code_object BotCommandScope>
+              742  LOAD_STR                 'BotCommandScope'
+              744  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              746  LOAD_STR                 'BotCommandScope'
+              748  LOAD_NAME                ABC
+              750  LOAD_NAME                JsonSerializable
+              752  CALL_FUNCTION_4       4  ''
+              754  STORE_NAME               BotCommandScope
+
+ L.1309       756  LOAD_BUILD_CLASS 
+              758  LOAD_CODE                <code_object BotCommandScopeDefault>
+              760  LOAD_STR                 'BotCommandScopeDefault'
+              762  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              764  LOAD_STR                 'BotCommandScopeDefault'
+              766  LOAD_NAME                BotCommandScope
+              768  CALL_FUNCTION_3       3  ''
+              770  STORE_NAME               BotCommandScopeDefault
+
+ L.1318       772  LOAD_BUILD_CLASS 
+              774  LOAD_CODE                <code_object BotCommandScopeAllPrivateChats>
+              776  LOAD_STR                 'BotCommandScopeAllPrivateChats'
+              778  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              780  LOAD_STR                 'BotCommandScopeAllPrivateChats'
+              782  LOAD_NAME                BotCommandScope
+              784  CALL_FUNCTION_3       3  ''
+              786  STORE_NAME               BotCommandScopeAllPrivateChats
+
+ L.1326       788  LOAD_BUILD_CLASS 
+              790  LOAD_CODE                <code_object BotCommandScopeAllGroupChats>
+              792  LOAD_STR                 'BotCommandScopeAllGroupChats'
+              794  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              796  LOAD_STR                 'BotCommandScopeAllGroupChats'
+              798  LOAD_NAME                BotCommandScope
+              800  CALL_FUNCTION_3       3  ''
+              802  STORE_NAME               BotCommandScopeAllGroupChats
+
+ L.1334       804  LOAD_BUILD_CLASS 
+              806  LOAD_CODE                <code_object BotCommandScopeAllChatAdministrators>
+              808  LOAD_STR                 'BotCommandScopeAllChatAdministrators'
+              810  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              812  LOAD_STR                 'BotCommandScopeAllChatAdministrators'
+              814  LOAD_NAME                BotCommandScope
+              816  CALL_FUNCTION_3       3  ''
+              818  STORE_NAME               BotCommandScopeAllChatAdministrators
+
+ L.1342       820  LOAD_BUILD_CLASS 
+              822  LOAD_CODE                <code_object BotCommandScopeChat>
+              824  LOAD_STR                 'BotCommandScopeChat'
+              826  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              828  LOAD_STR                 'BotCommandScopeChat'
+              830  LOAD_NAME                BotCommandScope
+              832  CALL_FUNCTION_3       3  ''
+              834  STORE_NAME               BotCommandScopeChat
+
+ L.1347       836  LOAD_BUILD_CLASS 
+              838  LOAD_CODE                <code_object BotCommandScopeChatAdministrators>
+              840  LOAD_STR                 'BotCommandScopeChatAdministrators'
+              842  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              844  LOAD_STR                 'BotCommandScopeChatAdministrators'
+              846  LOAD_NAME                BotCommandScope
+              848  CALL_FUNCTION_3       3  ''
+              850  STORE_NAME               BotCommandScopeChatAdministrators
+
+ L.1356       852  LOAD_BUILD_CLASS 
+              854  LOAD_CODE                <code_object BotCommandScopeChatMember>
+              856  LOAD_STR                 'BotCommandScopeChatMember'
+              858  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              860  LOAD_STR                 'BotCommandScopeChatMember'
+              862  LOAD_NAME                BotCommandScope
+              864  CALL_FUNCTION_3       3  ''
+              866  STORE_NAME               BotCommandScopeChatMember
+
+ L.1368       868  LOAD_BUILD_CLASS 
+              870  LOAD_CODE                <code_object InlineQuery>
+              872  LOAD_STR                 'InlineQuery'
+              874  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              876  LOAD_STR                 'InlineQuery'
+              878  LOAD_NAME                JsonDeserializable
+              880  CALL_FUNCTION_3       3  ''
+              882  STORE_NAME               InlineQuery
+
+ L.1401       884  LOAD_BUILD_CLASS 
+              886  LOAD_CODE                <code_object InputTextMessageContent>
+              888  LOAD_STR                 'InputTextMessageContent'
+              890  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              892  LOAD_STR                 'InputTextMessageContent'
+              894  LOAD_NAME                Dictionaryable
+              896  CALL_FUNCTION_3       3  ''
+              898  STORE_NAME               InputTextMessageContent
+
+ L.1419       900  LOAD_BUILD_CLASS 
+              902  LOAD_CODE                <code_object InputLocationMessageContent>
+              904  LOAD_STR                 'InputLocationMessageContent'
+              906  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              908  LOAD_STR                 'InputLocationMessageContent'
+              910  LOAD_NAME                Dictionaryable
+              912  CALL_FUNCTION_3       3  ''
+              914  STORE_NAME               InputLocationMessageContent
+
+ L.1441       916  LOAD_BUILD_CLASS 
+              918  LOAD_CODE                <code_object InputVenueMessageContent>
+              920  LOAD_STR                 'InputVenueMessageContent'
+              922  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              924  LOAD_STR                 'InputVenueMessageContent'
+              926  LOAD_NAME                Dictionaryable
+              928  CALL_FUNCTION_3       3  ''
+              930  STORE_NAME               InputVenueMessageContent
+
+ L.1471       932  LOAD_BUILD_CLASS 
+              934  LOAD_CODE                <code_object InputContactMessageContent>
+              936  LOAD_STR                 'InputContactMessageContent'
+              938  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              940  LOAD_STR                 'InputContactMessageContent'
+              942  LOAD_NAME                Dictionaryable
+              944  CALL_FUNCTION_3       3  ''
+              946  STORE_NAME               InputContactMessageContent
+
+ L.1487       948  LOAD_BUILD_CLASS 
+              950  LOAD_CODE                <code_object InputInvoiceMessageContent>
+              952  LOAD_STR                 'InputInvoiceMessageContent'
+              954  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              956  LOAD_STR                 'InputInvoiceMessageContent'
+              958  LOAD_NAME                Dictionaryable
+              960  CALL_FUNCTION_3       3  ''
+              962  STORE_NAME               InputInvoiceMessageContent
+
+ L.1554       964  LOAD_BUILD_CLASS 
+              966  LOAD_CODE                <code_object ChosenInlineResult>
+              968  LOAD_STR                 'ChosenInlineResult'
+              970  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              972  LOAD_STR                 'ChosenInlineResult'
+              974  LOAD_NAME                JsonDeserializable
+              976  CALL_FUNCTION_3       3  ''
+              978  STORE_NAME               ChosenInlineResult
+
+ L.1580       980  LOAD_BUILD_CLASS 
+              982  LOAD_CODE                <code_object InlineQueryResultArticle>
+              984  LOAD_STR                 'InlineQueryResultArticle'
+              986  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              988  LOAD_STR                 'InlineQueryResultArticle'
+              990  LOAD_NAME                JsonSerializable
+              992  CALL_FUNCTION_3       3  ''
+              994  STORE_NAME               InlineQueryResultArticle
+
+ L.1632       996  LOAD_BUILD_CLASS 
+              998  LOAD_CODE                <code_object InlineQueryResultPhoto>
+             1000  LOAD_STR                 'InlineQueryResultPhoto'
+             1002  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1004  LOAD_STR                 'InlineQueryResultPhoto'
+             1006  LOAD_NAME                JsonSerializable
+             1008  CALL_FUNCTION_3       3  ''
+             1010  STORE_NAME               InlineQueryResultPhoto
+
+ L.1685      1012  LOAD_BUILD_CLASS 
+             1014  LOAD_CODE                <code_object InlineQueryResultGif>
+             1016  LOAD_STR                 'InlineQueryResultGif'
+             1018  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1020  LOAD_STR                 'InlineQueryResultGif'
+             1022  LOAD_NAME                JsonSerializable
+             1024  CALL_FUNCTION_3       3  ''
+             1026  STORE_NAME               InlineQueryResultGif
+
+ L.1732      1028  LOAD_BUILD_CLASS 
+             1030  LOAD_CODE                <code_object InlineQueryResultMpeg4Gif>
+             1032  LOAD_STR                 'InlineQueryResultMpeg4Gif'
+             1034  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1036  LOAD_STR                 'InlineQueryResultMpeg4Gif'
+             1038  LOAD_NAME                JsonSerializable
+             1040  CALL_FUNCTION_3       3  ''
+             1042  STORE_NAME               InlineQueryResultMpeg4Gif
+
+ L.1784      1044  LOAD_BUILD_CLASS 
+             1046  LOAD_CODE                <code_object InlineQueryResultVideo>
+             1048  LOAD_STR                 'InlineQueryResultVideo'
+             1050  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1052  LOAD_STR                 'InlineQueryResultVideo'
+             1054  LOAD_NAME                JsonSerializable
+             1056  CALL_FUNCTION_3       3  ''
+             1058  STORE_NAME               InlineQueryResultVideo
+
+ L.1840      1060  LOAD_BUILD_CLASS 
+             1062  LOAD_CODE                <code_object InlineQueryResultAudio>
+             1064  LOAD_STR                 'InlineQueryResultAudio'
+             1066  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1068  LOAD_STR                 'InlineQueryResultAudio'
+             1070  LOAD_NAME                JsonSerializable
+             1072  CALL_FUNCTION_3       3  ''
+             1074  STORE_NAME               InlineQueryResultAudio
+
+ L.1871      1076  LOAD_BUILD_CLASS 
+             1078  LOAD_CODE                <code_object InlineQueryResultVoice>
+             1080  LOAD_STR                 'InlineQueryResultVoice'
+             1082  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1084  LOAD_STR                 'InlineQueryResultVoice'
+             1086  LOAD_NAME                JsonSerializable
+             1088  CALL_FUNCTION_3       3  ''
+             1090  STORE_NAME               InlineQueryResultVoice
+
+ L.1902      1092  LOAD_BUILD_CLASS 
+             1094  LOAD_CODE                <code_object InlineQueryResultDocument>
+             1096  LOAD_STR                 'InlineQueryResultDocument'
+             1098  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1100  LOAD_STR                 'InlineQueryResultDocument'
+             1102  LOAD_NAME                JsonSerializable
+             1104  CALL_FUNCTION_3       3  ''
+             1106  STORE_NAME               InlineQueryResultDocument
+
+ L.1941      1108  LOAD_BUILD_CLASS 
+             1110  LOAD_CODE                <code_object InlineQueryResultLocation>
+             1112  LOAD_STR                 'InlineQueryResultLocation'
+             1114  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1116  LOAD_STR                 'InlineQueryResultLocation'
+             1118  LOAD_NAME                JsonSerializable
+             1120  CALL_FUNCTION_3       3  ''
+             1122  STORE_NAME               InlineQueryResultLocation
+
+ L.1977      1124  LOAD_BUILD_CLASS 
+             1126  LOAD_CODE                <code_object InlineQueryResultVenue>
+             1128  LOAD_STR                 'InlineQueryResultVenue'
+             1130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1132  LOAD_STR                 'InlineQueryResultVenue'
+             1134  LOAD_NAME                JsonSerializable
+             1136  CALL_FUNCTION_3       3  ''
+             1138  STORE_NAME               InlineQueryResultVenue
+
+ L.2021      1140  LOAD_BUILD_CLASS 
+             1142  LOAD_CODE                <code_object InlineQueryResultContact>
+             1144  LOAD_STR                 'InlineQueryResultContact'
+             1146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1148  LOAD_STR                 'InlineQueryResultContact'
+             1150  LOAD_NAME                JsonSerializable
+             1152  CALL_FUNCTION_3       3  ''
+             1154  STORE_NAME               InlineQueryResultContact
+
+ L.2056      1156  LOAD_BUILD_CLASS 
+             1158  LOAD_CODE                <code_object BaseInlineQueryResultCached>
+             1160  LOAD_STR                 'BaseInlineQueryResultCached'
+             1162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1164  LOAD_STR                 'BaseInlineQueryResultCached'
+             1166  LOAD_NAME                JsonSerializable
+             1168  CALL_FUNCTION_3       3  ''
+             1170  STORE_NAME               BaseInlineQueryResultCached
+
+ L.2087      1172  LOAD_BUILD_CLASS 
+             1174  LOAD_CODE                <code_object InlineQueryResultCachedPhoto>
+             1176  LOAD_STR                 'InlineQueryResultCachedPhoto'
+             1178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1180  LOAD_STR                 'InlineQueryResultCachedPhoto'
+             1182  LOAD_NAME                BaseInlineQueryResultCached
+             1184  CALL_FUNCTION_3       3  ''
+             1186  STORE_NAME               InlineQueryResultCachedPhoto
+
+ L.2103      1188  LOAD_BUILD_CLASS 
+             1190  LOAD_CODE                <code_object InlineQueryResultCachedGif>
+             1192  LOAD_STR                 'InlineQueryResultCachedGif'
+             1194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1196  LOAD_STR                 'InlineQueryResultCachedGif'
+             1198  LOAD_NAME                BaseInlineQueryResultCached
+             1200  CALL_FUNCTION_3       3  ''
+             1202  STORE_NAME               InlineQueryResultCachedGif
+
+ L.2119      1204  LOAD_BUILD_CLASS 
+             1206  LOAD_CODE                <code_object InlineQueryResultCachedMpeg4Gif>
+             1208  LOAD_STR                 'InlineQueryResultCachedMpeg4Gif'
+             1210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1212  LOAD_STR                 'InlineQueryResultCachedMpeg4Gif'
+             1214  LOAD_NAME                BaseInlineQueryResultCached
+             1216  CALL_FUNCTION_3       3  ''
+             1218  STORE_NAME               InlineQueryResultCachedMpeg4Gif
+
+ L.2135      1220  LOAD_BUILD_CLASS 
+             1222  LOAD_CODE                <code_object InlineQueryResultCachedSticker>
+             1224  LOAD_STR                 'InlineQueryResultCachedSticker'
+             1226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1228  LOAD_STR                 'InlineQueryResultCachedSticker'
+             1230  LOAD_NAME                BaseInlineQueryResultCached
+             1232  CALL_FUNCTION_3       3  ''
+             1234  STORE_NAME               InlineQueryResultCachedSticker
+
+ L.2146      1236  LOAD_BUILD_CLASS 
+             1238  LOAD_CODE                <code_object InlineQueryResultCachedDocument>
+             1240  LOAD_STR                 'InlineQueryResultCachedDocument'
+             1242  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1244  LOAD_STR                 'InlineQueryResultCachedDocument'
+             1246  LOAD_NAME                BaseInlineQueryResultCached
+             1248  CALL_FUNCTION_3       3  ''
+             1250  STORE_NAME               InlineQueryResultCachedDocument
+
+ L.2162      1252  LOAD_BUILD_CLASS 
+             1254  LOAD_CODE                <code_object InlineQueryResultCachedVideo>
+             1256  LOAD_STR                 'InlineQueryResultCachedVideo'
+             1258  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1260  LOAD_STR                 'InlineQueryResultCachedVideo'
+             1262  LOAD_NAME                BaseInlineQueryResultCached
+             1264  CALL_FUNCTION_3       3  ''
+             1266  STORE_NAME               InlineQueryResultCachedVideo
+
+ L.2178      1268  LOAD_BUILD_CLASS 
+             1270  LOAD_CODE                <code_object InlineQueryResultCachedVoice>
+             1272  LOAD_STR                 'InlineQueryResultCachedVoice'
+             1274  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1276  LOAD_STR                 'InlineQueryResultCachedVoice'
+             1278  LOAD_NAME                BaseInlineQueryResultCached
+             1280  CALL_FUNCTION_3       3  ''
+             1282  STORE_NAME               InlineQueryResultCachedVoice
+
+ L.2193      1284  LOAD_BUILD_CLASS 
+             1286  LOAD_CODE                <code_object InlineQueryResultCachedAudio>
+             1288  LOAD_STR                 'InlineQueryResultCachedAudio'
+             1290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1292  LOAD_STR                 'InlineQueryResultCachedAudio'
+             1294  LOAD_NAME                BaseInlineQueryResultCached
+             1296  CALL_FUNCTION_3       3  ''
+             1298  STORE_NAME               InlineQueryResultCachedAudio
+
+ L.2208      1300  LOAD_BUILD_CLASS 
+             1302  LOAD_CODE                <code_object InlineQueryResultGame>
+             1304  LOAD_STR                 'InlineQueryResultGame'
+             1306  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1308  LOAD_STR                 'InlineQueryResultGame'
+             1310  LOAD_NAME                JsonSerializable
+             1312  CALL_FUNCTION_3       3  ''
+             1314  STORE_NAME               InlineQueryResultGame
+
+ L.2222      1316  LOAD_BUILD_CLASS 
+             1318  LOAD_CODE                <code_object Game>
+             1320  LOAD_STR                 'Game'
+             1322  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1324  LOAD_STR                 'Game'
+             1326  LOAD_NAME                JsonDeserializable
+             1328  CALL_FUNCTION_3       3  ''
+             1330  STORE_NAME               Game
+
+ L.2257      1332  LOAD_BUILD_CLASS 
+             1334  LOAD_CODE                <code_object Animation>
+             1336  LOAD_STR                 'Animation'
+             1338  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1340  LOAD_STR                 'Animation'
+             1342  LOAD_NAME                JsonDeserializable
+             1344  CALL_FUNCTION_3       3  ''
+             1346  STORE_NAME               Animation
+
+ L.2281      1348  LOAD_BUILD_CLASS 
+             1350  LOAD_CODE                <code_object GameHighScore>
+             1352  LOAD_STR                 'GameHighScore'
+             1354  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1356  LOAD_STR                 'GameHighScore'
+             1358  LOAD_NAME                JsonDeserializable
+             1360  CALL_FUNCTION_3       3  ''
+             1362  STORE_NAME               GameHighScore
+
+ L.2297      1364  LOAD_BUILD_CLASS 
+             1366  LOAD_CODE                <code_object LabeledPrice>
+             1368  LOAD_STR                 'LabeledPrice'
+             1370  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1372  LOAD_STR                 'LabeledPrice'
+             1374  LOAD_NAME                JsonSerializable
+             1376  CALL_FUNCTION_3       3  ''
+             1378  STORE_NAME               LabeledPrice
+
+ L.2311      1380  LOAD_BUILD_CLASS 
+             1382  LOAD_CODE                <code_object Invoice>
+             1384  LOAD_STR                 'Invoice'
+             1386  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1388  LOAD_STR                 'Invoice'
+             1390  LOAD_NAME                JsonDeserializable
+             1392  CALL_FUNCTION_3       3  ''
+             1394  STORE_NAME               Invoice
+
+ L.2326      1396  LOAD_BUILD_CLASS 
+             1398  LOAD_CODE                <code_object ShippingAddress>
+             1400  LOAD_STR                 'ShippingAddress'
+             1402  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1404  LOAD_STR                 'ShippingAddress'
+             1406  LOAD_NAME                JsonDeserializable
+             1408  CALL_FUNCTION_3       3  ''
+             1410  STORE_NAME               ShippingAddress
+
+ L.2342      1412  LOAD_BUILD_CLASS 
+             1414  LOAD_CODE                <code_object OrderInfo>
+             1416  LOAD_STR                 'OrderInfo'
+             1418  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1420  LOAD_STR                 'OrderInfo'
+             1422  LOAD_NAME                JsonDeserializable
+             1424  CALL_FUNCTION_3       3  ''
+             1426  STORE_NAME               OrderInfo
+
+ L.2357      1428  LOAD_BUILD_CLASS 
+             1430  LOAD_CODE                <code_object ShippingOption>
+             1432  LOAD_STR                 'ShippingOption'
+             1434  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1436  LOAD_STR                 'ShippingOption'
+             1438  LOAD_NAME                JsonSerializable
+             1440  CALL_FUNCTION_3       3  ''
+             1442  STORE_NAME               ShippingOption
+
+ L.2380      1444  LOAD_BUILD_CLASS 
+             1446  LOAD_CODE                <code_object SuccessfulPayment>
+             1448  LOAD_STR                 'SuccessfulPayment'
+             1450  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1452  LOAD_STR                 'SuccessfulPayment'
+             1454  LOAD_NAME                JsonDeserializable
+             1456  CALL_FUNCTION_3       3  ''
+             1458  STORE_NAME               SuccessfulPayment
+
+ L.2399      1460  LOAD_BUILD_CLASS 
+             1462  LOAD_CODE                <code_object ShippingQuery>
+             1464  LOAD_STR                 'ShippingQuery'
+             1466  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1468  LOAD_STR                 'ShippingQuery'
+             1470  LOAD_NAME                JsonDeserializable
+             1472  CALL_FUNCTION_3       3  ''
+             1474  STORE_NAME               ShippingQuery
+
+ L.2415      1476  LOAD_BUILD_CLASS 
+             1478  LOAD_CODE                <code_object PreCheckoutQuery>
+             1480  LOAD_STR                 'PreCheckoutQuery'
+             1482  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1484  LOAD_STR                 'PreCheckoutQuery'
+             1486  LOAD_NAME                JsonDeserializable
+             1488  CALL_FUNCTION_3       3  ''
+             1490  STORE_NAME               PreCheckoutQuery
+
+ L.2436      1492  LOAD_BUILD_CLASS 
+             1494  LOAD_CODE                <code_object StickerSet>
+             1496  LOAD_STR                 'StickerSet'
+             1498  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1500  LOAD_STR                 'StickerSet'
+             1502  LOAD_NAME                JsonDeserializable
+             1504  CALL_FUNCTION_3       3  ''
+             1506  STORE_NAME               StickerSet
+
+ L.2460      1508  LOAD_BUILD_CLASS 
+             1510  LOAD_CODE                <code_object Sticker>
+             1512  LOAD_STR                 'Sticker'
+             1514  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1516  LOAD_STR                 'Sticker'
+             1518  LOAD_NAME                JsonDeserializable
+             1520  CALL_FUNCTION_3       3  ''
+             1522  STORE_NAME               Sticker
+
+ L.2488      1524  LOAD_BUILD_CLASS 
+             1526  LOAD_CODE                <code_object MaskPosition>
+             1528  LOAD_STR                 'MaskPosition'
+             1530  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1532  LOAD_STR                 'MaskPosition'
+             1534  LOAD_NAME                Dictionaryable
+             1536  LOAD_NAME                JsonDeserializable
+             1538  LOAD_NAME                JsonSerializable
+             1540  CALL_FUNCTION_5       5  ''
+             1542  STORE_NAME               MaskPosition
+
+ L.2510      1544  LOAD_BUILD_CLASS 
+             1546  LOAD_CODE                <code_object InputMedia>
+             1548  LOAD_STR                 'InputMedia'
+             1550  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1552  LOAD_STR                 'InputMedia'
+             1554  LOAD_NAME                Dictionaryable
+             1556  LOAD_NAME                JsonSerializable
+             1558  CALL_FUNCTION_4       4  ''
+             1560  STORE_NAME               InputMedia
+
+ L.2545      1562  LOAD_BUILD_CLASS 
+             1564  LOAD_CODE                <code_object InputMediaPhoto>
+             1566  LOAD_STR                 'InputMediaPhoto'
+             1568  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1570  LOAD_STR                 'InputMediaPhoto'
+             1572  LOAD_NAME                InputMedia
+             1574  CALL_FUNCTION_3       3  ''
+             1576  STORE_NAME               InputMediaPhoto
+
+ L.2556      1578  LOAD_BUILD_CLASS 
+             1580  LOAD_CODE                <code_object InputMediaVideo>
+             1582  LOAD_STR                 'InputMediaVideo'
+             1584  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1586  LOAD_STR                 'InputMediaVideo'
+             1588  LOAD_NAME                InputMedia
+             1590  CALL_FUNCTION_3       3  ''
+             1592  STORE_NAME               InputMediaVideo
+
+ L.2581      1594  LOAD_BUILD_CLASS 
+             1596  LOAD_CODE                <code_object InputMediaAnimation>
+             1598  LOAD_STR                 'InputMediaAnimation'
+             1600  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1602  LOAD_STR                 'InputMediaAnimation'
+             1604  LOAD_NAME                InputMedia
+             1606  CALL_FUNCTION_3       3  ''
+             1608  STORE_NAME               InputMediaAnimation
+
+ L.2602      1610  LOAD_BUILD_CLASS 
+             1612  LOAD_CODE                <code_object InputMediaAudio>
+             1614  LOAD_STR                 'InputMediaAudio'
+             1616  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1618  LOAD_STR                 'InputMediaAudio'
+             1620  LOAD_NAME                InputMedia
+             1622  CALL_FUNCTION_3       3  ''
+             1624  STORE_NAME               InputMediaAudio
+
+ L.2623      1626  LOAD_BUILD_CLASS 
+             1628  LOAD_CODE                <code_object InputMediaDocument>
+             1630  LOAD_STR                 'InputMediaDocument'
+             1632  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1634  LOAD_STR                 'InputMediaDocument'
+             1636  LOAD_NAME                InputMedia
+             1638  CALL_FUNCTION_3       3  ''
+             1640  STORE_NAME               InputMediaDocument
+
+ L.2638      1642  LOAD_BUILD_CLASS 
+             1644  LOAD_CODE                <code_object PollOption>
+             1646  LOAD_STR                 'PollOption'
+             1648  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1650  LOAD_STR                 'PollOption'
+             1652  LOAD_NAME                JsonDeserializable
+             1654  CALL_FUNCTION_3       3  ''
+             1656  STORE_NAME               PollOption
+
+ L.2655      1658  LOAD_BUILD_CLASS 
+             1660  LOAD_CODE                <code_object Poll>
+             1662  LOAD_STR                 'Poll'
+             1664  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1666  LOAD_STR                 'Poll'
+             1668  LOAD_NAME                JsonDeserializable
+             1670  CALL_FUNCTION_3       3  ''
+             1672  STORE_NAME               Poll
+
+ L.2696      1674  LOAD_BUILD_CLASS 
+             1676  LOAD_CODE                <code_object PollAnswer>
+             1678  LOAD_STR                 'PollAnswer'
+             1680  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1682  LOAD_STR                 'PollAnswer'
+             1684  LOAD_NAME                JsonSerializable
+             1686  LOAD_NAME                JsonDeserializable
+             1688  LOAD_NAME                Dictionaryable
+             1690  CALL_FUNCTION_5       5  ''
+             1692  STORE_NAME               PollAnswer
+
+ L.2718      1694  LOAD_BUILD_CLASS 
+             1696  LOAD_CODE                <code_object ChatLocation>
+             1698  LOAD_STR                 'ChatLocation'
+             1700  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1702  LOAD_STR                 'ChatLocation'
+             1704  LOAD_NAME                JsonSerializable
+             1706  LOAD_NAME                JsonDeserializable
+             1708  LOAD_NAME                Dictionaryable
+             1710  CALL_FUNCTION_5       5  ''
+             1712  STORE_NAME               ChatLocation
+
+ L.2740      1714  LOAD_BUILD_CLASS 
+             1716  LOAD_CODE                <code_object ChatInviteLink>
+             1718  LOAD_STR                 'ChatInviteLink'
+             1720  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1722  LOAD_STR                 'ChatInviteLink'
+             1724  LOAD_NAME                JsonSerializable
+             1726  LOAD_NAME                JsonDeserializable
+             1728  LOAD_NAME                Dictionaryable
+             1730  CALL_FUNCTION_5       5  ''
+             1732  STORE_NAME               ChatInviteLink
+
+ L.2770      1734  LOAD_BUILD_CLASS 
+             1736  LOAD_CODE                <code_object ProximityAlertTriggered>
+             1738  LOAD_STR                 'ProximityAlertTriggered'
+             1740  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1742  LOAD_STR                 'ProximityAlertTriggered'
+             1744  LOAD_NAME                JsonDeserializable
+             1746  CALL_FUNCTION_3       3  ''
+             1748  STORE_NAME               ProximityAlertTriggered
+
+ L.2783      1750  LOAD_BUILD_CLASS 
+             1752  LOAD_CODE                <code_object VoiceChatStarted>
+             1754  LOAD_STR                 'VoiceChatStarted'
+             1756  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1758  LOAD_STR                 'VoiceChatStarted'
+             1760  LOAD_NAME                JsonDeserializable
+             1762  CALL_FUNCTION_3       3  ''
+             1764  STORE_NAME               VoiceChatStarted
+
+ L.2795      1766  LOAD_BUILD_CLASS 
+             1768  LOAD_CODE                <code_object VoiceChatScheduled>
+             1770  LOAD_STR                 'VoiceChatScheduled'
+             1772  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1774  LOAD_STR                 'VoiceChatScheduled'
+             1776  LOAD_NAME                JsonDeserializable
+             1778  CALL_FUNCTION_3       3  ''
+             1780  STORE_NAME               VoiceChatScheduled
+
+ L.2806      1782  LOAD_BUILD_CLASS 
+             1784  LOAD_CODE                <code_object VoiceChatEnded>
+             1786  LOAD_STR                 'VoiceChatEnded'
+             1788  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1790  LOAD_STR                 'VoiceChatEnded'
+             1792  LOAD_NAME                JsonDeserializable
+             1794  CALL_FUNCTION_3       3  ''
+             1796  STORE_NAME               VoiceChatEnded
+
+ L.2817      1798  LOAD_BUILD_CLASS 
+             1800  LOAD_CODE                <code_object VoiceChatParticipantsInvited>
+             1802  LOAD_STR                 'VoiceChatParticipantsInvited'
+             1804  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1806  LOAD_STR                 'VoiceChatParticipantsInvited'
+             1808  LOAD_NAME                JsonDeserializable
+             1810  CALL_FUNCTION_3       3  ''
+             1812  STORE_NAME               VoiceChatParticipantsInvited
+
+ L.2831      1814  LOAD_BUILD_CLASS 
+             1816  LOAD_CODE                <code_object MessageAutoDeleteTimerChanged>
+             1818  LOAD_STR                 'MessageAutoDeleteTimerChanged'
+             1820  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1822  LOAD_STR                 'MessageAutoDeleteTimerChanged'
+             1824  LOAD_NAME                JsonDeserializable
+             1826  CALL_FUNCTION_3       3  ''
+             1828  STORE_NAME               MessageAutoDeleteTimerChanged
+
+Parse error at or near `<121>' instruction at offset 62
+
+Instruction context:
+   
+ L.   9        58  DUP_TOP          
+                  60  LOAD_NAME                ImportError
+->                62  <121>                82  ''
+                  64  POP_TOP          
+                  66  POP_TOP          
+                  68  POP_TOP          
+
+test/162796.pyc -- 
+# decompile failed

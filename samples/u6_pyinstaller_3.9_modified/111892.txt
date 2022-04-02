@@ -1,0 +1,191 @@
+
+# file test/111892.pyc
+# --- This code section failed: ---
+
+ L.  73         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'install'
+                6  STORE_NAME               __qualname__
+
+ L.  75         8  LOAD_STR                 'install everything from build directory'
+               10  STORE_NAME               description
+
+ L.  77        12  BUILD_LIST_0          0 
+               14  LOAD_CONST               (('prefix=', None, 'installation prefix'), ('exec-prefix=', None, '(Unix only) prefix for platform-specific files'), ('home=', None, '(Unix only) home directory to install under'), ('install-base=', None, 'base installation directory (instead of --prefix or --home)'), ('install-platbase=', None, 'base installation directory for platform-specific files (instead of --exec-prefix or --home)'), ('root=', None, 'install everything relative to this alternate root directory'), ('install-purelib=', None, 'installation directory for pure Python module distributions'), ('install-platlib=', None, 'installation directory for non-pure module distributions'), ('install-lib=', None, 'installation directory for all module distributions (overrides --install-purelib and --install-platlib)'), ('install-headers=', None, 'installation directory for C/C++ headers'), ('install-scripts=', None, 'installation directory for Python scripts'), ('install-data=', None, 'installation directory for data files'), ('compile', 'c', 'compile .py to .pyc [default]'), ('no-compile', None, "don't compile .py files"), ('optimize=', 'O', 'also compile with optimization: -O1 for "python -O", -O2 for "python -OO", and -O0 to disable [default: -O0]'), ('force', 'f', 'force installation (overwrite any existing files)'), ('skip-build', None, 'skip rebuilding everything (for testing/debugging)'), ('record=', None, 'filename in which to record list of installed files'))
+               16  CALL_FINALLY         19  'to 19'
+               18  STORE_NAME               user_options
+
+ L. 136        20  BUILD_LIST_0          0 
+               22  LOAD_CONST               ('compile', 'force', 'skip-build')
+               24  CALL_FINALLY         27  'to 27'
+               26  STORE_NAME               boolean_options
+
+ L. 138        28  LOAD_NAME                HAS_USER_SITE
+               30  POP_JUMP_IF_FALSE    62  'to 62'
+
+ L. 139        32  LOAD_NAME                user_options
+               34  LOAD_METHOD              append
+               36  LOAD_STR                 'user'
+               38  LOAD_CONST               None
+
+ L. 140        40  LOAD_STR                 "install in user site-package '%s'"
+               42  LOAD_NAME                USER_SITE
+               44  BINARY_MODULO    
+
+ L. 139        46  BUILD_TUPLE_3         3 
+               48  CALL_METHOD_1         1  ''
+               50  POP_TOP          
+
+ L. 141        52  LOAD_NAME                boolean_options
+               54  LOAD_METHOD              append
+               56  LOAD_STR                 'user'
+               58  CALL_METHOD_1         1  ''
+               60  POP_TOP          
+             62_0  COME_FROM            30  '30'
+
+ L. 143        62  LOAD_STR                 'no-compile'
+               64  LOAD_STR                 'compile'
+               66  BUILD_MAP_1           1 
+               68  STORE_NAME               negative_opt
+
+ L. 146        70  LOAD_CODE                <code_object initialize_options>
+               72  LOAD_STR                 'install.initialize_options'
+               74  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               76  STORE_NAME               initialize_options
+
+ L. 224        78  LOAD_CODE                <code_object finalize_options>
+               80  LOAD_STR                 'install.finalize_options'
+               82  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               84  STORE_NAME               finalize_options
+
+ L. 374        86  LOAD_CODE                <code_object dump_dirs>
+               88  LOAD_STR                 'install.dump_dirs'
+               90  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               92  STORE_NAME               dump_dirs
+
+ L. 393        94  LOAD_CODE                <code_object finalize_unix>
+               96  LOAD_STR                 'install.finalize_unix'
+               98  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              100  STORE_NAME               finalize_unix
+
+ L. 433       102  LOAD_CODE                <code_object finalize_other>
+              104  LOAD_STR                 'install.finalize_other'
+              106  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              108  STORE_NAME               finalize_other
+
+ L. 455       110  LOAD_CODE                <code_object select_scheme>
+              112  LOAD_STR                 'install.select_scheme'
+              114  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              116  STORE_NAME               select_scheme
+
+ L. 464       118  LOAD_CODE                <code_object _expand_attrs>
+              120  LOAD_STR                 'install._expand_attrs'
+              122  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              124  STORE_NAME               _expand_attrs
+
+ L. 473       126  LOAD_CODE                <code_object expand_basedirs>
+              128  LOAD_STR                 'install.expand_basedirs'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  STORE_NAME               expand_basedirs
+
+ L. 478       134  LOAD_CODE                <code_object expand_dirs>
+              136  LOAD_STR                 'install.expand_dirs'
+              138  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              140  STORE_NAME               expand_dirs
+
+ L. 484       142  LOAD_CODE                <code_object convert_paths>
+              144  LOAD_STR                 'install.convert_paths'
+              146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              148  STORE_NAME               convert_paths
+
+ L. 490       150  LOAD_CODE                <code_object handle_extra_path>
+              152  LOAD_STR                 'install.handle_extra_path'
+              154  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              156  STORE_NAME               handle_extra_path
+
+ L. 524       158  LOAD_CODE                <code_object change_roots>
+              160  LOAD_STR                 'install.change_roots'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  STORE_NAME               change_roots
+
+ L. 530       166  LOAD_CODE                <code_object create_home_path>
+              168  LOAD_STR                 'install.create_home_path'
+              170  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              172  STORE_NAME               create_home_path
+
+ L. 542       174  LOAD_CODE                <code_object run>
+              176  LOAD_STR                 'install.run'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  STORE_NAME               run
+
+ L. 586       182  LOAD_CODE                <code_object create_path_file>
+              184  LOAD_STR                 'install.create_path_file'
+              186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              188  STORE_NAME               create_path_file
+
+ L. 600       190  LOAD_CODE                <code_object get_outputs>
+              192  LOAD_STR                 'install.get_outputs'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  STORE_NAME               get_outputs
+
+ L. 617       198  LOAD_CODE                <code_object get_inputs>
+              200  LOAD_STR                 'install.get_inputs'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  STORE_NAME               get_inputs
+
+ L. 629       206  LOAD_CODE                <code_object has_lib>
+              208  LOAD_STR                 'install.has_lib'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               has_lib
+
+ L. 635       214  LOAD_CODE                <code_object has_headers>
+              216  LOAD_STR                 'install.has_headers'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  STORE_NAME               has_headers
+
+ L. 640       222  LOAD_CODE                <code_object has_scripts>
+              224  LOAD_STR                 'install.has_scripts'
+              226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              228  STORE_NAME               has_scripts
+
+ L. 645       230  LOAD_CODE                <code_object has_data>
+              232  LOAD_STR                 'install.has_data'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  STORE_NAME               has_data
+
+ L. 652       238  LOAD_STR                 'install_lib'
+              240  LOAD_NAME                has_lib
+              242  BUILD_TUPLE_2         2 
+
+ L. 653       244  LOAD_STR                 'install_headers'
+              246  LOAD_NAME                has_headers
+              248  BUILD_TUPLE_2         2 
+
+ L. 654       250  LOAD_STR                 'install_scripts'
+              252  LOAD_NAME                has_scripts
+              254  BUILD_TUPLE_2         2 
+
+ L. 655       256  LOAD_STR                 'install_data'
+              258  LOAD_NAME                has_data
+              260  BUILD_TUPLE_2         2 
+
+ L. 656       262  LOAD_STR                 'install_egg_info'
+              264  LOAD_LAMBDA              '<code_object <lambda>>'
+              266  LOAD_STR                 'install.<lambda>'
+              268  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              270  BUILD_TUPLE_2         2 
+
+ L. 652       272  BUILD_LIST_5          5 
+              274  STORE_NAME               sub_commands
+
+Parse error at or near `CALL_FINALLY' instruction at offset 16
+
+Instruction context:
+   
+ L.  77        12  BUILD_LIST_0          0 
+                  14  LOAD_CONST               (('prefix=', None, 'installation prefix'), ('exec-prefix=', None, '(Unix only) prefix for platform-specific files'), ('home=', None, '(Unix only) home directory to install under'), ('install-base=', None, 'base installation directory (instead of --prefix or --home)'), ('install-platbase=', None, 'base installation directory for platform-specific files (instead of --exec-prefix or --home)'), ('root=', None, 'install everything relative to this alternate root directory'), ('install-purelib=', None, 'installation directory for pure Python module distributions'), ('install-platlib=', None, 'installation directory for non-pure module distributions'), ('install-lib=', None, 'installation directory for all module distributions (overrides --install-purelib and --install-platlib)'), ('install-headers=', None, 'installation directory for C/C++ headers'), ('install-scripts=', None, 'installation directory for Python scripts'), ('install-data=', None, 'installation directory for data files'), ('compile', 'c', 'compile .py to .pyc [default]'), ('no-compile', None, "don't compile .py files"), ('optimize=', 'O', 'also compile with optimization: -O1 for "python -O", -O2 for "python -OO", and -O0 to disable [default: -O0]'), ('force', 'f', 'force installation (overwrite any existing files)'), ('skip-build', None, 'skip rebuilding everything (for testing/debugging)'), ('record=', None, 'filename in which to record list of installed files'))
+->                16  CALL_FINALLY         19  'to 19'
+                  18  STORE_NAME               user_options
+
+test/111892.pyc -- 
+# decompile failed

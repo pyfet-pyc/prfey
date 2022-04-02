@@ -1,0 +1,84 @@
+Instruction context:
+   
+ L. 376        56  POP_EXCEPT       
+                  58  JUMP_BACK            14  'to 14'
+->                60  POP_EXCEPT       
+                  62  JUMP_BACK            14  'to 14'
+                64_0  COME_FROM            48  '48'
+                  64  END_FINALLY      
+                66_0  COME_FROM            36  '36'
+Instruction context:
+   
+ L. 454        56  POP_EXCEPT       
+                  58  JUMP_BACK            18  'to 18'
+->                60  POP_EXCEPT       
+                  62  JUMP_FORWARD         66  'to 66'
+                64_0  COME_FROM            48  '48'
+                  64  END_FINALLY      
+                66_0  COME_FROM            62  '62'
+                66_1  COME_FROM            40  '40'
+Instruction context:
+   
+ L. 539        32  DUP_TOP          
+                  34  LOAD_GLOBAL              Exception
+                  36  COMPARE_OP               exception-match
+                  38  POP_JUMP_IF_FALSE    52  'to 52'
+                  40  POP_TOP          
+->                42  POP_TOP          
+                  44  POP_TOP          
+Instruction context:
+   
+ L. 551        20  DUP_TOP          
+                  22  LOAD_GLOBAL              ProcessLookupError
+                  24  COMPARE_OP               exception-match
+                  26  POP_JUMP_IF_FALSE    82  'to 82'
+                  28  POP_TOP          
+->                30  POP_TOP          
+                  32  POP_TOP          
+Instruction context:
+   
+ L. 631        58  LOAD_GLOBAL              os
+                  60  LOAD_METHOD              readlink
+                  62  LOAD_STR                 '/proc/%s/exe'
+                  64  LOAD_FAST                'self'
+                  66  LOAD_ATTR                pid
+                  68  BINARY_MODULO    
+                  70  CALL_METHOD_1         1  ''
+                  72  POP_BLOCK        
+->                74  ROT_TWO          
+                  76  BEGIN_FINALLY    
+                  78  WITH_CLEANUP_START
+                  80  WITH_CLEANUP_FINISH
+                  82  POP_FINALLY           0  ''
+                  84  RETURN_VALUE     
+                86_0  COME_FROM_WITH       54  '54'
+                  86  WITH_CLEANUP_START
+                  88  WITH_CLEANUP_FINISH
+                  90  END_FINALLY      
+                  92  JUMP_FORWARD        126  'to 126'
+                94_0  COME_FROM            32  '32'
+Instruction context:
+   
+ L. 664       126  BUILD_LIST_0          0 
+                 128  ROT_FOUR         
+->               130  POP_BLOCK        
+                 132  POP_EXCEPT       
+                 134  CALL_FINALLY        146  'to 146'
+                 136  RETURN_VALUE     
+                 138  JUMP_FORWARD        142  'to 142'
+               140_0  COME_FROM            64  '64'
+Instruction context:
+   
+ L. 680        36  DUP_TOP          
+                  38  LOAD_GLOBAL              KeyError
+                  40  COMPARE_OP               exception-match
+                  42  POP_JUMP_IF_FALSE    56  'to 56'
+                  44  POP_TOP          
+->                46  POP_TOP          
+                  48  POP_TOP          
+
+../test/157322.pyc -- 
+# decompile failed
+
+# file ../test/157322.pyc
+# Deparsing stopped due to parse error

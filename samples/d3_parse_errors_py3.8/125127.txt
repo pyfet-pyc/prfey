@@ -1,0 +1,21 @@
+Instruction context:
+   
+ L. 292       592  LOAD_FAST                'self'
+                 594  LOAD_METHOD              finalize_options
+->               596  CALL_METHOD_0         0  ''
+Instruction context:
+   
+ L. 831        86  POP_EXCEPT       
+                  88  JUMP_BACK            28  'to 28'
+                  90  POP_EXCEPT       
+                  92  JUMP_FORWARD         96  'to 96'
+->              94_0  COME_FROM            78  '78'
+                  94  END_FINALLY      
+                96_0  COME_FROM            92  '92'
+                96_1  COME_FROM            70  '70'
+
+../test/125127.pyc -- 
+# decompile failed
+
+# file ../test/125127.pyc
+# Deparsing stopped due to parse error

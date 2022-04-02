@@ -1,0 +1,53 @@
+Instruction context:
+   
+ L.  35        66  LOAD_GLOBAL              _tryorder
+                  68  LOAD_METHOD              append
+                  70  LOAD_FAST                'name'
+                  72  CALL_METHOD_1         1  ''
+                  74  POP_TOP          
+                76_0  COME_FROM            64  '64'
+                  76  POP_BLOCK        
+->                78  BEGIN_FINALLY    
+                80_0  COME_FROM_WITH        2  '2'
+                  80  WITH_CLEANUP_START
+                  82  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 183       112  POP_EXCEPT       
+->               114  LOAD_CONST               False
+                 116  RETURN_VALUE     
+               118_0  COME_FROM           104  '104'
+Instruction context:
+   
+ L. 202       116  POP_EXCEPT       
+->               118  LOAD_CONST               False
+                 120  RETURN_VALUE     
+               122_0  COME_FROM           108  '108'
+Instruction context:
+   
+ L. 248       152  POP_EXCEPT       
+->               154  LOAD_CONST               True
+                 156  RETURN_VALUE     
+               158_0  COME_FROM           144  '144'
+                 158  END_FINALLY      
+                 160  JUMP_FORWARD        200  'to 200'
+               162_0  COME_FROM           114  '114'
+Instruction context:
+   
+ L. 430       200  POP_EXCEPT       
+                 202  BREAK_LOOP          206  'to 206'
+               204_0  COME_FROM           192  '192'
+->               204  END_FINALLY      
+               206_0  COME_FROM           202  '202'
+               206_1  COME_FROM           184  '184'
+                 206  POP_EXCEPT       
+                 208  JUMP_BACK           136  'to 136'
+               210_0  COME_FROM           162  '162'
+                 210  END_FINALLY      
+               212_0  COME_FROM           154  '154'
+
+../test/124953.pyc -- 
+# decompile failed
+
+# file ../test/124953.pyc
+# Deparsing stopped due to parse error

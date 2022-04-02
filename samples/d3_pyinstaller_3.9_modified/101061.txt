@@ -1,0 +1,296 @@
+
+# file test/101061.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "This module provides the components needed to build your own __import__\nfunction.  Undocumented functions are obsolete.\n\nIn most cases it is preferred you consider using the importlib module's\nfunctionality over this module.\n\n"
+                2  STORE_NAME               __doc__
+
+ L.   9         4  LOAD_CONST               0
+                6  LOAD_CONST               ('lock_held', 'acquire_lock', 'release_lock', 'get_frozen_object', 'is_frozen_package', 'init_frozen', 'is_builtin', 'is_frozen', '_fix_co_filename')
+                8  IMPORT_NAME              _imp
+               10  IMPORT_FROM              lock_held
+               12  STORE_NAME               lock_held
+               14  IMPORT_FROM              acquire_lock
+               16  STORE_NAME               acquire_lock
+               18  IMPORT_FROM              release_lock
+               20  STORE_NAME               release_lock
+               22  IMPORT_FROM              get_frozen_object
+               24  STORE_NAME               get_frozen_object
+               26  IMPORT_FROM              is_frozen_package
+               28  STORE_NAME               is_frozen_package
+               30  IMPORT_FROM              init_frozen
+               32  STORE_NAME               init_frozen
+               34  IMPORT_FROM              is_builtin
+               36  STORE_NAME               is_builtin
+               38  IMPORT_FROM              is_frozen
+               40  STORE_NAME               is_frozen
+               42  IMPORT_FROM              _fix_co_filename
+               44  STORE_NAME               _fix_co_filename
+               46  POP_TOP          
+
+ L.  13        48  SETUP_FINALLY        66  'to 66'
+
+ L.  14        50  LOAD_CONST               0
+               52  LOAD_CONST               ('create_dynamic',)
+               54  IMPORT_NAME              _imp
+               56  IMPORT_FROM              create_dynamic
+               58  STORE_NAME               create_dynamic
+               60  POP_TOP          
+               62  POP_BLOCK        
+               64  JUMP_FORWARD         88  'to 88'
+             66_0  COME_FROM_FINALLY    48  '48'
+
+ L.  15        66  DUP_TOP          
+               68  LOAD_NAME                ImportError
+               70  <121>                86  ''
+               72  POP_TOP          
+               74  POP_TOP          
+               76  POP_TOP          
+
+ L.  17        78  LOAD_CONST               None
+               80  STORE_NAME               create_dynamic
+               82  POP_EXCEPT       
+               84  JUMP_FORWARD         88  'to 88'
+               86  <48>             
+             88_0  COME_FROM            84  '84'
+             88_1  COME_FROM            64  '64'
+
+ L.  19        88  LOAD_CONST               0
+               90  LOAD_CONST               ('_ERR_MSG', '_exec', '_load', '_builtin_from_name')
+               92  IMPORT_NAME_ATTR         importlib._bootstrap
+               94  IMPORT_FROM              _ERR_MSG
+               96  STORE_NAME               _ERR_MSG
+               98  IMPORT_FROM              _exec
+              100  STORE_NAME               _exec
+              102  IMPORT_FROM              _load
+              104  STORE_NAME               _load
+              106  IMPORT_FROM              _builtin_from_name
+              108  STORE_NAME               _builtin_from_name
+              110  POP_TOP          
+
+ L.  20       112  LOAD_CONST               0
+              114  LOAD_CONST               ('SourcelessFileLoader',)
+              116  IMPORT_NAME_ATTR         importlib._bootstrap_external
+              118  IMPORT_FROM              SourcelessFileLoader
+              120  STORE_NAME               SourcelessFileLoader
+              122  POP_TOP          
+
+ L.  22       124  LOAD_CONST               0
+              126  LOAD_CONST               ('machinery',)
+              128  IMPORT_NAME              importlib
+              130  IMPORT_FROM              machinery
+              132  STORE_NAME               machinery
+              134  POP_TOP          
+
+ L.  23       136  LOAD_CONST               0
+              138  LOAD_CONST               ('util',)
+              140  IMPORT_NAME              importlib
+              142  IMPORT_FROM              util
+              144  STORE_NAME               util
+              146  POP_TOP          
+
+ L.  24       148  LOAD_CONST               0
+              150  LOAD_CONST               None
+              152  IMPORT_NAME              importlib
+              154  STORE_NAME               importlib
+
+ L.  25       156  LOAD_CONST               0
+              158  LOAD_CONST               None
+              160  IMPORT_NAME              os
+              162  STORE_NAME               os
+
+ L.  26       164  LOAD_CONST               0
+              166  LOAD_CONST               None
+              168  IMPORT_NAME              sys
+              170  STORE_NAME               sys
+
+ L.  27       172  LOAD_CONST               0
+              174  LOAD_CONST               None
+              176  IMPORT_NAME              tokenize
+              178  STORE_NAME               tokenize
+
+ L.  28       180  LOAD_CONST               0
+              182  LOAD_CONST               None
+              184  IMPORT_NAME              types
+              186  STORE_NAME               types
+
+ L.  29       188  LOAD_CONST               0
+              190  LOAD_CONST               None
+              192  IMPORT_NAME              warnings
+              194  STORE_NAME               warnings
+
+ L.  31       196  LOAD_NAME                warnings
+              198  LOAD_ATTR                warn
+              200  LOAD_STR                 "the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses"
+
+ L.  33       202  LOAD_NAME                DeprecationWarning
+              204  LOAD_CONST               2
+
+ L.  31       206  LOAD_CONST               ('stacklevel',)
+              208  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              210  POP_TOP          
+
+ L.  36       212  LOAD_CONST               0
+              214  STORE_NAME               SEARCH_ERROR
+
+ L.  37       216  LOAD_CONST               1
+              218  STORE_NAME               PY_SOURCE
+
+ L.  38       220  LOAD_CONST               2
+              222  STORE_NAME               PY_COMPILED
+
+ L.  39       224  LOAD_CONST               3
+              226  STORE_NAME               C_EXTENSION
+
+ L.  40       228  LOAD_CONST               4
+              230  STORE_NAME               PY_RESOURCE
+
+ L.  41       232  LOAD_CONST               5
+              234  STORE_NAME               PKG_DIRECTORY
+
+ L.  42       236  LOAD_CONST               6
+              238  STORE_NAME               C_BUILTIN
+
+ L.  43       240  LOAD_CONST               7
+              242  STORE_NAME               PY_FROZEN
+
+ L.  44       244  LOAD_CONST               8
+              246  STORE_NAME               PY_CODERESOURCE
+
+ L.  45       248  LOAD_CONST               9
+              250  STORE_NAME               IMP_HOOK
+
+ L.  48       252  LOAD_CODE                <code_object new_module>
+              254  LOAD_STR                 'new_module'
+              256  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              258  STORE_NAME               new_module
+
+ L.  59       260  LOAD_CODE                <code_object get_magic>
+              262  LOAD_STR                 'get_magic'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  STORE_NAME               get_magic
+
+ L.  67       268  LOAD_CODE                <code_object get_tag>
+              270  LOAD_STR                 'get_tag'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  STORE_NAME               get_tag
+
+ L.  72       276  LOAD_CONST               (None,)
+              278  LOAD_CODE                <code_object cache_from_source>
+              280  LOAD_STR                 'cache_from_source'
+              282  MAKE_FUNCTION_1          'default'
+              284  STORE_NAME               cache_from_source
+
+ L.  91       286  LOAD_CODE                <code_object source_from_cache>
+              288  LOAD_STR                 'source_from_cache'
+              290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              292  STORE_NAME               source_from_cache
+
+ L. 105       294  LOAD_CODE                <code_object get_suffixes>
+              296  LOAD_STR                 'get_suffixes'
+              298  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              300  STORE_NAME               get_suffixes
+
+ L. 114       302  LOAD_BUILD_CLASS 
+              304  LOAD_CODE                <code_object NullImporter>
+              306  LOAD_STR                 'NullImporter'
+              308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              310  LOAD_STR                 'NullImporter'
+              312  CALL_FUNCTION_2       2  ''
+              314  STORE_NAME               NullImporter
+
+ L. 133       316  LOAD_BUILD_CLASS 
+              318  LOAD_CODE                <code_object _HackedGetData>
+              320  LOAD_STR                 '_HackedGetData'
+              322  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              324  LOAD_STR                 '_HackedGetData'
+              326  CALL_FUNCTION_2       2  ''
+              328  STORE_NAME               _HackedGetData
+
+ L. 160       330  LOAD_BUILD_CLASS 
+              332  LOAD_CODE                <code_object _LoadSourceCompatibility>
+              334  LOAD_STR                 '_LoadSourceCompatibility'
+              336  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              338  LOAD_STR                 '_LoadSourceCompatibility'
+              340  LOAD_NAME                _HackedGetData
+              342  LOAD_NAME                machinery
+              344  LOAD_ATTR                SourceFileLoader
+              346  CALL_FUNCTION_4       4  ''
+              348  STORE_NAME               _LoadSourceCompatibility
+
+ L. 165       350  LOAD_CONST               (None,)
+              352  LOAD_CODE                <code_object load_source>
+              354  LOAD_STR                 'load_source'
+              356  MAKE_FUNCTION_1          'default'
+              358  STORE_NAME               load_source
+
+ L. 179       360  LOAD_BUILD_CLASS 
+              362  LOAD_CODE                <code_object _LoadCompiledCompatibility>
+              364  LOAD_STR                 '_LoadCompiledCompatibility'
+              366  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              368  LOAD_STR                 '_LoadCompiledCompatibility'
+              370  LOAD_NAME                _HackedGetData
+              372  LOAD_NAME                SourcelessFileLoader
+              374  CALL_FUNCTION_4       4  ''
+              376  STORE_NAME               _LoadCompiledCompatibility
+
+ L. 184       378  LOAD_CONST               (None,)
+              380  LOAD_CODE                <code_object load_compiled>
+              382  LOAD_STR                 'load_compiled'
+              384  MAKE_FUNCTION_1          'default'
+              386  STORE_NAME               load_compiled
+
+ L. 199       388  LOAD_CODE                <code_object load_package>
+              390  LOAD_STR                 'load_package'
+              392  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              394  STORE_NAME               load_package
+
+ L. 219       396  LOAD_CODE                <code_object load_module>
+              398  LOAD_STR                 'load_module'
+              400  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              402  STORE_NAME               load_module
+
+ L. 254       404  LOAD_CONST               (None,)
+              406  LOAD_CODE                <code_object find_module>
+              408  LOAD_STR                 'find_module'
+              410  MAKE_FUNCTION_1          'default'
+              412  STORE_NAME               find_module
+
+ L. 306       414  LOAD_CODE                <code_object reload>
+              416  LOAD_STR                 'reload'
+              418  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              420  STORE_NAME               reload
+
+ L. 317       422  LOAD_CODE                <code_object init_builtin>
+              424  LOAD_STR                 'init_builtin'
+              426  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              428  STORE_NAME               init_builtin
+
+ L. 329       430  LOAD_NAME                create_dynamic
+          432_434  POP_JUMP_IF_FALSE   448  'to 448'
+
+ L. 330       436  LOAD_CONST               (None,)
+              438  LOAD_CODE                <code_object load_dynamic>
+              440  LOAD_STR                 'load_dynamic'
+              442  MAKE_FUNCTION_1          'default'
+              444  STORE_NAME               load_dynamic
+              446  JUMP_FORWARD        452  'to 452'
+            448_0  COME_FROM           432  '432'
+
+ L. 345       448  LOAD_CONST               None
+              450  STORE_NAME               load_dynamic
+            452_0  COME_FROM           446  '446'
+
+Parse error at or near `<121>' instruction at offset 70
+
+Instruction context:
+   
+ L.  15        66  DUP_TOP          
+                  68  LOAD_NAME                ImportError
+->                70  <121>                86  ''
+                  72  POP_TOP          
+                  74  POP_TOP          
+                  76  POP_TOP          
+
+test/101061.pyc -- 
+# decompile failed

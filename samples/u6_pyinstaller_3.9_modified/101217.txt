@@ -1,0 +1,52 @@
+Instruction context:
+   
+ L. 104        12  LOAD_STR                 '\n'
+                  14  LOAD_FAST                'data'
+->                16  <118>                 1  ''
+                  18  POP_JUMP_IF_FALSE    32  'to 32'
+                  20  LOAD_STR                 '\r'
+                  22  LOAD_FAST                'data'
+                  24  <118>                 1  ''
+                  26  POP_JUMP_IF_FALSE    32  'to 32'
+Instruction context:
+   
+ L. 149        12  LOAD_FAST                '_factory'
+                  14  LOAD_CONST               None
+->                16  <117>                 0  ''
+                  18  POP_JUMP_IF_FALSE    60  'to 60'
+Instruction context:
+   
+ L. 181        14  DUP_TOP          
+                  16  LOAD_GLOBAL              StopIteration
+->                18  <121>                30  ''
+                  20  POP_TOP          
+                  22  POP_TOP          
+                  24  POP_TOP          
+Instruction context:
+   
+ L. 189        26  LOAD_FAST                'self'
+                  28  LOAD_ATTR                _msgstack
+                  30  POP_JUMP_IF_FALSE    36  'to 36'
+->                32  <74>             
+                  34  RAISE_VARARGS_1       1  'exception instance'
+                36_0  COME_FROM            30  '30'
+Instruction context:
+   
+ L. 225        22  LOAD_FAST                'line'
+                  24  LOAD_GLOBAL              NeedMoreData
+->                26  <117>                 0  ''
+                  28  POP_JUMP_IF_FALSE    38  'to 38'
+Instruction context:
+   
+ L. 477        26  LOAD_FAST                'line'
+                  28  LOAD_CONST               0
+                  30  BINARY_SUBSCR    
+                  32  LOAD_STR                 ' \t'
+->                34  <118>                 0  ''
+                  36  POP_JUMP_IF_FALSE    82  'to 82'
+
+test/101217.pyc -- 
+# decompile failed
+
+# file test/101217.pyc
+# Deparsing stopped due to parse error

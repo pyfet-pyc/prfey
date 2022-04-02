@@ -1,0 +1,23 @@
+Instruction context:
+   
+ L. 307        38  LOAD_FAST                'exc_type'
+                  40  LOAD_GLOBAL              StopIteration
+                  42  COMPARE_OP               is
+                  44  POP_JUMP_IF_FALSE    50  'to 50'
+                  46  LOAD_STR                 'Internal '
+                  48  JUMP_FORWARD         52  'to 52'
+                50_0  COME_FROM            44  '44'
+->              50_1  COME_FROM            36  '36'
+                  50  LOAD_STR                 ''
+                52_0  COME_FROM            48  '48'
+                  52  STORE_FAST               'prefix'
+Instruction context:
+   
+ L. 760       124  LOAD_FAST                'lineno'
+->               126  RETURN_VALUE     
+
+test/410.pyc -- 
+# decompile failed
+
+# file test/410.pyc
+# Deparsing stopped due to parse error

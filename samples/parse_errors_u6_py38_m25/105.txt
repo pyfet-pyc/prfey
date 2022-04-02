@@ -1,0 +1,25 @@
+Instruction context:
+   
+ L.  31        50  POP_BLOCK        
+                  52  POP_EXCEPT       
+->                54  CALL_FINALLY         60  'to 60'
+                  56  LOAD_CONST               None
+                  58  RETURN_VALUE     
+                60_0  COME_FROM            54  '54'
+                60_1  COME_FROM_FINALLY    48  '48'
+                  60  LOAD_CONST               None
+                  62  STORE_FAST               'e'
+                  64  DELETE_FAST              'e'
+                  66  END_FINALLY      
+                  68  POP_EXCEPT       
+                  70  JUMP_FORWARD         74  'to 74'
+                72_0  COME_FROM            40  '40'
+                  72  END_FINALLY      
+                74_0  COME_FROM            70  '70'
+                74_1  COME_FROM            32  '32'
+
+test/105.pyc -- 
+# decompile failed
+
+# file test/105.pyc
+# Deparsing stopped due to parse error

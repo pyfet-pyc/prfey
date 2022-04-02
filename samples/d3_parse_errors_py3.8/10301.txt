@@ -1,0 +1,27 @@
+Instruction context:
+   
+ L. 227       312  POP_BLOCK        
+                 314  POP_EXCEPT       
+->               316  CALL_FINALLY        324  'to 324'
+                 318  JUMP_BACK           232  'to 232'
+                 320  POP_BLOCK        
+                 322  BEGIN_FINALLY    
+               324_0  COME_FROM           316  '316'
+               324_1  COME_FROM_FINALLY   286  '286'
+                 324  LOAD_CONST               None
+                 326  STORE_FAST               'msg'
+                 328  DELETE_FAST              'msg'
+                 330  END_FINALLY      
+                 332  POP_EXCEPT       
+                 334  JUMP_FORWARD        338  'to 338'
+               336_0  COME_FROM           276  '276'
+                 336  END_FINALLY      
+               338_0  COME_FROM           334  '334'
+               338_1  COME_FROM           268  '268'
+               338_2  COME_FROM           252  '252'
+
+../test/10301.pyc -- 
+# decompile failed
+
+# file ../test/10301.pyc
+# Deparsing stopped due to parse error

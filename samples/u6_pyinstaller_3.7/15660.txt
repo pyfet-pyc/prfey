@@ -1,0 +1,25 @@
+Instruction context:
+   
+ L. 132       404  LOAD_FAST                'code'
+                 406  LOAD_CONST               429
+                 408  COMPARE_OP               ==
+                 410  POP_JUMP_IF_TRUE     34  'to 34'
+                 412  LOAD_CONST               500
+                 414  LOAD_FAST                'code'
+                 416  DUP_TOP          
+                 418  ROT_THREE        
+                 420  COMPARE_OP               <=
+             422_424  POP_JUMP_IF_FALSE   436  'to 436'
+                 426  LOAD_CONST               600
+                 428  COMPARE_OP               <
+             430_432  POP_JUMP_IF_FALSE   442  'to 442'
+                 434  JUMP_BACK            34  'to 34'
+               436_0  COME_FROM           422  '422'
+->               436  POP_TOP          
+                 438  JUMP_FORWARD        442  'to 442'
+
+../test/15660.pyc -- 
+# decompile failed
+
+# file ../test/15660.pyc
+# Deparsing stopped due to parse error

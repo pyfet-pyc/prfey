@@ -1,0 +1,88 @@
+Instruction context:
+   
+ L.  85        92  BUILD_LIST_0          0 
+                  94  LOAD_CONST               ('BlpImagePlugin', 'BmpImagePlugin', 'BufrStubImagePlugin', 'CurImagePlugin', 'DcxImagePlugin', 'DdsImagePlugin', 'EpsImagePlugin', 'FitsStubImagePlugin', 'FliImagePlugin', 'FpxImagePlugin', 'FtexImagePlugin', 'GbrImagePlugin', 'GifImagePlugin', 'GribStubImagePlugin', 'Hdf5StubImagePlugin', 'IcnsImagePlugin', 'IcoImagePlugin', 'ImImagePlugin', 'ImtImagePlugin', 'IptcImagePlugin', 'JpegImagePlugin', 'Jpeg2KImagePlugin', 'McIdasImagePlugin', 'MicImagePlugin', 'MpegImagePlugin', 'MpoImagePlugin', 'MspImagePlugin', 'PalmImagePlugin', 'PcdImagePlugin', 'PcxImagePlugin', 'PdfImagePlugin', 'PixarImagePlugin', 'PngImagePlugin', 'PpmImagePlugin', 'PsdImagePlugin', 'SgiImagePlugin', 'SpiderImagePlugin', 'SunImagePlugin', 'TgaImagePlugin', 'TiffImagePlugin', 'WebPImagePlugin', 'WmfImagePlugin', 'XbmImagePlugin', 'XpmImagePlugin', 'XVThumbImagePlugin')
+->                96  CALL_FINALLY         99  'to 99'
+                  98  STORE_NAME               _plugins
+
+test/164721.pyc -- 
+# decompile failed
+
+# file test/164721.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Pillow (Fork of the Python Imaging Library)\n\nPillow is the friendly PIL fork by Alex Clark and Contributors.\n    https://github.com/python-pillow/Pillow/\n\nPillow is forked from PIL 1.1.7.\n\nPIL is the Python Imaging Library by Fredrik Lundh and Contributors.\nCopyright (c) 1999 by Secret Labs AB.\n\nUse PIL.__version__ for this Pillow version.\n\n;-)\n'
+                2  STORE_NAME               __doc__
+
+ L.  16         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              sys
+               10  STORE_NAME               sys
+
+ L.  17        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              warnings
+               18  STORE_NAME               warnings
+
+ L.  19        20  LOAD_CONST               1
+               22  LOAD_CONST               ('_version',)
+               24  IMPORT_NAME              
+               26  IMPORT_FROM              _version
+               28  STORE_NAME               _version
+               30  POP_TOP          
+
+ L.  22        32  LOAD_NAME                _version
+               34  LOAD_ATTR                __version__
+               36  STORE_NAME               __version__
+
+ L.  27        38  LOAD_CODE                <code_object _raise_version_warning>
+               40  LOAD_STR                 '_raise_version_warning'
+               42  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               44  STORE_NAME               _raise_version_warning
+
+ L.  36        46  LOAD_NAME                sys
+               48  LOAD_ATTR                version_info
+               50  LOAD_CONST               (3, 7)
+               52  COMPARE_OP               >=
+               54  POP_JUMP_IF_FALSE    66  'to 66'
+
+ L.  38        56  LOAD_CODE                <code_object __getattr__>
+               58  LOAD_STR                 '__getattr__'
+               60  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               62  STORE_NAME               __getattr__
+               64  JUMP_FORWARD         90  'to 90'
+             66_0  COME_FROM            54  '54'
+
+ L.  47        66  LOAD_BUILD_CLASS 
+               68  LOAD_CODE                <code_object _Deprecated_Version>
+               70  LOAD_STR                 '_Deprecated_Version'
+               72  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               74  LOAD_STR                 '_Deprecated_Version'
+               76  LOAD_NAME                str
+               78  CALL_FUNCTION_3       3  ''
+               80  STORE_NAME               _Deprecated_Version
+
+ L.  80        82  LOAD_NAME                _Deprecated_Version
+               84  LOAD_NAME                __version__
+               86  CALL_FUNCTION_1       1  ''
+               88  STORE_NAME               PILLOW_VERSION
+             90_0  COME_FROM            64  '64'
+
+ L.  82        90  DELETE_NAME              _version
+
+ L.  85        92  BUILD_LIST_0          0 
+               94  LOAD_CONST               ('BlpImagePlugin', 'BmpImagePlugin', 'BufrStubImagePlugin', 'CurImagePlugin', 'DcxImagePlugin', 'DdsImagePlugin', 'EpsImagePlugin', 'FitsStubImagePlugin', 'FliImagePlugin', 'FpxImagePlugin', 'FtexImagePlugin', 'GbrImagePlugin', 'GifImagePlugin', 'GribStubImagePlugin', 'Hdf5StubImagePlugin', 'IcnsImagePlugin', 'IcoImagePlugin', 'ImImagePlugin', 'ImtImagePlugin', 'IptcImagePlugin', 'JpegImagePlugin', 'Jpeg2KImagePlugin', 'McIdasImagePlugin', 'MicImagePlugin', 'MpegImagePlugin', 'MpoImagePlugin', 'MspImagePlugin', 'PalmImagePlugin', 'PcdImagePlugin', 'PcxImagePlugin', 'PdfImagePlugin', 'PixarImagePlugin', 'PngImagePlugin', 'PpmImagePlugin', 'PsdImagePlugin', 'SgiImagePlugin', 'SpiderImagePlugin', 'SunImagePlugin', 'TgaImagePlugin', 'TiffImagePlugin', 'WebPImagePlugin', 'WmfImagePlugin', 'XbmImagePlugin', 'XpmImagePlugin', 'XVThumbImagePlugin')
+               96  CALL_FINALLY         99  'to 99'
+               98  STORE_NAME               _plugins
+
+ L. 134       100  LOAD_BUILD_CLASS 
+              102  LOAD_CODE                <code_object UnidentifiedImageError>
+              104  LOAD_STR                 'UnidentifiedImageError'
+              106  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              108  LOAD_STR                 'UnidentifiedImageError'
+              110  LOAD_NAME                OSError
+              112  CALL_FUNCTION_3       3  ''
+              114  STORE_NAME               UnidentifiedImageError
+
+Parse error at or near `CALL_FINALLY' instruction at offset 96
+

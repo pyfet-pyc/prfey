@@ -1,0 +1,1014 @@
+
+# file test/31327.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "OS routines for NT or Posix depending on what system we're on.\n\nThis exports:\n  - all functions from posix or nt, e.g. unlink, stat, etc.\n  - os.path is either posixpath or ntpath\n  - os.name is either 'posix' or 'nt'\n  - os.curdir is a string representing the current directory (always '.')\n  - os.pardir is a string representing the parent directory (always '..')\n  - os.sep is the (or a most common) pathname separator ('/' or '\\\\')\n  - os.extsep is the extension separator (always '.')\n  - os.altsep is the alternate pathname separator (None or '/')\n  - os.pathsep is the component separator used in $PATH etc\n  - os.linesep is the line separator in text files ('\\r' or '\\n' or '\\r\\n')\n  - os.defpath is the default search path for executables\n  - os.devnull is the file path of the null device ('/dev/null', etc.)\n\nPrograms that import and use 'os' stand a better chance of being\nportable between different platforms.  Of course, they must then\nonly use functions that are defined by all platforms (e.g., unlink\nand opendir), and leave all pathname manipulation to os.path\n(e.g., split and join).\n"
+                2  STORE_NAME               __doc__
+
+ L.  25         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              abc
+               10  STORE_NAME               abc
+
+ L.  26        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L.  27        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              stat
+               26  STORE_NAME               st
+
+ L.  29        28  LOAD_CONST               0
+               30  LOAD_CONST               ('_check_methods',)
+               32  IMPORT_NAME              _collections_abc
+               34  IMPORT_FROM              _check_methods
+               36  STORE_NAME               _check_methods
+               38  POP_TOP          
+
+ L.  31        40  LOAD_NAME                type
+               42  LOAD_NAME                list
+               44  LOAD_NAME                int
+               46  BINARY_SUBSCR    
+               48  CALL_FUNCTION_1       1  ''
+               50  STORE_NAME               GenericAlias
+
+ L.  33        52  LOAD_NAME                sys
+               54  LOAD_ATTR                builtin_module_names
+               56  STORE_NAME               _names
+
+ L.  36        58  BUILD_LIST_0          0 
+               60  LOAD_CONST               ('altsep', 'curdir', 'pardir', 'sep', 'pathsep', 'linesep', 'defpath', 'name', 'path', 'devnull', 'SEEK_SET', 'SEEK_CUR', 'SEEK_END', 'fsencode', 'fsdecode', 'get_exec_path', 'fdopen', 'popen', 'extsep')
+               62  CALL_FINALLY         65  'to 65'
+               64  STORE_NAME               __all__
+
+ L.  41        66  LOAD_CODE                <code_object _exists>
+               68  LOAD_STR                 '_exists'
+               70  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               72  STORE_NAME               _exists
+
+ L.  44        74  LOAD_CODE                <code_object _get_exports_list>
+               76  LOAD_STR                 '_get_exports_list'
+               78  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               80  STORE_NAME               _get_exports_list
+
+ L.  52        82  LOAD_STR                 'posix'
+               84  LOAD_NAME                _names
+               86  <118>                 0  ''
+               88  POP_JUMP_IF_FALSE   222  'to 222'
+
+ L.  53        90  LOAD_STR                 'posix'
+               92  STORE_NAME               name
+
+ L.  54        94  LOAD_STR                 '\n'
+               96  STORE_NAME               linesep
+
+ L.  55        98  LOAD_CONST               0
+              100  LOAD_CONST               ('*',)
+              102  IMPORT_NAME              posix
+              104  IMPORT_STAR      
+
+ L.  56       106  SETUP_FINALLY       134  'to 134'
+
+ L.  57       108  LOAD_CONST               0
+              110  LOAD_CONST               ('_exit',)
+              112  IMPORT_NAME              posix
+              114  IMPORT_FROM              _exit
+              116  STORE_NAME               _exit
+              118  POP_TOP          
+
+ L.  58       120  LOAD_NAME                __all__
+              122  LOAD_METHOD              append
+              124  LOAD_STR                 '_exit'
+              126  CALL_METHOD_1         1  ''
+              128  POP_TOP          
+              130  POP_BLOCK        
+              132  JUMP_FORWARD        152  'to 152'
+            134_0  COME_FROM_FINALLY   106  '106'
+
+ L.  59       134  DUP_TOP          
+              136  LOAD_NAME                ImportError
+              138  <121>               150  ''
+              140  POP_TOP          
+              142  POP_TOP          
+              144  POP_TOP          
+
+ L.  60       146  POP_EXCEPT       
+              148  JUMP_FORWARD        152  'to 152'
+              150  <48>             
+            152_0  COME_FROM           148  '148'
+            152_1  COME_FROM           132  '132'
+
+ L.  61       152  LOAD_CONST               0
+              154  LOAD_CONST               None
+              156  IMPORT_NAME              posixpath
+              158  STORE_NAME               path
+
+ L.  63       160  SETUP_FINALLY       178  'to 178'
+
+ L.  64       162  LOAD_CONST               0
+              164  LOAD_CONST               ('_have_functions',)
+              166  IMPORT_NAME              posix
+              168  IMPORT_FROM              _have_functions
+              170  STORE_NAME               _have_functions
+              172  POP_TOP          
+              174  POP_BLOCK        
+              176  JUMP_FORWARD        196  'to 196'
+            178_0  COME_FROM_FINALLY   160  '160'
+
+ L.  65       178  DUP_TOP          
+              180  LOAD_NAME                ImportError
+              182  <121>               194  ''
+              184  POP_TOP          
+              186  POP_TOP          
+              188  POP_TOP          
+
+ L.  66       190  POP_EXCEPT       
+              192  JUMP_FORWARD        196  'to 196'
+              194  <48>             
+            196_0  COME_FROM           192  '192'
+            196_1  COME_FROM           176  '176'
+
+ L.  68       196  LOAD_CONST               0
+              198  LOAD_CONST               None
+              200  IMPORT_NAME              posix
+              202  STORE_NAME               posix
+
+ L.  69       204  LOAD_NAME                __all__
+              206  LOAD_METHOD              extend
+              208  LOAD_NAME                _get_exports_list
+              210  LOAD_NAME                posix
+              212  CALL_FUNCTION_1       1  ''
+              214  CALL_METHOD_1         1  ''
+              216  POP_TOP          
+
+ L.  70       218  DELETE_NAME              posix
+              220  JUMP_FORWARD        376  'to 376'
+            222_0  COME_FROM            88  '88'
+
+ L.  72       222  LOAD_STR                 'nt'
+              224  LOAD_NAME                _names
+              226  <118>                 0  ''
+          228_230  POP_JUMP_IF_FALSE   368  'to 368'
+
+ L.  73       232  LOAD_STR                 'nt'
+              234  STORE_NAME               name
+
+ L.  74       236  LOAD_STR                 '\r\n'
+              238  STORE_NAME               linesep
+
+ L.  75       240  LOAD_CONST               0
+              242  LOAD_CONST               ('*',)
+              244  IMPORT_NAME              nt
+              246  IMPORT_STAR      
+
+ L.  76       248  SETUP_FINALLY       276  'to 276'
+
+ L.  77       250  LOAD_CONST               0
+              252  LOAD_CONST               ('_exit',)
+              254  IMPORT_NAME              nt
+              256  IMPORT_FROM              _exit
+              258  STORE_NAME               _exit
+              260  POP_TOP          
+
+ L.  78       262  LOAD_NAME                __all__
+              264  LOAD_METHOD              append
+              266  LOAD_STR                 '_exit'
+              268  CALL_METHOD_1         1  ''
+              270  POP_TOP          
+              272  POP_BLOCK        
+              274  JUMP_FORWARD        296  'to 296'
+            276_0  COME_FROM_FINALLY   248  '248'
+
+ L.  79       276  DUP_TOP          
+              278  LOAD_NAME                ImportError
+          280_282  <121>               294  ''
+              284  POP_TOP          
+              286  POP_TOP          
+              288  POP_TOP          
+
+ L.  80       290  POP_EXCEPT       
+              292  JUMP_FORWARD        296  'to 296'
+              294  <48>             
+            296_0  COME_FROM           292  '292'
+            296_1  COME_FROM           274  '274'
+
+ L.  81       296  LOAD_CONST               0
+              298  LOAD_CONST               None
+              300  IMPORT_NAME              ntpath
+              302  STORE_NAME               path
+
+ L.  83       304  LOAD_CONST               0
+              306  LOAD_CONST               None
+              308  IMPORT_NAME              nt
+              310  STORE_NAME               nt
+
+ L.  84       312  LOAD_NAME                __all__
+              314  LOAD_METHOD              extend
+              316  LOAD_NAME                _get_exports_list
+              318  LOAD_NAME                nt
+              320  CALL_FUNCTION_1       1  ''
+              322  CALL_METHOD_1         1  ''
+              324  POP_TOP          
+
+ L.  85       326  DELETE_NAME              nt
+
+ L.  87       328  SETUP_FINALLY       346  'to 346'
+
+ L.  88       330  LOAD_CONST               0
+              332  LOAD_CONST               ('_have_functions',)
+              334  IMPORT_NAME              nt
+              336  IMPORT_FROM              _have_functions
+              338  STORE_NAME               _have_functions
+              340  POP_TOP          
+              342  POP_BLOCK        
+              344  JUMP_FORWARD        366  'to 366'
+            346_0  COME_FROM_FINALLY   328  '328'
+
+ L.  89       346  DUP_TOP          
+              348  LOAD_NAME                ImportError
+          350_352  <121>               364  ''
+              354  POP_TOP          
+              356  POP_TOP          
+              358  POP_TOP          
+
+ L.  90       360  POP_EXCEPT       
+              362  JUMP_FORWARD        366  'to 366'
+              364  <48>             
+            366_0  COME_FROM           362  '362'
+            366_1  COME_FROM           344  '344'
+              366  JUMP_FORWARD        376  'to 376'
+            368_0  COME_FROM           228  '228'
+
+ L.  93       368  LOAD_NAME                ImportError
+              370  LOAD_STR                 'no os specific module found'
+              372  CALL_FUNCTION_1       1  ''
+              374  RAISE_VARARGS_1       1  'exception instance'
+            376_0  COME_FROM           366  '366'
+            376_1  COME_FROM           220  '220'
+
+ L.  95       376  LOAD_NAME                path
+              378  LOAD_NAME                sys
+              380  LOAD_ATTR                modules
+              382  LOAD_STR                 'os.path'
+              384  STORE_SUBSCR     
+
+ L.  96       386  LOAD_CONST               0
+              388  LOAD_CONST               ('curdir', 'pardir', 'sep', 'pathsep', 'defpath', 'extsep', 'altsep', 'devnull')
+              390  IMPORT_NAME_ATTR         os.path
+              392  IMPORT_FROM              curdir
+              394  STORE_NAME               curdir
+              396  IMPORT_FROM              pardir
+              398  STORE_NAME               pardir
+              400  IMPORT_FROM              sep
+              402  STORE_NAME               sep
+              404  IMPORT_FROM              pathsep
+              406  STORE_NAME               pathsep
+              408  IMPORT_FROM              defpath
+              410  STORE_NAME               defpath
+              412  IMPORT_FROM              extsep
+              414  STORE_NAME               extsep
+              416  IMPORT_FROM              altsep
+              418  STORE_NAME               altsep
+              420  IMPORT_FROM              devnull
+              422  STORE_NAME               devnull
+              424  POP_TOP          
+
+ L.  99       426  DELETE_NAME              _names
+
+ L. 102       428  LOAD_NAME                _exists
+              430  LOAD_STR                 '_have_functions'
+              432  CALL_FUNCTION_1       1  ''
+          434_436  POP_JUMP_IF_FALSE   940  'to 940'
+
+ L. 103       438  LOAD_NAME                globals
+              440  CALL_FUNCTION_0       0  ''
+              442  STORE_NAME               _globals
+
+ L. 104       444  LOAD_CODE                <code_object _add>
+              446  LOAD_STR                 '_add'
+              448  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              450  STORE_NAME               _add
+
+ L. 108       452  LOAD_NAME                set
+              454  CALL_FUNCTION_0       0  ''
+              456  STORE_NAME               _set
+
+ L. 109       458  LOAD_NAME                _add
+              460  LOAD_STR                 'HAVE_FACCESSAT'
+              462  LOAD_STR                 'access'
+              464  CALL_FUNCTION_2       2  ''
+              466  POP_TOP          
+
+ L. 110       468  LOAD_NAME                _add
+              470  LOAD_STR                 'HAVE_FCHMODAT'
+              472  LOAD_STR                 'chmod'
+              474  CALL_FUNCTION_2       2  ''
+              476  POP_TOP          
+
+ L. 111       478  LOAD_NAME                _add
+              480  LOAD_STR                 'HAVE_FCHOWNAT'
+              482  LOAD_STR                 'chown'
+              484  CALL_FUNCTION_2       2  ''
+              486  POP_TOP          
+
+ L. 112       488  LOAD_NAME                _add
+              490  LOAD_STR                 'HAVE_FSTATAT'
+              492  LOAD_STR                 'stat'
+              494  CALL_FUNCTION_2       2  ''
+              496  POP_TOP          
+
+ L. 113       498  LOAD_NAME                _add
+              500  LOAD_STR                 'HAVE_FUTIMESAT'
+              502  LOAD_STR                 'utime'
+              504  CALL_FUNCTION_2       2  ''
+              506  POP_TOP          
+
+ L. 114       508  LOAD_NAME                _add
+              510  LOAD_STR                 'HAVE_LINKAT'
+              512  LOAD_STR                 'link'
+              514  CALL_FUNCTION_2       2  ''
+              516  POP_TOP          
+
+ L. 115       518  LOAD_NAME                _add
+              520  LOAD_STR                 'HAVE_MKDIRAT'
+              522  LOAD_STR                 'mkdir'
+              524  CALL_FUNCTION_2       2  ''
+              526  POP_TOP          
+
+ L. 116       528  LOAD_NAME                _add
+              530  LOAD_STR                 'HAVE_MKFIFOAT'
+              532  LOAD_STR                 'mkfifo'
+              534  CALL_FUNCTION_2       2  ''
+              536  POP_TOP          
+
+ L. 117       538  LOAD_NAME                _add
+              540  LOAD_STR                 'HAVE_MKNODAT'
+              542  LOAD_STR                 'mknod'
+              544  CALL_FUNCTION_2       2  ''
+              546  POP_TOP          
+
+ L. 118       548  LOAD_NAME                _add
+              550  LOAD_STR                 'HAVE_OPENAT'
+              552  LOAD_STR                 'open'
+              554  CALL_FUNCTION_2       2  ''
+              556  POP_TOP          
+
+ L. 119       558  LOAD_NAME                _add
+              560  LOAD_STR                 'HAVE_READLINKAT'
+              562  LOAD_STR                 'readlink'
+              564  CALL_FUNCTION_2       2  ''
+              566  POP_TOP          
+
+ L. 120       568  LOAD_NAME                _add
+              570  LOAD_STR                 'HAVE_RENAMEAT'
+              572  LOAD_STR                 'rename'
+              574  CALL_FUNCTION_2       2  ''
+              576  POP_TOP          
+
+ L. 121       578  LOAD_NAME                _add
+              580  LOAD_STR                 'HAVE_SYMLINKAT'
+              582  LOAD_STR                 'symlink'
+              584  CALL_FUNCTION_2       2  ''
+              586  POP_TOP          
+
+ L. 122       588  LOAD_NAME                _add
+              590  LOAD_STR                 'HAVE_UNLINKAT'
+              592  LOAD_STR                 'unlink'
+              594  CALL_FUNCTION_2       2  ''
+              596  POP_TOP          
+
+ L. 123       598  LOAD_NAME                _add
+              600  LOAD_STR                 'HAVE_UNLINKAT'
+              602  LOAD_STR                 'rmdir'
+              604  CALL_FUNCTION_2       2  ''
+              606  POP_TOP          
+
+ L. 124       608  LOAD_NAME                _add
+              610  LOAD_STR                 'HAVE_UTIMENSAT'
+              612  LOAD_STR                 'utime'
+              614  CALL_FUNCTION_2       2  ''
+              616  POP_TOP          
+
+ L. 125       618  LOAD_NAME                _set
+              620  STORE_NAME               supports_dir_fd
+
+ L. 127       622  LOAD_NAME                set
+              624  CALL_FUNCTION_0       0  ''
+              626  STORE_NAME               _set
+
+ L. 128       628  LOAD_NAME                _add
+              630  LOAD_STR                 'HAVE_FACCESSAT'
+              632  LOAD_STR                 'access'
+              634  CALL_FUNCTION_2       2  ''
+              636  POP_TOP          
+
+ L. 129       638  LOAD_NAME                _set
+              640  STORE_NAME               supports_effective_ids
+
+ L. 131       642  LOAD_NAME                set
+              644  CALL_FUNCTION_0       0  ''
+              646  STORE_NAME               _set
+
+ L. 132       648  LOAD_NAME                _add
+              650  LOAD_STR                 'HAVE_FCHDIR'
+              652  LOAD_STR                 'chdir'
+              654  CALL_FUNCTION_2       2  ''
+              656  POP_TOP          
+
+ L. 133       658  LOAD_NAME                _add
+              660  LOAD_STR                 'HAVE_FCHMOD'
+              662  LOAD_STR                 'chmod'
+              664  CALL_FUNCTION_2       2  ''
+              666  POP_TOP          
+
+ L. 134       668  LOAD_NAME                _add
+              670  LOAD_STR                 'HAVE_FCHOWN'
+              672  LOAD_STR                 'chown'
+              674  CALL_FUNCTION_2       2  ''
+              676  POP_TOP          
+
+ L. 135       678  LOAD_NAME                _add
+              680  LOAD_STR                 'HAVE_FDOPENDIR'
+              682  LOAD_STR                 'listdir'
+              684  CALL_FUNCTION_2       2  ''
+              686  POP_TOP          
+
+ L. 136       688  LOAD_NAME                _add
+              690  LOAD_STR                 'HAVE_FDOPENDIR'
+              692  LOAD_STR                 'scandir'
+              694  CALL_FUNCTION_2       2  ''
+              696  POP_TOP          
+
+ L. 137       698  LOAD_NAME                _add
+              700  LOAD_STR                 'HAVE_FEXECVE'
+              702  LOAD_STR                 'execve'
+              704  CALL_FUNCTION_2       2  ''
+              706  POP_TOP          
+
+ L. 138       708  LOAD_NAME                _set
+              710  LOAD_METHOD              add
+              712  LOAD_NAME                stat
+              714  CALL_METHOD_1         1  ''
+              716  POP_TOP          
+
+ L. 139       718  LOAD_NAME                _add
+              720  LOAD_STR                 'HAVE_FTRUNCATE'
+              722  LOAD_STR                 'truncate'
+              724  CALL_FUNCTION_2       2  ''
+              726  POP_TOP          
+
+ L. 140       728  LOAD_NAME                _add
+              730  LOAD_STR                 'HAVE_FUTIMENS'
+              732  LOAD_STR                 'utime'
+              734  CALL_FUNCTION_2       2  ''
+              736  POP_TOP          
+
+ L. 141       738  LOAD_NAME                _add
+              740  LOAD_STR                 'HAVE_FUTIMES'
+              742  LOAD_STR                 'utime'
+              744  CALL_FUNCTION_2       2  ''
+              746  POP_TOP          
+
+ L. 142       748  LOAD_NAME                _add
+              750  LOAD_STR                 'HAVE_FPATHCONF'
+              752  LOAD_STR                 'pathconf'
+              754  CALL_FUNCTION_2       2  ''
+              756  POP_TOP          
+
+ L. 143       758  LOAD_NAME                _exists
+              760  LOAD_STR                 'statvfs'
+              762  CALL_FUNCTION_1       1  ''
+          764_766  POP_JUMP_IF_FALSE   788  'to 788'
+              768  LOAD_NAME                _exists
+              770  LOAD_STR                 'fstatvfs'
+              772  CALL_FUNCTION_1       1  ''
+          774_776  POP_JUMP_IF_FALSE   788  'to 788'
+
+ L. 144       778  LOAD_NAME                _add
+              780  LOAD_STR                 'HAVE_FSTATVFS'
+              782  LOAD_STR                 'statvfs'
+              784  CALL_FUNCTION_2       2  ''
+              786  POP_TOP          
+            788_0  COME_FROM           774  '774'
+            788_1  COME_FROM           764  '764'
+
+ L. 145       788  LOAD_NAME                _set
+              790  STORE_NAME               supports_fd
+
+ L. 147       792  LOAD_NAME                set
+              794  CALL_FUNCTION_0       0  ''
+              796  STORE_NAME               _set
+
+ L. 148       798  LOAD_NAME                _add
+              800  LOAD_STR                 'HAVE_FACCESSAT'
+              802  LOAD_STR                 'access'
+              804  CALL_FUNCTION_2       2  ''
+              806  POP_TOP          
+
+ L. 170       808  LOAD_NAME                _add
+              810  LOAD_STR                 'HAVE_FCHOWNAT'
+              812  LOAD_STR                 'chown'
+              814  CALL_FUNCTION_2       2  ''
+              816  POP_TOP          
+
+ L. 171       818  LOAD_NAME                _add
+              820  LOAD_STR                 'HAVE_FSTATAT'
+              822  LOAD_STR                 'stat'
+              824  CALL_FUNCTION_2       2  ''
+              826  POP_TOP          
+
+ L. 172       828  LOAD_NAME                _add
+              830  LOAD_STR                 'HAVE_LCHFLAGS'
+              832  LOAD_STR                 'chflags'
+              834  CALL_FUNCTION_2       2  ''
+              836  POP_TOP          
+
+ L. 173       838  LOAD_NAME                _add
+              840  LOAD_STR                 'HAVE_LCHMOD'
+              842  LOAD_STR                 'chmod'
+              844  CALL_FUNCTION_2       2  ''
+              846  POP_TOP          
+
+ L. 174       848  LOAD_NAME                _exists
+              850  LOAD_STR                 'lchown'
+              852  CALL_FUNCTION_1       1  ''
+          854_856  POP_JUMP_IF_FALSE   868  'to 868'
+
+ L. 175       858  LOAD_NAME                _add
+              860  LOAD_STR                 'HAVE_LCHOWN'
+              862  LOAD_STR                 'chown'
+              864  CALL_FUNCTION_2       2  ''
+              866  POP_TOP          
+            868_0  COME_FROM           854  '854'
+
+ L. 176       868  LOAD_NAME                _add
+              870  LOAD_STR                 'HAVE_LINKAT'
+              872  LOAD_STR                 'link'
+              874  CALL_FUNCTION_2       2  ''
+              876  POP_TOP          
+
+ L. 177       878  LOAD_NAME                _add
+              880  LOAD_STR                 'HAVE_LUTIMES'
+              882  LOAD_STR                 'utime'
+              884  CALL_FUNCTION_2       2  ''
+              886  POP_TOP          
+
+ L. 178       888  LOAD_NAME                _add
+              890  LOAD_STR                 'HAVE_LSTAT'
+              892  LOAD_STR                 'stat'
+              894  CALL_FUNCTION_2       2  ''
+              896  POP_TOP          
+
+ L. 179       898  LOAD_NAME                _add
+              900  LOAD_STR                 'HAVE_FSTATAT'
+              902  LOAD_STR                 'stat'
+              904  CALL_FUNCTION_2       2  ''
+              906  POP_TOP          
+
+ L. 180       908  LOAD_NAME                _add
+              910  LOAD_STR                 'HAVE_UTIMENSAT'
+              912  LOAD_STR                 'utime'
+              914  CALL_FUNCTION_2       2  ''
+              916  POP_TOP          
+
+ L. 181       918  LOAD_NAME                _add
+              920  LOAD_STR                 'MS_WINDOWS'
+              922  LOAD_STR                 'stat'
+              924  CALL_FUNCTION_2       2  ''
+              926  POP_TOP          
+
+ L. 182       928  LOAD_NAME                _set
+              930  STORE_NAME               supports_follow_symlinks
+
+ L. 184       932  DELETE_NAME              _set
+
+ L. 185       934  DELETE_NAME              _have_functions
+
+ L. 186       936  DELETE_NAME              _globals
+
+ L. 187       938  DELETE_NAME              _add
+            940_0  COME_FROM           434  '434'
+
+ L. 193       940  LOAD_CONST               0
+              942  STORE_NAME               SEEK_SET
+
+ L. 194       944  LOAD_CONST               1
+              946  STORE_NAME               SEEK_CUR
+
+ L. 195       948  LOAD_CONST               2
+              950  STORE_NAME               SEEK_END
+
+ L. 200       952  LOAD_CONST               (511, False)
+              954  LOAD_CODE                <code_object makedirs>
+              956  LOAD_STR                 'makedirs'
+              958  MAKE_FUNCTION_1          'default'
+              960  STORE_NAME               makedirs
+
+ L. 232       962  LOAD_CODE                <code_object removedirs>
+              964  LOAD_STR                 'removedirs'
+              966  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              968  STORE_NAME               removedirs
+
+ L. 254       970  LOAD_CODE                <code_object renames>
+              972  LOAD_STR                 'renames'
+              974  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              976  STORE_NAME               renames
+
+ L. 280       978  LOAD_NAME                __all__
+              980  LOAD_METHOD              extend
+              982  BUILD_LIST_0          0 
+              984  LOAD_CONST               ('makedirs', 'removedirs', 'renames')
+              986  CALL_FINALLY        989  'to 989'
+              988  CALL_METHOD_1         1  ''
+              990  POP_TOP          
+
+ L. 282       992  LOAD_CONST               (True, None, False)
+              994  LOAD_CODE                <code_object walk>
+              996  LOAD_STR                 'walk'
+              998  MAKE_FUNCTION_1          'default'
+             1000  STORE_NAME               walk
+
+ L. 344      1002  LOAD_CODE                <code_object _walk>
+             1004  LOAD_STR                 '_walk'
+             1006  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1008  STORE_NAME               _walk
+
+ L. 426      1010  LOAD_NAME                __all__
+             1012  LOAD_METHOD              append
+             1014  LOAD_STR                 'walk'
+             1016  CALL_METHOD_1         1  ''
+             1018  POP_TOP          
+
+ L. 428      1020  LOAD_NAME                open
+             1022  LOAD_NAME                stat
+             1024  BUILD_SET_2           2 
+             1026  LOAD_NAME                supports_dir_fd
+             1028  COMPARE_OP               <=
+         1030_1032  POP_JUMP_IF_FALSE  1084  'to 1084'
+             1034  LOAD_NAME                scandir
+             1036  LOAD_NAME                stat
+             1038  BUILD_SET_2           2 
+             1040  LOAD_NAME                supports_fd
+             1042  COMPARE_OP               <=
+         1044_1046  POP_JUMP_IF_FALSE  1084  'to 1084'
+
+ L. 430      1048  LOAD_CONST               ('.', True, None)
+             1050  LOAD_CONST               False
+             1052  LOAD_CONST               None
+             1054  LOAD_CONST               ('follow_symlinks', 'dir_fd')
+             1056  BUILD_CONST_KEY_MAP_2     2 
+             1058  LOAD_CODE                <code_object fwalk>
+             1060  LOAD_STR                 'fwalk'
+             1062  MAKE_FUNCTION_3          'default, keyword-only'
+             1064  STORE_NAME               fwalk
+
+ L. 479      1066  LOAD_CODE                <code_object _fwalk>
+             1068  LOAD_STR                 '_fwalk'
+             1070  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1072  STORE_NAME               _fwalk
+
+ L. 535      1074  LOAD_NAME                __all__
+             1076  LOAD_METHOD              append
+             1078  LOAD_STR                 'fwalk'
+             1080  CALL_METHOD_1         1  ''
+             1082  POP_TOP          
+           1084_0  COME_FROM          1044  '1044'
+           1084_1  COME_FROM          1030  '1030'
+
+ L. 537      1084  LOAD_CODE                <code_object execl>
+             1086  LOAD_STR                 'execl'
+             1088  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1090  STORE_NAME               execl
+
+ L. 544      1092  LOAD_CODE                <code_object execle>
+             1094  LOAD_STR                 'execle'
+             1096  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1098  STORE_NAME               execle
+
+ L. 552      1100  LOAD_CODE                <code_object execlp>
+             1102  LOAD_STR                 'execlp'
+             1104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1106  STORE_NAME               execlp
+
+ L. 559      1108  LOAD_CODE                <code_object execlpe>
+             1110  LOAD_STR                 'execlpe'
+             1112  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1114  STORE_NAME               execlpe
+
+ L. 568      1116  LOAD_CODE                <code_object execvp>
+             1118  LOAD_STR                 'execvp'
+             1120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1122  STORE_NAME               execvp
+
+ L. 576      1124  LOAD_CODE                <code_object execvpe>
+             1126  LOAD_STR                 'execvpe'
+             1128  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1130  STORE_NAME               execvpe
+
+ L. 585      1132  LOAD_NAME                __all__
+             1134  LOAD_METHOD              extend
+             1136  BUILD_LIST_0          0 
+             1138  LOAD_CONST               ('execl', 'execle', 'execlp', 'execlpe', 'execvp', 'execvpe')
+             1140  CALL_FINALLY       1143  'to 1143'
+             1142  CALL_METHOD_1         1  ''
+             1144  POP_TOP          
+
+ L. 587      1146  LOAD_CONST               (None,)
+             1148  LOAD_CODE                <code_object _execvpe>
+             1150  LOAD_STR                 '_execvpe'
+             1152  MAKE_FUNCTION_1          'default'
+             1154  STORE_NAME               _execvpe
+
+ L. 619      1156  LOAD_CONST               (None,)
+             1158  LOAD_CODE                <code_object get_exec_path>
+             1160  LOAD_STR                 'get_exec_path'
+             1162  MAKE_FUNCTION_1          'default'
+             1164  STORE_NAME               get_exec_path
+
+ L. 664      1166  LOAD_CONST               0
+             1168  LOAD_CONST               ('MutableMapping', 'Mapping')
+             1170  IMPORT_NAME              _collections_abc
+             1172  IMPORT_FROM              MutableMapping
+             1174  STORE_NAME               MutableMapping
+             1176  IMPORT_FROM              Mapping
+             1178  STORE_NAME               Mapping
+             1180  POP_TOP          
+
+ L. 666      1182  LOAD_BUILD_CLASS 
+             1184  LOAD_CODE                <code_object _Environ>
+             1186  LOAD_STR                 '_Environ'
+             1188  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1190  LOAD_STR                 '_Environ'
+             1192  LOAD_NAME                MutableMapping
+             1194  CALL_FUNCTION_3       3  ''
+             1196  STORE_NAME               _Environ
+
+ L. 737      1198  LOAD_CODE                <code_object _createenviron>
+             1200  LOAD_STR                 '_createenviron'
+             1202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1204  STORE_NAME               _createenviron
+
+ L. 767      1206  LOAD_NAME                _createenviron
+             1208  CALL_FUNCTION_0       0  ''
+             1210  STORE_NAME               environ
+
+ L. 768      1212  DELETE_NAME              _createenviron
+
+ L. 771      1214  LOAD_CONST               (None,)
+             1216  LOAD_CODE                <code_object getenv>
+             1218  LOAD_STR                 'getenv'
+             1220  MAKE_FUNCTION_1          'default'
+             1222  STORE_NAME               getenv
+
+ L. 777      1224  LOAD_NAME                name
+             1226  LOAD_STR                 'nt'
+             1228  COMPARE_OP               !=
+             1230  STORE_NAME               supports_bytes_environ
+
+ L. 778      1232  LOAD_NAME                __all__
+             1234  LOAD_METHOD              extend
+             1236  LOAD_CONST               ('getenv', 'supports_bytes_environ')
+             1238  CALL_METHOD_1         1  ''
+             1240  POP_TOP          
+
+ L. 780      1242  LOAD_NAME                supports_bytes_environ
+         1244_1246  POP_JUMP_IF_FALSE  1296  'to 1296'
+
+ L. 781      1248  LOAD_CODE                <code_object _check_bytes>
+             1250  LOAD_STR                 '_check_bytes'
+             1252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1254  STORE_NAME               _check_bytes
+
+ L. 787      1256  LOAD_NAME                _Environ
+             1258  LOAD_NAME                environ
+             1260  LOAD_ATTR                _data
+
+ L. 788      1262  LOAD_NAME                _check_bytes
+             1264  LOAD_NAME                bytes
+
+ L. 789      1266  LOAD_NAME                _check_bytes
+             1268  LOAD_NAME                bytes
+
+ L. 787      1270  CALL_FUNCTION_5       5  ''
+             1272  STORE_NAME               environb
+
+ L. 790      1274  DELETE_NAME              _check_bytes
+
+ L. 792      1276  LOAD_CONST               (None,)
+             1278  LOAD_CODE                <code_object getenvb>
+             1280  LOAD_STR                 'getenvb'
+             1282  MAKE_FUNCTION_1          'default'
+             1284  STORE_NAME               getenvb
+
+ L. 798      1286  LOAD_NAME                __all__
+             1288  LOAD_METHOD              extend
+             1290  LOAD_CONST               ('environb', 'getenvb')
+             1292  CALL_METHOD_1         1  ''
+             1294  POP_TOP          
+           1296_0  COME_FROM          1244  '1244'
+
+ L. 800      1296  LOAD_CODE                <code_object _fscodec>
+             1298  LOAD_STR                 '_fscodec'
+             1300  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1302  STORE_NAME               _fscodec
+
+ L. 830      1304  LOAD_NAME                _fscodec
+             1306  CALL_FUNCTION_0       0  ''
+             1308  UNPACK_SEQUENCE_2     2 
+             1310  STORE_NAME               fsencode
+             1312  STORE_NAME               fsdecode
+
+ L. 831      1314  DELETE_NAME              _fscodec
+
+ L. 834      1316  LOAD_NAME                _exists
+             1318  LOAD_STR                 'fork'
+             1320  CALL_FUNCTION_1       1  ''
+         1322_1324  POP_JUMP_IF_FALSE  1426  'to 1426'
+             1326  LOAD_NAME                _exists
+             1328  LOAD_STR                 'spawnv'
+             1330  CALL_FUNCTION_1       1  ''
+         1332_1334  POP_JUMP_IF_TRUE   1426  'to 1426'
+             1336  LOAD_NAME                _exists
+             1338  LOAD_STR                 'execv'
+             1340  CALL_FUNCTION_1       1  ''
+         1342_1344  POP_JUMP_IF_FALSE  1426  'to 1426'
+
+ L. 836      1346  LOAD_CONST               0
+             1348  STORE_NAME               P_WAIT
+
+ L. 837      1350  LOAD_CONST               1
+             1352  DUP_TOP          
+             1354  STORE_NAME               P_NOWAIT
+             1356  STORE_NAME               P_NOWAITO
+
+ L. 839      1358  LOAD_NAME                __all__
+             1360  LOAD_METHOD              extend
+             1362  BUILD_LIST_0          0 
+             1364  LOAD_CONST               ('P_WAIT', 'P_NOWAIT', 'P_NOWAITO')
+             1366  CALL_FINALLY       1369  'to 1369'
+             1368  CALL_METHOD_1         1  ''
+             1370  POP_TOP          
+
+ L. 845      1372  LOAD_CODE                <code_object _spawnvef>
+             1374  LOAD_STR                 '_spawnvef'
+             1376  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1378  STORE_NAME               _spawnvef
+
+ L. 872      1380  LOAD_CODE                <code_object spawnv>
+             1382  LOAD_STR                 'spawnv'
+             1384  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1386  STORE_NAME               spawnv
+
+ L. 881      1388  LOAD_CODE                <code_object spawnve>
+             1390  LOAD_STR                 'spawnve'
+             1392  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1394  STORE_NAME               spawnve
+
+ L. 893      1396  LOAD_CODE                <code_object spawnvp>
+             1398  LOAD_STR                 'spawnvp'
+             1400  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1402  STORE_NAME               spawnvp
+
+ L. 903      1404  LOAD_CODE                <code_object spawnvpe>
+             1406  LOAD_STR                 'spawnvpe'
+             1408  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1410  STORE_NAME               spawnvpe
+
+ L. 914      1412  LOAD_NAME                __all__
+             1414  LOAD_METHOD              extend
+             1416  BUILD_LIST_0          0 
+             1418  LOAD_CONST               ('spawnv', 'spawnve', 'spawnvp', 'spawnvpe')
+             1420  CALL_FINALLY       1423  'to 1423'
+             1422  CALL_METHOD_1         1  ''
+             1424  POP_TOP          
+           1426_0  COME_FROM          1342  '1342'
+           1426_1  COME_FROM          1332  '1332'
+           1426_2  COME_FROM          1322  '1322'
+
+ L. 917      1426  LOAD_NAME                _exists
+             1428  LOAD_STR                 'spawnv'
+             1430  CALL_FUNCTION_1       1  ''
+         1432_1434  POP_JUMP_IF_FALSE  1466  'to 1466'
+
+ L. 921      1436  LOAD_CODE                <code_object spawnl>
+             1438  LOAD_STR                 'spawnl'
+             1440  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1442  STORE_NAME               spawnl
+
+ L. 930      1444  LOAD_CODE                <code_object spawnle>
+             1446  LOAD_STR                 'spawnle'
+             1448  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1450  STORE_NAME               spawnle
+
+ L. 942      1452  LOAD_NAME                __all__
+             1454  LOAD_METHOD              extend
+             1456  LOAD_STR                 'spawnl'
+             1458  LOAD_STR                 'spawnle'
+             1460  BUILD_LIST_2          2 
+             1462  CALL_METHOD_1         1  ''
+             1464  POP_TOP          
+           1466_0  COME_FROM          1432  '1432'
+
+ L. 945      1466  LOAD_NAME                _exists
+             1468  LOAD_STR                 'spawnvp'
+             1470  CALL_FUNCTION_1       1  ''
+         1472_1474  POP_JUMP_IF_FALSE  1506  'to 1506'
+
+ L. 948      1476  LOAD_CODE                <code_object spawnlp>
+             1478  LOAD_STR                 'spawnlp'
+             1480  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1482  STORE_NAME               spawnlp
+
+ L. 958      1484  LOAD_CODE                <code_object spawnlpe>
+             1486  LOAD_STR                 'spawnlpe'
+             1488  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1490  STORE_NAME               spawnlpe
+
+ L. 970      1492  LOAD_NAME                __all__
+             1494  LOAD_METHOD              extend
+             1496  LOAD_STR                 'spawnlp'
+             1498  LOAD_STR                 'spawnlpe'
+             1500  BUILD_LIST_2          2 
+             1502  CALL_METHOD_1         1  ''
+             1504  POP_TOP          
+           1506_0  COME_FROM          1472  '1472'
+
+ L. 974      1506  LOAD_CONST               ('r', -1)
+             1508  LOAD_CODE                <code_object popen>
+             1510  LOAD_STR                 'popen'
+             1512  MAKE_FUNCTION_1          'default'
+             1514  STORE_NAME               popen
+
+ L. 996      1516  LOAD_BUILD_CLASS 
+             1518  LOAD_CODE                <code_object _wrap_close>
+             1520  LOAD_STR                 '_wrap_close'
+             1522  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1524  LOAD_STR                 '_wrap_close'
+             1526  CALL_FUNCTION_2       2  ''
+             1528  STORE_NAME               _wrap_close
+
+ L.1019      1530  LOAD_CODE                <code_object fdopen>
+             1532  LOAD_STR                 'fdopen'
+             1534  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1536  STORE_NAME               fdopen
+
+ L.1028      1538  LOAD_CODE                <code_object _fspath>
+             1540  LOAD_STR                 '_fspath'
+             1542  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1544  STORE_NAME               _fspath
+
+ L.1059      1546  LOAD_NAME                _exists
+             1548  LOAD_STR                 'fspath'
+             1550  CALL_FUNCTION_1       1  ''
+         1552_1554  POP_JUMP_IF_TRUE   1566  'to 1566'
+
+ L.1060      1556  LOAD_NAME                _fspath
+             1558  STORE_NAME               fspath
+
+ L.1061      1560  LOAD_STR                 'fspath'
+             1562  LOAD_NAME                fspath
+             1564  STORE_ATTR               __name__
+           1566_0  COME_FROM          1552  '1552'
+
+ L.1064      1566  LOAD_BUILD_CLASS 
+             1568  LOAD_CODE                <code_object PathLike>
+             1570  LOAD_STR                 'PathLike'
+             1572  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1574  LOAD_STR                 'PathLike'
+             1576  LOAD_NAME                abc
+             1578  LOAD_ATTR                ABC
+             1580  CALL_FUNCTION_3       3  ''
+             1582  STORE_NAME               PathLike
+
+ L.1082      1584  LOAD_NAME                name
+             1586  LOAD_STR                 'nt'
+             1588  COMPARE_OP               ==
+         1590_1592  POP_JUMP_IF_FALSE  1616  'to 1616'
+
+ L.1083      1594  LOAD_BUILD_CLASS 
+             1596  LOAD_CODE                <code_object _AddedDllDirectory>
+             1598  LOAD_STR                 '_AddedDllDirectory'
+             1600  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1602  LOAD_STR                 '_AddedDllDirectory'
+             1604  CALL_FUNCTION_2       2  ''
+             1606  STORE_NAME               _AddedDllDirectory
+
+ L.1100      1608  LOAD_CODE                <code_object add_dll_directory>
+             1610  LOAD_STR                 'add_dll_directory'
+             1612  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1614  STORE_NAME               add_dll_directory
+           1616_0  COME_FROM          1590  '1590'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 62
+
+Instruction context:
+   
+ L.  36        58  BUILD_LIST_0          0 
+                  60  LOAD_CONST               ('altsep', 'curdir', 'pardir', 'sep', 'pathsep', 'linesep', 'defpath', 'name', 'path', 'devnull', 'SEEK_SET', 'SEEK_CUR', 'SEEK_END', 'fsencode', 'fsdecode', 'get_exec_path', 'fdopen', 'popen', 'extsep')
+->                62  CALL_FINALLY         65  'to 65'
+                  64  STORE_NAME               __all__
+
+test/31327.pyc -- 
+# decompile failed

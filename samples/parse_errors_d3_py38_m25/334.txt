@@ -1,0 +1,63 @@
+Instruction context:
+   
+ L. 193        10  POP_BLOCK        
+->                12  LOAD_CONST               True
+                  14  RETURN_VALUE     
+                16_0  COME_FROM             8  '8'
+                  16  POP_BLOCK        
+                  18  JUMP_FORWARD         40  'to 40'
+                20_0  COME_FROM_FINALLY     0  '0'
+Instruction context:
+   
+ L. 971        74  JUMP_FORWARD         78  'to 78'
+->                76  JUMP_BACK            44  'to 44'
+                78_0  COME_FROM            74  '74'
+                78_1  COME_FROM            48  '48'
+Instruction context:
+   
+ L.1255       212  POP_EXCEPT       
+->               214  JUMP_BACK           162  'to 162'
+               216_0  COME_FROM           202  '202'
+Instruction context:
+   
+ L.1435        72  LOAD_FAST                'zinfo'
+                  74  LOAD_ATTR                filename
+                  76  ROT_FOUR         
+                  78  POP_EXCEPT       
+->                80  ROT_TWO          
+                  82  POP_TOP          
+                  84  RETURN_VALUE     
+                86_0  COME_FROM            64  '64'
+                  86  END_FINALLY      
+                  88  JUMP_BACK            10  'to 10'
+Instruction context:
+   
+ L.1573       512  LOAD_FAST                'zef_file'
+                 514  LOAD_METHOD              close
+                 516  CALL_METHOD_0         0  ''
+->               518  POP_TOP          
+Instruction context:
+   
+ L.2060        74  POP_BLOCK        
+                  76  POP_EXCEPT       
+->                78  CALL_FINALLY         84  'to 84'
+                  80  LOAD_CONST               False
+                  82  RETURN_VALUE     
+                84_0  COME_FROM            78  '78'
+                84_1  COME_FROM_FINALLY    62  '62'
+                  84  LOAD_CONST               None
+                  86  STORE_FAST               'err'
+                  88  DELETE_FAST              'err'
+                  90  END_FINALLY      
+                  92  POP_EXCEPT       
+                  94  JUMP_FORWARD         98  'to 98'
+                96_0  COME_FROM            54  '54'
+                  96  END_FINALLY      
+                98_0  COME_FROM            94  '94'
+                98_1  COME_FROM            44  '44'
+
+test/334.pyc -- 
+# decompile failed
+
+# file test/334.pyc
+# Deparsing stopped due to parse error

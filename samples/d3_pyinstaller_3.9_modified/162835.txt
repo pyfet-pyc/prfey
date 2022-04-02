@@ -1,0 +1,104 @@
+Instruction context:
+   
+ L.  12        58  DUP_TOP          
+                  60  LOAD_NAME                ImportError
+->                62  <121>               130  ''
+                  64  POP_TOP          
+                  66  POP_TOP          
+                  68  POP_TOP          
+
+test/162835.pyc -- 
+# decompile failed
+
+# file test/162835.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              sys
+                6  STORE_NAME               sys
+
+ L.   3         8  SETUP_FINALLY        58  'to 58'
+
+ L.   8        10  LOAD_NAME                sys
+               12  LOAD_ATTR                version_info
+               14  LOAD_CONST               (3, 5)
+               16  COMPARE_OP               <
+               18  POP_JUMP_IF_TRUE     30  'to 30'
+               20  LOAD_NAME                sys
+               22  LOAD_ATTR                version_info
+               24  LOAD_CONST               (3, 10)
+               26  COMPARE_OP               >=
+               28  POP_JUMP_IF_FALSE    38  'to 38'
+             30_0  COME_FROM            18  '18'
+
+ L.   9        30  LOAD_NAME                ImportError
+               32  LOAD_STR                 'Fallback to vendored code'
+               34  CALL_FUNCTION_1       1  ''
+               36  RAISE_VARARGS_1       1  'exception instance'
+             38_0  COME_FROM            28  '28'
+
+ L.  11        38  LOAD_CONST               0
+               40  LOAD_CONST               ('CertificateError', 'match_hostname')
+               42  IMPORT_NAME              ssl
+               44  IMPORT_FROM              CertificateError
+               46  STORE_NAME               CertificateError
+               48  IMPORT_FROM              match_hostname
+               50  STORE_NAME               match_hostname
+               52  POP_TOP          
+               54  POP_BLOCK        
+               56  JUMP_FORWARD        132  'to 132'
+             58_0  COME_FROM_FINALLY     8  '8'
+
+ L.  12        58  DUP_TOP          
+               60  LOAD_NAME                ImportError
+               62  <121>               130  ''
+               64  POP_TOP          
+               66  POP_TOP          
+               68  POP_TOP          
+
+ L.  13        70  SETUP_FINALLY        92  'to 92'
+
+ L.  15        72  LOAD_CONST               0
+               74  LOAD_CONST               ('CertificateError', 'match_hostname')
+               76  IMPORT_NAME_ATTR         backports.ssl_match_hostname
+               78  IMPORT_FROM              CertificateError
+               80  STORE_NAME               CertificateError
+               82  IMPORT_FROM              match_hostname
+               84  STORE_NAME               match_hostname
+               86  POP_TOP          
+               88  POP_BLOCK        
+               90  JUMP_FORWARD        126  'to 126'
+             92_0  COME_FROM_FINALLY    70  '70'
+
+ L.  19        92  DUP_TOP          
+               94  LOAD_NAME                ImportError
+               96  <121>               124  ''
+               98  POP_TOP          
+              100  POP_TOP          
+              102  POP_TOP          
+
+ L.  21       104  LOAD_CONST               1
+              106  LOAD_CONST               ('CertificateError', 'match_hostname')
+              108  IMPORT_NAME              _implementation
+              110  IMPORT_FROM              CertificateError
+              112  STORE_NAME               CertificateError
+              114  IMPORT_FROM              match_hostname
+              116  STORE_NAME               match_hostname
+              118  POP_TOP          
+              120  POP_EXCEPT       
+              122  JUMP_FORWARD        126  'to 126'
+              124  <48>             
+            126_0  COME_FROM           122  '122'
+            126_1  COME_FROM            90  '90'
+              126  POP_EXCEPT       
+              128  JUMP_FORWARD        132  'to 132'
+              130  <48>             
+            132_0  COME_FROM           128  '128'
+            132_1  COME_FROM            56  '56'
+
+ L.  24       132  LOAD_CONST               ('CertificateError', 'match_hostname')
+              134  STORE_NAME               __all__
+
+Parse error at or near `<121>' instruction at offset 62
+

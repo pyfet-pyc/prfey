@@ -1,0 +1,33 @@
+Instruction context:
+   
+ L. 397        56  POP_EXCEPT       
+                  58  JUMP_BACK            14  'to 14'
+->                60  POP_EXCEPT       
+                  62  JUMP_BACK            14  'to 14'
+                64_0  COME_FROM            48  '48'
+                  64  END_FINALLY      
+                66_0  COME_FROM            40  '40'
+Instruction context:
+   
+ L.1523        24  DUP_TOP          
+                  26  LOAD_GLOBAL              AttributeError
+                  28  COMPARE_OP               exception-match
+                  30  POP_JUMP_IF_FALSE    64  'to 64'
+                  32  POP_TOP          
+->                34  POP_TOP          
+                  36  POP_TOP          
+Instruction context:
+   
+ L.1805       210  DUP_TOP          
+                 212  LOAD_GLOBAL              ArgumentError
+                 214  COMPARE_OP               exception-match
+             216_218  POP_JUMP_IF_FALSE   256  'to 256'
+                 220  POP_TOP          
+->               222  POP_TOP          
+                 224  POP_TOP          
+
+test/392.pyc -- 
+# decompile failed
+
+# file test/392.pyc
+# Deparsing stopped due to parse error

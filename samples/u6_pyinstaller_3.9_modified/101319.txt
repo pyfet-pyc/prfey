@@ -1,0 +1,105 @@
+Instruction context:
+   
+ L. 162       104  LOAD_NAME                Image
+                 106  LOAD_METHOD              register_extensions
+                 108  LOAD_NAME                PpmImageFile
+                 110  LOAD_ATTR                format
+                 112  BUILD_LIST_0          0 
+                 114  LOAD_CONST               ('.pbm', '.pgm', '.ppm', '.pnm')
+->               116  CALL_FINALLY        119  'to 119'
+                 118  CALL_METHOD_2         2  ''
+                 120  POP_TOP          
+
+test/101319.pyc -- 
+# decompile failed
+
+# file test/101319.pyc
+# --- This code section failed: ---
+
+ L.  18         0  LOAD_CONST               1
+                2  LOAD_CONST               ('Image', 'ImageFile')
+                4  IMPORT_NAME              
+                6  IMPORT_FROM              Image
+                8  STORE_NAME               Image
+               10  IMPORT_FROM              ImageFile
+               12  STORE_NAME               ImageFile
+               14  POP_TOP          
+
+ L.  23        16  LOAD_CONST               b' \t\n\x0b\x0c\r'
+               18  STORE_NAME               b_whitespace
+
+ L.  27        20  LOAD_STR                 '1'
+
+ L.  28        22  LOAD_STR                 'L'
+
+ L.  29        24  LOAD_STR                 'RGB'
+
+ L.  31        26  LOAD_STR                 'CMYK'
+
+ L.  33        28  LOAD_STR                 'P'
+
+ L.  34        30  LOAD_STR                 'RGBA'
+
+ L.  35        32  LOAD_STR                 'CMYK'
+
+ L.  25        34  LOAD_CONST               (b'P4', b'P5', b'P6', b'P0CMYK', b'PyP', b'PyRGBA', b'PyCMYK')
+               36  BUILD_CONST_KEY_MAP_7     7 
+               38  STORE_NAME               MODES
+
+ L.  39        40  LOAD_CODE                <code_object _accept>
+               42  LOAD_STR                 '_accept'
+               44  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               46  STORE_NAME               _accept
+
+ L.  47        48  LOAD_BUILD_CLASS 
+               50  LOAD_CODE                <code_object PpmImageFile>
+               52  LOAD_STR                 'PpmImageFile'
+               54  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               56  LOAD_STR                 'PpmImageFile'
+               58  LOAD_NAME                ImageFile
+               60  LOAD_ATTR                ImageFile
+               62  CALL_FUNCTION_3       3  ''
+               64  STORE_NAME               PpmImageFile
+
+ L. 123        66  LOAD_CODE                <code_object _save>
+               68  LOAD_STR                 '_save'
+               70  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               72  STORE_NAME               _save
+
+ L. 159        74  LOAD_NAME                Image
+               76  LOAD_METHOD              register_open
+               78  LOAD_NAME                PpmImageFile
+               80  LOAD_ATTR                format
+               82  LOAD_NAME                PpmImageFile
+               84  LOAD_NAME                _accept
+               86  CALL_METHOD_3         3  ''
+               88  POP_TOP          
+
+ L. 160        90  LOAD_NAME                Image
+               92  LOAD_METHOD              register_save
+               94  LOAD_NAME                PpmImageFile
+               96  LOAD_ATTR                format
+               98  LOAD_NAME                _save
+              100  CALL_METHOD_2         2  ''
+              102  POP_TOP          
+
+ L. 162       104  LOAD_NAME                Image
+              106  LOAD_METHOD              register_extensions
+              108  LOAD_NAME                PpmImageFile
+              110  LOAD_ATTR                format
+              112  BUILD_LIST_0          0 
+              114  LOAD_CONST               ('.pbm', '.pgm', '.ppm', '.pnm')
+              116  CALL_FINALLY        119  'to 119'
+              118  CALL_METHOD_2         2  ''
+              120  POP_TOP          
+
+ L. 164       122  LOAD_NAME                Image
+              124  LOAD_METHOD              register_mime
+              126  LOAD_NAME                PpmImageFile
+              128  LOAD_ATTR                format
+              130  LOAD_STR                 'image/x-portable-anymap'
+              132  CALL_METHOD_2         2  ''
+              134  POP_TOP          
+
+Parse error at or near `CALL_FINALLY' instruction at offset 116
+

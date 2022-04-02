@@ -1,0 +1,19 @@
+Instruction context:
+   
+ L. 149       128  LOAD_GLOBAL              dyld_find
+                 130  LOAD_FAST                'fn'
+                 132  LOAD_FAST                'executable_path'
+                 134  LOAD_FAST                'env'
+                 136  LOAD_CONST               ('executable_path', 'env')
+                 138  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+                 140  POP_BLOCK        
+->               142  POP_BLOCK        
+                 144  CALL_FINALLY        176  'to 176'
+                 146  RETURN_VALUE     
+               148_0  COME_FROM_FINALLY   126  '126'
+
+../test/139233.pyc -- 
+# decompile failed
+
+# file ../test/139233.pyc
+# Deparsing stopped due to parse error

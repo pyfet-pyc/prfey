@@ -1,0 +1,31 @@
+Instruction context:
+-> 
+ L. 116        70  DUP_TOP          
+                  72  LOAD_GLOBAL              IOError
+                  74  COMPARE_OP               exception-match
+                  76  POP_JUMP_IF_FALSE    92  'to 92'
+                  78  POP_TOP          
+                  80  POP_TOP          
+                  82  POP_TOP          
+Instruction context:
+   
+ L. 286        54  RAISE_VARARGS_2       2  'exception instance with __cause__'
+                  56  POP_BLOCK        
+                  58  BEGIN_FINALLY    
+                60_0  COME_FROM_FINALLY    40  '40'
+                  60  LOAD_CONST               None
+                  62  STORE_FAST               'e'
+                  64  DELETE_FAST              'e'
+                  66  END_FINALLY      
+                  68  POP_EXCEPT       
+                  70  JUMP_FORWARD         88  'to 88'
+                72_0  COME_FROM            32  '32'
+                  72  END_FINALLY      
+->                74  JUMP_FORWARD         88  'to 88'
+                76_0  COME_FROM             8  '8'
+
+../test/166721.pyc -- 
+# decompile failed
+
+# file ../test/166721.pyc
+# Deparsing stopped due to parse error

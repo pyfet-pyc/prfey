@@ -1,0 +1,532 @@
+
+# file test/103674.pyc
+# --- This code section failed: ---
+
+ L.   9         0  LOAD_STR                 'Module doctest -- a framework for running examples in docstrings.\n\nIn simplest use, end each module M to be tested with:\n\ndef _test():\n    import doctest\n    doctest.testmod()\n\nif __name__ == "__main__":\n    _test()\n\nThen running the module as a script will cause the examples in the\ndocstrings to get executed and verified:\n\npython M.py\n\nThis won\'t display anything unless an example fails, in which case the\nfailing example(s) and the cause(s) of the failure(s) are printed to stdout\n(why not stderr? because stderr is a lame hack <0.2 wink>), and the final\nline of output is "Test failed.".\n\nRun it with the -v switch instead:\n\npython M.py -v\n\nand a detailed report of all examples tried is printed to stdout, along\nwith assorted summaries at the end.\n\nYou can force verbose mode by passing "verbose=True" to testmod, or prohibit\nit by passing "verbose=False".  In either of those cases, sys.argv is not\nexamined by testmod.\n\nThere are a variety of other ways to run doctests, including integration\nwith the unittest framework, and support for running non-Python text\nfiles containing doctests.  There are also many ways to override parts\nof doctest\'s default behaviors.  See the Library Reference Manual for\ndetails.\n'
+                2  STORE_NAME               __doc__
+
+ L.  48         4  LOAD_STR                 'reStructuredText en'
+                6  STORE_NAME               __docformat__
+
+ L.  50         8  BUILD_LIST_0          0 
+               10  LOAD_CONST               ('register_optionflag', 'DONT_ACCEPT_TRUE_FOR_1', 'DONT_ACCEPT_BLANKLINE', 'NORMALIZE_WHITESPACE', 'ELLIPSIS', 'SKIP', 'IGNORE_EXCEPTION_DETAIL', 'COMPARISON_FLAGS', 'REPORT_UDIFF', 'REPORT_CDIFF', 'REPORT_NDIFF', 'REPORT_ONLY_FIRST_FAILURE', 'REPORTING_FLAGS', 'FAIL_FAST', 'Example', 'DocTest', 'DocTestParser', 'DocTestFinder', 'DocTestRunner', 'OutputChecker', 'DocTestFailure', 'UnexpectedException', 'DebugRunner', 'testmod', 'testfile', 'run_docstring_examples', 'DocTestSuite', 'DocFileSuite', 'set_unittest_reportflags', 'script_from_examples', 'testsource', 'debug_src', 'debug')
+               12  CALL_FINALLY         15  'to 15'
+               14  STORE_NAME               __all__
+
+ L.  95        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              __future__
+               22  STORE_NAME               __future__
+
+ L.  96        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              difflib
+               30  STORE_NAME               difflib
+
+ L.  97        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              inspect
+               38  STORE_NAME               inspect
+
+ L.  98        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              linecache
+               46  STORE_NAME               linecache
+
+ L.  99        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              os
+               54  STORE_NAME               os
+
+ L. 100        56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              pdb
+               62  STORE_NAME               pdb
+
+ L. 101        64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              re
+               70  STORE_NAME               re
+
+ L. 102        72  LOAD_CONST               0
+               74  LOAD_CONST               None
+               76  IMPORT_NAME              sys
+               78  STORE_NAME               sys
+
+ L. 103        80  LOAD_CONST               0
+               82  LOAD_CONST               None
+               84  IMPORT_NAME              traceback
+               86  STORE_NAME               traceback
+
+ L. 104        88  LOAD_CONST               0
+               90  LOAD_CONST               None
+               92  IMPORT_NAME              unittest
+               94  STORE_NAME               unittest
+
+ L. 105        96  LOAD_CONST               0
+               98  LOAD_CONST               ('StringIO',)
+              100  IMPORT_NAME              io
+              102  IMPORT_FROM              StringIO
+              104  STORE_NAME               StringIO
+              106  POP_TOP          
+
+ L. 106       108  LOAD_CONST               0
+              110  LOAD_CONST               ('namedtuple',)
+              112  IMPORT_NAME              collections
+              114  IMPORT_FROM              namedtuple
+              116  STORE_NAME               namedtuple
+              118  POP_TOP          
+
+ L. 108       120  LOAD_NAME                namedtuple
+              122  LOAD_STR                 'TestResults'
+              124  LOAD_STR                 'failed attempted'
+              126  CALL_FUNCTION_2       2  ''
+              128  STORE_NAME               TestResults
+
+ L. 131       130  BUILD_MAP_0           0 
+              132  STORE_NAME               OPTIONFLAGS_BY_NAME
+
+ L. 132       134  LOAD_CODE                <code_object register_optionflag>
+              136  LOAD_STR                 'register_optionflag'
+              138  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              140  STORE_NAME               register_optionflag
+
+ L. 136       142  LOAD_NAME                register_optionflag
+              144  LOAD_STR                 'DONT_ACCEPT_TRUE_FOR_1'
+              146  CALL_FUNCTION_1       1  ''
+              148  STORE_NAME               DONT_ACCEPT_TRUE_FOR_1
+
+ L. 137       150  LOAD_NAME                register_optionflag
+              152  LOAD_STR                 'DONT_ACCEPT_BLANKLINE'
+              154  CALL_FUNCTION_1       1  ''
+              156  STORE_NAME               DONT_ACCEPT_BLANKLINE
+
+ L. 138       158  LOAD_NAME                register_optionflag
+              160  LOAD_STR                 'NORMALIZE_WHITESPACE'
+              162  CALL_FUNCTION_1       1  ''
+              164  STORE_NAME               NORMALIZE_WHITESPACE
+
+ L. 139       166  LOAD_NAME                register_optionflag
+              168  LOAD_STR                 'ELLIPSIS'
+              170  CALL_FUNCTION_1       1  ''
+              172  STORE_NAME               ELLIPSIS
+
+ L. 140       174  LOAD_NAME                register_optionflag
+              176  LOAD_STR                 'SKIP'
+              178  CALL_FUNCTION_1       1  ''
+              180  STORE_NAME               SKIP
+
+ L. 141       182  LOAD_NAME                register_optionflag
+              184  LOAD_STR                 'IGNORE_EXCEPTION_DETAIL'
+              186  CALL_FUNCTION_1       1  ''
+              188  STORE_NAME               IGNORE_EXCEPTION_DETAIL
+
+ L. 143       190  LOAD_NAME                DONT_ACCEPT_TRUE_FOR_1
+
+ L. 144       192  LOAD_NAME                DONT_ACCEPT_BLANKLINE
+
+ L. 143       194  BINARY_OR        
+
+ L. 145       196  LOAD_NAME                NORMALIZE_WHITESPACE
+
+ L. 143       198  BINARY_OR        
+
+ L. 146       200  LOAD_NAME                ELLIPSIS
+
+ L. 143       202  BINARY_OR        
+
+ L. 147       204  LOAD_NAME                SKIP
+
+ L. 143       206  BINARY_OR        
+
+ L. 148       208  LOAD_NAME                IGNORE_EXCEPTION_DETAIL
+
+ L. 143       210  BINARY_OR        
+              212  STORE_NAME               COMPARISON_FLAGS
+
+ L. 150       214  LOAD_NAME                register_optionflag
+              216  LOAD_STR                 'REPORT_UDIFF'
+              218  CALL_FUNCTION_1       1  ''
+              220  STORE_NAME               REPORT_UDIFF
+
+ L. 151       222  LOAD_NAME                register_optionflag
+              224  LOAD_STR                 'REPORT_CDIFF'
+              226  CALL_FUNCTION_1       1  ''
+              228  STORE_NAME               REPORT_CDIFF
+
+ L. 152       230  LOAD_NAME                register_optionflag
+              232  LOAD_STR                 'REPORT_NDIFF'
+              234  CALL_FUNCTION_1       1  ''
+              236  STORE_NAME               REPORT_NDIFF
+
+ L. 153       238  LOAD_NAME                register_optionflag
+              240  LOAD_STR                 'REPORT_ONLY_FIRST_FAILURE'
+              242  CALL_FUNCTION_1       1  ''
+              244  STORE_NAME               REPORT_ONLY_FIRST_FAILURE
+
+ L. 154       246  LOAD_NAME                register_optionflag
+              248  LOAD_STR                 'FAIL_FAST'
+              250  CALL_FUNCTION_1       1  ''
+              252  STORE_NAME               FAIL_FAST
+
+ L. 156       254  LOAD_NAME                REPORT_UDIFF
+
+ L. 157       256  LOAD_NAME                REPORT_CDIFF
+
+ L. 156       258  BINARY_OR        
+
+ L. 158       260  LOAD_NAME                REPORT_NDIFF
+
+ L. 156       262  BINARY_OR        
+
+ L. 159       264  LOAD_NAME                REPORT_ONLY_FIRST_FAILURE
+
+ L. 156       266  BINARY_OR        
+
+ L. 160       268  LOAD_NAME                FAIL_FAST
+
+ L. 156       270  BINARY_OR        
+              272  STORE_NAME               REPORTING_FLAGS
+
+ L. 163       274  LOAD_STR                 '<BLANKLINE>'
+              276  STORE_NAME               BLANKLINE_MARKER
+
+ L. 164       278  LOAD_STR                 '...'
+              280  STORE_NAME               ELLIPSIS_MARKER
+
+ L. 183       282  LOAD_CODE                <code_object _extract_future_flags>
+              284  LOAD_STR                 '_extract_future_flags'
+              286  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              288  STORE_NAME               _extract_future_flags
+
+ L. 195       290  LOAD_CONST               (2,)
+              292  LOAD_CODE                <code_object _normalize_module>
+              294  LOAD_STR                 '_normalize_module'
+              296  MAKE_FUNCTION_1          'default'
+              298  STORE_NAME               _normalize_module
+
+ L. 214       300  LOAD_CODE                <code_object _newline_convert>
+              302  LOAD_STR                 '_newline_convert'
+              304  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              306  STORE_NAME               _newline_convert
+
+ L. 221       308  LOAD_CODE                <code_object _load_testfile>
+              310  LOAD_STR                 '_load_testfile'
+              312  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              314  STORE_NAME               _load_testfile
+
+ L. 235       316  LOAD_CONST               (4,)
+              318  LOAD_CODE                <code_object _indent>
+              320  LOAD_STR                 '_indent'
+              322  MAKE_FUNCTION_1          'default'
+              324  STORE_NAME               _indent
+
+ L. 243       326  LOAD_CODE                <code_object _exception_traceback>
+              328  LOAD_STR                 '_exception_traceback'
+              330  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              332  STORE_NAME               _exception_traceback
+
+ L. 255       334  LOAD_BUILD_CLASS 
+              336  LOAD_CODE                <code_object _SpoofOut>
+              338  LOAD_STR                 '_SpoofOut'
+              340  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              342  LOAD_STR                 '_SpoofOut'
+              344  LOAD_NAME                StringIO
+              346  CALL_FUNCTION_3       3  ''
+              348  STORE_NAME               _SpoofOut
+
+ L. 270       350  LOAD_CODE                <code_object _ellipsis_match>
+              352  LOAD_STR                 '_ellipsis_match'
+              354  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              356  STORE_NAME               _ellipsis_match
+
+ L. 319       358  LOAD_CODE                <code_object _comment_line>
+              360  LOAD_STR                 '_comment_line'
+              362  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              364  STORE_NAME               _comment_line
+
+ L. 327       366  LOAD_CODE                <code_object _strip_exception_details>
+              368  LOAD_STR                 '_strip_exception_details'
+              370  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              372  STORE_NAME               _strip_exception_details
+
+ L. 353       374  LOAD_BUILD_CLASS 
+              376  LOAD_CODE                <code_object _OutputRedirectingPdb>
+              378  LOAD_STR                 '_OutputRedirectingPdb'
+              380  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              382  LOAD_STR                 '_OutputRedirectingPdb'
+              384  LOAD_NAME                pdb
+              386  LOAD_ATTR                Pdb
+              388  CALL_FUNCTION_3       3  ''
+              390  STORE_NAME               _OutputRedirectingPdb
+
+ L. 390       392  LOAD_CODE                <code_object _module_relative_path>
+              394  LOAD_STR                 '_module_relative_path'
+              396  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              398  STORE_NAME               _module_relative_path
+
+ L. 436       400  LOAD_BUILD_CLASS 
+              402  LOAD_CODE                <code_object Example>
+              404  LOAD_STR                 'Example'
+              406  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              408  LOAD_STR                 'Example'
+              410  CALL_FUNCTION_2       2  ''
+              412  STORE_NAME               Example
+
+ L. 504       414  LOAD_BUILD_CLASS 
+              416  LOAD_CODE                <code_object DocTest>
+              418  LOAD_STR                 'DocTest'
+              420  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              422  LOAD_STR                 'DocTest'
+              424  CALL_FUNCTION_2       2  ''
+              426  STORE_NAME               DocTest
+
+ L. 579       428  LOAD_BUILD_CLASS 
+              430  LOAD_CODE                <code_object DocTestParser>
+              432  LOAD_STR                 'DocTestParser'
+              434  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              436  LOAD_STR                 'DocTestParser'
+              438  CALL_FUNCTION_2       2  ''
+              440  STORE_NAME               DocTestParser
+
+ L. 814       442  LOAD_BUILD_CLASS 
+              444  LOAD_CODE                <code_object DocTestFinder>
+              446  LOAD_STR                 'DocTestFinder'
+              448  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              450  LOAD_STR                 'DocTestFinder'
+              452  CALL_FUNCTION_2       2  ''
+              454  STORE_NAME               DocTestFinder
+
+ L.1128       456  LOAD_BUILD_CLASS 
+              458  LOAD_CODE                <code_object DocTestRunner>
+              460  LOAD_STR                 'DocTestRunner'
+              462  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              464  LOAD_STR                 'DocTestRunner'
+              466  CALL_FUNCTION_2       2  ''
+              468  STORE_NAME               DocTestRunner
+
+ L.1568       470  LOAD_BUILD_CLASS 
+              472  LOAD_CODE                <code_object OutputChecker>
+              474  LOAD_STR                 'OutputChecker'
+              476  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              478  LOAD_STR                 'OutputChecker'
+              480  CALL_FUNCTION_2       2  ''
+              482  STORE_NAME               OutputChecker
+
+ L.1714       484  LOAD_BUILD_CLASS 
+              486  LOAD_CODE                <code_object DocTestFailure>
+              488  LOAD_STR                 'DocTestFailure'
+              490  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              492  LOAD_STR                 'DocTestFailure'
+              494  LOAD_NAME                Exception
+              496  CALL_FUNCTION_3       3  ''
+              498  STORE_NAME               DocTestFailure
+
+ L.1733       500  LOAD_BUILD_CLASS 
+              502  LOAD_CODE                <code_object UnexpectedException>
+              504  LOAD_STR                 'UnexpectedException'
+              506  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              508  LOAD_STR                 'UnexpectedException'
+              510  LOAD_NAME                Exception
+              512  CALL_FUNCTION_3       3  ''
+              514  STORE_NAME               UnexpectedException
+
+ L.1752       516  LOAD_BUILD_CLASS 
+              518  LOAD_CODE                <code_object DebugRunner>
+              520  LOAD_STR                 'DebugRunner'
+              522  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              524  LOAD_STR                 'DebugRunner'
+              526  LOAD_NAME                DocTestRunner
+              528  CALL_FUNCTION_3       3  ''
+              530  STORE_NAME               DebugRunner
+
+ L.1862       532  LOAD_CONST               None
+              534  STORE_GLOBAL             master
+
+ L.1864       536  LOAD_CONST               (None, None, None, None, True, 0, None, False, False)
+              538  LOAD_CODE                <code_object testmod>
+              540  LOAD_STR                 'testmod'
+              542  MAKE_FUNCTION_1          'default'
+              544  STORE_NAME               testmod
+
+ L.1968       546  LOAD_CONST               True
+              548  LOAD_CONST               None
+              550  LOAD_CONST               None
+
+ L.1969       552  LOAD_CONST               None
+              554  LOAD_CONST               None
+              556  LOAD_CONST               True
+              558  LOAD_CONST               0
+
+ L.1970       560  LOAD_CONST               None
+              562  LOAD_CONST               False
+              564  LOAD_NAME                DocTestParser
+              566  CALL_FUNCTION_0       0  ''
+
+ L.1971       568  LOAD_CONST               None
+
+ L.1968       570  BUILD_TUPLE_11       11 
+              572  LOAD_CODE                <code_object testfile>
+              574  LOAD_STR                 'testfile'
+              576  MAKE_FUNCTION_1          'default'
+              578  STORE_NAME               testfile
+
+ L.2091       580  LOAD_CONST               (False, 'NoName', None, 0)
+              582  LOAD_CODE                <code_object run_docstring_examples>
+              584  LOAD_STR                 'run_docstring_examples'
+              586  MAKE_FUNCTION_1          'default'
+              588  STORE_NAME               run_docstring_examples
+
+ L.2118       590  LOAD_CONST               0
+              592  STORE_GLOBAL             _unittest_reportflags
+
+ L.2120       594  LOAD_CODE                <code_object set_unittest_reportflags>
+              596  LOAD_STR                 'set_unittest_reportflags'
+              598  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              600  STORE_NAME               set_unittest_reportflags
+
+ L.2156       602  LOAD_BUILD_CLASS 
+              604  LOAD_CODE                <code_object DocTestCase>
+              606  LOAD_STR                 'DocTestCase'
+              608  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              610  LOAD_STR                 'DocTestCase'
+              612  LOAD_NAME                unittest
+              614  LOAD_ATTR                TestCase
+              616  CALL_FUNCTION_3       3  ''
+              618  STORE_NAME               DocTestCase
+
+ L.2316       620  LOAD_BUILD_CLASS 
+              622  LOAD_CODE                <code_object SkipDocTestCase>
+              624  LOAD_STR                 'SkipDocTestCase'
+              626  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              628  LOAD_STR                 'SkipDocTestCase'
+              630  LOAD_NAME                DocTestCase
+              632  CALL_FUNCTION_3       3  ''
+              634  STORE_NAME               SkipDocTestCase
+
+ L.2333       636  LOAD_BUILD_CLASS 
+              638  LOAD_CODE                <code_object _DocTestSuite>
+              640  LOAD_STR                 '_DocTestSuite'
+              642  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              644  LOAD_STR                 '_DocTestSuite'
+              646  LOAD_NAME                unittest
+              648  LOAD_ATTR                TestSuite
+              650  CALL_FUNCTION_3       3  ''
+              652  STORE_NAME               _DocTestSuite
+
+ L.2339       654  LOAD_CONST               (None, None, None, None)
+              656  LOAD_CODE                <code_object DocTestSuite>
+              658  LOAD_STR                 'DocTestSuite'
+              660  MAKE_FUNCTION_1          'default'
+              662  STORE_NAME               DocTestSuite
+
+ L.2403       664  LOAD_BUILD_CLASS 
+              666  LOAD_CODE                <code_object DocFileCase>
+              668  LOAD_STR                 'DocFileCase'
+              670  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              672  LOAD_STR                 'DocFileCase'
+              674  LOAD_NAME                DocTestCase
+              676  CALL_FUNCTION_3       3  ''
+              678  STORE_NAME               DocFileCase
+
+ L.2416       680  LOAD_CONST               True
+              682  LOAD_CONST               None
+
+ L.2417       684  LOAD_CONST               None
+              686  LOAD_NAME                DocTestParser
+              688  CALL_FUNCTION_0       0  ''
+
+ L.2418       690  LOAD_CONST               None
+
+ L.2416       692  BUILD_TUPLE_5         5 
+              694  LOAD_CODE                <code_object DocFileTest>
+              696  LOAD_STR                 'DocFileTest'
+              698  MAKE_FUNCTION_1          'default'
+              700  STORE_NAME               DocFileTest
+
+ L.2442       702  LOAD_CODE                <code_object DocFileSuite>
+              704  LOAD_STR                 'DocFileSuite'
+              706  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              708  STORE_NAME               DocFileSuite
+
+ L.2515       710  LOAD_CODE                <code_object script_from_examples>
+              712  LOAD_STR                 'script_from_examples'
+              714  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              716  STORE_NAME               script_from_examples
+
+ L.2597       718  LOAD_CODE                <code_object testsource>
+              720  LOAD_STR                 'testsource'
+              722  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              724  STORE_NAME               testsource
+
+ L.2613       726  LOAD_CONST               (False, None)
+              728  LOAD_CODE                <code_object debug_src>
+              730  LOAD_STR                 'debug_src'
+              732  MAKE_FUNCTION_1          'default'
+              734  STORE_NAME               debug_src
+
+ L.2618       736  LOAD_CONST               (False, None)
+              738  LOAD_CODE                <code_object debug_script>
+              740  LOAD_STR                 'debug_script'
+              742  MAKE_FUNCTION_1          'default'
+              744  STORE_NAME               debug_script
+
+ L.2638       746  LOAD_CONST               (False,)
+              748  LOAD_CODE                <code_object debug>
+              750  LOAD_STR                 'debug'
+              752  MAKE_FUNCTION_1          'default'
+              754  STORE_NAME               debug
+
+ L.2652       756  LOAD_BUILD_CLASS 
+              758  LOAD_CODE                <code_object _TestClass>
+              760  LOAD_STR                 '_TestClass'
+              762  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              764  LOAD_STR                 '_TestClass'
+              766  CALL_FUNCTION_2       2  ''
+              768  STORE_NAME               _TestClass
+
+ L.2696       770  LOAD_NAME                _TestClass
+
+ L.2697       772  LOAD_STR                 '\n                      Example of a string object, searched as-is.\n                      >>> x = 1; y = 2\n                      >>> x + y, x * y\n                      (3, 2)\n                      '
+
+ L.2704       774  LOAD_STR                 '\n                                    In 2.2, boolean expressions displayed\n                                    0 or 1.  By default, we still accept\n                                    them.  This can be disabled by passing\n                                    DONT_ACCEPT_TRUE_FOR_1 to the new\n                                    optionflags argument.\n                                    >>> 4 == 4\n                                    1\n                                    >>> 4 == 4\n                                    True\n                                    >>> 4 > 4\n                                    0\n                                    >>> 4 > 4\n                                    False\n                                    '
+
+ L.2720       776  LOAD_STR                 "\n                Blank lines can be marked with <BLANKLINE>:\n                    >>> print('foo\\n\\nbar\\n')\n                    foo\n                    <BLANKLINE>\n                    bar\n                    <BLANKLINE>\n            "
+
+ L.2729       778  LOAD_STR                 "\n                If the ellipsis flag is used, then '...' can be used to\n                elide substrings in the desired output:\n                    >>> print(list(range(1000))) #doctest: +ELLIPSIS\n                    [0, 1, 2, ..., 999]\n            "
+
+ L.2736       780  LOAD_STR                 '\n                If the whitespace normalization flag is used, then\n                differences in whitespace are ignored.\n                    >>> print(list(range(30))) #doctest: +NORMALIZE_WHITESPACE\n                    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,\n                     15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,\n                     27, 28, 29]\n            '
+
+ L.2696       782  LOAD_CONST               ('_TestClass', 'string', 'bool-int equivalence', 'blank lines', 'ellipsis', 'whitespace normalization')
+              784  BUILD_CONST_KEY_MAP_6     6 
+              786  STORE_NAME               __test__
+
+ L.2747       788  LOAD_CODE                <code_object _test>
+              790  LOAD_STR                 '_test'
+              792  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              794  STORE_NAME               _test
+
+ L.2792       796  LOAD_NAME                __name__
+              798  LOAD_STR                 '__main__'
+              800  COMPARE_OP               ==
+          802_804  POP_JUMP_IF_FALSE   818  'to 818'
+
+ L.2793       806  LOAD_NAME                sys
+              808  LOAD_METHOD              exit
+              810  LOAD_NAME                _test
+              812  CALL_FUNCTION_0       0  ''
+              814  CALL_METHOD_1         1  ''
+              816  POP_TOP          
+            818_0  COME_FROM           802  '802'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 12
+
+Instruction context:
+   
+ L.  50         8  BUILD_LIST_0          0 
+                  10  LOAD_CONST               ('register_optionflag', 'DONT_ACCEPT_TRUE_FOR_1', 'DONT_ACCEPT_BLANKLINE', 'NORMALIZE_WHITESPACE', 'ELLIPSIS', 'SKIP', 'IGNORE_EXCEPTION_DETAIL', 'COMPARISON_FLAGS', 'REPORT_UDIFF', 'REPORT_CDIFF', 'REPORT_NDIFF', 'REPORT_ONLY_FIRST_FAILURE', 'REPORTING_FLAGS', 'FAIL_FAST', 'Example', 'DocTest', 'DocTestParser', 'DocTestFinder', 'DocTestRunner', 'OutputChecker', 'DocTestFailure', 'UnexpectedException', 'DebugRunner', 'testmod', 'testfile', 'run_docstring_examples', 'DocTestSuite', 'DocFileSuite', 'set_unittest_reportflags', 'script_from_examples', 'testsource', 'debug_src', 'debug')
+->                12  CALL_FINALLY         15  'to 15'
+                  14  STORE_NAME               __all__
+
+test/103674.pyc -- 
+# decompile failed

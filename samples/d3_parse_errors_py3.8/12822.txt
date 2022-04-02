@@ -1,0 +1,53 @@
+Instruction context:
+   
+ L. 448       284  LOAD_GLOBAL              pickle
+                 286  LOAD_ATTR                load
+                 288  LOAD_FAST                'fid'
+                 290  BUILD_TUPLE_1         1 
+                 292  LOAD_FAST                'pickle_kwargs'
+                 294  CALL_FUNCTION_EX_KW     1  'keyword and positional arguments'
+                 296  POP_BLOCK        
+->               298  POP_BLOCK        
+                 300  ROT_TWO          
+                 302  BEGIN_FINALLY    
+                 304  WITH_CLEANUP_START
+                 306  WITH_CLEANUP_FINISH
+                 308  POP_FINALLY           0  ''
+                 310  RETURN_VALUE     
+               312_0  COME_FROM_FINALLY   282  '282'
+Instruction context:
+   
+ L.1125       862  POP_EXCEPT       
+             864_866  JUMP_BACK           816  'to 816'
+                 868  POP_EXCEPT       
+                 870  JUMP_FORWARD        874  'to 874'
+->             872_0  COME_FROM           852  '852'
+                 872  END_FINALLY      
+               874_0  COME_FROM           870  '870'
+               874_1  COME_FROM           844  '844'
+               874_2  COME_FROM           826  '826'
+Instruction context:
+   
+ L.1536       240  LOAD_FAST                'output'
+                 242  POP_BLOCK        
+->               244  CALL_FINALLY        248  'to 248'
+                 246  RETURN_VALUE     
+               248_0  COME_FROM           244  '244'
+               248_1  COME_FROM_FINALLY    38  '38'
+Instruction context:
+   
+ L.1906      1158  POP_EXCEPT       
+            1160_1162  JUMP_BACK          1108  'to 1108'
+                1164  POP_EXCEPT       
+                1166  JUMP_FORWARD       1170  'to 1170'
+->            1168_0  COME_FROM          1148  '1148'
+                1168  END_FINALLY      
+              1170_0  COME_FROM          1166  '1166'
+              1170_1  COME_FROM          1140  '1140'
+              1170_2  COME_FROM          1122  '1122'
+
+../test/12822.pyc -- 
+# decompile failed
+
+# file ../test/12822.pyc
+# Deparsing stopped due to parse error

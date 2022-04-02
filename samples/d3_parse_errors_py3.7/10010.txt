@@ -1,0 +1,22 @@
+Instruction context:
+   
+ L. 309       182  RAISE_VARARGS_0       0  'reraise'
+->               184  POP_BLOCK        
+                 186  LOAD_CONST               None
+               188_0  COME_FROM_FINALLY   110  '110'
+                 188  LOAD_CONST               None
+                 190  STORE_FAST               'e'
+                 192  DELETE_FAST              'e'
+                 194  END_FINALLY      
+                 196  POP_EXCEPT       
+                 198  JUMP_BACK            50  'to 50'
+               200_0  COME_FROM           102  '102'
+                 200  END_FINALLY      
+                 202  JUMP_BACK            50  'to 50'
+                 204  POP_BLOCK        
+
+../test/10010.pyc -- 
+# decompile failed
+
+# file ../test/10010.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,202 @@
+
+# file test/101261.pyc
+# --- This code section failed: ---
+
+ L.  10         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              ctypes
+                6  STORE_NAME               ctypes
+
+ L.  11         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              weakref
+               14  STORE_NAME               weakref
+
+ L.  13        16  LOAD_CONST               1
+               18  LOAD_CONST               ('heap',)
+               20  IMPORT_NAME              
+               22  IMPORT_FROM              heap
+               24  STORE_NAME               heap
+               26  POP_TOP          
+
+ L.  14        28  LOAD_CONST               1
+               30  LOAD_CONST               ('get_context',)
+               32  IMPORT_NAME              
+               34  IMPORT_FROM              get_context
+               36  STORE_NAME               get_context
+               38  POP_TOP          
+
+ L.  16        40  LOAD_CONST               1
+               42  LOAD_CONST               ('reduction', 'assert_spawning')
+               44  IMPORT_NAME              context
+               46  IMPORT_FROM              reduction
+               48  STORE_NAME               reduction
+               50  IMPORT_FROM              assert_spawning
+               52  STORE_NAME               assert_spawning
+               54  POP_TOP          
+
+ L.  17        56  LOAD_NAME                reduction
+               58  LOAD_ATTR                ForkingPickler
+               60  STORE_NAME               _ForkingPickler
+
+ L.  19        62  BUILD_LIST_0          0 
+               64  LOAD_CONST               ('RawValue', 'RawArray', 'Value', 'Array', 'copy', 'synchronized')
+               66  CALL_FINALLY         69  'to 69'
+               68  STORE_NAME               __all__
+
+ L.  26        70  LOAD_NAME                ctypes
+               72  LOAD_ATTR                c_char
+               74  LOAD_NAME                ctypes
+               76  LOAD_ATTR                c_wchar
+
+ L.  27        78  LOAD_NAME                ctypes
+               80  LOAD_ATTR                c_byte
+               82  LOAD_NAME                ctypes
+               84  LOAD_ATTR                c_ubyte
+
+ L.  28        86  LOAD_NAME                ctypes
+               88  LOAD_ATTR                c_short
+               90  LOAD_NAME                ctypes
+               92  LOAD_ATTR                c_ushort
+
+ L.  29        94  LOAD_NAME                ctypes
+               96  LOAD_ATTR                c_int
+               98  LOAD_NAME                ctypes
+              100  LOAD_ATTR                c_uint
+
+ L.  30       102  LOAD_NAME                ctypes
+              104  LOAD_ATTR                c_long
+              106  LOAD_NAME                ctypes
+              108  LOAD_ATTR                c_ulong
+
+ L.  31       110  LOAD_NAME                ctypes
+              112  LOAD_ATTR                c_longlong
+              114  LOAD_NAME                ctypes
+              116  LOAD_ATTR                c_ulonglong
+
+ L.  32       118  LOAD_NAME                ctypes
+              120  LOAD_ATTR                c_float
+              122  LOAD_NAME                ctypes
+              124  LOAD_ATTR                c_double
+
+ L.  25       126  LOAD_CONST               ('c', 'u', 'b', 'B', 'h', 'H', 'i', 'I', 'l', 'L', 'q', 'Q', 'f', 'd')
+              128  BUILD_CONST_KEY_MAP_14    14 
+              130  STORE_NAME               typecode_to_type
+
+ L.  39       132  LOAD_CODE                <code_object _new_value>
+              134  LOAD_STR                 '_new_value'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  STORE_NAME               _new_value
+
+ L.  44       140  LOAD_CODE                <code_object RawValue>
+              142  LOAD_STR                 'RawValue'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  STORE_NAME               RawValue
+
+ L.  54       148  LOAD_CODE                <code_object RawArray>
+              150  LOAD_STR                 'RawArray'
+              152  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              154  STORE_NAME               RawArray
+
+ L.  70       156  LOAD_CONST               True
+              158  LOAD_CONST               None
+              160  LOAD_CONST               ('lock', 'ctx')
+              162  BUILD_CONST_KEY_MAP_2     2 
+              164  LOAD_CODE                <code_object Value>
+              166  LOAD_STR                 'Value'
+              168  MAKE_FUNCTION_2          'keyword-only'
+              170  STORE_NAME               Value
+
+ L.  84       172  LOAD_CONST               True
+              174  LOAD_CONST               None
+              176  LOAD_CONST               ('lock', 'ctx')
+              178  BUILD_CONST_KEY_MAP_2     2 
+              180  LOAD_CODE                <code_object Array>
+              182  LOAD_STR                 'Array'
+              184  MAKE_FUNCTION_2          'keyword-only'
+              186  STORE_NAME               Array
+
+ L.  98       188  LOAD_CODE                <code_object copy>
+              190  LOAD_STR                 'copy'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  STORE_NAME               copy
+
+ L. 103       196  LOAD_CONST               (None, None)
+              198  LOAD_CODE                <code_object synchronized>
+              200  LOAD_STR                 'synchronized'
+              202  MAKE_FUNCTION_1          'default'
+              204  STORE_NAME               synchronized
+
+ L. 128       206  LOAD_CODE                <code_object reduce_ctype>
+              208  LOAD_STR                 'reduce_ctype'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               reduce_ctype
+
+ L. 135       214  LOAD_CODE                <code_object rebuild_ctype>
+              216  LOAD_STR                 'rebuild_ctype'
+              218  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              220  STORE_NAME               rebuild_ctype
+
+ L. 148       222  LOAD_CODE                <code_object make_property>
+              224  LOAD_STR                 'make_property'
+              226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              228  STORE_NAME               make_property
+
+ L. 157       230  LOAD_STR                 '\ndef get%s(self):\n    self.acquire()\n    try:\n        return self._obj.%s\n    finally:\n        self.release()\ndef set%s(self, value):\n    self.acquire()\n    try:\n        self._obj.%s = value\n    finally:\n        self.release()\n%s = property(get%s, set%s)\n'
+              232  STORE_NAME               template
+
+ L. 173       234  BUILD_MAP_0           0 
+              236  STORE_NAME               prop_cache
+
+ L. 174       238  LOAD_NAME                weakref
+              240  LOAD_METHOD              WeakKeyDictionary
+              242  CALL_METHOD_0         0  ''
+              244  STORE_NAME               class_cache
+
+ L. 180       246  LOAD_BUILD_CLASS 
+              248  LOAD_CODE                <code_object SynchronizedBase>
+              250  LOAD_STR                 'SynchronizedBase'
+              252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              254  LOAD_STR                 'SynchronizedBase'
+              256  LOAD_NAME                object
+              258  CALL_FUNCTION_3       3  ''
+              260  STORE_NAME               SynchronizedBase
+
+ L. 212       262  LOAD_BUILD_CLASS 
+              264  LOAD_CODE                <code_object Synchronized>
+              266  LOAD_STR                 'Synchronized'
+              268  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              270  LOAD_STR                 'Synchronized'
+              272  LOAD_NAME                SynchronizedBase
+              274  CALL_FUNCTION_3       3  ''
+              276  STORE_NAME               Synchronized
+
+ L. 216       278  LOAD_BUILD_CLASS 
+              280  LOAD_CODE                <code_object SynchronizedArray>
+              282  LOAD_STR                 'SynchronizedArray'
+              284  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              286  LOAD_STR                 'SynchronizedArray'
+              288  LOAD_NAME                SynchronizedBase
+              290  CALL_FUNCTION_3       3  ''
+              292  STORE_NAME               SynchronizedArray
+
+ L. 238       294  LOAD_BUILD_CLASS 
+              296  LOAD_CODE                <code_object SynchronizedString>
+              298  LOAD_STR                 'SynchronizedString'
+              300  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              302  LOAD_STR                 'SynchronizedString'
+              304  LOAD_NAME                SynchronizedArray
+              306  CALL_FUNCTION_3       3  ''
+              308  STORE_NAME               SynchronizedString
+
+Parse error at or near `CALL_FINALLY' instruction at offset 66
+
+Instruction context:
+   
+ L.  19        62  BUILD_LIST_0          0 
+                  64  LOAD_CONST               ('RawValue', 'RawArray', 'Value', 'Array', 'copy', 'synchronized')
+->                66  CALL_FINALLY         69  'to 69'
+                  68  STORE_NAME               __all__
+
+test/101261.pyc -- 
+# decompile failed

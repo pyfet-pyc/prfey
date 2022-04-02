@@ -1,0 +1,199 @@
+
+# file test/162617.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "\nRecord Arrays\n=============\nRecord arrays expose the fields of structured arrays as properties.\n\nMost commonly, ndarrays contain elements of a single type, e.g. floats,\nintegers, bools etc.  However, it is possible for elements to be combinations\nof these using structured types, such as::\n\n  >>> a = np.array([(1, 2.0), (1, 2.0)], dtype=[('x', np.int64), ('y', np.float64)])\n  >>> a\n  array([(1, 2.), (1, 2.)], dtype=[('x', '<i8'), ('y', '<f8')])\n\nHere, each element consists of two fields: x (and int), and y (a float).\nThis is known as a structured array.  The different fields are analogous\nto columns in a spread-sheet.  The different fields can be accessed as\none would a dictionary::\n\n  >>> a['x']\n  array([1, 1])\n\n  >>> a['y']\n  array([2., 2.])\n\nRecord arrays allow us to access fields as properties::\n\n  >>> ar = np.rec.array(a)\n\n  >>> ar.x\n  array([1, 1])\n\n  >>> ar.y\n  array([2., 2.])\n\n"
+                2  STORE_NAME               __doc__
+
+ L.  36         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.  37        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              warnings
+               18  STORE_NAME               warnings
+
+ L.  38        20  LOAD_CONST               0
+               22  LOAD_CONST               ('Counter',)
+               24  IMPORT_NAME              collections
+               26  IMPORT_FROM              Counter
+               28  STORE_NAME               Counter
+               30  POP_TOP          
+
+ L.  39        32  LOAD_CONST               0
+               34  LOAD_CONST               ('nullcontext',)
+               36  IMPORT_NAME              contextlib
+               38  IMPORT_FROM              nullcontext
+               40  STORE_NAME               nullcontext
+               42  POP_TOP          
+
+ L.  41        44  LOAD_CONST               1
+               46  LOAD_CONST               ('numeric',)
+               48  IMPORT_NAME              
+               50  IMPORT_FROM              numeric
+               52  STORE_NAME               sb
+               54  POP_TOP          
+
+ L.  42        56  LOAD_CONST               1
+               58  LOAD_CONST               ('numerictypes',)
+               60  IMPORT_NAME              
+               62  IMPORT_FROM              numerictypes
+               64  STORE_NAME               nt
+               66  POP_TOP          
+
+ L.  43        68  LOAD_CONST               0
+               70  LOAD_CONST               ('os_fspath',)
+               72  IMPORT_NAME_ATTR         numpy.compat
+               74  IMPORT_FROM              os_fspath
+               76  STORE_NAME               os_fspath
+               78  POP_TOP          
+
+ L.  44        80  LOAD_CONST               0
+               82  LOAD_CONST               ('set_module',)
+               84  IMPORT_NAME_ATTR         numpy.core.overrides
+               86  IMPORT_FROM              set_module
+               88  STORE_NAME               set_module
+               90  POP_TOP          
+
+ L.  45        92  LOAD_CONST               1
+               94  LOAD_CONST               ('get_printoptions',)
+               96  IMPORT_NAME              arrayprint
+               98  IMPORT_FROM              get_printoptions
+              100  STORE_NAME               get_printoptions
+              102  POP_TOP          
+
+ L.  48       104  BUILD_LIST_0          0 
+              106  LOAD_CONST               ('record', 'recarray', 'format_parser', 'fromarrays', 'fromrecords', 'fromstring', 'fromfile', 'array')
+              108  CALL_FINALLY        111  'to 111'
+              110  STORE_NAME               __all__
+
+ L.  54       112  LOAD_NAME                sb
+              114  LOAD_ATTR                ndarray
+              116  STORE_NAME               ndarray
+
+ L.  56       118  LOAD_STR                 '>'
+
+ L.  57       120  LOAD_STR                 '<'
+
+ L.  58       122  LOAD_STR                 '='
+
+ L.  59       124  LOAD_STR                 '>'
+
+ L.  60       126  LOAD_STR                 '<'
+
+ L.  61       128  LOAD_STR                 '='
+
+ L.  62       130  LOAD_STR                 's'
+
+ L.  63       132  LOAD_STR                 's'
+
+ L.  64       134  LOAD_STR                 '>'
+
+ L.  65       136  LOAD_STR                 '<'
+
+ L.  66       138  LOAD_STR                 '='
+
+ L.  67       140  LOAD_STR                 '|'
+
+ L.  68       142  LOAD_STR                 '|'
+
+ L.  69       144  LOAD_STR                 '|'
+
+ L.  56       146  LOAD_CONST               ('b', 'l', 'n', 'B', 'L', 'N', 'S', 's', '>', '<', '=', '|', 'I', 'i')
+              148  BUILD_CONST_KEY_MAP_14    14 
+              150  STORE_NAME               _byteorderconv
+
+ L.  76       152  LOAD_NAME                nt
+              154  LOAD_ATTR                sctypeDict
+              156  STORE_NAME               numfmt
+
+ L.  79       158  LOAD_CODE                <code_object find_duplicate>
+              160  LOAD_STR                 'find_duplicate'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  STORE_NAME               find_duplicate
+
+ L.  88       166  LOAD_NAME                set_module
+              168  LOAD_STR                 'numpy'
+              170  CALL_FUNCTION_1       1  ''
+
+ L.  89       172  LOAD_BUILD_CLASS 
+              174  LOAD_CODE                <code_object format_parser>
+              176  LOAD_STR                 'format_parser'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  LOAD_STR                 'format_parser'
+              182  CALL_FUNCTION_2       2  ''
+              184  CALL_FUNCTION_1       1  ''
+              186  STORE_NAME               format_parser
+
+ L. 224       188  LOAD_BUILD_CLASS 
+              190  LOAD_CODE                <code_object record>
+              192  LOAD_STR                 'record'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  LOAD_STR                 'record'
+              198  LOAD_NAME                nt
+              200  LOAD_ATTR                void
+              202  CALL_FUNCTION_3       3  ''
+              204  STORE_NAME               record
+
+ L. 309       206  LOAD_BUILD_CLASS 
+              208  LOAD_CODE                <code_object recarray>
+              210  LOAD_STR                 'recarray'
+              212  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              214  LOAD_STR                 'recarray'
+              216  LOAD_NAME                ndarray
+              218  CALL_FUNCTION_3       3  ''
+              220  STORE_NAME               recarray
+
+ L. 577       222  LOAD_CODE                <code_object _deprecate_shape_0_as_None>
+              224  LOAD_STR                 '_deprecate_shape_0_as_None'
+              226  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              228  STORE_NAME               _deprecate_shape_0_as_None
+
+ L. 589       230  LOAD_CONST               (None, None, None, None, None, False, None)
+              232  LOAD_CODE                <code_object fromarrays>
+              234  LOAD_STR                 'fromarrays'
+              236  MAKE_FUNCTION_1          'default'
+              238  STORE_NAME               fromarrays
+
+ L. 682       240  LOAD_CONST               (None, None, None, None, None, False, None)
+              242  LOAD_CODE                <code_object fromrecords>
+              244  LOAD_STR                 'fromrecords'
+              246  MAKE_FUNCTION_1          'default'
+              248  STORE_NAME               fromrecords
+
+ L. 766       250  LOAD_CONST               (None, None, 0, None, None, None, False, None)
+              252  LOAD_CODE                <code_object fromstring>
+              254  LOAD_STR                 'fromstring'
+              256  MAKE_FUNCTION_1          'default'
+              258  STORE_NAME               fromstring
+
+ L. 840       260  LOAD_CODE                <code_object get_remaining_size>
+              262  LOAD_STR                 'get_remaining_size'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  STORE_NAME               get_remaining_size
+
+ L. 848       268  LOAD_CONST               (None, None, 0, None, None, None, False, None)
+              270  LOAD_CODE                <code_object fromfile>
+              272  LOAD_STR                 'fromfile'
+              274  MAKE_FUNCTION_1          'default'
+              276  STORE_NAME               fromfile
+
+ L. 947       278  LOAD_CONST               (None, None, 0, None, None, None, None, False, None, True)
+              280  LOAD_CODE                <code_object array>
+              282  LOAD_STR                 'array'
+              284  MAKE_FUNCTION_1          'default'
+              286  STORE_NAME               array
+
+Parse error at or near `CALL_FINALLY' instruction at offset 108
+
+Instruction context:
+   
+ L.  48       104  BUILD_LIST_0          0 
+                 106  LOAD_CONST               ('record', 'recarray', 'format_parser', 'fromarrays', 'fromrecords', 'fromstring', 'fromfile', 'array')
+->               108  CALL_FINALLY        111  'to 111'
+                 110  STORE_NAME               __all__
+
+test/162617.pyc -- 
+# decompile failed

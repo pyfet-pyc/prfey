@@ -1,0 +1,51 @@
+Instruction context:
+   
+ L.  63       126  LOAD_FAST                'image_url'
+                 128  LOAD_CONST               None
+->               130  <117>                 1  ''
+                 132  POP_JUMP_IF_FALSE   144  'to 144'
+Instruction context:
+   
+ L. 214         8  LOAD_GLOBAL              getattr
+                  10  LOAD_DEREF               'self'
+                  12  LOAD_FAST                'key'
+                  14  CALL_FUNCTION_2       2  ''
+                  16  LOAD_CONST               None
+->                18  <117>                 1  ''
+                  20  POP_JUMP_IF_FALSE_BACK     4  'to 4'
+
+test/134577.pyc -- 
+# decompile failed
+
+# file test/134577.pyc
+# --- This code section failed: ---
+
+ L. 211         0  BUILD_MAP_0           0 
+                2  LOAD_FAST                '.0'
+              4_0  COME_FROM            34  '34'
+              4_1  COME_FROM            20  '20'
+                4  FOR_ITER             36  'to 36'
+
+ L. 213         6  STORE_FAST               'key'
+
+ L. 214         8  LOAD_GLOBAL              getattr
+               10  LOAD_DEREF               'self'
+               12  LOAD_FAST                'key'
+               14  CALL_FUNCTION_2       2  ''
+               16  LOAD_CONST               None
+               18  <117>                 1  ''
+               20  POP_JUMP_IF_FALSE_BACK     4  'to 4'
+
+ L. 212        22  LOAD_FAST                'key'
+               24  LOAD_GLOBAL              getattr
+               26  LOAD_DEREF               'self'
+               28  LOAD_FAST                'key'
+               30  CALL_FUNCTION_2       2  ''
+               32  MAP_ADD               2  ''
+               34  JUMP_BACK             4  'to 4'
+             36_0  COME_FROM             4  '4'
+               36  RETURN_VALUE     
+               -1  RETURN_LAST      
+
+Parse error at or near `<117>' instruction at offset 18
+

@@ -1,0 +1,152 @@
+Instruction context:
+   
+ L.  11        92  BUILD_LIST_0          0 
+                  94  LOAD_CONST               ('logspace', 'linspace', 'geomspace')
+->                96  CALL_FINALLY         99  'to 99'
+                  98  STORE_NAME               __all__
+
+test/162609.pyc -- 
+# decompile failed
+
+# file test/162609.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              functools
+                6  STORE_NAME               functools
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              warnings
+               14  STORE_NAME               warnings
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              operator
+               22  STORE_NAME               operator
+
+ L.   4        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              types
+               30  STORE_NAME               types
+
+ L.   6        32  LOAD_CONST               1
+               34  LOAD_CONST               ('numeric',)
+               36  IMPORT_NAME              
+               38  IMPORT_FROM              numeric
+               40  STORE_NAME               _nx
+               42  POP_TOP          
+
+ L.   7        44  LOAD_CONST               1
+               46  LOAD_CONST               ('result_type', 'NaN', 'asanyarray', 'ndim')
+               48  IMPORT_NAME              numeric
+               50  IMPORT_FROM              result_type
+               52  STORE_NAME               result_type
+               54  IMPORT_FROM              NaN
+               56  STORE_NAME               NaN
+               58  IMPORT_FROM              asanyarray
+               60  STORE_NAME               asanyarray
+               62  IMPORT_FROM              ndim
+               64  STORE_NAME               ndim
+               66  POP_TOP          
+
+ L.   8        68  LOAD_CONST               0
+               70  LOAD_CONST               ('add_docstring',)
+               72  IMPORT_NAME_ATTR         numpy.core.multiarray
+               74  IMPORT_FROM              add_docstring
+               76  STORE_NAME               add_docstring
+               78  POP_TOP          
+
+ L.   9        80  LOAD_CONST               0
+               82  LOAD_CONST               ('overrides',)
+               84  IMPORT_NAME_ATTR         numpy.core
+               86  IMPORT_FROM              overrides
+               88  STORE_NAME               overrides
+               90  POP_TOP          
+
+ L.  11        92  BUILD_LIST_0          0 
+               94  LOAD_CONST               ('logspace', 'linspace', 'geomspace')
+               96  CALL_FINALLY         99  'to 99'
+               98  STORE_NAME               __all__
+
+ L.  14       100  LOAD_NAME                functools
+              102  LOAD_ATTR                partial
+
+ L.  15       104  LOAD_NAME                overrides
+              106  LOAD_ATTR                array_function_dispatch
+              108  LOAD_STR                 'numpy'
+
+ L.  14       110  LOAD_CONST               ('module',)
+              112  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              114  STORE_NAME               array_function_dispatch
+
+ L.  18       116  LOAD_CONST               (None, None, None, None, None)
+              118  LOAD_CODE                <code_object _linspace_dispatcher>
+              120  LOAD_STR                 '_linspace_dispatcher'
+              122  MAKE_FUNCTION_1          'default'
+              124  STORE_NAME               _linspace_dispatcher
+
+ L.  23       126  LOAD_NAME                array_function_dispatch
+              128  LOAD_NAME                _linspace_dispatcher
+              130  CALL_FUNCTION_1       1  ''
+
+ L.  24       132  LOAD_CONST               (50, True, False, None, 0)
+              134  LOAD_CODE                <code_object linspace>
+              136  LOAD_STR                 'linspace'
+              138  MAKE_FUNCTION_1          'default'
+              140  CALL_FUNCTION_1       1  ''
+              142  STORE_NAME               linspace
+
+ L. 178       144  LOAD_CONST               (None, None, None, None, None)
+              146  LOAD_CODE                <code_object _logspace_dispatcher>
+              148  LOAD_STR                 '_logspace_dispatcher'
+              150  MAKE_FUNCTION_1          'default'
+              152  STORE_NAME               _logspace_dispatcher
+
+ L. 183       154  LOAD_NAME                array_function_dispatch
+              156  LOAD_NAME                _logspace_dispatcher
+              158  CALL_FUNCTION_1       1  ''
+
+ L. 184       160  LOAD_CONST               (50, True, 10.0, None, 0)
+              162  LOAD_CODE                <code_object logspace>
+              164  LOAD_STR                 'logspace'
+              166  MAKE_FUNCTION_1          'default'
+              168  CALL_FUNCTION_1       1  ''
+              170  STORE_NAME               logspace
+
+ L. 281       172  LOAD_CONST               (None, None, None, None)
+              174  LOAD_CODE                <code_object _geomspace_dispatcher>
+              176  LOAD_STR                 '_geomspace_dispatcher'
+              178  MAKE_FUNCTION_1          'default'
+              180  STORE_NAME               _geomspace_dispatcher
+
+ L. 286       182  LOAD_NAME                array_function_dispatch
+              184  LOAD_NAME                _geomspace_dispatcher
+              186  CALL_FUNCTION_1       1  ''
+
+ L. 287       188  LOAD_CONST               (50, True, None, 0)
+              190  LOAD_CODE                <code_object geomspace>
+              192  LOAD_STR                 'geomspace'
+              194  MAKE_FUNCTION_1          'default'
+              196  CALL_FUNCTION_1       1  ''
+              198  STORE_NAME               geomspace
+
+ L. 443       200  LOAD_CODE                <code_object _needs_add_docstring>
+              202  LOAD_STR                 '_needs_add_docstring'
+              204  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              206  STORE_NAME               _needs_add_docstring
+
+ L. 461       208  LOAD_CODE                <code_object _add_docstring>
+              210  LOAD_STR                 '_add_docstring'
+              212  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              214  STORE_NAME               _add_docstring
+
+ L. 475       216  LOAD_CONST               (True,)
+              218  LOAD_CODE                <code_object add_newdoc>
+              220  LOAD_STR                 'add_newdoc'
+              222  MAKE_FUNCTION_1          'default'
+              224  STORE_NAME               add_newdoc
+
+Parse error at or near `CALL_FINALLY' instruction at offset 96
+

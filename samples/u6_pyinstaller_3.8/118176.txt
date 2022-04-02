@@ -1,0 +1,60 @@
+Instruction context:
+   
+ L.  98       108  DUP_TOP          
+                 110  LOAD_GLOBAL              OSError
+                 112  COMPARE_OP               exception-match
+                 114  POP_JUMP_IF_FALSE   238  'to 238'
+                 116  POP_TOP          
+->               118  POP_TOP          
+                 120  POP_TOP          
+Instruction context:
+   
+ L. 132       120  DUP_TOP          
+                 122  LOAD_GLOBAL              OSError
+                 124  COMPARE_OP               exception-match
+             126_128  POP_JUMP_IF_FALSE   260  'to 260'
+                 130  POP_TOP          
+->               132  POP_TOP          
+                 134  POP_TOP          
+Instruction context:
+   
+ L. 155        28  LOAD_FAST                'fp'
+                  30  LOAD_METHOD              read
+                  32  CALL_METHOD_0         0  ''
+                  34  POP_BLOCK        
+->                36  ROT_TWO          
+                  38  BEGIN_FINALLY    
+                  40  WITH_CLEANUP_START
+                  42  WITH_CLEANUP_FINISH
+                  44  POP_FINALLY           0  ''
+                  46  RETURN_VALUE     
+                48_0  COME_FROM_WITH       24  '24'
+                  48  WITH_CLEANUP_START
+                  50  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 170        32  LOAD_FAST                'fp'
+                  34  LOAD_METHOD              read
+                  36  CALL_METHOD_0         0  ''
+                  38  POP_BLOCK        
+->                40  ROT_TWO          
+                  42  BEGIN_FINALLY    
+                  44  WITH_CLEANUP_START
+                  46  WITH_CLEANUP_FINISH
+                  48  POP_FINALLY           0  ''
+                  50  RETURN_VALUE     
+                52_0  COME_FROM_WITH       28  '28'
+                  52  WITH_CLEANUP_START
+                  54  WITH_CLEANUP_FINISH
+Instruction context:
+   
+ L. 189        50  POP_BLOCK        
+                  52  LOAD_CONST               None
+->                54  RETURN_VALUE     
+                56_0  COME_FROM_FINALLY    32  '32'
+
+../test/118176.pyc -- 
+# decompile failed
+
+# file ../test/118176.pyc
+# Deparsing stopped due to parse error

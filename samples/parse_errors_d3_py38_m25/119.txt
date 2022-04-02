@@ -1,0 +1,64 @@
+Instruction context:
+   
+ L. 794       476  LOAD_FAST                'name'
+                 478  LOAD_FAST                'value'
+                 480  BUILD_TUPLE_2         2 
+                 482  YIELD_VALUE      
+                 484  POP_TOP          
+->               486  JUMP_BACK           102  'to 102'
+Instruction context:
+   
+ L.1024       124  LOAD_STR                 ''
+                 126  LOAD_METHOD              join
+                 128  LOAD_FAST                'vchars'
+                 130  CALL_METHOD_1         1  ''
+                 132  LOAD_STR                 ''
+                 134  LOAD_METHOD              join
+                 136  LOAD_FAST                'fragment'
+                 138  LOAD_FAST                'pos'
+                 140  LOAD_CONST               None
+                 142  BUILD_SLICE_2         2 
+                 144  BINARY_SUBSCR    
+                 146  BUILD_LIST_1          1 
+                 148  LOAD_FAST                'remainder'
+                 150  BINARY_ADD       
+                 152  CALL_METHOD_1         1  ''
+                 154  LOAD_FAST                'had_qp'
+                 156  BUILD_TUPLE_3         3 
+->               158  RETURN_VALUE     
+Instruction context:
+   
+ L.1125       118  POP_EXCEPT       
+                 120  BREAK_LOOP          236  'to 236'
+               122_0  COME_FROM           110  '110'
+->               122  END_FINALLY      
+               124_0  COME_FROM            78  '78'
+Instruction context:
+-> 
+ L.1516       296  LOAD_FAST                'obs_local_part'
+                 298  LOAD_CONST               0
+                 300  BINARY_SUBSCR    
+                 302  LOAD_ATTR                token_type
+                 304  LOAD_STR                 'dot'
+                 306  COMPARE_OP               ==
+             308_310  POP_JUMP_IF_TRUE    344  'to 344'
+Instruction context:
+   
+ L.2577       100  LOAD_FAST                'mime_parameters'
+                 102  ROT_FOUR         
+->               104  POP_BLOCK        
+                 106  POP_EXCEPT       
+                 108  CALL_FINALLY        230  'to 230'
+                 110  RETURN_VALUE     
+               112_0  COME_FROM            88  '88'
+Instruction context:
+   
+ L.2973       228  JUMP_BACK             6  'to 6'
+->               230  JUMP_FORWARD        266  'to 266'
+               232_0  COME_FROM           206  '206'
+
+test/119.pyc -- 
+# decompile failed
+
+# file test/119.pyc
+# Deparsing stopped due to parse error

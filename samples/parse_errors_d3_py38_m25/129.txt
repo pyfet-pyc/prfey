@@ -1,0 +1,38 @@
+Instruction context:
+   
+ L. 279       210  POP_EXCEPT       
+->               212  LOAD_CONST               None
+                 214  RETURN_VALUE     
+               216_0  COME_FROM           202  '202'
+Instruction context:
+   
+ L. 303        80  POP_BLOCK        
+->                82  POP_EXCEPT       
+                  84  LOAD_CONST               None
+                  86  RETURN_VALUE     
+                88_0  COME_FROM            58  '58'
+                  88  POP_BLOCK        
+                  90  JUMP_FORWARD        112  'to 112'
+                92_0  COME_FROM_FINALLY    38  '38'
+Instruction context:
+   
+ L. 401       454  LOAD_FAST                'self'
+                 456  LOAD_ATTR                stdout
+                 458  LOAD_METHOD              write
+                 460  LOAD_STR                 '%s\n'
+                 462  LOAD_GLOBAL              str
+                 464  LOAD_STR                 '  '
+                 466  LOAD_METHOD              join
+                 468  LOAD_FAST                'texts'
+                 470  CALL_METHOD_1         1  ''
+                 472  CALL_FUNCTION_1       1  ''
+                 474  BINARY_MODULO    
+                 476  CALL_METHOD_1         1  ''
+                 478  POP_TOP          
+->           480_482  JUMP_BACK           316  'to 316'
+
+test/129.pyc -- 
+# decompile failed
+
+# file test/129.pyc
+# Deparsing stopped due to parse error

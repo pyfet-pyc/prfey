@@ -1,0 +1,31 @@
+Instruction context:
+   
+ L.  44         8  LOAD_FAST                'num'
+                  10  LOAD_CONST               None
+->                12  <117>                 0  ''
+                  14  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L. 125        12  LOAD_FAST                'RawValue'
+                  14  LOAD_FAST                'typecode_or_type'
+                  16  BUILD_LIST_1          1 
+                  18  LOAD_FAST                'args'
+->                20  CALL_FINALLY         23  'to 23'
+                  22  WITH_CLEANUP_FINISH
+                  24  CALL_FUNCTION_EX      0  'positional arguments only'
+                  26  RETURN_VALUE     
+Instruction context:
+   
+ L. 135        12  LOAD_FAST                'Value'
+                  14  LOAD_FAST                'typecode_or_type'
+                  16  BUILD_LIST_1          1 
+                  18  LOAD_FAST                'args'
+->                20  CALL_FINALLY         23  'to 23'
+                  22  WITH_CLEANUP_FINISH
+                  24  LOAD_FAST                'lock'
+
+test/101247.pyc -- 
+# decompile failed
+
+# file test/101247.pyc
+# Deparsing stopped due to parse error

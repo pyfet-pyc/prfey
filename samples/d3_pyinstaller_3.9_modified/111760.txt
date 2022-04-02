@@ -1,0 +1,396 @@
+
+# file test/111760.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "UUID objects (universally unique identifiers) according to RFC 4122.\n\nThis module provides immutable UUID objects (class UUID) and the functions\nuuid1(), uuid3(), uuid4(), uuid5() for generating version 1, 3, 4, and 5\nUUIDs as specified in RFC 4122.\n\nIf all you want is a unique ID, you should probably call uuid1() or uuid4().\nNote that uuid1() may compromise privacy since it creates a UUID containing\nthe computer's network address.  uuid4() creates a random UUID.\n\nTypical usage:\n\n    >>> import uuid\n\n    # make a UUID based on the host ID and current time\n    >>> uuid.uuid1()    # doctest: +SKIP\n    UUID('a8098c1a-f86e-11da-bd1a-00112444be1e')\n\n    # make a UUID using an MD5 hash of a namespace UUID and a name\n    >>> uuid.uuid3(uuid.NAMESPACE_DNS, 'python.org')\n    UUID('6fa459ea-ee8a-3ca4-894e-db77e160355e')\n\n    # make a random UUID\n    >>> uuid.uuid4()    # doctest: +SKIP\n    UUID('16fd2706-8baf-433b-82eb-8c7fada847da')\n\n    # make a UUID using a SHA-1 hash of a namespace UUID and a name\n    >>> uuid.uuid5(uuid.NAMESPACE_DNS, 'python.org')\n    UUID('886313e1-3b8a-5372-9b90-0c9aee199e5d')\n\n    # make a UUID from a string of hex digits (braces and hyphens ignored)\n    >>> x = uuid.UUID('{00010203-0405-0607-0809-0a0b0c0d0e0f}')\n\n    # convert a UUID to a string of hex digits in standard form\n    >>> str(x)\n    '00010203-0405-0607-0809-0a0b0c0d0e0f'\n\n    # get the raw 16 bytes of the UUID\n    >>> x.bytes\n    b'\\x00\\x01\\x02\\x03\\x04\\x05\\x06\\x07\\x08\\t\\n\\x0b\\x0c\\r\\x0e\\x0f'\n\n    # make a UUID from a 16-byte string\n    >>> uuid.UUID(bytes=x.bytes)\n    UUID('00010203-0405-0607-0809-0a0b0c0d0e0f')\n"
+                2  STORE_NAME               __doc__
+
+ L.  47         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.  48        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              sys
+               18  STORE_NAME               sys
+
+ L.  50        20  LOAD_CONST               0
+               22  LOAD_CONST               ('Enum',)
+               24  IMPORT_NAME              enum
+               26  IMPORT_FROM              Enum
+               28  STORE_NAME               Enum
+               30  POP_TOP          
+
+ L.  53        32  LOAD_STR                 'Ka-Ping Yee <ping@zesty.ca>'
+               34  STORE_NAME               __author__
+
+ L.  56        36  LOAD_NAME                sys
+               38  LOAD_ATTR                platform
+               40  LOAD_CONST               ('win32', 'darwin')
+               42  <118>                 0  ''
+               44  POP_JUMP_IF_FALSE    56  'to 56'
+
+ L.  57        46  LOAD_CONST               False
+               48  DUP_TOP          
+               50  STORE_NAME               _AIX
+               52  STORE_NAME               _LINUX
+               54  JUMP_FORWARD         88  'to 88'
+             56_0  COME_FROM            44  '44'
+
+ L.  59        56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              platform
+               62  STORE_NAME               platform
+
+ L.  60        64  LOAD_NAME                platform
+               66  LOAD_METHOD              system
+               68  CALL_METHOD_0         0  ''
+               70  STORE_NAME               _platform_system
+
+ L.  61        72  LOAD_NAME                _platform_system
+               74  LOAD_STR                 'AIX'
+               76  COMPARE_OP               ==
+               78  STORE_NAME               _AIX
+
+ L.  62        80  LOAD_NAME                _platform_system
+               82  LOAD_STR                 'Linux'
+               84  COMPARE_OP               ==
+               86  STORE_NAME               _LINUX
+             88_0  COME_FROM            54  '54'
+
+ L.  64        88  LOAD_CONST               b':'
+               90  STORE_NAME               _MAC_DELIM
+
+ L.  65        92  LOAD_CONST               False
+               94  STORE_NAME               _MAC_OMITS_LEADING_ZEROES
+
+ L.  66        96  LOAD_NAME                _AIX
+               98  POP_JUMP_IF_FALSE   108  'to 108'
+
+ L.  67       100  LOAD_CONST               b'.'
+              102  STORE_NAME               _MAC_DELIM
+
+ L.  68       104  LOAD_CONST               True
+              106  STORE_NAME               _MAC_OMITS_LEADING_ZEROES
+            108_0  COME_FROM            98  '98'
+
+ L.  70       108  BUILD_LIST_0          0 
+              110  LOAD_CONST               ('reserved for NCS compatibility', 'specified in RFC 4122', 'reserved for Microsoft compatibility', 'reserved for future definition')
+              112  CALL_FINALLY        115  'to 115'
+              114  UNPACK_SEQUENCE_4     4 
+              116  STORE_NAME               RESERVED_NCS
+              118  STORE_NAME               RFC_4122
+              120  STORE_NAME               RESERVED_MICROSOFT
+              122  STORE_NAME               RESERVED_FUTURE
+
+ L.  74       124  LOAD_NAME                int
+              126  STORE_NAME               int_
+
+ L.  75       128  LOAD_NAME                bytes
+              130  STORE_NAME               bytes_
+
+ L.  78       132  LOAD_BUILD_CLASS 
+              134  LOAD_CODE                <code_object SafeUUID>
+              136  LOAD_STR                 'SafeUUID'
+              138  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              140  LOAD_STR                 'SafeUUID'
+              142  LOAD_NAME                Enum
+              144  CALL_FUNCTION_3       3  ''
+              146  STORE_NAME               SafeUUID
+
+ L.  84       148  LOAD_BUILD_CLASS 
+              150  LOAD_CODE                <code_object UUID>
+              152  LOAD_STR                 'UUID'
+              154  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              156  LOAD_STR                 'UUID'
+              158  CALL_FUNCTION_2       2  ''
+              160  STORE_NAME               UUID
+
+ L. 359       162  LOAD_CODE                <code_object _get_command_stdout>
+              164  LOAD_STR                 '_get_command_stdout'
+              166  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              168  STORE_NAME               _get_command_stdout
+
+ L. 400       170  LOAD_CODE                <code_object _is_universal>
+              172  LOAD_STR                 '_is_universal'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  STORE_NAME               _is_universal
+
+ L. 404       178  LOAD_CODE                <code_object _find_mac_near_keyword>
+              180  LOAD_STR                 '_find_mac_near_keyword'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  STORE_NAME               _find_mac_near_keyword
+
+ L. 439       186  LOAD_CODE                <code_object _parse_mac>
+              188  LOAD_STR                 '_parse_mac'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  STORE_NAME               _parse_mac
+
+ L. 467       194  LOAD_CODE                <code_object _find_mac_under_heading>
+              196  LOAD_STR                 '_find_mac_under_heading'
+              198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              200  STORE_NAME               _find_mac_under_heading
+
+ L. 505       202  LOAD_CODE                <code_object _ifconfig_getnode>
+              204  LOAD_STR                 '_ifconfig_getnode'
+              206  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              208  STORE_NAME               _ifconfig_getnode
+
+ L. 515       210  LOAD_CODE                <code_object _ip_getnode>
+              212  LOAD_STR                 '_ip_getnode'
+              214  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              216  STORE_NAME               _ip_getnode
+
+ L. 523       218  LOAD_CODE                <code_object _arp_getnode>
+              220  LOAD_STR                 '_arp_getnode'
+              222  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              224  STORE_NAME               _arp_getnode
+
+ L. 549       226  LOAD_CODE                <code_object _lanscan_getnode>
+              228  LOAD_STR                 '_lanscan_getnode'
+              230  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              232  STORE_NAME               _lanscan_getnode
+
+ L. 554       234  LOAD_CODE                <code_object _netstat_getnode>
+              236  LOAD_STR                 '_netstat_getnode'
+              238  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              240  STORE_NAME               _netstat_getnode
+
+ L. 559       242  LOAD_CODE                <code_object _ipconfig_getnode>
+              244  LOAD_STR                 '_ipconfig_getnode'
+              246  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              248  STORE_NAME               _ipconfig_getnode
+
+ L. 564       250  LOAD_CODE                <code_object _netbios_getnode>
+              252  LOAD_STR                 '_netbios_getnode'
+              254  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              256  STORE_NAME               _netbios_getnode
+
+ L. 571       258  SETUP_FINALLY       302  'to 302'
+
+ L. 572       260  LOAD_CONST               0
+              262  LOAD_CONST               None
+              264  IMPORT_NAME              _uuid
+              266  STORE_NAME               _uuid
+
+ L. 573       268  LOAD_NAME                getattr
+              270  LOAD_NAME                _uuid
+              272  LOAD_STR                 'generate_time_safe'
+              274  LOAD_CONST               None
+              276  CALL_FUNCTION_3       3  ''
+              278  STORE_NAME               _generate_time_safe
+
+ L. 574       280  LOAD_NAME                getattr
+              282  LOAD_NAME                _uuid
+              284  LOAD_STR                 'UuidCreate'
+              286  LOAD_CONST               None
+              288  CALL_FUNCTION_3       3  ''
+              290  STORE_NAME               _UuidCreate
+
+ L. 575       292  LOAD_NAME                _uuid
+              294  LOAD_ATTR                has_uuid_generate_time_safe
+              296  STORE_NAME               _has_uuid_generate_time_safe
+              298  POP_BLOCK        
+              300  JUMP_FORWARD        338  'to 338'
+            302_0  COME_FROM_FINALLY   258  '258'
+
+ L. 576       302  DUP_TOP          
+              304  LOAD_NAME                ImportError
+          306_308  <121>               336  ''
+              310  POP_TOP          
+              312  POP_TOP          
+              314  POP_TOP          
+
+ L. 577       316  LOAD_CONST               None
+              318  STORE_NAME               _uuid
+
+ L. 578       320  LOAD_CONST               None
+              322  STORE_NAME               _generate_time_safe
+
+ L. 579       324  LOAD_CONST               None
+              326  STORE_NAME               _UuidCreate
+
+ L. 580       328  LOAD_CONST               None
+              330  STORE_NAME               _has_uuid_generate_time_safe
+              332  POP_EXCEPT       
+              334  JUMP_FORWARD        338  'to 338'
+              336  <48>             
+            338_0  COME_FROM           334  '334'
+            338_1  COME_FROM           300  '300'
+
+ L. 583       338  LOAD_CODE                <code_object _load_system_functions>
+              340  LOAD_STR                 '_load_system_functions'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  STORE_NAME               _load_system_functions
+
+ L. 587       346  LOAD_CODE                <code_object _unix_getnode>
+              348  LOAD_STR                 '_unix_getnode'
+              350  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              352  STORE_NAME               _unix_getnode
+
+ L. 593       354  LOAD_CODE                <code_object _windll_getnode>
+              356  LOAD_STR                 '_windll_getnode'
+              358  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              360  STORE_NAME               _windll_getnode
+
+ L. 599       362  LOAD_CODE                <code_object _random_getnode>
+              364  LOAD_STR                 '_random_getnode'
+              366  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              368  STORE_NAME               _random_getnode
+
+ L. 621       370  LOAD_NAME                _LINUX
+          372_374  POP_JUMP_IF_FALSE   386  'to 386'
+
+ L. 622       376  LOAD_NAME                _ip_getnode
+              378  LOAD_NAME                _ifconfig_getnode
+              380  BUILD_LIST_2          2 
+              382  STORE_NAME               _OS_GETTERS
+              384  JUMP_FORWARD        456  'to 456'
+            386_0  COME_FROM           372  '372'
+
+ L. 623       386  LOAD_NAME                sys
+              388  LOAD_ATTR                platform
+              390  LOAD_STR                 'darwin'
+              392  COMPARE_OP               ==
+          394_396  POP_JUMP_IF_FALSE   410  'to 410'
+
+ L. 624       398  LOAD_NAME                _ifconfig_getnode
+              400  LOAD_NAME                _arp_getnode
+              402  LOAD_NAME                _netstat_getnode
+              404  BUILD_LIST_3          3 
+              406  STORE_NAME               _OS_GETTERS
+              408  JUMP_FORWARD        456  'to 456'
+            410_0  COME_FROM           394  '394'
+
+ L. 625       410  LOAD_NAME                sys
+              412  LOAD_ATTR                platform
+              414  LOAD_STR                 'win32'
+              416  COMPARE_OP               ==
+          418_420  POP_JUMP_IF_FALSE   428  'to 428'
+
+ L. 627       422  BUILD_LIST_0          0 
+              424  STORE_NAME               _OS_GETTERS
+              426  JUMP_FORWARD        456  'to 456'
+            428_0  COME_FROM           418  '418'
+
+ L. 628       428  LOAD_NAME                _AIX
+          430_432  POP_JUMP_IF_FALSE   442  'to 442'
+
+ L. 629       434  LOAD_NAME                _netstat_getnode
+              436  BUILD_LIST_1          1 
+              438  STORE_NAME               _OS_GETTERS
+              440  JUMP_FORWARD        456  'to 456'
+            442_0  COME_FROM           430  '430'
+
+ L. 631       442  LOAD_NAME                _ifconfig_getnode
+              444  LOAD_NAME                _ip_getnode
+              446  LOAD_NAME                _arp_getnode
+
+ L. 632       448  LOAD_NAME                _netstat_getnode
+              450  LOAD_NAME                _lanscan_getnode
+
+ L. 631       452  BUILD_LIST_5          5 
+              454  STORE_NAME               _OS_GETTERS
+            456_0  COME_FROM           440  '440'
+            456_1  COME_FROM           426  '426'
+            456_2  COME_FROM           408  '408'
+            456_3  COME_FROM           384  '384'
+
+ L. 633       456  LOAD_NAME                os
+              458  LOAD_ATTR                name
+              460  LOAD_STR                 'posix'
+              462  COMPARE_OP               ==
+          464_466  POP_JUMP_IF_FALSE   480  'to 480'
+
+ L. 634       468  LOAD_NAME                _unix_getnode
+              470  BUILD_LIST_1          1 
+              472  LOAD_NAME                _OS_GETTERS
+              474  BINARY_ADD       
+              476  STORE_NAME               _GETTERS
+              478  JUMP_FORWARD        508  'to 508'
+            480_0  COME_FROM           464  '464'
+
+ L. 635       480  LOAD_NAME                os
+              482  LOAD_ATTR                name
+              484  LOAD_STR                 'nt'
+              486  COMPARE_OP               ==
+          488_490  POP_JUMP_IF_FALSE   504  'to 504'
+
+ L. 636       492  LOAD_NAME                _windll_getnode
+              494  BUILD_LIST_1          1 
+              496  LOAD_NAME                _OS_GETTERS
+              498  BINARY_ADD       
+              500  STORE_NAME               _GETTERS
+              502  JUMP_FORWARD        508  'to 508'
+            504_0  COME_FROM           488  '488'
+
+ L. 638       504  LOAD_NAME                _OS_GETTERS
+              506  STORE_NAME               _GETTERS
+            508_0  COME_FROM           502  '502'
+            508_1  COME_FROM           478  '478'
+
+ L. 640       508  LOAD_CONST               None
+              510  STORE_GLOBAL             _node
+
+ L. 642       512  LOAD_CODE                <code_object getnode>
+              514  LOAD_STR                 'getnode'
+              516  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              518  STORE_NAME               getnode
+
+ L. 664       520  LOAD_CONST               None
+              522  STORE_GLOBAL             _last_timestamp
+
+ L. 666       524  LOAD_CONST               (None, None)
+              526  LOAD_CODE                <code_object uuid1>
+              528  LOAD_STR                 'uuid1'
+              530  MAKE_FUNCTION_1          'default'
+              532  STORE_NAME               uuid1
+
+ L. 704       534  LOAD_CODE                <code_object uuid3>
+              536  LOAD_STR                 'uuid3'
+              538  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              540  STORE_NAME               uuid3
+
+ L. 713       542  LOAD_CODE                <code_object uuid4>
+              544  LOAD_STR                 'uuid4'
+              546  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              548  STORE_NAME               uuid4
+
+ L. 717       550  LOAD_CODE                <code_object uuid5>
+              552  LOAD_STR                 'uuid5'
+              554  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              556  STORE_NAME               uuid5
+
+ L. 725       558  LOAD_NAME                UUID
+              560  LOAD_STR                 '6ba7b810-9dad-11d1-80b4-00c04fd430c8'
+              562  CALL_FUNCTION_1       1  ''
+              564  STORE_NAME               NAMESPACE_DNS
+
+ L. 726       566  LOAD_NAME                UUID
+              568  LOAD_STR                 '6ba7b811-9dad-11d1-80b4-00c04fd430c8'
+              570  CALL_FUNCTION_1       1  ''
+              572  STORE_NAME               NAMESPACE_URL
+
+ L. 727       574  LOAD_NAME                UUID
+              576  LOAD_STR                 '6ba7b812-9dad-11d1-80b4-00c04fd430c8'
+              578  CALL_FUNCTION_1       1  ''
+              580  STORE_NAME               NAMESPACE_OID
+
+ L. 728       582  LOAD_NAME                UUID
+              584  LOAD_STR                 '6ba7b814-9dad-11d1-80b4-00c04fd430c8'
+              586  CALL_FUNCTION_1       1  ''
+              588  STORE_NAME               NAMESPACE_X500
+
+Parse error at or near `<118>' instruction at offset 42
+
+Instruction context:
+   
+ L.  56        36  LOAD_NAME                sys
+                  38  LOAD_ATTR                platform
+                  40  LOAD_CONST               ('win32', 'darwin')
+->                42  <118>                 0  ''
+                  44  POP_JUMP_IF_FALSE    56  'to 56'
+
+test/111760.pyc -- 
+# decompile failed

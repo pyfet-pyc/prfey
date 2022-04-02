@@ -1,0 +1,59 @@
+Instruction context:
+   
+ L.   7        20  BUILD_LIST_0          0 
+                  22  LOAD_CONST               ('__title__', '__summary__', '__uri__', '__version__', '__author__', '__email__', '__license__', '__copyright__')
+->                24  CALL_FINALLY         27  'to 27'
+                  26  STORE_NAME               __all__
+
+test/103828.pyc -- 
+# decompile failed
+
+# file test/103828.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import', 'division', 'print_function')
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  IMPORT_FROM              division
+               12  STORE_NAME               division
+               14  IMPORT_FROM              print_function
+               16  STORE_NAME               print_function
+               18  POP_TOP          
+
+ L.   7        20  BUILD_LIST_0          0 
+               22  LOAD_CONST               ('__title__', '__summary__', '__uri__', '__version__', '__author__', '__email__', '__license__', '__copyright__')
+               24  CALL_FINALLY         27  'to 27'
+               26  STORE_NAME               __all__
+
+ L.  18        28  LOAD_STR                 'cryptography'
+               30  STORE_NAME               __title__
+
+ L.  20        32  LOAD_STR                 'cryptography is a package which provides cryptographic recipes and primitives to Python developers.'
+
+ L.  19        34  STORE_NAME               __summary__
+
+ L.  23        36  LOAD_STR                 'https://github.com/pyca/cryptography'
+               38  STORE_NAME               __uri__
+
+ L.  25        40  LOAD_STR                 '3.3.1'
+               42  STORE_NAME               __version__
+
+ L.  27        44  LOAD_STR                 'The cryptography developers'
+               46  STORE_NAME               __author__
+
+ L.  28        48  LOAD_STR                 'cryptography-dev@python.org'
+               50  STORE_NAME               __email__
+
+ L.  30        52  LOAD_STR                 'BSD or Apache License, Version 2.0'
+               54  STORE_NAME               __license__
+
+ L.  31        56  LOAD_STR                 'Copyright 2013-2020 {}'
+               58  LOAD_METHOD              format
+               60  LOAD_NAME                __author__
+               62  CALL_METHOD_1         1  ''
+               64  STORE_NAME               __copyright__
+
+Parse error at or near `CALL_FINALLY' instruction at offset 24
+

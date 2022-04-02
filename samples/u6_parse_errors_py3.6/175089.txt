@@ -1,0 +1,23 @@
+Instruction context:
+   
+ L.1153        92  LOAD_FAST                'on_finish'
+                  94  LOAD_FAST                'resp'
+                  96  CALL_FUNCTION_1       1  '1 positional argument'
+                  98  GET_AWAITABLE    
+                 100  LOAD_CONST               None
+                 102  YIELD_FROM       
+                 104  RETURN_VALUE     
+->             106_0  COME_FROM_ASYNC_WITH    88  '88'
+                 106  WITH_CLEANUP_START
+                 108  GET_AWAITABLE    
+                 110  LOAD_CONST               None
+                 112  YIELD_FROM       
+                 114  WITH_CLEANUP_FINISH
+                 116  END_FINALLY      
+                 118  JUMP_FORWARD        290  'to 290'
+
+../test/175089.pyc -- 
+# decompile failed
+
+# file ../test/175089.pyc
+# Deparsing stopped due to parse error

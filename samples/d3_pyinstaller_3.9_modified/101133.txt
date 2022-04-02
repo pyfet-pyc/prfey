@@ -1,0 +1,65 @@
+Instruction context:
+   
+ L.  80        12  LOAD_FAST                'loop'
+                  14  LOAD_CONST               None
+->                16  <117>                 0  ''
+                  18  POP_JUMP_IF_FALSE    32  'to 32'
+Instruction context:
+   
+ L. 154        30  DUP_TOP          
+                  32  LOAD_GLOBAL              StopIteration
+->                34  <121>                48  ''
+                  36  POP_TOP          
+                  38  POP_TOP          
+                  40  POP_TOP          
+Instruction context:
+   
+ L. 176        16  LOAD_FAST                'loop'
+                  18  LOAD_CONST               None
+->                20  <117>                 0  ''
+                  22  POP_JUMP_IF_FALSE    36  'to 36'
+Instruction context:
+   
+ L. 229        46  LOAD_FAST                'self'
+                  48  LOAD_ATTR                _waiters
+                  50  LOAD_METHOD              remove
+                  52  LOAD_FAST                'fut'
+                  54  CALL_METHOD_1         1  ''
+->                56  POP_TOP          
+Instruction context:
+   
+ L. 293        62  LOAD_FAST                'self'
+                  64  LOAD_ATTR                _waiters
+                  66  LOAD_METHOD              remove
+                  68  LOAD_FAST                'fut'
+                  70  CALL_METHOD_1         1  ''
+->                72  POP_TOP          
+Instruction context:
+   
+ L. 343        58  LOAD_FAST                'fut'
+                  60  LOAD_METHOD              set_result
+                  62  LOAD_CONST               False
+                  64  CALL_METHOD_1         1  ''
+                  66  POP_TOP          
+                  68  JUMP_BACK            26  'to 26'
+->              70_0  COME_FROM            40  '40'
+Instruction context:
+   
+ L. 374        32  LOAD_FAST                'loop'
+                  34  LOAD_CONST               None
+->                36  <117>                 0  ''
+                  38  POP_JUMP_IF_FALSE    52  'to 52'
+Instruction context:
+   
+ L. 419        88  RAISE_VARARGS_0       0  'reraise'
+                  90  POP_EXCEPT       
+->                92  JUMP_BACK             0  'to 0'
+                  94  <48>             
+                  96  JUMP_BACK             0  'to 0'
+                98_0  COME_FROM             8  '8'
+
+test/101133.pyc -- 
+# decompile failed
+
+# file test/101133.pyc
+# Deparsing stopped due to parse error

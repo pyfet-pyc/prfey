@@ -1,0 +1,18 @@
+Instruction context:
+   
+ L. 213        94  JUMP_FORWARD         98  'to 98'
+->                96  JUMP_BACK            62  'to 62'
+                98_0  COME_FROM            94  '94'
+                98_1  COME_FROM            78  '78'
+                  98  POP_BLOCK        
+                 100  BEGIN_FINALLY    
+               102_0  COME_FROM_WITH       54  '54'
+                 102  WITH_CLEANUP_START
+                 104  WITH_CLEANUP_FINISH
+                 106  END_FINALLY      
+
+../test/125152.pyc -- 
+# decompile failed
+
+# file ../test/125152.pyc
+# Deparsing stopped due to parse error

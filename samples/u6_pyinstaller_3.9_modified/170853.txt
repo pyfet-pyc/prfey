@@ -1,0 +1,336 @@
+
+# file test/170853.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "HTTP server classes.\n\nNote: BaseHTTPRequestHandler doesn't implement any HTTP request; see\nSimpleHTTPRequestHandler for simple implementations of GET, HEAD and POST,\nand CGIHTTPRequestHandler for CGI scripts.\n\nIt does, however, optionally implement HTTP/1.1 persistent connections,\nas of version 0.3.\n\nNotes on CGIHTTPRequestHandler\n------------------------------\n\nThis class implements GET and POST requests to cgi-bin scripts.\n\nIf the os.fork() function is not present (e.g. on Windows),\nsubprocess.Popen() is used as a fallback, with slightly altered semantics.\n\nIn all cases, the implementation is intentionally naive -- all\nrequests are executed synchronously.\n\nSECURITY WARNING: DON'T USE THIS CODE UNLESS YOU ARE INSIDE A FIREWALL\n-- it may execute arbitrary Python code or external programs.\n\nNote that status code 200 is sent prior to execution of a CGI script, so\nscripts cannot send other status codes such as 302 (redirect).\n\nXXX To do:\n\n- log requests even later (to capture byte count)\n- log user-agent header and other interesting goodies\n- send error log to separate file\n"
+                2  STORE_NAME               __doc__
+
+ L.  83         4  LOAD_STR                 '0.6'
+                6  STORE_NAME               __version__
+
+ L.  85         8  BUILD_LIST_0          0 
+               10  LOAD_CONST               ('HTTPServer', 'ThreadingHTTPServer', 'BaseHTTPRequestHandler', 'SimpleHTTPRequestHandler', 'CGIHTTPRequestHandler')
+               12  CALL_FINALLY         15  'to 15'
+               14  STORE_NAME               __all__
+
+ L.  90        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              copy
+               22  STORE_NAME               copy
+
+ L.  91        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              datetime
+               30  STORE_NAME               datetime
+
+ L.  92        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME_ATTR         email.utils
+               38  STORE_NAME               email
+
+ L.  93        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              html
+               46  STORE_NAME               html
+
+ L.  94        48  LOAD_CONST               0
+               50  LOAD_CONST               None
+               52  IMPORT_NAME_ATTR         http.client
+               54  STORE_NAME               http
+
+ L.  95        56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              io
+               62  STORE_NAME               io
+
+ L.  96        64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              mimetypes
+               70  STORE_NAME               mimetypes
+
+ L.  97        72  LOAD_CONST               0
+               74  LOAD_CONST               None
+               76  IMPORT_NAME              os
+               78  STORE_NAME               os
+
+ L.  98        80  LOAD_CONST               0
+               82  LOAD_CONST               None
+               84  IMPORT_NAME              posixpath
+               86  STORE_NAME               posixpath
+
+ L.  99        88  LOAD_CONST               0
+               90  LOAD_CONST               None
+               92  IMPORT_NAME              select
+               94  STORE_NAME               select
+
+ L. 100        96  LOAD_CONST               0
+               98  LOAD_CONST               None
+              100  IMPORT_NAME              shutil
+              102  STORE_NAME               shutil
+
+ L. 101       104  LOAD_CONST               0
+              106  LOAD_CONST               None
+              108  IMPORT_NAME              socket
+              110  STORE_NAME               socket
+
+ L. 102       112  LOAD_CONST               0
+              114  LOAD_CONST               None
+              116  IMPORT_NAME              socketserver
+              118  STORE_NAME               socketserver
+
+ L. 103       120  LOAD_CONST               0
+              122  LOAD_CONST               None
+              124  IMPORT_NAME              sys
+              126  STORE_NAME               sys
+
+ L. 104       128  LOAD_CONST               0
+              130  LOAD_CONST               None
+              132  IMPORT_NAME              time
+              134  STORE_NAME               time
+
+ L. 105       136  LOAD_CONST               0
+              138  LOAD_CONST               None
+              140  IMPORT_NAME_ATTR         urllib.parse
+              142  STORE_NAME               urllib
+
+ L. 106       144  LOAD_CONST               0
+              146  LOAD_CONST               None
+              148  IMPORT_NAME              contextlib
+              150  STORE_NAME               contextlib
+
+ L. 107       152  LOAD_CONST               0
+              154  LOAD_CONST               ('partial',)
+              156  IMPORT_NAME              functools
+              158  IMPORT_FROM              partial
+              160  STORE_NAME               partial
+              162  POP_TOP          
+
+ L. 109       164  LOAD_CONST               0
+              166  LOAD_CONST               ('HTTPStatus',)
+              168  IMPORT_NAME              http
+              170  IMPORT_FROM              HTTPStatus
+              172  STORE_NAME               HTTPStatus
+              174  POP_TOP          
+
+ L. 113       176  LOAD_STR                 '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"\n        "http://www.w3.org/TR/html4/strict.dtd">\n<html>\n    <head>\n        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">\n        <title>Error response</title>\n    </head>\n    <body>\n        <h1>Error response</h1>\n        <p>Error code: %(code)d</p>\n        <p>Message: %(message)s.</p>\n        <p>Error code explanation: %(code)s - %(explain)s.</p>\n    </body>\n</html>\n'
+              178  STORE_NAME               DEFAULT_ERROR_MESSAGE
+
+ L. 130       180  LOAD_STR                 'text/html;charset=utf-8'
+              182  STORE_NAME               DEFAULT_ERROR_CONTENT_TYPE
+
+ L. 132       184  LOAD_BUILD_CLASS 
+              186  LOAD_CODE                <code_object HTTPServer>
+              188  LOAD_STR                 'HTTPServer'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  LOAD_STR                 'HTTPServer'
+              194  LOAD_NAME                socketserver
+              196  LOAD_ATTR                TCPServer
+              198  CALL_FUNCTION_3       3  ''
+              200  STORE_NAME               HTTPServer
+
+ L. 144       202  LOAD_BUILD_CLASS 
+              204  LOAD_CODE                <code_object ThreadingHTTPServer>
+              206  LOAD_STR                 'ThreadingHTTPServer'
+              208  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              210  LOAD_STR                 'ThreadingHTTPServer'
+              212  LOAD_NAME                socketserver
+              214  LOAD_ATTR                ThreadingMixIn
+              216  LOAD_NAME                HTTPServer
+              218  CALL_FUNCTION_4       4  ''
+              220  STORE_NAME               ThreadingHTTPServer
+
+ L. 148       222  LOAD_BUILD_CLASS 
+              224  LOAD_CODE                <code_object BaseHTTPRequestHandler>
+              226  LOAD_STR                 'BaseHTTPRequestHandler'
+              228  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              230  LOAD_STR                 'BaseHTTPRequestHandler'
+              232  LOAD_NAME                socketserver
+              234  LOAD_ATTR                StreamRequestHandler
+              236  CALL_FUNCTION_3       3  ''
+              238  STORE_NAME               BaseHTTPRequestHandler
+
+ L. 628       240  LOAD_BUILD_CLASS 
+              242  LOAD_CODE                <code_object SimpleHTTPRequestHandler>
+              244  LOAD_STR                 'SimpleHTTPRequestHandler'
+              246  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              248  LOAD_STR                 'SimpleHTTPRequestHandler'
+              250  LOAD_NAME                BaseHTTPRequestHandler
+              252  CALL_FUNCTION_3       3  ''
+              254  STORE_NAME               SimpleHTTPRequestHandler
+
+ L. 889       256  LOAD_CODE                <code_object _url_collapse_path>
+              258  LOAD_STR                 '_url_collapse_path'
+              260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              262  STORE_NAME               _url_collapse_path
+
+ L. 937       264  LOAD_CONST               None
+              266  STORE_GLOBAL             nobody
+
+ L. 939       268  LOAD_CODE                <code_object nobody_uid>
+              270  LOAD_STR                 'nobody_uid'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  STORE_NAME               nobody_uid
+
+ L. 955       276  LOAD_CODE                <code_object executable>
+              278  LOAD_STR                 'executable'
+              280  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              282  STORE_NAME               executable
+
+ L. 960       284  LOAD_BUILD_CLASS 
+              286  LOAD_CODE                <code_object CGIHTTPRequestHandler>
+              288  LOAD_STR                 'CGIHTTPRequestHandler'
+              290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              292  LOAD_STR                 'CGIHTTPRequestHandler'
+              294  LOAD_NAME                SimpleHTTPRequestHandler
+              296  CALL_FUNCTION_3       3  ''
+              298  STORE_NAME               CGIHTTPRequestHandler
+
+ L.1223       300  LOAD_CODE                <code_object _get_best_family>
+              302  LOAD_STR                 '_get_best_family'
+              304  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              306  STORE_NAME               _get_best_family
+
+ L.1233       308  LOAD_NAME                BaseHTTPRequestHandler
+
+ L.1234       310  LOAD_NAME                ThreadingHTTPServer
+
+ L.1235       312  LOAD_STR                 'HTTP/1.0'
+              314  LOAD_CONST               8000
+              316  LOAD_CONST               None
+
+ L.1233       318  BUILD_TUPLE_5         5 
+              320  LOAD_CODE                <code_object test>
+              322  LOAD_STR                 'test'
+              324  MAKE_FUNCTION_1          'default'
+              326  STORE_NAME               test
+
+ L.1257       328  LOAD_NAME                __name__
+              330  LOAD_STR                 '__main__'
+              332  COMPARE_OP               ==
+          334_336  POP_JUMP_IF_FALSE   504  'to 504'
+
+ L.1258       338  LOAD_CONST               0
+              340  LOAD_CONST               None
+              342  IMPORT_NAME              argparse
+              344  STORE_NAME               argparse
+
+ L.1260       346  LOAD_NAME                argparse
+              348  LOAD_METHOD              ArgumentParser
+              350  CALL_METHOD_0         0  ''
+              352  STORE_NAME               parser
+
+ L.1261       354  LOAD_NAME                parser
+              356  LOAD_ATTR                add_argument
+              358  LOAD_STR                 '--cgi'
+              360  LOAD_STR                 'store_true'
+
+ L.1262       362  LOAD_STR                 'Run as CGI Server'
+
+ L.1261       364  LOAD_CONST               ('action', 'help')
+              366  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              368  POP_TOP          
+
+ L.1263       370  LOAD_NAME                parser
+              372  LOAD_ATTR                add_argument
+              374  LOAD_STR                 '--bind'
+              376  LOAD_STR                 '-b'
+              378  LOAD_STR                 'ADDRESS'
+
+ L.1264       380  LOAD_STR                 'Specify alternate bind address [default: all interfaces]'
+
+ L.1263       382  LOAD_CONST               ('metavar', 'help')
+              384  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              386  POP_TOP          
+
+ L.1266       388  LOAD_NAME                parser
+              390  LOAD_ATTR                add_argument
+              392  LOAD_STR                 '--directory'
+              394  LOAD_STR                 '-d'
+              396  LOAD_NAME                os
+              398  LOAD_METHOD              getcwd
+              400  CALL_METHOD_0         0  ''
+
+ L.1267       402  LOAD_STR                 'Specify alternative directory [default:current directory]'
+
+ L.1266       404  LOAD_CONST               ('default', 'help')
+              406  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              408  POP_TOP          
+
+ L.1269       410  LOAD_NAME                parser
+              412  LOAD_ATTR                add_argument
+              414  LOAD_STR                 'port'
+              416  LOAD_STR                 'store'
+
+ L.1270       418  LOAD_CONST               8000
+              420  LOAD_NAME                int
+
+ L.1271       422  LOAD_STR                 '?'
+
+ L.1272       424  LOAD_STR                 'Specify alternate port [default: 8000]'
+
+ L.1269       426  LOAD_CONST               ('action', 'default', 'type', 'nargs', 'help')
+              428  CALL_FUNCTION_KW_6     6  '6 total positional and keyword args'
+              430  POP_TOP          
+
+ L.1273       432  LOAD_NAME                parser
+              434  LOAD_METHOD              parse_args
+              436  CALL_METHOD_0         0  ''
+              438  STORE_NAME               args
+
+ L.1274       440  LOAD_NAME                args
+              442  LOAD_ATTR                cgi
+          444_446  POP_JUMP_IF_FALSE   454  'to 454'
+
+ L.1275       448  LOAD_NAME                CGIHTTPRequestHandler
+              450  STORE_NAME               handler_class
+              452  JUMP_FORWARD        468  'to 468'
+            454_0  COME_FROM           444  '444'
+
+ L.1277       454  LOAD_NAME                partial
+              456  LOAD_NAME                SimpleHTTPRequestHandler
+
+ L.1278       458  LOAD_NAME                args
+              460  LOAD_ATTR                directory
+
+ L.1277       462  LOAD_CONST               ('directory',)
+              464  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              466  STORE_NAME               handler_class
+            468_0  COME_FROM           452  '452'
+
+ L.1281       468  LOAD_BUILD_CLASS 
+              470  LOAD_CODE                <code_object DualStackServer>
+              472  LOAD_STR                 'DualStackServer'
+              474  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              476  LOAD_STR                 'DualStackServer'
+              478  LOAD_NAME                ThreadingHTTPServer
+              480  CALL_FUNCTION_3       3  ''
+              482  STORE_NAME               DualStackServer
+
+ L.1289       484  LOAD_NAME                test
+
+ L.1290       486  LOAD_NAME                handler_class
+
+ L.1291       488  LOAD_NAME                DualStackServer
+
+ L.1292       490  LOAD_NAME                args
+              492  LOAD_ATTR                port
+
+ L.1293       494  LOAD_NAME                args
+              496  LOAD_ATTR                bind
+
+ L.1289       498  LOAD_CONST               ('HandlerClass', 'ServerClass', 'port', 'bind')
+              500  CALL_FUNCTION_KW_4     4  '4 total positional and keyword args'
+              502  POP_TOP          
+            504_0  COME_FROM           334  '334'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 12
+
+Instruction context:
+   
+ L.  85         8  BUILD_LIST_0          0 
+                  10  LOAD_CONST               ('HTTPServer', 'ThreadingHTTPServer', 'BaseHTTPRequestHandler', 'SimpleHTTPRequestHandler', 'CGIHTTPRequestHandler')
+->                12  CALL_FINALLY         15  'to 15'
+                  14  STORE_NAME               __all__
+
+test/170853.pyc -- 
+# decompile failed

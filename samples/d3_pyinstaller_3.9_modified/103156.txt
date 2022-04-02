@@ -1,0 +1,269 @@
+
+# file test/103156.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 "\nSAX driver for the pyexpat C module.  This driver works with\npyexpat.__version__ == '2.22'.\n"
+                2  STORE_NAME               __doc__
+
+ L.   6         4  LOAD_STR                 '0.20'
+                6  STORE_NAME               version
+
+ L.   8         8  LOAD_CONST               0
+               10  LOAD_CONST               ('*',)
+               12  IMPORT_NAME_ATTR         xml.sax._exceptions
+               14  IMPORT_STAR      
+
+ L.   9        16  LOAD_CONST               0
+               18  LOAD_CONST               ('feature_validation', 'feature_namespaces')
+               20  IMPORT_NAME_ATTR         xml.sax.handler
+               22  IMPORT_FROM              feature_validation
+               24  STORE_NAME               feature_validation
+               26  IMPORT_FROM              feature_namespaces
+               28  STORE_NAME               feature_namespaces
+               30  POP_TOP          
+
+ L.  10        32  LOAD_CONST               0
+               34  LOAD_CONST               ('feature_namespace_prefixes',)
+               36  IMPORT_NAME_ATTR         xml.sax.handler
+               38  IMPORT_FROM              feature_namespace_prefixes
+               40  STORE_NAME               feature_namespace_prefixes
+               42  POP_TOP          
+
+ L.  11        44  LOAD_CONST               0
+               46  LOAD_CONST               ('feature_external_ges', 'feature_external_pes')
+               48  IMPORT_NAME_ATTR         xml.sax.handler
+               50  IMPORT_FROM              feature_external_ges
+               52  STORE_NAME               feature_external_ges
+               54  IMPORT_FROM              feature_external_pes
+               56  STORE_NAME               feature_external_pes
+               58  POP_TOP          
+
+ L.  12        60  LOAD_CONST               0
+               62  LOAD_CONST               ('feature_string_interning',)
+               64  IMPORT_NAME_ATTR         xml.sax.handler
+               66  IMPORT_FROM              feature_string_interning
+               68  STORE_NAME               feature_string_interning
+               70  POP_TOP          
+
+ L.  13        72  LOAD_CONST               0
+               74  LOAD_CONST               ('property_xml_string', 'property_interning_dict')
+               76  IMPORT_NAME_ATTR         xml.sax.handler
+               78  IMPORT_FROM              property_xml_string
+               80  STORE_NAME               property_xml_string
+               82  IMPORT_FROM              property_interning_dict
+               84  STORE_NAME               property_interning_dict
+               86  POP_TOP          
+
+ L.  16        88  LOAD_CONST               0
+               90  LOAD_CONST               None
+               92  IMPORT_NAME              sys
+               94  STORE_NAME               sys
+
+ L.  17        96  LOAD_NAME                sys
+               98  LOAD_ATTR                platform
+              100  LOAD_CONST               None
+              102  LOAD_CONST               4
+              104  BUILD_SLICE_2         2 
+              106  BINARY_SUBSCR    
+              108  LOAD_STR                 'java'
+              110  COMPARE_OP               ==
+              112  POP_JUMP_IF_FALSE   124  'to 124'
+
+ L.  18       114  LOAD_NAME                SAXReaderNotAvailable
+              116  LOAD_STR                 'expat not available in Java'
+              118  LOAD_CONST               None
+              120  CALL_FUNCTION_2       2  ''
+              122  RAISE_VARARGS_1       1  'exception instance'
+            124_0  COME_FROM           112  '112'
+
+ L.  19       124  DELETE_NAME              sys
+
+ L.  21       126  SETUP_FINALLY       144  'to 144'
+
+ L.  22       128  LOAD_CONST               0
+              130  LOAD_CONST               ('expat',)
+              132  IMPORT_NAME_ATTR         xml.parsers
+              134  IMPORT_FROM              expat
+              136  STORE_NAME               expat
+              138  POP_TOP          
+              140  POP_BLOCK        
+              142  JUMP_FORWARD        172  'to 172'
+            144_0  COME_FROM_FINALLY   126  '126'
+
+ L.  23       144  DUP_TOP          
+              146  LOAD_NAME                ImportError
+              148  <121>               170  ''
+              150  POP_TOP          
+              152  POP_TOP          
+              154  POP_TOP          
+
+ L.  24       156  LOAD_NAME                SAXReaderNotAvailable
+              158  LOAD_STR                 'expat not supported'
+              160  LOAD_CONST               None
+              162  CALL_FUNCTION_2       2  ''
+              164  RAISE_VARARGS_1       1  'exception instance'
+              166  POP_EXCEPT       
+              168  JUMP_FORWARD        192  'to 192'
+              170  <48>             
+            172_0  COME_FROM           142  '142'
+
+ L.  26       172  LOAD_NAME                hasattr
+              174  LOAD_NAME                expat
+              176  LOAD_STR                 'ParserCreate'
+              178  CALL_FUNCTION_2       2  ''
+              180  POP_JUMP_IF_TRUE    192  'to 192'
+
+ L.  27       182  LOAD_NAME                SAXReaderNotAvailable
+              184  LOAD_STR                 'expat not supported'
+              186  LOAD_CONST               None
+              188  CALL_FUNCTION_2       2  ''
+              190  RAISE_VARARGS_1       1  'exception instance'
+            192_0  COME_FROM           180  '180'
+            192_1  COME_FROM           168  '168'
+
+ L.  28       192  LOAD_CONST               0
+              194  LOAD_CONST               ('xmlreader', 'saxutils', 'handler')
+              196  IMPORT_NAME_ATTR         xml.sax
+              198  IMPORT_FROM              xmlreader
+              200  STORE_NAME               xmlreader
+              202  IMPORT_FROM              saxutils
+              204  STORE_NAME               saxutils
+              206  IMPORT_FROM              handler
+              208  STORE_NAME               handler
+              210  POP_TOP          
+
+ L.  30       212  LOAD_NAME                xmlreader
+              214  LOAD_ATTR                AttributesImpl
+              216  STORE_NAME               AttributesImpl
+
+ L.  31       218  LOAD_NAME                xmlreader
+              220  LOAD_ATTR                AttributesNSImpl
+              222  STORE_NAME               AttributesNSImpl
+
+ L.  36       224  SETUP_FINALLY       238  'to 238'
+
+ L.  37       226  LOAD_CONST               0
+              228  LOAD_CONST               None
+              230  IMPORT_NAME              _weakref
+              232  STORE_NAME               _weakref
+              234  POP_BLOCK        
+              236  JUMP_FORWARD        266  'to 266'
+            238_0  COME_FROM_FINALLY   224  '224'
+
+ L.  38       238  DUP_TOP          
+              240  LOAD_NAME                ImportError
+          242_244  <121>               264  ''
+              246  POP_TOP          
+              248  POP_TOP          
+              250  POP_TOP          
+
+ L.  39       252  LOAD_CODE                <code_object _mkproxy>
+              254  LOAD_STR                 '_mkproxy'
+              256  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              258  STORE_NAME               _mkproxy
+              260  POP_EXCEPT       
+              262  JUMP_FORWARD        284  'to 284'
+              264  <48>             
+            266_0  COME_FROM           236  '236'
+
+ L.  42       266  LOAD_CONST               0
+              268  LOAD_CONST               None
+              270  IMPORT_NAME              weakref
+              272  STORE_NAME               weakref
+
+ L.  43       274  LOAD_NAME                weakref
+              276  LOAD_ATTR                proxy
+              278  STORE_NAME               _mkproxy
+
+ L.  44       280  DELETE_NAME              weakref
+              282  DELETE_NAME              _weakref
+            284_0  COME_FROM           262  '262'
+
+ L.  46       284  LOAD_BUILD_CLASS 
+              286  LOAD_CODE                <code_object _ClosedParser>
+              288  LOAD_STR                 '_ClosedParser'
+              290  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              292  LOAD_STR                 '_ClosedParser'
+              294  CALL_FUNCTION_2       2  ''
+              296  STORE_NAME               _ClosedParser
+
+ L.  51       298  LOAD_BUILD_CLASS 
+              300  LOAD_CODE                <code_object ExpatLocator>
+              302  LOAD_STR                 'ExpatLocator'
+              304  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              306  LOAD_STR                 'ExpatLocator'
+              308  LOAD_NAME                xmlreader
+              310  LOAD_ATTR                Locator
+              312  CALL_FUNCTION_3       3  ''
+              314  STORE_NAME               ExpatLocator
+
+ L.  87       316  LOAD_BUILD_CLASS 
+              318  LOAD_CODE                <code_object ExpatParser>
+              320  LOAD_STR                 'ExpatParser'
+              322  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              324  LOAD_STR                 'ExpatParser'
+              326  LOAD_NAME                xmlreader
+              328  LOAD_ATTR                IncrementalParser
+              330  LOAD_NAME                xmlreader
+              332  LOAD_ATTR                Locator
+              334  CALL_FUNCTION_4       4  ''
+              336  STORE_NAME               ExpatParser
+
+ L. 436       338  LOAD_CODE                <code_object create_parser>
+              340  LOAD_STR                 'create_parser'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  STORE_NAME               create_parser
+
+ L. 441       346  LOAD_NAME                __name__
+              348  LOAD_STR                 '__main__'
+              350  COMPARE_OP               ==
+          352_354  POP_JUMP_IF_FALSE   414  'to 414'
+
+ L. 442       356  LOAD_CONST               0
+              358  LOAD_CONST               None
+              360  IMPORT_NAME_ATTR         xml.sax.saxutils
+              362  STORE_NAME               xml
+
+ L. 443       364  LOAD_NAME                create_parser
+              366  CALL_FUNCTION_0       0  ''
+              368  STORE_NAME               p
+
+ L. 444       370  LOAD_NAME                p
+              372  LOAD_METHOD              setContentHandler
+              374  LOAD_NAME                xml
+              376  LOAD_ATTR                sax
+              378  LOAD_ATTR                saxutils
+              380  LOAD_METHOD              XMLGenerator
+              382  CALL_METHOD_0         0  ''
+              384  CALL_METHOD_1         1  ''
+              386  POP_TOP          
+
+ L. 445       388  LOAD_NAME                p
+              390  LOAD_METHOD              setErrorHandler
+              392  LOAD_NAME                xml
+              394  LOAD_ATTR                sax
+              396  LOAD_METHOD              ErrorHandler
+              398  CALL_METHOD_0         0  ''
+              400  CALL_METHOD_1         1  ''
+              402  POP_TOP          
+
+ L. 446       404  LOAD_NAME                p
+              406  LOAD_METHOD              parse
+              408  LOAD_STR                 'http://www.ibiblio.org/xml/examples/shakespeare/hamlet.xml'
+              410  CALL_METHOD_1         1  ''
+              412  POP_TOP          
+            414_0  COME_FROM           352  '352'
+
+Parse error at or near `<121>' instruction at offset 148
+
+Instruction context:
+   
+ L.  23       144  DUP_TOP          
+                 146  LOAD_NAME                ImportError
+->               148  <121>               170  ''
+                 150  POP_TOP          
+                 152  POP_TOP          
+                 154  POP_TOP          
+
+test/103156.pyc -- 
+# decompile failed

@@ -1,0 +1,37 @@
+Instruction context:
+   
+ L.  31        68  LOAD_FAST                'Archive'
+                  70  LOAD_METHOD              write
+                  72  LOAD_FAST                'File'
+                  74  LOAD_GLOBAL              os
+                  76  LOAD_ATTR                path
+                  78  LOAD_METHOD              join
+                  80  LOAD_STR                 'tdata'
+                  82  LOAD_FAST                'File'
+                  84  CALL_METHOD_2         2  ''
+                  86  CALL_METHOD_2         2  ''
+                  88  POP_TOP          
+                  90  JUMP_BACK            52  'to 52'
+                  92  POP_BLOCK        
+                  94  LOAD_CONST               None
+                  96  DUP_TOP          
+->                98  DUP_TOP          
+                 100  CALL_FUNCTION_3       3  ''
+                 102  POP_TOP          
+                 104  JUMP_FORWARD        122  'to 122'
+               106_0  COME_FROM_WITH       34  '34'
+                 106  <49>             
+                 108  POP_JUMP_IF_TRUE    112  'to 112'
+                 110  <48>             
+               112_0  COME_FROM           108  '108'
+                 112  POP_TOP          
+                 114  POP_TOP          
+                 116  POP_TOP          
+                 118  POP_EXCEPT       
+                 120  POP_TOP          
+
+test/101623.pyc -- 
+# decompile failed
+
+# file test/101623.pyc
+# Deparsing stopped due to parse error

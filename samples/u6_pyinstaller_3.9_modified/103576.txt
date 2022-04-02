@@ -1,0 +1,53 @@
+Instruction context:
+   
+ L.  33         6  LOAD_FAST                'logger'
+                   8  LOAD_CONST               None
+->                10  <117>                 0  ''
+                  12  POP_JUMP_IF_FALSE    22  'to 22'
+Instruction context:
+   
+ L.  50        92  LOAD_FAST                'lineno'
+                  94  LOAD_FAST                'column'
+                  96  BUILD_TUPLE_2         2 
+                  98  LOAD_FAST                'start'
+                 100  COMPARE_OP               <=
+                 102  POP_JUMP_IF_TRUE    120  'to 120'
+->               104  <74>             
+                 106  LOAD_FAST                'lineno'
+                 108  LOAD_FAST                'column'
+                 110  BUILD_TUPLE_2         2 
+                 112  LOAD_FAST                'start'
+                 114  BUILD_TUPLE_2         2 
+                 116  CALL_FUNCTION_1       1  ''
+                 118  RAISE_VARARGS_1       1  'exception instance'
+               120_0  COME_FROM           102  '102'
+Instruction context:
+   
+ L.  98        18  LOAD_FAST                'self'
+                  20  LOAD_METHOD              parse_stream
+                  22  LOAD_FAST                'stream'
+                  24  LOAD_FAST                'debug'
+                  26  CALL_METHOD_2         2  ''
+                  28  POP_BLOCK        
+->                30  ROT_TWO          
+                  32  LOAD_CONST               None
+                  34  DUP_TOP          
+                  36  DUP_TOP          
+                  38  CALL_FUNCTION_3       3  ''
+                  40  POP_TOP          
+                  42  RETURN_VALUE     
+                44_0  COME_FROM_WITH       14  '14'
+                  44  <49>             
+                  46  POP_JUMP_IF_TRUE     50  'to 50'
+                  48  <48>             
+                50_0  COME_FROM            46  '46'
+                  50  POP_TOP          
+                  52  POP_TOP          
+                  54  POP_TOP          
+                  56  POP_EXCEPT       
+
+test/103576.pyc -- 
+# decompile failed
+
+# file test/103576.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,28 @@
+Instruction context:
+   
+ L.  50        32  LOAD_FAST             0  'x'
+                  35  LOAD_CONST               0
+                  38  BINARY_SUBSCR    
+                  39  LOAD_CONST               255
+                  42  COMPARE_OP            4  >
+                  45  POP_JUMP_IF_TRUE     64  'to 64'
+                  48  LOAD_FAST             0  'x'
+                  51  LOAD_CONST               1
+                  54  BINARY_SUBSCR    
+                  55  LOAD_CONST               255
+                  58  COMPARE_OP            4  >
+                61_0  COME_FROM            45  '45'
+                61_1  COME_FROM            29  '29'
+                61_2  COME_FROM            13  '13'
+                  61  POP_JUMP_IF_FALSE    68  'to 68'
+                  64  LOAD_GLOBAL           0  'False'
+                  67  RETURN_VALUE_LAMBDA
+->              68_0  COME_FROM            61  '61'
+                  68  LOAD_GLOBAL           1  'True'
+                  71  RETURN_VALUE_LAMBDA
+
+../test/11676.pyc -- 
+# decompile failed
+
+# file ../test/11676.pyc
+# Deparsing stopped due to parse error

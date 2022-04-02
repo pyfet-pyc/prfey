@@ -1,0 +1,12 @@
+Exception in c_tryelsestmt 
+rule: c_tryelsestmt ::= SETUP_EXCEPT c_suite_stmts POP_BLOCK c_except_handler come_any_froms else_suitec \e_come_from_except_clauses
+offsets 344 .. 442
+None
+
+test/410.pyc -- 
+# decompile failed
+  File "/usr/local/lib/python3.7/site-packages/decompyle3/parsers/reducecheck/c_tryelsestmt.py", line 41, in c_tryelsestmt
+    assert come_from in ("come_froms", "opt_come_from_except")
+
+# file test/410.pyc
+# Deparsing stopped due to parse error

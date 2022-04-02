@@ -1,0 +1,73 @@
+Instruction context:
+   
+ L.  44        68  POP_TOP          
+->                70  JUMP_ABSOLUTE        90  'to 90'
+                72_0  COME_FROM            66  '66'
+Instruction context:
+   
+ L. 178        32  LOAD_FAST                'blocks'
+                  34  POP_JUMP_IF_FALSE    40  'to 40'
+->                36  <74>             
+                  38  RAISE_VARARGS_1       1  'exception instance'
+                40_0  COME_FROM            34  '34'
+Instruction context:
+   
+ L. 211        30  DUP_TOP          
+                  32  LOAD_GLOBAL              KeyError
+->                34  <121>                46  ''
+                  36  POP_TOP          
+                  38  POP_TOP          
+                  40  POP_TOP          
+Instruction context:
+   
+ L. 263        16  DUP_TOP          
+                  18  LOAD_GLOBAL              IndexError
+->                20  <121>                36  ''
+                  22  POP_TOP          
+                  24  POP_TOP          
+                  26  POP_TOP          
+Instruction context:
+-> 
+ L. 294       108  LOAD_FAST                'self'
+                 110  LOAD_ATTR                _lock
+                 112  LOAD_METHOD              release
+                 114  CALL_METHOD_0         0  ''
+                 116  POP_TOP          
+                 118  JUMP_FORWARD        132  'to 132'
+               120_0  COME_FROM_FINALLY    62  '62'
+                 120  LOAD_FAST                'self'
+                 122  LOAD_ATTR                _lock
+                 124  LOAD_METHOD              release
+                 126  CALL_METHOD_0         0  ''
+                 128  POP_TOP          
+                 130  <48>             
+               132_0  COME_FROM           118  '118'
+Instruction context:
+   
+ L. 316       186  LOAD_FAST                'arena'
+                 188  LOAD_FAST                'start'
+                 190  LOAD_FAST                'real_stop'
+                 192  BUILD_TUPLE_3         3 
+                 194  POP_BLOCK        
+->               196  ROT_TWO          
+                 198  LOAD_CONST               None
+                 200  DUP_TOP          
+                 202  DUP_TOP          
+                 204  CALL_FUNCTION_3       3  ''
+                 206  POP_TOP          
+                 208  RETURN_VALUE     
+               210_0  COME_FROM_WITH       72  '72'
+                 210  <49>             
+                 212  POP_JUMP_IF_TRUE    216  'to 216'
+                 214  <48>             
+               216_0  COME_FROM           212  '212'
+                 216  POP_TOP          
+                 218  POP_TOP          
+                 220  POP_TOP          
+                 222  POP_EXCEPT       
+
+test/101249.pyc -- 
+# decompile failed
+
+# file test/101249.pyc
+# Deparsing stopped due to parse error

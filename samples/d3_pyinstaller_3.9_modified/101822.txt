@@ -1,0 +1,52 @@
+Instruction context:
+   
+ L.  47        72  DUP_TOP          
+                  74  LOAD_GLOBAL              UnicodeEncodeError
+                  76  LOAD_GLOBAL              UnicodeDecodeError
+                  78  BUILD_TUPLE_2         2 
+->                80  <121>                92  ''
+                  82  POP_TOP          
+                  84  POP_TOP          
+                  86  POP_TOP          
+Instruction context:
+   
+ L.  77         8  LOAD_FAST                'cc'
+                  10  LOAD_CONST               (27,)
+->                12  <118>                 1  ''
+                  14  POP_JUMP_IF_FALSE_BACK     4  'to 4'
+
+test/101822.pyc -- 
+# decompile failed
+
+# file test/101822.pyc
+# --- This code section failed: ---
+
+ L.  74         0  BUILD_MAP_0           0 
+                2  LOAD_FAST                '.0'
+              4_0  COME_FROM            34  '34'
+              4_1  COME_FROM            14  '14'
+                4  FOR_ITER             36  'to 36'
+
+ L.  76         6  STORE_FAST               'cc'
+
+ L.  77         8  LOAD_FAST                'cc'
+               10  LOAD_CONST               (27,)
+               12  <118>                 1  ''
+               14  POP_JUMP_IF_FALSE_BACK     4  'to 4'
+
+ L.  75        16  LOAD_GLOBAL              six
+               18  LOAD_METHOD              unichr
+               20  LOAD_FAST                'cc'
+               22  CALL_METHOD_1         1  ''
+               24  LOAD_STR                 '%{:02X}'
+               26  LOAD_METHOD              format
+               28  LOAD_FAST                'cc'
+               30  CALL_METHOD_1         1  ''
+               32  MAP_ADD               2  ''
+               34  JUMP_BACK             4  'to 4'
+             36_0  COME_FROM             4  '4'
+               36  RETURN_VALUE     
+               -1  RETURN_LAST      
+
+Parse error at or near `<118>' instruction at offset 12
+

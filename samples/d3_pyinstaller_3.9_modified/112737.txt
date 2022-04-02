@@ -1,0 +1,643 @@
+
+# file test/112737.pyc
+# --- This code section failed: ---
+
+ L.   2         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              time
+                6  STORE_NAME               time
+
+ L.   3         8  LOAD_CONST               0
+               10  LOAD_CONST               ('datetime',)
+               12  IMPORT_NAME              datetime
+               14  IMPORT_FROM              datetime
+               16  STORE_NAME               datetime
+               18  POP_TOP          
+
+ L.   5        20  SETUP_FINALLY        34  'to 34'
+
+ L.   6        22  LOAD_CONST               0
+               24  LOAD_CONST               None
+               26  IMPORT_NAME              ujson
+               28  STORE_NAME               json
+               30  POP_BLOCK        
+               32  JUMP_FORWARD         60  'to 60'
+             34_0  COME_FROM_FINALLY    20  '20'
+
+ L.   7        34  DUP_TOP          
+               36  LOAD_NAME                ImportError
+               38  <121>                58  ''
+               40  POP_TOP          
+               42  POP_TOP          
+               44  POP_TOP          
+
+ L.   8        46  LOAD_CONST               0
+               48  LOAD_CONST               None
+               50  IMPORT_NAME              json
+               52  STORE_NAME               json
+               54  POP_EXCEPT       
+               56  JUMP_FORWARD         60  'to 60'
+               58  <48>             
+             60_0  COME_FROM            56  '56'
+             60_1  COME_FROM            32  '32'
+
+ L.  10        60  LOAD_CONST               0
+               62  LOAD_CONST               None
+               64  IMPORT_NAME              requests
+               66  STORE_NAME               requests
+
+ L.  11        68  LOAD_CONST               0
+               70  LOAD_CONST               ('HTTPError', 'ConnectionError', 'Timeout')
+               72  IMPORT_NAME_ATTR         requests.exceptions
+               74  IMPORT_FROM              HTTPError
+               76  STORE_NAME               HTTPError
+               78  IMPORT_FROM              ConnectionError
+               80  STORE_NAME               ConnectionError
+               82  IMPORT_FROM              Timeout
+               84  STORE_NAME               Timeout
+               86  POP_TOP          
+
+ L.  13        88  SETUP_FINALLY       112  'to 112'
+
+ L.  14        90  LOAD_CONST               0
+               92  LOAD_CONST               ('fields',)
+               94  IMPORT_NAME_ATTR         requests.packages.urllib3
+               96  IMPORT_FROM              fields
+               98  STORE_NAME               fields
+              100  POP_TOP          
+
+ L.  15       102  LOAD_NAME                fields
+              104  LOAD_ATTR                format_header_param
+              106  STORE_NAME               format_header_param
+              108  POP_BLOCK        
+              110  JUMP_FORWARD        134  'to 134'
+            112_0  COME_FROM_FINALLY    88  '88'
+
+ L.  16       112  DUP_TOP          
+              114  LOAD_NAME                ImportError
+              116  <121>               132  ''
+              118  POP_TOP          
+              120  POP_TOP          
+              122  POP_TOP          
+
+ L.  17       124  LOAD_CONST               None
+              126  STORE_NAME               format_header_param
+              128  POP_EXCEPT       
+              130  JUMP_FORWARD        134  'to 134'
+              132  <48>             
+            134_0  COME_FROM           130  '130'
+            134_1  COME_FROM           110  '110'
+
+ L.  18       134  LOAD_CONST               0
+              136  LOAD_CONST               None
+              138  IMPORT_NAME              telebot
+              140  STORE_NAME               telebot
+
+ L.  19       142  LOAD_CONST               0
+              144  LOAD_CONST               ('types',)
+              146  IMPORT_NAME              telebot
+              148  IMPORT_FROM              types
+              150  STORE_NAME               types
+              152  POP_TOP          
+
+ L.  20       154  LOAD_CONST               0
+              156  LOAD_CONST               ('util',)
+              158  IMPORT_NAME              telebot
+              160  IMPORT_FROM              util
+              162  STORE_NAME               util
+              164  POP_TOP          
+
+ L.  22       166  LOAD_NAME                telebot
+              168  LOAD_ATTR                logger
+              170  STORE_NAME               logger
+
+ L.  24       172  LOAD_CONST               None
+              174  STORE_NAME               proxy
+
+ L.  25       176  LOAD_CONST               None
+              178  STORE_NAME               session
+
+ L.  27       180  LOAD_CONST               None
+              182  STORE_NAME               API_URL
+
+ L.  28       184  LOAD_CONST               None
+              186  STORE_NAME               FILE_URL
+
+ L.  30       188  LOAD_CONST               3.5
+              190  STORE_NAME               CONNECT_TIMEOUT
+
+ L.  31       192  LOAD_CONST               9999
+              194  STORE_NAME               READ_TIMEOUT
+
+ L.  32       196  LOAD_CONST               None
+              198  STORE_NAME               SESSION_TIME_TO_LIVE
+
+ L.  34       200  LOAD_CONST               False
+              202  STORE_NAME               RETRY_ON_ERROR
+
+ L.  35       204  LOAD_CONST               2
+              206  STORE_NAME               RETRY_TIMEOUT
+
+ L.  36       208  LOAD_CONST               15
+              210  STORE_NAME               MAX_RETRIES
+
+ L.  38       212  LOAD_CONST               None
+              214  STORE_NAME               CUSTOM_SERIALIZER
+
+ L.  40       216  LOAD_CONST               False
+              218  STORE_NAME               ENABLE_MIDDLEWARE
+
+ L.  43       220  LOAD_CONST               (False,)
+              222  LOAD_CODE                <code_object _get_req_session>
+              224  LOAD_STR                 '_get_req_session'
+              226  MAKE_FUNCTION_1          'default'
+              228  STORE_NAME               _get_req_session
+
+ L.  61       230  LOAD_CONST               ('get', None, None)
+              232  LOAD_CODE                <code_object _make_request>
+              234  LOAD_STR                 '_make_request'
+              236  MAKE_FUNCTION_1          'default'
+              238  STORE_NAME               _make_request
+
+ L. 137       240  LOAD_CODE                <code_object _check_result>
+              242  LOAD_STR                 '_check_result'
+              244  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              246  STORE_NAME               _check_result
+
+ L. 164       248  LOAD_CODE                <code_object get_me>
+              250  LOAD_STR                 'get_me'
+              252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              254  STORE_NAME               get_me
+
+ L. 169       256  LOAD_CODE                <code_object get_file>
+              258  LOAD_STR                 'get_file'
+              260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              262  STORE_NAME               get_file
+
+ L. 174       264  LOAD_CODE                <code_object get_file_url>
+              266  LOAD_STR                 'get_file_url'
+              268  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              270  STORE_NAME               get_file_url
+
+ L. 181       272  LOAD_CODE                <code_object download_file>
+              274  LOAD_STR                 'download_file'
+              276  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              278  STORE_NAME               download_file
+
+ L. 194       280  LOAD_CONST               (None, None, None, None, None, None)
+              282  LOAD_CODE                <code_object send_message>
+              284  LOAD_STR                 'send_message'
+              286  MAKE_FUNCTION_1          'default'
+              288  STORE_NAME               send_message
+
+ L. 228       290  LOAD_CONST               (None, None, None, None, None, None, None)
+              292  LOAD_CODE                <code_object set_webhook>
+              294  LOAD_STR                 'set_webhook'
+              296  MAKE_FUNCTION_1          'default'
+              298  STORE_NAME               set_webhook
+
+ L. 250       300  LOAD_CONST               (None, None)
+              302  LOAD_CODE                <code_object delete_webhook>
+              304  LOAD_STR                 'delete_webhook'
+              306  MAKE_FUNCTION_1          'default'
+              308  STORE_NAME               delete_webhook
+
+ L. 260       310  LOAD_CONST               (None,)
+              312  LOAD_CODE                <code_object get_webhook_info>
+              314  LOAD_STR                 'get_webhook_info'
+              316  MAKE_FUNCTION_1          'default'
+              318  STORE_NAME               get_webhook_info
+
+ L. 268       320  LOAD_CONST               (None, None, None, None, None)
+              322  LOAD_CODE                <code_object get_updates>
+              324  LOAD_STR                 'get_updates'
+              326  MAKE_FUNCTION_1          'default'
+              328  STORE_NAME               get_updates
+
+ L. 284       330  LOAD_CONST               (None, None)
+              332  LOAD_CODE                <code_object get_user_profile_photos>
+              334  LOAD_STR                 'get_user_profile_photos'
+              336  MAKE_FUNCTION_1          'default'
+              338  STORE_NAME               get_user_profile_photos
+
+ L. 294       340  LOAD_CODE                <code_object get_chat>
+              342  LOAD_STR                 'get_chat'
+              344  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              346  STORE_NAME               get_chat
+
+ L. 300       348  LOAD_CODE                <code_object leave_chat>
+              350  LOAD_STR                 'leave_chat'
+              352  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              354  STORE_NAME               leave_chat
+
+ L. 306       356  LOAD_CODE                <code_object get_chat_administrators>
+              358  LOAD_STR                 'get_chat_administrators'
+              360  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              362  STORE_NAME               get_chat_administrators
+
+ L. 312       364  LOAD_CODE                <code_object get_chat_members_count>
+              366  LOAD_STR                 'get_chat_members_count'
+              368  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              370  STORE_NAME               get_chat_members_count
+
+ L. 318       372  LOAD_CODE                <code_object set_chat_sticker_set>
+              374  LOAD_STR                 'set_chat_sticker_set'
+              376  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              378  STORE_NAME               set_chat_sticker_set
+
+ L. 324       380  LOAD_CODE                <code_object delete_chat_sticker_set>
+              382  LOAD_STR                 'delete_chat_sticker_set'
+              384  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              386  STORE_NAME               delete_chat_sticker_set
+
+ L. 330       388  LOAD_CODE                <code_object get_chat_member>
+              390  LOAD_STR                 'get_chat_member'
+              392  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              394  STORE_NAME               get_chat_member
+
+ L. 336       396  LOAD_CONST               (None, None)
+              398  LOAD_CODE                <code_object forward_message>
+              400  LOAD_STR                 'forward_message'
+              402  MAKE_FUNCTION_1          'default'
+              404  STORE_NAME               forward_message
+
+ L. 348       406  LOAD_CONST               (None, None, None, None, None, None, None, None)
+              408  LOAD_CODE                <code_object copy_message>
+              410  LOAD_STR                 'copy_message'
+              412  MAKE_FUNCTION_1          'default'
+              414  STORE_NAME               copy_message
+
+ L. 372       416  LOAD_CONST               (None, None, None, None, None)
+              418  LOAD_CODE                <code_object send_dice>
+              420  LOAD_STR                 'send_dice'
+              422  MAKE_FUNCTION_1          'default'
+              424  STORE_NAME               send_dice
+
+ L. 391       426  LOAD_CONST               (None, None, None, None, None, None)
+              428  LOAD_CODE                <code_object send_photo>
+              430  LOAD_STR                 'send_photo'
+              432  MAKE_FUNCTION_1          'default'
+              434  STORE_NAME               send_photo
+
+ L. 419       436  LOAD_CONST               (None, None, None)
+              438  LOAD_CODE                <code_object send_media_group>
+              440  LOAD_STR                 'send_media_group'
+              442  MAKE_FUNCTION_1          'default'
+              444  STORE_NAME               send_media_group
+
+ L. 438       446  LOAD_CONST               (None, None, None, None, None)
+              448  LOAD_CODE                <code_object send_location>
+              450  LOAD_STR                 'send_location'
+              452  MAKE_FUNCTION_1          'default'
+              454  STORE_NAME               send_location
+
+ L. 457       456  LOAD_CONST               (None, None, None, None, None)
+              458  LOAD_CODE                <code_object edit_message_live_location>
+              460  LOAD_STR                 'edit_message_live_location'
+              462  MAKE_FUNCTION_1          'default'
+              464  STORE_NAME               edit_message_live_location
+
+ L. 474       466  LOAD_CONST               (None, None, None, None, None)
+              468  LOAD_CODE                <code_object stop_message_live_location>
+              470  LOAD_STR                 'stop_message_live_location'
+              472  MAKE_FUNCTION_1          'default'
+              474  STORE_NAME               stop_message_live_location
+
+ L. 492       476  LOAD_CONST               (None, None, None, None, None, None)
+              478  LOAD_CODE                <code_object send_venue>
+              480  LOAD_STR                 'send_venue'
+              482  MAKE_FUNCTION_1          'default'
+              484  STORE_NAME               send_venue
+
+ L. 513       486  LOAD_CONST               (None, None, None, None, None, None)
+              488  LOAD_CODE                <code_object send_contact>
+              490  LOAD_STR                 'send_contact'
+              492  MAKE_FUNCTION_1          'default'
+              494  STORE_NAME               send_contact
+
+ L. 533       496  LOAD_CONST               (None,)
+              498  LOAD_CODE                <code_object send_chat_action>
+              500  LOAD_STR                 'send_chat_action'
+              502  MAKE_FUNCTION_1          'default'
+              504  STORE_NAME               send_chat_action
+
+ L. 541       506  LOAD_CONST               (None, None, None, None, None, None, None, None, None, None, None)
+              508  LOAD_CODE                <code_object send_video>
+              510  LOAD_STR                 'send_video'
+              512  MAKE_FUNCTION_1          'default'
+              514  STORE_NAME               send_video
+
+ L. 581       516  LOAD_CONST               (None, None, None, None, None, None, None, None)
+              518  LOAD_CODE                <code_object send_animation>
+              520  LOAD_STR                 'send_animation'
+              522  MAKE_FUNCTION_1          'default'
+              524  STORE_NAME               send_animation
+
+ L. 615       526  LOAD_CONST               (None, None, None, None, None, None, None)
+              528  LOAD_CODE                <code_object send_voice>
+              530  LOAD_STR                 'send_voice'
+              532  MAKE_FUNCTION_1          'default'
+              534  STORE_NAME               send_voice
+
+ L. 641       536  LOAD_CONST               (None, None, None, None, None, None, None)
+              538  LOAD_CODE                <code_object send_video_note>
+              540  LOAD_STR                 'send_video_note'
+              542  MAKE_FUNCTION_1          'default'
+              544  STORE_NAME               send_video_note
+
+ L. 675       546  LOAD_CONST               (None, None, None, None, None, None, None, None, None, None)
+              548  LOAD_CODE                <code_object send_audio>
+              550  LOAD_STR                 'send_audio'
+              552  MAKE_FUNCTION_1          'default'
+              554  STORE_NAME               send_audio
+
+ L. 713       556  LOAD_CONST               (None, None, None, None, None, None, None)
+              558  LOAD_CODE                <code_object send_data>
+              560  LOAD_STR                 'send_data'
+              562  MAKE_FUNCTION_1          'default'
+              564  STORE_NAME               send_data
+
+ L. 745       566  LOAD_CODE                <code_object get_method_by_type>
+              568  LOAD_STR                 'get_method_by_type'
+              570  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              572  STORE_NAME               get_method_by_type
+
+ L. 752       574  LOAD_CONST               (None,)
+              576  LOAD_CODE                <code_object kick_chat_member>
+              578  LOAD_STR                 'kick_chat_member'
+              580  MAKE_FUNCTION_1          'default'
+              582  STORE_NAME               kick_chat_member
+
+ L. 762       584  LOAD_CODE                <code_object unban_chat_member>
+              586  LOAD_STR                 'unban_chat_member'
+              588  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              590  STORE_NAME               unban_chat_member
+
+ L. 770       592  LOAD_CONST               (None, None, None, None, None, None, None, None, None)
+              594  LOAD_CODE                <code_object restrict_chat_member>
+              596  LOAD_STR                 'restrict_chat_member'
+              598  MAKE_FUNCTION_1          'default'
+              600  STORE_NAME               restrict_chat_member
+
+ L. 804       602  LOAD_CONST               (None, None, None, None, None, None, None, None)
+              604  LOAD_CODE                <code_object promote_chat_member>
+              606  LOAD_STR                 'promote_chat_member'
+              608  MAKE_FUNCTION_1          'default'
+              610  STORE_NAME               promote_chat_member
+
+ L. 829       612  LOAD_CODE                <code_object set_chat_administrator_custom_title>
+              614  LOAD_STR                 'set_chat_administrator_custom_title'
+              616  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              618  STORE_NAME               set_chat_administrator_custom_title
+
+ L. 837       620  LOAD_CODE                <code_object set_chat_permissions>
+              622  LOAD_STR                 'set_chat_permissions'
+              624  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              626  STORE_NAME               set_chat_permissions
+
+ L. 846       628  LOAD_CODE                <code_object export_chat_invite_link>
+              630  LOAD_STR                 'export_chat_invite_link'
+              632  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              634  STORE_NAME               export_chat_invite_link
+
+ L. 852       636  LOAD_CODE                <code_object set_chat_photo>
+              638  LOAD_STR                 'set_chat_photo'
+              640  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              642  STORE_NAME               set_chat_photo
+
+ L. 865       644  LOAD_CODE                <code_object delete_chat_photo>
+              646  LOAD_STR                 'delete_chat_photo'
+              648  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              650  STORE_NAME               delete_chat_photo
+
+ L. 871       652  LOAD_CODE                <code_object set_chat_title>
+              654  LOAD_STR                 'set_chat_title'
+              656  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              658  STORE_NAME               set_chat_title
+
+ L. 877       660  LOAD_CODE                <code_object set_my_commands>
+              662  LOAD_STR                 'set_my_commands'
+              664  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              666  STORE_NAME               set_my_commands
+
+ L. 883       668  LOAD_CODE                <code_object set_chat_description>
+              670  LOAD_STR                 'set_chat_description'
+              672  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              674  STORE_NAME               set_chat_description
+
+ L. 891       676  LOAD_CONST               (None,)
+              678  LOAD_CODE                <code_object pin_chat_message>
+              680  LOAD_STR                 'pin_chat_message'
+              682  MAKE_FUNCTION_1          'default'
+              684  STORE_NAME               pin_chat_message
+
+ L. 899       686  LOAD_CODE                <code_object unpin_chat_message>
+              688  LOAD_STR                 'unpin_chat_message'
+              690  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              692  STORE_NAME               unpin_chat_message
+
+ L. 907       694  LOAD_CODE                <code_object unpin_all_chat_messages>
+              696  LOAD_STR                 'unpin_all_chat_messages'
+              698  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              700  STORE_NAME               unpin_all_chat_messages
+
+ L. 915       702  LOAD_CONST               (None, None, None, None, None, None)
+              704  LOAD_CODE                <code_object edit_message_text>
+              706  LOAD_STR                 'edit_message_text'
+              708  MAKE_FUNCTION_1          'default'
+              710  STORE_NAME               edit_message_text
+
+ L. 934       712  LOAD_CONST               (None, None, None, None, None)
+              714  LOAD_CODE                <code_object edit_message_caption>
+              716  LOAD_STR                 'edit_message_caption'
+              718  MAKE_FUNCTION_1          'default'
+              720  STORE_NAME               edit_message_caption
+
+ L. 951       722  LOAD_CONST               (None, None, None, None)
+              724  LOAD_CODE                <code_object edit_message_media>
+              726  LOAD_STR                 'edit_message_media'
+              728  MAKE_FUNCTION_1          'default'
+              730  STORE_NAME               edit_message_media
+
+ L. 966       732  LOAD_CONST               (None, None, None, None)
+              734  LOAD_CODE                <code_object edit_message_reply_markup>
+              736  LOAD_STR                 'edit_message_reply_markup'
+              738  MAKE_FUNCTION_1          'default'
+              740  STORE_NAME               edit_message_reply_markup
+
+ L. 980       742  LOAD_CONST               (None,)
+              744  LOAD_CODE                <code_object delete_message>
+              746  LOAD_STR                 'delete_message'
+              748  MAKE_FUNCTION_1          'default'
+              750  STORE_NAME               delete_message
+
+ L. 990       752  LOAD_CONST               (None, None, None, None)
+              754  LOAD_CODE                <code_object send_game>
+              756  LOAD_STR                 'send_game'
+              758  MAKE_FUNCTION_1          'default'
+              760  STORE_NAME               send_game
+
+ L.1007       762  LOAD_CONST               (None, None, None, None, None)
+              764  LOAD_CODE                <code_object set_game_score>
+              766  LOAD_STR                 'set_game_score'
+              768  MAKE_FUNCTION_1          'default'
+              770  STORE_NAME               set_game_score
+
+ L.1037       772  LOAD_CONST               (None, None, None)
+              774  LOAD_CODE                <code_object get_game_high_scores>
+              776  LOAD_STR                 'get_game_high_scores'
+              778  MAKE_FUNCTION_1          'default'
+              780  STORE_NAME               get_game_high_scores
+
+ L.1061       782  LOAD_CONST               (None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None)
+              784  LOAD_CODE                <code_object send_invoice>
+              786  LOAD_STR                 'send_invoice'
+              788  MAKE_FUNCTION_1          'default'
+              790  STORE_NAME               send_invoice
+
+ L.1136       792  LOAD_CONST               (None, None)
+              794  LOAD_CODE                <code_object answer_shipping_query>
+              796  LOAD_STR                 'answer_shipping_query'
+              798  MAKE_FUNCTION_1          'default'
+              800  STORE_NAME               answer_shipping_query
+
+ L.1155       802  LOAD_CONST               (None,)
+              804  LOAD_CODE                <code_object answer_pre_checkout_query>
+              806  LOAD_STR                 'answer_pre_checkout_query'
+              808  MAKE_FUNCTION_1          'default'
+              810  STORE_NAME               answer_pre_checkout_query
+
+ L.1173       812  LOAD_CONST               (None, None, None, None)
+              814  LOAD_CODE                <code_object answer_callback_query>
+              816  LOAD_STR                 'answer_callback_query'
+              818  MAKE_FUNCTION_1          'default'
+              820  STORE_NAME               answer_callback_query
+
+ L.1199       822  LOAD_CONST               (None, None, None, None, None)
+              824  LOAD_CODE                <code_object answer_inline_query>
+              826  LOAD_STR                 'answer_inline_query'
+              828  MAKE_FUNCTION_1          'default'
+              830  STORE_NAME               answer_inline_query
+
+ L.1216       832  LOAD_CODE                <code_object get_sticker_set>
+              834  LOAD_STR                 'get_sticker_set'
+              836  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              838  STORE_NAME               get_sticker_set
+
+ L.1221       840  LOAD_CODE                <code_object upload_sticker_file>
+              842  LOAD_STR                 'upload_sticker_file'
+              844  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              846  STORE_NAME               upload_sticker_file
+
+ L.1228       848  LOAD_CONST               (None, None)
+              850  LOAD_CODE                <code_object create_new_sticker_set>
+              852  LOAD_STR                 'create_new_sticker_set'
+              854  MAKE_FUNCTION_1          'default'
+              856  STORE_NAME               create_new_sticker_set
+
+ L.1245       858  LOAD_CODE                <code_object add_sticker_to_set>
+              860  LOAD_STR                 'add_sticker_to_set'
+              862  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              864  STORE_NAME               add_sticker_to_set
+
+ L.1258       866  LOAD_CODE                <code_object set_sticker_position_in_set>
+              868  LOAD_STR                 'set_sticker_position_in_set'
+              870  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              872  STORE_NAME               set_sticker_position_in_set
+
+ L.1264       874  LOAD_CODE                <code_object delete_sticker_from_set>
+              876  LOAD_STR                 'delete_sticker_from_set'
+              878  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              880  STORE_NAME               delete_sticker_from_set
+
+ L.1270       882  LOAD_CONST               (None, None, None, None, None, None, None, None, None, False, None, None, None)
+              884  LOAD_CODE                <code_object send_poll>
+              886  LOAD_STR                 'send_poll'
+              888  MAKE_FUNCTION_1          'default'
+              890  STORE_NAME               send_poll
+
+ L.1315       892  LOAD_CONST               (None,)
+              894  LOAD_CODE                <code_object stop_poll>
+              896  LOAD_STR                 'stop_poll'
+              898  MAKE_FUNCTION_1          'default'
+              900  STORE_NAME               stop_poll
+
+ L.1323       902  LOAD_CODE                <code_object _convert_list_json_serializable>
+              904  LOAD_STR                 '_convert_list_json_serializable'
+              906  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              908  STORE_NAME               _convert_list_json_serializable
+
+ L.1333       910  LOAD_CODE                <code_object _convert_markup>
+              912  LOAD_STR                 '_convert_markup'
+              914  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              916  STORE_NAME               _convert_markup
+
+ L.1339       918  LOAD_CODE                <code_object _convert_entites>
+              920  LOAD_STR                 '_convert_entites'
+              922  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              924  STORE_NAME               _convert_entites
+
+ L.1350       926  LOAD_CODE                <code_object convert_input_media>
+              928  LOAD_STR                 'convert_input_media'
+              930  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              932  STORE_NAME               convert_input_media
+
+ L.1356       934  LOAD_CODE                <code_object convert_input_media_array>
+              936  LOAD_STR                 'convert_input_media_array'
+              938  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              940  STORE_NAME               convert_input_media_array
+
+ L.1369       942  LOAD_CODE                <code_object _no_encode>
+              944  LOAD_STR                 '_no_encode'
+              946  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              948  STORE_NAME               _no_encode
+
+ L.1379       950  LOAD_BUILD_CLASS 
+              952  LOAD_CODE                <code_object ApiException>
+              954  LOAD_STR                 'ApiException'
+              956  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              958  LOAD_STR                 'ApiException'
+              960  LOAD_NAME                Exception
+              962  CALL_FUNCTION_3       3  ''
+              964  STORE_NAME               ApiException
+
+ L.1392       966  LOAD_BUILD_CLASS 
+              968  LOAD_CODE                <code_object ApiHTTPException>
+              970  LOAD_STR                 'ApiHTTPException'
+              972  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              974  LOAD_STR                 'ApiHTTPException'
+              976  LOAD_NAME                ApiException
+              978  CALL_FUNCTION_3       3  ''
+              980  STORE_NAME               ApiHTTPException
+
+ L.1404       982  LOAD_BUILD_CLASS 
+              984  LOAD_CODE                <code_object ApiInvalidJSONException>
+              986  LOAD_STR                 'ApiInvalidJSONException'
+              988  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              990  LOAD_STR                 'ApiInvalidJSONException'
+              992  LOAD_NAME                ApiException
+              994  CALL_FUNCTION_3       3  ''
+              996  STORE_NAME               ApiInvalidJSONException
+
+ L.1416       998  LOAD_BUILD_CLASS 
+             1000  LOAD_CODE                <code_object ApiTelegramException>
+             1002  LOAD_STR                 'ApiTelegramException'
+             1004  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+             1006  LOAD_STR                 'ApiTelegramException'
+             1008  LOAD_NAME                ApiException
+             1010  CALL_FUNCTION_3       3  ''
+             1012  STORE_NAME               ApiTelegramException
+
+Parse error at or near `<121>' instruction at offset 38
+
+Instruction context:
+   
+ L.   7        34  DUP_TOP          
+                  36  LOAD_NAME                ImportError
+->                38  <121>                58  ''
+                  40  POP_TOP          
+                  42  POP_TOP          
+                  44  POP_TOP          
+
+test/112737.pyc -- 
+# decompile failed

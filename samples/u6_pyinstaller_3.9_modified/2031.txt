@@ -1,0 +1,234 @@
+
+# file test/2031.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\n==================================================\nLaguerre Series (:mod:`numpy.polynomial.laguerre`)\n==================================================\n\nThis module provides a number of objects (mostly functions) useful for\ndealing with Laguerre series, including a `Laguerre` class that\nencapsulates the usual arithmetic operations.  (General information\non how this module represents and works with such polynomials is in the\ndocstring for its "parent" sub-package, `numpy.polynomial`).\n\nClasses\n-------\n.. autosummary::\n   :toctree: generated/\n\n   Laguerre\n\nConstants\n---------\n.. autosummary::\n   :toctree: generated/\n\n   lagdomain\n   lagzero\n   lagone\n   lagx\n\nArithmetic\n----------\n.. autosummary::\n   :toctree: generated/\n\n   lagadd\n   lagsub\n   lagmulx\n   lagmul\n   lagdiv\n   lagpow\n   lagval\n   lagval2d\n   lagval3d\n   laggrid2d\n   laggrid3d\n\nCalculus\n--------\n.. autosummary::\n   :toctree: generated/\n\n   lagder\n   lagint\n\nMisc Functions\n--------------\n.. autosummary::\n   :toctree: generated/\n\n   lagfromroots\n   lagroots\n   lagvander\n   lagvander2d\n   lagvander3d\n   laggauss\n   lagweight\n   lagcompanion\n   lagfit\n   lagtrim\n   lagline\n   lag2poly\n   poly2lag\n\nSee also\n--------\n`numpy.polynomial`\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  78         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              numpy
+               10  STORE_NAME               np
+
+ L.  79        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME_ATTR         numpy.linalg
+               18  IMPORT_FROM              linalg
+               20  STORE_NAME               la
+               22  POP_TOP          
+
+ L.  80        24  LOAD_CONST               0
+               26  LOAD_CONST               ('normalize_axis_index',)
+               28  IMPORT_NAME_ATTR         numpy.core.multiarray
+               30  IMPORT_FROM              normalize_axis_index
+               32  STORE_NAME               normalize_axis_index
+               34  POP_TOP          
+
+ L.  82        36  LOAD_CONST               1
+               38  LOAD_CONST               ('polyutils',)
+               40  IMPORT_NAME              
+               42  IMPORT_FROM              polyutils
+               44  STORE_NAME               pu
+               46  POP_TOP          
+
+ L.  83        48  LOAD_CONST               1
+               50  LOAD_CONST               ('ABCPolyBase',)
+               52  IMPORT_NAME              _polybase
+               54  IMPORT_FROM              ABCPolyBase
+               56  STORE_NAME               ABCPolyBase
+               58  POP_TOP          
+
+ L.  85        60  BUILD_LIST_0          0 
+               62  LOAD_CONST               ('lagzero', 'lagone', 'lagx', 'lagdomain', 'lagline', 'lagadd', 'lagsub', 'lagmulx', 'lagmul', 'lagdiv', 'lagpow', 'lagval', 'lagder', 'lagint', 'lag2poly', 'poly2lag', 'lagfromroots', 'lagvander', 'lagfit', 'lagtrim', 'lagroots', 'Laguerre', 'lagval2d', 'lagval3d', 'laggrid2d', 'laggrid3d', 'lagvander2d', 'lagvander3d', 'lagcompanion', 'laggauss', 'lagweight')
+               64  CALL_FINALLY         67  'to 67'
+               66  STORE_NAME               __all__
+
+ L.  93        68  LOAD_NAME                pu
+               70  LOAD_ATTR                trimcoef
+               72  STORE_NAME               lagtrim
+
+ L.  96        74  LOAD_CODE                <code_object poly2lag>
+               76  LOAD_STR                 'poly2lag'
+               78  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               80  STORE_NAME               poly2lag
+
+ L. 142        82  LOAD_CODE                <code_object lag2poly>
+               84  LOAD_STR                 'lag2poly'
+               86  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               88  STORE_NAME               lag2poly
+
+ L. 202        90  LOAD_NAME                np
+               92  LOAD_METHOD              array
+               94  LOAD_CONST               0
+               96  LOAD_CONST               1
+               98  BUILD_LIST_2          2 
+              100  CALL_METHOD_1         1  ''
+              102  STORE_NAME               lagdomain
+
+ L. 205       104  LOAD_NAME                np
+              106  LOAD_METHOD              array
+              108  LOAD_CONST               0
+              110  BUILD_LIST_1          1 
+              112  CALL_METHOD_1         1  ''
+              114  STORE_NAME               lagzero
+
+ L. 208       116  LOAD_NAME                np
+              118  LOAD_METHOD              array
+              120  LOAD_CONST               1
+              122  BUILD_LIST_1          1 
+              124  CALL_METHOD_1         1  ''
+              126  STORE_NAME               lagone
+
+ L. 211       128  LOAD_NAME                np
+              130  LOAD_METHOD              array
+              132  LOAD_CONST               1
+              134  LOAD_CONST               -1
+              136  BUILD_LIST_2          2 
+              138  CALL_METHOD_1         1  ''
+              140  STORE_NAME               lagx
+
+ L. 214       142  LOAD_CODE                <code_object lagline>
+              144  LOAD_STR                 'lagline'
+              146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              148  STORE_NAME               lagline
+
+ L. 250       150  LOAD_CODE                <code_object lagfromroots>
+              152  LOAD_STR                 'lagfromroots'
+              154  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              156  STORE_NAME               lagfromroots
+
+ L. 302       158  LOAD_CODE                <code_object lagadd>
+              160  LOAD_STR                 'lagadd'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  STORE_NAME               lagadd
+
+ L. 343       166  LOAD_CODE                <code_object lagsub>
+              168  LOAD_STR                 'lagsub'
+              170  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              172  STORE_NAME               lagsub
+
+ L. 383       174  LOAD_CODE                <code_object lagmulx>
+              176  LOAD_STR                 'lagmulx'
+              178  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              180  STORE_NAME               lagmulx
+
+ L. 437       182  LOAD_CODE                <code_object lagmul>
+              184  LOAD_STR                 'lagmul'
+              186  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              188  STORE_NAME               lagmul
+
+ L. 503       190  LOAD_CODE                <code_object lagdiv>
+              192  LOAD_STR                 'lagdiv'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  STORE_NAME               lagdiv
+
+ L. 549       198  LOAD_CONST               (16,)
+              200  LOAD_CODE                <code_object lagpow>
+              202  LOAD_STR                 'lagpow'
+              204  MAKE_FUNCTION_1          'default'
+              206  STORE_NAME               lagpow
+
+ L. 586       208  LOAD_CONST               (1, 1, 0)
+              210  LOAD_CODE                <code_object lagder>
+              212  LOAD_STR                 'lagder'
+              214  MAKE_FUNCTION_1          'default'
+              216  STORE_NAME               lagder
+
+ L. 672       218  LOAD_CONST               1
+              220  BUILD_LIST_0          0 
+              222  LOAD_CONST               0
+              224  LOAD_CONST               1
+              226  LOAD_CONST               0
+              228  BUILD_TUPLE_5         5 
+              230  LOAD_CODE                <code_object lagint>
+              232  LOAD_STR                 'lagint'
+              234  MAKE_FUNCTION_1          'default'
+              236  STORE_NAME               lagint
+
+ L. 796       238  LOAD_CONST               (True,)
+              240  LOAD_CODE                <code_object lagval>
+              242  LOAD_STR                 'lagval'
+              244  MAKE_FUNCTION_1          'default'
+              246  STORE_NAME               lagval
+
+ L. 891       248  LOAD_CODE                <code_object lagval2d>
+              250  LOAD_STR                 'lagval2d'
+              252  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              254  STORE_NAME               lagval2d
+
+ L. 940       256  LOAD_CODE                <code_object laggrid2d>
+              258  LOAD_STR                 'laggrid2d'
+              260  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              262  STORE_NAME               laggrid2d
+
+ L. 993       264  LOAD_CODE                <code_object lagval3d>
+              266  LOAD_STR                 'lagval3d'
+              268  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              270  STORE_NAME               lagval3d
+
+ L.1044       272  LOAD_CODE                <code_object laggrid3d>
+              274  LOAD_STR                 'laggrid3d'
+              276  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              278  STORE_NAME               laggrid3d
+
+ L.1100       280  LOAD_CODE                <code_object lagvander>
+              282  LOAD_STR                 'lagvander'
+              284  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              286  STORE_NAME               lagvander
+
+ L.1160       288  LOAD_CODE                <code_object lagvander2d>
+              290  LOAD_STR                 'lagvander2d'
+              292  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              294  STORE_NAME               lagvander2d
+
+ L.1213       296  LOAD_CODE                <code_object lagvander3d>
+              298  LOAD_STR                 'lagvander3d'
+              300  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              302  STORE_NAME               lagvander3d
+
+ L.1267       304  LOAD_CONST               (None, False, None)
+              306  LOAD_CODE                <code_object lagfit>
+              308  LOAD_STR                 'lagfit'
+              310  MAKE_FUNCTION_1          'default'
+              312  STORE_NAME               lagfit
+
+ L.1394       314  LOAD_CODE                <code_object lagcompanion>
+              316  LOAD_STR                 'lagcompanion'
+              318  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              320  STORE_NAME               lagcompanion
+
+ L.1438       322  LOAD_CODE                <code_object lagroots>
+              324  LOAD_STR                 'lagroots'
+              326  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              328  STORE_NAME               lagroots
+
+ L.1498       330  LOAD_CODE                <code_object laggauss>
+              332  LOAD_STR                 'laggauss'
+              334  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              336  STORE_NAME               laggauss
+
+ L.1562       338  LOAD_CODE                <code_object lagweight>
+              340  LOAD_STR                 'lagweight'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  STORE_NAME               lagweight
+
+ L.1592       346  LOAD_BUILD_CLASS 
+              348  LOAD_CODE                <code_object Laguerre>
+              350  LOAD_STR                 'Laguerre'
+              352  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              354  LOAD_STR                 'Laguerre'
+              356  LOAD_NAME                ABCPolyBase
+              358  CALL_FUNCTION_3       3  ''
+              360  STORE_NAME               Laguerre
+
+Parse error at or near `CALL_FINALLY' instruction at offset 64
+
+Instruction context:
+   
+ L.  85        60  BUILD_LIST_0          0 
+                  62  LOAD_CONST               ('lagzero', 'lagone', 'lagx', 'lagdomain', 'lagline', 'lagadd', 'lagsub', 'lagmulx', 'lagmul', 'lagdiv', 'lagpow', 'lagval', 'lagder', 'lagint', 'lag2poly', 'poly2lag', 'lagfromroots', 'lagvander', 'lagfit', 'lagtrim', 'lagroots', 'Laguerre', 'lagval2d', 'lagval3d', 'laggrid2d', 'laggrid3d', 'lagvander2d', 'lagvander3d', 'lagcompanion', 'laggauss', 'lagweight')
+->                64  CALL_FINALLY         67  'to 67'
+                  66  STORE_NAME               __all__
+
+test/2031.pyc -- 
+# decompile failed

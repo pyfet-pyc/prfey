@@ -1,0 +1,36 @@
+Instruction context:
+   
+ L.  39        56  POP_EXCEPT       
+->                58  LOAD_CONST               (None, None)
+                  60  RETURN_VALUE     
+                62_0  COME_FROM            38  '38'
+                  62  END_FINALLY      
+                64_0  COME_FROM            30  '30'
+Instruction context:
+   
+ L. 346       142  POP_EXCEPT       
+                 144  JUMP_BACK           104  'to 104'
+->               146  POP_EXCEPT       
+                 148  JUMP_FORWARD        152  'to 152'
+               150_0  COME_FROM           134  '134'
+                 150  END_FINALLY      
+               152_0  COME_FROM           148  '148'
+               152_1  COME_FROM           126  '126'
+Instruction context:
+   
+ L. 511        24  LOAD_GLOBAL              super
+                  26  CALL_FUNCTION_0       0  ''
+                  28  LOAD_METHOD              spawn
+                  30  LOAD_FAST                'cmd'
+                  32  CALL_METHOD_1         1  ''
+                  34  POP_BLOCK        
+->                36  CALL_FINALLY         40  'to 40'
+                  38  RETURN_VALUE     
+                40_0  COME_FROM            36  '36'
+                40_1  COME_FROM_FINALLY    10  '10'
+
+../test/125143.pyc -- 
+# decompile failed
+
+# file ../test/125143.pyc
+# Deparsing stopped due to parse error

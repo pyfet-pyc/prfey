@@ -1,0 +1,493 @@
+
+# file test/1993.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nContains the core of NumPy: ndarray, ufuncs, dtypes, etc.\n\nPlease note that this module is private.  All functions and objects\nare available in the main ``numpy`` namespace - use that instead.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.   9         4  LOAD_CONST               0
+                6  LOAD_CONST               ('version',)
+                8  IMPORT_NAME_ATTR         numpy.version
+               10  IMPORT_FROM              version
+               12  STORE_NAME               __version__
+               14  POP_TOP          
+
+ L.  11        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              os
+               22  STORE_NAME               os
+
+ L.  15        24  BUILD_LIST_0          0 
+               26  STORE_NAME               env_added
+
+ L.  16        28  LOAD_CONST               ('OPENBLAS_MAIN_FREE', 'GOTOBLAS_MAIN_FREE')
+               30  GET_ITER         
+             32_0  COME_FROM            66  '66'
+             32_1  COME_FROM            44  '44'
+               32  FOR_ITER             68  'to 68'
+               34  STORE_NAME               envkey
+
+ L.  17        36  LOAD_NAME                envkey
+               38  LOAD_NAME                os
+               40  LOAD_ATTR                environ
+               42  <118>                 1  ''
+               44  POP_JUMP_IF_FALSE_BACK    32  'to 32'
+
+ L.  18        46  LOAD_STR                 '1'
+               48  LOAD_NAME                os
+               50  LOAD_ATTR                environ
+               52  LOAD_NAME                envkey
+               54  STORE_SUBSCR     
+
+ L.  19        56  LOAD_NAME                env_added
+               58  LOAD_METHOD              append
+               60  LOAD_NAME                envkey
+               62  CALL_METHOD_1         1  ''
+               64  POP_TOP          
+               66  JUMP_BACK            32  'to 32'
+             68_0  COME_FROM            32  '32'
+
+ L.  21        68  SETUP_FINALLY       194  'to 194'
+               70  SETUP_FINALLY        88  'to 88'
+
+ L.  22        72  LOAD_CONST               1
+               74  LOAD_CONST               ('multiarray',)
+               76  IMPORT_NAME              
+               78  IMPORT_FROM              multiarray
+               80  STORE_NAME               multiarray
+               82  POP_TOP          
+               84  POP_BLOCK        
+               86  JUMP_FORWARD        172  'to 172'
+             88_0  COME_FROM_FINALLY    70  '70'
+
+ L.  23        88  DUP_TOP          
+               90  LOAD_NAME                ImportError
+               92  <121>               170  ''
+               94  POP_TOP          
+               96  STORE_NAME               exc
+               98  POP_TOP          
+              100  SETUP_FINALLY       162  'to 162'
+
+ L.  24       102  LOAD_CONST               0
+              104  LOAD_CONST               None
+              106  IMPORT_NAME              sys
+              108  STORE_NAME               sys
+
+ L.  25       110  LOAD_STR                 '\n\nIMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!\n\nImporting the numpy C-extensions failed. This error can happen for\nmany reasons, often due to issues with your setup or how NumPy was\ninstalled.\n\nWe have compiled some common reasons and troubleshooting tips at:\n\n    https://numpy.org/devdocs/user/troubleshooting-importerror.html\n\nPlease note and check the following:\n\n  * The Python version is: Python%d.%d from "%s"\n  * The NumPy version is: "%s"\n\nand make sure that they are the versions you expect.\nPlease carefully study the documentation linked above for further help.\n\nOriginal error was: %s\n'
+
+ L.  46       112  LOAD_NAME                sys
+              114  LOAD_ATTR                version_info
+              116  LOAD_CONST               0
+              118  BINARY_SUBSCR    
+              120  LOAD_NAME                sys
+              122  LOAD_ATTR                version_info
+              124  LOAD_CONST               1
+              126  BINARY_SUBSCR    
+              128  LOAD_NAME                sys
+              130  LOAD_ATTR                executable
+
+ L.  47       132  LOAD_NAME                __version__
+              134  LOAD_NAME                exc
+
+ L.  46       136  BUILD_TUPLE_5         5 
+
+ L.  25       138  BINARY_MODULO    
+              140  STORE_NAME               msg
+
+ L.  48       142  LOAD_NAME                ImportError
+              144  LOAD_NAME                msg
+              146  CALL_FUNCTION_1       1  ''
+              148  RAISE_VARARGS_1       1  'exception instance'
+              150  POP_BLOCK        
+              152  POP_EXCEPT       
+              154  LOAD_CONST               None
+              156  STORE_NAME               exc
+              158  DELETE_NAME              exc
+              160  JUMP_FORWARD        172  'to 172'
+            162_0  COME_FROM_FINALLY   100  '100'
+              162  LOAD_CONST               None
+              164  STORE_NAME               exc
+              166  DELETE_NAME              exc
+              168  <48>             
+              170  <48>             
+            172_0  COME_FROM           160  '160'
+            172_1  COME_FROM            86  '86'
+              172  POP_BLOCK        
+
+ L.  50       174  LOAD_NAME                env_added
+              176  GET_ITER         
+            178_0  COME_FROM           190  '190'
+              178  FOR_ITER            192  'to 192'
+              180  STORE_NAME               envkey
+
+ L.  51       182  LOAD_NAME                os
+              184  LOAD_ATTR                environ
+              186  LOAD_NAME                envkey
+              188  DELETE_SUBSCR    
+              190  JUMP_BACK           178  'to 178'
+            192_0  COME_FROM           178  '178'
+              192  JUMP_FORWARD        214  'to 214'
+            194_0  COME_FROM_FINALLY    68  '68'
+
+ L.  50       194  LOAD_NAME                env_added
+              196  GET_ITER         
+            198_0  COME_FROM           210  '210'
+              198  FOR_ITER            212  'to 212'
+              200  STORE_NAME               envkey
+
+ L.  51       202  LOAD_NAME                os
+              204  LOAD_ATTR                environ
+              206  LOAD_NAME                envkey
+              208  DELETE_SUBSCR    
+              210  JUMP_BACK           198  'to 198'
+            212_0  COME_FROM           198  '198'
+              212  <48>             
+            214_0  COME_FROM           192  '192'
+
+ L.  52       214  DELETE_NAME              envkey
+
+ L.  53       216  DELETE_NAME              env_added
+
+ L.  54       218  DELETE_NAME              os
+
+ L.  56       220  LOAD_CONST               1
+              222  LOAD_CONST               ('umath',)
+              224  IMPORT_NAME              
+              226  IMPORT_FROM              umath
+              228  STORE_NAME               umath
+              230  POP_TOP          
+
+ L.  60       232  LOAD_NAME                hasattr
+              234  LOAD_NAME                multiarray
+              236  LOAD_STR                 '_multiarray_umath'
+              238  CALL_FUNCTION_2       2  ''
+              240  POP_JUMP_IF_FALSE   254  'to 254'
+
+ L.  61       242  LOAD_NAME                hasattr
+              244  LOAD_NAME                umath
+              246  LOAD_STR                 '_multiarray_umath'
+              248  CALL_FUNCTION_2       2  ''
+
+ L.  60   250_252  POP_JUMP_IF_TRUE    292  'to 292'
+            254_0  COME_FROM           240  '240'
+
+ L.  62       254  LOAD_CONST               0
+              256  LOAD_CONST               None
+              258  IMPORT_NAME              sys
+              260  STORE_NAME               sys
+
+ L.  63       262  LOAD_NAME                sys
+              264  LOAD_ATTR                modules
+              266  LOAD_STR                 'numpy'
+              268  BINARY_SUBSCR    
+              270  LOAD_ATTR                __path__
+              272  STORE_NAME               path
+
+ L.  64       274  LOAD_STR                 'Something is wrong with the numpy installation. While importing we detected an older version of numpy in {}. One method of fixing this is to repeatedly uninstall numpy until none is found, then reinstall this version.'
+              276  STORE_NAME               msg
+
+ L.  68       278  LOAD_NAME                ImportError
+              280  LOAD_NAME                msg
+              282  LOAD_METHOD              format
+              284  LOAD_NAME                path
+              286  CALL_METHOD_1         1  ''
+              288  CALL_FUNCTION_1       1  ''
+              290  RAISE_VARARGS_1       1  'exception instance'
+            292_0  COME_FROM           250  '250'
+
+ L.  70       292  LOAD_CONST               1
+              294  LOAD_CONST               ('numerictypes',)
+              296  IMPORT_NAME              
+              298  IMPORT_FROM              numerictypes
+              300  STORE_NAME               nt
+              302  POP_TOP          
+
+ L.  71       304  LOAD_NAME                multiarray
+              306  LOAD_METHOD              set_typeDict
+              308  LOAD_NAME                nt
+              310  LOAD_ATTR                sctypeDict
+              312  CALL_METHOD_1         1  ''
+              314  POP_TOP          
+
+ L.  72       316  LOAD_CONST               1
+              318  LOAD_CONST               ('numeric',)
+              320  IMPORT_NAME              
+              322  IMPORT_FROM              numeric
+              324  STORE_NAME               numeric
+              326  POP_TOP          
+
+ L.  73       328  LOAD_CONST               1
+              330  LOAD_CONST               ('*',)
+              332  IMPORT_NAME              numeric
+              334  IMPORT_STAR      
+
+ L.  74       336  LOAD_CONST               1
+              338  LOAD_CONST               ('fromnumeric',)
+              340  IMPORT_NAME              
+              342  IMPORT_FROM              fromnumeric
+              344  STORE_NAME               fromnumeric
+              346  POP_TOP          
+
+ L.  75       348  LOAD_CONST               1
+              350  LOAD_CONST               ('*',)
+              352  IMPORT_NAME              fromnumeric
+              354  IMPORT_STAR      
+
+ L.  76       356  LOAD_CONST               1
+              358  LOAD_CONST               ('defchararray',)
+              360  IMPORT_NAME              
+              362  IMPORT_FROM              defchararray
+              364  STORE_NAME               char
+              366  POP_TOP          
+
+ L.  77       368  LOAD_CONST               1
+              370  LOAD_CONST               ('records',)
+              372  IMPORT_NAME              
+              374  IMPORT_FROM              records
+              376  STORE_NAME               rec
+              378  POP_TOP          
+
+ L.  78       380  LOAD_CONST               1
+              382  LOAD_CONST               ('*',)
+              384  IMPORT_NAME              records
+              386  IMPORT_STAR      
+
+ L.  79       388  LOAD_CONST               1
+              390  LOAD_CONST               ('*',)
+              392  IMPORT_NAME              memmap
+              394  IMPORT_STAR      
+
+ L.  80       396  LOAD_CONST               1
+              398  LOAD_CONST               ('chararray',)
+              400  IMPORT_NAME              defchararray
+              402  IMPORT_FROM              chararray
+              404  STORE_NAME               chararray
+              406  POP_TOP          
+
+ L.  81       408  LOAD_CONST               1
+              410  LOAD_CONST               ('function_base',)
+              412  IMPORT_NAME              
+              414  IMPORT_FROM              function_base
+              416  STORE_NAME               function_base
+              418  POP_TOP          
+
+ L.  82       420  LOAD_CONST               1
+              422  LOAD_CONST               ('*',)
+              424  IMPORT_NAME              function_base
+              426  IMPORT_STAR      
+
+ L.  83       428  LOAD_CONST               1
+              430  LOAD_CONST               ('machar',)
+              432  IMPORT_NAME              
+              434  IMPORT_FROM              machar
+              436  STORE_NAME               machar
+              438  POP_TOP          
+
+ L.  84       440  LOAD_CONST               1
+              442  LOAD_CONST               ('*',)
+              444  IMPORT_NAME              machar
+              446  IMPORT_STAR      
+
+ L.  85       448  LOAD_CONST               1
+              450  LOAD_CONST               ('getlimits',)
+              452  IMPORT_NAME              
+              454  IMPORT_FROM              getlimits
+              456  STORE_NAME               getlimits
+              458  POP_TOP          
+
+ L.  86       460  LOAD_CONST               1
+              462  LOAD_CONST               ('*',)
+              464  IMPORT_NAME              getlimits
+              466  IMPORT_STAR      
+
+ L.  87       468  LOAD_CONST               1
+              470  LOAD_CONST               ('shape_base',)
+              472  IMPORT_NAME              
+              474  IMPORT_FROM              shape_base
+              476  STORE_NAME               shape_base
+              478  POP_TOP          
+
+ L.  88       480  LOAD_CONST               1
+              482  LOAD_CONST               ('*',)
+              484  IMPORT_NAME              shape_base
+              486  IMPORT_STAR      
+
+ L.  89       488  LOAD_CONST               1
+              490  LOAD_CONST               ('einsumfunc',)
+              492  IMPORT_NAME              
+              494  IMPORT_FROM              einsumfunc
+              496  STORE_NAME               einsumfunc
+              498  POP_TOP          
+
+ L.  90       500  LOAD_CONST               1
+              502  LOAD_CONST               ('*',)
+              504  IMPORT_NAME              einsumfunc
+              506  IMPORT_STAR      
+
+ L.  91       508  DELETE_NAME              nt
+
+ L.  93       510  LOAD_CONST               1
+              512  LOAD_CONST               ('amax', 'amin', 'round_')
+              514  IMPORT_NAME              fromnumeric
+              516  IMPORT_FROM              amax
+              518  STORE_NAME               max
+              520  IMPORT_FROM              amin
+              522  STORE_NAME               min
+              524  IMPORT_FROM              round_
+              526  STORE_NAME               round
+              528  POP_TOP          
+
+ L.  94       530  LOAD_CONST               1
+              532  LOAD_CONST               ('absolute',)
+              534  IMPORT_NAME              numeric
+              536  IMPORT_FROM              absolute
+              538  STORE_NAME               abs
+              540  POP_TOP          
+
+ L.  98       542  LOAD_CONST               1
+              544  LOAD_CONST               ('_add_newdocs',)
+              546  IMPORT_NAME              
+              548  IMPORT_FROM              _add_newdocs
+              550  STORE_NAME               _add_newdocs
+              552  POP_TOP          
+
+ L. 100       554  LOAD_CONST               1
+              556  LOAD_CONST               ('_dtype_ctypes',)
+              558  IMPORT_NAME              
+              560  IMPORT_FROM              _dtype_ctypes
+              562  STORE_NAME               _dtype_ctypes
+              564  POP_TOP          
+
+ L. 101       566  LOAD_CONST               1
+              568  LOAD_CONST               ('_internal',)
+              570  IMPORT_NAME              
+              572  IMPORT_FROM              _internal
+              574  STORE_NAME               _internal
+              576  POP_TOP          
+
+ L. 102       578  LOAD_CONST               1
+              580  LOAD_CONST               ('_dtype',)
+              582  IMPORT_NAME              
+              584  IMPORT_FROM              _dtype
+              586  STORE_NAME               _dtype
+              588  POP_TOP          
+
+ L. 103       590  LOAD_CONST               1
+              592  LOAD_CONST               ('_methods',)
+              594  IMPORT_NAME              
+              596  IMPORT_FROM              _methods
+              598  STORE_NAME               _methods
+              600  POP_TOP          
+
+ L. 105       602  BUILD_LIST_0          0 
+              604  LOAD_CONST               ('char', 'rec', 'memmap')
+              606  CALL_FINALLY        609  'to 609'
+              608  STORE_NAME               __all__
+
+ L. 106       610  LOAD_NAME                __all__
+              612  LOAD_NAME                numeric
+              614  LOAD_ATTR                __all__
+              616  INPLACE_ADD      
+              618  STORE_NAME               __all__
+
+ L. 107       620  LOAD_NAME                __all__
+              622  LOAD_NAME                fromnumeric
+              624  LOAD_ATTR                __all__
+              626  INPLACE_ADD      
+              628  STORE_NAME               __all__
+
+ L. 108       630  LOAD_NAME                __all__
+              632  LOAD_NAME                rec
+              634  LOAD_ATTR                __all__
+              636  INPLACE_ADD      
+              638  STORE_NAME               __all__
+
+ L. 109       640  LOAD_NAME                __all__
+              642  LOAD_STR                 'chararray'
+              644  BUILD_LIST_1          1 
+              646  INPLACE_ADD      
+              648  STORE_NAME               __all__
+
+ L. 110       650  LOAD_NAME                __all__
+              652  LOAD_NAME                function_base
+              654  LOAD_ATTR                __all__
+              656  INPLACE_ADD      
+              658  STORE_NAME               __all__
+
+ L. 111       660  LOAD_NAME                __all__
+              662  LOAD_NAME                machar
+              664  LOAD_ATTR                __all__
+              666  INPLACE_ADD      
+              668  STORE_NAME               __all__
+
+ L. 112       670  LOAD_NAME                __all__
+              672  LOAD_NAME                getlimits
+              674  LOAD_ATTR                __all__
+              676  INPLACE_ADD      
+              678  STORE_NAME               __all__
+
+ L. 113       680  LOAD_NAME                __all__
+              682  LOAD_NAME                shape_base
+              684  LOAD_ATTR                __all__
+              686  INPLACE_ADD      
+              688  STORE_NAME               __all__
+
+ L. 114       690  LOAD_NAME                __all__
+              692  LOAD_NAME                einsumfunc
+              694  LOAD_ATTR                __all__
+              696  INPLACE_ADD      
+              698  STORE_NAME               __all__
+
+ L. 120       700  LOAD_CODE                <code_object _ufunc_reconstruct>
+              702  LOAD_STR                 '_ufunc_reconstruct'
+              704  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              706  STORE_NAME               _ufunc_reconstruct
+
+ L. 128       708  LOAD_CODE                <code_object _ufunc_reduce>
+              710  LOAD_STR                 '_ufunc_reduce'
+              712  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              714  STORE_NAME               _ufunc_reduce
+
+ L. 134       716  LOAD_CONST               0
+              718  LOAD_CONST               None
+              720  IMPORT_NAME              copyreg
+              722  STORE_NAME               copyreg
+
+ L. 136       724  LOAD_NAME                copyreg
+              726  LOAD_METHOD              pickle
+              728  LOAD_NAME                ufunc
+              730  LOAD_NAME                _ufunc_reduce
+              732  LOAD_NAME                _ufunc_reconstruct
+              734  CALL_METHOD_3         3  ''
+              736  POP_TOP          
+
+ L. 138       738  DELETE_NAME              copyreg
+
+ L. 139       740  DELETE_NAME              _ufunc_reduce
+
+ L. 141       742  LOAD_CONST               0
+              744  LOAD_CONST               ('PytestTester',)
+              746  IMPORT_NAME_ATTR         numpy._pytesttester
+              748  IMPORT_FROM              PytestTester
+              750  STORE_NAME               PytestTester
+              752  POP_TOP          
+
+ L. 142       754  LOAD_NAME                PytestTester
+              756  LOAD_NAME                __name__
+              758  CALL_FUNCTION_1       1  ''
+              760  STORE_NAME               test
+
+ L. 143       762  DELETE_NAME              PytestTester
+
+Parse error at or near `<118>' instruction at offset 42
+
+Instruction context:
+   
+ L.  17        36  LOAD_NAME                envkey
+                  38  LOAD_NAME                os
+                  40  LOAD_ATTR                environ
+->                42  <118>                 1  ''
+                  44  POP_JUMP_IF_FALSE_BACK    32  'to 32'
+
+test/1993.pyc -- 
+# decompile failed

@@ -1,0 +1,39 @@
+Instruction context:
+   
+ L. 546       162  LOAD_FAST                'value'
+->               164  RETURN_VALUE     
+Instruction context:
+   
+ L. 699        92  POP_EXCEPT       
+                  94  JUMP_BACK            32  'to 32'
+->                96  POP_EXCEPT       
+                  98  JUMP_FORWARD        102  'to 102'
+               100_0  COME_FROM            84  '84'
+                 100  END_FINALLY      
+               102_0  COME_FROM            98  '98'
+               102_1  COME_FROM            76  '76'
+Instruction context:
+   
+ L. 810        32  DUP_TOP          
+                  34  LOAD_GLOBAL              NoSectionError
+                  36  LOAD_GLOBAL              NoOptionError
+                  38  BUILD_TUPLE_2         2 
+                  40  COMPARE_OP               exception-match
+                  42  POP_JUMP_IF_FALSE    68  'to 68'
+                  44  POP_TOP          
+->                46  POP_TOP          
+                  48  POP_TOP          
+Instruction context:
+   
+ L.1357       110  POP_EXCEPT       
+                 112  JUMP_BACK            76  'to 76'
+->               114  POP_EXCEPT       
+                 116  JUMP_BACK            76  'to 76'
+               118_0  COME_FROM           102  '102'
+                 118  END_FINALLY      
+
+test/65.pyc -- 
+# decompile failed
+
+# file test/65.pyc
+# Deparsing stopped due to parse error

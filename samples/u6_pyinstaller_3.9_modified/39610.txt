@@ -1,0 +1,304 @@
+
+# file test/39610.pyc
+# --- This code section failed: ---
+
+ L.   4         0  LOAD_CONST               -11
+                2  STORE_NAME               STDOUT
+
+ L.   5         4  LOAD_CONST               -12
+                6  STORE_NAME               STDERR
+
+ L.   7         8  SETUP_FINALLY        56  'to 56'
+
+ L.   8        10  LOAD_CONST               0
+               12  LOAD_CONST               None
+               14  IMPORT_NAME              ctypes
+               16  STORE_NAME               ctypes
+
+ L.   9        18  LOAD_CONST               0
+               20  LOAD_CONST               ('LibraryLoader',)
+               22  IMPORT_NAME              ctypes
+               24  IMPORT_FROM              LibraryLoader
+               26  STORE_NAME               LibraryLoader
+               28  POP_TOP          
+
+ L.  10        30  LOAD_NAME                LibraryLoader
+               32  LOAD_NAME                ctypes
+               34  LOAD_ATTR                WinDLL
+               36  CALL_FUNCTION_1       1  ''
+               38  STORE_NAME               windll
+
+ L.  11        40  LOAD_CONST               0
+               42  LOAD_CONST               ('wintypes',)
+               44  IMPORT_NAME              ctypes
+               46  IMPORT_FROM              wintypes
+               48  STORE_NAME               wintypes
+               50  POP_TOP          
+               52  POP_BLOCK        
+               54  JUMP_FORWARD        100  'to 100'
+             56_0  COME_FROM_FINALLY     8  '8'
+
+ L.  12        56  DUP_TOP          
+               58  LOAD_NAME                AttributeError
+               60  LOAD_NAME                ImportError
+               62  BUILD_TUPLE_2         2 
+               64  <121>                98  ''
+               66  POP_TOP          
+               68  POP_TOP          
+               70  POP_TOP          
+
+ L.  13        72  LOAD_CONST               None
+               74  STORE_NAME               windll
+
+ L.  14        76  LOAD_LAMBDA              '<code_object <lambda>>'
+               78  LOAD_STR                 '<lambda>'
+               80  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               82  STORE_NAME               SetConsoleTextAttribute
+
+ L.  15        84  LOAD_LAMBDA              '<code_object <lambda>>'
+               86  LOAD_STR                 '<lambda>'
+               88  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               90  STORE_NAME               winapi_test
+               92  POP_EXCEPT       
+            94_96  JUMP_FORWARD        444  'to 444'
+               98  <48>             
+            100_0  COME_FROM            54  '54'
+
+ L.  17       100  LOAD_CONST               0
+              102  LOAD_CONST               ('byref', 'Structure', 'c_char', 'POINTER')
+              104  IMPORT_NAME              ctypes
+              106  IMPORT_FROM              byref
+              108  STORE_NAME               byref
+              110  IMPORT_FROM              Structure
+              112  STORE_NAME               Structure
+              114  IMPORT_FROM              c_char
+              116  STORE_NAME               c_char
+              118  IMPORT_FROM              POINTER
+              120  STORE_NAME               POINTER
+              122  POP_TOP          
+
+ L.  19       124  LOAD_NAME                wintypes
+              126  LOAD_ATTR                _COORD
+              128  STORE_NAME               COORD
+
+ L.  21       130  LOAD_BUILD_CLASS 
+              132  LOAD_CODE                <code_object CONSOLE_SCREEN_BUFFER_INFO>
+              134  LOAD_STR                 'CONSOLE_SCREEN_BUFFER_INFO'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  LOAD_STR                 'CONSOLE_SCREEN_BUFFER_INFO'
+              140  LOAD_NAME                Structure
+              142  CALL_FUNCTION_3       3  ''
+              144  STORE_NAME               CONSOLE_SCREEN_BUFFER_INFO
+
+ L.  39       146  LOAD_NAME                windll
+              148  LOAD_ATTR                kernel32
+              150  LOAD_ATTR                GetStdHandle
+              152  STORE_NAME               _GetStdHandle
+
+ L.  41       154  LOAD_NAME                wintypes
+              156  LOAD_ATTR                DWORD
+
+ L.  40       158  BUILD_LIST_1          1 
+              160  LOAD_NAME                _GetStdHandle
+              162  STORE_ATTR               argtypes
+
+ L.  43       164  LOAD_NAME                wintypes
+              166  LOAD_ATTR                HANDLE
+              168  LOAD_NAME                _GetStdHandle
+              170  STORE_ATTR               restype
+
+ L.  45       172  LOAD_NAME                windll
+              174  LOAD_ATTR                kernel32
+              176  LOAD_ATTR                GetConsoleScreenBufferInfo
+              178  STORE_NAME               _GetConsoleScreenBufferInfo
+
+ L.  47       180  LOAD_NAME                wintypes
+              182  LOAD_ATTR                HANDLE
+
+ L.  48       184  LOAD_NAME                POINTER
+              186  LOAD_NAME                CONSOLE_SCREEN_BUFFER_INFO
+              188  CALL_FUNCTION_1       1  ''
+
+ L.  46       190  BUILD_LIST_2          2 
+              192  LOAD_NAME                _GetConsoleScreenBufferInfo
+              194  STORE_ATTR               argtypes
+
+ L.  50       196  LOAD_NAME                wintypes
+              198  LOAD_ATTR                BOOL
+              200  LOAD_NAME                _GetConsoleScreenBufferInfo
+              202  STORE_ATTR               restype
+
+ L.  52       204  LOAD_NAME                windll
+              206  LOAD_ATTR                kernel32
+              208  LOAD_ATTR                SetConsoleTextAttribute
+              210  STORE_NAME               _SetConsoleTextAttribute
+
+ L.  54       212  LOAD_NAME                wintypes
+              214  LOAD_ATTR                HANDLE
+
+ L.  55       216  LOAD_NAME                wintypes
+              218  LOAD_ATTR                WORD
+
+ L.  53       220  BUILD_LIST_2          2 
+              222  LOAD_NAME                _SetConsoleTextAttribute
+              224  STORE_ATTR               argtypes
+
+ L.  57       226  LOAD_NAME                wintypes
+              228  LOAD_ATTR                BOOL
+              230  LOAD_NAME                _SetConsoleTextAttribute
+              232  STORE_ATTR               restype
+
+ L.  59       234  LOAD_NAME                windll
+              236  LOAD_ATTR                kernel32
+              238  LOAD_ATTR                SetConsoleCursorPosition
+              240  STORE_NAME               _SetConsoleCursorPosition
+
+ L.  61       242  LOAD_NAME                wintypes
+              244  LOAD_ATTR                HANDLE
+
+ L.  62       246  LOAD_NAME                COORD
+
+ L.  60       248  BUILD_LIST_2          2 
+              250  LOAD_NAME                _SetConsoleCursorPosition
+              252  STORE_ATTR               argtypes
+
+ L.  64       254  LOAD_NAME                wintypes
+              256  LOAD_ATTR                BOOL
+              258  LOAD_NAME                _SetConsoleCursorPosition
+              260  STORE_ATTR               restype
+
+ L.  66       262  LOAD_NAME                windll
+              264  LOAD_ATTR                kernel32
+              266  LOAD_ATTR                FillConsoleOutputCharacterA
+              268  STORE_NAME               _FillConsoleOutputCharacterA
+
+ L.  68       270  LOAD_NAME                wintypes
+              272  LOAD_ATTR                HANDLE
+
+ L.  69       274  LOAD_NAME                c_char
+
+ L.  70       276  LOAD_NAME                wintypes
+              278  LOAD_ATTR                DWORD
+
+ L.  71       280  LOAD_NAME                COORD
+
+ L.  72       282  LOAD_NAME                POINTER
+              284  LOAD_NAME                wintypes
+              286  LOAD_ATTR                DWORD
+              288  CALL_FUNCTION_1       1  ''
+
+ L.  67       290  BUILD_LIST_5          5 
+              292  LOAD_NAME                _FillConsoleOutputCharacterA
+              294  STORE_ATTR               argtypes
+
+ L.  74       296  LOAD_NAME                wintypes
+              298  LOAD_ATTR                BOOL
+              300  LOAD_NAME                _FillConsoleOutputCharacterA
+              302  STORE_ATTR               restype
+
+ L.  76       304  LOAD_NAME                windll
+              306  LOAD_ATTR                kernel32
+              308  LOAD_ATTR                FillConsoleOutputAttribute
+              310  STORE_NAME               _FillConsoleOutputAttribute
+
+ L.  78       312  LOAD_NAME                wintypes
+              314  LOAD_ATTR                HANDLE
+
+ L.  79       316  LOAD_NAME                wintypes
+              318  LOAD_ATTR                WORD
+
+ L.  80       320  LOAD_NAME                wintypes
+              322  LOAD_ATTR                DWORD
+
+ L.  81       324  LOAD_NAME                COORD
+
+ L.  82       326  LOAD_NAME                POINTER
+              328  LOAD_NAME                wintypes
+              330  LOAD_ATTR                DWORD
+              332  CALL_FUNCTION_1       1  ''
+
+ L.  77       334  BUILD_LIST_5          5 
+              336  LOAD_NAME                _FillConsoleOutputAttribute
+              338  STORE_ATTR               argtypes
+
+ L.  84       340  LOAD_NAME                wintypes
+              342  LOAD_ATTR                BOOL
+              344  LOAD_NAME                _FillConsoleOutputAttribute
+              346  STORE_ATTR               restype
+
+ L.  86       348  LOAD_NAME                windll
+              350  LOAD_ATTR                kernel32
+              352  LOAD_ATTR                SetConsoleTitleW
+              354  STORE_NAME               _SetConsoleTitleW
+
+ L.  88       356  LOAD_NAME                wintypes
+              358  LOAD_ATTR                LPCWSTR
+
+ L.  87       360  BUILD_LIST_1          1 
+              362  LOAD_NAME                _SetConsoleTitleW
+              364  STORE_ATTR               argtypes
+
+ L.  90       366  LOAD_NAME                wintypes
+              368  LOAD_ATTR                BOOL
+              370  LOAD_NAME                _SetConsoleTitleW
+              372  STORE_ATTR               restype
+
+ L.  92       374  LOAD_CODE                <code_object _winapi_test>
+              376  LOAD_STR                 '_winapi_test'
+              378  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              380  STORE_NAME               _winapi_test
+
+ L.  98       382  LOAD_CODE                <code_object winapi_test>
+              384  LOAD_STR                 'winapi_test'
+              386  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              388  STORE_NAME               winapi_test
+
+ L. 102       390  LOAD_NAME                STDOUT
+              392  BUILD_TUPLE_1         1 
+              394  LOAD_CODE                <code_object GetConsoleScreenBufferInfo>
+              396  LOAD_STR                 'GetConsoleScreenBufferInfo'
+              398  MAKE_FUNCTION_1          'default'
+              400  STORE_NAME               GetConsoleScreenBufferInfo
+
+ L. 109       402  LOAD_CODE                <code_object SetConsoleTextAttribute>
+              404  LOAD_STR                 'SetConsoleTextAttribute'
+              406  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              408  STORE_NAME               SetConsoleTextAttribute
+
+ L. 113       410  LOAD_CONST               (True,)
+              412  LOAD_CODE                <code_object SetConsoleCursorPosition>
+              414  LOAD_STR                 'SetConsoleCursorPosition'
+              416  MAKE_FUNCTION_1          'default'
+              418  STORE_NAME               SetConsoleCursorPosition
+
+ L. 131       420  LOAD_CODE                <code_object FillConsoleOutputCharacter>
+              422  LOAD_STR                 'FillConsoleOutputCharacter'
+              424  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              426  STORE_NAME               FillConsoleOutputCharacter
+
+ L. 141       428  LOAD_CODE                <code_object FillConsoleOutputAttribute>
+              430  LOAD_STR                 'FillConsoleOutputAttribute'
+              432  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              434  STORE_NAME               FillConsoleOutputAttribute
+
+ L. 151       436  LOAD_CODE                <code_object SetConsoleTitle>
+              438  LOAD_STR                 'SetConsoleTitle'
+              440  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              442  STORE_NAME               SetConsoleTitle
+            444_0  COME_FROM            94  '94'
+
+Parse error at or near `<121>' instruction at offset 64
+
+Instruction context:
+   
+ L.  12        56  DUP_TOP          
+                  58  LOAD_NAME                AttributeError
+                  60  LOAD_NAME                ImportError
+                  62  BUILD_TUPLE_2         2 
+->                64  <121>                98  ''
+                  66  POP_TOP          
+                  68  POP_TOP          
+                  70  POP_TOP          
+
+test/39610.pyc -- 
+# decompile failed

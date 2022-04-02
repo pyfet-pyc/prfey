@@ -1,0 +1,29 @@
+Instruction context:
+   
+ L. 121        56  POP_BLOCK        
+                  58  POP_EXCEPT       
+                  60  CALL_FINALLY         68  'to 68'
+->                62  JUMP_BACK            16  'to 16'
+                  64  POP_BLOCK        
+                  66  BEGIN_FINALLY    
+                68_0  COME_FROM            60  '60'
+                68_1  COME_FROM_FINALLY    54  '54'
+                  68  LOAD_CONST               None
+                  70  STORE_FAST               'details'
+                  72  DELETE_FAST              'details'
+                  74  END_FINALLY      
+                  76  POP_EXCEPT       
+                  78  JUMP_BACK            16  'to 16'
+                80_0  COME_FROM            46  '46'
+                  80  END_FINALLY      
+                82_0  COME_FROM            38  '38'
+Instruction context:
+-> 
+ L. 487       156  JUMP_BACK            16  'to 16'
+               158_0  COME_FROM            16  '16'
+
+../test/48326.pyc -- 
+# decompile failed
+
+# file ../test/48326.pyc
+# Deparsing stopped due to parse error

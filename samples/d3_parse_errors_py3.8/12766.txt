@@ -1,0 +1,24 @@
+Instruction context:
+   
+ L. 318       244  LOAD_FAST                'd'
+                 246  LOAD_METHOD              write
+                 248  LOAD_STR                 '%s\n'
+                 250  LOAD_FAST                's'
+                 252  LOAD_CONST               1
+                 254  BINARY_SUBSCR    
+                 256  BINARY_MODULO    
+                 258  CALL_METHOD_1         1  ''
+                 260  POP_TOP          
+                 262  JUMP_BACK           240  'to 240'
+               264_0  COME_FROM           240  '240'
+                 264  POP_BLOCK        
+                 266  BEGIN_FINALLY    
+               268_0  COME_FROM_WITH      180  '180'
+                 268  WITH_CLEANUP_START
+->               270  WITH_CLEANUP_FINISH
+
+../test/12766.pyc -- 
+# decompile failed
+
+# file ../test/12766.pyc
+# Deparsing stopped due to parse error

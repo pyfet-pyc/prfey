@@ -1,0 +1,22 @@
+Instruction context:
+   
+ L.  88        62  LOAD_FAST                'self'
+                  64  LOAD_METHOD              _grab_impl
+                  66  LOAD_FAST                'monitor'
+                  68  CALL_METHOD_1         1  ''
+                  70  POP_BLOCK        
+->                72  ROT_TWO          
+                  74  BEGIN_FINALLY    
+                  76  WITH_CLEANUP_START
+                  78  WITH_CLEANUP_FINISH
+                  80  POP_FINALLY           0  ''
+                  82  RETURN_VALUE     
+                84_0  COME_FROM_WITH       58  '58'
+                  84  WITH_CLEANUP_START
+                  86  WITH_CLEANUP_FINISH
+
+../test/121978.pyc -- 
+# decompile failed
+
+# file ../test/121978.pyc
+# Deparsing stopped due to parse error

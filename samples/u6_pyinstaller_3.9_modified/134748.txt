@@ -1,0 +1,67 @@
+Instruction context:
+   
+ L.  44        40  LOAD_CODE                <code_object _get_byte>
+                  42  LOAD_STR                 '_get_byte'
+                  44  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+                  46  STORE_NAME               _get_byte
+                  48  POP_EXCEPT       
+                  50  JUMP_FORWARD         54  'to 54'
+->                52  <48>             
+                54_0  COME_FROM            50  '50'
+                54_1  COME_FROM            24  '24'
+
+test/134748.pyc -- 
+# decompile failed
+
+# file test/134748.pyc
+# --- This code section failed: ---
+
+ L.  29         0  LOAD_CODE                <code_object to_bufferable>
+                2  LOAD_STR                 'to_bufferable'
+                4  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+                6  STORE_NAME               to_bufferable
+
+ L.  32         8  LOAD_CODE                <code_object _get_byte>
+               10  LOAD_STR                 '_get_byte'
+               12  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               14  STORE_NAME               _get_byte
+
+ L.  35        16  SETUP_FINALLY        26  'to 26'
+
+ L.  36        18  LOAD_NAME                xrange
+               20  POP_TOP          
+               22  POP_BLOCK        
+               24  JUMP_FORWARD         54  'to 54'
+             26_0  COME_FROM_FINALLY    16  '16'
+
+ L.  37        26  POP_TOP          
+               28  POP_TOP          
+               30  POP_TOP          
+
+ L.  39        32  LOAD_CODE                <code_object to_bufferable>
+               34  LOAD_STR                 'to_bufferable'
+               36  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               38  STORE_NAME               to_bufferable
+
+ L.  44        40  LOAD_CODE                <code_object _get_byte>
+               42  LOAD_STR                 '_get_byte'
+               44  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               46  STORE_NAME               _get_byte
+               48  POP_EXCEPT       
+               50  JUMP_FORWARD         54  'to 54'
+               52  <48>             
+             54_0  COME_FROM            50  '50'
+             54_1  COME_FROM            24  '24'
+
+ L.  47        54  LOAD_CODE                <code_object append_PKCS7_padding>
+               56  LOAD_STR                 'append_PKCS7_padding'
+               58  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               60  STORE_NAME               append_PKCS7_padding
+
+ L.  51        62  LOAD_CODE                <code_object strip_PKCS7_padding>
+               64  LOAD_STR                 'strip_PKCS7_padding'
+               66  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               68  STORE_NAME               strip_PKCS7_padding
+
+Parse error at or near `<48>' instruction at offset 52
+

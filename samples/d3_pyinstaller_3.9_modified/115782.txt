@@ -1,0 +1,99 @@
+Instruction context:
+   
+ L. 210       690  LOAD_STR                 ';'
+                 692  LOAD_FAST                'rawdata'
+                 694  LOAD_FAST                'i'
+                 696  LOAD_CONST               None
+                 698  BUILD_SLICE_2         2 
+                 700  BINARY_SUBSCR    
+->               702  <118>                 0  ''
+             704_706  POP_JUMP_IF_FALSE  1000  'to 1000'
+Instruction context:
+   
+ L. 257         6  LOAD_FAST                'rawdata'
+                   8  LOAD_FAST                'i'
+                  10  LOAD_FAST                'i'
+                  12  LOAD_CONST               2
+                  14  BINARY_ADD       
+                  16  BUILD_SLICE_2         2 
+                  18  BINARY_SUBSCR    
+                  20  LOAD_STR                 '<!'
+                  22  COMPARE_OP               ==
+                  24  POP_JUMP_IF_TRUE     34  'to 34'
+->                26  <74>             
+                  28  LOAD_STR                 'unexpected call to parse_html_declaration()'
+                  30  CALL_FUNCTION_1       1  ''
+                  32  RAISE_VARARGS_1       1  'exception instance'
+                34_0  COME_FROM            24  '24'
+Instruction context:
+   
+ L. 278         6  LOAD_FAST                'rawdata'
+                   8  LOAD_FAST                'i'
+                  10  LOAD_FAST                'i'
+                  12  LOAD_CONST               2
+                  14  BINARY_ADD       
+                  16  BUILD_SLICE_2         2 
+                  18  BINARY_SUBSCR    
+                  20  LOAD_CONST               ('<!', '</')
+->                22  <118>                 0  ''
+                  24  POP_JUMP_IF_TRUE     34  'to 34'
+                  26  <74>             
+                  28  LOAD_STR                 'unexpected call to parse_comment()'
+                  30  CALL_FUNCTION_1       1  ''
+                  32  RAISE_VARARGS_1       1  'exception instance'
+                34_0  COME_FROM            24  '24'
+Instruction context:
+   
+ L. 290         6  LOAD_FAST                'rawdata'
+                   8  LOAD_FAST                'i'
+                  10  LOAD_FAST                'i'
+                  12  LOAD_CONST               2
+                  14  BINARY_ADD       
+                  16  BUILD_SLICE_2         2 
+                  18  BINARY_SUBSCR    
+                  20  LOAD_STR                 '<?'
+                  22  COMPARE_OP               ==
+                  24  POP_JUMP_IF_TRUE     34  'to 34'
+->                26  <74>             
+                  28  LOAD_STR                 'unexpected call to parse_pi()'
+                  30  CALL_FUNCTION_1       1  ''
+                  32  RAISE_VARARGS_1       1  'exception instance'
+                34_0  COME_FROM            24  '24'
+Instruction context:
+   
+ L. 311        68  LOAD_FAST                'match'
+                  70  POP_JUMP_IF_TRUE     80  'to 80'
+->                72  <74>             
+                  74  LOAD_STR                 'unexpected call to parse_starttag()'
+                  76  CALL_FUNCTION_1       1  ''
+                  78  RAISE_VARARGS_1       1  'exception instance'
+                80_0  COME_FROM            70  '70'
+Instruction context:
+   
+ L. 373       138  LOAD_FAST                'next'
+                 140  LOAD_STR                 'abcdefghijklmnopqrstuvwxyz=/ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+->               142  <118>                 0  ''
+                 144  POP_JUMP_IF_FALSE   150  'to 150'
+Instruction context:
+   
+ L. 387         6  LOAD_FAST                'rawdata'
+                   8  LOAD_FAST                'i'
+                  10  LOAD_FAST                'i'
+                  12  LOAD_CONST               2
+                  14  BINARY_ADD       
+                  16  BUILD_SLICE_2         2 
+                  18  BINARY_SUBSCR    
+                  20  LOAD_STR                 '</'
+                  22  COMPARE_OP               ==
+                  24  POP_JUMP_IF_TRUE     34  'to 34'
+->                26  <74>             
+                  28  LOAD_STR                 'unexpected call to parse_endtag'
+                  30  CALL_FUNCTION_1       1  ''
+                  32  RAISE_VARARGS_1       1  'exception instance'
+                34_0  COME_FROM            24  '24'
+
+test/115782.pyc -- 
+# decompile failed
+
+# file test/115782.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,65 @@
+Instruction context:
+   
+ L. 145        26  LOAD_FAST                'node'
+                  28  LOAD_FAST                'self'
+->                30  <117>                 0  ''
+                  32  POP_JUMP_IF_FALSE    18  'to 18'
+Instruction context:
+   
+ L. 199         6  LOAD_FAST                'next_sib'
+                   8  LOAD_CONST               None
+->                10  <117>                 0  ''
+                  12  POP_JUMP_IF_FALSE    18  'to 18'
+Instruction context:
+   
+ L. 404        12  LOAD_FAST                'children'
+                  14  POP_JUMP_IF_TRUE     26  'to 26'
+                  16  LOAD_FAST                'type'
+                  18  LOAD_FAST                'gr'
+                  20  LOAD_ATTR                number2symbol
+->                22  <118>                 0  ''
+                  24  POP_JUMP_IF_FALSE    60  'to 60'
+                26_0  COME_FROM            14  '14'
+Instruction context:
+   
+ L. 442        20  LOAD_FAST                'args'
+                  22  POP_JUMP_IF_FALSE    44  'to 44'
+                  24  LOAD_FAST                'args'
+                  26  LOAD_CONST               -1
+                  28  BINARY_SUBSCR    
+                  30  LOAD_CONST               None
+->                32  <117>                 0  ''
+                  34  POP_JUMP_IF_FALSE    44  'to 44'
+Instruction context:
+   
+ L. 593        42  LOAD_FAST                'results'
+                  44  LOAD_CONST               None
+->                46  <117>                 1  ''
+                  48  POP_JUMP_IF_FALSE    60  'to 60'
+Instruction context:
+   
+ L. 657         4  LOAD_FAST                'self'
+                   6  LOAD_ATTR                content
+                   8  LOAD_CONST               None
+->                10  <117>                 1  ''
+                  12  POP_JUMP_IF_FALSE    60  'to 60'
+Instruction context:
+   
+ L. 681        30  LOAD_FAST                'results'
+                  32  LOAD_CONST               None
+->                34  <117>                 1  ''
+                  36  POP_JUMP_IF_FALSE    68  'to 68'
+Instruction context:
+   
+ L. 774        78  POP_TOP          
+->                80  CONTINUE             20  'to 20'
+                  82  JUMP_BACK            42  'to 42'
+                  84  JUMP_BACK            20  'to 20'
+                86_0  COME_FROM            30  '30'
+                86_1  COME_FROM            22  '22'
+
+test/103573.pyc -- 
+# decompile failed
+
+# file test/103573.pyc
+# Deparsing stopped due to parse error

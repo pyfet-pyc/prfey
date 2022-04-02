@@ -1,0 +1,38 @@
+Instruction context:
+   
+ L. 143       286  LOAD_FAST                'advance'
+                 288  CALL_FUNCTION_0       0  '0 positional arguments'
+                 290  UNPACK_SEQUENCE_2     2 
+                 292  STORE_FAST               'tp'
+                 294  STORE_FAST               'value'
+                 296  JUMP_BACK           230  'to 230'
+               298_0  COME_FROM           238  '238'
+                 298  POP_BLOCK        
+->               300  JUMP_BACK            64  'to 64'
+               302_0  COME_FROM           126  '126'
+               302_1  COME_FROM           116  '116'
+Instruction context:
+   
+ L. 341       170  LOAD_FAST                'self'
+                 172  LOAD_METHOD              log_debug
+                 174  LOAD_STR                 'No changes in %s'
+                 176  LOAD_FAST                'filename'
+                 178  CALL_METHOD_2         2  '2 positional arguments'
+                 180  POP_TOP          
+               182_0  COME_FROM           168  '168'
+->             182_1  COME_FROM           108  '108'
+Instruction context:
+   
+ L. 384       126  LOAD_FAST                'self'
+                 128  LOAD_METHOD              log_debug
+                 130  LOAD_STR                 'No changes in stdin'
+                 132  CALL_METHOD_1         1  '1 positional argument'
+                 134  POP_TOP          
+               136_0  COME_FROM           124  '124'
+->             136_1  COME_FROM            76  '76'
+
+test/260.pyc -- 
+# decompile failed
+
+# file test/260.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,26 @@
+Instruction context:
+   
+ L.  32        44  LOAD_FAST                'path'
+                  46  LOAD_METHOD              decode
+                  48  LOAD_FAST                'enc'
+                  50  CALL_METHOD_1         1  ''
+                  52  POP_BLOCK        
+->                54  ROT_TWO          
+                  56  POP_TOP          
+                  58  RETURN_VALUE     
+                60_0  COME_FROM_FINALLY    42  '42'
+Instruction context:
+   
+ L.  41        14  DUP_TOP          
+                  16  LOAD_GLOBAL              UnicodeEncodeError
+                  18  COMPARE_OP               exception-match
+                  20  POP_JUMP_IF_FALSE    34  'to 34'
+                  22  POP_TOP          
+->                24  POP_TOP          
+                  26  POP_TOP          
+
+../test/139600.pyc -- 
+# decompile failed
+
+# file ../test/139600.pyc
+# Deparsing stopped due to parse error

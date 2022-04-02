@@ -1,0 +1,244 @@
+
+# file test/109397.pyc
+# --- This code section failed: ---
+
+ L.   5         0  LOAD_STR                 'hashlib module - A common interface to many hash functions.\n\nnew(name, data=b\'\', **kwargs) - returns a new hash object implementing the\n                                given hash function; initializing the hash\n                                using the given binary data.\n\nNamed constructor functions are also available, these are faster\nthan using new(name):\n\nmd5(), sha1(), sha224(), sha256(), sha384(), sha512(), blake2b(), blake2s(),\nsha3_224, sha3_256, sha3_384, sha3_512, shake_128, and shake_256.\n\nMore algorithms may be available on your platform but the above are guaranteed\nto exist.  See the algorithms_guaranteed and algorithms_available attributes\nto find out what algorithm names can be passed to new().\n\nNOTE: If you want the adler32 or crc32 hash functions they are available in\nthe zlib module.\n\nChoose your hash function wisely.  Some have known collision weaknesses.\nsha384 and sha512 will be slow on 32 bit platforms.\n\nHash objects have these methods:\n - update(data): Update the hash object with the bytes in data. Repeated calls\n                 are equivalent to a single call with the concatenation of all\n                 the arguments.\n - digest():     Return the digest of the bytes passed to the update() method\n                 so far as a bytes object.\n - hexdigest():  Like digest() except the digest is returned as a string\n                 of double length, containing only hexadecimal digits.\n - copy():       Return a copy (clone) of the hash object. This can be used to\n                 efficiently compute the digests of datas that share a common\n                 initial substring.\n\nFor example, to obtain the digest of the byte string \'Nobody inspects the\nspammish repetition\':\n\n    >>> import hashlib\n    >>> m = hashlib.md5()\n    >>> m.update(b"Nobody inspects")\n    >>> m.update(b" the spammish repetition")\n    >>> m.digest()\n    b\'\\xbbd\\x9c\\x83\\xdd\\x1e\\xa5\\xc9\\xd9\\xde\\xc9\\xa1\\x8d\\xf0\\xff\\xe9\'\n\nMore condensed:\n\n    >>> hashlib.sha224(b"Nobody inspects the spammish repetition").hexdigest()\n    \'a4337bc45a8fc544c03f52dc550cd6e1e87021bc896588bd79e901e2\'\n\n'
+                2  STORE_NAME               __doc__
+
+ L.  58         4  LOAD_CONST               ('md5', 'sha1', 'sha224', 'sha256', 'sha384', 'sha512', 'blake2b', 'blake2s', 'sha3_224', 'sha3_256', 'sha3_384', 'sha3_512', 'shake_128', 'shake_256')
+                6  STORE_NAME               __always_supported
+
+ L.  64         8  LOAD_NAME                set
+               10  LOAD_NAME                __always_supported
+               12  CALL_FUNCTION_1       1  ''
+               14  STORE_NAME               algorithms_guaranteed
+
+ L.  65        16  LOAD_NAME                set
+               18  LOAD_NAME                __always_supported
+               20  CALL_FUNCTION_1       1  ''
+               22  STORE_NAME               algorithms_available
+
+ L.  67        24  LOAD_NAME                __always_supported
+               26  LOAD_CONST               ('new', 'algorithms_guaranteed', 'algorithms_available', 'pbkdf2_hmac')
+               28  BINARY_ADD       
+               30  STORE_NAME               __all__
+
+ L.  71        32  BUILD_MAP_0           0 
+               34  STORE_NAME               __builtin_constructor_cache
+
+ L.  79        36  LOAD_STR                 'blake2b'
+               38  LOAD_STR                 'blake2s'
+
+ L.  78        40  BUILD_SET_2           2 
+               42  STORE_NAME               __block_openssl_constructor
+
+ L.  82        44  LOAD_CODE                <code_object __get_builtin_constructor>
+               46  LOAD_STR                 '__get_builtin_constructor'
+               48  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               50  STORE_NAME               __get_builtin_constructor
+
+ L. 126        52  LOAD_CODE                <code_object __get_openssl_constructor>
+               54  LOAD_STR                 '__get_openssl_constructor'
+               56  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               58  STORE_NAME               __get_openssl_constructor
+
+ L. 144        60  LOAD_CONST               (b'',)
+               62  LOAD_CODE                <code_object __py_new>
+               64  LOAD_STR                 '__py_new'
+               66  MAKE_FUNCTION_1          'default'
+               68  STORE_NAME               __py_new
+
+ L. 152        70  LOAD_CONST               (b'',)
+               72  LOAD_CODE                <code_object __hash_new>
+               74  LOAD_STR                 '__hash_new'
+               76  MAKE_FUNCTION_1          'default'
+               78  STORE_NAME               __hash_new
+
+ L. 169        80  SETUP_FINALLY       114  'to 114'
+
+ L. 170        82  LOAD_CONST               0
+               84  LOAD_CONST               None
+               86  IMPORT_NAME              _hashlib
+               88  STORE_NAME               _hashlib
+
+ L. 171        90  LOAD_NAME                __hash_new
+               92  STORE_NAME               new
+
+ L. 172        94  LOAD_NAME                __get_openssl_constructor
+               96  STORE_NAME               __get_hash
+
+ L. 173        98  LOAD_NAME                algorithms_available
+              100  LOAD_METHOD              union
+
+ L. 174       102  LOAD_NAME                _hashlib
+              104  LOAD_ATTR                openssl_md_meth_names
+
+ L. 173       106  CALL_METHOD_1         1  ''
+              108  STORE_NAME               algorithms_available
+              110  POP_BLOCK        
+              112  JUMP_FORWARD        140  'to 140'
+            114_0  COME_FROM_FINALLY    80  '80'
+
+ L. 175       114  DUP_TOP          
+              116  LOAD_NAME                ImportError
+              118  <121>               138  ''
+              120  POP_TOP          
+              122  POP_TOP          
+              124  POP_TOP          
+
+ L. 176       126  LOAD_NAME                __py_new
+              128  STORE_NAME               new
+
+ L. 177       130  LOAD_NAME                __get_builtin_constructor
+              132  STORE_NAME               __get_hash
+              134  POP_EXCEPT       
+              136  JUMP_FORWARD        140  'to 140'
+              138  <48>             
+            140_0  COME_FROM           136  '136'
+            140_1  COME_FROM           112  '112'
+
+ L. 179       140  SETUP_FINALLY       158  'to 158'
+
+ L. 181       142  LOAD_CONST               0
+              144  LOAD_CONST               ('pbkdf2_hmac',)
+              146  IMPORT_NAME              _hashlib
+              148  IMPORT_FROM              pbkdf2_hmac
+              150  STORE_NAME               pbkdf2_hmac
+              152  POP_TOP          
+              154  POP_BLOCK        
+              156  JUMP_FORWARD        230  'to 230'
+            158_0  COME_FROM_FINALLY   140  '140'
+
+ L. 182       158  DUP_TOP          
+              160  LOAD_NAME                ImportError
+              162  <121>               228  ''
+              164  POP_TOP          
+              166  POP_TOP          
+              168  POP_TOP          
+
+ L. 183       170  LOAD_NAME                bytes
+              172  LOAD_GENEXPR             '<code_object <genexpr>>'
+              174  LOAD_STR                 '<genexpr>'
+              176  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              178  LOAD_NAME                range
+              180  LOAD_CONST               256
+              182  CALL_FUNCTION_1       1  ''
+              184  GET_ITER         
+              186  CALL_FUNCTION_1       1  ''
+              188  CALL_FUNCTION_1       1  ''
+              190  STORE_NAME               _trans_5C
+
+ L. 184       192  LOAD_NAME                bytes
+              194  LOAD_GENEXPR             '<code_object <genexpr>>'
+              196  LOAD_STR                 '<genexpr>'
+              198  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              200  LOAD_NAME                range
+              202  LOAD_CONST               256
+              204  CALL_FUNCTION_1       1  ''
+              206  GET_ITER         
+              208  CALL_FUNCTION_1       1  ''
+              210  CALL_FUNCTION_1       1  ''
+              212  STORE_NAME               _trans_36
+
+ L. 186       214  LOAD_CONST               (None,)
+              216  LOAD_CODE                <code_object pbkdf2_hmac>
+              218  LOAD_STR                 'pbkdf2_hmac'
+              220  MAKE_FUNCTION_1          'default'
+              222  STORE_NAME               pbkdf2_hmac
+              224  POP_EXCEPT       
+              226  JUMP_FORWARD        230  'to 230'
+              228  <48>             
+            230_0  COME_FROM           226  '226'
+            230_1  COME_FROM           156  '156'
+
+ L. 243       230  SETUP_FINALLY       248  'to 248'
+
+ L. 245       232  LOAD_CONST               0
+              234  LOAD_CONST               ('scrypt',)
+              236  IMPORT_NAME              _hashlib
+              238  IMPORT_FROM              scrypt
+              240  STORE_NAME               scrypt
+              242  POP_TOP          
+              244  POP_BLOCK        
+              246  JUMP_FORWARD        268  'to 268'
+            248_0  COME_FROM_FINALLY   230  '230'
+
+ L. 246       248  DUP_TOP          
+              250  LOAD_NAME                ImportError
+          252_254  <121>               266  ''
+              256  POP_TOP          
+              258  POP_TOP          
+              260  POP_TOP          
+
+ L. 247       262  POP_EXCEPT       
+              264  JUMP_FORWARD        268  'to 268'
+              266  <48>             
+            268_0  COME_FROM           264  '264'
+            268_1  COME_FROM           246  '246'
+
+ L. 250       268  LOAD_NAME                __always_supported
+              270  GET_ITER         
+            272_0  COME_FROM           336  '336'
+            272_1  COME_FROM           332  '332'
+            272_2  COME_FROM           294  '294'
+              272  FOR_ITER            340  'to 340'
+              274  STORE_NAME               __func_name
+
+ L. 253       276  SETUP_FINALLY       296  'to 296'
+
+ L. 254       278  LOAD_NAME                __get_hash
+              280  LOAD_NAME                __func_name
+              282  CALL_FUNCTION_1       1  ''
+              284  LOAD_NAME                globals
+              286  CALL_FUNCTION_0       0  ''
+              288  LOAD_NAME                __func_name
+              290  STORE_SUBSCR     
+              292  POP_BLOCK        
+              294  JUMP_BACK           272  'to 272'
+            296_0  COME_FROM_FINALLY   276  '276'
+
+ L. 255       296  DUP_TOP          
+              298  LOAD_NAME                ValueError
+          300_302  <121>               334  ''
+              304  POP_TOP          
+              306  POP_TOP          
+              308  POP_TOP          
+
+ L. 256       310  LOAD_CONST               0
+              312  LOAD_CONST               None
+              314  IMPORT_NAME              logging
+              316  STORE_NAME               logging
+
+ L. 257       318  LOAD_NAME                logging
+              320  LOAD_METHOD              exception
+              322  LOAD_STR                 'code for hash %s was not found.'
+              324  LOAD_NAME                __func_name
+              326  CALL_METHOD_2         2  ''
+              328  POP_TOP          
+              330  POP_EXCEPT       
+              332  JUMP_BACK           272  'to 272'
+              334  <48>             
+          336_338  JUMP_BACK           272  'to 272'
+            340_0  COME_FROM           272  '272'
+
+ L. 261       340  DELETE_NAME              __always_supported
+              342  DELETE_NAME              __func_name
+              344  DELETE_NAME              __get_hash
+
+ L. 262       346  DELETE_NAME              __py_new
+              348  DELETE_NAME              __hash_new
+              350  DELETE_NAME              __get_openssl_constructor
+
+Parse error at or near `<121>' instruction at offset 118
+
+Instruction context:
+   
+ L. 175       114  DUP_TOP          
+                 116  LOAD_NAME                ImportError
+->               118  <121>               138  ''
+                 120  POP_TOP          
+                 122  POP_TOP          
+                 124  POP_TOP          
+
+test/109397.pyc -- 
+# decompile failed

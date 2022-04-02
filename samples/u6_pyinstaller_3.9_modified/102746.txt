@@ -1,0 +1,162 @@
+Instruction context:
+   
+ L. 344       106  DUP_TOP          
+                 108  LOAD_GLOBAL              AttributeError
+->               110  <121>               122  ''
+                 112  POP_TOP          
+                 114  POP_TOP          
+                 116  POP_TOP          
+Instruction context:
+   
+ L. 428       148  LOAD_FAST                'name'
+                 150  LOAD_FAST                'processed'
+->               152  <118>                 1  ''
+             154_156  POP_JUMP_IF_FALSE   378  'to 378'
+Instruction context:
+   
+ L. 537        14  LOAD_FAST                'cls'
+                  16  LOAD_CONST               None
+->                18  <117>                 0  ''
+                  20  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L. 548        18  LOAD_FAST                'base'
+                  20  LOAD_GLOBAL              object
+->                22  <117>                 1  ''
+                  24  POP_JUMP_IF_FALSE    14  'to 14'
+Instruction context:
+   
+ L. 615        12  DUP_TOP          
+                  14  LOAD_GLOBAL              AttributeError
+->                16  <121>                30  ''
+                  18  POP_TOP          
+                  20  POP_TOP          
+                  22  POP_TOP          
+Instruction context:
+   
+ L. 633        20  DUP_TOP          
+                  22  LOAD_GLOBAL              UnicodeError
+->                24  <121>                38  ''
+                  26  POP_TOP          
+                  28  POP_TOP          
+                  30  POP_TOP          
+Instruction context:
+   
+ L. 709       142  LOAD_GLOBAL              getattr
+                 144  LOAD_GLOBAL              getmodule
+                 146  LOAD_FAST                'object'
+                 148  LOAD_DEREF               'filename'
+                 150  CALL_FUNCTION_2       2  ''
+                 152  LOAD_STR                 '__loader__'
+                 154  LOAD_CONST               None
+                 156  CALL_FUNCTION_3       3  ''
+                 158  LOAD_CONST               None
+->               160  <117>                 1  ''
+                 162  POP_JUMP_IF_FALSE   168  'to 168'
+Instruction context:
+   
+ L. 734        36  LOAD_FAST                '_filename'
+                  38  LOAD_CONST               None
+->                40  <117>                 1  ''
+                  42  POP_JUMP_IF_FALSE    68  'to 68'
+                  44  LOAD_FAST                '_filename'
+                  46  LOAD_GLOBAL              modulesbyfile
+                  48  <118>                 0  ''
+                  50  POP_JUMP_IF_FALSE    68  'to 68'
+Instruction context:
+   
+ L. 847       188  DUP_TOP          
+                 190  LOAD_GLOBAL              ClassFoundException
+->               192  <121>               240  ''
+                 194  POP_TOP          
+                 196  STORE_FAST               'e'
+                 198  POP_TOP          
+                 200  SETUP_FINALLY       232  'to 232'
+Instruction context:
+   
+ L. 879        18  DUP_TOP          
+                  20  LOAD_GLOBAL              OSError
+                  22  LOAD_GLOBAL              TypeError
+                  24  BUILD_TUPLE_2         2 
+->                26  <121>                40  ''
+                  28  POP_TOP          
+                  30  POP_TOP          
+                  32  POP_TOP          
+Instruction context:
+   
+ L. 936        28  LOAD_FAST                'token'
+                  30  LOAD_CONST               ('def', 'class', 'lambda')
+->                32  <118>                 0  ''
+                  34  POP_JUMP_IF_FALSE    56  'to 56'
+Instruction context:
+   
+ L. 981        48  DUP_TOP          
+                  50  LOAD_GLOBAL              EndOfBlock
+                  52  LOAD_GLOBAL              IndentationError
+                  54  BUILD_TUPLE_2         2 
+->                56  <121>                68  ''
+                  58  POP_TOP          
+                  60  POP_TOP          
+                  62  POP_TOP          
+Instruction context:
+   
+ L.1022        46  LOAD_FAST                'c'
+                  48  LOAD_FAST                'children'
+->                50  <118>                 0  ''
+                  52  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L.1040        32  LOAD_FAST                'parent'
+                  34  LOAD_FAST                'children'
+->                36  <118>                 1  ''
+                  38  POP_JUMP_IF_FALSE    48  'to 48'
+Instruction context:
+   
+ L.1154        22  DUP_TOP          
+                  24  LOAD_GLOBAL              Exception
+->                26  <121>                66  ''
+                  28  POP_TOP          
+                  30  STORE_FAST               'ex'
+                  32  POP_TOP          
+                  34  SETUP_FINALLY        58  'to 58'
+Instruction context:
+   
+ L.1225        42  LOAD_FAST                'annotation'
+                  44  LOAD_ATTR                __module__
+                  46  LOAD_STR                 'builtins'
+                  48  LOAD_FAST                'base_module'
+                  50  BUILD_TUPLE_2         2 
+->                52  <118>                 0  ''
+                  54  POP_JUMP_IF_FALSE    62  'to 62'
+Instruction context:
+   
+ L.1276       134  LOAD_FAST                'varargs'
+                 136  LOAD_CONST               None
+->               138  <117>                 1  ''
+                 140  POP_JUMP_IF_FALSE   162  'to 162'
+
+test/102746.pyc -- 
+# decompile failed
+
+# file test/102746.pyc
+# --- This code section failed: ---
+
+ L.1318         0  BUILD_LIST_0          0 
+                2  LOAD_FAST                '.0'
+              4_0  COME_FROM            14  '14'
+                4  FOR_ITER             26  'to 26'
+                6  STORE_FAST               'name'
+                8  LOAD_FAST                'name'
+               10  LOAD_DEREF               'values'
+               12  <118>                 1  ''
+               14  POP_JUMP_IF_FALSE     4  'to 4'
+               16  LOAD_GLOBAL              repr
+               18  LOAD_FAST                'name'
+               20  CALL_FUNCTION_1       1  ''
+               22  LIST_APPEND           2  ''
+               24  JUMP_BACK             4  'to 4'
+               26  RETURN_VALUE     
+               -1  RETURN_LAST      
+
+Parse error at or near `None' instruction at offset -1
+

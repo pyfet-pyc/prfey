@@ -1,0 +1,127 @@
+Instruction context:
+   
+ L.   6         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('fix', 'isneginf', 'isposinf')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/162651.pyc -- 
+# decompile failed
+
+# file test/162651.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 '\nModule of functions that are like ufuncs in acting on arrays and optionally\nstoring results in an output array.\n\n'
+                2  STORE_NAME               __doc__
+
+ L.   6         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('fix', 'isneginf', 'isposinf')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.   8        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME_ATTR         numpy.core.numeric
+               18  IMPORT_FROM              core
+               20  ROT_TWO          
+               22  POP_TOP          
+               24  IMPORT_FROM              numeric
+               26  STORE_NAME               nx
+               28  POP_TOP          
+
+ L.   9        30  LOAD_CONST               0
+               32  LOAD_CONST               ('array_function_dispatch', 'ARRAY_FUNCTION_ENABLED')
+               34  IMPORT_NAME_ATTR         numpy.core.overrides
+               36  IMPORT_FROM              array_function_dispatch
+               38  STORE_NAME               array_function_dispatch
+               40  IMPORT_FROM              ARRAY_FUNCTION_ENABLED
+               42  STORE_NAME               ARRAY_FUNCTION_ENABLED
+               44  POP_TOP          
+
+ L.  12        46  LOAD_CONST               0
+               48  LOAD_CONST               None
+               50  IMPORT_NAME              warnings
+               52  STORE_NAME               warnings
+
+ L.  13        54  LOAD_CONST               0
+               56  LOAD_CONST               None
+               58  IMPORT_NAME              functools
+               60  STORE_NAME               functools
+
+ L.  16        62  LOAD_CODE                <code_object _deprecate_out_named_y>
+               64  LOAD_STR                 '_deprecate_out_named_y'
+               66  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               68  STORE_NAME               _deprecate_out_named_y
+
+ L.  41        70  LOAD_CODE                <code_object _fix_out_named_y>
+               72  LOAD_STR                 '_fix_out_named_y'
+               74  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               76  STORE_NAME               _fix_out_named_y
+
+ L.  58        78  LOAD_CODE                <code_object _fix_and_maybe_deprecate_out_named_y>
+               80  LOAD_STR                 '_fix_and_maybe_deprecate_out_named_y'
+               82  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               84  STORE_NAME               _fix_and_maybe_deprecate_out_named_y
+
+ L.  68        86  LOAD_NAME                _deprecate_out_named_y
+
+ L.  69        88  LOAD_CONST               (None,)
+               90  LOAD_CODE                <code_object _dispatcher>
+               92  LOAD_STR                 '_dispatcher'
+               94  MAKE_FUNCTION_1          'default'
+               96  CALL_FUNCTION_1       1  ''
+               98  STORE_NAME               _dispatcher
+
+ L.  73       100  LOAD_NAME                array_function_dispatch
+              102  LOAD_NAME                _dispatcher
+              104  LOAD_CONST               False
+              106  LOAD_STR                 'numpy'
+              108  LOAD_CONST               ('verify', 'module')
+              110  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+
+ L.  74       112  LOAD_NAME                _fix_and_maybe_deprecate_out_named_y
+
+ L.  75       114  LOAD_CONST               (None,)
+              116  LOAD_CODE                <code_object fix>
+              118  LOAD_STR                 'fix'
+              120  MAKE_FUNCTION_1          'default'
+              122  CALL_FUNCTION_1       1  ''
+              124  CALL_FUNCTION_1       1  ''
+              126  STORE_NAME               fix
+
+ L. 127       128  LOAD_NAME                array_function_dispatch
+              130  LOAD_NAME                _dispatcher
+              132  LOAD_CONST               False
+              134  LOAD_STR                 'numpy'
+              136  LOAD_CONST               ('verify', 'module')
+              138  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+
+ L. 128       140  LOAD_NAME                _fix_and_maybe_deprecate_out_named_y
+
+ L. 129       142  LOAD_CONST               (None,)
+              144  LOAD_CODE                <code_object isposinf>
+              146  LOAD_STR                 'isposinf'
+              148  MAKE_FUNCTION_1          'default'
+              150  CALL_FUNCTION_1       1  ''
+              152  CALL_FUNCTION_1       1  ''
+              154  STORE_NAME               isposinf
+
+ L. 199       156  LOAD_NAME                array_function_dispatch
+              158  LOAD_NAME                _dispatcher
+              160  LOAD_CONST               False
+              162  LOAD_STR                 'numpy'
+              164  LOAD_CONST               ('verify', 'module')
+              166  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+
+ L. 200       168  LOAD_NAME                _fix_and_maybe_deprecate_out_named_y
+
+ L. 201       170  LOAD_CONST               (None,)
+              172  LOAD_CODE                <code_object isneginf>
+              174  LOAD_STR                 'isneginf'
+              176  MAKE_FUNCTION_1          'default'
+              178  CALL_FUNCTION_1       1  ''
+              180  CALL_FUNCTION_1       1  ''
+              182  STORE_NAME               isneginf
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+

@@ -1,0 +1,23 @@
+Instruction context:
+-> 
+ L. 462       274  LOAD_GLOBAL              isinstance
+                 276  LOAD_DEREF               'self'
+                 278  LOAD_ATTR                metadata
+                 280  LOAD_ATTR                version
+                 282  LOAD_GLOBAL              numbers
+                 284  LOAD_ATTR                Number
+                 286  CALL_FUNCTION_2       2  ''
+             288_290  POP_JUMP_IF_FALSE   308  'to 308'
+Instruction context:
+   
+ L. 642        36  POP_EXCEPT       
+                  38  JUMP_FORWARD         42  'to 42'
+->              40_0  COME_FROM            28  '28'
+                  40  END_FINALLY      
+                42_0  COME_FROM            38  '38'
+
+../test/157379.pyc -- 
+# decompile failed
+
+# file ../test/157379.pyc
+# Deparsing stopped due to parse error

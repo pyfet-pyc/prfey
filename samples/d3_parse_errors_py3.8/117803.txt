@@ -1,0 +1,31 @@
+Instruction context:
+   
+ L. 148       362  LOAD_CONST               b''
+                 364  LOAD_METHOD              join
+                 366  LOAD_FAST                'bvalue_lst'
+                 368  CALL_METHOD_1         1  ''
+                 370  STORE_FAST               'bvalue'
+->               372  JUMP_FORWARD        422  'to 422'
+               374_0  COME_FROM           220  '220'
+Instruction context:
+   
+ L. 224       110  POP_EXCEPT       
+->               112  LOAD_CONST               None
+                 114  RETURN_VALUE     
+               116_0  COME_FROM           102  '102'
+                 116  END_FINALLY      
+               118_0  COME_FROM            52  '52'
+Instruction context:
+   
+ L. 330   652_654  JUMP_FORWARD        900  'to 900'
+               656_0  COME_FROM           632  '632'
+               656_1  COME_FROM           162  '162'
+->               656  JUMP_BACK            46  'to 46'
+               658_0  COME_FROM            72  '72'
+               658_1  COME_FROM            64  '64'
+
+../test/117803.pyc -- 
+# decompile failed
+
+# file ../test/117803.pyc
+# Deparsing stopped due to parse error

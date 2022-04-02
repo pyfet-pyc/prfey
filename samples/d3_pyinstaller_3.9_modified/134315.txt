@@ -1,0 +1,26 @@
+Instruction context:
+   
+ L.  68        28  LOAD_FAST                'waiter'
+                  30  LOAD_CONST               None
+->                32  <117>                 0  ''
+                  34  POP_JUMP_IF_FALSE    40  'to 40'
+Instruction context:
+   
+ L.  84        30  LOAD_FAST                'waiter'
+                  32  LOAD_CONST               None
+->                34  <117>                 0  ''
+                  36  POP_JUMP_IF_TRUE     50  'to 50'
+                  38  LOAD_FAST                'waiter'
+                  40  LOAD_METHOD              cancelled
+                  42  CALL_METHOD_0         0  ''
+                  44  POP_JUMP_IF_TRUE     50  'to 50'
+                  46  <74>             
+                  48  RAISE_VARARGS_1       1  'exception instance'
+                50_0  COME_FROM            44  '44'
+                50_1  COME_FROM            36  '36'
+
+test/134315.pyc -- 
+# decompile failed
+
+# file test/134315.pyc
+# Deparsing stopped due to parse error

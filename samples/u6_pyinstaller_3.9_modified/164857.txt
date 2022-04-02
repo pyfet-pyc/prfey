@@ -1,0 +1,64 @@
+Instruction context:
+   
+ L. 149        18  LOAD_FAST                'module'
+                  20  LOAD_CONST               None
+->                22  <117>                 0  ''
+                  24  POP_JUMP_IF_FALSE   150  'to 150'
+Instruction context:
+   
+ L. 235        56  LOAD_DEREF               'self'
+                  58  LOAD_ATTR                testNamePatterns
+                  60  LOAD_CONST               None
+->                62  <117>                 0  ''
+                  64  JUMP_IF_TRUE_OR_POP    88  'to 88'
+Instruction context:
+   
+ L. 271         4  LOAD_FAST                'top_level_dir'
+                   6  LOAD_CONST               None
+->                 8  <117>                 0  ''
+                  10  POP_JUMP_IF_FALSE    30  'to 30'
+                  12  LOAD_FAST                'self'
+                  14  LOAD_ATTR                _top_level_dir
+                  16  LOAD_CONST               None
+                  18  <117>                 1  ''
+                  20  POP_JUMP_IF_FALSE    30  'to 30'
+Instruction context:
+   
+ L. 370        46  LOAD_GLOBAL              os
+                  48  LOAD_ATTR                path
+                  50  LOAD_METHOD              isabs
+                  52  LOAD_FAST                '_relpath'
+                  54  CALL_METHOD_1         1  ''
+                  56  POP_JUMP_IF_FALSE    66  'to 66'
+->                58  <74>             
+                  60  LOAD_STR                 'Path must be within the project'
+                  62  CALL_FUNCTION_1       1  ''
+                  64  RAISE_VARARGS_1       1  'exception instance'
+                66_0  COME_FROM            56  '56'
+Instruction context:
+   
+ L. 390        10  LOAD_FAST                'name'
+                  12  LOAD_STR                 '.'
+                  14  COMPARE_OP               !=
+                  16  POP_JUMP_IF_FALSE    68  'to 68'
+                  18  LOAD_FAST                'name'
+                  20  LOAD_FAST                'self'
+                  22  LOAD_ATTR                _loading_packages
+->                24  <118>                 1  ''
+                  26  POP_JUMP_IF_FALSE    68  'to 68'
+Instruction context:
+   
+ L. 437        84  DUP_TOP          
+                  86  LOAD_GLOBAL              case
+                  88  LOAD_ATTR                SkipTest
+->                90  <121>               138  ''
+                  92  POP_TOP          
+                  94  STORE_FAST               'e'
+                  96  POP_TOP          
+                  98  SETUP_FINALLY       130  'to 130'
+
+test/164857.pyc -- 
+# decompile failed
+
+# file test/164857.pyc
+# Deparsing stopped due to parse error

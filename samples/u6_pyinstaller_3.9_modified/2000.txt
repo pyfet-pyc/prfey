@@ -1,0 +1,264 @@
+
+# file test/2000.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Some simple financial calculations\n\npatterned after spreadsheet computations.\n\nThere is some complexity in each function\nso that the functions behave like ufuncs with\nbroadcasting and being able to be called with scalars\nor arrays (or other sequences).\n\nFunctions support the :class:`decimal.Decimal` type unless\notherwise stated.\n'
+                2  STORE_NAME               __doc__
+
+ L.  13         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              warnings
+               10  STORE_NAME               warnings
+
+ L.  14        12  LOAD_CONST               0
+               14  LOAD_CONST               ('Decimal',)
+               16  IMPORT_NAME              decimal
+               18  IMPORT_FROM              Decimal
+               20  STORE_NAME               Decimal
+               22  POP_TOP          
+
+ L.  15        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              functools
+               30  STORE_NAME               functools
+
+ L.  17        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              numpy
+               38  STORE_NAME               np
+
+ L.  18        40  LOAD_CONST               0
+               42  LOAD_CONST               ('overrides',)
+               44  IMPORT_NAME_ATTR         numpy.core
+               46  IMPORT_FROM              overrides
+               48  STORE_NAME               overrides
+               50  POP_TOP          
+
+ L.  21        52  LOAD_STR                 'numpy.{name} is deprecated and will be removed from NumPy 1.20. Use numpy_financial.{name} instead (https://pypi.org/project/numpy-financial/).'
+               54  STORE_NAME               _depmsg
+
+ L.  25        56  LOAD_NAME                functools
+               58  LOAD_ATTR                partial
+
+ L.  26        60  LOAD_NAME                overrides
+               62  LOAD_ATTR                array_function_dispatch
+               64  LOAD_STR                 'numpy'
+
+ L.  25        66  LOAD_CONST               ('module',)
+               68  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+               70  STORE_NAME               array_function_dispatch
+
+ L.  29        72  BUILD_LIST_0          0 
+               74  LOAD_CONST               ('fv', 'pmt', 'nper', 'ipmt', 'ppmt', 'pv', 'rate', 'irr', 'npv', 'mirr')
+               76  CALL_FINALLY         79  'to 79'
+               78  STORE_NAME               __all__
+
+ L.  32        80  LOAD_CONST               0
+               82  LOAD_CONST               1
+
+ L.  33        84  LOAD_CONST               0
+               86  LOAD_CONST               1
+
+ L.  34        88  LOAD_CONST               0
+               90  LOAD_CONST               1
+
+ L.  35        92  LOAD_CONST               1
+
+ L.  36        94  LOAD_CONST               1
+
+ L.  37        96  LOAD_CONST               0
+
+ L.  32        98  LOAD_CONST               ('end', 'begin', 'e', 'b', 0, 1, 'beginning', 'start', 'finish')
+              100  BUILD_CONST_KEY_MAP_9     9 
+              102  STORE_NAME               _when_to_num
+
+ L.  39       104  LOAD_CODE                <code_object _convert_when>
+              106  LOAD_STR                 '_convert_when'
+              108  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              110  STORE_NAME               _convert_when
+
+ L.  50       112  LOAD_CONST               (None,)
+              114  LOAD_CODE                <code_object _fv_dispatcher>
+              116  LOAD_STR                 '_fv_dispatcher'
+              118  MAKE_FUNCTION_1          'default'
+              120  STORE_NAME               _fv_dispatcher
+
+ L.  56       122  LOAD_NAME                array_function_dispatch
+              124  LOAD_NAME                _fv_dispatcher
+              126  CALL_FUNCTION_1       1  ''
+
+ L.  57       128  LOAD_CONST               ('end',)
+              130  LOAD_CODE                <code_object fv>
+              132  LOAD_STR                 'fv'
+              134  MAKE_FUNCTION_1          'default'
+              136  CALL_FUNCTION_1       1  ''
+              138  STORE_NAME               fv
+
+ L. 155       140  LOAD_CONST               (None, None)
+              142  LOAD_CODE                <code_object _pmt_dispatcher>
+              144  LOAD_STR                 '_pmt_dispatcher'
+              146  MAKE_FUNCTION_1          'default'
+              148  STORE_NAME               _pmt_dispatcher
+
+ L. 161       150  LOAD_NAME                array_function_dispatch
+              152  LOAD_NAME                _pmt_dispatcher
+              154  CALL_FUNCTION_1       1  ''
+
+ L. 162       156  LOAD_CONST               (0, 'end')
+              158  LOAD_CODE                <code_object pmt>
+              160  LOAD_STR                 'pmt'
+              162  MAKE_FUNCTION_1          'default'
+              164  CALL_FUNCTION_1       1  ''
+              166  STORE_NAME               pmt
+
+ L. 263       168  LOAD_CONST               (None, None)
+              170  LOAD_CODE                <code_object _nper_dispatcher>
+              172  LOAD_STR                 '_nper_dispatcher'
+              174  MAKE_FUNCTION_1          'default'
+              176  STORE_NAME               _nper_dispatcher
+
+ L. 269       178  LOAD_NAME                array_function_dispatch
+              180  LOAD_NAME                _nper_dispatcher
+              182  CALL_FUNCTION_1       1  ''
+
+ L. 270       184  LOAD_CONST               (0, 'end')
+              186  LOAD_CODE                <code_object nper>
+              188  LOAD_STR                 'nper'
+              190  MAKE_FUNCTION_1          'default'
+              192  CALL_FUNCTION_1       1  ''
+              194  STORE_NAME               nper
+
+ L. 350       196  LOAD_CONST               (None, None)
+              198  LOAD_CODE                <code_object _ipmt_dispatcher>
+              200  LOAD_STR                 '_ipmt_dispatcher'
+              202  MAKE_FUNCTION_1          'default'
+              204  STORE_NAME               _ipmt_dispatcher
+
+ L. 356       206  LOAD_NAME                array_function_dispatch
+              208  LOAD_NAME                _ipmt_dispatcher
+              210  CALL_FUNCTION_1       1  ''
+
+ L. 357       212  LOAD_CONST               (0, 'end')
+              214  LOAD_CODE                <code_object ipmt>
+              216  LOAD_STR                 'ipmt'
+              218  MAKE_FUNCTION_1          'default'
+              220  CALL_FUNCTION_1       1  ''
+              222  STORE_NAME               ipmt
+
+ L. 464       224  LOAD_CODE                <code_object _rbl>
+              226  LOAD_STR                 '_rbl'
+              228  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              230  STORE_NAME               _rbl
+
+ L. 474       232  LOAD_CONST               (None, None)
+              234  LOAD_CODE                <code_object _ppmt_dispatcher>
+              236  LOAD_STR                 '_ppmt_dispatcher'
+              238  MAKE_FUNCTION_1          'default'
+              240  STORE_NAME               _ppmt_dispatcher
+
+ L. 480       242  LOAD_NAME                array_function_dispatch
+              244  LOAD_NAME                _ppmt_dispatcher
+              246  CALL_FUNCTION_1       1  ''
+
+ L. 481       248  LOAD_CONST               (0, 'end')
+              250  LOAD_CODE                <code_object ppmt>
+              252  LOAD_STR                 'ppmt'
+              254  MAKE_FUNCTION_1          'default'
+              256  CALL_FUNCTION_1       1  ''
+              258  STORE_NAME               ppmt
+
+ L. 521       260  LOAD_CONST               (None, None)
+              262  LOAD_CODE                <code_object _pv_dispatcher>
+              264  LOAD_STR                 '_pv_dispatcher'
+              266  MAKE_FUNCTION_1          'default'
+              268  STORE_NAME               _pv_dispatcher
+
+ L. 527       270  LOAD_NAME                array_function_dispatch
+              272  LOAD_NAME                _pv_dispatcher
+              274  CALL_FUNCTION_1       1  ''
+
+ L. 528       276  LOAD_CONST               (0, 'end')
+              278  LOAD_CODE                <code_object pv>
+              280  LOAD_STR                 'pv'
+              282  MAKE_FUNCTION_1          'default'
+              284  CALL_FUNCTION_1       1  ''
+              286  STORE_NAME               pv
+
+ L. 633       288  LOAD_CODE                <code_object _g_div_gp>
+              290  LOAD_STR                 '_g_div_gp'
+              292  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              294  STORE_NAME               _g_div_gp
+
+ L. 641       296  LOAD_CONST               (None, None, None, None)
+              298  LOAD_CODE                <code_object _rate_dispatcher>
+              300  LOAD_STR                 '_rate_dispatcher'
+              302  MAKE_FUNCTION_1          'default'
+              304  STORE_NAME               _rate_dispatcher
+
+ L. 655       306  LOAD_NAME                array_function_dispatch
+              308  LOAD_NAME                _rate_dispatcher
+              310  CALL_FUNCTION_1       1  ''
+
+ L. 656       312  LOAD_CONST               ('end', None, None, 100)
+              314  LOAD_CODE                <code_object rate>
+              316  LOAD_STR                 'rate'
+              318  MAKE_FUNCTION_1          'default'
+              320  CALL_FUNCTION_1       1  ''
+              322  STORE_NAME               rate
+
+ L. 737       324  LOAD_CODE                <code_object _irr_dispatcher>
+              326  LOAD_STR                 '_irr_dispatcher'
+              328  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              330  STORE_NAME               _irr_dispatcher
+
+ L. 743       332  LOAD_NAME                array_function_dispatch
+              334  LOAD_NAME                _irr_dispatcher
+              336  CALL_FUNCTION_1       1  ''
+
+ L. 744       338  LOAD_CODE                <code_object irr>
+              340  LOAD_STR                 'irr'
+              342  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              344  CALL_FUNCTION_1       1  ''
+              346  STORE_NAME               irr
+
+ L. 830       348  LOAD_CODE                <code_object _npv_dispatcher>
+              350  LOAD_STR                 '_npv_dispatcher'
+              352  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              354  STORE_NAME               _npv_dispatcher
+
+ L. 836       356  LOAD_NAME                array_function_dispatch
+              358  LOAD_NAME                _npv_dispatcher
+              360  CALL_FUNCTION_1       1  ''
+
+ L. 837       362  LOAD_CODE                <code_object npv>
+              364  LOAD_STR                 'npv'
+              366  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              368  CALL_FUNCTION_1       1  ''
+              370  STORE_NAME               npv
+
+ L. 914       372  LOAD_CODE                <code_object _mirr_dispatcher>
+              374  LOAD_STR                 '_mirr_dispatcher'
+              376  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              378  STORE_NAME               _mirr_dispatcher
+
+ L. 920       380  LOAD_NAME                array_function_dispatch
+              382  LOAD_NAME                _mirr_dispatcher
+              384  CALL_FUNCTION_1       1  ''
+
+ L. 921       386  LOAD_CODE                <code_object mirr>
+              388  LOAD_STR                 'mirr'
+              390  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              392  CALL_FUNCTION_1       1  ''
+              394  STORE_NAME               mirr
+
+Parse error at or near `CALL_FINALLY' instruction at offset 76
+
+Instruction context:
+   
+ L.  29        72  BUILD_LIST_0          0 
+                  74  LOAD_CONST               ('fv', 'pmt', 'nper', 'ipmt', 'ppmt', 'pv', 'rate', 'irr', 'npv', 'mirr')
+->                76  CALL_FINALLY         79  'to 79'
+                  78  STORE_NAME               __all__
+
+test/2000.pyc -- 
+# decompile failed

@@ -1,0 +1,93 @@
+Instruction context:
+   
+ L. 191        44  LOAD_FAST                'prefix'
+                  46  LOAD_METHOD              encode
+                  48  LOAD_STR                 'ascii'
+                  50  CALL_METHOD_1         1  ''
+                  52  LOAD_FAST                'idna'
+                  54  LOAD_METHOD              encode
+                  56  LOAD_FAST                'name'
+                  58  CALL_METHOD_1         1  ''
+                  60  BINARY_ADD       
+                  62  ROT_TWO          
+                  64  POP_TOP          
+->                66  POP_BLOCK        
+                  68  RETURN_VALUE     
+                  70  JUMP_BACK            14  'to 14'
+Instruction context:
+   
+ L. 241       118  BUILD_LIST_0          0 
+                 120  ROT_FOUR         
+->               122  POP_BLOCK        
+                 124  POP_EXCEPT       
+                 126  CALL_FINALLY        130  'to 130'
+                 128  RETURN_VALUE     
+               130_0  COME_FROM           126  '126'
+               130_1  COME_FROM_FINALLY   104  '104'
+                 130  LOAD_CONST               None
+                 132  STORE_FAST               'e'
+                 134  DELETE_FAST              'e'
+                 136  END_FINALLY      
+                 138  POP_EXCEPT       
+                 140  JUMP_FORWARD        144  'to 144'
+               142_0  COME_FROM            96  '96'
+                 142  END_FINALLY      
+               144_0  COME_FROM           140  '140'
+               144_1  COME_FROM            52  '52'
+Instruction context:
+   
+ L. 291        56  POP_BLOCK        
+->                58  POP_EXCEPT       
+                  60  CALL_FINALLY         82  'to 82'
+                  62  LOAD_CONST               b''
+                  64  RETURN_VALUE     
+                66_0  COME_FROM            54  '54'
+                66_1  COME_FROM            44  '44'
+Instruction context:
+   
+ L. 316        54  POP_BLOCK        
+->                56  POP_EXCEPT       
+                  58  CALL_FINALLY         80  'to 80'
+                  60  LOAD_CONST               0
+                  62  RETURN_VALUE     
+                64_0  COME_FROM            52  '52'
+                64_1  COME_FROM            42  '42'
+Instruction context:
+   
+ L. 341        16  DUP_TOP          
+                  18  LOAD_GLOBAL              OpenSSL
+                  20  LOAD_ATTR                SSL
+                  22  LOAD_ATTR                WantWriteError
+                  24  COMPARE_OP               exception-match
+                  26  POP_JUMP_IF_FALSE    68  'to 68'
+                  28  POP_TOP          
+->                30  POP_TOP          
+                  32  POP_TOP          
+Instruction context:
+   
+ L. 365        30  DUP_TOP          
+                  32  LOAD_GLOBAL              OpenSSL
+                  34  LOAD_ATTR                SSL
+                  36  LOAD_ATTR                Error
+                  38  COMPARE_OP               exception-match
+                  40  POP_JUMP_IF_FALSE    54  'to 54'
+                  42  POP_TOP          
+->                44  POP_TOP          
+                  46  POP_TOP          
+Instruction context:
+   
+ L. 486        78  DUP_TOP          
+                  80  LOAD_GLOBAL              OpenSSL
+                  82  LOAD_ATTR                SSL
+                  84  LOAD_ATTR                WantReadError
+                  86  COMPARE_OP               exception-match
+                  88  POP_JUMP_IF_FALSE   128  'to 128'
+                  90  POP_TOP          
+->                92  POP_TOP          
+                  94  POP_TOP          
+
+../test/183962.pyc -- 
+# decompile failed
+
+# file ../test/183962.pyc
+# Deparsing stopped due to parse error

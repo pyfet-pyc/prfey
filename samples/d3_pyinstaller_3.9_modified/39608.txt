@@ -1,0 +1,96 @@
+Instruction context:
+   
+ L.  12        92  LOAD_NAME                windll
+                  94  LOAD_CONST               None
+->                96  <117>                 1  ''
+                  98  POP_JUMP_IF_FALSE   106  'to 106'
+
+test/39608.pyc -- 
+# decompile failed
+
+# file test/39608.pyc
+# --- This code section failed: ---
+
+ L.   2         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              re
+                6  STORE_NAME               re
+
+ L.   3         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              sys
+               14  STORE_NAME               sys
+
+ L.   4        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              os
+               22  STORE_NAME               os
+
+ L.   6        24  LOAD_CONST               1
+               26  LOAD_CONST               ('AnsiFore', 'AnsiBack', 'AnsiStyle', 'Style', 'BEL')
+               28  IMPORT_NAME              ansi
+               30  IMPORT_FROM              AnsiFore
+               32  STORE_NAME               AnsiFore
+               34  IMPORT_FROM              AnsiBack
+               36  STORE_NAME               AnsiBack
+               38  IMPORT_FROM              AnsiStyle
+               40  STORE_NAME               AnsiStyle
+               42  IMPORT_FROM              Style
+               44  STORE_NAME               Style
+               46  IMPORT_FROM              BEL
+               48  STORE_NAME               BEL
+               50  POP_TOP          
+
+ L.   7        52  LOAD_CONST               1
+               54  LOAD_CONST               ('WinTerm', 'WinColor', 'WinStyle')
+               56  IMPORT_NAME              winterm
+               58  IMPORT_FROM              WinTerm
+               60  STORE_NAME               WinTerm
+               62  IMPORT_FROM              WinColor
+               64  STORE_NAME               WinColor
+               66  IMPORT_FROM              WinStyle
+               68  STORE_NAME               WinStyle
+               70  POP_TOP          
+
+ L.   8        72  LOAD_CONST               1
+               74  LOAD_CONST               ('windll', 'winapi_test')
+               76  IMPORT_NAME              win32
+               78  IMPORT_FROM              windll
+               80  STORE_NAME               windll
+               82  IMPORT_FROM              winapi_test
+               84  STORE_NAME               winapi_test
+               86  POP_TOP          
+
+ L.  11        88  LOAD_CONST               None
+               90  STORE_NAME               winterm
+
+ L.  12        92  LOAD_NAME                windll
+               94  LOAD_CONST               None
+               96  <117>                 1  ''
+               98  POP_JUMP_IF_FALSE   106  'to 106'
+
+ L.  13       100  LOAD_NAME                WinTerm
+              102  CALL_FUNCTION_0       0  ''
+              104  STORE_NAME               winterm
+            106_0  COME_FROM            98  '98'
+
+ L.  16       106  LOAD_BUILD_CLASS 
+              108  LOAD_CODE                <code_object StreamWrapper>
+              110  LOAD_STR                 'StreamWrapper'
+              112  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              114  LOAD_STR                 'StreamWrapper'
+              116  LOAD_NAME                object
+              118  CALL_FUNCTION_3       3  ''
+              120  STORE_NAME               StreamWrapper
+
+ L.  64       122  LOAD_BUILD_CLASS 
+              124  LOAD_CODE                <code_object AnsiToWin32>
+              126  LOAD_STR                 'AnsiToWin32'
+              128  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              130  LOAD_STR                 'AnsiToWin32'
+              132  LOAD_NAME                object
+              134  CALL_FUNCTION_3       3  ''
+              136  STORE_NAME               AnsiToWin32
+
+Parse error at or near `<117>' instruction at offset 96
+

@@ -1,0 +1,72 @@
+Instruction context:
+   
+ L. 152       302  LOAD_FAST                'af'
+                 304  LOAD_FAST                'type'
+                 306  LOAD_FAST                'proto'
+                 308  LOAD_STR                 ''
+                 310  LOAD_FAST                'host'
+                 312  LOAD_FAST                'port'
+                 314  LOAD_FAST                'flowinfo'
+                 316  LOAD_FAST                'scopeid'
+                 318  BUILD_TUPLE_4         4 
+                 320  BUILD_TUPLE_5         5 
+                 322  POP_BLOCK        
+->               324  ROT_TWO          
+                 326  POP_TOP          
+                 328  RETURN_VALUE     
+               330_0  COME_FROM           298  '298'
+               330_1  COME_FROM           286  '286'
+Instruction context:
+   
+ L. 870       158  LOAD_FAST                'total_sent'
+                 160  POP_BLOCK        
+->               162  CALL_FINALLY        166  'to 166'
+                 164  RETURN_VALUE     
+               166_0  COME_FROM           162  '162'
+               166_1  COME_FROM_FINALLY    48  '48'
+Instruction context:
+   
+ L. 909        98  POP_BLOCK        
+                 100  POP_TOP          
+->               102  JUMP_ABSOLUTE       196  'to 196'
+                 104  POP_BLOCK        
+                 106  JUMP_BACK            72  'to 72'
+               108_0  COME_FROM_FINALLY    86  '86'
+Instruction context:
+   
+ L.1008       282  POP_BLOCK        
+                 284  POP_TOP          
+->           286_288  JUMP_ABSOLUTE       374  'to 374'
+                 290  POP_BLOCK        
+                 292  JUMP_BACK           256  'to 256'
+               294_0  COME_FROM_FINALLY   260  '260'
+Instruction context:
+   
+ L.1146        80  LOAD_FAST                'total_sent'
+                  82  POP_BLOCK        
+->                84  CALL_FINALLY        184  'to 184'
+                  86  RETURN_VALUE     
+                88_0  COME_FROM            78  '78'
+                88_1  COME_FROM            56  '56'
+Instruction context:
+   
+ L.1228       136  LOAD_CONST               None
+                 138  STORE_FAST               'r_addr'
+->           140_142  JUMP_FORWARD        926  'to 926'
+               144_0  COME_FROM             6  '6'
+Instruction context:
+   
+ L.1440       320  POP_EXCEPT       
+                 322  JUMP_BACK           234  'to 234'
+->               324  POP_EXCEPT       
+                 326  JUMP_FORWARD        330  'to 330'
+               328_0  COME_FROM           282  '282'
+                 328  END_FINALLY      
+               330_0  COME_FROM           326  '326'
+               330_1  COME_FROM           272  '272'
+
+../test/161985.pyc -- 
+# decompile failed
+
+# file ../test/161985.pyc
+# Deparsing stopped due to parse error

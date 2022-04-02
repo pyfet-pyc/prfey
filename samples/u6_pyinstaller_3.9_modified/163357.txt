@@ -1,0 +1,151 @@
+Instruction context:
+   
+ L.  17        52  BUILD_LIST_0          0 
+                  54  LOAD_CONST               ('shlex', 'split', 'quote', 'join')
+->                56  CALL_FINALLY         59  'to 59'
+                  58  STORE_NAME               __all__
+
+test/163357.pyc -- 
+# decompile failed
+
+# file test/163357.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'A lexical analyzer class for simple shell-like syntaxes.'
+                2  STORE_NAME               __doc__
+
+ L.  10         4  LOAD_CONST               0
+                6  LOAD_CONST               None
+                8  IMPORT_NAME              os
+               10  STORE_NAME               os
+
+ L.  11        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              re
+               18  STORE_NAME               re
+
+ L.  12        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              sys
+               26  STORE_NAME               sys
+
+ L.  13        28  LOAD_CONST               0
+               30  LOAD_CONST               ('deque',)
+               32  IMPORT_NAME              collections
+               34  IMPORT_FROM              deque
+               36  STORE_NAME               deque
+               38  POP_TOP          
+
+ L.  15        40  LOAD_CONST               0
+               42  LOAD_CONST               ('StringIO',)
+               44  IMPORT_NAME              io
+               46  IMPORT_FROM              StringIO
+               48  STORE_NAME               StringIO
+               50  POP_TOP          
+
+ L.  17        52  BUILD_LIST_0          0 
+               54  LOAD_CONST               ('shlex', 'split', 'quote', 'join')
+               56  CALL_FINALLY         59  'to 59'
+               58  STORE_NAME               __all__
+
+ L.  19        60  LOAD_BUILD_CLASS 
+               62  LOAD_CODE                <code_object shlex>
+               64  LOAD_STR                 'shlex'
+               66  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               68  LOAD_STR                 'shlex'
+               70  CALL_FUNCTION_2       2  ''
+               72  STORE_NAME               shlex
+
+ L. 305        74  LOAD_CONST               (False, True)
+               76  LOAD_CODE                <code_object split>
+               78  LOAD_STR                 'split'
+               80  MAKE_FUNCTION_1          'default'
+               82  STORE_NAME               split
+
+ L. 318        84  LOAD_CODE                <code_object join>
+               86  LOAD_STR                 'join'
+               88  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               90  STORE_NAME               join
+
+ L. 323        92  LOAD_NAME                re
+               94  LOAD_METHOD              compile
+               96  LOAD_STR                 '[^\\w@%+=:,./-]'
+               98  LOAD_NAME                re
+              100  LOAD_ATTR                ASCII
+              102  CALL_METHOD_2         2  ''
+              104  LOAD_ATTR                search
+              106  STORE_NAME               _find_unsafe
+
+ L. 325       108  LOAD_CODE                <code_object quote>
+              110  LOAD_STR                 'quote'
+              112  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              114  STORE_NAME               quote
+
+ L. 337       116  LOAD_CODE                <code_object _print_tokens>
+              118  LOAD_STR                 '_print_tokens'
+              120  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              122  STORE_NAME               _print_tokens
+
+ L. 344       124  LOAD_NAME                __name__
+              126  LOAD_STR                 '__main__'
+              128  COMPARE_OP               ==
+              130  POP_JUMP_IF_FALSE   222  'to 222'
+
+ L. 345       132  LOAD_NAME                len
+              134  LOAD_NAME                sys
+              136  LOAD_ATTR                argv
+              138  CALL_FUNCTION_1       1  ''
+              140  LOAD_CONST               1
+              142  COMPARE_OP               ==
+              144  POP_JUMP_IF_FALSE   158  'to 158'
+
+ L. 346       146  LOAD_NAME                _print_tokens
+              148  LOAD_NAME                shlex
+              150  CALL_FUNCTION_0       0  ''
+              152  CALL_FUNCTION_1       1  ''
+              154  POP_TOP          
+              156  JUMP_FORWARD        222  'to 222'
+            158_0  COME_FROM           144  '144'
+
+ L. 348       158  LOAD_NAME                sys
+              160  LOAD_ATTR                argv
+              162  LOAD_CONST               1
+              164  BINARY_SUBSCR    
+              166  STORE_NAME               fn
+
+ L. 349       168  LOAD_NAME                open
+              170  LOAD_NAME                fn
+              172  CALL_FUNCTION_1       1  ''
+              174  SETUP_WITH          206  'to 206'
+              176  STORE_NAME               f
+
+ L. 350       178  LOAD_NAME                _print_tokens
+              180  LOAD_NAME                shlex
+              182  LOAD_NAME                f
+              184  LOAD_NAME                fn
+              186  CALL_FUNCTION_2       2  ''
+              188  CALL_FUNCTION_1       1  ''
+              190  POP_TOP          
+              192  POP_BLOCK        
+              194  LOAD_CONST               None
+              196  DUP_TOP          
+              198  DUP_TOP          
+              200  CALL_FUNCTION_3       3  ''
+              202  POP_TOP          
+              204  JUMP_FORWARD        222  'to 222'
+            206_0  COME_FROM_WITH      174  '174'
+              206  <49>             
+              208  POP_JUMP_IF_TRUE    212  'to 212'
+              210  <48>             
+            212_0  COME_FROM           208  '208'
+              212  POP_TOP          
+              214  POP_TOP          
+              216  POP_TOP          
+              218  POP_EXCEPT       
+              220  POP_TOP          
+            222_0  COME_FROM           204  '204'
+            222_1  COME_FROM           156  '156'
+            222_2  COME_FROM           130  '130'
+
+Parse error at or near `CALL_FINALLY' instruction at offset 56
+

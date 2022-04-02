@@ -1,0 +1,178 @@
+Instruction context:
+   
+ L.  35        32  DUP_TOP          
+                  34  LOAD_GLOBAL              OSError
+->                36  <121>                60  ''
+                  38  POP_TOP          
+                  40  POP_TOP          
+                  42  POP_TOP          
+Instruction context:
+   
+ L.  79        90  DUP_TOP          
+                  92  LOAD_GLOBAL              subprocess
+                  94  LOAD_ATTR                CalledProcessError
+                  96  LOAD_GLOBAL              OSError
+                  98  LOAD_GLOBAL              UnicodeDecodeError
+                 100  BUILD_TUPLE_3         3 
+->               102  <121>               116  ''
+                 104  POP_TOP          
+                 106  POP_TOP          
+                 108  POP_TOP          
+Instruction context:
+   
+ L. 129        94  DUP_TOP          
+                  96  LOAD_GLOBAL              subprocess
+                  98  LOAD_ATTR                CalledProcessError
+->               100  <121>               158  ''
+                 102  POP_TOP          
+                 104  STORE_FAST               'exc'
+                 106  POP_TOP          
+                 108  SETUP_FINALLY       150  'to 150'
+Instruction context:
+   
+ L. 185        26  BUILD_LIST_0          0 
+                  28  LOAD_CONST               ('.cc', '.cpp', '.cxx')
+->                30  CALL_FINALLY         33  'to 33'
+                  32  STORE_NAME               _cpp_extensions
+
+test/111887.pyc -- 
+# decompile failed
+
+# file test/111887.pyc
+# --- This code section failed: ---
+
+ L. 170         0  LOAD_NAME                __name__
+                2  STORE_NAME               __module__
+                4  LOAD_STR                 'MSVCCompiler'
+                6  STORE_NAME               __qualname__
+
+ L. 171         8  LOAD_STR                 'Concrete class that implements an interface to Microsoft Visual C++,\n       as defined by the CCompiler abstract class.'
+               10  STORE_NAME               __doc__
+
+ L. 174        12  LOAD_STR                 'msvc'
+               14  STORE_NAME               compiler_type
+
+ L. 181        16  BUILD_MAP_0           0 
+               18  STORE_NAME               executables
+
+ L. 184        20  LOAD_STR                 '.c'
+               22  BUILD_LIST_1          1 
+               24  STORE_NAME               _c_extensions
+
+ L. 185        26  BUILD_LIST_0          0 
+               28  LOAD_CONST               ('.cc', '.cpp', '.cxx')
+               30  CALL_FINALLY         33  'to 33'
+               32  STORE_NAME               _cpp_extensions
+
+ L. 186        34  LOAD_STR                 '.rc'
+               36  BUILD_LIST_1          1 
+               38  STORE_NAME               _rc_extensions
+
+ L. 187        40  LOAD_STR                 '.mc'
+               42  BUILD_LIST_1          1 
+               44  STORE_NAME               _mc_extensions
+
+ L. 191        46  LOAD_NAME                _c_extensions
+               48  LOAD_NAME                _cpp_extensions
+               50  BINARY_ADD       
+
+ L. 192        52  LOAD_NAME                _rc_extensions
+
+ L. 191        54  BINARY_ADD       
+
+ L. 192        56  LOAD_NAME                _mc_extensions
+
+ L. 191        58  BINARY_ADD       
+               60  STORE_NAME               src_extensions
+
+ L. 193        62  LOAD_STR                 '.res'
+               64  STORE_NAME               res_extension
+
+ L. 194        66  LOAD_STR                 '.obj'
+               68  STORE_NAME               obj_extension
+
+ L. 195        70  LOAD_STR                 '.lib'
+               72  STORE_NAME               static_lib_extension
+
+ L. 196        74  LOAD_STR                 '.dll'
+               76  STORE_NAME               shared_lib_extension
+
+ L. 197        78  LOAD_STR                 '%s%s'
+               80  DUP_TOP          
+               82  STORE_NAME               static_lib_format
+               84  STORE_NAME               shared_lib_format
+
+ L. 198        86  LOAD_STR                 '.exe'
+               88  STORE_NAME               exe_extension
+
+ L. 201        90  LOAD_CONST               (0, 0, 0)
+               92  LOAD_CODE                <code_object __init__>
+               94  LOAD_STR                 'MSVCCompiler.__init__'
+               96  MAKE_FUNCTION_1          'default'
+               98  STORE_NAME               __init__
+
+ L. 207       100  LOAD_CONST               (None,)
+              102  LOAD_CODE                <code_object initialize>
+              104  LOAD_STR                 'MSVCCompiler.initialize'
+              106  MAKE_FUNCTION_1          'default'
+              108  STORE_NAME               initialize
+
+ L. 285       110  LOAD_CONST               (0, '')
+              112  LOAD_CODE                <code_object object_filenames>
+              114  LOAD_STR                 'MSVCCompiler.object_filenames'
+              116  MAKE_FUNCTION_1          'default'
+              118  STORE_NAME               object_filenames
+
+ L. 318       120  LOAD_CONST               (None, None, None, 0, None, None, None)
+              122  LOAD_CODE                <code_object compile>
+              124  LOAD_STR                 'MSVCCompiler.compile'
+              126  MAKE_FUNCTION_1          'default'
+              128  STORE_NAME               compile
+
+ L. 408       130  LOAD_CONST               (None, 0, None)
+              132  LOAD_CODE                <code_object create_static_lib>
+              134  LOAD_STR                 'MSVCCompiler.create_static_lib'
+              136  MAKE_FUNCTION_1          'default'
+              138  STORE_NAME               create_static_lib
+
+ L. 434       140  LOAD_CONST               (None, None, None, None, None, 0, None, None, None, None)
+              142  LOAD_CODE                <code_object link>
+              144  LOAD_STR                 'MSVCCompiler.link'
+              146  MAKE_FUNCTION_1          'default'
+              148  STORE_NAME               link
+
+ L. 503       150  LOAD_CLOSURE             '__class__'
+              152  BUILD_TUPLE_1         1 
+              154  LOAD_CODE                <code_object spawn>
+              156  LOAD_STR                 'MSVCCompiler.spawn'
+              158  MAKE_FUNCTION_8          'closure'
+              160  STORE_NAME               spawn
+
+ L. 515       162  LOAD_CODE                <code_object library_dir_option>
+              164  LOAD_STR                 'MSVCCompiler.library_dir_option'
+              166  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              168  STORE_NAME               library_dir_option
+
+ L. 518       170  LOAD_CODE                <code_object runtime_library_dir_option>
+              172  LOAD_STR                 'MSVCCompiler.runtime_library_dir_option'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  STORE_NAME               runtime_library_dir_option
+
+ L. 522       178  LOAD_CODE                <code_object library_option>
+              180  LOAD_STR                 'MSVCCompiler.library_option'
+              182  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              184  STORE_NAME               library_option
+
+ L. 525       186  LOAD_CONST               (0,)
+              188  LOAD_CODE                <code_object find_library_file>
+              190  LOAD_STR                 'MSVCCompiler.find_library_file'
+              192  MAKE_FUNCTION_1          'default'
+              194  STORE_NAME               find_library_file
+              196  LOAD_CLOSURE             '__class__'
+              198  DUP_TOP          
+              200  STORE_NAME               __classcell__
+              202  RETURN_VALUE     
+               -1  RETURN_LAST      
+
+Parse error at or near `CALL_FINALLY' instruction at offset 30
+

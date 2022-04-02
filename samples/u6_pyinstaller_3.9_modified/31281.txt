@@ -1,0 +1,210 @@
+Instruction context:
+   
+ L.  41        20  LOAD_FAST                'key_file'
+                  22  LOAD_METHOD              write
+                  24  LOAD_FAST                'key'
+                  26  CALL_METHOD_1         1  ''
+                  28  POP_TOP          
+                  30  POP_BLOCK        
+                  32  LOAD_CONST               None
+->                34  DUP_TOP          
+                  36  DUP_TOP          
+                  38  CALL_FUNCTION_3       3  ''
+                  40  POP_TOP          
+                  42  JUMP_FORWARD         60  'to 60'
+                44_0  COME_FROM_WITH       16  '16'
+                  44  <49>             
+                  46  POP_JUMP_IF_TRUE     50  'to 50'
+                  48  <48>             
+                50_0  COME_FROM            46  '46'
+                  50  POP_TOP          
+                  52  POP_TOP          
+                  54  POP_TOP          
+                  56  POP_EXCEPT       
+                  58  POP_TOP          
+                60_0  COME_FROM            42  '42'
+Instruction context:
+   
+ L.  52        20  LOAD_FAST                'file'
+                  22  LOAD_METHOD              read
+                  24  CALL_METHOD_0         0  ''
+                  26  STORE_FAST               'file_data'
+                  28  POP_BLOCK        
+                  30  LOAD_CONST               None
+->                32  DUP_TOP          
+                  34  DUP_TOP          
+                  36  CALL_FUNCTION_3       3  ''
+                  38  POP_TOP          
+                  40  JUMP_FORWARD         58  'to 58'
+                42_0  COME_FROM_WITH       16  '16'
+                  42  <49>             
+                  44  POP_JUMP_IF_TRUE     48  'to 48'
+                  46  <48>             
+                48_0  COME_FROM            44  '44'
+                  48  POP_TOP          
+                  50  POP_TOP          
+                  52  POP_TOP          
+                  54  POP_EXCEPT       
+                  56  POP_TOP          
+                58_0  COME_FROM            40  '40'
+Instruction context:
+   
+ L. 140      1238  LOAD_GLOBAL              print
+                1240  LOAD_FAST                'name'
+                1242  CALL_FUNCTION_1       1  ''
+                1244  POP_TOP          
+                1246  POP_EXCEPT       
+                1248  JUMP_BACK          1212  'to 1212'
+->              1250  <48>             
+Instruction context:
+   
+ L. 211        42  LOAD_GLOBAL              json
+                  44  LOAD_METHOD              loads
+                  46  LOAD_FAST                'local_state'
+                  48  CALL_METHOD_1         1  ''
+                  50  STORE_FAST               'local_state'
+                  52  POP_BLOCK        
+                  54  LOAD_CONST               None
+->                56  DUP_TOP          
+                  58  DUP_TOP          
+                  60  CALL_FUNCTION_3       3  ''
+                  62  POP_TOP          
+                  64  JUMP_FORWARD         82  'to 82'
+                66_0  COME_FROM_WITH       30  '30'
+                  66  <49>             
+                  68  POP_JUMP_IF_TRUE     72  'to 72'
+                  70  <48>             
+                72_0  COME_FROM            68  '68'
+                  72  POP_TOP          
+                  74  POP_TOP          
+                  76  POP_TOP          
+                  78  POP_EXCEPT       
+                  80  POP_TOP          
+                82_0  COME_FROM            64  '64'
+Instruction context:
+   
+ L. 236        68  DUP_TOP          
+                  70  LOAD_GLOBAL              Exception
+->                72  <121>               104  ''
+                  74  POP_TOP          
+                  76  STORE_FAST               'e'
+                  78  POP_TOP          
+                  80  SETUP_FINALLY        96  'to 96'
+Instruction context:
+   
+ L. 282       164  LOAD_FAST                'oidVal'
+                 166  LOAD_GLOBAL              oidValues
+->               168  <118>                 0  ''
+                 170  POP_JUMP_IF_FALSE   178  'to 178'
+Instruction context:
+   
+ L. 435        62  LOAD_STR                 'logins'
+                  64  LOAD_FAST                'jsonLogins'
+->                66  <118>                 1  ''
+                  68  POP_JUMP_IF_FALSE    82  'to 82'
+Instruction context:
+   
+ L. 477       148  LOAD_GLOBAL              CKA_ID
+                 150  LOAD_FAST                'keyData'
+->               152  <118>                 1  ''
+                 154  POP_JUMP_IF_FALSE   160  'to 160'
+Instruction context:
+   
+ L. 590       134  LOAD_GLOBAL              str
+                 136  LOAD_FAST                'decodedItem'
+                 138  LOAD_CONST               0
+                 140  BINARY_SUBSCR    
+                 142  LOAD_CONST               0
+                 144  BINARY_SUBSCR    
+                 146  LOAD_CONST               1
+                 148  BINARY_SUBSCR    
+                 150  LOAD_CONST               0
+                 152  BINARY_SUBSCR    
+                 154  LOAD_CONST               0
+                 156  BINARY_SUBSCR    
+                 158  CALL_FUNCTION_1       1  ''
+                 160  LOAD_STR                 '1.2.840.113549.1.5.12'
+                 162  COMPARE_OP               ==
+                 164  POP_JUMP_IF_TRUE    170  'to 170'
+->               166  <74>             
+                 168  RAISE_VARARGS_1       1  'exception instance'
+               170_0  COME_FROM           164  '164'
+Instruction context:
+   
+ L. 664       164  LOAD_FAST                'i'
+                 166  LOAD_CONST               0
+                 168  BINARY_SUBSCR    
+                 170  LOAD_CONST               0
+                 172  BINARY_SUBSCR    
+                 174  LOAD_GLOBAL              CKA_ID
+                 176  COMPARE_OP               ==
+                 178  POP_JUMP_IF_TRUE    184  'to 184'
+->               180  <74>             
+                 182  RAISE_VARARGS_1       1  'exception instance'
+               184_0  COME_FROM           178  '178'
+Instruction context:
+   
+ L. 701       200  DUP_TOP          
+                 202  LOAD_GLOBAL              Exception
+->               204  <121>               234  ''
+                 206  POP_TOP          
+                 208  STORE_FAST               'e'
+                 210  POP_TOP          
+                 212  SETUP_FINALLY       226  'to 226'
+Instruction context:
+   
+ L. 724        40  LOAD_FAST                'base64_message'
+                  42  POP_BLOCK        
+->                44  ROT_TWO          
+                  46  LOAD_CONST               None
+                  48  DUP_TOP          
+                  50  DUP_TOP          
+                  52  CALL_FUNCTION_3       3  ''
+                  54  POP_TOP          
+                  56  RETURN_VALUE     
+                58_0  COME_FROM_WITH        8  '8'
+                  58  <49>             
+                  60  POP_JUMP_IF_TRUE     64  'to 64'
+                  62  <48>             
+                64_0  COME_FROM            60  '60'
+                  64  POP_TOP          
+                  66  POP_TOP          
+                  68  POP_TOP          
+                  70  POP_EXCEPT       
+Instruction context:
+   
+ L. 743       130  DUP_TOP          
+                 132  LOAD_GLOBAL              requests
+                 134  LOAD_ATTR                exceptions
+                 136  LOAD_ATTR                HTTPError
+->               138  <121>               178  ''
+                 140  POP_TOP          
+                 142  STORE_FAST               'errh'
+                 144  POP_TOP          
+                 146  SETUP_FINALLY       170  'to 170'
+Instruction context:
+   
+ L. 756        32  DUP_TOP          
+                  34  LOAD_GLOBAL              requests
+                  36  LOAD_ATTR                exceptions
+                  38  LOAD_ATTR                HTTPError
+->                40  <121>                80  ''
+                  42  POP_TOP          
+                  44  STORE_FAST               'errh'
+                  46  POP_TOP          
+                  48  SETUP_FINALLY        72  'to 72'
+Instruction context:
+   
+ L. 793        30  LOAD_STR                 'true'
+                  32  STORE_FAST               'erno'
+                  34  POP_EXCEPT       
+                  36  JUMP_FORWARD         40  'to 40'
+->                38  <48>             
+                40_0  COME_FROM            36  '36'
+                40_1  COME_FROM            22  '22'
+
+test/31281.pyc -- 
+# decompile failed
+
+# file test/31281.pyc
+# Deparsing stopped due to parse error

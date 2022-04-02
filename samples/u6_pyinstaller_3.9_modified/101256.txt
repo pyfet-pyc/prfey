@@ -1,0 +1,194 @@
+
+# file test/101256.pyc
+# --- This code section failed: ---
+
+ L.  10         0  BUILD_LIST_0          0 
+                2  LOAD_CONST               ('BaseProcess', 'current_process', 'active_children', 'parent_process')
+                4  CALL_FINALLY          7  'to 7'
+                6  STORE_NAME               __all__
+
+ L.  17         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              os
+               14  STORE_NAME               os
+
+ L.  18        16  LOAD_CONST               0
+               18  LOAD_CONST               None
+               20  IMPORT_NAME              sys
+               22  STORE_NAME               sys
+
+ L.  19        24  LOAD_CONST               0
+               26  LOAD_CONST               None
+               28  IMPORT_NAME              signal
+               30  STORE_NAME               signal
+
+ L.  20        32  LOAD_CONST               0
+               34  LOAD_CONST               None
+               36  IMPORT_NAME              itertools
+               38  STORE_NAME               itertools
+
+ L.  21        40  LOAD_CONST               0
+               42  LOAD_CONST               None
+               44  IMPORT_NAME              threading
+               46  STORE_NAME               threading
+
+ L.  22        48  LOAD_CONST               0
+               50  LOAD_CONST               ('WeakSet',)
+               52  IMPORT_NAME              _weakrefset
+               54  IMPORT_FROM              WeakSet
+               56  STORE_NAME               WeakSet
+               58  POP_TOP          
+
+ L.  28        60  SETUP_FINALLY        82  'to 82'
+
+ L.  29        62  LOAD_NAME                os
+               64  LOAD_ATTR                path
+               66  LOAD_METHOD              abspath
+               68  LOAD_NAME                os
+               70  LOAD_METHOD              getcwd
+               72  CALL_METHOD_0         0  ''
+               74  CALL_METHOD_1         1  ''
+               76  STORE_NAME               ORIGINAL_DIR
+               78  POP_BLOCK        
+               80  JUMP_FORWARD        104  'to 104'
+             82_0  COME_FROM_FINALLY    60  '60'
+
+ L.  30        82  DUP_TOP          
+               84  LOAD_NAME                OSError
+               86  <121>               102  ''
+               88  POP_TOP          
+               90  POP_TOP          
+               92  POP_TOP          
+
+ L.  31        94  LOAD_CONST               None
+               96  STORE_NAME               ORIGINAL_DIR
+               98  POP_EXCEPT       
+              100  JUMP_FORWARD        104  'to 104'
+              102  <48>             
+            104_0  COME_FROM           100  '100'
+            104_1  COME_FROM            80  '80'
+
+ L.  37       104  LOAD_CODE                <code_object current_process>
+              106  LOAD_STR                 'current_process'
+              108  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              110  STORE_NAME               current_process
+
+ L.  43       112  LOAD_CODE                <code_object active_children>
+              114  LOAD_STR                 'active_children'
+              116  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              118  STORE_NAME               active_children
+
+ L.  51       120  LOAD_CODE                <code_object parent_process>
+              122  LOAD_STR                 'parent_process'
+              124  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              126  STORE_NAME               parent_process
+
+ L.  61       128  LOAD_CODE                <code_object _cleanup>
+              130  LOAD_STR                 '_cleanup'
+              132  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              134  STORE_NAME               _cleanup
+
+ L.  71       136  LOAD_BUILD_CLASS 
+              138  LOAD_CODE                <code_object BaseProcess>
+              140  LOAD_STR                 'BaseProcess'
+              142  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              144  LOAD_STR                 'BaseProcess'
+              146  LOAD_NAME                object
+              148  CALL_FUNCTION_3       3  ''
+              150  STORE_NAME               BaseProcess
+
+ L. 343       152  LOAD_BUILD_CLASS 
+              154  LOAD_CODE                <code_object AuthenticationString>
+              156  LOAD_STR                 'AuthenticationString'
+              158  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              160  LOAD_STR                 'AuthenticationString'
+              162  LOAD_NAME                bytes
+              164  CALL_FUNCTION_3       3  ''
+              166  STORE_NAME               AuthenticationString
+
+ L. 358       168  LOAD_BUILD_CLASS 
+              170  LOAD_CODE                <code_object _ParentProcess>
+              172  LOAD_STR                 '_ParentProcess'
+              174  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              176  LOAD_STR                 '_ParentProcess'
+              178  LOAD_NAME                BaseProcess
+              180  CALL_FUNCTION_3       3  ''
+              182  STORE_NAME               _ParentProcess
+
+ L. 391       184  LOAD_BUILD_CLASS 
+              186  LOAD_CODE                <code_object _MainProcess>
+              188  LOAD_STR                 '_MainProcess'
+              190  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              192  LOAD_STR                 '_MainProcess'
+              194  LOAD_NAME                BaseProcess
+              196  CALL_FUNCTION_3       3  ''
+              198  STORE_NAME               _MainProcess
+
+ L. 415       200  LOAD_CONST               None
+              202  STORE_GLOBAL             _parent_process
+
+ L. 416       204  LOAD_NAME                _MainProcess
+              206  CALL_FUNCTION_0       0  ''
+              208  STORE_GLOBAL             _current_process
+
+ L. 417       210  LOAD_NAME                itertools
+              212  LOAD_METHOD              count
+              214  LOAD_CONST               1
+              216  CALL_METHOD_1         1  ''
+              218  STORE_GLOBAL             _process_counter
+
+ L. 418       220  LOAD_NAME                set
+              222  CALL_FUNCTION_0       0  ''
+              224  STORE_GLOBAL             _children
+
+ L. 419       226  DELETE_NAME              _MainProcess
+
+ L. 425       228  BUILD_MAP_0           0 
+              230  STORE_NAME               _exitcode_to_name
+
+ L. 427       232  LOAD_NAME                list
+              234  LOAD_NAME                signal
+              236  LOAD_ATTR                __dict__
+              238  LOAD_METHOD              items
+              240  CALL_METHOD_0         0  ''
+              242  CALL_FUNCTION_1       1  ''
+              244  GET_ITER         
+            246_0  COME_FROM           276  '276'
+            246_1  COME_FROM           268  '268'
+              246  FOR_ITER            296  'to 296'
+              248  UNPACK_SEQUENCE_2     2 
+              250  STORE_NAME               name
+              252  STORE_NAME               signum
+
+ L. 428       254  LOAD_NAME                name
+              256  LOAD_CONST               None
+              258  LOAD_CONST               3
+              260  BUILD_SLICE_2         2 
+              262  BINARY_SUBSCR    
+              264  LOAD_STR                 'SIG'
+              266  COMPARE_OP               ==
+              268  POP_JUMP_IF_FALSE   246  'to 246'
+              270  LOAD_STR                 '_'
+              272  LOAD_NAME                name
+              274  <118>                 1  ''
+              276  POP_JUMP_IF_FALSE   246  'to 246'
+
+ L. 429       278  LOAD_STR                 '-'
+              280  LOAD_NAME                name
+              282  FORMAT_VALUE          0  ''
+              284  BUILD_STRING_2        2 
+              286  LOAD_NAME                _exitcode_to_name
+              288  LOAD_NAME                signum
+              290  UNARY_NEGATIVE   
+              292  STORE_SUBSCR     
+              294  JUMP_BACK           246  'to 246'
+
+ L. 432       296  LOAD_NAME                WeakSet
+              298  CALL_FUNCTION_0       0  ''
+              300  STORE_NAME               _dangling
+
+Parse error at or near `None' instruction at offset -1
+
+
+test/101256.pyc -- 
+# decompile failed

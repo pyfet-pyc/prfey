@@ -1,0 +1,27 @@
+Instruction context:
+   
+ L. 105       388  LOAD_FAST                'video_format'
+                 390  LOAD_STR                 'hls'
+                 392  COMPARE_OP               ==
+             394_396  POP_JUMP_IF_TRUE    418  'to 418'
+                 398  LOAD_STR                 '/hls/'
+                 400  LOAD_FAST                'media_url'
+                 402  COMPARE_OP               in
+             404_406  POP_JUMP_IF_TRUE    418  'to 418'
+                 408  LOAD_STR                 '/chunklist.m3u8'
+                 410  LOAD_FAST                'media_url'
+                 412  COMPARE_OP               in
+             414_416  JUMP_IF_FALSE_OR_POP   424  'to 424'
+               418_0  COME_FROM           404  '404'
+               418_1  COME_FROM           394  '394'
+                 418  LOAD_FAST                'playlist'
+                 420  LOAD_CONST               False
+                 422  COMPARE_OP               is
+               424_0  COME_FROM           414  '414'
+->               424  STORE_FAST               'is_hls'
+
+../test/16407.pyc -- 
+# decompile failed
+
+# file ../test/16407.pyc
+# Deparsing stopped due to parse error

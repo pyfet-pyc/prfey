@@ -1,0 +1,317 @@
+
+# file test/39779.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               ('absolute_import',)
+                4  IMPORT_NAME              __future__
+                6  IMPORT_FROM              absolute_import
+                8  STORE_NAME               absolute_import
+               10  POP_TOP          
+
+ L.   3        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              re
+               18  STORE_NAME               re
+
+ L.   4        20  LOAD_CONST               0
+               22  LOAD_CONST               ('namedtuple',)
+               24  IMPORT_NAME              collections
+               26  IMPORT_FROM              namedtuple
+               28  STORE_NAME               namedtuple
+               30  POP_TOP          
+
+ L.   6        32  LOAD_CONST               2
+               34  LOAD_CONST               ('LocationParseError',)
+               36  IMPORT_NAME              exceptions
+               38  IMPORT_FROM              LocationParseError
+               40  STORE_NAME               LocationParseError
+               42  POP_TOP          
+
+ L.   7        44  LOAD_CONST               2
+               46  LOAD_CONST               ('six',)
+               48  IMPORT_NAME              packages
+               50  IMPORT_FROM              six
+               52  STORE_NAME               six
+               54  POP_TOP          
+
+ L.   9        56  BUILD_LIST_0          0 
+               58  LOAD_CONST               ('scheme', 'auth', 'host', 'port', 'path', 'query', 'fragment')
+               60  CALL_FINALLY         63  'to 63'
+               62  STORE_NAME               url_attrs
+
+ L.  13        64  LOAD_CONST               ('http', 'https', None)
+               66  STORE_NAME               NORMALIZABLE_SCHEMES
+
+ L.  17        68  LOAD_NAME                re
+               70  LOAD_METHOD              compile
+               72  LOAD_STR                 '%[a-fA-F0-9]{2}'
+               74  CALL_METHOD_1         1  ''
+               76  STORE_NAME               PERCENT_RE
+
+ L.  18        78  LOAD_NAME                re
+               80  LOAD_METHOD              compile
+               82  LOAD_STR                 '^(?:[a-zA-Z][a-zA-Z0-9+-]*:|/)'
+               84  CALL_METHOD_1         1  ''
+               86  STORE_NAME               SCHEME_RE
+
+ L.  19        88  LOAD_NAME                re
+               90  LOAD_METHOD              compile
+
+ L.  20        92  LOAD_STR                 '^(?:([a-zA-Z][a-zA-Z0-9+.-]*):)?(?://([^\\\\/?#]*))?([^?#]*)(?:\\?([^#]*))?(?:#(.*))?$'
+
+ L.  25        94  LOAD_NAME                re
+               96  LOAD_ATTR                UNICODE
+               98  LOAD_NAME                re
+              100  LOAD_ATTR                DOTALL
+              102  BINARY_OR        
+
+ L.  19       104  CALL_METHOD_2         2  ''
+              106  STORE_NAME               URI_RE
+
+ L.  28       108  LOAD_STR                 '(?:[0-9]{1,3}\\.){3}[0-9]{1,3}'
+              110  STORE_NAME               IPV4_PAT
+
+ L.  29       112  LOAD_STR                 '[0-9A-Fa-f]{1,4}'
+              114  STORE_NAME               HEX_PAT
+
+ L.  30       116  LOAD_STR                 '(?:{hex}:{hex}|{ipv4})'
+              118  LOAD_ATTR                format
+              120  LOAD_NAME                HEX_PAT
+              122  LOAD_NAME                IPV4_PAT
+              124  LOAD_CONST               ('hex', 'ipv4')
+              126  CALL_FUNCTION_KW_2     2  '2 total positional and keyword args'
+              128  STORE_NAME               LS32_PAT
+
+ L.  31       130  LOAD_NAME                HEX_PAT
+              132  LOAD_NAME                LS32_PAT
+              134  LOAD_CONST               ('hex', 'ls32')
+              136  BUILD_CONST_KEY_MAP_2     2 
+              138  STORE_NAME               _subs
+
+ L.  32       140  BUILD_LIST_0          0 
+              142  LOAD_CONST               ('(?:%(hex)s:){6}%(ls32)s', '::(?:%(hex)s:){5}%(ls32)s', '(?:%(hex)s)?::(?:%(hex)s:){4}%(ls32)s', '(?:(?:%(hex)s:)?%(hex)s)?::(?:%(hex)s:){3}%(ls32)s', '(?:(?:%(hex)s:){0,2}%(hex)s)?::(?:%(hex)s:){2}%(ls32)s', '(?:(?:%(hex)s:){0,3}%(hex)s)?::%(hex)s:%(ls32)s', '(?:(?:%(hex)s:){0,4}%(hex)s)?::%(ls32)s', '(?:(?:%(hex)s:){0,5}%(hex)s)?::%(hex)s', '(?:(?:%(hex)s:){0,6}%(hex)s)?::')
+              144  CALL_FINALLY        147  'to 147'
+              146  STORE_NAME               _variations
+
+ L.  53       148  LOAD_STR                 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789._!\\-~'
+              150  STORE_NAME               UNRESERVED_PAT
+
+ L.  54       152  LOAD_STR                 '(?:'
+              154  LOAD_STR                 '|'
+              156  LOAD_METHOD              join
+              158  LOAD_LISTCOMP            '<code_object <listcomp>>'
+              160  LOAD_STR                 '<listcomp>'
+              162  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              164  LOAD_NAME                _variations
+              166  GET_ITER         
+              168  CALL_FUNCTION_1       1  ''
+              170  CALL_METHOD_1         1  ''
+              172  BINARY_ADD       
+              174  LOAD_STR                 ')'
+              176  BINARY_ADD       
+              178  STORE_NAME               IPV6_PAT
+
+ L.  55       180  LOAD_STR                 '(?:%25|%)(?:['
+              182  LOAD_NAME                UNRESERVED_PAT
+              184  BINARY_ADD       
+              186  LOAD_STR                 ']|%[a-fA-F0-9]{2})+'
+              188  BINARY_ADD       
+              190  STORE_NAME               ZONE_ID_PAT
+
+ L.  56       192  LOAD_STR                 '\\['
+              194  LOAD_NAME                IPV6_PAT
+              196  BINARY_ADD       
+              198  LOAD_STR                 '(?:'
+              200  BINARY_ADD       
+              202  LOAD_NAME                ZONE_ID_PAT
+              204  BINARY_ADD       
+              206  LOAD_STR                 ')?\\]'
+              208  BINARY_ADD       
+              210  STORE_NAME               IPV6_ADDRZ_PAT
+
+ L.  57       212  LOAD_STR                 '(?:[^\\[\\]%:/?#]|%[a-fA-F0-9]{2})*'
+              214  STORE_NAME               REG_NAME_PAT
+
+ L.  58       216  LOAD_NAME                re
+              218  LOAD_METHOD              compile
+              220  LOAD_STR                 '^(/[^?#]*)(?:\\?([^#]*))?(?:#.*)?$'
+              222  CALL_METHOD_1         1  ''
+              224  STORE_NAME               TARGET_RE
+
+ L.  60       226  LOAD_NAME                re
+              228  LOAD_METHOD              compile
+              230  LOAD_STR                 '^'
+              232  LOAD_NAME                IPV4_PAT
+              234  BINARY_ADD       
+              236  LOAD_STR                 '$'
+              238  BINARY_ADD       
+              240  CALL_METHOD_1         1  ''
+              242  STORE_NAME               IPV4_RE
+
+ L.  61       244  LOAD_NAME                re
+              246  LOAD_METHOD              compile
+              248  LOAD_STR                 '^'
+              250  LOAD_NAME                IPV6_PAT
+              252  BINARY_ADD       
+              254  LOAD_STR                 '$'
+              256  BINARY_ADD       
+              258  CALL_METHOD_1         1  ''
+              260  STORE_NAME               IPV6_RE
+
+ L.  62       262  LOAD_NAME                re
+              264  LOAD_METHOD              compile
+              266  LOAD_STR                 '^'
+              268  LOAD_NAME                IPV6_ADDRZ_PAT
+              270  BINARY_ADD       
+              272  LOAD_STR                 '$'
+              274  BINARY_ADD       
+              276  CALL_METHOD_1         1  ''
+              278  STORE_NAME               IPV6_ADDRZ_RE
+
+ L.  63       280  LOAD_NAME                re
+              282  LOAD_METHOD              compile
+              284  LOAD_STR                 '^'
+              286  LOAD_NAME                IPV6_ADDRZ_PAT
+              288  LOAD_CONST               2
+              290  LOAD_CONST               -2
+              292  BUILD_SLICE_2         2 
+              294  BINARY_SUBSCR    
+              296  BINARY_ADD       
+              298  LOAD_STR                 '$'
+              300  BINARY_ADD       
+              302  CALL_METHOD_1         1  ''
+              304  STORE_NAME               BRACELESS_IPV6_ADDRZ_RE
+
+ L.  64       306  LOAD_NAME                re
+              308  LOAD_METHOD              compile
+              310  LOAD_STR                 '('
+              312  LOAD_NAME                ZONE_ID_PAT
+              314  BINARY_ADD       
+              316  LOAD_STR                 ')\\]$'
+              318  BINARY_ADD       
+              320  CALL_METHOD_1         1  ''
+              322  STORE_NAME               ZONE_ID_RE
+
+ L.  66       324  LOAD_STR                 '^(%s|%s|%s)(?::([0-9]{0,5}))?$'
+
+ L.  67       326  LOAD_NAME                REG_NAME_PAT
+
+ L.  68       328  LOAD_NAME                IPV4_PAT
+
+ L.  69       330  LOAD_NAME                IPV6_ADDRZ_PAT
+
+ L.  66       332  BUILD_TUPLE_3         3 
+              334  BINARY_MODULO    
+              336  STORE_NAME               _HOST_PORT_PAT
+
+ L.  71       338  LOAD_NAME                re
+              340  LOAD_METHOD              compile
+              342  LOAD_NAME                _HOST_PORT_PAT
+              344  LOAD_NAME                re
+              346  LOAD_ATTR                UNICODE
+              348  LOAD_NAME                re
+              350  LOAD_ATTR                DOTALL
+              352  BINARY_OR        
+              354  CALL_METHOD_2         2  ''
+              356  STORE_NAME               _HOST_PORT_RE
+
+ L.  73       358  LOAD_NAME                set
+
+ L.  74       360  LOAD_STR                 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789._-~'
+
+ L.  73       362  CALL_FUNCTION_1       1  ''
+              364  STORE_NAME               UNRESERVED_CHARS
+
+ L.  76       366  LOAD_NAME                set
+              368  LOAD_STR                 "!$&'()*+,;="
+              370  CALL_FUNCTION_1       1  ''
+              372  STORE_NAME               SUB_DELIM_CHARS
+
+ L.  77       374  LOAD_NAME                UNRESERVED_CHARS
+              376  LOAD_NAME                SUB_DELIM_CHARS
+              378  BINARY_OR        
+              380  LOAD_STR                 ':'
+              382  BUILD_SET_1           1 
+              384  BINARY_OR        
+              386  STORE_NAME               USERINFO_CHARS
+
+ L.  78       388  LOAD_NAME                USERINFO_CHARS
+              390  LOAD_STR                 '@'
+              392  LOAD_STR                 '/'
+              394  BUILD_SET_2           2 
+              396  BINARY_OR        
+              398  STORE_NAME               PATH_CHARS
+
+ L.  79       400  LOAD_NAME                PATH_CHARS
+              402  LOAD_STR                 '?'
+              404  BUILD_SET_1           1 
+              406  BINARY_OR        
+              408  DUP_TOP          
+              410  STORE_NAME               QUERY_CHARS
+              412  STORE_NAME               FRAGMENT_CHARS
+
+ L.  82       414  LOAD_BUILD_CLASS 
+              416  LOAD_CODE                <code_object Url>
+              418  LOAD_STR                 'Url'
+              420  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              422  LOAD_STR                 'Url'
+              424  LOAD_NAME                namedtuple
+              426  LOAD_STR                 'Url'
+              428  LOAD_NAME                url_attrs
+              430  CALL_FUNCTION_2       2  ''
+              432  CALL_FUNCTION_3       3  ''
+              434  STORE_NAME               Url
+
+ L. 175       436  LOAD_CODE                <code_object split_first>
+              438  LOAD_STR                 'split_first'
+              440  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              442  STORE_NAME               split_first
+
+ L. 210       444  LOAD_CONST               ('utf-8',)
+              446  LOAD_CODE                <code_object _encode_invalid_chars>
+              448  LOAD_STR                 '_encode_invalid_chars'
+              450  MAKE_FUNCTION_1          'default'
+              452  STORE_NAME               _encode_invalid_chars
+
+ L. 244       454  LOAD_CODE                <code_object _remove_path_dot_segments>
+              456  LOAD_STR                 '_remove_path_dot_segments'
+              458  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              460  STORE_NAME               _remove_path_dot_segments
+
+ L. 274       462  LOAD_CODE                <code_object _normalize_host>
+              464  LOAD_STR                 '_normalize_host'
+              466  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              468  STORE_NAME               _normalize_host
+
+ L. 302       470  LOAD_CODE                <code_object _idna_encode>
+              472  LOAD_STR                 '_idna_encode'
+              474  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              476  STORE_NAME               _idna_encode
+
+ L. 320       478  LOAD_CODE                <code_object _encode_target>
+              480  LOAD_STR                 '_encode_target'
+              482  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              484  STORE_NAME               _encode_target
+
+ L. 330       486  LOAD_CODE                <code_object parse_url>
+              488  LOAD_STR                 'parse_url'
+              490  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              492  STORE_NAME               parse_url
+
+ L. 427       494  LOAD_CODE                <code_object get_host>
+              496  LOAD_STR                 'get_host'
+              498  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              500  STORE_NAME               get_host
+
+Parse error at or near `CALL_FINALLY' instruction at offset 60
+
+Instruction context:
+   
+ L.   9        56  BUILD_LIST_0          0 
+                  58  LOAD_CONST               ('scheme', 'auth', 'host', 'port', 'path', 'query', 'fragment')
+->                60  CALL_FINALLY         63  'to 63'
+                  62  STORE_NAME               url_attrs
+
+test/39779.pyc -- 
+# decompile failed

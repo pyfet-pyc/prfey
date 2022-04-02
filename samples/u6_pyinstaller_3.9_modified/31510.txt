@@ -1,0 +1,58 @@
+Instruction context:
+   
+ L.  97        28  DUP_TOP          
+                  30  LOAD_GLOBAL              TypeError
+                  32  LOAD_GLOBAL              binascii
+                  34  LOAD_ATTR                Error
+                  36  BUILD_TUPLE_2         2 
+->                38  <121>                54  ''
+                  40  POP_TOP          
+                  42  POP_TOP          
+                  44  POP_TOP          
+Instruction context:
+   
+ L. 114        64  DUP_TOP          
+                  66  LOAD_GLOBAL              InvalidSignature
+->                68  <121>                84  ''
+                  70  POP_TOP          
+                  72  POP_TOP          
+                  74  POP_TOP          
+Instruction context:
+   
+ L. 167        42  POP_BLOCK        
+                  44  POP_TOP          
+->                46  JUMP_ABSOLUTE        76  'to 76'
+                  48  POP_BLOCK        
+                  50  JUMP_BACK            20  'to 20'
+                52_0  COME_FROM_FINALLY    24  '24'
+Instruction context:
+   
+ L. 179        12  LOAD_FAST                'f'
+                  14  LOAD_METHOD              decrypt
+                  16  LOAD_FAST                'msg'
+                  18  LOAD_FAST                'ttl'
+                  20  CALL_METHOD_2         2  ''
+                  22  POP_BLOCK        
+->                24  ROT_TWO          
+                  26  POP_TOP          
+                  28  RETURN_VALUE     
+                30_0  COME_FROM_FINALLY    10  '10'
+Instruction context:
+   
+ L. 187        12  LOAD_FAST                'f'
+                  14  LOAD_METHOD              decrypt_at_time
+                  16  LOAD_FAST                'msg'
+                  18  LOAD_FAST                'ttl'
+                  20  LOAD_FAST                'current_time'
+                  22  CALL_METHOD_3         3  ''
+                  24  POP_BLOCK        
+->                26  ROT_TWO          
+                  28  POP_TOP          
+                  30  RETURN_VALUE     
+                32_0  COME_FROM_FINALLY    10  '10'
+
+test/31510.pyc -- 
+# decompile failed
+
+# file test/31510.pyc
+# Deparsing stopped due to parse error

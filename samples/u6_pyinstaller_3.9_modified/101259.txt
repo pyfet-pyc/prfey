@@ -1,0 +1,91 @@
+Instruction context:
+   
+ L.  40        22  LOAD_GLOBAL              socket
+                  24  LOAD_METHOD              fromshare
+                  26  LOAD_FAST                'share'
+                  28  CALL_METHOD_1         1  ''
+                  30  POP_BLOCK        
+->                32  ROT_TWO          
+                  34  LOAD_CONST               None
+                  36  DUP_TOP          
+                  38  DUP_TOP          
+                  40  CALL_FUNCTION_3       3  ''
+                  42  POP_TOP          
+                  44  RETURN_VALUE     
+                46_0  COME_FROM_WITH       10  '10'
+                  46  <49>             
+                  48  POP_JUMP_IF_TRUE     52  'to 52'
+                  50  <48>             
+                52_0  COME_FROM            48  '48'
+                  52  POP_TOP          
+                  54  POP_TOP          
+                  56  POP_TOP          
+                  58  POP_EXCEPT       
+Instruction context:
+   
+ L.  58        14  LOAD_GLOBAL              reduction
+                  16  LOAD_METHOD              recv_handle
+                  18  LOAD_FAST                'conn'
+                  20  CALL_METHOD_1         1  ''
+                  22  POP_BLOCK        
+->                24  ROT_TWO          
+                  26  LOAD_CONST               None
+                  28  DUP_TOP          
+                  30  DUP_TOP          
+                  32  CALL_FUNCTION_3       3  ''
+                  34  POP_TOP          
+                  36  RETURN_VALUE     
+                38_0  COME_FROM_WITH       10  '10'
+                  38  <49>             
+                  40  POP_JUMP_IF_TRUE     44  'to 44'
+                  42  <48>             
+                44_0  COME_FROM            40  '40'
+                  44  POP_TOP          
+                  46  POP_TOP          
+                  48  POP_TOP          
+                  50  POP_EXCEPT       
+Instruction context:
+   
+ L.  75         8  LOAD_FAST                'self'
+                  10  LOAD_ATTR                _address
+                  12  LOAD_CONST               None
+->                14  <117>                 0  ''
+                  16  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L.  94        20  LOAD_FAST                'self'
+                  22  LOAD_ATTR                _address
+                  24  LOAD_CONST               None
+->                26  <117>                 1  ''
+                  28  POP_JUMP_IF_FALSE   168  'to 168'
+Instruction context:
+   
+ L. 116        50  LOAD_FAST                'self'
+                  52  LOAD_ATTR                _listener
+                  54  LOAD_CONST               None
+->                56  <117>                 1  ''
+                  58  POP_JUMP_IF_FALSE    70  'to 70'
+Instruction context:
+   
+ L. 124        12  LOAD_FAST                'self'
+                  14  LOAD_ATTR                _listener
+                  16  LOAD_CONST               None
+->                18  <117>                 0  ''
+                  20  POP_JUMP_IF_TRUE     30  'to 30'
+                  22  <74>             
+                  24  LOAD_STR                 'Already have Listener'
+                  26  CALL_FUNCTION_1       1  ''
+                  28  RAISE_VARARGS_1       1  'exception instance'
+                30_0  COME_FROM            20  '20'
+Instruction context:
+   
+ L. 140        50  LOAD_FAST                'msg'
+                  52  LOAD_CONST               None
+->                54  <117>                 0  ''
+                  56  POP_JUMP_IF_FALSE    74  'to 74'
+
+test/101259.pyc -- 
+# decompile failed
+
+# file test/101259.pyc
+# Deparsing stopped due to parse error

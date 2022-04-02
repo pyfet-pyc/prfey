@@ -1,0 +1,73 @@
+Instruction context:
+   
+ L. 216        46  LOAD_FAST                'self'
+                  48  LOAD_METHOD              __repr__
+                  50  CALL_METHOD_0         0  ''
+                  52  ROT_FOUR         
+->                54  POP_BLOCK        
+                  56  POP_EXCEPT       
+                  58  CALL_FINALLY         62  'to 62'
+                  60  RETURN_VALUE     
+                62_0  COME_FROM            58  '58'
+                62_1  COME_FROM_FINALLY    32  '32'
+                  62  LOAD_CONST               None
+                  64  STORE_FAST               'details'
+                  66  DELETE_FAST              'details'
+                  68  END_FINALLY      
+                  70  POP_EXCEPT       
+                  72  JUMP_FORWARD         76  'to 76'
+                74_0  COME_FROM            24  '24'
+                  74  END_FINALLY      
+Instruction context:
+   
+ L. 283       106  POP_EXCEPT       
+->               108  LOAD_CONST               (None, None)
+                 110  RETURN_VALUE     
+                 112  END_FINALLY      
+               114_0  COME_FROM            98  '98'
+Instruction context:
+   
+ L. 340       150  LOAD_GLOBAL              debug_print
+                 152  LOAD_STR                 'Error building OLE definition for code '
+                 154  LOAD_FAST                'methodCode'
+                 156  CALL_FUNCTION_2       2  ''
+->               158  POP_TOP          
+Instruction context:
+   
+ L. 390        30  POP_BLOCK        
+->                32  LOAD_CONST               1
+                  34  RETURN_VALUE     
+                36_0  COME_FROM            10  '10'
+                  36  POP_BLOCK        
+                  38  JUMP_FORWARD         62  'to 62'
+                40_0  COME_FROM_FINALLY     0  '0'
+Instruction context:
+   
+ L. 426       254  POP_EXCEPT       
+->               256  JUMP_BACK            38  'to 38'
+                 258  END_FINALLY      
+                 260  JUMP_BACK            38  'to 38'
+               262_0  COME_FROM            38  '38'
+Instruction context:
+   
+ L. 473       166  POP_EXCEPT       
+                 168  JUMP_FORWARD        172  'to 172'
+->             170_0  COME_FROM           158  '158'
+                 170  END_FINALLY      
+               172_0  COME_FROM           168  '168'
+Instruction context:
+-> 
+ L. 579       466  DUP_TOP          
+                 468  LOAD_GLOBAL              pythoncom
+                 470  LOAD_ATTR                com_error
+                 472  COMPARE_OP               exception-match
+             474_476  POP_JUMP_IF_FALSE   488  'to 488'
+                 478  POP_TOP          
+                 480  POP_TOP          
+                 482  POP_TOP          
+
+../test/158562.pyc -- 
+# decompile failed
+
+# file ../test/158562.pyc
+# Deparsing stopped due to parse error

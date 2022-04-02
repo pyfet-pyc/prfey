@@ -1,0 +1,26 @@
+Instruction context:
+   
+ L.  31        12  DUP_TOP          
+                  14  LOAD_GLOBAL              ValueError
+                  16  COMPARE_OP               exception-match
+                  18  POP_JUMP_IF_FALSE    34  'to 34'
+                  20  POP_TOP          
+->                22  POP_TOP          
+                  24  POP_TOP          
+Instruction context:
+   
+ L.  41        12  DUP_TOP          
+                  14  LOAD_GLOBAL              ValueError
+                  16  LOAD_GLOBAL              TypeError
+                  18  BUILD_TUPLE_2         2 
+                  20  COMPARE_OP               exception-match
+                  22  POP_JUMP_IF_FALSE    38  'to 38'
+                  24  POP_TOP          
+->                26  POP_TOP          
+                  28  POP_TOP          
+
+../test/10308.pyc -- 
+# decompile failed
+
+# file ../test/10308.pyc
+# Deparsing stopped due to parse error

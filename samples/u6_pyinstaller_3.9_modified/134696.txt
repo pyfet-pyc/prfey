@@ -1,0 +1,103 @@
+Instruction context:
+   
+ L.  37        86  DUP_TOP          
+                  88  LOAD_NAME                ImportError
+->                90  <121>               134  ''
+                  92  POP_TOP          
+                  94  POP_TOP          
+                  96  POP_TOP          
+
+test/134696.pyc -- 
+# decompile failed
+
+# file test/134696.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'Multidict implementation.\n\nHTTP Headers and URL query string require specific data structure:\nmultidict. It behaves mostly like a dict but it can have\nseveral values for the same key.\n'
+                2  STORE_NAME               __doc__
+
+ L.   8         4  LOAD_CONST               1
+                6  LOAD_CONST               ('MultiMapping', 'MutableMultiMapping')
+                8  IMPORT_NAME              _abc
+               10  IMPORT_FROM              MultiMapping
+               12  STORE_NAME               MultiMapping
+               14  IMPORT_FROM              MutableMultiMapping
+               16  STORE_NAME               MutableMultiMapping
+               18  POP_TOP          
+
+ L.   9        20  LOAD_CONST               1
+               22  LOAD_CONST               ('USE_CYTHON_EXTENSIONS',)
+               24  IMPORT_NAME              _compat
+               26  IMPORT_FROM              USE_CYTHON_EXTENSIONS
+               28  STORE_NAME               USE_CYTHON_EXTENSIONS
+               30  POP_TOP          
+
+ L.  11        32  LOAD_CONST               ('MultiMapping', 'MutableMultiMapping', 'MultiDictProxy', 'CIMultiDictProxy', 'MultiDict', 'CIMultiDict', 'upstr', 'istr', 'getversion')
+               34  STORE_NAME               __all__
+
+ L.  23        36  LOAD_STR                 '5.1.0'
+               38  STORE_NAME               __version__
+
+ L.  26        40  SETUP_FINALLY        86  'to 86'
+
+ L.  27        42  LOAD_NAME                USE_CYTHON_EXTENSIONS
+               44  POP_JUMP_IF_TRUE     50  'to 50'
+
+ L.  28        46  LOAD_NAME                ImportError
+               48  RAISE_VARARGS_1       1  'exception instance'
+             50_0  COME_FROM            44  '44'
+
+ L.  29        50  LOAD_CONST               1
+               52  LOAD_CONST               ('CIMultiDict', 'CIMultiDictProxy', 'MultiDict', 'MultiDictProxy', 'getversion', 'istr')
+               54  IMPORT_NAME              _multidict
+               56  IMPORT_FROM              CIMultiDict
+               58  STORE_NAME               CIMultiDict
+               60  IMPORT_FROM              CIMultiDictProxy
+               62  STORE_NAME               CIMultiDictProxy
+               64  IMPORT_FROM              MultiDict
+               66  STORE_NAME               MultiDict
+               68  IMPORT_FROM              MultiDictProxy
+               70  STORE_NAME               MultiDictProxy
+               72  IMPORT_FROM              getversion
+               74  STORE_NAME               getversion
+               76  IMPORT_FROM              istr
+               78  STORE_NAME               istr
+               80  POP_TOP          
+               82  POP_BLOCK        
+               84  JUMP_FORWARD        136  'to 136'
+             86_0  COME_FROM_FINALLY    40  '40'
+
+ L.  37        86  DUP_TOP          
+               88  LOAD_NAME                ImportError
+               90  <121>               134  ''
+               92  POP_TOP          
+               94  POP_TOP          
+               96  POP_TOP          
+
+ L.  38        98  LOAD_CONST               1
+              100  LOAD_CONST               ('CIMultiDict', 'CIMultiDictProxy', 'MultiDict', 'MultiDictProxy', 'getversion', 'istr')
+              102  IMPORT_NAME              _multidict_py
+              104  IMPORT_FROM              CIMultiDict
+              106  STORE_NAME               CIMultiDict
+              108  IMPORT_FROM              CIMultiDictProxy
+              110  STORE_NAME               CIMultiDictProxy
+              112  IMPORT_FROM              MultiDict
+              114  STORE_NAME               MultiDict
+              116  IMPORT_FROM              MultiDictProxy
+              118  STORE_NAME               MultiDictProxy
+              120  IMPORT_FROM              getversion
+              122  STORE_NAME               getversion
+              124  IMPORT_FROM              istr
+              126  STORE_NAME               istr
+              128  POP_TOP          
+              130  POP_EXCEPT       
+              132  JUMP_FORWARD        136  'to 136'
+              134  <48>             
+            136_0  COME_FROM           132  '132'
+            136_1  COME_FROM            84  '84'
+
+ L.  48       136  LOAD_NAME                istr
+              138  STORE_NAME               upstr
+
+Parse error at or near `<121>' instruction at offset 90
+

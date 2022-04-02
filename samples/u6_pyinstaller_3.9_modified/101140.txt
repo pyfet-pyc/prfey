@@ -1,0 +1,130 @@
+Instruction context:
+   
+ L.   5        30  DUP_TOP          
+                  32  LOAD_NAME                ImportError
+->                34  <121>                50  ''
+                  36  POP_TOP          
+                  38  POP_TOP          
+                  40  POP_TOP          
+
+test/101140.pyc -- 
+# decompile failed
+
+# file test/101140.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_CONST               0
+                2  LOAD_CONST               None
+                4  IMPORT_NAME              collections
+                6  STORE_NAME               collections
+
+ L.   2         8  LOAD_CONST               0
+               10  LOAD_CONST               None
+               12  IMPORT_NAME              warnings
+               14  STORE_NAME               warnings
+
+ L.   3        16  SETUP_FINALLY        30  'to 30'
+
+ L.   4        18  LOAD_CONST               0
+               20  LOAD_CONST               None
+               22  IMPORT_NAME              ssl
+               24  STORE_NAME               ssl
+               26  POP_BLOCK        
+               28  JUMP_FORWARD         52  'to 52'
+             30_0  COME_FROM_FINALLY    16  '16'
+
+ L.   5        30  DUP_TOP          
+               32  LOAD_NAME                ImportError
+               34  <121>                50  ''
+               36  POP_TOP          
+               38  POP_TOP          
+               40  POP_TOP          
+
+ L.   6        42  LOAD_CONST               None
+               44  STORE_NAME               ssl
+               46  POP_EXCEPT       
+               48  JUMP_FORWARD         52  'to 52'
+               50  <48>             
+             52_0  COME_FROM            48  '48'
+             52_1  COME_FROM            28  '28'
+
+ L.   8        52  LOAD_CONST               1
+               54  LOAD_CONST               ('constants',)
+               56  IMPORT_NAME              
+               58  IMPORT_FROM              constants
+               60  STORE_NAME               constants
+               62  POP_TOP          
+
+ L.   9        64  LOAD_CONST               1
+               66  LOAD_CONST               ('protocols',)
+               68  IMPORT_NAME              
+               70  IMPORT_FROM              protocols
+               72  STORE_NAME               protocols
+               74  POP_TOP          
+
+ L.  10        76  LOAD_CONST               1
+               78  LOAD_CONST               ('transports',)
+               80  IMPORT_NAME              
+               82  IMPORT_FROM              transports
+               84  STORE_NAME               transports
+               86  POP_TOP          
+
+ L.  11        88  LOAD_CONST               1
+               90  LOAD_CONST               ('logger',)
+               92  IMPORT_NAME              log
+               94  IMPORT_FROM              logger
+               96  STORE_NAME               logger
+               98  POP_TOP          
+
+ L.  14       100  LOAD_CODE                <code_object _create_transport_context>
+              102  LOAD_STR                 '_create_transport_context'
+              104  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              106  STORE_NAME               _create_transport_context
+
+ L.  29       108  LOAD_STR                 'UNWRAPPED'
+              110  STORE_NAME               _UNWRAPPED
+
+ L.  30       112  LOAD_STR                 'DO_HANDSHAKE'
+              114  STORE_NAME               _DO_HANDSHAKE
+
+ L.  31       116  LOAD_STR                 'WRAPPED'
+              118  STORE_NAME               _WRAPPED
+
+ L.  32       120  LOAD_STR                 'SHUTDOWN'
+              122  STORE_NAME               _SHUTDOWN
+
+ L.  35       124  LOAD_BUILD_CLASS 
+              126  LOAD_CODE                <code_object _SSLPipe>
+              128  LOAD_STR                 '_SSLPipe'
+              130  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              132  LOAD_STR                 '_SSLPipe'
+              134  LOAD_NAME                object
+              136  CALL_FUNCTION_3       3  ''
+              138  STORE_NAME               _SSLPipe
+
+ L. 283       140  LOAD_BUILD_CLASS 
+              142  LOAD_CODE                <code_object _SSLProtocolTransport>
+              144  LOAD_STR                 '_SSLProtocolTransport'
+              146  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              148  LOAD_STR                 '_SSLProtocolTransport'
+              150  LOAD_NAME                transports
+              152  LOAD_ATTR                _FlowControlMixin
+
+ L. 284       154  LOAD_NAME                transports
+              156  LOAD_ATTR                Transport
+
+ L. 283       158  CALL_FUNCTION_4       4  ''
+              160  STORE_NAME               _SSLProtocolTransport
+
+ L. 403       162  LOAD_BUILD_CLASS 
+              164  LOAD_CODE                <code_object SSLProtocol>
+              166  LOAD_STR                 'SSLProtocol'
+              168  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              170  LOAD_STR                 'SSLProtocol'
+              172  LOAD_NAME                protocols
+              174  LOAD_ATTR                Protocol
+              176  CALL_FUNCTION_3       3  ''
+              178  STORE_NAME               SSLProtocol
+
+Parse error at or near `<121>' instruction at offset 34
+

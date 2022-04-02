@@ -1,0 +1,27 @@
+Instruction context:
+   
+ L. 943       406  LOAD_FAST                'write'
+                 408  LOAD_STR                 '</'
+                 410  LOAD_FAST                'tag'
+                 412  BINARY_ADD       
+                 414  LOAD_STR                 '>'
+                 416  BINARY_ADD       
+                 418  CALL_FUNCTION_1       1  '1 positional argument'
+                 420  POP_TOP          
+->               422  JUMP_FORWARD        432  'to 432'
+               424_0  COME_FROM           342  '342'
+Instruction context:
+   
+ L.1603       396  LOAD_GLOBAL              hasattr
+                 398  LOAD_FAST                'self'
+                 400  LOAD_ATTR                target
+                 402  LOAD_STR                 'doctype'
+                 404  CALL_FUNCTION_2       2  '2 positional arguments'
+->             406_0  COME_FROM            80  '80'
+             406_408  POP_JUMP_IF_FALSE   436  'to 436'
+
+../test/147918.pyc -- 
+# decompile failed
+
+# file ../test/147918.pyc
+# Deparsing stopped due to parse error

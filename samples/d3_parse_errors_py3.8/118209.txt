@@ -1,0 +1,16 @@
+Instruction context:
+   
+ L. 154       564  POP_EXCEPT       
+             566_568  JUMP_BACK           428  'to 428'
+                 570  POP_EXCEPT       
+                 572  JUMP_FORWARD        576  'to 576'
+->             574_0  COME_FROM           554  '554'
+                 574  END_FINALLY      
+               576_0  COME_FROM           572  '572'
+               576_1  COME_FROM           546  '546'
+
+../test/118209.pyc -- 
+# decompile failed
+
+# file ../test/118209.pyc
+# Deparsing stopped due to parse error

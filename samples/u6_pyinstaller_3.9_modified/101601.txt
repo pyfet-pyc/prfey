@@ -1,0 +1,54 @@
+Instruction context:
+   
+ L.   6        22  DUP_TOP          
+                  24  LOAD_NAME                ImportError
+->                26  <121>                46  ''
+                  28  POP_TOP          
+                  30  POP_TOP          
+                  32  POP_TOP          
+
+test/101601.pyc -- 
+# decompile failed
+
+# file test/101601.pyc
+# --- This code section failed: ---
+
+ L.   3         0  SETUP_FINALLY        22  'to 22'
+
+ L.   4         2  LOAD_CONST               0
+                4  LOAD_CONST               None
+                6  IMPORT_NAME              wave
+                8  STORE_NAME               wave
+
+ L.   5        10  LOAD_CONST               0
+               12  LOAD_CONST               None
+               14  IMPORT_NAME              pyaudio
+               16  STORE_NAME               pyaudio
+               18  POP_BLOCK        
+               20  JUMP_FORWARD         48  'to 48'
+             22_0  COME_FROM_FINALLY     0  '0'
+
+ L.   6        22  DUP_TOP          
+               24  LOAD_NAME                ImportError
+               26  <121>                46  ''
+               28  POP_TOP          
+               30  POP_TOP          
+               32  POP_TOP          
+
+ L.   7        34  LOAD_NAME                SystemExit
+               36  LOAD_STR                 'Please run › pip install pyaudio'
+               38  CALL_FUNCTION_1       1  ''
+               40  RAISE_VARARGS_1       1  'exception instance'
+               42  POP_EXCEPT       
+               44  JUMP_FORWARD         48  'to 48'
+               46  <48>             
+             48_0  COME_FROM            44  '44'
+             48_1  COME_FROM            20  '20'
+
+ L.  12        48  LOAD_CODE                <code_object Microphone>
+               50  LOAD_STR                 'Microphone'
+               52  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+               54  STORE_NAME               Microphone
+
+Parse error at or near `<121>' instruction at offset 26
+

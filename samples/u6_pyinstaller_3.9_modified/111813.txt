@@ -1,0 +1,96 @@
+Instruction context:
+   
+ L.  31         6  LOAD_FAST                'result'
+                   8  LOAD_METHOD              count
+                  10  LOAD_STR                 '&'
+                  12  CALL_METHOD_1         1  ''
+                  14  LOAD_CONST               1
+                  16  COMPARE_OP               ==
+                  18  POP_JUMP_IF_TRUE     24  'to 24'
+->                20  <74>             
+                  22  RAISE_VARARGS_1       1  'exception instance'
+                24_0  COME_FROM            18  '18'
+Instruction context:
+   
+ L.  59        16  DUP_TOP          
+                  18  LOAD_GLOBAL              KeyError
+->                20  <121>                70  ''
+                  22  POP_TOP          
+                  24  POP_TOP          
+                  26  POP_TOP          
+Instruction context:
+   
+ L. 218        84  LOAD_FAST                'abi'
+                  86  LOAD_CONST               None
+->                88  <117>                 1  ''
+                  90  POP_JUMP_IF_FALSE   124  'to 124'
+Instruction context:
+   
+ L. 252        84  DUP_TOP          
+                  86  LOAD_GLOBAL              AttributeError
+->                88  <121>               100  ''
+                  90  POP_TOP          
+                  92  POP_TOP          
+                  94  POP_TOP          
+Instruction context:
+   
+ L. 301        12  LOAD_FAST                'length'
+                  14  LOAD_CONST               None
+->                16  <117>                 0  ''
+                  18  POP_JUMP_IF_FALSE    26  'to 26'
+Instruction context:
+   
+ L. 366         6  LOAD_FAST                'fldquals'
+                   8  LOAD_CONST               None
+->                10  <117>                 0  ''
+                  12  POP_JUMP_IF_FALSE    28  'to 28'
+Instruction context:
+   
+ L. 413        52  LOAD_FAST                'self'
+                  54  LOAD_ATTR                fldtypes
+                  56  LOAD_CONST               None
+->                58  <117>                 0  ''
+                  60  POP_JUMP_IF_FALSE    66  'to 66'
+Instruction context:
+   
+ L. 503        12  LOAD_FAST                'self'
+                  14  LOAD_ATTR                forcename
+                  16  LOAD_CONST               None
+->                18  <117>                 0  ''
+                  20  POP_JUMP_IF_FALSE    48  'to 48'
+Instruction context:
+   
+ L. 587        50  LOAD_GLOBAL              type
+                  52  LOAD_FAST                'backend'
+                  54  CALL_FUNCTION_1       1  ''
+                  56  LOAD_ATTR                __typecache
+                  58  POP_BLOCK        
+->                60  ROT_TWO          
+                  62  LOAD_CONST               None
+                  64  DUP_TOP          
+                  66  DUP_TOP          
+                  68  CALL_FUNCTION_3       3  ''
+                  70  POP_TOP          
+                  72  RETURN_VALUE     
+                74_0  COME_FROM_WITH       18  '18'
+                  74  <49>             
+                  76  POP_JUMP_IF_TRUE     80  'to 80'
+                  78  <48>             
+                80_0  COME_FROM            76  '76'
+                  80  POP_TOP          
+                  82  POP_TOP          
+                  84  POP_TOP          
+                  86  POP_EXCEPT       
+Instruction context:
+   
+ L. 591        16  LOAD_FAST                'kwds'
+                  18  POP_JUMP_IF_FALSE    24  'to 24'
+->                20  <74>             
+                  22  RAISE_VARARGS_1       1  'exception instance'
+                24_0  COME_FROM            18  '18'
+
+test/111813.pyc -- 
+# decompile failed
+
+# file test/111813.pyc
+# Deparsing stopped due to parse error

@@ -1,0 +1,299 @@
+
+# file test/101077.pyc
+# --- This code section failed: ---
+
+ L.   1         0  LOAD_STR                 'plistlib.py -- a tool to generate and parse MacOSX .plist files.\n\nThe property list (.plist) file format is a simple XML pickle supporting\nbasic object types, like dictionaries, lists, numbers and strings.\nUsually the top level object is a dictionary.\n\nTo write out a plist file, use the dump(value, file)\nfunction. \'value\' is the top level object, \'file\' is\na (writable) file object.\n\nTo parse a plist from a file, use the load(file) function,\nwith a (readable) file object as the only argument. It\nreturns the top level object (again, usually a dictionary).\n\nTo work with plist data in bytes objects, you can use loads()\nand dumps().\n\nValues can be strings, integers, floats, booleans, tuples, lists,\ndictionaries (but only with string keys), Data, bytes, bytearray, or\ndatetime.datetime objects.\n\nGenerate Plist example:\n\n    pl = dict(\n        aString = "Doodah",\n        aList = ["A", "B", 12, 32.1, [1, 2, 3]],\n        aFloat = 0.1,\n        anInt = 728,\n        aDict = dict(\n            anotherString = "<hello & hi there!>",\n            aUnicodeValue = "M\\xe4ssig, Ma\\xdf",\n            aTrueValue = True,\n            aFalseValue = False,\n        ),\n        someData = b"<binary gunk>",\n        someMoreData = b"<lots of binary gunk>" * 10,\n        aDate = datetime.datetime.fromtimestamp(time.mktime(time.gmtime())),\n    )\n    with open(fileName, \'wb\') as fp:\n        dump(pl, fp)\n\nParse Plist example:\n\n    with open(fileName, \'rb\') as fp:\n        pl = load(fp)\n    print(pl["aKey"])\n'
+                2  STORE_NAME               __doc__
+
+ L.  48         4  BUILD_LIST_0          0 
+                6  LOAD_CONST               ('InvalidFileException', 'FMT_XML', 'FMT_BINARY', 'load', 'dump', 'loads', 'dumps', 'UID')
+                8  CALL_FINALLY         11  'to 11'
+               10  STORE_NAME               __all__
+
+ L.  52        12  LOAD_CONST               0
+               14  LOAD_CONST               None
+               16  IMPORT_NAME              binascii
+               18  STORE_NAME               binascii
+
+ L.  53        20  LOAD_CONST               0
+               22  LOAD_CONST               None
+               24  IMPORT_NAME              codecs
+               26  STORE_NAME               codecs
+
+ L.  54        28  LOAD_CONST               0
+               30  LOAD_CONST               None
+               32  IMPORT_NAME              datetime
+               34  STORE_NAME               datetime
+
+ L.  55        36  LOAD_CONST               0
+               38  LOAD_CONST               None
+               40  IMPORT_NAME              enum
+               42  STORE_NAME               enum
+
+ L.  56        44  LOAD_CONST               0
+               46  LOAD_CONST               ('BytesIO',)
+               48  IMPORT_NAME              io
+               50  IMPORT_FROM              BytesIO
+               52  STORE_NAME               BytesIO
+               54  POP_TOP          
+
+ L.  57        56  LOAD_CONST               0
+               58  LOAD_CONST               None
+               60  IMPORT_NAME              itertools
+               62  STORE_NAME               itertools
+
+ L.  58        64  LOAD_CONST               0
+               66  LOAD_CONST               None
+               68  IMPORT_NAME              os
+               70  STORE_NAME               os
+
+ L.  59        72  LOAD_CONST               0
+               74  LOAD_CONST               None
+               76  IMPORT_NAME              re
+               78  STORE_NAME               re
+
+ L.  60        80  LOAD_CONST               0
+               82  LOAD_CONST               None
+               84  IMPORT_NAME              struct
+               86  STORE_NAME               struct
+
+ L.  61        88  LOAD_CONST               0
+               90  LOAD_CONST               ('ParserCreate',)
+               92  IMPORT_NAME_ATTR         xml.parsers.expat
+               94  IMPORT_FROM              ParserCreate
+               96  STORE_NAME               ParserCreate
+               98  POP_TOP          
+
+ L.  64       100  LOAD_NAME                enum
+              102  LOAD_ATTR                Enum
+              104  LOAD_STR                 'PlistFormat'
+              106  LOAD_STR                 'FMT_XML FMT_BINARY'
+              108  LOAD_NAME                __name__
+              110  LOAD_CONST               ('module',)
+              112  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+              114  STORE_NAME               PlistFormat
+
+ L.  65       116  LOAD_NAME                globals
+              118  CALL_FUNCTION_0       0  ''
+              120  LOAD_METHOD              update
+              122  LOAD_NAME                PlistFormat
+              124  LOAD_ATTR                __members__
+              126  CALL_METHOD_1         1  ''
+              128  POP_TOP          
+
+ L.  68       130  LOAD_BUILD_CLASS 
+              132  LOAD_CODE                <code_object UID>
+              134  LOAD_STR                 'UID'
+              136  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              138  LOAD_STR                 'UID'
+              140  CALL_FUNCTION_2       2  ''
+              142  STORE_NAME               UID
+
+ L. 101       144  LOAD_CONST               b'<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n'
+              146  STORE_NAME               PLISTHEADER
+
+ L. 108       148  LOAD_NAME                re
+              150  LOAD_METHOD              compile
+
+ L. 109       152  LOAD_STR                 '[\\x00\\x01\\x02\\x03\\x04\\x05\\x06\\x07\\x08\\x0b\\x0c\\x0e\\x0f\\x10\\x11\\x12\\x13\\x14\\x15\\x16\\x17\\x18\\x19\\x1a\\x1b\\x1c\\x1d\\x1e\\x1f]'
+
+ L. 108       154  CALL_METHOD_1         1  ''
+              156  STORE_NAME               _controlCharPat
+
+ L. 112       158  LOAD_CONST               (76,)
+              160  LOAD_CODE                <code_object _encode_base64>
+              162  LOAD_STR                 '_encode_base64'
+              164  MAKE_FUNCTION_1          'default'
+              166  STORE_NAME               _encode_base64
+
+ L. 121       168  LOAD_CODE                <code_object _decode_base64>
+              170  LOAD_STR                 '_decode_base64'
+              172  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              174  STORE_NAME               _decode_base64
+
+ L. 131       176  LOAD_NAME                re
+              178  LOAD_METHOD              compile
+              180  LOAD_STR                 '(?P<year>\\d\\d\\d\\d)(?:-(?P<month>\\d\\d)(?:-(?P<day>\\d\\d)(?:T(?P<hour>\\d\\d)(?::(?P<minute>\\d\\d)(?::(?P<second>\\d\\d))?)?)?)?)?Z'
+              182  LOAD_NAME                re
+              184  LOAD_ATTR                ASCII
+              186  CALL_METHOD_2         2  ''
+              188  STORE_NAME               _dateParser
+
+ L. 134       190  LOAD_CODE                <code_object _date_from_string>
+              192  LOAD_STR                 '_date_from_string'
+              194  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              196  STORE_NAME               _date_from_string
+
+ L. 146       198  LOAD_CODE                <code_object _date_to_string>
+              200  LOAD_STR                 '_date_to_string'
+              202  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              204  STORE_NAME               _date_to_string
+
+ L. 152       206  LOAD_CODE                <code_object _escape>
+              208  LOAD_STR                 '_escape'
+              210  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              212  STORE_NAME               _escape
+
+ L. 164       214  LOAD_BUILD_CLASS 
+              216  LOAD_CODE                <code_object _PlistParser>
+              218  LOAD_STR                 '_PlistParser'
+              220  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              222  LOAD_STR                 '_PlistParser'
+              224  CALL_FUNCTION_2       2  ''
+              226  STORE_NAME               _PlistParser
+
+ L. 274       228  LOAD_BUILD_CLASS 
+              230  LOAD_CODE                <code_object _DumbXMLWriter>
+              232  LOAD_STR                 '_DumbXMLWriter'
+              234  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              236  LOAD_STR                 '_DumbXMLWriter'
+              238  CALL_FUNCTION_2       2  ''
+              240  STORE_NAME               _DumbXMLWriter
+
+ L. 312       242  LOAD_BUILD_CLASS 
+              244  LOAD_CODE                <code_object _PlistWriter>
+              246  LOAD_STR                 '_PlistWriter'
+              248  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              250  LOAD_STR                 '_PlistWriter'
+              252  LOAD_NAME                _DumbXMLWriter
+              254  CALL_FUNCTION_3       3  ''
+              256  STORE_NAME               _PlistWriter
+
+ L. 406       258  LOAD_CODE                <code_object _is_fmt_xml>
+              260  LOAD_STR                 '_is_fmt_xml'
+              262  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              264  STORE_NAME               _is_fmt_xml
+
+ L. 439       266  LOAD_BUILD_CLASS 
+              268  LOAD_CODE                <code_object InvalidFileException>
+              270  LOAD_STR                 'InvalidFileException'
+              272  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              274  LOAD_STR                 'InvalidFileException'
+              276  LOAD_NAME                ValueError
+              278  CALL_FUNCTION_3       3  ''
+              280  STORE_NAME               InvalidFileException
+
+ L. 443       282  LOAD_STR                 'B'
+              284  LOAD_STR                 'H'
+              286  LOAD_STR                 'L'
+              288  LOAD_STR                 'Q'
+              290  LOAD_CONST               (1, 2, 4, 8)
+              292  BUILD_CONST_KEY_MAP_4     4 
+              294  STORE_NAME               _BINARY_FORMAT
+
+ L. 445       296  LOAD_NAME                object
+              298  CALL_FUNCTION_0       0  ''
+              300  STORE_NAME               _undefined
+
+ L. 447       302  LOAD_BUILD_CLASS 
+              304  LOAD_CODE                <code_object _BinaryPlistParser>
+              306  LOAD_STR                 '_BinaryPlistParser'
+              308  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              310  LOAD_STR                 '_BinaryPlistParser'
+              312  CALL_FUNCTION_2       2  ''
+              314  STORE_NAME               _BinaryPlistParser
+
+ L. 607       316  LOAD_CODE                <code_object _count_to_size>
+              318  LOAD_STR                 '_count_to_size'
+              320  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              322  STORE_NAME               _count_to_size
+
+ L. 620       324  LOAD_NAME                str
+              326  LOAD_NAME                int
+              328  LOAD_NAME                float
+              330  LOAD_NAME                datetime
+              332  LOAD_ATTR                datetime
+              334  LOAD_NAME                bytes
+              336  BUILD_TUPLE_5         5 
+              338  STORE_NAME               _scalars
+
+ L. 622       340  LOAD_BUILD_CLASS 
+              342  LOAD_CODE                <code_object _BinaryPlistWriter>
+              344  LOAD_STR                 '_BinaryPlistWriter'
+              346  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              348  LOAD_STR                 '_BinaryPlistWriter'
+              350  LOAD_NAME                object
+              352  CALL_FUNCTION_3       3  ''
+              354  STORE_NAME               _BinaryPlistWriter
+
+ L. 834       356  LOAD_CODE                <code_object _is_fmt_binary>
+              358  LOAD_STR                 '_is_fmt_binary'
+              360  MAKE_FUNCTION_0          'Neither defaults, keyword-only args, annotations, nor closures'
+              362  STORE_NAME               _is_fmt_binary
+
+ L. 843       364  LOAD_NAME                FMT_XML
+              366  LOAD_NAME                dict
+
+ L. 844       368  LOAD_NAME                _is_fmt_xml
+
+ L. 845       370  LOAD_NAME                _PlistParser
+
+ L. 846       372  LOAD_NAME                _PlistWriter
+
+ L. 843       374  LOAD_CONST               ('detect', 'parser', 'writer')
+              376  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+
+ L. 848       378  LOAD_NAME                FMT_BINARY
+              380  LOAD_NAME                dict
+
+ L. 849       382  LOAD_NAME                _is_fmt_binary
+
+ L. 850       384  LOAD_NAME                _BinaryPlistParser
+
+ L. 851       386  LOAD_NAME                _BinaryPlistWriter
+
+ L. 848       388  LOAD_CONST               ('detect', 'parser', 'writer')
+              390  CALL_FUNCTION_KW_3     3  '3 total positional and keyword args'
+
+ L. 842       392  BUILD_MAP_2           2 
+              394  STORE_NAME               _FORMATS
+
+ L. 856       396  LOAD_CONST               None
+              398  LOAD_NAME                dict
+              400  LOAD_CONST               ('fmt', 'dict_type')
+              402  BUILD_CONST_KEY_MAP_2     2 
+              404  LOAD_CODE                <code_object load>
+              406  LOAD_STR                 'load'
+              408  MAKE_FUNCTION_2          'keyword-only'
+              410  STORE_NAME               load
+
+ L. 878       412  LOAD_CONST               None
+              414  LOAD_NAME                dict
+              416  LOAD_CONST               ('fmt', 'dict_type')
+              418  BUILD_CONST_KEY_MAP_2     2 
+              420  LOAD_CODE                <code_object loads>
+              422  LOAD_STR                 'loads'
+              424  MAKE_FUNCTION_2          'keyword-only'
+              426  STORE_NAME               loads
+
+ L. 886       428  LOAD_NAME                FMT_XML
+              430  LOAD_CONST               True
+              432  LOAD_CONST               False
+              434  LOAD_CONST               ('fmt', 'sort_keys', 'skipkeys')
+              436  BUILD_CONST_KEY_MAP_3     3 
+              438  LOAD_CODE                <code_object dump>
+              440  LOAD_STR                 'dump'
+              442  MAKE_FUNCTION_2          'keyword-only'
+              444  STORE_NAME               dump
+
+ L. 897       446  LOAD_NAME                FMT_XML
+              448  LOAD_CONST               False
+              450  LOAD_CONST               True
+              452  LOAD_CONST               ('fmt', 'skipkeys', 'sort_keys')
+              454  BUILD_CONST_KEY_MAP_3     3 
+              456  LOAD_CODE                <code_object dumps>
+              458  LOAD_STR                 'dumps'
+              460  MAKE_FUNCTION_2          'keyword-only'
+              462  STORE_NAME               dumps
+
+Parse error at or near `CALL_FINALLY' instruction at offset 8
+
+Instruction context:
+   
+ L.  48         4  BUILD_LIST_0          0 
+                   6  LOAD_CONST               ('InvalidFileException', 'FMT_XML', 'FMT_BINARY', 'load', 'dump', 'loads', 'dumps', 'UID')
+->                 8  CALL_FINALLY         11  'to 11'
+                  10  STORE_NAME               __all__
+
+test/101077.pyc -- 
+# decompile failed
